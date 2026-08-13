@@ -15,7 +15,8 @@
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
+      "细节题",
+      "否定事实题",
       "跨句整合"
     ],
     "scope": "unit",
@@ -32,7 +33,9 @@
       "asset_key": "official-1-test-2/audio/part3/q056-058-questions.mp3",
       "exists": true
     },
-    "transcript": "Hello, Oscar—it’s Tanya from the Cardona Museum.\nUnfortunately our budget’s been cut, so we'll have to\ndelay some of the renovations we've asked you to do.\nSv Ah—that's too bad. @Do you know which parts of the\nproject you'd like to put off?\nWell, | know we talked about © adding a library wing on\nthe west side of the building—but that’s very expensive.\nSo, if we don’t make that addition, that’s all we may need\nto cut.\nYou know, that’s not a bad idea. @Let’s see how much\nyou'd save if | take the library out of the renovation\nproposal. |’ll e-mail you a revised estimate this afternoon."
+    "transcript": "Hello, Oscar—it’s Tanya from the Cardona Museum.\nUnfortunately our budget’s been cut, so we'll have to\ndelay some of the renovations we've asked you to do.\nSv Ah—that's too bad. @Do you know which parts of the\nproject you'd like to put off?\nWell, | know we talked about © adding a library wing on\nthe west side of the building—but that’s very expensive.\nSo, if we don’t make that addition, that’s all we may need\nto cut.\nYou know, that’s not a bad idea. @Let’s see how much\nyou'd save if | take the library out of the renovation\nproposal. |’ll e-mail you a revised estimate this afternoon.",
+    "transcript_translation": "您好，Oscar——我是来自 Cardona Museum 的 Tanya。不幸的是，我们的预算被削减了，所以我们不得不推迟一些我们要求您做的翻修工程。\n啊——那太遗憾了。你知道项目哪些部分可以推迟吗？嗯，我知道我们谈到过在建筑西侧增加一个图书馆翼楼——但那非常昂贵。\n所以，如果我们不增加这个部分，那就是我们可以削减的全部了。你知道，这不是个坏主意。让我们看看如果我把图书馆从翻修提案中去掉能省多少钱。我今天下午会给您发一份修改后的估价单。",
+    "content_translation": "您好，Oscar——我是来自 Cardona Museum 的 Tanya。不幸的是，我们的预算被削减了，所以我们不得不推迟一些我们要求您做的翻修工程。\n啊——那太遗憾了。你知道项目哪些部分可以推迟吗？嗯，我知道我们谈到过在建筑西侧增加一个图书馆翼楼——但那非常昂贵。\n所以，如果我们不增加这个部分，那就是我们可以削减的全部了。你知道，这不是个坏主意。让我们看看如果我把图书馆从翻修提案中去掉能省多少钱。我今天下午会给您发一份修改后的估价单。"
   },
   "items": [
     {
@@ -45,15 +48,49 @@
       "answer": "B",
       "question": "What is the problem? 62.",
       "answer_explain": "原文依据：听力原文中提到“delay some of the renovations we've asked you to do.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some funding has been reduced.）。",
+      "question_translation": "问题是什么？",
+      "choice_translations": [
+        "A：截止日期提前了。",
+        "B：部分资金减少了。",
+        "C：一些材料没有送达。",
+        "D：一位建筑师不可用。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "some",
+            "meaning": "出现在本题正确表达中：部分资金减少了。"
+          },
+          {
+            "term": "funding",
+            "meaning": "出现在本题正确表达中：部分资金减少了。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Some funding has been reduced.",
+            "meaning": "部分资金减少了。"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Hello, Oscar—it’s Tanya from the Cardona Museum.",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Hello, Oscar—it’s Tanya from the Cardona Museum.",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“delay some of the renovations we've asked you to do.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some funding has been reduced.）。"
+      },
       "item_id": 56,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -70,15 +107,49 @@
       "answer": "A",
       "question": "Which part of the renovations will likely be postponed? 63.",
       "answer_explain": "原文依据：听力原文中提到“So, if we don’t make that addition, that’s all we may need”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Alibrary addition）。",
+      "question_translation": "哪些翻修部分可能会推迟？",
+      "choice_translations": [
+        "A：增加图书馆",
+        "B：一些屋顶维修",
+        "C：一个电气系统升级",
+        "D：一些窗户更换"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "alibrary",
+            "meaning": "出现在本题正确表达中：增加图书馆"
+          },
+          {
+            "term": "addition",
+            "meaning": "出现在本题正确表达中：增加图书馆"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Alibrary addition",
+            "meaning": "增加图书馆"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 3 段：delay some of the renovations we've asked you to do.",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 3 段：delay some of the renovations we've asked you to do.",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“So, if we don’t make that addition, that’s all we may need”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Alibrary addition）。"
+      },
       "item_id": 57,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -95,15 +166,49 @@
       "answer": "C",
       "question": "What does the man mean when he says, 64. “that’s not a bad idea”?",
       "answer_explain": "原文依据：听力原文中提到“you'd save if | take the library out of the renovation”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He agrees with the proposed solution.）。",
+      "question_translation": "当男士说“这不是个坏主意”是什么意思？",
+      "choice_translations": [
+        "A：他想听更多建议。",
+        "B：他更喜欢原来的计划。",
+        "C：他同意提出的解决方案。",
+        "D：他有更好的主意。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "agrees",
+            "meaning": "出现在本题正确表达中：他同意提出的解决方案。"
+          },
+          {
+            "term": "proposed",
+            "meaning": "出现在本题正确表达中：他同意提出的解决方案。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "He agrees with the proposed solution.",
+            "meaning": "他同意提出的解决方案。"
+          }
+        ]
+      },
+      "question_type": "否定事实题",
+      "evidence": "参考原文第 1 段：Hello, Oscar—it’s Tanya from the Cardona Museum.",
+      "strategy": "本题属于否定事实题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 1 段：Hello, Oscar—it’s Tanya from the Cardona Museum.",
+        "strategy": "本题属于否定事实题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“you'd save if | take the library out of the renovation”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He agrees with the proposed solution.）。"
+      },
       "item_id": 58,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P1",
         "score": 88,
-        "label": "细节定位题",
+        "label": "否定事实题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "否定事实题",
           "跨句整合"
         ],
         "scope": "item",

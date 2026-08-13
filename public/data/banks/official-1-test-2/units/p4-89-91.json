@@ -11,15 +11,13 @@
   "difficulty": "medium",
   "priority": {
     "level": "P1",
-    "score": 82,
+    "score": 80,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "主旨场景",
-      "推断 / 隐含义题",
-      "跨句整合",
-      "细节定位题"
+      "细节题",
+      "推断题",
+      "跨句整合"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -35,7 +33,9 @@
       "asset_key": "official-1-test-2/audio/part4/q089-091-questions.mp3",
       "exists": true
     },
-    "transcript": "message.\nfeu\nHi, Mariko, this is Francois Duchamp calling from Human\nResources. We’re supposed to begin posting the laboratory\nassistant position this Friday. But, | don’t know, have you\nseen the interview questions we use? Since you supervise\nthe laboratory employees, @1'd really be interested in your\nopinion of them. lt would be great if you have some time\ntoday to talk about this. I’m about to go to an early lunch, but\nI'll be at my desk until five o’clock this afternoon. Thanks."
+    "transcript": "message.\nfeu\nHi, Mariko, this is Francois Duchamp calling from Human\nResources. We’re supposed to begin posting the laboratory\nassistant position this Friday. But, | don’t know, have you\nseen the interview questions we use? Since you supervise\nthe laboratory employees, @1'd really be interested in your\nopinion of them. lt would be great if you have some time\ntoday to talk about this. I’m about to go to an early lunch, but\nI'll be at my desk until five o’clock this afternoon. Thanks.",
+    "transcript_translation": "信息。\n嗨，Mariko，我是来自人力资源部的Francois Duchamp。我们本周五就要开始招聘实验室助理的职位了。但是，我不知道，你有没有看过我们使用的面试问题？因为您负责监督实验室员工，所以我非常想听听您对这些问题的看法。如果您今天有时间谈谈这个就太好了。我马上要去吃早午餐，但我今天下午五点前会在办公桌前。谢谢。",
+    "content_translation": "信息。\n嗨，Mariko，我是来自人力资源部的Francois Duchamp。我们本周五就要开始招聘实验室助理的职位了。但是，我不知道，你有没有看过我们使用的面试问题？因为您负责监督实验室员工，所以我非常想听听您对这些问题的看法。如果您今天有时间谈谈这个就太好了。我马上要去吃早午餐，但我今天下午五点前会在办公桌前。谢谢。"
   },
   "items": [
     {
@@ -48,16 +48,49 @@
       "answer": "C",
       "question": "What position is being advertised?",
       "answer_explain": "原文依据：听力原文中提到“the laboratory employees, @1'd really be interested in your”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Laboratory worker）。",
+      "question_translation": "正在招聘什么职位？",
+      "choice_translations": [
+        "A：项目协调员",
+        "B：行政助理",
+        "C：实验室工人",
+        "D：人力资源总监"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "laboratory",
+            "meaning": "出现在本题正确表达中：实验室工人"
+          },
+          {
+            "term": "worker",
+            "meaning": "出现在本题正确表达中：实验室工人"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Laboratory worker",
+            "meaning": "实验室工人"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 5 段：assistant position this Friday. But, | don’t know, have you",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 5 段：assistant position this Friday. But, | don’t know, have you",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“the laboratory employees, @1'd really be interested in your”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Laboratory worker）。"
+      },
       "item_id": 89,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
         "level": "P2",
-        "score": 72,
-        "label": "主旨 / 目的 / 场景题",
+        "score": 61,
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -74,15 +107,49 @@
       "answer": "C",
       "question": "What does the speaker imply when he says, “have you seen the interview questions we use”?",
       "answer_explain": "原文依据：听力原文中提到“seen the interview questions we use?”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（He is concerned about some questions.）。",
+      "question_translation": "当说话者说“你有没有看过我们使用的面试问题”时，他暗示了什么？",
+      "choice_translations": [
+        "A：他在确认一项任务。",
+        "B：他弄丢了一些表格。",
+        "C：他对一些问题感到担忧。",
+        "D：他希望这位女士来主导一个环节。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "concerned",
+            "meaning": "出现在本题正确表达中：他对一些问题感到担忧。"
+          },
+          {
+            "term": "about",
+            "meaning": "出现在本题正确表达中：他对一些问题感到担忧。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "He is concerned about some questions.",
+            "meaning": "他对一些问题感到担忧。"
+          }
+        ]
+      },
+      "question_type": "推断题",
+      "evidence": "参考原文第 6 段：seen the interview questions we use? Since you supervise",
+      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 6 段：seen the interview questions we use? Since you supervise",
+        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“seen the interview questions we use?”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（He is concerned about some questions.）。"
+      },
       "item_id": 90,
-      "question_type": "推断 / 隐含义题",
       "priority": {
         "level": "P1",
         "score": 88,
-        "label": "推断 / 隐含义题",
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "跨句整合"
         ],
         "scope": "item",
@@ -100,15 +167,45 @@
       "answer": "B",
       "question": "Why does the speaker want to meet with the interest woman?",
       "answer_explain": "原文依据：听力原文中提到“opinion of them.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To ask for her opinion）。",
+      "question_translation": "说话者为什么想和这位女士会面？",
+      "choice_translations": [
+        "A：介绍一位申请人",
+        "B：征求她的意见",
+        "C：向她提供晋升机会",
+        "D：计划一次入职培训"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "opinion",
+            "meaning": "出现在本题正确表达中：征求她的意见"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To ask for her opinion",
+            "meaning": "征求她的意见"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 7 段：the laboratory employees, @1'd really be interested in your",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 7 段：the laboratory employees, @1'd really be interested in your",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“opinion of them.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To ask for her opinion）。"
+      },
       "item_id": 91,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

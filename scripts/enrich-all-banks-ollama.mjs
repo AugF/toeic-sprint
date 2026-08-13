@@ -9,6 +9,8 @@ const scriptDir=path.dirname(fileURLToPath(import.meta.url));
 const banksRoot=path.resolve(get("--source",path.join(scriptDir,"../../toeic_listening_reading_banks")));
 const model=get("--model","gemma4:latest");
 const only=get("--only","");
+const from=get("--from","");
+const to=get("--to","");
 const onlyPart=Number(get("--part","0"));
 const endpoint=get("--endpoint","http://127.0.0.1:11434/api/chat");
 const letters="ABCD";
@@ -23,7 +25,7 @@ for(const volume of fs.readdirSync(banksRoot,{withFileTypes:true}).filter(x=>x.i
 }
 if(!files.length)throw new Error(`没有找到匹配题库：${only||banksRoot}`);
 
-for(const file of files)await enrichBank(file);
+for(const file of files.filter(file=>(!from||compareBankId(file.rel,from)>=0)&&(!to||compareBankId(file.rel,to)<=0)))await enrichBank(file);
 
 async function enrichBank(file){
   const raw=JSON.parse(fs.readFileSync(file.source,"utf8"));
@@ -53,6 +55,7 @@ async function enrichBank(file){
 }
 
 function natural(a,b){return a.name.localeCompare(b.name,undefined,{numeric:true})}
+function compareBankId(a,b){const numbers=value=>value.match(/\d+/g)?.map(Number)||[];const aa=numbers(a),bb=numbers(b);return(aa[0]||0)-(bb[0]||0)||(aa[1]||0)-(bb[1]||0)}
 function chunkGroups(groups,maxChars){
   const out=[];let current=[],size=0;
   for(const group of groups){const n=JSON.stringify(group).length;if(current.length&&size+n>maxChars){out.push(current);current=[];size=0}current.push(group);size+=n}
@@ -73,7 +76,7 @@ async function translateChunk(bankId,part,groups,attempt=1){
   const payload=groups.map(compactGroup);
   const prompt=`你是严谨的 TOEIC 英中翻译编辑。请翻译下面 Official TOEIC 第 ${part} 部分的材料。\n\n规则：\n1. 只翻译，不改写、不解题、不补充原文没有的信息；人名、公司名可保留英文。\n2. 即使 OCR 有少量噪声，也尽量根据可理解内容翻译；完全无法辨认时写“[原文 OCR 不清]”。\n3. content_translation 翻译每组 content 的全部内容并保留换行。\n4. 每道题的 question_translation 翻译题干；没有题干时返回空字符串。\n5. choice_translations 必须与 choices 等长、顺序一致，只放中文正文，不加 A/B/C/D。\n6. ID、数组数量和顺序必须与输入完全一致。\n7. 只返回合法 JSON，格式：{"groups":[{"id":"...","content_translation":"...","items":[{"id":1,"question_translation":"...","choice_translations":["..."]}]}]}。\n\n输入：${JSON.stringify(payload)}`;
   try{
-    const response=await fetch(endpoint,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({model,stream:false,think:false,format:"json",keep_alive:"30m",messages:[{role:"user",content:prompt}],options:{temperature:0.05,num_ctx:32768,num_predict:12000}})});
+    const response=await fetch(endpoint,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({model,stream:false,think:false,format:"json",keep_alive:"30m",messages:[{role:"user",content:prompt}],options:{temperature:0.05,num_ctx:16384,num_predict:10000}})});
     if(!response.ok)throw new Error(`Ollama HTTP ${response.status}: ${await response.text()}`);
     const body=await response.json();
     const parsed=parseJson(body.message?.content||"");

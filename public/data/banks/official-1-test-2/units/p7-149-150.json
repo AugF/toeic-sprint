@@ -11,11 +11,13 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 61,
+    "score": 78,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "细节题",
+      "推断题",
+      "语境推断"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -28,7 +30,9 @@
         "exists": true
       }
     ],
-    "passage": "FY Andreas Hildebrand a) (bles\nFy Andreas Hildebrand 10:04 Hi Eun Hee, do you have a minute to look at something? rf\nEun Hee Park 10:04 Sure, what do you need?\nFy Andreas Hildebrand 10:05 I'll e-mail it to you. It’s the draft for the cover of\nAnne Wahlberg’s book.\nEun Hee Park 10:06 One second...\nEun Hee Park 10:10 Okay, got it. Let me take a look.\n2 | Andreas Hildebrand 10:11 _ Is the title too difficult to read? | wanted it to be\neye-catching and different.\nEun Hee Park 10:13 I like the effect. But you could be right. Maybe if you changed\nthe color? Even just a darker shade of blue would help.\nry Andreas Hildebrand 10:14 Good idea. I'll give that a try. Mind if | run it past you\nagain later?\nEun Hee Park 10:15 No problem. rm"
+    "passage": "FY Andreas Hildebrand a) (bles\nFy Andreas Hildebrand 10:04 Hi Eun Hee, do you have a minute to look at something? rf\nEun Hee Park 10:04 Sure, what do you need?\nFy Andreas Hildebrand 10:05 I'll e-mail it to you. It’s the draft for the cover of\nAnne Wahlberg’s book.\nEun Hee Park 10:06 One second...\nEun Hee Park 10:10 Okay, got it. Let me take a look.\n2 | Andreas Hildebrand 10:11 _ Is the title too difficult to read? | wanted it to be\neye-catching and different.\nEun Hee Park 10:13 I like the effect. But you could be right. Maybe if you changed\nthe color? Even just a darker shade of blue would help.\nry Andreas Hildebrand 10:14 Good idea. I'll give that a try. Mind if | run it past you\nagain later?\nEun Hee Park 10:15 No problem. rm",
+    "passage_translation": "FY Andreas Hildebrand a) (bles\nFy Andreas Hildebrand 10:04 Hi Eun Hee, do you have a minute to look at something? rf\nEun Hee Park 10:04 Sure, what do you need?\nFy Andreas Hildebrand 10:05 I'll e-mail it to you. It’s the draft for the cover of\nAnne Wahlberg’s book.\nEun Hee Park 10:06 One second...\nEun Hee Park 10:10 Okay, got it. Let me take a look.\n2 | Andreas Hildebrand 10:11 _ Is the title too difficult to read? | wanted it to be\neye-catching and different.\nEun Hee Park 10:13 I like the effect. But you could be right. Maybe if you changed\nthe color? Even just a darker shade of blue would help.\nry Andreas Hildebrand 10:14 Good idea. I'll give that a try. Mind if | run it past you\nagain later?\nEun Hee Park 10:15 No problem. rm",
+    "content_translation": "FY Andreas Hildebrand a) (bles\nFy Andreas Hildebrand 10:04 Hi Eun Hee, do you have a minute to look at something? rf\nEun Hee Park 10:04 Sure, what do you need?\nFy Andreas Hildebrand 10:05 I'll e-mail it to you. It’s the draft for the cover of\nAnne Wahlberg’s book.\nEun Hee Park 10:06 One second...\nEun Hee Park 10:10 Okay, got it. Let me take a look.\n2 | Andreas Hildebrand 10:11 _ Is the title too difficult to read? | wanted it to be\neye-catching and different.\nEun Hee Park 10:13 I like the effect. But you could be right. Maybe if you changed\nthe color? Even just a darker shade of blue would help.\nry Andreas Hildebrand 10:14 Good idea. I'll give that a try. Mind if | run it past you\nagain later?\nEun Hee Park 10:15 No problem. rm"
   },
   "items": [
     {
@@ -41,15 +45,49 @@
       "answer": "C",
       "question": "At 10:10 AM., what does Ms. Park most li mean when she writes, “Okay, got it”?",
       "answer_explain": "原文依据：篇章中可定位到“Fy Andreas Hildebrand 10:05 I'll e-mail it to you.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（She has received an e-mail Mr. Hildebrand sent.）。",
+      "question_translation": "在上午 10:10，当朴女士写下“好的，收到了”时，她最可能是什么意思？",
+      "choice_translations": [
+        "A：她理解了希尔德布兰先生说的话。",
+        "B：她有希尔德布兰先生正在找的包裹。",
+        "C：她收到了希尔德布兰先生发送的电子邮件。",
+        "D：她找到了希尔德布兰先生的文件。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "received",
+            "meaning": "出现在本题正确表达中：她收到了希尔德布兰先生发送的电子邮件。"
+          },
+          {
+            "term": "e-mail",
+            "meaning": "出现在本题正确表达中：她收到了希尔德布兰先生发送的电子邮件。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "She has received an e-mail Mr. Hildebrand sent.",
+            "meaning": "她收到了希尔德布兰先生发送的电子邮件。"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：FY Andreas Hildebrand a) (bles",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：FY Andreas Hildebrand a) (bles",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：篇章中可定位到“Fy Andreas Hildebrand 10:05 I'll e-mail it to you.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（She has received an e-mail Mr. Hildebrand sent.）。"
+      },
       "item_id": 149,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -66,15 +104,50 @@
       "answer": "B",
       "question": "What will Mr. Hildebrand most likely do next?",
       "answer_explain": "原文依据：篇章中可定位到“2 | Andreas Hildebrand 10:11 _ Is the title too difficult to read?”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（Revise a design）。",
+      "question_translation": "希尔德布兰先生接下来最有可能做什么？",
+      "choice_translations": [
+        "A：更改截止日期",
+        "B：修改设计",
+        "C：做演示",
+        "D：与瓦尔伯格女士会面"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "revise",
+            "meaning": "出现在本题正确表达中：修改设计"
+          },
+          {
+            "term": "design",
+            "meaning": "出现在本题正确表达中：修改设计"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Revise a design",
+            "meaning": "修改设计"
+          }
+        ]
+      },
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：FY Andreas Hildebrand a) (bles",
+      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：FY Andreas Hildebrand a) (bles",
+        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：篇章中可定位到“2 | Andreas Hildebrand 10:11 _ Is the title too difficult to read?”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（Revise a design）。"
+      },
       "item_id": 150,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

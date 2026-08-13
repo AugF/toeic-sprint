@@ -15,8 +15,8 @@
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "推断 / 隐含义题",
+      "细节题",
+      "推断题",
       "跨句整合"
     ],
     "scope": "unit",
@@ -33,7 +33,9 @@
       "asset_key": "official-2-test-1/audio/part3/q059-061-questions.mp3",
       "exists": true
     },
-    "transcript": "I] w Nehal, how was Vancouver?\nRelaxing, thanks. © Nice to do some sightseeir\ntake a break from work. Uh, how were things w\naway? How's the search for a new engineer go\nlv | think we've found our person. ®| left you the\nhere on your desk.\nIs this César Villa’s resumé? @He’s a friend of\nYou're telling me he's applied for this job?\nI That’s who | was referring to. He really impress\neveryone.\nI'm glad to hear that. @l've known César since\nWe had classes together. I’ve run into him over\nat conventions, but | had no idea he was applyi\njob here."
+    "transcript": "I] w Nehal, how was Vancouver?\nRelaxing, thanks. © Nice to do some sightseeir\ntake a break from work. Uh, how were things w\naway? How's the search for a new engineer go\nlv | think we've found our person. ®| left you the\nhere on your desk.\nIs this César Villa’s resumé? @He’s a friend of\nYou're telling me he's applied for this job?\nI That’s who | was referring to. He really impress\neveryone.\nI'm glad to hear that. @l've known César since\nWe had classes together. I’ve run into him over\nat conventions, but | had no idea he was applyi\njob here.",
+    "transcript_translation": "Nehal，你在温哥华怎么样？\n很放松，谢谢。很高兴能观光，让工作喘口气。你那边怎么样？寻找新工程师的事情进展如何？\n我想我们找到人了。我把他的简历放在你的桌上了。\n这是 César Villa 的简历吗？他是你的朋友？你告诉我他申请了这个职位？我……就是指他。他真的给所有人都留下了深刻的印象。\n听到这个消息我很高兴。我认识 César 很久了。我们一起上过课。我在各种大会上偶遇过他，但没想到他会在这里应聘工作。",
+    "content_translation": "Nehal，你在温哥华怎么样？\n很放松，谢谢。很高兴能观光，让工作喘口气。你那边怎么样？寻找新工程师的事情进展如何？\n我想我们找到人了。我把他的简历放在你的桌上了。\n这是 César Villa 的简历吗？他是你的朋友？你告诉我他申请了这个职位？我……就是指他。他真的给所有人都留下了深刻的印象。\n听到这个消息我很高兴。我认识 César 很久了。我们一起上过课。我在各种大会上偶遇过他，但没想到他会在这里应聘工作。"
   },
   "items": [
     {
@@ -46,15 +48,49 @@
       "answer": "C",
       "question": "What was the woman doing in Vancouver? _",
       "answer_explain": "原文依据：听力原文中提到“I] w Nehal, how was Vancouver?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Taking a vacation）。",
+      "question_translation": "女士在温哥华做什么？",
+      "choice_translations": [
+        "A：面试求职者",
+        "B：会见新客户",
+        "C：度假",
+        "D：上课"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "taking",
+            "meaning": "出现在本题正确表达中：度假"
+          },
+          {
+            "term": "vacation",
+            "meaning": "出现在本题正确表达中：度假"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Taking a vacation",
+            "meaning": "度假"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：I] w Nehal, how was Vancouver?",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：I] w Nehal, how was Vancouver?",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“I] w Nehal, how was Vancouver?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Taking a vacation）。"
+      },
       "item_id": 59,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -71,15 +107,49 @@
       "answer": "A",
       "question": "What does the woman imply when she says, “Is this César Villa’s resumé’?",
       "answer_explain": "原文依据：听力原文中提到“Is this César Villa’s resumé?”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（She is surprised to see a document.）。",
+      "question_translation": "女士说“这是 César Villa 的简历吗？”暗示了什么？",
+      "choice_translations": [
+        "A：她对看到文件感到惊讶。",
+        "B：她在推荐一位候选人。",
+        "C：她担心安全问题。",
+        "D：她看不懂一些字迹。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "surprised",
+            "meaning": "出现在本题正确表达中：她对看到文件感到惊讶。"
+          },
+          {
+            "term": "document",
+            "meaning": "出现在本题正确表达中：她对看到文件感到惊讶。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "She is surprised to see a document.",
+            "meaning": "她对看到文件感到惊讶。"
+          }
+        ]
+      },
+      "question_type": "推断题",
+      "evidence": "参考原文第 7 段：Is this César Villa’s resumé? @He’s a friend of",
+      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "推断题",
+        "evidence": "参考原文第 7 段：Is this César Villa’s resumé? @He’s a friend of",
+        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“Is this César Villa’s resumé?”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（She is surprised to see a document.）。"
+      },
       "item_id": 60,
-      "question_type": "推断 / 隐含义题",
       "priority": {
         "level": "P1",
         "score": 88,
-        "label": "推断 / 隐含义题",
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "跨句整合"
         ],
         "scope": "item",
@@ -97,15 +167,49 @@
       "answer": "B",
       "question": "How does the woman know César Villa?",
       "answer_explain": "原文依据：听力原文中提到“How's the search for a new engineer go”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（They went to the same university.）。",
+      "question_translation": "女士如何认识 César Villa？",
+      "choice_translations": [
+        "A：他们以前是邻居。",
+        "B：他们上过同一所大学。",
+        "C：他们一起组织过一次会议。",
+        "D：他们在同一家公司工作过。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "they",
+            "meaning": "出现在本题正确表达中：他们上过同一所大学。"
+          },
+          {
+            "term": "went",
+            "meaning": "出现在本题正确表达中：他们上过同一所大学。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "They went to the same university.",
+            "meaning": "他们上过同一所大学。"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 7 段：Is this César Villa’s resumé? @He’s a friend of",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 7 段：Is this César Villa’s resumé? @He’s a friend of",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“How's the search for a new engineer go”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（They went to the same university.）。"
+      },
       "item_id": 61,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
