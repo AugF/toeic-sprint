@@ -1,0 +1,86 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-5-test-1",
+  "unit_id": "p7-154-155",
+  "part": 7,
+  "source_group_id": "154-155",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 68,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "主旨 / 目的 / 场景题",
+      "细节定位题"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q154-155.jpg",
+        "asset_key": "official-5-test-1/images/part7/q154-155.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "Lucy Massey (10:18 A.M.)\nMr. Higgins isn't here. When was he supposed to come?\nRaymond Chen (10:20 A.M.)\nTwenty minutes ago.\nLucy Massey (10:30 A.M.)\nI can't wait much longer. I'm scheduled to show\nanother apartment in half an hour.\nRaymond Chen (10:32 A.M.)\nI called Mr. Higgins last night around 7:00 to confirm. I\nleft a message asking him to call me back, but he hasn't\nreturned the call. Looks like he changed his mind\nLucy Massey (10:33 A.M.)\nDon't worry—I have someone else lined up to see this\nunit tonight at 6:00. We'll get it rented soon."
+  },
+  "items": [
+    {
+      "choices": [
+        "A prospective renter",
+        "An apartment manager",
+        "A telephone repairperson",
+        "A real estate agent"
+      ],
+      "answer": "A",
+      "question": "Who most likely is Mr. Higgins?",
+      "answer_explain": "原文依据：篇章中可定位到“Higgins last night around 7:00 to confirm.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（A prospective renter）。",
+      "item_id": 154,
+      "question_type": "主旨 / 目的 / 场景题",
+      "priority": {
+        "level": "P2",
+        "score": 70,
+        "label": "主旨 / 目的 / 场景题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "主旨 / 目的 / 场景题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-5-test-1/p7-154-155/154"
+    },
+    {
+      "choices": [
+        "Mr. Higgins is going to change jobs.",
+        "Mr. Higgins may not keep his appointment.",
+        "Mr. Higgins decided not to sell his apartment.",
+        "Mr. Higgins prefers to work with"
+      ],
+      "answer": "B",
+      "question": "At 10:32 A.M., what does Mr. Chen mean when he writes, \"Looks like he changed his mind\"?",
+      "answer_explain": "原文依据：篇章中可定位到“Looks like he changed his mind”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Mr. Higgins may not keep his appointment.）。",
+      "item_id": 155,
+      "question_type": "细节定位题",
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节定位题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节定位题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-5-test-1/p7-154-155/155"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-2-test-1",
+  "unit_id": "p7-155-156",
+  "part": 7,
+  "source_group_id": "155-156",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 74,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "推断 / 隐含义题",
+      "语境推断",
+      "细节定位题",
+      "明示定位"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q155-156.jpg",
+        "asset_key": "official-2-test-1/images/part7/q155-156.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "Jung-Hee Ahn 8:44 am.\nMy morning meeting was canceled, so | am on an earlier flight. |\nshould arrive 3 hours sooner than expected. | can now attend the\nmarketing meeting at 4 pm.\nEllen Ortiz 8:49 AM.\nGood news! When will you land? Do you need a ride from the airport?\nJung-Hee Ahn 8:51 AM.\n| should arrive at 12:45 p., and | will need a ride. Please call the\nairport transportation service to tell them about the flight change. |\ndon’t have their number.\nEllen Ortiz 8:52 A.M\nNo problem. What's your flight information?\nJung-Hee Ahn 8:57 AM.\nSeacrest Air flight 1045. Departing San Juan 9:50 am. Got to go. The\nflight is boarding. See you later.\nLI | | Send"
+  },
+  "items": [
+    {
+      "choices": [
+        "She will send a phone number to Ms. Ahn.",
+        "She will reschedule transportation.",
+        "She agrees that Ms. Ahn should change her flight.",
+        "She will write down the flight"
+      ],
+      "answer": "B",
+      "question": "At 8:52 A.m., what does Ms. Ortiz most likely mean when she writes, “No problem”?",
+      "answer_explain": "原文依据：篇章中可定位到“airport transportation service to tell them about the flight change.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（She will reschedule transportation.）。",
+      "item_id": 155,
+      "question_type": "推断 / 隐含义题",
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "推断 / 隐含义题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "推断 / 隐含义题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-2-test-1/p7-155-156/155"
+    },
+    {
+      "choices": [
+        "At 9:50 Ao.",
+        "At 12:45 pM.",
+        "At 1:00 Po.",
+        "At 4:00 pm."
+      ],
+      "answer": "A",
+      "question": "When will Ms. Ahn’s plane leave San Juan?",
+      "answer_explain": "原文依据：篇章中可定位到“Departing San Juan 9:50 am.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（At 9:50 Ao.）。",
+      "item_id": 156,
+      "question_type": "细节定位题",
+      "priority": {
+        "level": "P3",
+        "score": 42,
+        "label": "细节定位题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节定位题",
+          "明示定位"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-2-test-1/p7-155-156/156"
+    }
+  ]
+}
