@@ -120,14 +120,21 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   assert.match(page,/材料 \/ 单题优先刷/);
   assert.match(page,/fetchJson<UnitDetail>/);
   assert.match(page,/context\.audio_path \|\| context\.question_audio_path/);
-  assert.match(page,/useState\(true\).*showGroup|showGroup, setShowGroup\] = useState\(true\)/s);
+  assert.match(page,/MULTI_CARD_PARTS = new Set\(\[1, 2, 5\]\)/);
+  assert.match(page,/SingleItemGallery/);
+  assert.match(page,/materialSplit/);
+  assert.match(page,/activeDetail = detail && current && detail\.bank_id === current\.bank_id && detail\.unit_id === current\.unit_id/);
+  assert.match(page,/查看全部解析/);
+  assert.match(page,/activeAudioElement/);
   assert.match(page,/item_key/);
   assert.match(page,/MATERIAL_PARTS\.has\(unit\.part\)/);
   assert.match(page,/scope: "material" as const/);
   assert.match(page,/ref\.item_keys\.every/);
-  assert.match(page,/展开本/);
+  assert.match(page,/本\{current\.part <= 4 \? "组" : "篇"\}全部题目/);
   assert.match(css,/\.globalPractice/);
   assert.match(css,/\.bankSelect/);
+  assert.match(css,/\.singleItemGallery/);
+  assert.match(css,/\.materialSplit/);
   assert.match(pagesEntry,/priority\.css/);
 });
 
