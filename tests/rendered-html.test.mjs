@@ -117,7 +117,7 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   const [page,css,pagesEntry]=await Promise.all([read("app/page.tsx"),read("app/priority.css"),read("static-pages/main.tsx")]);
   assert.match(page,/24 套官方题库/);
   assert.match(page,/Part \{part\} · \{PART_META\[part\]\.focus\}/);
-  assert.match(page,/材料 \/ 单题优先刷/);
+  assert.match(page,/全题库优先级刷题/);
   assert.match(page,/fetchJson<UnitDetail>/);
   assert.match(page,/context\.audio_path \|\| context\.question_audio_path/);
   assert.match(page,/MULTI_CARD_PARTS = new Set\(\[1, 2, 5\]\)/);
@@ -126,6 +126,8 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   assert.match(page,/activeDetail = detail && current && detail\.bank_id === current\.bank_id && detail\.unit_id === current\.unit_id/);
   assert.match(page,/查看全部解析/);
   assert.match(page,/activeAudioElement/);
+  assert.doesNotMatch(page,/<header>/);
+  assert.match(page,/floatingMenu/);
   assert.match(page,/item_key/);
   assert.match(page,/MATERIAL_PARTS\.has\(unit\.part\)/);
   assert.match(page,/scope: "material" as const/);

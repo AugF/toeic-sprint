@@ -333,11 +333,6 @@ export default function Home() {
   const nextDetailPath = next?.detail_path;
   const activeDetail = detail && current && detail.bank_id === current.bank_id && detail.unit_id === current.unit_id ? detail : null;
   const currentItem = activeDetail?.items.find(item => String(item.item_id) === String(current?.item_id));
-  const doneCount = useMemo(() => allRefs.reduce((total, ref) =>
-    total + ref.item_keys.filter(key => saved.answers[key]).length, 0), [allRefs, saved.answers]);
-  const totalCount = catalog?.totals.questions || allRefs.length || 4800;
-  const donePercent = totalCount ? Math.round(doneCount / totalCount * 100) : 0;
-
   useEffect(() => {
     setPosition(0);
     setStickyKeys([]);
@@ -508,11 +503,7 @@ export default function Home() {
   if (!catalog && !loadError) return <main className="loading"><div className="loader"/>正在载入 24 套官方题库目录…</main>;
 
   return <main className="shell globalPractice">
-    <header>
-      <button className="menu" onClick={() => setSideOpen(value => !value)} aria-label="打开筛选器">☰</button>
-      <div className="brand"><span className="mark">T</span><div><b>TOEIC SPRINT</b><small>24 套官方题库 · 材料 / 单题优先刷</small></div></div>
-      <div className="headerProgress"><span>{doneCount} / {totalCount}</span><div><i style={{width: `${donePercent}%`}}/></div><b>{donePercent}%</b></div>
-    </header>
+    <button className="menu floatingMenu" onClick={() => setSideOpen(value => !value)} aria-label="打开筛选器">☰</button>
     <div className="layout">
       <aside className={sideOpen ? "open" : ""}>
         <div className="asideTitle">训练筛选 <button onClick={() => setSideOpen(false)}>×</button></div>
