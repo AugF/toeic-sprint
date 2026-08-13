@@ -10,13 +10,14 @@
   "keywords": "question statement natural response",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 68,
+    "level": "P1",
+    "score": 85,
     "label": "单题训练",
     "reason": "按该题的高频考点和能力迁移价值排序。",
     "focus_tags": [
-      "原因疑问句",
-      "自然应答"
+      "否定 / 反意疑问句",
+      "间接应答",
+      "语用判断"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -26,7 +27,9 @@
       "path": "audio/part2/q022.mp3",
       "asset_key": "official-10-test-1/audio/part2/q022.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "aw 为什么 Yuko 还没有发派对邀请函？ M\nA. 这个节日应该会非常令人兴奋。\nB. 宾客名单定了吗？\nC. 这纸质量很高。",
+    "content_translation": "aw 为什么 Yuko 还没有发派对邀请函？ M\nA. 这个节日应该会非常令人兴奋。\nB. 宾客名单定了吗？\nC. 这纸质量很高。"
   },
   "items": [
     {
@@ -41,16 +44,51 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“aw Why hasn't Yuko sent the party invitations yet? M”，自然应答是“Has the guest list been finalized?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Has the guest list been finalized?）。",
+      "question_translation": "aw 为什么 Yuko 还没有发派对邀请函？ M",
+      "choice_translations": [
+        "A：这个节日应该会非常令人兴奋。",
+        "B：宾客名单定了吗？",
+        "C：这纸质量很高。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "guest",
+            "meaning": "出现在本题正确表达中：宾客名单定了吗？"
+          },
+          {
+            "term": "list",
+            "meaning": "出现在本题正确表达中：宾客名单定了吗？"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Has the guest list been finalized?",
+            "meaning": "宾客名单定了吗？"
+          }
+        ]
+      },
+      "question_type": "否定 / 反意疑问句",
+      "evidence": "参考原文第 1 段：aw Why hasn't Yuko sent the party invitations yet? M",
+      "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
+      "strategy": "先判断为否定 / 反意疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "否定 / 反意疑问句",
+        "evidence": "参考原文第 1 段：aw Why hasn't Yuko sent the party invitations yet? M",
+        "strategy": "先判断为否定 / 反意疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
+        "analysis": "原文依据：问句或陈述是“aw Why hasn't Yuko sent the party invitations yet? M”，自然应答是“Has the guest list been finalized?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Has the guest list been finalized?）。"
+      },
       "item_id": 22,
-      "question_type": "原因疑问句",
       "priority": {
-        "level": "P2",
-        "score": 68,
-        "label": "原因疑问句",
+        "level": "P1",
+        "score": 85,
+        "label": "否定 / 反意疑问句",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "原因疑问句",
-          "自然应答"
+          "否定 / 反意疑问句",
+          "间接应答",
+          "语用判断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

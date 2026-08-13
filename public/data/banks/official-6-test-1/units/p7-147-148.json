@@ -10,12 +10,13 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P3",
-    "score": 57,
+    "level": "P2",
+    "score": 64,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
+      "主旨 / 目的题",
+      "细节题",
       "明示定位"
     ],
     "scope": "unit",
@@ -29,7 +30,9 @@
         "exists": true
       }
     ],
-    "passage": "From Frida Sanchez\nApril 6, 7:54 P.M.\nStacy, I see on the new schedule that you usually work in the\nafternoon, but could you possibly open the store for me tomorrow\nmorning? I've been having problems with my car, and I need to\ntake it to my mechanic. But the repair shop doesn't open until\n10 tomorrow morning. I can do your usual Wednesday afternoon\nshift starting at 2, and because Wednesday nights have extended\nhours, I'll stay until 9. Let me know if this works for you."
+    "passage": "From Frida Sanchez\nApril 6, 7:54 P.M.\nStacy, I see on the new schedule that you usually work in the\nafternoon, but could you possibly open the store for me tomorrow\nmorning? I've been having problems with my car, and I need to\ntake it to my mechanic. But the repair shop doesn't open until\n10 tomorrow morning. I can do your usual Wednesday afternoon\nshift starting at 2, and because Wednesday nights have extended\nhours, I'll stay until 9. Let me know if this works for you.",
+    "passage_translation": "来自 Frida Sanchez\n4月6日，下午 7:54\nStacy，我看到新的时间表上你通常在下午工作，但你明天早上能帮我开一下店吗？我的车出了点问题，我需要把它带去修理厂。但是修理厂直到明天上午 10 点才开门。我可以做你平常周三下午从 2 点开始的班次，而且因为周三晚上延长了工时，我会待到 9 点。如果可以的话告诉我一声。",
+    "content_translation": "来自 Frida Sanchez\n4月6日，下午 7:54\nStacy，我看到新的时间表上你通常在下午工作，但你明天早上能帮我开一下店吗？我的车出了点问题，我需要把它带去修理厂。但是修理厂直到明天上午 10 点才开门。我可以做你平常周三下午从 2 点开始的班次，而且因为周三晚上延长了工时，我会待到 9 点。如果可以的话告诉我一声。"
   },
   "items": [
     {
@@ -42,15 +45,49 @@
       "answer": "D",
       "question": "Why did Ms. Sanchez send the text message?",
       "answer_explain": "原文依据：篇章中可定位到“Stacy, I see on the new schedule that you usually work in the”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（To propose a change to a work）。",
+      "question_translation": "Sanchez 女士发送短信的原因是什么？",
+      "choice_translations": [
+        "A：为缺勤道歉",
+        "B：推荐汽车修理厂",
+        "C：询问招聘另一名员工",
+        "D：提议更改工作安排"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "propose",
+            "meaning": "出现在本题正确表达中：提议更改工作安排"
+          },
+          {
+            "term": "change",
+            "meaning": "出现在本题正确表达中：提议更改工作安排"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To propose a change to a work",
+            "meaning": "提议更改工作安排"
+          }
+        ]
+      },
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：From Frida Sanchez",
+      "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：From Frida Sanchez",
+        "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：篇章中可定位到“Stacy, I see on the new schedule that you usually work in the”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（To propose a change to a work）。"
+      },
       "item_id": 147,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 70,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -67,15 +104,49 @@
       "answer": "D",
       "question": "What is indicated in the text message?",
       "answer_explain": "原文依据：篇章中可定位到“afternoon, but could you possibly open the store for me tomorrow”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（The store is open late on）。",
+      "question_translation": "短信中说明了什么？",
+      "choice_translations": [
+        "A：Stacy 目前在度假。",
+        "B：汽车修理店已经不营业了。",
+        "C：Sanchez 女士计划买一辆新车。",
+        "D：商店周晚间开到比较晚。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "store",
+            "meaning": "出现在本题正确表达中：商店周晚间开到比较晚。"
+          },
+          {
+            "term": "open",
+            "meaning": "出现在本题正确表达中：商店周晚间开到比较晚。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "The store is open late on",
+            "meaning": "商店周晚间开到比较晚。"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：From Frida Sanchez",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：From Frida Sanchez",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：篇章中可定位到“afternoon, but could you possibly open the store for me tomorrow”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（The store is open late on）。"
+      },
       "item_id": 148,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 42,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示定位"
         ],
         "scope": "item",

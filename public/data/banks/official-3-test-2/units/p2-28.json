@@ -27,7 +27,9 @@
       "path": "audio/part2/q028.mp3",
       "asset_key": "official-3-test-2/audio/part2/q028.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：£2 Isn't the gym open twenty-four hours?\nm",
+    "content_translation": "中文辅助（离线预处理）：£2 Isn't the gym open twenty-four hours?\nm"
   },
   "items": [
     {
@@ -42,8 +44,42 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“£2 Isn't the gym open twenty-four hours? m”，自然应答是“Only on the weekend.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Only on the weekend.）。",
-      "item_id": 28,
+      "question_translation": "中文辅助（离线预处理）：£2 Isn't the gym open twenty-four hours?\nm",
+      "choice_translations": [
+        "A：Only on the weekend.",
+        "B：Yes, she’s really helpful.",
+        "C：That’s when（何时） it’s due."
+      ],
       "question_type": "否定 / 反意疑问句",
+      "evidence": "参考原文第 1 段：£2 Isn't the gym open twenty-four hours? m",
+      "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "否定 / 反意疑问句",
+        "evidence": "参考原文第 1 段：£2 Isn't the gym open twenty-four hours? m",
+        "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“£2 Isn't the gym open twenty-four hours? m”，自然应答是“Only on the weekend.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Only on the weekend.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "only",
+            "meaning": "本题重点词；结合正确选项理解：Only on the weekend."
+          },
+          {
+            "term": "weekend",
+            "meaning": "本题重点词；结合正确选项理解：Only on the weekend."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Only on the weekend.",
+            "meaning": "正确选项中的重点搭配：Only on the weekend."
+          }
+        ]
+      },
+      "item_id": 28,
       "priority": {
         "level": "P1",
         "score": 85,

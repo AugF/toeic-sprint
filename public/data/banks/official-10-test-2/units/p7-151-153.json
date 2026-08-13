@@ -10,16 +10,16 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P1",
-    "score": 85,
+    "level": "P2",
+    "score": 75,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
+      "主旨 / 目的题",
       "否定事实题",
       "语境推断",
-      "句子插入题",
-      "语篇结构"
+      "细节题",
+      "明示定位"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -32,7 +32,9 @@
         "exists": true
       }
     ],
-    "passage": "Elwidge Lavender Festival\nA major part of every Elwidge summer\nget rid of the flowers, the farmers set up\nfor over 100 years, the Elwidge Lavender\nstands in the center of town to sell them\nFestival attracts thousands of visitors\nto the residents. - [3] -\nfrom the region and around the world.\nToday, the lavender festival features\nBut how did it get started? -1] -.\nvendors selling not only lavender flowers\nIn the early twentieth century, lavender\nbut an extraordinary assortment of\nwas widely farmed in the areas\nhandmade goods from around the region.\nsurrounding Elwidge for use in perfumes\n- [4] —. Visitors young and old can also\nand other toiletries. - [2] —. One year,\nenjoy a funfair with a variety of carnival\nafter a dispute with an Elwidge soap\nrides and activities along with dozens of\nmaker, a group of area farmers found\nfood vendors selling a wide selection of\nthemselves with a surplus of lavender. To\nfoods."
+    "passage": "Elwidge Lavender Festival\nA major part of every Elwidge summer\nget rid of the flowers, the farmers set up\nfor over 100 years, the Elwidge Lavender\nstands in the center of town to sell them\nFestival attracts thousands of visitors\nto the residents. - [3] -\nfrom the region and around the world.\nToday, the lavender festival features\nBut how did it get started? -1] -.\nvendors selling not only lavender flowers\nIn the early twentieth century, lavender\nbut an extraordinary assortment of\nwas widely farmed in the areas\nhandmade goods from around the region.\nsurrounding Elwidge for use in perfumes\n- [4] —. Visitors young and old can also\nand other toiletries. - [2] —. One year,\nenjoy a funfair with a variety of carnival\nafter a dispute with an Elwidge soap\nrides and activities along with dozens of\nmaker, a group of area farmers found\nfood vendors selling a wide selection of\nthemselves with a surplus of lavender. To\nfoods.",
+    "passage_translation": "中文辅助（离线预处理）：Elwidge Lavender Festival\nA major part of every Elwidge summer\nget rid of the flowers, the farmers set up\nfor over 100 years, the Elwidge Lavender\nstands in the center of town to sell them\nFestival attracts thousands of visitors\nto the residents.\n- [3] -\nfrom the region and around the world.\nToday, the lavender festival features\nBut how（如何） did it get started?\n-1] -.\nvendors selling not only lavender flowers\nIn the early twentieth century, lavender\nbut an extraordinary assortment of\nwas widely farmed in the areas\nhandmade goods from around the region.\nsurrounding Elwidge for use in perfumes\n- [4] —.\nVisitors young and old can also\nand other toiletries.\n- [2] —.\nOne year,\nenjoy a funfair with a variety of carnival\nafter a dispute with an Elwidge soap\nrides and activities along with dozens of\nmaker, a group of area farmers found\nfood vendors selling a wide selection of\nthemselves with a surplus of lavender.\nTo\nfoods.",
+    "content_translation": "中文辅助（离线预处理）：Elwidge Lavender Festival\nA major part of every Elwidge summer\nget rid of the flowers, the farmers set up\nfor over 100 years, the Elwidge Lavender\nstands in the center of town to sell them\nFestival attracts thousands of visitors\nto the residents.\n- [3] -\nfrom the region and around the world.\nToday, the lavender festival features\nBut how（如何） did it get started?\n-1] -.\nvendors selling not only lavender flowers\nIn the early twentieth century, lavender\nbut an extraordinary assortment of\nwas widely farmed in the areas\nhandmade goods from around the region.\nsurrounding Elwidge for use in perfumes\n- [4] —.\nVisitors young and old can also\nand other toiletries.\n- [2] —.\nOne year,\nenjoy a funfair with a variety of carnival\nafter a dispute with an Elwidge soap\nrides and activities along with dozens of\nmaker, a group of area farmers found\nfood vendors selling a wide selection of\nthemselves with a surplus of lavender.\nTo\nfoods."
   },
   "items": [
     {
@@ -45,15 +47,49 @@
       "answer": "B",
       "question": "What is probably true about the lavender festival?",
       "answer_explain": "原文依据：篇章中可定位到“Today, the lavender festival features”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（It is well-known in many countries.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is probably（可能） true about the lavender festival?",
+      "choice_translations": [
+        "A：It is best suited for older people.",
+        "B：It is well-known in many countries.",
+        "C：It is unpopular with locals.",
+        "D：It is attractive to people who（谁） enjoy"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：Elwidge Lavender Festival",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：Elwidge Lavender Festival",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Today, the lavender festival features”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（It is well-known in many countries.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "well-known",
+            "meaning": "本题重点词；结合正确选项理解：It is well-known in many countries."
+          },
+          {
+            "term": "many",
+            "meaning": "本题重点词；结合正确选项理解：It is well-known in many countries."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It is well-known in many countries.",
+            "meaning": "正确选项中的重点搭配：It is well-known in many countries."
+          }
+        ]
+      },
       "item_id": 151,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 70,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -70,8 +106,42 @@
       "answer": "A",
       "question": "What are NOT mentioned in the article as part of the lavender festival?",
       "answer_explain": "原文依据：篇章中可定位到“Today, the lavender festival features”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Musical performances）。",
-      "item_id": 152,
+      "question_translation": "中文辅助（离线预处理）：What（什么） are NOT mentioned in the article as part of the lavender festival?",
+      "choice_translations": [
+        "A：Musical performances",
+        "B：Products for sale",
+        "C：Carnival rides",
+        "D：Different kinds of foods"
+      ],
       "question_type": "否定事实题",
+      "evidence": "参考原文第 1 段：Elwidge Lavender Festival",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 1 段：Elwidge Lavender Festival",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Today, the lavender festival features”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Musical performances）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "musical",
+            "meaning": "本题重点词；结合正确选项理解：Musical performances"
+          },
+          {
+            "term": "performances",
+            "meaning": "本题重点词；结合正确选项理解：Musical performances"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Musical performances",
+            "meaning": "正确选项中的重点搭配：Musical performances"
+          }
+        ]
+      },
+      "item_id": 152,
       "priority": {
         "level": "P1",
         "score": 83,
@@ -96,16 +166,41 @@
       "answer": "C",
       "question": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"Thus, the lavender festival was created.\"",
       "answer_explain": "原文依据：篇章中可定位到“Today, the lavender festival features”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（[3]）。",
+      "question_translation": "中文辅助（离线预处理）：In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?\n\"Thus, the lavender festival was created.\"",
+      "choice_translations": [
+        "A：[1]",
+        "B：[2]",
+        "C：[3]",
+        "D：[4]"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Elwidge Lavender Festival",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Elwidge Lavender Festival",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Today, the lavender festival features”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（[3]）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [],
+        "collocations": [
+          {
+            "phrase": "[3]",
+            "meaning": "正确选项中的重点搭配：[3]"
+          }
+        ]
+      },
       "item_id": 153,
-      "question_type": "句子插入题",
       "priority": {
-        "level": "P1",
-        "score": 91,
-        "label": "句子插入题",
+        "level": "P3",
+        "score": 42,
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "句子插入题",
-          "语篇结构"
+          "细节题",
+          "明示定位"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

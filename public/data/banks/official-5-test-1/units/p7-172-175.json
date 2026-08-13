@@ -11,14 +11,15 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 73,
+    "score": 74,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
+      "主旨 / 目的题",
+      "细节题",
       "多文本语境",
       "明示定位",
-      "推断 / 隐含义题",
+      "推断题",
       "语境推断"
     ],
     "scope": "unit",
@@ -37,7 +38,9 @@
         "exists": true
       }
     ],
-    "passage": "Rob Teeley [8:15 A.M.]\nI've just come from the production update meeting. Looks like we'll have to send some people\nover to Germany to join the Thissgen Berlin team.\nEunice Connell [8:16 A.M.]\nReally? Why?\nRob Teeley [8:17 A.M.]\nSolar cell demand is so strong that they need to increase production. The Berlin team wants\na knowledgeable group from here in Ottawa to help manage operations and quality control.\nEunice Connell [8:18 A.M.]\nGreat news!\nHeinz Feldt [8:21 A.M.]\nYes, we're looking forward to welcoming staff here in Berlin. Would it be possible to identify\nsome candidates by the end of next week? We really need to move quickly on this.\nEunice Connell [8:22 A.M.]\nI've heard that Marissa Ceylan managed manufacturing operations in Bangkok, Thailand, last\nyear. She speaks fluent German. But let me consult with my team before I get back to you.\nRob Teeley [8:23 A.M.]\nThat shouldn't be a problem, Heinz. Our Winnipeg plant is running smoothly now, so we can\nexpedite things in Berlin.\nHeinz Feldt [8:25 A.M.]\nExcellent! Let's conference next week to see where we stand on picking the team."
+    "passage": "Rob Teeley [8:15 A.M.]\nI've just come from the production update meeting. Looks like we'll have to send some people\nover to Germany to join the Thissgen Berlin team.\nEunice Connell [8:16 A.M.]\nReally? Why?\nRob Teeley [8:17 A.M.]\nSolar cell demand is so strong that they need to increase production. The Berlin team wants\na knowledgeable group from here in Ottawa to help manage operations and quality control.\nEunice Connell [8:18 A.M.]\nGreat news!\nHeinz Feldt [8:21 A.M.]\nYes, we're looking forward to welcoming staff here in Berlin. Would it be possible to identify\nsome candidates by the end of next week? We really need to move quickly on this.\nEunice Connell [8:22 A.M.]\nI've heard that Marissa Ceylan managed manufacturing operations in Bangkok, Thailand, last\nyear. She speaks fluent German. But let me consult with my team before I get back to you.\nRob Teeley [8:23 A.M.]\nThat shouldn't be a problem, Heinz. Our Winnipeg plant is running smoothly now, so we can\nexpedite things in Berlin.\nHeinz Feldt [8:25 A.M.]\nExcellent! Let's conference next week to see where we stand on picking the team.",
+    "passage_translation": "中文辅助（离线预处理）：Rob Teeley [8:15 A.M.]\nI've just come from the production update meeting（会议）.\nLooks like we'll have to send some people\nover to Germany to join the Thissgen Berlin team.\nEunice Connell [8:16 A.M.]\nReally?\nWhy（为什么）?\nRob Teeley [8:17 A.M.]\nSolar cell demand is so strong that they need to increase production.\nThe Berlin team wants\na knowledgeable group from here in Ottawa to help manage operations and quality control.\nEunice Connell [8:18 A.M.]\nGreat news!\nHeinz Feldt [8:21 A.M.]\nYes, we're looking forward to welcoming staff here in Berlin.\nWould it be possible to identify\nsome candidates by the end of next week?\nWe really need to move quickly on this.\nEunice Connell [8:22 A.M.]\nI've heard that Marissa Ceylan managed manufacturing operations in Bangkok, Thailand, last\nyear.\nShe speaks fluent German.\nBut let me consult with my team before I get back to you.\nRob Teeley [8:23 A.M.]\nThat shouldn't be a problem, Heinz.\nOur Winnipeg plant is running smoothly now, so we can\nexpedite things in Berlin.\nHeinz Feldt [8:25 A.M.]\nExcellent!\nLet's conference next week to see where（哪里） we stand on picking the team.",
+    "content_translation": "中文辅助（离线预处理）：Rob Teeley [8:15 A.M.]\nI've just come from the production update meeting（会议）.\nLooks like we'll have to send some people\nover to Germany to join the Thissgen Berlin team.\nEunice Connell [8:16 A.M.]\nReally?\nWhy（为什么）?\nRob Teeley [8:17 A.M.]\nSolar cell demand is so strong that they need to increase production.\nThe Berlin team wants\na knowledgeable group from here in Ottawa to help manage operations and quality control.\nEunice Connell [8:18 A.M.]\nGreat news!\nHeinz Feldt [8:21 A.M.]\nYes, we're looking forward to welcoming staff here in Berlin.\nWould it be possible to identify\nsome candidates by the end of next week?\nWe really need to move quickly on this.\nEunice Connell [8:22 A.M.]\nI've heard that Marissa Ceylan managed manufacturing operations in Bangkok, Thailand, last\nyear.\nShe speaks fluent German.\nBut let me consult with my team before I get back to you.\nRob Teeley [8:23 A.M.]\nThat shouldn't be a problem, Heinz.\nOur Winnipeg plant is running smoothly now, so we can\nexpedite things in Berlin.\nHeinz Feldt [8:25 A.M.]\nExcellent!\nLet's conference next week to see where（哪里） we stand on picking the team."
   },
   "items": [
     {
@@ -50,16 +53,49 @@
       "answer": "D",
       "question": "What is indicated about Thissgen?",
       "answer_explain": "原文依据：篇章中可定位到“over to Germany to join the Thissgen Berlin team.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（It is experiencing rapid growth.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is indicated about Thissgen?",
+      "choice_translations": [
+        "A：It is acquiring another company（公司）.",
+        "B：It is headquartered in Germany.",
+        "C：It is facing strong competition.",
+        "D：It is experiencing rapid growth."
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 3 段：over to Germany to join the Thissgen Berlin team.",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 3 段：over to Germany to join the Thissgen Berlin team.",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“over to Germany to join the Thissgen Berlin team.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（It is experiencing rapid growth.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "experiencing",
+            "meaning": "本题重点词；结合正确选项理解：It is experiencing rapid growth."
+          },
+          {
+            "term": "rapid",
+            "meaning": "本题重点词；结合正确选项理解：It is experiencing rapid growth."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It is experiencing rapid growth.",
+            "meaning": "正确选项中的重点搭配：It is experiencing rapid growth."
+          }
+        ]
+      },
       "item_id": 172,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 70,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "多文本语境"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -76,15 +112,45 @@
       "answer": "B",
       "question": "In what city does Mr. Teeley work?",
       "answer_explain": "原文依据：篇章中可定位到“a knowledgeable group from here in Ottawa to help manage operations and quality control.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Ottawa）。",
+      "question_translation": "中文辅助（离线预处理）：In what（什么） city does Mr.\nTeeley work（工作）?",
+      "choice_translations": [
+        "A：Berlin",
+        "B：Ottawa",
+        "C：Bangkok",
+        "D：Winnipeg"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Rob Teeley [8:15 A.M.]",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Rob Teeley [8:15 A.M.]",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“a knowledgeable group from here in Ottawa to help manage operations and quality control.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Ottawa）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "ottawa",
+            "meaning": "本题重点词；结合正确选项理解：Ottawa"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Ottawa",
+            "meaning": "正确选项中的重点搭配：Ottawa"
+          }
+        ]
+      },
       "item_id": 173,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 42,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "多文本语境",
           "明示定位"
         ],
@@ -103,15 +169,49 @@
       "answer": "A",
       "question": "At 8:23 A.M., what does Mr. Teeley most likely mean when he writes, \"That shouldn't be a problem, Heinz\"?",
       "answer_explain": "原文依据：篇章中可定位到“Let's conference next week to see where we stand on picking the team.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（He thinks the suggested deadline is fine.）。",
+      "question_translation": "中文辅助（离线预处理）：At 8:23 A.M., what（什么） does Mr.\nTeeley most likely（最可能） mean when（何时） he writes, \"That shouldn't be a problem, Heinz\"?",
+      "choice_translations": [
+        "A：He thinks the suggested deadline is fine.",
+        "B：He is fluent in German.",
+        "C：He can travel to Berlin next week.",
+        "D：He will transfer Ms.\nCeylan to"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Rob Teeley [8:15 A.M.]",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Rob Teeley [8:15 A.M.]",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Let's conference next week to see where we stand on picking the team.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（He thinks the suggested deadline is fine.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "thinks",
+            "meaning": "本题重点词；结合正确选项理解：He thinks the suggested deadline is fine."
+          },
+          {
+            "term": "suggested",
+            "meaning": "本题重点词；结合正确选项理解：He thinks the suggested deadline is fine."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "He thinks the suggested deadline is fine.",
+            "meaning": "正确选项中的重点搭配：He thinks the suggested deadline is fine."
+          }
+        ]
+      },
       "item_id": 174,
-      "question_type": "推断 / 隐含义题",
       "priority": {
         "level": "P1",
         "score": 83,
-        "label": "推断 / 隐含义题",
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "语境推断"
         ],
         "scope": "item",
@@ -129,15 +229,49 @@
       "answer": "B",
       "question": "What does Ms. Connell say she will do next?",
       "answer_explain": "原文依据：篇章中可定位到“Let's conference next week to see where we stand on picking the team.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Communicate with her team members）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does Ms.\nConnell say she will do next?",
+      "choice_translations": [
+        "A：Confirm her flight reservations",
+        "B：Communicate with her team members",
+        "C：Apply for a position in manufacturing",
+        "D：Travel to Germany"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 4 段：Eunice Connell [8:16 A.M.]",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 4 段：Eunice Connell [8:16 A.M.]",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Let's conference next week to see where we stand on picking the team.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Communicate with her team members）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "communicate",
+            "meaning": "本题重点词；结合正确选项理解：Communicate with her team members"
+          },
+          {
+            "term": "team",
+            "meaning": "本题重点词；结合正确选项理解：Communicate with her team members"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Communicate with her team members",
+            "meaning": "正确选项中的重点搭配：Communicate with her team members"
+          }
+        ]
+      },
       "item_id": 175,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "多文本语境"
         ],
         "scope": "item",

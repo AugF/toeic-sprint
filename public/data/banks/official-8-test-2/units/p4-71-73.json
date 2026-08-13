@@ -11,13 +11,16 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 69,
+    "score": 79,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
+      "细节题",
+      "明示细节",
+      "主旨 / 目的题",
       "主旨场景",
-      "细节定位题"
+      "推断题",
+      "跨句整合"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -33,7 +36,9 @@
       "asset_key": "official-8-test-2/audio/part4/q071-073-questions.mp3",
       "exists": true
     },
-    "transcript": "We'd like to remind our listeners about this weekend's art\nfair. Many local artists will be showing their work. ® One of\nthe feature artists is Emiko Ito, who is known for her modern\nTOTECT. ZOEICEBEMRD 1 AldEmiko Ito C. 18\nfurniture designs. ®What makes her artwork special is that\nshe recycles materials, such as rubber and plastic, to create\nher furniture pieces. This is great for the environment!\ninvited Ms. Ito here for an interview. After this short\ncommercial break, Ms. Ito will be discussing her creative\nprocess."
+    "transcript": "We'd like to remind our listeners about this weekend's art\nfair. Many local artists will be showing their work. ® One of\nthe feature artists is Emiko Ito, who is known for her modern\nTOTECT. ZOEICEBEMRD 1 AldEmiko Ito C. 18\nfurniture designs. ®What makes her artwork special is that\nshe recycles materials, such as rubber and plastic, to create\nher furniture pieces. This is great for the environment!\ninvited Ms. Ito here for an interview. After this short\ncommercial break, Ms. Ito will be discussing her creative\nprocess.",
+    "transcript_translation": "中文辅助（离线预处理）：We'd like to remind our listeners about this weekend's art\nfair.\nMany local artists will be showing their work（工作）.\n® One of\nthe feature artists is Emiko Ito, who（谁） is known for her modern\nTOTECT.\nZOEICEBEMRD 1 AldEmiko Ito C.\n18\nfurniture designs.\n®What（什么） makes her artwork special is that\nshe recycles materials, such as rubber and plastic, to create\nher furniture pieces.\nThis is great for the environment!\ninvited Ms.\nIto here for an interview.\nAfter this short\ncommercial break, Ms.\nIto will be discussing her creative\nprocess.",
+    "content_translation": "中文辅助（离线预处理）：We'd like to remind our listeners about this weekend's art\nfair.\nMany local artists will be showing their work（工作）.\n® One of\nthe feature artists is Emiko Ito, who（谁） is known for her modern\nTOTECT.\nZOEICEBEMRD 1 AldEmiko Ito C.\n18\nfurniture designs.\n®What（什么） makes her artwork special is that\nshe recycles materials, such as rubber and plastic, to create\nher furniture pieces.\nThis is great for the environment!\ninvited Ms.\nIto here for an interview.\nAfter this short\ncommercial break, Ms.\nIto will be discussing her creative\nprocess."
   },
   "items": [
     {
@@ -46,16 +51,46 @@
       "answer": "A",
       "question": "What event will take place on the weekend? 77. What type of product is the speaker",
       "answer_explain": "原文依据：听力原文中提到“We'd like to remind our listeners about this weekend's art”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An art fair）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） event will take place on the weekend?\n77.\nWhat（什么） type of product is the speaker（说话者）",
+      "choice_translations": [
+        "A：An art fair",
+        "B：A product launch",
+        "C：An award ceremony",
+        "D：An art gallery opening"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：We'd like to remind our listeners about this weekend's art",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：We'd like to remind our listeners about this weekend's art",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“We'd like to remind our listeners about this weekend's art”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An art fair）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "fair",
+            "meaning": "本题重点词；结合正确选项理解：An art fair"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "An art fair",
+            "meaning": "正确选项中的重点搭配：An art fair"
+          }
+        ]
+      },
       "item_id": 71,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
-        "level": "P2",
-        "score": 72,
-        "label": "主旨 / 目的 / 场景题",
+        "level": "P3",
+        "score": 46,
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景"
+          "细节题",
+          "明示细节"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -72,15 +107,50 @@
       "answer": "D",
       "question": "According to the speaker, what is special about Emiko Ito's creations?",
       "answer_explain": "原文依据：听力原文中提到“she recycles materials, such as rubber and plastic, to create”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（They are made with recycled materials.）。",
+      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） is special about Emiko Ito's creations?",
+      "choice_translations": [
+        "A：They are signed by Ms.\nIto.",
+        "B：They are sold entirely online.",
+        "C：They are distributed worldwide.",
+        "D：They are made with recycled materials."
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 3 段：the feature artists is Emiko Ito, who is known for her modern",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 3 段：the feature artists is Emiko Ito, who is known for her modern",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“she recycles materials, such as rubber and plastic, to create”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（They are made with recycled materials.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "they",
+            "meaning": "本题重点词；结合正确选项理解：They are made with recycled materials."
+          },
+          {
+            "term": "made",
+            "meaning": "本题重点词；结合正确选项理解：They are made with recycled materials."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "They are made with recycled materials.",
+            "meaning": "正确选项中的重点搭配：They are made with recycled materials."
+          }
+        ]
+      },
       "item_id": 72,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -97,15 +167,50 @@
       "answer": "C",
       "question": "What will the speaker most likely do next?",
       "answer_explain": "原文依据：听力原文中提到“Ito here for an interview.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Conduct an interview）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will the speaker（说话者） most likely（最可能） do next?",
+      "choice_translations": [
+        "A：Lead a guided tour",
+        "B：Give a demonstration",
+        "C：Conduct an interview",
+        "D：Announce a prize winner"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：We'd like to remind our listeners about this weekend's art",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：We'd like to remind our listeners about this weekend's art",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Ito here for an interview.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Conduct an interview）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "conduct",
+            "meaning": "本题重点词；结合正确选项理解：Conduct an interview"
+          },
+          {
+            "term": "interview",
+            "meaning": "本题重点词；结合正确选项理解：Conduct an interview"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Conduct an interview",
+            "meaning": "正确选项中的重点搭配：Conduct an interview"
+          }
+        ]
+      },
       "item_id": 73,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

@@ -15,7 +15,7 @@
     "label": "单题训练",
     "reason": "按该题的高频考点和能力迁移价值排序。",
     "focus_tags": [
-      "人物动作 / 场景题"
+      "动作 / 状态辨析题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -30,7 +30,9 @@
       "path": "images/part1/q003.jpg",
       "asset_key": "official-7-test-1/images/part1/q003.jpg",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
+    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
   },
   "items": [
     {
@@ -45,15 +47,48 @@
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some people are seated in a waiting area.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（Some people are seated in a waiting area.）。",
+      "choice_translations": [
+        "A：One of the men is buying a ticket.",
+        "B：One of the men is sweeping the floor.",
+        "C：Some people are having a meal.",
+        "D：Some people are seated in a waiting area."
+      ],
+      "question_type": "动作 / 状态辨析题",
+      "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
+      "strategy": "本题属于动作 / 状态辨析题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "动作 / 状态辨析题",
+        "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
+        "strategy": "本题属于动作 / 状态辨析题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：照片中可见信息与描述“Some people are seated in a waiting area.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（Some people are seated in a waiting area.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "some",
+            "meaning": "本题重点词；结合正确选项理解：Some people are seated in a waiting area."
+          },
+          {
+            "term": "people",
+            "meaning": "本题重点词；结合正确选项理解：Some people are seated in a waiting area."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Some people are seated in a waiting area.",
+            "meaning": "正确选项中的重点搭配：Some people are seated in a waiting area."
+          }
+        ]
+      },
       "item_id": 3,
-      "question_type": "人物动作 / 场景题",
       "priority": {
         "level": "P2",
         "score": 64,
-        "label": "人物动作 / 场景题",
+        "label": "动作 / 状态辨析题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "人物动作 / 场景题"
+          "动作 / 状态辨析题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

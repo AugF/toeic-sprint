@@ -26,7 +26,9 @@
       "path": "audio/part2/q010.mp3",
       "asset_key": "official-5-test-2/audio/part2/q010.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：Why（为什么） do you need to speak with Mr.\nMorris?",
+    "content_translation": "中文辅助（离线预处理）：Why（为什么） do you need to speak with Mr.\nMorris?"
   },
   "items": [
     {
@@ -41,8 +43,42 @@
       "topic": "原因询问",
       "keywords": "why reason response",
       "answer_explain": "原文依据：问句或陈述是“Why do you need to speak with Mr. Morris?”，自然应答是“Because he wants to review my work.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Because he wants to review my work.）。",
-      "item_id": 10,
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） do you need to speak with Mr.\nMorris?",
+      "choice_translations": [
+        "A：At the office（办公室） next Friday.",
+        "B：No, he hasn't called yet.",
+        "C：Because he wants to review my work（工作）."
+      ],
       "question_type": "原因疑问句",
+      "evidence": "参考原文第 1 段：Why do you need to speak with Mr. Morris?",
+      "strategy": "先识别原因疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "原因疑问句",
+        "evidence": "参考原文第 1 段：Why do you need to speak with Mr. Morris?",
+        "strategy": "先识别原因疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“Why do you need to speak with Mr. Morris?”，自然应答是“Because he wants to review my work.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Because he wants to review my work.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "because",
+            "meaning": "本题重点词；结合正确选项理解：Because he wants to review my work（工作）."
+          },
+          {
+            "term": "wants",
+            "meaning": "本题重点词；结合正确选项理解：Because he wants to review my work（工作）."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Because he wants to review my work.",
+            "meaning": "正确选项中的重点搭配：Because he wants to review my work（工作）."
+          }
+        ]
+      },
+      "item_id": 10,
       "priority": {
         "level": "P2",
         "score": 68,

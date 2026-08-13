@@ -11,13 +11,15 @@
   "difficulty": "medium",
   "priority": {
     "level": "P1",
-    "score": 83,
+    "score": 86,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
       "语境语法 / 词汇题",
       "整句填入题",
-      "篇章衔接"
+      "篇章衔接",
+      "逻辑衔接题",
+      "跨句判断"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -30,7 +32,9 @@
         "exists": true
       }
     ],
-    "passage": "Residential Garbage and Recycling Disposal\nGarbage and recycling are picked up on 131. days, depending on your address. Check our\nWeb site to find your designated pickup day. All residents receive a large blue container for\nregular household garbage and a large green container for material to be recycled. 132. For\nrecyclables, do not include plastic bags. 133.\n- may get caught in the sorting machinery at the\nprocessing plant. Please also try to reduce the number of items you throw away. 134. old\nfurniture or clothing that is still usable can be donated to one of our many local charity\norganizations or secondhand shops."
+    "passage": "Residential Garbage and Recycling Disposal\nGarbage and recycling are picked up on 131. days, depending on your address. Check our\nWeb site to find your designated pickup day. All residents receive a large blue container for\nregular household garbage and a large green container for material to be recycled. 132. For\nrecyclables, do not include plastic bags. 133.\n- may get caught in the sorting machinery at the\nprocessing plant. Please also try to reduce the number of items you throw away. 134. old\nfurniture or clothing that is still usable can be donated to one of our many local charity\norganizations or secondhand shops.",
+    "passage_translation": "中文辅助（离线预处理）：Residential Garbage and Recycling Disposal\nGarbage and recycling are picked up on 131.\ndays, depending on your address.\nCheck our\nWeb site to find your designated pickup day.\nAll residents receive a large blue container for\nregular household garbage and a large green container for material to be recycled.\n132.\nFor\nrecyclables, do not include plastic bags.\n133.\n- may get caught in the sorting machinery at the\nprocessing plant.\nPlease（请） also try to reduce the number of items you throw away.\n134.\nold\nfurniture or clothing that is still usable can be donated to one of our many local charity\norganizations or secondhand shops.",
+    "content_translation": "中文辅助（离线预处理）：Residential Garbage and Recycling Disposal\nGarbage and recycling are picked up on 131.\ndays, depending on your address.\nCheck our\nWeb site to find your designated pickup day.\nAll residents receive a large blue container for\nregular household garbage and a large green container for material to be recycled.\n132.\nFor\nrecyclables, do not include plastic bags.\n133.\n- may get caught in the sorting machinery at the\nprocessing plant.\nPlease（请） also try to reduce the number of items you throw away.\n134.\nold\nfurniture or clothing that is still usable can be donated to one of our many local charity\norganizations or secondhand shops."
   },
   "items": [
     {
@@ -42,8 +46,37 @@
       ],
       "answer": "B",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“Garbage and recycling are picked up on 131.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：B（different）。",
-      "item_id": 131,
+      "choice_translations": [
+        "A：strict",
+        "B：different",
+        "C：recent",
+        "D：direct"
+      ],
       "question_type": "语境语法 / 词汇题",
+      "evidence": "参考原文第 1 段：Residential Garbage and Recycling Disposal",
+      "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "语境语法 / 词汇题",
+        "evidence": "参考原文第 1 段：Residential Garbage and Recycling Disposal",
+        "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“Garbage and recycling are picked up on 131.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：B（different）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "different",
+            "meaning": "本题重点词；结合正确选项理解：different"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "different",
+            "meaning": "正确选项中的重点搭配：different"
+          }
+        ]
+      },
+      "item_id": 131,
       "priority": {
         "level": "P2",
         "score": 62,
@@ -66,8 +99,41 @@
       ],
       "answer": "C",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“132.”。选择理由：该句承接前文并为后文提供必要信息，放入后篇章逻辑和指代均连贯。正确答案：C（They are free initially, but there is a fee for replacements.）。",
-      "item_id": 132,
+      "choice_translations": [
+        "A：If there are any problems with the payment, you will be notified.",
+        "B：The calendar is updated regularly.",
+        "C：They are free initially, but there is a fee for replacements.",
+        "D：By all accounts, the program was a"
+      ],
       "question_type": "整句填入题",
+      "evidence": "参考原文第 1 段：Residential Garbage and Recycling Disposal",
+      "strategy": "本题属于整句填入题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "整句填入题",
+        "evidence": "参考原文第 1 段：Residential Garbage and Recycling Disposal",
+        "strategy": "本题属于整句填入题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“132.”。选择理由：该句承接前文并为后文提供必要信息，放入后篇章逻辑和指代均连贯。正确答案：C（They are free initially, but there is a fee for replacements.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "they",
+            "meaning": "本题重点词；结合正确选项理解：They are free initially, but there is a fee for replacements."
+          },
+          {
+            "term": "free",
+            "meaning": "本题重点词；结合正确选项理解：They are free initially, but there is a fee for replacements."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "They are free initially, but there is a fee for replacements.",
+            "meaning": "正确选项中的重点搭配：They are free initially, but there is a fee for replacements."
+          }
+        ]
+      },
+      "item_id": 132,
       "priority": {
         "level": "P1",
         "score": 94,
@@ -91,8 +157,37 @@
       ],
       "answer": "B",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“133.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：B（These）。",
-      "item_id": 133,
+      "choice_translations": [
+        "A：What（什么）",
+        "B：These",
+        "C：Theirs",
+        "D：Either"
+      ],
       "question_type": "语境语法 / 词汇题",
+      "evidence": "参考原文第 1 段：Residential Garbage and Recycling Disposal",
+      "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "语境语法 / 词汇题",
+        "evidence": "参考原文第 1 段：Residential Garbage and Recycling Disposal",
+        "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“133.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：B（These）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "these",
+            "meaning": "本题重点词；结合正确选项理解：These"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "These",
+            "meaning": "正确选项中的重点搭配：These"
+          }
+        ]
+      },
+      "item_id": 133,
       "priority": {
         "level": "P2",
         "score": 62,
@@ -115,15 +210,45 @@
       ],
       "answer": "D",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“134.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：D（For example）。",
+      "choice_translations": [
+        "A：Otherwise",
+        "B：Nevertheless",
+        "C：Instead",
+        "D：For example"
+      ],
+      "question_type": "逻辑衔接题",
+      "evidence": "参考原文第 1 段：Residential Garbage and Recycling Disposal",
+      "strategy": "本题属于逻辑衔接题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "逻辑衔接题",
+        "evidence": "参考原文第 1 段：Residential Garbage and Recycling Disposal",
+        "strategy": "本题属于逻辑衔接题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“134.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：D（For example）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "example",
+            "meaning": "本题重点词；结合正确选项理解：For example"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "For example",
+            "meaning": "正确选项中的重点搭配：For example"
+          }
+        ]
+      },
       "item_id": 134,
-      "question_type": "语境语法 / 词汇题",
       "priority": {
-        "level": "P2",
-        "score": 62,
-        "label": "语境语法 / 词汇题",
+        "level": "P1",
+        "score": 86,
+        "label": "逻辑衔接题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "语境语法 / 词汇题"
+          "逻辑衔接题",
+          "跨句判断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

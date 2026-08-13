@@ -11,11 +11,13 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 61,
+    "score": 69,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "细节题",
+      "主旨 / 目的题",
+      "主旨场景"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +33,9 @@
       "asset_key": "official-5-test-2/audio/part4/q086-088-questions.mp3",
       "exists": true
     },
-    "transcript": "M\nI'm honored to be leading the orientation for all our new\nworkers here at SalTech. I'll be distributing your ID badges,\nwhich you'll need to access all the secure rooms in the\nbuilding. Then, I'll lead you on a tour. As we walk around,\nnotice how many employees have decorated their work\nspaces. We encourage you to bring in family photos or\nart-whatever would make you feel comfortable here. Oh,\nand before I forget-and this isn't an official company\nevent-but a group of us are going to dinner tonight. We'll\nbe meeting in the lobby at five-thirty. Now, let's get started."
+    "transcript": "M\nI'm honored to be leading the orientation for all our new\nworkers here at SalTech. I'll be distributing your ID badges,\nwhich you'll need to access all the secure rooms in the\nbuilding. Then, I'll lead you on a tour. As we walk around,\nnotice how many employees have decorated their work\nspaces. We encourage you to bring in family photos or\nart-whatever would make you feel comfortable here. Oh,\nand before I forget-and this isn't an official company\nevent-but a group of us are going to dinner tonight. We'll\nbe meeting in the lobby at five-thirty. Now, let's get started.",
+    "transcript_translation": "中文辅助（离线预处理）：M\nI'm honored to be leading the orientation for all our new\nworkers here at SalTech.\nI'll be distributing your ID badges,\nwhich you'll need to access all the secure rooms in the\nbuilding.\nThen, I'll lead you on a tour.\nAs we walk around,\nnotice how（如何） many employees have decorated their work（工作）\nspaces.\nWe encourage you to bring in family photos or\nart-whatever would make you feel comfortable here.\nOh,\nand before I forget-and this isn't an official company（公司）\nevent-but a group of us are going to dinner tonight.\nWe'll\nbe meeting（会议） in the lobby at five-thirty.\nNow, let's get started.",
+    "content_translation": "中文辅助（离线预处理）：M\nI'm honored to be leading the orientation for all our new\nworkers here at SalTech.\nI'll be distributing your ID badges,\nwhich you'll need to access all the secure rooms in the\nbuilding.\nThen, I'll lead you on a tour.\nAs we walk around,\nnotice how（如何） many employees have decorated their work（工作）\nspaces.\nWe encourage you to bring in family photos or\nart-whatever would make you feel comfortable here.\nOh,\nand before I forget-and this isn't an official company（公司）\nevent-but a group of us are going to dinner tonight.\nWe'll\nbe meeting（会议） in the lobby at five-thirty.\nNow, let's get started."
   },
   "items": [
     {
@@ -44,15 +48,49 @@
       "answer": "D",
       "question": "What will the speaker distribute to the listeners?",
       "answer_explain": "原文依据：听力原文中提到“I'll be distributing your ID badges,”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Identification badges）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will the speaker（说话者） distribute to the listeners?",
+      "choice_translations": [
+        "A：Group photos",
+        "B：Achievement certificates",
+        "C：Parking passes",
+        "D：Identification badges"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：M",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：M",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“I'll be distributing your ID badges,”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Identification badges）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "identification",
+            "meaning": "本题重点词；结合正确选项理解：Identification badges"
+          },
+          {
+            "term": "badges",
+            "meaning": "本题重点词；结合正确选项理解：Identification badges"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Identification badges",
+            "meaning": "正确选项中的重点搭配：Identification badges"
+          }
+        ]
+      },
       "item_id": 86,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +107,50 @@
       "answer": "A",
       "question": "What does the speaker say about employee work spaces?",
       "answer_explain": "原文依据：听力原文中提到“notice how many employees have decorated their work”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（They can be decorated.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say about employee（员工） work（工作） spaces?",
+      "choice_translations": [
+        "A：They can be decorated.",
+        "B：They must be kept clean.",
+        "C：They will be shared with other colleagues.",
+        "D：They are on the third floor."
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 6 段：notice how many employees have decorated their work",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 6 段：notice how many employees have decorated their work",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“notice how many employees have decorated their work”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（They can be decorated.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "they",
+            "meaning": "本题重点词；结合正确选项理解：They can be decorated."
+          },
+          {
+            "term": "decorated",
+            "meaning": "本题重点词；结合正确选项理解：They can be decorated."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "They can be decorated.",
+            "meaning": "正确选项中的重点搭配：They can be decorated."
+          }
+        ]
+      },
       "item_id": 87,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -94,15 +167,49 @@
       "answer": "B",
       "question": "Why does the speaker say, \"a group of us are going to dinner tonight\"?",
       "answer_explain": "原文依据：听力原文中提到“event-but a group of us are going to dinner tonight.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To extend an invitation）。",
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"a group of us are going to dinner tonight\"?",
+      "choice_translations": [
+        "A：To reject an assignment",
+        "B：To extend an invitation",
+        "C：To announce a completion date",
+        "D：To point out an error"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 10 段：event-but a group of us are going to dinner tonight. We'll",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 10 段：event-but a group of us are going to dinner tonight. We'll",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“event-but a group of us are going to dinner tonight.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To extend an invitation）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "extend",
+            "meaning": "本题重点词；结合正确选项理解：To extend an invitation"
+          },
+          {
+            "term": "invitation",
+            "meaning": "本题重点词；结合正确选项理解：To extend an invitation"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To extend an invitation",
+            "meaning": "正确选项中的重点搭配：To extend an invitation"
+          }
+        ]
+      },
       "item_id": 88,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

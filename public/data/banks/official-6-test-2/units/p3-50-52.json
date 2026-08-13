@@ -10,13 +10,15 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P3",
-    "score": 46,
+    "level": "P2",
+    "score": 64,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "明示细节"
+      "细节题",
+      "明示细节",
+      "主旨 / 目的题",
+      "主旨场景"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -32,7 +34,9 @@
       "asset_key": "official-6-test-2/audio/part3/q050-052-questions.mp3",
       "exists": true
     },
-    "transcript": "m Hi, Dr. Garcia. ® That software program you ordered\nfor our medical office just arrived—® the one that will\nallow patients to schedule appointments online. Would\nyou like me to install it today?\nw Oh, good. Actually, ®a service technician will be\nstopping by tomorrow to install it for us. But could you\nplease let our patients know about this new option for\nmaking appointments?\nOK. ® Once the program is ready tomorrow, I'll send\nan e-mail to our patients that will instruct them on how\nto use the scheduling system."
+    "transcript": "m Hi, Dr. Garcia. ® That software program you ordered\nfor our medical office just arrived—® the one that will\nallow patients to schedule appointments online. Would\nyou like me to install it today?\nw Oh, good. Actually, ®a service technician will be\nstopping by tomorrow to install it for us. But could you\nplease let our patients know about this new option for\nmaking appointments?\nOK. ® Once the program is ready tomorrow, I'll send\nan e-mail to our patients that will instruct them on how\nto use the scheduling system.",
+    "transcript_translation": "中文辅助（离线预处理）：m Hi, Dr.\nGarcia.\n® That software program you ordered\nfor our medical office（办公室） just arrived—® the one that will\nallow patients to schedule（日程） appointments online.\nWould\nyou like me to install it today?\nw Oh, good.\nActually, ®a service（服务） technician will be\nstopping by tomorrow to install it for us.\nBut could you\nplease（请） let our patients know about this new option for\nmaking appointments?\nOK.\n® Once the program is ready tomorrow, I'll send\nan e-mail to our patients that will instruct them on how（如何）\nto use the scheduling system.",
+    "content_translation": "中文辅助（离线预处理）：m Hi, Dr.\nGarcia.\n® That software program you ordered\nfor our medical office（办公室） just arrived—® the one that will\nallow patients to schedule（日程） appointments online.\nWould\nyou like me to install it today?\nw Oh, good.\nActually, ®a service（服务） technician will be\nstopping by tomorrow to install it for us.\nBut could you\nplease（请） let our patients know about this new option for\nmaking appointments?\nOK.\n® Once the program is ready tomorrow, I'll send\nan e-mail to our patients that will instruct them on how（如何）\nto use the scheduling system."
   },
   "items": [
     {
@@ -45,15 +49,49 @@
       "answer": "A",
       "question": "What will the new software allow patients to do?",
       "answer_explain": "原文依据：听力原文中提到“allow patients to schedule appointments online.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Schedule appointments）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will the new software allow patients to do?",
+      "choice_translations": [
+        "A：Schedule（日程） appointments",
+        "B：Request a prescription refill",
+        "C：Ask the doctor a question",
+        "D：Write a review"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：m Hi, Dr. Garcia. ® That software program you ordered",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：m Hi, Dr. Garcia. ® That software program you ordered",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“allow patients to schedule appointments online.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Schedule appointments）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "schedule",
+            "meaning": "本题重点词；结合正确选项理解：Schedule（日程） appointments"
+          },
+          {
+            "term": "appointments",
+            "meaning": "本题重点词；结合正确选项理解：Schedule（日程） appointments"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Schedule appointments",
+            "meaning": "正确选项中的重点搭配：Schedule（日程） appointments"
+          }
+        ]
+      },
       "item_id": 50,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 46,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节"
         ],
         "scope": "item",
@@ -71,15 +109,49 @@
       "answer": "B",
       "question": "Who will be visiting the office tomorrow?",
       "answer_explain": "原文依据：听力原文中提到“Actually, ®a service technician will be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A service technician）。",
+      "question_translation": "中文辅助（离线预处理）：Who（谁） will be visiting the office（办公室） tomorrow?",
+      "choice_translations": [
+        "A：A sales representative",
+        "B：A service（服务） technician",
+        "C：A pharmacist",
+        "D：A building inspector"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 2 段：for our medical office just arrived—® the one that will",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 2 段：for our medical office just arrived—® the one that will",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Actually, ®a service technician will be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A service technician）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "service",
+            "meaning": "本题重点词；结合正确选项理解：A service（服务） technician"
+          },
+          {
+            "term": "technician",
+            "meaning": "本题重点词；结合正确选项理解：A service（服务） technician"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "service technician",
+            "meaning": "正确选项中的重点搭配：A service（服务） technician"
+          }
+        ]
+      },
       "item_id": 51,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 46,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节"
         ],
         "scope": "item",
@@ -97,16 +169,50 @@
       "answer": "D",
       "question": "What will the man include in an e-mail to patients?",
       "answer_explain": "原文依据：听力原文中提到“to use the scheduling system.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Instructions on how to use a system）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） include in an e-mail to patients?",
+      "choice_translations": [
+        "A：A list of specialists' phone numbers",
+        "B：A reminder about required forms",
+        "C：Directions to a new office（办公室）",
+        "D：Instructions on how（如何） to use a system"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 3 段：allow patients to schedule appointments online. Would",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 3 段：allow patients to schedule appointments online. Would",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“to use the scheduling system.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Instructions on how to use a system）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "instructions",
+            "meaning": "本题重点词；结合正确选项理解：Instructions on how（如何） to use a system"
+          },
+          {
+            "term": "system",
+            "meaning": "本题重点词；结合正确选项理解：Instructions on how（如何） to use a system"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Instructions on how to use a system",
+            "meaning": "正确选项中的重点搭配：Instructions on how（如何） to use a system"
+          }
+        ]
+      },
       "item_id": 52,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P3",
-        "score": 46,
-        "label": "细节定位题",
+        "level": "P2",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "明示细节"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

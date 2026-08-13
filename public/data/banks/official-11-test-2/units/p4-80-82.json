@@ -11,13 +11,11 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 69,
+    "score": 61,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "主旨 / 目的 / 场景题",
-      "主旨场景"
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -33,7 +31,9 @@
       "asset_key": "official-11-test-2/audio/part4/q080-082-questions.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nThank you for coming to today's all-staff meeting. OAs\nthe chief production officer, I recently led an audit of our\nproduction strategy to ensure that our company stays\ncompetitive. After looking at the results, we are going t\ncutting back on the manufacturing of our small electronic\nthat we can focus on more high-demand goods, like lapt\nThis is going to cause a change in our factory operatio\nAsako here is going to tell you what your job tasks and\nresponsibilities will be going forward"
+    "transcript": "a meeting.\nThank you for coming to today's all-staff meeting. OAs\nthe chief production officer, I recently led an audit of our\nproduction strategy to ensure that our company stays\ncompetitive. After looking at the results, we are going t\ncutting back on the manufacturing of our small electronic\nthat we can focus on more high-demand goods, like lapt\nThis is going to cause a change in our factory operatio\nAsako here is going to tell you what your job tasks and\nresponsibilities will be going forward",
+    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nThank（感谢） you for coming to today's all-staff meeting（会议）.\nOAs\nthe chief production officer, I recently led an audit of our\nproduction strategy to ensure that our company（公司） stays\ncompetitive.\nAfter looking at the results, we are going t\ncutting back on the manufacturing of our small electronic\nthat we can focus on more high-demand goods, like lapt\nThis is going to cause a change in our factory operatio\nAsako here is going to tell you what（什么） your job tasks and\nresponsibilities will be going forward",
+    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nThank（感谢） you for coming to today's all-staff meeting（会议）.\nOAs\nthe chief production officer, I recently led an audit of our\nproduction strategy to ensure that our company（公司） stays\ncompetitive.\nAfter looking at the results, we are going t\ncutting back on the manufacturing of our small electronic\nthat we can focus on more high-demand goods, like lapt\nThis is going to cause a change in our factory operatio\nAsako here is going to tell you what（什么） your job tasks and\nresponsibilities will be going forward"
   },
   "items": [
     {
@@ -46,15 +46,49 @@
       "answer": "C",
       "question": "Who is the speaker?",
       "answer_explain": "原文依据：听力原文与题目“Who is the speaker?”对应，官方答案为“A company executive”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A company executive）。",
+      "question_translation": "中文辅助（离线预处理）：Who（谁） is the speaker（说话者）?",
+      "choice_translations": [
+        "A：A sales representative",
+        "B：A store manager（经理）",
+        "C：A company（公司） executive",
+        "D：A news reporter"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：a meeting.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：a meeting.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文与题目“Who is the speaker?”对应，官方答案为“A company executive”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A company executive）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "company",
+            "meaning": "本题重点词；结合正确选项理解：A company（公司） executive"
+          },
+          {
+            "term": "executive",
+            "meaning": "本题重点词；结合正确选项理解：A company（公司） executive"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "company executive",
+            "meaning": "正确选项中的重点搭配：A company（公司） executive"
+          }
+        ]
+      },
       "item_id": 80,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -71,16 +105,45 @@
       "answer": "D",
       "question": "What type of product does the company make?",
       "answer_explain": "原文依据：听力原文与题目“What type of product does the company make?”对应，官方答案为“Electronics”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Electronics）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） type of product does the company（公司） make?",
+      "choice_translations": [
+        "A：Vehicles",
+        "B：Furniture",
+        "C：Dishware",
+        "D：Electronics"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 3 段：the chief production officer, I recently led an audit of our",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 3 段：the chief production officer, I recently led an audit of our",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文与题目“What type of product does the company make?”对应，官方答案为“Electronics”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Electronics）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "electronics",
+            "meaning": "本题重点词；结合正确选项理解：Electronics"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Electronics",
+            "meaning": "正确选项中的重点搭配：Electronics"
+          }
+        ]
+      },
       "item_id": 81,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
         "level": "P2",
-        "score": 72,
-        "label": "主旨 / 目的 / 场景题",
+        "score": 61,
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -97,15 +160,49 @@
       "answer": "A",
       "question": "What will happen next?",
       "answer_explain": "原文依据：听力原文与题目“What will happen next?”对应，官方答案为“Some instructions will be given.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Some instructions will be given.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will happen next?",
+      "choice_translations": [
+        "A：Some instructions will be given.",
+        "B：Some uniforms will be distributed.",
+        "C：Some questions will be collected.",
+        "D：Some materials will be unpacked."
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：a meeting.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：a meeting.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文与题目“What will happen next?”对应，官方答案为“Some instructions will be given.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Some instructions will be given.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "some",
+            "meaning": "本题重点词；结合正确选项理解：Some instructions will be given."
+          },
+          {
+            "term": "instructions",
+            "meaning": "本题重点词；结合正确选项理解：Some instructions will be given."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Some instructions will be given.",
+            "meaning": "正确选项中的重点搭配：Some instructions will be given."
+          }
+        ]
+      },
       "item_id": 82,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

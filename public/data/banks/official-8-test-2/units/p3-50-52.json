@@ -10,13 +10,14 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P3",
-    "score": 59,
+    "level": "P1",
+    "score": 80,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "明示细节"
+      "细节题",
+      "推断题",
+      "跨句整合"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -32,7 +33,9 @@
       "asset_key": "official-8-test-2/audio/part3/q050-052-questions.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nI-M Thanks for meeting with us, Ms. Ortiz. ® Our clothing\nstore has been doing really well, so we'd like to expand\nnext year. ®In order to do that, we need to apply for a\nbank loan.\nall m Yes, so first we need a financial audit completed by a\ncertified public accountant.\nEw Well, ®I'm glad to help. I do these all the time.\nm Great! So what's the process?\nEw Well, ®I'll need to review your store's financial data.\nDid you bring those documents with you?\nYes, I have the printouts right here."
+    "transcript": "with three speakers.\nI-M Thanks for meeting with us, Ms. Ortiz. ® Our clothing\nstore has been doing really well, so we'd like to expand\nnext year. ®In order to do that, we need to apply for a\nbank loan.\nall m Yes, so first we need a financial audit completed by a\ncertified public accountant.\nEw Well, ®I'm glad to help. I do these all the time.\nm Great! So what's the process?\nEw Well, ®I'll need to review your store's financial data.\nDid you bring those documents with you?\nYes, I have the printouts right here.",
+    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nI-M Thanks for meeting（会议） with us, Ms.\nOrtiz.\n® Our clothing\nstore has been doing really well, so we'd like to expand\nnext year.\n®In order（订单） to do that, we need to apply for a\nbank loan.\nall m Yes, so first we need a financial audit completed by a\ncertified public accountant.\nEw Well, ®I'm glad to help.\nI do these all the time.\nm Great!\nSo what（什么）'s the process?\nEw Well, ®I'll need to review your store's financial data.\nDid you bring those documents with you?\nYes, I have the printouts right here.",
+    "content_translation": "中文辅助（离线预处理）：with three speakers.\nI-M Thanks for meeting（会议） with us, Ms.\nOrtiz.\n® Our clothing\nstore has been doing really well, so we'd like to expand\nnext year.\n®In order（订单） to do that, we need to apply for a\nbank loan.\nall m Yes, so first we need a financial audit completed by a\ncertified public accountant.\nEw Well, ®I'm glad to help.\nI do these all the time.\nm Great!\nSo what（什么）'s the process?\nEw Well, ®I'll need to review your store's financial data.\nDid you bring those documents with you?\nYes, I have the printouts right here."
   },
   "items": [
     {
@@ -45,15 +48,49 @@
       "answer": "A",
       "question": "What do the men want to do next year?",
       "answer_explain": "原文依据：听力原文中提到“store has been doing really well, so we'd like to expand”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Expand a business）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） do the men want to do next year?",
+      "choice_translations": [
+        "A：Expand a business",
+        "B：Host a charity gala",
+        "C：Start an internship program",
+        "D：Attend a trade show"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：with three speakers.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：with three speakers.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“store has been doing really well, so we'd like to expand”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Expand a business）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "expand",
+            "meaning": "本题重点词；结合正确选项理解：Expand a business"
+          },
+          {
+            "term": "business",
+            "meaning": "本题重点词；结合正确选项理解：Expand a business"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Expand a business",
+            "meaning": "正确选项中的重点搭配：Expand a business"
+          }
+        ]
+      },
       "item_id": 50,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -70,16 +107,46 @@
       "answer": "C",
       "question": "What most likely is the woman's job?",
       "answer_explain": "原文依据：听力原文中提到“certified public accountant.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Accountant）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） most likely（最可能） is the woman（女士）'s job?",
+      "choice_translations": [
+        "A：Lawyer",
+        "B：Travel agent",
+        "C：Accountant",
+        "D：Computer technician"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：with three speakers.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：with three speakers.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“certified public accountant.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Accountant）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "accountant",
+            "meaning": "本题重点词；结合正确选项理解：Accountant"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Accountant",
+            "meaning": "正确选项中的重点搭配：Accountant"
+          }
+        ]
+      },
       "item_id": 51,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P3",
-        "score": 46,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "明示细节"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -96,15 +163,49 @@
       "answer": "C",
       "question": "What does the woman need to see?",
       "answer_explain": "原文依据：听力原文中提到“Ew Well, ®I'll need to review your store's financial data.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some data）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） need to see?",
+      "choice_translations": [
+        "A：Some schedules",
+        "B：Product samples",
+        "C：Some data",
+        "D：Security badges"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：with three speakers.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：with three speakers.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Ew Well, ®I'll need to review your store's financial data.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some data）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "some",
+            "meaning": "本题重点词；结合正确选项理解：Some data"
+          },
+          {
+            "term": "data",
+            "meaning": "本题重点词；结合正确选项理解：Some data"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Some data",
+            "meaning": "正确选项中的重点搭配：Some data"
+          }
+        ]
+      },
       "item_id": 52,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

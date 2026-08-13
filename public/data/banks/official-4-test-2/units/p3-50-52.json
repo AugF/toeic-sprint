@@ -11,15 +11,13 @@
   "difficulty": "medium",
   "priority": {
     "level": "P1",
-    "score": 82,
+    "score": 84,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "主旨场景",
-      "推断 / 隐含义题",
+      "推断题",
       "跨句整合",
-      "细节定位题"
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -35,7 +33,9 @@
       "asset_key": "official-4-test-2/audio/part3/q050-052-questions.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nExcuse me—©we saw in the newspaper that your\ncanned mushrooms are on sale this week in your st\nBut my friend and | can’t seem to find them on the s\nUnfortunately, we just ran out—a lot of people took\nadvantage of the promotion.\nEE w Oh no! We're here to get some extra ingredients for\ndinner party. And we really needed those mushroon\nfor tonight’s dinner.\nWell, we won't be getting a new delivery until tomor\nwhy don’t you check our store over on Oak Stree\nThanks, but we don’t have the time. We'll just hav\nto make something else. We can have chicken and\npeppers instead.\nyYou're right. Let’s do that."
+    "transcript": "with three speakers.\nExcuse me—©we saw in the newspaper that your\ncanned mushrooms are on sale this week in your st\nBut my friend and | can’t seem to find them on the s\nUnfortunately, we just ran out—a lot of people took\nadvantage of the promotion.\nEE w Oh no! We're here to get some extra ingredients for\ndinner party. And we really needed those mushroon\nfor tonight’s dinner.\nWell, we won't be getting a new delivery until tomor\nwhy don’t you check our store over on Oak Stree\nThanks, but we don’t have the time. We'll just hav\nto make something else. We can have chicken and\npeppers instead.\nyYou're right. Let’s do that.",
+    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nExcuse me—©we saw in the newspaper that your\ncanned mushrooms are on sale this week in your st\nBut my friend and | can’t seem to find them on the s\nUnfortunately, we just ran out—a lot of people took\nadvantage of the promotion.\nEE w Oh no!\nWe're here to get some extra ingredients for\ndinner party.\nAnd we really needed those mushroon\nfor tonight’s dinner.\nWell, we won't be getting a new delivery until tomor\nwhy（为什么） don’t you check our store over on Oak Stree\nThanks, but we don’t have the time.\nWe'll just hav\nto make something else.\nWe can have chicken and\npeppers instead.\nyYou're right.\nLet’s do that.",
+    "content_translation": "中文辅助（离线预处理）：with three speakers.\nExcuse me—©we saw in the newspaper that your\ncanned mushrooms are on sale this week in your st\nBut my friend and | can’t seem to find them on the s\nUnfortunately, we just ran out—a lot of people took\nadvantage of the promotion.\nEE w Oh no!\nWe're here to get some extra ingredients for\ndinner party.\nAnd we really needed those mushroon\nfor tonight’s dinner.\nWell, we won't be getting a new delivery until tomor\nwhy（为什么） don’t you check our store over on Oak Stree\nThanks, but we don’t have the time.\nWe'll just hav\nto make something else.\nWe can have chicken and\npeppers instead.\nyYou're right.\nLet’s do that."
   },
   "items": [
     {
@@ -48,16 +48,46 @@
       "answer": "C",
       "question": "Where most likely are the speakers?",
       "answer_explain": "原文依据：听力原文中提到“But my friend and | can’t seem to find them on the s”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（In a supermarket）。",
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） most likely（最可能） are the speakers?",
+      "choice_translations": [
+        "A：Ina restaurant kitchen",
+        "B：Ina shipping facility",
+        "C：In a supermarket",
+        "D：Ina factory"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：with three speakers.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：with three speakers.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“But my friend and | can’t seem to find them on the s”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（In a supermarket）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "supermarket",
+            "meaning": "本题重点词；结合正确选项理解：In a supermarket"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "In a supermarket",
+            "meaning": "正确选项中的重点搭配：In a supermarket"
+          }
+        ]
+      },
       "item_id": 50,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
-        "level": "P2",
-        "score": 72,
-        "label": "主旨 / 目的 / 场景题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -74,15 +104,49 @@
       "answer": "A",
       "question": "What does the man suggest?",
       "answer_explain": "原文依据：听力原文中提到“But my friend and | can’t seem to find them on the s”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Visiting a different location）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） suggest（表明/建议）?",
+      "choice_translations": [
+        "A：Visiting a different location",
+        "B：Downloading a coupon",
+        "C：Inviting additional guests",
+        "D：Choosing a different brand"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：with three speakers.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：with three speakers.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“But my friend and | can’t seem to find them on the s”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Visiting a different location）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "visiting",
+            "meaning": "本题重点词；结合正确选项理解：Visiting a different location"
+          },
+          {
+            "term": "different",
+            "meaning": "本题重点词；结合正确选项理解：Visiting a different location"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Visiting a different location",
+            "meaning": "正确选项中的重点搭配：Visiting a different location"
+          }
+        ]
+      },
       "item_id": 51,
-      "question_type": "推断 / 隐含义题",
       "priority": {
         "level": "P1",
         "score": 88,
-        "label": "推断 / 隐含义题",
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "跨句整合"
         ],
         "scope": "item",
@@ -100,15 +164,49 @@
       "answer": "B",
       "question": "What do the women decide to do?",
       "answer_explain": "原文依据：听力原文中提到“But my friend and | can’t seem to find them on the s”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Change a meal）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） do the women decide to do?",
+      "choice_translations": [
+        "A：Buy a recipe book",
+        "B：Change a meal",
+        "C：Pay an extra fee",
+        "D：Speak to a supervisor"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：with three speakers.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：with three speakers.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“But my friend and | can’t seem to find them on the s”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Change a meal）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "change",
+            "meaning": "本题重点词；结合正确选项理解：Change a meal"
+          },
+          {
+            "term": "meal",
+            "meaning": "本题重点词；结合正确选项理解：Change a meal"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Change a meal",
+            "meaning": "正确选项中的重点搭配：Change a meal"
+          }
+        ]
+      },
       "item_id": 52,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

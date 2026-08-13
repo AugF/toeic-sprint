@@ -15,7 +15,7 @@
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +31,9 @@
       "asset_key": "official-7-test-1/audio/part3/q032-034-questions.mp3",
       "exists": true
     },
-    "transcript": "IM •Welcome to Comfortable Footwear. Can | help you\nConfonable\nfind something?\nw Yes, ®1 know you carry a wide selection of shoes, but\nI'm wondering if you also sell socks. ®I'm looking for\nathletic socks to wear while running.\nOWe usually do, but unfortunately we don't have any\nathletic socks in stock right now.\nLEw Oh no! I'm running in a race this weekend.\nDC7.\nWell, O'll check if our second store location has any.\nThey can send them here this afternoon if they do."
+    "transcript": "IM •Welcome to Comfortable Footwear. Can | help you\nConfonable\nfind something?\nw Yes, ®1 know you carry a wide selection of shoes, but\nI'm wondering if you also sell socks. ®I'm looking for\nathletic socks to wear while running.\nOWe usually do, but unfortunately we don't have any\nathletic socks in stock right now.\nLEw Oh no! I'm running in a race this weekend.\nDC7.\nWell, O'll check if our second store location has any.\nThey can send them here this afternoon if they do.",
+    "transcript_translation": "中文辅助（离线预处理）：IM •Welcome to Comfortable Footwear.\nCan | help you\nConfonable\nfind something?\nw Yes, ®1 know you carry a wide selection of shoes, but\nI'm wondering if you also sell socks.\n®I'm looking for\nathletic socks to wear while running.\nOWe usually do, but unfortunately we don't have any\nathletic socks in stock right now.\nLEw Oh no!\nI'm running in a race this weekend.\nDC7.\nWell, O'll check if our second store location has any.\nThey can send them here this afternoon if they do.",
+    "content_translation": "中文辅助（离线预处理）：IM •Welcome to Comfortable Footwear.\nCan | help you\nConfonable\nfind something?\nw Yes, ®1 know you carry a wide selection of shoes, but\nI'm wondering if you also sell socks.\n®I'm looking for\nathletic socks to wear while running.\nOWe usually do, but unfortunately we don't have any\nathletic socks in stock right now.\nLEw Oh no!\nI'm running in a race this weekend.\nDC7.\nWell, O'll check if our second store location has any.\nThey can send them here this afternoon if they do."
   },
   "items": [
     {
@@ -44,15 +46,49 @@
       "answer": "B",
       "question": "Where is the conversation taking place?",
       "answer_explain": "原文依据：听力原文中提到“Well, O'll check if our second store location has any.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（At a shoe store）。",
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the conversation taking place?",
+      "choice_translations": [
+        "A：At a supermarket",
+        "B：At a shoe store",
+        "C：At a repair shop",
+        "D：At a shipping company（公司）"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：IM •Welcome to Comfortable Footwear. Can | help you",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：IM •Welcome to Comfortable Footwear. Can | help you",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Well, O'll check if our second store location has any.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（At a shoe store）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "shoe",
+            "meaning": "本题重点词；结合正确选项理解：At a shoe store"
+          },
+          {
+            "term": "store",
+            "meaning": "本题重点词；结合正确选项理解：At a shoe store"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "At a shoe store",
+            "meaning": "正确选项中的重点搭配：At a shoe store"
+          }
+        ]
+      },
       "item_id": 32,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +105,49 @@
       "answer": "C",
       "question": "What does the man explain to the woman?",
       "answer_explain": "原文依据：听力原文中提到“athletic socks in stock right now.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some items are out of stock.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） explain to the woman（女士）?",
+      "choice_translations": [
+        "A：A new location recently opened.",
+        "B：Express delivery will cost extra.",
+        "C：Some items are out of stock.",
+        "D：Some merchandise was moved."
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：IM •Welcome to Comfortable Footwear. Can | help you",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：IM •Welcome to Comfortable Footwear. Can | help you",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“athletic socks in stock right now.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some items are out of stock.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "some",
+            "meaning": "本题重点词；结合正确选项理解：Some items are out of stock."
+          },
+          {
+            "term": "items",
+            "meaning": "本题重点词；结合正确选项理解：Some items are out of stock."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Some items are out of stock.",
+            "meaning": "正确选项中的重点搭配：Some items are out of stock."
+          }
+        ]
+      },
       "item_id": 33,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -94,15 +164,49 @@
       "answer": "A",
       "question": "What does the man offer to do?",
       "answer_explain": "原文依据：听力原文中提到“Well, O'll check if our second store location has any.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Call another location）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） offer to do?",
+      "choice_translations": [
+        "A：Call another location",
+        "B：Reduce a price",
+        "C：Check a Web site",
+        "D：Cancel an order（订单）"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：IM •Welcome to Comfortable Footwear. Can | help you",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：IM •Welcome to Comfortable Footwear. Can | help you",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Well, O'll check if our second store location has any.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Call another location）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "call",
+            "meaning": "本题重点词；结合正确选项理解：Call another location"
+          },
+          {
+            "term": "another",
+            "meaning": "本题重点词；结合正确选项理解：Call another location"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Call another location",
+            "meaning": "正确选项中的重点搭配：Call another location"
+          }
+        ]
+      },
       "item_id": 34,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

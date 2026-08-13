@@ -11,13 +11,13 @@
   "difficulty": "medium",
   "priority": {
     "level": "P1",
-    "score": 80,
+    "score": 84,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "推断 / 隐含义题",
-      "跨句整合"
+      "推断题",
+      "跨句整合",
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -33,7 +33,9 @@
       "asset_key": "official-12-test-2/audio/part3/q047-049-questions.mp3",
       "exists": true
     },
-    "transcript": "lđ;\nw Tae-Joon, can you come to the conference room? Ol'd\nTae-Joon.\nlike to get your opinion on some plans. © The architect\njust dropped them off.\nm Sure! Ol'm really excited about the new office layout.\nRight now, we don't have much space for our break\nroom.\nEw Right. We wanted to change that. This new floor\nplan offers an open concept that will help everyone\ncollaborate on major projects.\nam I see. But odo you think we could close off one of the\ncorners of the office? We could use a private lounge\nfor our breaks.\nC9.\nEw Hmm. OLet me ask the other committee members for\nopinions before we do anything else."
+    "transcript": "lđ;\nw Tae-Joon, can you come to the conference room? Ol'd\nTae-Joon.\nlike to get your opinion on some plans. © The architect\njust dropped them off.\nm Sure! Ol'm really excited about the new office layout.\nRight now, we don't have much space for our break\nroom.\nEw Right. We wanted to change that. This new floor\nplan offers an open concept that will help everyone\ncollaborate on major projects.\nam I see. But odo you think we could close off one of the\ncorners of the office? We could use a private lounge\nfor our breaks.\nC9.\nEw Hmm. OLet me ask the other committee members for\nopinions before we do anything else.",
+    "transcript_translation": "中文辅助（离线预处理）：lđ;\nw Tae-Joon, can you come to the conference room?\nOl'd\nTae-Joon.\nlike to get your opinion on some plans.\n© The architect\njust dropped them off.\nm Sure!\nOl'm really excited about the new office（办公室） layout.\nRight now, we don't have much space for our break\nroom.\nEw Right.\nWe wanted to change that.\nThis new floor\nplan offers an open concept that will help everyone\ncollaborate on major projects.\nam I see.\nBut odo you think we could close off one of the\ncorners of the office（办公室）?\nWe could use a private lounge\nfor our breaks.\nC9.\nEw Hmm.\nOLet me ask the other committee members for\nopinions before we do anything else.",
+    "content_translation": "中文辅助（离线预处理）：lđ;\nw Tae-Joon, can you come to the conference room?\nOl'd\nTae-Joon.\nlike to get your opinion on some plans.\n© The architect\njust dropped them off.\nm Sure!\nOl'm really excited about the new office（办公室） layout.\nRight now, we don't have much space for our break\nroom.\nEw Right.\nWe wanted to change that.\nThis new floor\nplan offers an open concept that will help everyone\ncollaborate on major projects.\nam I see.\nBut odo you think we could close off one of the\ncorners of the office（办公室）?\nWe could use a private lounge\nfor our breaks.\nC9.\nEw Hmm.\nOLet me ask the other committee members for\nopinions before we do anything else."
   },
   "items": [
     {
@@ -46,15 +48,50 @@
       "answer": "A",
       "question": "What does the woman most likely want to discuss?",
       "answer_explain": "原文依据：听力原文中提到“Ol'm really excited about the new office layout.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（An office renovation）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） most likely（最可能） want to discuss?",
+      "choice_translations": [
+        "A：An office（办公室） renovation",
+        "B：An upcoming meeting（会议）",
+        "C：A holiday party",
+        "D：A new work（工作） schedule（日程）"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：lđ;",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：lđ;",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Ol'm really excited about the new office layout.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（An office renovation）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "office",
+            "meaning": "本题重点词；结合正确选项理解：An office（办公室） renovation"
+          },
+          {
+            "term": "renovation",
+            "meaning": "本题重点词；结合正确选项理解：An office（办公室） renovation"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "An office renovation",
+            "meaning": "正确选项中的重点搭配：An office（办公室） renovation"
+          }
+        ]
+      },
       "item_id": 47,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -71,15 +108,49 @@
       "answer": "D",
       "question": "What does the man suggest?",
       "answer_explain": "原文依据：听力原文中提到“plan offers an open concept that will help everyone”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Changing a plan）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） suggest（表明/建议）?",
+      "choice_translations": [
+        "A：Going to lunch",
+        "B：Uploading a program",
+        "C：Hiring a consultant",
+        "D：Changing a plan"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：lđ;",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：lđ;",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“plan offers an open concept that will help everyone”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Changing a plan）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "changing",
+            "meaning": "本题重点词；结合正确选项理解：Changing a plan"
+          },
+          {
+            "term": "plan",
+            "meaning": "本题重点词；结合正确选项理解：Changing a plan"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Changing a plan",
+            "meaning": "正确选项中的重点搭配：Changing a plan"
+          }
+        ]
+      },
       "item_id": 48,
-      "question_type": "推断 / 隐含义题",
       "priority": {
         "level": "P1",
         "score": 88,
-        "label": "推断 / 隐含义题",
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "跨句整合"
         ],
         "scope": "item",
@@ -97,15 +168,49 @@
       "answer": "C",
       "question": "What does the woman say she will do?",
       "answer_explain": "原文依据：听力原文中提到“OLet me ask the other committee members for”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Gather other opinions）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do?",
+      "choice_translations": [
+        "A：Speak with an architect",
+        "B：Approve a design",
+        "C：Gather other opinions",
+        "D：Take a break"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：lđ;",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：lđ;",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“OLet me ask the other committee members for”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Gather other opinions）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "gather",
+            "meaning": "本题重点词；结合正确选项理解：Gather other opinions"
+          },
+          {
+            "term": "other",
+            "meaning": "本题重点词；结合正确选项理解：Gather other opinions"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Gather other opinions",
+            "meaning": "正确选项中的重点搭配：Gather other opinions"
+          }
+        ]
+      },
       "item_id": 49,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

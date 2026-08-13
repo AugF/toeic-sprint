@@ -10,13 +10,14 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 68,
+    "level": "P1",
+    "score": 80,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "细节定位题"
+      "主旨 / 目的题",
+      "否定事实题",
+      "语境推断"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -29,7 +30,9 @@
         "exists": true
       }
     ],
-    "passage": "To:\nMultiple recipients <staflist 1 @gollandhotel.bm>\nFrom:\nTrey Roban <troban@gollandhotel.bm>\nDate:\n17 February\nSubject:\nStaff update\nGood morning.\nAs you may know, the convention of the Bermuda Biotechnology Society will take place\nnext month at the Fenwith Hotel. I have learned that all rooms there have now been\nbooked for the duration of the event. Fortunately, because our renovation has now been\ncompleted, we can take on the overflow. In fact, conference attendees are already making\nreservations with us. Consequently, employees in housekeeping, maintenance. and food\nservice should be prepared to work additional shifts. We may also need extra staff at the\nfront desk. Please let me know immediately if you will be unable to work at any time\nbetween 2 and 7 March.\nThank you,\nTrey Roban\nManager, Golland Hotel"
+    "passage": "To:\nMultiple recipients <staflist 1 @gollandhotel.bm>\nFrom:\nTrey Roban <troban@gollandhotel.bm>\nDate:\n17 February\nSubject:\nStaff update\nGood morning.\nAs you may know, the convention of the Bermuda Biotechnology Society will take place\nnext month at the Fenwith Hotel. I have learned that all rooms there have now been\nbooked for the duration of the event. Fortunately, because our renovation has now been\ncompleted, we can take on the overflow. In fact, conference attendees are already making\nreservations with us. Consequently, employees in housekeeping, maintenance. and food\nservice should be prepared to work additional shifts. We may also need extra staff at the\nfront desk. Please let me know immediately if you will be unable to work at any time\nbetween 2 and 7 March.\nThank you,\nTrey Roban\nManager, Golland Hotel",
+    "passage_translation": "中文辅助（离线预处理）：To:\nMultiple recipients <staflist 1 @gollandhotel.bm>\nFrom:\nTrey Roban <troban@gollandhotel.bm>\nDate:\n17 February\nSubject:\nStaff update\nGood morning.\nAs you may know, the convention of the Bermuda Biotechnology Society will take place\nnext month at the Fenwith Hotel.\nI have learned that all rooms there have now been\nbooked for the duration of the event.\nFortunately, because our renovation has now been\ncompleted, we can take on the overflow.\nIn fact, conference attendees are already making\nreservations with us.\nConsequently, employees in housekeeping, maintenance.\nand food\nservice（服务） should be prepared to work（工作） additional shifts.\nWe may also need extra staff at the\nfront desk.\nPlease（请） let me know immediately if you will be unable to work（工作） at any time\nbetween 2 and 7 March.\nThank（感谢） you,\nTrey Roban\nManager（经理）, Golland Hotel",
+    "content_translation": "中文辅助（离线预处理）：To:\nMultiple recipients <staflist 1 @gollandhotel.bm>\nFrom:\nTrey Roban <troban@gollandhotel.bm>\nDate:\n17 February\nSubject:\nStaff update\nGood morning.\nAs you may know, the convention of the Bermuda Biotechnology Society will take place\nnext month at the Fenwith Hotel.\nI have learned that all rooms there have now been\nbooked for the duration of the event.\nFortunately, because our renovation has now been\ncompleted, we can take on the overflow.\nIn fact, conference attendees are already making\nreservations with us.\nConsequently, employees in housekeeping, maintenance.\nand food\nservice（服务） should be prepared to work（工作） additional shifts.\nWe may also need extra staff at the\nfront desk.\nPlease（请） let me know immediately if you will be unable to work（工作） at any time\nbetween 2 and 7 March.\nThank（感谢） you,\nTrey Roban\nManager（经理）, Golland Hotel"
   },
   "items": [
     {
@@ -42,15 +45,49 @@
       "answer": "C",
       "question": "What is a purpose of the e-mail?",
       "answer_explain": "原文依据：篇章中可定位到“We may also need extra staff at the”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（To explain the need for additional help）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is a purpose（目的） of the e-mail?",
+      "choice_translations": [
+        "A：To introduce a new staff member",
+        "B：To confirm a room reservation",
+        "C：To explain the need for additional help",
+        "D：To provide updates on the hotel's"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：To:",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：To:",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“We may also need extra staff at the”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（To explain the need for additional help）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "explain",
+            "meaning": "本题重点词；结合正确选项理解：To explain the need for additional help"
+          },
+          {
+            "term": "need",
+            "meaning": "本题重点词；结合正确选项理解：To explain the need for additional help"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To explain the need for additional help",
+            "meaning": "正确选项中的重点搭配：To explain the need for additional help"
+          }
+        ]
+      },
       "item_id": 152,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
         "level": "P2",
         "score": 70,
-        "label": "主旨 / 目的 / 场景题",
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -67,15 +104,50 @@
       "answer": "B",
       "question": "What is indicated about the Fenwith Hotel?",
       "answer_explain": "原文依据：篇章中可定位到“next month at the Fenwith Hotel.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（It will hold a professional gathering.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is indicated about the Fenwith Hotel?",
+      "choice_translations": [
+        "A：It will not be open for a week in March.",
+        "B：It will hold a professional gathering.",
+        "C：It is due to be renovated.",
+        "D：It is interviewing potential employees."
+      ],
+      "question_type": "否定事实题",
+      "evidence": "参考原文第 2 段：Multiple recipients <staflist 1 @gollandhotel.bm>",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 2 段：Multiple recipients <staflist 1 @gollandhotel.bm>",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“next month at the Fenwith Hotel.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（It will hold a professional gathering.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "hold",
+            "meaning": "本题重点词；结合正确选项理解：It will hold a professional gathering."
+          },
+          {
+            "term": "professional",
+            "meaning": "本题重点词；结合正确选项理解：It will hold a professional gathering."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It will hold a professional gathering.",
+            "meaning": "正确选项中的重点搭配：It will hold a professional gathering."
+          }
+        ]
+      },
       "item_id": 153,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "否定事实题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "否定事实题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

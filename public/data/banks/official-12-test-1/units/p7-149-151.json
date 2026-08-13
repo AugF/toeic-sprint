@@ -10,15 +10,13 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 74,
+    "level": "P1",
+    "score": 83,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "推断 / 隐含义题",
-      "语境推断",
-      "细节定位题",
-      "明示定位"
+      "推断题",
+      "语境推断"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +29,9 @@
         "exists": true
       }
     ],
-    "passage": "International Culture Fest Volunteer Form\nName: Sunny Abdoo\nAddress: 484 Wyckoff Street, Rockville, Maryland 20847\nE-mail address: sabdoo@trmail.com\nThank you for your interest in volunteering at the International Culture Fest in Rockville\non April 25. Sign up below for the activities you are interested in. All volunteers are\ngranted a free meal ticket to use at any of our food vendors after their shift is over. You\nwill receive confirmation of your shift assignment by April 1. Volunteers are required to\nattend an orientation session on April 9 or April 10.\nShift roles:\nSetup: Put up tents and concession stands\nParking attendants: Direct traffic and assist with parking\nOn-site ticket sales: Sell tickets at the ticket sales booth\nInformation crew: Direct attendees to their destinations. Distribute map and\nperformance schedule\nConcession crew: Sell food and beverages\nCleanup: Help take down tents and concession stands\nShift times:\n8:00 A.M.-12:00 P.M.\n12:00 P.M.-4:00 P.M.\n4:00 P.M.-8:00 P.M.\nAdditional comments: L am only available to attend the first orientation session."
+    "passage": "International Culture Fest Volunteer Form\nName: Sunny Abdoo\nAddress: 484 Wyckoff Street, Rockville, Maryland 20847\nE-mail address: sabdoo@trmail.com\nThank you for your interest in volunteering at the International Culture Fest in Rockville\non April 25. Sign up below for the activities you are interested in. All volunteers are\ngranted a free meal ticket to use at any of our food vendors after their shift is over. You\nwill receive confirmation of your shift assignment by April 1. Volunteers are required to\nattend an orientation session on April 9 or April 10.\nShift roles:\nSetup: Put up tents and concession stands\nParking attendants: Direct traffic and assist with parking\nOn-site ticket sales: Sell tickets at the ticket sales booth\nInformation crew: Direct attendees to their destinations. Distribute map and\nperformance schedule\nConcession crew: Sell food and beverages\nCleanup: Help take down tents and concession stands\nShift times:\n8:00 A.M.-12:00 P.M.\n12:00 P.M.-4:00 P.M.\n4:00 P.M.-8:00 P.M.\nAdditional comments: L am only available to attend the first orientation session.",
+    "passage_translation": "中文辅助（离线预处理）：International Culture Fest Volunteer Form\nName: Sunny Abdoo\nAddress: 484 Wyckoff Street, Rockville, Maryland 20847\nE-mail address: sabdoo@trmail.com\nThank（感谢） you for your interest in volunteering at the International Culture Fest in Rockville\non April 25.\nSign up below for the activities you are interested in.\nAll volunteers are\ngranted a free meal ticket to use at any of our food vendors after their shift is over.\nYou\nwill receive confirmation of your shift assignment by April 1.\nVolunteers are required to\nattend an orientation session on April 9 or April 10.\nShift roles:\nSetup: Put up tents and concession stands\nParking attendants: Direct traffic and assist with parking\nOn-site ticket sales: Sell tickets at the ticket sales booth\nInformation（信息） crew: Direct attendees to their destinations.\nDistribute map and\nperformance schedule（日程）\nConcession crew: Sell food and beverages\nCleanup: Help take down tents and concession stands\nShift times:\n8:00 A.M.-12:00 P.M.\n12:00 P.M.-4:00 P.M.\n4:00 P.M.-8:00 P.M.\nAdditional comments: L am only available（可用的） to attend the first orientation session.",
+    "content_translation": "中文辅助（离线预处理）：International Culture Fest Volunteer Form\nName: Sunny Abdoo\nAddress: 484 Wyckoff Street, Rockville, Maryland 20847\nE-mail address: sabdoo@trmail.com\nThank（感谢） you for your interest in volunteering at the International Culture Fest in Rockville\non April 25.\nSign up below for the activities you are interested in.\nAll volunteers are\ngranted a free meal ticket to use at any of our food vendors after their shift is over.\nYou\nwill receive confirmation of your shift assignment by April 1.\nVolunteers are required to\nattend an orientation session on April 9 or April 10.\nShift roles:\nSetup: Put up tents and concession stands\nParking attendants: Direct traffic and assist with parking\nOn-site ticket sales: Sell tickets at the ticket sales booth\nInformation（信息） crew: Direct attendees to their destinations.\nDistribute map and\nperformance schedule（日程）\nConcession crew: Sell food and beverages\nCleanup: Help take down tents and concession stands\nShift times:\n8:00 A.M.-12:00 P.M.\n12:00 P.M.-4:00 P.M.\n4:00 P.M.-8:00 P.M.\nAdditional comments: L am only available（可用的） to attend the first orientation session."
   },
   "items": [
     {
@@ -44,15 +44,49 @@
       "answer": "C",
       "question": "What is suggested about the International Culture Fest?",
       "answer_explain": "原文依据：篇章中可定位到“Thank you for your interest in volunteering at the International Culture Fest in Rockville”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（It offers volunteers a meal voucher.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is suggested about the International Culture Fest?",
+      "choice_translations": [
+        "A：It is an annual event.",
+        "B：It begins in the afternoon.",
+        "C：It offers volunteers a meal voucher.",
+        "D：It is held indoors."
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：International Culture Fest Volunteer Form",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：International Culture Fest Volunteer Form",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Thank you for your interest in volunteering at the International Culture Fest in Rockville”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（It offers volunteers a meal voucher.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "offers",
+            "meaning": "本题重点词；结合正确选项理解：It offers volunteers a meal voucher."
+          },
+          {
+            "term": "volunteers",
+            "meaning": "本题重点词；结合正确选项理解：It offers volunteers a meal voucher."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It offers volunteers a meal voucher.",
+            "meaning": "正确选项中的重点搭配：It offers volunteers a meal voucher."
+          }
+        ]
+      },
       "item_id": 149,
-      "question_type": "推断 / 隐含义题",
       "priority": {
         "level": "P1",
         "score": 83,
-        "label": "推断 / 隐含义题",
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "语境推断"
         ],
         "scope": "item",
@@ -70,15 +104,50 @@
       "answer": "A",
       "question": "What will Mr. Abdoo most likely do at the event?",
       "answer_explain": "原文依据：篇章中可定位到“Cleanup: Help take down tents and concession stands”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（Hand out maps and schedules）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will Mr.\nAbdoo most likely（最可能） do at the event?",
+      "choice_translations": [
+        "A：Hand out maps and schedules",
+        "B：Help performers with equipment",
+        "C：Direct traffic in the parking area",
+        "D：Sell tickets at the ticket booth"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 2 段：Name: Sunny Abdoo",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "推断题",
+        "evidence": "参考原文第 2 段：Name: Sunny Abdoo",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Cleanup: Help take down tents and concession stands”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（Hand out maps and schedules）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "hand",
+            "meaning": "本题重点词；结合正确选项理解：Hand out maps and schedules"
+          },
+          {
+            "term": "maps",
+            "meaning": "本题重点词；结合正确选项理解：Hand out maps and schedules"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Hand out maps and schedules",
+            "meaning": "正确选项中的重点搭配：Hand out maps and schedules"
+          }
+        ]
+      },
       "item_id": 150,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -95,16 +164,46 @@
       "answer": "B",
       "question": "When will Mr. Abdoo most likely attend an orientation session?",
       "answer_explain": "原文依据：篇章中可定位到“attend an orientation session on April 9 or April 10.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（On April 9）。",
+      "question_translation": "中文辅助（离线预处理）：When（何时） will Mr.\nAbdoo most likely（最可能） attend an orientation session?",
+      "choice_translations": [
+        "A：On April 1",
+        "B：On April 9",
+        "C：On April 10",
+        "D：On April 25"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 2 段：Name: Sunny Abdoo",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "推断题",
+        "evidence": "参考原文第 2 段：Name: Sunny Abdoo",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“attend an orientation session on April 9 or April 10.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（On April 9）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "april",
+            "meaning": "本题重点词；结合正确选项理解：On April 9"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "On April 9",
+            "meaning": "正确选项中的重点搭配：On April 9"
+          }
+        ]
+      },
       "item_id": 151,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P3",
-        "score": 42,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "明示定位"
+          "推断题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

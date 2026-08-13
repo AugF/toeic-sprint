@@ -10,12 +10,14 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P3",
-    "score": 59,
+    "level": "P2",
+    "score": 78,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
+      "推断题",
+      "跨句整合",
+      "细节题",
       "明示细节"
     ],
     "scope": "unit",
@@ -32,7 +34,9 @@
       "asset_key": "official-11-test-2/audio/part3/q056-058-questions.mp3",
       "exists": true
     },
-    "transcript": "Ek w Hi. I just talked to our advertising consultant. He\nrecommended that we start promoting our legal\nservices with videos on social media -to build a\npresence there.\nm One of my hobbies is creating and editing videos, s\nI'd be happy to lead this project.\nEw Great! It's your project, then! ® The consultant\nsuggested focusing on content that is useful, like\ngeneral legal guidance.\nm OK. Ol'll start out by looking into the topics for existin\nlegal videos, and we can decide on the content for ol\nvideos based on that."
+    "transcript": "Ek w Hi. I just talked to our advertising consultant. He\nrecommended that we start promoting our legal\nservices with videos on social media -to build a\npresence there.\nm One of my hobbies is creating and editing videos, s\nI'd be happy to lead this project.\nEw Great! It's your project, then! ® The consultant\nsuggested focusing on content that is useful, like\ngeneral legal guidance.\nm OK. Ol'll start out by looking into the topics for existin\nlegal videos, and we can decide on the content for ol\nvideos based on that.",
+    "transcript_translation": "中文辅助（离线预处理）：Ek w Hi.\nI just talked to our advertising consultant.\nHe\nrecommended that we start promoting our legal\nservices with videos on social media -to build a\npresence there.\nm One of my hobbies is creating and editing videos, s\nI'd be happy to lead this project.\nEw Great!\nIt's your project, then!\n® The consultant\nsuggested focusing on content that is useful, like\ngeneral legal guidance.\nm OK.\nOl'll start out by looking into the topics for existin\nlegal videos, and we can decide on the content for ol\nvideos based on that.",
+    "content_translation": "中文辅助（离线预处理）：Ek w Hi.\nI just talked to our advertising consultant.\nHe\nrecommended that we start promoting our legal\nservices with videos on social media -to build a\npresence there.\nm One of my hobbies is creating and editing videos, s\nI'd be happy to lead this project.\nEw Great!\nIt's your project, then!\n® The consultant\nsuggested focusing on content that is useful, like\ngeneral legal guidance.\nm OK.\nOl'll start out by looking into the topics for existin\nlegal videos, and we can decide on the content for ol\nvideos based on that."
   },
   "items": [
     {
@@ -45,15 +49,46 @@
       "answer": "C",
       "question": "Where do the speakers most likely work?",
       "answer_explain": "原文依据：听力原文与题目“Where do the speakers most likely work?”对应，官方答案为“At a law firm”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（At a law firm）。",
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） do the speakers most likely（最可能） work（工作）?",
+      "choice_translations": [
+        "A：At an advertising agency",
+        "B：At a training consultancy",
+        "C：At a law firm",
+        "D：At a social media company（公司）"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Ek w Hi. I just talked to our advertising consultant. He",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Ek w Hi. I just talked to our advertising consultant. He",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文与题目“Where do the speakers most likely work?”对应，官方答案为“At a law firm”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（At a law firm）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "firm",
+            "meaning": "本题重点词；结合正确选项理解：At a law firm"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "At a law firm",
+            "meaning": "正确选项中的重点搭配：At a law firm"
+          }
+        ]
+      },
       "item_id": 56,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -70,15 +105,49 @@
       "answer": "C",
       "question": "What does the man offer to do?",
       "answer_explain": "原文依据：听力原文与题目“What does the man offer to do?”对应，官方答案为“Lead a project”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（Lead a project）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） offer to do?",
+      "choice_translations": [
+        "A：Review a contract",
+        "B：Purchase（购买） some advertising space",
+        "C：Lead a project",
+        "D：Contact Human Resources"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Ek w Hi. I just talked to our advertising consultant. He",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Ek w Hi. I just talked to our advertising consultant. He",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文与题目“What does the man offer to do?”对应，官方答案为“Lead a project”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（Lead a project）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "lead",
+            "meaning": "本题重点词；结合正确选项理解：Lead a project"
+          },
+          {
+            "term": "project",
+            "meaning": "本题重点词；结合正确选项理解：Lead a project"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Lead a project",
+            "meaning": "正确选项中的重点搭配：Lead a project"
+          }
+        ]
+      },
       "item_id": 57,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 46,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节"
         ],
         "scope": "item",
@@ -96,15 +165,49 @@
       "answer": "D",
       "question": "What will the man do next?",
       "answer_explain": "原文依据：听力原文与题目“What will the man do next?”对应，官方答案为“Conduct some research”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Conduct some research）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） do next?",
+      "choice_translations": [
+        "A：Assemble a team",
+        "B：Write an online review",
+        "C：Negotiate a higher salary",
+        "D：Conduct some research"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Ek w Hi. I just talked to our advertising consultant. He",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Ek w Hi. I just talked to our advertising consultant. He",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文与题目“What will the man do next?”对应，官方答案为“Conduct some research”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Conduct some research）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "conduct",
+            "meaning": "本题重点词；结合正确选项理解：Conduct some research"
+          },
+          {
+            "term": "some",
+            "meaning": "本题重点词；结合正确选项理解：Conduct some research"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Conduct some research",
+            "meaning": "正确选项中的重点搭配：Conduct some research"
+          }
+        ]
+      },
       "item_id": 58,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

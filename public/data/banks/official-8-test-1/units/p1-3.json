@@ -15,7 +15,7 @@
     "label": "单题训练",
     "reason": "按该题的高频考点和能力迁移价值排序。",
     "focus_tags": [
-      "人物动作 / 场景题",
+      "动作 / 状态辨析题",
       "动作与状态干扰"
     ],
     "scope": "unit",
@@ -31,7 +31,9 @@
       "path": "images/part1/q003.jpg",
       "asset_key": "official-8-test-1/images/part1/q003.jpg",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
+    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
   },
   "items": [
     {
@@ -46,15 +48,48 @@
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some loaves of bread are piled on a counter.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（Some loaves of bread are piled on a counter.）。",
+      "choice_translations": [
+        "A：Some loaves of bread are piled on a counter.",
+        "B：One of the men is placing food in a refrigerator.",
+        "C：One of the men is putting on an apron.",
+        "D：Some food is being handed to a customer（顾客）."
+      ],
+      "question_type": "动作 / 状态辨析题",
+      "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
+      "strategy": "本题属于动作 / 状态辨析题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "动作 / 状态辨析题",
+        "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
+        "strategy": "本题属于动作 / 状态辨析题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：照片中可见信息与描述“Some loaves of bread are piled on a counter.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（Some loaves of bread are piled on a counter.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "some",
+            "meaning": "本题重点词；结合正确选项理解：Some loaves of bread are piled on a counter."
+          },
+          {
+            "term": "loaves",
+            "meaning": "本题重点词；结合正确选项理解：Some loaves of bread are piled on a counter."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Some loaves of bread are piled on a counter.",
+            "meaning": "正确选项中的重点搭配：Some loaves of bread are piled on a counter."
+          }
+        ]
+      },
       "item_id": 3,
-      "question_type": "人物动作 / 场景题",
       "priority": {
         "level": "P1",
         "score": 80,
-        "label": "人物动作 / 场景题",
+        "label": "动作 / 状态辨析题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "人物动作 / 场景题",
+          "动作 / 状态辨析题",
           "动作与状态干扰"
         ],
         "scope": "item",

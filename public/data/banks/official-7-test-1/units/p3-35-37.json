@@ -10,12 +10,14 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 61,
+    "level": "P1",
+    "score": 80,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "推断题",
+      "跨句整合",
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +33,9 @@
       "asset_key": "official-7-test-1/audio/part3/q035-037-questions.mp3",
       "exists": true
     },
-    "transcript": "Kw Hi, I dropped my car off this morning. Have you\nchecked my tires yet?\nm Yes. Our mechanic checked the tires on your car.\nUnfortunately, the front tires do need to be replaced.\nThe mechanic noticed that they're wearing out.\nEK w Oh, I didn't realize they were that worn out. Can I still\nget my car back this afternoon?\nI'm sorry, Owe won't have the tires available until\ntomorrow.\nEw But, ®I have a client meeting tomorrow, and I'll have\nno way to get there.\nOh, Owe can offer you a loaner car. You can use it\nuntil your car is ready."
+    "transcript": "Kw Hi, I dropped my car off this morning. Have you\nchecked my tires yet?\nm Yes. Our mechanic checked the tires on your car.\nUnfortunately, the front tires do need to be replaced.\nThe mechanic noticed that they're wearing out.\nEK w Oh, I didn't realize they were that worn out. Can I still\nget my car back this afternoon?\nI'm sorry, Owe won't have the tires available until\ntomorrow.\nEw But, ®I have a client meeting tomorrow, and I'll have\nno way to get there.\nOh, Owe can offer you a loaner car. You can use it\nuntil your car is ready.",
+    "transcript_translation": "中文辅助（离线预处理）：Kw Hi, I dropped my car off this morning.\nHave you\nchecked my tires yet?\nm Yes.\nOur mechanic checked the tires on your car.\nUnfortunately, the front tires do need to be replaced.\nThe mechanic noticed that they're wearing out.\nEK w Oh, I didn't realize they were that worn out.\nCan I still\nget my car back this afternoon?\nI'm sorry, Owe won't have the tires available（可用的） until\ntomorrow.\nEw But, ®I have a client meeting（会议） tomorrow, and I'll have\nno way to get there.\nOh, Owe can offer you a loaner car.\nYou can use it\nuntil your car is ready.",
+    "content_translation": "中文辅助（离线预处理）：Kw Hi, I dropped my car off this morning.\nHave you\nchecked my tires yet?\nm Yes.\nOur mechanic checked the tires on your car.\nUnfortunately, the front tires do need to be replaced.\nThe mechanic noticed that they're wearing out.\nEK w Oh, I didn't realize they were that worn out.\nCan I still\nget my car back this afternoon?\nI'm sorry, Owe won't have the tires available（可用的） until\ntomorrow.\nEw But, ®I have a client meeting（会议） tomorrow, and I'll have\nno way to get there.\nOh, Owe can offer you a loaner car.\nYou can use it\nuntil your car is ready."
   },
   "items": [
     {
@@ -44,15 +48,50 @@
       "answer": "A",
       "question": "Where does the man most likely work?",
       "answer_explain": "原文依据：听力原文中提到“I'm sorry, Owe won't have the tires available until”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At an auto repair shop）。",
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the man（男士） most likely（最可能） work（工作）?",
+      "choice_translations": [
+        "A：At an auto repair shop",
+        "B：At a construction site",
+        "C：At a factory",
+        "D：At an airport"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Kw Hi, I dropped my car off this morning. Have you",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Kw Hi, I dropped my car off this morning. Have you",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“I'm sorry, Owe won't have the tires available until”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At an auto repair shop）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "auto",
+            "meaning": "本题重点词；结合正确选项理解：At an auto repair shop"
+          },
+          {
+            "term": "repair",
+            "meaning": "本题重点词；结合正确选项理解：At an auto repair shop"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "At an auto repair shop",
+            "meaning": "正确选项中的重点搭配：At an auto repair shop"
+          }
+        ]
+      },
       "item_id": 35,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +108,49 @@
       "answer": "B",
       "question": "What does the woman say she needs to do tomorrow?",
       "answer_explain": "原文依据：听力原文中提到“Ew But, ®I have a client meeting tomorrow, and I'll have”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Meet a client）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she needs to do tomorrow?",
+      "choice_translations": [
+        "A：Conduct an inspection",
+        "B：Meet a client",
+        "C：Reserve a parking space",
+        "D：Make a payment"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 9 段：tomorrow.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 9 段：tomorrow.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Ew But, ®I have a client meeting tomorrow, and I'll have”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Meet a client）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "meet",
+            "meaning": "本题重点词；结合正确选项理解：Meet a client"
+          },
+          {
+            "term": "client",
+            "meaning": "本题重点词；结合正确选项理解：Meet a client"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Meet a client",
+            "meaning": "正确选项中的重点搭配：Meet a client"
+          }
+        ]
+      },
       "item_id": 36,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -94,15 +167,49 @@
       "answer": "C",
       "question": "What does the man offer the woman?",
       "answer_explain": "原文依据：听力原文中提到“I'm sorry, Owe won't have the tires available until”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Another vehicle）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） offer the woman（女士）?",
+      "choice_translations": [
+        "A：Some safety glasses",
+        "B：Express delivery",
+        "C：Another vehicle",
+        "D：An alternate date"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 12 段：Oh, Owe can offer you a loaner car. You can use it",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 12 段：Oh, Owe can offer you a loaner car. You can use it",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“I'm sorry, Owe won't have the tires available until”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Another vehicle）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "another",
+            "meaning": "本题重点词；结合正确选项理解：Another vehicle"
+          },
+          {
+            "term": "vehicle",
+            "meaning": "本题重点词；结合正确选项理解：Another vehicle"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Another vehicle",
+            "meaning": "正确选项中的重点搭配：Another vehicle"
+          }
+        ]
+      },
       "item_id": 37,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

@@ -25,7 +25,9 @@
       "path": "audio/part2/q012.mp3",
       "asset_key": "official-9-test-2/audio/part2/q012.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） can I get new lightbulbs for the office（办公室）?\nHEW",
+    "content_translation": "中文辅助（离线预处理）：Where（哪里） can I get new lightbulbs for the office（办公室）?\nHEW"
   },
   "items": [
     {
@@ -40,8 +42,42 @@
       "topic": "地点询问",
       "keywords": "where location response",
       "answer_explain": "原文依据：问句或陈述是“Where can I get new lightbulbs for the office? HEW”，自然应答是“Check with someone in maintenance.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Check with someone in maintenance.）。",
-      "item_id": 12,
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） can I get new lightbulbs for the office（办公室）?\nHEW",
+      "choice_translations": [
+        "A：Open weekdays until six P.M.",
+        "B：That'll be eleven dollars.",
+        "C：Check with someone in maintenance."
+      ],
       "question_type": "地点疑问句",
+      "evidence": "参考原文第 1 段：Where can I get new lightbulbs for the office? HEW",
+      "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "地点疑问句",
+        "evidence": "参考原文第 1 段：Where can I get new lightbulbs for the office? HEW",
+        "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“Where can I get new lightbulbs for the office? HEW”，自然应答是“Check with someone in maintenance.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Check with someone in maintenance.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "check",
+            "meaning": "本题重点词；结合正确选项理解：Check with someone in maintenance."
+          },
+          {
+            "term": "someone",
+            "meaning": "本题重点词；结合正确选项理解：Check with someone in maintenance."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Check with someone in maintenance.",
+            "meaning": "正确选项中的重点搭配：Check with someone in maintenance."
+          }
+        ]
+      },
+      "item_id": 12,
       "priority": {
         "level": "P3",
         "score": 53,

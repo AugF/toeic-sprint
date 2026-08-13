@@ -25,7 +25,9 @@
       "path": "audio/part2/q017.mp3",
       "asset_key": "official-11-test-2/audio/part2/q017.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：When（何时） is your daughter leaving for university?\n฿M",
+    "content_translation": "中文辅助（离线预处理）：When（何时） is your daughter leaving for university?\n฿M"
   },
   "items": [
     {
@@ -40,8 +42,42 @@
       "topic": "时间询问",
       "keywords": "when time response",
       "answer_explain": "原文依据：问句或陈述为“When is your daughter leaving for university? ฿M”，官方正确应答是“I'm driving her there on Friday.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（I'm driving her there on Friday.）。",
-      "item_id": 17,
+      "question_translation": "中文辅助（离线预处理）：When（何时） is your daughter leaving for university?\n฿M",
+      "choice_translations": [
+        "A：No, but thank（感谢） you for offering",
+        "B：The Engineering Department.",
+        "C：I'm driving her there on Friday."
+      ],
       "question_type": "时间疑问句",
+      "evidence": "参考原文第 1 段：When is your daughter leaving for university? ฿M",
+      "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "时间疑问句",
+        "evidence": "参考原文第 1 段：When is your daughter leaving for university? ฿M",
+        "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述为“When is your daughter leaving for university? ฿M”，官方正确应答是“I'm driving her there on Friday.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（I'm driving her there on Friday.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "driving",
+            "meaning": "本题重点词；结合正确选项理解：I'm driving her there on Friday."
+          },
+          {
+            "term": "friday",
+            "meaning": "本题重点词；结合正确选项理解：I'm driving her there on Friday."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "I'm driving her there on Friday.",
+            "meaning": "正确选项中的重点搭配：I'm driving her there on Friday."
+          }
+        ]
+      },
+      "item_id": 17,
       "priority": {
         "level": "P3",
         "score": 53,

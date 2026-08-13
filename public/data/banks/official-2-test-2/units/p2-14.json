@@ -15,7 +15,7 @@
     "label": "单题训练",
     "reason": "按该题的高频考点和能力迁移价值排序。",
     "focus_tags": [
-      "人物疑问句"
+      "一般疑问句"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -25,7 +25,9 @@
       "path": "audio/part2/q014.mp3",
       "asset_key": "official-2-test-2/audio/part2/q014.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "你知道谁在策划 Jane 的告别派对吗？\nA. 我觉得是 Tom Shields。\nB. 是二十三号。\nC. 不，他不能去。",
+    "content_translation": "你知道谁在策划 Jane 的告别派对吗？\nA. 我觉得是 Tom Shields。\nB. 是二十三号。\nC. 不，他不能去。"
   },
   "items": [
     {
@@ -40,15 +42,49 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Do you know who's planning Jane’s going-away party?”，自然应答是“think it's Tom Shields.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（think it's Tom Shields.）。",
+      "question_translation": "你知道谁在策划 Jane 的告别派对吗？",
+      "choice_translations": [
+        "A：我觉得是 Tom Shields。",
+        "B：是二十三号。",
+        "C：不，他不能去。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "think",
+            "meaning": "出现在本题正确表达中：我觉得是 Tom Shields。"
+          },
+          {
+            "term": "it's",
+            "meaning": "出现在本题正确表达中：我觉得是 Tom Shields。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "think it's Tom Shields.",
+            "meaning": "我觉得是 Tom Shields。"
+          }
+        ]
+      },
+      "question_type": "一般疑问句",
+      "evidence": "参考原文第 1 段：Do you know who's planning Jane’s going-away party?",
+      "response_style": "既可能直接回答，也常以原因、安排或补充信息间接回应",
+      "strategy": "先判断为一般疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "一般疑问句",
+        "evidence": "参考原文第 1 段：Do you know who's planning Jane’s going-away party?",
+        "strategy": "先判断为一般疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
+        "analysis": "原文依据：问句或陈述是“Do you know who's planning Jane’s going-away party?”，自然应答是“think it's Tom Shields.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（think it's Tom Shields.）。"
+      },
       "item_id": 14,
-      "question_type": "人物疑问句",
       "priority": {
         "level": "P3",
         "score": 53,
-        "label": "人物疑问句",
+        "label": "一般疑问句",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "人物疑问句"
+          "一般疑问句"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

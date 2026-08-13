@@ -25,7 +25,9 @@
       "path": "audio/part2/q010.mp3",
       "asset_key": "official-12-test-2/audio/part2/q010.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：When（何时） are you interviewing the new art director?",
+    "content_translation": "中文辅助（离线预处理）：When（何时） are you interviewing the new art director?"
   },
   "items": [
     {
@@ -40,8 +42,42 @@
       "topic": "时间询问",
       "keywords": "when time response",
       "answer_explain": "原文依据：问句或陈述是“When are you interviewing the new art director?”，自然应答是“On the fifteenth of June.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（On the fifteenth of June.）。",
-      "item_id": 10,
+      "question_translation": "中文辅助（离线预处理）：When（何时） are you interviewing the new art director?",
+      "choice_translations": [
+        "A：Thank（感谢） you for the donation.",
+        "B：On the fifteenth of June.",
+        "C：The gallery on George Street."
+      ],
       "question_type": "时间疑问句",
+      "evidence": "参考原文第 1 段：When are you interviewing the new art director?",
+      "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "时间疑问句",
+        "evidence": "参考原文第 1 段：When are you interviewing the new art director?",
+        "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“When are you interviewing the new art director?”，自然应答是“On the fifteenth of June.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（On the fifteenth of June.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "fifteenth",
+            "meaning": "本题重点词；结合正确选项理解：On the fifteenth of June."
+          },
+          {
+            "term": "june",
+            "meaning": "本题重点词；结合正确选项理解：On the fifteenth of June."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "On the fifteenth of June.",
+            "meaning": "正确选项中的重点搭配：On the fifteenth of June."
+          }
+        ]
+      },
+      "item_id": 10,
       "priority": {
         "level": "P3",
         "score": 53,

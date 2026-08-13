@@ -11,11 +11,13 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 61,
+    "score": 69,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "细节题",
+      "主旨 / 目的题",
+      "主旨场景"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +33,9 @@
       "asset_key": "official-4-test-1/audio/part3/q038-040-questions.mp3",
       "exists": true
     },
-    "transcript": "Hi. 9| ordered a set of dishes from your company\nweeks ago, but | haven’t received the order yet. My\norder number is 785.\nI'm really sorry, but ®the dishes you ordered were\nout of stock. But it looks like we'll be getting a new\nshipment tomorrow.\nh no. ®1 really wanted to use them for a dinner pz\nI’m having this weekend.\nWell, today’s only Tuesday. I'll make sure that the\ndishes are sent out as soon as they arrive. They sh\narrive in time for your dinner party."
+    "transcript": "Hi. 9| ordered a set of dishes from your company\nweeks ago, but | haven’t received the order yet. My\norder number is 785.\nI'm really sorry, but ®the dishes you ordered were\nout of stock. But it looks like we'll be getting a new\nshipment tomorrow.\nh no. ®1 really wanted to use them for a dinner pz\nI’m having this weekend.\nWell, today’s only Tuesday. I'll make sure that the\ndishes are sent out as soon as they arrive. They sh\narrive in time for your dinner party.",
+    "transcript_translation": "中文辅助（离线预处理）：Hi.\n9| ordered a set of dishes from your company（公司）\nweeks ago, but | haven’t received the order（订单） yet.\nMy\norder（订单） number is 785.\nI'm really sorry, but ®the dishes you ordered were\nout of stock.\nBut it looks like we'll be getting a new\nshipment tomorrow.\nh no.\n®1 really wanted to use them for a dinner pz\nI’m having this weekend.\nWell, today’s only Tuesday.\nI'll make sure that the\ndishes are sent out as soon as they arrive.\nThey sh\narrive in time for your dinner party.",
+    "content_translation": "中文辅助（离线预处理）：Hi.\n9| ordered a set of dishes from your company（公司）\nweeks ago, but | haven’t received the order（订单） yet.\nMy\norder（订单） number is 785.\nI'm really sorry, but ®the dishes you ordered were\nout of stock.\nBut it looks like we'll be getting a new\nshipment tomorrow.\nh no.\n®1 really wanted to use them for a dinner pz\nI’m having this weekend.\nWell, today’s only Tuesday.\nI'll make sure that the\ndishes are sent out as soon as they arrive.\nThey sh\narrive in time for your dinner party."
   },
   "items": [
     {
@@ -44,15 +48,49 @@
       "answer": "C",
       "question": "What product are the speakers discussing?",
       "answer_explain": "原文依据：听力原文中提到“dishes are sent out as soon as they arrive.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Aset of dishes）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） product are the speakers discussing?",
+      "choice_translations": [
+        "A：Adining table",
+        "B：Akitchen appliance",
+        "C：Aset of dishes",
+        "D：Acomputer"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Hi. 9| ordered a set of dishes from your company",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Hi. 9| ordered a set of dishes from your company",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“dishes are sent out as soon as they arrive.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Aset of dishes）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "aset",
+            "meaning": "本题重点词；结合正确选项理解：Aset of dishes"
+          },
+          {
+            "term": "dishes",
+            "meaning": "本题重点词；结合正确选项理解：Aset of dishes"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Aset of dishes",
+            "meaning": "正确选项中的重点搭配：Aset of dishes"
+          }
+        ]
+      },
       "item_id": 38,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +107,50 @@
       "answer": "A",
       "question": "What does the woman inform the man about?",
       "answer_explain": "原文依据：听力原文中提到“weeks ago, but | haven’t received the order yet.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An item is temporarily unavailable.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） inform the man（男士） about?",
+      "choice_translations": [
+        "A：An item is temporarily unavailable.",
+        "B：Some boxes were damaged.",
+        "C：Acomputer system needs repair.",
+        "D：Acompany event was rescheduled."
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：Hi. 9| ordered a set of dishes from your company",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：Hi. 9| ordered a set of dishes from your company",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“weeks ago, but | haven’t received the order yet.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An item is temporarily unavailable.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "item",
+            "meaning": "本题重点词；结合正确选项理解：An item is temporarily unavailable."
+          },
+          {
+            "term": "temporarily",
+            "meaning": "本题重点词；结合正确选项理解：An item is temporarily unavailable."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "An item is temporarily unavailable.",
+            "meaning": "正确选项中的重点搭配：An item is temporarily unavailable."
+          }
+        ]
+      },
       "item_id": 39,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -94,15 +167,49 @@
       "answer": "C",
       "question": "What will the man do this weekend?",
       "answer_explain": "原文依据：听力原文中提到“arrive in time for your dinner party.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Host a dinner party）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） do this weekend?",
+      "choice_translations": [
+        "A：Check his bank account",
+        "B：Pick up a package",
+        "C：Host a dinner party",
+        "D：Set up a display"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 8 段：I’m having this weekend.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 8 段：I’m having this weekend.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“arrive in time for your dinner party.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Host a dinner party）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "host",
+            "meaning": "本题重点词；结合正确选项理解：Host a dinner party"
+          },
+          {
+            "term": "dinner",
+            "meaning": "本题重点词；结合正确选项理解：Host a dinner party"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Host a dinner party",
+            "meaning": "正确选项中的重点搭配：Host a dinner party"
+          }
+        ]
+      },
       "item_id": 40,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

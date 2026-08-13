@@ -10,13 +10,14 @@
   "keywords": "question statement natural response",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 68,
+    "level": "P1",
+    "score": 85,
     "label": "单题训练",
     "reason": "按该题的高频考点和能力迁移价值排序。",
     "focus_tags": [
-      "一般疑问句",
-      "自然应答"
+      "陈述 / 请求应答题",
+      "间接应答",
+      "语用判断"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -26,7 +27,9 @@
       "path": "audio/part2/q011.mp3",
       "asset_key": "official-10-test-1/audio/part2/q011.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "你想参加那个额外的培训课程吗？* M\nA. 是的，我可以用更多的练习。\nB. 我更喜欢绿色的。\nC. 我大概三年前在那里待过。",
+    "content_translation": "你想参加那个额外的培训课程吗？* M\nA. 是的，我可以用更多的练习。\nB. 我更喜欢绿色的。\nC. 我大概三年前在那里待过。"
   },
   "items": [
     {
@@ -41,16 +44,51 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Do you want to attend that extra training session? * M”，自然应答是“Yes, I could use some more practice. aLlo”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, I could use some more practice. aLlo）。",
+      "question_translation": "你想参加那个额外的培训课程吗？ * M",
+      "choice_translations": [
+        "A：是的，我可以用更多的练习。aLlo",
+        "B：我更喜欢绿色的。",
+        "C：我大概三年前在那里待过。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "some",
+            "meaning": "出现在本题正确表达中：是的，我可以用更多的练习。aLlo"
+          },
+          {
+            "term": "more",
+            "meaning": "出现在本题正确表达中：是的，我可以用更多的练习。aLlo"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Yes, I could use some more practice. aLlo",
+            "meaning": "是的，我可以用更多的练习。aLlo"
+          }
+        ]
+      },
+      "question_type": "陈述 / 请求应答题",
+      "evidence": "参考原文第 1 段：Do you want to attend that extra training session? * M",
+      "response_style": "既可能直接回答，也常以原因、安排或补充信息间接回应",
+      "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "陈述 / 请求应答题",
+        "evidence": "参考原文第 1 段：Do you want to attend that extra training session? * M",
+        "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
+        "analysis": "原文依据：问句或陈述是“Do you want to attend that extra training session? * M”，自然应答是“Yes, I could use some more practice. aLlo”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, I could use some more practice. aLlo）。"
+      },
       "item_id": 11,
-      "question_type": "一般疑问句",
       "priority": {
-        "level": "P2",
-        "score": 68,
-        "label": "一般疑问句",
+        "level": "P1",
+        "score": 85,
+        "label": "陈述 / 请求应答题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "一般疑问句",
-          "自然应答"
+          "陈述 / 请求应答题",
+          "间接应答",
+          "语用判断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

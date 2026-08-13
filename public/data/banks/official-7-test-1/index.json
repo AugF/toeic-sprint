@@ -1,13 +1,13 @@
 {
   "schema_version": "3.0",
   "bank_id": "official-7-test-1",
-  "content_hash": "a043eab60136754c785e4fd38ddf64aafe52611dfc4d5a11acccda5e7a2c2e20",
+  "content_hash": "93dbc2412f1e4eaa81286efc03cb5026e1d62b85878f34515f749d09e06f941d",
   "source": {
     "collection": "official",
     "volume": 7,
     "test": 1,
-    "file": "question.json",
-    "enriched": false
+    "file": "question.enriched.json",
+    "enriched": true
   },
   "name": "公式 TOEIC Listening & Reading 问题集 7 Test 1",
   "author": "IIBC / ETS",
@@ -19,11 +19,12 @@
     "disclaimer": "P1/P2/P3为训练优先级，并非ETS官方频率或难度等级。"
   },
   "quality": {
-    "enriched": false,
-    "translation": "unavailable",
-    "knowledge": "unavailable",
-    "analysis": "basic",
-    "ocr": "unreviewed"
+    "enriched": true,
+    "translation": "available",
+    "knowledge": "available",
+    "analysis": "enriched",
+    "ocr": "unreviewed",
+    "missing_graphic_groups": 5
   },
   "parts": {
     "1": {
@@ -86,14 +87,14 @@
         {
           "item_id": 1,
           "item_key": "official-7-test-1/p1-1/1",
-          "question_type": "人物动作 / 场景题",
+          "question_type": "照片细节题",
           "priority": {
             "level": "P1",
             "score": 80,
-            "label": "人物动作 / 场景题",
+            "label": "照片细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "人物动作 / 场景题",
+              "照片细节题",
               "动作与状态干扰"
             ],
             "scope": "item",
@@ -107,7 +108,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "人物动作 / 场景题",
+          "照片细节题",
           "动作与状态干扰"
         ],
         "scope": "unit",
@@ -135,14 +136,14 @@
         {
           "item_id": 2,
           "item_key": "official-7-test-1/p1-2/2",
-          "question_type": "人物动作 / 场景题",
+          "question_type": "照片细节题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "人物动作 / 场景题",
+            "label": "照片细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "人物动作 / 场景题"
+              "照片细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -155,7 +156,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "人物动作 / 场景题"
+          "照片细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -182,14 +183,14 @@
         {
           "item_id": 3,
           "item_key": "official-7-test-1/p1-3/3",
-          "question_type": "人物动作 / 场景题",
+          "question_type": "动作 / 状态辨析题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "人物动作 / 场景题",
+            "label": "动作 / 状态辨析题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "人物动作 / 场景题"
+              "动作 / 状态辨析题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -202,7 +203,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "人物动作 / 场景题"
+          "动作 / 状态辨析题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -229,14 +230,14 @@
         {
           "item_id": 4,
           "item_key": "official-7-test-1/p1-4/4",
-          "question_type": "人物动作 / 场景题",
+          "question_type": "照片细节题",
           "priority": {
             "level": "P1",
             "score": 80,
-            "label": "人物动作 / 场景题",
+            "label": "照片细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "人物动作 / 场景题",
+              "照片细节题",
               "动作与状态干扰"
             ],
             "scope": "item",
@@ -250,7 +251,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "人物动作 / 场景题",
+          "照片细节题",
           "动作与状态干扰"
         ],
         "scope": "unit",
@@ -278,14 +279,14 @@
         {
           "item_id": 5,
           "item_key": "official-7-test-1/p1-5/5",
-          "question_type": "人物动作 / 场景题",
+          "question_type": "动作 / 状态辨析题",
           "priority": {
             "level": "P1",
             "score": 80,
-            "label": "人物动作 / 场景题",
+            "label": "动作 / 状态辨析题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "人物动作 / 场景题",
+              "动作 / 状态辨析题",
               "动作与状态干扰"
             ],
             "scope": "item",
@@ -299,7 +300,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "人物动作 / 场景题",
+          "动作 / 状态辨析题",
           "动作与状态干扰"
         ],
         "scope": "unit",
@@ -327,14 +328,14 @@
         {
           "item_id": 6,
           "item_key": "official-7-test-1/p1-6/6",
-          "question_type": "人物动作 / 场景题",
+          "question_type": "照片细节题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "人物动作 / 场景题",
+            "label": "照片细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "人物动作 / 场景题"
+              "照片细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -347,7 +348,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "人物动作 / 场景题"
+          "照片细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -374,14 +375,14 @@
         {
           "item_id": 7,
           "item_key": "official-7-test-1/p2-7/7",
-          "question_type": "陈述 / 请求应答",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
             "level": "P1",
             "score": 85,
-            "label": "陈述 / 请求应答",
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答",
+              "陈述 / 请求应答题",
               "间接应答",
               "语用判断"
             ],
@@ -396,7 +397,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答",
+          "陈述 / 请求应答题",
           "间接应答",
           "语用判断"
         ],
@@ -424,14 +425,14 @@
         {
           "item_id": 8,
           "item_key": "official-7-test-1/p2-8/8",
-          "question_type": "地点疑问句",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
             "level": "P3",
             "score": 53,
-            "label": "地点疑问句",
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "地点疑问句"
+              "陈述 / 请求应答题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -444,7 +445,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "地点疑问句"
+          "陈述 / 请求应答题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -470,16 +471,15 @@
         {
           "item_id": 9,
           "item_key": "official-7-test-1/p2-9/9",
-          "question_type": "陈述 / 请求应答",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P1",
-            "score": 85,
-            "label": "陈述 / 请求应答",
+            "level": "P2",
+            "score": 68,
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答",
-              "间接应答",
-              "语用判断"
+              "陈述 / 请求应答题",
+              "自然应答"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -487,14 +487,13 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 85,
+        "level": "P2",
+        "score": 68,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答",
-          "间接应答",
-          "语用判断"
+          "陈述 / 请求应答题",
+          "自然应答"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -520,14 +519,14 @@
         {
           "item_id": 10,
           "item_key": "official-7-test-1/p2-10/10",
-          "question_type": "陈述 / 请求应答",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
             "level": "P1",
             "score": 85,
-            "label": "陈述 / 请求应答",
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答",
+              "陈述 / 请求应答题",
               "间接应答",
               "语用判断"
             ],
@@ -542,7 +541,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答",
+          "陈述 / 请求应答题",
           "间接应答",
           "语用判断"
         ],
@@ -570,14 +569,14 @@
         {
           "item_id": 11,
           "item_key": "official-7-test-1/p2-11/11",
-          "question_type": "时间疑问句",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
             "level": "P3",
             "score": 53,
-            "label": "时间疑问句",
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "时间疑问句"
+              "陈述 / 请求应答题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -590,7 +589,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "时间疑问句"
+          "陈述 / 请求应答题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -666,14 +665,14 @@
         {
           "item_id": 13,
           "item_key": "official-7-test-1/p2-13/13",
-          "question_type": "人物疑问句",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
             "level": "P3",
             "score": 53,
-            "label": "人物疑问句",
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "人物疑问句"
+              "陈述 / 请求应答题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -686,7 +685,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "人物疑问句"
+          "陈述 / 请求应答题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -712,16 +711,15 @@
         {
           "item_id": 14,
           "item_key": "official-7-test-1/p2-14/14",
-          "question_type": "陈述 / 请求应答",
+          "question_type": "一般疑问句",
           "priority": {
-            "level": "P1",
-            "score": 85,
-            "label": "陈述 / 请求应答",
+            "level": "P2",
+            "score": 68,
+            "label": "一般疑问句",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答",
-              "间接应答",
-              "语用判断"
+              "一般疑问句",
+              "自然应答"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -729,14 +727,13 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 85,
+        "level": "P2",
+        "score": 68,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答",
-          "间接应答",
-          "语用判断"
+          "一般疑问句",
+          "自然应答"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -762,14 +759,15 @@
         {
           "item_id": 15,
           "item_key": "official-7-test-1/p2-15/15",
-          "question_type": "时间疑问句",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P3",
-            "score": 53,
-            "label": "时间疑问句",
+            "level": "P2",
+            "score": 68,
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "时间疑问句"
+              "陈述 / 请求应答题",
+              "自然应答"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -777,12 +775,13 @@
         }
       ],
       "priority": {
-        "level": "P3",
-        "score": 53,
+        "level": "P2",
+        "score": 68,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "时间疑问句"
+          "陈述 / 请求应答题",
+          "自然应答"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -808,14 +807,14 @@
         {
           "item_id": 16,
           "item_key": "official-7-test-1/p2-16/16",
-          "question_type": "原因疑问句",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
             "level": "P2",
             "score": 68,
-            "label": "原因疑问句",
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "原因疑问句",
+              "陈述 / 请求应答题",
               "自然应答"
             ],
             "scope": "item",
@@ -829,7 +828,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "原因疑问句",
+          "陈述 / 请求应答题",
           "自然应答"
         ],
         "scope": "unit",
@@ -906,14 +905,14 @@
         {
           "item_id": 18,
           "item_key": "official-7-test-1/p2-18/18",
-          "question_type": "陈述 / 请求应答",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
             "level": "P1",
             "score": 85,
-            "label": "陈述 / 请求应答",
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答",
+              "陈述 / 请求应答题",
               "间接应答",
               "语用判断"
             ],
@@ -928,7 +927,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答",
+          "陈述 / 请求应答题",
           "间接应答",
           "语用判断"
         ],
@@ -1004,14 +1003,15 @@
         {
           "item_id": 20,
           "item_key": "official-7-test-1/p2-20/20",
-          "question_type": "时间疑问句",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P3",
-            "score": 53,
-            "label": "时间疑问句",
+            "level": "P2",
+            "score": 68,
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "时间疑问句"
+              "陈述 / 请求应答题",
+              "自然应答"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1019,12 +1019,13 @@
         }
       ],
       "priority": {
-        "level": "P3",
-        "score": 53,
+        "level": "P2",
+        "score": 68,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "时间疑问句"
+          "陈述 / 请求应答题",
+          "自然应答"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -1050,14 +1051,14 @@
         {
           "item_id": 21,
           "item_key": "official-7-test-1/p2-21/21",
-          "question_type": "陈述 / 请求应答",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
             "level": "P1",
             "score": 85,
-            "label": "陈述 / 请求应答",
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答",
+              "陈述 / 请求应答题",
               "间接应答",
               "语用判断"
             ],
@@ -1072,7 +1073,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答",
+          "陈述 / 请求应答题",
           "间接应答",
           "语用判断"
         ],
@@ -1196,14 +1197,14 @@
         {
           "item_id": 24,
           "item_key": "official-7-test-1/p2-24/24",
-          "question_type": "时间疑问句",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
             "level": "P3",
             "score": 53,
-            "label": "时间疑问句",
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "时间疑问句"
+              "陈述 / 请求应答题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1216,7 +1217,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "时间疑问句"
+          "陈述 / 请求应答题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -1242,14 +1243,14 @@
         {
           "item_id": 25,
           "item_key": "official-7-test-1/p2-25/25",
-          "question_type": "陈述 / 请求应答",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
             "level": "P1",
             "score": 85,
-            "label": "陈述 / 请求应答",
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答",
+              "陈述 / 请求应答题",
               "间接应答",
               "语用判断"
             ],
@@ -1264,7 +1265,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答",
+          "陈述 / 请求应答题",
           "间接应答",
           "语用判断"
         ],
@@ -1292,14 +1293,14 @@
         {
           "item_id": 26,
           "item_key": "official-7-test-1/p2-26/26",
-          "question_type": "陈述 / 请求应答",
+          "question_type": "否定 / 反意疑问句",
           "priority": {
             "level": "P1",
             "score": 85,
-            "label": "陈述 / 请求应答",
+            "label": "否定 / 反意疑问句",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答",
+              "否定 / 反意疑问句",
               "间接应答",
               "语用判断"
             ],
@@ -1314,7 +1315,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答",
+          "否定 / 反意疑问句",
           "间接应答",
           "语用判断"
         ],
@@ -1392,16 +1393,15 @@
         {
           "item_id": 28,
           "item_key": "official-7-test-1/p2-28/28",
-          "question_type": "陈述 / 请求应答",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P1",
-            "score": 85,
-            "label": "陈述 / 请求应答",
+            "level": "P2",
+            "score": 68,
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答",
-              "间接应答",
-              "语用判断"
+              "陈述 / 请求应答题",
+              "自然应答"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1409,14 +1409,13 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 85,
+        "level": "P2",
+        "score": 68,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答",
-          "间接应答",
-          "语用判断"
+          "陈述 / 请求应答题",
+          "自然应答"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -1442,14 +1441,14 @@
         {
           "item_id": 29,
           "item_key": "official-7-test-1/p2-29/29",
-          "question_type": "陈述 / 请求应答",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
             "level": "P1",
             "score": 85,
-            "label": "陈述 / 请求应答",
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答",
+              "陈述 / 请求应答题",
               "间接应答",
               "语用判断"
             ],
@@ -1464,7 +1463,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答",
+          "陈述 / 请求应答题",
           "间接应答",
           "语用判断"
         ],
@@ -1540,14 +1539,14 @@
         {
           "item_id": 31,
           "item_key": "official-7-test-1/p2-31/31",
-          "question_type": "原因疑问句",
+          "question_type": "陈述 / 请求应答题",
           "priority": {
             "level": "P2",
             "score": 68,
-            "label": "原因疑问句",
+            "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "原因疑问句",
+              "陈述 / 请求应答题",
               "自然应答"
             ],
             "scope": "item",
@@ -1561,7 +1560,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "原因疑问句",
+          "陈述 / 请求应答题",
           "自然应答"
         ],
         "scope": "unit",
@@ -1590,14 +1589,14 @@
         {
           "item_id": 32,
           "item_key": "official-7-test-1/p3-32-34/32",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1606,14 +1605,14 @@
         {
           "item_id": 33,
           "item_key": "official-7-test-1/p3-32-34/33",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1622,14 +1621,14 @@
         {
           "item_id": 34,
           "item_key": "official-7-test-1/p3-32-34/34",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1642,7 +1641,7 @@
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -1671,14 +1670,15 @@
         {
           "item_id": 35,
           "item_key": "official-7-test-1/p3-35-37/35",
-          "question_type": "细节定位题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 88,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "推断题",
+              "跨句整合"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1687,14 +1687,14 @@
         {
           "item_id": 36,
           "item_key": "official-7-test-1/p3-35-37/36",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1703,14 +1703,14 @@
         {
           "item_id": 37,
           "item_key": "official-7-test-1/p3-35-37/37",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1718,12 +1718,14 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 61,
+        "level": "P1",
+        "score": 80,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合",
+          "细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -1752,15 +1754,15 @@
         {
           "item_id": 38,
           "item_key": "official-7-test-1/p3-38-40/38",
-          "question_type": "细节定位题",
+          "question_type": "主旨 / 目的题",
           "priority": {
-            "level": "P3",
-            "score": 46,
-            "label": "细节定位题",
+            "level": "P2",
+            "score": 72,
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "明示细节"
+              "主旨 / 目的题",
+              "主旨场景"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1769,14 +1771,14 @@
         {
           "item_id": 39,
           "item_key": "official-7-test-1/p3-38-40/39",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1785,14 +1787,14 @@
         {
           "item_id": 40,
           "item_key": "official-7-test-1/p3-38-40/40",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1800,13 +1802,14 @@
         }
       ],
       "priority": {
-        "level": "P3",
-        "score": 59,
+        "level": "P2",
+        "score": 69,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "明示细节"
+          "主旨 / 目的题",
+          "主旨场景",
+          "细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -1835,14 +1838,14 @@
         {
           "item_id": 41,
           "item_key": "official-7-test-1/p3-41-43/41",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1851,14 +1854,14 @@
         {
           "item_id": 42,
           "item_key": "official-7-test-1/p3-41-43/42",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -1868,14 +1871,14 @@
         {
           "item_id": 43,
           "item_key": "official-7-test-1/p3-41-43/43",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1888,7 +1891,7 @@
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节"
         ],
         "scope": "unit",
@@ -1918,14 +1921,14 @@
         {
           "item_id": 44,
           "item_key": "official-7-test-1/p3-44-46/44",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -1935,14 +1938,14 @@
         {
           "item_id": 45,
           "item_key": "official-7-test-1/p3-44-46/45",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -1952,14 +1955,14 @@
         {
           "item_id": 46,
           "item_key": "official-7-test-1/p3-44-46/46",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -1973,7 +1976,7 @@
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节"
         ],
         "scope": "unit",
@@ -2003,15 +2006,15 @@
         {
           "item_id": 47,
           "item_key": "official-7-test-1/p3-47-49/47",
-          "question_type": "细节定位题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P3",
-            "score": 46,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 88,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "明示细节"
+              "推断题",
+              "跨句整合"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2020,14 +2023,14 @@
         {
           "item_id": 48,
           "item_key": "official-7-test-1/p3-47-49/48",
-          "question_type": "细节定位题",
+          "question_type": "否定事实题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "否定事实题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "否定事实题",
               "明示细节"
             ],
             "scope": "item",
@@ -2037,14 +2040,14 @@
         {
           "item_id": 49,
           "item_key": "official-7-test-1/p3-47-49/49",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -2053,13 +2056,16 @@
         }
       ],
       "priority": {
-        "level": "P3",
-        "score": 46,
+        "level": "P2",
+        "score": 75,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "明示细节"
+          "推断题",
+          "跨句整合",
+          "否定事实题",
+          "明示细节",
+          "细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -2088,14 +2094,14 @@
         {
           "item_id": 50,
           "item_key": "official-7-test-1/p3-50-52/50",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2104,14 +2110,14 @@
         {
           "item_id": 51,
           "item_key": "official-7-test-1/p3-50-52/51",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -2121,15 +2127,15 @@
         {
           "item_id": 52,
           "item_key": "official-7-test-1/p3-50-52/52",
-          "question_type": "细节定位题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P3",
-            "score": 46,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 88,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "明示细节"
+              "推断题",
+              "跨句整合"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2137,13 +2143,15 @@
         }
       ],
       "priority": {
-        "level": "P3",
-        "score": 57,
+        "level": "P2",
+        "score": 78,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "明示细节"
+          "细节题",
+          "明示细节",
+          "推断题",
+          "跨句整合"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -2172,14 +2180,14 @@
         {
           "item_id": 53,
           "item_key": "official-7-test-1/p3-53-55/53",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -2189,14 +2197,14 @@
         {
           "item_id": 54,
           "item_key": "official-7-test-1/p3-53-55/54",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -2206,14 +2214,14 @@
         {
           "item_id": 55,
           "item_key": "official-7-test-1/p3-53-55/55",
-          "question_type": "细节定位题",
+          "question_type": "否定事实题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "否定事实题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "否定事实题",
               "明示细节"
             ],
             "scope": "item",
@@ -2227,8 +2235,9 @@
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "明示细节"
+          "细节题",
+          "明示细节",
+          "否定事实题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -2257,14 +2266,14 @@
         {
           "item_id": 56,
           "item_key": "official-7-test-1/p3-56-58/56",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2273,15 +2282,15 @@
         {
           "item_id": 57,
           "item_key": "official-7-test-1/p3-56-58/57",
-          "question_type": "细节定位题",
+          "question_type": "主旨 / 目的题",
           "priority": {
-            "level": "P3",
-            "score": 46,
-            "label": "细节定位题",
+            "level": "P2",
+            "score": 72,
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "明示细节"
+              "主旨 / 目的题",
+              "主旨场景"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2290,14 +2299,14 @@
         {
           "item_id": 58,
           "item_key": "official-7-test-1/p3-56-58/58",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2305,13 +2314,14 @@
         }
       ],
       "priority": {
-        "level": "P3",
-        "score": 59,
+        "level": "P2",
+        "score": 69,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "明示细节"
+          "细节题",
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -2340,15 +2350,15 @@
         {
           "item_id": 59,
           "item_key": "official-7-test-1/p3-59-61/59",
-          "question_type": "主旨 / 目的 / 场景题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P2",
-            "score": 72,
-            "label": "主旨 / 目的 / 场景题",
+            "level": "P1",
+            "score": 88,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "主旨 / 目的 / 场景题",
-              "主旨场景"
+              "推断题",
+              "跨句整合"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2357,14 +2367,14 @@
         {
           "item_id": 60,
           "item_key": "official-7-test-1/p3-59-61/60",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -2374,14 +2384,14 @@
         {
           "item_id": 61,
           "item_key": "official-7-test-1/p3-59-61/61",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -2391,13 +2401,13 @@
       ],
       "priority": {
         "level": "P2",
-        "score": 64,
+        "score": 75,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景",
-          "细节定位题",
+          "推断题",
+          "跨句整合",
+          "细节题",
           "明示细节"
         ],
         "scope": "unit",
@@ -2427,14 +2437,15 @@
         {
           "item_id": 62,
           "item_key": "official-7-test-1/p3-62-64/62",
-          "question_type": "细节定位题",
+          "question_type": "主旨 / 目的题",
           "priority": {
             "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "score": 72,
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "主旨 / 目的题",
+              "主旨场景"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2443,14 +2454,14 @@
         {
           "item_id": 63,
           "item_key": "official-7-test-1/p3-62-64/63",
-          "question_type": "图表联动题",
+          "question_type": "推断题",
           "priority": {
             "level": "P1",
             "score": 93,
-            "label": "图表联动题",
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "图表联动题",
+              "推断题",
               "图表联动"
             ],
             "scope": "item",
@@ -2460,15 +2471,15 @@
         {
           "item_id": 64,
           "item_key": "official-7-test-1/p3-62-64/64",
-          "question_type": "细节定位题",
+          "question_type": "主旨 / 目的题",
           "priority": {
-            "level": "P3",
-            "score": 46,
-            "label": "细节定位题",
+            "level": "P2",
+            "score": 72,
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "明示细节"
+              "主旨 / 目的题",
+              "主旨场景"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2477,14 +2488,14 @@
       ],
       "priority": {
         "level": "P1",
-        "score": 81,
+        "score": 87,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "图表联动题",
-          "图表联动",
-          "明示细节"
+          "主旨 / 目的题",
+          "主旨场景",
+          "推断题",
+          "图表联动"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -2513,14 +2524,14 @@
         {
           "item_id": 65,
           "item_key": "official-7-test-1/p3-65-67/65",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -2530,14 +2541,14 @@
         {
           "item_id": 66,
           "item_key": "official-7-test-1/p3-65-67/66",
-          "question_type": "图表联动题",
+          "question_type": "细节题",
           "priority": {
             "level": "P1",
             "score": 93,
-            "label": "图表联动题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "图表联动题",
+              "细节题",
               "图表联动"
             ],
             "scope": "item",
@@ -2547,14 +2558,14 @@
         {
           "item_id": 67,
           "item_key": "official-7-test-1/p3-65-67/67",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2567,9 +2578,8 @@
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节",
-          "图表联动题",
           "图表联动"
         ],
         "scope": "unit",
@@ -2599,14 +2609,15 @@
         {
           "item_id": 68,
           "item_key": "official-7-test-1/p3-68-70/68",
-          "question_type": "细节定位题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 88,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "推断题",
+              "跨句整合"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2615,14 +2626,14 @@
         {
           "item_id": 69,
           "item_key": "official-7-test-1/p3-68-70/69",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2631,14 +2642,14 @@
         {
           "item_id": 70,
           "item_key": "official-7-test-1/p3-68-70/70",
-          "question_type": "图表联动题",
+          "question_type": "细节题",
           "priority": {
             "level": "P1",
             "score": 93,
-            "label": "图表联动题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "图表联动题",
+              "细节题",
               "图表联动"
             ],
             "scope": "item",
@@ -2648,12 +2659,13 @@
       ],
       "priority": {
         "level": "P1",
-        "score": 83,
+        "score": 87,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "图表联动题",
+          "推断题",
+          "跨句整合",
+          "细节题",
           "图表联动"
         ],
         "scope": "unit",
@@ -2683,15 +2695,15 @@
         {
           "item_id": 71,
           "item_key": "official-7-test-1/p4-71-73/71",
-          "question_type": "主旨 / 目的 / 场景题",
+          "question_type": "细节题",
           "priority": {
-            "level": "P2",
-            "score": 72,
-            "label": "主旨 / 目的 / 场景题",
+            "level": "P3",
+            "score": 46,
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "主旨 / 目的 / 场景题",
-              "主旨场景"
+              "细节题",
+              "明示细节"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2700,14 +2712,15 @@
         {
           "item_id": 72,
           "item_key": "official-7-test-1/p4-71-73/72",
-          "question_type": "细节定位题",
+          "question_type": "主旨 / 目的题",
           "priority": {
             "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "score": 72,
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "主旨 / 目的题",
+              "主旨场景"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2716,14 +2729,14 @@
         {
           "item_id": 73,
           "item_key": "official-7-test-1/p4-71-73/73",
-          "question_type": "推断 / 隐含义题",
+          "question_type": "推断题",
           "priority": {
             "level": "P1",
             "score": 88,
-            "label": "推断 / 隐含义题",
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "推断 / 隐含义题",
+              "推断题",
               "跨句整合"
             ],
             "scope": "item",
@@ -2732,15 +2745,16 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 82,
+        "level": "P2",
+        "score": 79,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
+          "细节题",
+          "明示细节",
+          "主旨 / 目的题",
           "主旨场景",
-          "细节定位题",
-          "推断 / 隐含义题",
+          "推断题",
           "跨句整合"
         ],
         "scope": "unit",
@@ -2770,14 +2784,14 @@
         {
           "item_id": 74,
           "item_key": "official-7-test-1/p4-74-76/74",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2786,14 +2800,14 @@
         {
           "item_id": 75,
           "item_key": "official-7-test-1/p4-74-76/75",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2802,14 +2816,14 @@
         {
           "item_id": 76,
           "item_key": "official-7-test-1/p4-74-76/76",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2822,7 +2836,7 @@
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -2851,15 +2865,15 @@
         {
           "item_id": 77,
           "item_key": "official-7-test-1/p4-77-79/77",
-          "question_type": "主旨 / 目的 / 场景题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P2",
-            "score": 72,
-            "label": "主旨 / 目的 / 场景题",
+            "level": "P1",
+            "score": 88,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "主旨 / 目的 / 场景题",
-              "主旨场景"
+              "推断题",
+              "跨句整合"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2868,14 +2882,14 @@
         {
           "item_id": 78,
           "item_key": "official-7-test-1/p4-77-79/78",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2884,14 +2898,14 @@
         {
           "item_id": 79,
           "item_key": "official-7-test-1/p4-77-79/79",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2899,14 +2913,14 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 69,
+        "level": "P1",
+        "score": 80,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景",
-          "细节定位题"
+          "推断题",
+          "跨句整合",
+          "细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -2935,15 +2949,15 @@
         {
           "item_id": 80,
           "item_key": "official-7-test-1/p4-80-82/80",
-          "question_type": "细节定位题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P3",
-            "score": 46,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 88,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "明示细节"
+              "推断题",
+              "跨句整合"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2952,14 +2966,14 @@
         {
           "item_id": 81,
           "item_key": "official-7-test-1/p4-80-82/81",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2968,14 +2982,14 @@
         {
           "item_id": 82,
           "item_key": "official-7-test-1/p4-80-82/82",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -2983,13 +2997,14 @@
         }
       ],
       "priority": {
-        "level": "P3",
-        "score": 59,
+        "level": "P1",
+        "score": 80,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "明示细节"
+          "推断题",
+          "跨句整合",
+          "细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -3018,15 +3033,14 @@
         {
           "item_id": 83,
           "item_key": "official-7-test-1/p4-83-85/83",
-          "question_type": "主旨 / 目的 / 场景题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
-            "score": 72,
-            "label": "主旨 / 目的 / 场景题",
+            "score": 61,
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "主旨 / 目的 / 场景题",
-              "主旨场景"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3035,14 +3049,14 @@
         {
           "item_id": 84,
           "item_key": "official-7-test-1/p4-83-85/84",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3051,14 +3065,14 @@
         {
           "item_id": 85,
           "item_key": "official-7-test-1/p4-83-85/85",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -3067,14 +3081,12 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 66,
+        "level": "P3",
+        "score": 59,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景",
-          "细节定位题",
+          "细节题",
           "明示细节"
         ],
         "scope": "unit",
@@ -3104,14 +3116,14 @@
         {
           "item_id": 86,
           "item_key": "official-7-test-1/p4-86-88/86",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -3121,14 +3133,14 @@
         {
           "item_id": 87,
           "item_key": "official-7-test-1/p4-86-88/87",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P1",
             "score": 88,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "跨句整合"
             ],
             "scope": "item",
@@ -3138,14 +3150,14 @@
         {
           "item_id": 88,
           "item_key": "official-7-test-1/p4-86-88/88",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -3159,7 +3171,7 @@
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节",
           "跨句整合"
         ],
@@ -3190,14 +3202,14 @@
         {
           "item_id": 89,
           "item_key": "official-7-test-1/p4-89-91/89",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3206,14 +3218,14 @@
         {
           "item_id": 90,
           "item_key": "official-7-test-1/p4-89-91/90",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3222,14 +3234,14 @@
         {
           "item_id": 91,
           "item_key": "official-7-test-1/p4-89-91/91",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3242,7 +3254,7 @@
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -3271,14 +3283,14 @@
         {
           "item_id": 92,
           "item_key": "official-7-test-1/p4-92-94/92",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -3288,14 +3300,14 @@
         {
           "item_id": 93,
           "item_key": "official-7-test-1/p4-92-94/93",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3304,14 +3316,14 @@
         {
           "item_id": 94,
           "item_key": "official-7-test-1/p4-92-94/94",
-          "question_type": "推断 / 隐含义题",
+          "question_type": "推断题",
           "priority": {
             "level": "P1",
             "score": 88,
-            "label": "推断 / 隐含义题",
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "推断 / 隐含义题",
+              "推断题",
               "跨句整合"
             ],
             "scope": "item",
@@ -3325,9 +3337,9 @@
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节",
-          "推断 / 隐含义题",
+          "推断题",
           "跨句整合"
         ],
         "scope": "unit",
@@ -3357,14 +3369,15 @@
         {
           "item_id": 95,
           "item_key": "official-7-test-1/p4-95-97/95",
-          "question_type": "细节定位题",
+          "question_type": "主旨 / 目的题",
           "priority": {
             "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "score": 72,
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "主旨 / 目的题",
+              "主旨场景"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3373,14 +3386,14 @@
         {
           "item_id": 96,
           "item_key": "official-7-test-1/p4-95-97/96",
-          "question_type": "图表联动题",
+          "question_type": "细节题",
           "priority": {
             "level": "P1",
             "score": 93,
-            "label": "图表联动题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "图表联动题",
+              "细节题",
               "图表联动"
             ],
             "scope": "item",
@@ -3390,14 +3403,14 @@
         {
           "item_id": 97,
           "item_key": "official-7-test-1/p4-95-97/97",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 46,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示细节"
             ],
             "scope": "item",
@@ -3407,12 +3420,13 @@
       ],
       "priority": {
         "level": "P1",
-        "score": 81,
+        "score": 83,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "图表联动题",
+          "主旨 / 目的题",
+          "主旨场景",
+          "细节题",
           "图表联动",
           "明示细节"
         ],
@@ -3443,14 +3457,14 @@
         {
           "item_id": 98,
           "item_key": "official-7-test-1/p4-98-100/98",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3459,14 +3473,14 @@
         {
           "item_id": 99,
           "item_key": "official-7-test-1/p4-98-100/99",
-          "question_type": "图表联动题",
+          "question_type": "细节题",
           "priority": {
             "level": "P1",
             "score": 93,
-            "label": "图表联动题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "图表联动题",
+              "细节题",
               "图表联动"
             ],
             "scope": "item",
@@ -3476,14 +3490,14 @@
         {
           "item_id": 100,
           "item_key": "official-7-test-1/p4-98-100/100",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3496,8 +3510,7 @@
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "图表联动题",
+          "细节题",
           "图表联动"
         ],
         "scope": "unit",
@@ -3525,14 +3538,14 @@
         {
           "item_id": 101,
           "item_key": "official-7-test-1/p5-101/101",
-          "question_type": "词性 / 动词形式题",
+          "question_type": "词性 / 词形题",
           "priority": {
             "level": "P1",
             "score": 84,
-            "label": "词性 / 动词形式题",
+            "label": "词性 / 词形题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词性 / 动词形式题",
+              "词性 / 词形题",
               "词性 / 动词体系"
             ],
             "scope": "item",
@@ -3546,7 +3559,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词性 / 动词形式题",
+          "词性 / 词形题",
           "词性 / 动词体系"
         ],
         "scope": "unit",
@@ -3571,14 +3584,14 @@
         {
           "item_id": 102,
           "item_key": "official-7-test-1/p5-102/102",
-          "question_type": "词性 / 动词形式题",
+          "question_type": "动词形式题",
           "priority": {
             "level": "P1",
             "score": 84,
-            "label": "词性 / 动词形式题",
+            "label": "动词形式题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词性 / 动词形式题",
+              "动词形式题",
               "词性 / 动词体系"
             ],
             "scope": "item",
@@ -3592,7 +3605,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词性 / 动词形式题",
+          "动词形式题",
           "词性 / 动词体系"
         ],
         "scope": "unit",
@@ -3617,15 +3630,15 @@
         {
           "item_id": 103,
           "item_key": "official-7-test-1/p5-103/103",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "词性 / 词形题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "词性 / 词形题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "词性 / 词形题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3633,13 +3646,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "词性 / 词形题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -3663,15 +3676,15 @@
         {
           "item_id": 104,
           "item_key": "official-7-test-1/p5-104/104",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "动词形式题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "动词形式题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "动词形式题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3679,13 +3692,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "动词形式题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -3709,15 +3722,15 @@
         {
           "item_id": 105,
           "item_key": "official-7-test-1/p5-105/105",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "动词形式题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "动词形式题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "动词形式题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3725,13 +3738,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "动词形式题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -3755,15 +3768,15 @@
         {
           "item_id": 106,
           "item_key": "official-7-test-1/p5-106/106",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "动词形式题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "动词形式题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "动词形式题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3771,13 +3784,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "动词形式题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -3801,15 +3814,15 @@
         {
           "item_id": 107,
           "item_key": "official-7-test-1/p5-107/107",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "动词形式题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "动词形式题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "动词形式题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3817,13 +3830,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "动词形式题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -3847,15 +3860,15 @@
         {
           "item_id": 108,
           "item_key": "official-7-test-1/p5-108/108",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "动词形式题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "动词形式题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "动词形式题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -3863,13 +3876,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "动词形式题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -3893,14 +3906,14 @@
         {
           "item_id": 109,
           "item_key": "official-7-test-1/p5-109/109",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "语境词汇 / 搭配题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "词汇 / 搭配题",
+            "label": "语境词汇 / 搭配题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
+              "语境词汇 / 搭配题",
               "语境词汇"
             ],
             "scope": "item",
@@ -3914,7 +3927,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
+          "语境词汇 / 搭配题",
           "语境词汇"
         ],
         "scope": "unit",
@@ -3939,14 +3952,14 @@
         {
           "item_id": 110,
           "item_key": "official-7-test-1/p5-110/110",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "语境词汇 / 搭配题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "词汇 / 搭配题",
+            "label": "语境词汇 / 搭配题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
+              "语境词汇 / 搭配题",
               "语境词汇"
             ],
             "scope": "item",
@@ -3960,7 +3973,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
+          "语境词汇 / 搭配题",
           "语境词汇"
         ],
         "scope": "unit",
@@ -3985,14 +3998,14 @@
         {
           "item_id": 111,
           "item_key": "official-7-test-1/p5-111/111",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "语境词汇 / 搭配题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "词汇 / 搭配题",
+            "label": "语境词汇 / 搭配题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
+              "语境词汇 / 搭配题",
               "语境词汇"
             ],
             "scope": "item",
@@ -4006,7 +4019,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
+          "语境词汇 / 搭配题",
           "语境词汇"
         ],
         "scope": "unit",
@@ -4031,14 +4044,14 @@
         {
           "item_id": 112,
           "item_key": "official-7-test-1/p5-112/112",
-          "question_type": "介词 / 固定搭配题",
+          "question_type": "语境词汇 / 搭配题",
           "priority": {
             "level": "P1",
             "score": 82,
-            "label": "介词 / 固定搭配题",
+            "label": "语境词汇 / 搭配题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "介词 / 固定搭配题",
+              "语境词汇 / 搭配题",
               "介词 / 连词"
             ],
             "scope": "item",
@@ -4052,7 +4065,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "介词 / 固定搭配题",
+          "语境词汇 / 搭配题",
           "介词 / 连词"
         ],
         "scope": "unit",
@@ -4077,15 +4090,15 @@
         {
           "item_id": 113,
           "item_key": "official-7-test-1/p5-113/113",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "词性 / 词形题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "词性 / 词形题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "词性 / 词形题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -4093,13 +4106,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "词性 / 词形题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -4123,15 +4136,15 @@
         {
           "item_id": 114,
           "item_key": "official-7-test-1/p5-114/114",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "动词形式题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "动词形式题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "动词形式题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -4139,13 +4152,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "动词形式题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -4169,15 +4182,15 @@
         {
           "item_id": 115,
           "item_key": "official-7-test-1/p5-115/115",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "动词形式题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "动词形式题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "动词形式题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -4185,13 +4198,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "动词形式题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -4215,15 +4228,15 @@
         {
           "item_id": 116,
           "item_key": "official-7-test-1/p5-116/116",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "动词形式题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "动词形式题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "动词形式题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -4231,13 +4244,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "动词形式题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -4261,15 +4274,15 @@
         {
           "item_id": 117,
           "item_key": "official-7-test-1/p5-117/117",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "动词形式题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "动词形式题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "动词形式题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -4277,13 +4290,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "动词形式题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -4307,15 +4320,15 @@
         {
           "item_id": 118,
           "item_key": "official-7-test-1/p5-118/118",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "词性 / 词形题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "词性 / 词形题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "词性 / 词形题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -4323,13 +4336,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "词性 / 词形题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -4353,14 +4366,14 @@
         {
           "item_id": 119,
           "item_key": "official-7-test-1/p5-119/119",
-          "question_type": "词性 / 动词形式题",
+          "question_type": "词性 / 词形题",
           "priority": {
             "level": "P1",
             "score": 84,
-            "label": "词性 / 动词形式题",
+            "label": "词性 / 词形题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词性 / 动词形式题",
+              "词性 / 词形题",
               "词性 / 动词体系"
             ],
             "scope": "item",
@@ -4374,7 +4387,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词性 / 动词形式题",
+          "词性 / 词形题",
           "词性 / 动词体系"
         ],
         "scope": "unit",
@@ -4399,14 +4412,14 @@
         {
           "item_id": 120,
           "item_key": "official-7-test-1/p5-120/120",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "语境词汇 / 搭配题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "词汇 / 搭配题",
+            "label": "语境词汇 / 搭配题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
+              "语境词汇 / 搭配题",
               "语境词汇"
             ],
             "scope": "item",
@@ -4420,7 +4433,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
+          "语境词汇 / 搭配题",
           "语境词汇"
         ],
         "scope": "unit",
@@ -4445,14 +4458,14 @@
         {
           "item_id": 121,
           "item_key": "official-7-test-1/p5-121/121",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "语境词汇 / 搭配题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "词汇 / 搭配题",
+            "label": "语境词汇 / 搭配题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
+              "语境词汇 / 搭配题",
               "语境词汇"
             ],
             "scope": "item",
@@ -4466,7 +4479,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
+          "语境词汇 / 搭配题",
           "语境词汇"
         ],
         "scope": "unit",
@@ -4491,14 +4504,14 @@
         {
           "item_id": 122,
           "item_key": "official-7-test-1/p5-122/122",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "语境词汇 / 搭配题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "词汇 / 搭配题",
+            "label": "语境词汇 / 搭配题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
+              "语境词汇 / 搭配题",
               "语境词汇"
             ],
             "scope": "item",
@@ -4512,7 +4525,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
+          "语境词汇 / 搭配题",
           "语境词汇"
         ],
         "scope": "unit",
@@ -4537,14 +4550,14 @@
         {
           "item_id": 123,
           "item_key": "official-7-test-1/p5-123/123",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "语境词汇 / 搭配题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "词汇 / 搭配题",
+            "label": "语境词汇 / 搭配题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
+              "语境词汇 / 搭配题",
               "语境词汇"
             ],
             "scope": "item",
@@ -4558,7 +4571,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
+          "语境词汇 / 搭配题",
           "语境词汇"
         ],
         "scope": "unit",
@@ -4583,14 +4596,14 @@
         {
           "item_id": 124,
           "item_key": "official-7-test-1/p5-124/124",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "语境词汇 / 搭配题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "词汇 / 搭配题",
+            "label": "语境词汇 / 搭配题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
+              "语境词汇 / 搭配题",
               "语境词汇"
             ],
             "scope": "item",
@@ -4604,7 +4617,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
+          "语境词汇 / 搭配题",
           "语境词汇"
         ],
         "scope": "unit",
@@ -4629,15 +4642,15 @@
         {
           "item_id": 125,
           "item_key": "official-7-test-1/p5-125/125",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "词性 / 词形题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "词性 / 词形题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "词性 / 词形题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -4645,13 +4658,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "词性 / 词形题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -4675,15 +4688,15 @@
         {
           "item_id": 126,
           "item_key": "official-7-test-1/p5-126/126",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "动词形式题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "动词形式题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "动词形式题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -4691,13 +4704,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "动词形式题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -4721,14 +4734,14 @@
         {
           "item_id": 127,
           "item_key": "official-7-test-1/p5-127/127",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "语境词汇 / 搭配题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "词汇 / 搭配题",
+            "label": "语境词汇 / 搭配题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
+              "语境词汇 / 搭配题",
               "语境词汇"
             ],
             "scope": "item",
@@ -4742,7 +4755,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
+          "语境词汇 / 搭配题",
           "语境词汇"
         ],
         "scope": "unit",
@@ -4767,14 +4780,14 @@
         {
           "item_id": 128,
           "item_key": "official-7-test-1/p5-128/128",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "语境词汇 / 搭配题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "词汇 / 搭配题",
+            "label": "语境词汇 / 搭配题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
+              "语境词汇 / 搭配题",
               "语境词汇"
             ],
             "scope": "item",
@@ -4788,7 +4801,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
+          "语境词汇 / 搭配题",
           "语境词汇"
         ],
         "scope": "unit",
@@ -4813,14 +4826,14 @@
         {
           "item_id": 129,
           "item_key": "official-7-test-1/p5-129/129",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "语境词汇 / 搭配题",
           "priority": {
             "level": "P2",
             "score": 64,
-            "label": "词汇 / 搭配题",
+            "label": "语境词汇 / 搭配题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
+              "语境词汇 / 搭配题",
               "语境词汇"
             ],
             "scope": "item",
@@ -4834,7 +4847,7 @@
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
+          "语境词汇 / 搭配题",
           "语境词汇"
         ],
         "scope": "unit",
@@ -4859,15 +4872,15 @@
         {
           "item_id": 130,
           "item_key": "official-7-test-1/p5-130/130",
-          "question_type": "词汇 / 搭配题",
+          "question_type": "动词形式题",
           "priority": {
-            "level": "P2",
-            "score": 64,
-            "label": "词汇 / 搭配题",
+            "level": "P1",
+            "score": 81,
+            "label": "动词形式题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词汇 / 搭配题",
-              "语境词汇"
+              "动词形式题",
+              "高频语法基本盘"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -4875,13 +4888,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 64,
+        "level": "P1",
+        "score": 81,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "词汇 / 搭配题",
-          "语境词汇"
+          "动词形式题",
+          "高频语法基本盘"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -4957,14 +4970,15 @@
         {
           "item_id": 134,
           "item_key": "official-7-test-1/p6-131-134/134",
-          "question_type": "语境语法 / 词汇题",
+          "question_type": "逻辑衔接题",
           "priority": {
-            "level": "P2",
-            "score": 62,
-            "label": "语境语法 / 词汇题",
+            "level": "P1",
+            "score": 86,
+            "label": "逻辑衔接题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "语境语法 / 词汇题"
+              "逻辑衔接题",
+              "跨句判断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -4973,13 +4987,15 @@
       ],
       "priority": {
         "level": "P1",
-        "score": 83,
+        "score": 86,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
           "语境语法 / 词汇题",
           "整句填入题",
-          "篇章衔接"
+          "篇章衔接",
+          "逻辑衔接题",
+          "跨句判断"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -5057,14 +5073,15 @@
         {
           "item_id": 138,
           "item_key": "official-7-test-1/p6-135-138/138",
-          "question_type": "语境语法 / 词汇题",
+          "question_type": "逻辑衔接题",
           "priority": {
-            "level": "P2",
-            "score": 62,
-            "label": "语境语法 / 词汇题",
+            "level": "P1",
+            "score": 86,
+            "label": "逻辑衔接题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "语境语法 / 词汇题"
+              "逻辑衔接题",
+              "跨句判断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5073,13 +5090,15 @@
       ],
       "priority": {
         "level": "P1",
-        "score": 83,
+        "score": 86,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
           "语境语法 / 词汇题",
           "整句填入题",
-          "篇章衔接"
+          "篇章衔接",
+          "逻辑衔接题",
+          "跨句判断"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -5306,14 +5325,15 @@
         {
           "item_id": 147,
           "item_key": "official-7-test-1/p7-147-148/147",
-          "question_type": "细节定位题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 83,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "推断题",
+              "语境推断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5322,14 +5342,14 @@
         {
           "item_id": 148,
           "item_key": "official-7-test-1/p7-147-148/148",
-          "question_type": "推断 / 隐含义题",
+          "question_type": "推断题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "推断 / 隐含义题",
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "推断 / 隐含义题",
+              "推断题",
               "语境推断"
             ],
             "scope": "item",
@@ -5338,13 +5358,12 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 78,
+        "level": "P1",
+        "score": 83,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "推断 / 隐含义题",
+          "推断题",
           "语境推断"
         ],
         "scope": "unit",
@@ -5372,14 +5391,14 @@
         {
           "item_id": 149,
           "item_key": "official-7-test-1/p7-149-150/149",
-          "question_type": "细节定位题",
+          "question_type": "主旨 / 目的题",
           "priority": {
             "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "score": 70,
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "主旨 / 目的题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5388,15 +5407,15 @@
         {
           "item_id": 150,
           "item_key": "official-7-test-1/p7-149-150/150",
-          "question_type": "细节定位题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P3",
-            "score": 42,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 83,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "明示定位"
+              "推断题",
+              "语境推断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5404,13 +5423,14 @@
         }
       ],
       "priority": {
-        "level": "P3",
-        "score": 57,
+        "level": "P1",
+        "score": 80,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "明示定位"
+          "主旨 / 目的题",
+          "推断题",
+          "语境推断"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -5437,14 +5457,14 @@
         {
           "item_id": 151,
           "item_key": "official-7-test-1/p7-151-152/151",
-          "question_type": "细节定位题",
+          "question_type": "主旨 / 目的题",
           "priority": {
             "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "score": 70,
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "主旨 / 目的题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5453,14 +5473,14 @@
         {
           "item_id": 152,
           "item_key": "official-7-test-1/p7-151-152/152",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5469,11 +5489,12 @@
       ],
       "priority": {
         "level": "P2",
-        "score": 61,
+        "score": 68,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -5500,14 +5521,14 @@
         {
           "item_id": 153,
           "item_key": "official-7-test-1/p7-153-154/153",
-          "question_type": "推断 / 隐含义题",
+          "question_type": "推断题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "推断 / 隐含义题",
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "推断 / 隐含义题",
+              "推断题",
               "语境推断"
             ],
             "scope": "item",
@@ -5517,14 +5538,15 @@
         {
           "item_id": 154,
           "item_key": "official-7-test-1/p7-153-154/154",
-          "question_type": "细节定位题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 83,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "推断题",
+              "语境推断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5532,14 +5554,13 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 78,
+        "level": "P1",
+        "score": 83,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "推断 / 隐含义题",
-          "语境推断",
-          "细节定位题"
+          "推断题",
+          "语境推断"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -5567,14 +5588,14 @@
         {
           "item_id": 155,
           "item_key": "official-7-test-1/p7-155-157/155",
-          "question_type": "推断 / 隐含义题",
+          "question_type": "推断题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "推断 / 隐含义题",
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "推断 / 隐含义题",
+              "推断题",
               "语境推断"
             ],
             "scope": "item",
@@ -5584,14 +5605,14 @@
         {
           "item_id": 156,
           "item_key": "official-7-test-1/p7-155-157/156",
-          "question_type": "词义 / 短语题",
+          "question_type": "词义 / 话语含义题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "词义 / 短语题",
+            "label": "词义 / 话语含义题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词义 / 短语题",
+              "词义 / 话语含义题",
               "语境推断"
             ],
             "scope": "item",
@@ -5601,14 +5622,14 @@
         {
           "item_id": 157,
           "item_key": "official-7-test-1/p7-155-157/157",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5621,10 +5642,10 @@
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "语境推断",
-          "词义 / 短语题",
-          "细节定位题"
+          "词义 / 话语含义题",
+          "细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -5652,14 +5673,14 @@
         {
           "item_id": 158,
           "item_key": "official-7-test-1/p7-158-160/158",
-          "question_type": "主旨 / 目的 / 场景题",
+          "question_type": "主旨 / 目的题",
           "priority": {
             "level": "P2",
             "score": 70,
-            "label": "主旨 / 目的 / 场景题",
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "主旨 / 目的 / 场景题"
+              "主旨 / 目的题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5668,14 +5689,15 @@
         {
           "item_id": 159,
           "item_key": "official-7-test-1/p7-158-160/159",
-          "question_type": "细节定位题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 83,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "推断题",
+              "语境推断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5684,14 +5706,14 @@
         {
           "item_id": 160,
           "item_key": "official-7-test-1/p7-158-160/160",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5700,12 +5722,14 @@
       ],
       "priority": {
         "level": "P2",
-        "score": 67,
+        "score": 78,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "细节定位题"
+          "主旨 / 目的题",
+          "推断题",
+          "语境推断",
+          "细节题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -5733,14 +5757,14 @@
         {
           "item_id": 161,
           "item_key": "official-7-test-1/p7-161-163/161",
-          "question_type": "主旨 / 目的 / 场景题",
+          "question_type": "主旨 / 目的题",
           "priority": {
             "level": "P2",
             "score": 70,
-            "label": "主旨 / 目的 / 场景题",
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "主旨 / 目的 / 场景题"
+              "主旨 / 目的题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5749,14 +5773,15 @@
         {
           "item_id": 162,
           "item_key": "official-7-test-1/p7-161-163/162",
-          "question_type": "细节定位题",
+          "question_type": "否定事实题",
           "priority": {
-            "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 83,
+            "label": "否定事实题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "否定事实题",
+              "语境推断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5765,15 +5790,15 @@
         {
           "item_id": 163,
           "item_key": "official-7-test-1/p7-161-163/163",
-          "question_type": "句子插入题",
+          "question_type": "细节题",
           "priority": {
-            "level": "P1",
-            "score": 91,
-            "label": "句子插入题",
+            "level": "P3",
+            "score": 42,
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "句子插入题",
-              "语篇结构"
+              "细节题",
+              "明示定位"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5781,15 +5806,16 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 83,
+        "level": "P2",
+        "score": 75,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "细节定位题",
-          "句子插入题",
-          "语篇结构"
+          "主旨 / 目的题",
+          "否定事实题",
+          "语境推断",
+          "细节题",
+          "明示定位"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -5818,14 +5844,14 @@
         {
           "item_id": 164,
           "item_key": "official-7-test-1/p7-164-167/164",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5834,14 +5860,14 @@
         {
           "item_id": 165,
           "item_key": "official-7-test-1/p7-164-167/165",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 42,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示定位"
             ],
             "scope": "item",
@@ -5851,14 +5877,14 @@
         {
           "item_id": 166,
           "item_key": "official-7-test-1/p7-164-167/166",
-          "question_type": "细节定位题",
+          "question_type": "主旨 / 目的题",
           "priority": {
             "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "score": 70,
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "主旨 / 目的题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5867,15 +5893,15 @@
         {
           "item_id": 167,
           "item_key": "official-7-test-1/p7-164-167/167",
-          "question_type": "句子插入题",
+          "question_type": "细节题",
           "priority": {
-            "level": "P1",
-            "score": 91,
-            "label": "句子插入题",
+            "level": "P3",
+            "score": 42,
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "句子插入题",
-              "语篇结构"
+              "细节题",
+              "明示定位"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5884,14 +5910,13 @@
       ],
       "priority": {
         "level": "P2",
-        "score": 79,
+        "score": 63,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示定位",
-          "句子插入题",
-          "语篇结构"
+          "主旨 / 目的题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -5920,14 +5945,14 @@
         {
           "item_id": 168,
           "item_key": "official-7-test-1/p7-168-171/168",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5936,14 +5961,14 @@
         {
           "item_id": 169,
           "item_key": "official-7-test-1/p7-168-171/169",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5952,14 +5977,14 @@
         {
           "item_id": 170,
           "item_key": "official-7-test-1/p7-168-171/170",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 42,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "明示定位"
             ],
             "scope": "item",
@@ -5969,14 +5994,14 @@
         {
           "item_id": 171,
           "item_key": "official-7-test-1/p7-168-171/171",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题"
+              "细节题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -5989,7 +6014,7 @@
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示定位"
         ],
         "scope": "unit",
@@ -6019,14 +6044,14 @@
         {
           "item_id": 172,
           "item_key": "official-7-test-1/p7-172-175/172",
-          "question_type": "推断 / 隐含义题",
+          "question_type": "推断题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "推断 / 隐含义题",
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "推断 / 隐含义题",
+              "推断题",
               "语境推断"
             ],
             "scope": "item",
@@ -6036,14 +6061,14 @@
         {
           "item_id": 173,
           "item_key": "official-7-test-1/p7-172-175/173",
-          "question_type": "主旨 / 目的 / 场景题",
+          "question_type": "主旨 / 目的题",
           "priority": {
             "level": "P2",
             "score": 70,
-            "label": "主旨 / 目的 / 场景题",
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "主旨 / 目的 / 场景题"
+              "主旨 / 目的题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -6052,14 +6077,14 @@
         {
           "item_id": 174,
           "item_key": "official-7-test-1/p7-172-175/174",
-          "question_type": "推断 / 隐含义题",
+          "question_type": "否定事实题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "推断 / 隐含义题",
+            "label": "否定事实题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "推断 / 隐含义题",
+              "否定事实题",
               "语境推断"
             ],
             "scope": "item",
@@ -6069,15 +6094,14 @@
         {
           "item_id": 175,
           "item_key": "official-7-test-1/p7-172-175/175",
-          "question_type": "细节定位题",
+          "question_type": "主旨 / 目的题",
           "priority": {
             "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "score": 70,
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "多文本语境"
+              "主旨 / 目的题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -6085,16 +6109,15 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 79,
+        "level": "P1",
+        "score": 80,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "语境推断",
-          "主旨 / 目的 / 场景题",
-          "细节定位题",
-          "多文本语境"
+          "主旨 / 目的题",
+          "否定事实题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -6125,14 +6148,15 @@
         {
           "item_id": 176,
           "item_key": "official-7-test-1/p7-176-180/176",
-          "question_type": "主旨 / 目的 / 场景题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P2",
-            "score": 70,
-            "label": "主旨 / 目的 / 场景题",
+            "level": "P1",
+            "score": 83,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "主旨 / 目的 / 场景题"
+              "推断题",
+              "语境推断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -6141,14 +6165,14 @@
         {
           "item_id": 177,
           "item_key": "official-7-test-1/p7-176-180/177",
-          "question_type": "词义 / 短语题",
+          "question_type": "词义 / 话语含义题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "词义 / 短语题",
+            "label": "词义 / 话语含义题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词义 / 短语题",
+              "词义 / 话语含义题",
               "语境推断"
             ],
             "scope": "item",
@@ -6158,14 +6182,14 @@
         {
           "item_id": 178,
           "item_key": "official-7-test-1/p7-176-180/178",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "多文本语境"
             ],
             "scope": "item",
@@ -6175,14 +6199,14 @@
         {
           "item_id": 179,
           "item_key": "official-7-test-1/p7-176-180/179",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "多文本语境"
             ],
             "scope": "item",
@@ -6192,14 +6216,14 @@
         {
           "item_id": 180,
           "item_key": "official-7-test-1/p7-176-180/180",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 42,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "多文本语境",
               "明示定位"
             ],
@@ -6210,14 +6234,14 @@
       ],
       "priority": {
         "level": "P2",
-        "score": 74,
+        "score": 75,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "词义 / 短语题",
+          "推断题",
           "语境推断",
-          "细节定位题",
+          "词义 / 话语含义题",
+          "细节题",
           "多文本语境",
           "明示定位"
         ],
@@ -6250,14 +6274,14 @@
         {
           "item_id": 181,
           "item_key": "official-7-test-1/p7-181-185/181",
-          "question_type": "推断 / 隐含义题",
+          "question_type": "否定事实题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "推断 / 隐含义题",
+            "label": "否定事实题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "推断 / 隐含义题",
+              "否定事实题",
               "语境推断"
             ],
             "scope": "item",
@@ -6267,14 +6291,14 @@
         {
           "item_id": 182,
           "item_key": "official-7-test-1/p7-181-185/182",
-          "question_type": "词义 / 短语题",
+          "question_type": "词义 / 话语含义题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "词义 / 短语题",
+            "label": "词义 / 话语含义题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "词义 / 短语题",
+              "词义 / 话语含义题",
               "语境推断"
             ],
             "scope": "item",
@@ -6284,14 +6308,14 @@
         {
           "item_id": 183,
           "item_key": "official-7-test-1/p7-181-185/183",
-          "question_type": "主旨 / 目的 / 场景题",
+          "question_type": "主旨 / 目的题",
           "priority": {
             "level": "P2",
             "score": 70,
-            "label": "主旨 / 目的 / 场景题",
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "主旨 / 目的 / 场景题"
+              "主旨 / 目的题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -6300,14 +6324,14 @@
         {
           "item_id": 184,
           "item_key": "official-7-test-1/p7-181-185/184",
-          "question_type": "推断 / 隐含义题",
+          "question_type": "推断题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "推断 / 隐含义题",
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "推断 / 隐含义题",
+              "推断题",
               "语境推断"
             ],
             "scope": "item",
@@ -6317,16 +6341,15 @@
         {
           "item_id": 185,
           "item_key": "official-7-test-1/p7-181-185/185",
-          "question_type": "细节定位题",
+          "question_type": "否定事实题",
           "priority": {
-            "level": "P3",
-            "score": 42,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 83,
+            "label": "否定事实题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "多文本语境",
-              "明示定位"
+              "否定事实题",
+              "语境推断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -6334,17 +6357,16 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 78,
+        "level": "P1",
+        "score": 82,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "否定事实题",
           "语境推断",
-          "词义 / 短语题",
-          "主旨 / 目的 / 场景题",
-          "细节定位题",
-          "多文本语境"
+          "词义 / 话语含义题",
+          "主旨 / 目的题",
+          "推断题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -6375,14 +6397,14 @@
         {
           "item_id": 186,
           "item_key": "official-7-test-1/p7-186-190/186",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 42,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "多文本语境",
               "明示定位"
             ],
@@ -6393,14 +6415,14 @@
         {
           "item_id": 187,
           "item_key": "official-7-test-1/p7-186-190/187",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 42,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "多文本语境",
               "明示定位"
             ],
@@ -6411,16 +6433,15 @@
         {
           "item_id": 188,
           "item_key": "official-7-test-1/p7-186-190/188",
-          "question_type": "细节定位题",
+          "question_type": "否定事实题",
           "priority": {
-            "level": "P3",
-            "score": 42,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 83,
+            "label": "否定事实题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "多文本语境",
-              "明示定位"
+              "否定事实题",
+              "语境推断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -6429,14 +6450,14 @@
         {
           "item_id": 189,
           "item_key": "official-7-test-1/p7-186-190/189",
-          "question_type": "细节定位题",
+          "question_type": "否定事实题",
           "priority": {
             "level": "P1",
             "score": 93,
-            "label": "细节定位题",
+            "label": "否定事实题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "否定事实题",
               "多文本整合"
             ],
             "scope": "item",
@@ -6446,14 +6467,14 @@
         {
           "item_id": 190,
           "item_key": "official-7-test-1/p7-186-190/190",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P3",
             "score": 42,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "多文本语境",
               "明示定位"
             ],
@@ -6464,13 +6485,15 @@
       ],
       "priority": {
         "level": "P2",
-        "score": 75,
+        "score": 78,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "多文本语境",
           "明示定位",
+          "否定事实题",
+          "语境推断",
           "多文本整合"
         ],
         "scope": "unit",
@@ -6502,15 +6525,15 @@
         {
           "item_id": 191,
           "item_key": "official-7-test-1/p7-191-195/191",
-          "question_type": "细节定位题",
+          "question_type": "否定事实题",
           "priority": {
-            "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 83,
+            "label": "否定事实题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "多文本语境"
+              "否定事实题",
+              "语境推断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -6519,15 +6542,15 @@
         {
           "item_id": 192,
           "item_key": "official-7-test-1/p7-191-195/192",
-          "question_type": "细节定位题",
+          "question_type": "否定事实题",
           "priority": {
-            "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 83,
+            "label": "否定事实题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "多文本语境"
+              "否定事实题",
+              "语境推断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -6536,14 +6559,14 @@
         {
           "item_id": 193,
           "item_key": "official-7-test-1/p7-191-195/193",
-          "question_type": "推断 / 隐含义题",
+          "question_type": "推断题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "推断 / 隐含义题",
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "推断 / 隐含义题",
+              "推断题",
               "语境推断"
             ],
             "scope": "item",
@@ -6553,14 +6576,14 @@
         {
           "item_id": 194,
           "item_key": "official-7-test-1/p7-191-195/194",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "多文本语境"
             ],
             "scope": "item",
@@ -6570,14 +6593,14 @@
         {
           "item_id": 195,
           "item_key": "official-7-test-1/p7-191-195/195",
-          "question_type": "推断 / 隐含义题",
+          "question_type": "推断题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "推断 / 隐含义题",
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "推断 / 隐含义题",
+              "推断题",
               "语境推断"
             ],
             "scope": "item",
@@ -6586,15 +6609,16 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 77,
+        "level": "P1",
+        "score": 81,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
-          "多文本语境",
-          "推断 / 隐含义题",
-          "语境推断"
+          "否定事实题",
+          "语境推断",
+          "推断题",
+          "细节题",
+          "多文本语境"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -6625,16 +6649,14 @@
         {
           "item_id": 196,
           "item_key": "official-7-test-1/p7-196-200/196",
-          "question_type": "细节定位题",
+          "question_type": "主旨 / 目的题",
           "priority": {
-            "level": "P3",
-            "score": 42,
-            "label": "细节定位题",
+            "level": "P2",
+            "score": 70,
+            "label": "主旨 / 目的题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "多文本语境",
-              "明示定位"
+              "主旨 / 目的题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -6643,14 +6665,15 @@
         {
           "item_id": 197,
           "item_key": "official-7-test-1/p7-196-200/197",
-          "question_type": "主旨 / 目的 / 场景题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P2",
-            "score": 70,
-            "label": "主旨 / 目的 / 场景题",
+            "level": "P1",
+            "score": 83,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "主旨 / 目的 / 场景题"
+              "推断题",
+              "语境推断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -6659,14 +6682,14 @@
         {
           "item_id": 198,
           "item_key": "official-7-test-1/p7-196-200/198",
-          "question_type": "细节定位题",
+          "question_type": "细节题",
           "priority": {
             "level": "P2",
             "score": 61,
-            "label": "细节定位题",
+            "label": "细节题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
+              "细节题",
               "多文本语境"
             ],
             "scope": "item",
@@ -6676,14 +6699,14 @@
         {
           "item_id": 199,
           "item_key": "official-7-test-1/p7-196-200/199",
-          "question_type": "推断 / 隐含义题",
+          "question_type": "否定事实题",
           "priority": {
             "level": "P1",
             "score": 83,
-            "label": "推断 / 隐含义题",
+            "label": "否定事实题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "推断 / 隐含义题",
+              "否定事实题",
               "语境推断"
             ],
             "scope": "item",
@@ -6693,15 +6716,15 @@
         {
           "item_id": 200,
           "item_key": "official-7-test-1/p7-196-200/200",
-          "question_type": "细节定位题",
+          "question_type": "推断题",
           "priority": {
-            "level": "P2",
-            "score": 61,
-            "label": "细节定位题",
+            "level": "P1",
+            "score": 83,
+            "label": "推断题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "细节定位题",
-              "多文本语境"
+              "推断题",
+              "语境推断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -6709,17 +6732,17 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 74,
+        "level": "P1",
+        "score": 80,
         "label": "共享材料综合训练",
         "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
         "focus_tags": [
-          "细节定位题",
+          "主旨 / 目的题",
+          "推断题",
+          "语境推断",
+          "细节题",
           "多文本语境",
-          "明示定位",
-          "主旨 / 目的 / 场景题",
-          "推断 / 隐含义题",
-          "语境推断"
+          "否定事实题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"

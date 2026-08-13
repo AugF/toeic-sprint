@@ -25,7 +25,9 @@
       "path": "audio/part2/q009.mp3",
       "asset_key": "official-10-test-1/audio/part2/q009.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "会计部在哪里？\nA. 我会穿一件暖和的夹克。\nB. 在三楼。\nC. 可能在四点钟。",
+    "content_translation": "会计部在哪里？\nA. 我会穿一件暖和的夹克。\nB. 在三楼。\nC. 可能在四点钟。"
   },
   "items": [
     {
@@ -40,8 +42,42 @@
       "topic": "地点询问",
       "keywords": "where location response",
       "answer_explain": "原文依据：问句或陈述是“Where is the accounting department?”，自然应答是“On the third floor.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（On the third floor.）。",
-      "item_id": 9,
+      "question_translation": "会计部在哪里？",
+      "choice_translations": [
+        "A：我会穿一件暖和的夹克。",
+        "B：在三楼。",
+        "C：可能在四点钟。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "third",
+            "meaning": "出现在本题正确表达中：在三楼。"
+          },
+          {
+            "term": "floor",
+            "meaning": "出现在本题正确表达中：在三楼。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "On the third floor.",
+            "meaning": "在三楼。"
+          }
+        ]
+      },
       "question_type": "地点疑问句",
+      "evidence": "参考原文第 1 段：Where is the accounting department?",
+      "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
+      "strategy": "先判断为地点疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "地点疑问句",
+        "evidence": "参考原文第 1 段：Where is the accounting department?",
+        "strategy": "先判断为地点疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
+        "analysis": "原文依据：问句或陈述是“Where is the accounting department?”，自然应答是“On the third floor.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（On the third floor.）。"
+      },
+      "item_id": 9,
       "priority": {
         "level": "P3",
         "score": 53,

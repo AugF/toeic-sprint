@@ -140,7 +140,14 @@ function genericPriority(part,type,item,group){
     const choices=textOf(...(item.choices||[]));
     if(/is being|are being|has been|have been|displayed|parked|located|lined|stacked|placed|leaning|hanging/.test(choices)){score=80;tags.push("动作与状态干扰")}else score=64;
   }else if(part===2){
-    if(/否定|反意|陈述|请求|间接|选择/.test(s)){score=85;tags.push("间接应答","语用判断")}
+    // Classify from the cleaned question as well as the fallback type. OCR
+    // control prefixes frequently prevent inferType's anchored regexp from
+    // seeing an otherwise ordinary WH question.
+    const has=(regexp)=>regexp.test(question);
+    if(/否定|反意|选择/.test(s)||/\bor\b/.test(question)||/n't\b|right\s*\?/.test(question)){score=85;tags.push("间接应答","语用判断")}
+    else if(/陈述|请求|间接/.test(s)&&!has(/\b(what|where|when|who|whose|why|how)\b/)){score=85;tags.push("间接应答","语用判断")}
+    else if(has(/\b(what|why|how)\b/)){score=68;tags.push("自然应答")}
+    else if(has(/\b(where|when|who|whose)\b/))score=53;
     else if(/一般|原因|方式/.test(s)){score=68;tags.push("自然应答")}
     else score=53;
   }else if(part===3||part===4){
@@ -229,12 +236,17 @@ function aggregatePriority(items,existing){
 function qualityOf(source,raw){
   const enriched=source.enriched;
   const all=raw.parts.flatMap(flattenPart);
+  const missingGraphicGroups=raw.parts.filter(part=>part.part===3||part.part===4).flatMap(part=>part.questions).filter(group=>{
+    const text=JSON.stringify(group);
+    return /look at|refer to the graphic|graphic/i.test(text)&&!group.picture_path&&!asArray(group.picture_paths).length;
+  }).length;
   return {
     enriched,
     translation:enriched&&all.some(x=>x.question_translation||x.transcript_translation||x.passage_translation||x.content_translation)?"available":"unavailable",
     knowledge:enriched&&all.some(x=>x.knowledge_accumulation)?"available":"unavailable",
     analysis:all.every(x=>x.answer_explain)?(enriched?"enriched":"basic"):"partial",
-    ocr:"unreviewed"
+    ocr:"unreviewed",
+    missing_graphic_groups:missingGraphicGroups
   };
 }
 
@@ -363,7 +375,7 @@ const catalog={
   schema_version:SCHEMA_VERSION,content_version:new Date().toISOString(),priority_model:PRIORITY_MODEL,
   asset_policy:{copied:false,path_semantics:"每个资源的 path 相对其原始 bank 目录；asset_key 为 bank_id/path。运行时需配置媒体基址。"},
   totals:validation,
-  warnings:priorityWarnings,
+  warnings:[...priorityWarnings,...(results.some(result=>result.index.quality.missing_graphic_groups)?["Official 5–9 的部分 Part 3/4 图表题源目录未提供配套图表；网页保留题目与音频，并在题库质量字段中标记缺失。"]:[])],
   banks:results.map(({source,index,indexRel,missingAssets})=>({
     bank_id:index.bank_id,collection:"official",volume:source.volume,test:source.test,title:index.name,
     question_count:index.question_count,unit_count:index.unit_count,parts:index.parts,index_path:indexRel,

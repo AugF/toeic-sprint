@@ -10,14 +10,16 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 69,
+    "level": "P1",
+    "score": 82,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
+      "推断题",
+      "跨句整合",
+      "主旨 / 目的题",
       "主旨场景",
-      "细节定位题"
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -33,7 +35,9 @@
       "asset_key": "official-4-test-2/audio/part3/q059-061-questions.mp3",
       "exists": true
     },
-    "transcript": "E& w Hi, 91'm from the Barnstown Safety Bureau. @l’m\nhere to certify your new pool.\nWelcome. | manage these apartments. Right this\nway to our pool complex.\nEE w So here’s the regulation checklist. If everything is\nmet, | can issue your safety certificate today...\nIu K.\nER w Let's see... the pool’s fence is high enough, and\nyour gate’s secure.\nIu Yes, we just installed them.\nER w That’s good. The only problem is over here near the\nfence. You'll need to remove this tree so it doesn’t\ndamage the fence as it grows.\nSure, ©1'l| call our maintenance department now to\nhave a worker take care of that."
+    "transcript": "E& w Hi, 91'm from the Barnstown Safety Bureau. @l’m\nhere to certify your new pool.\nWelcome. | manage these apartments. Right this\nway to our pool complex.\nEE w So here’s the regulation checklist. If everything is\nmet, | can issue your safety certificate today...\nIu K.\nER w Let's see... the pool’s fence is high enough, and\nyour gate’s secure.\nIu Yes, we just installed them.\nER w That’s good. The only problem is over here near the\nfence. You'll need to remove this tree so it doesn’t\ndamage the fence as it grows.\nSure, ©1'l| call our maintenance department now to\nhave a worker take care of that.",
+    "transcript_translation": "中文辅助（离线预处理）：E& w Hi, 91'm from the Barnstown Safety Bureau.\n@l’m\nhere to certify your new pool.\nWelcome.\n| manage these apartments.\nRight this\nway to our pool complex.\nEE w So here’s the regulation checklist.\nIf everything is\nmet, | can issue your safety certificate today...\nIu K.\nER w Let's see...\nthe pool’s fence is high enough, and\nyour gate’s secure.\nIu Yes, we just installed them.\nER w That’s good.\nThe only problem is over here near the\nfence.\nYou'll need to remove this tree so it doesn’t\ndamage the fence as it grows.\nSure, ©1'l| call our maintenance department now to\nhave a worker take care of that.",
+    "content_translation": "中文辅助（离线预处理）：E& w Hi, 91'm from the Barnstown Safety Bureau.\n@l’m\nhere to certify your new pool.\nWelcome.\n| manage these apartments.\nRight this\nway to our pool complex.\nEE w So here’s the regulation checklist.\nIf everything is\nmet, | can issue your safety certificate today...\nIu K.\nER w Let's see...\nthe pool’s fence is high enough, and\nyour gate’s secure.\nIu Yes, we just installed them.\nER w That’s good.\nThe only problem is over here near the\nfence.\nYou'll need to remove this tree so it doesn’t\ndamage the fence as it grows.\nSure, ©1'l| call our maintenance department now to\nhave a worker take care of that."
   },
   "items": [
     {
@@ -46,16 +50,50 @@
       "answer": "C",
       "question": "Who most likely is the woman?",
       "answer_explain": "原文依据：听力原文中提到“E& w Hi, 91'm from the Barnstown Safety Bureau.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Asafety inspector）。",
+      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the woman（女士）?",
+      "choice_translations": [
+        "A：Alandscape architect",
+        "B：An athletic coach",
+        "C：Asafety inspector",
+        "D：Aconstruction worker"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：E& w Hi, 91'm from the Barnstown Safety Bureau. @l’m",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：E& w Hi, 91'm from the Barnstown Safety Bureau. @l’m",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“E& w Hi, 91'm from the Barnstown Safety Bureau.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Asafety inspector）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "asafety",
+            "meaning": "本题重点词；结合正确选项理解：Asafety inspector"
+          },
+          {
+            "term": "inspector",
+            "meaning": "本题重点词；结合正确选项理解：Asafety inspector"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Asafety inspector",
+            "meaning": "正确选项中的重点搭配：Asafety inspector"
+          }
+        ]
+      },
       "item_id": 59,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
-        "level": "P2",
-        "score": 72,
-        "label": "主旨 / 目的 / 场景题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -72,15 +110,50 @@
       "answer": "B",
       "question": "What are the speakers mainly discussing?",
       "answer_explain": "原文依据：听力原文中提到“way to our pool complex.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Aswimming pool complex）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers mainly discussing?",
+      "choice_translations": [
+        "A：Alocal parking garage",
+        "B：Aswimming pool complex",
+        "C：Aconstruction site",
+        "D：Acommunity garden"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：E& w Hi, 91'm from the Barnstown Safety Bureau. @l’m",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：E& w Hi, 91'm from the Barnstown Safety Bureau. @l’m",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“way to our pool complex.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Aswimming pool complex）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "aswimming",
+            "meaning": "本题重点词；结合正确选项理解：Aswimming pool complex"
+          },
+          {
+            "term": "pool",
+            "meaning": "本题重点词；结合正确选项理解：Aswimming pool complex"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Aswimming pool complex",
+            "meaning": "正确选项中的重点搭配：Aswimming pool complex"
+          }
+        ]
+      },
       "item_id": 60,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -97,15 +170,49 @@
       "answer": "A",
       "question": "What will the man do next?",
       "answer_explain": "原文依据：听力原文中提到“Sure, ©1'l| call our maintenance department now to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Contact a maintenance department）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） do next?",
+      "choice_translations": [
+        "A：Contact a maintenance department",
+        "B：Make copies of a certificate",
+        "C：Schedule（日程） a training session",
+        "D：Arrange for a rental vehicle"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：E& w Hi, 91'm from the Barnstown Safety Bureau. @l’m",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：E& w Hi, 91'm from the Barnstown Safety Bureau. @l’m",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Sure, ©1'l| call our maintenance department now to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Contact a maintenance department）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "contact",
+            "meaning": "本题重点词；结合正确选项理解：Contact a maintenance department"
+          },
+          {
+            "term": "maintenance",
+            "meaning": "本题重点词；结合正确选项理解：Contact a maintenance department"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Contact a maintenance department",
+            "meaning": "正确选项中的重点搭配：Contact a maintenance department"
+          }
+        ]
+      },
       "item_id": 61,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

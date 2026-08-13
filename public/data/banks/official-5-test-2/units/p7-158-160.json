@@ -11,14 +11,13 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 78,
+    "score": 79,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "词义 / 短语题",
-      "语境推断",
-      "细节定位题"
+      "主旨 / 目的题",
+      "词义 / 话语含义题",
+      "语境推断"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +30,9 @@
         "exists": true
       }
     ],
-    "passage": "http://www.grassleyinn.com/home\nGrassley Inn\nHome\nRooms\nReservations\nSpecials\nWelcome to the Grassley Inn! Our cozy bed-and-breakfast sits close to Lake Lamand by\none of the most beautiful national parks. We are surrounded by a number of historic sites\nand lovely hiking trails.\nFor years we dreamed of creating a relaxing retreat for travelers looking to escape the\nbusy city. In honor of our ten-year anniversary, we want to thank the many guests who\nhave helped make our dream a reality. We are pleased to offer reduced rates throughout\nthe months of September and October. Refer to the Specials tab for details.\nAll room rates include a full complimentary breakfast in our café, free wireless Internet,\nand on-site parking. New this year, our dining room menu has been expanded to include\nevening meals for our guests.\nWe hope to see you soon!\nJohn and Margaret Grassley"
+    "passage": "http://www.grassleyinn.com/home\nGrassley Inn\nHome\nRooms\nReservations\nSpecials\nWelcome to the Grassley Inn! Our cozy bed-and-breakfast sits close to Lake Lamand by\none of the most beautiful national parks. We are surrounded by a number of historic sites\nand lovely hiking trails.\nFor years we dreamed of creating a relaxing retreat for travelers looking to escape the\nbusy city. In honor of our ten-year anniversary, we want to thank the many guests who\nhave helped make our dream a reality. We are pleased to offer reduced rates throughout\nthe months of September and October. Refer to the Specials tab for details.\nAll room rates include a full complimentary breakfast in our café, free wireless Internet,\nand on-site parking. New this year, our dining room menu has been expanded to include\nevening meals for our guests.\nWe hope to see you soon!\nJohn and Margaret Grassley",
+    "passage_translation": "中文辅助（离线预处理）：http://www.grassleyinn.com/home\nGrassley Inn\nHome\nRooms\nReservations\nSpecials\nWelcome to the Grassley Inn!\nOur cozy bed-and-breakfast sits close to Lake Lamand by\none of the most beautiful national parks.\nWe are surrounded by a number of historic sites\nand lovely hiking trails.\nFor years we dreamed of creating a relaxing retreat for travelers looking to escape the\nbusy city.\nIn honor of our ten-year anniversary, we want to thank（感谢） the many guests who（谁）\nhave helped make our dream a reality.\nWe are pleased to offer reduced rates throughout\nthe months of September and October.\nRefer to the Specials tab for details.\nAll room rates include a full complimentary breakfast in our café, free wireless Internet,\nand on-site parking.\nNew this year, our dining room menu has been expanded to include\nevening meals for our guests.\nWe hope to see you soon!\nJohn and Margaret Grassley",
+    "content_translation": "中文辅助（离线预处理）：http://www.grassleyinn.com/home\nGrassley Inn\nHome\nRooms\nReservations\nSpecials\nWelcome to the Grassley Inn!\nOur cozy bed-and-breakfast sits close to Lake Lamand by\none of the most beautiful national parks.\nWe are surrounded by a number of historic sites\nand lovely hiking trails.\nFor years we dreamed of creating a relaxing retreat for travelers looking to escape the\nbusy city.\nIn honor of our ten-year anniversary, we want to thank（感谢） the many guests who（谁）\nhave helped make our dream a reality.\nWe are pleased to offer reduced rates throughout\nthe months of September and October.\nRefer to the Specials tab for details.\nAll room rates include a full complimentary breakfast in our café, free wireless Internet,\nand on-site parking.\nNew this year, our dining room menu has been expanded to include\nevening meals for our guests.\nWe hope to see you soon!\nJohn and Margaret Grassley"
   },
   "items": [
     {
@@ -44,15 +45,49 @@
       "answer": "D",
       "question": "What is a purpose of the Web page?",
       "answer_explain": "原文依据：篇章中可定位到“In honor of our ten-year anniversary, we want to thank the many guests who”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（To advertise a special deal）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is a purpose（目的） of the Web page?",
+      "choice_translations": [
+        "A：To describe a historic building",
+        "B：To provide driving directions",
+        "C：To announce a grand opening",
+        "D：To advertise a special deal"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：http://www.grassleyinn.com/home",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：http://www.grassleyinn.com/home",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“In honor of our ten-year anniversary, we want to thank the many guests who”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（To advertise a special deal）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "advertise",
+            "meaning": "本题重点词；结合正确选项理解：To advertise a special deal"
+          },
+          {
+            "term": "special",
+            "meaning": "本题重点词；结合正确选项理解：To advertise a special deal"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To advertise a special deal",
+            "meaning": "正确选项中的重点搭配：To advertise a special deal"
+          }
+        ]
+      },
       "item_id": 158,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
         "level": "P2",
         "score": 70,
-        "label": "主旨 / 目的 / 场景题",
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +104,45 @@
       "answer": "B",
       "question": "The word \"honor\" in paragraph 2, line 2, is closest in meaning to",
       "answer_explain": "原文依据：篇章中可定位到“In honor of our ten-year anniversary, we want to thank the many guests who”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（recognition）。",
+      "question_translation": "中文辅助（离线预处理）：The word \"honor\" in paragraph 2, line 2, is closest in meaning to",
+      "choice_translations": [
+        "A：courtesy",
+        "B：recognition",
+        "C：privilege",
+        "D：payment"
+      ],
+      "question_type": "词义 / 话语含义题",
+      "evidence": "参考原文第 11 段：busy city. In honor of our ten-year anniversary, we want to thank the many guests who",
+      "strategy": "本题属于词义 / 话语含义题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "词义 / 话语含义题",
+        "evidence": "参考原文第 11 段：busy city. In honor of our ten-year anniversary, we want to thank the many guests who",
+        "strategy": "本题属于词义 / 话语含义题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“In honor of our ten-year anniversary, we want to thank the many guests who”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（recognition）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "recognition",
+            "meaning": "本题重点词；结合正确选项理解：recognition"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "recognition",
+            "meaning": "正确选项中的重点搭配：recognition"
+          }
+        ]
+      },
       "item_id": 159,
-      "question_type": "词义 / 短语题",
       "priority": {
         "level": "P1",
         "score": 83,
-        "label": "词义 / 短语题",
+        "label": "词义 / 话语含义题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "词义 / 短语题",
+          "词义 / 话语含义题",
           "语境推断"
         ],
         "scope": "item",
@@ -95,15 +160,49 @@
       "answer": "C",
       "question": "What is indicated about the Grassley Inn?",
       "answer_explain": "原文依据：篇章中可定位到“Welcome to the Grassley Inn!”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Dinner service was recently added.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is indicated about the Grassley Inn?",
+      "choice_translations": [
+        "A：The dining room has just been renovated",
+        "B：There is a fee for Internet access.",
+        "C：Dinner service（服务） was recently added.",
+        "D：It is in a busy urban location."
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：http://www.grassleyinn.com/home",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：http://www.grassleyinn.com/home",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Welcome to the Grassley Inn!”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Dinner service was recently added.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "dinner",
+            "meaning": "本题重点词；结合正确选项理解：Dinner service（服务） was recently added."
+          },
+          {
+            "term": "service",
+            "meaning": "本题重点词；结合正确选项理解：Dinner service（服务） was recently added."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Dinner service was recently added.",
+            "meaning": "正确选项中的重点搭配：Dinner service（服务） was recently added."
+          }
+        ]
+      },
       "item_id": 160,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 70,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

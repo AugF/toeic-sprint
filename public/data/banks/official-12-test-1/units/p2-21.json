@@ -25,7 +25,9 @@
       "path": "audio/part2/q021.mp3",
       "asset_key": "official-12-test-1/audio/part2/q021.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） can I hang up my jacket?",
+    "content_translation": "中文辅助（离线预处理）：Where（哪里） can I hang up my jacket?"
   },
   "items": [
     {
@@ -40,8 +42,42 @@
       "topic": "地点询问",
       "keywords": "where location response",
       "answer_explain": "原文依据：问句或陈述是“Where can I hang up my jacket?”，自然应答是“In the closet down the hall.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（In the closet down the hall.）。",
-      "item_id": 21,
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） can I hang up my jacket?",
+      "choice_translations": [
+        "A：No, in the left pocket.",
+        "B：In the closet down the hall.",
+        "C：A different size."
+      ],
       "question_type": "地点疑问句",
+      "evidence": "参考原文第 1 段：Where can I hang up my jacket?",
+      "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "地点疑问句",
+        "evidence": "参考原文第 1 段：Where can I hang up my jacket?",
+        "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“Where can I hang up my jacket?”，自然应答是“In the closet down the hall.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（In the closet down the hall.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "closet",
+            "meaning": "本题重点词；结合正确选项理解：In the closet down the hall."
+          },
+          {
+            "term": "down",
+            "meaning": "本题重点词；结合正确选项理解：In the closet down the hall."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "In the closet down the hall.",
+            "meaning": "正确选项中的重点搭配：In the closet down the hall."
+          }
+        ]
+      },
+      "item_id": 21,
       "priority": {
         "level": "P3",
         "score": 53,

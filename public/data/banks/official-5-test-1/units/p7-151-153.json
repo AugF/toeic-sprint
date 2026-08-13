@@ -15,7 +15,7 @@
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
+      "细节题",
       "明示定位"
     ],
     "scope": "unit",
@@ -29,7 +29,9 @@
         "exists": true
       }
     ],
-    "passage": "*E-mail*\nTo:\nc.felena@rocklandmail.net\nFrom:\ncustomerservice@campworld.com\nDate:\nMay 5\nSubject:\nRe: Additional colors\nDear Ms. Felena,\nThank you for your e-mail. We at Camp World Ltd. are happy you are enjoying your\nnew product, the reversible hooded rain shirt. To answer your question, yes, as a result\nof requests like yours, we now make the shirt in five colors: red, green, purple, black,\nand the original yellow. You can view these colors on our Web site.\nSince you do not live near one of our stores, we will be happy to take your order.\nPlease call us at 610-555-0123. For your convenience, simply ask for item number\n312678 in the size and color of your choice. Be sure to mention the code CAMPTEN,\nand we will take 10 percent off the total cost of your order.\nWe appreciate your interest and your business\nChia-Wei Wu, Customer Service Representative\nCamp World Ltd."
+    "passage": "*E-mail*\nTo:\nc.felena@rocklandmail.net\nFrom:\ncustomerservice@campworld.com\nDate:\nMay 5\nSubject:\nRe: Additional colors\nDear Ms. Felena,\nThank you for your e-mail. We at Camp World Ltd. are happy you are enjoying your\nnew product, the reversible hooded rain shirt. To answer your question, yes, as a result\nof requests like yours, we now make the shirt in five colors: red, green, purple, black,\nand the original yellow. You can view these colors on our Web site.\nSince you do not live near one of our stores, we will be happy to take your order.\nPlease call us at 610-555-0123. For your convenience, simply ask for item number\n312678 in the size and color of your choice. Be sure to mention the code CAMPTEN,\nand we will take 10 percent off the total cost of your order.\nWe appreciate your interest and your business\nChia-Wei Wu, Customer Service Representative\nCamp World Ltd.",
+    "passage_translation": "中文辅助（离线预处理）：*E-mail*\nTo:\nc.felena@rocklandmail.net\nFrom:\ncustomerservice@campworld.com\nDate:\nMay 5\nSubject:\nRe: Additional colors\nDear Ms.\nFelena,\nThank（感谢） you for your e-mail.\nWe at Camp World Ltd.\nare happy you are enjoying your\nnew product, the reversible hooded rain shirt.\nTo answer your question, yes, as a result\nof requests like yours, we now make the shirt in five colors: red, green, purple, black,\nand the original yellow.\nYou can view these colors on our Web site.\nSince you do not live near one of our stores, we will be happy to take your order（订单）.\nPlease（请） call us at 610-555-0123.\nFor your convenience, simply ask for item number\n312678 in the size and color of your choice.\nBe sure to mention the code CAMPTEN,\nand we will take 10 percent off the total cost of your order（订单）.\nWe appreciate your interest and your business\nChia-Wei Wu, Customer（顾客） Service（服务） Representative\nCamp World Ltd.",
+    "content_translation": "中文辅助（离线预处理）：*E-mail*\nTo:\nc.felena@rocklandmail.net\nFrom:\ncustomerservice@campworld.com\nDate:\nMay 5\nSubject:\nRe: Additional colors\nDear Ms.\nFelena,\nThank（感谢） you for your e-mail.\nWe at Camp World Ltd.\nare happy you are enjoying your\nnew product, the reversible hooded rain shirt.\nTo answer your question, yes, as a result\nof requests like yours, we now make the shirt in five colors: red, green, purple, black,\nand the original yellow.\nYou can view these colors on our Web site.\nSince you do not live near one of our stores, we will be happy to take your order（订单）.\nPlease（请） call us at 610-555-0123.\nFor your convenience, simply ask for item number\n312678 in the size and color of your choice.\nBe sure to mention the code CAMPTEN,\nand we will take 10 percent off the total cost of your order（订单）.\nWe appreciate your interest and your business\nChia-Wei Wu, Customer（顾客） Service（服务） Representative\nCamp World Ltd."
   },
   "items": [
     {
@@ -42,15 +44,45 @@
       "answer": "D",
       "question": "What was the first color in which the shirt was offered?",
       "answer_explain": "原文依据：篇章中可定位到“and the original yellow.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（Yellow）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） was the first color in which the shirt was offered?",
+      "choice_translations": [
+        "A：Red",
+        "B：Green",
+        "C：Black",
+        "D：Yellow"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 9 段：Re: Additional colors",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 9 段：Re: Additional colors",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“and the original yellow.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（Yellow）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "yellow",
+            "meaning": "本题重点词；结合正确选项理解：Yellow"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Yellow",
+            "meaning": "正确选项中的重点搭配：Yellow"
+          }
+        ]
+      },
       "item_id": 151,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 42,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示定位"
         ],
         "scope": "item",
@@ -68,15 +100,49 @@
       "answer": "B",
       "question": "According to the e-mail, how can Ms. Felena place an order?",
       "answer_explain": "原文依据：篇章中可定位到“Please call us at 610-555-0123.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（By making a phone call）。",
+      "question_translation": "中文辅助（离线预处理）：According（根据） to the e-mail, how（如何） can Ms.\nFelena place an order（订单）?",
+      "choice_translations": [
+        "A：By sending an e-mail",
+        "B：By making a phone call",
+        "C：By going to a store",
+        "D：By visiting a Web site"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 3 段：c.felena@rocklandmail.net",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 3 段：c.felena@rocklandmail.net",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Please call us at 610-555-0123.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（By making a phone call）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "making",
+            "meaning": "本题重点词；结合正确选项理解：By making a phone call"
+          },
+          {
+            "term": "phone",
+            "meaning": "本题重点词；结合正确选项理解：By making a phone call"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "By making a phone call",
+            "meaning": "正确选项中的重点搭配：By making a phone call"
+          }
+        ]
+      },
       "item_id": 152,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -93,15 +159,45 @@
       "answer": "B",
       "question": "What does Mr. Wu offer to Ms. Felena?",
       "answer_explain": "原文依据：篇章中可定位到“Felena,”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（A discount）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does Mr.\nWu offer to Ms.\nFelena?",
+      "choice_translations": [
+        "A：A free shirt",
+        "B：A discount",
+        "C：A refund",
+        "D：An exchange"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 3 段：c.felena@rocklandmail.net",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 3 段：c.felena@rocklandmail.net",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Felena,”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（A discount）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "discount",
+            "meaning": "本题重点词；结合正确选项理解：A discount"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "discount",
+            "meaning": "正确选项中的重点搭配：A discount"
+          }
+        ]
+      },
       "item_id": 153,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

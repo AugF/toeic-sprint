@@ -15,9 +15,9 @@
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
+      "主旨 / 目的题",
       "主旨场景",
-      "细节定位题"
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -33,7 +33,9 @@
       "asset_key": "official-5-test-1/audio/part3/q056-058-questions.mp3",
       "exists": true
     },
-    "transcript": "So next on our meeting agenda; the open position in\nthe sales department.\nK. Here's the job description I wrote up. | think we\nshould look at internal candidates before advertising\noutside the company.\nThat makes sense. So we need someone who can\nhandle our Chinese clients' accounts... someone who\nspeaks Mandarin.\nEs w Right. Malik Lewis lived in China for ten years...\nThat's true. ® But we need to give everyone an\nopportunity to apply. Can you put an announcement\nabout this job on our staff Web site?"
+    "transcript": "So next on our meeting agenda; the open position in\nthe sales department.\nK. Here's the job description I wrote up. | think we\nshould look at internal candidates before advertising\noutside the company.\nThat makes sense. So we need someone who can\nhandle our Chinese clients' accounts... someone who\nspeaks Mandarin.\nEs w Right. Malik Lewis lived in China for ten years...\nThat's true. ® But we need to give everyone an\nopportunity to apply. Can you put an announcement\nabout this job on our staff Web site?",
+    "transcript_translation": "中文辅助（离线预处理）：So next on our meeting（会议） agenda; the open position in\nthe sales department.\nK.\nHere's the job description I wrote up.\n| think we\nshould look at internal candidates before advertising\noutside the company（公司）.\nThat makes sense.\nSo we need someone who（谁） can\nhandle our Chinese clients' accounts...\nsomeone who（谁）\nspeaks Mandarin.\nEs w Right.\nMalik Lewis lived in China for ten years...\nThat's true.\n® But we need to give everyone an\nopportunity to apply.\nCan you put an announcement\nabout this job on our staff Web site?",
+    "content_translation": "中文辅助（离线预处理）：So next on our meeting（会议） agenda; the open position in\nthe sales department.\nK.\nHere's the job description I wrote up.\n| think we\nshould look at internal candidates before advertising\noutside the company（公司）.\nThat makes sense.\nSo we need someone who（谁） can\nhandle our Chinese clients' accounts...\nsomeone who（谁）\nspeaks Mandarin.\nEs w Right.\nMalik Lewis lived in China for ten years...\nThat's true.\n® But we need to give everyone an\nopportunity to apply.\nCan you put an announcement\nabout this job on our staff Web site?"
   },
   "items": [
     {
@@ -46,15 +48,49 @@
       "answer": "C",
       "question": "What is the conversation mainly about?",
       "answer_explain": "原文依据：听力原文中提到“Here's the job description I wrote up.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Filling a job opening）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is the conversation mainly about?",
+      "choice_translations": [
+        "A：Finalizing a company（公司） merger",
+        "B：Reporting annual sales",
+        "C：Filling a job opening",
+        "D：Analyzing a competitor"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：So next on our meeting agenda; the open position in",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：So next on our meeting agenda; the open position in",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Here's the job description I wrote up.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Filling a job opening）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "filling",
+            "meaning": "本题重点词；结合正确选项理解：Filling a job opening"
+          },
+          {
+            "term": "opening",
+            "meaning": "本题重点词；结合正确选项理解：Filling a job opening"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Filling a job opening",
+            "meaning": "正确选项中的重点搭配：Filling a job opening"
+          }
+        ]
+      },
       "item_id": 56,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
         "level": "P2",
         "score": 72,
-        "label": "主旨 / 目的 / 场景题",
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
+          "主旨 / 目的题",
           "主旨场景"
         ],
         "scope": "item",
@@ -72,15 +108,49 @@
       "answer": "B",
       "question": "Why does the woman say, \"Malik Lewis lived in China for ten years\"?",
       "answer_explain": "原文依据：听力原文中提到“Malik Lewis lived in China for ten years...”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To offer a recommendation）。",
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） say, \"Malik Lewis lived in China for ten years\"?",
+      "choice_translations": [
+        "A：To express surprise",
+        "B：To offer a recommendation",
+        "C：To correct a mistake",
+        "D：To give a compliment"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 9 段：Es w Right. Malik Lewis lived in China for ten years...",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 9 段：Es w Right. Malik Lewis lived in China for ten years...",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Malik Lewis lived in China for ten years...”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To offer a recommendation）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "offer",
+            "meaning": "本题重点词；结合正确选项理解：To offer a recommendation"
+          },
+          {
+            "term": "recommendation",
+            "meaning": "本题重点词；结合正确选项理解：To offer a recommendation"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To offer a recommendation",
+            "meaning": "正确选项中的重点搭配：To offer a recommendation"
+          }
+        ]
+      },
       "item_id": 57,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -97,15 +167,49 @@
       "answer": "B",
       "question": "What does the man ask the woman to do?",
       "answer_explain": "原文依据：听力原文中提到“Can you put an announcement”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Post an announcement）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） ask the woman（女士） to do?",
+      "choice_translations": [
+        "A：Call a client",
+        "B：Post an announcement",
+        "C：Go on a business trip",
+        "D：Revise a document"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：So next on our meeting agenda; the open position in",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：So next on our meeting agenda; the open position in",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Can you put an announcement”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Post an announcement）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "post",
+            "meaning": "本题重点词；结合正确选项理解：Post an announcement"
+          },
+          {
+            "term": "announcement",
+            "meaning": "本题重点词；结合正确选项理解：Post an announcement"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Post an announcement",
+            "meaning": "正确选项中的重点搭配：Post an announcement"
+          }
+        ]
+      },
       "item_id": 58,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

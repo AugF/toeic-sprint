@@ -25,7 +25,9 @@
       "path": "audio/part2/q028.mp3",
       "asset_key": "official-5-test-2/audio/part2/q028.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：Who（谁） has time to buy supplies for the party?",
+    "content_translation": "中文辅助（离线预处理）：Who（谁） has time to buy supplies for the party?"
   },
   "items": [
     {
@@ -40,8 +42,42 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Who has time to buy supplies for the party?”，自然应答是“There're balloons and plates in the closet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（There're balloons and plates in the closet.）。",
-      "item_id": 28,
+      "question_translation": "中文辅助（离线预处理）：Who（谁） has time to buy supplies for the party?",
+      "choice_translations": [
+        "A：A lot of small parts.",
+        "B：There're balloons and plates in the closet.",
+        "C：They normally give us three weeks of vacation."
+      ],
       "question_type": "人物疑问句",
+      "evidence": "参考原文第 1 段：Who has time to buy supplies for the party?",
+      "strategy": "先识别人物疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "人物疑问句",
+        "evidence": "参考原文第 1 段：Who has time to buy supplies for the party?",
+        "strategy": "先识别人物疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“Who has time to buy supplies for the party?”，自然应答是“There're balloons and plates in the closet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（There're balloons and plates in the closet.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "there're",
+            "meaning": "本题重点词；结合正确选项理解：There're balloons and plates in the closet."
+          },
+          {
+            "term": "balloons",
+            "meaning": "本题重点词；结合正确选项理解：There're balloons and plates in the closet."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "There're balloons and plates in the closet.",
+            "meaning": "正确选项中的重点搭配：There're balloons and plates in the closet."
+          }
+        ]
+      },
+      "item_id": 28,
       "priority": {
         "level": "P3",
         "score": 53,

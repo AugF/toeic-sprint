@@ -15,7 +15,7 @@
     "label": "单题训练",
     "reason": "按该题的高频考点和能力迁移价值排序。",
     "focus_tags": [
-      "人物动作 / 场景题"
+      "动作 / 状态辨析题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -30,7 +30,9 @@
       "path": "images/part1/q004.jpg",
       "asset_key": "official-2-test-2/images/part1/q004.jpg",
       "exists": true
-    }
+    },
+    "transcript_translation": "A. 食品杂货（REMERIIAF TSH, BE\nB. 一名购物者正在把一些钱递给收银员。柜台 (2—\\—k#EO) LIAVYI—I。\nC. 一位顾客正站在收银台旁。\nD. 一名员工正在从展示架上取一个产品。SEN SDA dee EMA TISLVEL",
+    "content_translation": "A. 食品杂货（REMERIIAF TSH, BE\nB. 一名购物者正在把一些钱递给收银员。柜台 (2—\\—k#EO) LIAVYI—I。\nC. 一位顾客正站在收银台旁。\nD. 一名员工正在从展示架上取一个产品。SEN SDA dee EMA TISLVEL"
   },
   "items": [
     {
@@ -45,15 +47,48 @@
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Acustomer is standing by a checkout counter.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Acustomer is standing by a checkout counter.）。",
+      "choice_translations": [
+        "A：食品杂货（REMERIIAF TSH, BE",
+        "B：一名购物者正在把一些钱递给收银员。柜台 (2—\\—k#EO) LIAVYI—I。",
+        "C：一位顾客正站在收银台旁。",
+        "D：一名员工正在从展示架上取一个产品。SEN SDA dee EMA TISLVEL"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "acustomer",
+            "meaning": "出现在本题正确表达中：一位顾客正站在收银台旁。"
+          },
+          {
+            "term": "standing",
+            "meaning": "出现在本题正确表达中：一位顾客正站在收银台旁。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Acustomer is standing by a checkout counter.",
+            "meaning": "一位顾客正站在收银台旁。"
+          }
+        ]
+      },
+      "question_type": "动作 / 状态辨析题",
+      "evidence": "根据题干结构、选项语义和上下文判断。",
+      "strategy": "本题属于动作 / 状态辨析题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "动作 / 状态辨析题",
+        "evidence": "根据题干结构、选项语义和上下文判断。",
+        "strategy": "本题属于动作 / 状态辨析题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：照片中可见信息与描述“Acustomer is standing by a checkout counter.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Acustomer is standing by a checkout counter.）。"
+      },
       "item_id": 4,
-      "question_type": "人物动作 / 场景题",
       "priority": {
         "level": "P2",
         "score": 64,
-        "label": "人物动作 / 场景题",
+        "label": "动作 / 状态辨析题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "人物动作 / 场景题"
+          "动作 / 状态辨析题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

@@ -11,11 +11,13 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 61,
+    "score": 69,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "细节题",
+      "主旨 / 目的题",
+      "主旨场景"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +33,9 @@
       "asset_key": "official-5-test-2/audio/part3/q041-043-questions.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nK. Let's discuss how we're going to train the new\nWeb developers who'll join our team next month. They\nlive in several different countries, so they'll be working\nfrom home. Any ideas?\nHmm... We could set up a conference call for the\ntraining. But some of the new employees live in a different\ntime zone. It may be difficult to schedule the call.\nWhy don't we make a video? That way the new\nemployees can watch the training video whenever it's\nmost convenient for them.\nThat's a good idea. Carla-is that something you\ncould make?\nAbsolutely! But Ol'd better get started right away-it\nwill take at least a couple of weeks to complete.\nTEST 2 PART 3"
+    "transcript": "with three speakers.\nK. Let's discuss how we're going to train the new\nWeb developers who'll join our team next month. They\nlive in several different countries, so they'll be working\nfrom home. Any ideas?\nHmm... We could set up a conference call for the\ntraining. But some of the new employees live in a different\ntime zone. It may be difficult to schedule the call.\nWhy don't we make a video? That way the new\nemployees can watch the training video whenever it's\nmost convenient for them.\nThat's a good idea. Carla-is that something you\ncould make?\nAbsolutely! But Ol'd better get started right away-it\nwill take at least a couple of weeks to complete.\nTEST 2 PART 3",
+    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nK.\nLet's discuss how（如何） we're going to train the new\nWeb developers who（谁）'ll join our team next month.\nThey\nlive in several different countries, so they'll be working\nfrom home.\nAny ideas?\nHmm...\nWe could set up a conference call for the\ntraining.\nBut some of the new employees live in a different\ntime zone.\nIt may be difficult to schedule（日程） the call.\nWhy（为什么） don't we make a video?\nThat way the new\nemployees can watch the training video whenever it's\nmost convenient for them.\nThat's a good idea.\nCarla-is that something you\ncould make?\nAbsolutely!\nBut Ol'd better get started right away-it\nwill take at least a couple of weeks to complete.\nTEST 2 PART 3",
+    "content_translation": "中文辅助（离线预处理）：with three speakers.\nK.\nLet's discuss how（如何） we're going to train the new\nWeb developers who（谁）'ll join our team next month.\nThey\nlive in several different countries, so they'll be working\nfrom home.\nAny ideas?\nHmm...\nWe could set up a conference call for the\ntraining.\nBut some of the new employees live in a different\ntime zone.\nIt may be difficult to schedule（日程） the call.\nWhy（为什么） don't we make a video?\nThat way the new\nemployees can watch the training video whenever it's\nmost convenient for them.\nThat's a good idea.\nCarla-is that something you\ncould make?\nAbsolutely!\nBut Ol'd better get started right away-it\nwill take at least a couple of weeks to complete.\nTEST 2 PART 3"
   },
   "items": [
     {
@@ -44,15 +48,49 @@
       "answer": "A",
       "question": "What are the speakers discussing?",
       "answer_explain": "原文依据：听力原文中提到“But some of the new employees live in a different”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He picked up some supplies.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers discussing?",
+      "choice_translations": [
+        "A：He picked up some supplies.",
+        "B：He reviewed a presentation.",
+        "C：He forwarded a meeting（会议） invitation.",
+        "D：He wrote a reference letter."
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：with three speakers.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：with three speakers.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“But some of the new employees live in a different”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He picked up some supplies.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "picked",
+            "meaning": "本题重点词；结合正确选项理解：He picked up some supplies."
+          },
+          {
+            "term": "some",
+            "meaning": "本题重点词；结合正确选项理解：He picked up some supplies."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "He picked up some supplies.",
+            "meaning": "正确选项中的重点搭配：He picked up some supplies."
+          }
+        ]
+      },
       "item_id": 41,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +107,49 @@
       "answer": "C",
       "question": "Why does the man recommend using a",
       "answer_explain": "原文依据：听力原文中提到“But some of the new employees live in a different”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A book signing）。",
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） recommend using a",
+      "choice_translations": [
+        "A：A cooking class",
+        "B：A sports competition",
+        "C：A book signing",
+        "D：A retirement dinner"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：with three speakers.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：with three speakers.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“But some of the new employees live in a different”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A book signing）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "book",
+            "meaning": "本题重点词；结合正确选项理解：A book signing"
+          },
+          {
+            "term": "signing",
+            "meaning": "本题重点词；结合正确选项理解：A book signing"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "book signing",
+            "meaning": "正确选项中的重点搭配：A book signing"
+          }
+        ]
+      },
       "item_id": 42,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -94,15 +166,50 @@
       "answer": "B",
       "question": "What does Carla say about the project?",
       "answer_explain": "原文依据：听力原文中提到“But Ol'd better get started right away-it”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（It must be started soon）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does Carla say about the project?",
+      "choice_translations": [
+        "A：It will require additional materials.",
+        "B：It must be started soon",
+        "C：It is currently understaffed.",
+        "D：It needs a manager（经理）'s approval."
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 12 段：That's a good idea. Carla-is that something you",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 12 段：That's a good idea. Carla-is that something you",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“But Ol'd better get started right away-it”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（It must be started soon）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "must",
+            "meaning": "本题重点词；结合正确选项理解：It must be started soon"
+          },
+          {
+            "term": "started",
+            "meaning": "本题重点词；结合正确选项理解：It must be started soon"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It must be started soon",
+            "meaning": "正确选项中的重点搭配：It must be started soon"
+          }
+        ]
+      },
       "item_id": 43,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

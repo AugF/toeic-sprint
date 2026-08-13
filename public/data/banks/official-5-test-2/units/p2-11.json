@@ -26,7 +26,9 @@
       "path": "audio/part2/q011.mp3",
       "asset_key": "official-5-test-2/audio/part2/q011.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：Is my prescription ready yet?",
+    "content_translation": "中文辅助（离线预处理）：Is my prescription ready yet?"
   },
   "items": [
     {
@@ -41,8 +43,38 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Is my prescription ready yet?”，自然应答是“Let me check.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Let me check.）。",
-      "item_id": 11,
+      "question_translation": "中文辅助（离线预处理）：Is my prescription ready yet?",
+      "choice_translations": [
+        "A：The medical clinic.",
+        "B：Let me check.",
+        "C：One after every meal."
+      ],
       "question_type": "一般疑问句",
+      "evidence": "参考原文第 1 段：Is my prescription ready yet?",
+      "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "一般疑问句",
+        "evidence": "参考原文第 1 段：Is my prescription ready yet?",
+        "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“Is my prescription ready yet?”，自然应答是“Let me check.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Let me check.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "check",
+            "meaning": "本题重点词；结合正确选项理解：Let me check."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Let me check.",
+            "meaning": "正确选项中的重点搭配：Let me check."
+          }
+        ]
+      },
+      "item_id": 11,
       "priority": {
         "level": "P2",
         "score": 68,

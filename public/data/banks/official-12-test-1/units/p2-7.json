@@ -27,7 +27,9 @@
       "path": "audio/part2/q007.mp3",
       "asset_key": "official-12-test-1/audio/part2/q007.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：Should I get a haircut today or tomorrow?",
+    "content_translation": "中文辅助（离线预处理）：Should I get a haircut today or tomorrow?"
   },
   "items": [
     {
@@ -42,8 +44,42 @@
       "topic": "选择问句",
       "keywords": "choice indirect response",
       "answer_explain": "原文依据：问句或陈述是“Should I get a haircut today or tomorrow?”，自然应答是“Today would be better.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Today would be better.）。",
-      "item_id": 7,
+      "question_translation": "中文辅助（离线预处理）：Should I get a haircut today or tomorrow?",
+      "choice_translations": [
+        "A：Turn left at the corner.",
+        "B：Shall we cut the cake?",
+        "C：Today would be better."
+      ],
       "question_type": "选择疑问句",
+      "evidence": "参考原文第 1 段：Should I get a haircut today or tomorrow?",
+      "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "选择疑问句",
+        "evidence": "参考原文第 1 段：Should I get a haircut today or tomorrow?",
+        "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“Should I get a haircut today or tomorrow?”，自然应答是“Today would be better.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Today would be better.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "today",
+            "meaning": "本题重点词；结合正确选项理解：Today would be better."
+          },
+          {
+            "term": "better",
+            "meaning": "本题重点词；结合正确选项理解：Today would be better."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Today would be better.",
+            "meaning": "正确选项中的重点搭配：Today would be better."
+          }
+        ]
+      },
+      "item_id": 7,
       "priority": {
         "level": "P1",
         "score": 85,

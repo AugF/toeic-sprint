@@ -26,7 +26,9 @@
       "path": "audio/part2/q014.mp3",
       "asset_key": "official-5-test-1/audio/part2/q014.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：Is this jacket made of leather?",
+    "content_translation": "中文辅助（离线预处理）：Is this jacket made of leather?"
   },
   "items": [
     {
@@ -41,8 +43,42 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Is this jacket made of leather?”，自然应答是“No, but this one over here is.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, but this one over here is.）。",
-      "item_id": 14,
+      "question_translation": "中文辅助（离线预处理）：Is this jacket made of leather?",
+      "choice_translations": [
+        "A：No, but this one over here is.",
+        "B：Sure, if my manager（经理） agrees.",
+        "C：You should wear a jacket."
+      ],
       "question_type": "一般疑问句",
+      "evidence": "参考原文第 1 段：Is this jacket made of leather?",
+      "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "一般疑问句",
+        "evidence": "参考原文第 1 段：Is this jacket made of leather?",
+        "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“Is this jacket made of leather?”，自然应答是“No, but this one over here is.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, but this one over here is.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "over",
+            "meaning": "本题重点词；结合正确选项理解：No, but this one over here is."
+          },
+          {
+            "term": "here",
+            "meaning": "本题重点词；结合正确选项理解：No, but this one over here is."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "No, but this one over here is.",
+            "meaning": "正确选项中的重点搭配：No, but this one over here is."
+          }
+        ]
+      },
+      "item_id": 14,
       "priority": {
         "level": "P2",
         "score": 68,

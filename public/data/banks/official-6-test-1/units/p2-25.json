@@ -27,7 +27,9 @@
       "path": "audio/part2/q025.mp3",
       "asset_key": "official-6-test-1/audio/part2/q025.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "你今晚想去逛街还是去看电影？\nA. 你有收据吗？\nB. 我要工作到八点。\nC. 一批新鞋的货。",
+    "content_translation": "你今晚想去逛街还是去看电影？\nA. 你有收据吗？\nB. 我要工作到八点。\nC. 一批新鞋的货。"
   },
   "items": [
     {
@@ -42,8 +44,42 @@
       "topic": "选择问句",
       "keywords": "choice indirect response",
       "answer_explain": "原文依据：问句或陈述是“Would you rather go shopping or go to the movies tonight?”，自然应答是“I have to work until eight.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I have to work until eight.）。",
-      "item_id": 25,
+      "question_translation": "你今晚想去逛街还是去看电影？",
+      "choice_translations": [
+        "A：你有收据吗？",
+        "B：我要工作到八点。",
+        "C：一批新鞋的货。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "work",
+            "meaning": "出现在本题正确表达中：我要工作到八点。"
+          },
+          {
+            "term": "until",
+            "meaning": "出现在本题正确表达中：我要工作到八点。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "I have to work until eight.",
+            "meaning": "我要工作到八点。"
+          }
+        ]
+      },
       "question_type": "选择疑问句",
+      "evidence": "参考原文第 1 段：Would you rather go shopping or go to the movies tonight?",
+      "response_style": "既可能直接回答，也常以原因、安排或补充信息间接回应",
+      "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "选择疑问句",
+        "evidence": "参考原文第 1 段：Would you rather go shopping or go to the movies tonight?",
+        "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
+        "analysis": "原文依据：问句或陈述是“Would you rather go shopping or go to the movies tonight?”，自然应答是“I have to work until eight.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I have to work until eight.）。"
+      },
+      "item_id": 25,
       "priority": {
         "level": "P1",
         "score": 85,

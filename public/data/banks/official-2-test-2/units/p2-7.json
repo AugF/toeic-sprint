@@ -15,7 +15,7 @@
     "label": "单题训练",
     "reason": "按该题的高频考点和能力迁移价值排序。",
     "focus_tags": [
-      "时间疑问句"
+      "陈述 / 请求应答题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -25,7 +25,9 @@
       "path": "audio/part2/q007.mp3",
       "asset_key": "official-2-test-2/audio/part2/q007.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "w 你什么时候去巴黎？ = w\nA. 周二晚上晚些时候。\nB. 留在前台。\nC. 她会不在的。",
+    "content_translation": "w 你什么时候去巴黎？ = w\nA. 周二晚上晚些时候。\nB. 留在前台。\nC. 她会不在的。"
   },
   "items": [
     {
@@ -40,15 +42,49 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“w When do you leave for Paris? = w”，自然应答是“Late on Tuesday evening.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Late on Tuesday evening.）。",
+      "question_translation": "w 你什么时候去巴黎？ = w",
+      "choice_translations": [
+        "A：周二晚上晚些时候。",
+        "B：留在前台。",
+        "C：她会不在的。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "late",
+            "meaning": "出现在本题正确表达中：周二晚上晚些时候。"
+          },
+          {
+            "term": "tuesday",
+            "meaning": "出现在本题正确表达中：周二晚上晚些时候。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Late on Tuesday evening.",
+            "meaning": "周二晚上晚些时候。"
+          }
+        ]
+      },
+      "question_type": "陈述 / 请求应答题",
+      "evidence": "参考原文第 1 段：w When do you leave for Paris? = w",
+      "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
+      "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "陈述 / 请求应答题",
+        "evidence": "参考原文第 1 段：w When do you leave for Paris? = w",
+        "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
+        "analysis": "原文依据：问句或陈述是“w When do you leave for Paris? = w”，自然应答是“Late on Tuesday evening.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Late on Tuesday evening.）。"
+      },
       "item_id": 7,
-      "question_type": "时间疑问句",
       "priority": {
         "level": "P3",
         "score": 53,
-        "label": "时间疑问句",
+        "label": "陈述 / 请求应答题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "时间疑问句"
+          "陈述 / 请求应答题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

@@ -10,12 +10,14 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P3",
-    "score": 57,
+    "level": "P2",
+    "score": 78,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
+      "推断题",
+      "跨句整合",
+      "细节题",
       "明示细节"
     ],
     "scope": "unit",
@@ -32,7 +34,9 @@
       "asset_key": "official-7-test-2/audio/part4/q074-076-questions.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nNow that everyone has arrived, let's start our meeting\nI'm happy to announce that business has increased this\nmonth due to the new line of outdoor clothing we've added\nto our store. However, since we moved things around\nto accommodate the additional jackets, gloves, and hats,\npeople are having trouble finding what they're looking for.\nCustomers were really used to the old layout. So, please\nkeep this in mind and be extra helpful to our customers in\nthe coming weeks."
+    "transcript": "a meeting.\nNow that everyone has arrived, let's start our meeting\nI'm happy to announce that business has increased this\nmonth due to the new line of outdoor clothing we've added\nto our store. However, since we moved things around\nto accommodate the additional jackets, gloves, and hats,\npeople are having trouble finding what they're looking for.\nCustomers were really used to the old layout. So, please\nkeep this in mind and be extra helpful to our customers in\nthe coming weeks.",
+    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nNow that everyone has arrived, let's start our meeting（会议）\nI'm happy to announce that business has increased this\nmonth due to the new line of outdoor clothing we've added\nto our store.\nHowever, since we moved things around\nto accommodate the additional jackets, gloves, and hats,\npeople are having trouble finding what（什么） they're looking for.\nCustomers were really used to the old layout.\nSo, please（请）\nkeep this in mind and be extra helpful to our customers in\nthe coming weeks.",
+    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nNow that everyone has arrived, let's start our meeting（会议）\nI'm happy to announce that business has increased this\nmonth due to the new line of outdoor clothing we've added\nto our store.\nHowever, since we moved things around\nto accommodate the additional jackets, gloves, and hats,\npeople are having trouble finding what（什么） they're looking for.\nCustomers were really used to the old layout.\nSo, please（请）\nkeep this in mind and be extra helpful to our customers in\nthe coming weeks."
   },
   "items": [
     {
@@ -45,16 +49,50 @@
       "answer": "D",
       "question": "What kind of store does the speaker most likely manage?",
       "answer_explain": "原文依据：听力原文中提到“month due to the new line of outdoor clothing we've added”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（A clothing store）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） kind of store does the speaker（说话者） most likely（最可能） manage?",
+      "choice_translations": [
+        "A：A stationery store",
+        "B：An electronics store",
+        "C：A grocery store",
+        "D：A clothing store"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 5 段：to our store. However, since we moved things around",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 5 段：to our store. However, since we moved things around",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“month due to the new line of outdoor clothing we've added”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（A clothing store）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "clothing",
+            "meaning": "本题重点词；结合正确选项理解：A clothing store"
+          },
+          {
+            "term": "store",
+            "meaning": "本题重点词；结合正确选项理解：A clothing store"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "clothing store",
+            "meaning": "正确选项中的重点搭配：A clothing store"
+          }
+        ]
+      },
       "item_id": 74,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P3",
-        "score": 46,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "明示细节"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -71,15 +109,49 @@
       "answer": "B",
       "question": "What are customers having difficulty with?",
       "answer_explain": "原文依据：听力原文中提到“people are having trouble finding what they're looking for.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Finding items）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） are customers having difficulty with?",
+      "choice_translations": [
+        "A：Submitting orders",
+        "B：Finding items",
+        "C：Returning products",
+        "D：Contacting staff"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 7 段：people are having trouble finding what they're looking for.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 7 段：people are having trouble finding what they're looking for.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“people are having trouble finding what they're looking for.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Finding items）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "finding",
+            "meaning": "本题重点词；结合正确选项理解：Finding items"
+          },
+          {
+            "term": "items",
+            "meaning": "本题重点词；结合正确选项理解：Finding items"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Finding items",
+            "meaning": "正确选项中的重点搭配：Finding items"
+          }
+        ]
+      },
       "item_id": 75,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -96,15 +168,45 @@
       "answer": "A",
       "question": "According to the speaker, what should the listeners do?",
       "answer_explain": "原文依据：听力原文中提到“keep this in mind and be extra helpful to our customers in”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Be helpful）。",
+      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） should the listeners do?",
+      "choice_translations": [
+        "A：Be helpful",
+        "B：Arrive early",
+        "C：Dress neatly",
+        "D：Eat quickly"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：a meeting.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：a meeting.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“keep this in mind and be extra helpful to our customers in”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Be helpful）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "helpful",
+            "meaning": "本题重点词；结合正确选项理解：Be helpful"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Be helpful",
+            "meaning": "正确选项中的重点搭配：Be helpful"
+          }
+        ]
+      },
       "item_id": 76,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 46,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节"
         ],
         "scope": "item",

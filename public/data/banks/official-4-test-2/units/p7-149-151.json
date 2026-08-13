@@ -10,14 +10,16 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P1",
-    "score": 82,
+    "level": "P2",
+    "score": 75,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "句子插入题",
-      "语篇结构"
+      "主旨 / 目的题",
+      "否定事实题",
+      "语境推断",
+      "细节题",
+      "明示定位"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -30,7 +32,9 @@
         "exists": true
       }
     ],
-    "passage": "The Asian Glass Producers Association\nIndustry Leaders Luncheon Series\nThe Asian Glass Producers Association (AGPA) is pleased to present a\nluncheon featuring a speech by Mr. Cuong Ho. —[1]—. A noted expert\nin the industry, Mr. Ho is the chief executive officer of the Cam Ranh\nGlass Corporation, based in Cam Ranh, Vietnam. —[2]—. The Chair of\nthe Vietnamese section of the AGPA, Mr. Ho has an uncanny ability to\naccurately forecast market prices in the glass industry. —[3]—.\nFueled by, among other things, a booming transportation sector in\nvarious parts of the world, there currently is a considerable demand\nfor glass. Mr. Ho will discuss his work to boost exports from the region\nin order to meet this demand. —[4]—. Industry professionals are\nencouraged to attend.\nDate: October 25\nTime: 12:00 Noon\nLocation: Malaysian Manufacturing Foundation Club, Kuala Lumpur\nPrice: RM20 (members), RM50 (nonmembers)\nTo attend the event, sign up on the AGPA Web site. Registration ends\non October 18.\nEl [o|"
+    "passage": "The Asian Glass Producers Association\nIndustry Leaders Luncheon Series\nThe Asian Glass Producers Association (AGPA) is pleased to present a\nluncheon featuring a speech by Mr. Cuong Ho. —[1]—. A noted expert\nin the industry, Mr. Ho is the chief executive officer of the Cam Ranh\nGlass Corporation, based in Cam Ranh, Vietnam. —[2]—. The Chair of\nthe Vietnamese section of the AGPA, Mr. Ho has an uncanny ability to\naccurately forecast market prices in the glass industry. —[3]—.\nFueled by, among other things, a booming transportation sector in\nvarious parts of the world, there currently is a considerable demand\nfor glass. Mr. Ho will discuss his work to boost exports from the region\nin order to meet this demand. —[4]—. Industry professionals are\nencouraged to attend.\nDate: October 25\nTime: 12:00 Noon\nLocation: Malaysian Manufacturing Foundation Club, Kuala Lumpur\nPrice: RM20 (members), RM50 (nonmembers)\nTo attend the event, sign up on the AGPA Web site. Registration ends\non October 18.\nEl [o|",
+    "passage_translation": "中文辅助（离线预处理）：The Asian Glass Producers Association\nIndustry Leaders Luncheon Series\nThe Asian Glass Producers Association (AGPA) is pleased to present a\nluncheon featuring a speech by Mr.\nCuong Ho.\n—[1]—.\nA noted expert\nin the industry, Mr.\nHo is the chief executive officer of the Cam Ranh\nGlass Corporation, based in Cam Ranh, Vietnam.\n—[2]—.\nThe Chair of\nthe Vietnamese section of the AGPA, Mr.\nHo has an uncanny ability to\naccurately forecast market prices in the glass industry.\n—[3]—.\nFueled by, among other things, a booming transportation sector in\nvarious parts of the world, there currently is a considerable demand\nfor glass.\nMr.\nHo will discuss his work（工作） to boost exports from the region\nin order（订单） to meet this demand.\n—[4]—.\nIndustry professionals are\nencouraged to attend.\nDate: October 25\nTime: 12:00 Noon\nLocation: Malaysian Manufacturing Foundation Club, Kuala Lumpur\nPrice: RM20 (members), RM50 (nonmembers)\nTo attend the event, sign up on the AGPA Web site.\nRegistration ends\non October 18.\nEl [o|",
+    "content_translation": "中文辅助（离线预处理）：The Asian Glass Producers Association\nIndustry Leaders Luncheon Series\nThe Asian Glass Producers Association (AGPA) is pleased to present a\nluncheon featuring a speech by Mr.\nCuong Ho.\n—[1]—.\nA noted expert\nin the industry, Mr.\nHo is the chief executive officer of the Cam Ranh\nGlass Corporation, based in Cam Ranh, Vietnam.\n—[2]—.\nThe Chair of\nthe Vietnamese section of the AGPA, Mr.\nHo has an uncanny ability to\naccurately forecast market prices in the glass industry.\n—[3]—.\nFueled by, among other things, a booming transportation sector in\nvarious parts of the world, there currently is a considerable demand\nfor glass.\nMr.\nHo will discuss his work（工作） to boost exports from the region\nin order（订单） to meet this demand.\n—[4]—.\nIndustry professionals are\nencouraged to attend.\nDate: October 25\nTime: 12:00 Noon\nLocation: Malaysian Manufacturing Foundation Club, Kuala Lumpur\nPrice: RM20 (members), RM50 (nonmembers)\nTo attend the event, sign up on the AGPA Web site.\nRegistration ends\non October 18.\nEl [o|"
   },
   "items": [
     {
@@ -43,15 +47,49 @@
       "answer": "D",
       "question": "What is indicated about the event?",
       "answer_explain": "原文依据：篇章中可定位到“Ho will discuss his work to boost exports from the region”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（It will focus on ways to increase exports.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is indicated about the event?",
+      "choice_translations": [
+        "A：It is being hosted by Mr.\nHo’s company（公司）.",
+        "B：It will take place in Vietnam.",
+        "C：It is open to AGPA members only.",
+        "D：It will focus on ways to increase exports."
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 18 段：To attend the event, sign up on the AGPA Web site. Registration ends",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 18 段：To attend the event, sign up on the AGPA Web site. Registration ends",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Ho will discuss his work to boost exports from the region”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（It will focus on ways to increase exports.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "focus",
+            "meaning": "本题重点词；结合正确选项理解：It will focus on ways to increase exports."
+          },
+          {
+            "term": "ways",
+            "meaning": "本题重点词；结合正确选项理解：It will focus on ways to increase exports."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It will focus on ways to increase exports.",
+            "meaning": "正确选项中的重点搭配：It will focus on ways to increase exports."
+          }
+        ]
+      },
       "item_id": 149,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 70,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -68,15 +106,50 @@
       "answer": "C",
       "question": "What is NOT one of Mr. Ho’s accomplishments?",
       "answer_explain": "原文依据：篇章中可定位到“for glass.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（Increasing global demand for glass）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is NOT one of Mr.\nHo’s accomplishments?",
+      "choice_translations": [
+        "A：Predicting the cost of glass",
+        "B：Leading a glass trade group",
+        "C：Increasing global demand for glass",
+        "D：Running a glass company（公司）"
+      ],
+      "question_type": "否定事实题",
+      "evidence": "参考原文第 1 段：The Asian Glass Producers Association",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 1 段：The Asian Glass Producers Association",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“for glass.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（Increasing global demand for glass）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "increasing",
+            "meaning": "本题重点词；结合正确选项理解：Increasing global demand for glass"
+          },
+          {
+            "term": "global",
+            "meaning": "本题重点词；结合正确选项理解：Increasing global demand for glass"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Increasing global demand for glass",
+            "meaning": "正确选项中的重点搭配：Increasing global demand for glass"
+          }
+        ]
+      },
       "item_id": 150,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "否定事实题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "否定事实题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -93,16 +166,41 @@
       "answer": "B",
       "question": "In which of the positions marked [1], [2], [3], ny. and [4] does the following sentence best belong? orts. “Under his leadership, the company has grown in capability and revenue.”",
       "answer_explain": "原文依据：篇章中可定位到“Ho will discuss his work to boost exports from the region”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（[2]）。",
+      "question_translation": "中文辅助（离线预处理）：In which of the positions marked [1], [2], [3], ny.\nand [4] does the following sentence best belong?\norts.\n“Under his leadership, the company（公司） has grown in capability and revenue.”",
+      "choice_translations": [
+        "A：[1]",
+        "B：[2]",
+        "C：[3]",
+        "D：[4]"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：The Asian Glass Producers Association",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：The Asian Glass Producers Association",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Ho will discuss his work to boost exports from the region”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（[2]）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [],
+        "collocations": [
+          {
+            "phrase": "[2]",
+            "meaning": "正确选项中的重点搭配：[2]"
+          }
+        ]
+      },
       "item_id": 151,
-      "question_type": "句子插入题",
       "priority": {
-        "level": "P1",
-        "score": 91,
-        "label": "句子插入题",
+        "level": "P3",
+        "score": 42,
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "句子插入题",
-          "语篇结构"
+          "细节题",
+          "明示定位"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

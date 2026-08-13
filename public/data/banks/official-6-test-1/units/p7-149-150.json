@@ -11,12 +11,13 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 68,
+    "score": 78,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "主旨 / 目的 / 场景题"
+      "细节题",
+      "推断题",
+      "语境推断"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -29,7 +30,9 @@
         "exists": true
       }
     ],
-    "passage": "OZONO AIRLINE MISSING BAGGAGE FORM\nTime and Date of Claim: 1:50 P.M., May 2\nFlight Number:\n1869\nPassenger Name:\nAlessandra Spencer\nFlight Departure City:\nAtlanta\nFlight Arrival City: Boston\nDestination Address:\nWinthrop Street Hotel,\n456 Quincy Street, Boston\nDescription of Contents:\nClothing, two pairs of shoes, toiletries, three books, hair dryer, gifts\nBag Description:\nKona Company hard-sided blue suitcase with wheels\nValue of Contents: $200\n(Amount to be reimbursed for bags that are not returned within two weeks.)\nFor Internal Use:\nBag is confirmed to be on later flight number 1921. Christoff Delivery\nwill deliver item to the customer at the destination address within\ntwenty-four hours of the time of claim.\nRecorded by: Delonte Ahmad"
+    "passage": "OZONO AIRLINE MISSING BAGGAGE FORM\nTime and Date of Claim: 1:50 P.M., May 2\nFlight Number:\n1869\nPassenger Name:\nAlessandra Spencer\nFlight Departure City:\nAtlanta\nFlight Arrival City: Boston\nDestination Address:\nWinthrop Street Hotel,\n456 Quincy Street, Boston\nDescription of Contents:\nClothing, two pairs of shoes, toiletries, three books, hair dryer, gifts\nBag Description:\nKona Company hard-sided blue suitcase with wheels\nValue of Contents: $200\n(Amount to be reimbursed for bags that are not returned within two weeks.)\nFor Internal Use:\nBag is confirmed to be on later flight number 1921. Christoff Delivery\nwill deliver item to the customer at the destination address within\ntwenty-four hours of the time of claim.\nRecorded by: Delonte Ahmad",
+    "passage_translation": "OZONO AIRLINE 行失物报告\n索赔时间和日期：下午 1:50，5月2日\n航班号：\n1869\n乘客姓名：\nAlessandra Spencer\n出发城市：\n亚特兰大\n到达城市：波士顿\n目的地地址：\nWinthrop Street Hotel,\n456 Quincy Street, Boston\n物品描述：\n衣物，两双鞋，洗漱用品，三本书，吹风机，礼物\n行李箱描述：\nKona Company 硬壳蓝色带轮手提箱\n物品价值：$200\n（对于两周内未退回的行李将报销的金额。）\n内部使用：\n确认该行李件将在后续航班 1921 上。Christoff Delivery 将在索赔时间后的二十四小时内将物品运送到目的地地址。\n记录人：Delonte Ahmad",
+    "content_translation": "OZONO AIRLINE 行失物报告\n索赔时间和日期：下午 1:50，5月2日\n航班号：\n1869\n乘客姓名：\nAlessandra Spencer\n出发城市：\n亚特兰大\n到达城市：波士顿\n目的地地址：\nWinthrop Street Hotel,\n456 Quincy Street, Boston\n物品描述：\n衣物，两双鞋，洗漱用品，三本书，吹风机，礼物\n行李箱描述：\nKona Company 硬壳蓝色带轮手提箱\n物品价值：$200\n（对于两周内未退回的行李将报销的金额。）\n内部使用：\n确认该行李件将在后续航班 1921 上。Christoff Delivery 将在索赔时间后的二十四小时内将物品运送到目的地地址。\n记录人：Delonte Ahmad"
   },
   "items": [
     {
@@ -42,15 +45,49 @@
       "answer": "C",
       "question": "What does the form indicate about Ms. Spencer?",
       "answer_explain": "原文依据：篇章中可定位到“Bag is confirmed to be on later flight number 1921.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Her bag will be delivered to a hotel by May 3）。",
+      "question_translation": "表格说明了关于 Spencer 女士什么信息？",
+      "choice_translations": [
+        "A：她目前在亚特兰大。",
+        "B：她的家在波士顿。",
+        "C：她的行李将在 5 月 3 日运送到酒店。",
+        "D：她将收到 $200 的赔偿。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "delivered",
+            "meaning": "出现在本题正确表达中：她的行李将在 5 月 3 日运送到酒店。"
+          },
+          {
+            "term": "hotel",
+            "meaning": "出现在本题正确表达中：她的行李将在 5 月 3 日运送到酒店。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Her bag will be delivered to a hotel by May 3",
+            "meaning": "她的行李将在 5 月 3 日运送到酒店。"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 6 段：Alessandra Spencer",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 6 段：Alessandra Spencer",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：篇章中可定位到“Bag is confirmed to be on later flight number 1921.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Her bag will be delivered to a hotel by May 3）。"
+      },
       "item_id": 149,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -67,15 +104,50 @@
       "answer": "D",
       "question": "Who most likely is Mr. Ahmad?",
       "answer_explain": "原文依据：篇章中可定位到“OZONO AIRLINE MISSING BAGGAGE FORM”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（An airline representative）。",
+      "question_translation": "Ahmad 先生最可能是谁？",
+      "choice_translations": [
+        "A：酒店经理",
+        "B：行李公司员工",
+        "C：送货司机",
+        "D：航空公司代表"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "airline",
+            "meaning": "出现在本题正确表达中：航空公司代表"
+          },
+          {
+            "term": "representative",
+            "meaning": "出现在本题正确表达中：航空公司代表"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "An airline representative",
+            "meaning": "航空公司代表"
+          }
+        ]
+      },
+      "question_type": "推断题",
+      "evidence": "参考原文第 23 段：Recorded by: Delonte Ahmad",
+      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 23 段：Recorded by: Delonte Ahmad",
+        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：篇章中可定位到“OZONO AIRLINE MISSING BAGGAGE FORM”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（An airline representative）。"
+      },
       "item_id": 150,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
-        "level": "P2",
-        "score": 70,
-        "label": "主旨 / 目的 / 场景题",
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题"
+          "推断题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

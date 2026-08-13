@@ -33,6 +33,7 @@ type Item = {
 };
 type Context = {
   audio_path?: MediaRef;
+  question_audio_path?: MediaRef;
   picture_path?: MediaRef;
   picture_paths?: MediaRef[];
   transcript?: string;
@@ -363,7 +364,7 @@ export default function Home() {
   };
 
   const context = detail?.context || {};
-  const audioSrc = current ? assetUrl(current.bank_id, context.audio_path) : "";
+  const audioSrc = current ? assetUrl(current.bank_id, context.audio_path || context.question_audio_path) : "";
   const pictures = current
     ? [context.picture_path, ...(context.picture_paths || [])]
       .filter((ref): ref is MediaRef => Boolean(assetUrl(current.bank_id, ref)))

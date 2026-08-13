@@ -11,11 +11,13 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 61,
+    "score": 69,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "细节题",
+      "主旨 / 目的题",
+      "主旨场景"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +33,9 @@
       "asset_key": "official-4-test-1/audio/part3/q035-037-questions.mp3",
       "exists": true
     },
-    "transcript": "EIS w Hello, Martin. | haven’t seen you since you got\npromoted—congratulations! How’s it been going so\nIv There’s been a lot of paperwork and e-mails to take\ncare of. But next week will be better— @a new st\nmember is joining my team starting on Monday.\nI’m sure that'll be a big help. By the way, ©!’m abou\ntake a representative from Garland Chemistry, our\nclient, out to lunch. @Care to join us?\nv My business plan for next quarter is due in two hou\njust got started on it yesterday.\nGood luck with that!"
+    "transcript": "EIS w Hello, Martin. | haven’t seen you since you got\npromoted—congratulations! How’s it been going so\nIv There’s been a lot of paperwork and e-mails to take\ncare of. But next week will be better— @a new st\nmember is joining my team starting on Monday.\nI’m sure that'll be a big help. By the way, ©!’m abou\ntake a representative from Garland Chemistry, our\nclient, out to lunch. @Care to join us?\nv My business plan for next quarter is due in two hou\njust got started on it yesterday.\nGood luck with that!",
+    "transcript_translation": "中文辅助（离线预处理）：EIS w Hello, Martin.\n| haven’t seen you since you got\npromoted—congratulations!\nHow（如何）’s it been going so\nIv There’s been a lot of paperwork and e-mails to take\ncare of.\nBut next week will be better— @a new st\nmember is joining my team starting on Monday.\nI’m sure that'll be a big help.\nBy the way, ©!’m abou\ntake a representative from Garland Chemistry, our\nclient, out to lunch.\n@Care to join us?\nv My business plan for next quarter is due in two hou\njust got started on it yesterday.\nGood luck with that!",
+    "content_translation": "中文辅助（离线预处理）：EIS w Hello, Martin.\n| haven’t seen you since you got\npromoted—congratulations!\nHow（如何）’s it been going so\nIv There’s been a lot of paperwork and e-mails to take\ncare of.\nBut next week will be better— @a new st\nmember is joining my team starting on Monday.\nI’m sure that'll be a big help.\nBy the way, ©!’m abou\ntake a representative from Garland Chemistry, our\nclient, out to lunch.\n@Care to join us?\nv My business plan for next quarter is due in two hou\njust got started on it yesterday.\nGood luck with that!"
   },
   "items": [
     {
@@ -44,15 +48,49 @@
       "answer": "D",
       "question": "Why will the man’s work be easier next week?",
       "answer_explain": "原文依据：听力原文中提到“But next week will be better— @a new st”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Another employee will be hired.）。",
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） will the man（男士）’s work（工作） be easier next week?",
+      "choice_translations": [
+        "A：He will begin working from home.",
+        "B：Some of his customers will be on vacation.",
+        "C：Asoftware program will be upgraded.",
+        "D：Another employee（员工） will be hired."
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：EIS w Hello, Martin. | haven’t seen you since you got",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：EIS w Hello, Martin. | haven’t seen you since you got",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“But next week will be better— @a new st”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Another employee will be hired.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "another",
+            "meaning": "本题重点词；结合正确选项理解：Another employee（员工） will be hired."
+          },
+          {
+            "term": "employee",
+            "meaning": "本题重点词；结合正确选项理解：Another employee（员工） will be hired."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Another employee will be hired.",
+            "meaning": "正确选项中的重点搭配：Another employee（员工） will be hired."
+          }
+        ]
+      },
       "item_id": 35,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +107,49 @@
       "answer": "A",
       "question": "What does the woman say she will do next?",
       "answer_explain": "原文依据：听力原文中提到“v My business plan for next quarter is due in two hou”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Attend a business lunch）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do next?",
+      "choice_translations": [
+        "A：Attend a business lunch",
+        "B：Write some reports",
+        "C：Go home for the day",
+        "D：Interview a job applicant"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：EIS w Hello, Martin. | haven’t seen you since you got",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：EIS w Hello, Martin. | haven’t seen you since you got",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“v My business plan for next quarter is due in two hou”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Attend a business lunch）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "attend",
+            "meaning": "本题重点词；结合正确选项理解：Attend a business lunch"
+          },
+          {
+            "term": "business",
+            "meaning": "本题重点词；结合正确选项理解：Attend a business lunch"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Attend a business lunch",
+            "meaning": "正确选项中的重点搭配：Attend a business lunch"
+          }
+        ]
+      },
       "item_id": 36,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -94,15 +166,50 @@
       "answer": "B",
       "question": "Why does the man say, “My business plan for next quarter is due in two hours”?",
       "answer_explain": "原文依据：听力原文中提到“v My business plan for next quarter is due in two hou”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To decline an invitation）。",
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） say, “My business plan for next quarter is due in two hours”?",
+      "choice_translations": [
+        "A：To request a change in work（工作） hours",
+        "B：To decline an invitation",
+        "C：To complain about an employee（员工）",
+        "D：To ask for help with an assignment"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 9 段：v My business plan for next quarter is due in two hou",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 9 段：v My business plan for next quarter is due in two hou",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“v My business plan for next quarter is due in two hou”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To decline an invitation）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "decline",
+            "meaning": "本题重点词；结合正确选项理解：To decline an invitation"
+          },
+          {
+            "term": "invitation",
+            "meaning": "本题重点词；结合正确选项理解：To decline an invitation"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To decline an invitation",
+            "meaning": "正确选项中的重点搭配：To decline an invitation"
+          }
+        ]
+      },
       "item_id": 37,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

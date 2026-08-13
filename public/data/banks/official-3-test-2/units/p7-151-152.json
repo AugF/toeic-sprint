@@ -11,11 +11,12 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 61,
+    "score": 68,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "主旨 / 目的题",
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -28,7 +29,9 @@
         "exists": true
       }
     ],
-    "passage": "Fosberg Pharmaceutical Corporation PC\nFosberg Pharmaceutical Corporation covers business-related travel expenses\nwhen employees travel for the company. Lodging-arrangement requests should\nbe submitted to the Corporate Travel Department via the online travel request\nform. Requests must include the employee’s full name, the hotel name and\ncontact information, the reservation dates, and the purpose for travel.\nOnce the Corporate Travel Department has made reservations and payment,\nthe employee will receive a confirmation number to present to the hotel clerk\nupon check-in. The room will be paid for in advance, but employees should be\nprepared to put any additional charges incurred during the trip on a personal\ncredit card. Requests for reimbursement of additional charges should be\nsubmitted upon return.\n1SAL @\n152. Why is a confirmation number needed?"
+    "passage": "Fosberg Pharmaceutical Corporation PC\nFosberg Pharmaceutical Corporation covers business-related travel expenses\nwhen employees travel for the company. Lodging-arrangement requests should\nbe submitted to the Corporate Travel Department via the online travel request\nform. Requests must include the employee’s full name, the hotel name and\ncontact information, the reservation dates, and the purpose for travel.\nOnce the Corporate Travel Department has made reservations and payment,\nthe employee will receive a confirmation number to present to the hotel clerk\nupon check-in. The room will be paid for in advance, but employees should be\nprepared to put any additional charges incurred during the trip on a personal\ncredit card. Requests for reimbursement of additional charges should be\nsubmitted upon return.\n1SAL @\n152. Why is a confirmation number needed?",
+    "passage_translation": "中文辅助（离线预处理）：Fosberg Pharmaceutical Corporation PC\nFosberg Pharmaceutical Corporation covers business-related travel expenses\nwhen（何时） employees travel for the company（公司）.\nLodging-arrangement requests should\nbe submitted to the Corporate Travel Department via the online travel request\nform.\nRequests must include the employee（员工）’s full name, the hotel name and\ncontact information（信息）, the reservation dates, and the purpose（目的） for travel.\nOnce the Corporate Travel Department has made reservations and payment,\nthe employee（员工） will receive a confirmation number to present to the hotel clerk\nupon check-in.\nThe room will be paid for in advance, but employees should be\nprepared to put any additional charges incurred during the trip on a personal\ncredit card.\nRequests for reimbursement of additional charges should be\nsubmitted upon return.\n1SAL @\n152.\nWhy（为什么） is a confirmation number needed?",
+    "content_translation": "中文辅助（离线预处理）：Fosberg Pharmaceutical Corporation PC\nFosberg Pharmaceutical Corporation covers business-related travel expenses\nwhen（何时） employees travel for the company（公司）.\nLodging-arrangement requests should\nbe submitted to the Corporate Travel Department via the online travel request\nform.\nRequests must include the employee（员工）’s full name, the hotel name and\ncontact information（信息）, the reservation dates, and the purpose（目的） for travel.\nOnce the Corporate Travel Department has made reservations and payment,\nthe employee（员工） will receive a confirmation number to present to the hotel clerk\nupon check-in.\nThe room will be paid for in advance, but employees should be\nprepared to put any additional charges incurred during the trip on a personal\ncredit card.\nRequests for reimbursement of additional charges should be\nsubmitted upon return.\n1SAL @\n152.\nWhy（为什么） is a confirmation number needed?"
   },
   "items": [
     {
@@ -41,15 +44,49 @@
       "answer": "B",
       "question": "What is the policy about?",
       "answer_explain": "原文依据：篇章中可定位到“be submitted to the Corporate Travel Department via the online travel request”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Making arrangements for corporate travel）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is the policy about?",
+      "choice_translations": [
+        "A：Enrolling in an employee（员工） benefits program",
+        "B：Making arrangements for corporate travel",
+        "C：Requesting a new job assignment",
+        "D：Finding accommodations for visiting"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：Fosberg Pharmaceutical Corporation PC",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：Fosberg Pharmaceutical Corporation PC",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“be submitted to the Corporate Travel Department via the online travel request”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Making arrangements for corporate travel）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "making",
+            "meaning": "本题重点词；结合正确选项理解：Making arrangements for corporate travel"
+          },
+          {
+            "term": "arrangements",
+            "meaning": "本题重点词；结合正确选项理解：Making arrangements for corporate travel"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Making arrangements for corporate travel",
+            "meaning": "正确选项中的重点搭配：Making arrangements for corporate travel"
+          }
+        ]
+      },
       "item_id": 151,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 70,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -66,15 +103,49 @@
       "answer": "D",
       "question": "Why is a confirmation number needed? | pp",
       "answer_explain": "原文依据：篇章中可定位到“contact information, the reservation dates, and the purpose for travel.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（To verify a reservation）。",
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） is a confirmation number needed?\n| pp",
+      "choice_translations": [
+        "A：To replace a credit card",
+        "B：To receive a discount",
+        "C：To avoid additional charges",
+        "D：To verify a reservation"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 8 段：the employee will receive a confirmation number to present to the hotel clerk",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 8 段：the employee will receive a confirmation number to present to the hotel clerk",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“contact information, the reservation dates, and the purpose for travel.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（To verify a reservation）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "verify",
+            "meaning": "本题重点词；结合正确选项理解：To verify a reservation"
+          },
+          {
+            "term": "reservation",
+            "meaning": "本题重点词；结合正确选项理解：To verify a reservation"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To verify a reservation",
+            "meaning": "正确选项中的重点搭配：To verify a reservation"
+          }
+        ]
+      },
       "item_id": 152,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

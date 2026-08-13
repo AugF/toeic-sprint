@@ -15,7 +15,7 @@
     "label": "单题训练",
     "reason": "按该题的高频考点和能力迁移价值排序。",
     "focus_tags": [
-      "陈述 / 请求应答",
+      "陈述 / 请求应答题",
       "间接应答",
       "语用判断"
     ],
@@ -27,7 +27,9 @@
       "path": "audio/part2/q023.mp3",
       "asset_key": "official-7-test-2/audio/part2/q023.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：We have an employee（员工） appreciation dinner every quarter.\nM",
+    "content_translation": "中文辅助（离线预处理）：We have an employee（员工） appreciation dinner every quarter.\nM"
   },
   "items": [
     {
@@ -42,15 +44,45 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“We have an employee appreciation dinner every quarter. M”，自然应答是“When is the next one?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（When is the next one?）。",
+      "question_translation": "中文辅助（离线预处理）：We have an employee（员工） appreciation dinner every quarter.\nM",
+      "choice_translations": [
+        "A：When（何时） is the next one?",
+        "B：I just bought new dishes.",
+        "C：That position has been filled."
+      ],
+      "question_type": "陈述 / 请求应答题",
+      "evidence": "参考原文第 1 段：We have an employee appreciation dinner every quarter. M",
+      "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "陈述 / 请求应答题",
+        "evidence": "参考原文第 1 段：We have an employee appreciation dinner every quarter. M",
+        "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“We have an employee appreciation dinner every quarter. M”，自然应答是“When is the next one?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（When is the next one?）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "next",
+            "meaning": "本题重点词；结合正确选项理解：When（何时） is the next one?"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "When is the next one?",
+            "meaning": "正确选项中的重点搭配：When（何时） is the next one?"
+          }
+        ]
+      },
       "item_id": 23,
-      "question_type": "陈述 / 请求应答",
       "priority": {
         "level": "P1",
         "score": 85,
-        "label": "陈述 / 请求应答",
+        "label": "陈述 / 请求应答题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "陈述 / 请求应答",
+          "陈述 / 请求应答题",
           "间接应答",
           "语用判断"
         ],

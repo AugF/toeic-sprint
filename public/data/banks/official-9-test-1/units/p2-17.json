@@ -15,7 +15,7 @@
     "label": "单题训练",
     "reason": "按该题的高频考点和能力迁移价值排序。",
     "focus_tags": [
-      "原因疑问句",
+      "陈述 / 请求应答题",
       "自然应答"
     ],
     "scope": "unit",
@@ -26,7 +26,9 @@
       "path": "audio/part2/q017.mp3",
       "asset_key": "official-9-test-1/audio/part2/q017.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：aw Why（为什么） is the swimming pool closed early?\n31м",
+    "content_translation": "中文辅助（离线预处理）：aw Why（为什么） is the swimming pool closed early?\n31м"
   },
   "items": [
     {
@@ -41,15 +43,49 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“aw Why is the swimming pool closed early? 31м”，自然应答是“For routine cleaning.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（For routine cleaning.）。",
+      "question_translation": "中文辅助（离线预处理）：aw Why（为什么） is the swimming pool closed early?\n31м",
+      "choice_translations": [
+        "A：At the membership desk.",
+        "B：For routine cleaning.",
+        "C：Yes, the event starts at seven AM."
+      ],
+      "question_type": "陈述 / 请求应答题",
+      "evidence": "参考原文第 1 段：aw Why is the swimming pool closed early? 31м",
+      "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "陈述 / 请求应答题",
+        "evidence": "参考原文第 1 段：aw Why is the swimming pool closed early? 31м",
+        "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“aw Why is the swimming pool closed early? 31м”，自然应答是“For routine cleaning.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（For routine cleaning.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "routine",
+            "meaning": "本题重点词；结合正确选项理解：For routine cleaning."
+          },
+          {
+            "term": "cleaning",
+            "meaning": "本题重点词；结合正确选项理解：For routine cleaning."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "For routine cleaning.",
+            "meaning": "正确选项中的重点搭配：For routine cleaning."
+          }
+        ]
+      },
       "item_id": 17,
-      "question_type": "原因疑问句",
       "priority": {
         "level": "P2",
         "score": 68,
-        "label": "原因疑问句",
+        "label": "陈述 / 请求应答题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "原因疑问句",
+          "陈述 / 请求应答题",
           "自然应答"
         ],
         "scope": "item",

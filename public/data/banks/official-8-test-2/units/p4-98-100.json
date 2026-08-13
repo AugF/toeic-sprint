@@ -11,15 +11,15 @@
   "difficulty": "medium",
   "priority": {
     "level": "P1",
-    "score": 85,
+    "score": 87,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "主旨场景",
-      "图表联动题",
+      "推断题",
+      "跨句整合",
+      "主旨 / 目的题",
       "图表联动",
-      "细节定位题"
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -35,7 +35,9 @@
       "asset_key": "official-8-test-2/audio/part4/q098-100-questions.mp3",
       "exists": true
     },
-    "transcript": "message and table.\nM\nHi, Mr. Nakamura. It's Takumi Sato. ®| received your\nCulEld. Nakamura chu. Takumi Sato C9. -5-/\nrequest for a solar panel consultation. ® Thanks for e-mailing\nme your home energy bills, since that helps me create a\nproposal that's tailored to your needs. But, um, ®I'm puzzled\nbecause the July usage seems low. ® Our data shows that\nhouses typically use a lot more energy during that month.\nCould you call me back? I need reliable figures so I can\ndetermine how many solar panels to recommend. Ol'd also\nlike to set up an in-person meeting for later this week, so that\nI can go through the proposal with you and answer questions\nabout the project.\nEnergy Usage\nMay\nkWh\nA\nJune\nkWh\nJuly\nkWh\nA\nI-0g\nAugust\nkWh\nA\nH9"
+    "transcript": "message and table.\nM\nHi, Mr. Nakamura. It's Takumi Sato. ®| received your\nCulEld. Nakamura chu. Takumi Sato C9. -5-/\nrequest for a solar panel consultation. ® Thanks for e-mailing\nme your home energy bills, since that helps me create a\nproposal that's tailored to your needs. But, um, ®I'm puzzled\nbecause the July usage seems low. ® Our data shows that\nhouses typically use a lot more energy during that month.\nCould you call me back? I need reliable figures so I can\ndetermine how many solar panels to recommend. Ol'd also\nlike to set up an in-person meeting for later this week, so that\nI can go through the proposal with you and answer questions\nabout the project.\nEnergy Usage\nMay\nkWh\nA\nJune\nkWh\nJuly\nkWh\nA\nI-0g\nAugust\nkWh\nA\nH9",
+    "transcript_translation": "中文辅助（离线预处理）：message and table.\nM\nHi, Mr.\nNakamura.\nIt's Takumi Sato.\n®| received your\nCulEld.\nNakamura chu.\nTakumi Sato C9.\n-5-/\nrequest for a solar panel consultation.\n® Thanks for e-mailing\nme your home energy bills, since that helps me create a\nproposal that's tailored to your needs.\nBut, um, ®I'm puzzled\nbecause the July usage seems low.\n® Our data shows that\nhouses typically use a lot more energy during that month.\nCould you call me back?\nI need reliable figures so I can\ndetermine how（如何） many solar panels to recommend.\nOl'd also\nlike to set up an in-person meeting（会议） for later this week, so that\nI can go through the proposal with you and answer questions\nabout the project.\nEnergy Usage\nMay\nkWh\nA\nJune\nkWh\nJuly\nkWh\nA\nI-0g\nAugust\nkWh\nA\nH9",
+    "content_translation": "中文辅助（离线预处理）：message and table.\nM\nHi, Mr.\nNakamura.\nIt's Takumi Sato.\n®| received your\nCulEld.\nNakamura chu.\nTakumi Sato C9.\n-5-/\nrequest for a solar panel consultation.\n® Thanks for e-mailing\nme your home energy bills, since that helps me create a\nproposal that's tailored to your needs.\nBut, um, ®I'm puzzled\nbecause the July usage seems low.\n® Our data shows that\nhouses typically use a lot more energy during that month.\nCould you call me back?\nI need reliable figures so I can\ndetermine how（如何） many solar panels to recommend.\nOl'd also\nlike to set up an in-person meeting（会议） for later this week, so that\nI can go through the proposal with you and answer questions\nabout the project.\nEnergy Usage\nMay\nkWh\nA\nJune\nkWh\nJuly\nkWh\nA\nI-0g\nAugust\nkWh\nA\nH9"
   },
   "items": [
     {
@@ -48,16 +50,50 @@
       "answer": "B",
       "question": "Who most likely is the speaker?",
       "answer_explain": "原文依据：听力原文中提到“I can go through the proposal with you and answer questions”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A sales consultant）。",
+      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the speaker（说话者）?",
+      "choice_translations": [
+        "A：A building inspector",
+        "B：A sales consultant",
+        "C：An apartment landlord",
+        "D：A utility company（公司） executive"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：message and table.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：message and table.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“I can go through the proposal with you and answer questions”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A sales consultant）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "sales",
+            "meaning": "本题重点词；结合正确选项理解：A sales consultant"
+          },
+          {
+            "term": "consultant",
+            "meaning": "本题重点词；结合正确选项理解：A sales consultant"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "sales consultant",
+            "meaning": "正确选项中的重点搭配：A sales consultant"
+          }
+        ]
+      },
       "item_id": 98,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
-        "level": "P2",
-        "score": 72,
-        "label": "主旨 / 目的 / 场景题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -74,15 +110,40 @@
       "answer": "C",
       "question": "Look at the graphic. Which number is the speaker confused about?",
       "answer_explain": "原文依据：听力原文中提到“kWh”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（1,000 kWh）。",
+      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich number is the speaker（说话者） confused about?",
+      "choice_translations": [
+        "A：850 kWh",
+        "B：900 kWh",
+        "C：1,000 kWh",
+        "D：1,200 kWh"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：message and table.",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：message and table.",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“kWh”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（1,000 kWh）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [],
+        "collocations": [
+          {
+            "phrase": "1,000 kWh",
+            "meaning": "正确选项中的重点搭配：1,000 kWh"
+          }
+        ]
+      },
       "item_id": 99,
-      "question_type": "图表联动题",
       "priority": {
         "level": "P1",
         "score": 93,
-        "label": "图表联动题",
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "图表联动题",
+          "主旨 / 目的题",
           "图表联动"
         ],
         "scope": "item",
@@ -100,15 +161,49 @@
       "answer": "A",
       "question": "What does the speaker say he wants to do later this week?",
       "answer_explain": "原文依据：听力原文中提到“I can go through the proposal with you and answer questions”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Meet with the listener）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say he wants to do later this week?",
+      "choice_translations": [
+        "A：Meet with the listener",
+        "B：Announce a rate change",
+        "C：Repair some equipment",
+        "D：Document some damage"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 12 段：like to set up an in-person meeting for later this week, so that",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 12 段：like to set up an in-person meeting for later this week, so that",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“I can go through the proposal with you and answer questions”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Meet with the listener）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "meet",
+            "meaning": "本题重点词；结合正确选项理解：Meet with the listener"
+          },
+          {
+            "term": "listener",
+            "meaning": "本题重点词；结合正确选项理解：Meet with the listener"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Meet with the listener",
+            "meaning": "正确选项中的重点搭配：Meet with the listener"
+          }
+        ]
+      },
       "item_id": 100,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

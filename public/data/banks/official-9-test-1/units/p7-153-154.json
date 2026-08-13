@@ -11,12 +11,11 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 68,
+    "score": 70,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "细节定位题"
+      "主旨 / 目的题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -29,7 +28,9 @@
         "exists": true
       }
     ],
-    "passage": "Northern Regional Railways\nNOTICE: March 2\nNorthern Regional Railways (NRR) invites all riders to take advantage of a special\ndiscount for early booking on local routes between Fairview and East City. Make your\nreservation online at least ten days in advance, and you can save 20 percent on any\nround-trip ticket. Simply enter promotion code 10302.\nRestrictions: Tickets purchased under this discount program must be used by\nSeptember 1. This offer does not apply to express routes. Riders cannot combine this\noffer with points earned in the NRR Frequent Rider Rewards program."
+    "passage": "Northern Regional Railways\nNOTICE: March 2\nNorthern Regional Railways (NRR) invites all riders to take advantage of a special\ndiscount for early booking on local routes between Fairview and East City. Make your\nreservation online at least ten days in advance, and you can save 20 percent on any\nround-trip ticket. Simply enter promotion code 10302.\nRestrictions: Tickets purchased under this discount program must be used by\nSeptember 1. This offer does not apply to express routes. Riders cannot combine this\noffer with points earned in the NRR Frequent Rider Rewards program.",
+    "passage_translation": "中文辅助（离线预处理）：Northern Regional Railways\nNOTICE: March 2\nNorthern Regional Railways (NRR) invites all riders to take advantage of a special\ndiscount for early booking on local routes between Fairview and East City.\nMake your\nreservation online at least ten days in advance, and you can save 20 percent on any\nround-trip ticket.\nSimply enter promotion code 10302.\nRestrictions: Tickets purchased under this discount program must be used by\nSeptember 1.\nThis offer does not apply to express routes.\nRiders cannot combine this\noffer with points earned in the NRR Frequent Rider Rewards program.",
+    "content_translation": "中文辅助（离线预处理）：Northern Regional Railways\nNOTICE: March 2\nNorthern Regional Railways (NRR) invites all riders to take advantage of a special\ndiscount for early booking on local routes between Fairview and East City.\nMake your\nreservation online at least ten days in advance, and you can save 20 percent on any\nround-trip ticket.\nSimply enter promotion code 10302.\nRestrictions: Tickets purchased under this discount program must be used by\nSeptember 1.\nThis offer does not apply to express routes.\nRiders cannot combine this\noffer with points earned in the NRR Frequent Rider Rewards program."
   },
   "items": [
     {
@@ -42,15 +43,49 @@
       "answer": "D",
       "question": "What is the main purpose of the notice?",
       "answer_explain": "原文依据：篇章中可定位到“offer with points earned in the NRR Frequent Rider Rewards program.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（To inform customers about a unique）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is the main purpose（目的） of the notice?",
+      "choice_translations": [
+        "A：To promote the use of express train services",
+        "B：To announce the opening of a new route",
+        "C：To encourage participation in group tours",
+        "D：To inform customers about a unique"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 2 段：NOTICE: March 2",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 2 段：NOTICE: March 2",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“offer with points earned in the NRR Frequent Rider Rewards program.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（To inform customers about a unique）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "inform",
+            "meaning": "本题重点词；结合正确选项理解：To inform customers about a unique"
+          },
+          {
+            "term": "customers",
+            "meaning": "本题重点词；结合正确选项理解：To inform customers about a unique"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To inform customers about a unique",
+            "meaning": "正确选项中的重点搭配：To inform customers about a unique"
+          }
+        ]
+      },
       "item_id": 153,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
         "level": "P2",
         "score": 70,
-        "label": "主旨 / 目的 / 场景题",
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -67,15 +102,49 @@
       "answer": "C",
       "question": "What is indicated about Northern Regional Railways?",
       "answer_explain": "原文依据：篇章中可定位到“offer with points earned in the NRR Frequent Rider Rewards program.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（It offers a customer loyalty program.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is indicated about Northern Regional Railways?",
+      "choice_translations": [
+        "A：It charges extra fees for checked baggage.",
+        "B：It plans to expand weekend train services.",
+        "C：It offers a customer（顾客） loyalty program.",
+        "D：It recently upgraded its Web site."
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：Northern Regional Railways",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：Northern Regional Railways",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“offer with points earned in the NRR Frequent Rider Rewards program.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（It offers a customer loyalty program.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "offers",
+            "meaning": "本题重点词；结合正确选项理解：It offers a customer（顾客） loyalty program."
+          },
+          {
+            "term": "customer",
+            "meaning": "本题重点词；结合正确选项理解：It offers a customer（顾客） loyalty program."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It offers a customer loyalty program.",
+            "meaning": "正确选项中的重点搭配：It offers a customer（顾客） loyalty program."
+          }
+        ]
+      },
       "item_id": 154,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 70,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

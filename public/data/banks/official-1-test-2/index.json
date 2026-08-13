@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "bank_id": "official-1-test-2",
-  "content_hash": "35ad84f4f33810d3ce06fccbb3756bf179b6ab4789efc1363b9e377a516aa575",
+  "content_hash": "83d02752b5c36fd6a9967a945b2e4d4cd63f2b5eab1853f9bf2b47b2857e68dc",
   "source": {
     "collection": "official",
     "volume": 1,
@@ -23,7 +23,8 @@
     "translation": "available",
     "knowledge": "available",
     "analysis": "enriched",
-    "ocr": "unreviewed"
+    "ocr": "unreviewed",
+    "missing_graphic_groups": 1
   },
   "parts": {
     "1": {
@@ -378,14 +379,13 @@
           "item_key": "official-1-test-2/p2-7/7",
           "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P1",
-            "score": 85,
+            "level": "P2",
+            "score": 68,
             "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
               "陈述 / 请求应答题",
-              "间接应答",
-              "语用判断"
+              "自然应答"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -393,14 +393,13 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 85,
+        "level": "P2",
+        "score": 68,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
           "陈述 / 请求应答题",
-          "间接应答",
-          "语用判断"
+          "自然应答"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -428,14 +427,12 @@
           "item_key": "official-1-test-2/p2-8/8",
           "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P1",
-            "score": 85,
+            "level": "P3",
+            "score": 53,
             "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答题",
-              "间接应答",
-              "语用判断"
+              "陈述 / 请求应答题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -443,14 +440,12 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 85,
+        "level": "P3",
+        "score": 53,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答题",
-          "间接应答",
-          "语用判断"
+          "陈述 / 请求应答题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -578,14 +573,12 @@
           "item_key": "official-1-test-2/p2-11/11",
           "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P1",
-            "score": 85,
+            "level": "P3",
+            "score": 53,
             "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答题",
-              "间接应答",
-              "语用判断"
+              "陈述 / 请求应答题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -593,14 +586,12 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 85,
+        "level": "P3",
+        "score": 53,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答题",
-          "间接应答",
-          "语用判断"
+          "陈述 / 请求应答题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -678,14 +669,12 @@
           "item_key": "official-1-test-2/p2-13/13",
           "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P1",
-            "score": 85,
+            "level": "P3",
+            "score": 53,
             "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答题",
-              "间接应答",
-              "语用判断"
+              "陈述 / 请求应答题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -693,14 +682,12 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 85,
+        "level": "P3",
+        "score": 53,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答题",
-          "间接应答",
-          "语用判断"
+          "陈述 / 请求应答题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -828,13 +815,14 @@
           "item_key": "official-1-test-2/p2-16/16",
           "question_type": "一般疑问句",
           "priority": {
-            "level": "P2",
-            "score": 68,
+            "level": "P1",
+            "score": 85,
             "label": "一般疑问句",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
               "一般疑问句",
-              "自然应答"
+              "间接应答",
+              "语用判断"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -842,13 +830,14 @@
         }
       ],
       "priority": {
-        "level": "P2",
-        "score": 68,
+        "level": "P1",
+        "score": 85,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
           "一般疑问句",
-          "自然应答"
+          "间接应答",
+          "语用判断"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -876,14 +865,12 @@
           "item_key": "official-1-test-2/p2-17/17",
           "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P1",
-            "score": 85,
+            "level": "P3",
+            "score": 53,
             "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答题",
-              "间接应答",
-              "语用判断"
+              "陈述 / 请求应答题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -891,14 +878,12 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 85,
+        "level": "P3",
+        "score": 53,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答题",
-          "间接应答",
-          "语用判断"
+          "陈述 / 请求应答题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -1224,14 +1209,13 @@
           "item_key": "official-1-test-2/p2-24/24",
           "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P1",
-            "score": 85,
+            "level": "P2",
+            "score": 68,
             "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
               "陈述 / 请求应答题",
-              "间接应答",
-              "语用判断"
+              "自然应答"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1239,14 +1223,13 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 85,
+        "level": "P2",
+        "score": 68,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
           "陈述 / 请求应答题",
-          "间接应答",
-          "语用判断"
+          "自然应答"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -1274,14 +1257,12 @@
           "item_key": "official-1-test-2/p2-25/25",
           "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P1",
-            "score": 85,
+            "level": "P3",
+            "score": 53,
             "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答题",
-              "间接应答",
-              "语用判断"
+              "陈述 / 请求应答题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1289,14 +1270,12 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 85,
+        "level": "P3",
+        "score": 53,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答题",
-          "间接应答",
-          "语用判断"
+          "陈述 / 请求应答题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -1424,14 +1403,13 @@
           "item_key": "official-1-test-2/p2-28/28",
           "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P1",
-            "score": 85,
+            "level": "P2",
+            "score": 68,
             "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
               "陈述 / 请求应答题",
-              "间接应答",
-              "语用判断"
+              "自然应答"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1439,14 +1417,13 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 85,
+        "level": "P2",
+        "score": 68,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
           "陈述 / 请求应答题",
-          "间接应答",
-          "语用判断"
+          "自然应答"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"
@@ -1574,14 +1551,12 @@
           "item_key": "official-1-test-2/p2-31/31",
           "question_type": "陈述 / 请求应答题",
           "priority": {
-            "level": "P1",
-            "score": 85,
+            "level": "P3",
+            "score": 53,
             "label": "陈述 / 请求应答题",
             "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
             "focus_tags": [
-              "陈述 / 请求应答题",
-              "间接应答",
-              "语用判断"
+              "陈述 / 请求应答题"
             ],
             "scope": "item",
             "model": "toeic_priority_v2"
@@ -1589,14 +1564,12 @@
         }
       ],
       "priority": {
-        "level": "P1",
-        "score": 85,
+        "level": "P3",
+        "score": 53,
         "label": "单题训练",
         "reason": "按该题的高频考点和能力迁移价值排序。",
         "focus_tags": [
-          "陈述 / 请求应答题",
-          "间接应答",
-          "语用判断"
+          "陈述 / 请求应答题"
         ],
         "scope": "unit",
         "model": "toeic_priority_v2"

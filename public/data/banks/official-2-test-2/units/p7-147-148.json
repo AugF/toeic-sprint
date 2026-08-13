@@ -10,12 +10,14 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 61,
+    "level": "P1",
+    "score": 80,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "推断题",
+      "语境推断",
+      "主旨 / 目的题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -28,7 +30,9 @@
         "exists": true
       }
     ],
-    "passage": "(Bazin-BecKen\nCreator of fine chocolates and artisan confections for over 30 years\nSambirano Bittersweet Chocolate Bar\nIngredients: Cacao (72%), cane sugar, vanilla\n1Sal ¢\nFor baking tips as well as detailed recipes using our chocolates and other products,\nvisit our Web site at www.bazin-becker.ca/recipes.\nBazin-Becker * 3117 Rue Vigo * Montreal QC H2W 2M4 AIL LILI"
+    "passage": "(Bazin-BecKen\nCreator of fine chocolates and artisan confections for over 30 years\nSambirano Bittersweet Chocolate Bar\nIngredients: Cacao (72%), cane sugar, vanilla\n1Sal ¢\nFor baking tips as well as detailed recipes using our chocolates and other products,\nvisit our Web site at www.bazin-becker.ca/recipes.\nBazin-Becker * 3117 Rue Vigo * Montreal QC H2W 2M4 AIL LILI",
+    "passage_translation": "(Bazin-Becker\n30多年来精美巧克力和手工糖果的创造者\nSambirano 甜味巧克力棒\n配料：可可（72%），蔗糖，香草\n1美元\n如需了解烘焙技巧以及使用我们的巧克力和其他产品的详细食谱，请访问我们的网站 www.bazin-becker.ca/recipes。\nBazin-Becker * 3117 Rue Vigo * Montreal QC H2W 2M4 AIL LILI",
+    "content_translation": "(Bazin-Becker\n30多年来精美巧克力和手工糖果的创造者\nSambirano 甜味巧克力棒\n配料：可可（72%），蔗糖，香草\n1美元\n如需了解烘焙技巧以及使用我们的巧克力和其他产品的详细食谱，请访问我们的网站 www.bazin-becker.ca/recipes。\nBazin-Becker * 3117 Rue Vigo * Montreal QC H2W 2M4 AIL LILI"
   },
   "items": [
     {
@@ -41,15 +45,50 @@
       "answer": "B",
       "question": "What most likely is Bazin-Becker? 1",
       "answer_explain": "原文依据：篇章中可定位到“Bazin-Becker * 3117 Rue Vigo * Montreal QC H2W 2M4 AIL LILI”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（A food manufacturer）。",
+      "question_translation": "Bazin-Becker 最可能是什么？",
+      "choice_translations": [
+        "A：一家烹饪学校",
+        "B：一家食品制造商",
+        "C：一本食谱出版商",
+        "D：一个厨房设备商店"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "food",
+            "meaning": "出现在本题正确表达中：一家食品制造商"
+          },
+          {
+            "term": "manufacturer",
+            "meaning": "出现在本题正确表达中：一家食品制造商"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "food manufacturer",
+            "meaning": "一家食品制造商"
+          }
+        ]
+      },
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：(Bazin-BecKen",
+      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：(Bazin-BecKen",
+        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：篇章中可定位到“Bazin-Becker * 3117 Rue Vigo * Montreal QC H2W 2M4 AIL LILI”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（A food manufacturer）。"
+      },
       "item_id": 147,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -66,15 +105,49 @@
       "answer": "A",
       "question": "What is indicated about Bazin-Becker?",
       "answer_explain": "原文依据：篇章中可定位到“Bazin-Becker * 3117 Rue Vigo * Montreal QC H2W 2M4 AIL LILI”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（It offers cooking suggestions.）。",
+      "question_translation": "关于 Bazin-Becker 指出了什么？",
+      "choice_translations": [
+        "A：它提供烹饪建议。",
+        "B：它有多个地点。",
+        "C：它提供定期折扣。",
+        "D：它改变了所有权。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "offers",
+            "meaning": "出现在本题正确表达中：它提供烹饪建议。"
+          },
+          {
+            "term": "cooking",
+            "meaning": "出现在本题正确表达中：它提供烹饪建议。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It offers cooking suggestions.",
+            "meaning": "它提供烹饪建议。"
+          }
+        ]
+      },
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：(Bazin-BecKen",
+      "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：(Bazin-BecKen",
+        "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：篇章中可定位到“Bazin-Becker * 3117 Rue Vigo * Montreal QC H2W 2M4 AIL LILI”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（It offers cooking suggestions.）。"
+      },
       "item_id": 148,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 70,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

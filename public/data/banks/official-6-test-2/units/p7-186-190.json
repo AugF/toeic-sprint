@@ -10,14 +10,17 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P3",
-    "score": 58,
+    "level": "P2",
+    "score": 77,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
+      "细节题",
       "多文本语境",
-      "明示定位"
+      "明示定位",
+      "主旨 / 目的题",
+      "推断题",
+      "语境推断"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -35,7 +38,9 @@
         "exists": true
       }
     ],
-    "passage": "www.faonebakery.com/wholesale\nDesserts to Delight\nFaone Bakery's wholesale division creates delicious cakes, pies, cookies,\nand specialty products that are sure to leave your customers smiling and\ncoming back for more. Our bakery in Baltimore allows us to service the\ngreater mid-Atlantic region of the United States and we hope to expand\nnationwide soon. (Check back in March of next year!)\nIn order to set up a wholesale account with us, create a username and\npasswora. Once your registration is confirmed (within two days of your\ninitial account sign-up), simply log in to the Web-based ordering system\nand begin making your selections!\nhttp://www.faonebakery.com/cust_howsercoff231\nFaone Bakery Online Wholesale Order Form\nWholesale order number: AS2145768 Contact person: Mr. George Howser\nBusiness name: Howser Coffees and Cakes\nDelivery: Tuesdays or Fridays between 8 A.M. and 1 P.M.\nOrder date: Monday, June 13\nDesired delivery date: Friday, June 17\nITEM\nQUANTITY\nPRICE PER UNIT\nTOTAL\nChocolate Dream Cake\n$18\n$90\nApple Crumb Cake\n$15\n$60\nLemon Pie\n$12\n$72\nSubtotal\n$222\nDelivery Charge\n$11\nFor questions or changes to your order after it is placed, please\n$233\ncontact mreynolds@faonebakery.com.\n106\nTo:\nmreynolds@faonebakery.com\nFrom:\nmanagement@howsercoffee.com\nDate:\nTuesday, June 14\nRe:\nRe: Order\nDear Ms. Reynolds,\nWe have been very pleased with our customers' responses to your desserts and are\nconsidering increasing our selections. We are interested in offering the carrot cake but are\nconcerned about how long it will stay moist. We would like to test it out—would you be\nable to send a couple of slices with Friday's delivery?\nWe would also like to add an additional pie to our June 13 order to accommodate a special\nrequest from one of our customers.\nThanks for your help.\nGeorge Howser, Owner\nHowser Coffees and Cakes"
+    "passage": "www.faonebakery.com/wholesale\nDesserts to Delight\nFaone Bakery's wholesale division creates delicious cakes, pies, cookies,\nand specialty products that are sure to leave your customers smiling and\ncoming back for more. Our bakery in Baltimore allows us to service the\ngreater mid-Atlantic region of the United States and we hope to expand\nnationwide soon. (Check back in March of next year!)\nIn order to set up a wholesale account with us, create a username and\npasswora. Once your registration is confirmed (within two days of your\ninitial account sign-up), simply log in to the Web-based ordering system\nand begin making your selections!\nhttp://www.faonebakery.com/cust_howsercoff231\nFaone Bakery Online Wholesale Order Form\nWholesale order number: AS2145768 Contact person: Mr. George Howser\nBusiness name: Howser Coffees and Cakes\nDelivery: Tuesdays or Fridays between 8 A.M. and 1 P.M.\nOrder date: Monday, June 13\nDesired delivery date: Friday, June 17\nITEM\nQUANTITY\nPRICE PER UNIT\nTOTAL\nChocolate Dream Cake\n$18\n$90\nApple Crumb Cake\n$15\n$60\nLemon Pie\n$12\n$72\nSubtotal\n$222\nDelivery Charge\n$11\nFor questions or changes to your order after it is placed, please\n$233\ncontact mreynolds@faonebakery.com.\n106\nTo:\nmreynolds@faonebakery.com\nFrom:\nmanagement@howsercoffee.com\nDate:\nTuesday, June 14\nRe:\nRe: Order\nDear Ms. Reynolds,\nWe have been very pleased with our customers' responses to your desserts and are\nconsidering increasing our selections. We are interested in offering the carrot cake but are\nconcerned about how long it will stay moist. We would like to test it out—would you be\nable to send a couple of slices with Friday's delivery?\nWe would also like to add an additional pie to our June 13 order to accommodate a special\nrequest from one of our customers.\nThanks for your help.\nGeorge Howser, Owner\nHowser Coffees and Cakes",
+    "passage_translation": "中文辅助（离线预处理）：www.faonebakery.com/wholesale\nDesserts to Delight\nFaone Bakery's wholesale division creates delicious cakes, pies, cookies,\nand specialty products that are sure to leave your customers smiling and\ncoming back for more.\nOur bakery in Baltimore allows us to service（服务） the\ngreater mid-Atlantic region of the United States and we hope to expand\nnationwide soon.\n(Check back in March of next year!)\nIn order（订单） to set up a wholesale account with us, create a username and\npasswora.\nOnce your registration is confirmed (within two days of your\ninitial account sign-up), simply log in to the Web-based ordering system\nand begin making your selections!\nhttp://www.faonebakery.com/cust_howsercoff231\nFaone Bakery Online Wholesale Order（订单） Form\nWholesale order（订单） number: AS2145768 Contact person: Mr.\nGeorge Howser\nBusiness name: Howser Coffees and Cakes\nDelivery: Tuesdays or Fridays between 8 A.M.\nand 1 P.M.\nOrder（订单） date: Monday, June 13\nDesired delivery date: Friday, June 17\nITEM\nQUANTITY\nPRICE PER UNIT\nTOTAL\nChocolate Dream Cake\n$18\n$90\nApple Crumb Cake\n$15\n$60\nLemon Pie\n$12\n$72\nSubtotal\n$222\nDelivery Charge\n$11\nFor questions or changes to your order（订单） after it is placed, please（请）\n$233\ncontact mreynolds@faonebakery.com.\n106\nTo:\nmreynolds@faonebakery.com\nFrom:\nmanagement@howsercoffee.com\nDate:\nTuesday, June 14\nRe:\nRe: Order（订单）\nDear Ms.\nReynolds,\nWe have been very pleased with our customers' responses to your desserts and are\nconsidering increasing our selections.\nWe are interested in offering the carrot cake but are\nconcerned about how（如何） long it will stay moist.\nWe would like to test it out—would you be\nable to send a couple of slices with Friday's delivery?\nWe would also like to add an additional pie to our June 13 order（订单） to accommodate a special\nrequest from one of our customers.\nThanks for your help.\nGeorge Howser, Owner\nHowser Coffees and Cakes",
+    "content_translation": "中文辅助（离线预处理）：www.faonebakery.com/wholesale\nDesserts to Delight\nFaone Bakery's wholesale division creates delicious cakes, pies, cookies,\nand specialty products that are sure to leave your customers smiling and\ncoming back for more.\nOur bakery in Baltimore allows us to service（服务） the\ngreater mid-Atlantic region of the United States and we hope to expand\nnationwide soon.\n(Check back in March of next year!)\nIn order（订单） to set up a wholesale account with us, create a username and\npasswora.\nOnce your registration is confirmed (within two days of your\ninitial account sign-up), simply log in to the Web-based ordering system\nand begin making your selections!\nhttp://www.faonebakery.com/cust_howsercoff231\nFaone Bakery Online Wholesale Order（订单） Form\nWholesale order（订单） number: AS2145768 Contact person: Mr.\nGeorge Howser\nBusiness name: Howser Coffees and Cakes\nDelivery: Tuesdays or Fridays between 8 A.M.\nand 1 P.M.\nOrder（订单） date: Monday, June 13\nDesired delivery date: Friday, June 17\nITEM\nQUANTITY\nPRICE PER UNIT\nTOTAL\nChocolate Dream Cake\n$18\n$90\nApple Crumb Cake\n$15\n$60\nLemon Pie\n$12\n$72\nSubtotal\n$222\nDelivery Charge\n$11\nFor questions or changes to your order（订单） after it is placed, please（请）\n$233\ncontact mreynolds@faonebakery.com.\n106\nTo:\nmreynolds@faonebakery.com\nFrom:\nmanagement@howsercoffee.com\nDate:\nTuesday, June 14\nRe:\nRe: Order（订单）\nDear Ms.\nReynolds,\nWe have been very pleased with our customers' responses to your desserts and are\nconsidering increasing our selections.\nWe are interested in offering the carrot cake but are\nconcerned about how（如何） long it will stay moist.\nWe would like to test it out—would you be\nable to send a couple of slices with Friday's delivery?\nWe would also like to add an additional pie to our June 13 order（订单） to accommodate a special\nrequest from one of our customers.\nThanks for your help.\nGeorge Howser, Owner\nHowser Coffees and Cakes"
   },
   "items": [
     {
@@ -48,15 +53,49 @@
       "answer": "A",
       "question": "Where does Faone Bakery deliver?",
       "answer_explain": "原文依据：篇章中可定位到“greater mid-Atlantic region of the United States and we hope to expand”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Within the mid-Atlantic region only）。",
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） does Faone Bakery deliver?",
+      "choice_translations": [
+        "A：Within the mid-Atlantic region only",
+        "B：Within Baltimore only",
+        "C：Throughout the United States",
+        "D：Throughout various countries"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：www.faonebakery.com/wholesale",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：www.faonebakery.com/wholesale",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“greater mid-Atlantic region of the United States and we hope to expand”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Within the mid-Atlantic region only）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "within",
+            "meaning": "本题重点词；结合正确选项理解：Within the mid-Atlantic region only"
+          },
+          {
+            "term": "mid-atlantic",
+            "meaning": "本题重点词；结合正确选项理解：Within the mid-Atlantic region only"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Within the mid-Atlantic region only",
+            "meaning": "正确选项中的重点搭配：Within the mid-Atlantic region only"
+          }
+        ]
+      },
       "item_id": 186,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 42,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "多文本语境",
           "明示定位"
         ],
@@ -75,16 +114,49 @@
       "answer": "D",
       "question": "What is indicated about Faone Bakery?",
       "answer_explain": "原文依据：篇章中可定位到“Faone Bakery Online Wholesale Order Form”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（It is planning to grow.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is indicated about Faone Bakery?",
+      "choice_translations": [
+        "A：It has opened another retail store.",
+        "B：It offers a full breakfast menu.",
+        "C：It opened in March.",
+        "D：It is planning to grow."
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：www.faonebakery.com/wholesale",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：www.faonebakery.com/wholesale",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Faone Bakery Online Wholesale Order Form”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（It is planning to grow.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "planning",
+            "meaning": "本题重点词；结合正确选项理解：It is planning to grow."
+          },
+          {
+            "term": "grow",
+            "meaning": "本题重点词；结合正确选项理解：It is planning to grow."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It is planning to grow.",
+            "meaning": "正确选项中的重点搭配：It is planning to grow."
+          }
+        ]
+      },
       "item_id": 187,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 70,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "多文本语境"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -101,16 +173,50 @@
       "answer": "A",
       "question": "What did Mr. Howser most likely do before June 13?",
       "answer_explain": "原文依据：篇章中可定位到“In order to set up a wholesale account with us, create a username and”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（He created an online account.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） did Mr.\nHowser most likely（最可能） do before June 13?",
+      "choice_translations": [
+        "A：He created an online account.",
+        "B：He added sandwiches to his menu.",
+        "C：He visited Faone Bakery to taste a product.",
+        "D：He sent a promotional link to"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 12 段：http://www.faonebakery.com/cust_howsercoff231",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "推断题",
+        "evidence": "参考原文第 12 段：http://www.faonebakery.com/cust_howsercoff231",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“In order to set up a wholesale account with us, create a username and”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（He created an online account.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "created",
+            "meaning": "本题重点词；结合正确选项理解：He created an online account."
+          },
+          {
+            "term": "online",
+            "meaning": "本题重点词；结合正确选项理解：He created an online account."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "He created an online account.",
+            "meaning": "正确选项中的重点搭配：He created an online account."
+          }
+        ]
+      },
       "item_id": 188,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "多文本语境"
+          "推断题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -127,17 +233,49 @@
       "answer": "D",
       "question": "What is one reason why Mr. Howser sent the e-mail?",
       "answer_explain": "原文依据：篇章中可定位到“request from one of our customers.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（To request samples from Faone）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is one reason why（为什么） Mr.\nHowser sent the e-mail?",
+      "choice_translations": [
+        "A：To cancel a delivery",
+        "B：To complain about a cake",
+        "C：To invite Ms.\nReynolds to his business",
+        "D：To request samples from Faone"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 12 段：http://www.faonebakery.com/cust_howsercoff231",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 12 段：http://www.faonebakery.com/cust_howsercoff231",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“request from one of our customers.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（To request samples from Faone）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "request",
+            "meaning": "本题重点词；结合正确选项理解：To request samples from Faone"
+          },
+          {
+            "term": "samples",
+            "meaning": "本题重点词；结合正确选项理解：To request samples from Faone"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To request samples from Faone",
+            "meaning": "正确选项中的重点搭配：To request samples from Faone"
+          }
+        ]
+      },
       "item_id": 189,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P3",
-        "score": 42,
-        "label": "细节定位题",
+        "level": "P2",
+        "score": 70,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "多文本语境",
-          "明示定位"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -154,16 +292,46 @@
       "answer": "C",
       "question": "How many pies will Mr. Howser most likely receive on June 17?",
       "answer_explain": "原文依据：篇章中可定位到“We would also like to add an additional pie to our June 13 order to accommodate a special”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Seven）。",
+      "question_translation": "中文辅助（离线预处理）：How（如何） many pies will Mr.\nHowser most likely（最可能） receive on June 17?",
+      "choice_translations": [
+        "A：Five",
+        "B：Six",
+        "C：Seven",
+        "D：Nine"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 12 段：http://www.faonebakery.com/cust_howsercoff231",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 12 段：http://www.faonebakery.com/cust_howsercoff231",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“We would also like to add an additional pie to our June 13 order to accommodate a special”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Seven）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "seven",
+            "meaning": "本题重点词；结合正确选项理解：Seven"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Seven",
+            "meaning": "正确选项中的重点搭配：Seven"
+          }
+        ]
+      },
       "item_id": 190,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "多文本语境"
+          "推断题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

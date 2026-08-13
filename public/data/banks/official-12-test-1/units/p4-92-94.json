@@ -10,16 +10,14 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 79,
+    "level": "P1",
+    "score": 82,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "主旨场景",
-      "推断 / 隐含义题",
+      "推断题",
       "跨句整合",
-      "细节定位题",
+      "细节题",
       "明示细节"
     ],
     "scope": "unit",
@@ -36,7 +34,9 @@
       "asset_key": "official-12-test-1/audio/part4/q092-094-questions.mp3",
       "exists": true
     },
-    "transcript": "xia 92-94 lđ.\nmessage.\nHi, Ms. Stewart. This is Pedro. Ol take care of Mr. Molina's\nChulblas\nscheduling. Ol'm calling because Mr. Molina was scheduled\nto return from an international business trip on Friday and\nd MO\nthen meet with you the following day. © The thing is, though,\nKolaticsi\nhis trip has been extended by one day. Please give me\nD*1 030\na call back or stop by my office so we can discuss other\noptions. Ol'll be at my desk the rest of the afternoon."
+    "transcript": "xia 92-94 lđ.\nmessage.\nHi, Ms. Stewart. This is Pedro. Ol take care of Mr. Molina's\nChulblas\nscheduling. Ol'm calling because Mr. Molina was scheduled\nto return from an international business trip on Friday and\nd MO\nthen meet with you the following day. © The thing is, though,\nKolaticsi\nhis trip has been extended by one day. Please give me\nD*1 030\na call back or stop by my office so we can discuss other\noptions. Ol'll be at my desk the rest of the afternoon.",
+    "transcript_translation": "中文辅助（离线预处理）：xia 92-94 lđ.\nmessage.\nHi, Ms.\nStewart.\nThis is Pedro.\nOl take care of Mr.\nMolina's\nChulblas\nscheduling.\nOl'm calling because Mr.\nMolina was scheduled\nto return from an international business trip on Friday and\nd MO\nthen meet with you the following day.\n© The thing is, though,\nKolaticsi\nhis trip has been extended by one day.\nPlease（请） give me\nD*1 030\na call back or stop by my office（办公室） so we can discuss other\noptions.\nOl'll be at my desk the rest of the afternoon.",
+    "content_translation": "中文辅助（离线预处理）：xia 92-94 lđ.\nmessage.\nHi, Ms.\nStewart.\nThis is Pedro.\nOl take care of Mr.\nMolina's\nChulblas\nscheduling.\nOl'm calling because Mr.\nMolina was scheduled\nto return from an international business trip on Friday and\nd MO\nthen meet with you the following day.\n© The thing is, though,\nKolaticsi\nhis trip has been extended by one day.\nPlease（请） give me\nD*1 030\na call back or stop by my office（办公室） so we can discuss other\noptions.\nOl'll be at my desk the rest of the afternoon."
   },
   "items": [
     {
@@ -49,16 +49,50 @@
       "answer": "D",
       "question": "Who most likely is the speaker?",
       "answer_explain": "原文依据：听力原文中提到“Ol'll be at my desk the rest of the afternoon.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（An executive assistant）。",
+      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the speaker（说话者）?",
+      "choice_translations": [
+        "A：A salesperson",
+        "B：A business owner",
+        "C：A product developer",
+        "D：An executive assistant"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：xia 92-94 lđ.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：xia 92-94 lđ.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Ol'll be at my desk the rest of the afternoon.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（An executive assistant）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "executive",
+            "meaning": "本题重点词；结合正确选项理解：An executive assistant"
+          },
+          {
+            "term": "assistant",
+            "meaning": "本题重点词；结合正确选项理解：An executive assistant"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "An executive assistant",
+            "meaning": "正确选项中的重点搭配：An executive assistant"
+          }
+        ]
+      },
       "item_id": 92,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
-        "level": "P2",
-        "score": 72,
-        "label": "主旨 / 目的 / 场景题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -75,15 +109,49 @@
       "answer": "C",
       "question": "What does the speaker imply when he says, \"his trip has been extended by one day\"?",
       "answer_explain": "原文依据：听力原文中提到“his trip has been extended by one day.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A meeting must bepostponed.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） imply when（何时） he says, \"his trip has been extended by one day\"?",
+      "choice_translations": [
+        "A：A refund should berequested.",
+        "B：A negotiation has beensuccessful.",
+        "C：A meeting（会议） must bepostponed.",
+        "D：A delivery should bererouted."
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 10 段：his trip has been extended by one day. Please give me",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 10 段：his trip has been extended by one day. Please give me",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“his trip has been extended by one day.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A meeting must bepostponed.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "meeting",
+            "meaning": "本题重点词；结合正确选项理解：A meeting（会议） must bepostponed."
+          },
+          {
+            "term": "must",
+            "meaning": "本题重点词；结合正确选项理解：A meeting（会议） must bepostponed."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "meeting must bepostponed.",
+            "meaning": "正确选项中的重点搭配：A meeting（会议） must bepostponed."
+          }
+        ]
+      },
       "item_id": 93,
-      "question_type": "推断 / 隐含义题",
       "priority": {
         "level": "P1",
         "score": 88,
-        "label": "推断 / 隐含义题",
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "跨句整合"
         ],
         "scope": "item",
@@ -101,15 +169,45 @@
       "answer": "A",
       "question": "Where will the speaker be during the afternoon? IE#R",
       "answer_explain": "原文依据：听力原文中提到“Ol'll be at my desk the rest of the afternoon.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（At his desk）。",
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） will the speaker（说话者） be during the afternoon?\nIE#R",
+      "choice_translations": [
+        "A：At his desk",
+        "B：At a conference center",
+        "C：At a restaurant",
+        "D：At a store"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 13 段：options. Ol'll be at my desk the rest of the afternoon.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 13 段：options. Ol'll be at my desk the rest of the afternoon.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Ol'll be at my desk the rest of the afternoon.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（At his desk）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "desk",
+            "meaning": "本题重点词；结合正确选项理解：At his desk"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "At his desk",
+            "meaning": "正确选项中的重点搭配：At his desk"
+          }
+        ]
+      },
       "item_id": 94,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 46,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节"
         ],
         "scope": "item",

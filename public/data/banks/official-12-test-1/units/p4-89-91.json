@@ -11,13 +11,11 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 69,
+    "score": 61,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "主旨场景",
-      "细节定位题"
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -33,7 +31,9 @@
       "asset_key": "official-12-test-1/audio/part4/q089-091-questions.mp3",
       "exists": true
     },
-    "transcript": "Andersonville Office Superstore is happy to announce a\nAndersonville 7\nnew service! More people have begun working from home\nrecently, so we're now offering free home delivery to our\ncorporate clients. © Your employees can expect to receive\nthe same high-quality supplies and fast, dependable service\nthat they've always had, but onow at the convenience of\ntheir own doorstep. How's that for an improvement? © To\nCo Cha\nregister for this new service, contact a sales representative.\nThey'll guarantee that any corporate discount is applied to\nall orders.\ntebag."
+    "transcript": "Andersonville Office Superstore is happy to announce a\nAndersonville 7\nnew service! More people have begun working from home\nrecently, so we're now offering free home delivery to our\ncorporate clients. © Your employees can expect to receive\nthe same high-quality supplies and fast, dependable service\nthat they've always had, but onow at the convenience of\ntheir own doorstep. How's that for an improvement? © To\nCo Cha\nregister for this new service, contact a sales representative.\nThey'll guarantee that any corporate discount is applied to\nall orders.\ntebag.",
+    "transcript_translation": "中文辅助（离线预处理）：Andersonville Office（办公室） Superstore is happy to announce a\nAndersonville 7\nnew service（服务）!\nMore people have begun working from home\nrecently, so we're now offering free home delivery to our\ncorporate clients.\n© Your employees can expect to receive\nthe same high-quality supplies and fast, dependable service（服务）\nthat they've always had, but onow at the convenience of\ntheir own doorstep.\nHow（如何）'s that for an improvement?\n© To\nCo Cha\nregister for this new service（服务）, contact a sales representative.\nThey'll guarantee that any corporate discount is applied to\nall orders.\ntebag.",
+    "content_translation": "中文辅助（离线预处理）：Andersonville Office（办公室） Superstore is happy to announce a\nAndersonville 7\nnew service（服务）!\nMore people have begun working from home\nrecently, so we're now offering free home delivery to our\ncorporate clients.\n© Your employees can expect to receive\nthe same high-quality supplies and fast, dependable service（服务）\nthat they've always had, but onow at the convenience of\ntheir own doorstep.\nHow（如何）'s that for an improvement?\n© To\nCo Cha\nregister for this new service（服务）, contact a sales representative.\nThey'll guarantee that any corporate discount is applied to\nall orders.\ntebag."
   },
   "items": [
     {
@@ -46,16 +46,49 @@
       "answer": "A",
       "question": "What type of business is being advertised?",
       "answer_explain": "原文依据：听力原文中提到“Andersonville Office Superstore is happy to announce a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An office supply store）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） type of business is being advertised?",
+      "choice_translations": [
+        "A：An office（办公室） supply store",
+        "B：A moving company（公司）",
+        "C：An engineering firm",
+        "D：A transportationcompany"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Andersonville Office Superstore is happy to announce a",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Andersonville Office Superstore is happy to announce a",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Andersonville Office Superstore is happy to announce a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An office supply store）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "office",
+            "meaning": "本题重点词；结合正确选项理解：An office（办公室） supply store"
+          },
+          {
+            "term": "supply",
+            "meaning": "本题重点词；结合正确选项理解：An office（办公室） supply store"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "An office supply store",
+            "meaning": "正确选项中的重点搭配：An office（办公室） supply store"
+          }
+        ]
+      },
       "item_id": 89,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
         "level": "P2",
-        "score": 72,
-        "label": "主旨 / 目的 / 场景题",
+        "score": 61,
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -72,15 +105,49 @@
       "answer": "D",
       "question": "What improvement does the speaker mention?",
       "answer_explain": "原文依据：听力原文中提到“the same high-quality supplies and fast, dependable service”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A service will becomemore convenient.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） improvement does the speaker（说话者） mention?",
+      "choice_translations": [
+        "A：Some items will be madeof higher-quality material.",
+        "B：Some vehicles will bebetter for the environment.",
+        "C：A service（服务） will help clientssave money.",
+        "D：A service（服务） will becomemore convenient."
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 8 段：their own doorstep. How's that for an improvement? © To",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 8 段：their own doorstep. How's that for an improvement? © To",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“the same high-quality supplies and fast, dependable service”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A service will becomemore convenient.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "service",
+            "meaning": "本题重点词；结合正确选项理解：A service（服务） will becomemore convenient."
+          },
+          {
+            "term": "becomemore",
+            "meaning": "本题重点词；结合正确选项理解：A service（服务） will becomemore convenient."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "service will becomemore convenient.",
+            "meaning": "正确选项中的重点搭配：A service（服务） will becomemore convenient."
+          }
+        ]
+      },
       "item_id": 90,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -97,15 +164,49 @@
       "answer": "B",
       "question": "According to the speaker, what will a sales TEM representative do?",
       "answer_explain": "原文依据：听力原文中提到“register for this new service, contact a sales representative.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Apply some discounts）。",
+      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） will a sales TEM representative do?",
+      "choice_translations": [
+        "A：Send an e-mail",
+        "B：Apply some discounts",
+        "C：Schedule（日程） a delivery",
+        "D：Demonstrate a product"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 10 段：register for this new service, contact a sales representative.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 10 段：register for this new service, contact a sales representative.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“register for this new service, contact a sales representative.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Apply some discounts）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "apply",
+            "meaning": "本题重点词；结合正确选项理解：Apply some discounts"
+          },
+          {
+            "term": "some",
+            "meaning": "本题重点词；结合正确选项理解：Apply some discounts"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Apply some discounts",
+            "meaning": "正确选项中的重点搭配：Apply some discounts"
+          }
+        ]
+      },
       "item_id": 91,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

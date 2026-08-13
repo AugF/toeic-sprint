@@ -11,14 +11,16 @@
   "difficulty": "medium",
   "priority": {
     "level": "P1",
-    "score": 81,
+    "score": 89,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "图表联动题",
+      "主旨 / 目的题",
+      "主旨场景",
+      "细节题",
       "图表联动",
-      "明示细节"
+      "推断题",
+      "跨句整合"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -34,7 +36,9 @@
       "asset_key": "official-9-test-1/audio/part3/q065-067-questions.mp3",
       "exists": true
     },
-    "transcript": "and floor plan.\nI-I m OWelcome to Plaza Apartments. How can I help you?\nEw Good morning.\nA friend told me that this building was\njust completed, and I'm looking for somewhere to live in\nthis area.\nI-M Great! We have several units available. What size are\nyou looking for?\nIw I don't have much furniture, so a one-bedroom is fine.\nBut I'd really like a unit with a nice view.\nim Oh, well, ®one of our available apartments has a room\nwith a large window that overlooks our courtyard.\nHere's the floor plan.\nw Wonderful. That's just what I'm looking for.\nm ®Do you have some time right now? ®| can show it to\nyou.\ncs2 (0)\nU332JA8\nV98 (A\nParking Area\nEntrance\nOr 151\nWindow\nBathroom\nZJ-4\nBedroom\nCourtyard\nLiving\nKitchen\nRoom\nemol\nART\ntha\nWindow\nSV (A)\nGENES\nOX*O"
+    "transcript": "and floor plan.\nI-I m OWelcome to Plaza Apartments. How can I help you?\nEw Good morning.\nA friend told me that this building was\njust completed, and I'm looking for somewhere to live in\nthis area.\nI-M Great! We have several units available. What size are\nyou looking for?\nIw I don't have much furniture, so a one-bedroom is fine.\nBut I'd really like a unit with a nice view.\nim Oh, well, ®one of our available apartments has a room\nwith a large window that overlooks our courtyard.\nHere's the floor plan.\nw Wonderful. That's just what I'm looking for.\nm ®Do you have some time right now? ®| can show it to\nyou.\ncs2 (0)\nU332JA8\nV98 (A\nParking Area\nEntrance\nOr 151\nWindow\nBathroom\nZJ-4\nBedroom\nCourtyard\nLiving\nKitchen\nRoom\nemol\nART\ntha\nWindow\nSV (A)\nGENES\nOX*O",
+    "transcript_translation": "中文辅助（离线预处理）：and floor plan.\nI-I m OWelcome to Plaza Apartments.\nHow（如何） can I help you?\nEw Good morning.\nA friend told me that this building was\njust completed, and I'm looking for somewhere to live in\nthis area.\nI-M Great!\nWe have several units available（可用的）.\nWhat（什么） size are\nyou looking for?\nIw I don't have much furniture, so a one-bedroom is fine.\nBut I'd really like a unit with a nice view.\nim Oh, well, ®one of our available（可用的） apartments has a room\nwith a large window that overlooks our courtyard.\nHere's the floor plan.\nw Wonderful.\nThat's just what（什么） I'm looking for.\nm ®Do you have some time right now?\n®| can show it to\nyou.\ncs2 (0)\nU332JA8\nV98 (A\nParking Area\nEntrance\nOr 151\nWindow\nBathroom\nZJ-4\nBedroom\nCourtyard\nLiving\nKitchen\nRoom\nemol\nART\ntha\nWindow\nSV (A)\nGENES\nOX*O",
+    "content_translation": "中文辅助（离线预处理）：and floor plan.\nI-I m OWelcome to Plaza Apartments.\nHow（如何） can I help you?\nEw Good morning.\nA friend told me that this building was\njust completed, and I'm looking for somewhere to live in\nthis area.\nI-M Great!\nWe have several units available（可用的）.\nWhat（什么） size are\nyou looking for?\nIw I don't have much furniture, so a one-bedroom is fine.\nBut I'd really like a unit with a nice view.\nim Oh, well, ®one of our available（可用的） apartments has a room\nwith a large window that overlooks our courtyard.\nHere's the floor plan.\nw Wonderful.\nThat's just what（什么） I'm looking for.\nm ®Do you have some time right now?\n®| can show it to\nyou.\ncs2 (0)\nU332JA8\nV98 (A\nParking Area\nEntrance\nOr 151\nWindow\nBathroom\nZJ-4\nBedroom\nCourtyard\nLiving\nKitchen\nRoom\nemol\nART\ntha\nWindow\nSV (A)\nGENES\nOX*O"
   },
   "items": [
     {
@@ -47,15 +51,46 @@
       "answer": "D",
       "question": "How did the woman hear about the apartment building?",
       "answer_explain": "原文依据：听力原文中提到“A friend told me that this building was”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（From a friend）。",
+      "question_translation": "中文辅助（离线预处理）：How（如何） did the woman（女士） hear about the apartment building?",
+      "choice_translations": [
+        "A：From an Internet advertisement",
+        "B：From a television commercial",
+        "C：From a billboard",
+        "D：From a friend"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 2 段：I-I m OWelcome to Plaza Apartments. How can I help you?",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 2 段：I-I m OWelcome to Plaza Apartments. How can I help you?",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“A friend told me that this building was”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（From a friend）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "friend",
+            "meaning": "本题重点词；结合正确选项理解：From a friend"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "From a friend",
+            "meaning": "正确选项中的重点搭配：From a friend"
+          }
+        ]
+      },
       "item_id": 65,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -72,15 +107,49 @@
       "answer": "D",
       "question": "Look at the graphic. Which room does the man refer to?",
       "answer_explain": "原文依据：听力原文中提到“im Oh, well, ®one of our available apartments has a room”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（The living room）。",
+      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich room does the man（男士） refer to?",
+      "choice_translations": [
+        "A：The bedroom",
+        "B：The bathroom",
+        "C：The kitchen",
+        "D：The living room"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：and floor plan.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：and floor plan.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“im Oh, well, ®one of our available apartments has a room”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（The living room）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "living",
+            "meaning": "本题重点词；结合正确选项理解：The living room"
+          },
+          {
+            "term": "room",
+            "meaning": "本题重点词；结合正确选项理解：The living room"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "The living room",
+            "meaning": "正确选项中的重点搭配：The living room"
+          }
+        ]
+      },
       "item_id": 66,
-      "question_type": "图表联动题",
       "priority": {
         "level": "P1",
         "score": 93,
-        "label": "图表联动题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "图表联动题",
+          "细节题",
           "图表联动"
         ],
         "scope": "item",
@@ -98,16 +167,50 @@
       "answer": "C",
       "question": "What will the woman most likely do next?",
       "answer_explain": "原文依据：听力原文中提到“But I'd really like a unit with a nice view.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（View a unit）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） most likely（最可能） do next?",
+      "choice_translations": [
+        "A：Pay a deposit",
+        "B：Fill out an application",
+        "C：View a unit",
+        "D：Measure some furniture"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：and floor plan.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：and floor plan.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“But I'd really like a unit with a nice view.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（View a unit）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "view",
+            "meaning": "本题重点词；结合正确选项理解：View a unit"
+          },
+          {
+            "term": "unit",
+            "meaning": "本题重点词；结合正确选项理解：View a unit"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "View a unit",
+            "meaning": "正确选项中的重点搭配：View a unit"
+          }
+        ]
+      },
       "item_id": 67,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P3",
-        "score": 46,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "明示细节"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

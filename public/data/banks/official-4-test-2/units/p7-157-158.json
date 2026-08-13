@@ -10,13 +10,12 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 78,
+    "level": "P1",
+    "score": 83,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "推断 / 隐含义题",
+      "推断题",
       "语境推断"
     ],
     "scope": "unit",
@@ -30,7 +29,9 @@
         "exists": true
       }
     ],
-    "passage": "Jeffrey McCain 10:22 A.M. QO\nMuneer, do you have time soon to meet with someone at Southwood a\nHospital? They called about getting an estimate for work on their roof.\nMuneer Nagi 10:25 A.M.\nToday I’m working to finalize the estimate for window replacements at the\nauto mechanic’s, and | also need to go to Heller Farmers’ Market to check\non our crew there.\nJeffrey McCain 10:26 A.M.\nRight.\nMuneer Nagi 10:27 A.M.\n| could certainly make it to the hospital tomorrow morning.\nJeffrey McCain 10:30 A.M.\nOK, that would work. 1’Il let them know to expect you around 11:00 A.M.\nMuneer Nagi 10:31 A.M.\nOK. Whom do | contact when | get there?\nJeffrey McCain 10:32 A.M.\nAlicia Moyers in the facilities office."
+    "passage": "Jeffrey McCain 10:22 A.M. QO\nMuneer, do you have time soon to meet with someone at Southwood a\nHospital? They called about getting an estimate for work on their roof.\nMuneer Nagi 10:25 A.M.\nToday I’m working to finalize the estimate for window replacements at the\nauto mechanic’s, and | also need to go to Heller Farmers’ Market to check\non our crew there.\nJeffrey McCain 10:26 A.M.\nRight.\nMuneer Nagi 10:27 A.M.\n| could certainly make it to the hospital tomorrow morning.\nJeffrey McCain 10:30 A.M.\nOK, that would work. 1’Il let them know to expect you around 11:00 A.M.\nMuneer Nagi 10:31 A.M.\nOK. Whom do | contact when | get there?\nJeffrey McCain 10:32 A.M.\nAlicia Moyers in the facilities office.",
+    "passage_translation": "中文辅助（离线预处理）：Jeffrey McCain 10:22 A.M.\nQO\nMuneer, do you have time soon to meet with someone at Southwood a\nHospital?\nThey called about getting an estimate for work（工作） on their roof.\nMuneer Nagi 10:25 A.M.\nToday I’m working to finalize the estimate for window replacements at the\nauto mechanic’s, and | also need to go to Heller Farmers’ Market to check\non our crew there.\nJeffrey McCain 10:26 A.M.\nRight.\nMuneer Nagi 10:27 A.M.\n| could certainly make it to the hospital tomorrow morning.\nJeffrey McCain 10:30 A.M.\nOK, that would work（工作）.\n1’Il let them know to expect you around 11:00 A.M.\nMuneer Nagi 10:31 A.M.\nOK.\nWhom do | contact when（何时） | get there?\nJeffrey McCain 10:32 A.M.\nAlicia Moyers in the facilities office（办公室）.",
+    "content_translation": "中文辅助（离线预处理）：Jeffrey McCain 10:22 A.M.\nQO\nMuneer, do you have time soon to meet with someone at Southwood a\nHospital?\nThey called about getting an estimate for work（工作） on their roof.\nMuneer Nagi 10:25 A.M.\nToday I’m working to finalize the estimate for window replacements at the\nauto mechanic’s, and | also need to go to Heller Farmers’ Market to check\non our crew there.\nJeffrey McCain 10:26 A.M.\nRight.\nMuneer Nagi 10:27 A.M.\n| could certainly make it to the hospital tomorrow morning.\nJeffrey McCain 10:30 A.M.\nOK, that would work（工作）.\n1’Il let them know to expect you around 11:00 A.M.\nMuneer Nagi 10:31 A.M.\nOK.\nWhom do | contact when（何时） | get there?\nJeffrey McCain 10:32 A.M.\nAlicia Moyers in the facilities office（办公室）."
   },
   "items": [
     {
@@ -43,15 +44,46 @@
       "answer": "D",
       "question": "In what industry are the people most likely employed?",
       "answer_explain": "原文依据：篇章中可定位到“Today I’m working to finalize the estimate for window replacements at the”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（Construction）。",
+      "question_translation": "中文辅助（离线预处理）：In what（什么） industry are the people most likely（最可能） employed?",
+      "choice_translations": [
+        "A：Agriculture",
+        "B：Health",
+        "C：Transportation",
+        "D：Construction"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Jeffrey McCain 10:22 A.M. QO",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Jeffrey McCain 10:22 A.M. QO",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Today I’m working to finalize the estimate for window replacements at the”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（Construction）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "construction",
+            "meaning": "本题重点词；结合正确选项理解：Construction"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Construction",
+            "meaning": "正确选项中的重点搭配：Construction"
+          }
+        ]
+      },
       "item_id": 157,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -68,15 +100,49 @@
       "answer": "B",
       "question": "At 10:30 am., what does Mr. McCain most likely mean when he writes, “that would work”?",
       "answer_explain": "原文依据：篇章中可定位到“Muneer, do you have time soon to meet with someone at Southwood a”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（Tomorrow is a good time to hold a meeting.）。",
+      "question_translation": "中文辅助（离线预处理）：At 10:30 am., what（什么） does Mr.\nMcCain most likely（最可能） mean when（何时） he writes, “that would work（工作）”?",
+      "choice_translations": [
+        "A：Mr.\nNagi will complete a job well.",
+        "B：Tomorrow is a good time to hold a meeting（会议）.",
+        "C：Some office（办公室） tasks will be postponed.",
+        "D：Ms.\nMoyers can provide the information（信息）"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Jeffrey McCain 10:22 A.M. QO",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Jeffrey McCain 10:22 A.M. QO",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Muneer, do you have time soon to meet with someone at Southwood a”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（Tomorrow is a good time to hold a meeting.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "tomorrow",
+            "meaning": "本题重点词；结合正确选项理解：Tomorrow is a good time to hold a meeting（会议）."
+          },
+          {
+            "term": "good",
+            "meaning": "本题重点词；结合正确选项理解：Tomorrow is a good time to hold a meeting（会议）."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Tomorrow is a good time to hold a meeting.",
+            "meaning": "正确选项中的重点搭配：Tomorrow is a good time to hold a meeting（会议）."
+          }
+        ]
+      },
       "item_id": 158,
-      "question_type": "推断 / 隐含义题",
       "priority": {
         "level": "P1",
         "score": 83,
-        "label": "推断 / 隐含义题",
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "语境推断"
         ],
         "scope": "item",

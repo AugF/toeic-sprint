@@ -10,12 +10,15 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 61,
+    "level": "P1",
+    "score": 86,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "推断题",
+      "跨句整合",
+      "主旨 / 目的题",
+      "主旨场景"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +34,9 @@
       "asset_key": "official-7-test-2/audio/part4/q083-085-questions.mp3",
       "exists": true
     },
-    "transcript": "message.\nli, Diego. This is Julie calling from E&F to let you know\nhat your 3-D prototypes are ready for pickup. OWe printed\nthem using steel instead of plastic as you requested last\nweek, but now they are really heavy, well over 40 pounds\ntotal. I'm letting you know so you can plan how you're\ngoing to carry them. Oh- ®you mentioned you're interested\nin working for us? As it turns out, our junior designer has just\nleft. Anyway, we're open until six, so feel free to come any\ntime before then. Thanks!"
+    "transcript": "message.\nli, Diego. This is Julie calling from E&F to let you know\nhat your 3-D prototypes are ready for pickup. OWe printed\nthem using steel instead of plastic as you requested last\nweek, but now they are really heavy, well over 40 pounds\ntotal. I'm letting you know so you can plan how you're\ngoing to carry them. Oh- ®you mentioned you're interested\nin working for us? As it turns out, our junior designer has just\nleft. Anyway, we're open until six, so feel free to come any\ntime before then. Thanks!",
+    "transcript_translation": "中文辅助（离线预处理）：message.\nli, Diego.\nThis is Julie calling from E&F to let you know\nhat your 3-D prototypes are ready for pickup.\nOWe printed\nthem using steel instead of plastic as you requested last\nweek, but now they are really heavy, well over 40 pounds\ntotal.\nI'm letting you know so you can plan how（如何） you're\ngoing to carry them.\nOh- ®you mentioned you're interested\nin working for us?\nAs it turns out, our junior designer has just\nleft.\nAnyway, we're open until six, so feel free to come any\ntime before then.\nThanks!",
+    "content_translation": "中文辅助（离线预处理）：message.\nli, Diego.\nThis is Julie calling from E&F to let you know\nhat your 3-D prototypes are ready for pickup.\nOWe printed\nthem using steel instead of plastic as you requested last\nweek, but now they are really heavy, well over 40 pounds\ntotal.\nI'm letting you know so you can plan how（如何） you're\ngoing to carry them.\nOh- ®you mentioned you're interested\nin working for us?\nAs it turns out, our junior designer has just\nleft.\nAnyway, we're open until six, so feel free to come any\ntime before then.\nThanks!"
   },
   "items": [
     {
@@ -44,15 +49,50 @@
       "answer": "A",
       "question": "Where does the speaker most likely work?",
       "answer_explain": "原文依据：听力原文中提到“Anyway, we're open until six, so feel free to come any”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At a printing business）。",
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the speaker（说话者） most likely（最可能） work（工作）?",
+      "choice_translations": [
+        "A：At a printing business",
+        "B：At a video game company（公司）",
+        "C：At a plastics manufacturer",
+        "D：At an employment agency"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：message.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：message.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Anyway, we're open until six, so feel free to come any”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At a printing business）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "printing",
+            "meaning": "本题重点词；结合正确选项理解：At a printing business"
+          },
+          {
+            "term": "business",
+            "meaning": "本题重点词；结合正确选项理解：At a printing business"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "At a printing business",
+            "meaning": "正确选项中的重点搭配：At a printing business"
+          }
+        ]
+      },
       "item_id": 83,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +109,50 @@
       "answer": "B",
       "question": "What is the speaker concerned about?",
       "answer_explain": "原文依据：听力原文中提到“week, but now they are really heavy, well over 40 pounds”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some prototypes are very heavy.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is the speaker（说话者） concerned about?",
+      "choice_translations": [
+        "A：A timeline may need to be revised.",
+        "B：Some prototypes are very heavy.",
+        "C：Some specifications are incorrect.",
+        "D：A material is currently unavailable."
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：message.",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：message.",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“week, but now they are really heavy, well over 40 pounds”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some prototypes are very heavy.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "some",
+            "meaning": "本题重点词；结合正确选项理解：Some prototypes are very heavy."
+          },
+          {
+            "term": "prototypes",
+            "meaning": "本题重点词；结合正确选项理解：Some prototypes are very heavy."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Some prototypes are very heavy.",
+            "meaning": "正确选项中的重点搭配：Some prototypes are very heavy."
+          }
+        ]
+      },
       "item_id": 84,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -94,15 +169,50 @@
       "answer": "D",
       "question": "Why does the speaker say, \"our junior designer has just left\"?",
       "answer_explain": "原文依据：听力原文中提到“As it turns out, our junior designer has just”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To suggest that the listener apply）。",
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"our junior designer has just left\"?",
+      "choice_translations": [
+        "A：To explain why（为什么） she is busy",
+        "B：To complain about a delay",
+        "C：To request that the listener return the next day",
+        "D：To suggest（表明/建议） that the listener apply"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 8 段：in working for us? As it turns out, our junior designer has just",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 8 段：in working for us? As it turns out, our junior designer has just",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“As it turns out, our junior designer has just”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To suggest that the listener apply）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "suggest",
+            "meaning": "本题重点词；结合正确选项理解：To suggest（表明/建议） that the listener apply"
+          },
+          {
+            "term": "listener",
+            "meaning": "本题重点词；结合正确选项理解：To suggest（表明/建议） that the listener apply"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To suggest that the listener apply",
+            "meaning": "正确选项中的重点搭配：To suggest（表明/建议） that the listener apply"
+          }
+        ]
+      },
       "item_id": 85,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

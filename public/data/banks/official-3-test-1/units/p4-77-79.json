@@ -11,11 +11,13 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 61,
+    "score": 69,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "主旨 / 目的题",
+      "主旨场景",
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +33,9 @@
       "asset_key": "official-3-test-1/audio/part4/q077-079-questions.mp3",
       "exists": true
     },
-    "transcript": "message.\nEw\nHi, my name is Tomoko. ®! saw an advertisement f\nyour motorcycle, and I’m interested in purchasing it.\nhave a concern about the price. it's a little high\nconsidering it’s a few years old. Could you lower t\nprice by 200 dollars? | also read in the ad that you’d\nwilling to drop the motorcycle off at the buyer’s hous\nlive an hour away so | don’t want to make you driv\nfar. my friend and | can come pick it up on Saturd:\nyou accept my offer. Give me a call back tonight at !\nThanks."
+    "transcript": "message.\nEw\nHi, my name is Tomoko. ®! saw an advertisement f\nyour motorcycle, and I’m interested in purchasing it.\nhave a concern about the price. it's a little high\nconsidering it’s a few years old. Could you lower t\nprice by 200 dollars? | also read in the ad that you’d\nwilling to drop the motorcycle off at the buyer’s hous\nlive an hour away so | don’t want to make you driv\nfar. my friend and | can come pick it up on Saturd:\nyou accept my offer. Give me a call back tonight at !\nThanks.",
+    "transcript_translation": "信息。\n\n嗨，我叫友子。我在您的摩托车广告上看到了，我对购买它感兴趣。我对价格有点担心，考虑到它已经有几年了，有点太高了。您能把价格降200美元吗？另外，我在广告里看到您愿意把摩托车送到买家住处，离我家开车一个小时的路程，所以我不想让您开太远。我的朋友可以周六来取。如果您接受我的提议，请今晚给我回电话。谢谢。",
+    "content_translation": "信息。\n\n嗨，我叫友子。我在您的摩托车广告上看到了，我对购买它感兴趣。我对价格有点担心，考虑到它已经有几年了，有点太高了。您能把价格降200美元吗？另外，我在广告里看到您愿意把摩托车送到买家住处，离我家开车一个小时的路程，所以我不想让您开太远。我的朋友可以周六来取。如果您接受我的提议，请今晚给我回电话。谢谢。"
   },
   "items": [
     {
@@ -44,15 +48,50 @@
       "answer": "B",
       "question": "Why is the speaker calling? =",
       "answer_explain": "原文依据：听力原文中提到“saw an advertisement f”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To inquire about an advertisement ie）。",
+      "question_translation": "说话者打电话的原因是？",
+      "choice_translations": [
+        "A：报告一起事故",
+        "B：询问一个广告",
+        "C：指出一个错误",
+        "D：提供驾驶路线"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "inquire",
+            "meaning": "出现在本题正确表达中：询问一个广告"
+          },
+          {
+            "term": "about",
+            "meaning": "出现在本题正确表达中：询问一个广告"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To inquire about an advertisement ie",
+            "meaning": "询问一个广告"
+          }
+        ]
+      },
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：message.",
+      "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：message.",
+        "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“saw an advertisement f”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To inquire about an advertisement ie）。"
+      },
       "item_id": 77,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +108,49 @@
       "answer": "A",
       "question": "What does the speaker say she is concerned about?",
       "answer_explain": "原文依据：听力原文中提到“have a concern about the price.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Aselling price）。",
+      "question_translation": "说话者担心什么？",
+      "choice_translations": [
+        "A：销售价格",
+        "B：送货成本",
+        "C：申请要求",
+        "D：活动时间"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "aselling",
+            "meaning": "出现在本题正确表达中：销售价格"
+          },
+          {
+            "term": "price",
+            "meaning": "出现在本题正确表达中：销售价格"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Aselling price",
+            "meaning": "销售价格"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：message.",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：message.",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“have a concern about the price.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Aselling price）。"
+      },
       "item_id": 78,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -94,15 +167,49 @@
       "answer": "C",
       "question": "What does the speaker offer to do?",
       "answer_explain": "原文依据：听力原文中提到“my friend and | can come pick it up on Saturd:”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Pick up an item）。",
+      "question_translation": "说话者提议做什么？",
+      "choice_translations": [
+        "A：试用产品",
+        "B：发送合同邮件",
+        "C：取走物品",
+        "D：提供照片"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "pick",
+            "meaning": "出现在本题正确表达中：取走物品"
+          },
+          {
+            "term": "item",
+            "meaning": "出现在本题正确表达中：取走物品"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Pick up an item",
+            "meaning": "取走物品"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 11 段：you accept my offer. Give me a call back tonight at !",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 11 段：you accept my offer. Give me a call back tonight at !",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“my friend and | can come pick it up on Saturd:”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Pick up an item）。"
+      },
       "item_id": 79,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

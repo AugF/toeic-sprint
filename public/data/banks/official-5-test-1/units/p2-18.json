@@ -15,7 +15,7 @@
     "label": "单题训练",
     "reason": "按该题的高频考点和能力迁移价值排序。",
     "focus_tags": [
-      "陈述 / 请求应答",
+      "陈述 / 请求应答题",
       "间接应答",
       "语用判断"
     ],
@@ -27,7 +27,9 @@
       "path": "audio/part2/q018.mp3",
       "asset_key": "official-5-test-1/audio/part2/q018.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：We really need to find an experienced plumber.",
+    "content_translation": "中文辅助（离线预处理）：We really need to find an experienced plumber."
   },
   "items": [
     {
@@ -42,15 +44,49 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“We really need to find an experienced plumber.”，自然应答是“You're right- I know one we can call.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You're right- I know one we can call.）。",
+      "question_translation": "中文辅助（离线预处理）：We really need to find an experienced plumber.",
+      "choice_translations": [
+        "A：Do you remember where（哪里） you left the key?",
+        "B：I'd like more coffee, thanks.",
+        "C：You're right- I know one we can call."
+      ],
+      "question_type": "陈述 / 请求应答题",
+      "evidence": "参考原文第 1 段：We really need to find an experienced plumber.",
+      "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "陈述 / 请求应答题",
+        "evidence": "参考原文第 1 段：We really need to find an experienced plumber.",
+        "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“We really need to find an experienced plumber.”，自然应答是“You're right- I know one we can call.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You're right- I know one we can call.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "you're",
+            "meaning": "本题重点词；结合正确选项理解：You're right- I know one we can call."
+          },
+          {
+            "term": "right-",
+            "meaning": "本题重点词；结合正确选项理解：You're right- I know one we can call."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "You're right- I know one we can call.",
+            "meaning": "正确选项中的重点搭配：You're right- I know one we can call."
+          }
+        ]
+      },
       "item_id": 18,
-      "question_type": "陈述 / 请求应答",
       "priority": {
         "level": "P1",
         "score": 85,
-        "label": "陈述 / 请求应答",
+        "label": "陈述 / 请求应答题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "陈述 / 请求应答",
+          "陈述 / 请求应答题",
           "间接应答",
           "语用判断"
         ],

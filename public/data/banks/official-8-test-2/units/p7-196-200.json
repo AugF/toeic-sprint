@@ -11,15 +11,16 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 76,
+    "score": 78,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "细节定位题",
+      "主旨 / 目的题",
+      "细节题",
       "多文本语境",
-      "推断 / 隐含义题",
-      "语境推断"
+      "推断题",
+      "语境推断",
+      "否定事实题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -37,7 +38,9 @@
         "exists": true
       }
     ],
-    "passage": "http://www.btamari.ca\nHome\nNews\nCustomer Accounts\nCatalog\nThe B. Tamari Company delivers supplies for workplace break rooms to\nlocations throughout Canada. We are now adding new cities. Beginning\n1 September, we will be delivering our quality coffee products and other\nfood service items to Edmonton and Vancouver! Customers in these\ntwo cities can open an account with us and receive 25 percent off the\ncost of their first month of deliveries.\nTo:\nDashay Wachs <dwachs@ntr.ca>\nFrom:\nLeonora Tompkins <Itompkins@btamari.ca>\nSubject:\nReporting time and place\nDate:\n21 September\nAttachment:\nl Delivery guidelines\nDear Mr. Wachs:\nWelcome to the B. Tamari Company! We are very selective about our delivery personnel\nbecause they interact with customers directly and represent the face of our company.\nPlease review the attached guidelines that delivery drivers must follow. You are asked to\nreport to 417 Front Street, Vancouver, at 6:30 A.M. on Monday, 28 September, to receive\nyour unitorm and company identification badge. You will begin training by accompanying\nan experienced delivery driver, Jettrey Bahr, for one week. Mr. Bahr will meet you at our\nFront Street facility on Monday and will help you get started.\nSincerely.\nLeonora Tompkins\nHuman Resources\n110\nwww.vancouverreviews.ca\nIt was wonderful to learn that B. Tamari Company was coming to\nVancouver-and I have not been disappointed. Every Tuesday morning\nMr. Wachs arrives to restock the break room at my workplace. He checks\nthe inventory, examines the coffee machine, and always asks me and\nanother administrative assistant if we need anything else. He is cheerful\nand efficient. Although our contract will be a bit expensive for my\norganization, I don't have to think about the break-room supplies\nat all because everything is well taken care of.\n—Ilene Prior\n25 October"
+    "passage": "http://www.btamari.ca\nHome\nNews\nCustomer Accounts\nCatalog\nThe B. Tamari Company delivers supplies for workplace break rooms to\nlocations throughout Canada. We are now adding new cities. Beginning\n1 September, we will be delivering our quality coffee products and other\nfood service items to Edmonton and Vancouver! Customers in these\ntwo cities can open an account with us and receive 25 percent off the\ncost of their first month of deliveries.\nTo:\nDashay Wachs <dwachs@ntr.ca>\nFrom:\nLeonora Tompkins <Itompkins@btamari.ca>\nSubject:\nReporting time and place\nDate:\n21 September\nAttachment:\nl Delivery guidelines\nDear Mr. Wachs:\nWelcome to the B. Tamari Company! We are very selective about our delivery personnel\nbecause they interact with customers directly and represent the face of our company.\nPlease review the attached guidelines that delivery drivers must follow. You are asked to\nreport to 417 Front Street, Vancouver, at 6:30 A.M. on Monday, 28 September, to receive\nyour unitorm and company identification badge. You will begin training by accompanying\nan experienced delivery driver, Jettrey Bahr, for one week. Mr. Bahr will meet you at our\nFront Street facility on Monday and will help you get started.\nSincerely.\nLeonora Tompkins\nHuman Resources\n110\nwww.vancouverreviews.ca\nIt was wonderful to learn that B. Tamari Company was coming to\nVancouver-and I have not been disappointed. Every Tuesday morning\nMr. Wachs arrives to restock the break room at my workplace. He checks\nthe inventory, examines the coffee machine, and always asks me and\nanother administrative assistant if we need anything else. He is cheerful\nand efficient. Although our contract will be a bit expensive for my\norganization, I don't have to think about the break-room supplies\nat all because everything is well taken care of.\n—Ilene Prior\n25 October",
+    "passage_translation": "中文辅助（离线预处理）：http://www.btamari.ca\nHome\nNews\nCustomer（顾客） Accounts\nCatalog\nThe B.\nTamari Company（公司） delivers supplies for workplace break rooms to\nlocations throughout Canada.\nWe are now adding new cities.\nBeginning\n1 September, we will be delivering our quality coffee products and other\nfood service（服务） items to Edmonton and Vancouver!\nCustomers in these\ntwo cities can open an account with us and receive 25 percent off the\ncost of their first month of deliveries.\nTo:\nDashay Wachs <dwachs@ntr.ca>\nFrom:\nLeonora Tompkins <Itompkins@btamari.ca>\nSubject:\nReporting time and place\nDate:\n21 September\nAttachment:\nl Delivery guidelines\nDear Mr.\nWachs:\nWelcome to the B.\nTamari Company（公司）!\nWe are very selective about our delivery personnel\nbecause they interact with customers directly and represent the face of our company（公司）.\nPlease（请） review the attached guidelines that delivery drivers must follow.\nYou are asked to\nreport to 417 Front Street, Vancouver, at 6:30 A.M.\non Monday, 28 September, to receive\nyour unitorm and company（公司） identification badge.\nYou will begin training by accompanying\nan experienced delivery driver, Jettrey Bahr, for one week.\nMr.\nBahr will meet you at our\nFront Street facility on Monday and will help you get started.\nSincerely.\nLeonora Tompkins\nHuman Resources\n110\nwww.vancouverreviews.ca\nIt was wonderful to learn that B.\nTamari Company（公司） was coming to\nVancouver-and I have not been disappointed.\nEvery Tuesday morning\nMr.\nWachs arrives to restock the break room at my workplace.\nHe checks\nthe inventory, examines the coffee machine, and always asks me and\nanother administrative assistant if we need anything else.\nHe is cheerful\nand efficient.\nAlthough our contract will be a bit expensive for my\norganization, I don't have to think about the break-room supplies\nat all because everything is well taken care of.\n—Ilene Prior\n25 October",
+    "content_translation": "中文辅助（离线预处理）：http://www.btamari.ca\nHome\nNews\nCustomer（顾客） Accounts\nCatalog\nThe B.\nTamari Company（公司） delivers supplies for workplace break rooms to\nlocations throughout Canada.\nWe are now adding new cities.\nBeginning\n1 September, we will be delivering our quality coffee products and other\nfood service（服务） items to Edmonton and Vancouver!\nCustomers in these\ntwo cities can open an account with us and receive 25 percent off the\ncost of their first month of deliveries.\nTo:\nDashay Wachs <dwachs@ntr.ca>\nFrom:\nLeonora Tompkins <Itompkins@btamari.ca>\nSubject:\nReporting time and place\nDate:\n21 September\nAttachment:\nl Delivery guidelines\nDear Mr.\nWachs:\nWelcome to the B.\nTamari Company（公司）!\nWe are very selective about our delivery personnel\nbecause they interact with customers directly and represent the face of our company（公司）.\nPlease（请） review the attached guidelines that delivery drivers must follow.\nYou are asked to\nreport to 417 Front Street, Vancouver, at 6:30 A.M.\non Monday, 28 September, to receive\nyour unitorm and company（公司） identification badge.\nYou will begin training by accompanying\nan experienced delivery driver, Jettrey Bahr, for one week.\nMr.\nBahr will meet you at our\nFront Street facility on Monday and will help you get started.\nSincerely.\nLeonora Tompkins\nHuman Resources\n110\nwww.vancouverreviews.ca\nIt was wonderful to learn that B.\nTamari Company（公司） was coming to\nVancouver-and I have not been disappointed.\nEvery Tuesday morning\nMr.\nWachs arrives to restock the break room at my workplace.\nHe checks\nthe inventory, examines the coffee machine, and always asks me and\nanother administrative assistant if we need anything else.\nHe is cheerful\nand efficient.\nAlthough our contract will be a bit expensive for my\norganization, I don't have to think about the break-room supplies\nat all because everything is well taken care of.\n—Ilene Prior\n25 October"
   },
   "items": [
     {
@@ -50,15 +53,49 @@
       "answer": "A",
       "question": "What is the purpose of the first Web page?",
       "answer_explain": "原文依据：篇章中可定位到“food service items to Edmonton and Vancouver!”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（To announce new service areas）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is the purpose（目的） of the first Web page?",
+      "choice_translations": [
+        "A：To announce new service（服务） areas",
+        "B：To explain a break-room policy",
+        "C：To advertise an accounting service（服务）",
+        "D：To describe the history of a company（公司）"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 11 段：cost of their first month of deliveries.",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 11 段：cost of their first month of deliveries.",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“food service items to Edmonton and Vancouver!”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（To announce new service areas）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "announce",
+            "meaning": "本题重点词；结合正确选项理解：To announce new service（服务） areas"
+          },
+          {
+            "term": "service",
+            "meaning": "本题重点词；结合正确选项理解：To announce new service（服务） areas"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To announce new service areas",
+            "meaning": "正确选项中的重点搭配：To announce new service（服务） areas"
+          }
+        ]
+      },
       "item_id": 196,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
         "level": "P2",
         "score": 70,
-        "label": "主旨 / 目的 / 场景题",
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -75,15 +112,49 @@
       "answer": "B",
       "question": "What has been sent with the e-mail?",
       "answer_explain": "原文依据：篇章中可定位到“two cities can open an account with us and receive 25 percent off the”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（A list of instructions）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） has been sent with the e-mail?",
+      "choice_translations": [
+        "A：A parking permit",
+        "B：A list of instructions",
+        "C：A building pass",
+        "D：A summary of company（公司） benefits"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：http://www.btamari.ca",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：http://www.btamari.ca",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“two cities can open an account with us and receive 25 percent off the”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（A list of instructions）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "list",
+            "meaning": "本题重点词；结合正确选项理解：A list of instructions"
+          },
+          {
+            "term": "instructions",
+            "meaning": "本题重点词；结合正确选项理解：A list of instructions"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "list of instructions",
+            "meaning": "正确选项中的重点搭配：A list of instructions"
+          }
+        ]
+      },
       "item_id": 197,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "多文本语境"
         ],
         "scope": "item",
@@ -101,15 +172,49 @@
       "answer": "D",
       "question": "What is suggested about Mr. Wachs?",
       "answer_explain": "原文依据：篇章中可定位到“Reporting time and place”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（He will be reporting to a newly opened）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is suggested about Mr.\nWachs?",
+      "choice_translations": [
+        "A：He lives in Edmonton.",
+        "B：He has prior experience as a delivery driver.",
+        "C：He has just received a job promotion.",
+        "D：He will be reporting to a newly opened"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 13 段：Dashay Wachs <dwachs@ntr.ca>",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 13 段：Dashay Wachs <dwachs@ntr.ca>",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Reporting time and place”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（He will be reporting to a newly opened）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "reporting",
+            "meaning": "本题重点词；结合正确选项理解：He will be reporting to a newly opened"
+          },
+          {
+            "term": "newly",
+            "meaning": "本题重点词；结合正确选项理解：He will be reporting to a newly opened"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "He will be reporting to a newly opened",
+            "meaning": "正确选项中的重点搭配：He will be reporting to a newly opened"
+          }
+        ]
+      },
       "item_id": 198,
-      "question_type": "推断 / 隐含义题",
       "priority": {
         "level": "P1",
         "score": 83,
-        "label": "推断 / 隐含义题",
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "语境推断"
         ],
         "scope": "item",
@@ -127,16 +232,50 @@
       "answer": "A",
       "question": "What is most likely true about Ms. Prior's workplace?",
       "answer_explain": "原文依据：篇章中可定位到“food service items to Edmonton and Vancouver!”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（It benefited from a monthlong service discount. N）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is most likely（最可能） true about Ms.\nPrior's workplace?",
+      "choice_translations": [
+        "A：It benefited from a monthlong service（服务） discount.\nN",
+        "B：It requested a change in delivery personnel.",
+        "C：Its break room is not used very frequently.",
+        "D：Its offices have just moved to Front"
+      ],
+      "question_type": "否定事实题",
+      "evidence": "参考原文第 6 段：The B. Tamari Company delivers supplies for workplace break rooms to",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 6 段：The B. Tamari Company delivers supplies for workplace break rooms to",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“food service items to Edmonton and Vancouver!”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（It benefited from a monthlong service discount. N）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "benefited",
+            "meaning": "本题重点词；结合正确选项理解：It benefited from a monthlong service（服务） discount.\nN"
+          },
+          {
+            "term": "monthlong",
+            "meaning": "本题重点词；结合正确选项理解：It benefited from a monthlong service（服务） discount.\nN"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It benefited from a monthlong service discount. N",
+            "meaning": "正确选项中的重点搭配：It benefited from a monthlong service（服务） discount.\nN"
+          }
+        ]
+      },
       "item_id": 199,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "否定事实题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "多文本语境"
+          "否定事实题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -153,15 +292,49 @@
       "answer": "B",
       "question": "What does Ms. Prior indicate in the second Web page?",
       "answer_explain": "原文依据：篇章中可定位到“Wachs arrives to restock the break room at my workplace.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（Mr. Wachs has made her job easier.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does Ms.\nPrior indicate in the second Web page?",
+      "choice_translations": [
+        "A：An order（订单） for supplies was incorrect.",
+        "B：Mr.\nWachs has made her job easier.",
+        "C：She checks the break-room inventory weekly.",
+        "D：She would prefer a later delivery time."
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 43 段：—Ilene Prior",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 43 段：—Ilene Prior",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Wachs arrives to restock the break room at my workplace.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（Mr. Wachs has made her job easier.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "wachs",
+            "meaning": "本题重点词；结合正确选项理解：Mr.\nWachs has made her job easier."
+          },
+          {
+            "term": "made",
+            "meaning": "本题重点词；结合正确选项理解：Mr.\nWachs has made her job easier."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Mr. Wachs has made her job easier.",
+            "meaning": "正确选项中的重点搭配：Mr.\nWachs has made her job easier."
+          }
+        ]
+      },
       "item_id": 200,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "多文本语境"
         ],
         "scope": "item",

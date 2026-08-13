@@ -14,6 +14,7 @@ const to=get("--to","");
 const onlyPart=Number(get("--part","0"));
 const endpoint=get("--endpoint","http://127.0.0.1:11434/api/chat");
 const letters="ABCD";
+let activeBank;
 
 const files=[];
 for(const volume of fs.readdirSync(banksRoot,{withFileTypes:true}).filter(x=>x.isDirectory()&&/^off?icial_\d+$/.test(x.name)).sort(natural)){
@@ -32,11 +33,14 @@ async function enrichBank(file){
   const bank=fs.existsSync(file.target)?JSON.parse(fs.readFileSync(file.target,"utf8")):structuredClone(raw);
   if(!Array.isArray(bank.parts)||bank.parts.length!==7)throw new Error(`${file.rel} 不是完整 7 Part 题库`);
   console.log(`\n[${file.rel}]`);
+  activeBank={file,bank};
   for(const part of bank.parts){
     if(onlyPart&&part.part!==onlyPart)continue;
     const missing=part.questions.filter(group=>!translationComplete(part.part,group));
     if(!missing.length){console.log(`  Part ${part.part}: 已完成`);continue}
-    const chunks=chunkGroups(missing,18000);
+    // Smaller chunks complete faster, stay well inside the 16K context, and
+    // provide much finer-grained resumability for long offline runs.
+    const chunks=chunkGroups(missing,7500);
     for(let index=0;index<chunks.length;index++){
       const patch=await translateChunk(file.rel,part.part,chunks[index]);
       mergeChunk(part.part,chunks[index],patch);
@@ -52,6 +56,7 @@ async function enrichBank(file){
   const all=bank.parts.flatMap(p=>p.questions.flatMap(g=>g.items||[g]));
   if(all.length!==200)throw new Error(`${file.rel} 题数异常：${all.length}`);
   writeAtomic(file.target,bank);
+  activeBank=undefined;
 }
 
 function natural(a,b){return a.name.localeCompare(b.name,undefined,{numeric:true})}
@@ -74,23 +79,47 @@ function compactGroup(group){return{
 }}
 async function translateChunk(bankId,part,groups,attempt=1){
   const payload=groups.map(compactGroup);
-  const prompt=`你是严谨的 TOEIC 英中翻译编辑。请翻译下面 Official TOEIC 第 ${part} 部分的材料。\n\n规则：\n1. 只翻译，不改写、不解题、不补充原文没有的信息；人名、公司名可保留英文。\n2. 即使 OCR 有少量噪声，也尽量根据可理解内容翻译；完全无法辨认时写“[原文 OCR 不清]”。\n3. content_translation 翻译每组 content 的全部内容并保留换行。\n4. 每道题的 question_translation 翻译题干；没有题干时返回空字符串。\n5. choice_translations 必须与 choices 等长、顺序一致，只放中文正文，不加 A/B/C/D。\n6. ID、数组数量和顺序必须与输入完全一致。\n7. 只返回合法 JSON，格式：{"groups":[{"id":"...","content_translation":"...","items":[{"id":1,"question_translation":"...","choice_translations":["..."]}]}]}。\n\n输入：${JSON.stringify(payload)}`;
+  const prompt=`把以下 TOEIC 英文忠实翻译为简体中文。OCR 无法辨认处写“[原文 OCR 不清]”。必须翻译完整 content、题干和全部选项，不解题、不增删，ID/数组顺序和数量保持不变。只返回合法 JSON：{"groups":[{"id":"...","content_translation":"...","items":[{"id":1,"question_translation":"...","choice_translations":["..."]}]}]}。输入：${JSON.stringify(payload)}`;
   try{
-    const response=await fetch(endpoint,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({model,stream:false,think:false,format:"json",keep_alive:"30m",messages:[{role:"user",content:prompt}],options:{temperature:0.05,num_ctx:16384,num_predict:10000}})});
+    const controller=new AbortController();
+    const timeout=setTimeout(()=>controller.abort(),8*60*1000);
+    let response;
+    try{response=await fetch(endpoint,{method:"POST",signal:controller.signal,headers:{"content-type":"application/json"},body:JSON.stringify({model,stream:false,think:false,format:"json",keep_alive:"30m",messages:[{role:"user",content:prompt}],options:{temperature:0.05,num_ctx:16384,num_predict:Math.min(7000,Math.max(1800,Math.ceil(JSON.stringify(payload).length*.8)))}})})}
+    finally{clearTimeout(timeout)}
     if(!response.ok)throw new Error(`Ollama HTTP ${response.status}: ${await response.text()}`);
     const body=await response.json();
     const parsed=parseJson(body.message?.content||"");
     validatePatch(groups,parsed);
     return parsed;
   }catch(error){
+    if(isTransportError(error)&&attempt<4){
+      const delay=[5000,15000,45000][attempt-1];
+      console.warn(`  ${bankId} Part ${part} 传输失败，${delay/1000} 秒后重试 ${attempt}/3：${error.message}`);
+      await new Promise(resolve=>setTimeout(resolve,delay));
+      return translateChunk(bankId,part,groups,attempt+1);
+    }
     if(groups.length>1){
       console.warn(`  ${bankId} Part ${part} 批次校验失败，自动拆分：${error.message}`);
-      const middle=Math.ceil(groups.length/2),left=await translateChunk(bankId,part,groups.slice(0,middle)),right=await translateChunk(bankId,part,groups.slice(middle));
+      const middle=Math.ceil(groups.length/2),leftGroups=groups.slice(0,middle),rightGroups=groups.slice(middle);
+      const left=await translateChunk(bankId,part,leftGroups);
+      persistPartial(part,leftGroups,left);
+      const right=await translateChunk(bankId,part,rightGroups);
+      persistPartial(part,rightGroups,right);
       return {groups:[...left.groups,...right.groups]};
     }
     if(attempt<3){console.warn(`  ${bankId} Part ${part} 组 ${groups[0].id} 重试 ${attempt}/3：${error.message}`);return translateChunk(bankId,part,groups,attempt+1)}
     throw error;
   }
+}
+function isTransportError(error){return /fetch failed|abort|ECONN|socket|HTTP 5\d\d/i.test(String(error?.message||error))}
+function persistPartial(part,groups,patch){
+  if(!activeBank)return;
+  mergeChunk(part,groups,patch);
+  finishDeterministicFields(part,groups);
+  activeBank.bank.schema_version="2.2";
+  activeBank.bank.updated_for="multibank_priority_drills";
+  activeBank.bank.enrichment={translation_model:model,translation_source:"local_ollama",generated_at:new Date().toISOString(),source_file:"question.json"};
+  writeAtomic(activeBank.file.target,activeBank.bank);
 }
 function parseJson(value){
   const clean=value.trim().replace(/^```(?:json)?\s*/i,"").replace(/\s*```$/,"");

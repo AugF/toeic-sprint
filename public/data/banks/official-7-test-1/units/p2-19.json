@@ -26,7 +26,9 @@
       "path": "audio/part2/q019.mp3",
       "asset_key": "official-7-test-1/audio/part2/q019.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：Are you available（可用的） at three P.M.\non Thursday for a final briefing?",
+    "content_translation": "中文辅助（离线预处理）：Are you available（可用的） at three P.M.\non Thursday for a final briefing?"
   },
   "items": [
     {
@@ -41,8 +43,33 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Are you available at three P.M. on Thursday for a final briefing?”，自然应答是“Yes, I can be there.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, I can be there.）。",
-      "item_id": 19,
+      "question_translation": "中文辅助（离线预处理）：Are you available（可用的） at three P.M.\non Thursday for a final briefing?",
+      "choice_translations": [
+        "A：The fifth-floor security desk.",
+        "B：Yes, I can be there.",
+        "C：I'm sorry, it's out of stock."
+      ],
       "question_type": "一般疑问句",
+      "evidence": "参考原文第 1 段：Are you available at three P.M. on Thursday for a final briefing?",
+      "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "一般疑问句",
+        "evidence": "参考原文第 1 段：Are you available at three P.M. on Thursday for a final briefing?",
+        "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“Are you available at three P.M. on Thursday for a final briefing?”，自然应答是“Yes, I can be there.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, I can be there.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [],
+        "collocations": [
+          {
+            "phrase": "Yes, I can be there.",
+            "meaning": "正确选项中的重点搭配：Yes, I can be there."
+          }
+        ]
+      },
+      "item_id": 19,
       "priority": {
         "level": "P2",
         "score": 68,

@@ -11,13 +11,15 @@
   "difficulty": "medium",
   "priority": {
     "level": "P1",
-    "score": 83,
+    "score": 89,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "语境语法 / 词汇题",
+      "代词 / 指代题",
+      "跨句判断",
       "整句填入题",
-      "篇章衔接"
+      "篇章衔接",
+      "语境语法 / 词汇题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -30,7 +32,9 @@
         "exists": true
       }
     ],
-    "passage": "Coming into the city of Dahlberg, you will see that the skyline is dominated by a tall,\npyramid-shaped 139.\n-. This unusual building was designed by Finnish architect Erno Tuokkola.\nAlthough he is best known for designing private residences, Mr. Tuokkola also designed several\npublic buildings in Dahlberg. 140.\nFive stories tall and 141.\n-- in 2003, it contains nearly a\nmillion books. It is hard to believe that the building received 142\n•- reviews when it was first built.\nArchitects now rightly praise the building, and it has since become one of the city's best-loved\nlandmarks."
+    "passage": "Coming into the city of Dahlberg, you will see that the skyline is dominated by a tall,\npyramid-shaped 139.\n-. This unusual building was designed by Finnish architect Erno Tuokkola.\nAlthough he is best known for designing private residences, Mr. Tuokkola also designed several\npublic buildings in Dahlberg. 140.\nFive stories tall and 141.\n-- in 2003, it contains nearly a\nmillion books. It is hard to believe that the building received 142\n•- reviews when it was first built.\nArchitects now rightly praise the building, and it has since become one of the city's best-loved\nlandmarks.",
+    "passage_translation": "来到 Dahlberg 市，您会看到天际线由一座高耸的、金字塔形的 139。\n。这座不寻常的建筑由芬兰建筑师 Erno Tuokkola 设计。\n尽管他最出名的是设计私人住宅，但 Mr. Tuokkola 也为 Dahlberg 设计了几座公共建筑。140。\n高五层，并且 141。\n-- 在 2003 年建成，它收藏了近百万本书籍。很难相信这座建筑在建造之初就获得了 142\n•- 的评价。\n如今的建筑师们正确地赞扬着这座建筑，它此后成为了该市最受喜爱的地标之一。",
+    "content_translation": "来到 Dahlberg 市，您会看到天际线由一座高耸的、金字塔形的 139。\n。这座不寻常的建筑由芬兰建筑师 Erno Tuokkola 设计。\n尽管他最出名的是设计私人住宅，但 Mr. Tuokkola 也为 Dahlberg 设计了几座公共建筑。140。\n高五层，并且 141。\n-- 在 2003 年建成，它收藏了近百万本书籍。很难相信这座建筑在建造之初就获得了 142\n•- 的评价。\n如今的建筑师们正确地赞扬着这座建筑，它此后成为了该市最受喜爱的地标之一。"
   },
   "items": [
     {
@@ -42,15 +46,45 @@
       ],
       "answer": "B",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“pyramid-shaped 139.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：B（structure）。",
+      "choice_translations": [
+        "A：15",
+        "B：结构",
+        "C：标志结构 这不样的",
+        "D：山丘 * t 来到"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "structure",
+            "meaning": "出现在本题正确表达中：结构"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "structure",
+            "meaning": "结构"
+          }
+        ]
+      },
+      "question_type": "代词 / 指代题",
+      "evidence": "参考原文第 1 段：Coming into the city of Dahlberg, you will see that the skyline is dominated by a tall,",
+      "strategy": "本题属于代词 / 指代题。先看空格所在句，再检查前后句的指代、时态和逻辑衔接，避免只凭单个词作答。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "代词 / 指代题",
+        "evidence": "参考原文第 1 段：Coming into the city of Dahlberg, you will see that the skyline is dominated by a tall,",
+        "strategy": "本题属于代词 / 指代题。先看空格所在句，再检查前后句的指代、时态和逻辑衔接，避免只凭单个词作答。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“pyramid-shaped 139.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：B（structure）。"
+      },
       "item_id": 139,
-      "question_type": "语境语法 / 词汇题",
       "priority": {
-        "level": "P2",
-        "score": 62,
-        "label": "语境语法 / 词汇题",
+        "level": "P1",
+        "score": 86,
+        "label": "代词 / 指代题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "语境语法 / 词汇题"
+          "代词 / 指代题",
+          "跨句判断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -66,8 +100,41 @@
       ],
       "answer": "A",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“140.”。选择理由：该句承接前文并为后文提供必要信息，放入后篇章逻辑和指代均连贯。正确答案：A（The Pink Pyramid, as it is often called, is home to the city's Central Library.）。",
-      "item_id": 140,
+      "choice_translations": [
+        "A：被称为粉色金字塔的这里是该市中央图书馆所在地。",
+        "B：他的定制住宅遍布芬兰各地。",
+        "C：Dahlberg 位于两片湖泊之间的狭长地带。",
+        "D：Tuokkola 从未获得名声"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "pink",
+            "meaning": "出现在本题正确表达中：被称为粉色金字塔的这里是该市中央图书馆所在地。"
+          },
+          {
+            "term": "pyramid",
+            "meaning": "出现在本题正确表达中：被称为粉色金字塔的这里是该市中央图书馆所在地。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "The Pink Pyramid, as it is often called, is home to the city's Central Library.",
+            "meaning": "被称为粉色金字塔的这里是该市中央图书馆所在地。"
+          }
+        ]
+      },
       "question_type": "整句填入题",
+      "evidence": "参考原文第 1 段：Coming into the city of Dahlberg, you will see that the skyline is dominated by a tall,",
+      "strategy": "本题属于整句填入题。先看空格所在句，再检查前后句的指代、时态和逻辑衔接，避免只凭单个词作答。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "整句填入题",
+        "evidence": "参考原文第 1 段：Coming into the city of Dahlberg, you will see that the skyline is dominated by a tall,",
+        "strategy": "本题属于整句填入题。先看空格所在句，再检查前后句的指代、时态和逻辑衔接，避免只凭单个词作答。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“140.”。选择理由：该句承接前文并为后文提供必要信息，放入后篇章逻辑和指代均连贯。正确答案：A（The Pink Pyramid, as it is often called, is home to the city's Central Library.）。"
+      },
+      "item_id": 140,
       "priority": {
         "level": "P1",
         "score": 94,
@@ -91,8 +158,37 @@
       ],
       "answer": "C",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“Five stories tall and 141.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：C（completed）。",
-      "item_id": 141,
+      "choice_translations": [
+        "A：完成",
+        "B：完全",
+        "C：已完成",
+        "D：完整性"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "completed",
+            "meaning": "出现在本题正确表达中：已完成"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "completed",
+            "meaning": "已完成"
+          }
+        ]
+      },
       "question_type": "语境语法 / 词汇题",
+      "evidence": "参考原文第 1 段：Coming into the city of Dahlberg, you will see that the skyline is dominated by a tall,",
+      "strategy": "本题属于语境语法 / 词汇题。先看空格所在句，再检查前后句的指代、时态和逻辑衔接，避免只凭单个词作答。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "语境语法 / 词汇题",
+        "evidence": "参考原文第 1 段：Coming into the city of Dahlberg, you will see that the skyline is dominated by a tall,",
+        "strategy": "本题属于语境语法 / 词汇题。先看空格所在句，再检查前后句的指代、时态和逻辑衔接，避免只凭单个词作答。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“Five stories tall and 141.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：C（completed）。"
+      },
+      "item_id": 141,
       "priority": {
         "level": "P2",
         "score": 62,
@@ -115,15 +211,45 @@
       ],
       "answer": "D",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“It is hard to believe that the building received 142”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：D（critical）。",
+      "choice_translations": [
+        "A：重要的",
+        "B：独立的",
+        "C：众多的",
+        "D：关键的"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "critical",
+            "meaning": "出现在本题正确表达中：关键的"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "critical",
+            "meaning": "关键的"
+          }
+        ]
+      },
+      "question_type": "代词 / 指代题",
+      "evidence": "参考原文第 1 段：Coming into the city of Dahlberg, you will see that the skyline is dominated by a tall,",
+      "strategy": "本题属于代词 / 指代题。先看空格所在句，再检查前后句的指代、时态和逻辑衔接，避免只凭单个词作答。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "代词 / 指代题",
+        "evidence": "参考原文第 1 段：Coming into the city of Dahlberg, you will see that the skyline is dominated by a tall,",
+        "strategy": "本题属于代词 / 指代题。先看空格所在句，再检查前后句的指代、时态和逻辑衔接，避免只凭单个词作答。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“It is hard to believe that the building received 142”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：D（critical）。"
+      },
       "item_id": 142,
-      "question_type": "语境语法 / 词汇题",
       "priority": {
-        "level": "P2",
-        "score": 62,
-        "label": "语境语法 / 词汇题",
+        "level": "P1",
+        "score": 86,
+        "label": "代词 / 指代题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "语境语法 / 词汇题"
+          "代词 / 指代题",
+          "跨句判断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

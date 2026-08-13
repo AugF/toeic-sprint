@@ -10,14 +10,14 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 78,
+    "level": "P1",
+    "score": 83,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "推断 / 隐含义题",
+      "否定事实题",
       "语境推断",
-      "细节定位题"
+      "推断题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -30,7 +30,9 @@
         "exists": true
       }
     ],
-    "passage": "Ravi Carelli (11:05 A.M.)\nI think we need to do another test run of\nour marketing strategy presentation before\nwe go to Sarsoni Luggage tomorrow. What\ndo you think?\nJeanine Ika (11:07 A.M.)\nIt is a little complicated in places, isn't it?\nRavi Carelli (11:09 A.M.)\nExactly. We want to be as clear and\nsmooth as possible in our delivery. How\nabout this afternoon?\nJeanine Ika (11:12 A.M.)\nIs 3 P.M. a good time for you?\nRavi Carelli (11:15 A.M.)\nThat works. I'll come to your office."
+    "passage": "Ravi Carelli (11:05 A.M.)\nI think we need to do another test run of\nour marketing strategy presentation before\nwe go to Sarsoni Luggage tomorrow. What\ndo you think?\nJeanine Ika (11:07 A.M.)\nIt is a little complicated in places, isn't it?\nRavi Carelli (11:09 A.M.)\nExactly. We want to be as clear and\nsmooth as possible in our delivery. How\nabout this afternoon?\nJeanine Ika (11:12 A.M.)\nIs 3 P.M. a good time for you?\nRavi Carelli (11:15 A.M.)\nThat works. I'll come to your office.",
+    "passage_translation": "中文辅助（离线预处理）：Ravi Carelli (11:05 A.M.)\nI think we need to do another test run of\nour marketing strategy presentation before\nwe go to Sarsoni Luggage tomorrow.\nWhat（什么）\ndo you think?\nJeanine Ika (11:07 A.M.)\nIt is a little complicated in places, isn't it?\nRavi Carelli (11:09 A.M.)\nExactly.\nWe want to be as clear and\nsmooth as possible in our delivery.\nHow（如何）\nabout this afternoon?\nJeanine Ika (11:12 A.M.)\nIs 3 P.M.\na good time for you?\nRavi Carelli (11:15 A.M.)\nThat works.\nI'll come to your office（办公室）.",
+    "content_translation": "中文辅助（离线预处理）：Ravi Carelli (11:05 A.M.)\nI think we need to do another test run of\nour marketing strategy presentation before\nwe go to Sarsoni Luggage tomorrow.\nWhat（什么）\ndo you think?\nJeanine Ika (11:07 A.M.)\nIt is a little complicated in places, isn't it?\nRavi Carelli (11:09 A.M.)\nExactly.\nWe want to be as clear and\nsmooth as possible in our delivery.\nHow（如何）\nabout this afternoon?\nJeanine Ika (11:12 A.M.)\nIs 3 P.M.\na good time for you?\nRavi Carelli (11:15 A.M.)\nThat works.\nI'll come to your office（办公室）."
   },
   "items": [
     {
@@ -43,15 +45,49 @@
       "answer": "B",
       "question": "At 11:07 A.M., what does Ms. Ika most likely mean when she writes, \"It is a little complicated in places, isn't it\"?",
       "answer_explain": "原文依据：篇章中可定位到“It is a little complicated in places, isn't it?”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（She agrees with a suggestion.）。",
+      "question_translation": "中文辅助（离线预处理）：At 11:07 A.M., what（什么） does Ms.\nIka most likely（最可能） mean when（何时） she writes, \"It is a little complicated in places, isn't it\"?",
+      "choice_translations": [
+        "A：She does not understand some directions.",
+        "B：She agrees with a suggestion.",
+        "C：She worked very hard on a task.",
+        "D：She believes some luggage is difficult"
+      ],
+      "question_type": "否定事实题",
+      "evidence": "参考原文第 7 段：It is a little complicated in places, isn't it?",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 7 段：It is a little complicated in places, isn't it?",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“It is a little complicated in places, isn't it?”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（She agrees with a suggestion.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "agrees",
+            "meaning": "本题重点词；结合正确选项理解：She agrees with a suggestion."
+          },
+          {
+            "term": "suggestion",
+            "meaning": "本题重点词；结合正确选项理解：She agrees with a suggestion."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "She agrees with a suggestion.",
+            "meaning": "正确选项中的重点搭配：She agrees with a suggestion."
+          }
+        ]
+      },
       "item_id": 154,
-      "question_type": "推断 / 隐含义题",
       "priority": {
         "level": "P1",
         "score": 83,
-        "label": "推断 / 隐含义题",
+        "label": "否定事实题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "否定事实题",
           "语境推断"
         ],
         "scope": "item",
@@ -69,15 +105,50 @@
       "answer": "D",
       "question": "What is most likely true about Mr. Carelli?",
       "answer_explain": "原文依据：篇章中可定位到“Ravi Carelli (11:05 A.M.)”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（He is a colleague of Ms. Ika's.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is most likely（最可能） true about Mr.\nCarelli?",
+      "choice_translations": [
+        "A：He is Ms.\nIka's client.",
+        "B：He is dissatisfied with Ms.\nIka's work（工作）.",
+        "C：He is an employee（员工） of Sarsoni Luggage.",
+        "D：He is a colleague of Ms.\nIka's."
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Ravi Carelli (11:05 A.M.)",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Ravi Carelli (11:05 A.M.)",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Ravi Carelli (11:05 A.M.)”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（He is a colleague of Ms. Ika's.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "colleague",
+            "meaning": "本题重点词；结合正确选项理解：He is a colleague of Ms.\nIka's."
+          },
+          {
+            "term": "ika's",
+            "meaning": "本题重点词；结合正确选项理解：He is a colleague of Ms.\nIka's."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "He is a colleague of Ms. Ika's.",
+            "meaning": "正确选项中的重点搭配：He is a colleague of Ms.\nIka's."
+          }
+        ]
+      },
       "item_id": 155,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

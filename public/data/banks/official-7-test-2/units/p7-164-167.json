@@ -10,12 +10,15 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P3",
-    "score": 59,
+    "level": "P2",
+    "score": 74,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
+      "主旨 / 目的题",
+      "细节题",
+      "否定事实题",
+      "语境推断",
       "明示定位"
     ],
     "scope": "unit",
@@ -29,7 +32,9 @@
         "exists": true
       }
     ],
-    "passage": "Linda Farr (8:48 A.M.) Megumi and Ricardo, I suggest going to\nSofia's Place for our weekly meeting instead of gathering here in\nour usual conference room. The three of us could easily report on\nprogress made on the Humbert project over lunch. Thoughts?\nMegumi Sugiyama (8:50 A.M.) I could use a break from the office.\nRicardo Thompson (8:51 A.M.) Alright by me. But what about\nstaying close by and going to Crab Bay Café?\nLinda Farr (8:52 A.M.) It's closer, but there's usually a wait because\nseating is limited. I don't want to go over an hour. Plus, I love the\nsalads at Sofias.\nRicardo Thompson (8:53 A.M.) True. They're great.\nMegumi Sugiyama (8:55 A.M.) Sofia's it is then! But could we\nchange the rime? I find our usual meeting time a bit early for lunch.\nLinda Farr (8:56 A.M.) Yes, 11:00 is a bit early for lunch, isn't it?\nOK, what time works best? 11:30? 12:00?\nRicardo Thompson (8:57 A.M.) Hmmm. How about 12:30?\nMegumi Sugiyama (8:58 A.M.) Perfect!\nLinda Farr (8:59 A.M.) Sounds good. See you then!\n• 01"
+    "passage": "Linda Farr (8:48 A.M.) Megumi and Ricardo, I suggest going to\nSofia's Place for our weekly meeting instead of gathering here in\nour usual conference room. The three of us could easily report on\nprogress made on the Humbert project over lunch. Thoughts?\nMegumi Sugiyama (8:50 A.M.) I could use a break from the office.\nRicardo Thompson (8:51 A.M.) Alright by me. But what about\nstaying close by and going to Crab Bay Café?\nLinda Farr (8:52 A.M.) It's closer, but there's usually a wait because\nseating is limited. I don't want to go over an hour. Plus, I love the\nsalads at Sofias.\nRicardo Thompson (8:53 A.M.) True. They're great.\nMegumi Sugiyama (8:55 A.M.) Sofia's it is then! But could we\nchange the rime? I find our usual meeting time a bit early for lunch.\nLinda Farr (8:56 A.M.) Yes, 11:00 is a bit early for lunch, isn't it?\nOK, what time works best? 11:30? 12:00?\nRicardo Thompson (8:57 A.M.) Hmmm. How about 12:30?\nMegumi Sugiyama (8:58 A.M.) Perfect!\nLinda Farr (8:59 A.M.) Sounds good. See you then!\n• 01",
+    "passage_translation": "中文辅助（离线预处理）：Linda Farr (8:48 A.M.) Megumi and Ricardo, I suggest（表明/建议） going to\nSofia's Place for our weekly meeting（会议） instead of gathering here in\nour usual conference room.\nThe three of us could easily report on\nprogress made on the Humbert project over lunch.\nThoughts?\nMegumi Sugiyama (8:50 A.M.) I could use a break from the office（办公室）.\nRicardo Thompson (8:51 A.M.) Alright by me.\nBut what（什么） about\nstaying close by and going to Crab Bay Café?\nLinda Farr (8:52 A.M.) It's closer, but there's usually a wait because\nseating is limited.\nI don't want to go over an hour.\nPlus, I love the\nsalads at Sofias.\nRicardo Thompson (8:53 A.M.) True.\nThey're great.\nMegumi Sugiyama (8:55 A.M.) Sofia's it is then!\nBut could we\nchange the rime?\nI find our usual meeting（会议） time a bit early for lunch.\nLinda Farr (8:56 A.M.) Yes, 11:00 is a bit early for lunch, isn't it?\nOK, what（什么） time works best?\n11:30?\n12:00?\nRicardo Thompson (8:57 A.M.) Hmmm.\nHow（如何） about 12:30?\nMegumi Sugiyama (8:58 A.M.) Perfect!\nLinda Farr (8:59 A.M.) Sounds good.\nSee you then!\n• 01",
+    "content_translation": "中文辅助（离线预处理）：Linda Farr (8:48 A.M.) Megumi and Ricardo, I suggest（表明/建议） going to\nSofia's Place for our weekly meeting（会议） instead of gathering here in\nour usual conference room.\nThe three of us could easily report on\nprogress made on the Humbert project over lunch.\nThoughts?\nMegumi Sugiyama (8:50 A.M.) I could use a break from the office（办公室）.\nRicardo Thompson (8:51 A.M.) Alright by me.\nBut what（什么） about\nstaying close by and going to Crab Bay Café?\nLinda Farr (8:52 A.M.) It's closer, but there's usually a wait because\nseating is limited.\nI don't want to go over an hour.\nPlus, I love the\nsalads at Sofias.\nRicardo Thompson (8:53 A.M.) True.\nThey're great.\nMegumi Sugiyama (8:55 A.M.) Sofia's it is then!\nBut could we\nchange the rime?\nI find our usual meeting（会议） time a bit early for lunch.\nLinda Farr (8:56 A.M.) Yes, 11:00 is a bit early for lunch, isn't it?\nOK, what（什么） time works best?\n11:30?\n12:00?\nRicardo Thompson (8:57 A.M.) Hmmm.\nHow（如何） about 12:30?\nMegumi Sugiyama (8:58 A.M.) Perfect!\nLinda Farr (8:59 A.M.) Sounds good.\nSee you then!\n• 01"
   },
   "items": [
     {
@@ -42,15 +47,49 @@
       "answer": "A",
       "question": "What is indicated about the upcoming meeting?",
       "answer_explain": "原文依据：篇章中可定位到“progress made on the Humbert project over lunch.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（Staff will give updates on a project.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is indicated about the upcoming meeting（会议）?",
+      "choice_translations": [
+        "A：Staff will give updates on a project.",
+        "B：Staff will be joined by several clients.",
+        "C：Staff will celebrate a recent success.",
+        "D：Staff will make some important"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 2 段：Sofia's Place for our weekly meeting instead of gathering here in",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 2 段：Sofia's Place for our weekly meeting instead of gathering here in",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“progress made on the Humbert project over lunch.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（Staff will give updates on a project.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "staff",
+            "meaning": "本题重点词；结合正确选项理解：Staff will give updates on a project."
+          },
+          {
+            "term": "give",
+            "meaning": "本题重点词；结合正确选项理解：Staff will give updates on a project."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Staff will give updates on a project.",
+            "meaning": "正确选项中的重点搭配：Staff will give updates on a project."
+          }
+        ]
+      },
       "item_id": 164,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 70,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -67,15 +106,49 @@
       "answer": "A",
       "question": "At 8:50 A.M., what does Ms. Sugiyama mean when she writes, \"I could use a break from the office\"?",
       "answer_explain": "原文依据：篇章中可定位到“Megumi Sugiyama (8:50 A.M.) I could use a break from the office.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（She approves of meeting elsewhere.）。",
+      "question_translation": "中文辅助（离线预处理）：At 8:50 A.M., what（什么） does Ms.\nSugiyama mean when（何时） she writes, \"I could use a break from the office（办公室）\"?",
+      "choice_translations": [
+        "A：She approves of meeting（会议） elsewhere.",
+        "B：She wants to ask for time off from work（工作）.",
+        "C：She is looking forward to her vacation.",
+        "D：She is happy to run an errand for"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 5 段：Megumi Sugiyama (8:50 A.M.) I could use a break from the office.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 5 段：Megumi Sugiyama (8:50 A.M.) I could use a break from the office.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Megumi Sugiyama (8:50 A.M.) I could use a break from the office.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（She approves of meeting elsewhere.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "approves",
+            "meaning": "本题重点词；结合正确选项理解：She approves of meeting（会议） elsewhere."
+          },
+          {
+            "term": "meeting",
+            "meaning": "本题重点词；结合正确选项理解：She approves of meeting（会议） elsewhere."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "She approves of meeting elsewhere.",
+            "meaning": "正确选项中的重点搭配：She approves of meeting（会议） elsewhere."
+          }
+        ]
+      },
       "item_id": 165,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -92,15 +165,50 @@
       "answer": "D",
       "question": "What concern does Ms. Farr express about Crab Bay Café?",
       "answer_explain": "原文依据：篇章中可定位到“staying close by and going to Crab Bay Café?”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（It cannot accommodate many people.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） concern does Ms.\nFarr express about Crab Bay Café?",
+      "choice_translations": [
+        "A：It is too expensive.",
+        "B：It is somewhat noisy.",
+        "C：It does not offer Internet service（服务）.",
+        "D：It cannot accommodate many people."
+      ],
+      "question_type": "否定事实题",
+      "evidence": "参考原文第 1 段：Linda Farr (8:48 A.M.) Megumi and Ricardo, I suggest going to",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 1 段：Linda Farr (8:48 A.M.) Megumi and Ricardo, I suggest going to",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“staying close by and going to Crab Bay Café?”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（It cannot accommodate many people.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "cannot",
+            "meaning": "本题重点词；结合正确选项理解：It cannot accommodate many people."
+          },
+          {
+            "term": "accommodate",
+            "meaning": "本题重点词；结合正确选项理解：It cannot accommodate many people."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It cannot accommodate many people.",
+            "meaning": "正确选项中的重点搭配：It cannot accommodate many people."
+          }
+        ]
+      },
       "item_id": 166,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "否定事实题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "否定事实题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -117,15 +225,40 @@
       "answer": "A",
       "question": "What time does the group normally meet?",
       "answer_explain": "原文依据：篇章中可定位到“Megumi Sugiyama (8:50 A.M.) I could use a break from the office.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（At 11:00 A.M.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） time does the group normally meet?",
+      "choice_translations": [
+        "A：At 11:00 A.M.",
+        "B：At 11:30 A.M.",
+        "C：At 12:00 noon",
+        "D：At 12:30 P.M."
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Linda Farr (8:48 A.M.) Megumi and Ricardo, I suggest going to",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Linda Farr (8:48 A.M.) Megumi and Ricardo, I suggest going to",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Megumi Sugiyama (8:50 A.M.) I could use a break from the office.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（At 11:00 A.M.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [],
+        "collocations": [
+          {
+            "phrase": "At 11:00 A.M.",
+            "meaning": "正确选项中的重点搭配：At 11:00 A.M."
+          }
+        ]
+      },
       "item_id": 167,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 42,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示定位"
         ],
         "scope": "item",

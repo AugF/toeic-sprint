@@ -27,7 +27,9 @@
       "path": "audio/part2/q020.mp3",
       "asset_key": "official-3-test-2/audio/part2/q020.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：Which page should | turn to in the manual?",
+    "content_translation": "中文辅助（离线预处理）：Which page should | turn to in the manual?"
   },
   "items": [
     {
@@ -42,8 +44,42 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Which page should | turn to in the manual?”，自然应答是“Wait, that’s the wrong manual.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Wait, that’s the wrong manual.）。",
-      "item_id": 20,
+      "question_translation": "中文辅助（离线预处理）：Which page should | turn to in the manual?",
+      "choice_translations": [
+        "A：Make a left just past that stop sign.",
+        "B：Wait, that’s the wrong manual.",
+        "C：Maybe several hours ago."
+      ],
       "question_type": "选择疑问句",
+      "evidence": "参考原文第 1 段：Which page should | turn to in the manual?",
+      "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "选择疑问句",
+        "evidence": "参考原文第 1 段：Which page should | turn to in the manual?",
+        "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“Which page should | turn to in the manual?”，自然应答是“Wait, that’s the wrong manual.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Wait, that’s the wrong manual.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "wait",
+            "meaning": "本题重点词；结合正确选项理解：Wait, that’s the wrong manual."
+          },
+          {
+            "term": "wrong",
+            "meaning": "本题重点词；结合正确选项理解：Wait, that’s the wrong manual."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Wait, that’s the wrong manual.",
+            "meaning": "正确选项中的重点搭配：Wait, that’s the wrong manual."
+          }
+        ]
+      },
+      "item_id": 20,
       "priority": {
         "level": "P1",
         "score": 85,

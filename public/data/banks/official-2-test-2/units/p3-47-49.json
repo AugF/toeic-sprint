@@ -11,13 +11,14 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 69,
+    "score": 66,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "主旨场景",
-      "细节定位题"
+      "细节题",
+      "明示细节",
+      "主旨 / 目的题",
+      "主旨场景"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -33,7 +34,9 @@
       "asset_key": "official-2-test-2/audio/part3/q047-049-questions.mp3",
       "exists": true
     },
-    "transcript": "Hello, this is Kenji Hoshino from Industrial Packaging.\nI’m calling in response to a voicemail message\nreceived from you.\nHi, I'm Karen Reeves, © product director here at\nMartin & West Home Goods. We have a new line of\ndecorative mirrors and ®we were hoping your\ncompany could create environmentally friendly\ncontainers to ship the fragile mirrors.\nll We can absolutely do that for you. We actually\njust won an award for using environmentally friendly\npackaging. And we always recycle our leftover\nsupplies.\nThat's great. Can you meet with me tomorrow morning?\nll Sure, | can stop by around 9:00 A.m. Does that work for\nyou?"
+    "transcript": "Hello, this is Kenji Hoshino from Industrial Packaging.\nI’m calling in response to a voicemail message\nreceived from you.\nHi, I'm Karen Reeves, © product director here at\nMartin & West Home Goods. We have a new line of\ndecorative mirrors and ®we were hoping your\ncompany could create environmentally friendly\ncontainers to ship the fragile mirrors.\nll We can absolutely do that for you. We actually\njust won an award for using environmentally friendly\npackaging. And we always recycle our leftover\nsupplies.\nThat's great. Can you meet with me tomorrow morning?\nll Sure, | can stop by around 9:00 A.m. Does that work for\nyou?",
+    "transcript_translation": "您好，我是来自Industrial Packaging的Kenji Hoshino。我打电话是回复收到的语音留言。\n您好，我是Martin & West Home Goods的产品总监Karen Reeves。我们有一系列新的装饰镜子，希望贵公司能为这些易碎的镜子制作环保包装箱。\n我们可以一定做到。我们最近刚因为使用环保包装而获得了一个奖项。而且我们总是回收剩余的材料。\n太好了。您明天上午能和我见面吗？\n当然可以，我大概九点左右可以过去。您方便吗？",
+    "content_translation": "您好，我是来自Industrial Packaging的Kenji Hoshino。我打电话是回复收到的语音留言。\n您好，我是Martin & West Home Goods的产品总监Karen Reeves。我们有一系列新的装饰镜子，希望贵公司能为这些易碎的镜子制作环保包装箱。\n我们可以一定做到。我们最近刚因为使用环保包装而获得了一个奖项。而且我们总是回收剩余的材料。\n太好了。您明天上午能和我见面吗？\n当然可以，我大概九点左右可以过去。您方便吗？"
   },
   "items": [
     {
@@ -46,16 +49,50 @@
       "answer": "D",
       "question": "What type of product does the woman’s company sell?",
       "answer_explain": "原文依据：听力原文中提到“Martin & West Home Goods.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Home goods）。",
+      "question_translation": "女士的公司销售什么类型的产品？",
+      "choice_translations": [
+        "A：艺术用品",
+        "B：化妆品",
+        "C：有机食品",
+        "D：家居用品"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "home",
+            "meaning": "出现在本题正确表达中：家居用品"
+          },
+          {
+            "term": "goods",
+            "meaning": "出现在本题正确表达中：家居用品"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Home goods",
+            "meaning": "家居用品"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 4 段：Hi, I'm Karen Reeves, © product director here at",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 4 段：Hi, I'm Karen Reeves, © product director here at",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“Martin & West Home Goods.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Home goods）。"
+      },
       "item_id": 47,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
-        "level": "P2",
-        "score": 72,
-        "label": "主旨 / 目的 / 场景题",
+        "level": "P3",
+        "score": 46,
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景"
+          "细节题",
+          "明示细节"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -72,15 +109,50 @@
       "answer": "A",
       "question": "What are the speakers mainly discussing?",
       "answer_explain": "原文依据：听力原文中提到“Hello, this is Kenji Hoshino from Industrial Packaging.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Special packaging）。",
+      "question_translation": "说话者们主要讨论什么？",
+      "choice_translations": [
+        "A：特殊包装",
+        "B：运输路线",
+        "C：有限预算",
+        "D：延误的货物"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "special",
+            "meaning": "出现在本题正确表达中：特殊包装"
+          },
+          {
+            "term": "packaging",
+            "meaning": "出现在本题正确表达中：特殊包装"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Special packaging",
+            "meaning": "特殊包装"
+          }
+        ]
+      },
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：Hello, this is Kenji Hoshino from Industrial Packaging.",
+      "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：Hello, this is Kenji Hoshino from Industrial Packaging.",
+        "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“Hello, this is Kenji Hoshino from Industrial Packaging.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Special packaging）。"
+      },
       "item_id": 48,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -97,15 +169,49 @@
       "answer": "C",
       "question": "Why did the man’s company win an award’",
       "answer_explain": "原文依据：听力原文中提到“just won an award for using environmentally friendly”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It uses environmentally friendly materials.）。",
+      "question_translation": "男士的公司获奖的原因是什么？",
+      "choice_translations": [
+        "A：它为员工提供优厚的福利。",
+        "B：它拥有卓越的客户服务。",
+        "C：它使用环保材料。",
+        "D：它生产高质量的产品。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "uses",
+            "meaning": "出现在本题正确表达中：它使用环保材料。"
+          },
+          {
+            "term": "environmentally",
+            "meaning": "出现在本题正确表达中：它使用环保材料。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It uses environmentally friendly materials.",
+            "meaning": "它使用环保材料。"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 7 段：company could create environmentally friendly",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 7 段：company could create environmentally friendly",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“just won an award for using environmentally friendly”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It uses environmentally friendly materials.）。"
+      },
       "item_id": 49,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

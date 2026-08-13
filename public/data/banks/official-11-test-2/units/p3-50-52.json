@@ -10,13 +10,16 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P3",
-    "score": 59,
+    "level": "P2",
+    "score": 78,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "明示细节"
+      "否定事实题",
+      "细节题",
+      "明示细节",
+      "推断题",
+      "跨句整合"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -32,7 +35,9 @@
       "asset_key": "official-11-test-2/audio/part3/q050-052-questions.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nw Malik and Roberto, I have bad news - Larson\nIncorporated decided not to sponsor our music fest\nthis year.\nm Oh no- Owe were really counting on their contribut\nEw l've already started asking other local businesses t\nconsider sponsoring the event. Ol stopped by Roge\nBookstore this morning, and they donated $500!\nm That's good news. You know, we could also ask the\nnew pharmacy on First Street. Roberto, would yo\nmind giving them a call today?\nm oSure -and actually, my brother's one of the\npharmacists there, so maybe he can help us out."
+    "transcript": "with three speakers.\nw Malik and Roberto, I have bad news - Larson\nIncorporated decided not to sponsor our music fest\nthis year.\nm Oh no- Owe were really counting on their contribut\nEw l've already started asking other local businesses t\nconsider sponsoring the event. Ol stopped by Roge\nBookstore this morning, and they donated $500!\nm That's good news. You know, we could also ask the\nnew pharmacy on First Street. Roberto, would yo\nmind giving them a call today?\nm oSure -and actually, my brother's one of the\npharmacists there, so maybe he can help us out.",
+    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nw Malik and Roberto, I have bad news - Larson\nIncorporated decided not to sponsor our music fest\nthis year.\nm Oh no- Owe were really counting on their contribut\nEw l've already started asking other local businesses t\nconsider sponsoring the event.\nOl stopped by Roge\nBookstore this morning, and they donated $500!\nm That's good news.\nYou know, we could also ask the\nnew pharmacy on First Street.\nRoberto, would yo\nmind giving them a call today?\nm oSure -and actually, my brother's one of the\npharmacists there, so maybe he can help us out.",
+    "content_translation": "中文辅助（离线预处理）：with three speakers.\nw Malik and Roberto, I have bad news - Larson\nIncorporated decided not to sponsor our music fest\nthis year.\nm Oh no- Owe were really counting on their contribut\nEw l've already started asking other local businesses t\nconsider sponsoring the event.\nOl stopped by Roge\nBookstore this morning, and they donated $500!\nm That's good news.\nYou know, we could also ask the\nnew pharmacy on First Street.\nRoberto, would yo\nmind giving them a call today?\nm oSure -and actually, my brother's one of the\npharmacists there, so maybe he can help us out."
   },
   "items": [
     {
@@ -45,15 +50,49 @@
       "answer": "A",
       "question": "What problem does the woman mention?",
       "answer_explain": "原文依据：听力原文与题目“What problem does the woman mention?”对应，官方答案为“A source of funding has been lost.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（A source of funding has been lost.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） problem does the woman（女士） mention?",
+      "choice_translations": [
+        "A：A source of funding has been lost.",
+        "B：An entertainer is not available（可用的）.",
+        "C：Bad weather is predicted.",
+        "D：A permit has not been approved."
+      ],
+      "question_type": "否定事实题",
+      "evidence": "参考原文第 1 段：with three speakers.",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 1 段：with three speakers.",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文与题目“What problem does the woman mention?”对应，官方答案为“A source of funding has been lost.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（A source of funding has been lost.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "source",
+            "meaning": "本题重点词；结合正确选项理解：A source of funding has been lost."
+          },
+          {
+            "term": "funding",
+            "meaning": "本题重点词；结合正确选项理解：A source of funding has been lost."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "source of funding has been lost.",
+            "meaning": "正确选项中的重点搭配：A source of funding has been lost."
+          }
+        ]
+      },
       "item_id": 50,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "否定事实题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "否定事实题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -70,15 +109,45 @@
       "answer": "D",
       "question": "Where did the woman go this morning?",
       "answer_explain": "原文依据：听力原文与题目“Where did the woman go this morning?”对应，官方答案为“To a bookstore”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（To a bookstore）。",
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） did the woman（女士） go this morning?",
+      "choice_translations": [
+        "A：To a community center",
+        "B：To a bank",
+        "C：To a music shop",
+        "D：To a bookstore"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 8 段：Bookstore this morning, and they donated $500!",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 8 段：Bookstore this morning, and they donated $500!",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文与题目“Where did the woman go this morning?”对应，官方答案为“To a bookstore”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（To a bookstore）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "bookstore",
+            "meaning": "本题重点词；结合正确选项理解：To a bookstore"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To a bookstore",
+            "meaning": "正确选项中的重点搭配：To a bookstore"
+          }
+        ]
+      },
       "item_id": 51,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 46,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节"
         ],
         "scope": "item",
@@ -96,15 +165,50 @@
       "answer": "A",
       "question": "What will Roberto most likely do after the meeting?",
       "answer_explain": "原文依据：听力原文与题目“What will Roberto most likely do after the meeting?”对应，官方答案为“Call his brother”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Call his brother）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will Roberto most likely（最可能） do after the meeting（会议）?",
+      "choice_translations": [
+        "A：Call his brother",
+        "B：Check his e-mail",
+        "C：Visit a Web site",
+        "D：Adjust a budget"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 2 段：w Malik and Roberto, I have bad news - Larson",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "推断题",
+        "evidence": "参考原文第 2 段：w Malik and Roberto, I have bad news - Larson",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文与题目“What will Roberto most likely do after the meeting?”对应，官方答案为“Call his brother”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Call his brother）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "call",
+            "meaning": "本题重点词；结合正确选项理解：Call his brother"
+          },
+          {
+            "term": "brother",
+            "meaning": "本题重点词；结合正确选项理解：Call his brother"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Call his brother",
+            "meaning": "正确选项中的重点搭配：Call his brother"
+          }
+        ]
+      },
       "item_id": 52,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

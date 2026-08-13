@@ -15,8 +15,8 @@
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "细节定位题"
+      "主旨 / 目的题",
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -29,7 +29,9 @@
         "exists": true
       }
     ],
-    "passage": "• *E-mail*\nTo:\nAll Staff\nFrom:\nEnid Barton\nDate:\nAugust 18\nSubject:\nInvitation\nMy fellow Grand Investment Trust employees:\nIt has been 25 years since our company was founded. Please join us for a luncheon to\nmark the occasion.\nThe event will take place at L'Espoir Restaurant from noon until 2:30 p.m. on Friday,\nNovember 12. Attendees will receive commemorative desk clocks as gifts.\nTo ensure that we have an accurate count of attendees, please respond to\nllewis@ grandit.com to confirm your attendance.\nWe hope to see you there.\nEnid Barton\nSocial Events Coordinator"
+    "passage": "• *E-mail*\nTo:\nAll Staff\nFrom:\nEnid Barton\nDate:\nAugust 18\nSubject:\nInvitation\nMy fellow Grand Investment Trust employees:\nIt has been 25 years since our company was founded. Please join us for a luncheon to\nmark the occasion.\nThe event will take place at L'Espoir Restaurant from noon until 2:30 p.m. on Friday,\nNovember 12. Attendees will receive commemorative desk clocks as gifts.\nTo ensure that we have an accurate count of attendees, please respond to\nllewis@ grandit.com to confirm your attendance.\nWe hope to see you there.\nEnid Barton\nSocial Events Coordinator",
+    "passage_translation": "中文辅助（离线预处理）：• *E-mail*\nTo:\nAll Staff\nFrom:\nEnid Barton\nDate:\nAugust 18\nSubject:\nInvitation\nMy fellow Grand Investment Trust employees:\nIt has been 25 years since our company（公司） was founded.\nPlease（请） join us for a luncheon to\nmark the occasion.\nThe event will take place at L'Espoir Restaurant from noon until 2:30 p.m.\non Friday,\nNovember 12.\nAttendees will receive commemorative desk clocks as gifts.\nTo ensure that we have an accurate count of attendees, please（请） respond to\nllewis@ grandit.com to confirm your attendance.\nWe hope to see you there.\nEnid Barton\nSocial Events Coordinator",
+    "content_translation": "中文辅助（离线预处理）：• *E-mail*\nTo:\nAll Staff\nFrom:\nEnid Barton\nDate:\nAugust 18\nSubject:\nInvitation\nMy fellow Grand Investment Trust employees:\nIt has been 25 years since our company（公司） was founded.\nPlease（请） join us for a luncheon to\nmark the occasion.\nThe event will take place at L'Espoir Restaurant from noon until 2:30 p.m.\non Friday,\nNovember 12.\nAttendees will receive commemorative desk clocks as gifts.\nTo ensure that we have an accurate count of attendees, please（请） respond to\nllewis@ grandit.com to confirm your attendance.\nWe hope to see you there.\nEnid Barton\nSocial Events Coordinator"
   },
   "items": [
     {
@@ -42,15 +44,49 @@
       "answer": "A",
       "question": "What is the purpose of the event?",
       "answer_explain": "原文依据：篇章中可定位到“The event will take place at L'Espoir Restaurant from noon until 2:30 p.m.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（To celebrate a company's anniversary）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is the purpose（目的） of the event?",
+      "choice_translations": [
+        "A：To celebrate a company（公司）'s anniversary",
+        "B：To observe the retirement of a company（公司） officer",
+        "C：To honor a founder's birthday",
+        "D：To announce important changes in a"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 13 段：The event will take place at L'Espoir Restaurant from noon until 2:30 p.m. on Friday,",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 13 段：The event will take place at L'Espoir Restaurant from noon until 2:30 p.m. on Friday,",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“The event will take place at L'Espoir Restaurant from noon until 2:30 p.m.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（To celebrate a company's anniversary）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "celebrate",
+            "meaning": "本题重点词；结合正确选项理解：To celebrate a company（公司）'s anniversary"
+          },
+          {
+            "term": "company's",
+            "meaning": "本题重点词；结合正确选项理解：To celebrate a company（公司）'s anniversary"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To celebrate a company's anniversary",
+            "meaning": "正确选项中的重点搭配：To celebrate a company（公司）'s anniversary"
+          }
+        ]
+      },
       "item_id": 147,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
         "level": "P2",
         "score": 70,
-        "label": "主旨 / 目的 / 场景题",
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -67,15 +103,49 @@
       "answer": "C",
       "question": "What are employees asked to do?",
       "answer_explain": "原文依据：篇章中可定位到“*E-mail*”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（Send an e-mail）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） are employees asked to do?",
+      "choice_translations": [
+        "A：Bring lunch",
+        "B：Invite a friend",
+        "C：Send an e-mail",
+        "D：Buy a gift"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 10 段：My fellow Grand Investment Trust employees:",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 10 段：My fellow Grand Investment Trust employees:",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“*E-mail*”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（Send an e-mail）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "send",
+            "meaning": "本题重点词；结合正确选项理解：Send an e-mail"
+          },
+          {
+            "term": "e-mail",
+            "meaning": "本题重点词；结合正确选项理解：Send an e-mail"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Send an e-mail",
+            "meaning": "正确选项中的重点搭配：Send an e-mail"
+          }
+        ]
+      },
       "item_id": 148,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

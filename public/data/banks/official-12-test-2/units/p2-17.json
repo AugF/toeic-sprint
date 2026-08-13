@@ -25,7 +25,9 @@
       "path": "audio/part2/q017.mp3",
       "asset_key": "official-12-test-2/audio/part2/q017.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） are the painting supplies?",
+    "content_translation": "中文辅助（离线预处理）：Where（哪里） are the painting supplies?"
   },
   "items": [
     {
@@ -40,8 +42,42 @@
       "topic": "地点询问",
       "keywords": "where location response",
       "answer_explain": "原文依据：问句或陈述是“Where are the painting supplies?”，自然应答是“On the cart in the hallway.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（On the cart in the hallway.）。",
-      "item_id": 17,
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） are the painting supplies?",
+      "choice_translations": [
+        "A：On the cart in the hallway.",
+        "B：A neutral color.",
+        "C：Thanks, but I have one."
+      ],
       "question_type": "地点疑问句",
+      "evidence": "参考原文第 1 段：Where are the painting supplies?",
+      "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "地点疑问句",
+        "evidence": "参考原文第 1 段：Where are the painting supplies?",
+        "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“Where are the painting supplies?”，自然应答是“On the cart in the hallway.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（On the cart in the hallway.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "cart",
+            "meaning": "本题重点词；结合正确选项理解：On the cart in the hallway."
+          },
+          {
+            "term": "hallway",
+            "meaning": "本题重点词；结合正确选项理解：On the cart in the hallway."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "On the cart in the hallway.",
+            "meaning": "正确选项中的重点搭配：On the cart in the hallway."
+          }
+        ]
+      },
+      "item_id": 17,
       "priority": {
         "level": "P3",
         "score": 53,

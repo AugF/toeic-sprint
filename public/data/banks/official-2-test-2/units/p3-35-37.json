@@ -10,12 +10,14 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 61,
+    "level": "P1",
+    "score": 80,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "细节题",
+      "推断题",
+      "跨句整合"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +33,9 @@
       "asset_key": "official-2-test-2/audio/part3/q035-037-questions.mp3",
       "exists": true
     },
-    "transcript": "Excuse me, ®1'm planning to paint the walls of my kitch\nwhite, but there are so many different paint types that I’\nnot sure which one to buy.\nWell, I'd suggest getting a high gloss paint, since it's\ngoing to be in your kitchen and it’s easier to wash. @Ey\ndrips from cooking oil can be removed without much ef\nfw Great—thanks! I'll need two cans of that, then. Also,\ncan you show me where the paintbrushes are?\nSure—those are in aisle ten. @Let me take you there."
+    "transcript": "Excuse me, ®1'm planning to paint the walls of my kitch\nwhite, but there are so many different paint types that I’\nnot sure which one to buy.\nWell, I'd suggest getting a high gloss paint, since it's\ngoing to be in your kitchen and it’s easier to wash. @Ey\ndrips from cooking oil can be removed without much ef\nfw Great—thanks! I'll need two cans of that, then. Also,\ncan you show me where the paintbrushes are?\nSure—those are in aisle ten. @Let me take you there.",
+    "transcript_translation": "不好意思，我打算把我的厨房墙壁刷成白色，但有太多不同类型的油漆了，我不确定该买哪种。\n嗯，我建议您选择高光泽度的油漆，因为它在您的厨房使用，而且更容易清洗。即使烹饪油溅出的水滴也可以很容易地清除。\n太好了——谢谢！那我需要两罐这个，另外，能给我看看油漆刷在哪里吗？\n当然——它们在十号通道。让我带您去那里。",
+    "content_translation": "不好意思，我打算把我的厨房墙壁刷成白色，但有太多不同类型的油漆了，我不确定该买哪种。\n嗯，我建议您选择高光泽度的油漆，因为它在您的厨房使用，而且更容易清洗。即使烹饪油溅出的水滴也可以很容易地清除。\n太好了——谢谢！那我需要两罐这个，另外，能给我看看油漆刷在哪里吗？\n当然——它们在十号通道。让我带您去那里。"
   },
   "items": [
     {
@@ -44,15 +48,45 @@
       "answer": "C",
       "question": "What is the woman preparing to paint? 41.",
       "answer_explain": "原文依据：听力原文中提到“Excuse me, ®1'm planning to paint the walls of my kitch”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Akitchen）。",
+      "question_translation": "女士准备粉刷什么？",
+      "choice_translations": [
+        "A：走廊",
+        "B：办公室",
+        "C：厨房",
+        "D：衣帽间"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "akitchen",
+            "meaning": "出现在本题正确表达中：厨房"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Akitchen",
+            "meaning": "厨房"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Excuse me, ®1'm planning to paint the walls of my kitch",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Excuse me, ®1'm planning to paint the walls of my kitch",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“Excuse me, ®1'm planning to paint the walls of my kitch”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Akitchen）。"
+      },
       "item_id": 35,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +103,49 @@
       "answer": "D",
       "question": "Why does the man recommend a particular paint? 42.",
       "answer_explain": "原文依据：听力原文中提到“Excuse me, ®1'm planning to paint the walls of my kitch”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（It is easy to clean.）。",
+      "question_translation": "男士推荐特定油漆的原因是什么？",
+      "choice_translations": [
+        "A：它没有气味。",
+        "B：它正在打折。",
+        "C：它干燥快。",
+        "D：它易于清洁。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "easy",
+            "meaning": "出现在本题正确表达中：它易于清洁。"
+          },
+          {
+            "term": "clean",
+            "meaning": "出现在本题正确表达中：它易于清洁。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It is easy to clean.",
+            "meaning": "它易于清洁。"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Excuse me, ®1'm planning to paint the walls of my kitch",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Excuse me, ®1'm planning to paint the walls of my kitch",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“Excuse me, ®1'm planning to paint the walls of my kitch”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（It is easy to clean.）。"
+      },
       "item_id": 36,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -94,15 +162,50 @@
       "answer": "B",
       "question": "What will the speakers most likely do next?",
       "answer_explain": "原文依据：听力原文中提到“Excuse me, ®1'm planning to paint the walls of my kitch”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Go to a different part of the store）。",
+      "question_translation": "说话者们接下来最可能做什么？",
+      "choice_translations": [
+        "A：审阅采购订单",
+        "B：去商店的另一个区域",
+        "C：讨论聘请专业油漆工",
+        "D：试用产品"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "different",
+            "meaning": "出现在本题正确表达中：去商店的另一个区域"
+          },
+          {
+            "term": "part",
+            "meaning": "出现在本题正确表达中：去商店的另一个区域"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Go to a different part of the store",
+            "meaning": "去商店的另一个区域"
+          }
+        ]
+      },
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Excuse me, ®1'm planning to paint the walls of my kitch",
+      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Excuse me, ®1'm planning to paint the walls of my kitch",
+        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“Excuse me, ®1'm planning to paint the walls of my kitch”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Go to a different part of the store）。"
+      },
       "item_id": 37,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

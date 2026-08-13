@@ -10,12 +10,14 @@
   "keywords": "text completion grammar cohesion",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 62,
+    "level": "P1",
+    "score": 83,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "语境语法 / 词汇题"
+      "语境语法 / 词汇题",
+      "整句填入题",
+      "篇章衔接"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -28,7 +30,9 @@
         "exists": true
       }
     ],
-    "passage": "To: All Tenants\nFrom: Maintenance Team\nDate: April 18\nSubject: Parking\nTo all 1520 Elm Street tenants:\nWe are excited to inform you that next month will see the beginning of 143. updates to the\nshared areas of our apartment complex. A complete schedule of updates was posted last month\nand is available on the community Web site.\nThe parking garage 144, for repairs May 15 to 17. 145. If your car is not removed from the\ngarage by 8:00 A.M. on May 15, it will be towed at your expense. Temporary 146. are available\nat the 1500 Elm Street apartment complex or at the municipal parking lot down the street. The\n1520 garage will reopen on May 18. We thank you in advance for your cooperation and\npatience.\nSincerely,\nAngela Connetti\n1520 Elm Street Maintenance Supervisor"
+    "passage": "To: All Tenants\nFrom: Maintenance Team\nDate: April 18\nSubject: Parking\nTo all 1520 Elm Street tenants:\nWe are excited to inform you that next month will see the beginning of 143. updates to the\nshared areas of our apartment complex. A complete schedule of updates was posted last month\nand is available on the community Web site.\nThe parking garage 144, for repairs May 15 to 17. 145. If your car is not removed from the\ngarage by 8:00 A.M. on May 15, it will be towed at your expense. Temporary 146. are available\nat the 1500 Elm Street apartment complex or at the municipal parking lot down the street. The\n1520 garage will reopen on May 18. We thank you in advance for your cooperation and\npatience.\nSincerely,\nAngela Connetti\n1520 Elm Street Maintenance Supervisor",
+    "passage_translation": "中文辅助（离线预处理）：To: All Tenants\nFrom: Maintenance Team\nDate: April 18\nSubject: Parking\nTo all 1520 Elm Street tenants:\nWe are excited to inform you that next month will see the beginning of 143.\nupdates to the\nshared areas of our apartment complex.\nA complete schedule（日程） of updates was posted last month\nand is available（可用的） on the community Web site.\nThe parking garage 144, for repairs May 15 to 17.\n145.\nIf your car is not removed from the\ngarage by 8:00 A.M.\non May 15, it will be towed at your expense.\nTemporary 146.\nare available（可用的）\nat the 1500 Elm Street apartment complex or at the municipal parking lot down the street.\nThe\n1520 garage will reopen on May 18.\nWe thank（感谢） you in advance for your cooperation and\npatience.\nSincerely,\nAngela Connetti\n1520 Elm Street Maintenance Supervisor",
+    "content_translation": "中文辅助（离线预处理）：To: All Tenants\nFrom: Maintenance Team\nDate: April 18\nSubject: Parking\nTo all 1520 Elm Street tenants:\nWe are excited to inform you that next month will see the beginning of 143.\nupdates to the\nshared areas of our apartment complex.\nA complete schedule（日程） of updates was posted last month\nand is available（可用的） on the community Web site.\nThe parking garage 144, for repairs May 15 to 17.\n145.\nIf your car is not removed from the\ngarage by 8:00 A.M.\non May 15, it will be towed at your expense.\nTemporary 146.\nare available（可用的）\nat the 1500 Elm Street apartment complex or at the municipal parking lot down the street.\nThe\n1520 garage will reopen on May 18.\nWe thank（感谢） you in advance for your cooperation and\npatience.\nSincerely,\nAngela Connetti\n1520 Elm Street Maintenance Supervisor"
   },
   "items": [
     {
@@ -40,8 +44,37 @@
       ],
       "answer": "A",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“We are excited to inform you that next month will see the beginning of 143.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：A（planned）。",
-      "item_id": 143,
+      "choice_translations": [
+        "A：planned",
+        "B：contested",
+        "C：mixed",
+        "D：satisfied"
+      ],
       "question_type": "语境语法 / 词汇题",
+      "evidence": "参考原文第 1 段：To: All Tenants",
+      "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "语境语法 / 词汇题",
+        "evidence": "参考原文第 1 段：To: All Tenants",
+        "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“We are excited to inform you that next month will see the beginning of 143.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：A（planned）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "planned",
+            "meaning": "本题重点词；结合正确选项理解：planned"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "planned",
+            "meaning": "正确选项中的重点搭配：planned"
+          }
+        ]
+      },
+      "item_id": 143,
       "priority": {
         "level": "P2",
         "score": 62,
@@ -64,8 +97,37 @@
       ],
       "answer": "D",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“The parking garage 144, for repairs May 15 to 17.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：D（will be closed）。",
-      "item_id": 144,
+      "choice_translations": [
+        "A：has been closed",
+        "B：to close",
+        "C：did close",
+        "D：will be closed"
+      ],
       "question_type": "语境语法 / 词汇题",
+      "evidence": "参考原文第 1 段：To: All Tenants",
+      "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "语境语法 / 词汇题",
+        "evidence": "参考原文第 1 段：To: All Tenants",
+        "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“The parking garage 144, for repairs May 15 to 17.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：D（will be closed）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "closed",
+            "meaning": "本题重点词；结合正确选项理解：will be closed"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "will be closed",
+            "meaning": "正确选项中的重点搭配：will be closed"
+          }
+        ]
+      },
+      "item_id": 144,
       "priority": {
         "level": "P2",
         "score": 62,
@@ -88,15 +150,49 @@
       ],
       "answer": "C",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“145.”。选择理由：该句承接前文并为后文提供必要信息，放入后篇章逻辑和指代均连贯。正确答案：C（No vehicles may be parked in the 1520 Elm Street garage during this）。",
+      "choice_translations": [
+        "A：The next project involves the installation of new digital locks on the front doors.",
+        "B：Community members are invited to the reopening ceremony next weekend.",
+        "C：No vehicles may be parked in the 1520 Elm Street garage during this",
+        "D：There will be more noise outside than"
+      ],
+      "question_type": "整句填入题",
+      "evidence": "参考原文第 1 段：To: All Tenants",
+      "strategy": "本题属于整句填入题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "整句填入题",
+        "evidence": "参考原文第 1 段：To: All Tenants",
+        "strategy": "本题属于整句填入题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“145.”。选择理由：该句承接前文并为后文提供必要信息，放入后篇章逻辑和指代均连贯。正确答案：C（No vehicles may be parked in the 1520 Elm Street garage during this）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "vehicles",
+            "meaning": "本题重点词；结合正确选项理解：No vehicles may be parked in the 1520 Elm Street garage during this"
+          },
+          {
+            "term": "parked",
+            "meaning": "本题重点词；结合正确选项理解：No vehicles may be parked in the 1520 Elm Street garage during this"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "No vehicles may be parked in the 1520 Elm Street garage during this",
+            "meaning": "正确选项中的重点搭配：No vehicles may be parked in the 1520 Elm Street garage during this"
+          }
+        ]
+      },
       "item_id": 145,
-      "question_type": "语境语法 / 词汇题",
       "priority": {
-        "level": "P2",
-        "score": 62,
-        "label": "语境语法 / 词汇题",
+        "level": "P1",
+        "score": 94,
+        "label": "整句填入题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "语境语法 / 词汇题"
+          "整句填入题",
+          "篇章衔接"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -112,8 +208,37 @@
       ],
       "answer": "D",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“Temporary 146.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：D（spaces）。",
-      "item_id": 146,
+      "choice_translations": [
+        "A：adjustments",
+        "B：guides",
+        "C：points",
+        "D：spaces"
+      ],
       "question_type": "语境语法 / 词汇题",
+      "evidence": "参考原文第 1 段：To: All Tenants",
+      "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "语境语法 / 词汇题",
+        "evidence": "参考原文第 1 段：To: All Tenants",
+        "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“Temporary 146.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：D（spaces）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "spaces",
+            "meaning": "本题重点词；结合正确选项理解：spaces"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "spaces",
+            "meaning": "正确选项中的重点搭配：spaces"
+          }
+        ]
+      },
+      "item_id": 146,
       "priority": {
         "level": "P2",
         "score": 62,

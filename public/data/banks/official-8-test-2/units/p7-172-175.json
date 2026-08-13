@@ -17,8 +17,8 @@
     "focus_tags": [
       "否定事实题",
       "语境推断",
-      "词义 / 短语题",
-      "细节定位题",
+      "词义 / 话语含义题",
+      "细节题",
       "多文本语境"
     ],
     "scope": "unit",
@@ -37,7 +37,9 @@
         "exists": true
       }
     ],
-    "passage": "Vivanti Uniform Rentals\nHaving employees in uniforms enhances professionalism and increases a company's\norand recognition. In fact, uniforms are a relatively inexpensive yet effective form of\nadvertising. They can convey the impression that a company is well established an\nhat it cares for its workers. When customers observe your uniformed employees,\nives them confidence in doing business with your compan\nOur rental system serves businesses that seek a completely managed uniform program.\nWe provide clean and fresh uniforms for your entire staff weekly. We take care o\neverything, including laundering, making repairs or replacements, and ensurin\nappropriate sizing.\nContact us to discuss your industry and apparel needs. We offer custom designs and\nmaterials for many sectors, including health care, food processing, hospitality, trades\nand manufacturing. Let us know the number of uniforms you need. We extenc\ndiscounts for organizations outfitting 50 or more employees.\nContact a Vivanti Uniform Rentals representative today and receive a quote within\ntwo days!\n100"
+    "passage": "Vivanti Uniform Rentals\nHaving employees in uniforms enhances professionalism and increases a company's\norand recognition. In fact, uniforms are a relatively inexpensive yet effective form of\nadvertising. They can convey the impression that a company is well established an\nhat it cares for its workers. When customers observe your uniformed employees,\nives them confidence in doing business with your compan\nOur rental system serves businesses that seek a completely managed uniform program.\nWe provide clean and fresh uniforms for your entire staff weekly. We take care o\neverything, including laundering, making repairs or replacements, and ensurin\nappropriate sizing.\nContact us to discuss your industry and apparel needs. We offer custom designs and\nmaterials for many sectors, including health care, food processing, hospitality, trades\nand manufacturing. Let us know the number of uniforms you need. We extenc\ndiscounts for organizations outfitting 50 or more employees.\nContact a Vivanti Uniform Rentals representative today and receive a quote within\ntwo days!\n100",
+    "passage_translation": "中文辅助（离线预处理）：Vivanti Uniform Rentals\nHaving employees in uniforms enhances professionalism and increases a company（公司）'s\norand recognition.\nIn fact, uniforms are a relatively inexpensive yet effective form of\nadvertising.\nThey can convey the impression that a company（公司） is well established an\nhat it cares for its workers.\nWhen（何时） customers observe your uniformed employees,\nives them confidence in doing business with your compan\nOur rental system serves businesses that seek a completely managed uniform program.\nWe provide clean and fresh uniforms for your entire staff weekly.\nWe take care o\neverything, including laundering, making repairs or replacements, and ensurin\nappropriate sizing.\nContact us to discuss your industry and apparel needs.\nWe offer custom designs and\nmaterials for many sectors, including health care, food processing, hospitality, trades\nand manufacturing.\nLet us know the number of uniforms you need.\nWe extenc\ndiscounts for organizations outfitting 50 or more employees.\nContact a Vivanti Uniform Rentals representative today and receive a quote within\ntwo days!\n100",
+    "content_translation": "中文辅助（离线预处理）：Vivanti Uniform Rentals\nHaving employees in uniforms enhances professionalism and increases a company（公司）'s\norand recognition.\nIn fact, uniforms are a relatively inexpensive yet effective form of\nadvertising.\nThey can convey the impression that a company（公司） is well established an\nhat it cares for its workers.\nWhen（何时） customers observe your uniformed employees,\nives them confidence in doing business with your compan\nOur rental system serves businesses that seek a completely managed uniform program.\nWe provide clean and fresh uniforms for your entire staff weekly.\nWe take care o\neverything, including laundering, making repairs or replacements, and ensurin\nappropriate sizing.\nContact us to discuss your industry and apparel needs.\nWe offer custom designs and\nmaterials for many sectors, including health care, food processing, hospitality, trades\nand manufacturing.\nLet us know the number of uniforms you need.\nWe extenc\ndiscounts for organizations outfitting 50 or more employees.\nContact a Vivanti Uniform Rentals representative today and receive a quote within\ntwo days!\n100"
   },
   "items": [
     {
@@ -50,8 +52,42 @@
       "answer": "A",
       "question": "What is NOT mentioned as a benefit of having uniformed employees?",
       "answer_explain": "原文依据：篇章中可定位到“Having employees in uniforms enhances professionalism and increases a company's”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（It makes employees feel loyal to a company.）。",
-      "item_id": 172,
+      "question_translation": "中文辅助（离线预处理）：What（什么） is NOT mentioned as a benefit of having uniformed employees?",
+      "choice_translations": [
+        "A：It makes employees feel loyal to a company（公司）.",
+        "B：It is an inexpensive marketing method.",
+        "C：It raises customers' confidence in a business.",
+        "D：It builds a company（公司）'s brand recognition.\n175.\nAccording（根据） to the advertisement, how（如何） can a"
+      ],
       "question_type": "否定事实题",
+      "evidence": "参考原文第 2 段：Having employees in uniforms enhances professionalism and increases a company's",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 2 段：Having employees in uniforms enhances professionalism and increases a company's",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Having employees in uniforms enhances professionalism and increases a company's”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（It makes employees feel loyal to a company.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "makes",
+            "meaning": "本题重点词；结合正确选项理解：It makes employees feel loyal to a company（公司）."
+          },
+          {
+            "term": "employees",
+            "meaning": "本题重点词；结合正确选项理解：It makes employees feel loyal to a company（公司）."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It makes employees feel loyal to a company.",
+            "meaning": "正确选项中的重点搭配：It makes employees feel loyal to a company（公司）."
+          }
+        ]
+      },
+      "item_id": 172,
       "priority": {
         "level": "P1",
         "score": 83,
@@ -76,15 +112,45 @@
       "answer": "C",
       "question": "The word \"convey\" in paragraph 1, line 3, is closest in meaning to",
       "answer_explain": "原文依据：篇章中可定位到“They can convey the impression that a company is well established an”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（communicate）。",
+      "question_translation": "中文辅助（离线预处理）：The word \"convey\" in paragraph 1, line 3, is closest in meaning to",
+      "choice_translations": [
+        "A：transport",
+        "B：personalize",
+        "C：communicate",
+        "D：resemble"
+      ],
+      "question_type": "词义 / 话语含义题",
+      "evidence": "参考原文第 4 段：advertising. They can convey the impression that a company is well established an",
+      "strategy": "本题属于词义 / 话语含义题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "词义 / 话语含义题",
+        "evidence": "参考原文第 4 段：advertising. They can convey the impression that a company is well established an",
+        "strategy": "本题属于词义 / 话语含义题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“They can convey the impression that a company is well established an”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（communicate）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "communicate",
+            "meaning": "本题重点词；结合正确选项理解：communicate"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "communicate",
+            "meaning": "正确选项中的重点搭配：communicate"
+          }
+        ]
+      },
       "item_id": 173,
-      "question_type": "词义 / 短语题",
       "priority": {
         "level": "P1",
         "score": 83,
-        "label": "词义 / 短语题",
+        "label": "词义 / 话语含义题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "词义 / 短语题",
+          "词义 / 话语含义题",
           "语境推断"
         ],
         "scope": "item",
@@ -102,15 +168,49 @@
       "answer": "C",
       "question": "How frequently does Vivanti Uniform Rentals deliver items to its clients?",
       "answer_explain": "原文依据：篇章中可定位到“Contact a Vivanti Uniform Rentals representative today and receive a quote within”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（Once a week）。",
+      "question_translation": "中文辅助（离线预处理）：How（如何） frequently does Vivanti Uniform Rentals deliver items to its clients?",
+      "choice_translations": [
+        "A：Once a day",
+        "B：Twice a day",
+        "C：Once a week",
+        "D：Once a month"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Vivanti Uniform Rentals",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Vivanti Uniform Rentals",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Contact a Vivanti Uniform Rentals representative today and receive a quote within”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（Once a week）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "once",
+            "meaning": "本题重点词；结合正确选项理解：Once a week"
+          },
+          {
+            "term": "week",
+            "meaning": "本题重点词；结合正确选项理解：Once a week"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Once a week",
+            "meaning": "正确选项中的重点搭配：Once a week"
+          }
+        ]
+      },
       "item_id": 174,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "多文本语境"
         ],
         "scope": "item",
@@ -128,15 +228,49 @@
       "answer": "D",
       "question": "According to the advertisement, how can a business receive a discounted rate?",
       "answer_explain": "原文依据：篇章中可定位到“Let us know the number of uniforms you need.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（By ordering a certain number of uniforms）。",
+      "question_translation": "中文辅助（离线预处理）：According（根据） to the advertisement, how（如何） can a business receive a discounted rate?",
+      "choice_translations": [
+        "A：By using a special promotional code",
+        "B：By identifying itself as a manufacturer",
+        "C：By signing a new contract within two days",
+        "D：By ordering a certain number of uniforms"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 6 段：ives them confidence in doing business with your compan",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 6 段：ives them confidence in doing business with your compan",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Let us know the number of uniforms you need.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（By ordering a certain number of uniforms）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "ordering",
+            "meaning": "本题重点词；结合正确选项理解：By ordering a certain number of uniforms"
+          },
+          {
+            "term": "certain",
+            "meaning": "本题重点词；结合正确选项理解：By ordering a certain number of uniforms"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "By ordering a certain number of uniforms",
+            "meaning": "正确选项中的重点搭配：By ordering a certain number of uniforms"
+          }
+        ]
+      },
       "item_id": 175,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "多文本语境"
         ],
         "scope": "item",

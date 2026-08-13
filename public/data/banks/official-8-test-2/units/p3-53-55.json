@@ -10,13 +10,15 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P3",
-    "score": 59,
+    "level": "P2",
+    "score": 78,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "明示细节"
+      "细节题",
+      "明示细节",
+      "推断题",
+      "跨句整合"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -32,7 +34,9 @@
       "asset_key": "official-8-test-2/audio/part3/q053-055-questions.mp3",
       "exists": true
     },
-    "transcript": "m Hi, Mei Ting. ® How do you like our company's new\nfour-day workweek policy?\nMw It's great. ®I'm just as productive at work, and with\nthree days off, I can do more things on weekends\nLike last weekend, I went to Tokyo to visit my sister.\nBam Nice. And it's also a good way for the company to save\non energy costs!\nU5ACT\nw True, but one thing I've noticed is how cold it is in\nhere on Monday mornings now. They turn the heat\ndown in all the offices on the weekend since no one is\nhere.\nall m Well, a lot of our coworkers bring a sweater to work.\nw Hmm, I'll start doing that."
+    "transcript": "m Hi, Mei Ting. ® How do you like our company's new\nfour-day workweek policy?\nMw It's great. ®I'm just as productive at work, and with\nthree days off, I can do more things on weekends\nLike last weekend, I went to Tokyo to visit my sister.\nBam Nice. And it's also a good way for the company to save\non energy costs!\nU5ACT\nw True, but one thing I've noticed is how cold it is in\nhere on Monday mornings now. They turn the heat\ndown in all the offices on the weekend since no one is\nhere.\nall m Well, a lot of our coworkers bring a sweater to work.\nw Hmm, I'll start doing that.",
+    "transcript_translation": "中文辅助（离线预处理）：m Hi, Mei Ting.\n® How（如何） do you like our company（公司）'s new\nfour-day workweek policy?\nMw It's great.\n®I'm just as productive at work（工作）, and with\nthree days off, I can do more things on weekends\nLike last weekend, I went to Tokyo to visit my sister.\nBam Nice.\nAnd it's also a good way for the company（公司） to save\non energy costs!\nU5ACT\nw True, but one thing I've noticed is how（如何） cold it is in\nhere on Monday mornings now.\nThey turn the heat\ndown in all the offices on the weekend since no one is\nhere.\nall m Well, a lot of our coworkers bring a sweater to work（工作）.\nw Hmm, I'll start doing that.",
+    "content_translation": "中文辅助（离线预处理）：m Hi, Mei Ting.\n® How（如何） do you like our company（公司）'s new\nfour-day workweek policy?\nMw It's great.\n®I'm just as productive at work（工作）, and with\nthree days off, I can do more things on weekends\nLike last weekend, I went to Tokyo to visit my sister.\nBam Nice.\nAnd it's also a good way for the company（公司） to save\non energy costs!\nU5ACT\nw True, but one thing I've noticed is how（如何） cold it is in\nhere on Monday mornings now.\nThey turn the heat\ndown in all the offices on the weekend since no one is\nhere.\nall m Well, a lot of our coworkers bring a sweater to work（工作）.\nw Hmm, I'll start doing that."
   },
   "items": [
     {
@@ -45,15 +49,49 @@
       "answer": "A",
       "question": "What are the speakers discussing?",
       "answer_explain": "原文依据：听力原文中提到“And it's also a good way for the company to save”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A company policy）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers discussing?",
+      "choice_translations": [
+        "A：A company（公司） policy",
+        "B：A business merger",
+        "C：Some vacation plans",
+        "D：Some training sessions"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：m Hi, Mei Ting. ® How do you like our company's new",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：m Hi, Mei Ting. ® How do you like our company's new",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“And it's also a good way for the company to save”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A company policy）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "company",
+            "meaning": "本题重点词；结合正确选项理解：A company（公司） policy"
+          },
+          {
+            "term": "policy",
+            "meaning": "本题重点词；结合正确选项理解：A company（公司） policy"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "company policy",
+            "meaning": "正确选项中的重点搭配：A company（公司） policy"
+          }
+        ]
+      },
       "item_id": 53,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 46,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节"
         ],
         "scope": "item",
@@ -71,15 +109,49 @@
       "answer": "C",
       "question": "What does the woman say she did last weekend?",
       "answer_explain": "原文依据：听力原文中提到“down in all the offices on the weekend since no one is”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（She visited a relative.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she did last weekend?",
+      "choice_translations": [
+        "A：She took a class.",
+        "B：She packed boxes.",
+        "C：She visited a relative.",
+        "D：She prepared a presentation."
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 4 段：three days off, I can do more things on weekends",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 4 段：three days off, I can do more things on weekends",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“down in all the offices on the weekend since no one is”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（She visited a relative.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "visited",
+            "meaning": "本题重点词；结合正确选项理解：She visited a relative."
+          },
+          {
+            "term": "relative",
+            "meaning": "本题重点词；结合正确选项理解：She visited a relative."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "She visited a relative.",
+            "meaning": "正确选项中的重点搭配：She visited a relative."
+          }
+        ]
+      },
       "item_id": 54,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -96,15 +168,50 @@
       "answer": "B",
       "question": "Why does the man say, \"a lot of our coworkers bring a sweater to work\"?",
       "answer_explain": "原文依据：听力原文中提到“all m Well, a lot of our coworkers bring a sweater to work.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To make a suggestion）。",
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） say, \"a lot of our coworkers bring a sweater to work（工作）\"?",
+      "choice_translations": [
+        "A：To request a favor",
+        "B：To make a suggestion",
+        "C：To disagree with a dress code",
+        "D：To explain a decision"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 13 段：all m Well, a lot of our coworkers bring a sweater to work.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "推断题",
+        "evidence": "参考原文第 13 段：all m Well, a lot of our coworkers bring a sweater to work.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“all m Well, a lot of our coworkers bring a sweater to work.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To make a suggestion）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "make",
+            "meaning": "本题重点词；结合正确选项理解：To make a suggestion"
+          },
+          {
+            "term": "suggestion",
+            "meaning": "本题重点词；结合正确选项理解：To make a suggestion"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To make a suggestion",
+            "meaning": "正确选项中的重点搭配：To make a suggestion"
+          }
+        ]
+      },
       "item_id": 55,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

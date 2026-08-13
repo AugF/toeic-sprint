@@ -10,14 +10,13 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P1",
-    "score": 82,
+    "level": "P3",
+    "score": 58,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "句子插入题",
-      "语篇结构"
+      "细节题",
+      "明示定位"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -30,7 +29,9 @@
         "exists": true
       }
     ],
-    "passage": "Burger City Bistro to Become\nappealed to young adults and teenagers. But\nBC Bistro\nwomen aged 25-49 currently make up only\n23 percent of the company's annual sales\nBy Lola Jimenez\n- [3] - The company recently announced\nBurger City Bistro has announced that it will that it had hired celebrity Isobel Wu as a\nsoon be known as\nBC Bistro. All spokesperson to help appeal to that market\nadvertisements, packaging, signage, and\nsegment. Ms. Wu, who performs on the\nsocial media accounts are being updated in\ntelevision\nprogram Star Dancers, will\nline with the new name. - [1]-.\nappear\nin\ntelevision\nand\nprint\n\"Over the years, our organization has advertisements featuring BC Bistro as part\nexpanded its menu to feature healthful items\nof a healthy lifestyle.\nsuch as salads, sandwich wraps, and grilled\n\"Ms. Wu will bring a new voice to our\nchicken, in addition to burgers,\" company\ncompany that will reach potential customers\npresident Howard Shuman said. \"We want\nwho don't yet know that our menu has\nour guests to think of us as a place where\nshifted away from what it was years ago,\"\n-\neveryone can find tasty options.\" - [2] -\nMr. Shuman noted. - (4] -\nBurger City Bistro has traditionally"
+    "passage": "Burger City Bistro to Become\nappealed to young adults and teenagers. But\nBC Bistro\nwomen aged 25-49 currently make up only\n23 percent of the company's annual sales\nBy Lola Jimenez\n- [3] - The company recently announced\nBurger City Bistro has announced that it will that it had hired celebrity Isobel Wu as a\nsoon be known as\nBC Bistro. All spokesperson to help appeal to that market\nadvertisements, packaging, signage, and\nsegment. Ms. Wu, who performs on the\nsocial media accounts are being updated in\ntelevision\nprogram Star Dancers, will\nline with the new name. - [1]-.\nappear\nin\ntelevision\nand\nprint\n\"Over the years, our organization has advertisements featuring BC Bistro as part\nexpanded its menu to feature healthful items\nof a healthy lifestyle.\nsuch as salads, sandwich wraps, and grilled\n\"Ms. Wu will bring a new voice to our\nchicken, in addition to burgers,\" company\ncompany that will reach potential customers\npresident Howard Shuman said. \"We want\nwho don't yet know that our menu has\nour guests to think of us as a place where\nshifted away from what it was years ago,\"\n-\neveryone can find tasty options.\" - [2] -\nMr. Shuman noted. - (4] -\nBurger City Bistro has traditionally",
+    "passage_translation": "中文辅助（离线预处理）：Burger City Bistro to Become\nappealed to young adults and teenagers.\nBut\nBC Bistro\nwomen aged 25-49 currently make up only\n23 percent of the company（公司）'s annual sales\nBy Lola Jimenez\n- [3] - The company（公司） recently announced\nBurger City Bistro has announced that it will that it had hired celebrity Isobel Wu as a\nsoon be known as\nBC Bistro.\nAll spokesperson to help appeal to that market\nadvertisements, packaging, signage, and\nsegment.\nMs.\nWu, who（谁） performs on the\nsocial media accounts are being updated in\ntelevision\nprogram Star Dancers, will\nline with the new name.\n- [1]-.\nappear\nin\ntelevision\nand\nprint\n\"Over the years, our organization has advertisements featuring BC Bistro as part\nexpanded its menu to feature healthful items\nof a healthy lifestyle.\nsuch as salads, sandwich wraps, and grilled\n\"Ms.\nWu will bring a new voice to our\nchicken, in addition to burgers,\" company（公司）\ncompany（公司） that will reach potential customers\npresident Howard Shuman said.\n\"We want\nwho（谁） don't yet know that our menu has\nour guests to think of us as a place where（哪里）\nshifted away from what（什么） it was years ago,\"\n-\neveryone can find tasty options.\" - [2] -\nMr.\nShuman noted.\n- (4] -\nBurger City Bistro has traditionally",
+    "content_translation": "中文辅助（离线预处理）：Burger City Bistro to Become\nappealed to young adults and teenagers.\nBut\nBC Bistro\nwomen aged 25-49 currently make up only\n23 percent of the company（公司）'s annual sales\nBy Lola Jimenez\n- [3] - The company（公司） recently announced\nBurger City Bistro has announced that it will that it had hired celebrity Isobel Wu as a\nsoon be known as\nBC Bistro.\nAll spokesperson to help appeal to that market\nadvertisements, packaging, signage, and\nsegment.\nMs.\nWu, who（谁） performs on the\nsocial media accounts are being updated in\ntelevision\nprogram Star Dancers, will\nline with the new name.\n- [1]-.\nappear\nin\ntelevision\nand\nprint\n\"Over the years, our organization has advertisements featuring BC Bistro as part\nexpanded its menu to feature healthful items\nof a healthy lifestyle.\nsuch as salads, sandwich wraps, and grilled\n\"Ms.\nWu will bring a new voice to our\nchicken, in addition to burgers,\" company（公司）\ncompany（公司） that will reach potential customers\npresident Howard Shuman said.\n\"We want\nwho（谁） don't yet know that our menu has\nour guests to think of us as a place where（哪里）\nshifted away from what（什么） it was years ago,\"\n-\neveryone can find tasty options.\" - [2] -\nMr.\nShuman noted.\n- (4] -\nBurger City Bistro has traditionally"
   },
   "items": [
     {
@@ -43,15 +44,49 @@
       "answer": "B",
       "question": "According to the article, why is the company changing its name?",
       "answer_explain": "原文依据：篇章中可定位到“23 percent of the company's annual sales”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（To better reflect the company's current image）。",
+      "question_translation": "中文辅助（离线预处理）：According（根据） to the article, why（为什么） is the company（公司） changing its name?",
+      "choice_translations": [
+        "A：To make the name easier to remember",
+        "B：To better reflect the company（公司）'s current image",
+        "C：Because it has been sold to another company（公司）",
+        "D：Because it is no longer selling"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 5 段：23 percent of the company's annual sales",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 5 段：23 percent of the company's annual sales",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“23 percent of the company's annual sales”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（To better reflect the company's current image）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "better",
+            "meaning": "本题重点词；结合正确选项理解：To better reflect the company（公司）'s current image"
+          },
+          {
+            "term": "reflect",
+            "meaning": "本题重点词；结合正确选项理解：To better reflect the company（公司）'s current image"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To better reflect the company's current image",
+            "meaning": "正确选项中的重点搭配：To better reflect the company（公司）'s current image"
+          }
+        ]
+      },
       "item_id": 155,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -68,15 +103,49 @@
       "answer": "A",
       "question": "According to the article, what does the company hope to accomplish by hiring Ms. Wu?",
       "answer_explain": "原文依据：篇章中可定位到“\"Over the years, our organization has advertisements featuring BC Bistro as part”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（More women will visit BC Bistro locations.）。",
+      "question_translation": "中文辅助（离线预处理）：According（根据） to the article, what（什么） does the company（公司） hope to accomplish by hiring Ms.\nWu?",
+      "choice_translations": [
+        "A：More women will visit BC Bistro locations.",
+        "B：More teenagers will become interested in BC Bistro.",
+        "C：There will be a larger audience for Star Dancers.",
+        "D：Free dance classes will be held at all"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 5 段：23 percent of the company's annual sales",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 5 段：23 percent of the company's annual sales",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“\"Over the years, our organization has advertisements featuring BC Bistro as part”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（More women will visit BC Bistro locations.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "more",
+            "meaning": "本题重点词；结合正确选项理解：More women will visit BC Bistro locations."
+          },
+          {
+            "term": "women",
+            "meaning": "本题重点词；结合正确选项理解：More women will visit BC Bistro locations."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "More women will visit BC Bistro locations.",
+            "meaning": "正确选项中的重点搭配：More women will visit BC Bistro locations."
+          }
+        ]
+      },
       "item_id": 156,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -93,16 +162,41 @@
       "answer": "D",
       "question": "In which of the positions marked [1], (2], [3], and [4] does the following sentence best belong? \"Advertisements featuring Ms. Wu are set to begin when the name changes.\"",
       "answer_explain": "原文依据：篇章中可定位到“\"Over the years, our organization has advertisements featuring BC Bistro as part”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（[4]）。",
+      "question_translation": "中文辅助（离线预处理）：In which of the positions marked [1], (2], [3], and [4] does the following sentence best belong?\n\"Advertisements featuring Ms.\nWu are set to begin when（何时） the name changes.\"",
+      "choice_translations": [
+        "A：[1]",
+        "B：[2]",
+        "C：[3]",
+        "D：[4]"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 11 段：advertisements, packaging, signage, and",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 11 段：advertisements, packaging, signage, and",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“\"Over the years, our organization has advertisements featuring BC Bistro as part”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（[4]）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [],
+        "collocations": [
+          {
+            "phrase": "[4]",
+            "meaning": "正确选项中的重点搭配：[4]"
+          }
+        ]
+      },
       "item_id": 157,
-      "question_type": "句子插入题",
       "priority": {
-        "level": "P1",
-        "score": 91,
-        "label": "句子插入题",
+        "level": "P3",
+        "score": 42,
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "句子插入题",
-          "语篇结构"
+          "细节题",
+          "明示定位"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

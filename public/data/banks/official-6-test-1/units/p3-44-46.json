@@ -10,12 +10,14 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P3",
-    "score": 59,
+    "level": "P2",
+    "score": 78,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
+      "细节题",
+      "推断题",
+      "跨句整合",
       "明示细节"
     ],
     "scope": "unit",
@@ -32,7 +34,9 @@
       "asset_key": "official-6-test-1/audio/part3/q044-046-questions.mp3",
       "exists": true
     },
-    "transcript": "m Hi, my name is Joseph Kent. I have an appointment at\nthree o'clock today-®| brought the new patient forms\nthat you asked me to fill out at home.\nAK w Great, thanks. That will save us some time. Um...\nunfortunately, ®the doctor is running about 30 minutes\nbehind. Please take a seat. We have some magazines,\nand there's coffee and tea.\nElm Oh, ®tea sounds nice, especially since it's such a cold\nday."
+    "transcript": "m Hi, my name is Joseph Kent. I have an appointment at\nthree o'clock today-®| brought the new patient forms\nthat you asked me to fill out at home.\nAK w Great, thanks. That will save us some time. Um...\nunfortunately, ®the doctor is running about 30 minutes\nbehind. Please take a seat. We have some magazines,\nand there's coffee and tea.\nElm Oh, ®tea sounds nice, especially since it's such a cold\nday.",
+    "transcript_translation": "男：嗨，我叫 Joseph Kent。我今天三点有预约——我带了您让我在家填写的新的病患表格。\n女：太好了，谢谢。这能帮我们省些时间。嗯……很不巧，医生要推迟大约30分钟。请坐。我们有一些杂志，还有咖啡和茶。\n男：哦，茶听起来不错，尤其是在这么冷的天气。\n",
+    "content_translation": "男：嗨，我叫 Joseph Kent。我今天三点有预约——我带了您让我在家填写的新的病患表格。\n女：太好了，谢谢。这能帮我们省些时间。嗯……很不巧，医生要推迟大约30分钟。请坐。我们有一些杂志，还有咖啡和茶。\n男：哦，茶听起来不错，尤其是在这么冷的天气。\n"
   },
   "items": [
     {
@@ -45,15 +49,49 @@
       "answer": "C",
       "question": "What did the man do in advance?",
       "answer_explain": "原文依据：听力原文中提到“That will save us some time.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He completed some paperwork.）。",
+      "question_translation": "男士事先做了什么？",
+      "choice_translations": [
+        "A：他查了公交地图。",
+        "B：他支付了一笔货款。",
+        "C：他填写了一些文件。",
+        "D：他在网上阅读了一些评论。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "completed",
+            "meaning": "出现在本题正确表达中：他填写了一些文件。"
+          },
+          {
+            "term": "some",
+            "meaning": "出现在本题正确表达中：他填写了一些文件。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "He completed some paperwork.",
+            "meaning": "他填写了一些文件。"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“That will save us some time.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He completed some paperwork.）。"
+      },
       "item_id": 44,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -70,15 +108,50 @@
       "answer": "C",
       "question": "Where does the woman most likely work?",
       "answer_explain": "原文依据：听力原文中提到“three o'clock today-®| brought the new patient forms”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a medical office）。",
+      "question_translation": "女士最有可能在哪里工作？",
+      "choice_translations": [
+        "A：在一家药店",
+        "B：在一家咖啡店",
+        "C：在一个医疗办公室",
+        "D：在一家书店"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "medical",
+            "meaning": "出现在本题正确表达中：在一个医疗办公室"
+          },
+          {
+            "term": "office",
+            "meaning": "出现在本题正确表达中：在一个医疗办公室"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "At a medical office",
+            "meaning": "在一个医疗办公室"
+          }
+        ]
+      },
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
+      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
+        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“three o'clock today-®| brought the new patient forms”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a medical office）。"
+      },
       "item_id": 45,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -95,15 +168,45 @@
       "answer": "B",
       "question": "What will the man probably do next?",
       "answer_explain": "原文依据：听力原文中提到“Elm Oh, ®tea sounds nice, especially since it's such a cold”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Have some tea）。",
+      "question_translation": "男士接下来可能会做什么？",
+      "choice_translations": [
+        "A：重新安排他的预约",
+        "B：喝点茶",
+        "C：给朋友打电话",
+        "D：去另一个地方拜访"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "some",
+            "meaning": "出现在本题正确表达中：喝点茶"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Have some tea",
+            "meaning": "喝点茶"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“Elm Oh, ®tea sounds nice, especially since it's such a cold”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Have some tea）。"
+      },
       "item_id": 46,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 46,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节"
         ],
         "scope": "item",

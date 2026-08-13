@@ -10,16 +10,15 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P1",
-    "score": 85,
+    "level": "P2",
+    "score": 74,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
       "否定事实题",
       "语境推断",
-      "细节定位题",
-      "句子插入题",
-      "语篇结构"
+      "细节题",
+      "明示定位"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -32,7 +31,9 @@
         "exists": true
       }
     ],
-    "passage": "Mini-Museums on the Rise\nBy Erika Eaton\nJACKSON (January 4)— Known for its large\ncollection of culturally significant artifacts,\nthe Haywood Museum i pattering with\nseveral\nmunicipalities\nHaywood Mountain region to open satellite\nlocations. - [1] -. The first 5,000-square-\nmeter \"mini-museum\" is set to open this May\nin Jackson. According to Haywood Museum\nDirector Thaddeus Lopez, three more mini-\nmuseums are planned. - [2] -.\nSpeaking\nat\nTuesday's groundbreaking\nceremony in Jackson, Lopez said the mini-\nmuseums are part of the Haywood Museum's\nbroader goal to\nenhance the public's\nappreciation of local history. — [3] —. \"Our\nexhibits and programming seek to honor our\nancestors in ways that are authentic and\ninteractive,\" Lopez told about 40 onlookers,\nincluding Jackson Mayor Max Wu.\nIn addition to building mini-museums, the\nHaywood Museum has hired Mollie Finley of\nMerriweather University to record, analyze,\nand organize oral histories of longtime\nmembers of the Haywood\ncommunity.\n— [4] —. To nominate someone to share their\nstory for Ms. Finley's project, please visit\nwww.haywoodmuseum.org."
+    "passage": "Mini-Museums on the Rise\nBy Erika Eaton\nJACKSON (January 4)— Known for its large\ncollection of culturally significant artifacts,\nthe Haywood Museum i pattering with\nseveral\nmunicipalities\nHaywood Mountain region to open satellite\nlocations. - [1] -. The first 5,000-square-\nmeter \"mini-museum\" is set to open this May\nin Jackson. According to Haywood Museum\nDirector Thaddeus Lopez, three more mini-\nmuseums are planned. - [2] -.\nSpeaking\nat\nTuesday's groundbreaking\nceremony in Jackson, Lopez said the mini-\nmuseums are part of the Haywood Museum's\nbroader goal to\nenhance the public's\nappreciation of local history. — [3] —. \"Our\nexhibits and programming seek to honor our\nancestors in ways that are authentic and\ninteractive,\" Lopez told about 40 onlookers,\nincluding Jackson Mayor Max Wu.\nIn addition to building mini-museums, the\nHaywood Museum has hired Mollie Finley of\nMerriweather University to record, analyze,\nand organize oral histories of longtime\nmembers of the Haywood\ncommunity.\n— [4] —. To nominate someone to share their\nstory for Ms. Finley's project, please visit\nwww.haywoodmuseum.org.",
+    "passage_translation": "中文辅助（离线预处理）：Mini-Museums on the Rise\nBy Erika Eaton\nJACKSON (January 4)— Known for its large\ncollection of culturally significant artifacts,\nthe Haywood Museum i pattering with\nseveral\nmunicipalities\nHaywood Mountain region to open satellite\nlocations.\n- [1] -.\nThe first 5,000-square-\nmeter \"mini-museum\" is set to open this May\nin Jackson.\nAccording（根据） to Haywood Museum\nDirector Thaddeus Lopez, three more mini-\nmuseums are planned.\n- [2] -.\nSpeaking\nat\nTuesday's groundbreaking\nceremony in Jackson, Lopez said the mini-\nmuseums are part of the Haywood Museum's\nbroader goal to\nenhance the public's\nappreciation of local history.\n— [3] —.\n\"Our\nexhibits and programming seek to honor our\nancestors in ways that are authentic and\ninteractive,\" Lopez told about 40 onlookers,\nincluding Jackson Mayor Max Wu.\nIn addition to building mini-museums, the\nHaywood Museum has hired Mollie Finley of\nMerriweather University to record, analyze,\nand organize oral histories of longtime\nmembers of the Haywood\ncommunity.\n— [4] —.\nTo nominate someone to share their\nstory for Ms.\nFinley's project, please（请） visit\nwww.haywoodmuseum.org.",
+    "content_translation": "中文辅助（离线预处理）：Mini-Museums on the Rise\nBy Erika Eaton\nJACKSON (January 4)— Known for its large\ncollection of culturally significant artifacts,\nthe Haywood Museum i pattering with\nseveral\nmunicipalities\nHaywood Mountain region to open satellite\nlocations.\n- [1] -.\nThe first 5,000-square-\nmeter \"mini-museum\" is set to open this May\nin Jackson.\nAccording（根据） to Haywood Museum\nDirector Thaddeus Lopez, three more mini-\nmuseums are planned.\n- [2] -.\nSpeaking\nat\nTuesday's groundbreaking\nceremony in Jackson, Lopez said the mini-\nmuseums are part of the Haywood Museum's\nbroader goal to\nenhance the public's\nappreciation of local history.\n— [3] —.\n\"Our\nexhibits and programming seek to honor our\nancestors in ways that are authentic and\ninteractive,\" Lopez told about 40 onlookers,\nincluding Jackson Mayor Max Wu.\nIn addition to building mini-museums, the\nHaywood Museum has hired Mollie Finley of\nMerriweather University to record, analyze,\nand organize oral histories of longtime\nmembers of the Haywood\ncommunity.\n— [4] —.\nTo nominate someone to share their\nstory for Ms.\nFinley's project, please（请） visit\nwww.haywoodmuseum.org."
   },
   "items": [
     {
@@ -45,8 +46,42 @@
       "answer": "A",
       "question": "What is NOT mentioned as a goal of the Haywood Museum?",
       "answer_explain": "原文依据：篇章中可定位到“and organize oral histories of longtime”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Making oral histories available on its Web site）。",
-      "item_id": 169,
+      "question_translation": "中文辅助（离线预处理）：What（什么） is NOT mentioned as a goal of the Haywood Museum?",
+      "choice_translations": [
+        "A：Making oral histories available（可用的） on its Web site",
+        "B：Exposing more people to its exhibits",
+        "C：Creating several smaller museums",
+        "D：Collecting stories from local residents"
+      ],
       "question_type": "否定事实题",
+      "evidence": "参考原文第 1 段：Mini-Museums on the Rise",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 1 段：Mini-Museums on the Rise",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“and organize oral histories of longtime”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Making oral histories available on its Web site）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "making",
+            "meaning": "本题重点词；结合正确选项理解：Making oral histories available（可用的） on its Web site"
+          },
+          {
+            "term": "oral",
+            "meaning": "本题重点词；结合正确选项理解：Making oral histories available（可用的） on its Web site"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Making oral histories available on its Web site",
+            "meaning": "正确选项中的重点搭配：Making oral histories available（可用的） on its Web site"
+          }
+        ]
+      },
+      "item_id": 169,
       "priority": {
         "level": "P1",
         "score": 83,
@@ -71,15 +106,49 @@
       "answer": "D",
       "question": "Who is Ms. Finley?",
       "answer_explain": "原文依据：篇章中可定位到“Haywood Museum has hired Mollie Finley of”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（A historical researcher）。",
+      "question_translation": "中文辅助（离线预处理）：Who（谁） is Ms.\nFinley?",
+      "choice_translations": [
+        "A：The director of a mini-museum",
+        "B：A newspaper reporter",
+        "C：The mayor of a small town",
+        "D：A historical researcher"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 27 段：Haywood Museum has hired Mollie Finley of",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 27 段：Haywood Museum has hired Mollie Finley of",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Haywood Museum has hired Mollie Finley of”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（A historical researcher）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "historical",
+            "meaning": "本题重点词；结合正确选项理解：A historical researcher"
+          },
+          {
+            "term": "researcher",
+            "meaning": "本题重点词；结合正确选项理解：A historical researcher"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "historical researcher",
+            "meaning": "正确选项中的重点搭配：A historical researcher"
+          }
+        ]
+      },
       "item_id": 170,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -96,16 +165,41 @@
       "answer": "D",
       "question": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"The recordings will be converted into virtual reality experiences for visitors to enjoy.\"",
       "answer_explain": "原文依据：篇章中可定位到“JACKSON (January 4)— Known for its large”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（[4]）。",
+      "question_translation": "中文辅助（离线预处理）：In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong?\n\"The recordings will be converted into virtual reality experiences for visitors to enjoy.\"",
+      "choice_translations": [
+        "A：[1]",
+        "B：[2]",
+        "C：[3]",
+        "D：[4]"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Mini-Museums on the Rise",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Mini-Museums on the Rise",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“JACKSON (January 4)— Known for its large”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（[4]）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [],
+        "collocations": [
+          {
+            "phrase": "[4]",
+            "meaning": "正确选项中的重点搭配：[4]"
+          }
+        ]
+      },
       "item_id": 171,
-      "question_type": "句子插入题",
       "priority": {
-        "level": "P1",
-        "score": 91,
-        "label": "句子插入题",
+        "level": "P3",
+        "score": 42,
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "句子插入题",
-          "语篇结构"
+          "细节题",
+          "明示定位"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

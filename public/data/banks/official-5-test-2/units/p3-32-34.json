@@ -10,13 +10,17 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P3",
-    "score": 59,
+    "level": "P2",
+    "score": 79,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "明示细节"
+      "主旨 / 目的题",
+      "主旨场景",
+      "细节题",
+      "明示细节",
+      "推断题",
+      "跨句整合"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -32,7 +36,9 @@
       "asset_key": "official-5-test-2/audio/part3/q032-034-questions.mp3",
       "exists": true
     },
-    "transcript": "Hi, Lucas. How's the annual revenue report coming\nalong? I'm looking forward to seeing the results.\nI just finished it this morning. ® You'll be happy to know\nthat our yearly profit was higher than we predicted\nthanks to the strong sales of our new headphones.\nEk w Yes—® consumers really like the wireless feature of the\nheadphones, and we've received great reviews on their\nsound quality. Have you shared this news with the\nboard of directors?\nNot yet— Ol'm just about to e-mail them now."
+    "transcript": "Hi, Lucas. How's the annual revenue report coming\nalong? I'm looking forward to seeing the results.\nI just finished it this morning. ® You'll be happy to know\nthat our yearly profit was higher than we predicted\nthanks to the strong sales of our new headphones.\nEk w Yes—® consumers really like the wireless feature of the\nheadphones, and we've received great reviews on their\nsound quality. Have you shared this news with the\nboard of directors?\nNot yet— Ol'm just about to e-mail them now.",
+    "transcript_translation": "中文辅助（离线预处理）：Hi, Lucas.\nHow（如何）'s the annual revenue report coming\nalong?\nI'm looking forward to seeing the results.\nI just finished it this morning.\n® You'll be happy to know\nthat our yearly profit was higher than we predicted\nthanks to the strong sales of our new headphones.\nEk w Yes—® consumers really like the wireless feature of the\nheadphones, and we've received great reviews on their\nsound quality.\nHave you shared this news with the\nboard of directors?\nNot yet— Ol'm just about to e-mail them now.",
+    "content_translation": "中文辅助（离线预处理）：Hi, Lucas.\nHow（如何）'s the annual revenue report coming\nalong?\nI'm looking forward to seeing the results.\nI just finished it this morning.\n® You'll be happy to know\nthat our yearly profit was higher than we predicted\nthanks to the strong sales of our new headphones.\nEk w Yes—® consumers really like the wireless feature of the\nheadphones, and we've received great reviews on their\nsound quality.\nHave you shared this news with the\nboard of directors?\nNot yet— Ol'm just about to e-mail them now."
   },
   "items": [
     {
@@ -45,15 +51,50 @@
       "answer": "A",
       "question": "What does the woman ask the man about?",
       "answer_explain": "原文依据：听力原文中提到“How's the annual revenue report coming”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A financial report）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） ask the man（男士） about?",
+      "choice_translations": [
+        "A：A financial report",
+        "B：A newspaper article",
+        "C：A customer（顾客） compliment",
+        "D：An advertising campaign"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：Hi, Lucas. How's the annual revenue report coming",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：Hi, Lucas. How's the annual revenue report coming",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“How's the annual revenue report coming”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A financial report）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "financial",
+            "meaning": "本题重点词；结合正确选项理解：A financial report"
+          },
+          {
+            "term": "report",
+            "meaning": "本题重点词；结合正确选项理解：A financial report"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "financial report",
+            "meaning": "正确选项中的重点搭配：A financial report"
+          }
+        ]
+      },
       "item_id": 32,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -70,15 +111,45 @@
       "answer": "D",
       "question": "What product do the speakers mention?",
       "answer_explain": "原文依据：听力原文中提到“thanks to the strong sales of our new headphones.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Headphones）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） product do the speakers mention?",
+      "choice_translations": [
+        "A：Computers",
+        "B：Printers",
+        "C：Televisions",
+        "D：Headphones"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Hi, Lucas. How's the annual revenue report coming",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Hi, Lucas. How's the annual revenue report coming",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“thanks to the strong sales of our new headphones.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Headphones）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "headphones",
+            "meaning": "本题重点词；结合正确选项理解：Headphones"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Headphones",
+            "meaning": "正确选项中的重点搭配：Headphones"
+          }
+        ]
+      },
       "item_id": 33,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 46,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "明示细节"
         ],
         "scope": "item",
@@ -96,15 +167,50 @@
       "answer": "C",
       "question": "What will the man most likely do next?",
       "answer_explain": "原文依据：听力原文中提到“Not yet— Ol'm just about to e-mail them now.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Send an e-mail）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） most likely（最可能） do next?",
+      "choice_translations": [
+        "A：Confirm travel plans",
+        "B：Hold a press conference",
+        "C：Send an e-mail",
+        "D：Demonstrate a procedure"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Hi, Lucas. How's the annual revenue report coming",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Hi, Lucas. How's the annual revenue report coming",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Not yet— Ol'm just about to e-mail them now.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Send an e-mail）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "send",
+            "meaning": "本题重点词；结合正确选项理解：Send an e-mail"
+          },
+          {
+            "term": "e-mail",
+            "meaning": "本题重点词；结合正确选项理解：Send an e-mail"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Send an e-mail",
+            "meaning": "正确选项中的重点搭配：Send an e-mail"
+          }
+        ]
+      },
       "item_id": 34,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

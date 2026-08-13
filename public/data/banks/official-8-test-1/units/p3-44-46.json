@@ -11,12 +11,14 @@
   "difficulty": "medium",
   "priority": {
     "level": "P1",
-    "score": 80,
+    "score": 82,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "推断 / 隐含义题",
+      "细节题",
+      "主旨 / 目的题",
+      "主旨场景",
+      "推断题",
       "跨句整合"
     ],
     "scope": "unit",
@@ -33,7 +35,9 @@
       "asset_key": "official-8-test-1/audio/part3/q044-046-questions.mp3",
       "exists": true
     },
-    "transcript": "Bam Jones Sod Company. How may I help you?\nEH w Hi. ® This is Dolores Garcia, the facilities manager at\nWest Town Stadium. ®We're looking into replacing the\nDolores Garcia. DATESE\nartificial turf on our playing field with natural grass. But\nO we're concerned about how much water it'll require.\nEspecially during the months when there isn't much\nrain.\nall There are a number of drought-resistant grasses on the\nmarket now for facilities like yours — ® Bermuda and\nSt. Augustine grasses in particular can tolerate long\ndormant seasons. We have patches growing out here\nin our nursery. ®Can you come by and take a look\nsometime this week?"
+    "transcript": "Bam Jones Sod Company. How may I help you?\nEH w Hi. ® This is Dolores Garcia, the facilities manager at\nWest Town Stadium. ®We're looking into replacing the\nDolores Garcia. DATESE\nartificial turf on our playing field with natural grass. But\nO we're concerned about how much water it'll require.\nEspecially during the months when there isn't much\nrain.\nall There are a number of drought-resistant grasses on the\nmarket now for facilities like yours — ® Bermuda and\nSt. Augustine grasses in particular can tolerate long\ndormant seasons. We have patches growing out here\nin our nursery. ®Can you come by and take a look\nsometime this week?",
+    "transcript_translation": "中文辅助（离线预处理）：Bam Jones Sod Company（公司）.\nHow（如何） may I help you?\nEH w Hi.\n® This is Dolores Garcia, the facilities manager（经理） at\nWest Town Stadium.\n®We're looking into replacing the\nDolores Garcia.\nDATESE\nartificial turf on our playing field with natural grass.\nBut\nO we're concerned about how（如何） much water it'll require.\nEspecially during the months when（何时） there isn't much\nrain.\nall There are a number of drought-resistant grasses on the\nmarket now for facilities like yours — ® Bermuda and\nSt.\nAugustine grasses in particular can tolerate long\ndormant seasons.\nWe have patches growing out here\nin our nursery.\n®Can you come by and take a look\nsometime this week?",
+    "content_translation": "中文辅助（离线预处理）：Bam Jones Sod Company（公司）.\nHow（如何） may I help you?\nEH w Hi.\n® This is Dolores Garcia, the facilities manager（经理） at\nWest Town Stadium.\n®We're looking into replacing the\nDolores Garcia.\nDATESE\nartificial turf on our playing field with natural grass.\nBut\nO we're concerned about how（如何） much water it'll require.\nEspecially during the months when（何时） there isn't much\nrain.\nall There are a number of drought-resistant grasses on the\nmarket now for facilities like yours — ® Bermuda and\nSt.\nAugustine grasses in particular can tolerate long\ndormant seasons.\nWe have patches growing out here\nin our nursery.\n®Can you come by and take a look\nsometime this week?"
   },
   "items": [
     {
@@ -46,15 +50,49 @@
       "answer": "C",
       "question": "Where does the woman work?",
       "answer_explain": "原文依据：听力原文中提到“all There are a number of drought-resistant grasses on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a sports facility）。",
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the woman（女士） work（工作）?",
+      "choice_translations": [
+        "A：At an office（办公室） complex",
+        "B：At a community park",
+        "C：At a sports facility",
+        "D：At a zoo"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Bam Jones Sod Company. How may I help you?",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Bam Jones Sod Company. How may I help you?",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“all There are a number of drought-resistant grasses on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a sports facility）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "sports",
+            "meaning": "本题重点词；结合正确选项理解：At a sports facility"
+          },
+          {
+            "term": "facility",
+            "meaning": "本题重点词；结合正确选项理解：At a sports facility"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "At a sports facility",
+            "meaning": "正确选项中的重点搭配：At a sports facility"
+          }
+        ]
+      },
       "item_id": 44,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -71,15 +109,50 @@
       "answer": "B",
       "question": "What is the woman concerned about?",
       "answer_explain": "原文依据：听力原文中提到“O we're concerned about how much water it'll require.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Water usage）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is the woman（女士） concerned about?",
+      "choice_translations": [
+        "A：Installation costs",
+        "B：Water usage",
+        "C：Parking capacity",
+        "D：Ticket sales"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 6 段：O we're concerned about how much water it'll require.",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 6 段：O we're concerned about how much water it'll require.",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“O we're concerned about how much water it'll require.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Water usage）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "water",
+            "meaning": "本题重点词；结合正确选项理解：Water usage"
+          },
+          {
+            "term": "usage",
+            "meaning": "本题重点词；结合正确选项理解：Water usage"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Water usage",
+            "meaning": "正确选项中的重点搭配：Water usage"
+          }
+        ]
+      },
       "item_id": 45,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 72,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题",
+          "主旨场景"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -96,15 +169,49 @@
       "answer": "D",
       "question": "What does the man suggest the woman do this week?",
       "answer_explain": "原文依据：听力原文中提到“®Can you come by and take a look”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Look at some samples）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） suggest（表明/建议） the woman（女士） do this week?",
+      "choice_translations": [
+        "A：Reserve tickets",
+        "B：Water a garden",
+        "C：Apply for a loan",
+        "D：Look at some samples"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Bam Jones Sod Company. How may I help you?",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Bam Jones Sod Company. How may I help you?",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“®Can you come by and take a look”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Look at some samples）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "look",
+            "meaning": "本题重点词；结合正确选项理解：Look at some samples"
+          },
+          {
+            "term": "some",
+            "meaning": "本题重点词；结合正确选项理解：Look at some samples"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Look at some samples",
+            "meaning": "正确选项中的重点搭配：Look at some samples"
+          }
+        ]
+      },
       "item_id": 46,
-      "question_type": "推断 / 隐含义题",
       "priority": {
         "level": "P1",
         "score": 88,
-        "label": "推断 / 隐含义题",
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "跨句整合"
         ],
         "scope": "item",

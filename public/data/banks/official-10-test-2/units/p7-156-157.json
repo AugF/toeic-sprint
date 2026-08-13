@@ -11,12 +11,13 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 68,
+    "score": 78,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "细节定位题"
+      "推断题",
+      "语境推断",
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -29,7 +30,9 @@
         "exists": true
       }
     ],
-    "passage": "Please describe the employee's achievements and note any areas for improvement.\nMs. Diamos is a valuable member of the accounting team I oversee. She transitioned\nthere, she has auro mated the bof ag puntess drawing on her mad know. See ot\naccounting software. Additionally, she cleaned up the accounts-receivable database\nand developed a plan to recover overdue amounts.\nMs. Diamos is alwavs read to help a colleague and quickly absorbs all the instruction\nanveer. in geno of de telopmet managemen see her gain experience in preparing"
+    "passage": "Please describe the employee's achievements and note any areas for improvement.\nMs. Diamos is a valuable member of the accounting team I oversee. She transitioned\nthere, she has auro mated the bof ag puntess drawing on her mad know. See ot\naccounting software. Additionally, she cleaned up the accounts-receivable database\nand developed a plan to recover overdue amounts.\nMs. Diamos is alwavs read to help a colleague and quickly absorbs all the instruction\nanveer. in geno of de telopmet managemen see her gain experience in preparing",
+    "passage_translation": "中文辅助（离线预处理）：Please（请） describe the employee（员工）'s achievements and note any areas for improvement.\nMs.\nDiamos is a valuable member of the accounting team I oversee.\nShe transitioned\nthere, she has auro mated the bof ag puntess drawing on her mad know.\nSee ot\naccounting software.\nAdditionally, she cleaned up the accounts-receivable database\nand developed a plan to recover overdue amounts.\nMs.\nDiamos is alwavs read to help a colleague and quickly absorbs all the instruction\nanveer.\nin geno of de telopmet managemen see her gain experience in preparing",
+    "content_translation": "中文辅助（离线预处理）：Please（请） describe the employee（员工）'s achievements and note any areas for improvement.\nMs.\nDiamos is a valuable member of the accounting team I oversee.\nShe transitioned\nthere, she has auro mated the bof ag puntess drawing on her mad know.\nSee ot\naccounting software.\nAdditionally, she cleaned up the accounts-receivable database\nand developed a plan to recover overdue amounts.\nMs.\nDiamos is alwavs read to help a colleague and quickly absorbs all the instruction\nanveer.\nin geno of de telopmet managemen see her gain experience in preparing"
   },
   "items": [
     {
@@ -42,15 +45,46 @@
       "answer": "C",
       "question": "Who most likely wrote the review?",
       "answer_explain": "原文依据：篇章中可定位到“there, she has auro mated the bof ag puntess drawing on her mad know.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（A supervisor）。",
+      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） wrote the review?",
+      "choice_translations": [
+        "A：An administrative assistant",
+        "B：A client",
+        "C：A supervisor",
+        "D：A technology-support staff member"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Please describe the employee's achievements and note any areas for improvement.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Please describe the employee's achievements and note any areas for improvement.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“there, she has auro mated the bof ag puntess drawing on her mad know.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（A supervisor）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "supervisor",
+            "meaning": "本题重点词；结合正确选项理解：A supervisor"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "supervisor",
+            "meaning": "正确选项中的重点搭配：A supervisor"
+          }
+        ]
+      },
       "item_id": 156,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
-        "level": "P2",
-        "score": 70,
-        "label": "主旨 / 目的 / 场景题",
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题"
+          "推断题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -67,15 +101,49 @@
       "answer": "B",
       "question": "What part of Ms. Diamos' job does the review mention?",
       "answer_explain": "原文依据：篇章中可定位到“there, she has auro mated the bof ag puntess drawing on her mad know.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Improving billing procedures）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） part of Ms.\nDiamos' job does the review mention?",
+      "choice_translations": [
+        "A：Paying invoices",
+        "B：Improving billing procedures",
+        "C：Managing the technology team",
+        "D：Keeping the office（办公室） clean"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 2 段：Ms. Diamos is a valuable member of the accounting team I oversee. She transitioned",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 2 段：Ms. Diamos is a valuable member of the accounting team I oversee. She transitioned",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“there, she has auro mated the bof ag puntess drawing on her mad know.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Improving billing procedures）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "improving",
+            "meaning": "本题重点词；结合正确选项理解：Improving billing procedures"
+          },
+          {
+            "term": "billing",
+            "meaning": "本题重点词；结合正确选项理解：Improving billing procedures"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Improving billing procedures",
+            "meaning": "正确选项中的重点搭配：Improving billing procedures"
+          }
+        ]
+      },
       "item_id": 157,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

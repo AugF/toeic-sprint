@@ -10,12 +10,14 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 61,
+    "level": "P1",
+    "score": 80,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "细节题",
+      "推断题",
+      "跨句整合"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +33,9 @@
       "asset_key": "official-3-test-1/audio/part3/q050-052-questions.mp3",
       "exists": true
     },
-    "transcript": "Hello. I’ve read great reviews of your bakery. \\\nfamous for your strawberry muffins, right? I'd\ntry one.\nEu sorry, we have strawberry muffins only wt\nfresh strawberries are in season. Would you li\nan almond muffin instead?\nSure, and, by any chance, ©do you offer cate’\nrm expecting some clients at the office early ”\nmorning, and I’d like to have some food availa\nWe don’t do formal catering, but © if you're in\nneighborhood, | can bring your order to your o\nGreat, thanks. °We're around the corner from\nHow about a dozen assorted muffins? Here’s\naddress."
+    "transcript": "Hello. I’ve read great reviews of your bakery. \\\nfamous for your strawberry muffins, right? I'd\ntry one.\nEu sorry, we have strawberry muffins only wt\nfresh strawberries are in season. Would you li\nan almond muffin instead?\nSure, and, by any chance, ©do you offer cate’\nrm expecting some clients at the office early ”\nmorning, and I’d like to have some food availa\nWe don’t do formal catering, but © if you're in\nneighborhood, | can bring your order to your o\nGreat, thanks. °We're around the corner from\nHow about a dozen assorted muffins? Here’s\naddress.",
+    "transcript_translation": "您好。我读过很多关于您面包店的好评。以草莓松饼闻名，对吗？我想尝一个。抱歉，我们只有当新鲜草莓是季节性的时候才有草莓松饼。您要不要试试杏仁松饼呢？好的，另外，请问你们提供餐饮服务吗？我预计一些客户会早到办公室。早上，我想准备一些食物。我们不提供正式的餐饮服务，但如果您在附近，我可以把您的订单送到您的办公室。太好了，谢谢。我们在拐角处。要不要一打十二种混合松饼？这是地址。",
+    "content_translation": "您好。我读过很多关于您面包店的好评。以草莓松饼闻名，对吗？我想尝一个。抱歉，我们只有当新鲜草莓是季节性的时候才有草莓松饼。您要不要试试杏仁松饼呢？好的，另外，请问你们提供餐饮服务吗？我预计一些客户会早到办公室。早上，我想准备一些食物。我们不提供正式的餐饮服务，但如果您在附近，我可以把您的订单送到您的办公室。太好了，谢谢。我们在拐角处。要不要一打十二种混合松饼？这是地址。"
   },
   "items": [
     {
@@ -44,15 +48,49 @@
       "answer": "B",
       "question": "Why is a product unavailable?",
       "answer_explain": "原文依据：听力原文中提到“fresh strawberries are in season.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An ingredient is not in season.）。",
+      "question_translation": "为什么产品不可用？",
+      "choice_translations": [
+        "A：机器零件坏了。",
+        "B：原料不当季。",
+        "C：货物延迟了。",
+        "D：制造商倒闭了。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "ingredient",
+            "meaning": "出现在本题正确表达中：原料不当季。"
+          },
+          {
+            "term": "season",
+            "meaning": "出现在本题正确表达中：原料不当季。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "An ingredient is not in season.",
+            "meaning": "原料不当季。"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Hello. I’ve read great reviews of your bakery. \\",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Hello. I’ve read great reviews of your bakery. \\",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“fresh strawberries are in season.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An ingredient is not in season.）。"
+      },
       "item_id": 50,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +107,49 @@
       "answer": "C",
       "question": "What does the woman inquire about?",
       "answer_explain": "原文依据：听力原文中提到“rm expecting some clients at the office early ””。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The availability of a catering service）。",
+      "question_translation": "女士询问什么？",
+      "choice_translations": [
+        "A：一个活动的日期",
+        "B：一些烘焙食品的食谱",
+        "C：餐饮服务的可用性",
+        "D：一次商务会议的地点"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "availability",
+            "meaning": "出现在本题正确表达中：餐饮服务的可用性"
+          },
+          {
+            "term": "catering",
+            "meaning": "出现在本题正确表达中：餐饮服务的可用性"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "The availability of a catering service",
+            "meaning": "餐饮服务的可用性"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Hello. I’ve read great reviews of your bakery. \\",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Hello. I’ve read great reviews of your bakery. \\",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“rm expecting some clients at the office early ””。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The availability of a catering service）。"
+      },
       "item_id": 51,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -94,15 +166,50 @@
       "answer": "D",
       "question": "What will the man most likely do on n Tuesday?",
       "answer_explain": "原文依据：听力原文中提到“rm expecting some clients at the office early ””。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Make a delivery）。",
+      "question_translation": "男士最有可能在周二做什么？",
+      "choice_translations": [
+        "A：更换展示品",
+        "B：购买一些用品",
+        "C：提前关店",
+        "D：进行送货"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "make",
+            "meaning": "出现在本题正确表达中：进行送货"
+          },
+          {
+            "term": "delivery",
+            "meaning": "出现在本题正确表达中：进行送货"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Make a delivery",
+            "meaning": "进行送货"
+          }
+        ]
+      },
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Hello. I’ve read great reviews of your bakery. \\",
+      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Hello. I’ve read great reviews of your bakery. \\",
+        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：听力原文中提到“rm expecting some clients at the office early ””。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Make a delivery）。"
+      },
       "item_id": 52,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

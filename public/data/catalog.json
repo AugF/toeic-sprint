@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0",
-  "content_version": "2026-08-13T04:34:15.382Z",
+  "content_version": "2026-08-13T06:02:18.127Z",
   "priority_model": "toeic_priority_v2",
   "asset_policy": {
     "copied": false,
@@ -13,9 +13,9 @@
     "unique_item_keys": 4800,
     "missing_media_references": 0,
     "priority_distribution": {
-      "P1": 1383,
-      "P2": 2533,
-      "P3": 884
+      "P1": 1919,
+      "P2": 2116,
+      "P3": 765
     },
     "priority_by_part": {
       "1": {
@@ -24,38 +24,41 @@
         "P3": 2
       },
       "2": {
-        "P1": 352,
-        "P2": 128,
-        "P3": 120
+        "P1": 325,
+        "P2": 152,
+        "P3": 123
       },
       "3": {
-        "P1": 147,
-        "P2": 516,
-        "P3": 273
+        "P1": 260,
+        "P2": 460,
+        "P3": 216
       },
       "4": {
-        "P1": 108,
-        "P2": 425,
-        "P3": 187
+        "P1": 172,
+        "P2": 370,
+        "P3": 178
       },
       "5": {
-        "P1": 277,
-        "P2": 438,
+        "P1": 478,
+        "P2": 237,
         "P3": 5
       },
       "6": {
-        "P1": 103,
-        "P2": 278,
+        "P1": 142,
+        "P2": 239,
         "P3": 3
       },
       "7": {
-        "P1": 336,
-        "P2": 666,
-        "P3": 294
+        "P1": 482,
+        "P2": 576,
+        "P3": 238
       }
     }
   },
-  "warnings": [],
+  "warnings": [
+    "Part 5 的 P1 占比 66.4%，请抽查分类规则",
+    "Official 5–9 的部分 Part 3/4 图表题源目录未提供配套图表；网页保留题目与音频，并在题库质量字段中标记缺失。"
+  ],
   "banks": [
     {
       "bank_id": "official-1-test-1",
@@ -117,7 +120,8 @@
         "translation": "available",
         "knowledge": "available",
         "analysis": "enriched",
-        "ocr": "unreviewed"
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 0
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-1-test-1/"
@@ -182,7 +186,8 @@
         "translation": "available",
         "knowledge": "available",
         "analysis": "enriched",
-        "ocr": "unreviewed"
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 1
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-1-test-2/"
@@ -247,7 +252,8 @@
         "translation": "available",
         "knowledge": "available",
         "analysis": "enriched",
-        "ocr": "unreviewed"
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 1
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-2-test-1/"
@@ -305,14 +311,15 @@
         }
       },
       "index_path": "banks/official-2-test-2/index.json",
-      "source_file": "official_2/test_2/question.json",
-      "enriched": false,
+      "source_file": "official_2/test_2/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 1
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-2-test-2/"
@@ -370,14 +377,15 @@
         }
       },
       "index_path": "banks/official-3-test-1/index.json",
-      "source_file": "official_3/test_1/question.json",
-      "enriched": false,
+      "source_file": "official_3/test_1/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 2
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-3-test-1/"
@@ -435,14 +443,15 @@
         }
       },
       "index_path": "banks/official-3-test-2/index.json",
-      "source_file": "official_3/test_2/question.json",
-      "enriched": false,
+      "source_file": "official_3/test_2/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 2
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-3-test-2/"
@@ -500,14 +509,15 @@
         }
       },
       "index_path": "banks/official-4-test-1/index.json",
-      "source_file": "official_4/test_1/question.json",
-      "enriched": false,
+      "source_file": "official_4/test_1/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 1
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-4-test-1/"
@@ -565,14 +575,15 @@
         }
       },
       "index_path": "banks/official-4-test-2/index.json",
-      "source_file": "official_4/test_2/question.json",
-      "enriched": false,
+      "source_file": "official_4/test_2/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 1
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-4-test-2/"
@@ -630,14 +641,15 @@
         }
       },
       "index_path": "banks/official-5-test-1/index.json",
-      "source_file": "official_5/test_1/question.json",
-      "enriched": false,
+      "source_file": "official_5/test_1/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 8
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-5-test-1/"
@@ -695,14 +707,15 @@
         }
       },
       "index_path": "banks/official-5-test-2/index.json",
-      "source_file": "official_5/test_2/question.json",
-      "enriched": false,
+      "source_file": "official_5/test_2/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 6
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-5-test-2/"
@@ -760,14 +773,15 @@
         }
       },
       "index_path": "banks/official-6-test-1/index.json",
-      "source_file": "official_6/test_1/question.json",
-      "enriched": false,
+      "source_file": "official_6/test_1/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 6
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-6-test-1/"
@@ -825,14 +839,15 @@
         }
       },
       "index_path": "banks/official-6-test-2/index.json",
-      "source_file": "official_6/test_2/question.json",
-      "enriched": false,
+      "source_file": "official_6/test_2/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 8
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-6-test-2/"
@@ -890,14 +905,15 @@
         }
       },
       "index_path": "banks/official-7-test-1/index.json",
-      "source_file": "official_7/test_1/question.json",
-      "enriched": false,
+      "source_file": "official_7/test_1/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 5
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-7-test-1/"
@@ -955,14 +971,15 @@
         }
       },
       "index_path": "banks/official-7-test-2/index.json",
-      "source_file": "official_7/test_2/question.json",
-      "enriched": false,
+      "source_file": "official_7/test_2/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 7
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-7-test-2/"
@@ -1020,14 +1037,15 @@
         }
       },
       "index_path": "banks/official-8-test-1/index.json",
-      "source_file": "official_8/test_1/question.json",
-      "enriched": false,
+      "source_file": "official_8/test_1/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 7
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-8-test-1/"
@@ -1085,14 +1103,15 @@
         }
       },
       "index_path": "banks/official-8-test-2/index.json",
-      "source_file": "official_8/test_2/question.json",
-      "enriched": false,
+      "source_file": "official_8/test_2/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 5
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-8-test-2/"
@@ -1150,14 +1169,15 @@
         }
       },
       "index_path": "banks/official-9-test-1/index.json",
-      "source_file": "official_9/test_1/question.json",
-      "enriched": false,
+      "source_file": "official_9/test_1/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 5
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-9-test-1/"
@@ -1215,14 +1235,15 @@
         }
       },
       "index_path": "banks/official-9-test-2/index.json",
-      "source_file": "official_9/test_2/question.json",
-      "enriched": false,
+      "source_file": "official_9/test_2/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 6
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-9-test-2/"
@@ -1280,14 +1301,15 @@
         }
       },
       "index_path": "banks/official-10-test-1/index.json",
-      "source_file": "official_10/test_1/question.json",
-      "enriched": false,
+      "source_file": "official_10/test_1/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 3
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-10-test-1/"
@@ -1345,14 +1367,15 @@
         }
       },
       "index_path": "banks/official-10-test-2/index.json",
-      "source_file": "official_10/test_2/question.json",
-      "enriched": false,
+      "source_file": "official_10/test_2/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 0
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-10-test-2/"
@@ -1417,7 +1440,8 @@
         "translation": "available",
         "knowledge": "available",
         "analysis": "enriched",
-        "ocr": "unreviewed"
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 4
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-11-test-1/"
@@ -1475,14 +1499,15 @@
         }
       },
       "index_path": "banks/official-11-test-2/index.json",
-      "source_file": "official_11/test_2/question.json",
-      "enriched": false,
+      "source_file": "official_11/test_2/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 0
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-11-test-2/"
@@ -1540,14 +1565,15 @@
         }
       },
       "index_path": "banks/official-12-test-1/index.json",
-      "source_file": "official_12/test_1/question.json",
-      "enriched": false,
+      "source_file": "official_12/test_1/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 1
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-12-test-1/"
@@ -1605,14 +1631,15 @@
         }
       },
       "index_path": "banks/official-12-test-2/index.json",
-      "source_file": "official_12/test_2/question.json",
-      "enriched": false,
+      "source_file": "official_12/test_2/question.enriched.json",
+      "enriched": true,
       "quality": {
-        "enriched": false,
-        "translation": "unavailable",
-        "knowledge": "unavailable",
-        "analysis": "basic",
-        "ocr": "unreviewed"
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed",
+        "missing_graphic_groups": 0
       },
       "missing_media_references": 0,
       "asset_base": "assets/official-12-test-2/"

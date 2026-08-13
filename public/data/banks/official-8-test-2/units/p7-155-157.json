@@ -15,10 +15,10 @@
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "词义 / 短语题",
+      "细节题",
+      "词义 / 话语含义题",
       "语境推断",
-      "推断 / 隐含义题"
+      "推断题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +31,9 @@
         "exists": true
       }
     ],
-    "passage": "*E-mail\"\nFrom:\nLaura Batista\nTo:\nAll Library Staff\nDate:\nOctober 3\nSubject:\nNext year's budget\nHello, everyone,\nLast night, the library's board of trustees met to determine the budget for our next fiscal\nyear. Unfortunately, the board did not approve the level of funding I requested\nConsequently, I am planning to make a couple of adjustments over the next few months.\nFirst, we will not fill the positions left vacant when two employees resigned in August. 1\nam currently analyzing their duties and thinking of ways to cover the work with our\ncurrent staff. Second, I will evaluate our subscriptions to various periodicals and\ndiscontinue those for which patron interest is the lowest. We will discuss these and\nfurther measures in more detail at our next staff meeting.\nRegards,\nLaura Batista\nDirector, Abrams City Library"
+    "passage": "*E-mail\"\nFrom:\nLaura Batista\nTo:\nAll Library Staff\nDate:\nOctober 3\nSubject:\nNext year's budget\nHello, everyone,\nLast night, the library's board of trustees met to determine the budget for our next fiscal\nyear. Unfortunately, the board did not approve the level of funding I requested\nConsequently, I am planning to make a couple of adjustments over the next few months.\nFirst, we will not fill the positions left vacant when two employees resigned in August. 1\nam currently analyzing their duties and thinking of ways to cover the work with our\ncurrent staff. Second, I will evaluate our subscriptions to various periodicals and\ndiscontinue those for which patron interest is the lowest. We will discuss these and\nfurther measures in more detail at our next staff meeting.\nRegards,\nLaura Batista\nDirector, Abrams City Library",
+    "passage_translation": "中文辅助（离线预处理）：*E-mail\"\nFrom:\nLaura Batista\nTo:\nAll Library Staff\nDate:\nOctober 3\nSubject:\nNext year's budget\nHello, everyone,\nLast night, the library's board of trustees met to determine the budget for our next fiscal\nyear.\nUnfortunately, the board did not approve the level of funding I requested\nConsequently, I am planning to make a couple of adjustments over the next few months.\nFirst, we will not fill the positions left vacant when（何时） two employees resigned in August.\n1\nam currently analyzing their duties and thinking of ways to cover the work（工作） with our\ncurrent staff.\nSecond, I will evaluate our subscriptions to various periodicals and\ndiscontinue those for which patron interest is the lowest.\nWe will discuss these and\nfurther measures in more detail at our next staff meeting（会议）.\nRegards,\nLaura Batista\nDirector, Abrams City Library",
+    "content_translation": "中文辅助（离线预处理）：*E-mail\"\nFrom:\nLaura Batista\nTo:\nAll Library Staff\nDate:\nOctober 3\nSubject:\nNext year's budget\nHello, everyone,\nLast night, the library's board of trustees met to determine the budget for our next fiscal\nyear.\nUnfortunately, the board did not approve the level of funding I requested\nConsequently, I am planning to make a couple of adjustments over the next few months.\nFirst, we will not fill the positions left vacant when（何时） two employees resigned in August.\n1\nam currently analyzing their duties and thinking of ways to cover the work（工作） with our\ncurrent staff.\nSecond, I will evaluate our subscriptions to various periodicals and\ndiscontinue those for which patron interest is the lowest.\nWe will discuss these and\nfurther measures in more detail at our next staff meeting（会议）.\nRegards,\nLaura Batista\nDirector, Abrams City Library"
   },
   "items": [
     {
@@ -44,15 +46,49 @@
       "answer": "C",
       "question": "According to the e-mail, what happened earlier in the year?",
       "answer_explain": "原文依据：篇章中可定位到“First, we will not fill the positions left vacant when two employees resigned in August.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（Some employees left their jobs.）。",
+      "question_translation": "中文辅助（离线预处理）：According（根据） to the e-mail, what（什么） happened earlier in the year?",
+      "choice_translations": [
+        "A：New board members were chosen.",
+        "B：A building was vacated.",
+        "C：Some employees left their jobs.",
+        "D：Some job requirements changed."
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：*E-mail\"",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：*E-mail\"",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“First, we will not fill the positions left vacant when two employees resigned in August.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（Some employees left their jobs.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "some",
+            "meaning": "本题重点词；结合正确选项理解：Some employees left their jobs."
+          },
+          {
+            "term": "employees",
+            "meaning": "本题重点词；结合正确选项理解：Some employees left their jobs."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Some employees left their jobs.",
+            "meaning": "正确选项中的重点搭配：Some employees left their jobs."
+          }
+        ]
+      },
       "item_id": 155,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +105,45 @@
       "answer": "D",
       "question": "The word \"duties\" in paragraph 1, line 5, is closest in meaning to",
       "answer_explain": "原文依据：篇章中可定位到“am currently analyzing their duties and thinking of ways to cover the work with our”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（responsibilities）。",
+      "question_translation": "中文辅助（离线预处理）：The word \"duties\" in paragraph 1, line 5, is closest in meaning to",
+      "choice_translations": [
+        "A：taxes",
+        "B：habits",
+        "C：allowances",
+        "D：responsibilities"
+      ],
+      "question_type": "词义 / 话语含义题",
+      "evidence": "参考原文第 15 段：am currently analyzing their duties and thinking of ways to cover the work with our",
+      "strategy": "本题属于词义 / 话语含义题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "词义 / 话语含义题",
+        "evidence": "参考原文第 15 段：am currently analyzing their duties and thinking of ways to cover the work with our",
+        "strategy": "本题属于词义 / 话语含义题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“am currently analyzing their duties and thinking of ways to cover the work with our”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（responsibilities）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "responsibilities",
+            "meaning": "本题重点词；结合正确选项理解：responsibilities"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "responsibilities",
+            "meaning": "正确选项中的重点搭配：responsibilities"
+          }
+        ]
+      },
       "item_id": 156,
-      "question_type": "词义 / 短语题",
       "priority": {
         "level": "P1",
         "score": 83,
-        "label": "词义 / 短语题",
+        "label": "词义 / 话语含义题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "词义 / 短语题",
+          "词义 / 话语含义题",
           "语境推断"
         ],
         "scope": "item",
@@ -95,15 +161,49 @@
       "answer": "B",
       "question": "What is suggested about the staff meeting?",
       "answer_explain": "原文依据：篇章中可定位到“Last night, the library's board of trustees met to determine the budget for our next fiscal”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（It will include a discussion of changes to the budget.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is suggested about the staff meeting（会议）?",
+      "choice_translations": [
+        "A：It may need to be rescheduled for next month.",
+        "B：It will include a discussion of changes to the budget.",
+        "C：It may be attended by members of the board of trustees.",
+        "D：It will be held in a different location than"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 5 段：All Library Staff",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "推断题",
+        "evidence": "参考原文第 5 段：All Library Staff",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Last night, the library's board of trustees met to determine the budget for our next fiscal”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（It will include a discussion of changes to the budget.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "include",
+            "meaning": "本题重点词；结合正确选项理解：It will include a discussion of changes to the budget."
+          },
+          {
+            "term": "discussion",
+            "meaning": "本题重点词；结合正确选项理解：It will include a discussion of changes to the budget."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It will include a discussion of changes to the budget.",
+            "meaning": "正确选项中的重点搭配：It will include a discussion of changes to the budget."
+          }
+        ]
+      },
       "item_id": 157,
-      "question_type": "推断 / 隐含义题",
       "priority": {
         "level": "P1",
         "score": 83,
-        "label": "推断 / 隐含义题",
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "推断 / 隐含义题",
+          "推断题",
           "语境推断"
         ],
         "scope": "item",

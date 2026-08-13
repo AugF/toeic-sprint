@@ -10,12 +10,14 @@
   "keywords": "listening detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P2",
-    "score": 61,
+    "level": "P1",
+    "score": 80,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题"
+      "推断题",
+      "跨句整合",
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -31,7 +33,9 @@
       "asset_key": "official-12-test-1/audio/part3/q053-055-questions.mp3",
       "exists": true
     },
-    "transcript": "P 53-55 la\nnew Welcome. OThere's about a 30-minute wait for a table\nin the dining area right now, but I can take your name\nand phone number in case something opens earlier.\nm Thanks! How long have you been open? I visited this\nneighborhood a while ago, but I don't think this was\nopen then.\nEw That's right! We're brand-new to the downtown\nneighborhood. eMany people have been surprised we\nhave a second location. Our original location is on\nthe waterfront.\nYeah, l've only been to the waterfront location. ODo\nyou have any special promotions right now?\nEw Yes! Olf you dine with us often, then sign up for our\nrewards program so you can earn points toward free"
+    "transcript": "P 53-55 la\nnew Welcome. OThere's about a 30-minute wait for a table\nin the dining area right now, but I can take your name\nand phone number in case something opens earlier.\nm Thanks! How long have you been open? I visited this\nneighborhood a while ago, but I don't think this was\nopen then.\nEw That's right! We're brand-new to the downtown\nneighborhood. eMany people have been surprised we\nhave a second location. Our original location is on\nthe waterfront.\nYeah, l've only been to the waterfront location. ODo\nyou have any special promotions right now?\nEw Yes! Olf you dine with us often, then sign up for our\nrewards program so you can earn points toward free",
+    "transcript_translation": "中文辅助（离线预处理）：P 53-55 la\nnew Welcome.\nOThere's about a 30-minute wait for a table\nin the dining area right now, but I can take your name\nand phone number in case something opens earlier.\nm Thanks!\nHow（如何） long have you been open?\nI visited this\nneighborhood a while ago, but I don't think this was\nopen then.\nEw That's right!\nWe're brand-new to the downtown\nneighborhood.\neMany people have been surprised we\nhave a second location.\nOur original location is on\nthe waterfront.\nYeah, l've only been to the waterfront location.\nODo\nyou have any special promotions right now?\nEw Yes!\nOlf you dine with us often, then sign up for our\nrewards program so you can earn points toward free",
+    "content_translation": "中文辅助（离线预处理）：P 53-55 la\nnew Welcome.\nOThere's about a 30-minute wait for a table\nin the dining area right now, but I can take your name\nand phone number in case something opens earlier.\nm Thanks!\nHow（如何） long have you been open?\nI visited this\nneighborhood a while ago, but I don't think this was\nopen then.\nEw That's right!\nWe're brand-new to the downtown\nneighborhood.\neMany people have been surprised we\nhave a second location.\nOur original location is on\nthe waterfront.\nYeah, l've only been to the waterfront location.\nODo\nyou have any special promotions right now?\nEw Yes!\nOlf you dine with us often, then sign up for our\nrewards program so you can earn points toward free"
   },
   "items": [
     {
@@ -44,15 +48,46 @@
       "answer": "D",
       "question": "Where is the conversation most likely taking place?",
       "answer_explain": "原文依据：听力原文中提到“in the dining area right now, but I can take your name”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a restaurant）。",
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the conversation most likely（最可能） taking place?",
+      "choice_translations": [
+        "A：At a convenience store",
+        "B：At a theater",
+        "C：At a bookstore",
+        "D：At a restaurant"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：P 53-55 la",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：P 53-55 la",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“in the dining area right now, but I can take your name”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a restaurant）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "restaurant",
+            "meaning": "本题重点词；结合正确选项理解：At a restaurant"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "At a restaurant",
+            "meaning": "正确选项中的重点搭配：At a restaurant"
+          }
+        ]
+      },
       "item_id": 53,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -69,15 +104,49 @@
       "answer": "B",
       "question": "According to the woman, why are people surprised?",
       "answer_explain": "原文依据：听力原文中提到“Yeah, l've only been to the waterfront location.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A new location has beenopened.）。",
+      "question_translation": "中文辅助（离线预处理）：According（根据） to the woman（女士）, why（为什么） are people surprised?",
+      "choice_translations": [
+        "A：An item is unavailable.",
+        "B：A new location has beenopened.",
+        "C：A show has beencanceled.",
+        "D：A parking lot is full."
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 9 段：neighborhood. eMany people have been surprised we",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 9 段：neighborhood. eMany people have been surprised we",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Yeah, l've only been to the waterfront location.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A new location has beenopened.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "location",
+            "meaning": "本题重点词；结合正确选项理解：A new location has beenopened."
+          },
+          {
+            "term": "beenopened",
+            "meaning": "本题重点词；结合正确选项理解：A new location has beenopened."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "new location has beenopened.",
+            "meaning": "正确选项中的重点搭配：A new location has beenopened."
+          }
+        ]
+      },
       "item_id": 54,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -94,15 +163,49 @@
       "answer": "C",
       "question": "How can the man take advantage of a special promotion?",
       "answer_explain": "原文依据：听力原文中提到“rewards program so you can earn points toward free”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（By registering for arewards program）。",
+      "question_translation": "中文辅助（离线预处理）：How（如何） can the man（男士） take advantage of a special promotion?",
+      "choice_translations": [
+        "A：By writing a positivereview",
+        "B：By signing up for acustomer survey",
+        "C：By registering for arewards program",
+        "D：By ordering multipleitems"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 13 段：you have any special promotions right now?",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 13 段：you have any special promotions right now?",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“rewards program so you can earn points toward free”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（By registering for arewards program）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "registering",
+            "meaning": "本题重点词；结合正确选项理解：By registering for arewards program"
+          },
+          {
+            "term": "arewards",
+            "meaning": "本题重点词；结合正确选项理解：By registering for arewards program"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "By registering for arewards program",
+            "meaning": "正确选项中的重点搭配：By registering for arewards program"
+          }
+        ]
+      },
       "item_id": 55,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

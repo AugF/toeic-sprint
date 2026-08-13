@@ -10,14 +10,13 @@
   "keywords": "reading detail paraphrase inference",
   "difficulty": "medium",
   "priority": {
-    "level": "P1",
-    "score": 82,
+    "level": "P2",
+    "score": 67,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
-      "句子插入题",
-      "语篇结构"
+      "细节题",
+      "主旨 / 目的题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -30,7 +29,9 @@
         "exists": true
       }
     ],
-    "passage": "To:\nAll sales representatives\nFrom:\nPooja Mitra\nDate:\nNovember 6\nSubject:\nNew business cards\nHello,\nWe need to replace all the business cards used by our sales representatives. Normally we\nonly replace them at the end of the fiscal year, but we have adopted a new corporate logo\nafter our recent merger with Central Fabrication Ltd. - [1] -\nPlease check your current cards to see if any updates are needed in your office location,\ndesign dear on thend termer know hat addisna easee are needed a in the graphic\nBe sure to contact Ms. Fujita no later than Friday, November 10. — [4]—.\nPooja Mitra\nSales Manager, Custom Blinds"
+    "passage": "To:\nAll sales representatives\nFrom:\nPooja Mitra\nDate:\nNovember 6\nSubject:\nNew business cards\nHello,\nWe need to replace all the business cards used by our sales representatives. Normally we\nonly replace them at the end of the fiscal year, but we have adopted a new corporate logo\nafter our recent merger with Central Fabrication Ltd. - [1] -\nPlease check your current cards to see if any updates are needed in your office location,\ndesign dear on thend termer know hat addisna easee are needed a in the graphic\nBe sure to contact Ms. Fujita no later than Friday, November 10. — [4]—.\nPooja Mitra\nSales Manager, Custom Blinds",
+    "passage_translation": "中文辅助（离线预处理）：To:\nAll sales representatives\nFrom:\nPooja Mitra\nDate:\nNovember 6\nSubject:\nNew business cards\nHello,\nWe need to replace all the business cards used by our sales representatives.\nNormally we\nonly replace them at the end of the fiscal year, but we have adopted a new corporate logo\nafter our recent merger with Central Fabrication Ltd.\n- [1] -\nPlease（请） check your current cards to see if any updates are needed in your office（办公室） location,\ndesign dear on thend termer know hat addisna easee are needed a in the graphic\nBe sure to contact Ms.\nFujita no later than Friday, November 10.\n— [4]—.\nPooja Mitra\nSales Manager（经理）, Custom Blinds",
+    "content_translation": "中文辅助（离线预处理）：To:\nAll sales representatives\nFrom:\nPooja Mitra\nDate:\nNovember 6\nSubject:\nNew business cards\nHello,\nWe need to replace all the business cards used by our sales representatives.\nNormally we\nonly replace them at the end of the fiscal year, but we have adopted a new corporate logo\nafter our recent merger with Central Fabrication Ltd.\n- [1] -\nPlease（请） check your current cards to see if any updates are needed in your office（办公室） location,\ndesign dear on thend termer know hat addisna easee are needed a in the graphic\nBe sure to contact Ms.\nFujita no later than Friday, November 10.\n— [4]—.\nPooja Mitra\nSales Manager（经理）, Custom Blinds"
   },
   "items": [
     {
@@ -43,15 +44,49 @@
       "answer": "B",
       "question": "Why do sales representatives need new business cards?",
       "answer_explain": "原文依据：篇章中可定位到“We need to replace all the business cards used by our sales representatives.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Their company has changed its logo.）。",
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） do sales representatives need new business cards?",
+      "choice_translations": [
+        "A：£7tDi31",
+        "B：Their company（公司） has changed its logo.",
+        "C：Their company（公司） has a new Web site address.",
+        "D：Their company（公司） is using new job titles for"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 2 段：All sales representatives",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 2 段：All sales representatives",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“We need to replace all the business cards used by our sales representatives.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Their company has changed its logo.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "company",
+            "meaning": "本题重点词；结合正确选项理解：Their company（公司） has changed its logo."
+          },
+          {
+            "term": "changed",
+            "meaning": "本题重点词；结合正确选项理解：Their company（公司） has changed its logo."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Their company has changed its logo.",
+            "meaning": "正确选项中的重点搭配：Their company（公司） has changed its logo."
+          }
+        ]
+      },
       "item_id": 156,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -68,15 +103,49 @@
       "answer": "C",
       "question": "What does Ms. Mitra ask sales representatives to do by November 10?",
       "answer_explain": "原文依据：篇章中可定位到“Please check your current cards to see if any updates are needed in your office location,”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（Tell Ms. Fujita about any required changes to their cards）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does Ms.\nMitra ask sales representatives to do by November 10?",
+      "choice_translations": [
+        "A：Report their most recent sales figures",
+        "B：Return their current business cards to the graphic design department",
+        "C：Tell Ms.\nFujita about any required changes to their cards",
+        "D：Arrange a personal meeting（会议） with"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 2 段：All sales representatives",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 2 段：All sales representatives",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Please check your current cards to see if any updates are needed in your office location,”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（Tell Ms. Fujita about any required changes to their cards）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "tell",
+            "meaning": "本题重点词；结合正确选项理解：Tell Ms.\nFujita about any required changes to their cards"
+          },
+          {
+            "term": "fujita",
+            "meaning": "本题重点词；结合正确选项理解：Tell Ms.\nFujita about any required changes to their cards"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Tell Ms. Fujita about any required changes to their cards",
+            "meaning": "正确选项中的重点搭配：Tell Ms.\nFujita about any required changes to their cards"
+          }
+        ]
+      },
       "item_id": 157,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "score": 70,
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -93,16 +162,49 @@
       "answer": "A",
       "question": "In which of the positions marked [11, [2], [3], new business cards?",
       "answer_explain": "原文依据：篇章中可定位到“We need to replace all the business cards used by our sales representatives.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Their company has relocated.）。",
+      "question_translation": "中文辅助（离线预处理）：In which of the positions marked [11, [2], [3], new business cards?",
+      "choice_translations": [
+        "A：Their company（公司） has relocated.",
+        "B：Their company（公司） has changed its logo.",
+        "C：Their company（公司） has a new Web site address.",
+        "D：Their company（公司） is using new job"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 8 段：New business cards",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 8 段：New business cards",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“We need to replace all the business cards used by our sales representatives.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Their company has relocated.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "company",
+            "meaning": "本题重点词；结合正确选项理解：Their company（公司） has relocated."
+          },
+          {
+            "term": "relocated",
+            "meaning": "本题重点词；结合正确选项理解：Their company（公司） has relocated."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Their company has relocated.",
+            "meaning": "正确选项中的重点搭配：Their company（公司） has relocated."
+          }
+        ]
+      },
       "item_id": 158,
-      "question_type": "句子插入题",
       "priority": {
-        "level": "P1",
-        "score": 91,
-        "label": "句子插入题",
+        "level": "P2",
+        "score": 61,
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "句子插入题",
-          "语篇结构"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

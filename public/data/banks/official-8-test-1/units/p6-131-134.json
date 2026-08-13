@@ -11,13 +11,15 @@
   "difficulty": "medium",
   "priority": {
     "level": "P1",
-    "score": 83,
+    "score": 86,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
       "语境语法 / 词汇题",
       "整句填入题",
-      "篇章衔接"
+      "篇章衔接",
+      "逻辑衔接题",
+      "跨句判断"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -30,7 +32,9 @@
         "exists": true
       }
     ],
-    "passage": "City Grants Permission for New High-Rise\nThe city council has approved plans for a new high-rise apartment building on Third Street. The\nprimarily 131, structure will replace a parking area. 132.\n* will include 220 apartments, ranging\nfrom studios to two-bedroom units.\nThe project was designed by the architecture firm Wagama Clark Reyes. \"133. The Third Street\nproject will feature a pool, a fitness center, a rooftop terrace, and an underground parking\ngarage. The building will 134.\n• have space for a few retail stores and restaurants at ground level."
+    "passage": "City Grants Permission for New High-Rise\nThe city council has approved plans for a new high-rise apartment building on Third Street. The\nprimarily 131, structure will replace a parking area. 132.\n* will include 220 apartments, ranging\nfrom studios to two-bedroom units.\nThe project was designed by the architecture firm Wagama Clark Reyes. \"133. The Third Street\nproject will feature a pool, a fitness center, a rooftop terrace, and an underground parking\ngarage. The building will 134.\n• have space for a few retail stores and restaurants at ground level.",
+    "passage_translation": "中文辅助（离线预处理）：City Grants Permission for New High-Rise\nThe city council has approved plans for a new high-rise apartment building on Third Street.\nThe\nprimarily 131, structure will replace a parking area.\n132.\n* will include 220 apartments, ranging\nfrom studios to two-bedroom units.\nThe project was designed by the architecture firm Wagama Clark Reyes.\n\"133.\nThe Third Street\nproject will feature a pool, a fitness center, a rooftop terrace, and an underground parking\ngarage.\nThe building will 134.\n• have space for a few retail stores and restaurants at ground level.",
+    "content_translation": "中文辅助（离线预处理）：City Grants Permission for New High-Rise\nThe city council has approved plans for a new high-rise apartment building on Third Street.\nThe\nprimarily 131, structure will replace a parking area.\n132.\n* will include 220 apartments, ranging\nfrom studios to two-bedroom units.\nThe project was designed by the architecture firm Wagama Clark Reyes.\n\"133.\nThe Third Street\nproject will feature a pool, a fitness center, a rooftop terrace, and an underground parking\ngarage.\nThe building will 134.\n• have space for a few retail stores and restaurants at ground level."
   },
   "items": [
     {
@@ -42,8 +46,37 @@
       ],
       "answer": "C",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“primarily 131, structure will replace a parking area.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：C（residential）。",
-      "item_id": 131,
+      "choice_translations": [
+        "A：industrial",
+        "B：commercial",
+        "C：residential",
+        "D：educational"
+      ],
       "question_type": "语境语法 / 词汇题",
+      "evidence": "参考原文第 1 段：City Grants Permission for New High-Rise",
+      "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "语境语法 / 词汇题",
+        "evidence": "参考原文第 1 段：City Grants Permission for New High-Rise",
+        "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“primarily 131, structure will replace a parking area.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：C（residential）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "residential",
+            "meaning": "本题重点词；结合正确选项理解：residential"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "residential",
+            "meaning": "正确选项中的重点搭配：residential"
+          }
+        ]
+      },
+      "item_id": 131,
       "priority": {
         "level": "P2",
         "score": 62,
@@ -66,8 +99,32 @@
       ],
       "answer": "A",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“132.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：A（It）。",
-      "item_id": 132,
+      "choice_translations": [
+        "A：It",
+        "B：One",
+        "C：They",
+        "D：Some"
+      ],
       "question_type": "语境语法 / 词汇题",
+      "evidence": "参考原文第 1 段：City Grants Permission for New High-Rise",
+      "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "语境语法 / 词汇题",
+        "evidence": "参考原文第 1 段：City Grants Permission for New High-Rise",
+        "strategy": "本题属于语境语法 / 词汇题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“132.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：A（It）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [],
+        "collocations": [
+          {
+            "phrase": "It",
+            "meaning": "正确选项中的重点搭配：It"
+          }
+        ]
+      },
+      "item_id": 132,
       "priority": {
         "level": "P2",
         "score": 62,
@@ -90,8 +147,41 @@
       ],
       "answer": "D",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“\"133.”。选择理由：该句承接前文并为后文提供必要信息，放入后篇章逻辑和指代均连贯。正确答案：D（The firm previously designed the Vander）。",
-      "item_id": 133,
+      "choice_translations": [
+        "A：Downtown is known for its nightlife.",
+        "B：City traffic is often bumper-to-bumper.",
+        "C：Many apartment buildings do not allow pets.",
+        "D：The firm previously designed the Vander"
+      ],
       "question_type": "整句填入题",
+      "evidence": "参考原文第 1 段：City Grants Permission for New High-Rise",
+      "strategy": "本题属于整句填入题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "整句填入题",
+        "evidence": "参考原文第 1 段：City Grants Permission for New High-Rise",
+        "strategy": "本题属于整句填入题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“\"133.”。选择理由：该句承接前文并为后文提供必要信息，放入后篇章逻辑和指代均连贯。正确答案：D（The firm previously designed the Vander）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "firm",
+            "meaning": "本题重点词；结合正确选项理解：The firm previously designed the Vander"
+          },
+          {
+            "term": "previously",
+            "meaning": "本题重点词；结合正确选项理解：The firm previously designed the Vander"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "The firm previously designed the Vander",
+            "meaning": "正确选项中的重点搭配：The firm previously designed the Vander"
+          }
+        ]
+      },
+      "item_id": 133,
       "priority": {
         "level": "P1",
         "score": 94,
@@ -115,15 +205,45 @@
       ],
       "answer": "B",
       "answer_explain": "原文依据：空格所在篇章的相关语境是“The building will 134.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：B（also）。",
+      "choice_translations": [
+        "A：instead",
+        "B：also",
+        "C：similarly",
+        "D：otherwise"
+      ],
+      "question_type": "逻辑衔接题",
+      "evidence": "参考原文第 1 段：City Grants Permission for New High-Rise",
+      "strategy": "本题属于逻辑衔接题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "逻辑衔接题",
+        "evidence": "参考原文第 1 段：City Grants Permission for New High-Rise",
+        "strategy": "本题属于逻辑衔接题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
+        "analysis": "原文依据：空格所在篇章的相关语境是“The building will 134.”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：B（also）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "also",
+            "meaning": "本题重点词；结合正确选项理解：also"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "also",
+            "meaning": "正确选项中的重点搭配：also"
+          }
+        ]
+      },
       "item_id": 134,
-      "question_type": "语境语法 / 词汇题",
       "priority": {
-        "level": "P2",
-        "score": 62,
-        "label": "语境语法 / 词汇题",
+        "level": "P1",
+        "score": 86,
+        "label": "逻辑衔接题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "语境语法 / 词汇题"
+          "逻辑衔接题",
+          "跨句判断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

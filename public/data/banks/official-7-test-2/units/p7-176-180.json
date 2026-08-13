@@ -11,14 +11,15 @@
   "difficulty": "medium",
   "priority": {
     "level": "P2",
-    "score": 63,
+    "score": 74,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "细节定位题",
+      "细节题",
       "多文本语境",
       "明示定位",
-      "主旨 / 目的 / 场景题"
+      "推断题",
+      "语境推断"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -36,7 +37,9 @@
         "exists": true
       }
     ],
-    "passage": "National Package Service (NPS) Package Tracking\nShipment number: DM5671\nLocation\nDate\nLocal time\nAction\nBaltimore, MD\nMay 2\n7:15 A.M.\nOrigin scan\nBaltimore, MD\nMay 2\n8:22 A.M.\nDeparture scan\nHartford, CT\nMay 3\n4:48 P.M.\nArrival scan\nHartford, CT\nMay 4\n6:30 A.M.\nDeparture scan\nLowell, MA\nMay 4\n3:43 P.M.\nArrival scan\nLowell, MA\nMay 5\n9:47 A.M.\nDeparture scan\nWindham, NH\nMay 5\n1:26 P.M.\nArrival scan\nWindham, NH\nMay 5\n5:17 P.M.\nLoaded for delivery\nWindham, NH\nMay 6\n7:34 A.M.\nDelivered\nShipped by: Deymantis, Inc.\nWeight: 23.5 kilograms\nShipment category: Package\nService: Ground shipment\nBilled on: May 1\nMessage on package:\nShipment of part number 264\nTo:\nMervin Hartley\nFrom:\nCaroline Launey\nDate:\nMay !!\nSubject:\nRe: Deymantis package\nDear Mr. Hartley,\nSincerely,\nCaroline Laune)\nMilford Lumber Mill\n102"
+    "passage": "National Package Service (NPS) Package Tracking\nShipment number: DM5671\nLocation\nDate\nLocal time\nAction\nBaltimore, MD\nMay 2\n7:15 A.M.\nOrigin scan\nBaltimore, MD\nMay 2\n8:22 A.M.\nDeparture scan\nHartford, CT\nMay 3\n4:48 P.M.\nArrival scan\nHartford, CT\nMay 4\n6:30 A.M.\nDeparture scan\nLowell, MA\nMay 4\n3:43 P.M.\nArrival scan\nLowell, MA\nMay 5\n9:47 A.M.\nDeparture scan\nWindham, NH\nMay 5\n1:26 P.M.\nArrival scan\nWindham, NH\nMay 5\n5:17 P.M.\nLoaded for delivery\nWindham, NH\nMay 6\n7:34 A.M.\nDelivered\nShipped by: Deymantis, Inc.\nWeight: 23.5 kilograms\nShipment category: Package\nService: Ground shipment\nBilled on: May 1\nMessage on package:\nShipment of part number 264\nTo:\nMervin Hartley\nFrom:\nCaroline Launey\nDate:\nMay !!\nSubject:\nRe: Deymantis package\nDear Mr. Hartley,\nSincerely,\nCaroline Laune)\nMilford Lumber Mill\n102",
+    "passage_translation": "中文辅助（离线预处理）：National Package Service（服务） (NPS) Package Tracking\nShipment number: DM5671\nLocation\nDate\nLocal time\nAction\nBaltimore, MD\nMay 2\n7:15 A.M.\nOrigin scan\nBaltimore, MD\nMay 2\n8:22 A.M.\nDeparture scan\nHartford, CT\nMay 3\n4:48 P.M.\nArrival scan\nHartford, CT\nMay 4\n6:30 A.M.\nDeparture scan\nLowell, MA\nMay 4\n3:43 P.M.\nArrival scan\nLowell, MA\nMay 5\n9:47 A.M.\nDeparture scan\nWindham, NH\nMay 5\n1:26 P.M.\nArrival scan\nWindham, NH\nMay 5\n5:17 P.M.\nLoaded for delivery\nWindham, NH\nMay 6\n7:34 A.M.\nDelivered\nShipped by: Deymantis, Inc.\nWeight: 23.5 kilograms\nShipment category: Package\nService（服务）: Ground shipment\nBilled on: May 1\nMessage on package:\nShipment of part number 264\nTo:\nMervin Hartley\nFrom:\nCaroline Launey\nDate:\nMay !!\nSubject:\nRe: Deymantis package\nDear Mr.\nHartley,\nSincerely,\nCaroline Laune)\nMilford Lumber Mill\n102",
+    "content_translation": "中文辅助（离线预处理）：National Package Service（服务） (NPS) Package Tracking\nShipment number: DM5671\nLocation\nDate\nLocal time\nAction\nBaltimore, MD\nMay 2\n7:15 A.M.\nOrigin scan\nBaltimore, MD\nMay 2\n8:22 A.M.\nDeparture scan\nHartford, CT\nMay 3\n4:48 P.M.\nArrival scan\nHartford, CT\nMay 4\n6:30 A.M.\nDeparture scan\nLowell, MA\nMay 4\n3:43 P.M.\nArrival scan\nLowell, MA\nMay 5\n9:47 A.M.\nDeparture scan\nWindham, NH\nMay 5\n1:26 P.M.\nArrival scan\nWindham, NH\nMay 5\n5:17 P.M.\nLoaded for delivery\nWindham, NH\nMay 6\n7:34 A.M.\nDelivered\nShipped by: Deymantis, Inc.\nWeight: 23.5 kilograms\nShipment category: Package\nService（服务）: Ground shipment\nBilled on: May 1\nMessage on package:\nShipment of part number 264\nTo:\nMervin Hartley\nFrom:\nCaroline Launey\nDate:\nMay !!\nSubject:\nRe: Deymantis package\nDear Mr.\nHartley,\nSincerely,\nCaroline Laune)\nMilford Lumber Mill\n102"
   },
   "items": [
     {
@@ -49,15 +52,45 @@
       "answer": "C",
       "question": "According to the tracking information, where was the package on the evening of May 4?",
       "answer_explain": "原文依据：篇章中可定位到“Lowell, MA”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（In Lowell）。",
+      "question_translation": "中文辅助（离线预处理）：According（根据） to the tracking information（信息）, where（哪里） was the package on the evening of May 4?",
+      "choice_translations": [
+        "A：In Baltimore",
+        "B：In Hartford",
+        "C：In Lowell",
+        "D：In Windham"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：National Package Service (NPS) Package Tracking",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：National Package Service (NPS) Package Tracking",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Lowell, MA”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（In Lowell）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "lowell",
+            "meaning": "本题重点词；结合正确选项理解：In Lowell"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "In Lowell",
+            "meaning": "正确选项中的重点搭配：In Lowell"
+          }
+        ]
+      },
       "item_id": 176,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 42,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "多文本语境",
           "明示定位"
         ],
@@ -76,16 +109,46 @@
       "answer": "B",
       "question": "According to the tracking information, how was the package most likely transported?",
       "answer_explain": "原文依据：篇章中可定位到“National Package Service (NPS) Package Tracking”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（By NPS truck）。",
+      "question_translation": "中文辅助（离线预处理）：According（根据） to the tracking information（信息）, how（如何） was the package most likely（最可能） transported?",
+      "choice_translations": [
+        "A：By NPS airplane",
+        "B：By NPS truck",
+        "C：By Deymantis airplane",
+        "D：By Deymantis truck"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：National Package Service (NPS) Package Tracking",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：National Package Service (NPS) Package Tracking",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“National Package Service (NPS) Package Tracking”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（By NPS truck）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "truck",
+            "meaning": "本题重点词；结合正确选项理解：By NPS truck"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "By NPS truck",
+            "meaning": "正确选项中的重点搭配：By NPS truck"
+          }
+        ]
+      },
       "item_id": 177,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "多文本语境"
+          "推断题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -102,15 +165,50 @@
       "answer": "A",
       "question": "Why did Ms. Launey write the e-mail?",
       "answer_explain": "原文依据：篇章中可定位到“Caroline Launey”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（To provide an update）。",
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） did Ms.\nLauney write the e-mail?",
+      "choice_translations": [
+        "A：To provide an update",
+        "B：To explain a delay",
+        "C：To order（订单） a new part",
+        "D：To request a report"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 53 段：Caroline Launey",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 53 段：Caroline Launey",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Caroline Launey”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（To provide an update）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "provide",
+            "meaning": "本题重点词；结合正确选项理解：To provide an update"
+          },
+          {
+            "term": "update",
+            "meaning": "本题重点词；结合正确选项理解：To provide an update"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To provide an update",
+            "meaning": "正确选项中的重点搭配：To provide an update"
+          }
+        ]
+      },
       "item_id": 178,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
         "level": "P2",
-        "score": 70,
-        "label": "主旨 / 目的 / 场景题",
+        "score": 61,
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题"
+          "细节题",
+          "多文本语境"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -127,15 +225,40 @@
       "answer": "C",
       "question": "When was part number 264 tested?",
       "answer_explain": "原文依据：篇章中可定位到“Billed on: May 1”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（On May 7）。",
+      "question_translation": "中文辅助（离线预处理）：When（何时） was part number 264 tested?",
+      "choice_translations": [
+        "A：On May 2",
+        "B：On May 6",
+        "C：On May 7",
+        "D：On May 11"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 2 段：Shipment number: DM5671",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 2 段：Shipment number: DM5671",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Billed on: May 1”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（On May 7）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [],
+        "collocations": [
+          {
+            "phrase": "On May 7",
+            "meaning": "正确选项中的重点搭配：On May 7"
+          }
+        ]
+      },
       "item_id": 179,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P3",
         "score": 42,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
+          "细节题",
           "多文本语境",
           "明示定位"
         ],
@@ -154,16 +277,50 @@
       "answer": "D",
       "question": "According to the e-mail, what will part number 264 most likely be used for?",
       "answer_explain": "原文依据：篇章中可定位到“Shipment of part number 264”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（Cutting wood）。",
+      "question_translation": "中文辅助（离线预处理）：According（根据） to the e-mail, what（什么） will part number 264 most likely（最可能） be used for?",
+      "choice_translations": [
+        "A：Breaking concrete",
+        "B：Polishing metal",
+        "C：Shaping glass",
+        "D：Cutting wood"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 2 段：Shipment number: DM5671",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 2 段：Shipment number: DM5671",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Shipment of part number 264”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（Cutting wood）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "cutting",
+            "meaning": "本题重点词；结合正确选项理解：Cutting wood"
+          },
+          {
+            "term": "wood",
+            "meaning": "本题重点词；结合正确选项理解：Cutting wood"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Cutting wood",
+            "meaning": "正确选项中的重点搭配：Cutting wood"
+          }
+        ]
+      },
       "item_id": 180,
-      "question_type": "细节定位题",
       "priority": {
-        "level": "P2",
-        "score": 61,
-        "label": "细节定位题",
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题",
-          "多文本语境"
+          "推断题",
+          "语境推断"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

@@ -15,8 +15,8 @@
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "细节定位题"
+      "主旨 / 目的题",
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -29,7 +29,9 @@
         "exists": true
       }
     ],
-    "passage": "*E-mail*\nTo:\nAll Employees\nFrom:\nAngie Mann\nDate\nOctober 21\nSubject:\nSoftware Download\nDear Employees:\nAs you know from previous e-mails, the new software download will take place this\nweekend. You will not be able to use your company e-mail from 8 p.m. on Friday. You\nwill have access again beginning at 7 a.m. on Monday morning. Do not shut down your\ncomputer when you leave on Friday.\nIf you have any questions about the information covered here, please contact the\nInformation Technology department by calling 555-0100 or by sending an e-mail to\nIT@channeldesignservices.com.\nThank you,\nAngie Mann\nDirector of Information Technology\nChannel Design Services"
+    "passage": "*E-mail*\nTo:\nAll Employees\nFrom:\nAngie Mann\nDate\nOctober 21\nSubject:\nSoftware Download\nDear Employees:\nAs you know from previous e-mails, the new software download will take place this\nweekend. You will not be able to use your company e-mail from 8 p.m. on Friday. You\nwill have access again beginning at 7 a.m. on Monday morning. Do not shut down your\ncomputer when you leave on Friday.\nIf you have any questions about the information covered here, please contact the\nInformation Technology department by calling 555-0100 or by sending an e-mail to\nIT@channeldesignservices.com.\nThank you,\nAngie Mann\nDirector of Information Technology\nChannel Design Services",
+    "passage_translation": "中文辅助（离线预处理）：*E-mail*\nTo:\nAll Employees\nFrom:\nAngie Mann\nDate\nOctober 21\nSubject:\nSoftware Download\nDear Employees:\nAs you know from previous e-mails, the new software download will take place this\nweekend.\nYou will not be able to use your company（公司） e-mail from 8 p.m.\non Friday.\nYou\nwill have access again beginning at 7 a.m.\non Monday morning.\nDo not shut down your\ncomputer when（何时） you leave on Friday.\nIf you have any questions about the information（信息） covered here, please（请） contact the\nInformation（信息） Technology department by calling 555-0100 or by sending an e-mail to\nIT@channeldesignservices.com.\nThank（感谢） you,\nAngie Mann\nDirector of Information（信息） Technology\nChannel Design Services",
+    "content_translation": "中文辅助（离线预处理）：*E-mail*\nTo:\nAll Employees\nFrom:\nAngie Mann\nDate\nOctober 21\nSubject:\nSoftware Download\nDear Employees:\nAs you know from previous e-mails, the new software download will take place this\nweekend.\nYou will not be able to use your company（公司） e-mail from 8 p.m.\non Friday.\nYou\nwill have access again beginning at 7 a.m.\non Monday morning.\nDo not shut down your\ncomputer when（何时） you leave on Friday.\nIf you have any questions about the information（信息） covered here, please（请） contact the\nInformation（信息） Technology department by calling 555-0100 or by sending an e-mail to\nIT@channeldesignservices.com.\nThank（感谢） you,\nAngie Mann\nDirector of Information（信息） Technology\nChannel Design Services"
   },
   "items": [
     {
@@ -42,15 +44,49 @@
       "answer": "B",
       "question": "What is the purpose of the e-mail?",
       "answer_explain": "原文依据：篇章中可定位到“If you have any questions about the information covered here, please contact the”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（To give information about a process）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is the purpose（目的） of the e-mail?",
+      "choice_translations": [
+        "A：To cancel a meeting（会议）",
+        "B：To give information（信息） about a process",
+        "C：To apologize for an outage",
+        "D：To request some feedback"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：*E-mail*",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：*E-mail*",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“If you have any questions about the information covered here, please contact the”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（To give information about a process）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "give",
+            "meaning": "本题重点词；结合正确选项理解：To give information（信息） about a process"
+          },
+          {
+            "term": "information",
+            "meaning": "本题重点词；结合正确选项理解：To give information（信息） about a process"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To give information about a process",
+            "meaning": "正确选项中的重点搭配：To give information（信息） about a process"
+          }
+        ]
+      },
       "item_id": 154,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
         "level": "P2",
         "score": 70,
-        "label": "主旨 / 目的 / 场景题",
+        "label": "主旨 / 目的题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题"
+          "主旨 / 目的题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -67,15 +103,49 @@
       "answer": "A",
       "question": "What are employees asked to do on Friday?",
       "answer_explain": "原文依据：篇章中可定位到“computer when you leave on Friday.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Leave their computers turned on）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） are employees asked to do on Friday?",
+      "choice_translations": [
+        "A：Leave their computers turned on",
+        "B：Send an e-mail to Ms.\nMann",
+        "C：Take their laptop computers home",
+        "D：Change their passwords"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 3 段：All Employees",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 3 段：All Employees",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“computer when you leave on Friday.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Leave their computers turned on）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "leave",
+            "meaning": "本题重点词；结合正确选项理解：Leave their computers turned on"
+          },
+          {
+            "term": "computers",
+            "meaning": "本题重点词；结合正确选项理解：Leave their computers turned on"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Leave their computers turned on",
+            "meaning": "正确选项中的重点搭配：Leave their computers turned on"
+          }
+        ]
+      },
       "item_id": 155,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

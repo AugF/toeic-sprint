@@ -11,6 +11,9 @@ test("publishes 24 banks and 4,800 globally unique item references",async()=>{
   assert.equal(catalog.totals.questions,4800);
   assert.equal(catalog.totals.unique_item_keys,4800);
   assert.equal(catalog.totals.missing_media_references,0);
+  assert.equal(catalog.banks.filter(bank=>!bank.enriched).length,0);
+  assert.ok(catalog.banks.reduce((sum,bank)=>sum+(bank.quality?.missing_graphic_groups||0),0)>0);
+  assert.ok(catalog.warnings.some(value=>value.includes("图表")));
   assert.ok(["P1","P2","P3"].every(level=>catalog.totals.priority_distribution[level]>0));
   const keys=new Set();
   for(const bank of catalog.banks){
@@ -23,6 +26,28 @@ test("publishes 24 banks and 4,800 globally unique item references",async()=>{
     }
   }
   assert.equal(keys.size,4800);
+});
+
+test("precomputes Chinese study aids, structured analysis and knowledge for every question",async()=>{
+  const catalog=JSON.parse(await read("public/data/catalog.json"));
+  let questions=0,choices=0;
+  for(const bank of catalog.banks){
+    const index=JSON.parse(await read(`public/data/${bank.index_path}`));
+    for(const unit of index.units){
+      const detail=JSON.parse(await read(`public/data/${unit.detail_path}`));
+      if(unit.part!==5)assert.ok(detail.context.transcript_translation||detail.context.passage_translation||detail.context.content_translation,`${bank.bank_id}/${unit.unit_id} lacks material translation`);
+      for(const item of detail.items){
+        questions++;
+        assert.equal(item.choice_translations.length,item.choices.length,`${item.item_key} lacks translated choices`);
+        if(item.question)assert.ok(item.question_translation,`${item.item_key} lacks translated question`);
+        assert.ok(item.explanation_structured?.answer,`${item.item_key} lacks structured analysis`);
+        assert.ok(item.knowledge_accumulation?.collocations?.length,`${item.item_key} lacks knowledge accumulation`);
+        choices+=item.choices.length;
+      }
+    }
+  }
+  assert.equal(questions,4800);
+  assert.equal(choices,18600);
 });
 
 test("keeps shared official material in canonical details while Part 1, 2 and 5 stay single",async()=>{
@@ -40,6 +65,7 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   assert.match(page,/24 套官方题库/);
   assert.match(page,/优先级单题刷/);
   assert.match(page,/fetchJson<UnitDetail>/);
+  assert.match(page,/context\.audio_path \|\| context\.question_audio_path/);
   assert.match(page,/item_key/);
   assert.match(page,/展开同组另外/);
   assert.match(css,/\.globalPractice/);

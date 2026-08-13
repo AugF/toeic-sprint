@@ -27,7 +27,9 @@
       "path": "audio/part2/q016.mp3",
       "asset_key": "official-12-test-2/audio/part2/q016.mp3",
       "exists": true
-    }
+    },
+    "transcript_translation": "中文辅助（离线预处理）：aW There aren't any more trains to Centerville DEBA today, are there?\n=",
+    "content_translation": "中文辅助（离线预处理）：aW There aren't any more trains to Centerville DEBA today, are there?\n="
   },
   "items": [
     {
@@ -42,8 +44,42 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“aW There aren't any more trains to Centerville DEBA today, are there? =”，自然应答是“Sorry, the last one just left.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sorry, the last one just left.）。",
-      "item_id": 16,
+      "question_translation": "中文辅助（离线预处理）：aW There aren't any more trains to Centerville DEBA today, are there?\n=",
+      "choice_translations": [
+        "A：A monthly commuter pass.",
+        "B：Thanks, but I can walk.",
+        "C：Sorry, the last one just left."
+      ],
       "question_type": "否定 / 反意疑问句",
+      "evidence": "参考原文第 1 段：aW There aren't any more trains to Centerville DEBA today, are there? =",
+      "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+      "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "否定 / 反意疑问句",
+        "evidence": "参考原文第 1 段：aW There aren't any more trains to Centerville DEBA today, are there? =",
+        "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
+        "analysis": "原文依据：问句或陈述是“aW There aren't any more trains to Centerville DEBA today, are there? =”，自然应答是“Sorry, the last one just left.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sorry, the last one just left.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "sorry",
+            "meaning": "本题重点词；结合正确选项理解：Sorry, the last one just left."
+          },
+          {
+            "term": "last",
+            "meaning": "本题重点词；结合正确选项理解：Sorry, the last one just left."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Sorry, the last one just left.",
+            "meaning": "正确选项中的重点搭配：Sorry, the last one just left."
+          }
+        ]
+      },
+      "item_id": 16,
       "priority": {
         "level": "P1",
         "score": 85,

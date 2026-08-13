@@ -11,15 +11,14 @@
   "difficulty": "medium",
   "priority": {
     "level": "P1",
-    "score": 85,
+    "score": 87,
     "label": "共享材料综合训练",
     "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
     "focus_tags": [
-      "主旨 / 目的 / 场景题",
-      "主旨场景",
-      "图表联动题",
+      "推断题",
+      "跨句整合",
       "图表联动",
-      "细节定位题"
+      "细节题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -35,7 +34,9 @@
       "asset_key": "official-7-test-2/audio/part3/q068-070-questions.mp3",
       "exists": true
     },
-    "transcript": "and table.\nBam O The ovens are working, and the health inspector has\ngiven us the go-ahead!\nEw Great! Ol'm sure our cakes and pastries will sell\nquickly when our shop opens next month.\nm l've also found an online service that could create our\nWeb site. It's called Bixter. Here are their options.\nDERATIN\nEw Let's see... Well, ® budget-wise, we shouldn't go higher\nthan 30 dollars a month.\nOK. And Owe don't need their tech support option,\nsince your brother can help with that.\nEw Agreed! Oh, um, one other thing... Owe do definitely\nneed to be able to upload videos to show people how\nour breads are made.\nm Well, °that's settled then. I'll give them a call after\nlunch.\nBixter Web Site Builder\nDesign Unlimited Video | Tech\nTools\nStorage Capable Support\nCapacity\n\"-IL\ntA-A\nPackage 1\nmonth\nPackage 2\nK05-2\nmonth\nA\nPackage 3\nmonth\nFIL A\nPackage 4\nmonth\nr"
+    "transcript": "and table.\nBam O The ovens are working, and the health inspector has\ngiven us the go-ahead!\nEw Great! Ol'm sure our cakes and pastries will sell\nquickly when our shop opens next month.\nm l've also found an online service that could create our\nWeb site. It's called Bixter. Here are their options.\nDERATIN\nEw Let's see... Well, ® budget-wise, we shouldn't go higher\nthan 30 dollars a month.\nOK. And Owe don't need their tech support option,\nsince your brother can help with that.\nEw Agreed! Oh, um, one other thing... Owe do definitely\nneed to be able to upload videos to show people how\nour breads are made.\nm Well, °that's settled then. I'll give them a call after\nlunch.\nBixter Web Site Builder\nDesign Unlimited Video | Tech\nTools\nStorage Capable Support\nCapacity\n\"-IL\ntA-A\nPackage 1\nmonth\nPackage 2\nK05-2\nmonth\nA\nPackage 3\nmonth\nFIL A\nPackage 4\nmonth\nr",
+    "transcript_translation": "中文辅助（离线预处理）：and table.\nBam O The ovens are working, and the health inspector has\ngiven us the go-ahead!\nEw Great!\nOl'm sure our cakes and pastries will sell\nquickly when（何时） our shop opens next month.\nm l've also found an online service（服务） that could create our\nWeb site.\nIt's called Bixter.\nHere are their options.\nDERATIN\nEw Let's see...\nWell, ® budget-wise, we shouldn't go higher\nthan 30 dollars a month.\nOK.\nAnd Owe don't need their tech support option,\nsince your brother can help with that.\nEw Agreed!\nOh, um, one other thing...\nOwe do definitely\nneed to be able to upload videos to show people how（如何）\nour breads are made.\nm Well, °that's settled then.\nI'll give them a call after\nlunch.\nBixter Web Site Builder\nDesign Unlimited Video | Tech\nTools\nStorage Capable Support\nCapacity\n\"-IL\ntA-A\nPackage 1\nmonth\nPackage 2\nK05-2\nmonth\nA\nPackage 3\nmonth\nFIL A\nPackage 4\nmonth\nr",
+    "content_translation": "中文辅助（离线预处理）：and table.\nBam O The ovens are working, and the health inspector has\ngiven us the go-ahead!\nEw Great!\nOl'm sure our cakes and pastries will sell\nquickly when（何时） our shop opens next month.\nm l've also found an online service（服务） that could create our\nWeb site.\nIt's called Bixter.\nHere are their options.\nDERATIN\nEw Let's see...\nWell, ® budget-wise, we shouldn't go higher\nthan 30 dollars a month.\nOK.\nAnd Owe don't need their tech support option,\nsince your brother can help with that.\nEw Agreed!\nOh, um, one other thing...\nOwe do definitely\nneed to be able to upload videos to show people how（如何）\nour breads are made.\nm Well, °that's settled then.\nI'll give them a call after\nlunch.\nBixter Web Site Builder\nDesign Unlimited Video | Tech\nTools\nStorage Capable Support\nCapacity\n\"-IL\ntA-A\nPackage 1\nmonth\nPackage 2\nK05-2\nmonth\nA\nPackage 3\nmonth\nFIL A\nPackage 4\nmonth\nr"
   },
   "items": [
     {
@@ -48,16 +49,46 @@
       "answer": "C",
       "question": "What type of business do the speakers most likely own?",
       "answer_explain": "原文依据：听力原文中提到“Bam O The ovens are working, and the health inspector has”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A bakery）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） type of business do the speakers most likely（最可能） own?",
+      "choice_translations": [
+        "A：A computer repair store",
+        "B：An online newspaper",
+        "C：A bakery",
+        "D：A medical supply company（公司）"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：and table.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：and table.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Bam O The ovens are working, and the health inspector has”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A bakery）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "bakery",
+            "meaning": "本题重点词；结合正确选项理解：A bakery"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "bakery",
+            "meaning": "正确选项中的重点搭配：A bakery"
+          }
+        ]
+      },
       "item_id": 68,
-      "question_type": "主旨 / 目的 / 场景题",
       "priority": {
-        "level": "P2",
-        "score": 72,
-        "label": "主旨 / 目的 / 场景题",
+        "level": "P1",
+        "score": 88,
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "主旨 / 目的 / 场景题",
-          "主旨场景"
+          "推断题",
+          "跨句整合"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
@@ -74,15 +105,45 @@
       "answer": "C",
       "question": "Look at the graphic. Which package will the speakers most likely choose?",
       "answer_explain": "原文依据：听力原文中提到“Package 1”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Package 3）。",
+      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich package will the speakers most likely（最可能） choose?",
+      "choice_translations": [
+        "A：Package 1",
+        "B：Package 2",
+        "C：Package 3",
+        "D：Package 4"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 25 段：Package 1",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 25 段：Package 1",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“Package 1”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Package 3）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "package",
+            "meaning": "本题重点词；结合正确选项理解：Package 3"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Package 3",
+            "meaning": "正确选项中的重点搭配：Package 3"
+          }
+        ]
+      },
       "item_id": 69,
-      "question_type": "图表联动题",
       "priority": {
         "level": "P1",
         "score": 93,
-        "label": "图表联动题",
+        "label": "推断题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "图表联动题",
+          "推断题",
           "图表联动"
         ],
         "scope": "item",
@@ -100,15 +161,49 @@
       "answer": "B",
       "question": "What does the man say he will do after lunch?",
       "answer_explain": "原文依据：听力原文中提到“I'll give them a call after”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Make a call）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） say he will do after lunch?",
+      "choice_translations": [
+        "A：Pick up a permit",
+        "B：Make a call",
+        "C：Watch a video",
+        "D：Repair a device"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 16 段：m Well, °that's settled then. I'll give them a call after",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 16 段：m Well, °that's settled then. I'll give them a call after",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文中提到“I'll give them a call after”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Make a call）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "make",
+            "meaning": "本题重点词；结合正确选项理解：Make a call"
+          },
+          {
+            "term": "call",
+            "meaning": "本题重点词；结合正确选项理解：Make a call"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Make a call",
+            "meaning": "正确选项中的重点搭配：Make a call"
+          }
+        ]
+      },
       "item_id": 70,
-      "question_type": "细节定位题",
       "priority": {
         "level": "P2",
         "score": 61,
-        "label": "细节定位题",
+        "label": "细节题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "细节定位题"
+          "细节题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"

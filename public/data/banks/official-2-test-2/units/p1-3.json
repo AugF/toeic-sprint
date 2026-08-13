@@ -15,7 +15,7 @@
     "label": "单题训练",
     "reason": "按该题的高频考点和能力迁移价值排序。",
     "focus_tags": [
-      "人物动作 / 场景题"
+      "动作 / 状态辨析题"
     ],
     "scope": "unit",
     "model": "toeic_priority_v2"
@@ -30,7 +30,9 @@
       "path": "images/part1/q003.jpg",
       "asset_key": "official-2-test-2/images/part1/q003.jpg",
       "exists": true
-    }
+    },
+    "transcript_translation": "A. 一名女士指着一个屏幕。\nB. 一名女士在向顾客问好。\nC. 这些女士们正在桌子上放一台电脑。\nD. 这些女士们正在调整一个显示器。",
+    "content_translation": "A. 一名女士指着一个屏幕。\nB. 一名女士在向顾客问好。\nC. 这些女士们正在桌子上放一台电脑。\nD. 这些女士们正在调整一个显示器。"
   },
   "items": [
     {
@@ -45,15 +47,48 @@
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“One woman is pointing at a screen.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（One woman is pointing at a screen.）。",
+      "choice_translations": [
+        "A：一名女士指着一个屏幕。",
+        "B：一名女士在向顾客问好。",
+        "C：这些女士们正在桌子上放一台电脑。",
+        "D：这些女士们正在调整一个显示器。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "woman",
+            "meaning": "出现在本题正确表达中：一名女士指着一个屏幕。"
+          },
+          {
+            "term": "pointing",
+            "meaning": "出现在本题正确表达中：一名女士指着一个屏幕。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "One woman is pointing at a screen.",
+            "meaning": "一名女士指着一个屏幕。"
+          }
+        ]
+      },
+      "question_type": "动作 / 状态辨析题",
+      "evidence": "根据题干结构、选项语义和上下文判断。",
+      "strategy": "本题属于动作 / 状态辨析题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "动作 / 状态辨析题",
+        "evidence": "根据题干结构、选项语义和上下文判断。",
+        "strategy": "本题属于动作 / 状态辨析题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：照片中可见信息与描述“One woman is pointing at a screen.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（One woman is pointing at a screen.）。"
+      },
       "item_id": 3,
-      "question_type": "人物动作 / 场景题",
       "priority": {
         "level": "P2",
         "score": 64,
-        "label": "人物动作 / 场景题",
+        "label": "动作 / 状态辨析题",
         "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
         "focus_tags": [
-          "人物动作 / 场景题"
+          "动作 / 状态辨析题"
         ],
         "scope": "item",
         "model": "toeic_priority_v2"
