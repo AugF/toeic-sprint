@@ -74,24 +74,6 @@
         "C：新闻报道",
         "D：室内设计"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "game",
-            "meaning": "出现在本题正确表达中：游戏开发"
-          },
-          {
-            "term": "development",
-            "meaning": "出现在本题正确表达中：游戏开发"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Game development",
-            "meaning": "游戏开发"
-          }
-        ]
-      },
       "item_id": 98,
       "priority": {
         "level": "P1",
@@ -142,20 +124,6 @@
         "C：Entertainable",
         "D：Cube 9"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "entertainable",
-            "meaning": "出现在本题正确表达中：Entertainable"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Entertainable",
-            "meaning": "Entertainable"
-          }
-        ]
-      },
       "item_id": 99,
       "priority": {
         "level": "P1",
@@ -206,24 +174,6 @@
         "C：协商一份合同",
         "D：尝试不同的商业模式"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "different",
-            "meaning": "出现在本题正确表达中：尝试不同的商业模式"
-          },
-          {
-            "term": "business",
-            "meaning": "出现在本题正确表达中：尝试不同的商业模式"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Try a different business model",
-            "meaning": "尝试不同的商业模式"
-          }
-        ]
-      },
       "item_id": 100,
       "priority": {
         "level": "P1",
@@ -247,5 +197,23 @@
       },
       "item_key": "official-1-test-1/p4-98-100/100"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "negotiate",
+        "meaning": "谈判；协商",
+        "source_quote": "Negotiate a contract",
+        "source_field": "choice",
+        "why": "合同、采购和商务合作语境高频。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

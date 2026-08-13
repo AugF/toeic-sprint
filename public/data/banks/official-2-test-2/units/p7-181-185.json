@@ -59,24 +59,6 @@
         "C：他受雇于 Ayipix。",
         "D：他对 Ayipix 付过款。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "employed",
-            "meaning": "出现在本题正确表达中：他受雇于 Ayipix。"
-          },
-          {
-            "term": "ayipix",
-            "meaning": "出现在本题正确表达中：他受雇于 Ayipix。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "He is employed by Ayipix.",
-            "meaning": "他受雇于 Ayipix。"
-          }
-        ]
-      },
       "question_type": "推断题",
       "evidence": "参考原文第 1 段：To: | | Marina Steinmeier |",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -132,20 +114,6 @@
         "C：Iwamoto 女士",
         "D：Sayavong 先生"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "steinmeier",
-            "meaning": "出现在本题正确表达中：Steinmeier 女士"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Ms. Steinmeier",
-            "meaning": "Steinmeier 女士"
-          }
-        ]
-      },
       "question_type": "否定事实题",
       "evidence": "参考原文第 7 段：Lilia Holub and I need to return to Pakse to make the final arrangements for the opening",
       "strategy": "本题属于否定事实题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -201,24 +169,6 @@
         "C：她正在为她的同事安排差旅。",
         "D：她推荐了 Ly Som 酒店。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "pakse",
-            "meaning": "出现在本题正确表达中：她以前去过 Pakse。"
-          },
-          {
-            "term": "before",
-            "meaning": "出现在本题正确表达中：她以前去过 Pakse。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "She has been to Pakse before.",
-            "meaning": "她以前去过 Pakse。"
-          }
-        ]
-      },
       "question_type": "主旨 / 目的题",
       "evidence": "参考原文第 7 段：Lilia Holub and I need to return to Pakse to make the final arrangements for the opening",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -274,20 +224,6 @@
         "C：Orchid",
         "D：Frangipani"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "frangipani",
-            "meaning": "出现在本题正确表达中：Frangipani"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Frangipani",
-            "meaning": "Frangipani"
-          }
-        ]
-      },
       "question_type": "图表 / 信息联动题",
       "evidence": "参考原文第 2 段：From: | [ Saori Iwamoto |",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -343,24 +279,6 @@
         "C：免费餐食",
         "D：主街景观"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "aride",
-            "meaning": "出现在本题正确表达中：去机场的车"
-          },
-          {
-            "term": "airport",
-            "meaning": "出现在本题正确表达中：去机场的车"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Aride to the airport",
-            "meaning": "去机场的车"
-          }
-        ]
-      },
       "question_type": "图表 / 信息联动题",
       "evidence": "参考原文第 1 段：To: | | Marina Steinmeier |",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -399,5 +317,23 @@
       },
       "item_key": "official-2-test-2/p7-181-185/185"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "collocations": [
+      {
+        "phrase": "travel arrangements",
+        "meaning": "出行安排",
+        "source_quote": "She is making travel arrangements for her colleagues.",
+        "source_field": "choice",
+        "why": "商务旅行、活动筹备和行政沟通常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

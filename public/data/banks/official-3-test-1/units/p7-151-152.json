@@ -54,24 +54,6 @@
         "C：他不知道在哪里投递消息。",
         "D：他不知道设备哪里出了问题。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "does",
-            "meaning": "出现在本题正确表达中：他不知道设备哪里出了问题。"
-          },
-          {
-            "term": "know",
-            "meaning": "出现在本题正确表达中：他不知道设备哪里出了问题。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "He does not know why the equipment is",
-            "meaning": "他不知道设备哪里出了问题。"
-          }
-        ]
-      },
       "question_type": "推断题",
       "evidence": "参考原文第 1 段：r",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -122,24 +104,6 @@
         "C：去会议室",
         "D：做一个简短的演示"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "conference",
-            "meaning": "出现在本题正确表达中：去会议室"
-          },
-          {
-            "term": "room",
-            "meaning": "出现在本题正确表达中：去会议室"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Go to the conference room",
-            "meaning": "去会议室"
-          }
-        ]
-      },
       "question_type": "推断题",
       "evidence": "参考原文第 1 段：r",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -173,5 +137,23 @@
       },
       "item_key": "official-3-test-1/p7-151-152/152"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "collocations": [
+      {
+        "phrase": "technical support",
+        "meaning": "技术支持",
+        "source_quote": "Call for technical support",
+        "source_field": "choice",
+        "why": "软件、设备和客户服务文本常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

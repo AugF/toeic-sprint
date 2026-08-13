@@ -53,24 +53,6 @@
         "C：宣传特殊价格",
         "D：确认预订"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "explain",
-            "meaning": "出现在本题正确表达中：解释一项政策"
-          },
-          {
-            "term": "policy",
-            "meaning": "出现在本题正确表达中：解释一项政策"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To explain a policy",
-            "meaning": "解释一项政策"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：From: | [ frontdesk @parkersquarehotel.com |",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -120,20 +102,6 @@
         "C：下午2:00前",
         "D：下午6:00前"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "By 6:00 PM.",
-            "meaning": "出现在本题正确表达中：下午6:00前"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "By 6:00 PM.",
-            "meaning": "下午6:00前"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 9 段：additional $25. Guests are requested to contact us at least one day ahead of time so that",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -166,5 +134,33 @@
       },
       "item_key": "official-2-test-1/p7-147-148/148"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "reservation",
+        "meaning": "预订",
+        "source_quote": "To confirm a reservation",
+        "source_field": "choice",
+        "why": "酒店、餐饮、会议室与出行场景常见。",
+        "confidence": 0.96
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "confirm a reservation",
+        "meaning": "确认预订",
+        "source_quote": "To confirm a reservation",
+        "source_field": "choice",
+        "why": "酒店、餐饮和会议安排场景常用。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

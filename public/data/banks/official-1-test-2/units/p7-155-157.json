@@ -54,24 +54,6 @@
         "C：订购砖块",
         "D：记录一批货物的库存"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "provide",
-            "meaning": "出现在本题正确表达中：向员工提供指示"
-          },
-          {
-            "term": "instructions",
-            "meaning": "出现在本题正确表达中：向员工提供指示"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To provide instructions to an employee",
-            "meaning": "向员工提供指示"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：To: | | warren.cluett @reva.org |",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -122,24 +104,6 @@
         "C：它非常昂贵。",
         "D：它是给一位重要客户的。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "contains",
-            "meaning": "出现在本题正确表达中：它包含易碎材料。"
-          },
-          {
-            "term": "breakable",
-            "meaning": "出现在本题正确表达中：它包含易碎材料。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "It contains breakable material.",
-            "meaning": "它包含易碎材料。"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 4 段：Subject: | [ Shipment arrival |",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -190,20 +154,6 @@
         "C：[3]",
         "D：[4]"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "[1]",
-            "meaning": "出现在本题正确表达中：[1]"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "[1]",
-            "meaning": "[1]"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 6 段：We will be receiving a shipment of bricks tomorrow morning. — [1] —. When the truck",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -237,5 +187,32 @@
       },
       "item_key": "official-1-test-2/p7-155-157/157"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice",
+      "question"
+    ],
+    "vocabulary": [
+      {
+        "term": "inventory",
+        "meaning": "库存",
+        "source_quote": "To record the inventory for a shipment",
+        "source_field": "choice",
+        "why": "采购、仓储和零售运营的核心词。",
+        "confidence": 0.96
+      },
+      {
+        "term": "shipment",
+        "meaning": "装运；货运批次",
+        "source_quote": "Kwon concerned about the shipment?",
+        "source_field": "question",
+        "why": "订单、交付和物流跟踪场景高频。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

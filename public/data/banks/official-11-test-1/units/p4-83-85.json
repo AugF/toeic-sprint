@@ -71,24 +71,6 @@
         "analysis": "原文依据：广告列出 tents、sleeping bags and other items for a camping trip。 选择理由：宣传的是露营用品，对应B。正确答案：B（Camping supplies）。"
       },
       "question_translation": "广告宣传的是什么产品？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "clearance",
-            "meaning": "清仓促销"
-          },
-          {
-            "term": "sleeping bag",
-            "meaning": "睡袋"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "camping supplies",
-            "meaning": "露营用品"
-          }
-        ]
-      },
       "item_id": 83,
       "priority": {
         "level": "P2",
@@ -141,24 +123,6 @@
         "analysis": "原文依据：部分销售收入将用于 repairing hiking trails at our local nature center。 选择理由：捐助对象是nature center，对应D。正确答案：D（A nature center）。"
       },
       "question_translation": "格罗夫百货会把钱捐给哪里？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "proceeds",
-            "meaning": "销售收入；收益"
-          },
-          {
-            "term": "nature center",
-            "meaning": "自然中心"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "a portion of the proceeds",
-            "meaning": "部分销售收入"
-          }
-        ]
-      },
       "item_id": 84,
       "priority": {
         "level": "P2",
@@ -211,24 +175,6 @@
         "analysis": "原文依据：Greenville store 不参加，因为 it's closed for renovations。 选择理由：原因是装修，对应A。正确答案：A（Renovations are taking place.）。"
       },
       "question_translation": "据说话者所说，为什么格林维尔门店不举办这项活动？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "renovation",
-            "meaning": "翻修；整修"
-          },
-          {
-            "term": "exclusively",
-            "meaning": "仅仅；专门地"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "be closed for renovations",
-            "meaning": "因翻修而暂停营业"
-          }
-        ]
-      },
       "item_id": 85,
       "priority": {
         "level": "P2",
@@ -254,5 +200,23 @@
       },
       "item_key": "official-11-test-1/p4-83-85/85"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "collocations": [
+      {
+        "phrase": "under construction",
+        "meaning": "施工中",
+        "source_quote": "Roads are under construction.",
+        "source_field": "choice",
+        "why": "设施通知、交通和场地信息中的固定表达。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

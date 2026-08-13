@@ -58,24 +58,6 @@
         "C：提供大学工作机会",
         "D：提供有关商业的信息"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "offer",
-            "meaning": "出现在本题正确表达中：提供大学工作机会"
-          },
-          {
-            "term": "employment",
-            "meaning": "出现在本题正确表达中：提供大学工作机会"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To offer employment at a university",
-            "meaning": "提供大学工作机会"
-          }
-        ]
-      },
       "question_type": "图表 / 信息联动题",
       "evidence": "参考原文第 1 段：Hf *E-mail* a=",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -130,24 +112,6 @@
         "C：他在人力资源部工作。",
         "D：他是 Tirupati 大学毕业生。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "holds",
-            "meaning": "出现在本题正确表达中：他拥有高级商业学位。"
-          },
-          {
-            "term": "advanced",
-            "meaning": "出现在本题正确表达中：他拥有高级商业学位。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "He holds an advanced business degree.",
-            "meaning": "他拥有高级商业学位。"
-          }
-        ]
-      },
       "question_type": "图表 / 信息联动题",
       "evidence": "参考原文第 12 段：Our coordinator of online instruction, Kamal Pawar, has experience with teaching our",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -202,24 +166,6 @@
         "C：高级管理学",
         "D：决策科学"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "applied",
-            "meaning": "出现在本题正确表达中：应用会计学"
-          },
-          {
-            "term": "accounting",
-            "meaning": "出现在本题正确表达中：应用会计学"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Applied Accounting",
-            "meaning": "应用会计学"
-          }
-        ]
-      },
       "question_type": "推断题",
       "evidence": "参考原文第 3 段：To: | a.bhagwati@kmail.com |",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -274,24 +220,6 @@
         "C：大学学生会使用它们学习。",
         "D：大学行政人员会"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "university",
-            "meaning": "出现在本题正确表达中：大学教职员工会审查它们的质量。"
-          },
-          {
-            "term": "faculty",
-            "meaning": "出现在本题正确表达中：大学教职员工会审查它们的质量。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "University faculty members will review them for quality.",
-            "meaning": "大学教职员工会审查它们的质量。"
-          }
-        ]
-      },
       "question_type": "推断题",
       "evidence": "参考原文第 3 段：To: | a.bhagwati@kmail.com |",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -346,20 +274,6 @@
         "C：说",
         "D：看"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "said",
-            "meaning": "出现在本题正确表达中：说"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "said",
-            "meaning": "说"
-          }
-        ]
-      },
       "question_type": "词义 / 话语含义题",
       "evidence": "参考原文第 46 段：Vice Chancellor Dr. R. D. Mehta noted,",
       "strategy": "本题属于词义 / 话语含义题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -397,5 +311,32 @@
       },
       "item_key": "official-2-test-2/p7-186-190/190"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "passage",
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "payroll",
+        "meaning": "工资单；薪资总额",
+        "source_quote": "July-December Class Offerings Applied Accounting Learn the basic accounting principles used in financial statements and financial records (balance sheets, accounts payable and receivable, payroll, etc.) of small to midsize businesses.",
+        "source_field": "passage",
+        "why": "人事和财务行政的专业词。",
+        "confidence": 0.96
+      },
+      {
+        "term": "enrollment",
+        "meaning": "登记；注册",
+        "source_quote": "To provide confirmation of university enrollment",
+        "source_field": "choice",
+        "why": "培训、会员和福利计划场景常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

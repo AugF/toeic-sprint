@@ -53,24 +53,6 @@
         "C：要求更正账单",
         "D：安排维护工作"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "give",
-            "meaning": "出现在本题正确表达中：提供有关车辆维修的详细信息"
-          },
-          {
-            "term": "details",
-            "meaning": "出现在本题正确表达中：提供有关车辆维修的详细信息"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To give details about work on a vehicle",
-            "meaning": "提供有关车辆维修的详细信息"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：Ganzon Automotive",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -120,24 +102,6 @@
         "C：换油",
         "D：更换锁具"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "replacing",
-            "meaning": "出现在本题正确表达中：更换锁具"
-          },
-          {
-            "term": "lock",
-            "meaning": "出现在本题正确表达中：更换锁具"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Replacing a lock",
-            "meaning": "更换锁具"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 17 段：148. What action is mentioned?",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -170,5 +134,33 @@
       },
       "item_key": "official-1-test-2/p7-147-148/148"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "maintenance",
+        "meaning": "维护；保养",
+        "source_quote": "To schedule maintenance work",
+        "source_field": "choice",
+        "why": "设施、设备和运营通知的高频词。",
+        "confidence": 0.96
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "maintenance work",
+        "meaning": "维护工作",
+        "source_quote": "To schedule maintenance work",
+        "source_field": "choice",
+        "why": "设施检修、停用通知和运营文本常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

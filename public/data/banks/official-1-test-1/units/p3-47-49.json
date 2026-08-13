@@ -73,24 +73,6 @@
         "C：需要支付额外费用",
         "D：没有足够的物资"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "arriving",
-            "meaning": "出现在本题正确表达中：不能按时到达"
-          },
-          {
-            "term": "time",
-            "meaning": "出现在本题正确表达中：不能按时到达"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Arriving on time",
-            "meaning": "不能按时到达"
-          }
-        ]
-      },
       "item_id": 47,
       "priority": {
         "level": "P2",
@@ -145,24 +127,6 @@
         "C：通知一些同事",
         "D：带上一些路线图"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "bring",
-            "meaning": "出现在本题正确表达中：带上一些路线图"
-          },
-          {
-            "term": "some",
-            "meaning": "出现在本题正确表达中：带上一些路线图"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Bring some directions",
-            "meaning": "带上一些路线图"
-          }
-        ]
-      },
       "item_id": 48,
       "priority": {
         "level": "P2",
@@ -217,24 +181,6 @@
         "C：请求帮助",
         "D：给会议组织者打电话"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "asking",
-            "meaning": "出现在本题正确表达中：请求帮助"
-          },
-          {
-            "term": "assistance",
-            "meaning": "出现在本题正确表达中：请求帮助"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Asking for assistance",
-            "meaning": "请求帮助"
-          }
-        ]
-      },
       "item_id": 49,
       "priority": {
         "level": "P2",
@@ -262,5 +208,23 @@
       },
       "item_key": "official-1-test-1/p3-47-49/49"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "reservation",
+        "meaning": "预订",
+        "source_quote": "Make a reservation",
+        "source_field": "choice",
+        "why": "酒店、餐饮、会议室与出行场景常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

@@ -3,6 +3,7 @@ import {execFile} from "node:child_process";
 import {promisify} from "node:util";
 import {access,readFile,readdir} from "node:fs/promises";
 import test from "node:test";
+import "./knowledge-builder.test.mjs";
 
 const root=new URL("../",import.meta.url);
 const read=(value)=>readFile(new URL(value,root),"utf8");
@@ -39,26 +40,38 @@ test("publishes 24 banks and 4,800 globally unique item references",async()=>{
   assert.equal(singleUnits,1464);
 });
 
-test("precomputes Chinese study aids, structured analysis and knowledge for every question",async()=>{
+test("precomputes Chinese study aids and only publishes validated contextual knowledge",async()=>{
   const catalog=JSON.parse(await read("public/data/catalog.json"));
-  let questions=0,choices=0;
+  let questions=0,choices=0,knowledgeCards=0;
   for(const bank of catalog.banks){
     const index=JSON.parse(await read(`public/data/${bank.index_path}`));
     for(const unit of index.units){
       const detail=JSON.parse(await read(`public/data/${unit.detail_path}`));
+      const knowledgeValues=[detail.knowledge_accumulation,...detail.items.map(item=>item.knowledge_accumulation)].filter(Boolean);
+      assert.ok(knowledgeValues.every(value=>value.schema_version==="2.0"),`${bank.bank_id}/${unit.unit_id} has legacy knowledge`);
+      if([3,4,6,7].includes(unit.part))assert.ok(detail.items.every(item=>item.knowledge_accumulation?.schema_version!=="2.0"),`${bank.bank_id}/${unit.unit_id} duplicates material knowledge`);
+      for(const knowledge of knowledgeValues){
+        knowledgeCards++;
+        assert.equal(knowledge.schema_version,"2.0",`${bank.bank_id}/${unit.unit_id} has legacy knowledge`);
+        assert.equal(knowledge.extraction_basis,"full_exercise");
+        assert.ok(["material","question_context"].includes(knowledge.source_scope));
+        const entries=[...(knowledge.vocabulary||[]),...(knowledge.collocations||[])];
+        assert.ok(entries.length>0&&entries.length<=4);
+        assert.ok(entries.every(entry=>entry.source_quote&&entry.why&&entry.confidence>=.78));
+      }
       if(unit.part!==5)assert.ok(detail.context.transcript_translation||detail.context.passage_translation||detail.context.content_translation,`${bank.bank_id}/${unit.unit_id} lacks material translation`);
       for(const item of detail.items){
         questions++;
         assert.equal(item.choice_translations.length,item.choices.length,`${item.item_key} lacks translated choices`);
         if(item.question)assert.ok(item.question_translation,`${item.item_key} lacks translated question`);
         assert.ok(item.explanation_structured?.answer,`${item.item_key} lacks structured analysis`);
-        assert.ok(item.knowledge_accumulation?.collocations?.length,`${item.item_key} lacks knowledge accumulation`);
         choices+=item.choices.length;
       }
     }
   }
   assert.equal(questions,4800);
   assert.equal(choices,18600);
+  assert.ok(knowledgeCards>0,"contextual knowledge should be available where the exercise contains a valuable expression");
 });
 
 test("keeps shared official material in canonical details while Part 1, 2 and 5 stay single",async()=>{
@@ -132,11 +145,16 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   assert.match(page,/MATERIAL_PARTS\.has\(unit\.part\)/);
   assert.match(page,/scope: "material" as const/);
   assert.match(page,/ref\.item_keys\.every/);
+  assert.match(page,/type StatusFilter = "ALL" \| "UNDONE" \| "DONE" \| "WRONG" \| "STARRED"/);
+  assert.match(page,/statusFilter === "DONE"/);
+  assert.match(page,/statusCounts\[option\.value\]/);
+  assert.match(page,/Object\.hasOwn\(saved\.answers, key\)/);
   assert.match(page,/本\{current\.part <= 4 \? "组" : "篇"\}全部题目/);
   assert.match(css,/\.globalPractice/);
   assert.match(css,/\.bankSelect/);
   assert.match(css,/\.singleItemGallery/);
   assert.match(css,/\.materialSplit/);
+  assert.match(css,/\.statusFilters button small/);
   assert.match(pagesEntry,/priority\.css/);
 });
 

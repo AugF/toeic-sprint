@@ -77,24 +77,6 @@
         "analysis": "原文依据：男方说 I got a little salary increase recently。 选择理由：salary increase同义于pay raise，因此B正确。正确答案：B（He received a pay raise.）。"
       },
       "question_translation": "据男士所说，最近发生了什么？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "salary increase",
-            "meaning": "加薪；工资上调"
-          },
-          {
-            "term": "roofing",
-            "meaning": "屋面材料；屋面工程"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "receive a pay raise",
-            "meaning": "获得加薪"
-          }
-        ]
-      },
       "item_id": 68,
       "priority": {
         "level": "P1",
@@ -148,24 +130,6 @@
         "analysis": "原文依据：男方问 when would your crew be able to begin。 选择理由：他询问的是工程开始日期，对应C。正确答案：C（The start date for a project）。"
       },
       "question_translation": "男士询问了什么？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "crew",
-            "meaning": "施工队；工作班组"
-          },
-          {
-            "term": "project",
-            "meaning": "工程；项目"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "begin around the end of the month",
-            "meaning": "大约在月底开工"
-          }
-        ]
-      },
       "item_id": 69,
       "priority": {
         "level": "P1",
@@ -219,24 +183,6 @@
         "analysis": "原文依据：男方喜欢 low maintenance 和 available in many colors；图表中这两项属于 Clay。 选择理由：将描述与材料表匹配，答案为A Clay。正确答案：A（Clay）。"
       },
       "question_translation": "请看图表。男士最可能选择哪种材料？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "maintenance",
-            "meaning": "维护；保养"
-          },
-          {
-            "term": "clay",
-            "meaning": "黏土；陶土（此处指陶土屋面材料）"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "require little maintenance",
-            "meaning": "几乎不需要维护"
-          }
-        ]
-      },
       "item_id": 70,
       "priority": {
         "level": "P1",
@@ -263,5 +209,23 @@
       },
       "item_key": "official-11-test-1/p3-68-70/70"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "warranty",
+        "meaning": "保修；质保",
+        "source_quote": "The length of a warranty",
+        "source_field": "choice",
+        "why": "产品售后和服务条款中的高频词。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

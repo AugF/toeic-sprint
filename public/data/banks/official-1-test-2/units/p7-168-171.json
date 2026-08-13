@@ -58,24 +58,6 @@
         "C：宣布有关会议的信息",
         "D：推广一家旅行社"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "announce",
-            "meaning": "出现在本题正确表达中：宣布有关会议的信息"
-          },
-          {
-            "term": "information",
-            "meaning": "出现在本题正确表达中：宣布有关会议的信息"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To announce information about a meeting",
-            "meaning": "宣布有关会议的信息"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：To: _| [ Distribution List |",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -130,24 +112,6 @@
         "C：她最近取消了一次旅行。",
         "D：她写过不止一本书。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "written",
-            "meaning": "出现在本题正确表达中：她写过不止一本书。"
-          },
-          {
-            "term": "more",
-            "meaning": "出现在本题正确表达中：她写过不止一本书。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "She has written more than one book.",
-            "meaning": "她写过不止一本书。"
-          }
-        ]
-      },
       "question_type": "推断题",
       "evidence": "参考原文第 1 段：To: _| [ Distribution List |",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -202,24 +166,6 @@
         "C：与会者可以免费享用。",
         "D：它已重新安排时间。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "offered",
-            "meaning": "出现在本题正确表达中：与会者可以免费享用。"
-          },
-          {
-            "term": "cost",
-            "meaning": "出现在本题正确表达中：与会者可以免费享用。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "It is offered at no cost to meeting participants.",
-            "meaning": "与会者可以免费享用。"
-          }
-        ]
-      },
       "question_type": "主旨 / 目的题",
       "evidence": "参考原文第 1 段：To: _| [ Distribution List |",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -274,24 +220,6 @@
         "C：获取完整的日程表",
         "D：预订酒店房间"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "reserve",
-            "meaning": "出现在本题正确表达中：预订晚餐的座位"
-          },
-          {
-            "term": "place",
-            "meaning": "出现在本题正确表达中：预订晚餐的座位"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To reserve a place for dinner",
-            "meaning": "预订晚餐的座位"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 12 段：seating will be limited, so please contact us to reserve a spot in advance. If you are",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -329,5 +257,34 @@
       },
       "item_key": "official-1-test-2/p7-168-171/171"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice",
+      "passage"
+    ],
+    "vocabulary": [
+      {
+        "term": "reservation",
+        "meaning": "预订",
+        "source_quote": "To make a hotel room reservation",
+        "source_field": "choice",
+        "why": "酒店、餐饮、会议室与出行场景常见。",
+        "confidence": 0.96
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "in advance",
+        "meaning": "提前",
+        "source_quote": "A complimentary buffet dinner will be provided afterwards for attendees, but seating will be limited, so please contact us to reserve a spot in advance.",
+        "source_field": "passage",
+        "why": "预约、付款和活动安排场景的高频表达。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

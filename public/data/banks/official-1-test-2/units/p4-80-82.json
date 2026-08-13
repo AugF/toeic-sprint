@@ -58,24 +58,6 @@
         "C：健康检查员",
         "D：潜在客户"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "aregional",
-            "meaning": "出现在本题正确表达中：区域经理"
-          },
-          {
-            "term": "manager",
-            "meaning": "出现在本题正确表达中：区域经理"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Aregional manager",
-            "meaning": "区域经理"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：w",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -125,24 +107,6 @@
         "C：参加一个研讨会（",
         "D：为一次访问准备商店"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "prepare",
-            "meaning": "出现在本题正确表达中：为一次访问准备商店"
-          },
-          {
-            "term": "store",
-            "meaning": "出现在本题正确表达中：为一次访问准备商店"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To prepare the store for a visit",
-            "meaning": "为一次访问准备商店"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：w",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -192,24 +156,6 @@
         "C：一些时间休息",
         "D：一些商品"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "some",
-            "meaning": "出现在本题正确表达中：一些时间休息"
-          },
-          {
-            "term": "time",
-            "meaning": "出现在本题正确表达中：一些时间休息"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Some time off",
-            "meaning": "一些时间休息"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：w",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -242,5 +188,31 @@
       },
       "item_key": "official-1-test-2/p4-80-82/82"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "shipment",
+        "meaning": "装运；货运批次",
+        "source_quote": "To wait for a shipment to arrive",
+        "source_field": "choice",
+        "why": "订单、交付和物流跟踪场景高频。",
+        "confidence": 0.96
+      },
+      {
+        "term": "prospective",
+        "meaning": "潜在的；未来的",
+        "source_quote": "A prospective client",
+        "source_field": "choice",
+        "why": "客户、员工或买方描述中的正式词。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

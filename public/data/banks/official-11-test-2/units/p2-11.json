@@ -59,24 +59,6 @@
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
         "analysis": "原文依据：问句或陈述为“EM When did Mr. Hang deliver the shipment? EEw”，官方正确应答是“Yesterday afternoon.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（Yesterday afternoon.）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "yesterday",
-            "meaning": "本题重点词；结合正确选项理解：Yesterday afternoon."
-          },
-          {
-            "term": "afternoon",
-            "meaning": "本题重点词；结合正确选项理解：Yesterday afternoon."
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Yesterday afternoon.",
-            "meaning": "正确选项中的重点搭配：Yesterday afternoon."
-          }
-        ]
-      },
       "item_id": 11,
       "priority": {
         "level": "P3",
@@ -88,6 +70,24 @@
         ],
         "scope": "item",
         "model": "toeic_priority_v3_material"
+      },
+      "knowledge_accumulation": {
+        "schema_version": "2.0",
+        "source_scope": "question_context",
+        "extraction_basis": "full_exercise",
+        "source_fields": [
+          "question"
+        ],
+        "vocabulary": [
+          {
+            "term": "shipment",
+            "meaning": "装运；货运批次",
+            "source_quote": "Hang deliver the shipment?",
+            "source_field": "question",
+            "why": "订单、交付和物流跟踪场景高频。",
+            "confidence": 0.96
+          }
+        ]
       },
       "item_key": "official-11-test-2/p2-11/11"
     }

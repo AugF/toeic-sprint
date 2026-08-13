@@ -71,20 +71,6 @@
         "C：在一家药店",
         "D：在一家服装店"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "pharmacy",
-            "meaning": "出现在本题正确表达中：在一家药店"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "At a pharmacy (",
-            "meaning": "在一家药店"
-          }
-        ]
-      },
       "item_id": 74,
       "priority": {
         "level": "P2",
@@ -137,24 +123,6 @@
         "C：预约必须取消。",
         "D：商店提前关门。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "product",
-            "meaning": "出现在本题正确表达中：产品缺货。"
-          },
-          {
-            "term": "available",
-            "meaning": "出现在本题正确表达中：产品缺货。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "product is not available. 81. \\",
-            "meaning": "产品缺货。"
-          }
-        ]
-      },
       "item_id": 75,
       "priority": {
         "level": "P2",
@@ -207,24 +175,6 @@
         "C：回电",
         "D：重新安排派送"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "front",
-            "meaning": "出现在本题正确表达中：去前台"
-          },
-          {
-            "term": "desk",
-            "meaning": "出现在本题正确表达中：去前台"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Go to the front desk",
-            "meaning": "去前台"
-          }
-        ]
-      },
       "item_id": 76,
       "priority": {
         "level": "P2",
@@ -250,5 +200,23 @@
       },
       "item_key": "official-1-test-1/p4-74-76/76"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "transcript"
+    ],
+    "vocabulary": [
+      {
+        "term": "shipment",
+        "meaning": "装运；货运批次",
+        "source_quote": "We'll get shipment in tomorrow, though.",
+        "source_field": "transcript",
+        "why": "订单、交付和物流跟踪场景高频。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

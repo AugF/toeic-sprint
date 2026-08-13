@@ -62,20 +62,6 @@
         "C：一台新电脑",
         "D：一辆公司车辆"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "computer",
-            "meaning": "出现在本题正确表达中：一台新电脑"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "new computer",
-            "meaning": "一台新电脑"
-          }
-        ]
-      },
       "question_type": "主旨 / 目的题",
       "evidence": "参考原文第 1 段：message.",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -129,24 +115,6 @@
         "C：他对新的责任感到兴奋。",
         "D：他想借一些培训。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "available",
-            "meaning": "出现在本题正确表达中：他无法参加任务"
-          },
-          {
-            "term": "assignment",
-            "meaning": "出现在本题正确表达中：他无法参加任务"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "He is not available for an assignment",
-            "meaning": "他无法参加任务"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 5 段：think it's going to be our next best-selling product. Now, I'm",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -200,24 +168,6 @@
         "C：下载一个移动应用程序",
         "D：预定一个位置"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "make",
-            "meaning": "出现在本题正确表达中：预定一个位置"
-          },
-          {
-            "term": "reservation",
-            "meaning": "出现在本题正确表达中：预定一个位置"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Make a reservation",
-            "meaning": "预定一个位置"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：message.",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -254,5 +204,31 @@
       },
       "item_key": "official-6-test-1/p4-92-94/94"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "itinerary",
+        "meaning": "行程安排",
+        "source_quote": "A travel itinerary",
+        "source_field": "choice",
+        "why": "商务旅行、活动和客户接待场景常见。",
+        "confidence": 0.96
+      },
+      {
+        "term": "reservation",
+        "meaning": "预订",
+        "source_quote": "Make a reservation",
+        "source_field": "choice",
+        "why": "酒店、餐饮、会议室与出行场景常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

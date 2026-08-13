@@ -67,20 +67,6 @@
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：篇章中可定位到“Lowell, MA”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（In Lowell）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "lowell",
-            "meaning": "本题重点词；结合正确选项理解：In Lowell"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "In Lowell",
-            "meaning": "正确选项中的重点搭配：In Lowell"
-          }
-        ]
-      },
       "item_id": 176,
       "priority": {
         "level": "P1",
@@ -133,20 +119,6 @@
         "evidence": "参考原文第 1 段：National Package Service (NPS) Package Tracking",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：篇章中可定位到“National Package Service (NPS) Package Tracking”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（By NPS truck）。"
-      },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "truck",
-            "meaning": "本题重点词；结合正确选项理解：By NPS truck"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "By NPS truck",
-            "meaning": "正确选项中的重点搭配：By NPS truck"
-          }
-        ]
       },
       "item_id": 177,
       "priority": {
@@ -201,24 +173,6 @@
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：篇章中可定位到“Caroline Launey”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（To provide an update）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "provide",
-            "meaning": "本题重点词；结合正确选项理解：To provide an update"
-          },
-          {
-            "term": "update",
-            "meaning": "本题重点词；结合正确选项理解：To provide an update"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To provide an update",
-            "meaning": "正确选项中的重点搭配：To provide an update"
-          }
-        ]
-      },
       "item_id": 178,
       "priority": {
         "level": "P1",
@@ -271,15 +225,6 @@
         "evidence": "参考原文第 2 段：Shipment number: DM5671",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：篇章中可定位到“Billed on: May 1”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（On May 7）。"
-      },
-      "knowledge_accumulation": {
-        "vocabulary": [],
-        "collocations": [
-          {
-            "phrase": "On May 7",
-            "meaning": "正确选项中的重点搭配：On May 7"
-          }
-        ]
       },
       "item_id": 179,
       "priority": {
@@ -334,24 +279,6 @@
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：篇章中可定位到“Shipment of part number 264”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（Cutting wood）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "cutting",
-            "meaning": "本题重点词；结合正确选项理解：Cutting wood"
-          },
-          {
-            "term": "wood",
-            "meaning": "本题重点词；结合正确选项理解：Cutting wood"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Cutting wood",
-            "meaning": "正确选项中的重点搭配：Cutting wood"
-          }
-        ]
-      },
       "item_id": 180,
       "priority": {
         "level": "P1",
@@ -378,5 +305,23 @@
       },
       "item_key": "official-7-test-2/p7-176-180/180"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "passage"
+    ],
+    "vocabulary": [
+      {
+        "term": "shipment",
+        "meaning": "装运；货运批次",
+        "source_quote": "Weight: 23.5 kilograms Shipment category: Package Service: Ground shipment Billed on: May 1 Message on package: Shipment of part number 264 To: Mervin Hartley From: Caroline Launey Date: May !!",
+        "source_field": "passage",
+        "why": "订单、交付和物流跟踪场景高频。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

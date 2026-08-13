@@ -52,7 +52,41 @@ const CONTEXT_FIELDS=[
   "content_translation"
 ];
 const MEDIA_FIELDS=new Set(["audio_path","question_audio_path","picture_path","picture_paths"]);
-const ITEM_OMIT=new Set(["items","training_unit","priority_methodology",...CONTEXT_FIELDS]);
+// knowledge_accumulation in the first enrichment pass was mechanically made
+// from the correct option. It is intentionally never published. Only the
+// contextual, provenance-carrying knowledge_v2 field is eligible for output.
+const ITEM_OMIT=new Set(["items","training_unit","priority_methodology","knowledge_accumulation","knowledge_v2",...CONTEXT_FIELDS]);
+
+const KNOWLEDGE_SCHEMA="2.0";
+const KNOWLEDGE_CONFIDENCE_FLOOR=.78;
+const BASIC_VOCABULARY=new Set(`
+  about after again all also always another answer any are around ask away back
+  because before best better big book both business busy buy call can change
+  check close come company complete correct could day different does early easy
+  eight eleven every find first five food four free get give good great help here
+  home hour how information just keep know last late like little local long look
+  made make many may meeting more most much must need new next nine no not now
+  number office old one open other our out over people place please product put
+  question really right room same say see send service seven she shop six some
+  soon store sure take tell ten thank that their them then there these they thing
+  think this three time today too two use very want way week well what when where
+  which who why will with work working would year yes you your
+`.trim().split(/\s+/));
+const BASIC_PHRASES=new Set([
+  "at a restaurant","at a store","at the office","come back","find out",
+  "good morning","how many","how much","in the morning","make a phone call",
+  "next week","on time","right now","send an e-mail","thank you",
+  "this afternoon","this week","delicious fruit","all the arrangements",
+  "similar products","online presentation","training events","training session",
+  "conference room","good impression","magazine cover","report any problems",
+  "provide a demonstration","local art galleries","bicycle lanes"
+]);
+const SOURCE_SCOPE_ALIASES={
+  transcript:new Set(["transcript","material","full_exercise"]),
+  passage:new Set(["passage","material","full_exercise"]),
+  question:new Set(["question","full_exercise"]),
+  choice:new Set(["choice","choices","option","options","full_exercise"])
+};
 
 function fail(message){throw new Error(message)}
 function readJson(file){return JSON.parse(fs.readFileSync(file,"utf8"))}
@@ -220,6 +254,161 @@ function tokens(value){return new Set(String(value).toLowerCase().match(/[a-z]{3
 function tokenOverlap(answer,content){const a=tokens(answer),b=tokens(content);if(!a.size)return 0;return [...a].filter(x=>b.has(x)).length/a.size}
 function commonPrefix(values){if(!values.length)return 0;let prefix=values[0];for(const value of values.slice(1)){let i=0;while(i<prefix.length&&i<value.length&&prefix[i]===value[i])i++;prefix=prefix.slice(0,i)}return prefix.length}
 
+function normalizedEvidence(value){
+  return String(value||"").normalize("NFKC").replace(/[‘’]/g,"'").replace(/[“”]/g,'"').replace(/\s+/g," ").trim().toLowerCase();
+}
+
+function containsLexeme(container,lexeme){
+  const haystack=normalizedEvidence(container),needle=normalizedEvidence(lexeme);
+  if(!haystack||!needle)return false;
+  const escaped=needle.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+  return new RegExp(`(^|[^a-z])${escaped}(?=$|[^a-z])`,"i").test(haystack);
+}
+
+function knowledgeSources(part,item,group,items){
+  const records=[];
+  const add=(field,value)=>{
+    for(const entry of asArray(value))if(typeof entry==="string"&&entry.trim())records.push({field,text:entry});
+  };
+  if(part===1)add("choice",item.choices);
+  if(part===2){add("question",item.question);add("choice",item.choices)}
+  if(part===3||part===4){
+    add("transcript",group.transcript);
+    for(const sourceItem of items){add("question",sourceItem.question);add("choice",sourceItem.choices)}
+  }
+  if(part===5){add("question",item.question);add("choice",item.choices)}
+  if(part===6||part===7){
+    add("passage",group.passage);
+    for(const sourceItem of items){add("question",sourceItem.question);add("choice",sourceItem.choices)}
+  }
+  return records;
+}
+
+function knowledgeScope(part){return MATERIAL_PRIORITY_PARTS.has(part)?"material":"question_context"}
+
+function hasChinese(value){return /\p{Script=Han}/u.test(String(value||""))}
+
+function cleanStudyText(value){return typeof value==="string"?value.replace(/\s+/g," ").trim():""}
+
+function looksLikeKnowledgeOcrNoise(value){
+  const text=String(value||"");
+  if(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\uFFFD©®~°]/.test(text))return true;
+  if(/\b(?:iu|gam|ew|zw|hd|bp|ae|tc|ot|lerady|figetetetinge|wholed|alamp|acoworker|iwould)\b(?=\s|$)/i.test(text))return true;
+  if(/\b(?:th|thi|ye|wee|se|alle|assignme|e-mai)\b(?=\s|$)/i.test(text))return true;
+  if(/\b(?:the\s+)?(?:ager|c)\b/i.test(text)||/[-:]{3,}|\b\d{2,3}\.\s*[a-z]/i.test(text))return true;
+  if(/[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(text))return true;
+  return false;
+}
+
+function validExplanation(value,kind){
+  const clean=cleanStudyText(value);
+  if(!clean||!hasChinese(clean))return false;
+  if(/出现在本题|本题(?:重点|正确|答案)|正确(?:选项|答案|表达)|错误选项|答案中|选项中/.test(clean))return false;
+  return kind==="why"?clean.length>=6:clean.length>=2;
+}
+
+const PROPER_OR_BASIC_NAMES=new Set(`
+  monday tuesday wednesday thursday friday saturday sunday january february march
+  april may june july august september october november december mr mrs ms miss
+`.trim().split(/\s+/));
+const HIGH_VALUE_SHORT_WORDS=new Set([
+  "bid","claim","fare","fee","fund","grant","hire","lease","loan","quote",
+  "refund","ship","stock","tax","venue","waive"
+]);
+const BASIC_CONTENT_WORDS=new Set(`
+  airport annual apartment attend attendees bag beach bicycle budget building
+  camera cancel car chair city clothes coat conference counter day discount door
+  dress driver equipment event flower food
+  gallery garden glass hotel house invitation jacket job kitchen lamp library
+  location luggage machine manager market microphone office package packages
+  parking phone picture presentation restaurant road room schedule shirt shop
+  store street system table ticket tool train tree visitor wall window
+`.trim().split(/\s+/));
+
+function validVocabularyTerm(value){
+  const term=cleanStudyText(value),words=term.toLowerCase().match(/[a-z]+(?:['-][a-z]+)*/g)||[];
+  if(term.length<3||term.length>40||words.length!==1)return false;
+  if(!/^[A-Za-z]+(?:['-][A-Za-z]+)*$/.test(term))return false;
+  // Published headwords use lowercase lemmas. This also rejects the common
+  // failure mode where a person/company/place name is mistaken for vocabulary.
+  if(term!==term.toLowerCase())return false;
+  if(words.every(word=>BASIC_VOCABULARY.has(word)||PROPER_OR_BASIC_NAMES.has(word)))return false;
+  if(words.every(word=>BASIC_CONTENT_WORDS.has(word)||BASIC_VOCABULARY.has(word)||PROPER_OR_BASIC_NAMES.has(word)))return false;
+  if(/^(?:arrange|digging|handing|holding|attend|cancel|location|manager|system|jacket)$/i.test(term))return false;
+  if(words.length===1&&words[0].length<=4&&!HIGH_VALUE_SHORT_WORDS.has(words[0]))return false;
+  if(/^[A-Z][a-z]+(?: [A-Z][a-z]+)+$/.test(term))return false;
+  return true;
+}
+
+function validCollocation(value){
+  const phrase=cleanStudyText(value),words=phrase.toLowerCase().match(/[a-z]+(?:['-][a-z]+)*/g)||[];
+  if(phrase.length<5||phrase.length>80||words.length<2||words.length>6)return false;
+  if(!/^[A-Za-z]+(?:['-][A-Za-z]+)*(?: [A-Za-z]+(?:['-][A-Za-z]+)*){1,5}$/.test(phrase))return false;
+  if(phrase!==phrase.toLowerCase())return false;
+  if(BASIC_PHRASES.has(phrase.toLowerCase()))return false;
+  if(/\b(?:i|me|my|mine|you|your|yours|he|him|his|she|her|hers|we|us|our|ours|they|them|their|theirs|this|that|these|those)\b/i.test(phrase))return false;
+  if(/^(?:look at|look for|go to|come to|need to|want to|have to|be able to|use the|review how|cancel the|pay for|printed for|doing |difficult to|holding |attending |handing |pieces of|cleared from)\b/i.test(phrase))return false;
+  const content=words.filter(word=>!BASIC_VOCABULARY.has(word)&&!PROPER_OR_BASIC_NAMES.has(word));
+  if(!content.length)return false;
+  if(content.every(word=>word.length<=5&&!HIGH_VALUE_SHORT_WORDS.has(word)))return false;
+  return true;
+}
+
+function normalizeKnowledgeEntries(kind,entries,sources){
+  const key=kind==="vocabulary"?"term":"phrase",seen=new Set(),kept=[];
+  for(const raw of asArray(entries)){
+    if(!raw||typeof raw!=="object")continue;
+    const value=cleanStudyText(raw[key]),meaning=cleanStudyText(raw.meaning),why=cleanStudyText(raw.why),quote=cleanStudyText(raw.source_quote);
+    const confidence=Number(raw.confidence);
+    if(!(kind==="vocabulary"?validVocabularyTerm(value):validCollocation(value)))continue;
+    if(!validExplanation(meaning,"meaning")||!validExplanation(why,"why"))continue;
+    if(!Number.isFinite(confidence)||confidence<KNOWLEDGE_CONFIDENCE_FLOOR||confidence>1)continue;
+    const quoteWords=quote.match(/[A-Za-z]+(?:['’-][A-Za-z]+)*/g)||[];
+    if(!quote||quote.length>280||quoteWords.length<2||looksLikeKnowledgeOcrNoise(quote)||!containsLexeme(quote,value))continue;
+    if(/无需.*(?:考试|条件)|不需要.*(?:考试|条件)/.test(why))continue;
+    const source=sources.find(record=>SOURCE_SCOPE_ALIASES[record.field]?.has(record.field)&&containsLexeme(record.text,quote));
+    if(!source)continue;
+    const identity=normalizedEvidence(value);
+    if(seen.has(identity))continue;
+    seen.add(identity);
+    kept.push({[key]:value,meaning,source_quote:quote,source_field:source.field,why,confidence:Number(confidence.toFixed(2))});
+  }
+  // Material-derived entries are the most useful for Parts 3/4/6/7. Stable
+  // sorting prevents question-option snippets from crowding them out.
+  kept.sort((a,b)=>Number(!["transcript","passage"].includes(a.source_field))-Number(!["transcript","passage"].includes(b.source_field))||b.confidence-a.confidence);
+  return kept.slice(0,2);
+}
+
+/**
+ * Normalize contextual source knowledge for publication. Missing or wholly
+ * rejected knowledge is valid and returns undefined: coverage is never padded.
+ */
+export function normalizeKnowledgeV2(raw,part,item,group,items=group.items||[item]){
+  if(!raw||typeof raw!=="object"||raw.source_scope!==knowledgeScope(part))return undefined;
+  const sources=knowledgeSources(part,item,group,items);
+  const vocabulary=normalizeKnowledgeEntries("vocabulary",raw.vocabulary,sources);
+  const collocationCandidates=normalizeKnowledgeEntries("collocations",raw.collocations,sources);
+  const vocabularyKeys=new Set(vocabulary.map(entry=>normalizedEvidence(entry.term)));
+  const collocations=collocationCandidates.filter(entry=>!vocabularyKeys.has(normalizedEvidence(entry.phrase)));
+  if(!vocabulary.length&&!collocations.length)return undefined;
+  return {
+    schema_version:KNOWLEDGE_SCHEMA,
+    source_scope:knowledgeScope(part),
+    extraction_basis:"full_exercise",
+    source_fields:[...new Set([...vocabulary,...collocations].map(entry=>entry.source_field))],
+    ...(vocabulary.length?{vocabulary}:{}),
+    ...(collocations.length?{collocations}:{})
+  };
+}
+
+/** A missing knowledge field is valid. Present fields must survive unchanged. */
+export function knowledgeValidationErrors(value,part,item,group,items=group.items||[item]){
+  if(value==null)return [];
+  const normalized=normalizeKnowledgeV2({...value,source_scope:value.source_scope},part,item,group,items);
+  if(!normalized)return ["知识积累没有合格的全文语境条目"];
+  return JSON.stringify(normalized)===JSON.stringify(value)?[]:["知识积累未通过来源、难度、去重或字段结构校验"];
+}
+
 function inferTopicCategory(group){
   const s=textOf(group.topic,group.keywords,group.transcript,group.passage);
   if(/airport|airline|flight|train|rail|bus |travel|trip |tour |ticket|station|transport|航班|旅行|交通/.test(s))return "旅行与交通";
@@ -379,6 +568,7 @@ function aggregatePriority(items,existing){
 function qualityOf(source,raw){
   const enriched=source.enriched;
   const all=raw.parts.flatMap(flattenPart);
+  const groups=raw.parts.flatMap(part=>part.questions);
   const missingGraphicGroups=raw.parts.filter(part=>part.part===3||part.part===4).flatMap(part=>part.questions).filter(group=>{
     const text=JSON.stringify(group);
     return /look at|refer to the graphic|graphic/i.test(text)&&!group.picture_path&&!asArray(group.picture_paths).length;
@@ -386,7 +576,7 @@ function qualityOf(source,raw){
   return {
     enriched,
     translation:enriched&&all.some(x=>x.question_translation||x.transcript_translation||x.passage_translation||x.content_translation)?"available":"unavailable",
-    knowledge:enriched&&all.some(x=>x.knowledge_accumulation)?"available":"unavailable",
+    knowledge:enriched&&(all.some(x=>x.knowledge_v2)||groups.some(x=>x.knowledge_v2))?"contextual_v2":"unavailable",
     analysis:all.every(x=>x.answer_explain)?(enriched?"enriched":"basic"):"partial",
     ocr:"unreviewed",
     missing_graphic_groups:missingGraphicGroups
@@ -413,6 +603,10 @@ function buildBank(source){
         const questionType=inferType(part.part,item,group);
         const priority=normalizeExistingPriority(item.priority,part.part,questionType)||genericPriority(part.part,questionType,item,group);
         const normalized={...copyItemFields(item),item_id:item.id,question_type:questionType,priority};
+        if(!MATERIAL_PRIORITY_PARTS.has(part.part)){
+          const knowledge=normalizeKnowledgeV2(item.knowledge_v2,part.part,item,group,originalItems);
+          if(knowledge)normalized.knowledge_accumulation=knowledge;
+        }
         delete normalized.id;
         const key=itemKey(source.bank_id,unitId,item.id);
         if(allKeys.has(key))fail(`[${source.bank_id}] 重复题目键：${key}`);
@@ -423,12 +617,16 @@ function buildBank(source){
       missingAssets+=Object.values(context).flatMap(asArray).filter(x=>x&&typeof x==="object"&&"exists" in x&&!x.exists).length;
       const unitPriority=MATERIAL_PRIORITY_PARTS.has(part.part)?materialPriority(part.part,items,group):aggregatePriority(items,group.priority);
       if(MATERIAL_PRIORITY_PARTS.has(part.part))items=items.map(item=>({...item,priority:{...unitPriority}}));
+      const materialKnowledge=MATERIAL_PRIORITY_PARTS.has(part.part)
+        ? normalizeKnowledgeV2(group.knowledge_v2,part.part,originalItems[0],group,originalItems)
+        : undefined;
       const detail={
         schema_version:SCHEMA_VERSION,bank_id:source.bank_id,unit_id:unitId,part:part.part,
         source_group_id:group.id,mode:items.length===1?"single":"official_set",
         title:group.set_title||group.topic||`Part ${part.part} · ${group.id}`,
         topic:group.topic,topic_category:unitPriority.topic_category,material_type:unitPriority.material_type,keywords:group.keywords,difficulty:group.difficulty,
-        priority:unitPriority,context,items
+        priority:unitPriority,context,items,
+        ...(materialKnowledge?{knowledge_accumulation:materialKnowledge}:{})
       };
       const detailRel=`banks/${source.bank_id}/units/${unitId}.json`;
       writeJson(path.join(outputRoot,...detailRel.split("/")),detail);
@@ -490,9 +688,17 @@ function validateOutput(results){
       if(MATERIAL_PRIORITY_PARTS.has(unit.part)){
         if(detail.priority?.scope!=="material"||!detail.material_type||!detail.topic_category)fail(`[${index.bank_id}] Part ${unit.part} 缺少材料级优先级：${unit.unit_id}`);
         if(detail.items.some(item=>item.priority?.level!==detail.priority.level||item.priority?.score!==detail.priority.score||item.priority?.scope!=="material"))fail(`[${index.bank_id}] Part ${unit.part} 组内优先级不一致：${unit.unit_id}`);
+        if(detail.items.some(item=>item.knowledge_accumulation))fail(`[${index.bank_id}] 材料级知识积累被重复写入题目：${unit.unit_id}`);
+        const knowledgeErrors=knowledgeValidationErrors(detail.knowledge_accumulation,unit.part,detail.items[0],detail.context,detail.items);
+        if(knowledgeErrors.length)fail(`[${index.bank_id}] ${unit.unit_id} 材料知识积累不合格：${knowledgeErrors.join("；")}`);
       }
       for(const item of detail.items){
         if(!item.priority?.level||!item.question_type)fail(`[${index.bank_id}] 未完成题型/优先级：${item.item_key}`);
+        if("knowledge_v2" in item)fail(`[${index.bank_id}] 内部 knowledge_v2 字段泄漏到发布数据：${item.item_key}`);
+        if(!MATERIAL_PRIORITY_PARTS.has(unit.part)){
+          const knowledgeErrors=knowledgeValidationErrors(item.knowledge_accumulation,unit.part,item,detail.context,detail.items);
+          if(knowledgeErrors.length)fail(`[${index.bank_id}] ${item.item_key} 知识积累不合格：${knowledgeErrors.join("；")}`);
+        }
         if(globalKeys.has(item.item_key))fail(`全局题键重复：${item.item_key}`);
         globalKeys.add(item.item_key);bankQuestions++;
       }
@@ -523,32 +729,36 @@ function warnPriorityDistribution(validation){
   return warnings;
 }
 
-fs.rmSync(outputRoot,{recursive:true,force:true});
-fs.mkdirSync(outputRoot,{recursive:true});
-const discovered=discoverBanks(banksRoot);
-const results=discovered.map(buildBank);
-const validation=validateOutput(results);
-const priorityWarnings=warnPriorityDistribution(validation);
-const catalog={
-  schema_version:SCHEMA_VERSION,content_version:new Date().toISOString(),priority_model:PRIORITY_MODEL,
-  priority_methodology:PRIORITY_METHODOLOGY,
-  asset_policy:{copied:false,path_semantics:"每个资源的 path 相对其原始 bank 目录；asset_key 为 bank_id/path。运行时需配置媒体基址。"},
-  totals:validation,
-  warnings:[...priorityWarnings,...(results.some(result=>result.index.quality.missing_graphic_groups)?["Official 5–9 的部分 Part 3/4 图表题源目录未提供配套图表；网页保留题目与音频，并在题库质量字段中标记缺失。"]:[])],
-  banks:results.map(({source,index,indexRel,missingAssets})=>({
-    bank_id:index.bank_id,collection:"official",volume:source.volume,test:source.test,title:index.name,
-    question_count:index.question_count,unit_count:index.unit_count,parts:index.parts,index_path:indexRel,
-    source_file:path.relative(banksRoot,source.source).split(path.sep).join("/"),enriched:source.enriched,
-    quality:index.quality,missing_media_references:missingAssets,
-    asset_base:`assets/${index.bank_id}/`
-  }))
-};
-writeJson(path.join(outputRoot,"catalog.json"),catalog);
-// Re-open the catalog as the final serialization check and keep totals free of
-// advisory diagnostics (warnings are emitted in their own catalog field).
-const writtenCatalog=readJson(path.join(outputRoot,"catalog.json"));
-if(writtenCatalog.banks.length!==24||writtenCatalog.totals.questions!==4800)fail("catalog最终序列化校验失败");
-console.log(`Built ${validation.banks} banks, ${validation.units} units and ${validation.questions} questions in ${outputRoot}`);
-console.log(`Source tree stayed read-only: ${banksRoot}`);
-console.log(`Missing media references (reported, not copied): ${validation.missing_media_references}`);
-for(const warning of priorityWarnings)console.warn(`Warning: ${warning}`);
+function main(){
+  fs.rmSync(outputRoot,{recursive:true,force:true});
+  fs.mkdirSync(outputRoot,{recursive:true});
+  const discovered=discoverBanks(banksRoot);
+  const results=discovered.map(buildBank);
+  const validation=validateOutput(results);
+  const priorityWarnings=warnPriorityDistribution(validation);
+  const catalog={
+    schema_version:SCHEMA_VERSION,content_version:new Date().toISOString(),priority_model:PRIORITY_MODEL,
+    priority_methodology:PRIORITY_METHODOLOGY,
+    asset_policy:{copied:false,path_semantics:"每个资源的 path 相对其原始 bank 目录；asset_key 为 bank_id/path。运行时需配置媒体基址。"},
+    totals:validation,
+    warnings:[...priorityWarnings,...(results.some(result=>result.index.quality.missing_graphic_groups)?["Official 5–9 的部分 Part 3/4 图表题源目录未提供配套图表；网页保留题目与音频，并在题库质量字段中标记缺失。"]:[])],
+    banks:results.map(({source,index,indexRel,missingAssets})=>({
+      bank_id:index.bank_id,collection:"official",volume:source.volume,test:source.test,title:index.name,
+      question_count:index.question_count,unit_count:index.unit_count,parts:index.parts,index_path:indexRel,
+      source_file:path.relative(banksRoot,source.source).split(path.sep).join("/"),enriched:source.enriched,
+      quality:index.quality,missing_media_references:missingAssets,
+      asset_base:`assets/${index.bank_id}/`
+    }))
+  };
+  writeJson(path.join(outputRoot,"catalog.json"),catalog);
+  // Re-open the catalog as the final serialization check and keep totals free of
+  // advisory diagnostics (warnings are emitted in their own catalog field).
+  const writtenCatalog=readJson(path.join(outputRoot,"catalog.json"));
+  if(writtenCatalog.banks.length!==24||writtenCatalog.totals.questions!==4800)fail("catalog最终序列化校验失败");
+  console.log(`Built ${validation.banks} banks, ${validation.units} units and ${validation.questions} questions in ${outputRoot}`);
+  console.log(`Source tree stayed read-only: ${banksRoot}`);
+  console.log(`Missing media references (reported, not copied): ${validation.missing_media_references}`);
+  for(const warning of priorityWarnings)console.warn(`Warning: ${warning}`);
+}
+
+if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))main();

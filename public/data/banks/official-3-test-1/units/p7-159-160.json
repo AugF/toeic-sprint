@@ -55,24 +55,6 @@
         "C：确保文字从远处可见",
         "D：重新打印海报以纠正错误"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "ensure",
-            "meaning": "出现在本题正确表达中：确保文字从远处可见"
-          },
-          {
-            "term": "text",
-            "meaning": "出现在本题正确表达中：确保文字从远处可见"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Ensure that text is visible from a distance",
-            "meaning": "确保文字从远处可见"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：Caivano Printing Services CB",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -124,24 +106,6 @@
         "C：每位会议参与者都会收到一张。",
         "D：加尔萨女士将在当天取走它们。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "garza",
-            "meaning": "出现在本题正确表达中：加尔萨女士将在当天取走它们。"
-          },
-          {
-            "term": "pick",
-            "meaning": "出现在本题正确表达中：加尔萨女士将在当天取走它们。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Ms. Garza will pick them up the day",
-            "meaning": "加尔萨女士将在当天取走它们。"
-          }
-        ]
-      },
       "question_type": "主旨 / 目的题",
       "evidence": "参考原文第 18 段：Four standard medium posters",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -176,5 +140,23 @@
       },
       "item_key": "official-3-test-1/p7-159-160/160"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "participant",
+        "meaning": "参与者",
+        "source_quote": "Each conference participant will receive one of them.",
+        "source_field": "choice",
+        "why": "会议、培训、活动及调查语境常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

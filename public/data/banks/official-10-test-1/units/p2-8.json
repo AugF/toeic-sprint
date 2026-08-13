@@ -48,24 +48,6 @@
         "B：我认为，Davies 先生。",
         "C：货物周六到了。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "after",
-            "meaning": "出现在本题正确表达中：在经过最终审核后。"
-          },
-          {
-            "term": "gets",
-            "meaning": "出现在本题正确表达中：在经过最终审核后。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "After it gets a final review.",
-            "meaning": "在经过最终审核后。"
-          }
-        ]
-      },
       "question_type": "时间疑问句",
       "evidence": "参考原文第 1 段：When is the new Web site going to be launched?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
@@ -88,6 +70,24 @@
         ],
         "scope": "item",
         "model": "toeic_priority_v3_material"
+      },
+      "knowledge_accumulation": {
+        "schema_version": "2.0",
+        "source_scope": "question_context",
+        "extraction_basis": "full_exercise",
+        "source_fields": [
+          "choice"
+        ],
+        "vocabulary": [
+          {
+            "term": "shipment",
+            "meaning": "装运；货运批次",
+            "source_quote": "The shipment arrived on Saturday.",
+            "source_field": "choice",
+            "why": "订单、交付和物流跟踪场景高频。",
+            "confidence": 0.96
+          }
+        ]
       },
       "item_key": "official-10-test-1/p2-8/8"
     }

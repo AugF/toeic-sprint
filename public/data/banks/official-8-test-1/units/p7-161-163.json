@@ -66,24 +66,6 @@
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：篇章中可定位到“batch arrives with our regular office supply order on April 15, please use Leewood”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（A shipment will arrive.）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "shipment",
-            "meaning": "本题重点词；结合正确选项理解：A shipment will arrive."
-          },
-          {
-            "term": "arrive",
-            "meaning": "本题重点词；结合正确选项理解：A shipment will arrive."
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "shipment will arrive.",
-            "meaning": "正确选项中的重点搭配：A shipment will arrive."
-          }
-        ]
-      },
       "item_id": 161,
       "priority": {
         "level": "P2",
@@ -135,24 +117,6 @@
         "evidence": "参考原文第 11 段：Unfortunately, we have run out of Leewood Associates printed envelopes. Until the next",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：篇章中可定位到“Unfortunately, we have run out of Leewood Associates printed envelopes.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（A real estate agency）。"
-      },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "real",
-            "meaning": "本题重点词；结合正确选项理解：A real estate agency"
-          },
-          {
-            "term": "estate",
-            "meaning": "本题重点词；结合正确选项理解：A real estate agency"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "real estate agency",
-            "meaning": "正确选项中的重点搭配：A real estate agency"
-          }
-        ]
       },
       "item_id": 162,
       "priority": {
@@ -206,24 +170,6 @@
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：篇章中可定位到“moved oflices only two months ago and some of them still include our former address.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（They have the wrong address.）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "they",
-            "meaning": "本题重点词；结合正确选项理解：They have the wrong address."
-          },
-          {
-            "term": "wrong",
-            "meaning": "本题重点词；结合正确选项理解：They have the wrong address."
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "They have the wrong address.",
-            "meaning": "正确选项中的重点搭配：They have the wrong address."
-          }
-        ]
-      },
       "item_id": 163,
       "priority": {
         "level": "P2",
@@ -249,5 +195,31 @@
       },
       "item_key": "official-8-test-1/p7-161-163/163"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "shipment",
+        "meaning": "装运；货运批次",
+        "source_quote": "A shipment will arrive.",
+        "source_field": "choice",
+        "why": "订单、交付和物流跟踪场景高频。",
+        "confidence": 0.96
+      },
+      {
+        "term": "stationery",
+        "meaning": "文具",
+        "source_quote": "A stationery store",
+        "source_field": "choice",
+        "why": "行政采购与办公用品场景的易混高频词。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

@@ -13,7 +13,7 @@ type Priority = {
 };
 type MediaRef = {path: string; asset_key?: string; exists?: boolean};
 type KnowledgeEntry = {term?: string; phrase?: string; meaning?: string};
-type Knowledge = {vocabulary?: KnowledgeEntry[]; collocations?: KnowledgeEntry[]};
+type Knowledge = {schema_version?: string; vocabulary?: KnowledgeEntry[]; collocations?: KnowledgeEntry[]};
 type Item = {
   item_id: string | number;
   item_key: string;
@@ -51,6 +51,7 @@ type UnitDetail = {
   priority: Priority;
   context: Context;
   items: Item[];
+  knowledge_accumulation?: Knowledge;
 };
 type ItemSummary = Partial<Item> & {id?: string | number};
 type UnitSummary = {
@@ -108,13 +109,14 @@ type DrillRef = {
 };
 type Saved = {answers: Record<string, string>; wrong: string[]; stars: string[]};
 type PriorityFilter = "ALL" | Level;
-type StatusFilter = "ALL" | "UNDONE" | "WRONG" | "STARRED";
+type StatusFilter = "ALL" | "UNDONE" | "DONE" | "WRONG" | "STARRED";
 
 const CHOICE_LABELS = ["A", "B", "C", "D"];
 const PRIORITIES: PriorityFilter[] = ["P1", "P2", "P3", "ALL"];
 const STATUS_OPTIONS: Array<{value: StatusFilter; label: string}> = [
   {value: "ALL", label: "全部"},
   {value: "UNDONE", label: "未做"},
+  {value: "DONE", label: "已做"},
   {value: "WRONG", label: "错题"},
   {value: "STARRED", label: "收藏"},
 ];
@@ -308,13 +310,26 @@ export default function Home() {
     for (const ref of allRefs) if (bankFilter === "ALL" || ref.bank_id === bankFilter) counts[ref.part]++;
     return counts;
   }, [allRefs, bankFilter]);
+  const statusBaseRefs = useMemo(() => allRefs.filter(ref => {
+    if (bankFilter !== "ALL" && ref.bank_id !== bankFilter) return false;
+    if (partFilter && ref.part !== partFilter) return false;
+    return priorityFilter === "ALL" || ref.priority.level === priorityFilter;
+  }), [allRefs, bankFilter, partFilter, priorityFilter]);
+  const statusCounts = useMemo(() => {
+    const counts: Record<StatusFilter, number> = {ALL: statusBaseRefs.length, UNDONE: 0, DONE: 0, WRONG: 0, STARRED: 0};
+    for (const ref of statusBaseRefs) {
+      const done = ref.item_keys.every(key => Object.hasOwn(saved.answers, key));
+      counts[done ? "DONE" : "UNDONE"]++;
+      if (ref.item_keys.some(key => saved.wrong.includes(key))) counts.WRONG++;
+      if (ref.item_keys.some(key => saved.stars.includes(key))) counts.STARRED++;
+    }
+    return counts;
+  }, [statusBaseRefs, saved]);
   const queue = useMemo(() => {
-    const refs = allRefs.filter(ref => {
-      if (bankFilter !== "ALL" && ref.bank_id !== bankFilter) return false;
-      if (partFilter && ref.part !== partFilter) return false;
-      if (priorityFilter !== "ALL" && ref.priority.level !== priorityFilter) return false;
+    const refs = statusBaseRefs.filter(ref => {
       const sticky = ref.item_keys.some(key => stickyKeys.includes(key));
-      if (!sticky && statusFilter === "UNDONE" && ref.item_keys.every(key => saved.answers[key])) return false;
+      if (!sticky && statusFilter === "UNDONE" && ref.item_keys.every(key => Object.hasOwn(saved.answers, key))) return false;
+      if (!sticky && statusFilter === "DONE" && !ref.item_keys.every(key => Object.hasOwn(saved.answers, key))) return false;
       if (!sticky && statusFilter === "WRONG" && !ref.item_keys.some(key => saved.wrong.includes(key))) return false;
       if (!sticky && statusFilter === "STARRED" && !ref.item_keys.some(key => saved.stars.includes(key))) return false;
       return true;
@@ -322,7 +337,7 @@ export default function Home() {
     return refs.sort((a, b) => priorityOrder
       ? LEVEL_RANK[a.priority.level] - LEVEL_RANK[b.priority.level] || b.priority.score - a.priority.score || compareOfficial(a, b)
       : compareOfficial(a, b));
-  }, [allRefs, bankFilter, partFilter, priorityFilter, statusFilter, priorityOrder, saved, stickyKeys]);
+  }, [statusBaseRefs, statusFilter, priorityOrder, saved, stickyKeys]);
 
   const multiCardMode = MULTI_CARD_PARTS.has(partFilter);
   const pageStart = multiCardMode ? Math.floor(position / MULTI_CARD_PAGE_SIZE) * MULTI_CARD_PAGE_SIZE : position;
@@ -491,6 +506,14 @@ export default function Home() {
   const materialAllAnalysisOpen = Boolean(currentItem && materialItems.length) && materialItems.every(item =>
     item.item_key === currentItem.item_key ? showAnalysis : Boolean(relatedAnalysis[item.item_key]),
   );
+  const currentItemKey = currentItem?.item_key;
+  const materialAnyAnalysisOpen = Boolean(currentItemKey && materialItems.some(item =>
+    item.item_key === currentItemKey ? showAnalysis : Boolean(relatedAnalysis[item.item_key]),
+  ));
+  const materialKnowledge = activeDetail?.knowledge_accumulation;
+  const hasMaterialKnowledge = materialKnowledge?.schema_version === "2.0" && Boolean(
+    materialKnowledge.vocabulary?.length || materialKnowledge.collocations?.length,
+  );
   const toggleAllMaterialAnalysis = () => {
     if (!currentItem) return;
     const nextOpen = !materialAllAnalysisOpen;
@@ -531,7 +554,7 @@ export default function Home() {
 
         <div className="filterLabel">完成状态</div>
         <div className="statusFilters">
-          {STATUS_OPTIONS.map(option => <button key={option.value} className={statusFilter === option.value ? "on" : ""} onClick={() => setStatusFilter(option.value)}>{option.label}</button>)}
+          {STATUS_OPTIONS.map(option => <button key={option.value} className={statusFilter === option.value ? "on" : ""} onClick={() => setStatusFilter(option.value)}><span>{option.label}</span><small>{statusCounts[option.value]}</small></button>)}
         </div>
         <div className="priorityLegend"><p><b className="badge p1">P1</b> 高频核心 · 优先必刷</p><p><b className="badge p2">P2</b> 重点题型 · 稳定巩固</p><p><b className="badge p3">P3</b> 基础覆盖 · 查漏补缺</p><small className="priorityBasis">材料型 Part 按文体、主题和整组考点综合排序；P 等级不是 ETS 官方频率。</small></div>
         <div className="asideHint"><b>快捷键</b><p><kbd>←</kbd> <kbd>→</kbd> 切题</p><p><kbd>Space</kbd> 播放 / 暂停</p></div>
@@ -578,7 +601,9 @@ export default function Home() {
               const reveal = anchor ? showAnalysis : Boolean(relatedAnalysis[item.item_key]);
               const toggle = () => anchor ? setShowAnalysis(value => !value) : setRelatedAnalysis(previous => ({...previous, [item.item_key]: !previous[item.item_key]}));
               return <section className="materialQuestionCard" key={item.item_key}><div className="materialQuestionTools"><span>题 {item.item_id}</span><button className="analysisBtn" onClick={toggle}>{reveal ? "隐藏解析" : "查看解析"}</button></div><QuestionBlock item={item} part={current.part} chosen={saved.answers[item.item_key]} reveal={reveal} choose={choose}/></section>;
-            })}</section> : <QuestionBlock key={currentItem.item_key} item={currentItem} part={current.part} chosen={saved.answers[currentItem.item_key]} reveal={showAnalysis} choose={choose}/>}
+            })}
+            {materialAnyAnalysisOpen && hasMaterialKnowledge && materialKnowledge && <KnowledgeCard value={materialKnowledge}/>}</section> :
+              <QuestionBlock key={currentItem.item_key} item={currentItem} part={current.part} chosen={saved.answers[currentItem.item_key]} reveal={showAnalysis} choose={choose}/>}
           </article>}
           <div className="bottom"><button disabled={pageStart === 0} onClick={() => go(pageStart - 1)}>← 上一{currentNoun}</button><button disabled={pageStart >= queue.length - 1} onClick={() => go(pageStart + 1)}>下一{currentNoun} →</button></div>
         </>}
@@ -685,7 +710,7 @@ function QuestionBlock({item, part, chosen, reveal, choose}: {item: Item; part: 
 
 function AnswerAnalysis({item, part, chosen}: {item: Item; part: number; chosen?: string}) {
   const correct = chosen && chosen.toUpperCase() === String(item.answer || "").toUpperCase();
-  const hasKnowledge = Boolean(item.knowledge_accumulation?.vocabulary?.length || item.knowledge_accumulation?.collocations?.length);
+  const hasKnowledge = item.knowledge_accumulation?.schema_version === "2.0" && Boolean(item.knowledge_accumulation.vocabulary?.length || item.knowledge_accumulation.collocations?.length);
   return <div className={`explain ${chosen ? (correct ? "good" : "bad") : "neutral"}`}>
     <div><b>答案：{item.answer || "—"}{item.question_type ? ` · ${item.question_type}` : ""}</b></div>
     {part === 2 && item.response_style && <p><strong>回答方式：</strong>{item.response_style}</p>}

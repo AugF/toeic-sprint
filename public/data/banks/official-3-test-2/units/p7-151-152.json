@@ -65,24 +65,6 @@
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：篇章中可定位到“be submitted to the Corporate Travel Department via the online travel request”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Making arrangements for corporate travel）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "making",
-            "meaning": "本题重点词；结合正确选项理解：Making arrangements for corporate travel"
-          },
-          {
-            "term": "arrangements",
-            "meaning": "本题重点词；结合正确选项理解：Making arrangements for corporate travel"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Making arrangements for corporate travel",
-            "meaning": "正确选项中的重点搭配：Making arrangements for corporate travel"
-          }
-        ]
-      },
       "item_id": 151,
       "priority": {
         "level": "P3",
@@ -134,24 +116,6 @@
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：篇章中可定位到“contact information, the reservation dates, and the purpose for travel.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（To verify a reservation）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "verify",
-            "meaning": "本题重点词；结合正确选项理解：To verify a reservation"
-          },
-          {
-            "term": "reservation",
-            "meaning": "本题重点词；结合正确选项理解：To verify a reservation"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To verify a reservation",
-            "meaning": "正确选项中的重点搭配：To verify a reservation"
-          }
-        ]
-      },
       "item_id": 152,
       "priority": {
         "level": "P3",
@@ -176,5 +140,50 @@
       },
       "item_key": "official-3-test-2/p7-151-152/152"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "passage",
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "reimbursement",
+        "meaning": "报销；偿还",
+        "source_quote": "Requests for reimbursement of additional charges should be submitted upon return.",
+        "source_field": "passage",
+        "why": "差旅、费用和客户服务场景常见。",
+        "confidence": 0.96
+      },
+      {
+        "term": "reservation",
+        "meaning": "预订",
+        "source_quote": "Requests must include the employee’s full name, the hotel name and contact information, the reservation dates, and the purpose for travel.",
+        "source_field": "passage",
+        "why": "酒店、餐饮、会议室与出行场景常见。",
+        "confidence": 0.96
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "in advance",
+        "meaning": "提前",
+        "source_quote": "The room will be paid for in advance, but employees should be prepared to put any additional charges incurred during the trip on a personal credit card.",
+        "source_field": "passage",
+        "why": "预约、付款和活动安排场景的高频表达。",
+        "confidence": 0.96
+      },
+      {
+        "phrase": "employee benefits",
+        "meaning": "员工福利",
+        "source_quote": "Enrolling in an employee benefits program",
+        "source_field": "choice",
+        "why": "招聘、人事和公司政策文本常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }
