@@ -66,24 +66,6 @@
         "analysis": "原文依据：Skrobol使用Granby Film Festival邮箱，并负责30人节庆晚宴预订。 选择理由：她最可能是电影节组织者，对应C。正确答案：C（The organizer of a festival）。"
       },
       "question_translation": "根据电子邮件，Skrobol 女士最可能是谁？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "organizer",
-            "meaning": "组织者；主办方人员"
-          },
-          {
-            "term": "reservation",
-            "meaning": "预订；预约"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "confirm a dinner reservation",
-            "meaning": "确认晚宴预订"
-          }
-        ]
-      },
       "item_id": 186,
       "priority": {
         "level": "P2",
@@ -136,24 +118,6 @@
         "analysis": "原文依据：她询问是否有素食菜，并说没有 vegetarian options 就不能预订。 选择理由：可推知现有样例菜单未提供素食选项，对应D。正确答案：D（It does not serve vegetarian options.）。"
       },
       "question_translation": "关于 Ancheta Grill，可以得出什么结论？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "vegetarian",
-            "meaning": "素食者；素食的"
-          },
-          {
-            "term": "accommodate",
-            "meaning": "容纳；满足特殊需求"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "offer vegetarian options",
-            "meaning": "提供素食选择"
-          }
-        ]
-      },
       "item_id": 187,
       "priority": {
         "level": "P2",
@@ -206,24 +170,6 @@
         "analysis": "原文依据：日程注明 All events take place at Granby Cinema unless otherwise specified，电影放映未标其他地点。 选择理由：所有电影在同一家影院放映，对应C。正确答案：C（They will be shown at the same movie theater.）。"
       },
       "question_translation": "日程表说明了电影节放映的所有影片的什么信息？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "screening",
-            "meaning": "电影放映；筛选"
-          },
-          {
-            "term": "venue",
-            "meaning": "活动场所；会场"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "be shown at the same theater",
-            "meaning": "在同一家电影院放映"
-          }
-        ]
-      },
       "item_id": 188,
       "priority": {
         "level": "P2",
@@ -276,24 +222,6 @@
         "analysis": "原文依据：报名表中 Journalists: Check box to apply for free press pass 已勾选。 选择理由：表明Tai是记者，对应A。正确答案：A（He works as a journalist.）。"
       },
       "question_translation": "报名表中关于 Tai 先生说明了什么？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "journalist",
-            "meaning": "记者；新闻工作者"
-          },
-          {
-            "term": "translator",
-            "meaning": "翻译人员"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "be indicated on a registration form",
-            "meaning": "在报名表上注明"
-          }
-        ]
-      },
       "item_id": 189,
       "priority": {
         "level": "P2",
@@ -346,24 +274,6 @@
         "analysis": "原文依据：Tai勾选Friday和Saturday；Saturday afternoon有short-film competition。 选择理由：他能参加短片竞赛，对应B。正确答案：B（A short-film competition）。"
       },
       "question_translation": "Tai 先生能够参加哪项活动？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "filming location",
-            "meaning": "拍摄地点；取景地"
-          },
-          {
-            "term": "attend",
-            "meaning": "参加；出席"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "take a tour of filming locations",
-            "meaning": "参加取景地参观活动"
-          }
-        ]
-      },
       "item_id": 190,
       "priority": {
         "level": "P2",
@@ -389,5 +299,31 @@
       },
       "item_key": "official-11-test-1/p7-186-190/190"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "vendor",
+        "meaning": "供应商；摊贩",
+        "source_quote": "A restaurant supply vendor",
+        "source_field": "choice",
+        "why": "采购、活动和供应链场景的核心词。",
+        "confidence": 0.96
+      },
+      {
+        "term": "reservation",
+        "meaning": "预订",
+        "source_quote": "He was unable to book a reservation for the festival dinner.",
+        "source_field": "choice",
+        "why": "酒店、餐饮、会议室与出行场景常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

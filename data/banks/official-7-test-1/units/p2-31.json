@@ -60,24 +60,6 @@
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
         "analysis": "原文依据：问句或陈述是“м Why are we replacing the packaging machine? EK”，自然应答是“Actually, we were able to fix it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Actually, we were able to fix it.）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "actually",
-            "meaning": "本题重点词；结合正确选项理解：Actually, we were able to fix it."
-          },
-          {
-            "term": "were",
-            "meaning": "本题重点词；结合正确选项理解：Actually, we were able to fix it."
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Actually, we were able to fix it.",
-            "meaning": "正确选项中的重点搭配：Actually, we were able to fix it."
-          }
-        ]
-      },
       "item_id": 31,
       "priority": {
         "level": "P2",
@@ -90,6 +72,24 @@
         ],
         "scope": "item",
         "model": "toeic_priority_v3_material"
+      },
+      "knowledge_accumulation": {
+        "schema_version": "2.0",
+        "source_scope": "question_context",
+        "extraction_basis": "full_exercise",
+        "source_fields": [
+          "choice"
+        ],
+        "vocabulary": [
+          {
+            "term": "inventory",
+            "meaning": "库存",
+            "source_quote": "I'll check the inventory.",
+            "source_field": "choice",
+            "why": "采购、仓储和零售运营的核心词。",
+            "confidence": 0.96
+          }
+        ]
       },
       "item_key": "official-7-test-1/p2-31/31"
     }

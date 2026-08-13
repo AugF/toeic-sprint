@@ -56,24 +56,6 @@
         "C：她今天无法到办公室。",
         "D：她还没有移走旧的。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "unable",
-            "meaning": "出现在本题正确表达中：她今天无法到办公室。"
-          },
-          {
-            "term": "come",
-            "meaning": "出现在本题正确表达中：她今天无法到办公室。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "She is unable to come to the office today.",
-            "meaning": "她今天无法到办公室。"
-          }
-        ]
-      },
       "question_type": "主旨 / 目的题",
       "evidence": "参考原文第 1 段：Sarah Fuller (8:48 A.M.)",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -126,24 +108,6 @@
         "C：他可以开车送 Fuller 女士去办公室。",
         "D：他喜欢新家具的风格。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "accept",
-            "meaning": "出现在本题正确表达中：他会接受家具的运送。"
-          },
-          {
-            "term": "furniture",
-            "meaning": "出现在本题正确表达中：他会接受家具的运送。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "He will accept a furniture shipment.",
-            "meaning": "他会接受家具的运送。"
-          }
-        ]
-      },
       "question_type": "推断题",
       "evidence": "参考原文第 3 段：Jack Bennett (8:49 A.M.)",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -179,5 +143,23 @@
       },
       "item_key": "official-10-test-1/p7-151-152/152"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "shipment",
+        "meaning": "装运；货运批次",
+        "source_quote": "He will accept a furniture shipment.",
+        "source_field": "choice",
+        "why": "订单、交付和物流跟踪场景高频。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

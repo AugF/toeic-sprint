@@ -73,24 +73,6 @@
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：听力原文中提到“will be covered under the manufacturer's warranty.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To get technical support）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "technical",
-            "meaning": "本题重点词；结合正确选项理解：To get technical support"
-          },
-          {
-            "term": "support",
-            "meaning": "本题重点词；结合正确选项理解：To get technical support"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To get technical support",
-            "meaning": "正确选项中的重点搭配：To get technical support"
-          }
-        ]
-      },
       "item_id": 35,
       "priority": {
         "level": "P2",
@@ -144,24 +126,6 @@
         "evidence": "参考原文第 1 段：HE w Hello, what brings you to Altu Computers today?",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：听力原文中提到“Els w Well, since you bought it recently, repair and shipping”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A shipping cost）。"
-      },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "shipping",
-            "meaning": "本题重点词；结合正确选项理解：A shipping cost"
-          },
-          {
-            "term": "cost",
-            "meaning": "本题重点词；结合正确选项理解：A shipping cost"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "shipping cost",
-            "meaning": "正确选项中的重点搭配：A shipping cost"
-          }
-        ]
       },
       "item_id": 36,
       "priority": {
@@ -217,24 +181,6 @@
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
         "analysis": "原文依据：听力原文中提到“I-M °1 do have some important documents in my files”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Save some data）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "save",
-            "meaning": "本题重点词；结合正确选项理解：Save some data"
-          },
-          {
-            "term": "some",
-            "meaning": "本题重点词；结合正确选项理解：Save some data"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Save some data",
-            "meaning": "正确选项中的重点搭配：Save some data"
-          }
-        ]
-      },
       "item_id": 37,
       "priority": {
         "level": "P2",
@@ -262,5 +208,42 @@
       },
       "item_key": "official-8-test-1/p3-35-37/37"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "transcript",
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "warranty",
+        "meaning": "保修；质保",
+        "source_quote": "Els w Well, since you bought it recently, repair and shipping will be covered under the manufacturer's warranty.",
+        "source_field": "transcript",
+        "why": "产品售后和服务条款中的高频词。",
+        "confidence": 0.96
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "schedule an appointment",
+        "meaning": "安排预约",
+        "source_quote": "Schedule an appointment",
+        "source_field": "choice",
+        "why": "医疗、客户服务和商务会面场景的高频搭配。",
+        "confidence": 0.96
+      },
+      {
+        "phrase": "technical support",
+        "meaning": "技术支持",
+        "source_quote": "To get technical support",
+        "source_field": "choice",
+        "why": "软件、设备和客户服务文本常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

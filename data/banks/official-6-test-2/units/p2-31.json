@@ -60,24 +60,6 @@
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
         "analysis": "原文依据：问句或陈述是“How far in advance should I make my appointment?”，自然应答是“Well, this is our busiest time of year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Well, this is our busiest time of year.）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "well",
-            "meaning": "本题重点词；结合正确选项理解：Well, this is our busiest time of year."
-          },
-          {
-            "term": "busiest",
-            "meaning": "本题重点词；结合正确选项理解：Well, this is our busiest time of year."
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Well, this is our busiest time of year.",
-            "meaning": "正确选项中的重点搭配：Well, this is our busiest time of year."
-          }
-        ]
-      },
       "item_id": 31,
       "priority": {
         "level": "P2",
@@ -90,6 +72,24 @@
         ],
         "scope": "item",
         "model": "toeic_priority_v3_material"
+      },
+      "knowledge_accumulation": {
+        "schema_version": "2.0",
+        "source_scope": "question_context",
+        "extraction_basis": "full_exercise",
+        "source_fields": [
+          "question"
+        ],
+        "collocations": [
+          {
+            "phrase": "in advance",
+            "meaning": "提前",
+            "source_quote": "How far in advance should I make my appointment?",
+            "source_field": "question",
+            "why": "预约、付款和活动安排场景的高频表达。",
+            "confidence": 0.96
+          }
+        ]
       },
       "item_key": "official-6-test-2/p2-31/31"
     }

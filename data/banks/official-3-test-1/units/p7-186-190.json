@@ -58,24 +58,6 @@
         "C：(C) 一辆高级型车辆",
         "D：(D) 一辆超大型车辆"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "apremium",
-            "meaning": "出现在本题正确表达中：(C) 一辆高级型车辆"
-          },
-          {
-            "term": "vehicle",
-            "meaning": "出现在本题正确表达中：(C) 一辆高级型车辆"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Apremium vehicle",
-            "meaning": "(C) 一辆高级型车辆"
-          }
-        ]
-      },
       "question_type": "图表 / 信息联动题",
       "evidence": "参考原文第 2 段：Stellar Auto Rental offers four classes of vehicle rentals at each of our worldwide locations",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -130,24 +112,6 @@
         "C：(C) 取消预订",
         "D：(D) 投诉一项服务"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "question",
-            "meaning": "出现在本题正确表达中：(B) 对一笔费用提出质疑"
-          },
-          {
-            "term": "charge",
-            "meaning": "出现在本题正确表达中：(B) 对一笔费用提出质疑"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To question a charge 19",
-            "meaning": "(B) 对一笔费用提出质疑"
-          }
-        ]
-      },
       "question_type": "图表 / 信息联动题",
       "evidence": "参考原文第 57 段：What is the purpose of the e-mail?",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -202,20 +166,6 @@
         "C：(C) 粗鲁地",
         "D：(D) 简洁地"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "soon",
-            "meaning": "出现在本题正确表达中：(A) 很快"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "soon",
-            "meaning": "(A) 很快"
-          }
-        ]
-      },
       "question_type": "词义 / 话语含义题",
       "evidence": "参考原文第 16 段：August 27. Shortly thereafter, I learned that four colleagues would need to travel with me,",
       "strategy": "本题属于词义 / 话语含义题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -270,24 +220,6 @@
         "C：(C) 她在2月27日之前取消了预订。",
         "D：(D) 她希望让同事开租赁车辆。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "canceled",
-            "meaning": "出现在本题正确表达中：(C) 她在2月27日之前取消了预订。"
-          },
-          {
-            "term": "reservation",
-            "meaning": "出现在本题正确表达中：(C) 她在2月27日之前取消了预订。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "She canceled her reservation before February 27.",
-            "meaning": "(C) 她在2月27日之前取消了预订。"
-          }
-        ]
-      },
       "question_type": "主旨 / 目的题",
       "evidence": "参考原文第 11 段：From: | | Amartinez@hmail.com |",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -342,24 +274,6 @@
         "C：(C) 它为经常光顾的顾客设有会员计划。",
         "D：(D) 它要求预订时付款。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "requires",
-            "meaning": "出现在本题正确表达中：(D) 它要求预订时付款。"
-          },
-          {
-            "term": "payment",
-            "meaning": "出现在本题正确表达中：(D) 它要求预订时付款。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "It requires a payment upon reservation",
-            "meaning": "(D) 它要求预订时付款。"
-          }
-        ]
-      },
       "question_type": "主旨 / 目的题",
       "evidence": "参考原文第 1 段：STELLAR Auto RENTAL aie",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -397,5 +311,23 @@
       },
       "item_key": "official-3-test-1/p7-186-190/190"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "passage"
+    ],
+    "vocabulary": [
+      {
+        "term": "reservation",
+        "meaning": "预订",
+        "source_quote": "To cancel a reservation",
+        "source_field": "passage",
+        "why": "酒店、餐饮、会议室与出行场景常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

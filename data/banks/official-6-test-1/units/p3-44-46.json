@@ -61,24 +61,6 @@
         "C：他填写了一些文件。",
         "D：他在网上阅读了一些评论。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "completed",
-            "meaning": "出现在本题正确表达中：他填写了一些文件。"
-          },
-          {
-            "term": "some",
-            "meaning": "出现在本题正确表达中：他填写了一些文件。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "He completed some paperwork.",
-            "meaning": "他填写了一些文件。"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -131,24 +113,6 @@
         "C：在一个医疗办公室",
         "D：在一家书店"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "medical",
-            "meaning": "出现在本题正确表达中：在一个医疗办公室"
-          },
-          {
-            "term": "office",
-            "meaning": "出现在本题正确表达中：在一个医疗办公室"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "At a medical office",
-            "meaning": "在一个医疗办公室"
-          }
-        ]
-      },
       "question_type": "推断题",
       "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -201,20 +165,6 @@
         "C：给朋友打电话",
         "D：去另一个地方拜访"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "some",
-            "meaning": "出现在本题正确表达中：喝点茶"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Have some tea",
-            "meaning": "喝点茶"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -250,5 +200,23 @@
       },
       "item_key": "official-6-test-1/p3-44-46/46"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "question"
+    ],
+    "collocations": [
+      {
+        "phrase": "in advance",
+        "meaning": "提前",
+        "source_quote": "What did the man do in advance?",
+        "source_field": "question",
+        "why": "预约、付款和活动安排场景的高频表达。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

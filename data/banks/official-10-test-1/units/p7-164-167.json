@@ -55,24 +55,6 @@
         "C：要求续签合同",
         "D：为延迟发布道歉"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "announce",
-            "meaning": "出现在本题正确表达中：宣布一些库存变化"
-          },
-          {
-            "term": "some",
-            "meaning": "出现在本题正确表达中：宣布一些库存变化"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To announce some inventory changes",
-            "meaning": "宣布一些库存变化"
-          }
-        ]
-      },
       "question_type": "主旨 / 目的题",
       "evidence": "参考原文第 1 段：*E-mail*",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -124,24 +106,6 @@
         "C：它主要向其他公司销售产品。",
         "D：它只销售办公家具。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "sells",
-            "meaning": "出现在本题正确表达中：它主要向其他公司销售产品。"
-          },
-          {
-            "term": "primarily",
-            "meaning": "出现在本题正确表达中：它主要向其他公司销售产品。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "It sells primarily to other companies.",
-            "meaning": "它主要向其他公司销售产品。"
-          }
-        ]
-      },
       "question_type": "主旨 / 目的题",
       "evidence": "参考原文第 5 段：mtoskala@norston.ca",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -193,24 +157,6 @@
         "C：其颜色选择增加了。",
         "D：其设计变得更坚固了。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "price",
-            "meaning": "出现在本题正确表达中：其价格降低了。"
-          },
-          {
-            "term": "lowered",
-            "meaning": "出现在本题正确表达中：其价格降低了。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Its price was lowered.",
-            "meaning": "其价格降低了。"
-          }
-        ]
-      },
       "question_type": "主旨 / 目的题",
       "evidence": "参考原文第 15 段：• Our Eikennen office chair is now priced at $149 instead of $179.",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -262,24 +208,6 @@
         "C：通过对新网站提供反馈",
         "D：购买三件或更多产品"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "subscribing",
-            "meaning": "出现在本题正确表达中：通过订阅通讯"
-          },
-          {
-            "term": "newsletter",
-            "meaning": "出现在本题正确表达中：通过订阅通讯"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "By subscribing to a newsletter",
-            "meaning": "通过订阅通讯"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 5 段：mtoskala@norston.ca",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -314,5 +242,32 @@
       },
       "item_key": "official-10-test-1/p7-164-167/167"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "passage",
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "eligible",
+        "meaning": "有资格的；符合条件的",
+        "source_quote": "The first 50 subscribers are eligible to win a new Tyrgo laser printer worth $350!",
+        "source_field": "passage",
+        "why": "福利、优惠和申请说明中的高频词。",
+        "confidence": 0.96
+      },
+      {
+        "term": "inventory",
+        "meaning": "库存",
+        "source_quote": "To announce some inventory changes",
+        "source_field": "choice",
+        "why": "采购、仓储和零售运营的核心词。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

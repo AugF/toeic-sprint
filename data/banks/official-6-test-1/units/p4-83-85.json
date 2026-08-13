@@ -60,20 +60,6 @@
         "C：一个目标已经达到了。",
         "D：一次促销销售结束了。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "goal",
-            "meaning": "出现在本题正确表达中：一个目标已经达到了。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "goal has been met.",
-            "meaning": "一个目标已经达到了。"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 4 段：the new sweaters have all been sold. However, ® now the",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -125,24 +111,6 @@
         "C：卸载一批货物",
         "D：移除一些标签"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "cleaning",
-            "meaning": "出现在本题正确表达中：打扫一个房间"
-          },
-          {
-            "term": "room",
-            "meaning": "出现在本题正确表达中：打扫一个房间"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Cleaning a room",
-            "meaning": "打扫一个房间"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 7 段：updated the duty roster with this assignment. And speaking",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -194,24 +162,6 @@
         "C：领取新制服",
         "D：报名参加研讨会"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "submit",
-            "meaning": "出现在本题正确表达中：提交一份表格"
-          },
-          {
-            "term": "form",
-            "meaning": "出现在本题正确表达中：提交一份表格"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Submit a form",
-            "meaning": "提交一份表格"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：a meeting.",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -246,5 +196,23 @@
       },
       "item_key": "official-6-test-1/p4-83-85/85"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "shipment",
+        "meaning": "装运；货运批次",
+        "source_quote": "Unloading a shipment",
+        "source_field": "choice",
+        "why": "订单、交付和物流跟踪场景高频。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

@@ -70,20 +70,6 @@
         "C：在一家餐馆",
         "D：一家货运公司"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "restaurant",
-            "meaning": "出现在本题正确表达中：在一家餐馆"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "At a restaurant (",
-            "meaning": "在一家餐馆"
-          }
-        ]
-      },
       "item_id": 80,
       "priority": {
         "level": "P1",
@@ -135,24 +121,6 @@
         "C：生意关闭了。",
         "D：一个特殊活动被取消了。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "extra",
-            "meaning": "出现在本题正确表达中：送来了额外的物品。"
-          },
-          {
-            "term": "items",
-            "meaning": "出现在本题正确表达中：送来了额外的物品。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Extra items were delivered.",
-            "meaning": "送来了额外的物品。"
-          }
-        ]
-      },
       "item_id": 81,
       "priority": {
         "level": "P1",
@@ -204,24 +172,6 @@
         "C：她希望尽快得到回复。",
         "D：将举行一个特殊活动"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "like",
-            "meaning": "出现在本题正确表达中：她希望尽快得到回复。"
-          },
-          {
-            "term": "response",
-            "meaning": "出现在本题正确表达中：她希望尽快得到回复。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "She would like a response soon. (",
-            "meaning": "她希望尽快得到回复。"
-          }
-        ]
-      },
       "item_id": 82,
       "priority": {
         "level": "P1",
@@ -246,5 +196,23 @@
       },
       "item_key": "official-1-test-1/p4-80-82/82"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "transcript"
+    ],
+    "vocabulary": [
+      {
+        "term": "inventory",
+        "meaning": "库存",
+        "source_quote": "So, uh need to finish the kitchen inventory this morning it’s already ten o’clock.",
+        "source_field": "transcript",
+        "why": "采购、仓储和零售运营的核心词。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

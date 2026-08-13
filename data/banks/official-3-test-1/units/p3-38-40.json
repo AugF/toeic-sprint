@@ -62,24 +62,6 @@
         "C：价格将会增加。",
         "D：它们有现场音乐。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "they",
-            "meaning": "出现在本题正确表达中：它们非常受欢迎。"
-          },
-          {
-            "term": "very",
-            "meaning": "出现在本题正确表达中：它们非常受欢迎。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "They are very popular. mae",
-            "meaning": "它们非常受欢迎。"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 2 段：are there any at the end of September?",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -133,24 +115,6 @@
         "C：提供带照片的身份证明",
         "D：阅读一些评论"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "make",
-            "meaning": "出现在本题正确表达中：进行在线预订"
-          },
-          {
-            "term": "online",
-            "meaning": "出现在本题正确表达中：进行在线预订"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Make an online reservation",
-            "meaning": "进行在线预订"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：Ev Hello, | saw an advertisement for your boat to",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -204,24 +168,6 @@
         "C：男士必须准时到达。",
         "D：日历很容易找到。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "acalendar",
-            "meaning": "出现在本题正确表达中：日历很容易找到。"
-          },
-          {
-            "term": "easy",
-            "meaning": "出现在本题正确表达中：日历很容易找到。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Acalendar is easy to find.",
-            "meaning": "日历很容易找到。"
-          }
-        ]
-      },
       "question_type": "推断题",
       "evidence": "参考原文第 1 段：Ev Hello, | saw an advertisement for your boat to",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -258,5 +204,23 @@
       },
       "item_key": "official-3-test-1/p3-38-40/40"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "reservation",
+        "meaning": "预订",
+        "source_quote": "Make an online reservation",
+        "source_field": "choice",
+        "why": "酒店、餐饮、会议室与出行场景常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

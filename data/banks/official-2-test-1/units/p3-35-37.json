@@ -62,24 +62,6 @@
         "C：询问丢失的物品",
         "D：交换订单"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "about",
-            "meaning": "出现在本题正确表达中：询问丢失的物品"
-          },
-          {
-            "term": "lost",
-            "meaning": "出现在本题正确表达中：询问丢失的物品"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To ask about a lost item",
-            "meaning": "询问丢失的物品"
-          }
-        ]
-      },
       "question_type": "主旨 / 目的题",
       "evidence": "参考原文第 1 段：Hi. 9''m calling because | think | left my jacket",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -133,24 +115,6 @@
         "C：出发时间",
         "D：座位号"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "aseat",
-            "meaning": "出现在本题正确表达中：座位号"
-          },
-          {
-            "term": "number",
-            "meaning": "出现在本题正确表达中：座位号"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Aseat number",
-            "meaning": "座位号"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 7 段：enough information to locate the jacket.",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -204,24 +168,6 @@
         "C：和旅行社说说话",
         "D：填写一份表格"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "baggage",
-            "meaning": "出现在本题正确表达中：去行李提取区"
-          },
-          {
-            "term": "claim",
-            "meaning": "出现在本题正确表达中：去行李提取区"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Go to a baggage claim area",
-            "meaning": "去行李提取区"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：Hi. 9''m calling because | think | left my jacket",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -258,5 +204,23 @@
       },
       "item_key": "official-2-test-1/p3-35-37/37"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "itinerary",
+        "meaning": "行程安排",
+        "source_quote": "To change an itinerary",
+        "source_field": "choice",
+        "why": "商务旅行、活动和客户接待场景常见。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

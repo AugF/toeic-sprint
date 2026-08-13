@@ -66,24 +66,6 @@
         "C：创建餐饮区",
         "D：增加额外的更衣室"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "create",
-            "meaning": "出现在本题正确表达中：创建餐饮区"
-          },
-          {
-            "term": "eating",
-            "meaning": "出现在本题正确表达中：创建餐饮区"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To create an eating area",
-            "meaning": "创建餐饮区"
-          }
-        ]
-      },
       "item_id": 147,
       "priority": {
         "level": "P2",
@@ -136,20 +118,6 @@
         "C：3层",
         "D：增加额外的更衣室"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "level",
-            "meaning": "出现在本题正确表达中：3层"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "On Level 3",
-            "meaning": "3层"
-          }
-        ]
-      },
       "item_id": 148,
       "priority": {
         "level": "P2",
@@ -175,5 +143,23 @@
       },
       "item_key": "official-1-test-1/p7-147-148/148"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "passage"
+    ],
+    "vocabulary": [
+      {
+        "term": "renovation",
+        "meaning": "翻修；改造",
+        "source_quote": "Welcome to Moon Bay Department Store Please use this temporary directory to navigate our store while it is under renovation.",
+        "source_field": "passage",
+        "why": "办公设施和场地维护通知高频。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

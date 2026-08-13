@@ -66,24 +66,6 @@
         "analysis": "原文依据：广告面向在 manufacturing process 中使用旧机器、担心 production line 停工的客户。 选择理由：最可能客户是工厂所有者，对应B。正确答案：B（Factory owners）。"
       },
       "question_translation": "谁最有可能是 Copytrue Parts Service 的客户？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "client",
-            "meaning": "客户；委托人"
-          },
-          {
-            "term": "machinery",
-            "meaning": "机械设备（总称）"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "keep a production line running",
-            "meaning": "维持生产线运转"
-          }
-        ]
-      },
       "item_id": 172,
       "priority": {
         "level": "P2",
@@ -136,24 +118,6 @@
         "analysis": "原文依据：We are based in northern Massachusetts。 选择理由：总办公室最可能在Massachusetts，对应A。正确答案：A（In Massachusetts）。"
       },
       "question_translation": "Copytrue Parts Service 的总办公室最可能在哪里？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "headquarters",
-            "meaning": "总部"
-          },
-          {
-            "term": "service area",
-            "meaning": "服务区域"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "be headquartered in Massachusetts",
-            "meaning": "总部设在马萨诸塞州"
-          }
-        ]
-      },
       "item_id": 173,
       "priority": {
         "level": "P2",
@@ -206,24 +170,6 @@
         "analysis": "原文依据：What we do 下列出零件复制、咨询和维护评估等服务。 选择理由：广告包含公司提供的多种服务，对应C。正确答案：C（The variety of services available from the company）。"
       },
       "question_translation": "这则广告包含了哪项信息？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "advertisement",
-            "meaning": "广告"
-          },
-          {
-            "term": "service",
-            "meaning": "服务；业务项目"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "offer a range of services",
-            "meaning": "提供多种服务"
-          }
-        ]
-      },
       "item_id": 174,
       "priority": {
         "level": "P2",
@@ -276,24 +222,6 @@
         "analysis": "原文依据：广告列举公司处理过来自多个国家的设备。 选择理由：该列表强调技师接触设备广、知识经验丰富，对应D。正确答案：D（To emphasize the staff's knowledge and experience）。"
       },
       "question_translation": "这则广告为什么列出多个国家？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "manufacture",
-            "meaning": "制造；生产"
-          },
-          {
-            "term": "expertise",
-            "meaning": "专业知识；专长"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "equipment manufactured in several countries",
-            "meaning": "在多个国家制造的设备"
-          }
-        ]
-      },
       "item_id": 175,
       "priority": {
         "level": "P2",
@@ -319,5 +247,23 @@
       },
       "item_key": "official-11-test-1/p7-172-175/175"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "passage"
+    ],
+    "vocabulary": [
+      {
+        "term": "maintenance",
+        "meaning": "维护；保养",
+        "source_quote": "• Our team can assess your company's maintenance routines and suggest improvements that will make old machinery last longer and function more efficiently.",
+        "source_field": "passage",
+        "why": "设施、设备和运营通知的高频词。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

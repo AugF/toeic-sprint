@@ -75,24 +75,6 @@
         "analysis": "原文依据：选择问今天还是明天参加培训，答句说今天要陪客户。 选择理由：B排除了 today，间接表明会选 tomorrow；A和C没有回应日期选择。正确答案：B（I'm spending today with a client.）。"
       },
       "question_translation": "你会在今天还是明天参加必修培训课？",
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "mandatory",
-            "meaning": "强制性的；必须参加的"
-          },
-          {
-            "term": "agenda",
-            "meaning": "议程；日程表"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "attend a mandatory training session",
-            "meaning": "参加必修培训课"
-          }
-        ]
-      },
       "item_id": 30,
       "priority": {
         "level": "P2",
@@ -120,6 +102,24 @@
         "part": 2,
         "unit_id": "part2-30",
         "model": "toeic_priority_v1"
+      },
+      "knowledge_accumulation": {
+        "schema_version": "2.0",
+        "source_scope": "question_context",
+        "extraction_basis": "full_exercise",
+        "source_fields": [
+          "question"
+        ],
+        "vocabulary": [
+          {
+            "term": "mandatory",
+            "meaning": "强制的；必须的",
+            "source_quote": "Will you be attending the mandatory training session today or tomorrow?",
+            "source_field": "question",
+            "why": "政策、培训和安全规定说明常见。",
+            "confidence": 0.96
+          }
+        ]
       },
       "item_key": "official-11-test-1/p2-30/30"
     }

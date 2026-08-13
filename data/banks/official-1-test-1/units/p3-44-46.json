@@ -69,24 +69,6 @@
         "C：他无法转接一些重要的电话",
         "D：他的电池充电器丢失了。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "phone",
-            "meaning": "出现在本题正确表达中：他的手机不能正常工作。"
-          },
-          {
-            "term": "working",
-            "meaning": "出现在本题正确表达中：他的手机不能正常工作。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "His phone is not working properly.",
-            "meaning": "他的手机不能正常工作。"
-          }
-        ]
-      },
       "item_id": 44,
       "priority": {
         "level": "P2",
@@ -137,24 +119,6 @@
         "C：旧手机可以回收。",
         "D：维修是在现场进行的。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "some",
-            "meaning": "出现在本题正确表达中：有些手机有折扣出售。"
-          },
-          {
-            "term": "phones",
-            "meaning": "出现在本题正确表达中：有些手机有折扣出售。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Some phones are available at a discount.",
-            "meaning": "有些手机有折扣出售。"
-          }
-        ]
-      },
       "item_id": 45,
       "priority": {
         "level": "P2",
@@ -205,24 +169,6 @@
         "C：演示高级手机功能",
         "D：描述一些保修计划"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "demonstrate",
-            "meaning": "出现在本题正确表达中：演示高级手机功能"
-          },
-          {
-            "term": "advanced",
-            "meaning": "出现在本题正确表达中：演示高级手机功能"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Demonstrate advanced phone featur",
-            "meaning": "演示高级手机功能"
-          }
-        ]
-      },
       "item_id": 46,
       "priority": {
         "level": "P2",
@@ -246,5 +192,23 @@
       },
       "item_key": "official-1-test-1/p3-44-46/46"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "warranty",
+        "meaning": "保修；质保",
+        "source_quote": "Describe some warranty plans",
+        "source_field": "choice",
+        "why": "产品售后和服务条款中的高频词。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

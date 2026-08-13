@@ -59,24 +59,6 @@
         "C：建筑许可证",
         "D：一个家居装修项目"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "ahome",
-            "meaning": "出现在本题正确表达中：一个家居装修项目"
-          },
-          {
-            "term": "improvement",
-            "meaning": "出现在本题正确表达中：一个家居装修项目"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Ahome improvement project",
-            "meaning": "一个家居装修项目"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：K, Ms. Torres, | have your price estimate.",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -127,24 +109,6 @@
         "C：提供一些帮助",
         "D：推荐一项服务"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "negotiate",
-            "meaning": "出现在本题正确表达中：协商一个价格"
-          },
-          {
-            "term": "price",
-            "meaning": "出现在本题正确表达中：协商一个价格"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To negotiate a price",
-            "meaning": "协商一个价格"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 3 段：fence, will cost you five thousand dollars.",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -195,24 +159,6 @@
         "C：选定的物品有库存。",
         "D：经验丰富的工人会在现场。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "acost",
-            "meaning": "出现在本题正确表达中：成本估算包括了材料。"
-          },
-          {
-            "term": "estimate",
-            "meaning": "出现在本题正确表达中：成本估算包括了材料。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Acost estimate includes supplies.",
-            "meaning": "成本估算包括了材料。"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：K, Ms. Torres, | have your price estimate.",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -246,5 +192,31 @@
       },
       "item_key": "official-1-test-2/p3-47-49/49"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "negotiate",
+        "meaning": "谈判；协商",
+        "source_quote": "To negotiate a price",
+        "source_field": "choice",
+        "why": "合同、采购和商务合作语境高频。",
+        "confidence": 0.96
+      },
+      {
+        "term": "warranty",
+        "meaning": "保修；质保",
+        "source_quote": "An appliance warranty",
+        "source_field": "choice",
+        "why": "产品售后和服务条款中的高频词。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

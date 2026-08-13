@@ -56,24 +56,6 @@
         "C：邀请供应商竞标工作",
         "D：协商付款金额"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "acknowledge",
-            "meaning": "出现在本题正确表达中：确认收到发票"
-          },
-          {
-            "term": "receipt",
-            "meaning": "出现在本题正确表达中：确认收到发票"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "To acknowledge receipt of an invoice",
-            "meaning": "确认收到发票"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：To:",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -126,24 +108,6 @@
         "C：她负责数据录入。",
         "D：她经常出差。"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "inputs",
-            "meaning": "出现在本题正确表达中：她负责数据录入。"
-          },
-          {
-            "term": "data",
-            "meaning": "出现在本题正确表达中：她负责数据录入。"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "She inputs data.",
-            "meaning": "她负责数据录入。"
-          }
-        ]
-      },
       "question_type": "主旨 / 目的题",
       "evidence": "参考原文第 2 段：Seema Singh <ssingh@jademail.com>",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -196,20 +160,6 @@
         "C：[3]",
         "D：[4]"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "[2]",
-            "meaning": "出现在本题正确表达中：[2]"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "[2]",
-            "meaning": "[2]"
-          }
-        ]
-      },
       "question_type": "细节题",
       "evidence": "参考原文第 1 段：To:",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -245,5 +195,42 @@
       },
       "item_key": "official-10-test-1/p7-158-160/160"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice",
+      "passage"
+    ],
+    "vocabulary": [
+      {
+        "term": "negotiate",
+        "meaning": "谈判；协商",
+        "source_quote": "To negotiate a payment amount",
+        "source_field": "choice",
+        "why": "合同、采购和商务合作语境高频。",
+        "confidence": 0.96
+      },
+      {
+        "term": "vendor",
+        "meaning": "供应商；摊贩",
+        "source_quote": "To invite a vendor to bid on a job",
+        "source_field": "choice",
+        "why": "采购、活动和供应链场景的核心词。",
+        "confidence": 0.96
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "on behalf of",
+        "meaning": "代表……",
+        "source_quote": "On behalf of the Kotarus Engineering Company, I want to thank you for the work you did performing some much-needed data entry.",
+        "source_field": "passage",
+        "why": "邮件、公告和商务沟通中的正式固定结构。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

@@ -64,20 +64,6 @@
         "C：举办庆祝活动",
         "D：探望家人"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "conference",
-            "meaning": "出现在本题正确表达中：去参加会议"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Go to a conference",
-            "meaning": "去参加会议"
-          }
-        ]
-      },
       "question_type": "图表 / 信息联动题",
       "evidence": "参考原文第 1 段：price list.",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -128,20 +114,6 @@
         "C：混纺合成纤维",
         "D：丝绸"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "silk",
-            "meaning": "出现在本题正确表达中：丝绸"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Silk",
-            "meaning": "丝绸"
-          }
-        ]
-      },
       "question_type": "图表 / 信息联动题",
       "evidence": "参考原文第 2 段：Hi, I'd like to have this dress cleaned. ©!’m",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -192,24 +164,6 @@
         "C：发送确认函",
         "D：安排预约"
       ],
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "expedite",
-            "meaning": "出现在本题正确表达中：加急服务"
-          },
-          {
-            "term": "service",
-            "meaning": "出现在本题正确表达中：加急服务"
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Expedite a service",
-            "meaning": "加急服务"
-          }
-        ]
-      },
       "question_type": "图表 / 信息联动题",
       "evidence": "参考原文第 1 段：price list.",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
@@ -243,5 +197,33 @@
       },
       "item_key": "official-1-test-2/p3-65-67/67"
     }
-  ]
+  ],
+  "knowledge_accumulation": {
+    "schema_version": "2.0",
+    "source_scope": "material",
+    "extraction_basis": "full_exercise",
+    "source_fields": [
+      "choice"
+    ],
+    "vocabulary": [
+      {
+        "term": "expedite",
+        "meaning": "加快；促成",
+        "source_quote": "Expedite a service",
+        "source_field": "choice",
+        "why": "物流、审批和项目进度语境的高价值动词。",
+        "confidence": 0.96
+      }
+    ],
+    "collocations": [
+      {
+        "phrase": "schedule an appointment",
+        "meaning": "安排预约",
+        "source_quote": "Schedule an appointment",
+        "source_field": "choice",
+        "why": "医疗、客户服务和商务会面场景的高频搭配。",
+        "confidence": 0.96
+      }
+    ]
+  }
 }

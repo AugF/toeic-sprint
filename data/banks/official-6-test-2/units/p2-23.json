@@ -59,24 +59,6 @@
         "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
         "analysis": "原文依据：问句或陈述是“When's the deadline to sign the contract for maintenance service?”，自然应答是“Noon on Wednesday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Noon on Wednesday.）。"
       },
-      "knowledge_accumulation": {
-        "vocabulary": [
-          {
-            "term": "noon",
-            "meaning": "本题重点词；结合正确选项理解：Noon on Wednesday."
-          },
-          {
-            "term": "wednesday",
-            "meaning": "本题重点词；结合正确选项理解：Noon on Wednesday."
-          }
-        ],
-        "collocations": [
-          {
-            "phrase": "Noon on Wednesday.",
-            "meaning": "正确选项中的重点搭配：Noon on Wednesday."
-          }
-        ]
-      },
       "item_id": 23,
       "priority": {
         "level": "P3",
@@ -88,6 +70,24 @@
         ],
         "scope": "item",
         "model": "toeic_priority_v3_material"
+      },
+      "knowledge_accumulation": {
+        "schema_version": "2.0",
+        "source_scope": "question_context",
+        "extraction_basis": "full_exercise",
+        "source_fields": [
+          "question"
+        ],
+        "vocabulary": [
+          {
+            "term": "maintenance",
+            "meaning": "维护；保养",
+            "source_quote": "When's the deadline to sign the contract for maintenance service?",
+            "source_field": "question",
+            "why": "设施、设备和运营通知的高频词。",
+            "confidence": 0.96
+          }
+        ]
       },
       "item_key": "official-6-test-2/p2-23/23"
     }
