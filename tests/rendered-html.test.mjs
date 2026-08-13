@@ -1,91 +1,41 @@
 import assert from "node:assert/strict";
-import { access, readFile, readdir } from "node:fs/promises";
+import {readFile} from "node:fs/promises";
 import test from "node:test";
 
-const developmentPreviewMeta =
-  /<meta(?=[^>]*\bname=["']codex-preview["'])(?=[^>]*\bcontent=["']development["'])[^>]*>/i;
-const templateRoot = new URL("../", import.meta.url);
-const previewRoot = new URL("../app/_sites-preview/", import.meta.url);
+const root=new URL("../",import.meta.url);
+const read=(value)=>readFile(new URL(value,root),"utf8");
 
-async function render() {
-  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-  const { default: worker } = await import(workerUrl.href);
-
-  return worker.fetch(
-    new Request("http://localhost/", {
-      headers: { accept: "text/html" },
-    }),
-    {
-      ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
-      },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
-    },
-  );
-}
-
-test("server-renders the starter loading skeleton", async () => {
-  const response = await render();
-  assert.equal(response.status, 200);
-  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
-
-  const html = await response.text();
-  assert.match(html, developmentPreviewMeta);
-  assert.match(html, /<title>Your site is taking shape<\/title>/i);
-  assert.match(html, /Building your site/);
-  assert.match(html, /Your site is taking shape/);
-  assert.match(
-    html,
-    /Your first version will appear here automatically when it’s ready\./,
-  );
-  assert.doesNotMatch(html, /Codex/);
-  assert.match(html, /react-loading-skeleton/);
-  assert.match(html, /role="status"/);
+test("covers all 200 questions with priority metadata",async()=>{
+  const bank=JSON.parse(await read("public/bank/question.json"));
+  const units=bank.parts.flatMap(part=>part.questions);
+  const items=units.flatMap(group=>group.items||[group]);
+  assert.equal(bank.schema_version,"2.1");
+  assert.equal(units.length,79);
+  assert.equal(items.length,200);
+  assert.ok(units.every(group=>["P1","P2","P3"].includes(group.priority?.level)));
+  assert.ok(items.every(item=>["P1","P2","P3"].includes(item.priority?.level)));
+  assert.deepEqual(Object.fromEntries(["P1","P2","P3"].map(level=>[level,units.filter(x=>x.priority.level===level).length])),{P1:32,P2:28,P3:19});
 });
 
-test("keeps the loading skeleton scoped and disposable", async () => {
-  const [preview, css, page, layout, packageJson, files] = await Promise.all([
-    readFile(new URL("SkeletonPreview.tsx", previewRoot), "utf8"),
-    readFile(new URL("preview.css", previewRoot), "utf8"),
-    readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
-    readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
-    readFile(new URL("../package.json", import.meta.url), "utf8"),
-    readdir(previewRoot),
-  ]);
+test("keeps official grouped sections intact and makes Part 5 training packs",async()=>{
+  const bank=JSON.parse(await read("public/bank/question.json"));
+  const counts=Object.fromEntries(bank.parts.map(part=>[part.part,part.questions.length]));
+  assert.deepEqual(counts,{1:6,2:25,3:13,4:10,5:6,6:4,7:15});
+  const part5=bank.parts.find(part=>part.part===5);
+  assert.ok(part5.questions.every(group=>group.items.length===5));
+  assert.equal(part5.questions[0].id,"101-105");
+  assert.equal(part5.questions.at(-1).id,"126-130");
+  assert.match(bank.priority_methodology.part5_note,/正式考试为独立题/);
+});
 
-  assert.deepEqual(files.sort(), ["SkeletonPreview.tsx", "preview.css"]);
-  assert.match(preview, /from "react-loading-skeleton"/);
-  assert.match(preview, /baseColor="#eceae7"/);
-  assert.match(preview, /highlightColor="#f9f8f6"/);
-  assert.match(preview, /duration=\{2\.8\}/);
-  assert.match(preview, /sites-skeleton-search-placeholder/);
-  assert.match(packageJson, /"react-loading-skeleton": "3\.5\.0"/);
-
-  const shellIndex = preview.indexOf('className="sites-skeleton-shell"');
-  const statusIndex = preview.indexOf('className="sites-skeleton-status"');
-  assert.ok(shellIndex >= 0 && statusIndex > shellIndex);
-  assert.match(css, /position:\s*fixed/);
-  assert.match(css, /inset:\s*0/);
-  assert.match(css, /opacity:\s*0\.52/);
-  assert.match(css, /prefers-reduced-motion:\s*reduce/);
-  assert.doesNotMatch(css, /#020617|canvas|pets|progress/i);
-  assert.doesNotMatch(
-    preview,
-    /loading-spinner|status-mark|status-progress|canvas|cookie|random/i,
-  );
-
-  assert.match(page, /export const metadata:\s*Metadata/);
-  assert.match(page, /"codex-preview": "development"/);
-  assert.match(page, /<SkeletonPreview \/>/);
-  assert.match(layout, /title:\s*"Starter Project"/);
-  assert.doesNotMatch(layout, /codex-preview|_sites-preview|themeColor|\bViewport\b/);
-  assert.doesNotMatch(css, /(^|\s)(html|body)\s*\{/m);
-
-  await assert.rejects(
-    access(new URL("public/_sites-preview", templateRoot)),
-  );
+test("renders priority drill controls in both app and static Pages entry",async()=>{
+  const [page,css,pagesEntry,layout]=await Promise.all([read("app/page.tsx"),read("app/priority.css"),read("static-pages/main.tsx"),read("app/layout.tsx")]);
+  assert.match(page,/P1 必刷/);
+  assert.match(page,/priorityFilters/);
+  assert.match(page,/优先级顺序/);
+  assert.match(page,/第 \{groups\.length\?gi\+1:0\} \/ \{groups\.length\} \{asSet\?"套":"题"\}/);
+  assert.match(css,/\.badge\.p1/);
+  assert.match(css,/\.setRail/);
+  assert.match(pagesEntry,/priority\.css/);
+  assert.match(layout,/priority\.css/);
 });

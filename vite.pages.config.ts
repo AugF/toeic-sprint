@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   base: "/toeic-sprint/",
-  root: "pages",
+  root: "static-pages",
   publicDir: "../public",
   plugins: [react()],
   build: { outDir: "../pages-dist", emptyOutDir: true },
