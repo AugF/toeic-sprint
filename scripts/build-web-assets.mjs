@@ -12,6 +12,8 @@ const catalog=JSON.parse(fs.readFileSync(catalogFile,"utf8"));
 if(catalog.banks.length!==24)throw new Error("catalog 必须先包含24套题库");
 fs.mkdirSync(outputRoot,{recursive:true});
 
+// Keep Vite's top-level application bundles when this script is pointed at a
+// completed Pages build. Only bank-scoped media is managed by this script.
 const expected=new Set();
 let copied=0,skipped=0,missing=0;
 for(const bank of catalog.banks){
@@ -34,7 +36,10 @@ for(const bank of catalog.banks){
     const time=fs.statSync(source).mtime;fs.utimesSync(target,time,time);copied++;
   }
 }
-for(const file of walk(outputRoot))if(!expected.has(path.resolve(file)))fs.rmSync(file);
+for(const entry of fs.readdirSync(outputRoot,{withFileTypes:true})){
+  if(!entry.isDirectory()||!/^official-\d+-test-\d+$/.test(entry.name))continue;
+  for(const file of walk(path.join(outputRoot,entry.name)))if(!expected.has(path.resolve(file)))fs.rmSync(file);
+}
 if(missing)throw new Error(`缺少 ${missing} 个已引用资源`);
 console.log(`Web assets ready: ${expected.size} files (${copied} built, ${skipped} reused) in ${outputRoot}`);
 

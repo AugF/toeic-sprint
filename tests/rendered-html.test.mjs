@@ -1,9 +1,10 @@
 import assert from "node:assert/strict";
-import {readFile,readdir} from "node:fs/promises";
+import {access,readFile,readdir} from "node:fs/promises";
 import test from "node:test";
 
 const root=new URL("../",import.meta.url);
 const read=(value)=>readFile(new URL(value,root),"utf8");
+const exists=async(value)=>access(value).then(()=>true,()=>false);
 
 test("publishes 24 banks and 4,800 globally unique item references",async()=>{
   const catalog=JSON.parse(await read("public/data/catalog.json"));
@@ -84,4 +85,12 @@ test("minimal web asset set contains all referenced media exactly once",async()=
   }
   const countFiles=async url=>{let count=0;for(const entry of await readdir(url,{withFileTypes:true})){count+=entry.isDirectory()?await countFiles(new URL(`${entry.name}/`,url)):1}return count};
   assert.equal(await countFiles(new URL("public/assets/",root)),refs);
+});
+
+test("Pages build keeps its application JavaScript and CSS bundles",async()=>{
+  const html=await readFile(new URL("../pages-dist/index.html",import.meta.url),"utf8");
+  const refs=[...html.matchAll(/(?:src|href)="\/toeic-sprint\/(assets\/[^"?#]+\.(?:js|css))"/g)].map(match=>match[1]);
+  assert.ok(refs.some(ref=>ref.endsWith(".js")),"index.html must reference a JavaScript bundle");
+  assert.ok(refs.some(ref=>ref.endsWith(".css")),"index.html must reference a CSS bundle");
+  for(const ref of refs)assert.ok(await exists(new URL(`../pages-dist/${ref}`,import.meta.url)),`${ref} must exist in pages-dist`);
 });
