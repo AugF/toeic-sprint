@@ -323,6 +323,9 @@ export default function Home() {
   }, [allRefs, bankFilter, partFilter, priorityFilter, statusFilter, priorityOrder, saved, stickyKey]);
 
   const current = queue[position];
+  const next = queue[position + 1];
+  const nextBankId = next?.bank_id;
+  const nextDetailPath = next?.detail_path;
   const currentItem = detail?.items.find(item => String(item.item_id) === String(current?.item_id));
   const doneCount = useMemo(() => allRefs.reduce((total, ref) =>
     total + ref.item_keys.filter(key => saved.answers[key]).length, 0), [allRefs, saved.answers]);
@@ -376,6 +379,45 @@ export default function Home() {
       .finally(() => setDetailLoading(false));
     return () => controller.abort();
   }, [current?.detail_path]);
+
+  useEffect(() => {
+    if (!nextBankId || !nextDetailPath || nextDetailPath === current?.detail_path) return;
+
+    const controller = new AbortController();
+    const prefetchLinks: HTMLLinkElement[] = [];
+    const addMediaPrefetch = (href: string, type: "audio" | "image") => {
+      if (!href) return;
+      const link = document.createElement("link");
+      link.rel = "prefetch";
+      link.as = type;
+      link.href = href;
+      link.setAttribute("fetchpriority", "low");
+      document.head.appendChild(link);
+      prefetchLinks.push(link);
+    };
+
+    (async () => {
+      try {
+        let nextDetail = detailCache.current.get(nextDetailPath);
+        if (!nextDetail) {
+          nextDetail = await fetchJson<UnitDetail>(dataUrl(nextDetailPath), controller.signal);
+          if (controller.signal.aborted) return;
+          detailCache.current.set(nextDetailPath, nextDetail);
+        }
+
+        const nextContext = nextDetail.context || {};
+        addMediaPrefetch(assetUrl(nextBankId, nextContext.audio_path || nextContext.question_audio_path), "audio");
+        addMediaPrefetch(assetUrl(nextBankId, nextContext.picture_path || nextContext.picture_paths?.[0]), "image");
+      } catch {
+        // Prefetch is best-effort; the regular detail loader reports actionable failures.
+      }
+    })();
+
+    return () => {
+      controller.abort();
+      prefetchLinks.forEach(link => link.remove());
+    };
+  }, [current?.detail_path, nextBankId, nextDetailPath]);
 
   const go = (next: number) => {
     setStickyKey("");
@@ -542,11 +584,11 @@ export default function Home() {
 }
 
 function AudioBar({audio, src, canShowTranscript, showTranscript, toggleTranscript, showAnalysis, toggleAnalysis}: {audio: RefObject<HTMLAudioElement | null>; src: string; canShowTranscript: boolean; showTranscript: boolean; toggleTranscript: () => void; showAnalysis: boolean; toggleAnalysis: () => void}) {
-  return <div className="audio"><button className="playBtn" onClick={() => audio.current && (audio.current.paused ? audio.current.play() : audio.current.pause())}>▶</button><div className="audioLabel"><b>听力音频</b><small>空格键暂停 / 继续</small></div><audio ref={audio} controls src={src}/><div className="audioActions">{canShowTranscript && <button className="translateBtn" onClick={toggleTranscript}>{showTranscript ? "隐藏原文" : "查看原文"}</button>}<button className="analysisBtn" onClick={toggleAnalysis}>{showAnalysis ? "隐藏解析" : "查看解析"}</button></div></div>;
+  return <div className="audio"><button className="playBtn" onClick={() => audio.current && (audio.current.paused ? audio.current.play() : audio.current.pause())}>▶</button><div className="audioLabel"><b>听力音频</b><small>空格键暂停 / 继续</small></div><audio ref={audio} controls src={src} preload="auto" controlsList="nodownload noremoteplayback" disablePictureInPicture/><div className="audioActions">{canShowTranscript && <button className="translateBtn" onClick={toggleTranscript}>{showTranscript ? "隐藏原文" : "查看原文"}</button>}<button className="analysisBtn" onClick={toggleAnalysis}>{showAnalysis ? "隐藏解析" : "查看解析"}</button></div></div>;
 }
 
 function PictureGrid({bankId, pictures, part}: {bankId: string; pictures: MediaRef[]; part: number}) {
-  return <div className="images">{pictures.map((picture, index) => <img key={`${picture.path}-${index}`} src={assetUrl(bankId, picture)} alt={part === 1 ? "照片描述题图片" : "听力题配套图表"}/>)}</div>;
+  return <div className="images">{pictures.map((picture, index) => <img key={`${picture.path}-${index}`} src={assetUrl(bankId, picture)} alt={part === 1 ? "照片描述题图片" : "听力题配套图表"} loading={index === 0 ? "eager" : "lazy"} decoding="async" fetchPriority={index === 0 ? "high" : "auto"}/>)}</div>;
 }
 
 function Transcript({text, translation, showTranslation, toggleTranslation}: {text: string; translation: string; showTranslation: boolean; toggleTranslation: () => void}) {

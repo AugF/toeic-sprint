@@ -1,0 +1,1837 @@
+{
+  "schema_version": "1.0",
+  "audited_on": "2026-08-13",
+  "methodology": [
+    "Match every Part 1 crop to the printed number on its original source page.",
+    "Cross-check the photograph against the correct spoken answer semantics.",
+    "Require the picture and audio basenames to match the canonical item id.",
+    "Lock the reviewed web assets with SHA-256 signatures."
+  ],
+  "findings": {
+    "audited_banks": 24,
+    "audited_questions": 144,
+    "corrected_banks": 8,
+    "corrected_questions": 48,
+    "unchanged_verified_banks": 16,
+    "unchanged_verified_questions": 96,
+    "remaining_mismatches": 0
+  },
+  "banks": [
+    {
+      "bank_id": "official-1-test-1",
+      "volume": 1,
+      "test": 1,
+      "mapping_status": "corrected_and_verified",
+      "source_pages": [
+        31,
+        31,
+        32,
+        32,
+        33,
+        33
+      ],
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "b4954822d534a97bf3cca09b4d47884032c75fef94efa3d86f7c48cceed760db",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-1-test-1/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "3c0e321e85599c2e6a437a80f0cae6caeb0bf8b72ca1d7261b465b5ab5fa7263",
+          "audio_sha256": "66600526cceb46521228884baba8207bd3ebcc845db07775261041ea019b09cb"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-1-test-1/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "0b1623c272829364e6896bd856bec59b40051284377fc22770bf72e19a6e7a9b",
+          "audio_sha256": "4cc456d86ac65f584a16d3962ba9a9ad4f499e4d4dc279ad617f46e441f50c88"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-1-test-1/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "4afdfa48ea8f7b09171f7b9047907dd17db0bf554a272732111a6cd89d0c4ba7",
+          "audio_sha256": "c7f771ba4f015c77dcbd9889cfb62b8a7e6bfbf4bb4ad307b2066dc34256212b"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-1-test-1/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "3e2f475a62c244229845bd6f71fb18fa4a53758c381d9604d61a2244a240f614",
+          "audio_sha256": "2199114a8412360b0d0c54763cc79eed8cc3c8e3251faf2724eed7806e0c157c"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-1-test-1/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "18a960de1fd1565562c9df21e1f4235baea45057f2682748abedcc763ddd3149",
+          "audio_sha256": "c24da1a1eab02cd008f3c704dbefad73c101817dd2bf577e7fb7652cd535b316"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-1-test-1/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "1ddb4e4b79f583d31e14cfe612ed29883eefd38e1daeb314bc315ab1d93590c8",
+          "audio_sha256": "6e3b85d40d666af52d70769e808216f29fb3c6ec6d2b8dbbb9f337f9a86cfa6d"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-1-test-2",
+      "volume": 1,
+      "test": 2,
+      "mapping_status": "corrected_and_verified",
+      "source_pages": [
+        73,
+        73,
+        74,
+        74,
+        75,
+        75
+      ],
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "89356944323e7af7c466862c39422ccd62f8b670e6ba23a38799e07b874ccad5",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-1-test-2/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "f6e284fb294b314f54e2a786735303530419b86e4551ee8b6a58849219dc662d",
+          "audio_sha256": "36846710b084ba4215e661c19a934b8d1e89369e43fd5eccf51326b0c26d1047"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-1-test-2/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "5e157533aaffdb9177957693143923022140f1cad80db2c29034a2077314504e",
+          "audio_sha256": "194928e6b21deed782f12c1e06d9a63db345016fc5e98b0dba1d8f069b2fdf22"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-1-test-2/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "c51661a7c1b3d21f2b90ea052b0d6c3584b1bfc917f7b0040902de37ce2d34e3",
+          "audio_sha256": "3e16a69889bd2aed11f8ccfa358e35c36f533d45e029b27085d3cbb83dc28444"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-1-test-2/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "c8c8715f8527e76644adbb38baedd2dc0ef0e4d0ffff1fca774e3c0f2ed19a46",
+          "audio_sha256": "39272775bed1f3e3f8429b9c89a9403ff02cfe41402734d4b2d4d22df87f61ad"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-1-test-2/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "6d57f4557f69baa44caa569464a81e066b913f0c42a3bfa287b16dd403d9e883",
+          "audio_sha256": "d65e4267ee48362b6502409ff9601a417c48248d4bd46d162433a8a68b90f169"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-1-test-2/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "1cf815072a491f2460a2bc7d0d9bab004c09cdeacd62bc111e6eaee256182811",
+          "audio_sha256": "3befc2074666e5fdffeb1cd4c43a372063fd20150cd24b7341fe0433d856acea"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-2-test-1",
+      "volume": 2,
+      "test": 1,
+      "mapping_status": "corrected_and_verified",
+      "source_pages": [
+        31,
+        31,
+        32,
+        32,
+        33,
+        33
+      ],
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "abd666ac98025edc6a3468608abe44fb345508488f5188b547bd904c1bc5b0d3",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-2-test-1/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "669464f7d61e3bd6c7ab2631ca7c1314e3df96dc597adb0b48ae7dde5f24a0dc",
+          "audio_sha256": "1dea9ba6f8d82c423b2e8bb87709a7f1b1c2f0654c795ebf4fac57352828669e"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-2-test-1/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "a96bb8634fe9c3f52b41c25f79d598295919777f5249f8faf83d019bbe0dba14",
+          "audio_sha256": "1ca25836b83d5a8077762788a096c1812201cef3ec35e68f6f894c038ffd85cd"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-2-test-1/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "059276103e3916d2d76b95113baa4e2ff5c862e855d0e6dbccf2977ffe6b0b86",
+          "audio_sha256": "75fcce7d3e7521193ca61412517b705d6e88bb76377572f9cef6afdbb215609e"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-2-test-1/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "e106b9c076db760eb8c9d7b6f9898d04b1e634e871c3adf0aa1991f3e9258448",
+          "audio_sha256": "001191856d5870cc6ed23d828312837dd6381528a031b4d159b62e797110a79d"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-2-test-1/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "2fa59ce992cbaac8b0f85f4a54a8fd24c96448cb39d80011bd9587d6291f5048",
+          "audio_sha256": "aa02637895b348f81992894465ddd19d5cf189b23ec9be45755d17886984f100"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-2-test-1/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "4ccca2890db65dfde2a24e9c18ea6161e21aa4e941ff53ff2a8c6fe02e163653",
+          "audio_sha256": "9f7099452fb11c7dac6b3b7e40449aa8fd3f1eacf3ec18317098a4481fee91e3"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-2-test-2",
+      "volume": 2,
+      "test": 2,
+      "mapping_status": "corrected_and_verified",
+      "source_pages": [
+        73,
+        73,
+        74,
+        74,
+        75,
+        75
+      ],
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "a7a0d2adff373604261341f928cfe2ec12c27033211376ca348633978d5c75c4",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-2-test-2/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "ba58eb84a802c142b0cd9778d4739872065e84a7924c2374366167bc5848694a",
+          "audio_sha256": "a87ad4a8a24018082458d094d439185357f49ed7ba2848761dbe73d60194a833"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-2-test-2/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "9936a55e60e52db9443813d4c808e0a68256b6633d5f9765575adb8b73dd6c0d",
+          "audio_sha256": "ae1bbb20b4b34e4b57f14a0e0bdd601c4f342e264925c45fef46c4a7b2a16253"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-2-test-2/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "c3bc081e4635fcea1d737e25c02bc24ab97934799d9ead1f0f1425b977d76218",
+          "audio_sha256": "e71bea0182d94aaa1aeff15eaa786a00c4736fc6a61bf8440a14a295aa5d8287"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-2-test-2/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "49bd7a0421cf466a00850bcb31b7fe58b0a6e898ec735c4cb9d823f46d646da5",
+          "audio_sha256": "66c2e49a03c66bef677ef8b529d783424266b7f120a45d3f462c295578130f1c"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-2-test-2/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "73deb5de5c55114c5770b4ca1acfbfd8258b3c7975537c813081fc4522d5de40",
+          "audio_sha256": "5f72e438ec3bd0294d7e68078645e59737fe2a0e8e2149468d87bc585c435993"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-2-test-2/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "bb7eb8ea1b190d32a4391582bcaf7f5217f055ef748316bd3e130d6913018825",
+          "audio_sha256": "50efc2258b2843dfcb7e3fbe9939e2e0103c7002ced04c4a4ffe8ee1583bc937"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-3-test-1",
+      "volume": 3,
+      "test": 1,
+      "mapping_status": "corrected_and_verified",
+      "source_pages": [
+        31,
+        31,
+        32,
+        32,
+        33,
+        33
+      ],
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "23b5e2e6c3c97819fff7ef56d0423b1154347f0137b58282ca5e0a18bc775413",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-3-test-1/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "aeb7055c6aceb0e8db3d08165fb1c802bf92198faaaa8312bfa40e75d701506e",
+          "audio_sha256": "28627b67dd6e2d16b60d2bfc588024da5f70fd34335b8a8bcb1bf05e4feb023b"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-3-test-1/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "2d1b097a8321bc12d8a8b8b6f2a9664f01c96aefc240ce72ea3ce7f9840c08d4",
+          "audio_sha256": "f0f039555285e40087fc0170996b34b8a43084246a22faa017f610908cb9fd3e"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-3-test-1/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "528734733dcadb1ee5cf92174fa67ed9978eb4dcd9e231c1e708dd990f347526",
+          "audio_sha256": "9c837d489816b502414bf83d6cbab6afae07588769bd28de2cf1c3472866a7b4"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-3-test-1/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "47254f26e043bacccc0dbfdd18294e1254ebde8d1874f3e74b705bd5ed5605dd",
+          "audio_sha256": "700f67ccb1a06c687015788f4ffa74d551a80122a4bfa84ddefbf59aba13032d"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-3-test-1/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "aaf8a3e147ece50133c9fba83e42112a01c3fb25f53a457693ecbca45976810d",
+          "audio_sha256": "20a565ae6c10408758d7f4dd9716b0da2572e470cbdb45d221762d2f9e85648f"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-3-test-1/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "0ea25469592a9c6db9b80d53c24068034367761451cf4a47ff60816aae566dd4",
+          "audio_sha256": "80e9d7120ee696b40d51ef2f16ea22ff5d02cbe335e04bbf1ece12ab0ac5db15"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-3-test-2",
+      "volume": 3,
+      "test": 2,
+      "mapping_status": "corrected_and_verified",
+      "source_pages": [
+        73,
+        73,
+        74,
+        74,
+        75,
+        75
+      ],
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "5edc3d1ed29a48443e122e453bad8f52cb729955196998b580e39e9e0fc22583",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-3-test-2/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "b063fd4b56c7988dfc16471cc4a593eb6f97dcf33650a13736cfb18364abb881",
+          "audio_sha256": "8ed98c7b560696c1ee26c65bb44c7a292224d9107df5514b06b8402a512b375e"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-3-test-2/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "1d1d5d9e56bf96e63aa1031f23ad3a7ef3e344cf8214e3311262431213ef9e0d",
+          "audio_sha256": "d95866b57f8780872dd64f165ba0a0d5eba2c45660fbe4c822e8bb0d90b17e72"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-3-test-2/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "5d48e12f1e0f38d531a2e9ecd59d20c22e5484895687fce7e960b38e28b51164",
+          "audio_sha256": "6a71bc40afcc171ad13e1fedd2e31d137a0fbfb962083e6a8e725ffcc7b2eae4"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-3-test-2/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "32a0317a68f9df3656a0c9600658b522024119262f7b7db39182b0daba81d1c9",
+          "audio_sha256": "e3ede8eb45811c4ec005f2c38b868bd6dc017013bde371987ca14263abd846d0"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-3-test-2/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "64174dbd759b09ba879b0241aeed812acf0f32105fa180fde28acc6a23a0681e",
+          "audio_sha256": "0068e0d9b5818c5efc67f252d89bc8f3393940ae020bb93dc18854d9776dc909"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-3-test-2/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "cb454ee7e2a6fdddb546822c3cf1420130a6cb5d9c54dad2f0a3e257504a6bab",
+          "audio_sha256": "24a5a9d191d1105a00c8887c68e4046f6c45084853f3fac91be7f14a1a0b773d"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-4-test-1",
+      "volume": 4,
+      "test": 1,
+      "mapping_status": "corrected_and_verified",
+      "source_pages": [
+        31,
+        31,
+        32,
+        32,
+        33,
+        33
+      ],
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "9814fc095a3531f2d41611ef9dd4d2a773275b4f36af5539512d7f260862bdd9",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-4-test-1/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "17074e04f6bd74da672312e12f0b8db77b79bf6b6108a44503a3229c246e48ab",
+          "audio_sha256": "9d133050fe96f504035fbb0c09ab9cf7c1dfcda547b5835a1c866df83d1b3f34"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-4-test-1/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "7636c9882f039434d3f29e0b356d0cd9e35690994bb9e4a6776be841cd2e0335",
+          "audio_sha256": "df8f7a3d7755f426ea43f4c0fd94b74088a4aa0e5ec4bf02713f9454106954ee"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-4-test-1/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "4b91347d929baa854dbef931d9e01f366624be4967edf25e2142f236bf17dc79",
+          "audio_sha256": "e167546f844108c74ff80d128e0a41fc3ef1a334e581b8997f7ea070b1809e98"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-4-test-1/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "7589e267fdc6282412e101f77138d11054d23832d748554f7ec07db9ac891f98",
+          "audio_sha256": "434d7a395334e26963531d10129b052b48d0d4a0733ec0c2b3b06ea394664b23"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-4-test-1/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "8647f6b5d4ac0f45ff72aa6fb2ca2ecd2abd45ef3e6c4c885ec52c52e4d13501",
+          "audio_sha256": "77008129cea1b2a8c5f373048ccd52a29f1fd0394807e10f1b105e15b0988776"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-4-test-1/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "522e46f11a911a26067aabd57749351f13fc93606003f6327c2d1d6b78228198",
+          "audio_sha256": "4ad53ed5dfe977ee6ff53a0c20cbb58396f79efa685b14897702e7065698afed"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-4-test-2",
+      "volume": 4,
+      "test": 2,
+      "mapping_status": "corrected_and_verified",
+      "source_pages": [
+        73,
+        73,
+        74,
+        74,
+        75,
+        75
+      ],
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "0267299844f5627c2361e6e01254e613376519f0239cfbb65284956b9cfc614f",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-4-test-2/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "f5f6fb505fe68c0f83dbbde4742b64ed86d798b623915d3adb8740487476d1b5",
+          "audio_sha256": "0e4892bd477b81bb601691d64798b8b67dfbd353e6075e097593bf3f029570af"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-4-test-2/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "033f0f027d7424b25ab29658b7c937fd33149638a599e9cc8edc9d1de853ab8d",
+          "audio_sha256": "bee1ebdf58319d7d2e3da463aa9aa8685ab1ca1545169141225c14c3fc6a4421"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-4-test-2/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "04e055195e4b65e2c006ac114b49c4ce6ed42e16c1c02e6aaa37d5b32b674f20",
+          "audio_sha256": "227a215319e0e87cb651cfc17bdf29947f59aaf7dcc21e85e908c385d4ad2bc5"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-4-test-2/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "da958ec080aa07e89f876d350be05f3454b2442ab42ee2dee9e60d3e4545734b",
+          "audio_sha256": "430e35f275e3372cb22115dcc64b140b515aae3c0d1bd8c2398a17537e3896ec"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-4-test-2/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "8f904e951470219cfb2aeb8b81b5fa51a77978eb19f050aff5fd78eaff44eb08",
+          "audio_sha256": "7cddaf0d03f9d159468a5d9683278e6aca120e776dfcec7c0467558872557e6c"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-4-test-2/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "f9703545ac3e5c8ec67b1095e04e99293bb0083f0d7c6fc669afb71c0c96fea9",
+          "audio_sha256": "e01ae4c88e1e7e6bf9d78fcce8141018618e688a3d397b23eec039d3faa4c6e3"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-5-test-1",
+      "volume": 5,
+      "test": 1,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "e7335c61636b01afb4a5c5438bb5e8052b4f4a0ece6f18a0ca8d93eae1494cb9",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-5-test-1/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "d11913fc73e7ab062843fa56067033c27d492323660f994b0c2c03cf002066a6",
+          "audio_sha256": "8a67f708a79f2ede814fd45f9b60282b605177b4e8bd9b3c69f0b580c05d85ad"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-5-test-1/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "12de412aa035212b746ffb97406cd985413597914ba4d623e3f633c631b36791",
+          "audio_sha256": "e6a40661bdda6bf03541bf8471663d1a255801b3e608ca4af77a667368014de0"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-5-test-1/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "3a5ebd8eb75e5d62a44759e1715416c9c681229a681b53cc2c5a7307f6b2ee04",
+          "audio_sha256": "e40547a6f076fbab846a7f9af5874a9b3b2727440b208854b54126489a4d5a10"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-5-test-1/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "8d40093fef6f83b28d70d6e54d81caaea1bda7f8c78562559536dfd4042c8e7d",
+          "audio_sha256": "9c5062fe5399a43b5580c0ef475362cb73a7a47b2564e2fa25d3af88fe5e5ed9"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-5-test-1/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "309dcbe581d64081b0cc34c18a528da7801bf6559f33fb89ad24366d7a9efd5e",
+          "audio_sha256": "f10bf84cdc020ad06dfb2d9ace71ac1ce0c8c2856044fc984f5cdaf0eba15e9c"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-5-test-1/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "a388d164e25f3441978f77df6bfe33f29c3bd702de9e45a2686a240a4fb89b3b",
+          "audio_sha256": "8444be585a60aa653fbb67bea53dd0805379517de7d02d6289d0d4c58f0fe9cb"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-5-test-2",
+      "volume": 5,
+      "test": 2,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "ad8398c6c1ce493204e028521cf711152d5e73f74fecdfb5fa7ae0d92dcc114d",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-5-test-2/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "6ae4573936034115d23f9304856eb51b69e73ad2531a161201d6c5907f759d82",
+          "audio_sha256": "e444aceb7b1d615be8d1f298515fe2bebbd10ec5ef630248f51fa9a4e046474b"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-5-test-2/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "099d3347d2d4c34b864f0813f17cdfa139cfdcee4d475695756575882fc0ec0f",
+          "audio_sha256": "6fbc80e0d1ee269af57c64a176537851331b0bdd9f23a7651416cc8ff6d57541"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-5-test-2/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "f2e5ef667e8a0b7fa52e23951e6409fc38c97e0330f1ab1750cb0a6370aa572f",
+          "audio_sha256": "77b397574e52ee669e3d5a3edbd6df99ae57cd95a5987f63370f50f39c831c9f"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-5-test-2/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "244ab2504325da5c525a4c29afd8ee735b012d6c945c6755589f890b603e7bc7",
+          "audio_sha256": "2d2408b83a37d88e54424930126c1785c03c7792b6448489191bc14890e65a6c"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-5-test-2/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "c73f18e7d009b40bfaeea2d13931e250319eff6e18e08a3138dcbaa8ba3cc0c7",
+          "audio_sha256": "b7df26fc7df1719f1af0262c14a64fc9b5b8ce4ef3ee9cc45d9982077c441980"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-5-test-2/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "e7519fd23697512ec73f0731b577a689ccf76d7eae87f8c3df72270680bb9597",
+          "audio_sha256": "f0396aeed08413eb757015de7a604fd73d217ba72cc903bdfc40f70217f737dc"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-6-test-1",
+      "volume": 6,
+      "test": 1,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "e606be9d0612881bb930b3758120e3f1c558036100155777cc292ff47a5a67c3",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-6-test-1/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "cddf913afbab7c7fb0b4ec6b29489d6eb4bddea756552e03b27649a861b84f5b",
+          "audio_sha256": "365234f5cda1e943dec4be9fb63ecb89d89b1637760927a3720be7d8b2f1d2a4"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-6-test-1/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "89d2e0df19722733568f390bb91e6ff1f965f41b804e0fe3f3688ef71b64d2fb",
+          "audio_sha256": "6ac48e34b9e033d6fc6f3eca04e10cbb1df0e3b569547f9ac34ea11e91969feb"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-6-test-1/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "106cfc0924f0507a9064390838ed99fd84cde7e7647bedc043d67d9706eb562c",
+          "audio_sha256": "8e485a696c87fbcc2b24445c463c915aa95075febdde02b03ce76e8575d59550"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-6-test-1/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "08366a7d556902f138668489e6760003c9be6188664f8a1f29ac69dde76ad1bd",
+          "audio_sha256": "3bcfdf86a90e93c6d5ae5bd7f60f20b5c9ad77c7b9647c4bc5699d61366ccb41"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-6-test-1/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "5ec6b1a3e8fbe05e60e3b4bf39fbdcca5ddfec528dbf7848d200ae2c69af371b",
+          "audio_sha256": "91bae72f3546daa5add6a5d1f9fd819c78b0deaccf741c93e341f80e3126d491"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-6-test-1/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "04c38ffd717cbea5035990542a3d450f6a477cf2cb7ec73a5d00a54797f88fa3",
+          "audio_sha256": "3254a7b25a66c7c31e8dc9041af366a12d5c58d56f2f0441d8c12f9af2fb256d"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-6-test-2",
+      "volume": 6,
+      "test": 2,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "f7698e304748abcff16f8c162b42b01c39a95c74dc58776e641376540d4e8f3e",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-6-test-2/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "21023abdc03c42bc72152b3a34c2edcc91e15ee890087f412186c3353f69d667",
+          "audio_sha256": "a886cd87fac52f5c01b710166f5f5f1b9f7f17b49d939229fb8f08791f2e62a0"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-6-test-2/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "360d94fd4193cfb89a809f67f0da11d67f0ef4319e19c05c6acbe86698db6813",
+          "audio_sha256": "f7c8a467029505e9d7e0bf221dc22da45789257469efe28a39755041be0e3693"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-6-test-2/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "a956ab3e81a4c798fe238f7b031975a98226b4469c9f3306e7b2b098febb9c69",
+          "audio_sha256": "7f1ffaebe6873f7f0f91880ed5f8051c4aa43afefe524528d7cdbf5e22e6f98a"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-6-test-2/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "cd16644b65549d7a2f772115367f8791152273211b677fd6454465ad686a7161",
+          "audio_sha256": "dfa7f6fd50de574ed8b9cc82b35c2918d17aecb80cb33f95189c6ad58bcd3647"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-6-test-2/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "0fbfe463fb6353176580bac5abcaa70773691b09d5b277a0722b2c322ca81f35",
+          "audio_sha256": "8672d3e21b94f0e3a5edf4b955f971344d69067782aedb24ce096a19448f699e"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-6-test-2/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "f943e9fe4fe1512842b9b07c4e64911111f819633dea3bdfc3e01a4a61eb37ab",
+          "audio_sha256": "c32db99a46a1480eaf0f19a053a1ead0feaa1c11d3c4ac7b6cff3cbb2a8e7bae"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-7-test-1",
+      "volume": 7,
+      "test": 1,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "2fe2cde3f5827aa41026c5544b9b019df2f6345cab5542d4599dc4f8a562becd",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-7-test-1/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "66e210f85655189f94bd45883715e116f5481b43e385eb8840ecac42a1df70dc",
+          "audio_sha256": "620761f51ab3524507adbacc94fd547cbbfd4a1719dc44a005dfb8a099fc84f7"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-7-test-1/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "a3720af0e2d049d377cf10483e6a0d80bcb2cfb7ef9ee1ac09c126d6f173886d",
+          "audio_sha256": "f0d68549a15a5a1f2290aa807df7be0a3f2223f62e44fa4a178d90ae65179eba"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-7-test-1/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "87d6da718b1b16237e56235bfde015250989d018e48997b8684082bbeb34bab1",
+          "audio_sha256": "458dc49e02639f652b57ad8d74a8610b44f66da24bf863a6c0c17ab7e3e08d70"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-7-test-1/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "bb1d530e62757ce79c60ad5947ebfe519fec4464e2187f11a226e763fdd07570",
+          "audio_sha256": "6d5a672a7a9208a90afec754f20fc29040f957c3d6aea11e6d880e51d1e9495b"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-7-test-1/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "eef14054960b8c08700c11600d10447ff9665efb4c4f79409a9e4228edd182a4",
+          "audio_sha256": "29dae543dd1f95bf47959ee5a5325b3d0705d8dae9be66122f7c588e7fd2c30b"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-7-test-1/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "3071f4c018b7b55c90267f7470218916c73fb8a668a01934300debedb75ff372",
+          "audio_sha256": "2853c5c7a64876b59716ad2ce42bdb6240f44165c12ec31923be00ea331991be"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-7-test-2",
+      "volume": 7,
+      "test": 2,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "7772d524670219f2a521494c8ddbff625314d70f33c2eafbdf40d0f8fa96678f",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-7-test-2/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "96e4566646ddc1865a138931fb1bea9b5dd1d221cc4b37f1c7e1b0f19d80bc8d",
+          "audio_sha256": "ae27d68bbae78aabff520c185899e504670eee54669dbe0f80e6426195dccd72"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-7-test-2/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "d80a3bfc0b38b2b6d5f159858057a181da35b8d66a21382fb3af11b3877b955d",
+          "audio_sha256": "476e9aab172ae621ac3106bdc6e62eea9ccdb5e2401d7cf2b0f29c3c396efce7"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-7-test-2/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "41e876a5d264acc9e63b182b12d2328e3a6584824221e8db5505cb6d9e2a33a2",
+          "audio_sha256": "a779323dac5d08d60f598f646d34d87c18093e81f52cda1008d7fed7ebf00d52"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-7-test-2/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "9a66d6e43253b1f675af43f64bff9017fd9bd56879913a2d77bd637103c2005d",
+          "audio_sha256": "1fc6c0dc8f0bd31ebcab4a8e4f7165436c75dd6666fa8995f2a2b81f700c15b9"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-7-test-2/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "61d9a1cdf35c21905823f626731fc8d53a3c37b8ca4765a47057f71e2dcafd1d",
+          "audio_sha256": "0b8fc26d7256098b80d909ce3e236bc904594dc46f0253a6f9d39245910e87e1"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-7-test-2/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "e9b934be0285252cf9a6c9d5e7986cfda0767ca7e5383d93a192cb26ac641bf0",
+          "audio_sha256": "ae2a6d4516c02c286f202da18ea8d4fe949753f9005d3d76d2c0af6d4f89196f"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-8-test-1",
+      "volume": 8,
+      "test": 1,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "8d6587ea1bf5082dbc3ef47c4cdfbd57aadf6ae5ab1b2fd68348ea7d89420402",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-8-test-1/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "5f0620bb30345290fa85afd880277a4ae108477097998e1ea01f11e59dbfac54",
+          "audio_sha256": "023bd828704eef189e4e4ce241deef8c313a0bc9b5f2d442e54322645c6617ac"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-8-test-1/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "fa55c9cf0d7b357eb6babd4da9234561477cd05ef4a72bc16194c57e547fb76d",
+          "audio_sha256": "9444e849158db8b141ad36216244a4a9152ebe11adcd8256781b0674a90a293c"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-8-test-1/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "feef53b9a46be917087bdddf8ec7ef14ce6e722e67e14f3f9f98e8ff41c2567b",
+          "audio_sha256": "882c815a0a63eb08435878b0fbc8b0cfbc52833975f1b779ab2aefe38cb051dd"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-8-test-1/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "e771ce6d46797ad0da0c875e613cd88b7018ae2d15211251b0eec86ff2e89c58",
+          "audio_sha256": "3659f72232133e751300c9c7d536733b6fa8879200e4e2aadc205fd5fb3770c5"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-8-test-1/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "ad89ab190727ae1c930d1ad45fec12d4f5cc6615a5eadbc3541de8c4e80c41c4",
+          "audio_sha256": "8c1f9b31515d95722ba472eae751fc170d1c316bf4d83fb738da85ce59e33bd3"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-8-test-1/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "50097374b3710f141c74c504516e9e371a69566a74b74a8d4c209a391f98e05a",
+          "audio_sha256": "c1efd8acc93044302e2a5ee48d587fcf1d33917ca7a5d128e5128a6b3f1cc659"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-8-test-2",
+      "volume": 8,
+      "test": 2,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "544693f313e3fff65b40bb58b377e005b7b94bbb4d550a07b117f80a2852c27d",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-8-test-2/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "42d0b7efc10c8fccdb605469197ace6b442aa9a2c3b24ca9f5f13f24f6cfca42",
+          "audio_sha256": "40411353985fcf92f48eeafaf1e7759f3fd211b1951f71d3226c79213b3eaafd"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-8-test-2/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "144a8aa9830fad63f3e7b36467b68f4df6a2f1de0cca576db70da052c7eb1d0a",
+          "audio_sha256": "b405b6010b6d416f279b0998e470d320ac4c9243c51cdfaa9b9d643622e64a53"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-8-test-2/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "35319a993dae7625f0f767353c2ac5ae74a0847eb048a58caf77b4454760d65c",
+          "audio_sha256": "fb0863e053ba9d1a436b8ebfa8f5418da45486286944a05f2c76dba659b54394"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-8-test-2/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "72f4a7e6c8c9af2f7fcf69e39238e750666999d307cc5baa8da3cb74cf93a594",
+          "audio_sha256": "126088b230ec5836697f4047343e1dade3d99ca6026d476af31fb4035bc73ce7"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-8-test-2/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "f4a4aa789cf4f9f59127b0cdae9577e8c5162b02de06b26eb425da1ab373c83f",
+          "audio_sha256": "e0f7c77a463c4a3ac0c9202262b59a34b69738dd62f7d86131a0112e2bbb9717"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-8-test-2/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "cfb6e0213261aa6ba7c00a0356cabbc604b567c15c28b16ec52d8ab2424882e0",
+          "audio_sha256": "6fa9b00929c212808e95b356482eaedfdf3111a5fca2eec204c907da0e5dc30c"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-9-test-1",
+      "volume": 9,
+      "test": 1,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "3da1b75866a87514ff7d5ab2f0dd3b28d7855a49bf5279402a3a6b5bf108aaf2",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-9-test-1/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "eb4086a3f6ebfcd650dca70b362b42b38bb746667db61889023c38d62959e5e8",
+          "audio_sha256": "6a90f5e891c5eabd9971fcfab23b012d35cb36b0cc2043cd7b4711ff69d4ba55"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-9-test-1/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "dfbf9151732ba2c88d0b78e703865ab1eece5c748b1f835a8670b0a9d2948dcb",
+          "audio_sha256": "d4571dc27a22868be9ab671fd5edc884d80a70808537eeead997015ca18ace53"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-9-test-1/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "0e2a4315e0887f05e2f00e964c6e421a78449f6a9bc8db7ed5b94940b986b7f6",
+          "audio_sha256": "08a75e42358e96a1663969e7e55c940470b0543d288bb744476657ee8ae7e755"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-9-test-1/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "c777f23548d7f6a9c046ec44a1d07e9a17ee5988a9d0a66e19526af5f58bb4d1",
+          "audio_sha256": "c700fbed60d605667b3f2b5425178272c2df2b810baae9a7bd50a64c7cb6b26c"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-9-test-1/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "ec83476155ad7ec85f2f220b2115e90ace757f09cc541fe61e488712537d90c7",
+          "audio_sha256": "cf3ec44fb6f1dcb4d334c01d1d33396d8b86a1197d150ce6baf220931fb29e15"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-9-test-1/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "6512aa44b5245a483ac6ca9f580701919999a510371fcd031ef5c60d596e95f5",
+          "audio_sha256": "bc6aa722b5dae1dc0216a10e845fdbe0da7e70ec2774f9f54b8a565108a6f36e"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-9-test-2",
+      "volume": 9,
+      "test": 2,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "2ab7fc8336579754e0e0d29e1b59d7f509bc3a1513d9d3d534ee041e34040a35",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-9-test-2/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "e47195e06c60ba06881ad3c86c405a57a3b10684dd22f0da2062103db1442c73",
+          "audio_sha256": "9520e59fb87dea4b5729d8cfcd835bbe7e5a6bc34c73c1d246d1bc305794f97a"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-9-test-2/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "b07622dee911dcf2e4d2a703ab7583c2e7646b5cb90cf9e0eadc394eb2d86a15",
+          "audio_sha256": "d9e5b22a01605aca40f54802e7b50fd43f8163bf2ed6e1cc50b3d836fc553964"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-9-test-2/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "38104129345da1986d99df1ec1ed80514551c7483b8fd0be9e4f418b41eac381",
+          "audio_sha256": "1dd11b98743c64c49387537904ffc66b05424384d7137b994b6a4507f857d9f7"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-9-test-2/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "782c0e46f5fa37e1ee6664ccc5be210a6672a2a4d90c6c72f0b2efd78b399c45",
+          "audio_sha256": "d0d16c4b9a2ee2a77a7d1974d0cf1e938c3ab89af381f4deef21e415a84d96b0"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-9-test-2/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "9042d6b7b416c47df502ba7984d3cd8c89106f729f79fe18bb6ac40433c00b93",
+          "audio_sha256": "fb834ee8ab43d2446d0c7f1af1364fd2df21a763d02f15f70a80a971a3904d65"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-9-test-2/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "a4807d4472fe509210d20c3fa9575d45db7a2700ee590631b8259676f36f9a5c",
+          "audio_sha256": "bfba4eeff5cc19fb2f5e5d50db09a379fadbd0d5ff4872e56332f57f9807257c"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-10-test-1",
+      "volume": 10,
+      "test": 1,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "553e47e5c0a2d1c246b7b4434f7651589d4b8ac5433c18d521ec3234e8acf415",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-10-test-1/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "b044ca233e66d09a1da6ba3237e5dfb2584a511e39e6d211fe7267cc0df957e8",
+          "audio_sha256": "2b5abe85b33b88b403db8619fa4b53fbbbbe0f12e3635b8446b87cf2db92781e"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-10-test-1/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "45703a907f921debe8f9fd4cc256245c2cca4604a405c1a10e5df89ff9e54a12",
+          "audio_sha256": "8ed0cc8885f7620842b4f51f726819ba949d32804a24e808db8bd9be2305310b"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-10-test-1/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "185ad956d7c04d96a283e6913e8b75a1b558d4440aba1a3f5c911625d220b24b",
+          "audio_sha256": "c3c8d16e4f0036069df9f103f7def14f5a606b73c3f80255f1b8a2433dccf9a1"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-10-test-1/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "4903219a8d5a62b669abe5cdf1694f7ed12949ae059c7fc49211e72171482d47",
+          "audio_sha256": "b6b7b461a6c29d4052b2d784d38d72dda79ce199d95d22ea9ebe90d9d5f888a3"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-10-test-1/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "c35c27ccfcf83a47127416b454c029a72d7a5db875435b5b1e62620ea822f27b",
+          "audio_sha256": "eeb04f4b1b21ca7403c26821a7e5c9ecf3890bdfbee3acb045ac549acc62079b"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-10-test-1/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "965d6577bb0802b4f5a0b20855220caa01ccde65ee3be6f7a28c8d4ed4dca863",
+          "audio_sha256": "09b190f65327c2f7ad4ee42c37f5baf48ba9e1bd484957de2fd7640c86066e36"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-10-test-2",
+      "volume": 10,
+      "test": 2,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "b94b0b39b5b36e792fd25c181da986fe606060ce2424da4ccbff68ff3ee6ef69",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-10-test-2/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "a09104c4ecee0da7aed287108290af73c1d57e86d7faedb9d27a73cba8b23408",
+          "audio_sha256": "8f12d998791a86c5b5d4802da1226094f30f923a618f38cffe9ddd479ef17d12"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-10-test-2/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "0d08fef7327ae37e216f8f85f8684ac196682c2801e8ec6c3ad1ee6a8f58184e",
+          "audio_sha256": "de8c14943fab23d798fda0bb06a837e5c834eefc08528fc5b05b1d765abe124c"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-10-test-2/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "d3a127ad35ee6b7c5c381adbb18005b78407c5aadbba5891c3baf60e8d5384b8",
+          "audio_sha256": "f56781ca759d0434b7d6b78849397eaa04452566bae12ba7ae8dec14c11d4057"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-10-test-2/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "f21b33b3f553872cab70cccf268f496178cd8fafa5ce26b738dc03c017a6d786",
+          "audio_sha256": "e78ba3fb7f62922d8f236a957f83799ddfe844e0d1c9288ca65a91a30307201f"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-10-test-2/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "e41caf1bb448b755a17b3232806714df4b5cc20c5823cb01dc364906ff3b9ee6",
+          "audio_sha256": "cedb123ae8ba97e2d6601ebb978953851aa4ef1518a4a14024d2021a5dac254d"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-10-test-2/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "8debb79cee97f6ac7f2bf5032bdc2badef4e9f1d1ac7f02647a018bf5b7a92fc",
+          "audio_sha256": "9dcd10c538a8421c78d821bd4fc438fa0712d56a2497d26b9fd1379706bdd2fc"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-11-test-1",
+      "volume": 11,
+      "test": 1,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "34ab3d4989c17c871603eee4e5abfc394a0c73edbad1303dd25cd32a418cfc7c",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-11-test-1/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "87d66230fbd8555c6399a0cb180005e8ef8dd8f4a216935fe14f140310d0db17",
+          "audio_sha256": "fdf7c979f74704bc7403e5cda9c9fc2366f77b791e7744000b6d71e9f6eab916"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-11-test-1/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "3f88c24688c72ad998bd48e9e6a4a11844d21f33f02a36dad655bbba690c8c09",
+          "audio_sha256": "3cec7a02ff2ddd2bf5ba60bd323df89df00367dc15926b507471c0e31d9f1e05"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-11-test-1/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "62ba17b8a13ee4405e4b94f66a35ce2f66bc301f59caa6f48e9d40efb46c682e",
+          "audio_sha256": "edfa4b72818d092104a9ef3e8ec2d52d60359777f338ac10a98936ff67b733ba"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-11-test-1/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "bd4e4b741ba5c4dca28df0a6de378599364bf74ed567021f52996374182e7c01",
+          "audio_sha256": "d7b7746862fe01f9e44b31afc8bdd303a64eac06a1ff56fc3ecf655135700f25"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-11-test-1/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "6809552ac3b3aa5893ba4c7312d9ac61fa40d6d7aaaa1020064a69babf7fac9f",
+          "audio_sha256": "d3063834104f9dcb9dad7876bb47cb7ed504299a387c00caa133f861e5482048"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-11-test-1/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "0888ea1e73b92554efeaf9de08395dfc230c37df6983b16d2563228dfaebf791",
+          "audio_sha256": "11bd4ac75e53f7498c27d2f6381dd867d6988bbdeb8eabbf442ee6de68aeada5"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-11-test-2",
+      "volume": 11,
+      "test": 2,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "257ccc53167f23b7560bb34fe6bb33afa20617f4fea37f18185d252e574a1fde",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-11-test-2/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "b41d1ee938df982c2f371a731c36c69838bddab1f3b43dc83a5b3c96639b0ef4",
+          "audio_sha256": "096de125237e79afc7c410daa76e7c0bef485c77482d52577c55f15a7b9bca50"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-11-test-2/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "2ad17fe3999e73b1212b7c94457bc0a91bb5cdc8da15ce5b88cc1c3fa1458f51",
+          "audio_sha256": "50e28482e6ee468e53aea03490dd3bfd734d1e41b05218ef4610d22f96a927e7"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-11-test-2/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "e087e97d335f20de01bdaa8d7c2ee994c86576276d557bc3f17a00cbd9db8b79",
+          "audio_sha256": "81d93bd0dcb0ec07c23116b2696ed8bc29d56f2be77cea24822a2ec12591768f"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-11-test-2/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "b7f9cb60e9e8f12f5d5482cadedaded163e5018a0c62d0c7845e9c43ca58d331",
+          "audio_sha256": "1d6189ef7907f36848e313c3c584f70ae1faa64a92d1ca916282623607e3e27d"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-11-test-2/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "ea4b916b50c0ce9ad142b41ccd16d8adbab10a301ad82bb35137447a1fce8fe4",
+          "audio_sha256": "7f250eb42b80c97d10ce10c0e1fb4b0944066ac49bf5a5b7d28c6097eebb61f1"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-11-test-2/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "232508ce50c113ce0c1e44d8ae6d969effc40bccbdbfbc053f720c7e6132c0cc",
+          "audio_sha256": "f3e6794d848f0d4ec05837a1979f29c3611f5ebc48f1c0526b6f19f06ed11991"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-12-test-1",
+      "volume": 12,
+      "test": 1,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "76ff064d929ae369ceb49fd53e4e6dbdf19e76999b7369a70ce0906addb18452",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-12-test-1/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "7cf99f39f2d04e2701085fed91d2d74e33211fc5b3b473b568dbbbf72caf3b5d",
+          "audio_sha256": "f16316fb4b7cab3c8c6ed41beb46887388d79ee58a4aa9e1848ca54c540e6cfe"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-12-test-1/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "5571f8ee71fe1d96b2715518a07efee0880fcb230b1bcb5da09220efa474bfbb",
+          "audio_sha256": "301e12de2893d28f908ea17b1ab6ade15238aebaf1801468d5e10bb6aca5d530"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-12-test-1/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "bb05c0a953c2c8d2f0b41f9d23087937d446d0c20bdd44d60bf29c4131d7700c",
+          "audio_sha256": "e9d9fd72b2277cf701d8fff8f9ab339d72d4cc72646cdf7cd5ba31710716066a"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-12-test-1/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "0bb7e91df4424046b2fba5aabc559921ae4f535b884dc795dbd2aa2055c30e45",
+          "audio_sha256": "bbf194f60078574f0eb3757a684bb6fb06b9fe71a70e8e4aacbad2dcb69e087e"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-12-test-1/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "d39f83390dfd264f1858b17023a6a5ab60838c668b44ef7e140ddc6dc197f491",
+          "audio_sha256": "bdcd39b7968469d79fe9bacb7c068c397c9a838c85d37479dd5d1355a9fce637"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-12-test-1/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "99ae548a26881867912b6f2c7d3467b3a41c581388e5b74f2a93aa81715be24a",
+          "audio_sha256": "1c433261b10331984fafcd7d48796bd69b76aacb41cfac272c770f447bfed46b"
+        }
+      ]
+    },
+    {
+      "bank_id": "official-12-test-2",
+      "volume": 12,
+      "test": 2,
+      "mapping_status": "identity_verified",
+      "printed_numbers_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "answer_semantics_verified": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "media_signature": "18df85e59e1dee1c940ea39cf9f11142543f03a07e0bdc58b60a213d34660adc",
+      "records": [
+        {
+          "item_id": 1,
+          "item_key": "official-12-test-2/p1-1/1",
+          "picture_path": "images/part1/q001.jpg",
+          "audio_path": "audio/part1/q001.mp3",
+          "picture_sha256": "b8a6281c8c3761a8d0bed873b616b97877858f6877da58011f790474d4783423",
+          "audio_sha256": "e83af300fe5302f1a74927bb5ce30acac9b9f6f897dc16f9c0a3a36fffdcd99e"
+        },
+        {
+          "item_id": 2,
+          "item_key": "official-12-test-2/p1-2/2",
+          "picture_path": "images/part1/q002.jpg",
+          "audio_path": "audio/part1/q002.mp3",
+          "picture_sha256": "74cc3814ef0e4b2338976b3078009a28cf53338a40832726201f6a705831c3ad",
+          "audio_sha256": "425b64c4e83919765b4f860d78706da3bf338b262d0950b4e79a73c874b7e8ec"
+        },
+        {
+          "item_id": 3,
+          "item_key": "official-12-test-2/p1-3/3",
+          "picture_path": "images/part1/q003.jpg",
+          "audio_path": "audio/part1/q003.mp3",
+          "picture_sha256": "ea47640e6dc3f0912276f0730fdbb23deba7a01d507d3a3d69f31f3a0d407661",
+          "audio_sha256": "ecb60d4dd615be6ee7e5c73de072e75ab19f18973cf3753b4f45c731e728f71c"
+        },
+        {
+          "item_id": 4,
+          "item_key": "official-12-test-2/p1-4/4",
+          "picture_path": "images/part1/q004.jpg",
+          "audio_path": "audio/part1/q004.mp3",
+          "picture_sha256": "42fbd819752b1bcdca2895a111884a1f2447f5045c5a59b767a8e5c93e498160",
+          "audio_sha256": "88bb0bfb3d3d2fce583b270a433acea708747a67e0be7a987f8b0f63ffbb7ed6"
+        },
+        {
+          "item_id": 5,
+          "item_key": "official-12-test-2/p1-5/5",
+          "picture_path": "images/part1/q005.jpg",
+          "audio_path": "audio/part1/q005.mp3",
+          "picture_sha256": "179f6f605d118d176ec8eea90251bccdac42c9495e8db781ef612077b201ff30",
+          "audio_sha256": "91e8c7e56ef4f6f2fd4593a0845d948a6e86b5c9b7a8d374ac80674bfbea5f0c"
+        },
+        {
+          "item_id": 6,
+          "item_key": "official-12-test-2/p1-6/6",
+          "picture_path": "images/part1/q006.jpg",
+          "audio_path": "audio/part1/q006.mp3",
+          "picture_sha256": "2ea38c7c38e9cad8bdba33b712ad2a060f7b8d635e665576f73017aaf11a616f",
+          "audio_sha256": "fb02a74ba683c25a4832f2fd73c264b60ed60214703329d9fe7aa31aa564b289"
+        }
+      ]
+    }
+  ]
+}

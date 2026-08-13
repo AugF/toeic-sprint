@@ -1,10 +1,13 @@
 import assert from "node:assert/strict";
+import {execFile} from "node:child_process";
+import {promisify} from "node:util";
 import {access,readFile,readdir} from "node:fs/promises";
 import test from "node:test";
 
 const root=new URL("../",import.meta.url);
 const read=(value)=>readFile(new URL(value,root),"utf8");
 const exists=async(value)=>access(value).then(()=>true,()=>false);
+const execFileAsync=promisify(execFile);
 
 test("publishes 24 banks and 4,800 globally unique item references",async()=>{
   const catalog=JSON.parse(await read("public/data/catalog.json"));
@@ -26,7 +29,8 @@ test("publishes 24 banks and 4,800 globally unique item references",async()=>{
       units++;
       if([3,4,6,7].includes(unit.part))materialUnits++;else singleUnits++;
       assert.equal(unit.item_refs.length,unit.question_count);
-      for(const ref of unit.item_refs){assert.ok(["P1","P2","P3"].includes(ref.priority.level));keys.add(ref.item_key)}
+      assert.ok(["P1","P2","P3"].includes(unit.priority.level));
+      for(const ref of unit.item_refs){assert.equal(ref.priority,undefined);keys.add(ref.item_key)}
     }
   }
   assert.equal(keys.size,4800);
@@ -82,6 +86,31 @@ test("uses one material-level priority for every Part 3, 4, 6 and 7 group",async
       assert.ok(detail.items.every(item=>item.priority.level===detail.priority.level&&item.priority.score===detail.priority.score&&item.priority.scope==="material"));
     }
   }
+});
+
+test("publishes only media rendered by each Part",async()=>{
+  const catalog=JSON.parse(await read("public/data/catalog.json"));
+  let retainedVisuals=0;
+  for(const bank of catalog.banks){
+    const index=JSON.parse(await read(`public/data/${bank.index_path}`));
+    for(const unit of index.units){
+      const detail=JSON.parse(await read(`public/data/${unit.detail_path}`));
+      if([6,7].includes(unit.part)){
+        assert.equal(detail.context.picture_path,undefined);
+        assert.equal(detail.context.picture_paths,undefined);
+        assert.ok(detail.context.passage||detail.context.content_translation);
+        assert.ok(unit.asset_refs.every(ref=>!ref.match(/\.(?:jpe?g|png)$/i)));
+      }else if([1,3,4].includes(unit.part)){
+        retainedVisuals+=unit.asset_refs.filter(ref=>ref.match(/\.(?:jpe?g|png)$/i)).length;
+      }
+    }
+  }
+  assert.ok(retainedVisuals>0,"Part 1/3/4 visuals must be retained");
+});
+
+test("locks all 144 visually reviewed Part 1 picture/audio pairings",async()=>{
+  const {stdout}=await execFileAsync(process.execPath,["scripts/verify-part1-media.mjs"],{cwd:new URL("../",import.meta.url)});
+  assert.match(stdout,/144 picture\/audio pairings across 24 banks/);
 });
 
 test("renders multi-bank priority controls and lazy detail loading",async()=>{

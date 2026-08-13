@@ -29,11 +29,15 @@ for(const bank of catalog.banks){
     if(upToDate(source,target)){skipped++;continue}
     const ext=path.extname(source).toLowerCase();
     let command,args;
-    if(ext===".mp3"){command="ffmpeg";args=["-hide_banner","-loglevel","error","-y","-i",source,"-vn","-ac","1","-ar","22050","-b:a","24k",target]}
-    else if([".jpg",".jpeg",".png"].includes(ext)){command="ffmpeg";args=["-hide_banner","-loglevel","error","-y","-i",source,"-vf","scale=min\\(1000\\,iw\\):-2",...(ext===".png"?[]:["-q:v","6"]),target]}
-    else {fs.copyFileSync(source,target);copied++;continue}
-    const result=spawnSync(command,args,{stdio:"inherit"});if(result.status!==0)throw new Error(`资源压缩失败：${source}`);
-    const time=fs.statSync(source).mtime;fs.utimesSync(target,time,time);copied++;
+    const temporary=`${target}.${process.pid}.${Math.random().toString(16).slice(2)}.tmp${ext}`;
+    try{
+      if(ext===".mp3"){command="ffmpeg";args=["-hide_banner","-loglevel","error","-y","-i",source,"-vn","-ac","1","-ar","22050","-b:a","24k",temporary]}
+      else if([".jpg",".jpeg",".png"].includes(ext)){command="ffmpeg";args=["-hide_banner","-loglevel","error","-y","-i",source,"-vf","scale=min\\(1000\\,iw\\):-2",...(ext===".png"?[]:["-q:v","6"]),temporary]}
+      else {fs.copyFileSync(source,temporary)}
+      if(command){const result=spawnSync(command,args,{stdio:"inherit"});if(result.status!==0)throw new Error(`资源压缩失败：${source}`)}
+      fs.renameSync(temporary,target);
+      const time=fs.statSync(source).mtime;fs.utimesSync(target,time,time);copied++;
+    }finally{fs.rmSync(temporary,{force:true})}
   }
 }
 for(const entry of fs.readdirSync(outputRoot,{withFileTypes:true})){

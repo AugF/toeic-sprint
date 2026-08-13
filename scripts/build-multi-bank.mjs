@@ -345,7 +345,7 @@ function mediaRef(bankId,sourceDir,value){
   return {path:relative,asset_key:`${bankId}/${relative}`,exists:fs.existsSync(sourcePath)};
 }
 
-function buildContext(bank,group){
+function buildContext(bank,group,part){
   const context={};
   for(const key of CONTEXT_FIELDS){
     // The drill UI renders Part 3/4 stems and choices, so their separate
@@ -353,6 +353,10 @@ function buildContext(bank,group){
     // conversation/monologue track only; retain question_audio as a fallback
     // solely for malformed source groups that have no primary audio.
     if(key==="question_audio_path"&&group.audio_path)continue;
+    // Part 6/7 are rendered from the normalized passage text. Their source
+    // scans are never shown in the drill UI, so retaining picture references
+    // would publish tens of megabytes of dead OCR input to GitHub Pages.
+    if((part===6||part===7)&&(key==="picture_path"||key==="picture_paths"))continue;
     if(group[key]==null)continue;
     if(MEDIA_FIELDS.has(key)){
       const refs=asArray(group[key]).map(value=>mediaRef(bank.bank_id,bank.dir,value));
@@ -415,7 +419,7 @@ function buildBank(source){
         allKeys.add(key);normalized.item_key=key;
         return normalized;
       });
-      const context=buildContext(source,group);
+      const context=buildContext(source,group,part.part);
       missingAssets+=Object.values(context).flatMap(asArray).filter(x=>x&&typeof x==="object"&&"exists" in x&&!x.exists).length;
       const unitPriority=MATERIAL_PRIORITY_PARTS.has(part.part)?materialPriority(part.part,items,group):aggregatePriority(items,group.priority);
       if(MATERIAL_PRIORITY_PARTS.has(part.part))items=items.map(item=>({...item,priority:{...unitPriority}}));
@@ -432,7 +436,10 @@ function buildBank(source){
       unitRows.push({
         unit_id:unitId,part:part.part,source_group_id:group.id,mode:detail.mode,title:detail.title,
         item_ids:items.map(x=>x.item_id),question_count:items.length,topic:group.topic,topic_category:unitPriority.topic_category,material_type:unitPriority.material_type,difficulty:group.difficulty,
-        item_refs:items.map(({item_id,item_key,question_type,priority})=>({item_id,item_key,question_type,priority})),
+        // Priority belongs to the training unit in the queue index. Details
+        // retain the per-item copy for analysis, but repeating the same long
+        // object in item_refs makes the eagerly loaded indexes needlessly big.
+        item_refs:items.map(({item_id,item_key,question_type})=>({item_id,item_key,question_type})),
         priority:unitPriority,detail_path:detailRel,asset_refs:assetRefs
       });
       partItems+=items.length;totalItems+=items.length;
@@ -473,7 +480,11 @@ function validateOutput(results){
       if(detail.bank_id!==index.bank_id||detail.unit_id!==unit.unit_id)fail(`[${index.bank_id}] detail标识不一致：${unit.unit_id}`);
       if(detail.items.length!==unit.question_count)fail(`[${index.bank_id}] detail题数不一致：${unit.unit_id}`);
       if(!Array.isArray(unit.item_refs)||unit.item_refs.length!==detail.items.length)fail(`[${index.bank_id}] item_refs题数不一致：${unit.unit_id}`);
-      for(let i=0;i<detail.items.length;i++)if(unit.item_refs[i].item_key!==detail.items[i].item_key||unit.item_refs[i].priority?.level!==detail.items[i].priority?.level)fail(`[${index.bank_id}] item_refs与detail不一致：${unit.unit_id}`);
+      for(let i=0;i<detail.items.length;i++){
+        const ref=unit.item_refs[i],item=detail.items[i];
+        if(ref.item_key!==item.item_key||ref.item_id!==item.item_id||ref.question_type!==item.question_type)fail(`[${index.bank_id}] item_refs与detail不一致：${unit.unit_id}`);
+        if(item.priority?.level!==unit.priority?.level||item.priority?.score!==unit.priority?.score)fail(`[${index.bank_id}] unit与item优先级不一致：${unit.unit_id}`);
+      }
       if([3,4,6,7].includes(unit.part)&&detail.items.length<2)fail(`[${index.bank_id}] Part ${unit.part} 共享组被拆散：${unit.unit_id}`);
       if([1,2,5].includes(unit.part)&&detail.items.length!==1)fail(`[${index.bank_id}] Part ${unit.part} 应为单题unit：${unit.unit_id}`);
       if(MATERIAL_PRIORITY_PARTS.has(unit.part)){
