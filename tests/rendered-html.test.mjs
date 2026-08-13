@@ -58,6 +58,8 @@ test("keeps shared official material in canonical details while Part 1, 2 and 5 
   assert.equal(detail.items.length,3);
   assert.ok(detail.context.audio_path.path.endsWith(".mp3"));
   assert.ok(detail.context.transcript);
+  const part4=JSON.parse(await read("public/data/banks/official-1-test-1/units/p4-71-73.json"));
+  assert.ok(part4.context.audio_path||part4.context.question_audio_path);
 });
 
 test("renders multi-bank priority controls and lazy detail loading",async()=>{
