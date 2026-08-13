@@ -214,6 +214,11 @@ function mediaRef(bankId,sourceDir,value){
 function buildContext(bank,group){
   const context={};
   for(const key of CONTEXT_FIELDS){
+    // The drill UI renders Part 3/4 stems and choices, so their separate
+    // question-reading track would be a second, unused audio copy. Publish the
+    // conversation/monologue track only; retain question_audio as a fallback
+    // solely for malformed source groups that have no primary audio.
+    if(key==="question_audio_path"&&group.audio_path)continue;
     if(group[key]==null)continue;
     if(MEDIA_FIELDS.has(key)){
       const refs=asArray(group[key]).map(value=>mediaRef(bank.bank_id,bank.dir,value));
