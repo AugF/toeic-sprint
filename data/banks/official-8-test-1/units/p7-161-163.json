@@ -1,0 +1,111 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-8-test-1",
+  "unit_id": "p7-161-163",
+  "part": 7,
+  "source_group_id": "161-163",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 67,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "细节定位题",
+      "主旨 / 目的 / 场景题"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q161-163.jpg",
+        "asset_key": "official-8-test-1/images/part7/q161-163.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "B*E-mail*\nTo:\nAll Staff\nFrom:\nJason Saylor\nSubject:\nCompany envelopes\nDate:\nApril 12\nDear Team,\nUnfortunately, we have run out of Leewood Associates printed envelopes. Until the next\nbatch arrives with our regular office supply order on April 15, please use Leewood\nAssociates return-address labels for any outgoing mail. For brochures about new home\nlistings or our professional property management services, there is no need to include\nany return address as our current contact information is already printed on all of our\npromotional materials.\nWhen using return-address labels, please remember to check them carefully since we\nmoved oflices only two months ago and some of them still include our former address.\nAll the best.\nJason Saylor\nExecutive Assistant"
+  },
+  "items": [
+    {
+      "choices": [
+        "A business will move to a new location.",
+        "A shipment will arrive.",
+        "Mail delivery will be suspended.",
+        "A marketing brochure will be printed."
+      ],
+      "answer": "B",
+      "question": "According to the e-mail, what will happen on April 15?",
+      "answer_explain": "原文依据：篇章中可定位到“batch arrives with our regular office supply order on April 15, please use Leewood”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（A shipment will arrive.）。",
+      "item_id": 161,
+      "question_type": "细节定位题",
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节定位题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节定位题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-1/p7-161-163/161"
+    },
+    {
+      "choices": [
+        "A real estate agency",
+        "A graphic design firm",
+        "A shipping company",
+        "A stationery store"
+      ],
+      "answer": "A",
+      "question": "What type of business most likely is Leewood Associates?",
+      "answer_explain": "原文依据：篇章中可定位到“Unfortunately, we have run out of Leewood Associates printed envelopes.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（A real estate agency）。",
+      "item_id": 162,
+      "question_type": "主旨 / 目的 / 场景题",
+      "priority": {
+        "level": "P2",
+        "score": 70,
+        "label": "主旨 / 目的 / 场景题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "主旨 / 目的 / 场景题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-1/p7-161-163/162"
+    },
+    {
+      "choices": [
+        "They are too small.",
+        "They have an error in the company name.",
+        "They have the wrong address.",
+        "They feature the company's old logo."
+      ],
+      "answer": "C",
+      "question": "What is the problem with some return-address labels?",
+      "answer_explain": "原文依据：篇章中可定位到“moved oflices only two months ago and some of them still include our former address.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（They have the wrong address.）。",
+      "item_id": 163,
+      "question_type": "细节定位题",
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节定位题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节定位题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-1/p7-161-163/163"
+    }
+  ]
+}

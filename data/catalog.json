@@ -1,0 +1,1621 @@
+{
+  "schema_version": "3.0",
+  "content_version": "2026-08-13T03:20:03.544Z",
+  "priority_model": "toeic_priority_v2",
+  "asset_policy": {
+    "copied": false,
+    "path_semantics": "每个资源的 path 相对其原始 bank 目录；asset_key 为 bank_id/path。运行时需配置媒体基址。"
+  },
+  "totals": {
+    "banks": 24,
+    "questions": 4800,
+    "units": 2472,
+    "unique_item_keys": 4800,
+    "missing_media_references": 0,
+    "priority_distribution": {
+      "P1": 1318,
+      "P2": 2575,
+      "P3": 907
+    },
+    "priority_by_part": {
+      "1": {
+        "P1": 60,
+        "P2": 82,
+        "P3": 2
+      },
+      "2": {
+        "P1": 337,
+        "P2": 130,
+        "P3": 133
+      },
+      "3": {
+        "P1": 143,
+        "P2": 519,
+        "P3": 274
+      },
+      "4": {
+        "P1": 104,
+        "P2": 429,
+        "P3": 187
+      },
+      "5": {
+        "P1": 256,
+        "P2": 459,
+        "P3": 5
+      },
+      "6": {
+        "P1": 93,
+        "P2": 288,
+        "P3": 3
+      },
+      "7": {
+        "P1": 325,
+        "P2": 668,
+        "P3": 303
+      }
+    }
+  },
+  "warnings": [],
+  "banks": [
+    {
+      "bank_id": "official-1-test-1",
+      "collection": "official",
+      "volume": 1,
+      "test": 1,
+      "title": "公式 TOEIC Listening & Reading 问题集 1 Test 1",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-1-test-1/index.json",
+      "source_file": "official_1/test_1/question.enriched.json",
+      "enriched": true,
+      "quality": {
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-1-test-1/"
+    },
+    {
+      "bank_id": "official-1-test-2",
+      "collection": "official",
+      "volume": 1,
+      "test": 2,
+      "title": "公式 TOEIC Listening & Reading 问题集 1 Test 2",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-1-test-2/index.json",
+      "source_file": "official_1/test_2/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-1-test-2/"
+    },
+    {
+      "bank_id": "official-2-test-1",
+      "collection": "official",
+      "volume": 2,
+      "test": 1,
+      "title": "公式 TOEIC Listening & Reading 问题集 2 Test 1",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-2-test-1/index.json",
+      "source_file": "official_2/test_1/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-2-test-1/"
+    },
+    {
+      "bank_id": "official-2-test-2",
+      "collection": "official",
+      "volume": 2,
+      "test": 2,
+      "title": "公式 TOEIC Listening & Reading 问题集 2 Test 2",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-2-test-2/index.json",
+      "source_file": "official_2/test_2/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-2-test-2/"
+    },
+    {
+      "bank_id": "official-3-test-1",
+      "collection": "official",
+      "volume": 3,
+      "test": 1,
+      "title": "公式 TOEIC Listening & Reading 问题集 3 Test 1",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-3-test-1/index.json",
+      "source_file": "official_3/test_1/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-3-test-1/"
+    },
+    {
+      "bank_id": "official-3-test-2",
+      "collection": "official",
+      "volume": 3,
+      "test": 2,
+      "title": "公式 TOEIC Listening & Reading 问题集 3 Test 2",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-3-test-2/index.json",
+      "source_file": "official_3/test_2/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-3-test-2/"
+    },
+    {
+      "bank_id": "official-4-test-1",
+      "collection": "official",
+      "volume": 4,
+      "test": 1,
+      "title": "公式 TOEIC Listening & Reading 问题集 4 Test 1",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-4-test-1/index.json",
+      "source_file": "official_4/test_1/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-4-test-1/"
+    },
+    {
+      "bank_id": "official-4-test-2",
+      "collection": "official",
+      "volume": 4,
+      "test": 2,
+      "title": "公式 TOEIC Listening & Reading 问题集 4 Test 2",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-4-test-2/index.json",
+      "source_file": "official_4/test_2/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-4-test-2/"
+    },
+    {
+      "bank_id": "official-5-test-1",
+      "collection": "official",
+      "volume": 5,
+      "test": 1,
+      "title": "公式 TOEIC Listening & Reading 问题集 5 Test 1",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-5-test-1/index.json",
+      "source_file": "official_5/test_1/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-5-test-1/"
+    },
+    {
+      "bank_id": "official-5-test-2",
+      "collection": "official",
+      "volume": 5,
+      "test": 2,
+      "title": "公式 TOEIC Listening & Reading 问题集 5 Test 2",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-5-test-2/index.json",
+      "source_file": "official_5/test_2/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-5-test-2/"
+    },
+    {
+      "bank_id": "official-6-test-1",
+      "collection": "official",
+      "volume": 6,
+      "test": 1,
+      "title": "公式 TOEIC Listening & Reading 问题集 6 Test 1",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-6-test-1/index.json",
+      "source_file": "official_6/test_1/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-6-test-1/"
+    },
+    {
+      "bank_id": "official-6-test-2",
+      "collection": "official",
+      "volume": 6,
+      "test": 2,
+      "title": "公式 TOEIC Listening & Reading 问题集 6 Test 2",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-6-test-2/index.json",
+      "source_file": "official_6/test_2/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-6-test-2/"
+    },
+    {
+      "bank_id": "official-7-test-1",
+      "collection": "official",
+      "volume": 7,
+      "test": 1,
+      "title": "公式 TOEIC Listening & Reading 问题集 7 Test 1",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-7-test-1/index.json",
+      "source_file": "official_7/test_1/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-7-test-1/"
+    },
+    {
+      "bank_id": "official-7-test-2",
+      "collection": "official",
+      "volume": 7,
+      "test": 2,
+      "title": "公式 TOEIC Listening & Reading 问题集 7 Test 2",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-7-test-2/index.json",
+      "source_file": "official_7/test_2/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-7-test-2/"
+    },
+    {
+      "bank_id": "official-8-test-1",
+      "collection": "official",
+      "volume": 8,
+      "test": 1,
+      "title": "公式 TOEIC Listening & Reading 问题集 8 Test 1",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-8-test-1/index.json",
+      "source_file": "official_8/test_1/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-8-test-1/"
+    },
+    {
+      "bank_id": "official-8-test-2",
+      "collection": "official",
+      "volume": 8,
+      "test": 2,
+      "title": "公式 TOEIC Listening & Reading 问题集 8 Test 2",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-8-test-2/index.json",
+      "source_file": "official_8/test_2/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-8-test-2/"
+    },
+    {
+      "bank_id": "official-9-test-1",
+      "collection": "official",
+      "volume": 9,
+      "test": 1,
+      "title": "公式 TOEIC Listening & Reading 问题集 9 Test 1",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-9-test-1/index.json",
+      "source_file": "official_9/test_1/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-9-test-1/"
+    },
+    {
+      "bank_id": "official-9-test-2",
+      "collection": "official",
+      "volume": 9,
+      "test": 2,
+      "title": "公式 TOEIC Listening & Reading 问题集 9 Test 2",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-9-test-2/index.json",
+      "source_file": "official_9/test_2/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-9-test-2/"
+    },
+    {
+      "bank_id": "official-10-test-1",
+      "collection": "official",
+      "volume": 10,
+      "test": 1,
+      "title": "公式 TOEIC Listening & Reading 问题集 10 Test 1",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-10-test-1/index.json",
+      "source_file": "official_10/test_1/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-10-test-1/"
+    },
+    {
+      "bank_id": "official-10-test-2",
+      "collection": "official",
+      "volume": 10,
+      "test": 2,
+      "title": "公式 TOEIC Listening & Reading 问题集 10 Test 2",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-10-test-2/index.json",
+      "source_file": "official_10/test_2/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-10-test-2/"
+    },
+    {
+      "bank_id": "official-11-test-1",
+      "collection": "official",
+      "volume": 11,
+      "test": 1,
+      "title": "公式 TOEIC Listening & Reading 问题集 11 Test 1",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-11-test-1/index.json",
+      "source_file": "official_11/test_1/question.enriched.json",
+      "enriched": true,
+      "quality": {
+        "enriched": true,
+        "translation": "available",
+        "knowledge": "available",
+        "analysis": "enriched",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-11-test-1/"
+    },
+    {
+      "bank_id": "official-11-test-2",
+      "collection": "official",
+      "volume": 11,
+      "test": 2,
+      "title": "公式 TOEIC Listening & Reading 问题集 11 Test 2",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-11-test-2/index.json",
+      "source_file": "official_11/test_2/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-11-test-2/"
+    },
+    {
+      "bank_id": "official-12-test-1",
+      "collection": "official",
+      "volume": 12,
+      "test": 1,
+      "title": "公式 TOEIC Listening & Reading 问题集 12 Test 1",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-12-test-1/index.json",
+      "source_file": "official_12/test_1/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-12-test-1/"
+    },
+    {
+      "bank_id": "official-12-test-2",
+      "collection": "official",
+      "volume": 12,
+      "test": 2,
+      "title": "公式 TOEIC Listening & Reading 问题集 12 Test 2",
+      "question_count": 200,
+      "unit_count": 103,
+      "parts": {
+        "1": {
+          "part_name": "照片描述",
+          "section_type": "听力",
+          "unit_count": 6,
+          "question_count": 6
+        },
+        "2": {
+          "part_name": "应答问题",
+          "section_type": "听力",
+          "unit_count": 25,
+          "question_count": 25
+        },
+        "3": {
+          "part_name": "对话",
+          "section_type": "听力",
+          "unit_count": 13,
+          "question_count": 39
+        },
+        "4": {
+          "part_name": "独白",
+          "section_type": "听力",
+          "unit_count": 10,
+          "question_count": 30
+        },
+        "5": {
+          "part_name": "句子填空",
+          "section_type": "阅读",
+          "unit_count": 30,
+          "question_count": 30
+        },
+        "6": {
+          "part_name": "短文填空",
+          "section_type": "阅读",
+          "unit_count": 4,
+          "question_count": 16
+        },
+        "7": {
+          "part_name": "阅读理解",
+          "section_type": "阅读",
+          "unit_count": 15,
+          "question_count": 54
+        }
+      },
+      "index_path": "banks/official-12-test-2/index.json",
+      "source_file": "official_12/test_2/question.json",
+      "enriched": false,
+      "quality": {
+        "enriched": false,
+        "translation": "unavailable",
+        "knowledge": "unavailable",
+        "analysis": "basic",
+        "ocr": "unreviewed"
+      },
+      "missing_media_references": 0,
+      "asset_base": "assets/official-12-test-2/"
+    }
+  ]
+}

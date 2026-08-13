@@ -1,0 +1,113 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-5-test-2",
+  "unit_id": "p7-161-163",
+  "part": 7,
+  "source_group_id": "161-163",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 64,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "主旨 / 目的 / 场景题",
+      "细节定位题",
+      "明示定位"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q161-163.jpg",
+        "asset_key": "official-5-test-2/images/part7/q161-163.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "DESROSIERS AND DAMMLER\n22 Newgate Street\nYork YO1 7LX\nT: 1904 5551200\nOrder Form\nContact Name:\nAdila Karimi\nE-mail:\nkarimi@tawfeeklaw.co.uk\nCompany Name:\nThe Tawfeek Law Group\nDelivery Date\nEvent:\nBusiness Lunch\nand Time:\n2 November, 12:15 P.M.\nPhone:\n1904 5556440\nDelivery Address: 4 Orchard Square\nYork YO1 8AD\nItem\nQuantity\nUnit Price\nPrice\nSandwich Platter (feeds 20)\n€50.00\n€50.00\nVegetable Tray\n€30.00\n£30.00\nDessert Tray\n€10.00\n€20.00\nService (a set of utensils, plate, cup, napkin)\n£0.50\n€10.00\nTotal: €110.00\nBill to:\nThe Tawfeek Law Group\nDate: 29 October\n4 Orchard Square\nYork YOI SAD\nOrder taken by: Tayyib Samara"
+  },
+  "items": [
+    {
+      "choices": [
+        "A beverage manufacturer",
+        "A law firm",
+        "A grocery store",
+        "A catering company"
+      ],
+      "answer": "D",
+      "question": "What type of business is Desrosiers and Dammler?",
+      "answer_explain": "原文依据：篇章中可定位到“Company Name:”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（A catering company）。",
+      "item_id": 161,
+      "question_type": "主旨 / 目的 / 场景题",
+      "priority": {
+        "level": "P2",
+        "score": 70,
+        "label": "主旨 / 目的 / 场景题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "主旨 / 目的 / 场景题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-5-test-2/p7-161-163/161"
+    },
+    {
+      "choices": [
+        "10",
+        "20",
+        "25",
+        "30"
+      ],
+      "answer": "B",
+      "question": "How many people are expected to attend the event?",
+      "answer_explain": "原文依据：篇章中可定位到“The Tawfeek Law Group”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（20）。",
+      "item_id": 162,
+      "question_type": "细节定位题",
+      "priority": {
+        "level": "P3",
+        "score": 42,
+        "label": "细节定位题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节定位题",
+          "明示定位"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-5-test-2/p7-161-163/162"
+    },
+    {
+      "choices": [
+        "It is a celebration dinner.",
+        "It is being organized by Tayyib Samara.",
+        "It will be held at Tawfeek's facilities.",
+        "It will take place on October 29."
+      ],
+      "answer": "C",
+      "question": "What is most likely true about the event?",
+      "answer_explain": "原文依据：篇章中可定位到“The Tawfeek Law Group”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（It will be held at Tawfeek's facilities.）。",
+      "item_id": 163,
+      "question_type": "细节定位题",
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节定位题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节定位题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-5-test-2/p7-161-163/163"
+    }
+  ]
+}

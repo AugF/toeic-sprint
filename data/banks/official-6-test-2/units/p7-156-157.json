@@ -1,0 +1,88 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-6-test-2",
+  "unit_id": "p7-156-157",
+  "part": 7,
+  "source_group_id": "156-157",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 78,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "细节定位题",
+      "推断 / 隐含义题",
+      "语境推断"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q156-157.jpg",
+        "asset_key": "official-6-test-2/images/part7/q156-157.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "Amihan Mendoza [1:31 p.m.]\nCan you meet me for coffee this afternoon?\nGavino Andrada [1:32 p.m.]\nSure. What's up?\nAmihan Mendoza [1:32 p.m.]\nI want to talk with you about the Dunhume account.\nI just heard I'll be taking it over.\nGavino Andrada [1:33 p.m.]\nGood idea. They keep changing their minds about the\nnumber of software packages they want to purchase.\nBut this is not unusual for them. You'll need to be\ncareful in working with them.\nAmihan Mendoza [1:34 p.m.]\nHow about 2:30 at Cha Cha Grill?\nGavino Andrada [1:35 p.m.]\nSounds good. If you haven't already, you should ask\nThomas to give you any information he has on that\naccount. He was the lead salesperson before you, and\nI'm sure he can fill you in on the challenges he faced.\nAmihan Mendoza [1:36 p.m.]\nOK. I'll see you there."
+  },
+  "items": [
+    {
+      "choices": [
+        "Personnel",
+        "Sales",
+        "Accounting",
+        "Product Design"
+      ],
+      "answer": "B",
+      "question": "In what department does Ms. Mendoza most likely work?",
+      "answer_explain": "原文依据：篇章中可定位到“Amihan Mendoza [1:31 p.m.]”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（Sales）。",
+      "item_id": 156,
+      "question_type": "细节定位题",
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节定位题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节定位题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-6-test-2/p7-156-157/156"
+    },
+    {
+      "choices": [
+        "He likes a restaurant's chef.",
+        "He agrees to represent his coworker Thomas at a luncheon.",
+        "He thinks a client will like a restaurant.",
+        "He agrees that he and Ms. Mendoza"
+      ],
+      "answer": "D",
+      "question": "At 1:35 P.M., what does Mr. Andrada most likely mean when he writes, \"Sounds good\"?",
+      "answer_explain": "原文依据：篇章中可定位到“He was the lead salesperson before you, and”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（He agrees that he and Ms. Mendoza）。",
+      "item_id": 157,
+      "question_type": "推断 / 隐含义题",
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "推断 / 隐含义题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "推断 / 隐含义题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-6-test-2/p7-156-157/157"
+    }
+  ]
+}
