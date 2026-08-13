@@ -1,0 +1,158 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-8-test-1",
+  "unit_id": "p7-154-155",
+  "part": 7,
+  "source_group_id": "154-155",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 78,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "细节题",
+      "推断题",
+      "语境推断"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q154-155.jpg",
+        "asset_key": "official-8-test-1/images/part7/q154-155.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "Alex Jefferson (7:15 A.M.)\nHi, Sophie. I'm on the bus and just realized\nI left my office key at home. Could you\nmeet me outside to let me in?\nSophie Browning (7:16 A.M.)\nUnfortunately, I'm not in the office this\nmorning.\nAlex Jefferson (7:17 A.M.)\nOh. Can you think of anyone else? I'm\ngoing to be there in a few minutes.\nSophie Browning (7:18 A.M.)\nYou could try Winston.\nAlex Jefferson (7:19 A.M.)\nGood idea! Do you have his number?\nSophie Browning (7:20 A.M.)\nSure, hold on just a minute.",
+    "passage_translation": "中文辅助（离线预处理）：Alex Jefferson (7:15 A.M.)\nHi, Sophie.\nI'm on the bus and just realized\nI left my office（办公室） key at home.\nCould you\nmeet me outside to let me in?\nSophie Browning (7:16 A.M.)\nUnfortunately, I'm not in the office（办公室） this\nmorning.\nAlex Jefferson (7:17 A.M.)\nOh.\nCan you think of anyone else?\nI'm\ngoing to be there in a few minutes.\nSophie Browning (7:18 A.M.)\nYou could try Winston.\nAlex Jefferson (7:19 A.M.)\nGood idea!\nDo you have his number?\nSophie Browning (7:20 A.M.)\nSure, hold on just a minute.",
+    "content_translation": "中文辅助（离线预处理）：Alex Jefferson (7:15 A.M.)\nHi, Sophie.\nI'm on the bus and just realized\nI left my office（办公室） key at home.\nCould you\nmeet me outside to let me in?\nSophie Browning (7:16 A.M.)\nUnfortunately, I'm not in the office（办公室） this\nmorning.\nAlex Jefferson (7:17 A.M.)\nOh.\nCan you think of anyone else?\nI'm\ngoing to be there in a few minutes.\nSophie Browning (7:18 A.M.)\nYou could try Winston.\nAlex Jefferson (7:19 A.M.)\nGood idea!\nDo you have his number?\nSophie Browning (7:20 A.M.)\nSure, hold on just a minute."
+  },
+  "items": [
+    {
+      "choices": [
+        "Finishing a project",
+        "Getting into a building",
+        "Traveling to a meeting",
+        "Understanding a bus schedule"
+      ],
+      "answer": "B",
+      "question": "What does Mr. Jefferson ask for help with?",
+      "answer_explain": "原文依据：篇章中可定位到“Alex Jefferson (7:15 A.M.)”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Getting into a building）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does Mr.\nJefferson ask for help with?",
+      "choice_translations": [
+        "A：Finishing a project",
+        "B：Getting into a building",
+        "C：Traveling to a meeting（会议）",
+        "D：Understanding a bus schedule（日程）"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Alex Jefferson (7:15 A.M.)",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Alex Jefferson (7:15 A.M.)",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Alex Jefferson (7:15 A.M.)”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Getting into a building）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "getting",
+            "meaning": "本题重点词；结合正确选项理解：Getting into a building"
+          },
+          {
+            "term": "into",
+            "meaning": "本题重点词；结合正确选项理解：Getting into a building"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Getting into a building",
+            "meaning": "正确选项中的重点搭配：Getting into a building"
+          }
+        ]
+      },
+      "item_id": 154,
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-1/p7-154-155/154"
+    },
+    {
+      "choices": [
+        "A coworker might be in the office.",
+        "A coworker might give him a ride.",
+        "A coworker could make a phone call.",
+        "A coworker could give a presentation."
+      ],
+      "answer": "A",
+      "question": "At 7:18 A.M., what does Ms. Browning most likely mean when she writes, \"You could try Winston\"?",
+      "answer_explain": "原文依据：篇章中可定位到“Unfortunately, I'm not in the office this”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（A coworker might be in the office.）。",
+      "question_translation": "中文辅助（离线预处理）：At 7:18 A.M., what（什么） does Ms.\nBrowning most likely（最可能） mean when（何时） she writes, \"You could try Winston\"?",
+      "choice_translations": [
+        "A：A coworker might be in the office（办公室）.",
+        "B：A coworker might give him a ride.",
+        "C：A coworker could make a phone call.",
+        "D：A coworker could give a presentation."
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 5 段：Sophie Browning (7:16 A.M.)",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "推断题",
+        "evidence": "参考原文第 5 段：Sophie Browning (7:16 A.M.)",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Unfortunately, I'm not in the office this”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（A coworker might be in the office.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "coworker",
+            "meaning": "本题重点词；结合正确选项理解：A coworker might be in the office（办公室）."
+          },
+          {
+            "term": "might",
+            "meaning": "本题重点词；结合正确选项理解：A coworker might be in the office（办公室）."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "coworker might be in the office.",
+            "meaning": "正确选项中的重点搭配：A coworker might be in the office（办公室）."
+          }
+        ]
+      },
+      "item_id": 155,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "推断题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-1/p7-154-155/155"
+    }
+  ]
+}

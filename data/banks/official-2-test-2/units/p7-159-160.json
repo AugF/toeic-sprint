@@ -1,0 +1,158 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-2-test-2",
+  "unit_id": "p7-159-160",
+  "part": 7,
+  "source_group_id": "159-160",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 78,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "细节题",
+      "推断题",
+      "语境推断"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q159-160.jpg",
+        "asset_key": "official-2-test-2/images/part7/q159-160.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "Anna Ricci [9:03 am]\nWhere did you get your car fixed last\nmonth?\nBonnie Green [9:05 a.m]\nMark’s Automotive on Linden Avenue. Are\nyou having vehicle trouble?\nAnna Ricci [9:06 a.m.]\nNo. I'm at the coffee shop chatting with\nKevin Peters from work. His car needs to\nbe repaired.\nBonnie Green [9:08 a.m.]\nTell him Mark's was great. They found\ngood prices on parts and charged a\nreasonable amount for labor.\nThanks. I'll pass it on.\n(Am Ricci [9:09 a.m.]",
+    "passage_translation": "Anna Ricci [上午 9:03]\n你上个月在哪里修车？\nBonnie Green [上午 9:05]\nLinden 大道的 Mark’s Automotive。你们的车出问题了吗？\nAnna Ricci [上午 9:06]\n没有。我在咖啡店和工作的 Kevin Peters 聊天。他的车需要修理。\nBonnie Green [上午 9:08]\n告诉他 Mark's 很棒。他们在零件上找到了好价格，而且人工费也很合理。\n谢谢。我会转告他的。\n(Am Ricci [上午 9:09]",
+    "content_translation": "Anna Ricci [上午 9:03]\n你上个月在哪里修车？\nBonnie Green [上午 9:05]\nLinden 大道的 Mark’s Automotive。你们的车出问题了吗？\nAnna Ricci [上午 9:06]\n没有。我在咖啡店和工作的 Kevin Peters 聊天。他的车需要修理。\nBonnie Green [上午 9:08]\n告诉他 Mark's 很棒。他们在零件上找到了好价格，而且人工费也很合理。\n谢谢。我会转告他的。\n(Am Ricci [上午 9:09]"
+  },
+  "items": [
+    {
+      "choices": [
+        "She wants a recommendation.",
+        "She needs directions to a location.",
+        "She wants a cup of coffee.",
+        "She needs her car fixed."
+      ],
+      "answer": "A",
+      "question": "Why does Ms. Ricci contact Ms. Green?",
+      "answer_explain": "原文依据：篇章中可定位到“Anna Ricci [9:03 am]”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（She wants a recommendation.）。",
+      "question_translation": "Ricci 女士联系 Green 女士的原因是什么？",
+      "choice_translations": [
+        "A：她需要一个推荐。",
+        "B：她需要去某个地方的路线指引。",
+        "C：她想要一杯咖啡。",
+        "D：她需要修车。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "wants",
+            "meaning": "出现在本题正确表达中：她需要一个推荐。"
+          },
+          {
+            "term": "recommendation",
+            "meaning": "出现在本题正确表达中：她需要一个推荐。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "She wants a recommendation.",
+            "meaning": "她需要一个推荐。"
+          }
+        ]
+      },
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Anna Ricci [9:03 am]",
+      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Anna Ricci [9:03 am]",
+        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：篇章中可定位到“Anna Ricci [9:03 am]”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（She wants a recommendation.）。"
+      },
+      "item_id": 159,
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-2-test-2/p7-159-160/159"
+    },
+    {
+      "choices": [
+        "She will pick up Ms. Green on the way to work,",
+        "She will search for a different repair shop.",
+        "She will share information with Mr. Peters.",
+        "She will bring money to Mr. Peters."
+      ],
+      "answer": "C",
+      "question": "At 9:09 A.o., what does Ms. Ricci most likely mean when she writes, “I'll pass it on”?",
+      "answer_explain": "原文依据：篇章中可定位到“Kevin Peters from work.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（She will share information with Mr. Peters.）。",
+      "question_translation": "在上午 9:09，当 Ricci 女士写下“我会转告他的”时，她最可能是什么意思？",
+      "choice_translations": [
+        "A：她会在去上班的路上接 Green 女士，",
+        "B：她会寻找不同的修理店。",
+        "C：她会把信息告诉 Peters 先生。",
+        "D：她会给 Peters 先生带钱。"
+      ],
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "share",
+            "meaning": "出现在本题正确表达中：她会把信息告诉 Peters 先生。"
+          },
+          {
+            "term": "information",
+            "meaning": "出现在本题正确表达中：她会把信息告诉 Peters 先生。"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "She will share information with Mr. Peters.",
+            "meaning": "她会把信息告诉 Peters 先生。"
+          }
+        ]
+      },
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Anna Ricci [9:03 am]",
+      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Anna Ricci [9:03 am]",
+        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
+        "analysis": "原文依据：篇章中可定位到“Kevin Peters from work.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（She will share information with Mr. Peters.）。"
+      },
+      "item_id": 160,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "推断题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-2-test-2/p7-159-160/160"
+    }
+  ]
+}

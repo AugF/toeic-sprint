@@ -1,0 +1,158 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-9-test-2",
+  "unit_id": "p7-154-155",
+  "part": 7,
+  "source_group_id": "154-155",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 78,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "推断题",
+      "语境推断",
+      "细节题"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q154-155.jpg",
+        "asset_key": "official-9-test-2/images/part7/q154-155.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "Nita Mittal (9:08 A.M.)\nHi, Mitch. I've boarded the plane, but the captain just\nannounced that we're waiting for connecting passengers, so\nwe'll be delayed. Can you let the car service know?\nMitch Richards (9:12 A.M.)\nOf course. Tell me when you're about to take off. I'll adjust\nyour pickup time as needed.\nNita Mittal (9:15 A.M.)\nThanks. And thanks also for e-mailing the safety handbook.\nNed Grant needs to have copies printed by Friday.\nMitch Richards (9:17 A.M.)\nNo problem.\nNita Mittal (9:50 A.M.)\nI'm still on the ground. I might not make my connection in\nDallas.\nOca\nMitch Richards (9:55 A.M.)\nDon't worry. We'll deal with it.\nNita Mittal (10:10 A.M.)\nIt looks like we'll be off in a few minutes. It will be close.\nMitch Richards (10:11 A.M.)\nOK. I hope it works out!",
+    "passage_translation": "中文辅助（离线预处理）：Nita Mittal (9:08 A.M.)\nHi, Mitch.\nI've boarded the plane, but the captain just\nannounced that we're waiting for connecting passengers, so\nwe'll be delayed.\nCan you let the car service（服务） know?\nMitch Richards (9:12 A.M.)\nOf course.\nTell me when（何时） you're about to take off.\nI'll adjust\nyour pickup time as needed.\nNita Mittal (9:15 A.M.)\nThanks.\nAnd thanks also for e-mailing the safety handbook.\nNed Grant needs to have copies printed by Friday.\nMitch Richards (9:17 A.M.)\nNo problem.\nNita Mittal (9:50 A.M.)\nI'm still on the ground.\nI might not make my connection in\nDallas.\nOca\nMitch Richards (9:55 A.M.)\nDon't worry.\nWe'll deal with it.\nNita Mittal (10:10 A.M.)\nIt looks like we'll be off in a few minutes.\nIt will be close.\nMitch Richards (10:11 A.M.)\nOK.\nI hope it works out!",
+    "content_translation": "中文辅助（离线预处理）：Nita Mittal (9:08 A.M.)\nHi, Mitch.\nI've boarded the plane, but the captain just\nannounced that we're waiting for connecting passengers, so\nwe'll be delayed.\nCan you let the car service（服务） know?\nMitch Richards (9:12 A.M.)\nOf course.\nTell me when（何时） you're about to take off.\nI'll adjust\nyour pickup time as needed.\nNita Mittal (9:15 A.M.)\nThanks.\nAnd thanks also for e-mailing the safety handbook.\nNed Grant needs to have copies printed by Friday.\nMitch Richards (9:17 A.M.)\nNo problem.\nNita Mittal (9:50 A.M.)\nI'm still on the ground.\nI might not make my connection in\nDallas.\nOca\nMitch Richards (9:55 A.M.)\nDon't worry.\nWe'll deal with it.\nNita Mittal (10:10 A.M.)\nIt looks like we'll be off in a few minutes.\nIt will be close.\nMitch Richards (10:11 A.M.)\nOK.\nI hope it works out!"
+  },
+  "items": [
+    {
+      "choices": [
+        "She might miss her next flight.",
+        "She will receive a document just in time to meet a deadline.",
+        "She thinks the airport in Dallas is conveniently located.",
+        "She plans to send another message"
+      ],
+      "answer": "A",
+      "question": "At 10:10 A.M., what does Ms. Mittal most likely mean when she writes, \"It will be close\"?",
+      "answer_explain": "原文依据：篇章中可定位到“I might not make my connection in”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（She might miss her next flight.）。",
+      "question_translation": "中文辅助（离线预处理）：At 10:10 A.M., what（什么） does Ms.\nMittal most likely（最可能） mean when（何时） she writes, \"It will be close\"?",
+      "choice_translations": [
+        "A：She might miss her next flight.",
+        "B：She will receive a document just in time to meet a deadline.",
+        "C：She thinks the airport in Dallas is conveniently located.",
+        "D：She plans to send another message"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Nita Mittal (9:08 A.M.)",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Nita Mittal (9:08 A.M.)",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“I might not make my connection in”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（She might miss her next flight.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "might",
+            "meaning": "本题重点词；结合正确选项理解：She might miss her next flight."
+          },
+          {
+            "term": "miss",
+            "meaning": "本题重点词；结合正确选项理解：She might miss her next flight."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "She might miss her next flight.",
+            "meaning": "正确选项中的重点搭配：She might miss her next flight."
+          }
+        ]
+      },
+      "item_id": 154,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "推断题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-9-test-2/p7-154-155/154"
+    },
+    {
+      "choices": [
+        "E-mail a safety handbook",
+        "Ask Mr. Grant for copies of a document",
+        "Make hotel reservations for Ms. Mittal",
+        "Contact a car service"
+      ],
+      "answer": "D",
+      "question": "What will Mr. Richards probably do next?",
+      "answer_explain": "原文依据：篇章中可定位到“Can you let the car service know?”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（Contact a car service）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） will Mr.\nRichards probably（可能） do next?",
+      "choice_translations": [
+        "A：E-mail a safety handbook",
+        "B：Ask Mr.\nGrant for copies of a document",
+        "C：Make hotel reservations for Ms.\nMittal",
+        "D：Contact a car service（服务）"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 5 段：Mitch Richards (9:12 A.M.)",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 5 段：Mitch Richards (9:12 A.M.)",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Can you let the car service know?”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（Contact a car service）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "contact",
+            "meaning": "本题重点词；结合正确选项理解：Contact a car service（服务）"
+          },
+          {
+            "term": "service",
+            "meaning": "本题重点词；结合正确选项理解：Contact a car service（服务）"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Contact a car service",
+            "meaning": "正确选项中的重点搭配：Contact a car service（服务）"
+          }
+        ]
+      },
+      "item_id": 155,
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-9-test-2/p7-154-155/155"
+    }
+  ]
+}

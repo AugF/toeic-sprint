@@ -1,0 +1,220 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-11-test-2",
+  "unit_id": "p3-41-43",
+  "part": 3,
+  "source_group_id": "41-43",
+  "mode": "official_set",
+  "title": "职场对话",
+  "topic": "职场对话",
+  "keywords": "listening detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P1",
+    "score": 80,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "否定事实题",
+      "跨句整合",
+      "细节题"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "audio_path": {
+      "path": "audio/part3/q041-043.mp3",
+      "asset_key": "official-11-test-2/audio/part3/q041-043.mp3",
+      "exists": true
+    },
+    "question_audio_path": {
+      "path": "audio/part3/q041-043-questions.mp3",
+      "asset_key": "official-11-test-2/audio/part3/q041-043-questions.mp3",
+      "exists": true
+    },
+    "transcript": "m Lola, Ocould you inventory and restock the bevera\naisle? Ol want to make sure our full range of\nbeverages is on display.\nw Sure, but el can tell you offhand that I checked\nthe stockroom yesterday, and we're out of Refresh\nLimited's flavored ice teas.\nm I saw the truck leave about an hour ago.\nEw ooh-OK. By the way, Oany word on my request\ntime off?\nEM oDid you put in a request?\nw OYeah. I e-mailed you yesterday.",
+    "transcript_translation": "中文辅助（离线预处理）：m Lola, Ocould you inventory and restock the bevera\naisle?\nOl want to make sure our full range of\nbeverages is on display.\nw Sure, but el can tell you offhand that I checked\nthe stockroom yesterday, and we're out of Refresh\nLimited's flavored ice teas.\nm I saw the truck leave about an hour ago.\nEw ooh-OK.\nBy the way, Oany word on my request\ntime off?\nEM oDid you put in a request?\nw OYeah.\nI e-mailed you yesterday.",
+    "content_translation": "中文辅助（离线预处理）：m Lola, Ocould you inventory and restock the bevera\naisle?\nOl want to make sure our full range of\nbeverages is on display.\nw Sure, but el can tell you offhand that I checked\nthe stockroom yesterday, and we're out of Refresh\nLimited's flavored ice teas.\nm I saw the truck leave about an hour ago.\nEw ooh-OK.\nBy the way, Oany word on my request\ntime off?\nEM oDid you put in a request?\nw OYeah.\nI e-mailed you yesterday."
+  },
+  "items": [
+    {
+      "choices": [
+        "A delivery was not made.",
+        "A truck driver left without the woman.",
+        "A product should now be available.",
+        "A supplier filled an order incorrectly."
+      ],
+      "answer": "B",
+      "question": "Where is the conversation most likely taking place?",
+      "answer_explain": "原文依据：听力原文与题目“Where is the conversation most likely taking place?”对应，官方答案为“A truck driver left without the woman.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（A truck driver left without the woman.）。",
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the conversation most likely（最可能） taking place?",
+      "choice_translations": [
+        "A：A delivery was not made.",
+        "B：A truck driver left without the woman（女士）.",
+        "C：A product should now be available（可用的）.",
+        "D：A supplier filled an order（订单） incorrectly."
+      ],
+      "question_type": "否定事实题",
+      "evidence": "参考原文第 1 段：m Lola, Ocould you inventory and restock the bevera",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 1 段：m Lola, Ocould you inventory and restock the bevera",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文与题目“Where is the conversation most likely taking place?”对应，官方答案为“A truck driver left without the woman.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（A truck driver left without the woman.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "truck",
+            "meaning": "本题重点词；结合正确选项理解：A truck driver left without the woman（女士）."
+          },
+          {
+            "term": "driver",
+            "meaning": "本题重点词；结合正确选项理解：A truck driver left without the woman（女士）."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "truck driver left without the woman.",
+            "meaning": "正确选项中的重点搭配：A truck driver left without the woman（女士）."
+          }
+        ]
+      },
+      "item_id": 41,
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "否定事实题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "否定事实题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-11-test-2/p3-41-43/41"
+    },
+    {
+      "choices": [
+        "A delivery was not made.",
+        "A truck driver left without the woman.",
+        "A product should now be available.",
+        "A supplier filled an order incorrectly."
+      ],
+      "answer": "C",
+      "question": "What does the man mean when he says, \"I saw the truck leave about an hour ago™?",
+      "answer_explain": "原文依据：听力原文与题目“What does the man mean when he says, \"I saw the truck leave about an hour ago™?”对应，官方答案为“A product should now be available.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A product should now be available.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） mean when（何时） he says, \"I saw the truck leave about an hour ago™?",
+      "choice_translations": [
+        "A：A delivery was not made.",
+        "B：A truck driver left without the woman（女士）.",
+        "C：A product should now be available（可用的）.",
+        "D：A supplier filled an order（订单） incorrectly."
+      ],
+      "question_type": "否定事实题",
+      "evidence": "参考原文第 7 段：m I saw the truck leave about an hour ago.",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 7 段：m I saw the truck leave about an hour ago.",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文与题目“What does the man mean when he says, \"I saw the truck leave about an hour ago™?”对应，官方答案为“A product should now be available.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A product should now be available.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "product",
+            "meaning": "本题重点词；结合正确选项理解：A product should now be available（可用的）."
+          },
+          {
+            "term": "available",
+            "meaning": "本题重点词；结合正确选项理解：A product should now be available（可用的）."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "product should now be available.",
+            "meaning": "正确选项中的重点搭配：A product should now be available（可用的）."
+          }
+        ]
+      },
+      "item_id": 42,
+      "priority": {
+        "level": "P1",
+        "score": 88,
+        "label": "否定事实题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "否定事实题",
+          "跨句整合"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-11-test-2/p3-41-43/42"
+    },
+    {
+      "choices": [
+        "To invite him to a training event",
+        "To apply for a new position",
+        "To ask for vacation time",
+        "To make a complaint"
+      ],
+      "answer": "C",
+      "question": "Why did the woman e-mail the man yesterday?",
+      "answer_explain": "原文依据：听力原文与题目“Why did the woman e-mail the man yesterday?”对应，官方答案为“To ask for vacation time”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（To ask for vacation time）。",
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） did the woman（女士） e-mail the man（男士） yesterday?",
+      "choice_translations": [
+        "A：To invite him to a training event",
+        "B：To apply for a new position",
+        "C：To ask for vacation time",
+        "D：To make a complaint"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 5 段：the stockroom yesterday, and we're out of Refresh",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 5 段：the stockroom yesterday, and we're out of Refresh",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：听力原文与题目“Why did the woman e-mail the man yesterday?”对应，官方答案为“To ask for vacation time”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（To ask for vacation time）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "vacation",
+            "meaning": "本题重点词；结合正确选项理解：To ask for vacation time"
+          },
+          {
+            "term": "time",
+            "meaning": "本题重点词；结合正确选项理解：To ask for vacation time"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To ask for vacation time",
+            "meaning": "正确选项中的重点搭配：To ask for vacation time"
+          }
+        ]
+      },
+      "item_id": 43,
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-11-test-2/p3-41-43/43"
+    }
+  ]
+}

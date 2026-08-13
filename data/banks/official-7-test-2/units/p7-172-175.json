@@ -1,0 +1,288 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-7-test-2",
+  "unit_id": "p7-172-175",
+  "part": 7,
+  "source_group_id": "172-175",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 76,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "推断题",
+      "语境推断",
+      "否定事实题",
+      "细节题",
+      "多文本语境",
+      "明示定位"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q172-175-p1.jpg",
+        "asset_key": "official-7-test-2/images/part7/q172-175-p1.jpg",
+        "exists": true
+      },
+      {
+        "path": "images/part7/q172-175-p2.jpg",
+        "asset_key": "official-7-test-2/images/part7/q172-175-p2.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "Home\nProducts\nReviews\nContact Us\nAdrianna Rossi *\n*\n*\n*\nMr. Prescott runs a top-notch online business. I have never worked with a designer this\nralented before. I was able to give a very specific description of what I wanted and my\nexpectations were exceeded. I could have never imagined my wedding invitations turning\nout so beautiful! A friend needs new brochures for her business, and i will definitely refer\nher to this shop. Thanks!\nPrisha Deol\n*****\nI am not pleased with my recent order. I had bought birthday party invitations previously\nfrom this store and was satisfied. This time, I ordered customized programs for my piano\nrecital. I loved the proof that I was sent, but these do not look like the proof at all. The\nprinting looks grainy and cheap. Also, the programs have a white mark at the top on the\nfront and the back. It just does not look very professional.\nIsak Larsson\n*****\nThe owner was fast to respond to my questions before I had even purchased anything. My\nbusiness cards were designed in days and arrived quickly, even with international shipping\nto Sweden. They were exactly how I wanted them, even though I gave the designer only\na few details and asked whether they could be completed in a hurry. This was a great\nexperience.\n100",
+    "passage_translation": "中文辅助（离线预处理）：Home\nProducts\nReviews\nContact Us\nAdrianna Rossi *\n*\n*\n*\nMr.\nPrescott runs a top-notch online business.\nI have never worked with a designer this\nralented before.\nI was able to give a very specific description of what（什么） I wanted and my\nexpectations were exceeded.\nI could have never imagined my wedding invitations turning\nout so beautiful!\nA friend needs new brochures for her business, and i will definitely refer\nher to this shop.\nThanks!\nPrisha Deol\n*****\nI am not pleased with my recent order（订单）.\nI had bought birthday party invitations previously\nfrom this store and was satisfied.\nThis time, I ordered customized programs for my piano\nrecital.\nI loved the proof that I was sent, but these do not look like the proof at all.\nThe\nprinting looks grainy and cheap.\nAlso, the programs have a white mark at the top on the\nfront and the back.\nIt just does not look very professional.\nIsak Larsson\n*****\nThe owner was fast to respond to my questions before I had even purchased anything.\nMy\nbusiness cards were designed in days and arrived quickly, even with international shipping\nto Sweden.\nThey were exactly how（如何） I wanted them, even though I gave the designer only\na few details and asked whether they could be completed in a hurry.\nThis was a great\nexperience.\n100",
+    "content_translation": "中文辅助（离线预处理）：Home\nProducts\nReviews\nContact Us\nAdrianna Rossi *\n*\n*\n*\nMr.\nPrescott runs a top-notch online business.\nI have never worked with a designer this\nralented before.\nI was able to give a very specific description of what（什么） I wanted and my\nexpectations were exceeded.\nI could have never imagined my wedding invitations turning\nout so beautiful!\nA friend needs new brochures for her business, and i will definitely refer\nher to this shop.\nThanks!\nPrisha Deol\n*****\nI am not pleased with my recent order（订单）.\nI had bought birthday party invitations previously\nfrom this store and was satisfied.\nThis time, I ordered customized programs for my piano\nrecital.\nI loved the proof that I was sent, but these do not look like the proof at all.\nThe\nprinting looks grainy and cheap.\nAlso, the programs have a white mark at the top on the\nfront and the back.\nIt just does not look very professional.\nIsak Larsson\n*****\nThe owner was fast to respond to my questions before I had even purchased anything.\nMy\nbusiness cards were designed in days and arrived quickly, even with international shipping\nto Sweden.\nThey were exactly how（如何） I wanted them, even though I gave the designer only\na few details and asked whether they could be completed in a hurry.\nThis was a great\nexperience.\n100"
+  },
+  "items": [
+    {
+      "choices": [
+        "Home decorating",
+        "Event planning",
+        "Custom printing",
+        "Fashion accessorizing"
+      ],
+      "answer": "C",
+      "question": "What type of service does the business most likely provide?",
+      "answer_explain": "原文依据：篇章中可定位到“printing looks grainy and cheap.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Custom printing）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） type of service（服务） does the business most likely（最可能） provide?",
+      "choice_translations": [
+        "A：Home decorating",
+        "B：Event planning",
+        "C：Custom printing",
+        "D：Fashion accessorizing"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 9 段：Mr. Prescott runs a top-notch online business. I have never worked with a designer this",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 9 段：Mr. Prescott runs a top-notch online business. I have never worked with a designer this",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“printing looks grainy and cheap.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Custom printing）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "custom",
+            "meaning": "本题重点词；结合正确选项理解：Custom printing"
+          },
+          {
+            "term": "printing",
+            "meaning": "本题重点词；结合正确选项理解：Custom printing"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Custom printing",
+            "meaning": "正确选项中的重点搭配：Custom printing"
+          }
+        ]
+      },
+      "item_id": 172,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "推断题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-7-test-2/p7-172-175/172"
+    },
+    {
+      "choices": [
+        "They were made according to her instructions.",
+        "They were shipped to another country.",
+        "They were constructed with inexpensive materials.",
+        "They were not the correct color."
+      ],
+      "answer": "A",
+      "question": "What does Ms. Rossi indicate about her items?",
+      "answer_explain": "原文依据：篇章中可定位到“A friend needs new brochures for her business, and i will definitely refer”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（They were made according to her instructions.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does Ms.\nRossi indicate about her items?",
+      "choice_translations": [
+        "A：They were made according（根据） to her instructions.",
+        "B：They were shipped to another country.",
+        "C：They were constructed with inexpensive materials.",
+        "D：They were not the correct color."
+      ],
+      "question_type": "否定事实题",
+      "evidence": "参考原文第 5 段：Adrianna Rossi *",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 5 段：Adrianna Rossi *",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“A friend needs new brochures for her business, and i will definitely refer”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：A（They were made according to her instructions.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "they",
+            "meaning": "本题重点词；结合正确选项理解：They were made according（根据） to her instructions."
+          },
+          {
+            "term": "were",
+            "meaning": "本题重点词；结合正确选项理解：They were made according（根据） to her instructions."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "They were made according to her instructions.",
+            "meaning": "正确选项中的重点搭配：They were made according（根据） to her instructions."
+          }
+        ]
+      },
+      "item_id": 173,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "否定事实题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "否定事实题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-7-test-2/p7-172-175/173"
+    },
+    {
+      "choices": [
+        "A product option",
+        "Business hours",
+        "A party venue",
+        "Recital programs"
+      ],
+      "answer": "D",
+      "question": "What made a customer unhappy?",
+      "answer_explain": "原文依据：篇章中可定位到“Also, the programs have a white mark at the top on the”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（Recital programs）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） made a customer（顾客） unhappy?",
+      "choice_translations": [
+        "A：A product option",
+        "B：Business hours",
+        "C：A party venue",
+        "D：Recital programs"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 1 段：Home",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 1 段：Home",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Also, the programs have a white mark at the top on the”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（Recital programs）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "recital",
+            "meaning": "本题重点词；结合正确选项理解：Recital programs"
+          },
+          {
+            "term": "programs",
+            "meaning": "本题重点词；结合正确选项理解：Recital programs"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Recital programs",
+            "meaning": "正确选项中的重点搭配：Recital programs"
+          }
+        ]
+      },
+      "item_id": 174,
+      "priority": {
+        "level": "P3",
+        "score": 42,
+        "label": "细节题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节题",
+          "多文本语境",
+          "明示定位"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-7-test-2/p7-172-175/174"
+    },
+    {
+      "choices": [
+        "The instructions for placing an order",
+        "The variety of product choices",
+        "The efficiency of the business",
+        "The weight of the merchandise"
+      ],
+      "answer": "C",
+      "question": "What does Mr. Larson discuss in his review?",
+      "answer_explain": "原文依据：篇章中可定位到“They were exactly how I wanted them, even though I gave the designer only”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（The efficiency of the business）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does Mr.\nLarson discuss in his review?",
+      "choice_translations": [
+        "A：The instructions for placing an order（订单）",
+        "B：The variety of product choices",
+        "C：The efficiency of the business",
+        "D：The weight of the merchandise"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 3 段：Reviews",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "细节题",
+        "evidence": "参考原文第 3 段：Reviews",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“They were exactly how I wanted them, even though I gave the designer only”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（The efficiency of the business）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "efficiency",
+            "meaning": "本题重点词；结合正确选项理解：The efficiency of the business"
+          },
+          {
+            "term": "business",
+            "meaning": "本题重点词；结合正确选项理解：The efficiency of the business"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "The efficiency of the business",
+            "meaning": "正确选项中的重点搭配：The efficiency of the business"
+          }
+        ]
+      },
+      "item_id": 175,
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节题",
+          "多文本语境"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-7-test-2/p7-172-175/175"
+    }
+  ]
+}
