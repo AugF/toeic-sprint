@@ -63,6 +63,9 @@ type UnitSummary = {
   drills?: ItemSummary[];
   items?: ItemSummary[];
   item_priorities?: Record<string, Priority>;
+  question_count?: number;
+  material_type?: string;
+  topic_category?: string;
   priority: Priority;
   detail_path: string;
 };
@@ -96,6 +99,10 @@ type DrillRef = {
   part: number;
   item_id: string | number;
   item_key: string;
+  item_ids: Array<string | number>;
+  item_keys: string[];
+  question_count: number;
+  scope: "item" | "material";
   question_type?: string;
   priority: Priority;
 };
@@ -114,6 +121,16 @@ const STATUS_OPTIONS: Array<{value: StatusFilter; label: string}> = [
 const EMPTY_SAVED: Saved = {answers: {}, wrong: [], stars: []};
 const STORAGE_KEY = "toeic-global-progress-v3";
 const LEVEL_RANK: Record<Level, number> = {P1: 1, P2: 2, P3: 3};
+const MATERIAL_PARTS = new Set([3, 4, 6, 7]);
+const PART_META: Record<number, {section: "听力" | "阅读"; focus: string}> = {
+  1: {section: "听力", focus: "照片描述"},
+  2: {section: "听力", focus: "问答应答"},
+  3: {section: "听力", focus: "对话理解"},
+  4: {section: "听力", focus: "独白理解"},
+  5: {section: "阅读", focus: "句子填空"},
+  6: {section: "阅读", focus: "短文填空"},
+  7: {section: "阅读", focus: "阅读理解"},
+};
 
 function dataUrl(path: string) {
   const base = typeof import.meta.env?.BASE_URL === "string" ? import.meta.env.BASE_URL : "/";
@@ -151,13 +168,22 @@ function unitItemSummaries(unit: UnitSummary): ItemSummary[] {
 function buildDrillRefs(catalog: Catalog | null, indexes: BankIndex[]): DrillRef[] {
   if (!catalog) return [];
   const bankMeta = new Map(catalog.banks.map(bank => [bank.bank_id, bank]));
-  return indexes.flatMap(index => {
+  return indexes.flatMap<DrillRef>(index => {
     const bank = bankMeta.get(index.bank_id);
     if (!bank) return [];
-    return index.units.flatMap(unit => unitItemSummaries(unit).map((summary, position) => {
-      const itemId = summary.item_id ?? summary.id ?? unit.item_ids[position];
-      const priority = summary.priority || unit.item_priorities?.[String(itemId)] || unit.priority;
-      return {
+    return index.units.flatMap<DrillRef>(unit => {
+      const summaries = unitItemSummaries(unit);
+      const refs = summaries.map((summary, position) => {
+        const itemId = summary.item_id ?? summary.id ?? unit.item_ids[position];
+        const priority = summary.priority || unit.item_priorities?.[String(itemId)] || unit.priority;
+        return {
+          itemId,
+          itemKey: summary.item_key || `${index.bank_id}/${unit.unit_id}/${itemId}`,
+          questionType: summary.question_type,
+          priority,
+        };
+      });
+      const common = {
         bank_id: index.bank_id,
         bank_title: index.name || bank.title,
         volume: bank.volume,
@@ -166,13 +192,41 @@ function buildDrillRefs(catalog: Catalog | null, indexes: BankIndex[]): DrillRef
         detail_path: unit.detail_path,
         unit_title: unit.title,
         part: unit.part,
-        item_id: itemId,
-        item_key: summary.item_key || `${index.bank_id}/${unit.unit_id}/${itemId}`,
-        question_type: summary.question_type,
-        priority,
       };
-    }));
+      if (MATERIAL_PARTS.has(unit.part)) {
+        const anchor = refs[0];
+        if (!anchor) return [];
+        return [{
+          ...common,
+          item_id: anchor.itemId,
+          item_key: anchor.itemKey,
+          item_ids: refs.map(ref => ref.itemId),
+          item_keys: refs.map(ref => ref.itemKey),
+          question_count: refs.length,
+          scope: "material" as const,
+          question_type: unit.priority.label || unit.material_type,
+          priority: unit.priority,
+        }];
+      }
+      return refs.map(ref => ({
+        ...common,
+        item_id: ref.itemId,
+        item_key: ref.itemKey,
+        item_ids: [ref.itemId],
+        item_keys: [ref.itemKey],
+        question_count: 1,
+        scope: "item" as const,
+        question_type: ref.questionType,
+        priority: ref.priority,
+      }));
+    });
   });
+}
+
+function unitNoun(part: number) {
+  if (part === 3 || part === 4) return "组";
+  if (part === 6 || part === 7) return "篇";
+  return "题";
 }
 
 function compareOfficial(a: DrillRef, b: DrillRef) {
@@ -199,7 +253,7 @@ export default function Home() {
   const [showTranscript, setShowTranscript] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
   const [showAnalysis, setShowAnalysis] = useState(false);
-  const [showGroup, setShowGroup] = useState(false);
+  const [showGroup, setShowGroup] = useState(true);
   const [relatedAnalysis, setRelatedAnalysis] = useState<Record<string, boolean>>({});
   const [sideOpen, setSideOpen] = useState(false);
   const detailCache = useRef(new Map<string, UnitDetail>());
@@ -257,9 +311,10 @@ export default function Home() {
       if (bankFilter !== "ALL" && ref.bank_id !== bankFilter) return false;
       if (partFilter && ref.part !== partFilter) return false;
       if (priorityFilter !== "ALL" && ref.priority.level !== priorityFilter) return false;
-      if (ref.item_key !== stickyKey && statusFilter === "UNDONE" && saved.answers[ref.item_key]) return false;
-      if (ref.item_key !== stickyKey && statusFilter === "WRONG" && !saved.wrong.includes(ref.item_key)) return false;
-      if (ref.item_key !== stickyKey && statusFilter === "STARRED" && !saved.stars.includes(ref.item_key)) return false;
+      const sticky = ref.item_keys.includes(stickyKey);
+      if (!sticky && statusFilter === "UNDONE" && ref.item_keys.every(key => saved.answers[key])) return false;
+      if (!sticky && statusFilter === "WRONG" && !ref.item_keys.some(key => saved.wrong.includes(key))) return false;
+      if (!sticky && statusFilter === "STARRED" && !ref.item_keys.some(key => saved.stars.includes(key))) return false;
       return true;
     });
     return refs.sort((a, b) => priorityOrder
@@ -269,7 +324,8 @@ export default function Home() {
 
   const current = queue[position];
   const currentItem = detail?.items.find(item => String(item.item_id) === String(current?.item_id));
-  const doneCount = useMemo(() => allRefs.reduce((total, ref) => total + (saved.answers[ref.item_key] ? 1 : 0), 0), [allRefs, saved.answers]);
+  const doneCount = useMemo(() => allRefs.reduce((total, ref) =>
+    total + ref.item_keys.filter(key => saved.answers[key]).length, 0), [allRefs, saved.answers]);
   const totalCount = catalog?.totals.questions || allRefs.length || 4800;
   const donePercent = totalCount ? Math.round(doneCount / totalCount * 100) : 0;
 
@@ -286,7 +342,7 @@ export default function Home() {
     setShowTranscript(false);
     setShowTranslation(false);
     setShowAnalysis(false);
-    setShowGroup(false);
+    setShowGroup(true);
     setRelatedAnalysis({});
     audio.current?.pause();
   }, [current?.item_key]);
@@ -345,7 +401,7 @@ export default function Home() {
   const choose = (item: Item, label: string) => {
     const key = item.item_key;
     const correct = label.toUpperCase() === String(item.answer || "").toUpperCase();
-    if (key === current?.item_key) setStickyKey(key);
+    if (current?.item_keys.includes(key)) setStickyKey(current.item_key);
     setSaved(previous => ({
       ...previous,
       answers: {...previous.answers, [key]: label},
@@ -357,8 +413,8 @@ export default function Home() {
     setStickyKey(current.item_key);
     setSaved(previous => ({
       ...previous,
-      stars: previous.stars.includes(current.item_key)
-        ? previous.stars.filter(value => value !== current.item_key)
+      stars: current.item_keys.some(key => previous.stars.includes(key))
+        ? previous.stars.filter(value => !current.item_keys.includes(value))
         : [...previous.stars, current.item_key],
     }));
   };
@@ -380,14 +436,19 @@ export default function Home() {
     : "";
   const passage = context.passage || "";
   const passageTranslation = context.passage_translation || context.content_translation || "";
-  const isStarred = current ? saved.stars.includes(current.item_key) : false;
+  const isStarred = current ? current.item_keys.some(key => saved.stars.includes(key)) : false;
+  const currentNoun = current ? unitNoun(current.part) : (partFilter ? unitNoun(partFilter) : "项");
+  const queueNoun = partFilter ? unitNoun(partFilter) : "项";
+  const currentItemRange = current
+    ? current.item_ids.length > 1 ? `${current.item_ids[0]}–${current.item_ids.at(-1)}` : String(current.item_id)
+    : "";
 
   if (!catalog && !loadError) return <main className="loading"><div className="loader"/>正在载入 24 套官方题库目录…</main>;
 
   return <main className="shell globalPractice">
     <header>
       <button className="menu" onClick={() => setSideOpen(value => !value)} aria-label="打开筛选器">☰</button>
-      <div className="brand"><span className="mark">T</span><div><b>TOEIC SPRINT</b><small>24 套官方题库 · 优先级单题刷</small></div></div>
+      <div className="brand"><span className="mark">T</span><div><b>TOEIC SPRINT</b><small>24 套官方题库 · 材料 / 单题优先刷</small></div></div>
       <div className="headerProgress"><span>{doneCount} / {totalCount}</span><div><i style={{width: `${donePercent}%`}}/></div><b>{donePercent}%</b></div>
     </header>
     <div className="layout">
@@ -395,14 +456,16 @@ export default function Home() {
         <div className="asideTitle">训练筛选 <button onClick={() => setSideOpen(false)}>×</button></div>
         <label className="filterLabel" htmlFor="bank-filter">题库</label>
         <select id="bank-filter" className="bankSelect" value={bankFilter} onChange={event => setBankFilter(event.target.value)}>
-          <option value="ALL">全部官方题库（{allRefs.length || totalCount} 题）</option>
+          <option value="ALL">全部官方题库（{allRefs.length || 2472} 个训练单元）</option>
           {catalog?.banks.map(bank => <option key={bank.bank_id} value={bank.bank_id}>Official {bank.volume} · Test {bank.test}</option>)}
         </select>
 
         <div className="filterLabel">Part</div>
         <div className="partFilters">
           <button className={partFilter === 0 ? "on" : ""} onClick={() => setPartFilter(0)}>全部</button>
-          {Array.from({length: 7}, (_, index) => index + 1).map(part => <button key={part} className={partFilter === part ? "on" : ""} onClick={() => setPartFilter(part)}><b>{part}</b><small>{partCounts[part]}</small></button>)}
+          {Array.from({length: 7}, (_, index) => index + 1).map(part => <button key={part} className={partFilter === part ? "on" : ""} onClick={() => setPartFilter(part)}>
+            <b>Part {part} · {PART_META[part].focus}</b><small>{PART_META[part].section} · {partCounts[part]} {unitNoun(part)}</small>
+          </button>)}
         </div>
 
         <div className="filterLabel">训练优先级</div>
@@ -417,7 +480,7 @@ export default function Home() {
         <div className="statusFilters">
           {STATUS_OPTIONS.map(option => <button key={option.value} className={statusFilter === option.value ? "on" : ""} onClick={() => setStatusFilter(option.value)}>{option.label}</button>)}
         </div>
-        <div className="priorityLegend"><p><b className="badge p1">P1</b> 高频核心 · 优先必刷</p><p><b className="badge p2">P2</b> 重点题型 · 稳定巩固</p><p><b className="badge p3">P3</b> 基础覆盖 · 查漏补缺</p></div>
+        <div className="priorityLegend"><p><b className="badge p1">P1</b> 高频核心 · 优先必刷</p><p><b className="badge p2">P2</b> 重点题型 · 稳定巩固</p><p><b className="badge p3">P3</b> 基础覆盖 · 查漏补缺</p><small className="priorityBasis">材料型 Part 按文体、主题和整组考点综合排序；P 等级不是 ETS 官方频率。</small></div>
         <div className="asideHint"><b>快捷键</b><p><kbd>←</kbd> <kbd>→</kbd> 切题</p><p><kbd>Space</kbd> 播放 / 暂停</p></div>
       </aside>
 
@@ -425,19 +488,19 @@ export default function Home() {
         {loadError && <div className="loadNotice">{loadError}</div>}
         <div className="topline globalTopline">
           <div><span className="eyebrow">PRIORITY DRILL · {bankFilter === "ALL" ? "ALL 24 TESTS" : current?.bank_title}</span><h1>{partFilter ? `Part ${partFilter} 专项训练` : "全题库优先级刷题"}</h1></div>
-          <div className="topTools"><button className={priorityOrder ? "orderBtn on" : "orderBtn"} onClick={() => setPriorityOrder(value => !value)}>{priorityOrder ? "优先级顺序" : "官方顺序"}</button><div className="groupCount">{queue.length ? `${position + 1} / ${queue.length} 题` : "0 题"}</div></div>
+          <div className="topTools"><button className={priorityOrder ? "orderBtn on" : "orderBtn"} onClick={() => setPriorityOrder(value => !value)}>{priorityOrder ? "优先级顺序" : "官方顺序"}</button><div className="groupCount">{queue.length ? `${position + 1} / ${queue.length} ${queueNoun}` : `0 ${queueNoun}`}</div></div>
         </div>
 
         {indexLoading ? <div className="detailLoading"><div className="loader"/>正在汇总 4,800 题的优先级索引…</div> : !current ? <div className="empty"><b>当前筛选下没有题目</b><p>可以切换优先级、Part 或完成状态继续训练。</p><button onClick={() => {setBankFilter("ALL"); setPartFilter(0); setPriorityFilter("P1"); setStatusFilter("ALL");}}>恢复 P1 必刷队列</button></div> : <>
           <div className="questionNav globalQuestionNav">
             <span>{current.bank_title} · Part {current.part}</span>
             <div className="miniProgress"><i style={{width: `${(position + 1) / queue.length * 100}%`}}/></div>
-            <span>题 {current.item_id}</span>
-            <button className={isStarred ? "starred" : ""} onClick={toggleStar} title={isStarred ? "取消收藏" : "收藏此题"}>{isStarred ? "★" : "☆"}</button>
+            <span>{currentNoun} · 题 {currentItemRange}</span>
+            <button className={isStarred ? "starred" : ""} onClick={toggleStar} title={isStarred ? "取消收藏" : current.scope === "material" ? "收藏此材料" : "收藏此题"}>{isStarred ? "★" : "☆"}</button>
           </div>
           <div className="priorityBrief compactPriority">
             <PriorityBadge value={current.priority}/>
-            <div><b>{current.question_type || current.priority.label || current.unit_title || "重点题型训练"}</b>{current.priority.reason && <p>{current.priority.reason}</p>}{Boolean(current.priority.focus_tags?.length) && <div>{current.priority.focus_tags?.map(tag => <span key={tag}>{tag}</span>)}</div>}</div>
+            <div><b>{[3, 4, 6, 7].includes(current.part) ? (current.priority.label || current.unit_title || "材料综合训练") : (current.question_type || current.priority.label || current.unit_title || "重点题型训练")}</b>{current.priority.reason && <p>{current.priority.reason}</p>}{Boolean(current.priority.focus_tags?.length) && <div>{current.priority.focus_tags?.map(tag => <span key={tag}>{tag}</span>)}</div>}</div>
           </div>
 
           {detailLoading && <div className="detailLoading"><div className="loader"/>正在按需载入当前题目…</div>}
@@ -464,14 +527,14 @@ export default function Home() {
             <QuestionBlock key={currentItem.item_key} item={currentItem} part={current.part} chosen={saved.answers[currentItem.item_key]} reveal={showAnalysis} choose={choose}/>
 
             {[3, 4, 6, 7].includes(current.part) && detail.items.length > 1 && <section className="relatedGroup">
-              <button className="groupToggle" onClick={() => setShowGroup(value => !value)}>{showGroup ? "收起同组题目" : `展开同组另外 ${detail.items.length - 1} 题`}</button>
+              <button className="groupToggle" onClick={() => setShowGroup(value => !value)}>{showGroup ? `收起本${current.part <= 4 ? "组" : "篇"}其余题目` : `展开本${current.part <= 4 ? "组" : "篇"}全部 ${detail.items.length} 题`}</button>
               {showGroup && <div className="relatedList">{detail.items.filter(item => item.item_key !== currentItem.item_key).map(item => <div className="relatedQuestion" key={item.item_key}>
                 <div className="relatedHeading"><span>同组题 {item.item_id}</span><PriorityBadge value={item.priority}/><button onClick={() => setRelatedAnalysis(previous => ({...previous, [item.item_key]: !previous[item.item_key]}))}>{relatedAnalysis[item.item_key] ? "隐藏解析" : "查看解析"}</button></div>
                 <QuestionBlock item={item} part={current.part} chosen={saved.answers[item.item_key]} reveal={Boolean(relatedAnalysis[item.item_key])} choose={choose}/>
               </div>)}</div>}
             </section>}
           </article>}
-          <div className="bottom"><button disabled={position === 0} onClick={() => go(position - 1)}>← 上一题</button><button disabled={position >= queue.length - 1} onClick={() => go(position + 1)}>下一题 →</button></div>
+          <div className="bottom"><button disabled={position === 0} onClick={() => go(position - 1)}>← 上一{currentNoun}</button><button disabled={position >= queue.length - 1} onClick={() => go(position + 1)}>下一{currentNoun} →</button></div>
         </>}
       </section>
     </div>

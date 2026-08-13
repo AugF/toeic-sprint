@@ -21,8 +21,31 @@ const banksRoot=path.resolve(process.argv[2]||defaultBanksRoot);
 const outputRoot=path.resolve(process.argv[3]||defaultOutputRoot);
 
 const SCHEMA_VERSION="3.0";
-const PRIORITY_MODEL="toeic_priority_v2";
+const PRIORITY_MODEL="toeic_priority_v3_material";
 const EXPECTED_PART_COUNTS={1:6,2:25,3:39,4:30,5:30,6:16,7:54};
+const MATERIAL_PRIORITY_PARTS=new Set([3,4,6,7]);
+const PRIORITY_METHODOLOGY={
+  version:PRIORITY_MODEL,
+  disclaimer:"P1/P2/P3 是训练优先级，不是 ETS 公布的固定出题频率或官方难度等级。Part 3、4、6、7 按整段会话、独白或文章综合分级，组内题目共享同一优先级。",
+  official_basis:[
+    "TOEIC L&R 现行格式中的图表联动、整句填空、句子插入和单/多文档形式",
+    "TOEIC Abilities Measured：主旨与目的、细节、隐含义、跨句和跨文本信息连接"
+  ],
+  analysis_basis:"材料类型与常见职场主题来自官方样题形式及公开备考资料的共同分析，只用于训练排序。",
+  sources:[
+    "https://www.iibc-global.org/english/toeic/test/lr/about/format.html",
+    "https://www.iibc-global.org/english/toeic/test/lr/guide05/guide05_01.html",
+    "https://www.iibc-global.org/english/toeic/test/lr/guide05/guide05_01/score_descriptor.html",
+    "https://www.iibc-global.org/toeic/support/prep/method_03.html",
+    "https://www.ets.org/content/dam/ets-org/pdfs/toeic/toeic-listening-reading-score-descriptors.pdf"
+  ],
+  public_analysis_sources:[
+    "https://academy.kirihara.co.jp/blog/toeic/toeic-part3/",
+    "https://academy.kirihara.co.jp/blog/toeic/toeic-part4-talk-guide/",
+    "https://www.mytoeiccoach.com/toeic-part6-guide",
+    "https://studying.jp/toeic/about-more/part7-2.html"
+  ]
+};
 const CONTEXT_FIELDS=[
   "audio_path","question_audio_path","picture_path","picture_paths",
   "transcript","transcript_translation","passage","passage_translation",
@@ -197,6 +220,117 @@ function tokens(value){return new Set(String(value).toLowerCase().match(/[a-z]{3
 function tokenOverlap(answer,content){const a=tokens(answer),b=tokens(content);if(!a.size)return 0;return [...a].filter(x=>b.has(x)).length/a.size}
 function commonPrefix(values){if(!values.length)return 0;let prefix=values[0];for(const value of values.slice(1)){let i=0;while(i<prefix.length&&i<value.length&&prefix[i]===value[i])i++;prefix=prefix.slice(0,i)}return prefix.length}
 
+function inferTopicCategory(group){
+  const s=textOf(group.topic,group.keywords,group.transcript,group.passage);
+  if(/airport|airline|flight|train|rail|bus |travel|trip |tour |ticket|station|transport|航班|旅行|交通/.test(s))return "旅行与交通";
+  if(/interview|applicant|candidate|recruit|hiring|resume|job |position|employee|staff|training|workshop|seminar|人事|招聘|培训/.test(s))return "招聘与培训";
+  if(/meeting|conference|presentation|project|deadline|schedule|appointment|report|document|proposal|会议|项目|日程/.test(s))return "会议与项目";
+  if(/customer|client|order|delivery|purchase|reservation|refund|bill|invoice|repair|restaurant|hotel|store|service|客户|订单|服务/.test(s))return "客户与服务";
+  if(/sale|discount|promotion|advertis|marketing|opening|festival|event|exhibit|concert|活动|促销|广告/.test(s))return "活动与营销";
+  if(/warehouse|equipment|maintenance|renovation|construction|factory|production|safety|building|facility|设施|生产|安全/.test(s))return "运营与设施";
+  if(/bank|billing|account|payment|budget|insurance|contract|tax |finance|银行|财务|保险/.test(s))return "财务与行政";
+  if(/product|company|business|market|industry|research|technology|software|产品|公司|行业/.test(s))return "产品与业务";
+  return "一般职场信息";
+}
+
+function inferMaterialType(part,group,items){
+  const material=textOf(group.transcript,group.passage,group.topic,group.keywords);
+  const questions=textOf(...items.map(item=>item.question));
+  const hasGraphic=/look at|graphic|图表|信息联动/.test(questions+" "+textOf(...items.map(item=>item.question_type)));
+  if(part===3){
+    if(hasGraphic)return "图表会话";
+    if(/three speakers|conversation with three|三人/.test(material))return "三人职场会话";
+    if(/customer service|may i help|reservation|order|refund|bill|delivery|store|restaurant|hotel/.test(material))return "客户服务会话";
+    return "职场协作会话";
+  }
+  if(part===4){
+    if(hasGraphic)return "图表独白";
+    if(/voice ?mail|telephone message|this is .{0,45} calling|please call (me )?back|message\./.test(material))return "电话留言";
+    if(/look no further|special offer|discount|sale|promotion|advertis|call us today|visit (our|www)/.test(material))return "广告与推广";
+    if(/attention|announcement|welcome to|please be advised|reminder|notice|instructions?/.test(material))return "公告与说明";
+    if(/news|reporting|broadcast|radio|weather|traffic report/.test(material))return "新闻与报告";
+    if(/meeting|presentation|workshop|training|conference|briefing/.test(material))return "会议与演示";
+    return "职场独白";
+  }
+  const firstId=Math.min(...items.map(item=>Number(item.id??item.item_id)).filter(Number.isFinite));
+  const multiple=part===7&&(firstId>=176||asArray(group.picture_paths).length>1);
+  let documentType="一般商务文本";
+  if(/(^|\n)\s*(to|from|subject|date|re):|dear\s|sincerely|regards/.test(material))documentType="邮件与信函";
+  else if(/\b\d{1,2}:\d{2}\s*(a\.?m\.?|p\.?m\.?)|text message|chat|instant message/.test(material))documentType="短信与聊天";
+  else if(/invoice|application form|order form|schedule|timetable|receipt|agenda/.test(material))documentType="表格与日程";
+  else if(/important information|notice|announcement|policy|closed|closure|please be advised/.test(material))documentType="公告与通知";
+  else if(/https?:|www\.|special offer|discount|sale|shop online|advertis/.test(material))documentType="广告与网页";
+  else if(/news|article|magazine|newspaper|reported|press release/.test(material))documentType="文章与新闻";
+  return multiple?`多文档组合 · ${documentType}`:documentType;
+}
+
+function materialPriority(part,items,group){
+  const types=items.map(item=>item.question_type||"");
+  const questions=textOf(...items.map(item=>item.question),...items.map(item=>item.answer_explain));
+  const materialType=inferMaterialType(part,group,items);
+  const topicCategory=inferTopicCategory(group);
+  const commonTopic=topicCategory!=="一般职场信息";
+  const diversity=new Set(types).size;
+  const has=(regexp)=>types.some(type=>regexp.test(type));
+  const raw=(regexp)=>regexp.test(questions);
+  let score=42;
+  const signals=[];
+
+  if(part===3||part===4){
+    const commonMaterial=part===3||materialType!=="职场独白";
+    if(commonTopic)score+=part===3?7:5;
+    if(part===4&&commonMaterial)score+=8;
+    const graphic=/图表/.test(materialType)||has(/图表|信息联动/);
+    const utteranceIntent=raw(/mean when|mean by|why does (the )?(man|woman|speaker) say|imply when|what does .* imply/);
+    const inferenceOrAction=has(/推断|隐含/)||raw(/most likely (do|happen)|do next|problem|offer to do|ask .* to do|suggest|recommend/);
+    const mainPurpose=has(/主旨|目的|场景/);
+    if(graphic){score+=26;signals.push("图表联动")}
+    if(utteranceIntent){score+=26;signals.push("话语意图")}
+    if(inferenceOrAction){score+=12;signals.push("推断与后续行动")}
+    if(mainPurpose){score+=6;signals.push("主旨/目的")}
+    if([graphic,utteranceIntent,inferenceOrAction].filter(Boolean).length>=2)score+=6;
+    if(diversity>=3)score+=4;
+    if(part===3&&materialType==="三人职场会话")score+=5;
+  }else if(part===6){
+    if(commonTopic)score+=5;
+    if(!/一般商务文本/.test(materialType))score+=6;
+    const sentence=has(/整句/);
+    const cohesionCount=types.filter(type=>/逻辑|指代|时态/.test(type)).length;
+    if(sentence){score+=17;signals.push("整句填入")}
+    if(cohesionCount){score+=Math.min(16,cohesionCount*8);signals.push("跨句衔接")}
+    if(diversity>=3)score+=5;
+  }else if(part===7){
+    if(commonTopic)score+=4;
+    if(!/一般商务文本/.test(materialType))score+=5;
+    const multiple=/多文档/.test(materialType);
+    const insertion=has(/句子插入/)|raw(/positions marked|best belong/);
+    const inference=has(/推断|隐含|话语含义/);
+    const negative=has(/否定事实/);
+    const mainPurpose=has(/主旨|目的|场景/);
+    if(multiple){score+=24;signals.push("跨文档连接")}
+    if(insertion){score+=24;signals.push("句子插入")}
+    if(inference){score+=10;signals.push("推断/话语含义")}
+    if(negative){score+=6;signals.push("全篇核对")}
+    if(mainPurpose)score+=4;
+    if(diversity>=3)score+=5;
+  }
+
+  score=Math.max(20,Math.min(97,score));
+  const level=score>=80?"P1":score>=60?"P2":"P3";
+  const typeSummary=[...new Set(types)].slice(0,4).join("、")||"综合理解";
+  const reason=level==="P1"
+    ? `${materialType}，主题为“${topicCategory}”；整组覆盖${typeSummary}${signals.length?`，并包含${signals.join("、")}`:""}，综合训练价值高。`
+    : level==="P2"
+      ? `${materialType}，主题为“${topicCategory}”；整组覆盖${typeSummary}，适合巩固常见材料结构与综合理解。`
+      : `${materialType}，主题为“${topicCategory}”；整组以明示信息或局部判断为主，适合基础查漏。`;
+  return {
+    level,score,label:`${materialType} · ${topicCategory}`,reason,
+    focus_tags:[materialType,topicCategory,...signals,...new Set(types)].slice(0,6),
+    material_type:materialType,topic_category:topicCategory,question_types:[...new Set(types)],
+    basis:"official_ability+prep_consensus",scope:"material",model:PRIORITY_MODEL
+  };
+}
+
 function normalizeExistingPriority(value,part,type){
   if(!value||!["P1","P2","P3"].includes(value.level)||!Number.isFinite(value.score))return undefined;
   return {...value,label:value.label||type,focus_tags:value.focus_tags||value.tags||[type],scope:"item",part,model:value.model||"toeic_priority_v1"};
@@ -271,7 +405,7 @@ function buildBank(source){
     for(const group of groups){
       const originalItems=group.items?.length?group.items:[group];
       const unitId=slugPart(part.part,group.id);
-      const items=originalItems.map(item=>{
+      let items=originalItems.map(item=>{
         const questionType=inferType(part.part,item,group);
         const priority=normalizeExistingPriority(item.priority,part.part,questionType)||genericPriority(part.part,questionType,item,group);
         const normalized={...copyItemFields(item),item_id:item.id,question_type:questionType,priority};
@@ -283,12 +417,13 @@ function buildBank(source){
       });
       const context=buildContext(source,group);
       missingAssets+=Object.values(context).flatMap(asArray).filter(x=>x&&typeof x==="object"&&"exists" in x&&!x.exists).length;
-      const unitPriority=aggregatePriority(items,group.priority);
+      const unitPriority=MATERIAL_PRIORITY_PARTS.has(part.part)?materialPriority(part.part,items,group):aggregatePriority(items,group.priority);
+      if(MATERIAL_PRIORITY_PARTS.has(part.part))items=items.map(item=>({...item,priority:{...unitPriority}}));
       const detail={
         schema_version:SCHEMA_VERSION,bank_id:source.bank_id,unit_id:unitId,part:part.part,
         source_group_id:group.id,mode:items.length===1?"single":"official_set",
         title:group.set_title||group.topic||`Part ${part.part} · ${group.id}`,
-        topic:group.topic,keywords:group.keywords,difficulty:group.difficulty,
+        topic:group.topic,topic_category:unitPriority.topic_category,material_type:unitPriority.material_type,keywords:group.keywords,difficulty:group.difficulty,
         priority:unitPriority,context,items
       };
       const detailRel=`banks/${source.bank_id}/units/${unitId}.json`;
@@ -296,7 +431,7 @@ function buildBank(source){
       const assetRefs=Object.values(context).flatMap(asArray).filter(x=>x&&typeof x==="object"&&x.asset_key).map(x=>x.asset_key);
       unitRows.push({
         unit_id:unitId,part:part.part,source_group_id:group.id,mode:detail.mode,title:detail.title,
-        item_ids:items.map(x=>x.item_id),question_count:items.length,topic:group.topic,difficulty:group.difficulty,
+        item_ids:items.map(x=>x.item_id),question_count:items.length,topic:group.topic,topic_category:unitPriority.topic_category,material_type:unitPriority.material_type,difficulty:group.difficulty,
         item_refs:items.map(({item_id,item_key,question_type,priority})=>({item_id,item_key,question_type,priority})),
         priority:unitPriority,detail_path:detailRel,asset_refs:assetRefs
       });
@@ -314,7 +449,7 @@ function buildBank(source){
     source:{collection:"official",volume:source.volume,test:source.test,file:path.basename(source.source),enriched:source.enriched},
     name:raw.name||`TOEIC Official ${source.volume} Test ${source.test}`,
     author:raw.author,description:raw.description,question_count:totalItems,unit_count:unitRows.length,
-    priority_methodology:raw.priority_methodology||{version:PRIORITY_MODEL,disclaimer:"P1/P2/P3为训练优先级，并非ETS官方频率或难度等级。"},
+    priority_methodology:PRIORITY_METHODOLOGY,
     quality:qualityOf(source,raw),parts:partStats,units:unitRows
   };
   const indexRel=`banks/${source.bank_id}/index.json`;
@@ -341,6 +476,10 @@ function validateOutput(results){
       for(let i=0;i<detail.items.length;i++)if(unit.item_refs[i].item_key!==detail.items[i].item_key||unit.item_refs[i].priority?.level!==detail.items[i].priority?.level)fail(`[${index.bank_id}] item_refs与detail不一致：${unit.unit_id}`);
       if([3,4,6,7].includes(unit.part)&&detail.items.length<2)fail(`[${index.bank_id}] Part ${unit.part} 共享组被拆散：${unit.unit_id}`);
       if([1,2,5].includes(unit.part)&&detail.items.length!==1)fail(`[${index.bank_id}] Part ${unit.part} 应为单题unit：${unit.unit_id}`);
+      if(MATERIAL_PRIORITY_PARTS.has(unit.part)){
+        if(detail.priority?.scope!=="material"||!detail.material_type||!detail.topic_category)fail(`[${index.bank_id}] Part ${unit.part} 缺少材料级优先级：${unit.unit_id}`);
+        if(detail.items.some(item=>item.priority?.level!==detail.priority.level||item.priority?.score!==detail.priority.score||item.priority?.scope!=="material"))fail(`[${index.bank_id}] Part ${unit.part} 组内优先级不一致：${unit.unit_id}`);
+      }
       for(const item of detail.items){
         if(!item.priority?.level||!item.question_type)fail(`[${index.bank_id}] 未完成题型/优先级：${item.item_key}`);
         if(globalKeys.has(item.item_key))fail(`全局题键重复：${item.item_key}`);
@@ -353,17 +492,20 @@ function validateOutput(results){
   if(questions!==4800||globalKeys.size!==4800)fail(`全局题目校验失败：${questions}/${globalKeys.size}`);
   const priority_distribution={P1:0,P2:0,P3:0};
   const priority_by_part=Object.fromEntries(Array.from({length:7},(_,i)=>[i+1,{P1:0,P2:0,P3:0}]));
+  const material_priority_by_part=Object.fromEntries([...MATERIAL_PRIORITY_PARTS].map(part=>[part,{P1:0,P2:0,P3:0}]));
   for(const {index} of results)for(const unit of index.units){
     const detail=readJson(path.join(outputRoot,...unit.detail_path.split("/")));
     for(const item of detail.items){priority_distribution[item.priority.level]++;priority_by_part[unit.part][item.priority.level]++}
+    if(MATERIAL_PRIORITY_PARTS.has(unit.part))material_priority_by_part[unit.part][detail.priority.level]++;
   }
-  return {banks:results.length,questions,units,unique_item_keys:globalKeys.size,missing_media_references:results.reduce((n,x)=>n+x.missingAssets,0),priority_distribution,priority_by_part};
+  return {banks:results.length,questions,units,unique_item_keys:globalKeys.size,missing_media_references:results.reduce((n,x)=>n+x.missingAssets,0),priority_distribution,priority_by_part,material_priority_by_part};
 }
 
 function warnPriorityDistribution(validation){
   const warnings=[];
   for(const [part,counts] of Object.entries(validation.priority_by_part)){
-    const total=counts.P1+counts.P2+counts.P3,p1=counts.P1/total;
+    const effective=validation.material_priority_by_part[part]||counts;
+    const total=effective.P1+effective.P2+effective.P3,p1=effective.P1/total;
     if(p1>.6)warnings.push(`Part ${part} 的 P1 占比 ${(p1*100).toFixed(1)}%，请抽查分类规则`);
     if(counts.P1===0)warnings.push(`Part ${part} 没有 P1 题，请确认源数据能否识别重点题型`);
   }
@@ -378,6 +520,7 @@ const validation=validateOutput(results);
 const priorityWarnings=warnPriorityDistribution(validation);
 const catalog={
   schema_version:SCHEMA_VERSION,content_version:new Date().toISOString(),priority_model:PRIORITY_MODEL,
+  priority_methodology:PRIORITY_METHODOLOGY,
   asset_policy:{copied:false,path_semantics:"每个资源的 path 相对其原始 bank 目录；asset_key 为 bank_id/path。运行时需配置媒体基址。"},
   totals:validation,
   warnings:[...priorityWarnings,...(results.some(result=>result.index.quality.missing_graphic_groups)?["Official 5–9 的部分 Part 3/4 图表题源目录未提供配套图表；网页保留题目与音频，并在题库质量字段中标记缺失。"]:[])],

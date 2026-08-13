@@ -1,7 +1,29 @@
 {
   "schema_version": "3.0",
-  "content_version": "2026-08-13T06:17:46.034Z",
-  "priority_model": "toeic_priority_v2",
+  "content_version": "2026-08-13T08:51:04.225Z",
+  "priority_model": "toeic_priority_v3_material",
+  "priority_methodology": {
+    "version": "toeic_priority_v3_material",
+    "disclaimer": "P1/P2/P3 是训练优先级，不是 ETS 公布的固定出题频率或官方难度等级。Part 3、4、6、7 按整段会话、独白或文章综合分级，组内题目共享同一优先级。",
+    "official_basis": [
+      "TOEIC L&R 现行格式中的图表联动、整句填空、句子插入和单/多文档形式",
+      "TOEIC Abilities Measured：主旨与目的、细节、隐含义、跨句和跨文本信息连接"
+    ],
+    "analysis_basis": "材料类型与常见职场主题来自官方样题形式及公开备考资料的共同分析，只用于训练排序。",
+    "sources": [
+      "https://www.iibc-global.org/english/toeic/test/lr/about/format.html",
+      "https://www.iibc-global.org/english/toeic/test/lr/guide05/guide05_01.html",
+      "https://www.iibc-global.org/english/toeic/test/lr/guide05/guide05_01/score_descriptor.html",
+      "https://www.iibc-global.org/toeic/support/prep/method_03.html",
+      "https://www.ets.org/content/dam/ets-org/pdfs/toeic/toeic-listening-reading-score-descriptors.pdf"
+    ],
+    "public_analysis_sources": [
+      "https://academy.kirihara.co.jp/blog/toeic/toeic-part3/",
+      "https://academy.kirihara.co.jp/blog/toeic/toeic-part4-talk-guide/",
+      "https://www.mytoeiccoach.com/toeic-part6-guide",
+      "https://studying.jp/toeic/about-more/part7-2.html"
+    ]
+  },
   "asset_policy": {
     "copied": false,
     "path_semantics": "每个资源的 path 相对其原始 bank 目录；asset_key 为 bank_id/path。运行时需配置媒体基址。"
@@ -13,9 +35,9 @@
     "unique_item_keys": 4800,
     "missing_media_references": 0,
     "priority_distribution": {
-      "P1": 1919,
-      "P2": 2116,
-      "P3": 765
+      "P1": 2356,
+      "P2": 1777,
+      "P3": 667
     },
     "priority_by_part": {
       "1": {
@@ -29,14 +51,14 @@
         "P3": 123
       },
       "3": {
-        "P1": 260,
-        "P2": 460,
-        "P3": 216
+        "P1": 312,
+        "P2": 450,
+        "P3": 174
       },
       "4": {
-        "P1": 172,
-        "P2": 370,
-        "P3": 178
+        "P1": 357,
+        "P2": 189,
+        "P3": 174
       },
       "5": {
         "P1": 478,
@@ -44,14 +66,36 @@
         "P3": 5
       },
       "6": {
-        "P1": 142,
-        "P2": 239,
-        "P3": 3
+        "P1": 108,
+        "P2": 256,
+        "P3": 20
       },
       "7": {
-        "P1": 482,
-        "P2": 576,
-        "P3": 238
+        "P1": 716,
+        "P2": 411,
+        "P3": 169
+      }
+    },
+    "material_priority_by_part": {
+      "3": {
+        "P1": 104,
+        "P2": 150,
+        "P3": 58
+      },
+      "4": {
+        "P1": 119,
+        "P2": 63,
+        "P3": 58
+      },
+      "6": {
+        "P1": 27,
+        "P2": 64,
+        "P3": 5
+      },
+      "7": {
+        "P1": 153,
+        "P2": 134,
+        "P3": 73
       }
     }
   },

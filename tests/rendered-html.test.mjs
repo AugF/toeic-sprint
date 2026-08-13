@@ -17,16 +17,22 @@ test("publishes 24 banks and 4,800 globally unique item references",async()=>{
   assert.ok(catalog.warnings.some(value=>value.includes("图表")));
   assert.ok(["P1","P2","P3"].every(level=>catalog.totals.priority_distribution[level]>0));
   const keys=new Set();
+  let units=0,materialUnits=0,singleUnits=0;
   for(const bank of catalog.banks){
     const index=JSON.parse(await read(`public/data/${bank.index_path}`));
     assert.equal(index.question_count,200);
     assert.equal(index.unit_count,103);
     for(const unit of index.units){
+      units++;
+      if([3,4,6,7].includes(unit.part))materialUnits++;else singleUnits++;
       assert.equal(unit.item_refs.length,unit.question_count);
       for(const ref of unit.item_refs){assert.ok(["P1","P2","P3"].includes(ref.priority.level));keys.add(ref.item_key)}
     }
   }
   assert.equal(keys.size,4800);
+  assert.equal(units,2472);
+  assert.equal(materialUnits,1008);
+  assert.equal(singleUnits,1464);
 });
 
 test("precomputes Chinese study aids, structured analysis and knowledge for every question",async()=>{
@@ -63,14 +69,34 @@ test("keeps shared official material in canonical details while Part 1, 2 and 5 
   assert.ok(part4.context.audio_path||part4.context.question_audio_path);
 });
 
+test("uses one material-level priority for every Part 3, 4, 6 and 7 group",async()=>{
+  const catalog=JSON.parse(await read("public/data/catalog.json"));
+  assert.match(catalog.priority_methodology.disclaimer,/按整段会话、独白或文章综合分级/);
+  for(const bank of catalog.banks){
+    const index=JSON.parse(await read(`public/data/${bank.index_path}`));
+    for(const unit of index.units.filter(unit=>[3,4,6,7].includes(unit.part))){
+      const detail=JSON.parse(await read(`public/data/${unit.detail_path}`));
+      assert.equal(detail.priority.scope,"material",`${bank.bank_id}/${unit.unit_id} must use material priority`);
+      assert.ok(detail.material_type);
+      assert.ok(detail.topic_category);
+      assert.ok(detail.items.every(item=>item.priority.level===detail.priority.level&&item.priority.score===detail.priority.score&&item.priority.scope==="material"));
+    }
+  }
+});
+
 test("renders multi-bank priority controls and lazy detail loading",async()=>{
   const [page,css,pagesEntry]=await Promise.all([read("app/page.tsx"),read("app/priority.css"),read("static-pages/main.tsx")]);
   assert.match(page,/24 套官方题库/);
-  assert.match(page,/优先级单题刷/);
+  assert.match(page,/Part \{part\} · \{PART_META\[part\]\.focus\}/);
+  assert.match(page,/材料 \/ 单题优先刷/);
   assert.match(page,/fetchJson<UnitDetail>/);
   assert.match(page,/context\.audio_path \|\| context\.question_audio_path/);
+  assert.match(page,/useState\(true\).*showGroup|showGroup, setShowGroup\] = useState\(true\)/s);
   assert.match(page,/item_key/);
-  assert.match(page,/展开同组另外/);
+  assert.match(page,/MATERIAL_PARTS\.has\(unit\.part\)/);
+  assert.match(page,/scope: "material" as const/);
+  assert.match(page,/ref\.item_keys\.every/);
+  assert.match(page,/展开本/);
   assert.match(css,/\.globalPractice/);
   assert.match(css,/\.bankSelect/);
   assert.match(pagesEntry,/priority\.css/);
