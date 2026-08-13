@@ -1,0 +1,280 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-9-test-1",
+  "unit_id": "p7-164-167",
+  "part": 7,
+  "source_group_id": "164-167",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 76,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "细节题",
+      "明示定位",
+      "否定事实题",
+      "语境推断",
+      "推断题"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q164-167.jpg",
+        "asset_key": "official-9-test-1/images/part7/q164-167.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "I was just forwarded a follow-up call from a customer in West\nMarie Truong (1:45 P.M.)\nFordham. He said his power went out a few hours ago. He made a\nservice request and was expecting a service crew earlier today. My\nrecords are incomplete for some reason. Do you have any similar\nreports in the dispatch record?\nBrian Eighmy (1:46 P.M.)\nWhat's the exact address?\nMarie Truong (1:47 P.M.)\n221 North James Street. The customer's name is Cameron Fellman.\nBrian Eighmy (1:52 P.M.)\nNothing came up. However, I did dispatch a truck to 652 North\nJames Street. It's probably unrelated\nMarie Truong (1:53 P.M.)\nThat's only a few blocks away. Could we have them stop by\nMr. Fellman's house after they are done?\nBrian Eighmy (1:54 P.M.)\nSure. Does he have any pets?\nMarie Truong (1:55 P.M.)\nMr. Fellman? Pets are not indicated in the report.\nBrian Eighmy (1:56 P.M.)\nOK, I'll need you to confirm that before we send the truck over.\nThe service team may need to go into the backyard.\nMarie Truong (1:57 P.M.)\nTIl ask Mr. Fellman and call you with details.",
+    "passage_translation": "中文辅助（离线预处理）：I was just forwarded a follow-up call from a customer（顾客） in West\nMarie Truong (1:45 P.M.)\nFordham.\nHe said his power went out a few hours ago.\nHe made a\nservice（服务） request and was expecting a service（服务） crew earlier today.\nMy\nrecords are incomplete for some reason.\nDo you have any similar\nreports in the dispatch record?\nBrian Eighmy (1:46 P.M.)\nWhat（什么）'s the exact address?\nMarie Truong (1:47 P.M.)\n221 North James Street.\nThe customer（顾客）'s name is Cameron Fellman.\nBrian Eighmy (1:52 P.M.)\nNothing came up.\nHowever, I did dispatch a truck to 652 North\nJames Street.\nIt's probably（可能） unrelated\nMarie Truong (1:53 P.M.)\nThat's only a few blocks away.\nCould we have them stop by\nMr.\nFellman's house after they are done?\nBrian Eighmy (1:54 P.M.)\nSure.\nDoes he have any pets?\nMarie Truong (1:55 P.M.)\nMr.\nFellman?\nPets are not indicated in the report.\nBrian Eighmy (1:56 P.M.)\nOK, I'll need you to confirm that before we send the truck over.\nThe service（服务） team may need to go into the backyard.\nMarie Truong (1:57 P.M.)\nTIl ask Mr.\nFellman and call you with details.",
+    "content_translation": "中文辅助（离线预处理）：I was just forwarded a follow-up call from a customer（顾客） in West\nMarie Truong (1:45 P.M.)\nFordham.\nHe said his power went out a few hours ago.\nHe made a\nservice（服务） request and was expecting a service（服务） crew earlier today.\nMy\nrecords are incomplete for some reason.\nDo you have any similar\nreports in the dispatch record?\nBrian Eighmy (1:46 P.M.)\nWhat（什么）'s the exact address?\nMarie Truong (1:47 P.M.)\n221 North James Street.\nThe customer（顾客）'s name is Cameron Fellman.\nBrian Eighmy (1:52 P.M.)\nNothing came up.\nHowever, I did dispatch a truck to 652 North\nJames Street.\nIt's probably（可能） unrelated\nMarie Truong (1:53 P.M.)\nThat's only a few blocks away.\nCould we have them stop by\nMr.\nFellman's house after they are done?\nBrian Eighmy (1:54 P.M.)\nSure.\nDoes he have any pets?\nMarie Truong (1:55 P.M.)\nMr.\nFellman?\nPets are not indicated in the report.\nBrian Eighmy (1:56 P.M.)\nOK, I'll need you to confirm that before we send the truck over.\nThe service（服务） team may need to go into the backyard.\nMarie Truong (1:57 P.M.)\nTIl ask Mr.\nFellman and call you with details."
+  },
+  "items": [
+    {
+      "choices": [
+        "To confirm a customer's address",
+        "To follow up on a request",
+        "To ask how widespread a power outage was",
+        "To question a recent decision"
+      ],
+      "answer": "B",
+      "question": "Why did Ms. Truong contact Mr. Eighmy?",
+      "answer_explain": "原文依据：篇章中可定位到“service request and was expecting a service crew earlier today.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（To follow up on a request）。",
+      "question_translation": "中文辅助（离线预处理）：Why（为什么） did Ms.\nTruong contact Mr.\nEighmy?",
+      "choice_translations": [
+        "A：To confirm a customer（顾客）'s address",
+        "B：To follow up on a request",
+        "C：To ask how（如何） widespread a power outage was",
+        "D：To question a recent decision"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 2 段：Marie Truong (1:45 P.M.)",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 2 段：Marie Truong (1:45 P.M.)",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“service request and was expecting a service crew earlier today.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（To follow up on a request）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "follow",
+            "meaning": "本题重点词；结合正确选项理解：To follow up on a request"
+          },
+          {
+            "term": "request",
+            "meaning": "本题重点词；结合正确选项理解：To follow up on a request"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To follow up on a request",
+            "meaning": "正确选项中的重点搭配：To follow up on a request"
+          }
+        ]
+      },
+      "item_id": 164,
+      "priority": {
+        "level": "P3",
+        "score": 42,
+        "label": "细节题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节题",
+          "明示定位"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-9-test-1/p7-164-167/164"
+    },
+    {
+      "choices": [
+        "He did not find a dispatch report",
+        "He could not locate the service crew.",
+        "He could not open a document.",
+        "He did not determine the cause of a"
+      ],
+      "answer": "A",
+      "question": "At 1:52 P.M., what does Mr. Eighmy mean when he writes, \"Nothing came up\"?",
+      "answer_explain": "原文依据：篇章中可定位到“However, I did dispatch a truck to 652 North”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（He did not find a dispatch report）。",
+      "question_translation": "中文辅助（离线预处理）：At 1:52 P.M., what（什么） does Mr.\nEighmy mean when（何时） he writes, \"Nothing came up\"?",
+      "choice_translations": [
+        "A：He did not find a dispatch report",
+        "B：He could not locate the service（服务） crew.",
+        "C：He could not open a document.",
+        "D：He did not determine the cause of a"
+      ],
+      "question_type": "否定事实题",
+      "evidence": "参考原文第 7 段：Brian Eighmy (1:46 P.M.)",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 7 段：Brian Eighmy (1:46 P.M.)",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“However, I did dispatch a truck to 652 North”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（He did not find a dispatch report）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "find",
+            "meaning": "本题重点词；结合正确选项理解：He did not find a dispatch report"
+          },
+          {
+            "term": "dispatch",
+            "meaning": "本题重点词；结合正确选项理解：He did not find a dispatch report"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "He did not find a dispatch report",
+            "meaning": "正确选项中的重点搭配：He did not find a dispatch report"
+          }
+        ]
+      },
+      "item_id": 165,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "否定事实题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "否定事实题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-9-test-1/p7-164-167/165"
+    },
+    {
+      "choices": [
+        "If there have been similar issues in the area",
+        "If all necessary paperwork is complete",
+        "If the account in question has been paid in full",
+        "If there are animals in a customer's"
+      ],
+      "answer": "D",
+      "question": "What information does Ms. Truong need to find out?",
+      "answer_explain": "原文依据：篇章中可定位到“Pets are not indicated in the report.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（If there are animals in a customer's）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） information（信息） does Ms.\nTruong need to find out?",
+      "choice_translations": [
+        "A：If there have been similar issues in the area",
+        "B：If all necessary paperwork is complete",
+        "C：If the account in question has been paid in full",
+        "D：If there are animals in a customer（顾客）'s"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 2 段：Marie Truong (1:45 P.M.)",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 2 段：Marie Truong (1:45 P.M.)",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Pets are not indicated in the report.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（If there are animals in a customer's）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "animals",
+            "meaning": "本题重点词；结合正确选项理解：If there are animals in a customer（顾客）'s"
+          },
+          {
+            "term": "customer's",
+            "meaning": "本题重点词；结合正确选项理解：If there are animals in a customer（顾客）'s"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "If there are animals in a customer's",
+            "meaning": "正确选项中的重点搭配：If there are animals in a customer（顾客）'s"
+          }
+        ]
+      },
+      "item_id": 166,
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-9-test-1/p7-164-167/166"
+    },
+    {
+      "choices": [
+        "Send an e-mail to Mr. Eighmy",
+        "Check the service report",
+        "Call Mr. Fellman",
+        "Transfer a payment"
+      ],
+      "answer": "C",
+      "question": "What is Ms. Truong most likely going to do next?",
+      "answer_explain": "原文依据：篇章中可定位到“Fellman and call you with details.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Call Mr. Fellman）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is Ms.\nTruong most likely（最可能） going to do next?",
+      "choice_translations": [
+        "A：Send an e-mail to Mr.\nEighmy",
+        "B：Check the service（服务） report",
+        "C：Call Mr.\nFellman",
+        "D：Transfer a payment"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 2 段：Marie Truong (1:45 P.M.)",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 2 段：Marie Truong (1:45 P.M.)",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Fellman and call you with details.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Call Mr. Fellman）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "call",
+            "meaning": "本题重点词；结合正确选项理解：Call Mr.\nFellman"
+          },
+          {
+            "term": "fellman",
+            "meaning": "本题重点词；结合正确选项理解：Call Mr.\nFellman"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Call Mr. Fellman",
+            "meaning": "正确选项中的重点搭配：Call Mr.\nFellman"
+          }
+        ]
+      },
+      "item_id": 167,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "推断题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-9-test-1/p7-164-167/167"
+    }
+  ]
+}

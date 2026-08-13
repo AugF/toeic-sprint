@@ -1,0 +1,284 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-8-test-1",
+  "unit_id": "p7-172-175",
+  "part": 7,
+  "source_group_id": "172-175",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 78,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "推断题",
+      "语境推断",
+      "主旨 / 目的题",
+      "细节题",
+      "多文本语境"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q172-175-p1.jpg",
+        "asset_key": "official-8-test-1/images/part7/q172-175-p1.jpg",
+        "exists": true
+      },
+      {
+        "path": "images/part7/q172-175-p2.jpg",
+        "asset_key": "official-8-test-1/images/part7/q172-175-p2.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "0 03\nKate Blum (9:17 A.M.)\nGood morning, everyone. I just wanted to do a quick check to make certain\neverything is in place for this Saturday's conference.\nKen Miyashiro (9:18 A.M.)\nWe're all set. And since the conference is sold out, we are going to broadcast it live\nover the Internet so that people can watch it on their devices.\nYuri Kang (9:19 A.M.)\nIs that completely arranged-camera operators, software, viewer access, and so\nKen Miyashiro (9:20 A.M.)\nYes. We've hired everyone, and we have the software, so we should be ready.\nPeople who want to watch the conference over the Internet still have to register\nand pay on our Web site, and then they'll get online access to see Tom Akana's\nkeynote address and all the scheduled conference sessions.\nGabriel Lontoc (9:22 A.M.)\nIt's wonderful that Tom Akana has agreed to speak. It will be interesting to hear\nhow he created Honalo Coffee Roasters and built it into a profitable company.\nKate Blum (9:23 A.M.)\nHe is pleased to do it. He thinks it could help others who want to start restaurants\nor food-related businesses. OK. I think that's it. Let's meet again on Wednesday\nmorning.",
+    "passage_translation": "中文辅助（离线预处理）：0 03\nKate Blum (9:17 A.M.)\nGood morning, everyone.\nI just wanted to do a quick check to make certain\neverything is in place for this Saturday's conference.\nKen Miyashiro (9:18 A.M.)\nWe're all set.\nAnd since the conference is sold out, we are going to broadcast it live\nover the Internet so that people can watch it on their devices.\nYuri Kang (9:19 A.M.)\nIs that completely arranged-camera operators, software, viewer access, and so\nKen Miyashiro (9:20 A.M.)\nYes.\nWe've hired everyone, and we have the software, so we should be ready.\nPeople who（谁） want to watch the conference over the Internet still have to register\nand pay on our Web site, and then they'll get online access to see Tom Akana's\nkeynote address and all the scheduled conference sessions.\nGabriel Lontoc (9:22 A.M.)\nIt's wonderful that Tom Akana has agreed to speak.\nIt will be interesting to hear\nhow（如何） he created Honalo Coffee Roasters and built it into a profitable company（公司）.\nKate Blum (9:23 A.M.)\nHe is pleased to do it.\nHe thinks it could help others who（谁） want to start restaurants\nor food-related businesses.\nOK.\nI think that's it.\nLet's meet again on Wednesday\nmorning.",
+    "content_translation": "中文辅助（离线预处理）：0 03\nKate Blum (9:17 A.M.)\nGood morning, everyone.\nI just wanted to do a quick check to make certain\neverything is in place for this Saturday's conference.\nKen Miyashiro (9:18 A.M.)\nWe're all set.\nAnd since the conference is sold out, we are going to broadcast it live\nover the Internet so that people can watch it on their devices.\nYuri Kang (9:19 A.M.)\nIs that completely arranged-camera operators, software, viewer access, and so\nKen Miyashiro (9:20 A.M.)\nYes.\nWe've hired everyone, and we have the software, so we should be ready.\nPeople who（谁） want to watch the conference over the Internet still have to register\nand pay on our Web site, and then they'll get online access to see Tom Akana's\nkeynote address and all the scheduled conference sessions.\nGabriel Lontoc (9:22 A.M.)\nIt's wonderful that Tom Akana has agreed to speak.\nIt will be interesting to hear\nhow（如何） he created Honalo Coffee Roasters and built it into a profitable company（公司）.\nKate Blum (9:23 A.M.)\nHe is pleased to do it.\nHe thinks it could help others who（谁） want to start restaurants\nor food-related businesses.\nOK.\nI think that's it.\nLet's meet again on Wednesday\nmorning."
+  },
+  "items": [
+    {
+      "choices": [
+        "Photographers",
+        "Software engineers",
+        "Technology job candidates",
+        "Food industry professionals"
+      ],
+      "answer": "D",
+      "question": "Who most likely is the intended audience for 175. At 9:23 A.M., what does Ms. Blum mean the conference?",
+      "answer_explain": "原文依据：篇章中可定位到“People who want to watch the conference over the Internet still have to register”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（Food industry professionals）。",
+      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the intended audience for 175.\nAt 9:23 A.M., what（什么） does Ms.\nBlum mean the conference?",
+      "choice_translations": [
+        "A：Photographers",
+        "B：Software engineers",
+        "C：Technology job candidates",
+        "D：Food industry professionals"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 4 段：everything is in place for this Saturday's conference.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "推断题",
+        "evidence": "参考原文第 4 段：everything is in place for this Saturday's conference.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“People who want to watch the conference over the Internet still have to register”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（Food industry professionals）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "food",
+            "meaning": "本题重点词；结合正确选项理解：Food industry professionals"
+          },
+          {
+            "term": "industry",
+            "meaning": "本题重点词；结合正确选项理解：Food industry professionals"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Food industry professionals",
+            "meaning": "正确选项中的重点搭配：Food industry professionals"
+          }
+        ]
+      },
+      "item_id": 172,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "推断题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-1/p7-172-175/172"
+    },
+    {
+      "choices": [
+        "In-person registration is sold out.",
+        "Online access is free.",
+        "The date was changed.",
+        "The keynote speaker canceled."
+      ],
+      "answer": "A",
+      "question": "What is mentioned about the conference?",
+      "answer_explain": "原文依据：篇章中可定位到“And since the conference is sold out, we are going to broadcast it live”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（In-person registration is sold out.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is mentioned about the conference?",
+      "choice_translations": [
+        "A：In-person registration is sold out.",
+        "B：Online access is free.",
+        "C：The date was changed.",
+        "D：The keynote speaker（说话者） canceled."
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 4 段：everything is in place for this Saturday's conference.",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 4 段：everything is in place for this Saturday's conference.",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“And since the conference is sold out, we are going to broadcast it live”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（In-person registration is sold out.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "in-person",
+            "meaning": "本题重点词；结合正确选项理解：In-person registration is sold out."
+          },
+          {
+            "term": "registration",
+            "meaning": "本题重点词；结合正确选项理解：In-person registration is sold out."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "In-person registration is sold out.",
+            "meaning": "正确选项中的重点搭配：In-person registration is sold out."
+          }
+        ]
+      },
+      "item_id": 173,
+      "priority": {
+        "level": "P2",
+        "score": 70,
+        "label": "主旨 / 目的题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "主旨 / 目的题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-1/p7-172-175/173"
+    },
+    {
+      "choices": [
+        "The broadcasting details",
+        "The registration forms",
+        "The Web site",
+        "The hiring process"
+      ],
+      "answer": "A",
+      "question": "What does Ms. Kang ask about?",
+      "answer_explain": "原文依据：篇章中可定位到“And since the conference is sold out, we are going to broadcast it live”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（The broadcasting details）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does Ms.\nKang ask about?",
+      "choice_translations": [
+        "A：The broadcasting details",
+        "B：The registration forms",
+        "C：The Web site",
+        "D：The hiring process"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 1 段：0 03",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 1 段：0 03",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“And since the conference is sold out, we are going to broadcast it live”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（The broadcasting details）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "broadcasting",
+            "meaning": "本题重点词；结合正确选项理解：The broadcasting details"
+          },
+          {
+            "term": "details",
+            "meaning": "本题重点词；结合正确选项理解：The broadcasting details"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "The broadcasting details",
+            "meaning": "正确选项中的重点搭配：The broadcasting details"
+          }
+        ]
+      },
+      "item_id": 174,
+      "priority": {
+        "level": "P2",
+        "score": 70,
+        "label": "主旨 / 目的题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "主旨 / 目的题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-1/p7-172-175/174"
+    },
+    {
+      "choices": [
+        "Mr. Akana is glad to go out for coffee.",
+        "Mr. Akana is happy to give a speech.",
+        "Mr. Akana is satisfied with the live-streaming arrangements.",
+        "Mr. Akana is delighted with the work arrangements."
+      ],
+      "answer": "B",
+      "question": "At 9:23 A.M., what does Ms. Blum mean when she writes, \"He is pleased to do it\"?",
+      "answer_explain": "原文依据：篇章中可定位到“It's wonderful that Tom Akana has agreed to speak.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Mr. Akana is happy to give a speech.）。",
+      "question_translation": "中文辅助（离线预处理）：At 9:23 A.M., what（什么） does Ms.\nBlum mean when（何时） she writes, \"He is pleased to do it\"?",
+      "choice_translations": [
+        "A：Mr.\nAkana is glad to go out for coffee.",
+        "B：Mr.\nAkana is happy to give a speech.",
+        "C：Mr.\nAkana is satisfied with the live-streaming arrangements.",
+        "D：Mr.\nAkana is delighted with the work（工作） arrangements."
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 19 段：He is pleased to do it. He thinks it could help others who want to start restaurants",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "细节题",
+        "evidence": "参考原文第 19 段：He is pleased to do it. He thinks it could help others who want to start restaurants",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“It's wonderful that Tom Akana has agreed to speak.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（Mr. Akana is happy to give a speech.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "akana",
+            "meaning": "本题重点词；结合正确选项理解：Mr.\nAkana is happy to give a speech."
+          },
+          {
+            "term": "happy",
+            "meaning": "本题重点词；结合正确选项理解：Mr.\nAkana is happy to give a speech."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Mr. Akana is happy to give a speech.",
+            "meaning": "正确选项中的重点搭配：Mr.\nAkana is happy to give a speech."
+          }
+        ]
+      },
+      "item_id": 175,
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节题",
+          "多文本语境"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-1/p7-172-175/175"
+    }
+  ]
+}

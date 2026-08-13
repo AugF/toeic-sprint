@@ -1,0 +1,207 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-8-test-2",
+  "unit_id": "p7-158-160",
+  "part": 7,
+  "source_group_id": "158-160",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 75,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "主旨 / 目的题",
+      "细节题",
+      "明示定位",
+      "词义 / 话语含义题",
+      "语境推断"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q158-160.jpg",
+        "asset_key": "official-8-test-2/images/part7/q158-160.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "From:\nMitch Dyson <mdyson@skelmonco.com.au>\nTo:\nAll Employees <employees@skelmonco.com.au>\nDate:\nMonday, 30 April\nSubject:\nInspection\nDear staff,\nThe Auditing Department has informed me that it will begin auditing the company's\ninventory of computer equipment on Monday, 7 May. Please leave all computers, laptops,\nand monitors on your desks so that the bar codes can be scanned by the auditors. The\ndepartment hopes to complete its inspection by Friday, 11 May.\nIf you are missing a piece of equipment or have disposed of it, please fill out a Missing\nEquipment form no later than Friday, 4 May. To obtain the form or for help in filling it\nout, please stop by my office any day this week before 4:00 P.M.\nThank you,\nMitch Dyson\nAdministrative Assistant\nSkelmon Corporation",
+    "passage_translation": "中文辅助（离线预处理）：From:\nMitch Dyson <mdyson@skelmonco.com.au>\nTo:\nAll Employees <employees@skelmonco.com.au>\nDate:\nMonday, 30 April\nSubject:\nInspection\nDear staff,\nThe Auditing Department has informed me that it will begin auditing the company（公司）'s\ninventory of computer equipment on Monday, 7 May.\nPlease（请） leave all computers, laptops,\nand monitors on your desks so that the bar codes can be scanned by the auditors.\nThe\ndepartment hopes to complete its inspection by Friday, 11 May.\nIf you are missing a piece of equipment or have disposed of it, please（请） fill out a Missing\nEquipment form no later than Friday, 4 May.\nTo obtain the form or for help in filling it\nout, please（请） stop by my office（办公室） any day this week before 4:00 P.M.\nThank（感谢） you,\nMitch Dyson\nAdministrative Assistant\nSkelmon Corporation",
+    "content_translation": "中文辅助（离线预处理）：From:\nMitch Dyson <mdyson@skelmonco.com.au>\nTo:\nAll Employees <employees@skelmonco.com.au>\nDate:\nMonday, 30 April\nSubject:\nInspection\nDear staff,\nThe Auditing Department has informed me that it will begin auditing the company（公司）'s\ninventory of computer equipment on Monday, 7 May.\nPlease（请） leave all computers, laptops,\nand monitors on your desks so that the bar codes can be scanned by the auditors.\nThe\ndepartment hopes to complete its inspection by Friday, 11 May.\nIf you are missing a piece of equipment or have disposed of it, please（请） fill out a Missing\nEquipment form no later than Friday, 4 May.\nTo obtain the form or for help in filling it\nout, please（请） stop by my office（办公室） any day this week before 4:00 P.M.\nThank（感谢） you,\nMitch Dyson\nAdministrative Assistant\nSkelmon Corporation"
+  },
+  "items": [
+    {
+      "choices": [
+        "To confirm that all computers are using updated software",
+        "To verify the accuracy of the company's inventory list",
+        "To determine whether there are any equipment safety violations",
+        "To check that employees are using"
+      ],
+      "answer": "B",
+      "question": "What is the purpose of the inspection?",
+      "answer_explain": "原文依据：篇章中可定位到“The Auditing Department has informed me that it will begin auditing the company's”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（To verify the accuracy of the company's inventory list）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is the purpose（目的） of the inspection?",
+      "choice_translations": [
+        "A：To confirm that all computers are using updated software",
+        "B：To verify the accuracy of the company（公司）'s inventory list",
+        "C：To determine whether there are any equipment safety violations",
+        "D：To check that employees are using"
+      ],
+      "question_type": "主旨 / 目的题",
+      "evidence": "参考原文第 8 段：Inspection",
+      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "主旨 / 目的题",
+        "evidence": "参考原文第 8 段：Inspection",
+        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“The Auditing Department has informed me that it will begin auditing the company's”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（To verify the accuracy of the company's inventory list）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "verify",
+            "meaning": "本题重点词；结合正确选项理解：To verify the accuracy of the company（公司）'s inventory list"
+          },
+          {
+            "term": "accuracy",
+            "meaning": "本题重点词；结合正确选项理解：To verify the accuracy of the company（公司）'s inventory list"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "To verify the accuracy of the company's inventory list",
+            "meaning": "正确选项中的重点搭配：To verify the accuracy of the company（公司）'s inventory list"
+          }
+        ]
+      },
+      "item_id": 158,
+      "priority": {
+        "level": "P2",
+        "score": 70,
+        "label": "主旨 / 目的题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "主旨 / 目的题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-2/p7-158-160/158"
+    },
+    {
+      "choices": [
+        "On April 30",
+        "On May 4",
+        "On May 7",
+        "On May 11"
+      ],
+      "answer": "D",
+      "question": "When is the inspection expected to end?",
+      "answer_explain": "原文依据：篇章中可定位到“department hopes to complete its inspection by Friday, 11 May.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（On May 11）。",
+      "question_translation": "中文辅助（离线预处理）：When（何时） is the inspection expected to end?",
+      "choice_translations": [
+        "A：On April 30",
+        "B：On May 4",
+        "C：On May 7",
+        "D：On May 11"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 8 段：Inspection",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "D",
+        "question_type": "细节题",
+        "evidence": "参考原文第 8 段：Inspection",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“department hopes to complete its inspection by Friday, 11 May.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（On May 11）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [],
+        "collocations": [
+          {
+            "phrase": "On May 11",
+            "meaning": "正确选项中的重点搭配：On May 11"
+          }
+        ]
+      },
+      "item_id": 159,
+      "priority": {
+        "level": "P3",
+        "score": 42,
+        "label": "细节题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节题",
+          "明示定位"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-2/p7-158-160/159"
+    },
+    {
+      "choices": [
+        "expand",
+        "integrate",
+        "complete",
+        "exchange"
+      ],
+      "answer": "C",
+      "question": "The phrase \"fill out\" in paragraph 2, line 1, is closest in meaning to",
+      "answer_explain": "原文依据：篇章中可定位到“department hopes to complete its inspection by Friday, 11 May.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（complete）。",
+      "question_translation": "中文辅助（离线预处理）：The phrase \"fill out\" in paragraph 2, line 1, is closest in meaning to",
+      "choice_translations": [
+        "A：expand",
+        "B：integrate",
+        "C：complete",
+        "D：exchange"
+      ],
+      "question_type": "词义 / 话语含义题",
+      "evidence": "参考原文第 1 段：From:",
+      "strategy": "本题属于词义 / 话语含义题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "词义 / 话语含义题",
+        "evidence": "参考原文第 1 段：From:",
+        "strategy": "本题属于词义 / 话语含义题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“department hopes to complete its inspection by Friday, 11 May.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（complete）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "complete",
+            "meaning": "本题重点词；结合正确选项理解：complete"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "complete",
+            "meaning": "正确选项中的重点搭配：complete"
+          }
+        ]
+      },
+      "item_id": 160,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "词义 / 话语含义题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "词义 / 话语含义题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-2/p7-158-160/160"
+    }
+  ]
+}

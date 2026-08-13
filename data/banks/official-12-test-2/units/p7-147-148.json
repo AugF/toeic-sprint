@@ -1,0 +1,154 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-12-test-2",
+  "unit_id": "p7-147-148",
+  "part": 7,
+  "source_group_id": "147-148",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 78,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "细节题",
+      "推断题",
+      "语境推断"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q147-148.jpg",
+        "asset_key": "official-12-test-2/images/part7/q147-148.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "Invoice Number 1502\nCranford Lee Design, Inc.\n21 Blossom Valley Road\nDURHAM\nDD8 6NJ\nCustomer: Raibin Paper Company\n9388 Victoria Street\nCHESTER\nCH1 2AF\nAttention: Nigel Anderson, Purchasing Manager\nDate:\n17 November\nItem\nQuantity Unit Price\nTotal Price\nComputer desk with bookshelf\n£800\n€ 4,000\nAdjustable-height office chair\n€250\n€ 1,250\nWooden bookcase\n€300\n600\nSubtotal\n€ 5,850\nDelivery and assembly\n150\nTotal\n€ 6,000\nPaid in full: 10 November, cheque number 1496\nNOTES: All products were assembled at the customer's office building.",
+    "passage_translation": "中文辅助（离线预处理）：Invoice Number 1502\nCranford Lee Design, Inc.\n21 Blossom Valley Road\nDURHAM\nDD8 6NJ\nCustomer（顾客）: Raibin Paper Company（公司）\n9388 Victoria Street\nCHESTER\nCH1 2AF\nAttention: Nigel Anderson, Purchasing Manager（经理）\nDate:\n17 November\nItem\nQuantity Unit Price\nTotal Price\nComputer desk with bookshelf\n£800\n€ 4,000\nAdjustable-height office（办公室） chair\n€250\n€ 1,250\nWooden bookcase\n€300\n600\nSubtotal\n€ 5,850\nDelivery and assembly\n150\nTotal\n€ 6,000\nPaid in full: 10 November, cheque number 1496\nNOTES: All products were assembled at the customer（顾客）'s office（办公室） building.",
+    "content_translation": "中文辅助（离线预处理）：Invoice Number 1502\nCranford Lee Design, Inc.\n21 Blossom Valley Road\nDURHAM\nDD8 6NJ\nCustomer（顾客）: Raibin Paper Company（公司）\n9388 Victoria Street\nCHESTER\nCH1 2AF\nAttention: Nigel Anderson, Purchasing Manager（经理）\nDate:\n17 November\nItem\nQuantity Unit Price\nTotal Price\nComputer desk with bookshelf\n£800\n€ 4,000\nAdjustable-height office（办公室） chair\n€250\n€ 1,250\nWooden bookcase\n€300\n600\nSubtotal\n€ 5,850\nDelivery and assembly\n150\nTotal\n€ 6,000\nPaid in full: 10 November, cheque number 1496\nNOTES: All products were assembled at the customer（顾客）'s office（办公室） building."
+  },
+  "items": [
+    {
+      "choices": [
+        "Furniture",
+        "Stationery",
+        "Computers",
+        "Books"
+      ],
+      "answer": "A",
+      "question": "What type of items did Mr. Anderson order?",
+      "answer_explain": "原文依据：篇章中可定位到“Attention: Nigel Anderson, Purchasing Manager”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Furniture）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） type of items did Mr.\nAnderson order（订单）?",
+      "choice_translations": [
+        "A：Furniture",
+        "B：Stationery",
+        "C：Computers",
+        "D：Books"
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 10 段：Attention: Nigel Anderson, Purchasing Manager",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 10 段：Attention: Nigel Anderson, Purchasing Manager",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Attention: Nigel Anderson, Purchasing Manager”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Furniture）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "furniture",
+            "meaning": "本题重点词；结合正确选项理解：Furniture"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Furniture",
+            "meaning": "正确选项中的重点搭配：Furniture"
+          }
+        ]
+      },
+      "item_id": 147,
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-12-test-2/p7-147-148/147"
+    },
+    {
+      "choices": [
+        "They were sold at a discounted price.",
+        "They were bought for use in an office.",
+        "They were delivered to 21 Blossom Valley Road.",
+        "They were paid for by credit card."
+      ],
+      "answer": "B",
+      "question": "What does the invoice suggest about the items?",
+      "answer_explain": "原文依据：篇章中可定位到“NOTES: All products were assembled at the customer's office building.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（They were bought for use in an office.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） does the invoice suggest（表明/建议） about the items?",
+      "choice_translations": [
+        "A：They were sold at a discounted price.",
+        "B：They were bought for use in an office（办公室）.",
+        "C：They were delivered to 21 Blossom Valley Road.",
+        "D：They were paid for by credit card."
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 1 段：Invoice Number 1502",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "推断题",
+        "evidence": "参考原文第 1 段：Invoice Number 1502",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“NOTES: All products were assembled at the customer's office building.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（They were bought for use in an office.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "they",
+            "meaning": "本题重点词；结合正确选项理解：They were bought for use in an office（办公室）."
+          },
+          {
+            "term": "were",
+            "meaning": "本题重点词；结合正确选项理解：They were bought for use in an office（办公室）."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "They were bought for use in an office.",
+            "meaning": "正确选项中的重点搭配：They were bought for use in an office（办公室）."
+          }
+        ]
+      },
+      "item_id": 148,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "推断题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-12-test-2/p7-147-148/148"
+    }
+  ]
+}

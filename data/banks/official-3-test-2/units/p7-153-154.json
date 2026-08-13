@@ -1,0 +1,154 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-3-test-2",
+  "unit_id": "p7-153-154",
+  "part": 7,
+  "source_group_id": "153-154",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P2",
+    "score": 78,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "推断题",
+      "语境推断",
+      "细节题"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q153-154.jpg",
+        "asset_key": "official-3-test-2/images/part7/q153-154.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "David Lee 10:01 A.M.\nHi Sylvia. Can you cover my 1:30 shift\nthis afternoon? I’m scheduled to work\nat the concession stand.\nSylvia Ritter 10:02 A.M.\nNot a problem. Are you feeling ill?\nDavid Lee 10:05 A.M.\nI’m fine. I’m on my way back from\nBoston, and my car broke down a\ncouple of hours ago. I’m at the garage\nright now. Thanks for covering for me!\nI will gladly return the favor.\nSylvia Ritter 10:08 A.M.\nSorry to hear about your car! So would\nyou be available to work my evening\nshift at the box office next Tuesday?\nPll be hosting a friend visiting from\nCanada that day.\nDavid Lee 10:09 A.M.\nI'd be happy to. I'l talk with you soon.\n/",
+    "passage_translation": "中文辅助（离线预处理）：David Lee 10:01 A.M.\nHi Sylvia.\nCan you cover my 1:30 shift\nthis afternoon?\nI’m scheduled to work（工作）\nat the concession stand.\nSylvia Ritter 10:02 A.M.\nNot a problem.\nAre you feeling ill?\nDavid Lee 10:05 A.M.\nI’m fine.\nI’m on my way back from\nBoston, and my car broke down a\ncouple of hours ago.\nI’m at the garage\nright now.\nThanks for covering for me!\nI will gladly return the favor.\nSylvia Ritter 10:08 A.M.\nSorry to hear about your car!\nSo would\nyou be available（可用的） to work（工作） my evening\nshift at the box office（办公室） next Tuesday?\nPll be hosting a friend visiting from\nCanada that day.\nDavid Lee 10:09 A.M.\nI'd be happy to.\nI'l talk with you soon.\n/",
+    "content_translation": "中文辅助（离线预处理）：David Lee 10:01 A.M.\nHi Sylvia.\nCan you cover my 1:30 shift\nthis afternoon?\nI’m scheduled to work（工作）\nat the concession stand.\nSylvia Ritter 10:02 A.M.\nNot a problem.\nAre you feeling ill?\nDavid Lee 10:05 A.M.\nI’m fine.\nI’m on my way back from\nBoston, and my car broke down a\ncouple of hours ago.\nI’m at the garage\nright now.\nThanks for covering for me!\nI will gladly return the favor.\nSylvia Ritter 10:08 A.M.\nSorry to hear about your car!\nSo would\nyou be available（可用的） to work（工作） my evening\nshift at the box office（办公室） next Tuesday?\nPll be hosting a friend visiting from\nCanada that day.\nDavid Lee 10:09 A.M.\nI'd be happy to.\nI'l talk with you soon.\n/"
+  },
+  "items": [
+    {
+      "choices": [
+        "Ata café",
+        "Ata theater",
+        "Ata travel agency",
+        "At an auto repair shop"
+      ],
+      "answer": "B",
+      "question": "Where do Mr. Lee and Ms. Ritter most likely work?",
+      "answer_explain": "原文依据：篇章中可定位到“Boston, and my car broke down a”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（Ata theater）。",
+      "question_translation": "中文辅助（离线预处理）：Where（哪里） do Mr.\nLee and Ms.\nRitter most likely（最可能） work（工作）?",
+      "choice_translations": [
+        "A：Ata café",
+        "B：Ata theater",
+        "C：Ata travel agency",
+        "D：At an auto repair shop"
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 5 段：Sylvia Ritter 10:02 A.M.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "B",
+        "question_type": "推断题",
+        "evidence": "参考原文第 5 段：Sylvia Ritter 10:02 A.M.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Boston, and my car broke down a”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：B（Ata theater）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "theater",
+            "meaning": "本题重点词；结合正确选项理解：Ata theater"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Ata theater",
+            "meaning": "正确选项中的重点搭配：Ata theater"
+          }
+        ]
+      },
+      "item_id": 153,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "推断题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-3-test-2/p7-153-154/153"
+    },
+    {
+      "choices": [
+        "He is able to take Ms. Ritter’s shift.",
+        "He will pay the repair bill.",
+        "He can meet with Ms. Ritter at 1:30.",
+        "He will approve a request for time off."
+      ],
+      "answer": "A",
+      "question": "At 10:09 A.m., what does Mr. Lee mean when he writes, “I'd be happy to”?",
+      "answer_explain": "原文依据：篇章中可定位到“shift at the box office next Tuesday?”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（He is able to take Ms. Ritter’s shift.）。",
+      "question_translation": "中文辅助（离线预处理）：At 10:09 A.m., what（什么） does Mr.\nLee mean when（何时） he writes, “I'd be happy to”?",
+      "choice_translations": [
+        "A：He is able to take Ms.\nRitter’s shift.",
+        "B：He will pay the repair bill.",
+        "C：He can meet with Ms.\nRitter at 1:30.",
+        "D：He will approve a request for time off."
+      ],
+      "question_type": "细节题",
+      "evidence": "参考原文第 20 段：I'd be happy to. I'l talk with you soon.",
+      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "细节题",
+        "evidence": "参考原文第 20 段：I'd be happy to. I'l talk with you soon.",
+        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“shift at the box office next Tuesday?”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（He is able to take Ms. Ritter’s shift.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "able",
+            "meaning": "本题重点词；结合正确选项理解：He is able to take Ms.\nRitter’s shift."
+          },
+          {
+            "term": "take",
+            "meaning": "本题重点词；结合正确选项理解：He is able to take Ms.\nRitter’s shift."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "He is able to take Ms. Ritter’s shift.",
+            "meaning": "正确选项中的重点搭配：He is able to take Ms.\nRitter’s shift."
+          }
+        ]
+      },
+      "item_id": 154,
+      "priority": {
+        "level": "P2",
+        "score": 61,
+        "label": "细节题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "细节题"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-3-test-2/p7-153-154/154"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": "3.0",
+  "bank_id": "official-8-test-2",
+  "unit_id": "p7-147-148",
+  "part": 7,
+  "source_group_id": "147-148",
+  "mode": "official_set",
+  "title": "商务阅读",
+  "topic": "商务阅读",
+  "keywords": "reading detail paraphrase inference",
+  "difficulty": "medium",
+  "priority": {
+    "level": "P1",
+    "score": 83,
+    "label": "共享材料综合训练",
+    "reason": "按本组题目的最高训练价值与整体平均价值综合排序，并保持官方共享材料完整。",
+    "focus_tags": [
+      "推断题",
+      "语境推断",
+      "否定事实题"
+    ],
+    "scope": "unit",
+    "model": "toeic_priority_v2"
+  },
+  "context": {
+    "picture_paths": [
+      {
+        "path": "images/part7/q147-148.jpg",
+        "asset_key": "official-8-test-2/images/part7/q147-148.jpg",
+        "exists": true
+      }
+    ],
+    "passage": "For Rent\nSpacious suite available starting next month in a small office building in Glasgow.\nApproximately 140 square metres, with ample storage space and several large\nwindows to brighten your work space. Employee break room with a kitchen shared by\nthree units on the same floor. Monthly rent covers electricity, water, Internet access,\nalarm system, and after-hours monitoring. Tenants are responsible for their own\ntelephone and janitorial services. Call 0141 496 0199 for more information.",
+    "passage_translation": "中文辅助（离线预处理）：For Rent\nSpacious suite available（可用的） starting next month in a small office（办公室） building in Glasgow.\nApproximately 140 square metres, with ample storage space and several large\nwindows to brighten your work（工作） space.\nEmployee（员工） break room with a kitchen shared by\nthree units on the same floor.\nMonthly rent covers electricity, water, Internet access,\nalarm system, and after-hours monitoring.\nTenants are responsible for their own\ntelephone and janitorial services.\nCall 0141 496 0199 for more information（信息）.",
+    "content_translation": "中文辅助（离线预处理）：For Rent\nSpacious suite available（可用的） starting next month in a small office（办公室） building in Glasgow.\nApproximately 140 square metres, with ample storage space and several large\nwindows to brighten your work（工作） space.\nEmployee（员工） break room with a kitchen shared by\nthree units on the same floor.\nMonthly rent covers electricity, water, Internet access,\nalarm system, and after-hours monitoring.\nTenants are responsible for their own\ntelephone and janitorial services.\nCall 0141 496 0199 for more information（信息）."
+  },
+  "items": [
+    {
+      "choices": [
+        "It can be rented immediately.",
+        "It includes a private kitchen.",
+        "It has a lot of natural light.",
+        "It is in a large office building."
+      ],
+      "answer": "C",
+      "question": "What is suggested about the suite?",
+      "answer_explain": "原文依据：篇章中可定位到“Spacious suite available starting next month in a small office building in Glasgow.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（It has a lot of natural light.）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is suggested about the suite?",
+      "choice_translations": [
+        "A：It can be rented immediately.",
+        "B：It includes a private kitchen.",
+        "C：It has a lot of natural light.",
+        "D：It is in a large office（办公室） building."
+      ],
+      "question_type": "推断题",
+      "evidence": "参考原文第 2 段：Spacious suite available starting next month in a small office building in Glasgow.",
+      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "C",
+        "question_type": "推断题",
+        "evidence": "参考原文第 2 段：Spacious suite available starting next month in a small office building in Glasgow.",
+        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Spacious suite available starting next month in a small office building in Glasgow.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（It has a lot of natural light.）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "natural",
+            "meaning": "本题重点词；结合正确选项理解：It has a lot of natural light."
+          },
+          {
+            "term": "light",
+            "meaning": "本题重点词；结合正确选项理解：It has a lot of natural light."
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "It has a lot of natural light.",
+            "meaning": "正确选项中的重点搭配：It has a lot of natural light."
+          }
+        ]
+      },
+      "item_id": 147,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "推断题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "推断题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-2/p7-147-148/147"
+    },
+    {
+      "choices": [
+        "Cleaning",
+        "Electricity",
+        "Security service",
+        "Internet service"
+      ],
+      "answer": "A",
+      "question": "What is NOT included in the suite's cost of rent?",
+      "answer_explain": "原文依据：篇章中可定位到“Monthly rent covers electricity, water, Internet access,”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Cleaning）。",
+      "question_translation": "中文辅助（离线预处理）：What（什么） is NOT included in the suite's cost of rent?",
+      "choice_translations": [
+        "A：Cleaning",
+        "B：Electricity",
+        "C：Security service（服务）",
+        "D：Internet service（服务）"
+      ],
+      "question_type": "否定事实题",
+      "evidence": "参考原文第 2 段：Spacious suite available starting next month in a small office building in Glasgow.",
+      "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+      "explanation_structured": {
+        "answer": "A",
+        "question_type": "否定事实题",
+        "evidence": "参考原文第 2 段：Spacious suite available starting next month in a small office building in Glasgow.",
+        "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
+        "analysis": "原文依据：篇章中可定位到“Monthly rent covers electricity, water, Internet access,”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Cleaning）。"
+      },
+      "knowledge_accumulation": {
+        "vocabulary": [
+          {
+            "term": "cleaning",
+            "meaning": "本题重点词；结合正确选项理解：Cleaning"
+          }
+        ],
+        "collocations": [
+          {
+            "phrase": "Cleaning",
+            "meaning": "正确选项中的重点搭配：Cleaning"
+          }
+        ]
+      },
+      "item_id": 148,
+      "priority": {
+        "level": "P1",
+        "score": 83,
+        "label": "否定事实题",
+        "reason": "该题按 TOEIC 题型复现价值、综合理解要求和迁移性自动分级。",
+        "focus_tags": [
+          "否定事实题",
+          "语境推断"
+        ],
+        "scope": "item",
+        "model": "toeic_priority_v2"
+      },
+      "item_key": "official-8-test-2/p7-147-148/148"
+    }
+  ]
+}
