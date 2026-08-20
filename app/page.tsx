@@ -587,6 +587,7 @@ export default function Home() {
           {detailError && <div className="empty compactEmpty"><b>题目载入失败</b><p>{detailError}</p></div>}
           {activeDetail && currentItem && <article className={MATERIAL_PARTS.has(current.part) ? "materialSplit" : ""}>
             <section className={MATERIAL_PARTS.has(current.part) ? "materialSource" : "materialSource singleSource"}>
+              {MATERIAL_PARTS.has(current.part) && <div className="materialBookmarkBar"><button className={isStarred ? "materialBookmarkButton active" : "materialBookmarkButton"} type="button" aria-pressed={isStarred} onClick={() => toggleStar(current)}>{isStarred ? `★ 已收藏本${current.part <= 4 ? "组" : "篇"}` : `☆ 收藏本${current.part <= 4 ? "组" : "篇"}`}</button></div>}
               {current.part <= 4 && audioSrc && <AudioBar audio={audio} src={audioSrc} canShowTranscript={Boolean(transcript)} showTranscript={showTranscript} toggleTranscript={() => setShowTranscript(value => !value)} showAnalysis={MATERIAL_PARTS.has(current.part) ? materialAllAnalysisOpen : showAnalysis} toggleAnalysis={MATERIAL_PARTS.has(current.part) ? toggleAllMaterialAnalysis : () => setShowAnalysis(value => !value)} analysisScope={MATERIAL_PARTS.has(current.part) ? "material" : "item"}/>}
               {current.part <= 4 && !audioSrc && <div className="materialActions"><button className="analysisBtn" onClick={MATERIAL_PARTS.has(current.part) ? toggleAllMaterialAnalysis : () => setShowAnalysis(value => !value)}>{MATERIAL_PARTS.has(current.part) ? (materialAllAnalysisOpen ? "隐藏全部解析" : "查看全部解析") : (showAnalysis ? "隐藏解析" : "查看解析")}</button>{transcript && <button className="translateBtn" onClick={() => setShowTranscript(value => !value)}>{showTranscript ? "隐藏原文" : "查看原文"}</button>}</div>}
               {current.part === 1 && <div className={showTranscript ? "part1Material withTranscript" : "part1Material"}>{pictures.length > 0 && <PictureGrid bankId={current.bank_id} pictures={pictures} part={current.part}/>} {showTranscript && transcript && <Transcript text={transcript} translation={transcriptTranslation} showTranslation={showTranslation} toggleTranslation={() => setShowTranslation(value => !value)}/>}</div>}
@@ -677,7 +678,47 @@ function AudioBar({audio, src, canShowTranscript, showTranscript, toggleTranscri
 }
 
 function PictureGrid({bankId, pictures, part, eager = true}: {bankId: string; pictures: MediaRef[]; part: number; eager?: boolean}) {
-  return <div className="images">{pictures.map((picture, index) => <img key={`${picture.path}-${index}`} src={assetUrl(bankId, picture)} alt={part === 1 ? "照片描述题图片" : "听力题配套图表"} loading={eager && index === 0 ? "eager" : "lazy"} decoding="async" fetchPriority={eager && index === 0 ? "high" : "auto"}/>)}</div>;
+  const [activeImage, setActiveImage] = useState<number | null>(null);
+  const [zoomed, setZoomed] = useState(false);
+  const imageAlt = part === 1 ? "照片描述题图片" : "听力题配套图表";
+
+  useEffect(() => {
+    if (activeImage === null) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setActiveImage(null);
+      if (event.key === "ArrowLeft" && pictures.length > 1) setActiveImage(value => value === null ? null : (value - 1 + pictures.length) % pictures.length);
+      if (event.key === "ArrowRight" && pictures.length > 1) setActiveImage(value => value === null ? null : (value + 1) % pictures.length);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [activeImage, pictures.length]);
+
+  const close = () => {
+    setActiveImage(null);
+    setZoomed(false);
+  };
+  const move = (offset: number) => {
+    setActiveImage(value => value === null ? null : (value + offset + pictures.length) % pictures.length);
+    setZoomed(false);
+  };
+
+  return <>
+    <div className="images">{pictures.map((picture, index) => <button className="zoomImageButton" type="button" key={`${picture.path}-${index}`} onClick={() => {setActiveImage(index); setZoomed(false);}} aria-label={`${imageAlt} ${index + 1}，点击放大`}><img src={assetUrl(bankId, picture)} alt={`${imageAlt} ${index + 1}`} loading={eager && index === 0 ? "eager" : "lazy"} decoding="async" fetchPriority={eager && index === 0 ? "high" : "auto"}/><span>点击放大</span></button>)}</div>
+    {activeImage !== null && <div className="imageLightbox" role="dialog" aria-modal="true" aria-label="题目图片放大预览" onMouseDown={event => {if (event.target === event.currentTarget) close();}}>
+      <button className="imageLightboxClose" type="button" onClick={close} aria-label="关闭图片预览">×</button>
+      {pictures.length > 1 && <button className="imageLightboxNav previous" type="button" onClick={() => move(-1)} aria-label="上一张图片">‹</button>}
+      <div className="imageLightboxViewport" onMouseDown={event => {if (event.target === event.currentTarget) close();}}>
+        <img className={zoomed ? "imageLightboxImage zoomed" : "imageLightboxImage"} src={assetUrl(bankId, pictures[activeImage])} alt={`放大预览：${imageAlt} ${activeImage + 1}`} onClick={() => setZoomed(value => !value)}/>
+      </div>
+      {pictures.length > 1 && <button className="imageLightboxNav next" type="button" onClick={() => move(1)} aria-label="下一张图片">›</button>}
+      <div className="imageLightboxHint">点击图片可继续放大 · Esc 关闭</div>
+    </div>}
+  </>;
 }
 
 function pauseOtherAudio(current: HTMLAudioElement) {

@@ -158,6 +158,19 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   assert.match(pagesEntry,/priority\.css/);
 });
 
+test("supports material bookmarks and accessible click-to-zoom in the React application",async()=>{
+  const [page,styles]=await Promise.all([read("app/page.tsx"),read("app/priority.css")]);
+  assert.match(page,/materialBookmarkButton active/);
+  assert.match(page,/收藏本\$\{current\.part <= 4 \? "组" : "篇"\}/);
+  assert.match(page,/aria-pressed=\{isStarred\}/);
+  assert.match(page,/className="zoomImageButton"/);
+  assert.match(page,/role="dialog" aria-modal="true"/);
+  assert.match(page,/event\.key === "Escape"/);
+  assert.match(styles,/\.imageLightbox/);
+  assert.match(styles,/\.materialBookmarkButton\.active/);
+  assert.match(styles,/touch-action:pinch-zoom/);
+});
+
 test("minimal web asset set contains all referenced media exactly once",async()=>{
   const catalog=JSON.parse(await read("public/data/catalog.json"));
   let refs=0;
