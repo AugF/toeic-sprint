@@ -129,6 +129,7 @@ test("locks all 144 visually reviewed Part 1 picture/audio pairings",async()=>{
 test("renders multi-bank priority controls and lazy detail loading",async()=>{
   const [page,css,pagesEntry]=await Promise.all([read("app/page.tsx"),read("app/priority.css"),read("static-pages/main.tsx")]);
   assert.match(page,/24 套官方题库/);
+  assert.match(page,/useState\("official-1-test-1"\)/);
   assert.match(page,/Part \{part\} · \{PART_META\[part\]\.focus\}/);
   assert.match(page,/全题库优先级刷题/);
   assert.match(page,/fetchJson<UnitDetail>/);
@@ -162,11 +163,17 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   assert.match(css,/\.singleItemGallery/);
   assert.match(css,/\.materialSplit/);
   assert.match(css,/\.statusFilters button small/);
-  assert.match(css,/\.orderModes\{/);
+  assert.match(css,/\.sortMenu\{/);
   assert.match(css,/\.questionBlock h2\{[^}]*font-size:17px/);
-  assert.match(css,/\.materialQuestionCard \.questionBlock h2\{font-size:15px/);
-  assert.match(css,/\.materialQuestionCard \.questionBlock \.choices p\{font-size:13px/);
-  assert.match(css,/\.singleItemCard \.questionBlock h2\{font-size:16px/);
+  assert.match(css,/\.materialQuestionCard \.questionBlock h2\{font-size:13\.5px/);
+  assert.match(css,/\.materialQuestionCard \.questionBlock \.choices\{grid-template-columns:repeat\(2/);
+  assert.match(css,/\.materialQuestionCard \.questionBlock \.choices p\{font-size:12px/);
+  assert.match(css,/\.singleItemCard \.questionBlock h2\{font-size:13\.5px/);
+  assert.match(css,/\.singleItemCard\.part1,\.singleItemCard\.part2,\.singleItemCard\.part5\{padding:13px/);
+  assert.match(css,/\.singleItemCard\.part1 \.questionBlock \.choices p,\.singleItemCard\.part2 \.questionBlock \.choices p,\.singleItemCard\.part5 \.questionBlock \.choices p\{font-size:12px/);
+  assert.match(page,/`materialSplit part\$\{current\.part\}`/);
+  assert.match(css,/\.singleItemCard\.part1 \.questionBlock h2,.singleItemCard\.part2 \.questionBlock h2,.singleItemCard\.part5 \.questionBlock h2\{font-size:13\.5px/);
+  assert.match(css,/\.materialSplit\.part3 \.materialQuestionCard \.questionBlock h2\{font-size:12\.5px/);
   assert.match(pagesEntry,/priority\.css/);
 });
 
@@ -187,11 +194,34 @@ test("keeps answers neutral until explicitly revealed and restores per-question 
   assert.match(page,/setAnswerRevealed/);
   assert.match(page,/saved\.revealed\.includes/);
   assert.match(page,/revealed: previous\.revealed\.filter/);
+  assert.match(page,/className="globalReviewTools"/);
+  assert.match(page,/className="sortMenu"/);
+  assert.match(page,/toggleGlobalAnswers/);
+  assert.match(page,/查看全部答案/);
+  assert.match(page,/clearGlobalChoices/);
+  assert.match(page,/清空全部选择/);
+  assert.match(page,/window\.confirm/);
+  assert.match(page,/此操作不会影响其他页面/);
   assert.match(page,/choose\(item, label, showAnswer\)/);
   assert.doesNotMatch(page,/selected \? \(correct \? "correct" : "incorrect"\)/);
   assert.match(css,/\.answerBtn\{/);
   assert.match(css,/\.clearAnswerBtn\{/);
   assert.match(css,/\.reviewButtons\{/);
+});
+
+test("restores draggable sidebar and material dividers with a compact drill viewport",async()=>{
+  const [page,css]=await Promise.all([read("app/page.tsx"),read("app/priority.css")]);
+  assert.match(page,/className="sidebarDivider"/);
+  assert.match(page,/className="materialDivider"/);
+  assert.match(page,/beginSidebarResize/);
+  assert.match(page,/beginMaterialResize/);
+  assert.match(page,/role="separator"/);
+  assert.match(page,/aria-valuenow=\{Math\.round\(sidebarWidth\)\}/);
+  assert.match(page,/aria-valuenow=\{Math\.round\(materialPercent\)\}/);
+  assert.match(css,/--sidebar-width/);
+  assert.match(css,/--material-left/);
+  assert.match(css,/\.globalTopline h1\{[^}]*font-size:21px/);
+  assert.match(css,/@container \(max-width:520px\)/);
 });
 
 test("supports material bookmarks and accessible click-to-zoom in the React application",async()=>{

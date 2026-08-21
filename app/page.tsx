@@ -1,7 +1,7 @@
 "use client";
 
 import {useEffect, useMemo, useRef, useState} from "react";
-import type {RefObject} from "react";
+import type {CSSProperties, KeyboardEvent as ReactKeyboardEvent, PointerEvent as ReactPointerEvent, RefObject} from "react";
 
 type Level = "P1" | "P2" | "P3";
 type Priority = {
@@ -256,7 +256,7 @@ export default function Home() {
   const [indexes, setIndexes] = useState<BankIndex[]>([]);
   const [indexLoading, setIndexLoading] = useState(true);
   const [loadError, setLoadError] = useState("");
-  const [bankFilter, setBankFilter] = useState("ALL");
+  const [bankFilter, setBankFilter] = useState("official-1-test-1");
   const [partFilter, setPartFilter] = useState(0);
   const [priorityFilter, setPriorityFilter] = useState<PriorityFilter>("ALL");
   const [statusFilter, setStatusFilter] = useState<StatusFilter>("ALL");
@@ -275,6 +275,8 @@ export default function Home() {
   const [relatedAnswers, setRelatedAnswers] = useState<Record<string, boolean>>({});
   const [relatedAnalysis, setRelatedAnalysis] = useState<Record<string, boolean>>({});
   const [sideOpen, setSideOpen] = useState(false);
+  const [sidebarWidth, setSidebarWidth] = useState(330);
+  const [materialPercent, setMaterialPercent] = useState(46);
   const detailCache = useRef(new Map<string, UnitDetail>());
   const audio = useRef<HTMLAudioElement>(null);
 
@@ -359,6 +361,9 @@ export default function Home() {
   const pageStart = multiCardMode ? Math.floor(position / MULTI_CARD_PAGE_SIZE) * MULTI_CARD_PAGE_SIZE : position;
   const pageRefs = multiCardMode ? queue.slice(pageStart, pageStart + MULTI_CARD_PAGE_SIZE) : [];
   const current = queue[pageStart];
+  const globalActionKeys = multiCardMode ? pageRefs.flatMap(ref => ref.item_keys) : (current?.item_keys || []);
+  const globalAllAnswersOpen = Boolean(globalActionKeys.length) && globalActionKeys.every(key => saved.revealed.includes(key));
+  const globalHasChoices = globalActionKeys.some(key => Object.hasOwn(saved.answers, key));
   const next = queue[multiCardMode ? pageStart + MULTI_CARD_PAGE_SIZE : pageStart + 1];
   const nextBankId = next?.bank_id;
   const nextDetailPath = next?.detail_path;
@@ -500,14 +505,28 @@ export default function Home() {
       wrong: correct ? previous.wrong.filter(value => value !== item.item_key) : [...new Set([...previous.wrong, item.item_key])],
     }));
   };
-  const setAnswerRevealed = (items: Item | Item[], visible: boolean) => {
-    const keys = (Array.isArray(items) ? items : [items]).map(item => item.item_key);
+  const setRevealedKeys = (keys: string[], visible: boolean) => {
     setSaved(previous => ({
       ...previous,
       revealed: visible
         ? [...new Set([...previous.revealed, ...keys])]
         : previous.revealed.filter(value => !keys.includes(value)),
     }));
+  };
+  const setAnswerRevealed = (items: Item | Item[], visible: boolean) => {
+    setRevealedKeys((Array.isArray(items) ? items : [items]).map(item => item.item_key), visible);
+  };
+  const clearChoicesByKeys = (keys: string[]) => {
+    setSaved(previous => {
+      const answers = {...previous.answers};
+      keys.forEach(key => delete answers[key]);
+      return {
+        ...previous,
+        answers,
+        wrong: previous.wrong.filter(value => !keys.includes(value)),
+        revealed: previous.revealed.filter(value => !keys.includes(value)),
+      };
+    });
   };
   const clearChoice = (item: Item) => {
     setSaved(previous => {
@@ -590,12 +609,77 @@ export default function Home() {
       .filter(item => item.item_key !== currentItem.item_key)
       .map(item => [item.item_key, nextOpen])));
   };
+  const toggleGlobalAnswers = () => {
+    if (!globalActionKeys.length) return;
+    const nextOpen = !globalAllAnswersOpen;
+    const loadedItems = multiCardMode
+      ? pageRefs.flatMap(ref => detailCache.current.get(ref.detail_path)?.items.filter(item => ref.item_keys.includes(item.item_key)) || [])
+      : (activeDetail?.items || []);
+    if (nextOpen) loadedItems.forEach(item => gradeAnswer(item));
+    setRevealedKeys(globalActionKeys, nextOpen);
+    if (!multiCardMode && currentItem) {
+      setShowAnswer(nextOpen);
+      setRelatedAnswers(Object.fromEntries(materialItems
+        .filter(item => item.item_key !== currentItem.item_key)
+        .map(item => [item.item_key, nextOpen])));
+    }
+  };
+  const clearGlobalChoices = () => {
+    if (!globalHasChoices) return;
+    const scope = multiCardMode ? `当前页面的 ${globalActionKeys.length} 道题` : `当前${current?.scope === "material" ? (current.part <= 4 ? "整组" : "整篇") : "题目"}`;
+    if (!window.confirm(`确定清空${scope}的全部选择吗？此操作不会影响其他页面。`)) return;
+    clearChoicesByKeys(globalActionKeys);
+    setShowAnswer(false);
+    setRelatedAnswers({});
+  };
+  const beginSidebarResize = (event: ReactPointerEvent<HTMLDivElement>) => {
+    if (window.innerWidth <= 760) return;
+    event.preventDefault();
+    const startX = event.clientX;
+    const startWidth = sidebarWidth;
+    document.body.classList.add("resizingColumns");
+    const move = (moveEvent: PointerEvent) => setSidebarWidth(Math.min(430, Math.max(250, startWidth + moveEvent.clientX - startX)));
+    const stop = () => {
+      document.body.classList.remove("resizingColumns");
+      window.removeEventListener("pointermove", move);
+      window.removeEventListener("pointerup", stop);
+    };
+    window.addEventListener("pointermove", move);
+    window.addEventListener("pointerup", stop, {once: true});
+  };
+  const resizeSidebarWithKeyboard = (event: ReactKeyboardEvent<HTMLDivElement>) => {
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+    event.preventDefault();
+    setSidebarWidth(value => Math.min(430, Math.max(250, value + (event.key === "ArrowRight" ? 12 : -12))));
+  };
+  const beginMaterialResize = (event: ReactPointerEvent<HTMLDivElement>) => {
+    event.preventDefault();
+    const container = event.currentTarget.parentElement;
+    if (!container) return;
+    const startX = event.clientX;
+    const startPercent = materialPercent;
+    const width = container.getBoundingClientRect().width;
+    document.body.classList.add("resizingColumns");
+    const move = (moveEvent: PointerEvent) => setMaterialPercent(Math.min(68, Math.max(32, startPercent + (moveEvent.clientX - startX) / width * 100)));
+    const stop = () => {
+      document.body.classList.remove("resizingColumns");
+      window.removeEventListener("pointermove", move);
+      window.removeEventListener("pointerup", stop);
+    };
+    window.addEventListener("pointermove", move);
+    window.addEventListener("pointerup", stop, {once: true});
+  };
+  const resizeMaterialWithKeyboard = (event: ReactKeyboardEvent<HTMLDivElement>) => {
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+    event.preventDefault();
+    setMaterialPercent(value => Math.min(68, Math.max(32, value + (event.key === "ArrowRight" ? 2 : -2))));
+  };
 
   if (!catalog && !loadError) return <main className="loading"><div className="loader"/>正在载入 24 套官方题库目录…</main>;
 
   return <main className="shell globalPractice">
     <button className="menu floatingMenu" onClick={() => setSideOpen(value => !value)} aria-label="打开筛选器">☰</button>
-    <div className="layout">
+    <div className="layout" style={{"--sidebar-width": `${sidebarWidth}px`} as CSSProperties}>
       <aside className={sideOpen ? "open" : ""}>
         <div className="asideTitle">训练筛选 <button onClick={() => setSideOpen(false)}>×</button></div>
         <label className="filterLabel" htmlFor="bank-filter">题库</label>
@@ -627,12 +711,13 @@ export default function Home() {
         <div className="priorityLegend"><p><b className="badge p1">P1</b> 高频核心 · 优先必刷</p><p><b className="badge p2">P2</b> 重点题型 · 稳定巩固</p><p><b className="badge p3">P3</b> 基础覆盖 · 查漏补缺</p><small className="priorityBasis">材料型 Part 按文体、主题和整组考点综合排序；P 等级不是 ETS 官方频率。</small></div>
         <div className="asideHint"><b>快捷键</b><p><kbd>←</kbd> <kbd>→</kbd> 切题</p><p><kbd>Space</kbd> 播放 / 暂停</p></div>
       </aside>
+      <div className="sidebarDivider" role="separator" aria-label="调整筛选栏宽度" aria-orientation="vertical" aria-valuemin={250} aria-valuemax={430} aria-valuenow={Math.round(sidebarWidth)} tabIndex={0} onPointerDown={beginSidebarResize} onKeyDown={resizeSidebarWithKeyboard} onDoubleClick={() => setSidebarWidth(330)}/>
 
       <section className="content">
         {loadError && <div className="loadNotice">{loadError}</div>}
         <div className="topline globalTopline">
           <div><span className="eyebrow">PRIORITY DRILL · {bankFilter === "ALL" ? "ALL 24 TESTS" : current?.bank_title}</span><h1>{partFilter ? `Part ${partFilter} 专项训练` : "全题库优先级刷题"}</h1></div>
-          <div className="topTools"><div className="orderModes"><button className={sortMode === "RANDOM" ? "orderBtn on" : "orderBtn"} aria-pressed={sortMode === "RANDOM"} onClick={() => {setSortMode("RANDOM"); setRandomSeed(value => value + 1);}}>随机排序</button><button className={sortMode === "PRIORITY" ? "orderBtn on" : "orderBtn"} aria-pressed={sortMode === "PRIORITY"} onClick={() => setSortMode("PRIORITY")}>优先级排序</button><button className={sortMode === "OFFICIAL" ? "orderBtn on" : "orderBtn"} aria-pressed={sortMode === "OFFICIAL"} onClick={() => setSortMode("OFFICIAL")}>官方排序</button></div><div className="groupCount">{queue.length ? (multiCardMode ? `${pageStart + 1}–${Math.min(pageStart + MULTI_CARD_PAGE_SIZE, queue.length)} / ${queue.length} 题` : `${pageStart + 1} / ${queue.length} ${queueNoun}`) : `0 ${queueNoun}`}</div></div>
+          <div className="topTools"><div className="globalReviewTools"><button className="answerBtn" type="button" disabled={!globalActionKeys.length} onClick={toggleGlobalAnswers}>{globalAllAnswersOpen ? "隐藏全部答案" : "查看全部答案"}</button><button className="clearAnswerBtn" type="button" disabled={!globalHasChoices} onClick={clearGlobalChoices}>清空全部选择</button></div><details className="sortMenu"><summary>{sortMode === "RANDOM" ? "随机排序" : sortMode === "OFFICIAL" ? "官方排序" : "优先级排序"}</summary><div><button className={sortMode === "RANDOM" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "RANDOM"} onClick={event => {setSortMode("RANDOM"); setRandomSeed(value => value + 1); event.currentTarget.closest("details")?.removeAttribute("open");}}>随机排序</button><button className={sortMode === "PRIORITY" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "PRIORITY"} onClick={event => {setSortMode("PRIORITY"); event.currentTarget.closest("details")?.removeAttribute("open");}}>优先级排序</button><button className={sortMode === "OFFICIAL" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "OFFICIAL"} onClick={event => {setSortMode("OFFICIAL"); event.currentTarget.closest("details")?.removeAttribute("open");}}>官方排序</button></div></details><div className="groupCount">{queue.length ? (multiCardMode ? `${pageStart + 1}–${Math.min(pageStart + MULTI_CARD_PAGE_SIZE, queue.length)} / ${queue.length} 题` : `${pageStart + 1} / ${queue.length} ${queueNoun}`) : `0 ${queueNoun}`}</div></div>
         </div>
 
         {indexLoading ? <div className="detailLoading"><div className="loader"/>正在汇总 4,800 题的优先级索引…</div> : !current ? <div className="empty"><b>当前筛选下没有题目</b><p>可以切换优先级、Part 或完成状态继续训练。</p><button onClick={() => {setBankFilter("ALL"); setPartFilter(0); setPriorityFilter("P1"); setStatusFilter("ALL");}}>恢复 P1 必刷队列</button></div> : multiCardMode ? <>
@@ -653,7 +738,7 @@ export default function Home() {
 
           {detailLoading && <div className="detailLoading"><div className="loader"/>正在按需载入当前题目…</div>}
           {detailError && <div className="empty compactEmpty"><b>题目载入失败</b><p>{detailError}</p></div>}
-          {activeDetail && currentItem && <article className={MATERIAL_PARTS.has(current.part) ? "materialSplit" : ""}>
+          {activeDetail && currentItem && <article className={MATERIAL_PARTS.has(current.part) ? `materialSplit part${current.part}` : `part${current.part}`} style={MATERIAL_PARTS.has(current.part) ? {"--material-left": `${materialPercent}%`} as CSSProperties : undefined}>
             <section className={MATERIAL_PARTS.has(current.part) ? "materialSource" : "materialSource singleSource"}>
               {MATERIAL_PARTS.has(current.part) && <div className="materialBookmarkBar"><button className={isStarred ? "materialBookmarkButton active" : "materialBookmarkButton"} type="button" aria-pressed={isStarred} onClick={() => toggleStar(current)}>{isStarred ? `★ 已收藏本${current.part <= 4 ? "组" : "篇"}` : `☆ 收藏本${current.part <= 4 ? "组" : "篇"}`}</button></div>}
               {current.part <= 4 && audioSrc && <AudioBar audio={audio} src={audioSrc} canShowTranscript={Boolean(transcript)} showTranscript={showTranscript} toggleTranscript={() => setShowTranscript(value => !value)} showAnalysis={MATERIAL_PARTS.has(current.part) ? materialAllAnalysisOpen : showAnalysis} toggleAnalysis={MATERIAL_PARTS.has(current.part) ? toggleAllMaterialAnalysis : () => setShowAnalysis(value => !value)} analysisScope={MATERIAL_PARTS.has(current.part) ? "material" : "item"} showAnswer={MATERIAL_PARTS.has(current.part) ? undefined : showAnswer} toggleAnswer={MATERIAL_PARTS.has(current.part) ? undefined : () => {const nextOpen = !showAnswer; if (nextOpen) gradeAnswer(currentItem); setAnswerRevealed(currentItem, nextOpen); setShowAnswer(nextOpen);}} clearAnswer={MATERIAL_PARTS.has(current.part) ? undefined : () => {clearChoice(currentItem); setShowAnswer(false);}} hasChoice={Boolean(saved.answers[currentItem.item_key])} showAllAnswers={MATERIAL_PARTS.has(current.part) ? materialAllAnswersOpen : undefined} toggleAllAnswers={MATERIAL_PARTS.has(current.part) ? toggleAllMaterialAnswers : undefined}/>}
@@ -664,6 +749,8 @@ export default function Home() {
               {current.part >= 5 && <div className="actionRow readingActions">{passageTranslation && <button className="translateBtn" onClick={() => setShowTranslation(value => !value)}>{showTranslation ? "隐藏中文" : "翻译原文"}</button>}{!MATERIAL_PARTS.has(current.part) && <ReviewButtons showAnswer={showAnswer} showAnalysis={showAnalysis} hasChoice={Boolean(saved.answers[currentItem.item_key])} toggleAnswer={() => {const nextOpen = !showAnswer; if (nextOpen) gradeAnswer(currentItem); setAnswerRevealed(currentItem, nextOpen); setShowAnswer(nextOpen);}} toggleAnalysis={() => setShowAnalysis(value => !value)} clearChoice={() => {clearChoice(currentItem); setShowAnswer(false);}}/>}{MATERIAL_PARTS.has(current.part) && <><button className="answerBtn" onClick={toggleAllMaterialAnswers}>{materialAllAnswersOpen ? "隐藏所有答案" : "查看所有答案"}</button><button className="analysisBtn" onClick={toggleAllMaterialAnalysis}>{materialAllAnalysisOpen ? "隐藏全部解析" : "查看全部解析"}</button></>}</div>}
               {current.part >= 5 && showTranslation && passageTranslation && <div className="translation">{passageTranslation}</div>}
             </section>
+
+            {MATERIAL_PARTS.has(current.part) && <div className="materialDivider" role="separator" aria-label="调整材料和题目宽度" aria-orientation="vertical" aria-valuemin={32} aria-valuemax={68} aria-valuenow={Math.round(materialPercent)} tabIndex={0} onPointerDown={beginMaterialResize} onKeyDown={resizeMaterialWithKeyboard} onDoubleClick={() => setMaterialPercent(46)}/>}
 
             {MATERIAL_PARTS.has(current.part) ? <section className="materialQuestions"><div className="materialQuestionsTitle"><b>本{current.part <= 4 ? "组" : "篇"}全部题目</b><span>{activeDetail.items.length} 题 · 可单独或全部查看答案和解析</span></div>{activeDetail.items.map(item => {
               const anchor = item.item_key === currentItem.item_key;
