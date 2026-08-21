@@ -36,9 +36,42 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "MEMO\nTo:\nAll Lawson's Repair Technicians\nFrom: Joel Gaos\nSubject: New Process\nDate: 3 April\nBeginning on 5 April, our cost estimates for repairs will be processed\n-\nAs always, carefully check warranties to find out which repairs are covered\nand which repairs the customer is responsible for. The computer desks\n-\nnow have only a three-month warranty, and the sofas, chairs, and dining\nsets have a much more limited warranty than before.",
-    "passage_translation": "中文辅助（离线预处理）：MEMO\nTo:\nAll Lawson's Repair Technicians\nFrom: Joel Gaos\nSubject: New Process\nDate: 3 April\nBeginning on 5 April, our cost estimates for repairs will be processed\n-\nAs always, carefully check warranties to find out which repairs are covered\nand which repairs the customer（顾客） is responsible for.\nThe computer desks\n-\nnow have only a three-month warranty, and the sofas, chairs, and dining\nsets have a much more limited warranty than before.",
-    "content_translation": "中文辅助（离线预处理）：MEMO\nTo:\nAll Lawson's Repair Technicians\nFrom: Joel Gaos\nSubject: New Process\nDate: 3 April\nBeginning on 5 April, our cost estimates for repairs will be processed\n-\nAs always, carefully check warranties to find out which repairs are covered\nand which repairs the customer（顾客） is responsible for.\nThe computer desks\n-\nnow have only a three-month warranty, and the sofas, chairs, and dining\nsets have a much more limited warranty than before."
+    "passage": "To: All Lawson's Repair Technicians\nFrom: Joel Gaos\n\nSubject: New Process\n\nDate: 3 A pril\n\nBeginning on 5 A pril, our cost estimates for repairs will be processed\nelectronically and sent to customers via e-mail. Whenever you visit\ncustomers to assess damage to their items, be sure to have your mobile\nphone or a tablet with you so that you can take pictures of the damage.\nYou will fill out the estimate form on our Web site, attach the photos, and\ne-mail the estimate to the customer. Estimates should be filled out within\n24 hours of your visit to a customer's home or business. We will likely\nhave a few customers who will want handwritten estimates. If this is the\ncase, you will still need to fill out the electronic form for our records and\nupload a copy of the handwritten estimate.\n\nAs always, carefully check warranties to find out which repairs are covered\nand which repairs the customer is responsible for. The computer desks\nnow have only a three-month warranty, and the sofas, chairs, and dining\nsets have a much more limited warranty than before.",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-161-163-1.jpg",
+        "asset_key": "official-7-test-2/reading-layout/p7-161-163-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1386,
+        "source_width": 1000,
+        "source_height": 1386,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1386
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 105,
+          "width": 940,
+          "height": 629
+        },
+        "source": "official-7-test-2/images/part7/q161-163.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "7c99f392f41e9cf885c15dfc9d8a852e9f592db01f265fcf35577987ce3c1f59",
+      "verified_item_ids": [
+        161,
+        162,
+        163
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -203,23 +236,5 @@
       },
       "item_key": "official-7-test-2/p7-161-163/163"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "passage"
-    ],
-    "vocabulary": [
-      {
-        "term": "warranty",
-        "meaning": "保修；质保",
-        "source_quote": "The computer desks - now have only a three-month warranty, and the sofas, chairs, and dining sets have a much more limited warranty than before.",
-        "source_field": "passage",
-        "why": "产品售后和服务条款中的高频词。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

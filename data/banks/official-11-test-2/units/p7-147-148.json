@@ -33,9 +33,41 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "Best Crown Hair Salon\n11 Beauty Row\nBrisbane\n(07) 5550 7990\nName: Madeline Turner\nAppointment: 4 August, 11:00 a.m.\nService: Wash, cut, blow-dry\nPlease notify us at least 24 hours in advance if you need to cancel, or you will be\nsubject to a $25 fee.",
-    "passage_translation": "中文辅助（离线预处理）：Best Crown Hair Salon\n11 Beauty Row\nBrisbane\n(07) 5550 7990\nName: Madeline Turner\nAppointment（预约）: 4 August, 11:00 a.m.\nService（服务）: Wash, cut, blow-dry\nPlease（请） notify us at least 24 hours in advance if you need to cancel, or you will be\nsubject to a $25 fee.",
-    "content_translation": "中文辅助（离线预处理）：Best Crown Hair Salon\n11 Beauty Row\nBrisbane\n(07) 5550 7990\nName: Madeline Turner\nAppointment（预约）: 4 August, 11:00 a.m.\nService（服务）: Wash, cut, blow-dry\nPlease（请） notify us at least 24 hours in advance if you need to cancel, or you will be\nsubject to a $25 fee."
+    "passage": "Best Crown Hair Salon\n11 Beauty Row\nBrisbane\n(07) 5550 7990\n\nName: Madeline Tumer\nA ppointment: 4 A ugust, 11:00 a.m.\nService: Wash, cut, blow-dry\n\nPlease notify us at least 24 hours in advance if you need to cancel, or you will be\nsubject to a $25 fee.",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-147-148-1.jpg",
+        "asset_key": "official-11-test-2/reading-layout/p7-147-148-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1414,
+        "source_width": 1000,
+        "source_height": 1414,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1414
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 280,
+          "width": 940,
+          "height": 358
+        },
+        "source": "official-11-test-2/images/part7/q147-148.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "1453475dbc66f4f4ea1023c1a55d251e41e41b6a5e0f14b9c12a5fc002a031be",
+      "verified_item_ids": [
+        147,
+        148
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -140,23 +172,5 @@
       },
       "item_key": "official-11-test-2/p7-147-148/148"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "passage"
-    ],
-    "collocations": [
-      {
-        "phrase": "in advance",
-        "meaning": "提前",
-        "source_quote": "Service: Wash, cut, blow-dry Please notify us at least 24 hours in advance if you need to cancel, or you will be subject to a $25 fee.",
-        "source_field": "passage",
-        "why": "预约、付款和活动安排场景的高频表达。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

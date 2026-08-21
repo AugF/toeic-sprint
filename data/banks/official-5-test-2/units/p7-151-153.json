@@ -36,9 +36,42 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "To Our Patients:\nIn order to provide the highest level of care, we have adopted some general policies.\n- [1] —. We are dedicated to staying on schedule, so please be on time for your\nappointment. We recommend arriving ten minutes early in case any forms need to be\ncompleted. - 2-. If vou need to change vour appointment, please notity us at\nleast 24 hours in advance. — [3] —. If vou have an urgent problem, we suggest that\nyou call our office immediately so we may see you as soon as possible. — [4] —",
-    "passage_translation": "中文辅助（离线预处理）：To Our Patients:\nIn order（订单） to provide the highest level of care, we have adopted some general policies.\n- [1] —.\nWe are dedicated to staying on schedule（日程）, so please（请） be on time for your\nappointment（预约）.\nWe recommend arriving ten minutes early in case any forms need to be\ncompleted.\n- 2-.\nIf vou need to change vour appointment（预约）, please（请） notity us at\nleast 24 hours in advance.\n— [3] —.\nIf vou have an urgent problem, we suggest（表明/建议） that\nyou call our office（办公室） immediately so we may see you as soon as possible.\n— [4] —",
-    "content_translation": "中文辅助（离线预处理）：To Our Patients:\nIn order（订单） to provide the highest level of care, we have adopted some general policies.\n- [1] —.\nWe are dedicated to staying on schedule（日程）, so please（请） be on time for your\nappointment（预约）.\nWe recommend arriving ten minutes early in case any forms need to be\ncompleted.\n- 2-.\nIf vou need to change vour appointment（预约）, please（请） notity us at\nleast 24 hours in advance.\n— [3] —.\nIf vou have an urgent problem, we suggest（表明/建议） that\nyou call our office（办公室） immediately so we may see you as soon as possible.\n— [4] —"
+    "passage": "To Our Patients:\n\nIn order to provide the highest level of care, we have adopted some general policies.\n- [1] -. We are dedicated to staying on schedule, so please be on time for your\nappointment. We recommend arriving ten minutes early in case any forms need to be\ncompleted. - [2] -. If you need to change your appointment, please notify us at\nleast 24 hours in advance. - [3] -. If you have an urgent problem, we suggest that\nyou call our office immediately so we may see you as soon as possible. - [4] -.\nPlease note that all payments are due at the time of service. Thank you for your\ncooperation.",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-151-153-1.jpg",
+        "asset_key": "official-5-test-2/reading-layout/p7-151-153-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1294,
+        "source_width": 1000,
+        "source_height": 1294,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1294
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 124,
+          "width": 940,
+          "height": 264
+        },
+        "source": "official-5-test-2/images/part7/q151-153.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "1b893e44318b097b20ce7f04e3f7f42574b65d2e47b165bf0abdf3feefed7f4b",
+      "verified_item_ids": [
+        151,
+        152,
+        153
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -100,28 +133,11 @@
         "They will be canceled if someone is more than ten minutes late.",
         "They can be rescheduled by filling out a form.",
         "They will be confirmed 24 hours in advance.",
-        "They can be made on short notice in"
+        "They can be made on short notice in case of emergency."
       ],
       "answer": "D",
       "question": "What is indicated about appointments?",
-      "answer_explain": "原文依据：篇章中可定位到“We are dedicated to staying on schedule, so please be on time for your”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（They can be made on short notice in）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is indicated about appointments?",
-      "choice_translations": [
-        "A：They will be canceled if someone is more than ten minutes late.",
-        "B：They can be rescheduled by filling out a form.",
-        "C：They will be confirmed 24 hours in advance.",
-        "D：They can be made on short notice in"
-      ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：To Our Patients:",
-      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-      "explanation_structured": {
-        "answer": "D",
-        "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：To Our Patients:",
-        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：篇章中可定位到“We are dedicated to staying on schedule, so please be on time for your”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（They can be made on short notice in）。"
-      },
       "item_id": 152,
       "priority": {
         "level": "P1",
@@ -203,23 +219,5 @@
       },
       "item_key": "official-5-test-2/p7-151-153/153"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "choice"
-    ],
-    "collocations": [
-      {
-        "phrase": "in advance",
-        "meaning": "提前",
-        "source_quote": "They will be confirmed 24 hours in advance.",
-        "source_field": "choice",
-        "why": "预约、付款和活动安排场景的高频表达。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

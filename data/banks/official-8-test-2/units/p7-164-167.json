@@ -36,9 +36,43 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "CHAT\n- x\nHarry Dreyer [10:00 A.M.] Hello. I'm asking everyone on my sales team what\nthey think of the Weiler Cabinet line. I'm considering adding it to our inventory.\nLisa Ritland [10:01 A.M.] They come only in a few standard sizes. Customers\noften request custom-sized dimensions for their kitchens.\nSusan Yi [10:02 A.M.] That's right. That has been my observation.\nAnthony Sachs [10:03 A.M.] | like the line in some ways. Their products are\ndurable and easy to clean.\nLisa Ritland [10:04 A.M.] Customers like the galvanized steel construction.\nSome have even had them installed in garages or on outdoor porches for storing\ngardening equipment.\nSusan Yi [10:05 A.M.] The Nordness line seems to be a suitable product for that\npurpose too, and it costs less.\nHarry Dreyer [10:10 A.M.] Thanks for your input.",
-    "passage_translation": "中文辅助（离线预处理）：CHAT\n- x\nHarry Dreyer [10:00 A.M.] Hello.\nI'm asking everyone on my sales team what（什么）\nthey think of the Weiler Cabinet line.\nI'm considering adding it to our inventory.\nLisa Ritland [10:01 A.M.] They come only in a few standard sizes.\nCustomers\noften request custom-sized dimensions for their kitchens.\nSusan Yi [10:02 A.M.] That's right.\nThat has been my observation.\nAnthony Sachs [10:03 A.M.] | like the line in some ways.\nTheir products are\ndurable and easy to clean.\nLisa Ritland [10:04 A.M.] Customers like the galvanized steel construction.\nSome have even had them installed in garages or on outdoor porches for storing\ngardening equipment.\nSusan Yi [10:05 A.M.] The Nordness line seems to be a suitable product for that\npurpose（目的） too, and it costs less.\nHarry Dreyer [10:10 A.M.] Thanks for your input.",
-    "content_translation": "中文辅助（离线预处理）：CHAT\n- x\nHarry Dreyer [10:00 A.M.] Hello.\nI'm asking everyone on my sales team what（什么）\nthey think of the Weiler Cabinet line.\nI'm considering adding it to our inventory.\nLisa Ritland [10:01 A.M.] They come only in a few standard sizes.\nCustomers\noften request custom-sized dimensions for their kitchens.\nSusan Yi [10:02 A.M.] That's right.\nThat has been my observation.\nAnthony Sachs [10:03 A.M.] | like the line in some ways.\nTheir products are\ndurable and easy to clean.\nLisa Ritland [10:04 A.M.] Customers like the galvanized steel construction.\nSome have even had them installed in garages or on outdoor porches for storing\ngardening equipment.\nSusan Yi [10:05 A.M.] The Nordness line seems to be a suitable product for that\npurpose（目的） too, and it costs less.\nHarry Dreyer [10:10 A.M.] Thanks for your input."
+    "passage": "CHAT - X\n\nHarry Dreyer [10:00 A.M.] Hello. I'm asking everyone on my sales team what\nthey think of the Weiler Cabinet line. I'm considering adding it to our inventory.\n\nLisa Ritland [10:01 A.M.] They come only in a few standard sizes. Customers\noften request custom-sized dimensions for their kitchens.\n\nSusan Yi [10:02 A.M.] That's right. That has been my observation.\n\nA nthony Sachs [10:03 A.M.] | like the line in some ways. Their products are\ndurable and easy to clean.\n\nLisa Ritland [10:04 A.M.] Customers like the galvanized steel construction.\nSome have even had them installed in garages or on outdoor porches for storing\ngardening equipment.\n\nSusan Yi [10:05 A.M.] The Nordness line seems to be a suitable product for that\npurpose too, and it costs less.\n\nHarry Dreyer [10:10 A.M.] Thanks for your input.",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-164-167-1.jpg",
+        "asset_key": "official-8-test-2/reading-layout/p7-164-167-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1350,
+        "source_width": 1000,
+        "source_height": 1350,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1350
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 106,
+          "width": 940,
+          "height": 515
+        },
+        "source": "official-8-test-2/images/part7/q164-167.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "79c98cca105872e5da1b47f261f336d276aa2dbcfe441cd72ffe7fc67b1ae489",
+      "verified_item_ids": [
+        164,
+        165,
+        166,
+        167
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -97,31 +131,14 @@
     },
     {
       "choices": [
-        "She has noticed that many customers have large kitchens.",
+        "She has noticed that many custo have large kitchens.",
         "She feels she is well qualified for her current position.",
         "She has had similar experiences at a previous workplace.",
-        "She has found that customers prefer a"
+        "She has found that customers pr variety of cabinet sizes."
       ],
       "answer": "D",
       "question": "At 10:02 A.M., what does Ms. Yi most likely mean when she writes, \"That has been my observation\"?",
-      "answer_explain": "原文依据：篇章中可定位到“That has been my observation.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（She has found that customers prefer a）。",
-      "question_translation": "中文辅助（离线预处理）：At 10:02 A.M., what（什么） does Ms.\nYi most likely（最可能） mean when（何时） she writes, \"That has been my observation\"?",
-      "choice_translations": [
-        "A：She has noticed that many customers have large kitchens.",
-        "B：She feels she is well qualified for her current position.",
-        "C：She has had similar experiences at a previous workplace.",
-        "D：She has found that customers prefer a"
-      ],
       "question_type": "推断题",
-      "evidence": "参考原文第 7 段：Susan Yi [10:02 A.M.] That's right. That has been my observation.",
-      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-      "explanation_structured": {
-        "answer": "D",
-        "question_type": "推断题",
-        "evidence": "参考原文第 7 段：Susan Yi [10:02 A.M.] That's right. That has been my observation.",
-        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：篇章中可定位到“That has been my observation.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（She has found that customers prefer a）。"
-      },
       "item_id": 165,
       "priority": {
         "level": "P2",
@@ -257,23 +274,5 @@
       },
       "item_key": "official-8-test-2/p7-164-167/167"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "passage"
-    ],
-    "vocabulary": [
-      {
-        "term": "inventory",
-        "meaning": "库存",
-        "source_quote": "I'm considering adding it to our inventory.",
-        "source_field": "passage",
-        "why": "采购、仓储和零售运营的核心词。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

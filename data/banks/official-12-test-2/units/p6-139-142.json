@@ -36,9 +36,43 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "Fresh Bites Express\nAre you craving just-picked vegetables, ---139--- berries, and juicy tomatoes?\nFresh Bites Express ---140-- the bounty of local farms straight to your table.\nDepending on your household size, you can order a small, medium, or large box of produce.\nJust tell us how often you want to receive a box. ---141-.\nEach box contains a mix of seasonal fruits and vegetables from nearby farms.\n---142---, in the summer, you might receive strawberries, eggplant, and peppers; in autumn,\nyou might get pumpkins, cauliflower, and beets. We guarantee you will always receive products\nthat are fresh and of the highest quality.\nVisit www.freshbitesexpress.com to sign up for a subscription.",
-    "passage_translation": "中文辅助（离线预处理）：Fresh Bites Express\nAre you craving just-picked vegetables, ---139--- berries, and juicy tomatoes?\nFresh Bites Express ---140-- the bounty of local farms straight to your table.\nDepending on your household size, you can order（订单） a small, medium, or large box of produce.\nJust tell us how（如何） often you want to receive a box.\n---141-.\nEach box contains a mix of seasonal fruits and vegetables from nearby farms.\n---142---, in the summer, you might receive strawberries, eggplant, and peppers; in autumn,\nyou might get pumpkins, cauliflower, and beets.\nWe guarantee you will always receive products\nthat are fresh and of the highest quality.\nVisit www.freshbitesexpress.com to sign up for a subscription.",
-    "content_translation": "中文辅助（离线预处理）：Fresh Bites Express\nAre you craving just-picked vegetables, ---139--- berries, and juicy tomatoes?\nFresh Bites Express ---140-- the bounty of local farms straight to your table.\nDepending on your household size, you can order（订单） a small, medium, or large box of produce.\nJust tell us how（如何） often you want to receive a box.\n---141-.\nEach box contains a mix of seasonal fruits and vegetables from nearby farms.\n---142---, in the summer, you might receive strawberries, eggplant, and peppers; in autumn,\nyou might get pumpkins, cauliflower, and beets.\nWe guarantee you will always receive products\nthat are fresh and of the highest quality.\nVisit www.freshbitesexpress.com to sign up for a subscription."
+    "passage": "Fresh Bites Express\n\nAre you craving just-picked vegetables, ---【139】 ______--- berries, and juicy tomatoes?\n\nFresh Bites Express ---【140】 ______--- the bounty of local farms straight to your table.\n\nDepending on your household size, you can order a small, medium, or large box of produce.\nJust tell us how often you want to receive a box. ---【141】 ______---.\n\nEach box contains a mix of seasonal fruits and vegetables from nearby farms.\n\n---【142】 ______---, in the summer, you might receive strawberries, eggplant, and peppers; in autumn,\nyou might get pumpkins, cauliflower, and beets. We guarantee you will always receive products\nthat are fresh and of the highest quality.\n\nVisit www.freshbitesexpress.com to sign up for a subscription.",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p6-139-142-1.jpg",
+        "asset_key": "official-12-test-2/reading-layout/p6-139-142-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1414,
+        "source_width": 1000,
+        "source_height": 1414,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1414
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 106,
+          "width": 940,
+          "height": 360
+        },
+        "source": "official-12-test-2/images/part6/q139-142.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "fba22b3bbcbae507206de484b94a40a38be0256c958456593928497ce39523a4",
+      "verified_item_ids": [
+        139,
+        140,
+        141,
+        142
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -205,23 +239,7 @@
         "Similarly"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：空格所在篇章的相关语境是“For example, in the summer, you might receive strawberries, eggplant, and peppers; in autumn,”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：A（For example）。",
-      "choice_translations": [
-        "A：For example",
-        "B：Above all",
-        "C：However",
-        "D：Similarly"
-      ],
       "question_type": "逻辑衔接题",
-      "evidence": "参考原文第 1 段：Fresh Bites Express",
-      "strategy": "本题属于逻辑衔接题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
-      "explanation_structured": {
-        "answer": "A",
-        "question_type": "逻辑衔接题",
-        "evidence": "参考原文第 1 段：Fresh Bites Express",
-        "strategy": "本题属于逻辑衔接题。先读空格所在句，再检查前后句指代、时态和逻辑衔接。",
-        "analysis": "原文依据：空格所在篇章的相关语境是“For example, in the summer, you might receive strawberries, eggplant, and peppers; in autumn,”。选择理由：该项既满足空格处的语法结构，也保持前后语义、指代或逻辑衔接。正确答案：A（For example）。"
-      },
       "item_id": 142,
       "priority": {
         "level": "P1",
@@ -249,23 +267,5 @@
       },
       "item_key": "official-12-test-2/p6-139-142/142"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "passage"
-    ],
-    "vocabulary": [
-      {
-        "term": "guarantee",
-        "meaning": "保证；担保",
-        "source_quote": "We guarantee you will always receive products that are fresh and of the highest quality.",
-        "source_field": "passage",
-        "why": "售后、合同和产品服务说明常见。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

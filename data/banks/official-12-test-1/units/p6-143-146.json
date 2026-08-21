@@ -34,9 +34,43 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "To: Avani Mittal amittal@mittalphotography.ca\nFrom: Camille Richard crichard@brightlyboundstationery.ca\nDate: 12 August\nSubject: Scheduling a photo shoot\nDear Ms. Mittal,\nBrightly Bound Stationery is launching a line of notebooks, cards, and calendars in\nNovember. We want to hire a photographer who can capture the ---143--- and minimalist\nlook we seek. ---144---\nWe would like to hold a photo shoot sometime in September. Can you provide us with your\n---145-—- for a half-day photo shoot? We prefer to start as early in the day as possible.\n---146---, please include a cost estimate for your services.\nWe look forward to hearing from you.\nCamille Richard\nOwner, Brightly Bound Stationery",
-    "passage_translation": "中文辅助（离线预处理）：To: Avani Mittal amittal@mittalphotography.ca\nFrom: Camille Richard crichard@brightlyboundstationery.ca\nDate: 12 August\nSubject: Scheduling a photo shoot\nDear Ms.\nMittal,\nBrightly Bound Stationery is launching a line of notebooks, cards, and calendars in\nNovember.\nWe want to hire a photographer who（谁） can capture the ---143--- and minimalist\nlook we seek.\n---144---\nWe would like to hold a photo shoot sometime in September.\nCan you provide us with your\n---145-—- for a half-day photo shoot?\nWe prefer to start as early in the day as possible.\n---146---, please（请） include a cost estimate for your services.\nWe look forward to hearing from you.\nCamille Richard\nOwner, Brightly Bound Stationery",
-    "content_translation": "中文辅助（离线预处理）：To: Avani Mittal amittal@mittalphotography.ca\nFrom: Camille Richard crichard@brightlyboundstationery.ca\nDate: 12 August\nSubject: Scheduling a photo shoot\nDear Ms.\nMittal,\nBrightly Bound Stationery is launching a line of notebooks, cards, and calendars in\nNovember.\nWe want to hire a photographer who（谁） can capture the ---143--- and minimalist\nlook we seek.\n---144---\nWe would like to hold a photo shoot sometime in September.\nCan you provide us with your\n---145-—- for a half-day photo shoot?\nWe prefer to start as early in the day as possible.\n---146---, please（请） include a cost estimate for your services.\nWe look forward to hearing from you.\nCamille Richard\nOwner, Brightly Bound Stationery"
+    "passage": "To: A vani Mittal amittal@mittalphotography.ca\nFrom: Camille Richard crichard@brightlyboundstationery.ca\nDate: 12 A ugust\n\nSubject: Scheduling a photo shoot\nDear Ms. Mittal,\n\nBrightly Bound Stationery is launching a line of notebooks, cards, and calendars in\nNovember. We want to hire a photographer who can capture the ---【143】 ______--- and minimalist\nlook we seek. ---【144】 ______---\n\nWe would like to hold a photo shoot sometime in September. Can you provide us with your\n---【145】 ______--- for a half-day photo shoot? We prefer to start as early in the day as possible.\n---【146】 ______---, please include a cost estimate for your services.\n\nWe look forward to hearing from you.\n\nCamille Richard\n\nOwner, Brightly Bound Stationery",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p6-143-146-1.jpg",
+        "asset_key": "official-12-test-1/reading-layout/p6-143-146-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1414,
+        "source_width": 1000,
+        "source_height": 1414,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1414
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 104,
+          "width": 940,
+          "height": 572
+        },
+        "source": "official-12-test-1/images/part6/q143-146.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "5193a7cda24c89ca6bdef5d4864980c96fd9cf3a5a0821aeda0131d016e2040c",
+      "verified_item_ids": [
+        143,
+        144,
+        145,
+        146
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -239,23 +273,5 @@
       },
       "item_key": "official-12-test-1/p6-143-146/146"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "passage"
-    ],
-    "vocabulary": [
-      {
-        "term": "stationery",
-        "meaning": "文具",
-        "source_quote": "Mittal, Brightly Bound Stationery is launching a line of notebooks, cards, and calendars in November.",
-        "source_field": "passage",
-        "why": "行政采购与办公用品场景的易混高频词。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }
