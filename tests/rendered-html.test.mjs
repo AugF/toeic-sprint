@@ -190,6 +190,7 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   assert.match(page,/随机排序/);
   assert.match(page,/优先级排序/);
   assert.match(page,/官方排序/);
+  assert.match(page,/useState<SortMode>\("OFFICIAL"\)/);
   assert.match(page,/setRandomSeed\(value => value \+ 1\)/);
   assert.match(page,/sortMode === "RANDOM"/);
   assert.match(page,/randomRank\(a, randomSeed\)/);
@@ -202,15 +203,17 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   assert.match(css,/\.statusFilters button small/);
   assert.match(css,/\.sortMenu\{/);
   assert.match(css,/\.questionBlock h2\{[^}]*font-size:17px/);
-  assert.match(css,/\.materialQuestionCard \.questionBlock h2\{font-size:13\.5px/);
+  assert.match(css,/\.materialQuestionCard \.questionBlock h2\{font-size:13px/);
   assert.match(css,/\.materialQuestionCard \.questionBlock \.choices\{grid-template-columns:repeat\(2/);
-  assert.match(css,/\.materialQuestionCard \.questionBlock \.choices p\{font-size:12px/);
+  assert.match(css,/\.materialQuestionCard \.questionBlock \.choices p\{font-size:11\.5px/);
   assert.match(css,/\.singleItemCard \.questionBlock h2\{font-size:13\.5px/);
   assert.match(css,/\.singleItemCard\.part1,\.singleItemCard\.part2,\.singleItemCard\.part5\{padding:13px/);
   assert.match(css,/\.singleItemCard\.part1 \.questionBlock \.choices p,\.singleItemCard\.part2 \.questionBlock \.choices p,\.singleItemCard\.part5 \.questionBlock \.choices p\{font-size:12px/);
   assert.match(page,/`materialSplit part\$\{current\.part\}`/);
   assert.match(css,/\.singleItemCard\.part1 \.questionBlock h2,.singleItemCard\.part2 \.questionBlock h2,.singleItemCard\.part5 \.questionBlock h2\{font-size:13\.5px/);
   assert.match(css,/\.materialSplit\.part3 \.materialQuestionCard \.questionBlock h2\{font-size:12\.5px/);
+  assert.match(page,/className="quickPager"/);
+  assert.match(css,/\.materialSplit\{[^}]*background:transparent;[^}]*border:0/);
   assert.match(pagesEntry,/priority\.css/);
 });
 
@@ -232,7 +235,11 @@ test("keeps answers neutral until explicitly revealed and restores per-question 
   assert.match(page,/saved\.revealed\.includes/);
   assert.match(page,/revealed: previous\.revealed\.filter/);
   assert.match(page,/className="globalReviewTools"/);
-  assert.match(page,/className="sortMenu"/);
+  assert.match(page,/className="asideSortButtons"/);
+  assert.match(page,/className="asideQueueTools"/);
+  assert.match(css,/\.asideQueueTools \.globalReviewTools/);
+  assert.match(css,/\.asideSortButtons\{display:grid;grid-template-columns:repeat\(3/);
+  assert.doesNotMatch(page,/<details className="sortMenu">/);
   assert.match(page,/toggleGlobalAnswers/);
   assert.match(page,/查看全部答案/);
   assert.match(page,/clearGlobalChoices/);

@@ -261,7 +261,7 @@ export default function Home() {
   const [partFilter, setPartFilter] = useState(0);
   const [priorityFilter, setPriorityFilter] = useState<PriorityFilter>("ALL");
   const [statusFilter, setStatusFilter] = useState<StatusFilter>("ALL");
-  const [sortMode, setSortMode] = useState<SortMode>("PRIORITY");
+  const [sortMode, setSortMode] = useState<SortMode>("OFFICIAL");
   const [randomSeed, setRandomSeed] = useState(1);
   const [position, setPosition] = useState(0);
   const [detail, setDetail] = useState<UnitDetail | null>(null);
@@ -712,6 +712,18 @@ export default function Home() {
         <div className="statusFilters">
           {STATUS_OPTIONS.map(option => <button key={option.value} className={statusFilter === option.value ? "on" : ""} onClick={() => setStatusFilter(option.value)}><span>{option.label}</span><small>{statusCounts[option.value]}</small></button>)}
         </div>
+        <div className="filterLabel">本页操作</div>
+        <div className="asideQueueTools">
+          <div className="globalReviewTools">
+            <button className="answerBtn" type="button" aria-pressed={globalAllAnswersOpen} disabled={!globalActionKeys.length} onClick={toggleGlobalAnswers}>{globalAllAnswersOpen ? "隐藏全部答案" : "查看全部答案"}</button>
+            <button className="clearAnswerBtn" type="button" disabled={!globalHasChoices} onClick={clearGlobalChoices}>清空全部选择</button>
+          </div>
+          <div className="asideSortButtons" aria-label="排序方式">
+            <button className={sortMode === "RANDOM" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "RANDOM"} onClick={() => {setSortMode("RANDOM"); setRandomSeed(value => value + 1);}}>随机排序</button>
+            <button className={sortMode === "PRIORITY" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "PRIORITY"} onClick={() => setSortMode("PRIORITY")}>优先级排序</button>
+            <button className={sortMode === "OFFICIAL" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "OFFICIAL"} onClick={() => setSortMode("OFFICIAL")}>官方排序</button>
+          </div>
+        </div>
         <div className="priorityLegend"><p><b className="badge p1">P1</b> 高频核心 · 优先必刷</p><p><b className="badge p2">P2</b> 重点题型 · 稳定巩固</p><p><b className="badge p3">P3</b> 基础覆盖 · 查漏补缺</p><small className="priorityBasis">材料型 Part 按文体、主题和整组考点综合排序；P 等级不是 ETS 官方频率。</small></div>
         <div className="asideHint"><b>快捷键</b><p><kbd>←</kbd> <kbd>→</kbd> 切题</p><p><kbd>Space</kbd> 播放 / 暂停</p></div>
       </aside>
@@ -721,11 +733,11 @@ export default function Home() {
         {loadError && <div className="loadNotice">{loadError}</div>}
         <div className="topline globalTopline">
           <div><span className="eyebrow">PRIORITY DRILL · {bankFilter === "ALL" ? "ALL 24 TESTS" : current?.bank_title}</span><h1>{partFilter ? `Part ${partFilter} 专项训练` : "全题库优先级刷题"}</h1></div>
-          <div className="topTools"><div className="globalReviewTools"><button className="answerBtn" type="button" aria-pressed={globalAllAnswersOpen} disabled={!globalActionKeys.length} onClick={toggleGlobalAnswers}>{globalAllAnswersOpen ? "隐藏全部答案" : "查看全部答案"}</button><button className="clearAnswerBtn" type="button" disabled={!globalHasChoices} onClick={clearGlobalChoices}>清空全部选择</button></div><details className="sortMenu"><summary>{sortMode === "RANDOM" ? "随机排序" : sortMode === "OFFICIAL" ? "官方排序" : "优先级排序"}</summary><div><button className={sortMode === "RANDOM" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "RANDOM"} onClick={event => {setSortMode("RANDOM"); setRandomSeed(value => value + 1); event.currentTarget.closest("details")?.removeAttribute("open");}}>随机排序</button><button className={sortMode === "PRIORITY" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "PRIORITY"} onClick={event => {setSortMode("PRIORITY"); event.currentTarget.closest("details")?.removeAttribute("open");}}>优先级排序</button><button className={sortMode === "OFFICIAL" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "OFFICIAL"} onClick={event => {setSortMode("OFFICIAL"); event.currentTarget.closest("details")?.removeAttribute("open");}}>官方排序</button></div></details><div className="groupCount">{queue.length ? (multiCardMode ? `${pageStart + 1}–${Math.min(pageStart + MULTI_CARD_PAGE_SIZE, queue.length)} / ${queue.length} 题` : `${pageStart + 1} / ${queue.length} ${queueNoun}`) : `0 ${queueNoun}`}</div></div>
+          <div className="topTools"><div className="groupCount">{queue.length ? (multiCardMode ? `${pageStart + 1}–${Math.min(pageStart + MULTI_CARD_PAGE_SIZE, queue.length)} / ${queue.length} 题` : `${pageStart + 1} / ${queue.length} ${queueNoun}`) : `0 ${queueNoun}`}</div></div>
         </div>
 
         {indexLoading ? <div className="detailLoading"><div className="loader"/>正在汇总 4,800 题的优先级索引…</div> : !current ? <div className="empty"><b>当前筛选下没有题目</b><p>可以切换优先级、Part 或完成状态继续训练。</p><button onClick={() => {setBankFilter("ALL"); setPartFilter(0); setPriorityFilter("P1"); setStatusFilter("ALL");}}>恢复 P1 必刷队列</button></div> : multiCardMode ? <>
-          <div className="multiPageIntro"><div><b>本页 {pageRefs.length} 题</b><span>每题可独立作答、收藏、查看原文与解析</span></div><div className="miniProgress"><i style={{width: `${Math.min(pageStart + pageRefs.length, queue.length) / queue.length * 100}%`}}/></div></div>
+          <div className="multiPageIntro"><div><b>本页 {pageRefs.length} 题</b><span>每题可独立作答、收藏、查看原文与解析</span></div><div className="miniProgress"><i style={{width: `${Math.min(pageStart + pageRefs.length, queue.length) / queue.length * 100}%`}}/></div><div className="quickPager"><button disabled={pageStart === 0} onClick={() => go(pageStart - MULTI_CARD_PAGE_SIZE)}>← 上一页</button><button disabled={pageStart + MULTI_CARD_PAGE_SIZE >= queue.length} onClick={() => go(pageStart + MULTI_CARD_PAGE_SIZE)}>下一页 →</button></div></div>
           <SingleItemGallery refs={pageRefs} cache={detailCache} saved={saved} choose={choose} gradeAnswer={gradeAnswer} setAnswerRevealed={setAnswerRevealed} clearChoice={clearChoice} toggleStar={toggleStar}/>
           <div className="bottom pageBottom"><button disabled={pageStart === 0} onClick={() => go(pageStart - MULTI_CARD_PAGE_SIZE)}>← 上一页</button><button disabled={pageStart + MULTI_CARD_PAGE_SIZE >= queue.length} onClick={() => go(pageStart + MULTI_CARD_PAGE_SIZE)}>下一页 →</button></div>
         </> : <>
@@ -734,6 +746,7 @@ export default function Home() {
             <div className="miniProgress"><i style={{width: `${(position + 1) / queue.length * 100}%`}}/></div>
             <span>{currentNoun} · 题 {currentItemRange}</span>
             <button className={isStarred ? "starred" : ""} onClick={() => toggleStar(current)} title={isStarred ? "取消收藏" : current.scope === "material" ? "收藏此材料" : "收藏此题"}>{isStarred ? "★" : "☆"}</button>
+            <div className="quickPager"><button disabled={pageStart === 0} onClick={() => go(pageStart - 1)}>← 上一{currentNoun}</button><button disabled={pageStart >= queue.length - 1} onClick={() => go(pageStart + 1)}>下一{currentNoun} →</button></div>
           </div>
           <div className="priorityBrief compactPriority">
             <PriorityBadge value={current.priority}/>
@@ -781,7 +794,7 @@ export default function Home() {
             {materialAnyAnalysisOpen && hasMaterialKnowledge && materialKnowledge && <KnowledgeCard value={materialKnowledge}/>}</section> :
               <QuestionBlock key={currentItem.item_key} item={currentItem} part={current.part} chosen={saved.answers[currentItem.item_key]} showAnswer={showAnswer} showAnalysis={showAnalysis} choose={choose}/>}
           </article>}
-          <div className="bottom"><button disabled={pageStart === 0} onClick={() => go(pageStart - 1)}>← 上一{currentNoun}</button><button disabled={pageStart >= queue.length - 1} onClick={() => go(pageStart + 1)}>下一{currentNoun} →</button></div>
+          <div className="bottom pageBottom"><button disabled={pageStart === 0} onClick={() => go(pageStart - 1)}>← 上一{currentNoun}</button><button disabled={pageStart >= queue.length - 1} onClick={() => go(pageStart + 1)}>下一{currentNoun} →</button></div>
         </>}
       </section>
     </div>
