@@ -148,6 +148,13 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   assert.match(page,/type StatusFilter = "ALL" \| "UNDONE" \| "DONE" \| "WRONG" \| "STARRED"/);
   assert.match(page,/statusFilter === "DONE"/);
   assert.match(page,/statusCounts\[option\.value\]/);
+  assert.match(page,/useState<PriorityFilter>\("ALL"\)/);
+  assert.match(page,/随机排序/);
+  assert.match(page,/优先级排序/);
+  assert.match(page,/官方排序/);
+  assert.match(page,/setRandomSeed\(value => value \+ 1\)/);
+  assert.match(page,/sortMode === "RANDOM"/);
+  assert.match(page,/randomRank\(a, randomSeed\)/);
   assert.match(page,/Object\.hasOwn\(saved\.answers, key\)/);
   assert.match(page,/本\{current\.part <= 4 \? "组" : "篇"\}全部题目/);
   assert.match(css,/\.globalPractice/);
@@ -155,6 +162,11 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   assert.match(css,/\.singleItemGallery/);
   assert.match(css,/\.materialSplit/);
   assert.match(css,/\.statusFilters button small/);
+  assert.match(css,/\.orderModes\{/);
+  assert.match(css,/\.questionBlock h2\{[^}]*font-size:17px/);
+  assert.match(css,/\.materialQuestionCard \.questionBlock h2\{font-size:15px/);
+  assert.match(css,/\.materialQuestionCard \.questionBlock \.choices p\{font-size:13px/);
+  assert.match(css,/\.singleItemCard \.questionBlock h2\{font-size:16px/);
   assert.match(pagesEntry,/priority\.css/);
 });
 
@@ -169,6 +181,12 @@ test("keeps answers neutral until explicitly revealed and restores per-question 
   assert.match(page,/selected \? "selected" : ""/);
   assert.match(page,/answerVisible && chosen/);
   assert.match(page,/delete answers\[item\.item_key\]/);
+  assert.match(page,/revealed: string\[\]/);
+  assert.match(page,/revealed: \[\]/);
+  assert.match(page,/source\.revealed/);
+  assert.match(page,/setAnswerRevealed/);
+  assert.match(page,/saved\.revealed\.includes/);
+  assert.match(page,/revealed: previous\.revealed\.filter/);
   assert.match(page,/choose\(item, label, showAnswer\)/);
   assert.doesNotMatch(page,/selected \? \(correct \? "correct" : "incorrect"\)/);
   assert.match(css,/\.answerBtn\{/);
