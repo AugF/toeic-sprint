@@ -158,6 +158,24 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   assert.match(pagesEntry,/priority\.css/);
 });
 
+test("keeps answers neutral until explicitly revealed and restores per-question review controls",async()=>{
+  const [page,css]=await Promise.all([read("app/page.tsx"),read("app/priority.css")]);
+  assert.match(page,/function ReviewButtons/);
+  assert.match(page,/查看答案/);
+  assert.match(page,/查看所有答案/);
+  assert.match(page,/toggleAllMaterialAnswers/);
+  assert.match(page,/materialAllAnswersOpen/);
+  assert.match(page,/清空选择/);
+  assert.match(page,/selected \? "selected" : ""/);
+  assert.match(page,/answerVisible && chosen/);
+  assert.match(page,/delete answers\[item\.item_key\]/);
+  assert.match(page,/choose\(item, label, showAnswer\)/);
+  assert.doesNotMatch(page,/selected \? \(correct \? "correct" : "incorrect"\)/);
+  assert.match(css,/\.answerBtn\{/);
+  assert.match(css,/\.clearAnswerBtn\{/);
+  assert.match(css,/\.reviewButtons\{/);
+});
+
 test("supports material bookmarks and accessible click-to-zoom in the React application",async()=>{
   const [page,styles]=await Promise.all([read("app/page.tsx"),read("app/priority.css")]);
   assert.match(page,/materialBookmarkButton active/);
