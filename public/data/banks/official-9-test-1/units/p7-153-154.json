@@ -31,9 +31,41 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "Northern Regional Railways\nNOTICE: March 2\nNorthern Regional Railways (NRR) invites all riders to take advantage of a special\ndiscount for early booking on local routes between Fairview and East City. Make your\nreservation online at least ten days in advance, and you can save 20 percent on any\nround-trip ticket. Simply enter promotion code 10302.\nRestrictions: Tickets purchased under this discount program must be used by\nSeptember 1. This offer does not apply to express routes. Riders cannot combine this\noffer with points earned in the NRR Frequent Rider Rewards program.",
-    "passage_translation": "中文辅助（离线预处理）：Northern Regional Railways\nNOTICE: March 2\nNorthern Regional Railways (NRR) invites all riders to take advantage of a special\ndiscount for early booking on local routes between Fairview and East City.\nMake your\nreservation online at least ten days in advance, and you can save 20 percent on any\nround-trip ticket.\nSimply enter promotion code 10302.\nRestrictions: Tickets purchased under this discount program must be used by\nSeptember 1.\nThis offer does not apply to express routes.\nRiders cannot combine this\noffer with points earned in the NRR Frequent Rider Rewards program.",
-    "content_translation": "中文辅助（离线预处理）：Northern Regional Railways\nNOTICE: March 2\nNorthern Regional Railways (NRR) invites all riders to take advantage of a special\ndiscount for early booking on local routes between Fairview and East City.\nMake your\nreservation online at least ten days in advance, and you can save 20 percent on any\nround-trip ticket.\nSimply enter promotion code 10302.\nRestrictions: Tickets purchased under this discount program must be used by\nSeptember 1.\nThis offer does not apply to express routes.\nRiders cannot combine this\noffer with points earned in the NRR Frequent Rider Rewards program."
+    "passage": "Question\nS 153-154 refer to the following notice.\n\n------\nNorthern Regional Railways\n\nNOTICE: March 2\nN F\nate cen Railways (NRR) invites all riders to take advantage of a special\npe nt for early booking on local routes between Fairview and East City. Make your\noan online at least ten days in advance, and you can save 20 percent on any\n-trip ticket. Simply enter promotion code 10302.\nt program must be used by\n\nRestrictions:\nttictions: Tickets purchased under this discoun\ns. Riders cannot combine this\n\nSs :\na dea 1. This offer does not apply to express route:\npoints earned in the NRR Frequent Rider Rewards program.",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-153-154-1.jpg",
+        "asset_key": "official-9-test-1/reading-layout/p7-153-154-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1426,
+        "source_width": 1000,
+        "source_height": 1426,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1426
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 21,
+          "width": 940,
+          "height": 375
+        },
+        "source": "official-9-test-1/images/part7/q153-154.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "0d1fd1a69b80450f8ce3e90e996f0a9649dc7eb4c686fd315ccd1d6ae2cad912",
+      "verified_item_ids": [
+        153,
+        154
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -134,33 +166,5 @@
       },
       "item_key": "official-9-test-1/p7-153-154/154"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "passage"
-    ],
-    "vocabulary": [
-      {
-        "term": "reservation",
-        "meaning": "预订",
-        "source_quote": "Make your reservation online at least ten days in advance, and you can save 20 percent on any round-trip ticket.",
-        "source_field": "passage",
-        "why": "酒店、餐饮、会议室与出行场景常见。",
-        "confidence": 0.96
-      }
-    ],
-    "collocations": [
-      {
-        "phrase": "in advance",
-        "meaning": "提前",
-        "source_quote": "Make your reservation online at least ten days in advance, and you can save 20 percent on any round-trip ticket.",
-        "source_field": "passage",
-        "why": "预约、付款和活动安排场景的高频表达。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

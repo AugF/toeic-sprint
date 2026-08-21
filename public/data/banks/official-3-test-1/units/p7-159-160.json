@@ -33,38 +33,53 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "Caivano Printing Services CB\nLevel 4, 468 Wickham Street S\nSydney NSW 2001\nWork Order Form\nDate of order: 20 September\nEmployee Name:__Amelia Cates\nDate of pickup: 1 October, between 2 pm. and 3 pM.\nCustomer Information:\nName: _Johanna Garza\nOrganisation: Sydney Medical Research Forum\nPhone: 5555-9823\nInstructions:\nThe customer sent the graphic electronically; see e-mail of\n20 September with subject line “Garza order.” She asked for the\nimage to be enlarged enough that all words and numbers can\nbe seen clearly from about 3 metres away.\nPrints:\nFour standard medium posters\nSpecial Notes:\nThe customer needs these items for a conference on 2 October,\nso she stressed that they absolutely must be ready on time. She\npaid in full on 20 September with her organisation’s credit card.",
-    "passage_translation": "Caivano 印刷服务 CB\n四楼，468 Wickham Street S\n悉尼 NSW 2001\n工单表\n订单日期：9月20日\n员工姓名：__Amelia Cates\n取件日期：10月1日，下午2点到3点之间。\n客户信息：\n姓名： _Johanna Garza\n组织：悉尼医学研究论坛\n电话：5555-9823\n说明：\n客户电子发送了图形；参见 9月20日的电子邮件，主题为“Garza 订单”。她要求图像放大到从大约 3 米外都能清楚看到所有文字和数字。\n印刷品：\n四张标准中型海报\n特别注意事项：\n客户需要在 10月2日举行的会议上使用这些物品，所以她强调它们必须准时准备好。她已于 9月20日用其组织的信用卡全额支付。",
-    "content_translation": "Caivano 印刷服务 CB\n四楼，468 Wickham Street S\n悉尼 NSW 2001\n工单表\n订单日期：9月20日\n员工姓名：__Amelia Cates\n取件日期：10月1日，下午2点到3点之间。\n客户信息：\n姓名： _Johanna Garza\n组织：悉尼医学研究论坛\n电话：5555-9823\n说明：\n客户电子发送了图形；参见 9月20日的电子邮件，主题为“Garza 订单”。她要求图像放大到从大约 3 米外都能清楚看到所有文字和数字。\n印刷品：\n四张标准中型海报\n特别注意事项：\n客户需要在 10月2日举行的会议上使用这些物品，所以她强调它们必须准时准备好。她已于 9月20日用其组织的信用卡全额支付。"
+    "passage": "Caivano Printing Services C&\nLevel 4, 468 Wickham Street KS\n\nSydney NSW 2001\nWork Order Form\n\nDate of order: 20 September\n\nEmployee Name:__ A melia Cates\n\nDate of pickup: 1 October, between 2 pm. and 3 PM.\n\nCustomer Information:\nName: _Johanna Garza\n\nOrganisation:_Sydney Medical Research Forum\n\nPhone: 5555-9823\n\nInstructions:\n\nThe customer sent the graphic electronically; see e-mail of\n\n20 September with subject line \"Garza order.\" She asked for the\nimage to be enlarged enough that all words and numbers can\nbe seen clearly from about 3 metres away.\n\nPrints:\nFour standard medium posters\n\nSpecial Notes:\n\nThe customer needs these items for a conference on 2 October,\nso she stressed that they absolutely must be ready on time. She\npaid in full on 20 September with her organisation's credit card.",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-159-160-1.jpg",
+        "asset_key": "official-3-test-1/reading-layout/p7-159-160-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1294,
+        "source_width": 1000,
+        "source_height": 1294,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1294
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 126,
+          "width": 940,
+          "height": 822
+        },
+        "source": "official-3-test-1/images/part7/q159-160.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "b675449f5232de6c69229b283c717b80c58eb9c560133f1e1fd0aa5af0760d68",
+      "verified_item_ids": [
+        159,
+        160
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
       "choices": [
-        "Call her when an order is ready",
+        "Call her when an order is read'",
         "Use certain colors in a printing job",
         "Ensure that text is visible from a distance",
-        "Reprint posters to correct a mistake"
+        "Reprint posters to correct a mi that was made"
       ],
       "answer": "C",
       "question": "What did Ms. Garza ask Caivano Printing Services to do?",
-      "answer_explain": "原文依据：篇章中可定位到“Caivano Printing Services CB”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（Ensure that text is visible from a distance）。",
-      "question_translation": "加尔萨女士要求 Caivano 印刷服务做什么？",
-      "choice_translations": [
-        "A：在订单准备好时打电话给她",
-        "B：在印刷工作中使用特定的颜色",
-        "C：确保文字从远处可见",
-        "D：重新打印海报以纠正错误"
-      ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Caivano Printing Services CB",
-      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-      "explanation_structured": {
-        "answer": "C",
-        "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Caivano Printing Services CB",
-        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：篇章中可定位到“Caivano Printing Services CB”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（Ensure that text is visible from a distance）。"
-      },
       "item_id": 159,
       "priority": {
         "level": "P3",
@@ -91,31 +106,14 @@
     },
     {
       "choices": [
-        "They are not a standard size.",
-        "Ms. Garza still owes money for them.",
-        "Each conference participant will receive one of them.",
-        "Ms. Garza will pick them up the day"
+        "They are not a standard size. ady",
+        "Ms. Garza still owes money for them ing job",
+        "Each conference participant will ma receive one of them.",
+        "Ms. Garza will pick them up the day mistake before a conference."
       ],
       "answer": "D",
       "question": "What is true about the posters?",
-      "answer_explain": "原文依据：篇章中可定位到“20 September with subject line “Garza order.” She asked for the”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（Ms. Garza will pick them up the day）。",
-      "question_translation": "关于这些海报的哪些说法是正确的？",
-      "choice_translations": [
-        "A：它们不是标准尺寸。",
-        "B：加尔萨女士仍然欠他们钱。",
-        "C：每位会议参与者都会收到一张。",
-        "D：加尔萨女士将在当天取走它们。"
-      ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 18 段：Four standard medium posters",
-      "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-      "explanation_structured": {
-        "answer": "D",
-        "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 18 段：Four standard medium posters",
-        "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：篇章中可定位到“20 September with subject line “Garza order.” She asked for the”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（Ms. Garza will pick them up the day）。"
-      },
       "item_id": 160,
       "priority": {
         "level": "P3",
@@ -140,23 +138,5 @@
       },
       "item_key": "official-3-test-1/p7-159-160/160"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "choice"
-    ],
-    "vocabulary": [
-      {
-        "term": "participant",
-        "meaning": "参与者",
-        "source_quote": "Each conference participant will receive one of them.",
-        "source_field": "choice",
-        "why": "会议、培训、活动及调查语境常见。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

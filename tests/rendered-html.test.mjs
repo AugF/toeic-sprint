@@ -59,12 +59,14 @@ test("precomputes Chinese study aids and only publishes validated contextual kno
         assert.ok(entries.length>0&&entries.length<=4);
         assert.ok(entries.every(entry=>entry.source_quote&&entry.why&&entry.confidence>=.78));
       }
-      if(unit.part!==5)assert.ok(detail.context.transcript_translation||detail.context.passage_translation||detail.context.content_translation,`${bank.bank_id}/${unit.unit_id} lacks material translation`);
+      if(unit.part!==5&&!detail.context.reading_ocr)assert.ok(detail.context.transcript_translation||detail.context.passage_translation||detail.context.content_translation,`${bank.bank_id}/${unit.unit_id} lacks material translation`);
       for(const item of detail.items){
         questions++;
-        assert.equal(item.choice_translations.length,item.choices.length,`${item.item_key} lacks translated choices`);
-        if(item.question)assert.ok(item.question_translation,`${item.item_key} lacks translated question`);
-        assert.ok(item.explanation_structured?.answer,`${item.item_key} lacks structured analysis`);
+        if(item.choice_translations)assert.equal(item.choice_translations.length,item.choices.length,`${item.item_key} has incomplete translated choices`);
+        if(!detail.context.reading_ocr){
+          if(item.question)assert.ok(item.question_translation,`${item.item_key} lacks translated question`);
+          assert.ok(item.explanation_structured?.answer,`${item.item_key} lacks structured analysis`);
+        }
         choices+=item.choices.length;
       }
     }
@@ -112,13 +114,45 @@ test("publishes only media rendered by each Part",async()=>{
         assert.equal(detail.context.picture_path,undefined);
         assert.equal(detail.context.picture_paths,undefined);
         assert.ok(detail.context.passage||detail.context.content_translation);
-        assert.ok(unit.asset_refs.every(ref=>!ref.match(/\.(?:jpe?g|png)$/i)));
+        assert.ok(unit.asset_refs.filter(ref=>ref.match(/\.(?:jpe?g|png)$/i)).every(ref=>ref.includes("/reading-layout/")));
       }else if([1,3,4].includes(unit.part)){
         retainedVisuals+=unit.asset_refs.filter(ref=>ref.match(/\.(?:jpe?g|png)$/i)).length;
       }
     }
   }
   assert.ok(retainedVisuals>0,"Part 1/3/4 visuals must be retained");
+});
+
+test("publishes verified source-layout pages for every Part 6 and Part 7 unit",async()=>{
+  const catalog=JSON.parse(await read("public/data/catalog.json"));
+  let units=0,images=0;
+  for(const bank of catalog.banks){
+    const index=JSON.parse(await read(`public/data/${bank.index_path}`));
+    for(const unit of index.units.filter(unit=>unit.part===6||unit.part===7)){
+      units++;
+      const detail=JSON.parse(await read(`public/data/${unit.detail_path}`));
+      assert.equal(detail.context.reading_ocr?.schema_version,"reading_layout_ocr_v2",`${bank.bank_id}/${unit.unit_id} lacks OCR provenance`);
+      assert.deepEqual(detail.context.reading_ocr.verified_item_ids,detail.items.map(item=>item.item_id));
+      assert.ok(detail.context.reading_layout_images?.length>0,`${bank.bank_id}/${unit.unit_id} lacks source layout`);
+      for(const image of detail.context.reading_layout_images){
+        images++;
+        assert.ok(image.path.startsWith("reading-layout/"));
+        assert.ok(Number(image.source_width)>0&&Number(image.source_height)>0,`${bank.bank_id}/${unit.unit_id} lacks source dimensions`);
+        assert.equal(Number(image.width)/Number(image.source_width),1,`${bank.bank_id}/${unit.unit_id} must publish the full source page width`);
+        assert.deepEqual(image.crop,{x:0,y:0,width:image.source_width,height:image.source_height},`${bank.bank_id}/${unit.unit_id} must publish the complete original page`);
+        assert.ok(Number(image.ocr_crop?.width)/Number(image.source_width)>=.9,`${bank.bank_id}/${unit.unit_id} OCR crop clips more than 10% of page width`);
+        assert.ok(await exists(new URL(`public/assets/${bank.bank_id}/${image.path}`,root)),`${bank.bank_id}/${image.path} missing`);
+        assert.ok(unit.asset_refs.includes(image.asset_key));
+      }
+      for(const item of detail.items){
+        assert.equal(item.choices.length,4,`${item.item_key} choices`);
+        assert.ok(item.choices.every(Boolean),`${item.item_key} has empty choice`);
+        if(unit.part===7)assert.ok(/\?/.test(item.question)||/closest in meaning to\s*$/i.test(item.question),`${item.item_key} has truncated stem`);
+      }
+    }
+  }
+  assert.equal(units,456);
+  assert.ok(images>=456);
 });
 
 test("locks all 144 visually reviewed Part 1 picture/audio pairings",async()=>{
@@ -134,6 +168,9 @@ test("renders multi-bank priority controls and lazy detail loading",async()=>{
   assert.match(page,/全题库优先级刷题/);
   assert.match(page,/fetchJson<UnitDetail>/);
   assert.match(page,/context\.audio_path \|\| context\.question_audio_path/);
+  assert.match(page,/reading_layout_images/);
+  assert.match(page,/原始材料版面/);
+  assert.match(page,/查看文字版/);
   assert.match(page,/MULTI_CARD_PARTS = new Set\(\[1, 2, 5\]\)/);
   assert.match(page,/SingleItemGallery/);
   assert.match(page,/materialSplit/);

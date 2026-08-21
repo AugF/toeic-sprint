@@ -34,9 +34,41 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "To:\nMultiple recipients <staflist 1 @gollandhotel.bm>\nFrom:\nTrey Roban <troban@gollandhotel.bm>\nDate:\n17 February\nSubject:\nStaff update\nGood morning.\nAs you may know, the convention of the Bermuda Biotechnology Society will take place\nnext month at the Fenwith Hotel. I have learned that all rooms there have now been\nbooked for the duration of the event. Fortunately, because our renovation has now been\ncompleted, we can take on the overflow. In fact, conference attendees are already making\nreservations with us. Consequently, employees in housekeeping, maintenance. and food\nservice should be prepared to work additional shifts. We may also need extra staff at the\nfront desk. Please let me know immediately if you will be unable to work at any time\nbetween 2 and 7 March.\nThank you,\nTrey Roban\nManager, Golland Hotel",
-    "passage_translation": "中文辅助（离线预处理）：To:\nMultiple recipients <staflist 1 @gollandhotel.bm>\nFrom:\nTrey Roban <troban@gollandhotel.bm>\nDate:\n17 February\nSubject:\nStaff update\nGood morning.\nAs you may know, the convention of the Bermuda Biotechnology Society will take place\nnext month at the Fenwith Hotel.\nI have learned that all rooms there have now been\nbooked for the duration of the event.\nFortunately, because our renovation has now been\ncompleted, we can take on the overflow.\nIn fact, conference attendees are already making\nreservations with us.\nConsequently, employees in housekeeping, maintenance.\nand food\nservice（服务） should be prepared to work（工作） additional shifts.\nWe may also need extra staff at the\nfront desk.\nPlease（请） let me know immediately if you will be unable to work（工作） at any time\nbetween 2 and 7 March.\nThank（感谢） you,\nTrey Roban\nManager（经理）, Golland Hotel",
-    "content_translation": "中文辅助（离线预处理）：To:\nMultiple recipients <staflist 1 @gollandhotel.bm>\nFrom:\nTrey Roban <troban@gollandhotel.bm>\nDate:\n17 February\nSubject:\nStaff update\nGood morning.\nAs you may know, the convention of the Bermuda Biotechnology Society will take place\nnext month at the Fenwith Hotel.\nI have learned that all rooms there have now been\nbooked for the duration of the event.\nFortunately, because our renovation has now been\ncompleted, we can take on the overflow.\nIn fact, conference attendees are already making\nreservations with us.\nConsequently, employees in housekeeping, maintenance.\nand food\nservice（服务） should be prepared to work（工作） additional shifts.\nWe may also need extra staff at the\nfront desk.\nPlease（请） let me know immediately if you will be unable to work（工作） at any time\nbetween 2 and 7 March.\nThank（感谢） you,\nTrey Roban\nManager（经理）, Golland Hotel"
+    "passage": "To: | | Multiple recipients <stafflist | @ gollandhotel.bm>\n\ne | | Trey Roban <troban@ gollandhotel,bm>\n\nFrom\nDate: if {17 February\n\nSubject: | { Staff update\n\nLILuwLJItuo\n\nGood morning,\n\nAs you may know, the convention of the Bermuda Biotechnology Society will take place\nnext month at the Fenwith Hotel, I have learned that all rooms there have now been\nbooked for the duration of the event. Fortunately, because our renovation has now been\ncompleted, we can take on the overflow. In fact. conference attendees are already making\nreservations with us. Consequently, employees in housekeeping, maintenance. and food\nservice should be prepared to work additional shifts, We may also need extra staff at the\nfront desk. Please let me know immediately if you will be unable to work at any time\nbetween 2 and 7 March.\n\nThank you,\n\nTrey Roban\nManager, Golland Hotel\n\nisl",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-152-153-1.jpg",
+        "asset_key": "official-8-test-1/reading-layout/p7-152-153-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1354,
+        "source_width": 1000,
+        "source_height": 1354,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1354
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 106,
+          "width": 940,
+          "height": 510
+        },
+        "source": "official-8-test-1/images/part7/q152-153.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "3cfd0fe1cc3ca1da6ad4824d6f8f22f5fd17d76d7b9851f8d40fca987160a140",
+      "verified_item_ids": [
+        152,
+        153
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -143,31 +175,5 @@
       },
       "item_key": "official-8-test-1/p7-152-153/153"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "passage"
-    ],
-    "vocabulary": [
-      {
-        "term": "maintenance",
-        "meaning": "维护；保养",
-        "source_quote": "Consequently, employees in housekeeping, maintenance. and food service should be prepared to work additional shifts.",
-        "source_field": "passage",
-        "why": "设施、设备和运营通知的高频词。",
-        "confidence": 0.96
-      },
-      {
-        "term": "renovation",
-        "meaning": "翻修；改造",
-        "source_quote": "Fortunately, because our renovation has now been completed, we can take on the overflow.",
-        "source_field": "passage",
-        "why": "办公设施和场地维护通知高频。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

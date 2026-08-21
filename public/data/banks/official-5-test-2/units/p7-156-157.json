@@ -34,9 +34,41 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "Emilie Nowak [4:52 P.M.]\nHello, Hiroshi. The new double-size and king-size sheets are setting sales records.\nWe can't keep them in stock! How quickly can you send 150 meters of the cotton\nfloral design?\nHiroshi Taka [4:53 P.M.]\nHey, Emilie. That is great to hear. Would three weeks from today work for you?\nEmilie Nowak [4:55 P.M.]\nActually, we are almost sold out! Two weeks would be a lot better. I could also\nuse about 40 meters of that lovely palm-tree pattern to make pillowcases.\n:\nHiroshi Taka [4:57 P.M.]\nOK. I'll see what I can do.\nEmilie Nowak [4:59 P.M.]\nThanks.",
-    "passage_translation": "中文辅助（离线预处理）：Emilie Nowak [4:52 P.M.]\nHello, Hiroshi.\nThe new double-size and king-size sheets are setting sales records.\nWe can't keep them in stock!\nHow（如何） quickly can you send 150 meters of the cotton\nfloral design?\nHiroshi Taka [4:53 P.M.]\nHey, Emilie.\nThat is great to hear.\nWould three weeks from today work（工作） for you?\nEmilie Nowak [4:55 P.M.]\nActually, we are almost sold out!\nTwo weeks would be a lot better.\nI could also\nuse about 40 meters of that lovely palm-tree pattern to make pillowcases.\n:\nHiroshi Taka [4:57 P.M.]\nOK.\nI'll see what（什么） I can do.\nEmilie Nowak [4:59 P.M.]\nThanks.",
-    "content_translation": "中文辅助（离线预处理）：Emilie Nowak [4:52 P.M.]\nHello, Hiroshi.\nThe new double-size and king-size sheets are setting sales records.\nWe can't keep them in stock!\nHow（如何） quickly can you send 150 meters of the cotton\nfloral design?\nHiroshi Taka [4:53 P.M.]\nHey, Emilie.\nThat is great to hear.\nWould three weeks from today work（工作） for you?\nEmilie Nowak [4:55 P.M.]\nActually, we are almost sold out!\nTwo weeks would be a lot better.\nI could also\nuse about 40 meters of that lovely palm-tree pattern to make pillowcases.\n:\nHiroshi Taka [4:57 P.M.]\nOK.\nI'll see what（什么） I can do.\nEmilie Nowak [4:59 P.M.]\nThanks."
+    "passage": "Emilie Nowak [4:52 P.M.]\n\nHello, Hiroshi. The new double-size and king-size sheets are setting sales records.\n\nWe can't keep them in stock! How quickly can you send 150 meters of the cotton\nfloral design?\n\nHiroshi Taka [4:53 P.M.]\n\nHey, Emilie. That is great to hear. Would three weeks from today work for you?\nEmilie Nowak [4:55 P.M.]\n\nA ctually, we are almost sold out! Two weeks would be a lot better. I could also\nuse about 40 meters of that lovely palm-tree pattern to make pillowcases.\n\nHiroshi Taka [4:57 P.M.]\nOK. I'll see what I can do.\n\nEmilie Nowak [4:59 P.M.]\nThanks.\n\n@ 1S3al",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-156-157-1.jpg",
+        "asset_key": "official-5-test-2/reading-layout/p7-156-157-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1294,
+        "source_width": 1000,
+        "source_height": 1294,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1294
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 125,
+          "width": 940,
+          "height": 496
+        },
+        "source": "official-5-test-2/images/part7/q156-157.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "46cf3be66e12e82ac6fd122de655b6a00f466d331690bfb137028a7f34d301e3",
+      "verified_item_ids": [
+        156,
+        157
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -143,23 +175,5 @@
       },
       "item_key": "official-5-test-2/p7-156-157/157"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "choice"
-    ],
-    "vocabulary": [
-      {
-        "term": "shipment",
-        "meaning": "装运；货运批次",
-        "source_quote": "He will try to rush a shipment.",
-        "source_field": "choice",
-        "why": "订单、交付和物流跟踪场景高频。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

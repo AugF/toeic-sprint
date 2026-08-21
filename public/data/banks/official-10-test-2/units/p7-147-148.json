@@ -31,38 +31,53 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "MEMO\nFrom: Takori Apartment Management\nTo: All Residents\nRe:\nCar park\nDate: 15 October\nSections 1 through 4 of the car park at the apartment complex will be\nclosed for repair on a rotating basis in November. Please move your car to\nthe guest parking area near the clubhouse during work on your section.\nDepending on what each section needs, there may be asphalt paving, seal\ncoating, pothole repair, painting, or some combination of these four task\ntypes.\nWork will begin on section 1 in early November. We will work on the\nsections in numerical order, and we expect that each section will take one\nweek to complete. We apologize for any inconvenience, but as you know,\nthis work is essential.\nThank you.",
-    "passage_translation": "中文辅助（离线预处理）：MEMO\nFrom: Takori Apartment Management\nTo: All Residents\nRe:\nCar park\nDate: 15 October\nSections 1 through 4 of the car park at the apartment complex will be\nclosed for repair on a rotating basis in November.\nPlease（请） move your car to\nthe guest parking area near the clubhouse during work（工作） on your section.\nDepending on what（什么） each section needs, there may be asphalt paving, seal\ncoating, pothole repair, painting, or some combination of these four task\ntypes.\nWork（工作） will begin on section 1 in early November.\nWe will work（工作） on the\nsections in numerical order（订单）, and we expect that each section will take one\nweek to complete.\nWe apologize for any inconvenience, but as you know,\nthis work（工作） is essential.\nThank（感谢） you.",
-    "content_translation": "中文辅助（离线预处理）：MEMO\nFrom: Takori Apartment Management\nTo: All Residents\nRe:\nCar park\nDate: 15 October\nSections 1 through 4 of the car park at the apartment complex will be\nclosed for repair on a rotating basis in November.\nPlease（请） move your car to\nthe guest parking area near the clubhouse during work（工作） on your section.\nDepending on what（什么） each section needs, there may be asphalt paving, seal\ncoating, pothole repair, painting, or some combination of these four task\ntypes.\nWork（工作） will begin on section 1 in early November.\nWe will work（工作） on the\nsections in numerical order（订单）, and we expect that each section will take one\nweek to complete.\nWe apologize for any inconvenience, but as you know,\nthis work（工作） is essential.\nThank（感谢） you."
+    "passage": "From: Takori A partment Management\nTo: All Residents\n\nRe: Car park\n\nDate: 15 October\n\nSections 1 through 4 of the car park at the apartment complex will be\nclosed for repair on a rotating basis in November. Please move your car to\nthe guest parking area near the clubhouse during work on your section.\nDepending on what each section needs, there may be asphalt paving, seal\ncoating, pothole repair, painting, or some combination of these four task\n\ntypes.\n\nWork will begin on section 1 in early November. We will work on the\nsections in numerical order, and we expect that each section will take one\nweek to complete. We apologize for any inconvenience, but as you know,\nthis work is essential.\n\nThank you.\n\n@ 1S4L",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-147-148-1.jpg",
+        "asset_key": "official-10-test-2/reading-layout/p7-147-148-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1414,
+        "source_width": 1000,
+        "source_height": 1414,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1414
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 374,
+          "width": 940,
+          "height": 542
+        },
+        "source": "official-10-test-2/images/part7/q147-148.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "b8f5cf84ef044b10890be580a4856d9393ad669ded325e30c4547f7722b3f3cc",
+      "verified_item_ids": [
+        147,
+        148
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
       "choices": [
-        "To introduce residents to a new facility",
+        "To introduce residents to a new fa",
         "To encourage residents to attend an event",
         "To inform residents about a likely inconvenience",
-        "To explain a change in plans to"
+        "To explain a change in plans to residents"
       ],
       "answer": "C",
       "question": "What is the purpose of the memo?",
-      "answer_explain": "原文依据：篇章中可定位到“We apologize for any inconvenience, but as you know,”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（To inform residents about a likely inconvenience）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the purpose（目的） of the memo?",
-      "choice_translations": [
-        "A：To introduce residents to a new facility",
-        "B：To encourage residents to attend an event",
-        "C：To inform residents about a likely（最可能） inconvenience",
-        "D：To explain a change in plans to"
-      ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：MEMO",
-      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-      "explanation_structured": {
-        "answer": "C",
-        "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：MEMO",
-        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：篇章中可定位到“We apologize for any inconvenience, but as you know,”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（To inform residents about a likely inconvenience）。"
-      },
       "item_id": 147,
       "priority": {
         "level": "P3",
@@ -93,25 +108,8 @@
         "Four weeks"
       ],
       "answer": "D",
-      "question": "According to the memo, about how long will it take for the entire project to be completed?",
-      "answer_explain": "原文依据：篇章中可定位到“coating, pothole repair, painting, or some combination of these four task”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（Four weeks）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the memo, about how（如何） long will it take for the entire project to be completed?",
-      "choice_translations": [
-        "A：One week",
-        "B：Two weeks",
-        "C：Three weeks",
-        "D：Four weeks"
-      ],
+      "question": "A ccording to the memo, about how long will it take for the entire project to be completed?",
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：MEMO",
-      "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-      "explanation_structured": {
-        "answer": "D",
-        "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：MEMO",
-        "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：篇章中可定位到“coating, pothole repair, painting, or some combination of these four task”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：D（Four weeks）。"
-      },
       "item_id": 148,
       "priority": {
         "level": "P3",

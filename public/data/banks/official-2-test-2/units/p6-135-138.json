@@ -36,9 +36,43 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "Congratulations on your purchase! Muldeen Container Company all-weather storage units are\nknown 735. simple design and outstanding durability. Be sure to read the warranty and\ninstructions before 736, Your new storage unit. We recommend that you choose a location\nin your yard that allows for water drainage. In addition, verify that the site you have chosen\nis 9377 flat and that the product carton contains all the parts needed. 738\" Please call us\nwith any questions or concerns at 888-555-0122.",
-    "passage_translation": "恭喜您购买！Muldeen Container Company 的全天候存储单元以其简单的设计和出色的耐用性而闻名。请务必在设置您的新存储单元前阅读保修单和说明书。我们建议您选择一个允许排水的院子位置。此外，请确认您选择的场地是平坦的，并且产品纸箱包含所有需要的零件。如有任何问题或疑虑，请致电 888-555-0122 联系我们。",
-    "content_translation": "恭喜您购买！Muldeen Container Company 的全天候存储单元以其简单的设计和出色的耐用性而闻名。请务必在设置您的新存储单元前阅读保修单和说明书。我们建议您选择一个允许排水的院子位置。此外，请确认您选择的场地是平坦的，并且产品纸箱包含所有需要的零件。如有任何问题或疑虑，请致电 888-555-0122 联系我们。"
+    "passage": "Congratulations on your purchase! Muldeen Container Company all-weather storage units are\nknown 735. simple design and outstanding durability. Be sure to read the warranty and\ninstructions before F3G, Your new storage unit. We recommend that you choose a location\n\nin your yard that allows for water drainage. In addition, verify that the site you have chosen\n\nis 377 flat and that the product carton contains all the parts needed. 7380 Please call us\nwith any questions or concerns at 888-555-0122.",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p6-135-138-1.jpg",
+        "asset_key": "official-2-test-2/reading-layout/p6-135-138-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1294,
+        "source_width": 1000,
+        "source_height": 1294,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1294
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 107,
+          "width": 940,
+          "height": 295
+        },
+        "source": "official-2-test-2/images/part6/q135-138.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "671f603e84e0169706b0eef1faed72b016cc31b76c85c3a278aeee58f2b60573",
+      "verified_item_ids": [
+        135,
+        136,
+        137,
+        138
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -202,26 +236,10 @@
         "Our customer service department is ready to assist you.",
         "Our products can be delivered by express mail at an added cost.",
         "We have been in business for over 35 years.",
-        "We will contact you when your shipment"
+        "We will contact you when your shipment is ready."
       ],
       "answer": "A",
-      "answer_explain": "原文依据：空格所在篇章的相关语境是“In addition, verify that the site you have chosen”。选择理由：该句承接前文并为后文提供必要信息，放入后篇章逻辑和指代均连贯。正确答案：A（Our customer service department is ready to assist you.）。",
-      "choice_translations": [
-        "A：我们的客户服务部随时为您提供帮助。",
-        "B：我们的产品可以以额外费用通过快递邮件送达。",
-        "C：我们已经经营了 35 年以上。",
-        "D：您的货物到达时我们会联系您"
-      ],
       "question_type": "整句填入题",
-      "evidence": "参考原文第 1 段：Congratulations on your purchase! Muldeen Container Company all-weather storage units are",
-      "strategy": "本题属于整句填入题。先看空格所在句，再检查前后句的指代、时态和逻辑衔接，避免只凭单个词作答。",
-      "explanation_structured": {
-        "answer": "A",
-        "question_type": "整句填入题",
-        "evidence": "参考原文第 1 段：Congratulations on your purchase! Muldeen Container Company all-weather storage units are",
-        "strategy": "本题属于整句填入题。先看空格所在句，再检查前后句的指代、时态和逻辑衔接，避免只凭单个词作答。",
-        "analysis": "原文依据：空格所在篇章的相关语境是“In addition, verify that the site you have chosen”。选择理由：该句承接前文并为后文提供必要信息，放入后篇章逻辑和指代均连贯。正确答案：A（Our customer service department is ready to assist you.）。"
-      },
       "item_id": 138,
       "priority": {
         "level": "P1",
@@ -249,23 +267,5 @@
       },
       "item_key": "official-2-test-2/p6-135-138/138"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "choice"
-    ],
-    "vocabulary": [
-      {
-        "term": "shipment",
-        "meaning": "装运；货运批次",
-        "source_quote": "We will contact you when your shipment",
-        "source_field": "choice",
-        "why": "订单、交付和物流跟踪场景高频。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

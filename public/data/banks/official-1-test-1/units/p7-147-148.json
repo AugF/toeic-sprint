@@ -34,9 +34,41 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "-t SAL\nWelcome to\nMoon Bay Department Store\nPlease use this temporary directory to navigate our store\nwhile it is under renovation. We are expanding Level 2,\nwhich previously held our shoe department, in order to\nbuild a food court for our valued customers.\nLevel 1\nElectronics and Technology\nHome Furnishings\nLevel 2\nClosed for Renovations until June 4\nLevel 3\nChildren’s Clothing\nAthletic Equipment\nLevel 4\nWomen’s Clothing\nMen's Clothing\nShoes",
-    "passage_translation": "-t SAL\n欢迎光湾百货商店\n请使用此临时通道在我们的商店进行导航，\n因为我们正在进行翻修。我们正在扩大2层，\n该区域以前是我们的鞋类部门，目的是为我们尊贵的顾客\n建立一个美食广场。\n1层\n电子产品和技术\n家居用品\n2层\n因翻修而关闭，直至6月4日\n3层\n儿童服装\n运动器材\n4层\n女士服装\n男士服装\n鞋子",
-    "content_translation": "-t SAL\n欢迎光湾百货商店\n请使用此临时通道在我们的商店进行导航，\n因为我们正在进行翻修。我们正在扩大2层，\n该区域以前是我们的鞋类部门，目的是为我们尊贵的顾客\n建立一个美食广场。\n1层\n电子产品和技术\n家居用品\n2层\n因翻修而关闭，直至6月4日\n3层\n儿童服装\n运动器材\n4层\n女士服装\n男士服装\n鞋子"
+    "passage": "Welcome to\nMoon Bay Department Store\n\nPlease use this temporary directory to navigate our store\nwhile it is under renovation. We are expanding Level 2,\nwhich previously held our shoe department, in order to\nbuild a food court for our valued customers.\n\nLevel 1\nElectronics and Technology\nHome Furnishings\n\nLevel 2\nClosed for Renovations until June 4\n\nLevel 3\nChildren's Clothing\nA thletic Equipment\n\nLevel 4\nWomen's Clothing\nMen's Clothing\nShoes\n\n+t LS3",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-147-148-1.jpg",
+        "asset_key": "official-1-test-1/reading-layout/p7-147-148-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1294,
+        "source_width": 1000,
+        "source_height": 1294,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1294
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 319,
+          "width": 940,
+          "height": 666
+        },
+        "source": "official-1-test-1/images/part7/q147-148.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "9f0572a2f7bed75459a913de08a294a509fdf20bbf0d3ab9517d81172bced79e",
+      "verified_item_ids": [
+        147,
+        148
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -47,25 +79,8 @@
         "To add extra dressing rooms"
       ],
       "answer": "C",
-      "question": "Why is the store under renovation? 148.",
-      "answer_explain": "原文依据：篇章中可定位到“while it is under renovation.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（To create an eating area）。",
+      "question": "Why is the store under renovation?",
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：Moon Bay Department Store",
-      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-      "explanation_structured": {
-        "answer": "C",
-        "question_type": "细节题",
-        "evidence": "参考原文第 3 段：Moon Bay Department Store",
-        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：篇章中可定位到“while it is under renovation.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：C（To create an eating area）。"
-      },
-      "question_translation": "商店正在翻修的原因是什么？",
-      "choice_translations": [
-        "A：重新整理服装部门",
-        "B：扩大鞋类部门",
-        "C：创建餐饮区",
-        "D：增加额外的更衣室"
-      ],
       "item_id": 147,
       "priority": {
         "level": "P2",
@@ -96,28 +111,11 @@
         "On Level 1",
         "On Level 2",
         "On Level 3",
-        "To add extra dressing rooms"
+        "On Level 4"
       ],
       "answer": "C",
-      "question": "Where are exercise machines most likely",
-      "answer_explain": "原文依据：篇章中可定位到“We are expanding Level 2,”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（On Level 3）。",
+      "question": "Where are exercise machines most likely located?",
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：-t SAL",
-      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-      "explanation_structured": {
-        "answer": "C",
-        "question_type": "推断题",
-        "evidence": "参考原文第 1 段：-t SAL",
-        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：篇章中可定位到“We are expanding Level 2,”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（On Level 3）。"
-      },
-      "question_translation": "健身器材最有可能在哪个楼层？",
-      "choice_translations": [
-        "A：1层",
-        "B：2层",
-        "C：3层",
-        "D：增加额外的更衣室"
-      ],
       "item_id": 148,
       "priority": {
         "level": "P2",
@@ -143,23 +141,5 @@
       },
       "item_key": "official-1-test-1/p7-147-148/148"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "passage"
-    ],
-    "vocabulary": [
-      {
-        "term": "renovation",
-        "meaning": "翻修；改造",
-        "source_quote": "Welcome to Moon Bay Department Store Please use this temporary directory to navigate our store while it is under renovation.",
-        "source_field": "passage",
-        "why": "办公设施和场地维护通知高频。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

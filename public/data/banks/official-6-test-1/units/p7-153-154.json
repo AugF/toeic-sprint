@@ -34,38 +34,53 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "•\nFumio Komatsu (2:42 P.M.)\nHi, Nelly. By any chance, did someone from\nthe Evergreen restaurant send you a list of the\nsummer menu items? I wanted to start updating\ntheir site, but I don't have the latest list.\nNelly Artemyeva (2:43 P.M.)\nThe chef e-mailed it to me this morning, but I\nwant to go over the changes with you first. Do\nyou have time now?\nFumio Komatsu (2:44 P.M.)\nI'm on my way back to the office. I just receive\nthephotographs for the aquarium's Website.\nNelly Artemyeva (2:45 P.M.)\nExcellent. Why don't I stop by your office\naround 4:30. Will you be available?\nFumio Komatsu (2:46 P.M.)\nMost likely. I have to go to a training session\nat 3:30, but it shouldn't last long.",
-    "passage_translation": "\n•\nFumio Komatsu (下午 2:42)\n嗨，Nelly。请问有没有人从 Evergreen 餐厅给你发了夏季菜单的清单？我想开始更新他们的网站，但我没有最新的清单。\nNelly Artemyeva (下午 2:43)\n主厨今天早上给我发邮件了，但我想先和你过一遍修改的地方。你现在有时间吗？\nFumio Komatsu (下午 2:44)\n我正在回办公室的路上。我刚收到了水族馆网站的照片。\nNelly Artemyeva (下午 2:45)\n太好了。我下午 4:30 쯤 去你办公室好吗？你会方便吗？\nFumio Komatsu (下午 2:46)\n很可能。我下午 3:30 要去一个培训课程，但应该不会太久。",
-    "content_translation": "\n•\nFumio Komatsu (下午 2:42)\n嗨，Nelly。请问有没有人从 Evergreen 餐厅给你发了夏季菜单的清单？我想开始更新他们的网站，但我没有最新的清单。\nNelly Artemyeva (下午 2:43)\n主厨今天早上给我发邮件了，但我想先和你过一遍修改的地方。你现在有时间吗？\nFumio Komatsu (下午 2:44)\n我正在回办公室的路上。我刚收到了水族馆网站的照片。\nNelly Artemyeva (下午 2:45)\n太好了。我下午 4:30 쯤 去你办公室好吗？你会方便吗？\nFumio Komatsu (下午 2:46)\n很可能。我下午 3:30 要去一个培训课程，但应该不会太久。"
+    "passage": ">\n\nFumio Komatsu (2:42 P.M.)\n\nHi, Nelly. By any chance, did someone from\nthe Evergreen restaurant send you a list of the\nsummer menu items? | wanted to start updating\ntheir site, but I don't have the latest list.\n\nNelly A rtemyeva (2:43 P.M.)\n\nThe chef e-mailed it to me this morning, but I\nwant to go over the changes with you first. Do\nyou have time now?\n\nFumio Komatsu (2:44 P.M.)\n\nI'm on my way back to the office. I just received\nthe photographs for the aquarium's Web site.\nThey're amazing!\n\nNelly A rtemyeva (2:45 P.M.)\n\nExcellent. Why don't I stop by your office\naround 4:30. Will you be available?\n\nFumio Komatsu (2:46 P.M.)\nMost likely. I have to go to a training session\nat 3:30, but it shouldn't last long.",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-153-154-1.jpg",
+        "asset_key": "official-6-test-1/reading-layout/p7-153-154-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1294,
+        "source_width": 1000,
+        "source_height": 1294,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1294
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 103,
+          "width": 940,
+          "height": 707
+        },
+        "source": "official-6-test-1/images/part7/q153-154.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "0e64f69db63a327764e79fc57425bd5f5876a05d31aee4da3c3121a63f8bc0a8",
+      "verified_item_ids": [
+        153,
+        154
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
       "choices": [
-        "They are studying photography.",
+        "They are studying photograph)",
         "They work at an aquarium.",
         "They design Web sites.",
         "They own a restaurant."
       ],
       "answer": "C",
-      "question": "What is suggested about Mr. Komatsu and Ms. Artemyeva?",
-      "answer_explain": "原文依据：篇章中可定位到“Fumio Komatsu (2:42 P.M.)”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（They design Web sites.）。",
-      "question_translation": "关于 Komatsu 先生和 Artemyeva 女士的对话暗示了什么？",
-      "choice_translations": [
-        "A：他们正在学习摄影。",
-        "B：他们在一家水族馆工作。",
-        "C：他们在设计网站。",
-        "D：他们拥有一家餐厅。"
-      ],
+      "question": "What is suggested about Mr. Koma and Ms. A rtemyeva?",
       "question_type": "推断题",
-      "evidence": "参考原文第 2 段：Fumio Komatsu (2:42 P.M.)",
-      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-      "explanation_structured": {
-        "answer": "C",
-        "question_type": "推断题",
-        "evidence": "参考原文第 2 段：Fumio Komatsu (2:42 P.M.)",
-        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：篇章中可定位到“Fumio Komatsu (2:42 P.M.)”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（They design Web sites.）。"
-      },
       "item_id": 153,
       "priority": {
         "level": "P2",
@@ -94,30 +109,13 @@
     {
       "choices": [
         "He is not able to review a document now.",
-        "He agrees with Ms. Artemyeva's suggestions.",
+        "He agrees with Ms. A rtemyeva's suggestions.",
         "He has been delayed by traffic.",
-        "He did not check his e-mail this"
+        "He did not check his e-mail this morning."
       ],
       "answer": "A",
-      "question": "At 2:44 P.M., what does Mr. Komatsu mean when he writes, \"I'm on my way back to the office\"?",
-      "answer_explain": "原文依据：篇章中可定位到“I'm on my way back to the office.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（He is not able to review a document now.）。",
-      "question_translation": "下午 2:44，Komatsu 先生写“我正在回办公室的路上”是什么意思？",
-      "choice_translations": [
-        "A：他现在无法审阅文件。",
-        "B：他同意 Artemyeva 女士的建议。",
-        "C：他被交通耽搁了时间。",
-        "D：他没有查看他的电子邮件"
-      ],
+      "question": "At 2:44 pm., what does Mr. Komatsu mean when he writes, \"I'm on my way back to phy. the office\"?",
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：Fumio Komatsu (2:42 P.M.)",
-      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-      "explanation_structured": {
-        "answer": "A",
-        "question_type": "细节题",
-        "evidence": "参考原文第 2 段：Fumio Komatsu (2:42 P.M.)",
-        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：篇章中可定位到“I'm on my way back to the office.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（He is not able to review a document now.）。"
-      },
       "item_id": 154,
       "priority": {
         "level": "P2",

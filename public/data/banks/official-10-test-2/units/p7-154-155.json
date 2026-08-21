@@ -35,9 +35,41 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "Ravi Carelli (11:05 A.M.)\nI think we need to do another test run of\nour marketing strategy presentation before\nwe go to Sarsoni Luggage tomorrow. What\ndo you think?\nJeanine Ika (11:07 A.M.)\nIt is a little complicated in places, isn't it?\nRavi Carelli (11:09 A.M.)\nExactly. We want to be as clear and\nsmooth as possible in our delivery. How\nabout this afternoon?\nJeanine Ika (11:12 A.M.)\nIs 3 P.M. a good time for you?\nRavi Carelli (11:15 A.M.)\nThat works. I'll come to your office.",
-    "passage_translation": "中文辅助（离线预处理）：Ravi Carelli (11:05 A.M.)\nI think we need to do another test run of\nour marketing strategy presentation before\nwe go to Sarsoni Luggage tomorrow.\nWhat（什么）\ndo you think?\nJeanine Ika (11:07 A.M.)\nIt is a little complicated in places, isn't it?\nRavi Carelli (11:09 A.M.)\nExactly.\nWe want to be as clear and\nsmooth as possible in our delivery.\nHow（如何）\nabout this afternoon?\nJeanine Ika (11:12 A.M.)\nIs 3 P.M.\na good time for you?\nRavi Carelli (11:15 A.M.)\nThat works.\nI'll come to your office（办公室）.",
-    "content_translation": "中文辅助（离线预处理）：Ravi Carelli (11:05 A.M.)\nI think we need to do another test run of\nour marketing strategy presentation before\nwe go to Sarsoni Luggage tomorrow.\nWhat（什么）\ndo you think?\nJeanine Ika (11:07 A.M.)\nIt is a little complicated in places, isn't it?\nRavi Carelli (11:09 A.M.)\nExactly.\nWe want to be as clear and\nsmooth as possible in our delivery.\nHow（如何）\nabout this afternoon?\nJeanine Ika (11:12 A.M.)\nIs 3 P.M.\na good time for you?\nRavi Carelli (11:15 A.M.)\nThat works.\nI'll come to your office（办公室）."
+    "passage": "Ravi Carelli (11:05 A.M.)\n| | think we need to do another test run of\nour marketing strategy presentation before\n| we go to Sarsoni Luggage tomorrow. What\ndo you think?\n\nJeanine Ika (11:07 A.M.)\n| It is a little complicated in places, isn't it?\n\nRavi Carelli (11:09 A.M.)\n\nExactly. We want to be as clear and\nsmooth as possible in our delivery. How\nabout this afternoon?\n\n| Jeanine Ika (11:12 A.M.)\nIs 3 P.M. a good time for you?\nRavi Carelli (11:15 A.M.)\nThat works. I'll come to your office.",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-154-155-1.jpg",
+        "asset_key": "official-10-test-2/reading-layout/p7-154-155-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1414,
+        "source_width": 1000,
+        "source_height": 1414,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1414
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 180,
+          "width": 940,
+          "height": 635
+        },
+        "source": "official-10-test-2/images/part7/q154-155.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "3c049bfb5cb45a98f907b2dac48497a4181fc9f78841f27f40a0f7af2f8a61ca",
+      "verified_item_ids": [
+        154,
+        155
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -146,23 +178,5 @@
       },
       "item_key": "official-10-test-2/p7-154-155/155"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "passage"
-    ],
-    "collocations": [
-      {
-        "phrase": "marketing strategy",
-        "meaning": "营销策略",
-        "source_quote": "Ravi Carelli (11:05 A.M.) I think we need to do another test run of our marketing strategy presentation before we go to Sarsoni Luggage tomorrow.",
-        "source_field": "passage",
-        "why": "市场推广、销售计划和商业提案的核心搭配。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

@@ -11,7 +11,7 @@ type Priority = {
   reason?: string;
   focus_tags?: string[];
 };
-type MediaRef = {path: string; asset_key?: string; exists?: boolean};
+type MediaRef = {path: string; asset_key?: string; exists?: boolean; width?: number; height?: number; source_width?: number; source_height?: number; crop?: {x: number; y: number; width: number; height: number}; ocr_crop?: {x: number; y: number; width: number; height: number}};
 type KnowledgeEntry = {term?: string; phrase?: string; meaning?: string};
 type Knowledge = {schema_version?: string; vocabulary?: KnowledgeEntry[]; collocations?: KnowledgeEntry[]};
 type Item = {
@@ -41,6 +41,7 @@ type Context = {
   passage?: string;
   passage_translation?: string;
   content_translation?: string;
+  reading_layout_images?: MediaRef[];
 };
 type UnitDetail = {
   bank_id: string;
@@ -270,6 +271,7 @@ export default function Home() {
   const [stickyKeys, setStickyKeys] = useState<string[]>([]);
   const [showTranscript, setShowTranscript] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
+  const [showOcrText, setShowOcrText] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
   const [showAnalysis, setShowAnalysis] = useState(false);
   const [relatedAnswers, setRelatedAnswers] = useState<Record<string, boolean>>({});
@@ -381,6 +383,7 @@ export default function Home() {
   useEffect(() => {
     setShowTranscript(false);
     setShowTranslation(false);
+    setShowOcrText(false);
     setShowAnalysis(false);
     setRelatedAnswers({});
     setRelatedAnalysis({});
@@ -568,6 +571,7 @@ export default function Home() {
     : "";
   const passage = context.passage || "";
   const passageTranslation = context.passage_translation || context.content_translation || "";
+  const readingLayoutImages = current ? (context.reading_layout_images || []).filter(ref => Boolean(assetUrl(current.bank_id, ref))) : [];
   const isStarred = current ? current.item_keys.some(key => saved.stars.includes(key)) : false;
   const currentNoun = current ? unitNoun(current.part) : (partFilter ? unitNoun(partFilter) : "项");
   const queueNoun = partFilter ? unitNoun(partFilter) : "项";
@@ -717,7 +721,7 @@ export default function Home() {
         {loadError && <div className="loadNotice">{loadError}</div>}
         <div className="topline globalTopline">
           <div><span className="eyebrow">PRIORITY DRILL · {bankFilter === "ALL" ? "ALL 24 TESTS" : current?.bank_title}</span><h1>{partFilter ? `Part ${partFilter} 专项训练` : "全题库优先级刷题"}</h1></div>
-          <div className="topTools"><div className="globalReviewTools"><button className="answerBtn" type="button" disabled={!globalActionKeys.length} onClick={toggleGlobalAnswers}>{globalAllAnswersOpen ? "隐藏全部答案" : "查看全部答案"}</button><button className="clearAnswerBtn" type="button" disabled={!globalHasChoices} onClick={clearGlobalChoices}>清空全部选择</button></div><details className="sortMenu"><summary>{sortMode === "RANDOM" ? "随机排序" : sortMode === "OFFICIAL" ? "官方排序" : "优先级排序"}</summary><div><button className={sortMode === "RANDOM" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "RANDOM"} onClick={event => {setSortMode("RANDOM"); setRandomSeed(value => value + 1); event.currentTarget.closest("details")?.removeAttribute("open");}}>随机排序</button><button className={sortMode === "PRIORITY" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "PRIORITY"} onClick={event => {setSortMode("PRIORITY"); event.currentTarget.closest("details")?.removeAttribute("open");}}>优先级排序</button><button className={sortMode === "OFFICIAL" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "OFFICIAL"} onClick={event => {setSortMode("OFFICIAL"); event.currentTarget.closest("details")?.removeAttribute("open");}}>官方排序</button></div></details><div className="groupCount">{queue.length ? (multiCardMode ? `${pageStart + 1}–${Math.min(pageStart + MULTI_CARD_PAGE_SIZE, queue.length)} / ${queue.length} 题` : `${pageStart + 1} / ${queue.length} ${queueNoun}`) : `0 ${queueNoun}`}</div></div>
+          <div className="topTools"><div className="globalReviewTools"><button className="answerBtn" type="button" aria-pressed={globalAllAnswersOpen} disabled={!globalActionKeys.length} onClick={toggleGlobalAnswers}>{globalAllAnswersOpen ? "隐藏全部答案" : "查看全部答案"}</button><button className="clearAnswerBtn" type="button" disabled={!globalHasChoices} onClick={clearGlobalChoices}>清空全部选择</button></div><details className="sortMenu"><summary>{sortMode === "RANDOM" ? "随机排序" : sortMode === "OFFICIAL" ? "官方排序" : "优先级排序"}</summary><div><button className={sortMode === "RANDOM" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "RANDOM"} onClick={event => {setSortMode("RANDOM"); setRandomSeed(value => value + 1); event.currentTarget.closest("details")?.removeAttribute("open");}}>随机排序</button><button className={sortMode === "PRIORITY" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "PRIORITY"} onClick={event => {setSortMode("PRIORITY"); event.currentTarget.closest("details")?.removeAttribute("open");}}>优先级排序</button><button className={sortMode === "OFFICIAL" ? "orderBtn on" : "orderBtn"} type="button" aria-pressed={sortMode === "OFFICIAL"} onClick={event => {setSortMode("OFFICIAL"); event.currentTarget.closest("details")?.removeAttribute("open");}}>官方排序</button></div></details><div className="groupCount">{queue.length ? (multiCardMode ? `${pageStart + 1}–${Math.min(pageStart + MULTI_CARD_PAGE_SIZE, queue.length)} / ${queue.length} 题` : `${pageStart + 1} / ${queue.length} ${queueNoun}`) : `0 ${queueNoun}`}</div></div>
         </div>
 
         {indexLoading ? <div className="detailLoading"><div className="loader"/>正在汇总 4,800 题的优先级索引…</div> : !current ? <div className="empty"><b>当前筛选下没有题目</b><p>可以切换优先级、Part 或完成状态继续训练。</p><button onClick={() => {setBankFilter("ALL"); setPartFilter(0); setPriorityFilter("P1"); setStatusFilter("ALL");}}>恢复 P1 必刷队列</button></div> : multiCardMode ? <>
@@ -745,8 +749,9 @@ export default function Home() {
               {current.part <= 4 && !audioSrc && <div className="materialActions">{MATERIAL_PARTS.has(current.part) && <button className="answerBtn" onClick={toggleAllMaterialAnswers}>{materialAllAnswersOpen ? "隐藏所有答案" : "查看所有答案"}</button>}<button className="analysisBtn" onClick={MATERIAL_PARTS.has(current.part) ? toggleAllMaterialAnalysis : () => setShowAnalysis(value => !value)}>{MATERIAL_PARTS.has(current.part) ? (materialAllAnalysisOpen ? "隐藏全部解析" : "查看全部解析") : (showAnalysis ? "隐藏解析" : "查看解析")}</button>{transcript && <button className="translateBtn" onClick={() => setShowTranscript(value => !value)}>{showTranscript ? "隐藏原文" : "查看原文"}</button>}</div>}
               {current.part === 1 && <div className={showTranscript ? "part1Material withTranscript" : "part1Material"}>{pictures.length > 0 && <PictureGrid bankId={current.bank_id} pictures={pictures} part={current.part}/>} {showTranscript && transcript && <Transcript text={transcript} translation={transcriptTranslation} showTranslation={showTranslation} toggleTranslation={() => setShowTranslation(value => !value)}/>}</div>}
               {current.part >= 2 && current.part <= 4 && <>{pictures.length > 0 && <PictureGrid bankId={current.bank_id} pictures={pictures} part={current.part}/>} {showTranscript && transcript && <Transcript text={transcript} translation={transcriptTranslation} showTranslation={showTranslation} toggleTranslation={() => setShowTranslation(value => !value)}/>}</>}
-              {current.part >= 5 && passage && <div className={current.part === 6 ? "passage cloze" : "passage"}>{current.part === 6 ? markCloze(passage) : passage}</div>}
-              {current.part >= 5 && <div className="actionRow readingActions">{passageTranslation && <button className="translateBtn" onClick={() => setShowTranslation(value => !value)}>{showTranslation ? "隐藏中文" : "翻译原文"}</button>}{!MATERIAL_PARTS.has(current.part) && <ReviewButtons showAnswer={showAnswer} showAnalysis={showAnalysis} hasChoice={Boolean(saved.answers[currentItem.item_key])} toggleAnswer={() => {const nextOpen = !showAnswer; if (nextOpen) gradeAnswer(currentItem); setAnswerRevealed(currentItem, nextOpen); setShowAnswer(nextOpen);}} toggleAnalysis={() => setShowAnalysis(value => !value)} clearChoice={() => {clearChoice(currentItem); setShowAnswer(false);}}/>}{MATERIAL_PARTS.has(current.part) && <><button className="answerBtn" onClick={toggleAllMaterialAnswers}>{materialAllAnswersOpen ? "隐藏所有答案" : "查看所有答案"}</button><button className="analysisBtn" onClick={toggleAllMaterialAnalysis}>{materialAllAnalysisOpen ? "隐藏全部解析" : "查看全部解析"}</button></>}</div>}
+              {current.part >= 6 && readingLayoutImages.length > 0 && <div className="readingLayoutPanel"><div className="readingLayoutLabel"><b>原始材料版面</b><span>完整原页 · 点击可放大</span></div><PictureGrid bankId={current.bank_id} pictures={readingLayoutImages} part={current.part}/></div>}
+              {current.part >= 5 && passage && (!readingLayoutImages.length || showOcrText) && <div className={current.part === 6 ? "passage cloze ocrPassage" : "passage ocrPassage"}>{current.part === 6 ? markCloze(passage) : passage}</div>}
+              {current.part >= 5 && <div className="actionRow readingActions">{readingLayoutImages.length > 0 && passage && <button className="translateBtn" aria-pressed={showOcrText} onClick={() => setShowOcrText(value => !value)}>{showOcrText ? "隐藏文字版" : "查看文字版"}</button>}{passageTranslation && <button className="translateBtn" aria-pressed={showTranslation} onClick={() => setShowTranslation(value => !value)}>{showTranslation ? "隐藏中文" : "翻译原文"}</button>}{!MATERIAL_PARTS.has(current.part) && <ReviewButtons showAnswer={showAnswer} showAnalysis={showAnalysis} hasChoice={Boolean(saved.answers[currentItem.item_key])} toggleAnswer={() => {const nextOpen = !showAnswer; if (nextOpen) gradeAnswer(currentItem); setAnswerRevealed(currentItem, nextOpen); setShowAnswer(nextOpen);}} toggleAnalysis={() => setShowAnalysis(value => !value)} clearChoice={() => {clearChoice(currentItem); setShowAnswer(false);}}/>}{MATERIAL_PARTS.has(current.part) && <><button className="answerBtn" aria-pressed={materialAllAnswersOpen} onClick={toggleAllMaterialAnswers}>{materialAllAnswersOpen ? "隐藏所有答案" : "查看所有答案"}</button><button className="analysisBtn" aria-pressed={materialAllAnalysisOpen} onClick={toggleAllMaterialAnalysis}>{materialAllAnalysisOpen ? "隐藏全部解析" : "查看全部解析"}</button></>}</div>}
               {current.part >= 5 && showTranslation && passageTranslation && <div className="translation">{passageTranslation}</div>}
             </section>
 
@@ -837,7 +842,7 @@ function SingleItemCard({refData, eager, cache, saved, choose, gradeAnswer, setA
     {loading && <div className="cardLoading"><div className="loader"/>载入题目…</div>}
     {error && <div className="cardError">{error}</div>}
     {item && <>
-      {refData.part <= 2 && audioSrc && <div className="compactAudio"><audio controls src={audioSrc} preload={eager ? "auto" : "metadata"} controlsList="nodownload noremoteplayback" disablePictureInPicture onPlay={event => pauseOtherAudio(event.currentTarget)}/><div><button className="translateBtn" onClick={() => setShowTranscript(value => !value)}>{showTranscript ? "隐藏原文" : "查看原文"}</button><button className="clearAnswerBtn" disabled={!saved.answers[item.item_key]} onClick={() => {clearChoice(item); setShowAnswer(false);}}>清空选择</button><button className="answerBtn" onClick={() => {const nextOpen = !showAnswer; if (nextOpen) gradeAnswer(item); setAnswerRevealed(item, nextOpen); setShowAnswer(nextOpen);}}>{showAnswer ? "隐藏答案" : "查看答案"}</button><button className="analysisBtn" onClick={() => setShowAnalysis(value => !value)}>{showAnalysis ? "隐藏解析" : "查看解析"}</button></div></div>}
+      {refData.part <= 2 && audioSrc && <div className="compactAudio"><audio controls src={audioSrc} preload={eager ? "auto" : "metadata"} controlsList="nodownload noremoteplayback" disablePictureInPicture onPlay={event => pauseOtherAudio(event.currentTarget)}/><div><button className="translateBtn" aria-pressed={showTranscript} onClick={() => setShowTranscript(value => !value)}>{showTranscript ? "隐藏原文" : "查看原文"}</button><button className="clearAnswerBtn" disabled={!saved.answers[item.item_key]} onClick={() => {clearChoice(item); setShowAnswer(false);}}>清空选择</button><button className="answerBtn" aria-pressed={showAnswer} onClick={() => {const nextOpen = !showAnswer; if (nextOpen) gradeAnswer(item); setAnswerRevealed(item, nextOpen); setShowAnswer(nextOpen);}}>{showAnswer ? "隐藏答案" : "查看答案"}</button><button className="analysisBtn" aria-pressed={showAnalysis} onClick={() => setShowAnalysis(value => !value)}>{showAnalysis ? "隐藏解析" : "查看解析"}</button></div></div>}
       {refData.part === 1 && pictures.length > 0 && <PictureGrid bankId={refData.bank_id} pictures={pictures} part={refData.part} eager={eager}/>}
       {showTranscript && transcript && <Transcript text={transcript} translation={transcriptTranslation} showTranslation={showTranslation} toggleTranslation={() => setShowTranslation(value => !value)}/>}
       {refData.part === 5 && <div className="singleReadingTools"><ReviewButtons showAnswer={showAnswer} showAnalysis={showAnalysis} hasChoice={Boolean(saved.answers[item.item_key])} toggleAnswer={() => {const nextOpen = !showAnswer; if (nextOpen) gradeAnswer(item); setAnswerRevealed(item, nextOpen); setShowAnswer(nextOpen);}} toggleAnalysis={() => setShowAnalysis(value => !value)} clearChoice={() => {clearChoice(item); setShowAnswer(false);}}/></div>}
@@ -849,17 +854,17 @@ function SingleItemCard({refData, eager, cache, saved, choose, gradeAnswer, setA
 function AudioBar({audio, src, canShowTranscript, showTranscript, toggleTranscript, showAnalysis, toggleAnalysis, analysisScope = "item", showAnswer, toggleAnswer, clearAnswer, hasChoice = false, showAllAnswers, toggleAllAnswers}: {audio: RefObject<HTMLAudioElement | null>; src: string; canShowTranscript: boolean; showTranscript: boolean; toggleTranscript: () => void; showAnalysis: boolean; toggleAnalysis: () => void; analysisScope?: "item" | "material"; showAnswer?: boolean; toggleAnswer?: () => void; clearAnswer?: () => void; hasChoice?: boolean; showAllAnswers?: boolean; toggleAllAnswers?: () => void}) {
   const analysisText = analysisScope === "material" ? (showAnalysis ? "隐藏全部解析" : "查看全部解析") : (showAnalysis ? "隐藏解析" : "查看解析");
   const actionClass = toggleAllAnswers ? "audioActions materialReview" : toggleAnswer ? "audioActions itemReview" : "audioActions";
-  return <div className="audio"><button className="playBtn" onClick={() => audio.current && (audio.current.paused ? audio.current.play() : audio.current.pause())}>▶</button><div className="audioLabel"><b>听力音频</b><small>空格键暂停 / 继续</small></div><audio ref={audio} controls src={src} preload="auto" controlsList="nodownload noremoteplayback" disablePictureInPicture onPlay={event => pauseOtherAudio(event.currentTarget)}/><div className={actionClass}>{canShowTranscript && <button className="translateBtn" onClick={toggleTranscript}>{showTranscript ? "隐藏原文" : "查看原文"}</button>}{toggleAllAnswers ? <><button className="answerBtn" type="button" onClick={toggleAllAnswers}>{showAllAnswers ? "隐藏所有答案" : "查看所有答案"}</button><button className="analysisBtn" type="button" onClick={toggleAnalysis}>{analysisText}</button></> : toggleAnswer && clearAnswer ? <><button className="clearAnswerBtn" type="button" disabled={!hasChoice} onClick={clearAnswer}>清空选择</button><button className="answerBtn" type="button" onClick={toggleAnswer}>{showAnswer ? "隐藏答案" : "查看答案"}</button><button className="analysisBtn" type="button" onClick={toggleAnalysis}>{showAnalysis ? "隐藏解析" : "查看解析"}</button></> : <button className="analysisBtn" onClick={toggleAnalysis}>{analysisText}</button>}</div></div>;
+  return <div className="audio"><button className="playBtn" onClick={() => audio.current && (audio.current.paused ? audio.current.play() : audio.current.pause())}>▶</button><div className="audioLabel"><b>听力音频</b><small>空格键暂停 / 继续</small></div><audio ref={audio} controls src={src} preload="auto" controlsList="nodownload noremoteplayback" disablePictureInPicture onPlay={event => pauseOtherAudio(event.currentTarget)}/><div className={actionClass}>{canShowTranscript && <button className="translateBtn" aria-pressed={showTranscript} onClick={toggleTranscript}>{showTranscript ? "隐藏原文" : "查看原文"}</button>}{toggleAllAnswers ? <><button className="answerBtn" type="button" aria-pressed={showAllAnswers} onClick={toggleAllAnswers}>{showAllAnswers ? "隐藏所有答案" : "查看所有答案"}</button><button className="analysisBtn" type="button" aria-pressed={showAnalysis} onClick={toggleAnalysis}>{analysisText}</button></> : toggleAnswer && clearAnswer ? <><button className="clearAnswerBtn" type="button" disabled={!hasChoice} onClick={clearAnswer}>清空选择</button><button className="answerBtn" type="button" aria-pressed={showAnswer} onClick={toggleAnswer}>{showAnswer ? "隐藏答案" : "查看答案"}</button><button className="analysisBtn" type="button" aria-pressed={showAnalysis} onClick={toggleAnalysis}>{showAnalysis ? "隐藏解析" : "查看解析"}</button></> : <button className="analysisBtn" aria-pressed={showAnalysis} onClick={toggleAnalysis}>{analysisText}</button>}</div></div>;
 }
 
 function ReviewButtons({showAnswer, showAnalysis, hasChoice, toggleAnswer, toggleAnalysis, clearChoice}: {showAnswer: boolean; showAnalysis: boolean; hasChoice: boolean; toggleAnswer: () => void; toggleAnalysis: () => void; clearChoice: () => void}) {
-  return <div className="reviewButtons"><button className="answerBtn" type="button" onClick={toggleAnswer}>{showAnswer ? "隐藏答案" : "查看答案"}</button><button className="analysisBtn" type="button" onClick={toggleAnalysis}>{showAnalysis ? "隐藏解析" : "查看解析"}</button><button className="clearAnswerBtn" type="button" disabled={!hasChoice} onClick={clearChoice}>清空选择</button></div>;
+  return <div className="reviewButtons"><button className="answerBtn" type="button" aria-pressed={showAnswer} onClick={toggleAnswer}>{showAnswer ? "隐藏答案" : "查看答案"}</button><button className="analysisBtn" type="button" aria-pressed={showAnalysis} onClick={toggleAnalysis}>{showAnalysis ? "隐藏解析" : "查看解析"}</button><button className="clearAnswerBtn" type="button" disabled={!hasChoice} onClick={clearChoice}>清空选择</button></div>;
 }
 
 function PictureGrid({bankId, pictures, part, eager = true}: {bankId: string; pictures: MediaRef[]; part: number; eager?: boolean}) {
   const [activeImage, setActiveImage] = useState<number | null>(null);
   const [zoomed, setZoomed] = useState(false);
-  const imageAlt = part === 1 ? "照片描述题图片" : "听力题配套图表";
+  const imageAlt = part === 1 ? "照片描述题图片" : part >= 6 ? "阅读题原始材料版面" : "听力题配套图表";
 
   useEffect(() => {
     if (activeImage === null) return;
@@ -906,7 +911,7 @@ function pauseOtherAudio(current: HTMLAudioElement) {
 }
 
 function Transcript({text, translation, showTranslation, toggleTranslation}: {text: string; translation: string; showTranslation: boolean; toggleTranslation: () => void}) {
-  return <div className="transcript listeningTranscript"><pre>{text}</pre>{translation && <button className="translateBtn" onClick={toggleTranslation}>{showTranslation ? "隐藏中文" : "翻译原文"}</button>}{showTranslation && translation && <div className="translation">{translation}</div>}</div>;
+  return <div className="transcript listeningTranscript"><pre>{text}</pre>{translation && <button className="translateBtn" aria-pressed={showTranslation} onClick={toggleTranslation}>{showTranslation ? "隐藏中文" : "翻译原文"}</button>}{showTranslation && translation && <div className="translation">{translation}</div>}</div>;
 }
 
 function QuestionBlock({item, part, chosen, showAnswer, showAnalysis, choose}: {item: Item; part: number; chosen?: string; showAnswer: boolean; showAnalysis: boolean; choose: (item: Item, label: string, answerVisible?: boolean) => void}) {

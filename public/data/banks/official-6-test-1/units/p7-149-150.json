@@ -34,38 +34,53 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "OZONO AIRLINE MISSING BAGGAGE FORM\nTime and Date of Claim: 1:50 P.M., May 2\nFlight Number:\n1869\nPassenger Name:\nAlessandra Spencer\nFlight Departure City:\nAtlanta\nFlight Arrival City: Boston\nDestination Address:\nWinthrop Street Hotel,\n456 Quincy Street, Boston\nDescription of Contents:\nClothing, two pairs of shoes, toiletries, three books, hair dryer, gifts\nBag Description:\nKona Company hard-sided blue suitcase with wheels\nValue of Contents: $200\n(Amount to be reimbursed for bags that are not returned within two weeks.)\nFor Internal Use:\nBag is confirmed to be on later flight number 1921. Christoff Delivery\nwill deliver item to the customer at the destination address within\ntwenty-four hours of the time of claim.\nRecorded by: Delonte Ahmad",
-    "passage_translation": "OZONO AIRLINE 行失物报告\n索赔时间和日期：下午 1:50，5月2日\n航班号：\n1869\n乘客姓名：\nAlessandra Spencer\n出发城市：\n亚特兰大\n到达城市：波士顿\n目的地地址：\nWinthrop Street Hotel,\n456 Quincy Street, Boston\n物品描述：\n衣物，两双鞋，洗漱用品，三本书，吹风机，礼物\n行李箱描述：\nKona Company 硬壳蓝色带轮手提箱\n物品价值：$200\n（对于两周内未退回的行李将报销的金额。）\n内部使用：\n确认该行李件将在后续航班 1921 上。Christoff Delivery 将在索赔时间后的二十四小时内将物品运送到目的地地址。\n记录人：Delonte Ahmad",
-    "content_translation": "OZONO AIRLINE 行失物报告\n索赔时间和日期：下午 1:50，5月2日\n航班号：\n1869\n乘客姓名：\nAlessandra Spencer\n出发城市：\n亚特兰大\n到达城市：波士顿\n目的地地址：\nWinthrop Street Hotel,\n456 Quincy Street, Boston\n物品描述：\n衣物，两双鞋，洗漱用品，三本书，吹风机，礼物\n行李箱描述：\nKona Company 硬壳蓝色带轮手提箱\n物品价值：$200\n（对于两周内未退回的行李将报销的金额。）\n内部使用：\n确认该行李件将在后续航班 1921 上。Christoff Delivery 将在索赔时间后的二十四小时内将物品运送到目的地地址。\n记录人：Delonte Ahmad"
+    "passage": "OZONO AIRLINE MISSING BAGGAGE FORM\n\nTime and Date of Claim: 2:50 P.M., May 2 Flight Number: 1869\nPassenger Name: A lessandra Spencer\nFlight Departure City: A tlanta Flight A rrival City: Boston\n\nDestination A ddress: | Winthrop Street Hotel,\n456 Quincy Street, Boston\nDescription of Contents:\nClothing, two pairs of shoes, toiletries, three books, hair dryer, gifts\n\nBag Description:\nKona Company hard-sided blue suitcase with wheels\n\nValue of Contents: $200\n(A mount to be reimbursed for bags that are not returned within two weeks.)\n\nFor Internal Use:\n\nBag is confirmed to be on later flight number 1921. Chvistoff Delivery\nwill deliver item to the customer at the destination address within\ntwenty-four hours of the time of claim.\n\nRecorded by: Delonte A hmad",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-149-150-1.jpg",
+        "asset_key": "official-6-test-1/reading-layout/p7-149-150-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1294,
+        "source_width": 1000,
+        "source_height": 1294,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1294
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 100,
+          "width": 940,
+          "height": 571
+        },
+        "source": "official-6-test-1/images/part7/q149-150.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "3796c4bc716c30e1d5151f67fe00660525a33aeb0fddc84df0a0b1c979108ace",
+      "verified_item_ids": [
+        149,
+        150
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
       "choices": [
-        "She is currently in Atlanta.",
+        "She is currently in A tlanta.",
         "Her home is in Boston.",
-        "Her bag will be delivered to a hotel by May 3",
-        "She will receive $200 for her lost"
+        "Her bag will be delivered to a h by May 3.",
+        "She will receive $200 for her lo: luggage. 50"
       ],
       "answer": "C",
       "question": "What does the form indicate about Ms. Spencer?",
-      "answer_explain": "原文依据：篇章中可定位到“Bag is confirmed to be on later flight number 1921.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Her bag will be delivered to a hotel by May 3）。",
-      "question_translation": "表格说明了关于 Spencer 女士什么信息？",
-      "choice_translations": [
-        "A：她目前在亚特兰大。",
-        "B：她的家在波士顿。",
-        "C：她的行李将在 5 月 3 日运送到酒店。",
-        "D：她将收到 $200 的赔偿。"
-      ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：Alessandra Spencer",
-      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-      "explanation_structured": {
-        "answer": "C",
-        "question_type": "细节题",
-        "evidence": "参考原文第 6 段：Alessandra Spencer",
-        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：篇章中可定位到“Bag is confirmed to be on later flight number 1921.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Her bag will be delivered to a hotel by May 3）。"
-      },
       "item_id": 149,
       "priority": {
         "level": "P2",
@@ -95,29 +110,12 @@
       "choices": [
         "A hotel manager",
         "A luggage company employee",
-        "A delivery driver",
-        "An airline representative"
+        "A delivery driver a hotel",
+        "An airline representative lost"
       ],
       "answer": "D",
-      "question": "Who most likely is Mr. Ahmad?",
-      "answer_explain": "原文依据：篇章中可定位到“OZONO AIRLINE MISSING BAGGAGE FORM”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（An airline representative）。",
-      "question_translation": "Ahmad 先生最可能是谁？",
-      "choice_translations": [
-        "A：酒店经理",
-        "B：行李公司员工",
-        "C：送货司机",
-        "D：航空公司代表"
-      ],
+      "question": "Who most likely is Mr. A hmad?",
       "question_type": "推断题",
-      "evidence": "参考原文第 23 段：Recorded by: Delonte Ahmad",
-      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-      "explanation_structured": {
-        "answer": "D",
-        "question_type": "推断题",
-        "evidence": "参考原文第 23 段：Recorded by: Delonte Ahmad",
-        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：篇章中可定位到“OZONO AIRLINE MISSING BAGGAGE FORM”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（An airline representative）。"
-      },
       "item_id": 150,
       "priority": {
         "level": "P2",

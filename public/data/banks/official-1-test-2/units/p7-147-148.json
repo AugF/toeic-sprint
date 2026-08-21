@@ -31,9 +31,41 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "Ganzon Automotive\nSilang Avenue, Butuan City\naarp\nAgusan del Norte, Philippines 8600\nMechanic on duty: Efren Limbaco\nDate: April 6\nClient: Rowena Bautista, Simpao Trucking Corporation\n@ LSAL\nVehicle Information\nMake: Kimpo\nModel: Heavy Duty 600\nVehicle type: 3-axle, commercial truck\nWork Completed\n000\nReplaced and balanced tire: #12,\nInstalled new passenger door lock: #4,800\n148. What action is mentioned?",
-    "passage_translation": "Ganzon Automotive\nSilang Avenue, Butuan City\naarp\nAgusan del Norte, Philippines 8600\n值班机械师：Efren Limbaco\n日期：4月6日\n客户：Rowena Bautista，Simpao Trucking Corporation\n@ LSAL\n车辆信息\n品牌：Kimpo\n型号：Heavy Duty 600\n车身类型：三轴商用卡车\n完成的工作\n000\n更换并平衡轮胎：#12，\n安装新的乘客门锁：#4,800\n148. 提到了什么行动？",
-    "content_translation": "Ganzon Automotive\nSilang Avenue, Butuan City\naarp\nAgusan del Norte, Philippines 8600\n值班机械师：Efren Limbaco\n日期：4月6日\n客户：Rowena Bautista，Simpao Trucking Corporation\n@ LSAL\n车辆信息\n品牌：Kimpo\n型号：Heavy Duty 600\n车身类型：三轴商用卡车\n完成的工作\n000\n更换并平衡轮胎：#12，\n安装新的乘客门锁：#4,800\n148. 提到了什么行动？"
+    "passage": "Ganzon Automotive\nSilang Avenue, Butuan City team\noe @\n\nA gusan del Norte, Philippines 8600\n\nMechanic on duty: Efren Limbaco\nDate: A pril 6\nClient: Rowena Bautista, Simpao Trucking Corporation\n\nVehicle Information\n\nMake: Kimpo\n\nModel: Heavy Duty 600\nVehicle type: 3-axle, commercial truck\n\nWork Completed\nReplaced and balanced tire: #12,000\nInstalled new passenger door lock: #4,800\n\n2 1Sal",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-147-148-1.jpg",
+        "asset_key": "official-1-test-2/reading-layout/p7-147-148-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1294,
+        "source_width": 1000,
+        "source_height": 1294,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1294
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 316,
+          "width": 940,
+          "height": 494
+        },
+        "source": "official-1-test-2/images/part7/q147-148.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "4bd0084bfe32f35c4aeedb0beaf40f5ce59dcebcd677900a3d454f8693be70c0",
+      "verified_item_ids": [
+        147,
+        148
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -134,33 +166,5 @@
       },
       "item_key": "official-1-test-2/p7-147-148/148"
     }
-  ],
-  "knowledge_accumulation": {
-    "schema_version": "2.0",
-    "source_scope": "material",
-    "extraction_basis": "full_exercise",
-    "source_fields": [
-      "choice"
-    ],
-    "vocabulary": [
-      {
-        "term": "maintenance",
-        "meaning": "维护；保养",
-        "source_quote": "To schedule maintenance work",
-        "source_field": "choice",
-        "why": "设施、设备和运营通知的高频词。",
-        "confidence": 0.96
-      }
-    ],
-    "collocations": [
-      {
-        "phrase": "maintenance work",
-        "meaning": "维护工作",
-        "source_quote": "To schedule maintenance work",
-        "source_field": "choice",
-        "why": "设施检修、停用通知和运营文本常见。",
-        "confidence": 0.96
-      }
-    ]
-  }
+  ]
 }

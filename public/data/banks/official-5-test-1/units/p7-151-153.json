@@ -31,9 +31,42 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "*E-mail*\nTo:\nc.felena@rocklandmail.net\nFrom:\ncustomerservice@campworld.com\nDate:\nMay 5\nSubject:\nRe: Additional colors\nDear Ms. Felena,\nThank you for your e-mail. We at Camp World Ltd. are happy you are enjoying your\nnew product, the reversible hooded rain shirt. To answer your question, yes, as a result\nof requests like yours, we now make the shirt in five colors: red, green, purple, black,\nand the original yellow. You can view these colors on our Web site.\nSince you do not live near one of our stores, we will be happy to take your order.\nPlease call us at 610-555-0123. For your convenience, simply ask for item number\n312678 in the size and color of your choice. Be sure to mention the code CAMPTEN,\nand we will take 10 percent off the total cost of your order.\nWe appreciate your interest and your business\nChia-Wei Wu, Customer Service Representative\nCamp World Ltd.",
-    "passage_translation": "中文辅助（离线预处理）：*E-mail*\nTo:\nc.felena@rocklandmail.net\nFrom:\ncustomerservice@campworld.com\nDate:\nMay 5\nSubject:\nRe: Additional colors\nDear Ms.\nFelena,\nThank（感谢） you for your e-mail.\nWe at Camp World Ltd.\nare happy you are enjoying your\nnew product, the reversible hooded rain shirt.\nTo answer your question, yes, as a result\nof requests like yours, we now make the shirt in five colors: red, green, purple, black,\nand the original yellow.\nYou can view these colors on our Web site.\nSince you do not live near one of our stores, we will be happy to take your order（订单）.\nPlease（请） call us at 610-555-0123.\nFor your convenience, simply ask for item number\n312678 in the size and color of your choice.\nBe sure to mention the code CAMPTEN,\nand we will take 10 percent off the total cost of your order（订单）.\nWe appreciate your interest and your business\nChia-Wei Wu, Customer（顾客） Service（服务） Representative\nCamp World Ltd.",
-    "content_translation": "中文辅助（离线预处理）：*E-mail*\nTo:\nc.felena@rocklandmail.net\nFrom:\ncustomerservice@campworld.com\nDate:\nMay 5\nSubject:\nRe: Additional colors\nDear Ms.\nFelena,\nThank（感谢） you for your e-mail.\nWe at Camp World Ltd.\nare happy you are enjoying your\nnew product, the reversible hooded rain shirt.\nTo answer your question, yes, as a result\nof requests like yours, we now make the shirt in five colors: red, green, purple, black,\nand the original yellow.\nYou can view these colors on our Web site.\nSince you do not live near one of our stores, we will be happy to take your order（订单）.\nPlease（请） call us at 610-555-0123.\nFor your convenience, simply ask for item number\n312678 in the size and color of your choice.\nBe sure to mention the code CAMPTEN,\nand we will take 10 percent off the total cost of your order（订单）.\nWe appreciate your interest and your business\nChia-Wei Wu, Customer（顾客） Service（服务） Representative\nCamp World Ltd."
+    "passage": "= *E-mail* =\nTo: | c.felena@rocklandmail.net |\nFrom: [ customerservice @campworld.com |\nDate: [ May 5 |\nSubject: { Re: A dditional colors |\n\nDear Ms. Felena.\n\nThank you for your e-mail. We at Camp World Ltd. are happy you are enjoying your\nnew product, the reversible hooded rain shirt. To answer your question, yes, as a result\nof requests like yours, we now make the shirt in five colors: red, green, purple, black,\nand the original yellow. You can view these colors on our Web site.\n\nSince you do not live near one of our stores, we will be happy to take your order.\nPlease call us at 610-555-0123. For your convenience. simply ask for item number\n312678 in the size and color of your choice. Be sure to mention the code CAMPTEN,\nand we will take 10 percent off the total cost of your order.\n\nWe appreciate your interest and your business.\n\nChia-Wei Wu, Customer Service Representative\nCamp World Ltd.\n\n| LSSL",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-151-153-1.jpg",
+        "asset_key": "official-5-test-1/reading-layout/p7-151-153-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1294,
+        "source_width": 1000,
+        "source_height": 1294,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1294
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 124,
+          "width": 940,
+          "height": 562
+        },
+        "source": "official-5-test-1/images/part7/q151-153.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "e5f49e492b6b4c34088cb4579c0f86a6e8862f2bc7347a563c4a4a365f373534",
+      "verified_item_ids": [
+        151,
+        152,
+        153
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -93,25 +126,8 @@
         "By visiting a Web site"
       ],
       "answer": "B",
-      "question": "According to the e-mail, how can Ms. Felena place an order?",
-      "answer_explain": "原文依据：篇章中可定位到“Please call us at 610-555-0123.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（By making a phone call）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the e-mail, how（如何） can Ms.\nFelena place an order（订单）?",
-      "choice_translations": [
-        "A：By sending an e-mail",
-        "B：By making a phone call",
-        "C：By going to a store",
-        "D：By visiting a Web site"
-      ],
+      "question": "A ccording to the e-mail, how can Ms. Feler place an order?",
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：c.felena@rocklandmail.net",
-      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-      "explanation_structured": {
-        "answer": "B",
-        "question_type": "细节题",
-        "evidence": "参考原文第 3 段：c.felena@rocklandmail.net",
-        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：篇章中可定位到“Please call us at 610-555-0123.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（By making a phone call）。"
-      },
       "item_id": 152,
       "priority": {
         "level": "P3",
@@ -139,28 +155,11 @@
         "A free shirt",
         "A discount",
         "A refund",
-        "An exchange"
+        "An exchange 'lena"
       ],
       "answer": "B",
       "question": "What does Mr. Wu offer to Ms. Felena?",
-      "answer_explain": "原文依据：篇章中可定位到“Felena,”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（A discount）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does Mr.\nWu offer to Ms.\nFelena?",
-      "choice_translations": [
-        "A：A free shirt",
-        "B：A discount",
-        "C：A refund",
-        "D：An exchange"
-      ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：c.felena@rocklandmail.net",
-      "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-      "explanation_structured": {
-        "answer": "B",
-        "question_type": "细节题",
-        "evidence": "参考原文第 3 段：c.felena@rocklandmail.net",
-        "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：篇章中可定位到“Felena,”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：B（A discount）。"
-      },
       "item_id": 153,
       "priority": {
         "level": "P3",

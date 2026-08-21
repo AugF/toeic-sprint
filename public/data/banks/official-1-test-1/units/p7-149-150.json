@@ -34,38 +34,53 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "Noelle, 10:45 am.\nHi, Roberto. | just got to my hotel from\nthe airport but can’t find the number for\nPXY Enterprises. Do you have it? |\nneed to confirm today’s client meeting\nRoberto, 10:49 Am.\n1-212-555-0158. Also, | talked to\nn't\nMarcia in finance. She said she has\nseen the report from your last trip.\nNoelle, 11:02 a.m.\nOh, that. I'll bring it to her when | get\nback tomorrow. Thanks for the\nreminder.\n‘oberto, 11:19 a.m.\nOK, see you soon!",
-    "passage_translation": "Noelle，上午 10:45。\n嗨，Roberto。|刚从机场到酒店，但找不到PXY Enterprises的电话号码。你有吗？|\n需要确认今天的客户会议\nRoberto，上午 10:49。\n1-212-555-0158。另外，|我跟财务部的Marcia谈过了。她说她已经看到你上次出差带回的报告了。\nNoelle，上午 11:02。\n哦，那个。我明天回来时给她带去。提醒谢谢你。\n‘oberto，上午 11:19。\n好的，很快见！",
-    "content_translation": "Noelle，上午 10:45。\n嗨，Roberto。|刚从机场到酒店，但找不到PXY Enterprises的电话号码。你有吗？|\n需要确认今天的客户会议\nRoberto，上午 10:49。\n1-212-555-0158。另外，|我跟财务部的Marcia谈过了。她说她已经看到你上次出差带回的报告了。\nNoelle，上午 11:02。\n哦，那个。我明天回来时给她带去。提醒谢谢你。\n‘oberto，上午 11:19。\n好的，很快见！"
+    "passage": "Noelle, 10:45 Am.\n\nHi, Roberto. | just got to my hotel from\nthe airport but can't find the number for\nPXY Enterprises. Do you have it? |\nneed to confirm today's client meeting.\n\n(e252?)\n\nRoberto, 10:49 am.\n\n1-212-555-0158. A lso, | talked to\nMarcia in finance. She said she hasn't\nseen the report from your last trip.\n\nE\n\nNoelle, 11:02 Aw.\n\nOh, that. I'll bring it to her when | get\nback tomorrow. Thanks for the\nreminder.\n\n(3592)\n\nRoberto, 11:19 am.\nOK, see you soon!\n\nVo aN",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-149-150-1.jpg",
+        "asset_key": "official-1-test-1/reading-layout/p7-149-150-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1294,
+        "source_width": 1000,
+        "source_height": 1294,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1294
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 128,
+          "width": 940,
+          "height": 667
+        },
+        "source": "official-1-test-1/images/part7/q149-150.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "b20507d6107979c050f362b7c3b6d3fbe35101d7032a837140b1b3e88406b475",
+      "verified_item_ids": [
+        149,
+        150
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
       "choices": [
-        "Acoworker of Noelle’s",
+        "A coworker of Noelle's",
         "A financial consultant",
-        "An employee of PXY Enterprises",
-        "Atravel agent"
+        "An employee of PXY Enter,",
+        "A travel agent"
       ],
       "answer": "A",
       "question": "Who is Roberto?",
-      "answer_explain": "原文依据：篇章中可定位到“Noelle, 10:45 am.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Acoworker of Noelle’s）。",
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：Hi, Roberto. | just got to my hotel from",
-      "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-      "explanation_structured": {
-        "answer": "A",
-        "question_type": "细节题",
-        "evidence": "参考原文第 2 段：Hi, Roberto. | just got to my hotel from",
-        "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：篇章中可定位到“Noelle, 10:45 am.”。选择理由：该项复现或同义改写了定位信息，其他选项与原文细节不一致。正确答案：A（Acoworker of Noelle’s）。"
-      },
-      "question_translation": "Roberto是谁？",
-      "choice_translations": [
-        "A：Noelle的同事",
-        "B：财务顾问",
-        "C：PXY Enterprises的员工",
-        "D：旅行社"
-      ],
       "item_id": 149,
       "priority": {
         "level": "P2",
@@ -99,25 +114,8 @@
         "The report is late."
       ],
       "answer": "D",
-      "question": "At 10:49 a.u., what does Roberto most likely mean when he writes, “she hasn’t seen the report from your last trip”?",
-      "answer_explain": "原文依据：篇章中可定位到“seen the report from your last trip.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（The report is late.）。",
+      "question": "At 10:49 A.m., what does Roberto most likely mean when he writes, \"she hasn't seen the report from your last trip\"?",
       "question_type": "推断题",
-      "evidence": "参考原文第 2 段：Hi, Roberto. | just got to my hotel from",
-      "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-      "explanation_structured": {
-        "answer": "D",
-        "question_type": "推断题",
-        "evidence": "参考原文第 2 段：Hi, Roberto. | just got to my hotel from",
-        "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：篇章中可定位到“seen the report from your last trip.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（The report is late.）。"
-      },
-      "question_translation": "在上午 10:49，Roberto写“她还没有看到你上次出差带回的报告”最可能是什么意思？",
-      "choice_translations": [
-        "A：Marcia不在办公室。",
-        "B：报告丢失了。",
-        "C：Marcia会完成报告。",
-        "D：报告迟交了。"
-      ],
       "item_id": 150,
       "priority": {
         "level": "P2",

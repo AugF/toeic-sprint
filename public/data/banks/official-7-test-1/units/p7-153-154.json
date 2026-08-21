@@ -32,9 +32,41 @@
     "model": "toeic_priority_v3_material"
   },
   "context": {
-    "passage": "Rex Martinez [10:16 A.M.]\nHello, Tzu-Tsu. Could you please assist me with regard to my\npaycheck?\nTzu-Tsu Yeh [10:18 A.M.]\nOf course. Was it scheduled to arrive before today?\nRex Martinez [10:19 A.M.]\nIt was supposed to-yes.\nTzu-Tsu Yeh [10:20 A.M.]\nLet me check to make sure that all of your paperwork is on file.\nTzu-Tsu Yeh [10:33 A.M.]\nThe Employee Agreement was not signed by the director until\nyesterday even though you filled it out last week. The payment\nwas sent out this morning and you should receive it tomorrow.\nRex Martinez (10:34 A.M.]\nOK. Thank you very much for your help.",
-    "passage_translation": "中文辅助（离线预处理）：Rex Martinez [10:16 A.M.]\nHello, Tzu-Tsu.\nCould you please（请） assist me with regard to my\npaycheck?\nTzu-Tsu Yeh [10:18 A.M.]\nOf course.\nWas it scheduled to arrive before today?\nRex Martinez [10:19 A.M.]\nIt was supposed to-yes.\nTzu-Tsu Yeh [10:20 A.M.]\nLet me check to make sure that all of your paperwork is on file.\nTzu-Tsu Yeh [10:33 A.M.]\nThe Employee（员工） Agreement was not signed by the director until\nyesterday even though you filled it out last week.\nThe payment\nwas sent out this morning and you should receive it tomorrow.\nRex Martinez (10:34 A.M.]\nOK.\nThank（感谢） you very much for your help.",
-    "content_translation": "中文辅助（离线预处理）：Rex Martinez [10:16 A.M.]\nHello, Tzu-Tsu.\nCould you please（请） assist me with regard to my\npaycheck?\nTzu-Tsu Yeh [10:18 A.M.]\nOf course.\nWas it scheduled to arrive before today?\nRex Martinez [10:19 A.M.]\nIt was supposed to-yes.\nTzu-Tsu Yeh [10:20 A.M.]\nLet me check to make sure that all of your paperwork is on file.\nTzu-Tsu Yeh [10:33 A.M.]\nThe Employee（员工） Agreement was not signed by the director until\nyesterday even though you filled it out last week.\nThe payment\nwas sent out this morning and you should receive it tomorrow.\nRex Martinez (10:34 A.M.]\nOK.\nThank（感谢） you very much for your help."
+    "passage": "stions 153-154 refer to the following online chat discussion.\n\nRex Martinez [10:16 A.M.] Hello, Tzu-Tsu. Could you please assist me with regard to my\npaycheck?\n\nTzu-Tsu Yeh [10:18 A.M.] Of course. Was it scheduled to arrive before today?\n\nRex Martinez [10:19 A.M] It was supposed to-yes.\n\nTzu-Tsu Yeh [10:20 A.M.] Let me check to make sure that all of your paperwork is on file.\n\nTzu-Tsu Yeh [10:33 A.M.] The Employee A greement was not signed by the director until\nyesterday even though you filled it out last week. The payment\nwas sent out this morning and you should receive it tomorrow.\n\nRex Martinez [10:34 A.M.] OK. Thank you very much for your help.\n\n453. At10:19 AM. what does Mr. Martinez 454, In what department does Ms. Yeh most\nmost likely mean when he writes, \"It was likely work?\nsupposed to\"? (A) Sales\n(A) His paperwork should have been (B) A dvertising\ncompleted sooner. (C) Payroll\n(B) He received a different amount of (D) Customer Relations\n\nmoney than he agreed to.\n\n(C) His bank account should have been\nset up last week.\n\n(D) He expected to have already received\na payment.\n\n£o",
+    "reading_layout_images": [
+      {
+        "path": "reading-layout/p7-153-154-1.jpg",
+        "asset_key": "official-7-test-1/reading-layout/p7-153-154-1.jpg",
+        "exists": true,
+        "width": 1000,
+        "height": 1494,
+        "source_width": 1000,
+        "source_height": 1494,
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1000,
+          "height": 1494
+        },
+        "ocr_crop": {
+          "x": 30,
+          "y": 22,
+          "width": 940,
+          "height": 1435
+        },
+        "source": "official-7-test-1/images/part7/q153-154.jpg"
+      }
+    ],
+    "reading_ocr": {
+      "schema_version": "reading_layout_ocr_v2",
+      "engine": "tesseract-5-region-columns",
+      "source_hash": "3bb6d3d58f03efc1d13ff38ddf383c9cd50a1789b78250361cdd29990d22fdf9",
+      "verified_item_ids": [
+        153,
+        154
+      ],
+      "layout_authority": "source_scan"
+    }
   },
   "items": [
     {
@@ -42,28 +74,11 @@
         "His paperwork should have been completed sooner.",
         "He received a different amount of money than he agreed to.",
         "His bank account should have been set up last week.",
-        "He expected to have already received"
+        "He expected to have already received a payment."
       ],
       "answer": "D",
       "question": "At 10:19 A.M., what does Mr. Martinez most likely mean when he writes, \"It was supposed to\"?",
-      "answer_explain": "原文依据：篇章中可定位到“It was supposed to-yes.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（He expected to have already received）。",
-      "question_translation": "中文辅助（离线预处理）：At 10:19 A.M., what（什么） does Mr.\nMartinez most likely（最可能） mean when（何时） he writes, \"It was supposed to\"?",
-      "choice_translations": [
-        "A：His paperwork should have been completed sooner.",
-        "B：He received a different amount of money than he agreed to.",
-        "C：His bank account should have been set up last week.",
-        "D：He expected to have already received"
-      ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Rex Martinez [10:16 A.M.]",
-      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-      "explanation_structured": {
-        "answer": "D",
-        "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Rex Martinez [10:16 A.M.]",
-        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：篇章中可定位到“It was supposed to-yes.”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：D（He expected to have already received）。"
-      },
       "item_id": 153,
       "priority": {
         "level": "P2",
@@ -90,30 +105,13 @@
     {
       "choices": [
         "Sales",
-        "Advertising",
+        "A dvertising",
         "Payroll",
-        "Customer Relations"
+        "Customer Relations 1 jed"
       ],
       "answer": "C",
-      "question": "In what department does Ms. Yeh most likely work?",
-      "answer_explain": "原文依据：篇章中可定位到“Tzu-Tsu Yeh [10:18 A.M.]”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Payroll）。",
-      "question_translation": "中文辅助（离线预处理）：In what（什么） department does Ms.\nYeh most likely（最可能） work（工作）?",
-      "choice_translations": [
-        "A：Sales",
-        "B：Advertising",
-        "C：Payroll",
-        "D：Customer（顾客） Relations"
-      ],
+      "question": "In what department does Ms. Yeh most S likely work?",
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Rex Martinez [10:16 A.M.]",
-      "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-      "explanation_structured": {
-        "answer": "C",
-        "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Rex Martinez [10:16 A.M.]",
-        "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：篇章中可定位到“Tzu-Tsu Yeh [10:18 A.M.]”。选择理由：该项是原文事实能够充分支持的结论，其他项包含未被支持的信息。正确答案：C（Payroll）。"
-      },
       "item_id": 154,
       "priority": {
         "level": "P2",
