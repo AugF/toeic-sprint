@@ -36,9 +36,31 @@
       "asset_key": "official-2-test-1/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\new\nHello, @ I’ve called this meeting of the software\ndevelopment team to share some good news. We've\nalready exceeded our sales projections for the new\nsoftware, and @1’d like to thank you all for the late ni\nand weekends you spent working to design such\na great product. So, ®the management has decided\ngive you all a bonus, which will be included in your n\npaycheck. Thanks again for your exceptional work!",
-    "transcript_translation": "一次会议。\n大家好，我召集这次软件开发团队的会议是为了分享一些好消息。我们已经超出了新软件的销售预测，我想感谢大家为设计出如此优秀的产品而付出的加班时间和周末时间。因此，管理层决定给大家发奖金，这笔钱将包含在你们的工资单里。再次感谢大家的出色工作！",
-    "content_translation": "一次会议。\n大家好，我召集这次软件开发团队的会议是为了分享一些好消息。我们已经超出了新软件的销售预测，我想感谢大家为设计出如此优秀的产品而付出的加班时间和周末时间。因此，管理层决定给大家发奖金，这笔钱将包含在你们的工资单里。再次感谢大家的出色工作！"
+    "transcript": "Hello.\nI've called this meeting of the software development team to share some good news.\nWe've already exceeded our sales projections for the new software, and I'd like to thank you all for the late nights and weekends you spent working to design such a great product.\nSo the management has decided to give you all a bonus, which will be included in your next paycheck.\nThanks again for your exceptional work.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b6fac52ade2b42772c836edfc5966434c91a611b4efa59a9c96948e24c31565e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-1/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 72,
+        "legacy_word_count": 74,
+        "length_ratio": 0.973,
+        "legacy_coverage": 0.932
+      }
+    },
+    "transcript_translation": "您好。\n我召集这次软件开发团队会议是为了分享一些好消息。\n我们已经超出了新软件的销售预测，我想感谢大家为了设计出如此优秀的产品而熬夜和周末付出的努力。\n所以管理层决定给大家发奖金，这笔钱将包含在你们下一次工资单里。\n再次感谢大家的出色工作。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4380e3a6b4bc00710fca37fbb1d42442ee027cae62adc0b2a08f18608222949e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -49,24 +71,24 @@
         "Software developers"
       ],
       "answer": "D",
-      "question": "Who are the listeners? 80",
-      "answer_explain": "原文依据：听力原文中提到“software, and @1’d like to thank you all for the late ni”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Software developers）。",
-      "question_translation": "听众是谁？",
+      "question": "Who are the listeners?",
+      "answer_explain": "正确答案：D（Software developers）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "听众是谁?",
       "choice_translations": [
-        "A：公司股东",
-        "B：销售代表",
-        "C：营销顾问",
-        "D：软件开发人员"
+        "A:公司股东",
+        "B:销售代表",
+        "C:营销顾问",
+        "D:软件开发人员"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“We've already exceeded our sales projections for the new software, and I'd like to thank you all for the late nights and weekends you spent working to design such a great product.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“We've already exceeded our sales projections for the new software, and I'd like to thank you all for the late nights and weekends you spent working to design such a great product.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“software, and @1’d like to thank you all for the late ni”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Software developers）。"
+        "analysis": "正确答案：D（Software developers）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "A",
       "question": "Why does the speaker thank the listeners?",
-      "answer_explain": "原文依据：听力原文中提到“software, and @1’d like to thank you all for the late ni”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（For working long hours 81）。",
-      "question_translation": "说话者感谢听众的原因是？",
+      "answer_explain": "正确答案：A（For working long hours 81）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者感谢听众的原因是?",
       "choice_translations": [
-        "A：付出了长时间的工作",
-        "B：为筹款活动而努力",
-        "C：降低了开支",
-        "D：协助了顾客"
+        "A:付出了长时间的工作",
+        "B:为筹款活动而努力",
+        "C:降低了开支",
+        "D:协助了顾客"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：software, and @1’d like to thank you all for the late ni",
+      "evidence": "参考听力原文：“We've already exceeded our sales projections for the new software, and I'd like to thank you all for the late nights and weekends you spent working to design such a great product.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：software, and @1’d like to thank you all for the late ni",
+        "evidence": "参考听力原文：“We've already exceeded our sales projections for the new software, and I'd like to thank you all for the late nights and weekends you spent working to design such a great product.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“software, and @1’d like to thank you all for the late ni”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（For working long hours 81）。"
+        "analysis": "正确答案：A（For working long hours 81）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "C",
       "question": "What will the listeners receive?",
-      "answer_explain": "原文依据：听力原文中提到“development team to share some good news.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some extra money）。",
-      "question_translation": "听众将收到什么？",
+      "answer_explain": "正确答案：C（Some extra money）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "听众将收到什么?",
       "choice_translations": [
-        "A：一次晚餐邀请",
-        "B：一些额外的休假时间",
-        "C：一些额外的钱",
-        "D：一台平板电脑"
+        "A:一次晚餐邀请",
+        "B:一些额外的休假时间",
+        "C:一些额外的钱",
+        "D:一台平板电脑"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“So the management has decided to give you all a bonus, which will be included in your next paycheck.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“So the management has decided to give you all a bonus, which will be included in your next paycheck.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“development team to share some good news.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some extra money）。"
+        "analysis": "正确答案：C（Some extra money）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

@@ -39,9 +39,31 @@
       "asset_key": "official-5-test-1/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "Hi Ayumi, have you thought of any ways we can\nmake our Web site more appealing? Olt seems like\nother home renovation contractors get more new\nclients from online searches than we do.\nC*.\nWell, I know many of our prospective clients ask to\nsee examples of our work. We should take before\nand after photos of our home renovations for an online\nportfolio.\nIm An online portfolio's a great idea. I'll look at our\nspending budget and see if we can hire a professional\nphotographer to help us photograph some of the\nhomes we're working on.",
-    "transcript_translation": "中文辅助（离线预处理）：Hi Ayumi, have you thought of any ways we can\nmake our Web site more appealing?\nOlt seems like\nother home renovation contractors get more new\nclients from online searches than we do.\nC*.\nWell, I know many of our prospective clients ask to\nsee examples of our work（工作）.\nWe should take before\nand after photos of our home renovations for an online\nportfolio.\nIm An online portfolio's a great idea.\nI'll look at our\nspending budget and see if we can hire a professional\nphotographer to help us photograph some of the\nhomes we're working on.",
-    "content_translation": "中文辅助（离线预处理）：Hi Ayumi, have you thought of any ways we can\nmake our Web site more appealing?\nOlt seems like\nother home renovation contractors get more new\nclients from online searches than we do.\nC*.\nWell, I know many of our prospective clients ask to\nsee examples of our work（工作）.\nWe should take before\nand after photos of our home renovations for an online\nportfolio.\nIm An online portfolio's a great idea.\nI'll look at our\nspending budget and see if we can hire a professional\nphotographer to help us photograph some of the\nhomes we're working on."
+    "transcript": "Hi Ayumi.\nHave you thought of any ways we can make our website more appealing?\nIt seems like other home renovation contractors get more new clients from online searches than we do.\nWell, I know many of our prospective clients ask to see examples of our work.\nWe should take before and after photos of our home renovations for an online portfolio.\nAn online portfolio is a great idea.\nI'll look at our spending budget and see if we can hire a professional photographer to help us photograph some of the homes we're working on.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1c1ce929f74e9d2947784bea22db554ba81a615be2e4e1d7459ef78417783521",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 95,
+        "legacy_word_count": 95,
+        "length_ratio": 1,
+        "legacy_coverage": 0.937
+      }
+    },
+    "transcript_translation": "嗨 Ayumi。\n你有没有想过一些让我们的网站更吸引人的方法？\n看起来其他家居装修承包商从在线搜索获取的新客户比我们多。\n嗯，我知道许多潜在客户要求看我们工作的例子。\n我们应该拍摄我们家居翻修的“之前和之后”照片，制作一个在线作品集。\n在线作品集是个好主意。\n我会查看我们的支出预算，看看我们是否能聘请一位专业摄影师来帮助我们拍摄一些正在进行中的房屋。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "440c0db466ca30b5b0993d116824d1caf407af12c7648ccb4ff61cb4c3611eef"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "A",
       "question": "What type of business do the speakers most likely work for?",
-      "answer_explain": "原文依据：听力原文中提到“other home renovation contractors get more new”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（A renovation company）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of business do the speakers most likely（最可能） work（工作） for?",
+      "answer_explain": "正确答案：A（A renovation company）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of business do the speakers most likely(最可能) work(工作) for?",
       "choice_translations": [
-        "A：A renovation company（公司）",
-        "B：A manufacturing plant",
-        "C：An advertising agency",
-        "D：A delivery service（服务）"
+        "A:A renovation company(公司)",
+        "B:A manufacturing plant",
+        "C:An advertising agency",
+        "D:A delivery service(服务)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Hi Ayumi, have you thought of any ways we can",
+      "evidence": "参考听力原文：“It seems like other home renovation contractors get more new clients from online searches than we do.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Hi Ayumi, have you thought of any ways we can",
+        "evidence": "参考听力原文：“It seems like other home renovation contractors get more new clients from online searches than we do.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“other home renovation contractors get more new”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（A renovation company）。"
+        "analysis": "正确答案：A（A renovation company）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What does the woman suggest doing?",
-      "answer_explain": "原文依据：听力原文中提到“portfolio.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Creating a portfolio）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） suggest（表明/建议） doing?",
+      "answer_explain": "正确答案：B（Creating a portfolio）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) suggest(表明/建议) doing?",
       "choice_translations": [
-        "A：Administering a survey",
-        "B：Creating a portfolio",
-        "C：Offering workshops",
-        "D：Purchasing some machinery"
+        "A:Administering a survey",
+        "B:Creating a portfolio",
+        "C:Offering workshops",
+        "D:Purchasing some machinery"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Hi Ayumi, have you thought of any ways we can",
+      "evidence": "参考听力原文：“We should take before and after photos of our home renovations for an online portfolio.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Hi Ayumi, have you thought of any ways we can",
+        "evidence": "参考听力原文：“We should take before and after photos of our home renovations for an online portfolio.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“portfolio.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Creating a portfolio）。"
+        "analysis": "正确答案：B（Creating a portfolio）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "B",
       "question": "Who does the man want to hire?",
-      "answer_explain": "原文依据：听力原文中提到“photographer to help us photograph some of the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A photographer）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） does the man（男士） want to hire?",
+      "answer_explain": "正确答案：B（A photographer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) does the man(男士) want to hire?",
       "choice_translations": [
-        "A：A driver",
-        "B：A photographer",
-        "C：A Web developer",
-        "D：A technician"
+        "A:A driver",
+        "B:A photographer",
+        "C:A Web developer",
+        "D:A technician"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi Ayumi, have you thought of any ways we can",
+      "evidence": "参考听力原文：“I'll look at our spending budget and see if we can hire a professional photographer to help us photograph some of the homes we're working on.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi Ayumi, have you thought of any ways we can",
+        "evidence": "参考听力原文：“I'll look at our spending budget and see if we can hire a professional photographer to help us photograph some of the homes we're working on.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“photographer to help us photograph some of the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A photographer）。"
+        "analysis": "正确答案：B（A photographer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

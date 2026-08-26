@@ -39,9 +39,32 @@
       "asset_key": "official-5-test-2/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "message.\nHi, this is Julie from the Albertson Conference Center\nreturning your call about reserving space for a directors\nmeeting. You wanted to reserve our Forest Room on June\nfifteenth for the meeting. Unfortunately, that conference room\nis already reserved on that date. However, the Lake Room\nis available, and it has a great view of the lake on our\nproperty—which makes it popular for corporate clients. Let\nme know if that works for you. And ® did you want to have\nyour directors meeting catered? My colleague, ° Joe Morton,\ncan help with that. Please call him at 555-0128. Thanks.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nHi, this is Julie from the Albertson Conference Center\nreturning your call about reserving space for a directors\nmeeting（会议）.\nYou wanted to reserve our Forest Room on June\nfifteenth for the meeting（会议）.\nUnfortunately, that conference room\nis already reserved on that date.\nHowever, the Lake Room\nis available（可用的）, and it has a great view of the lake on our\nproperty—which makes it popular for corporate clients.\nLet\nme know if that works for you.\nAnd ® did you want to have\nyour directors meeting（会议） catered?\nMy colleague, ° Joe Morton,\ncan help with that.\nPlease（请） call him at 555-0128.\nThanks.",
-    "content_translation": "中文辅助（离线预处理）：message.\nHi, this is Julie from the Albertson Conference Center\nreturning your call about reserving space for a directors\nmeeting（会议）.\nYou wanted to reserve our Forest Room on June\nfifteenth for the meeting（会议）.\nUnfortunately, that conference room\nis already reserved on that date.\nHowever, the Lake Room\nis available（可用的）, and it has a great view of the lake on our\nproperty—which makes it popular for corporate clients.\nLet\nme know if that works for you.\nAnd ® did you want to have\nyour directors meeting（会议） catered?\nMy colleague, ° Joe Morton,\ncan help with that.\nPlease（请） call him at 555-0128.\nThanks."
+    "transcript": "on that date.\nHowever, the lake room is available, and it has a great view of the lake on our property, which makes it popular for corporate clients.\nLet me know if that works for you.\nAnd did you want to have your director's meeting catered?\nMy colleague, Joe Morton, can help with that.\nPlease call him at 555-0128.\nThanks.\n0128.\nThanks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "e4a2d0b30393480a6f3557ffe038e9732852f5028db3a60ebe37907b2948c1e1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 60,
+        "legacy_word_count": 99,
+        "length_ratio": 0.606,
+        "legacy_coverage": 0.768,
+        "prompted_failure": "missing spoken Questions 80 through 82 introduction"
+      }
+    },
+    "transcript_translation": "在那天。然而，湖房是可用的，它在我们物业里拥有俯瞰湖景的绝佳视野，这使得它深受企业客户的喜爱。\n如果这对您来说可行，请告诉我。\n您是否需要为您的董事会会议提供餐饮服务？\n我的同事 Joe Morton 可以帮您处理这件事。\n请拨打 555-0128 给他打电话。\n谢谢。\n0128。\n谢谢。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "63e97c5a9d5120b4e9646812ae5b5a81e4f46590f9bca989c10b5ffc38cde13f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "A",
       "question": "What event is the speaker helping the listener plan?",
-      "answer_explain": "原文依据：听力原文中提到“your directors meeting catered?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A directors meeting）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） event is the speaker（说话者） helping the listener plan?",
+      "answer_explain": "正确答案：A（A directors meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) event is the speaker(说话者) helping the listener plan?",
       "choice_translations": [
-        "A：A directors meeting（会议）",
-        "B：A birthday party",
-        "C：A nature hike",
-        "D：A recruitment fair"
+        "A:A directors meeting(会议)",
+        "B:A birthday party",
+        "C:A nature hike",
+        "D:A recruitment fair"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“And did you want to have your director's meeting catered?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“And did you want to have your director's meeting catered?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“your directors meeting catered?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A directors meeting）。"
+        "analysis": "正确答案：A（A directors meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "C",
       "question": "What makes the Lake Room popular?",
-      "answer_explain": "原文依据：听力原文中提到“is available, and it has a great view of the lake on our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Its good view）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） makes the Lake Room popular?",
+      "answer_explain": "正确答案：C（Its good view）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) makes the Lake Room popular?",
       "choice_translations": [
-        "A：Its large size",
-        "B：Its audiovisual setup",
-        "C：Its good view",
-        "D：Its accessible location"
+        "A:Its large size",
+        "B:Its audiovisual setup",
+        "C:Its good view",
+        "D:Its accessible location"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：property—which makes it popular for corporate clients. Let",
+      "evidence": "参考听力原文：“However, the lake room is available, and it has a great view of the lake on our property, which makes it popular for corporate clients.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：property—which makes it popular for corporate clients. Let",
+        "evidence": "参考听力原文：“However, the lake room is available, and it has a great view of the lake on our property, which makes it popular for corporate clients.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“is available, and it has a great view of the lake on our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Its good view）。"
+        "analysis": "正确答案：C（Its good view）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "B",
       "question": "Why should the listener call Joe Morton?",
-      "answer_explain": "原文依据：听力原文中提到“My colleague, ° Joe Morton,”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To find out about catering）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） should the listener call Joe Morton?",
+      "answer_explain": "正确答案：B（To find out about catering）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) should the listener call Joe Morton?",
       "choice_translations": [
-        "A：To plan for publicity",
-        "B：To find out about catering",
-        "C：To arrange for a guest speaker（说话者）",
-        "D：To consult about a seating plan"
+        "A:To plan for publicity",
+        "B:To find out about catering",
+        "C:To arrange for a guest speaker(说话者)",
+        "D:To consult about a seating plan"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 10 段：your directors meeting catered? My colleague, ° Joe Morton,",
+      "evidence": "参考听力原文：“My colleague, Joe Morton, can help with that.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 10 段：your directors meeting catered? My colleague, ° Joe Morton,",
+        "evidence": "参考听力原文：“My colleague, Joe Morton, can help with that.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“My colleague, ° Joe Morton,”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To find out about catering）。"
+        "analysis": "正确答案：B（To find out about catering）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

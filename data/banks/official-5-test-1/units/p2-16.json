@@ -26,14 +26,34 @@
       "asset_key": "official-5-test-1/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Who（谁）'s installing the software on our computers?",
-    "content_translation": "中文辅助（离线预处理）：Who（谁）'s installing the software on our computers?"
+    "transcript": "Who's installing the software on our computers?\nA. Some accounting software.\nB. There was an email about that.\nC. It was an extra monitor.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9425ae7dc045488556fe5d4d62ed81c108c57fb52c5dbcf1ce7f641373a0e12e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "谁正在我们的电脑上安装软件？\nA. 一些会计软件。\nB. 有一封关于那件事的电子邮件。\nC. 这是一个额外的显示器。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "afc65d9ef3bbfcfcfcbcdfebd9909dc1c31a5e014d0207857c343aedb3a57824"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Some accounting software.",
-        "There was an e-mail about that.",
+        "There was an email about that.",
         "It was an extra monitor."
       ],
       "answer": "B",
@@ -41,12 +61,12 @@
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Who's installing the software on our computers?”，自然应答是“There was an e-mail about that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（There was an e-mail about that.）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁）'s installing the software on our computers?",
+      "answer_explain": "原文依据：问句或陈述是“Who's installing the software on our computers?”，自然应答是“There was an email about that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（There was an email about that.）。",
+      "question_translation": "谁正在我们的电脑上安装软件?",
       "choice_translations": [
-        "A：Some accounting software.",
-        "B：There was an e-mail about that.",
-        "C：It was an extra monitor."
+        "A：一些会计软件。",
+        "B：有一封关于那件事的电子邮件。",
+        "C：这是一个额外的显示器。"
       ],
       "question_type": "人物疑问句",
       "evidence": "参考原文第 1 段：Who's installing the software on our computers?",
@@ -57,7 +77,7 @@
         "question_type": "人物疑问句",
         "evidence": "参考原文第 1 段：Who's installing the software on our computers?",
         "strategy": "先识别人物疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Who's installing the software on our computers?”，自然应答是“There was an e-mail about that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（There was an e-mail about that.）。"
+        "analysis": "原文依据：问句或陈述是“Who's installing the software on our computers?”，自然应答是“There was an email about that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（There was an email about that.）。"
       },
       "item_id": 16,
       "priority": {

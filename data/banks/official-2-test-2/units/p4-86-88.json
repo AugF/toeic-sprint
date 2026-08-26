@@ -36,37 +36,59 @@
       "asset_key": "official-2-test-2/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "ell\nThank you for listening to WDKT103 Radio. In the eight\no'clock hour, we'll be bringing you an exclusive interview with\ncity council president Frank Walters. But first, here’s the traffic\nreport for the metropolitan area. Most major roadways are\nclear in the city center. However, ®there are delays in the are\naround the Riverdale Bridge due to repair work on the bridge.\nRemember, for the most up-to-date traffic conditions, be sur\nto download the WDKT app on your mobile device.\nici eas AS el LS eines mS",
-    "transcript_translation": "ell\n感谢收听 WDKT103 电台。在八点时段，我们将为您带来与市议会主席 Frank Walters 的独家采访。但首先，这里是都会区的交通报告。大多数主要道路在市中心都是畅通的。然而，由于河边大桥的维修工作，在 Riverdale 大桥附近的区域存在延误。请记住，要了解最新的交通状况，请务必在您的移动设备上下载 WDKT 应用程序。nici eas AS el LS eines mS",
-    "content_translation": "ell\n感谢收听 WDKT103 电台。在八点时段，我们将为您带来与市议会主席 Frank Walters 的独家采访。但首先，这里是都会区的交通报告。大多数主要道路在市中心都是畅通的。然而，由于河边大桥的维修工作，在 Riverdale 大桥附近的区域存在延误。请记住，要了解最新的交通状况，请务必在您的移动设备上下载 WDKT 应用程序。nici eas AS el LS eines mS"
+    "transcript": "Thank you for listening to WDKT 103 Radio.\nIn the 8 o'clock hour, we'll be bringing you an exclusive interview with City Council President Frank Walters.\nBut first, here's the traffic report for the metropolitan area.\nMost major roadways are clear in the city center.\nHowever, there are delays in the area around the Riverdale Bridge due to repair work on the bridge.\nRemember, for the most up-to-date traffic conditions, be sure to download the WDKT app on your mobile device.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "02fa888d15b0bffeb07d7a740801ac608659dcefd4d210cd6745fff011676393",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 79,
+        "legacy_word_count": 86,
+        "length_ratio": 0.919,
+        "legacy_coverage": 0.907
+      }
+    },
+    "transcript_translation": "感谢收听 WDKT 103 电台。\n在八点时段，我们将为您带来与市议会主席 Frank Walters 的独家采访。\n但首先，这是大都会地区的交通报告。\n大多数主要道路在市中心都是畅通的。\n然而，由于河谷桥（Riverdale Bridge）附近的维修工作，该区域存在延误。\n请记住，要获取最新交通状况，请务必在您的移动设备上下载 WDKT 应用。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a92a4d853c2f176830159e9361d6a68438ed6efa52bb32a6beab43377c1bcc4a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Asports update",
+        "A sports update",
         "Business news",
         "An interview with a local official",
         "Details about upcoming events"
       ],
       "answer": "C",
       "question": "What will listeners hear at eight o’clock?",
-      "answer_explain": "原文依据：听力原文中提到“o'clock hour, we'll be bringing you an exclusive interview with”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An interview with a local official）。",
-      "question_translation": "听众八点会听到什么？",
+      "answer_explain": "正确答案：C（An interview with a local official）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "听众八点会听到什么?",
       "choice_translations": [
-        "A：体育更新",
-        "B：商业新闻",
-        "C：一位地方官员的采访",
-        "D：关于即将到来的活动的细节"
+        "A:体育更新",
+        "B:商业新闻",
+        "C:一位地方官员的采访",
+        "D:关于即将到来的活动的细节"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：Thank you for listening to WDKT103 Radio. In the eight",
+      "evidence": "参考听力原文：“In the 8 o'clock hour, we'll be bringing you an exclusive interview with City Council President Frank Walters.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：Thank you for listening to WDKT103 Radio. In the eight",
+        "evidence": "参考听力原文：“In the 8 o'clock hour, we'll be bringing you an exclusive interview with City Council President Frank Walters.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“o'clock hour, we'll be bringing you an exclusive interview with”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An interview with a local official）。"
+        "analysis": "正确答案：C（An interview with a local official）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 86,
       "priority": {
@@ -92,30 +114,30 @@
     },
     {
       "choices": [
-        "Astreet is closed to vehicles.",
-        "Abridge is being fixed.",
+        "A street is closed to vehicles.",
+        "A bridge is being fixed.",
         "Weather conditions are poor.",
         "A traffic signal is not working."
       ],
       "answer": "B",
       "question": "What does the speaker say is causing a delay?",
-      "answer_explain": "原文依据：听力原文中提到“around the Riverdale Bridge due to repair work on the bridge.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Abridge is being fixed.）。",
-      "question_translation": "演讲者说延误的原因是什么？",
+      "answer_explain": "正确答案：B（A bridge is being fixed.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者说延误的原因是什么?",
       "choice_translations": [
-        "A：一条街对车辆关闭。",
-        "B：一座桥正在维修。",
-        "C：天气条件不佳。",
-        "D：一个交通信号灯没有工作。"
+        "A:一条街对车辆关闭。",
+        "B:一座桥正在维修。",
+        "C:天气条件不佳。",
+        "D:一个交通信号灯没有工作。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：clear in the city center. However, ®there are delays in the are",
+      "evidence": "参考听力原文：“However, there are delays in the area around the Riverdale Bridge due to repair work on the bridge.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：clear in the city center. However, ®there are delays in the are",
+        "evidence": "参考听力原文：“However, there are delays in the area around the Riverdale Bridge due to repair work on the bridge.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“around the Riverdale Bridge due to repair work on the bridge.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Abridge is being fixed.）。"
+        "analysis": "正确答案：B（A bridge is being fixed.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 87,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker remind listeners to do?",
-      "answer_explain": "原文依据：听力原文中提到“to download the WDKT app on your mobile device.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Get a mobile app）。",
-      "question_translation": "演讲者提醒听众做什么？",
+      "answer_explain": "正确答案：D（Get a mobile app）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者提醒听众做什么?",
       "choice_translations": [
-        "A：提前到达活动现场",
-        "B：乘坐公共交通工具",
-        "C：致电车站提问",
-        "D：获取一个移动应用程序"
+        "A:提前到达活动现场",
+        "B:乘坐公共交通工具",
+        "C:致电车站提问",
+        "D:获取一个移动应用程序"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：ell",
+      "evidence": "参考听力原文：“Remember, for the most up-to-date traffic conditions, be sure to download the WDKT app on your mobile device.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：ell",
+        "evidence": "参考听力原文：“Remember, for the most up-to-date traffic conditions, be sure to download the WDKT app on your mobile device.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“to download the WDKT app on your mobile device.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Get a mobile app）。"
+        "analysis": "正确答案：D（Get a mobile app）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 88,
       "priority": {

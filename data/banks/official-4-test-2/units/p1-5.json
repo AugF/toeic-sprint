@@ -31,27 +31,47 @@
       "asset_key": "official-4-test-2/images/part1/q005.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. One of the men is setting a table.\nB. One of the men is mopping the floor.\nC. The men are working in the kitchen.\nD. The men are shopping in a grocery store.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7cddaf0d03f9d159468a5d9683278e6aca120e776dfcec7c0467558872557e6c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part1/q005.mp3",
+      "metrics": {
+        "word_count": 46
+      }
+    },
+    "transcript_translation": "A. 其中一名男子正在摆放餐桌。\nB. 其中一名男子正在拖地。\nC. 这些男子正在厨房工作。\nD. 这些男子正在杂货店购物。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2ad63a7ae5d3c6d4d48a73bb999b5bf0b77a05aefec5fa213c8cb575c07f2192"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "set a table [SEORRETS 1.",
-        "mop[~#Ey ICH Jo",
-        "The men are working in a kitchen.",
-        "grocery store [#} (##83) 5)."
+        "One of the men is setting a table.",
+        "One of the men is mopping the floor.",
+        "The men are working in the kitchen.",
+        "The men are shopping in a grocery store."
       ],
       "answer": "C",
       "difficulty": "medium",
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
-      "answer_explain": "原文依据：照片中可见信息与描述“The men are working in a kitchen.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（The men are working in a kitchen.）。",
+      "answer_explain": "原文依据：照片中可见信息与描述“The men are working in the kitchen.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（The men are working in the kitchen.）。",
       "choice_translations": [
-        "A：set a table [SEORRETS 1.",
-        "B：mop[~#Ey ICH Jo",
-        "C：The men are working in a kitchen.",
-        "D：grocery store [#} (##83) 5)."
+        "A：其中一名男子正在摆放餐桌。",
+        "B：其中一名男子正在拖地。",
+        "C：这些男子正在厨房工作。",
+        "D：这些男子正在杂货店购物。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -61,7 +81,7 @@
         "question_type": "动作 / 状态辨析题",
         "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
         "strategy": "本题属于动作 / 状态辨析题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：照片中可见信息与描述“The men are working in a kitchen.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（The men are working in a kitchen.）。"
+        "analysis": "原文依据：照片中可见信息与描述“The men are working in the kitchen.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（The men are working in the kitchen.）。"
       },
       "item_id": 5,
       "priority": {
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-4-test-2/p1-5/5"
+      "item_key": "official-4-test-2/p1-5/5",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -37,9 +37,32 @@
       "asset_key": "official-1-test-2/audio/part4/q083-085.mp3",
       "exists": true
     },
-    "transcript": "Mu\nThis is Scott Durlin, and you’re listening to Scott's Money ©\nAdvice on WYBR Radio Ninety-One, ®where we discuss 91\nhow to handle all types of money and home-budget topics.\nwant to let listeners know, that @as of today, you can aed\ndownload audio files of past broadcasts of our show from ot\nmy newly updated Web site, www.scottsadvice.com. This\nis in addition to the usual links and interactive features on &\ntopics from the show. And | always like to hear from you, ao\nso ®please e-mail me any money questions you might Ed\nhave. I'll be sure to answer them on the air. Now let’s 5\nreturn to our discussion of what to do when buying acar, %\nwith our guest, Nina Robinson.",
-    "transcript_translation": "这是 Scott Durlin，您收听的是 WYBR Radio Ninety-One 的《Scott的理财建议》，在这里我们讨论处理所有类型的金钱和家庭预算话题。我想让听众知道，截至今天，您可以在我的新更新的网站 www.scottsadvice.com 上下载我们节目过往节目的音频文件。这除了节目上通常的链接和互动功能之外。我总是喜欢听到您的声音，所以请也给我发任何您可能有的金钱问题。我保证会在节目中回答它们。现在让我们回到关于购买汽车该做什么的讨论，与我们的嘉宾 Nina Robinson 一起。",
-    "content_translation": "这是 Scott Durlin，您收听的是 WYBR Radio Ninety-One 的《Scott的理财建议》，在这里我们讨论处理所有类型的金钱和家庭预算话题。我想让听众知道，截至今天，您可以在我的新更新的网站 www.scottsadvice.com 上下载我们节目过往节目的音频文件。这除了节目上通常的链接和互动功能之外。我总是喜欢听到您的声音，所以请也给我发任何您可能有的金钱问题。我保证会在节目中回答它们。现在让我们回到关于购买汽车该做什么的讨论，与我们的嘉宾 Nina Robinson 一起。"
+    "transcript": "This is Scott Durlin, and you're listening to Scott's Money Advice on WYBR Radio 91, where we discuss how to handle all types of money and home budget topics.\nI want to let listeners know that as of today, you can download audio files of past broadcasts of our show from my newly updated website, www.scottsadvice.com.\nThis is in addition to the usual links and interactive features on topics from the show, and I always like to hear from you.\nSo please email me any money questions you might have.\nI'll be sure to answer them on the air.\nNow let's return to our discussion of what to do when buying a car with our guest, Nina Robinson.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "793065258834638b5e877f9e2946d85ce80a69568981d16d7f4482a4ba44d48f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part4/q083-085.mp3",
+      "metrics": {
+        "word_count": 119,
+        "legacy_word_count": 117,
+        "length_ratio": 1.017,
+        "legacy_coverage": 0.991
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    },
+    "transcript_translation": "我是 Scott Durlin，您正在收听 WYBR Radio 91 的《Scott's Money Advice》，在这里我们讨论如何处理所有类型的金钱和家庭预算话题。\n我想让听众知道，从今天起，您可以从我的新更新的网站 www.scottsadvice.com 下载我们节目过往广播的音频文件。\n这除了节目上通常提供的链接和互动功能之外，我一直很喜欢听到您的声音。\n所以请把您任何关于金钱的问题通过电子邮件发给我。\n我一定会在直播中回答它们。\n现在让我们回到与我们的嘉宾 Nina Robinson 一起讨论购买汽车时该做什么的话题。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3c36f9e4e5a97731a83921d036237a698e784efb1108f039fc3e347d49e70069"
+    }
   },
   "items": [
     {
@@ -50,24 +73,24 @@
         "Car repairs"
       ],
       "answer": "A",
-      "question": "What is the main topic of the radio show’",
-      "answer_explain": "原文依据：听力原文中提到“topics from the show.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Financial planning）。",
-      "question_translation": "电台节目的主要话题是什么？",
+      "question": "What is the main topic of the radio show?",
+      "answer_explain": "正确答案：A（Financial planning）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "电台节目的主要话题是什么?",
       "choice_translations": [
-        "A：财务规划",
-        "B：网站设计",
-        "C：室内装饰",
-        "D：汽车维修"
+        "A:财务规划",
+        "B:网站设计",
+        "C:室内装饰",
+        "D:汽车维修"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：Advice on WYBR Radio Ninety-One, ®where we discuss 91",
+      "evidence": "参考听力原文：“I want to let listeners know that as of today, you can download audio files of past broadcasts of our show from my newly updated website, www.scottsadvice.com.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：Advice on WYBR Radio Ninety-One, ®where we discuss 91",
+        "evidence": "参考听力原文：“I want to let listeners know that as of today, you can download audio files of past broadcasts of our show from my newly updated website, www.scottsadvice.com.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“topics from the show.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Financial planning）。"
+        "analysis": "正确答案：A（Financial planning）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 83,
       "priority": {
@@ -100,24 +123,24 @@
         "Free estimates"
       ],
       "answer": "B",
-      "question": "What has recently become available onlir",
-      "answer_explain": "原文依据：听力原文中提到“download audio files of past broadcasts of our show from ot”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Audio recordings）。",
-      "question_translation": "最近在网上可获得什么？",
+      "question": "What has recently become available online?",
+      "answer_explain": "正确答案：B（Audio recordings）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "最近在网上可获得什么?",
       "choice_translations": [
-        "A：分步说明书",
-        "B：音频录音",
-        "C：产品评论",
-        "D：免费估价"
+        "A:分步说明书",
+        "B:音频录音",
+        "C:产品评论",
+        "D:免费估价"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Mu",
+      "evidence": "参考听力原文：“I want to let listeners know that as of today, you can download audio files of past broadcasts of our show from my newly updated website, www.scottsadvice.com.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Mu",
+        "evidence": "参考听力原文：“I want to let listeners know that as of today, you can download audio files of past broadcasts of our show from my newly updated website, www.scottsadvice.com.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“download audio files of past broadcasts of our show from ot”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Audio recordings）。"
+        "analysis": "正确答案：B（Audio recordings）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 84,
       "priority": {
@@ -146,28 +169,28 @@
       "choices": [
         "To arrange for a guest speaker",
         "To ask for technical help",
-        "To thank his audience for their intere",
-        "To encourage listeners to contact hit"
+        "To thank his audience for their interest",
+        "To encourage listeners to contact him"
       ],
       "answer": "D",
-      "question": "Why does the speaker say, “And | always to hear from you”?",
-      "answer_explain": "原文依据：听力原文中提到“And | always like to hear from you, ao”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To encourage listeners to contact hit）。",
-      "question_translation": "说话者说“我总是喜欢听到您的声音”是什么意思？",
+      "question": "Why does the speaker say, “And I always like to hear from you”?",
+      "answer_explain": "正确答案：D（To encourage listeners to contact him）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者说“我总是喜欢听到您的声音”是什么意思?",
       "choice_translations": [
-        "A：安排一位客座演讲嘉宾",
-        "B：请求技术帮助",
-        "C：感谢听众的参与",
-        "D：鼓励听众联系他"
+        "A:安排一位客座演讲嘉宾",
+        "B:请求技术帮助",
+        "C:感谢听众的参与",
+        "D:鼓励听众联系他"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：topics from the show. And | always like to hear from you, ao",
+      "evidence": "参考听力原文：“This is in addition to the usual links and interactive features on topics from the show, and I always like to hear from you.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：topics from the show. And | always like to hear from you, ao",
+        "evidence": "参考听力原文：“This is in addition to the usual links and interactive features on topics from the show, and I always like to hear from you.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“And | always like to hear from you, ao”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To encourage listeners to contact hit）。"
+        "analysis": "正确答案：D（To encourage listeners to contact him）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 85,
       "priority": {

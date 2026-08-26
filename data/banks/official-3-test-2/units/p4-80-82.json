@@ -39,9 +39,32 @@
       "asset_key": "official-3-test-2/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "message.\nM\nHello. my name is Sandeep Prakash and I’m a reporter\nfor the Ridgedell Times. erm calling because I’m writing an\narticle about the new production your theater is putting on\nthis weekend. ©1 saw on your Web site that you don't allow\nphotography during the performance, and | was wondering\nwhether you’d be willing to make an exception—I'd really like\nto take some pictures of the sets and actors to publish with my\narticle. If not, ®1 could come to one of your dress rehearsals.\nI'll be out of town tomorrow morning for a celebrity interview,\nbut ©1'm free to attend a rehearsal any other time this week.\nPlease give me a call back at 555-0152. Thanks, | look forwar\nto hearing from you.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nM\nHello.\nmy name is Sandeep Prakash and I’m a reporter\nfor the Ridgedell Times.\nerm calling because I’m writing an\narticle about the new production your theater is putting on\nthis weekend.\n©1 saw on your Web site that you don't allow\nphotography during the performance, and | was wondering\nwhether you’d be willing to make an exception—I'd really like\nto take some pictures of the sets and actors to publish with my\narticle.\nIf not, ®1 could come to one of your dress rehearsals.\nI'll be out of town tomorrow morning for a celebrity interview,\nbut ©1'm free to attend a rehearsal any other time this week.\nPlease（请） give me a call back at 555-0152.\nThanks, | look forwar\nto hearing from you.",
-    "content_translation": "中文辅助（离线预处理）：message.\nM\nHello.\nmy name is Sandeep Prakash and I’m a reporter\nfor the Ridgedell Times.\nerm calling because I’m writing an\narticle about the new production your theater is putting on\nthis weekend.\n©1 saw on your Web site that you don't allow\nphotography during the performance, and | was wondering\nwhether you’d be willing to make an exception—I'd really like\nto take some pictures of the sets and actors to publish with my\narticle.\nIf not, ®1 could come to one of your dress rehearsals.\nI'll be out of town tomorrow morning for a celebrity interview,\nbut ©1'm free to attend a rehearsal any other time this week.\nPlease（请） give me a call back at 555-0152.\nThanks, | look forwar\nto hearing from you."
+    "transcript": "Hello. my name is Sandeep Prakash, and I'm a reporter for the Ridgedell Times.\nI'm calling because I'm writing an article about the new production your theater is putting on this weekend.\nI saw on your Web site that you don't allow photography during the performance, and I was wondering whether you'd be willing to make an exception.\nI'd really like to take some pictures of the sets and actors to publish with my article.\nIf not, I could come to one of your dress rehearsals.\nI'll be out of town tomorrow morning for a celebrity interview, but I'm free to attend a rehearsal any other time this week.\nPlease give me a call back at 555-0152.\nThanks.\nI look forward to hearing from you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "b113509be43636ed19e0020d944b1015565bd11040d97af638dba5b45f621ce8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 124,
+        "legacy_word_count": 121,
+        "length_ratio": 1.025,
+        "legacy_coverage": 0.934
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "你好。我的名字是Sandeep Prakash，我是《Ridgedell Times》的记者。\n我打电话来是因为我正在撰写一篇关于您的剧院本周末即将上演的新制作的文章。\n我在您的网站上看到您不允许在演出期间拍照，我想知道您是否愿意做出例外？\n我真的很想拍一些场景和演员的照片，用于我的文章。\n如果不行，我可以参加你们的其中一次彩排。\n明天早上我要出城进行名人采访，但本周其他时间我有空参加彩排。\n请回电555-0152。\n谢谢您。\n期待您的回复。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "80b6b51e9cc698f7e9c5928fe2e553ac4beb6400f5b812ca562fb6541501ce37"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -49,27 +72,27 @@
         "An actor",
         "A journalist",
         "A book editor",
-        "Aplay director"
+        "A play director"
       ],
       "answer": "B",
-      "question": "80. Who most likely is the speaker?",
-      "answer_explain": "原文依据：听力原文中提到“to take some pictures of the sets and actors to publish with my”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A journalist）。",
-      "question_translation": "中文辅助（离线预处理）：80.\nWho（谁） most likely（最可能） is the speaker（说话者）?",
+      "question": "Who most likely is the speaker?",
+      "answer_explain": "正确答案：B（A journalist）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):80. Who(谁) most likely(最可能) is the speaker(说话者)?",
       "choice_translations": [
-        "A：An actor",
-        "B：A journalist",
-        "C：A book editor",
-        "D：Aplay director"
+        "A:An actor",
+        "B:A journalist",
+        "C:A book editor",
+        "D:A play director"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“I saw on your Web site that you don't allow photography during the performance, and I was wondering whether you'd be willing to make an exception.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“I saw on your Web site that you don't allow photography during the performance, and I was wondering whether you'd be willing to make an exception.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“to take some pictures of the sets and actors to publish with my”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A journalist）。"
+        "analysis": "正确答案：B（A journalist）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -104,24 +127,24 @@
         "To request a group discount"
       ],
       "answer": "A",
-      "question": "81. Why is the speaker calling the theater?",
-      "answer_explain": "原文依据：听力原文中提到“for the Ridgedell Times.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To obtain permission for photographs）。",
-      "question_translation": "中文辅助（离线预处理）：81.\nWhy（为什么） is the speaker（说话者） calling the theater?",
+      "question": "Why is the speaker calling the theater?",
+      "answer_explain": "正确答案：A（To obtain permission for photographs）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):81. Why(为什么) is the speaker(说话者) calling the theater?",
       "choice_translations": [
-        "A：To obtain permission for photographs",
-        "B：To plan for a reception",
-        "C：To reserve seats",
-        "D：To request a group discount"
+        "A:To obtain permission for photographs",
+        "B:To plan for a reception",
+        "C:To reserve seats",
+        "D:To request a group discount"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：for the Ridgedell Times. erm calling because I’m writing an",
+      "evidence": "参考听力原文：“I'm calling because I'm writing an article about the new production your theater is putting on this weekend.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：for the Ridgedell Times. erm calling because I’m writing an",
+        "evidence": "参考听力原文：“I'm calling because I'm writing an article about the new production your theater is putting on this weekend.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“for the Ridgedell Times.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To obtain permission for photographs）。"
+        "analysis": "正确答案：A（To obtain permission for photographs）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker say he can do?",
-      "answer_explain": "原文依据：听力原文中提到“but ©1'm free to attend a rehearsal any other time this week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Attend a rehearsal）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say he can do?",
+      "answer_explain": "正确答案：D（Attend a rehearsal）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say he can do?",
       "choice_translations": [
-        "A：Read a script",
-        "B：E-mail an article",
-        "C：Give a presentation",
-        "D：Attend a rehearsal"
+        "A:Read a script",
+        "B:E-mail an article",
+        "C:Give a presentation",
+        "D:Attend a rehearsal"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“I'll be out of town tomorrow morning for a celebrity interview, but I'm free to attend a rehearsal any other time this week.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“I'll be out of town tomorrow morning for a celebrity interview, but I'm free to attend a rehearsal any other time this week.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“but ©1'm free to attend a rehearsal any other time this week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Attend a rehearsal）。"
+        "analysis": "正确答案：D（Attend a rehearsal）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

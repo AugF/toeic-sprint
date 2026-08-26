@@ -26,38 +26,58 @@
       "asset_key": "official-5-test-1/audio/part2/q015.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：When（何时） will you hire a new head chef?",
-    "content_translation": "中文辅助（离线预处理）：When（何时） will you hire a new head chef?"
+    "transcript": "When will you hire\nA. new head chef? A. An excellent benefits package.\nB. I interviewed several candidates today.\nC. No, but I can bake bread.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5419b3a1afa37c63e36364ba8b71a06480d2966d98f4bd66dd5f7c0275594cdc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q015.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "你什么时候雇佣\nA. 新总厨？ A. 一套极好的福利待遇。\nB. 我今天面试了好几位候选人。\nC. 不，但我会烤面包的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a7d62cf401097c7a2b4e04994b3c3d34fda386a1c962743399f32e9b9d356e13"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "An excellent benefits package.",
+        "new head chef? A. An excellent benefits package.",
         "I interviewed several candidates today.",
         "No, but I can bake bread."
       ],
       "answer": "B",
-      "question": "When will you hire a new head chef?",
+      "question": "When will you hire",
       "difficulty": "easy",
       "topic": "时间询问",
       "keywords": "when time response",
-      "answer_explain": "原文依据：问句或陈述是“When will you hire a new head chef?”，自然应答是“I interviewed several candidates today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I interviewed several candidates today.）。",
-      "question_translation": "中文辅助（离线预处理）：When（何时） will you hire a new head chef?",
+      "answer_explain": "原文依据：问句或陈述是“When will you hire”，自然应答是“I interviewed several candidates today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I interviewed several candidates today.）。",
+      "question_translation": "你什么时候雇佣",
       "choice_translations": [
-        "A：An excellent benefits package.",
-        "B：I interviewed several candidates today.",
-        "C：No, but I can bake bread."
+        "A：新总厨? A. 一套极好的福利待遇。",
+        "B：我今天面试了好几位候选人。",
+        "C：不,但我会烤面包的。"
       ],
       "question_type": "时间疑问句",
-      "evidence": "参考原文第 1 段：When will you hire a new head chef?",
+      "evidence": "参考原文第 1 段：When will you hire",
       "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "时间疑问句",
-        "evidence": "参考原文第 1 段：When will you hire a new head chef?",
+        "evidence": "参考原文第 1 段：When will you hire",
         "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“When will you hire a new head chef?”，自然应答是“I interviewed several candidates today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I interviewed several candidates today.）。"
+        "analysis": "原文依据：问句或陈述是“When will you hire”，自然应答是“I interviewed several candidates today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I interviewed several candidates today.）。"
       },
       "item_id": 15,
       "priority": {

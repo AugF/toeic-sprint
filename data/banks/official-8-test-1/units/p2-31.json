@@ -26,8 +26,28 @@
       "asset_key": "official-8-test-1/audio/part2/q031.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Who（谁）'s going to the post office（办公室） today?\n[•M",
-    "content_translation": "中文辅助（离线预处理）：Ew Who（谁）'s going to the post office（办公室） today?\n[•M"
+    "transcript": "Who's going to the post office today?\nA. In yesterday's delivery.\nB. Whenever she can.\nC. Do you have mail to send?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4a4711e56932ae214adbe9dd71a96a330cc1e864150a03d6b102b7c32c009e34",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q031.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "今天谁去邮局？\nA. 在昨天的投递物里。\nB. 任何她方便的时候。\nC. 你有需要寄的邮件吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4b001e7fc6e7550ec00ad7f0a5ad31cf548d0ccb50815f09aa08cd05763fa0e5"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "Do you have mail to send?"
       ],
       "answer": "C",
-      "question": "Ew Who's going to the post office today? [•M",
+      "question": "Who's going to the post office today?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Who's going to the post office today? [•M”，自然应答是“Do you have mail to send?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you have mail to send?）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Who（谁）'s going to the post office（办公室） today?\n[•M",
+      "answer_explain": "原文依据：问句或陈述是“Who's going to the post office today?”，自然应答是“Do you have mail to send?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you have mail to send?）。",
+      "question_translation": "今天谁去邮局?",
       "choice_translations": [
-        "A：In yesterday's delivery.",
-        "B：Whenever she can.",
-        "C：Do you have mail to send?"
+        "A：在昨天的投递物里。",
+        "B：任何她方便的时候。",
+        "C：你有需要寄的邮件吗?"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Who's going to the post office today? [•M",
+      "evidence": "参考原文第 1 段：Who's going to the post office today?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Who's going to the post office today? [•M",
+        "evidence": "参考原文第 1 段：Who's going to the post office today?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Who's going to the post office today? [•M”，自然应答是“Do you have mail to send?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you have mail to send?）。"
+        "analysis": "原文依据：问句或陈述是“Who's going to the post office today?”，自然应答是“Do you have mail to send?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you have mail to send?）。"
       },
       "item_id": 31,
       "priority": {

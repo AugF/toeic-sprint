@@ -28,22 +28,42 @@
       "asset_key": "official-1-test-1/audio/part2/q022.mp3",
       "exists": true
     },
-    "transcript_translation": "你想飞去悉尼还是坐火车？\nA. 你知道我不太喜欢坐飞机。 Bia w\nB. 那是一次相当短的旅行。\nC. 为了参加我妹妹的毕业典礼。",
-    "content_translation": "你想飞去悉尼还是坐火车？\nA. 你知道我不太喜欢坐飞机。 Bia w\nB. 那是一次相当短的旅行。\nC. 为了参加我妹妹的毕业典礼。"
+    "transcript": "Do you want to fly to Sydney or go by train?\nA. You know I don't like flying.\nB. It was a pretty short trip.\nC. To attend my sister's graduation.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0541d2f29814a4c71ce2dc8aee4e0ea917e376421b56b77fad76328e18251fa1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q022.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "你想坐飞机去悉尼还是乘火车？\nA. 你知道我不喜欢坐飞机。\nB. 那段旅程相当短。\nC. 厅参加我妹妹的毕业典礼。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "0a26fbc845b35754729ba3ea3392f729169914304f7061f9c3e79800d933386c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "You know | don’t like flying. Bia w",
+        "You know I don't like flying.",
         "It was a pretty short trip.",
-        "To attend my sister’s graduation."
+        "To attend my sister's graduation."
       ],
       "answer": "A",
       "question": "Do you want to fly to Sydney or go by train?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“Do you want to fly to Sydney or go by train?”，自然应答是“You know | don’t like flying. Bia w”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（You know | don’t like flying. Bia w）。",
+      "answer_explain": "原文依据：问句或陈述是“Do you want to fly to Sydney or go by train?”，自然应答是“You know I don't like flying.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（You know I don't like flying.）。",
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段：Do you want to fly to Sydney or go by train?",
       "response_style": "既可能直接回答，也常以原因、安排或补充信息间接回应",
@@ -53,13 +73,13 @@
         "question_type": "选择疑问句",
         "evidence": "参考原文第 1 段：Do you want to fly to Sydney or go by train?",
         "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Do you want to fly to Sydney or go by train?”，自然应答是“You know | don’t like flying. Bia w”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（You know | don’t like flying. Bia w）。"
+        "analysis": "原文依据：问句或陈述是“Do you want to fly to Sydney or go by train?”，自然应答是“You know I don't like flying.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（You know I don't like flying.）。"
       },
-      "question_translation": "你想飞去悉尼还是坐火车？",
+      "question_translation": "你想坐飞机去悉尼还是乘火车?",
       "choice_translations": [
-        "A：你知道我不太喜欢坐飞机。 Bia w",
-        "B：那是一次相当短的旅行。",
-        "C：为了参加我妹妹的毕业典礼。"
+        "A：你知道我不喜欢坐飞机。",
+        "B：那段旅程相当短。",
+        "C：厅参加我妹妹的毕业典礼。"
       ],
       "item_id": 22,
       "priority": {

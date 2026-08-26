@@ -38,37 +38,59 @@
       "asset_key": "official-4-test-2/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "message.\nEw\nThank you for choosing Shin Opticians. @A\\ll of our\nreceptionists are assisting other patients at the moment.\nPlease hold, and your call will be answered in the order\nit was received by the next available receptionist. While\nyou wait, here’s our eye care tip of the day. To clean your\nglasses, ®use the special soft cloth that we provide all\npatients at no cost. Regular tissues or paper napkins can\nscratch the lenses. For additional tips on how to take\ncare of your eyeglasses and your vision, as well as other\ninformation about our clinic, please be sure to subscribe\nto our monthly newsletter. Thank you for holding—we will\nanswer your call shortly.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nEw\nThank（感谢） you for choosing Shin Opticians.\n@A\\ll of our\nreceptionists are assisting other patients at the moment.\nPlease（请） hold, and your call will be answered in the order（订单）\nit was received by the next available（可用的） receptionist.\nWhile\nyou wait, here’s our eye care tip of the day.\nTo clean your\nglasses, ®use the special soft cloth that we provide all\npatients at no cost.\nRegular tissues or paper napkins can\nscratch the lenses.\nFor additional tips on how（如何） to take\ncare of your eyeglasses and your vision, as well as other\ninformation（信息） about our clinic, please（请） be sure to subscribe\nto our monthly newsletter.\nThank（感谢） you for holding—we will\nanswer your call shortly.",
-    "content_translation": "中文辅助（离线预处理）：message.\nEw\nThank（感谢） you for choosing Shin Opticians.\n@A\\ll of our\nreceptionists are assisting other patients at the moment.\nPlease（请） hold, and your call will be answered in the order（订单）\nit was received by the next available（可用的） receptionist.\nWhile\nyou wait, here’s our eye care tip of the day.\nTo clean your\nglasses, ®use the special soft cloth that we provide all\npatients at no cost.\nRegular tissues or paper napkins can\nscratch the lenses.\nFor additional tips on how（如何） to take\ncare of your eyeglasses and your vision, as well as other\ninformation（信息） about our clinic, please（请） be sure to subscribe\nto our monthly newsletter.\nThank（感谢） you for holding—we will\nanswer your call shortly."
+    "transcript": "Thank you for choosing Shin Opticians.\nAll of our receptionists are assisting other patients at the moment.\nPlease hold, and your call will be answered in the order it was received by the next available receptionist.\nWhile you wait, here's our eye care tip of the day.\nTo clean your glasses, use the special soft cloth that we provide all patients at no cost.\nRegular tissues or paper napkins can scratch the lenses.\nFor additional tips on how to take care of your eyeglasses and your vision, as well as other information about our clinic, please be sure to subscribe to our monthly newsletter.\nThank you for holding.\nWe will answer your call shortly.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fb91163113037a8e794e58e75988d945465befbdd5be3e5eae5adcf774b6ae3f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 114,
+        "legacy_word_count": 116,
+        "length_ratio": 0.983,
+        "legacy_coverage": 0.974
+      }
+    },
+    "transcript_translation": "感谢您选择 Shin Opticians。\n我们的所有接待员目前都在协助其他病人。\n请稍等，您的电话将按照接到的顺序由下一位空闲的接待员接听。\n在您等待期间，这是我们今日的眼部护理小贴士。\n清洁眼镜时，请使用我们免费提供给所有病人的特殊软布。\n普通的纸巾或餐巾纸可能会刮伤镜片。\n有关如何护理您的眼镜和视力、以及关于我们诊所的其他附加提示，请务必订阅我们的月度通讯。\n感谢您的等待。\n我们将很快接听您的电话。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "89a23f43cbef13b3c17f1b4642398c904a6f070aa1216e7103354b6611a32efa"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "It is after business hours.",
-        "Atelephone number has changed.",
-        "Acall system is not working.",
+        "A telephone number has changed.",
+        "A call system is not working.",
         "No employees are available."
       ],
       "answer": "D",
       "question": "Why is the listener hearing the message?",
-      "answer_explain": "原文依据：听力原文中提到“it was received by the next available receptionist.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（No employees are available.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the listener hearing the message?",
+      "answer_explain": "正确答案：D（No employees are available.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the listener hearing the message?",
       "choice_translations": [
-        "A：It is after business hours.",
-        "B：Atelephone number has changed.",
-        "C：Acall system is not working.",
-        "D：No employees are available（可用的）."
+        "A:It is after business hours.",
+        "B:A telephone number has changed.",
+        "C:A call system is not working.",
+        "D:No employees are available(可用的)."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Please hold, and your call will be answered in the order it was received by the next available receptionist.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Please hold, and your call will be answered in the order it was received by the next available receptionist.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“it was received by the next available receptionist.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（No employees are available.）。"
+        "analysis": "正确答案：D（No employees are available.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -96,30 +118,30 @@
     },
     {
       "choices": [
-        "Acase",
-        "Acloth",
-        "Atrial subscription",
+        "A case",
+        "A cloth",
+        "A trial subscription",
         "An extended warranty"
       ],
       "answer": "B",
       "question": "What does the speaker say is provided for free?",
-      "answer_explain": "原文依据：听力原文中提到“Please hold, and your call will be answered in the order”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Acloth）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say is provided for free?",
+      "answer_explain": "正确答案：B（A cloth）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say is provided for free?",
       "choice_translations": [
-        "A：Acase",
-        "B：Acloth",
-        "C：Atrial subscription",
-        "D：An extended warranty"
+        "A:A case",
+        "B:A cloth",
+        "C:A trial subscription",
+        "D:An extended warranty"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“To clean your glasses, use the special soft cloth that we provide all patients at no cost.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“To clean your glasses, use the special soft cloth that we provide all patients at no cost.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Please hold, and your call will be answered in the order”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Acloth）。"
+        "analysis": "正确答案：B（A cloth）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -148,29 +170,29 @@
     {
       "choices": [
         "Ona Web site",
-        "Ata reception desk",
+        "At a reception desk",
         "In a newsletter",
         "From an eye doctor"
       ],
       "answer": "C",
       "question": "According to the speaker, where can the listener find more information?",
-      "answer_explain": "原文依据：听力原文中提到“to our monthly newsletter.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（In a newsletter）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, where（哪里） can the listener find more information（信息）?",
+      "answer_explain": "正确答案：C（In a newsletter）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), where(哪里) can the listener find more information(信息)?",
       "choice_translations": [
-        "A：Ona Web site",
-        "B：Ata reception desk",
-        "C：In a newsletter",
-        "D：From an eye doctor"
+        "A:Ona Web site",
+        "B:At a reception desk",
+        "C:In a newsletter",
+        "D:From an eye doctor"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 12 段：information about our clinic, please be sure to subscribe",
+      "evidence": "参考听力原文：“For additional tips on how to take care of your eyeglasses and your vision, as well as other information about our clinic, please be sure to subscribe to our monthly newsletter.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 12 段：information about our clinic, please be sure to subscribe",
+        "evidence": "参考听力原文：“For additional tips on how to take care of your eyeglasses and your vision, as well as other information about our clinic, please be sure to subscribe to our monthly newsletter.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“to our monthly newsletter.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（In a newsletter）。"
+        "analysis": "正确答案：C（In a newsletter）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

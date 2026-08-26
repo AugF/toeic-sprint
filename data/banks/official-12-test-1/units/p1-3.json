@@ -32,15 +32,35 @@
       "asset_key": "official-12-test-1/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. Some signs are posted in a wooded area.\nB. A metal bench is covered with fallen leaves.\nC. A pile of logs has been stacked next to a fire pit.\nD. Some tents have been set up in a forest clearing.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e9d9fd72b2277cf701d8fff8f9ab339d72d4cc72646cdf7cd5ba31710716066a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 55
+      }
+    },
+    "transcript_translation": "A. 在一片林地里张贴着一些标志。\nB. 一个金属长凳上覆盖着落叶。\nC. 一堆原木堆放在一个火坑旁边。\nD. 在一片森林空地上搭起了一些帐篷。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "60f3d0443cbfeae13a2a6cc01935a89401fb1c84b01d45647f673d2e7be773ef"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Some signs are posted in a wooded area.",
         "A metal bench is covered with fallen leaves.",
-        "A pile of logs has been stacked next to a firepit.",
+        "A pile of logs has been stacked next to a fire pit.",
         "Some tents have been set up in a forest clearing."
       ],
       "answer": "A",
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some signs are posted in a wooded area.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（Some signs are posted in a wooded area.）。",
       "choice_translations": [
-        "A：Some signs are posted in a wooded area.",
-        "B：A metal bench is covered with fallen leaves.",
-        "C：A pile of logs has been stacked next to a firepit.",
-        "D：Some tents have been set up in a forest clearing."
+        "A：在一片林地里张贴着一些标志。",
+        "B：一个金属长凳上覆盖着落叶。",
+        "C：一堆原木堆放在一个火坑旁边。",
+        "D：在一片森林空地上搭起了一些帐篷。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-12-test-1/p1-3/3"
+      "item_key": "official-12-test-1/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

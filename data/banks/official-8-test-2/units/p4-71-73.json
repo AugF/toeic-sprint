@@ -41,9 +41,31 @@
       "asset_key": "official-8-test-2/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "We'd like to remind our listeners about this weekend's art\nfair. Many local artists will be showing their work. ® One of\nthe feature artists is Emiko Ito, who is known for her modern\nTOTECT. ZOEICEBEMRD 1 AldEmiko Ito C. 18\nfurniture designs. ®What makes her artwork special is that\nshe recycles materials, such as rubber and plastic, to create\nher furniture pieces. This is great for the environment!\ninvited Ms. Ito here for an interview. After this short\ncommercial break, Ms. Ito will be discussing her creative\nprocess.",
-    "transcript_translation": "中文辅助（离线预处理）：We'd like to remind our listeners about this weekend's art\nfair.\nMany local artists will be showing their work（工作）.\n® One of\nthe feature artists is Emiko Ito, who（谁） is known for her modern\nTOTECT.\nZOEICEBEMRD 1 AldEmiko Ito C.\n18\nfurniture designs.\n®What（什么） makes her artwork special is that\nshe recycles materials, such as rubber and plastic, to create\nher furniture pieces.\nThis is great for the environment!\ninvited Ms.\nIto here for an interview.\nAfter this short\ncommercial break, Ms.\nIto will be discussing her creative\nprocess.",
-    "content_translation": "中文辅助（离线预处理）：We'd like to remind our listeners about this weekend's art\nfair.\nMany local artists will be showing their work（工作）.\n® One of\nthe feature artists is Emiko Ito, who（谁） is known for her modern\nTOTECT.\nZOEICEBEMRD 1 AldEmiko Ito C.\n18\nfurniture designs.\n®What（什么） makes her artwork special is that\nshe recycles materials, such as rubber and plastic, to create\nher furniture pieces.\nThis is great for the environment!\ninvited Ms.\nIto here for an interview.\nAfter this short\ncommercial break, Ms.\nIto will be discussing her creative\nprocess."
+    "transcript": "We'd like to remind our listeners about this weekend's art fair.\nMany local artists will be showing their work.\nOne of the feature artists is Emiko Ito, who is known for her modern furniture designs.\nWhat makes her artwork special is that she recycles materials, such as rubber and plastic, to create her furniture pieces.\nThis is great for the environment.\nI invited Miss Ito here for an interview.\nAfter this short commercial break, Miss Ito will be discussing her creative process.\nThank you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "df5c2cd71237cf40d2901702172707861e49570727c2c7f6efff01c8f20e462e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 84,
+        "legacy_word_count": 85,
+        "length_ratio": 0.988,
+        "legacy_coverage": 0.941
+      }
+    },
+    "transcript_translation": "我们想提醒听众们关于本周末的艺术展。\n许多本地艺术家将展示他们的作品。\n其中一位特色艺术家是伊藤惠子，她以现代家具设计而闻名。\n她的艺术品特别之处在于她回收材料，例如橡胶和塑料，来制作她的家具作品。\n这对环境很好。\n我邀请了伊藤小姐来这里进行一次采访。\n在这次短暂的商业休息之后，伊藤小姐将讨论她的创作过程。\n谢谢您。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6a6d5eec3f2d372ae2b679370e656525a6e686f3e04b3f99f483ae54133b340c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,24 +76,24 @@
         "An art gallery opening"
       ],
       "answer": "A",
-      "question": "What event will take place on the weekend? 77. What type of product is the speaker",
-      "answer_explain": "原文依据：听力原文中提到“We'd like to remind our listeners about this weekend's art”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An art fair）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） event will take place on the weekend?\n77.\nWhat（什么） type of product is the speaker（说话者）",
+      "question": "What event will take place on the weekend?",
+      "answer_explain": "正确答案：A（An art fair）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) event will take place on the weekend? What(什么) type of product is the speaker(说话者)",
       "choice_translations": [
-        "A：An art fair",
-        "B：A product launch",
-        "C：An award ceremony",
-        "D：An art gallery opening"
+        "A:An art fair",
+        "B:A product launch",
+        "C:An award ceremony",
+        "D:An art gallery opening"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：We'd like to remind our listeners about this weekend's art",
+      "evidence": "参考听力原文：“We'd like to remind our listeners about this weekend's art fair.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：We'd like to remind our listeners about this weekend's art",
+        "evidence": "参考听力原文：“We'd like to remind our listeners about this weekend's art fair.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“We'd like to remind our listeners about this weekend's art”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An art fair）。"
+        "analysis": "正确答案：A（An art fair）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 71,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "D",
       "question": "According to the speaker, what is special about Emiko Ito's creations?",
-      "answer_explain": "原文依据：听力原文中提到“she recycles materials, such as rubber and plastic, to create”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（They are made with recycled materials.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） is special about Emiko Ito's creations?",
+      "answer_explain": "正确答案：D（They are made with recycled materials.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) is special about Emiko Ito's creations?",
       "choice_translations": [
-        "A：They are signed by Ms.\nIto.",
-        "B：They are sold entirely online.",
-        "C：They are distributed worldwide.",
-        "D：They are made with recycled materials."
+        "A:They are signed by Ms. Ito.",
+        "B:They are sold entirely online.",
+        "C:They are distributed worldwide.",
+        "D:They are made with recycled materials."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 3 段：the feature artists is Emiko Ito, who is known for her modern",
+      "evidence": "参考听力原文：“What makes her artwork special is that she recycles materials, such as rubber and plastic, to create her furniture pieces.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 3 段：the feature artists is Emiko Ito, who is known for her modern",
+        "evidence": "参考听力原文：“What makes her artwork special is that she recycles materials, such as rubber and plastic, to create her furniture pieces.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“she recycles materials, such as rubber and plastic, to create”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（They are made with recycled materials.）。"
+        "analysis": "正确答案：D（They are made with recycled materials.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 72,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "C",
       "question": "What will the speaker most likely do next?",
-      "answer_explain": "原文依据：听力原文中提到“Ito here for an interview.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Conduct an interview）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the speaker（说话者） most likely（最可能） do next?",
+      "answer_explain": "正确答案：C（Conduct an interview）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the speaker(说话者) most likely(最可能) do next?",
       "choice_translations": [
-        "A：Lead a guided tour",
-        "B：Give a demonstration",
-        "C：Conduct an interview",
-        "D：Announce a prize winner"
+        "A:Lead a guided tour",
+        "B:Give a demonstration",
+        "C:Conduct an interview",
+        "D:Announce a prize winner"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：We'd like to remind our listeners about this weekend's art",
+      "evidence": "参考听力原文：“After this short commercial break, Miss Ito will be discussing her creative process.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：We'd like to remind our listeners about this weekend's art",
+        "evidence": "参考听力原文：“After this short commercial break, Miss Ito will be discussing her creative process.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ito here for an interview.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Conduct an interview）。"
+        "analysis": "正确答案：C（Conduct an interview）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 73,
       "priority": {

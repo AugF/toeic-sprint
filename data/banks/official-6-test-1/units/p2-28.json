@@ -28,15 +28,35 @@
       "asset_key": "official-6-test-1/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "我们的货不应该到这里了吗？\nA. 我给供应商打电话。\nB. 三名新助理。\nC. 在第十页。",
-    "content_translation": "我们的货不应该到这里了吗？\nA. 我给供应商打电话。\nB. 三名新助理。\nC. 在第十页。"
+    "transcript": "Isn't our delivery supposed to be here by now?\nA. I'll call the supplier.\nB. Three new assistants.\nC. That's on page 10.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fd15ee3f6445b43231fdf6a5002bc79fa5c5947a02e6bf212f5cf452ca7b29fd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "我们的货应该到这里了吗？\nA. 我给供应商打电话。\nB. 三个新助理。\nC. 在第 10 页。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "630e45c80b2e8efab34a2d2989328b27a5e329bb7d097f31824c58f875fac075"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "I'll call the supplier.",
         "Three new assistants.",
-        "That's on page ten."
+        "That's on page 10."
       ],
       "answer": "A",
       "question": "Isn't our delivery supposed to be here by now?",
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Isn't our delivery supposed to be here by now?”，自然应答是“I'll call the supplier.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I'll call the supplier.）。",
-      "question_translation": "我们的货不应该到这里了吗？",
+      "question_translation": "我们的货应该到这里了吗?",
       "choice_translations": [
         "A：我给供应商打电话。",
-        "B：三名新助理。",
-        "C：在第十页。"
+        "B：三个新助理。",
+        "C：在第 10 页。"
       ],
       "question_type": "否定 / 反意疑问句",
       "evidence": "参考原文第 1 段：Isn't our delivery supposed to be here by now?",

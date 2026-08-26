@@ -39,9 +39,31 @@
       "asset_key": "official-6-test-2/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "Ew Hi, Joseph. ® You know how our store does those\nworkshops on home improvements? Well, Ol'm\nsupposed to lead one next month, but it turns out\nhave to go out of town.\nIM Well, ®I could do it for you. Ol'm finishing up a series\nof workshops on bathroom remodeling this month,\nso I'll have more time then. What's the topic of the\nworkshop?\nKw It's about how to install light fixtures in your home. A lot\nof our customers are interested in that.\nm OK, sure. But I haven't done that kind of workshop\nbefore. I'm not sure what materials I'll need.\nEkw Don't worry. I'll get all the materials ready so you'll\nhave them beforehand.",
-    "transcript_translation": "中文辅助（离线预处理）：Ew Hi, Joseph.\n® You know how（如何） our store does those\nworkshops on home improvements?\nWell, Ol'm\nsupposed to lead one next month, but it turns out\nhave to go out of town.\nIM Well, ®I could do it for you.\nOl'm finishing up a series\nof workshops on bathroom remodeling this month,\nso I'll have more time then.\nWhat（什么）'s the topic of the\nworkshop?\nKw It's about how（如何） to install light fixtures in your home.\nA lot\nof our customers are interested in that.\nm OK, sure.\nBut I haven't done that kind of workshop\nbefore.\nI'm not sure what（什么） materials I'll need.\nEkw Don't worry.\nI'll get all the materials ready so you'll\nhave them beforehand.",
-    "content_translation": "中文辅助（离线预处理）：Ew Hi, Joseph.\n® You know how（如何） our store does those\nworkshops on home improvements?\nWell, Ol'm\nsupposed to lead one next month, but it turns out\nhave to go out of town.\nIM Well, ®I could do it for you.\nOl'm finishing up a series\nof workshops on bathroom remodeling this month,\nso I'll have more time then.\nWhat（什么）'s the topic of the\nworkshop?\nKw It's about how（如何） to install light fixtures in your home.\nA lot\nof our customers are interested in that.\nm OK, sure.\nBut I haven't done that kind of workshop\nbefore.\nI'm not sure what（什么） materials I'll need.\nEkw Don't worry.\nI'll get all the materials ready so you'll\nhave them beforehand."
+    "transcript": "Hi, Joseph.\nYou know how a store does those workshops on home improvements?\nWell, I'm supposed to lead one next month, but it turns out I have to go out of town.\nWell, I could do it for you.\nI'm finishing up a series of workshops on bathroom remodeling this month, so I'll have more time then.\nWhat's the topic of the workshop?\nIt's about how to install light fixtures in your home.\nA lot of our customers are interested in that.\nOkay, sure.\nBut I haven't done that kind of workshop before.\nI'm not sure what materials I'll need.\nDon't worry.\nI'll get all the materials ready so you'll have them beforehand.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c4835bd8f0b524f9fb9fdd925384edd2c0b1b9fb9e642675f8f1f50eaa3f3ae4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 113,
+        "legacy_word_count": 112,
+        "length_ratio": 1.009,
+        "legacy_coverage": 0.911
+      }
+    },
+    "transcript_translation": "嗨，Joseph。\n你知道商店那种关于家居装修的讲习班吗？\n嗯，我下个月本来要主持一个，但结果我要出差了。\n我可以帮你做这个。\n我这个月正在完成一系列浴室翻修的讲习班，到时候我有更多时间。\n讲习班的主题是什么？\n是关于如何在家里安装灯具的。\n我们很多客户对这个很感兴趣。\n好的，没问题。\n但我以前没有做过这种类型的讲习班。\n我不确定我需要哪些材料。\n别担心。\n我会把所有材料准备好，让你提前拿到。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a30e3ce739f91971da0765a3c42de774c986247473e31483359255880505fd44"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "Where do the speakers most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“Kw It's about how to install light fixtures in your home.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a home improvement store）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） do the speakers most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：D（At a home improvement store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) do the speakers most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a computer repair shop",
-        "B：At a real estate firm",
-        "C：At a restaurant",
-        "D：At a home improvement store"
+        "A:At a computer repair shop",
+        "B:At a real estate firm",
+        "C:At a restaurant",
+        "D:At a home improvement store"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Ew Hi, Joseph. ® You know how our store does those",
+      "evidence": "参考听力原文：“You know how a store does those workshops on home improvements?”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Ew Hi, Joseph. ® You know how our store does those",
+        "evidence": "参考听力原文：“You know how a store does those workshops on home improvements?”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Kw It's about how to install light fixtures in your home.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a home improvement store）。"
+        "analysis": "正确答案：D（At a home improvement store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What does the man offer to do?",
-      "answer_explain": "原文依据：听力原文中提到“supposed to lead one next month, but it turns out”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Lead a workshop）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） offer to do?",
+      "answer_explain": "正确答案：B（Lead a workshop）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) offer to do?",
       "choice_translations": [
-        "A：Wait on some customers",
-        "B：Lead a workshop",
-        "C：Take inventory",
-        "D：Arrange a window display"
+        "A:Wait on some customers",
+        "B:Lead a workshop",
+        "C:Take inventory",
+        "D:Arrange a window display"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ew Hi, Joseph. ® You know how our store does those",
+      "evidence": "参考听力原文：“Well, I'm supposed to lead one next month, but it turns out I have to go out of town.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ew Hi, Joseph. ® You know how our store does those",
+        "evidence": "参考听力原文：“Well, I'm supposed to lead one next month, but it turns out I have to go out of town.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“supposed to lead one next month, but it turns out”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Lead a workshop）。"
+        "analysis": "正确答案：B（Lead a workshop）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "A",
       "question": "What does the woman say she will do?",
-      "answer_explain": "原文依据：听力原文中提到“I'll get all the materials ready so you'll”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Prepare some materials）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do?",
+      "answer_explain": "正确答案：A（Prepare some materials）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she will do?",
       "choice_translations": [
-        "A：Prepare some materials",
-        "B：Call for transportation",
-        "C：Return some merchandise",
-        "D：Update a sign"
+        "A:Prepare some materials",
+        "B:Call for transportation",
+        "C:Return some merchandise",
+        "D:Update a sign"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ew Hi, Joseph. ® You know how our store does those",
+      "evidence": "参考听力原文：“I'll get all the materials ready so you'll have them beforehand.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ew Hi, Joseph. ® You know how our store does those",
+        "evidence": "参考听力原文：“I'll get all the materials ready so you'll have them beforehand.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I'll get all the materials ready so you'll”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Prepare some materials）。"
+        "analysis": "正确答案：A（Prepare some materials）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

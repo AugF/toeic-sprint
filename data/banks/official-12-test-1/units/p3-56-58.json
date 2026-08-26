@@ -39,9 +39,31 @@
       "asset_key": "official-12-test-1/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "z70\nEw Matthew, Ol have an idea to help our accounting firm.\nMatthew. 550\nWhat's that?\nEw oWe should investigate using an Al—or artificial\nLta5laAl.\nintelligence-software program.\nm I've heard about Al. But how could it help us?\nEw Well, ©Al can quickly process information from a large\nk. Alt25.\nvolume of financial documents like customer invoices\nor financial statements. It could also make data entry\nless time-consuming.\nm Won't it be difficult to learn to use though?\nw oWe could find an outside consultant to help with\ntraining. ©Let me start looking into that now.",
-    "transcript_translation": "中文辅助（离线预处理）：z70\nEw Matthew, Ol have an idea to help our accounting firm.\nMatthew.\n550\nWhat（什么）'s that?\nEw oWe should investigate using an Al—or artificial\nLta5laAl.\nintelligence-software program.\nm I've heard about Al.\nBut how（如何） could it help us?\nEw Well, ©Al can quickly process information（信息） from a large\nk.\nAlt25.\nvolume of financial documents like customer（顾客） invoices\nor financial statements.\nIt could also make data entry\nless time-consuming.\nm Won't it be difficult to learn to use though?\nw oWe could find an outside consultant to help with\ntraining.\n©Let me start looking into that now.",
-    "content_translation": "中文辅助（离线预处理）：z70\nEw Matthew, Ol have an idea to help our accounting firm.\nMatthew.\n550\nWhat（什么）'s that?\nEw oWe should investigate using an Al—or artificial\nLta5laAl.\nintelligence-software program.\nm I've heard about Al.\nBut how（如何） could it help us?\nEw Well, ©Al can quickly process information（信息） from a large\nk.\nAlt25.\nvolume of financial documents like customer（顾客） invoices\nor financial statements.\nIt could also make data entry\nless time-consuming.\nm Won't it be difficult to learn to use though?\nw oWe could find an outside consultant to help with\ntraining.\n©Let me start looking into that now."
+    "transcript": "Matthew, I have an idea to help our accounting firm.\nWhat's that?\nWe should investigate using an AI, or artificial intelligence, software program.\nI've heard about AI, but how could it help us?\nWell, AI can quickly process information from a large volume of financial documents, like customer invoices or financial statements.\nIt could also make data entry less time-consuming.\nWon't it be difficult to learn to use, though?\nWe could find an outside consultant to help with training.\nLet me start looking into that now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f01ced97d2a517955fadffce1c1896258cbd821442316321ef532d0fe6e5eb90",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 86,
+        "legacy_word_count": 97,
+        "length_ratio": 0.887,
+        "legacy_coverage": 0.804
+      }
+    },
+    "transcript_translation": "Matthew，我有一个想法可以帮助我们的会计师事务所。\n是什么？\n我们应该研究使用人工智能（AI）软件程序。\n我听说过 AI，但它能帮到我们吗？\n嗯，AI 可以快速处理大量财务文件中的信息，比如客户发票或财务报表。\n它还可以让数据录入工作耗时更少。\n不过，学习使用会不会很困难呢？\n我们可以找外部顾问来帮助培训。\n让我现在开始调查一下。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e2c2dbd3eb48d5eb45f6b7a1946805c79cc5b89072d3c6ac6416838693ab8447"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "A",
       "question": "Who most likely are the speakers?",
-      "answer_explain": "原文依据：听力原文中提到“Ew Matthew, Ol have an idea to help our accounting firm.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Accountants）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） are the speakers?",
+      "answer_explain": "正确答案：A（Accountants）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) are the speakers?",
       "choice_translations": [
-        "A：Accountants",
-        "B：Web designers",
-        "C：Librarians",
-        "D：Sound engineers"
+        "A:Accountants",
+        "B:Web designers",
+        "C:Librarians",
+        "D:Sound engineers"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：z70",
+      "evidence": "参考听力原文：“Well, AI can quickly process information from a large volume of financial documents, like customer invoices or financial statements.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：z70",
+        "evidence": "参考听力原文：“Well, AI can quickly process information from a large volume of financial documents, like customer invoices or financial statements.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew Matthew, Ol have an idea to help our accounting firm.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Accountants）。"
+        "analysis": "正确答案：A（Accountants）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "D",
       "question": "What does the woman propose doing?",
-      "answer_explain": "原文依据：听力原文中提到“Ew oWe should investigate using an Al—or artificial”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Using some new software）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） propose doing?",
+      "answer_explain": "正确答案：D（Using some new software）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) propose doing?",
       "choice_translations": [
-        "A：Replacing somecomputers",
-        "B：Creating an onlineschedule",
-        "C：Revising a companypolicy",
-        "D：Using some new software"
+        "A:Replacing somecomputers",
+        "B:Creating an onlineschedule",
+        "C:Revising a companypolicy",
+        "D:Using some new software"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：z70",
+      "evidence": "参考听力原文：“We should investigate using an AI, or artificial intelligence, software program.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：z70",
+        "evidence": "参考听力原文：“We should investigate using an AI, or artificial intelligence, software program.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew oWe should investigate using an Al—or artificial”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Using some new software）。"
+        "analysis": "正确答案：D（Using some new software）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "A",
       "question": "What does the woman say she will do?",
-      "answer_explain": "原文依据：听力原文中提到“Ew Matthew, Ol have an idea to help our accounting firm.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Research outsideconsultants）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do?",
+      "answer_explain": "正确答案：A（Research outsideconsultants）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she will do?",
       "choice_translations": [
-        "A：Research outsideconsultants",
-        "B：Organize a trainingsession",
-        "C：Purchase（购买） a computerprogram",
-        "D：Speak with some staffmembers"
+        "A:Research outsideconsultants",
+        "B:Organize a trainingsession",
+        "C:Purchase(购买) a computerprogram",
+        "D:Speak with some staffmembers"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：z70",
+      "evidence": "参考听力原文：“Well, AI can quickly process information from a large volume of financial documents, like customer invoices or financial statements.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：z70",
+        "evidence": "参考听力原文：“Well, AI can quickly process information from a large volume of financial documents, like customer invoices or financial statements.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew Matthew, Ol have an idea to help our accounting firm.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Research outsideconsultants）。"
+        "analysis": "正确答案：A（Research outsideconsultants）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

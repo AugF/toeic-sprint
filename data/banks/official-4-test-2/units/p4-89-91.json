@@ -40,9 +40,32 @@
       "asset_key": "official-4-test-2/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "Ev\nGood morning, everyone. As you know, ®the store's anni\nweeklong sales event is coming up. ® Everything will be «\nsale... cell phones, laptop computers, televisions. Like e\\\nyear when we have this event, break times will be limited\nwe'll provide some lunch in the break room. In the meant\nto prepare for the sale, we need to make sure our store’s\norganized. We'll start with the product display in our fro\nwindow. ®1'd like it to be completely finished by the end «\nday.",
-    "transcript_translation": "中文辅助（离线预处理）：Ev\nGood morning, everyone.\nAs you know, ®the store's anni\nweeklong sales event is coming up.\n® Everything will be «\nsale...\ncell phones, laptop computers, televisions.\nLike e\\\nyear when（何时） we have this event, break times will be limited\nwe'll provide some lunch in the break room.\nIn the meant\nto prepare for the sale, we need to make sure our store’s\norganized.\nWe'll start with the product display in our fro\nwindow.\n®1'd like it to be completely finished by the end «\nday.",
-    "content_translation": "中文辅助（离线预处理）：Ev\nGood morning, everyone.\nAs you know, ®the store's anni\nweeklong sales event is coming up.\n® Everything will be «\nsale...\ncell phones, laptop computers, televisions.\nLike e\\\nyear when（何时） we have this event, break times will be limited\nwe'll provide some lunch in the break room.\nIn the meant\nto prepare for the sale, we need to make sure our store’s\norganized.\nWe'll start with the product display in our fro\nwindow.\n®1'd like it to be completely finished by the end «\nday."
+    "transcript": "provide some lunch in the break room.\nIn the meantime, to prepare for the sale, we need to make sure our store is organized.\nWe'll start with a product display in our front window.\nI'd like it to be completely finished by the end of the day.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "f1e8d2d021233e2433bb2de34b6097a55b2665c9147979c0309f2854a93900e8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 47,
+        "legacy_word_count": 83,
+        "length_ratio": 0.566,
+        "legacy_coverage": 0.59,
+        "prompted_failure": "missing spoken Questions 89 through 91 introduction"
+      }
+    },
+    "transcript_translation": "在休息室提供一些午餐。\n同时，为了准备销售，我们需要确保我们的商店是井然有序的。\n我们将从我们在前窗的产品展示开始。\n我希望它能在一天结束时完全完成。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2e632ca4c3af460eabe2234b0c98781368fd465178e9f1fc7fb1a3b443abf568"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "D",
       "question": "Where do the listeners most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“to prepare for the sale, we need to make sure our store’s”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At an electronics store）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） do the listeners most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：D（At an electronics store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) do the listeners most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a software development firm",
-        "B：At a manufacturing plant",
-        "C：At a cleaning service（服务）",
-        "D：At an electronics store"
+        "A:At a software development firm",
+        "B:At a manufacturing plant",
+        "C:At a cleaning service(服务)",
+        "D:At an electronics store"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Ev",
+      "evidence": "参考听力原文：“In the meantime, to prepare for the sale, we need to make sure our store is organized.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Ev",
+        "evidence": "参考听力原文：“In the meantime, to prepare for the sale, we need to make sure our store is organized.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“to prepare for the sale, we need to make sure our store’s”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At an electronics store）。"
+        "analysis": "正确答案：D（At an electronics store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 89,
       "priority": {
@@ -103,27 +126,27 @@
         "New employees must complete their training.",
         "Some workers are out sick.",
         "Employees will be busier than usual.",
-        "Acafeteria space is small."
+        "A cafeteria space is small."
       ],
       "answer": "C",
       "question": "Why does the speaker say, “break times will be limited”?",
-      "answer_explain": "原文依据：听力原文中提到“year when we have this event, break times will be limited”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Employees will be busier than usual.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, “break times will be limited”?",
+      "answer_explain": "正确答案：C（Employees will be busier than usual.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, “break times will be limited”?",
       "choice_translations": [
-        "A：New employees must complete their training.",
-        "B：Some workers are out sick.",
-        "C：Employees will be busier than usual.",
-        "D：Acafeteria space is small."
+        "A:New employees must complete their training.",
+        "B:Some workers are out sick.",
+        "C:Employees will be busier than usual.",
+        "D:A cafeteria space is small."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：year when we have this event, break times will be limited",
+      "evidence": "参考听力原文：“provide some lunch in the break room.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：year when we have this event, break times will be limited",
+        "evidence": "参考听力原文：“provide some lunch in the break room.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“year when we have this event, break times will be limited”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Employees will be busier than usual.）。"
+        "analysis": "正确答案：C（Employees will be busier than usual.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 90,
       "priority": {
@@ -153,30 +176,30 @@
     },
     {
       "choices": [
-        "Acustomer service survey",
-        "Awindow display",
+        "A customer service survey",
+        "A window display",
         "An order form",
-        "Aweekly time sheet"
+        "A weekly time sheet"
       ],
       "answer": "B",
       "question": "What does the speaker want completed by the end of the day?",
-      "answer_explain": "原文依据：听力原文中提到“We'll start with the product display in our fro”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Awindow display）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） want completed by the end of the day?",
+      "answer_explain": "正确答案：B（A window display）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) want completed by the end of the day?",
       "choice_translations": [
-        "A：Acustomer service（服务） survey",
-        "B：Awindow display",
-        "C：An order（订单） form",
-        "D：Aweekly time sheet"
+        "A:Acustomer service(服务) survey",
+        "B:A window display",
+        "C:An order(订单) form",
+        "D:A weekly time sheet"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ev",
+      "evidence": "参考听力原文：“We'll start with a product display in our front window.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ev",
+        "evidence": "参考听力原文：“We'll start with a product display in our front window.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“We'll start with the product display in our fro”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Awindow display）。"
+        "analysis": "正确答案：B（A window display）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 91,
       "priority": {

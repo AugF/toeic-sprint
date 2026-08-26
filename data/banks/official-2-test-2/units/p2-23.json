@@ -28,38 +28,58 @@
       "asset_key": "official-2-test-2/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "= 你是在商店还是在店里买的这件大衣？ Pe ey | lai\nA. DER. 的衣服 #183。\nB. 这个有小尺码吗？ ZADBUJCRA, SMCHOKTCERRLT\nC. 不，队伍没那么长。 L\\S",
-    "content_translation": "= 你是在商店还是在店里买的这件大衣？ Pe ey | lai\nA. DER. 的衣服 #183。\nB. 这个有小尺码吗？ ZADBUJCRA, SMCHOKTCERRLT\nC. 不，队伍没那么长。 L\\S"
+    "transcript": "Did you buy the coat online or from\nA. shop? A. I never buy clothes without trying them on.\nB. Do you have this in a smaller size?\nC. No, the line isn't very long.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1ec08df7ee8847692fd34e3040d8be6a6f9cf6584c074c35d58d3e0c91ad58e2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 36
+      }
+    },
+    "transcript_translation": "你是在线买外套还是从\nA. 店？ A. 我不会不试衣服就买的。\nB. 你有小一点尺码的吗？\nC. 不，这条线不太长。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8ac9ad1edf3d224f89cbdba08dded06b3b6511fc6fec747c93dae197e3f78527"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "DER. themié clothes #183.",
-        "Do you have this in a smaller size? ZADBUJCRA, SMCHOKTCERRLT",
-        "No, the line isn’t very long. L\\S"
+        "shop? A. I never buy clothes without trying them on.",
+        "Do you have this in a smaller size?",
+        "No, the line isn't very long."
       ],
       "answer": "A",
-      "question": "= Did you buy the coat spe or = a shop? Pe ey | lai",
+      "question": "Did you buy the coat online or from",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“= Did you buy the coat spe or = a shop? Pe ey | lai”，自然应答是“DER. themié clothes #183.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（DER. themié clothes #183.）。",
-      "question_translation": "= 你是在商店还是在店里买的这件大衣？ Pe ey | lai",
+      "answer_explain": "原文依据：问句或陈述是“Did you buy the coat online or from”，自然应答是“shop? A. I never buy clothes without trying them on.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（shop? A. I never buy clothes without trying them on.）。",
+      "question_translation": "你是在线买外套还是从",
       "choice_translations": [
-        "A：DER. 的衣服 #183。",
-        "B：这个有小尺码吗？ ZADBUJCRA, SMCHOKTCERRLT",
-        "C：不，队伍没那么长。 L\\S"
+        "A：店? A. 我不会不试衣服就买的。",
+        "B：你有小一点尺码的吗?",
+        "C：不,这条线不太长。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：= Did you buy the coat spe or = a shop? Pe ey | lai",
+      "evidence": "参考原文第 1 段：Did you buy the coat online or from",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：= Did you buy the coat spe or = a shop? Pe ey | lai",
+        "evidence": "参考原文第 1 段：Did you buy the coat online or from",
         "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“= Did you buy the coat spe or = a shop? Pe ey | lai”，自然应答是“DER. themié clothes #183.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（DER. themié clothes #183.）。"
+        "analysis": "原文依据：问句或陈述是“Did you buy the coat online or from”，自然应答是“shop? A. I never buy clothes without trying them on.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（shop? A. I never buy clothes without trying them on.）。"
       },
       "item_id": 23,
       "priority": {

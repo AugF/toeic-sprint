@@ -27,8 +27,28 @@
       "asset_key": "official-10-test-2/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：m How（如何） did you find your new designer?\nKw",
-    "content_translation": "中文辅助（离线预处理）：m How（如何） did you find your new designer?\nKw"
+    "transcript": "How did you find your new designer?\nA. I finished the survey ahead of schedule.\nB. About two months ago.\nC. A colleague recommended her.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8a6c760f085805f9ba728cd6ede3fe35ed3e9e39dc2e7764d2dcb069338b0cde",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你从哪里找到你的新设计师的？\nA. 我提前完成了调查问卷。\nB. 大约两个月前。\nC. 一位同事推荐给我的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "539f7cf68887520dc4adbb4d7365a873e478ebc493bf5221e1b05d6307c9ffc6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "A colleague recommended her."
       ],
       "answer": "C",
-      "question": "m How did you find your new designer? Kw",
+      "question": "How did you find your new designer?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“m How did you find your new designer? Kw”，自然应答是“A colleague recommended her.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（A colleague recommended her.）。",
-      "question_translation": "中文辅助（离线预处理）：m How（如何） did you find your new designer?\nKw",
+      "answer_explain": "原文依据：问句或陈述是“How did you find your new designer?”，自然应答是“A colleague recommended her.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（A colleague recommended her.）。",
+      "question_translation": "你从哪里找到你的新设计师的?",
       "choice_translations": [
-        "A：I finished the survey ahead of schedule（日程）.",
-        "B：About two months ago.",
-        "C：A colleague recommended her."
+        "A：我提前完成了调查问卷。",
+        "B：大约两个月前。",
+        "C：一位同事推荐给我的。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：m How did you find your new designer? Kw",
+      "evidence": "参考原文第 1 段：How did you find your new designer?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：m How did you find your new designer? Kw",
+        "evidence": "参考原文第 1 段：How did you find your new designer?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“m How did you find your new designer? Kw”，自然应答是“A colleague recommended her.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（A colleague recommended her.）。"
+        "analysis": "原文依据：问句或陈述是“How did you find your new designer?”，自然应答是“A colleague recommended her.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（A colleague recommended her.）。"
       },
       "item_id": 13,
       "priority": {

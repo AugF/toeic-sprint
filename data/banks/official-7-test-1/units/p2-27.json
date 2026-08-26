@@ -28,38 +28,58 @@
       "asset_key": "official-7-test-1/audio/part2/q027.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Em Does your plane leave in the morning or in the evening?\nEW",
-    "content_translation": "中文辅助（离线预处理）：Em Does your plane leave in the morning or in the evening?\nEW"
+    "transcript": "Does your plane leave in the morning or in the evening?\nA. At 8 o'clock tomorrow morning.\nB. Sure, that'd be great.\nC. A window seat.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "692ce1801981f26c6e2c903bb68c12e6186be114a7fd1e0a86da9bfeb1e3159e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q027.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你的飞机是早上出发还是晚上出发？\nA. 明天早上八点。\nB. 当然，那会很棒。\nC. 一个靠窗的座位。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "dff92c10167ee96978c0590892908630297fd7a5038aca5da4c9da8a5d2a23d0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "At eight o'clock tomorrow morning.",
+        "At 8 o'clock tomorrow morning.",
         "Sure, that'd be great.",
         "A window seat."
       ],
       "answer": "A",
-      "question": "Em Does your plane leave in the morning or in the evening? EW",
+      "question": "Does your plane leave in the morning or in the evening?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“Em Does your plane leave in the morning or in the evening? EW”，自然应答是“At eight o'clock tomorrow morning.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（At eight o'clock tomorrow morning.）。",
-      "question_translation": "中文辅助（离线预处理）：Em Does your plane leave in the morning or in the evening?\nEW",
+      "answer_explain": "原文依据：问句或陈述是“Does your plane leave in the morning or in the evening?”，自然应答是“At 8 o'clock tomorrow morning.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（At 8 o'clock tomorrow morning.）。",
+      "question_translation": "你的飞机是早上出发还是晚上出发?",
       "choice_translations": [
-        "A：At eight o'clock tomorrow morning.",
-        "B：Sure, that'd be great.",
-        "C：A window seat."
+        "A：明天早上八点。",
+        "B：当然,那会很棒。",
+        "C：一个靠窗的座位。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Em Does your plane leave in the morning or in the evening? EW",
+      "evidence": "参考原文第 1 段：Does your plane leave in the morning or in the evening?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Em Does your plane leave in the morning or in the evening? EW",
+        "evidence": "参考原文第 1 段：Does your plane leave in the morning or in the evening?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Em Does your plane leave in the morning or in the evening? EW”，自然应答是“At eight o'clock tomorrow morning.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（At eight o'clock tomorrow morning.）。"
+        "analysis": "原文依据：问句或陈述是“Does your plane leave in the morning or in the evening?”，自然应答是“At 8 o'clock tomorrow morning.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（At 8 o'clock tomorrow morning.）。"
       },
       "item_id": 27,
       "priority": {

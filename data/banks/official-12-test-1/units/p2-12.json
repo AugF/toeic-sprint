@@ -26,8 +26,28 @@
       "asset_key": "official-12-test-1/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Who（谁）'s going to get the financial information（信息） from the accounting department?",
-    "content_translation": "中文辅助（离线预处理）：Who（谁）'s going to get the financial information（信息） from the accounting department?"
+    "transcript": "Who's going to get the financial information from the accounting department?\nA. On the second floor.\nB. I'll get it.\nC. I counted them already.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6129a708b538c89c457b25da6ab88a7f70aa03924e7905878513cd777dc40902",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "谁去会计部门取财务信息？\nA. 在二楼。\nB. 我来拿。\nC. 我已经数过了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0ba5817ae31299f446fc47c27c19f2de9fb09b688678f318f204c810ccd35902"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -42,11 +62,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Who's going to get the financial information from the accounting department?”，自然应答是“I'll get it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll get it.）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁）'s going to get the financial information（信息） from the accounting department?",
+      "question_translation": "谁去会计部门取财务信息?",
       "choice_translations": [
-        "A：On the second floor.",
-        "B：I'll get it.",
-        "C：I counted them already."
+        "A：在二楼。",
+        "B：我来拿。",
+        "C：我已经数过了。"
       ],
       "question_type": "人物疑问句",
       "evidence": "参考原文第 1 段：Who's going to get the financial information from the accounting department?",

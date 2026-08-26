@@ -31,8 +31,28 @@
       "asset_key": "official-8-test-2/images/part1/q005.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. One of the women is removing her glasses.\nB. One of the women has her arms extended up.\nC. The women are putting paper into a shredder.\nD. The women are passing through a door.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e0f7c77a463c4a3ac0c9202262b59a34b69738dd62f7d86131a0112e2bbb9717",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part1/q005.mp3",
+      "metrics": {
+        "word_count": 47
+      }
+    },
+    "transcript_translation": "A. 其中一位女士正在摘下她的眼镜。\nB. 其中一位女士将手臂伸直向上。\nC. 这些女士们正在把纸投入碎纸机。\nD. 这些女士们正穿过一扇门。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "77037fe640ffc4c0c60aa3f181cba0551bac54fee2c0d1f79ed7dc015b738914"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“One of the women has her arms extended up.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（One of the women has her arms extended up.）。",
       "choice_translations": [
-        "A：One of the women is removing her glasses.",
-        "B：One of the women has her arms extended up.",
-        "C：The women are putting paper into a shredder.",
-        "D：The women are passing through a door."
+        "A：其中一位女士正在摘下她的眼镜。",
+        "B：其中一位女士将手臂伸直向上。",
+        "C：这些女士们正在把纸投入碎纸机。",
+        "D：这些女士们正穿过一扇门。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-8-test-2/p1-5/5"
+      "item_key": "official-8-test-2/p1-5/5",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

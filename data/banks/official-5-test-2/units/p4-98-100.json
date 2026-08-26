@@ -38,9 +38,32 @@
       "asset_key": "official-5-test-2/audio/part4/q098-100.mp3",
       "exists": true
     },
-    "transcript": "message and sign.\nHi, Richard, it's Louisa. I have some news about the\nRenewable Energy Trade Show. | just found out that the\nBarnes Convention Center charges extra fees if events go\npast a certain hour. That means it would be too expensive\nfor us, so I think we're going to have to end at seven each\nday. I know you've already placed the order for our sign\nfrom the printers, but could you call and ask if we can make\na last-minute change to the design? It's not ideal, but we'll\navoid having to pay the extra charge for that hour. Thanks!\nRenewable Energy Trade Show\nBarnes Convention Center\nJune\nF 28~290\nA.M.-8:00 P.M.\nAdmission: $25\nFI",
-    "transcript_translation": "中文辅助（离线预处理）：message and sign.\nHi, Richard, it's Louisa.\nI have some news about the\nRenewable Energy Trade Show.\n| just found out that the\nBarnes Convention Center charges extra fees if events go\npast a certain hour.\nThat means it would be too expensive\nfor us, so I think we're going to have to end at seven each\nday.\nI know you've already placed the order（订单） for our sign\nfrom the printers, but could you call and ask if we can make\na last-minute change to the design?\nIt's not ideal, but we'll\navoid having to pay the extra charge for that hour.\nThanks!\nRenewable Energy Trade Show\nBarnes Convention Center\nJune\nF 28~290\nA.M.-8:00 P.M.\nAdmission: $25\nFI",
-    "content_translation": "中文辅助（离线预处理）：message and sign.\nHi, Richard, it's Louisa.\nI have some news about the\nRenewable Energy Trade Show.\n| just found out that the\nBarnes Convention Center charges extra fees if events go\npast a certain hour.\nThat means it would be too expensive\nfor us, so I think we're going to have to end at seven each\nday.\nI know you've already placed the order（订单） for our sign\nfrom the printers, but could you call and ask if we can make\na last-minute change to the design?\nIt's not ideal, but we'll\navoid having to pay the extra charge for that hour.\nThanks!\nRenewable Energy Trade Show\nBarnes Convention Center\nJune\nF 28~290\nA.M.-8:00 P.M.\nAdmission: $25\nFI"
+    "transcript": "Hi, Richard, it's Louisa.\nI have some news about the Renewable Energy Trade Show.\nI just found out that the Barnes Convention Center charges extra fees if events go past a certain hour.\nThat means it would be too expensive for us, so I think we're going to have to end at seven each day.\nI know you've already placed the order for our sign from the printers, but you can see the same.\nBut could you call and ask if we can make a last-minute change to the design?\nIt's not ideal, but we'll avoid having to pay the extra charge for that hour.\nThanks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "44c925e37a381142f755b05488fb8a6b08342e6c3fd9ee4923fade76f32bf3bf",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 108,
+        "legacy_word_count": 108,
+        "length_ratio": 1,
+        "legacy_coverage": 0.972
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，Richard，我是Louisa。\n我关于可再生能源贸易展有一些消息。\n我刚发现巴恩斯会议中心如果活动时间超过某个小时，会收取额外费用。\n这意味着对我们来说太贵了，所以我想我们每天都必须在七点结束。\n我知道你已经从印刷厂订购了我们的招牌，但你可以看到同样的。\n但是你能打电话问一下我们是否可以对设计进行临时更改吗？\n虽然不太理想，但这样可以避免支付那个小时的额外费用。\n谢谢。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "51503a53758524d856fe697fbe0e25ffdafd68c5919d42b0539f0285009b61f7"
+    }
   },
   "items": [
     {
@@ -52,23 +75,23 @@
       ],
       "answer": "A",
       "question": "What problem does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“I have some news about the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Some fees are unexpected.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） problem does the speaker（说话者） mention?",
+      "answer_explain": "正确答案：A（Some fees are unexpected.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) problem does the speaker(说话者) mention?",
       "choice_translations": [
-        "A：Some fees are unexpected.",
-        "B：Some deliveries are delayed",
-        "C：A location is already booked",
-        "D：A keynote speaker（说话者） is unavailable."
+        "A:Some fees are unexpected.",
+        "B:Some deliveries are delayed",
+        "C:A location is already booked",
+        "D:A keynote speaker(说话者) is unavailable."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message and sign.",
+      "evidence": "参考听力原文：“I just found out that the Barnes Convention Center charges extra fees if events go past a certain hour.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message and sign.",
+        "evidence": "参考听力原文：“I just found out that the Barnes Convention Center charges extra fees if events go past a certain hour.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I have some news about the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Some fees are unexpected.）。"
+        "analysis": "正确答案：A（Some fees are unexpected.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 98,
       "priority": {
@@ -103,23 +126,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. What information needs to be changed?",
-      "answer_explain": "原文依据：听力原文中提到“from the printers, but could you call and ask if we can make”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（8:00 P.M.）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhat（什么） information（信息） needs to be changed?",
+      "answer_explain": "正确答案：C（8:00 P.M.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. What(什么) information(信息) needs to be changed?",
       "choice_translations": [
-        "A：28-29 June",
-        "B：9:00 A.M.",
-        "C：8:00 P.M.",
-        "D：$25"
+        "A:28-29 June",
+        "B:9:00 A.M.",
+        "C:8:00 P.M.",
+        "D:$25"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message and sign.",
+      "evidence": "参考听力原文：“I just found out that the Barnes Convention Center charges extra fees if events go past a certain hour.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message and sign.",
+        "evidence": "参考听力原文：“I just found out that the Barnes Convention Center charges extra fees if events go past a certain hour.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“from the printers, but could you call and ask if we can make”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（8:00 P.M.）。"
+        "analysis": "正确答案：C（8:00 P.M.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 99,
       "priority": {
@@ -154,23 +177,23 @@
       ],
       "answer": "C",
       "question": "What does the speaker ask the listener to do?",
-      "answer_explain": "原文依据：听力原文中提到“from the printers, but could you call and ask if we can make”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Contact a printing company）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） ask the listener to do?",
+      "answer_explain": "正确答案：C（Contact a printing company）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) ask the listener to do?",
       "choice_translations": [
-        "A：Design a flyer",
-        "B：Mail an invoice",
-        "C：Contact a printing company（公司）",
-        "D：Review a budget"
+        "A:Design a flyer",
+        "B:Mail an invoice",
+        "C:Contact a printing company(公司)",
+        "D:Review a budget"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message and sign.",
+      "evidence": "参考听力原文：“But could you call and ask if we can make a last-minute change to the design?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message and sign.",
+        "evidence": "参考听力原文：“But could you call and ask if we can make a last-minute change to the design?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“from the printers, but could you call and ask if we can make”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Contact a printing company）。"
+        "analysis": "正确答案：C（Contact a printing company）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 100,
       "priority": {

@@ -28,8 +28,28 @@
       "asset_key": "official-7-test-2/audio/part2/q031.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：M I just received my auditor certification.\nw",
-    "content_translation": "中文辅助（离线预处理）：M I just received my auditor certification.\nw"
+    "transcript": "I just received my auditor certification.\nA. We'll need someone with that experience.\nB. Yes, they'll be there.\nC. A six-month course.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4c82748557ddc50fe322a3fbf95a1ededf99cff2e63859d8559bf6c12ff62560",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q031.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "我刚获得了审计师认证。\nA. 我们需要具备这种经验的人。\nB. 是的，他们会在那儿。\nC. 一个为期六个月的课程。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a094fc6766ba6f3e10b1dda39d1cdde514b0ec8fb9d440d5ba27174022d45d52"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "A six-month course."
       ],
       "answer": "A",
-      "question": "M I just received my auditor certification. w",
+      "question": "I just received my auditor certification.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M I just received my auditor certification. w”，自然应答是“We'll need someone with that experience.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We'll need someone with that experience.）。",
-      "question_translation": "中文辅助（离线预处理）：M I just received my auditor certification.\nw",
+      "answer_explain": "原文依据：问句或陈述是“I just received my auditor certification.”，自然应答是“We'll need someone with that experience.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We'll need someone with that experience.）。",
+      "question_translation": "我刚获得了审计师认证。",
       "choice_translations": [
-        "A：We'll need someone with that experience.",
-        "B：Yes, they'll be there.",
-        "C：A six-month course."
+        "A：我们需要具备这种经验的人。",
+        "B：是的,他们会在那儿。",
+        "C：一个为期六个月的课程。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M I just received my auditor certification. w",
+      "evidence": "参考原文第 1 段：I just received my auditor certification.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M I just received my auditor certification. w",
+        "evidence": "参考原文第 1 段：I just received my auditor certification.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“M I just received my auditor certification. w”，自然应答是“We'll need someone with that experience.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We'll need someone with that experience.）。"
+        "analysis": "原文依据：问句或陈述是“I just received my auditor certification.”，自然应答是“We'll need someone with that experience.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We'll need someone with that experience.）。"
       },
       "item_id": 31,
       "priority": {

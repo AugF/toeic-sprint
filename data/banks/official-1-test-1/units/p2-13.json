@@ -26,38 +26,58 @@
       "asset_key": "official-1-test-1/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "= 我的文件什么时候能准备好？ [lm\nA. 在 11 月二号。\nB. 一种各种纸制品。\nC. 是的，增加百分之十。",
-    "content_translation": "= 我的文件什么时候能准备好？ [lm\nA. 在 11 月二号。\nB. 一种各种纸制品。\nC. 是的，增加百分之十。"
+    "transcript": "When will my paperwork be ready?\nA. On November 2nd.\nB. A variety of paper products.\nC. Yes, a 10% increase.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "64b826093682ef61091b59edc7da97f67796d047d556d71b33e52b80402b2a94",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 21
+      }
+    },
+    "transcript_translation": "我的文件什么时候能准备好？\nA. 在11月2日。\nB. 一种各种纸制品。\nC. 是的，增加10%。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "00b2bd27945229d49a46eea82513209a7531104ea7a66f887fb6f2dfe81b1fc5"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "On November second.",
+        "On November 2nd.",
         "A variety of paper products.",
-        "Yes, a ten percent increase."
+        "Yes, a 10% increase."
       ],
       "answer": "A",
-      "question": "= When will my paperwork be ready? [lm",
+      "question": "When will my paperwork be ready?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“= When will my paperwork be ready? [lm”，自然应答是“On November second.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（On November second.）。",
+      "answer_explain": "原文依据：问句或陈述是“When will my paperwork be ready?”，自然应答是“On November 2nd.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（On November 2nd.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：= When will my paperwork be ready? [lm",
+      "evidence": "参考原文第 1 段：When will my paperwork be ready?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：= When will my paperwork be ready? [lm",
+        "evidence": "参考原文第 1 段：When will my paperwork be ready?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“= When will my paperwork be ready? [lm”，自然应答是“On November second.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（On November second.）。"
+        "analysis": "原文依据：问句或陈述是“When will my paperwork be ready?”，自然应答是“On November 2nd.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（On November 2nd.）。"
       },
-      "question_translation": "= 我的文件什么时候能准备好？ [lm",
+      "question_translation": "我的文件什么时候能准备好?",
       "choice_translations": [
-        "A：在 11 月二号。",
+        "A：在11月2日。",
         "B：一种各种纸制品。",
-        "C：是的，增加百分之十。"
+        "C：是的,增加10%。"
       ],
       "item_id": 13,
       "priority": {

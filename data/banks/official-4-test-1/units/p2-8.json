@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-1/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：w Did you notice the new carpet in the hallway?\n= v .\nP y ERB RLU A“ y blest WED EUS [lv",
-    "content_translation": "中文辅助（离线预处理）：w Did you notice the new carpet in the hallway?\n= v .\nP y ERB RLU A“ y blest WED EUS [lv"
+    "transcript": "did you notice the new carpet in the hallway\nA. whose car is that\nB. actually I didn't\nC. a flooring store nearby",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "dc5f98d3c73325a8c9d3393a8ab4c20a1db2418bac11e382ef0ccf32b3da5fd8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "你注意到走廊里的新地毯了吗？\nA. 那是哪辆车。\nB. 实际上我没注意到。\nC. 附近有一家地板店",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "07b9ead1100b66c563c67f193fd55cbe19c2b01f98fb6600e8f899a61ef684b6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Whose car is that? HRICML. | didntesa. ahtoes",
-        "DER. notice [~ (ct",
-        "A flooring store nearby. <1, carpetIA—“Ny bh. Uw Sich], hallway!"
+        "whose car is that",
+        "actually I didn't",
+        "a flooring store nearby"
       ],
       "answer": "B",
-      "question": "w Did you notice the new carpet in the hallway? = v . P y ERB RLU A“ y blest WED EUS [lv",
+      "question": "did you notice the new carpet in the hallway",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“w Did you notice the new carpet in the hallway? = v . P y ERB RLU A“ y blest WED EUS [lv”，自然应答是“DER. notice [~ (ct”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（DER. notice [~ (ct）。",
-      "question_translation": "中文辅助（离线预处理）：w Did you notice the new carpet in the hallway?\n= v .\nP y ERB RLU A“ y blest WED EUS [lv",
+      "answer_explain": "原文依据：问句或陈述是“did you notice the new carpet in the hallway”，自然应答是“actually I didn't”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（actually I didn't）。",
+      "question_translation": "你注意到走廊里的新地毯了吗?",
       "choice_translations": [
-        "A：Whose car is that?\nHRICML.\n| didntesa.\nahtoes",
-        "B：DER.\nnotice [~ (ct",
-        "C：A flooring store nearby.\n<1, carpetIA—“Ny bh.\nUw Sich], hallway!"
+        "A：那是哪辆车。",
+        "B：实际上我没注意到。",
+        "C：附近有一家地板店"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：w Did you notice the new carpet in the hallway? = v . P y ERB RLU A“ y blest WED EUS [lv",
+      "evidence": "参考原文第 1 段：did you notice the new carpet in the hallway",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：w Did you notice the new carpet in the hallway? = v . P y ERB RLU A“ y blest WED EUS [lv",
+        "evidence": "参考原文第 1 段：did you notice the new carpet in the hallway",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“w Did you notice the new carpet in the hallway? = v . P y ERB RLU A“ y blest WED EUS [lv”，自然应答是“DER. notice [~ (ct”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（DER. notice [~ (ct）。"
+        "analysis": "原文依据：问句或陈述是“did you notice the new carpet in the hallway”，自然应答是“actually I didn't”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（actually I didn't）。"
       },
       "item_id": 8,
       "priority": {

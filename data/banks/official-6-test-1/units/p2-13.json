@@ -28,38 +28,58 @@
       "asset_key": "official-6-test-1/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "你们提供老年折扣，对吗？\nA. 一个新的计算器。\nB. 是的，我只需要看一下身份证明。\nC. 我会算一下我缺勤的天数。",
-    "content_translation": "你们提供老年折扣，对吗？\nA. 一个新的计算器。\nB. 是的，我只需要看一下身份证明。\nC. 我会算一下我缺勤的天数。"
+    "transcript": "You offer\nA. senior discount, don't you? A. A new calculator.\nB. Yes, I just need to see some identification.\nC. I'll count up the days I missed.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "512912bef704e26a19c1e68a2f2db5a3ebdc95db37eb3f624cb3c788be841d83",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "你提供\nA. 老年折扣，对吗？ A. 一个新的计算器。\nB. 是的，我只需要看看一些身份证明。\nC. 我会数一下我错过的天数。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4fbfd12311bbb1ad11f0d716ae898c1d4a9248940e0b9b34e83fb6eee6f02f13"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "A new calculator.",
+        "senior discount, don't you? A. A new calculator.",
         "Yes, I just need to see some identification.",
         "I'll count up the days I missed."
       ],
       "answer": "B",
-      "question": "You offer a senior discount, don't you?",
+      "question": "You offer",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“You offer a senior discount, don't you?”，自然应答是“Yes, I just need to see some identification.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, I just need to see some identification.）。",
-      "question_translation": "你们提供老年折扣，对吗？",
+      "answer_explain": "原文依据：问句或陈述是“You offer”，自然应答是“Yes, I just need to see some identification.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, I just need to see some identification.）。",
+      "question_translation": "你提供",
       "choice_translations": [
-        "A：一个新的计算器。",
-        "B：是的，我只需要看一下身份证明。",
-        "C：我会算一下我缺勤的天数。"
+        "A：老年折扣,对吗? A. 一个新的计算器。",
+        "B：是的,我只需要看看一些身份证明。",
+        "C：我会数一下我错过的天数。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：You offer a senior discount, don't you?",
+      "evidence": "参考原文第 1 段：You offer",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为一般疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：You offer a senior discount, don't you?",
+        "evidence": "参考原文第 1 段：You offer",
         "strategy": "先判断为一般疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“You offer a senior discount, don't you?”，自然应答是“Yes, I just need to see some identification.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, I just need to see some identification.）。"
+        "analysis": "原文依据：问句或陈述是“You offer”，自然应答是“Yes, I just need to see some identification.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, I just need to see some identification.）。"
       },
       "item_id": 13,
       "priority": {

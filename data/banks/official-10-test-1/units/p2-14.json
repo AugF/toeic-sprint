@@ -28,38 +28,58 @@
       "asset_key": "official-10-test-1/audio/part2/q014.mp3",
       "exists": true
     },
-    "transcript_translation": "哪个包裹是昨晚送到的？如果 M\nA. 她住在市中心。\nNaka\nB. 非常小心地。\nC. 给中村先生的箱子。",
-    "content_translation": "哪个包裹是昨晚送到的？如果 M\nA. 她住在市中心。\nNaka\nB. 非常小心地。\nC. 给中村先生的箱子。"
+    "transcript": "Which package was delivered last night?\nA. She lives in the city center.\nB. With great care.\nC. The box for Mr. Nakamura.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "918eb554b35773798c6ddd841819598f7016298c2eae4f544a6dadc85ad00e18",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part2/q014.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "哪个包裹是昨晚送到的？\nA. 她住在市中心。\nB. 非常小心地。\nC. 给中村先生的箱子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "80151a2452989bf9f186bab4f291f3429618387c88a56401c1646a676f3a3711"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "She lives in the city center. Naka",
+        "She lives in the city center.",
         "With great care.",
         "The box for Mr. Nakamura."
       ],
       "answer": "C",
-      "question": "Which package was delivered last night? Iff M",
+      "question": "Which package was delivered last night?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Which package was delivered last night? Iff M”，自然应答是“The box for Mr. Nakamura.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The box for Mr. Nakamura.）。",
-      "question_translation": "哪个包裹是昨晚送到的？如果 M",
+      "answer_explain": "原文依据：问句或陈述是“Which package was delivered last night?”，自然应答是“The box for Mr. Nakamura.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The box for Mr. Nakamura.）。",
+      "question_translation": "哪个包裹是昨晚送到的?",
       "choice_translations": [
-        "A：她住在市中心。Naka",
+        "A：她住在市中心。",
         "B：非常小心地。",
         "C：给中村先生的箱子。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Which package was delivered last night? Iff M",
+      "evidence": "参考原文第 1 段：Which package was delivered last night?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Which package was delivered last night? Iff M",
+        "evidence": "参考原文第 1 段：Which package was delivered last night?",
         "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Which package was delivered last night? Iff M”，自然应答是“The box for Mr. Nakamura.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The box for Mr. Nakamura.）。"
+        "analysis": "原文依据：问句或陈述是“Which package was delivered last night?”，自然应答是“The box for Mr. Nakamura.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The box for Mr. Nakamura.）。"
       },
       "item_id": 14,
       "priority": {

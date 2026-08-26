@@ -46,8 +46,28 @@
       "asset_key": "official-11-test-1/images/part1/q005.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 一架梯子斜靠在后墙上。\nB. 她正在咬一口新鲜番茄。\nC. 桌上的番茄正被切进沙拉里。\nD. 她正把一个物品扔进编织篮里。",
-    "content_translation": "本段听力围绕“农贸市场”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "A. A ladder is leaning against a back wall.\nB. She's taking a bite of a fresh tomato.\nC. Tomatoes on a table are being sliced into a salad.\nD. She's tossing an item into a woven basket.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d3063834104f9dcb9dad7876bb47cb7ed504299a387c00caa133f861e5482048",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part1/q005.mp3",
+      "metrics": {
+        "word_count": 49
+      }
+    },
+    "transcript_translation": "A. 一梯子靠着一面后墙倾斜。\nB. 她正在咬一块新鲜的番茄。\nC. 放在桌上的番茄正被切成沙拉。\nD. 她正在把一个物品扔进编织篮里。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "929a17199b9701788a52b3a359f5a26a25b76bc01339f671a4d1c78aaad7f7cf"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -65,10 +85,10 @@
       "question_type": "细节题",
       "evidence": "根据题干的语法结构、固定搭配及上下文判断。",
       "choice_translations": [
-        "A：A ladder is leaning against a back wall.",
-        "B：She's taking a bite of a fresh tomato.",
-        "C：Tomatoes on a table are being sliced into a salad.",
-        "D：She's tossing an item into a woven basket."
+        "A：一梯子靠着一面后墙倾斜。",
+        "B：她正在咬一块新鲜的番茄。",
+        "C：放在桌上的番茄正被切成沙拉。",
+        "D：她正在把一个物品扔进编织篮里。"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
@@ -105,7 +125,9 @@
         "unit_id": "part1-5",
         "model": "toeic_priority_v1"
       },
-      "item_key": "official-11-test-1/p1-5/5"
+      "item_key": "official-11-test-1/p1-5/5",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

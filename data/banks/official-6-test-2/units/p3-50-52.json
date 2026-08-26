@@ -39,9 +39,32 @@
       "asset_key": "official-6-test-2/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "m Hi, Dr. Garcia. ® That software program you ordered\nfor our medical office just arrived—® the one that will\nallow patients to schedule appointments online. Would\nyou like me to install it today?\nw Oh, good. Actually, ®a service technician will be\nstopping by tomorrow to install it for us. But could you\nplease let our patients know about this new option for\nmaking appointments?\nOK. ® Once the program is ready tomorrow, I'll send\nan e-mail to our patients that will instruct them on how\nto use the scheduling system.",
-    "transcript_translation": "中文辅助（离线预处理）：m Hi, Dr.\nGarcia.\n® That software program you ordered\nfor our medical office（办公室） just arrived—® the one that will\nallow patients to schedule（日程） appointments online.\nWould\nyou like me to install it today?\nw Oh, good.\nActually, ®a service（服务） technician will be\nstopping by tomorrow to install it for us.\nBut could you\nplease（请） let our patients know about this new option for\nmaking appointments?\nOK.\n® Once the program is ready tomorrow, I'll send\nan e-mail to our patients that will instruct them on how（如何）\nto use the scheduling system.",
-    "content_translation": "中文辅助（离线预处理）：m Hi, Dr.\nGarcia.\n® That software program you ordered\nfor our medical office（办公室） just arrived—® the one that will\nallow patients to schedule（日程） appointments online.\nWould\nyou like me to install it today?\nw Oh, good.\nActually, ®a service（服务） technician will be\nstopping by tomorrow to install it for us.\nBut could you\nplease（请） let our patients know about this new option for\nmaking appointments?\nOK.\n® Once the program is ready tomorrow, I'll send\nan e-mail to our patients that will instruct them on how（如何）\nto use the scheduling system."
+    "transcript": "Hi, Dr. Garcia.\nThat software program you ordered for our medical office just arrived, the one that will allow patients to schedule appointments online.\nWould you like me to install it today?\nOh, good.\nActually, a service technician will be stopping by tomorrow to install it for us.\nBut could you please let our patients know about this new option for making appointments?\nOkay.\nOnce the program is ready tomorrow, I'll send an email to our patients that will instruct them on how to use the scheduling system.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9aaff7199026f29eefc0a5c6424162e770095ca0f0a09af0f62b61f1e1b8cead",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 88,
+        "legacy_word_count": 89,
+        "length_ratio": 0.989,
+        "legacy_coverage": 0.955
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "Garcia 医生，您好。\n您为我们诊所订购的那个软件程序已经到了，就是可以让病人在线预约的那个。\n需要我今天安装吗？\n哦，太好了。\n实际上，一位服务技术人员明天会过来帮我们安装。\n但您能请我们的病人们了解一下这种新的预约方式吗？\n好的。\n等程序明天准备好后，我会给我们的病人发送一封电子邮件，指导他们如何使用这个预约系统。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a8ffd7d5b35422f07b063d969efe0eb0c5a41f2a9b915dfe50e7204e46398554"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "A",
       "question": "What will the new software allow patients to do?",
-      "answer_explain": "原文依据：听力原文中提到“allow patients to schedule appointments online.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Schedule appointments）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the new software allow patients to do?",
+      "answer_explain": "正确答案：A（Schedule appointments）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the new software allow patients to do?",
       "choice_translations": [
-        "A：Schedule（日程） appointments",
-        "B：Request a prescription refill",
-        "C：Ask the doctor a question",
-        "D：Write a review"
+        "A:Schedule(日程) appointments",
+        "B:Request a prescription refill",
+        "C:Ask the doctor a question",
+        "D:Write a review"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m Hi, Dr. Garcia. ® That software program you ordered",
+      "evidence": "参考听力原文：“That software program you ordered for our medical office just arrived, the one that will allow patients to schedule appointments online.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m Hi, Dr. Garcia. ® That software program you ordered",
+        "evidence": "参考听力原文：“That software program you ordered for our medical office just arrived, the one that will allow patients to schedule appointments online.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“allow patients to schedule appointments online.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Schedule appointments）。"
+        "analysis": "正确答案：A（Schedule appointments）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "B",
       "question": "Who will be visiting the office tomorrow?",
-      "answer_explain": "原文依据：听力原文中提到“Actually, ®a service technician will be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A service technician）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） will be visiting the office（办公室） tomorrow?",
+      "answer_explain": "正确答案：B（A service technician）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) will be visiting the office(办公室) tomorrow?",
       "choice_translations": [
-        "A：A sales representative",
-        "B：A service（服务） technician",
-        "C：A pharmacist",
-        "D：A building inspector"
+        "A:A sales representative",
+        "B:A service(服务) technician",
+        "C:A pharmacist",
+        "D:A building inspector"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：for our medical office just arrived—® the one that will",
+      "evidence": "参考听力原文：“Actually, a service technician will be stopping by tomorrow to install it for us.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：for our medical office just arrived—® the one that will",
+        "evidence": "参考听力原文：“Actually, a service technician will be stopping by tomorrow to install it for us.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Actually, ®a service technician will be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A service technician）。"
+        "analysis": "正确答案：B（A service technician）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "D",
       "question": "What will the man include in an e-mail to patients?",
-      "answer_explain": "原文依据：听力原文中提到“to use the scheduling system.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Instructions on how to use a system）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） include in an e-mail to patients?",
+      "answer_explain": "正确答案：D（Instructions on how to use a system）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) include in an e-mail to patients?",
       "choice_translations": [
-        "A：A list of specialists' phone numbers",
-        "B：A reminder about required forms",
-        "C：Directions to a new office（办公室）",
-        "D：Instructions on how（如何） to use a system"
+        "A:A list of specialists' phone numbers",
+        "B:A reminder about required forms",
+        "C:Directions to a new office(办公室)",
+        "D:Instructions on how(如何) to use a system"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 3 段：allow patients to schedule appointments online. Would",
+      "evidence": "参考听力原文：“Once the program is ready tomorrow, I'll send an email to our patients that will instruct them on how to use the scheduling system.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 3 段：allow patients to schedule appointments online. Would",
+        "evidence": "参考听力原文：“Once the program is ready tomorrow, I'll send an email to our patients that will instruct them on how to use the scheduling system.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“to use the scheduling system.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Instructions on how to use a system）。"
+        "analysis": "正确答案：D（Instructions on how to use a system）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

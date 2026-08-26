@@ -39,9 +39,31 @@
       "asset_key": "official-1-test-2/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "i Hello. ''m calling because I'd like to temp\nmail delivery. I’m going to be out of town for\nweeks.\nER w Certainly. We can hold your mail here at the\nyou. But ®you'll need to put in your request\nbefore you leave.\nThat sounds great. Do I need to come into 1\ncomplete a form?\nNo, actually, you have to submit the “hold\nour Web site.",
-    "transcript_translation": "您好。我打电话来是因为我想暂缓邮件投递。我要出城几周。\n当然可以。我们可以把您的邮件在这里代收。但您需要在离开前提交申请。\n那太好了。我需要到店里填写表格吗？不，实际上，您必须通过我们的网站提交“暂缓接收”的请求。",
-    "content_translation": "您好。我打电话来是因为我想暂缓邮件投递。我要出城几周。\n当然可以。我们可以把您的邮件在这里代收。但您需要在离开前提交申请。\n那太好了。我需要到店里填写表格吗？不，实际上，您必须通过我们的网站提交“暂缓接收”的请求。"
+    "transcript": "Hello, I'm calling because I'd like to temporarily stop my mail delivery.\nI'm going to be out of town for the next two weeks.\nCertainly.\nWe can hold your mail here at the post office for you, but you'll need to put in your request at least a day before you leave.\nThat sounds great.\nDo I need to come into the office and complete a form?\nNo, actually you have to submit the hold mail form on our website.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "93d4e8b463502897837c7413a1de5d39fc53fc2a5d532738e5b4601a79d14ffc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 80,
+        "legacy_word_count": 79,
+        "length_ratio": 1.013,
+        "legacy_coverage": 0.962
+      }
+    },
+    "transcript_translation": "你好，我打电话来是因为我想暂时停止我的邮件投递服务。\n接下来的两周我要出城了。\n当然可以。\n我们可以把您的邮件在这里邮局代为保管，但您需要在离开前至少一天提交申请。\n听起来很棒。\n我需要到办公室去填写表格吗？\n不，实际上您必须在我们的网站上提交暂存邮件表。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a772871438f0101509e41ae83cf6380eccdab40668e29d52f2fc1a2a9298f4b2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "B",
       "question": "Why is the man calling?",
-      "answer_explain": "原文依据：听力原文中提到“mail delivery.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To reschedule mail delivery）。",
-      "question_translation": "男士打电话的原因是什么？",
+      "answer_explain": "正确答案：B（To reschedule mail delivery）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士打电话的原因是什么?",
       "choice_translations": [
-        "A：预定机票",
-        "B：重新安排邮件投递",
-        "C：获取商店路线指引",
-        "D：订购信封"
+        "A:预定机票",
+        "B:重新安排邮件投递",
+        "C:获取商店路线指引",
+        "D:订购信封"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：i Hello. ''m calling because I'd like to temp",
+      "evidence": "参考听力原文：“Hello, I'm calling because I'd like to temporarily stop my mail delivery.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：i Hello. ''m calling because I'd like to temp",
+        "evidence": "参考听力原文：“Hello, I'm calling because I'd like to temporarily stop my mail delivery.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“mail delivery.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To reschedule mail delivery）。"
+        "analysis": "正确答案：B（To reschedule mail delivery）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "A",
       "question": "According to the woman, how far in advanc should the man make his request?",
-      "answer_explain": "原文依据：听力原文中提到“We can hold your mail here at the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（One day）。",
-      "question_translation": "根据女士的说法，男士应该提前多久提出请求？",
+      "answer_explain": "正确答案：A（One day）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "根据女士的说法,男士应该提前多久提出请求?",
       "choice_translations": [
-        "A：一天",
-        "B：两天",
-        "C：一周",
-        "D：两周"
+        "A:一天",
+        "B:两天",
+        "C:一周",
+        "D:两周"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：you. But ®you'll need to put in your request",
+      "evidence": "参考听力原文：“We can hold your mail here at the post office for you, but you'll need to put in your request at least a day before you leave.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：you. But ®you'll need to put in your request",
+        "evidence": "参考听力原文：“We can hold your mail here at the post office for you, but you'll need to put in your request at least a day before you leave.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“We can hold your mail here at the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（One day）。"
+        "analysis": "正确答案：A（One day）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "D",
       "question": "What is the man required to do?",
-      "answer_explain": "原文依据：听力原文中提到“No, actually, you have to submit the “hold”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Submit an online form）。",
-      "question_translation": "男士需要做什么？",
+      "answer_explain": "正确答案：D（Submit an online form）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士需要做什么?",
       "choice_translations": [
-        "A：支付费用",
-        "B：确认地址",
-        "C：提供账号",
-        "D：在线提交表格"
+        "A:支付费用",
+        "B:确认地址",
+        "C:提供账号",
+        "D:在线提交表格"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：i Hello. ''m calling because I'd like to temp",
+      "evidence": "参考听力原文：“No, actually you have to submit the hold mail form on our website.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：i Hello. ''m calling because I'd like to temp",
+        "evidence": "参考听力原文：“No, actually you have to submit the hold mail form on our website.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“No, actually, you have to submit the “hold”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Submit an online form）。"
+        "analysis": "正确答案：D（Submit an online form）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

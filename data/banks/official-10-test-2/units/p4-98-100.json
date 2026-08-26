@@ -45,9 +45,32 @@
       "asset_key": "official-10-test-2/images/part4/q098-100.jpg",
       "exists": true
     },
-    "transcript": "a meeting and table.\nTHE 98-100\nEK W\nAs you know,\nthe company is preparing to launch a\nnew line of luxury sedans. The advertising campaign is\nsubstantial. ® You can see here in the table on the screen\nthat we have been working in stages to create the content\nfor the advertisements, and So-Hyoon's team has already\ncreated some excellent content for broadcast media. ®Now\nSo-Hyoon c\nwe need to focus on Internet ads, which will have the widest\nreach. ®We have plenty of experience with Internet ads\nafter launching the new light truck last year. Please use your\nexperience with these ads to create new advertising content\nfor the new sedans.\nEveryone should develop a sample ad\nby the end of the week.\nAdvertisement Stage\nAdvertisement Type\nTV\nRadio\nInternet\nNewspaper",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议） and table.\nTHE 98-100\nEK W\nAs you know,\nthe company（公司） is preparing to launch a\nnew line of luxury sedans.\nThe advertising campaign is\nsubstantial.\n® You can see here in the table on the screen\nthat we have been working in stages to create the content\nfor the advertisements, and So-Hyoon's team has already\ncreated some excellent content for broadcast media.\n®Now\nSo-Hyoon c\nwe need to focus on Internet ads, which will have the widest\nreach.\n®We have plenty of experience with Internet ads\nafter launching the new light truck last year.\nPlease（请） use your\nexperience with these ads to create new advertising content\nfor the new sedans.\nEveryone should develop a sample ad\nby the end of the week.\nAdvertisement Stage\nAdvertisement Type\nTV\nRadio\nInternet\nNewspaper",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议） and table.\nTHE 98-100\nEK W\nAs you know,\nthe company（公司） is preparing to launch a\nnew line of luxury sedans.\nThe advertising campaign is\nsubstantial.\n® You can see here in the table on the screen\nthat we have been working in stages to create the content\nfor the advertisements, and So-Hyoon's team has already\ncreated some excellent content for broadcast media.\n®Now\nSo-Hyoon c\nwe need to focus on Internet ads, which will have the widest\nreach.\n®We have plenty of experience with Internet ads\nafter launching the new light truck last year.\nPlease（请） use your\nexperience with these ads to create new advertising content\nfor the new sedans.\nEveryone should develop a sample ad\nby the end of the week.\nAdvertisement Stage\nAdvertisement Type\nTV\nRadio\nInternet\nNewspaper"
+    "transcript": "We have plenty of experience with internet ads after launching the new light truck last year.\nPlease use your experience with these ads to create new advertising content for the new Sedans.\nEveryone should develop a sample ad by the end of the week.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "cc5a44814ce4d524d1d7c95d11209f480a6f4e2acff749f5f785ca1672a038e7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 46,
+        "legacy_word_count": 128,
+        "length_ratio": 0.359,
+        "legacy_coverage": 0.602
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "去年推出新的轻型卡车后，我们在互联网广告方面积累了丰富的经验。\n请利用您在这些广告方面的经验，为新款轿车创建新的广告内容。\n每个人应该在本周末前开发出一份样板广告。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d514f5cdc35501330291e00fef8e5c66ae0b977f4d834715465b40cfa7193602"
+    }
   },
   "items": [
     {
@@ -59,23 +82,23 @@
       ],
       "answer": "A",
       "question": "What product category is being discussed?",
-      "answer_explain": "原文依据：听力原文中提到“we need to focus on Internet ads, which will have the widest”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Vehicles）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） product category is being discussed?",
+      "answer_explain": "正确答案：A（Vehicles）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) product category is being discussed?",
       "choice_translations": [
-        "A：Vehicles",
-        "B：Electronics",
-        "C：Appliances",
-        "D：Clothes"
+        "A:Vehicles",
+        "B:Electronics",
+        "C:Appliances",
+        "D:Clothes"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting and table.",
+      "evidence": "参考听力原文：“We have plenty of experience with internet ads after launching the new light truck last year.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting and table.",
+        "evidence": "参考听力原文：“We have plenty of experience with internet ads after launching the new light truck last year.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“we need to focus on Internet ads, which will have the widest”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Vehicles）。"
+        "analysis": "正确答案：A（Vehicles）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 98,
       "priority": {
@@ -112,23 +135,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. Which stage is the group in?",
-      "answer_explain": "原文依据：听力原文中提到“Advertisement Stage”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Stage 3）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich stage is the group in?",
+      "answer_explain": "正确答案：C（Stage 3）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which stage is the group in?",
       "choice_translations": [
-        "A：Stage 1",
-        "B：Stage 2",
-        "C：Stage 3",
-        "D：Stage 4"
+        "A:Stage 1",
+        "B:Stage 2",
+        "C:Stage 3",
+        "D:Stage 4"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：that we have been working in stages to create the content",
+      "evidence": "参考听力原文：“We have plenty of experience with internet ads after launching the new light truck last year.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：that we have been working in stages to create the content",
+        "evidence": "参考听力原文：“We have plenty of experience with internet ads after launching the new light truck last year.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Advertisement Stage”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Stage 3）。"
+        "analysis": "正确答案：C（Stage 3）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 99,
       "priority": {
@@ -165,23 +188,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker ask the listeners to do?",
-      "answer_explain": "原文依据：听力原文中提到“created some excellent content for broadcast media.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Produce some work samples）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） ask the listeners to do?",
+      "answer_explain": "正确答案：D（Produce some work samples）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) ask the listeners to do?",
       "choice_translations": [
-        "A：Interview a colleague about their work（工作） experience",
-        "B：Evaluate some advertising submissions from a vendor",
-        "C：Test a product",
-        "D：Produce some work（工作） samples"
+        "A:Interview a colleague about their work(工作) experience",
+        "B:Evaluate some advertising submissions from a vendor",
+        "C:Test a product",
+        "D:Produce some work(工作) samples"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：a meeting and table.",
+      "evidence": "参考听力原文：“We have plenty of experience with internet ads after launching the new light truck last year.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：a meeting and table.",
+        "evidence": "参考听力原文：“We have plenty of experience with internet ads after launching the new light truck last year.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“created some excellent content for broadcast media.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Produce some work samples）。"
+        "analysis": "正确答案：D（Produce some work samples）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 100,
       "priority": {

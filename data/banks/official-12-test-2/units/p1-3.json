@@ -32,8 +32,28 @@
       "asset_key": "official-12-test-2/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. One of the men is reaching for a water bottle.\nB. One of the men is hanging up a jacket.\nC. The men are looking out a window.\nD. The men are seated across from each other.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ecb60d4dd615be6ee7e5c73de072e75ab19f18973cf3753b4f45c731e728f71c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 51
+      }
+    },
+    "transcript_translation": "A. 其中一名男士正在伸手拿一个水瓶。\nB. 其中一名男士正在挂一件夹克。\nC. 这些男士们正看着窗外。\nD. 这些男士们并排坐着，彼此相对。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4799bcf540db35829e9727a68ef00f46956236e51822fa15b608781377b8d9b7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“The men are seated across from each other.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（The men are seated across from each other.）。",
       "choice_translations": [
-        "A：One of the men is reaching for a water bottle.",
-        "B：One of the men is hanging up a jacket.",
-        "C：The men are looking out a window.",
-        "D：The men are seated across from each other."
+        "A：其中一名男士正在伸手拿一个水瓶。",
+        "B：其中一名男士正在挂一件夹克。",
+        "C：这些男士们正看着窗外。",
+        "D：这些男士们并排坐着,彼此相对。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-12-test-2/p1-3/3"
+      "item_key": "official-12-test-2/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

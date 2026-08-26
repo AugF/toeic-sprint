@@ -28,8 +28,28 @@
       "asset_key": "official-3-test-1/audio/part2/q015.mp3",
       "exists": true
     },
-    "transcript_translation": "Bio building? ERw\nA. Yes, I'll update my contact list.\nB. You can call Mr. Yamamoto.\nC. The one in the financial center.",
-    "content_translation": "Bio building? ERw\nA. Yes, I'll update my contact list.\nB. You can call Mr. Yamamoto.\nC. The one in the financial center."
+    "transcript": "Who should I contact to rent an office in this building?\nA. Yes, I'll update my contact list.\nB. You can call Mr. Yamamoto.\nC. The one in the financial center.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "54dfb0051185179aa1825bee550402694813d14a7ea09f2c6ae1dc9092e4a60f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part2/q015.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "我应该联系谁才能在这栋楼里租一个办公室？\nA. 是的，我会更新我的联系人列表。\nB. 你可以给山本先生打电话。\nC. 金融中心的那一个。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2c683e98b17c5ed0ecd4fdd2f417722d9247fd96de290b5c77fa50aa20eb5262"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "The one in the financial center."
       ],
       "answer": "B",
-      "question": "Bio building? ERw",
+      "question": "Who should I contact to rent an office in this building?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Bio building? ERw”，自然应答是“You can call Mr. Yamamoto.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（You can call Mr. Yamamoto.）。",
-      "question_translation": "Bio building? ERw",
+      "answer_explain": "原文依据：问句或陈述是“Who should I contact to rent an office in this building?”，自然应答是“You can call Mr. Yamamoto.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（You can call Mr. Yamamoto.）。",
+      "question_translation": "我应该联系谁才能在这栋楼里租一个办公室?",
       "choice_translations": [
-        "A：Yes, I'll update my contact list.",
-        "B：You can call Mr. Yamamoto.",
-        "C：The one in the financial center."
+        "A：是的,我会更新我的联系人列表。",
+        "B：你可以给山本先生打电话。",
+        "C：金融中心的那一个。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Bio building? ERw",
+      "evidence": "参考原文第 1 段：Who should I contact to rent an office in this building?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Bio building? ERw",
+        "evidence": "参考原文第 1 段：Who should I contact to rent an office in this building?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Bio building? ERw”，自然应答是“You can call Mr. Yamamoto.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（You can call Mr. Yamamoto.）。"
+        "analysis": "原文依据：问句或陈述是“Who should I contact to rent an office in this building?”，自然应答是“You can call Mr. Yamamoto.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（You can call Mr. Yamamoto.）。"
       },
       "item_id": 15,
       "priority": {

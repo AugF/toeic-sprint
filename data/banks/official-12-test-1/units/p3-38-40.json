@@ -39,9 +39,32 @@
       "asset_key": "official-12-test-1/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "Ex 38-40 lđ 31(\nwith three speakers.\nEw Hi. Ol'm Jessica Phillips, the technician from\nChulE5ld. Ridg\nRidgeview Mechanical Services. © You cailed about a\nproblem with one of your machines.\nEm ©Yes, our largest washing machine broke down. As\nyou can see, we have more orders coming in, and we\nare quickly getting behind schedule. Our customers\nexpect their laundry to be done by the end of the day.\naw I understand. I'll fix it as quickly as I can. Where is it?\nam It's in the back. ©Hey, Masashi, please show\nMs. Phillips where the washer is.\nm Sure, it's right back here. Ol think it's a problem with\nthe wiring—it doesn't seem like the machine is getting\nany power.",
-    "transcript_translation": "中文辅助（离线预处理）：Ex 38-40 lđ 31(\nwith three speakers.\nEw Hi.\nOl'm Jessica Phillips, the technician from\nChulE5ld.\nRidg\nRidgeview Mechanical Services.\n© You cailed about a\nproblem with one of your machines.\nEm ©Yes, our largest washing machine broke down.\nAs\nyou can see, we have more orders coming in, and we\nare quickly getting behind schedule（日程）.\nOur customers\nexpect their laundry to be done by the end of the day.\naw I understand.\nI'll fix it as quickly as I can.\nWhere（哪里） is it?\nam It's in the back.\n©Hey, Masashi, please（请） show\nMs.\nPhillips where（哪里） the washer is.\nm Sure, it's right back here.\nOl think it's a problem with\nthe wiring—it doesn't seem like the machine is getting\nany power.",
-    "content_translation": "中文辅助（离线预处理）：Ex 38-40 lđ 31(\nwith three speakers.\nEw Hi.\nOl'm Jessica Phillips, the technician from\nChulE5ld.\nRidg\nRidgeview Mechanical Services.\n© You cailed about a\nproblem with one of your machines.\nEm ©Yes, our largest washing machine broke down.\nAs\nyou can see, we have more orders coming in, and we\nare quickly getting behind schedule（日程）.\nOur customers\nexpect their laundry to be done by the end of the day.\naw I understand.\nI'll fix it as quickly as I can.\nWhere（哪里） is it?\nam It's in the back.\n©Hey, Masashi, please（请） show\nMs.\nPhillips where（哪里） the washer is.\nm Sure, it's right back here.\nOl think it's a problem with\nthe wiring—it doesn't seem like the machine is getting\nany power."
+    "transcript": "Hi, I'm Jessica Phillips, the technician from Ridgeview Mechanical Services.\nYou called about a problem with one of your machines?\nYes, our largest washing machine broke down.\nAs you can see, we have more orders coming in, and we are quickly getting behind schedule.\nOur customers expect their laundry to be done by the end of the day.\nI understand.\nI'll fix it as quickly as I can.\nWhere is it?\nIt's in the back.\nHey, Masashi, please show Ms. Phillips where the washer is.\nSure.\nIt's right back here.\nI think it's a problem with the wiring.\nIt doesn't seem like the machine is getting any power.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "15f53e8beed7a2969b0fcafea4b41ae289c73ba09474109915a88f1e6e0f1445",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 108,
+        "legacy_word_count": 119,
+        "length_ratio": 0.908,
+        "legacy_coverage": 0.866
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "嗨，我是来自Ridgeview Mechanical Services的技术人员Jessica Phillips。\n您是打电话来询问一台机器出了问题吗？\n是的，我们最大的洗衣机坏了。\n正如您所看到的，我们的订单越来越多，我们很快就落后于进度了。\n我们的客户期望他们的衣物能在一天结束前完成清洗。\n我明白了。\n我会尽快修好的。\n它在哪里？\n在后面。\n嘿，Masashi，请带Phillips女士去看看洗衣机在哪儿。\n当然可以。\n就在这里面。\n我想是线路出了问题。\n机器似乎没有电了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6764318cfc73d25b584fad257b82c9ec601c19919f01c8cd418bf571b14af0e3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -52,24 +75,24 @@
         "Sales representative"
       ],
       "answer": "B",
-      "question": "What most likely is the woman's job? EM",
-      "answer_explain": "原文依据：听力原文中提到“Ol'm Jessica Phillips, the technician from”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Repair technician）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） most likely（最可能） is the woman（女士）'s job?\nEM",
+      "question": "What most likely is the woman's job?",
+      "answer_explain": "正确答案：B（Repair technician）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) most likely(最可能) is the woman(女士)'s job? EM",
       "choice_translations": [
-        "A：Safety inspector",
-        "B：Repair technician",
-        "C：Administrative assistant",
-        "D：Sales representative"
+        "A:Safety inspector",
+        "B:Repair technician",
+        "C:Administrative assistant",
+        "D:Sales representative"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Ex 38-40 lđ 31(",
+      "evidence": "参考听力原文：“Hi, I'm Jessica Phillips, the technician from Ridgeview Mechanical Services.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Ex 38-40 lđ 31(",
+        "evidence": "参考听力原文：“Hi, I'm Jessica Phillips, the technician from Ridgeview Mechanical Services.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ol'm Jessica Phillips, the technician from”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Repair technician）。"
+        "analysis": "正确答案：B（Repair technician）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "D",
       "question": "Where are the speakers?",
-      "answer_explain": "原文依据：听力原文中提到“expect their laundry to be done by the end of the day.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（In a laundromat）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） are the speakers?",
+      "answer_explain": "正确答案：D（In a laundromat）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) are the speakers?",
       "choice_translations": [
-        "A：In a convenience store",
-        "B：In a hardware store",
-        "C：In a factory",
-        "D：In a laundromat"
+        "A:In a convenience store",
+        "B:In a hardware store",
+        "C:In a factory",
+        "D:In a laundromat"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：with three speakers.",
+      "evidence": "参考听力原文：“As you can see, we have more orders coming in, and we are quickly getting behind schedule.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：with three speakers.",
+        "evidence": "参考听力原文：“As you can see, we have more orders coming in, and we are quickly getting behind schedule.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“expect their laundry to be done by the end of the day.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（In a laundromat）。"
+        "analysis": "正确答案：D（In a laundromat）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -150,30 +173,30 @@
     },
     {
       "choices": [
-        "A customer made acomplaint.",
+        "A customer made a complaint.",
         "An employee missed a shift.",
         "Some wiring may be faulty.",
         "A payment is late."
       ],
       "answer": "C",
       "question": "What problem does Masashi mention?",
-      "answer_explain": "原文依据：听力原文中提到“the wiring—it doesn't seem like the machine is getting”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some wiring may be faulty.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） problem does Masashi mention?",
+      "answer_explain": "正确答案：C（Some wiring may be faulty.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) problem does Masashi mention?",
       "choice_translations": [
-        "A：A customer（顾客） made acomplaint.",
-        "B：An employee（员工） missed a shift.",
-        "C：Some wiring may be faulty.",
-        "D：A payment is late."
+        "A:A customer(顾客) made acomplaint.",
+        "B:An employee(员工) missed a shift.",
+        "C:Some wiring may be faulty.",
+        "D:A payment is late."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：problem with one of your machines.",
+      "evidence": "参考听力原文：“I think it's a problem with the wiring.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：problem with one of your machines.",
+        "evidence": "参考听力原文：“I think it's a problem with the wiring.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the wiring—it doesn't seem like the machine is getting”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some wiring may be faulty.）。"
+        "analysis": "正确答案：C（Some wiring may be faulty.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

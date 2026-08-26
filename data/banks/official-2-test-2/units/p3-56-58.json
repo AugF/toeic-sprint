@@ -40,37 +40,59 @@
       "asset_key": "official-2-test-2/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "I'm really impressed by how many talented yc\nwe’ve managed to recruit lately, but e) worry\nresearch group lacks the kind of experience v\nthese next projects.\nI've been thinking about that too. We've founc\nthe brightest up-and-coming chemists in the f\nneed quality, hands-on leadership. We shot\na second manager to the department, someo\ntraining and professional development.\nNow that’s an idea. The more support we can\nnew staff, the more productive they'll be. ew\ngo over all the details so we can propose this\npresident?",
-    "transcript_translation": "我对我们最近招募了这么多有才华的年轻人印象深刻，但我担心研究小组缺乏进行这些下一批项目的经验。\n我也在想这个问题。我们在化工领域找到了最出色的新星人才，但我们需要的是高质量、实践性的领导力。我建议给部门安排第二位经理来负责培训和专业发展。\n那是个主意。我们能为新员工提供更多支持，他们就会更有生产力。我们把所有细节都过一遍，这样我们就能向总裁提出这个提案了？",
-    "content_translation": "我对我们最近招募了这么多有才华的年轻人印象深刻，但我担心研究小组缺乏进行这些下一批项目的经验。\n我也在想这个问题。我们在化工领域找到了最出色的新星人才，但我们需要的是高质量、实践性的领导力。我建议给部门安排第二位经理来负责培训和专业发展。\n那是个主意。我们能为新员工提供更多支持，他们就会更有生产力。我们把所有细节都过一遍，这样我们就能向总裁提出这个提案了？"
+    "transcript": "I'm really impressed by how many talented young scientists we've managed to recruit lately, but I worry that our research group lacks the kind of experience we need for these next projects.\nI've been thinking about that too.\nWe've found some of the brightest up-and-coming chemists in the field, but they need quality hands-on leadership.\nWe should really add a second manager to the department, someone to focus on training and professional development.\nNow that's an idea.\nThe more support we can offer the new staff, the more productive they'll be.\nWhy don't we go over all the details so we can propose this to the Vice President?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e304459df57ffff3c3f147f5c0901e7992cf5289da9227a153b36ee71804a0ed",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 108,
+        "legacy_word_count": 87,
+        "length_ratio": 1.241,
+        "legacy_coverage": 0.885
+      }
+    },
+    "transcript_translation": "I'm really impressed by how many talented young scientists we've managed to recruit lately, but I worry that our research group lacks the kind of experience we need for these next projects.\n我对我们最近招募到这么多有才华的年轻科学家印象深刻，但我担心我们的研究小组缺乏进行这些后续项目所需的经验。\nI've been thinking about that too.\n我也一直在考虑这个问题。\nWe've found some of the brightest up-and-coming chemists in the field, but they need quality hands-on leadership.\n我们找到了该领域一些最出色的新兴化学家，但他们需要高质量的实践指导。\nWe should really add a second manager to the department, someone to focus on training and professional development.\n我们真的应该给部门增加第二位经理，让某人专注于培训和专业发展。\nNow that's an idea.\n那是个主意。\nThe more support we can offer the new staff, the more productive they'll be.\n我们能为新员工提供多少支持，他们就会变得多有生产力。\nWhy don't we go over all the details so we can propose this to the Vice President?\n我们为什么不把所有细节都过一遍，这样我们就能向副总裁提出建议了呢？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "06e9aca8273aafd17305c7e3330edc34ef06ad7ca3a2c079f2e0791bd742cb01"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Aresearch error was made.",
+        "A research error was made.",
         "Some project deadlines have passed.",
-        "Adepartment lacks funding.",
-        "Some staff members are inexperienced."
+        "A department lacks funding.",
+        "Some staff members are inexperienced?"
       ],
       "answer": "D",
       "question": "What problem does the woman mention?",
-      "answer_explain": "原文依据：听力原文中提到“new staff, the more productive they'll be.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Some staff members are inexperienced.）。",
-      "question_translation": "女士提到的问题是什么？",
+      "answer_explain": "正确答案：D（Some staff members are inexperienced?）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士提到的问题是什么?",
       "choice_translations": [
-        "A：研究出现了错误。",
-        "B：一些项目截止日期已过。",
-        "C：某个部门缺乏资金。",
-        "D：一些员工经验不足。"
+        "A:研究出现了错误。",
+        "B:一些项目截止日期已过。",
+        "C:某个部门缺乏资金。",
+        "D:一些员工经验不足。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：I'm really impressed by how many talented yc",
+      "evidence": "参考听力原文：“We've found some of the brightest up-and-coming chemists in the field, but they need quality hands-on leadership.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：I'm really impressed by how many talented yc",
+        "evidence": "参考听力原文：“We've found some of the brightest up-and-coming chemists in the field, but they need quality hands-on leadership.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“new staff, the more productive they'll be.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Some staff members are inexperienced.）。"
+        "analysis": "正确答案：D（Some staff members are inexperienced?）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -103,27 +125,27 @@
         "She would like some more advice.",
         "The man has made a useful suggestion.",
         "The current plan is too complex.",
-        "Achange is happening at the right time."
+        "A change is happening at the right time?"
       ],
       "answer": "B",
-      "question": "What does the woman mean when she says, “Now that’s an idea’?",
-      "answer_explain": "原文依据：听力原文中提到“go over all the details so we can propose this”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The man has made a useful suggestion.）。",
-      "question_translation": "当女士说“那是个主意”是什么意思？",
+      "question": "What does the woman mean when she says, “Now that’s an idea”?",
+      "answer_explain": "正确答案：B（The man has made a useful suggestion.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "当女士说“那是个主意”是什么意思?",
       "choice_translations": [
-        "A：她想要更多建议。",
-        "B：男士提出了一个有用的建议。",
-        "C：目前的计划太复杂了。",
-        "D：变化发生在恰当的时机。"
+        "A:她想要更多建议。",
+        "B:男士提出了一个有用的建议。",
+        "C:目前的计划太复杂了。",
+        "D:变化发生在恰当的时机。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：I'm really impressed by how many talented yc",
+      "evidence": "参考听力原文：“Now that's an idea.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：I'm really impressed by how many talented yc",
+        "evidence": "参考听力原文：“Now that's an idea.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“go over all the details so we can propose this”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The man has made a useful suggestion.）。"
+        "analysis": "正确答案：B（The man has made a useful suggestion.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -153,30 +175,30 @@
     },
     {
       "choices": [
-        "Discuss a proposal 6:",
-        "Offer a promotion",
-        "Conduct an interview",
-        "Read a report"
+        "Discuss a proposal?",
+        "Offer a promotion?",
+        "Conduct an interview?",
+        "Read a report?"
       ],
       "answer": "A",
-      "question": "What will the speakers most likely do next? :",
-      "answer_explain": "原文依据：听力原文中提到“go over all the details so we can propose this”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Discuss a proposal 6:）。",
-      "question_translation": "说话者们接下来最可能做什么？",
+      "question": "What will the speakers most likely do next?",
+      "answer_explain": "正确答案：A（Discuss a proposal?）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者们接下来最可能做什么?",
       "choice_translations": [
-        "A：讨论一项提案",
-        "B：提供晋升机会",
-        "C：进行面试",
-        "D：阅读报告"
+        "A:讨论一项提案",
+        "B:提供晋升机会",
+        "C:进行面试",
+        "D:阅读报告"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：I'm really impressed by how many talented yc",
+      "evidence": "参考听力原文：“I'm really impressed by how many talented young scientists we've managed to recruit lately, but I worry that our research group lacks the kind of experience we need for these next projects.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：I'm really impressed by how many talented yc",
+        "evidence": "参考听力原文：“I'm really impressed by how many talented young scientists we've managed to recruit lately, but I worry that our research group lacks the kind of experience we need for these next projects.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“go over all the details so we can propose this”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Discuss a proposal 6:）。"
+        "analysis": "正确答案：A（Discuss a proposal?）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

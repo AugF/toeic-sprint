@@ -28,38 +28,58 @@
       "asset_key": "official-3-test-2/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：M Didn't the clients say they'd prefer to tour the factory today?\nEw",
-    "content_translation": "中文辅助（离线预处理）：M Didn't the clients say they'd prefer to tour the factory today?\nEw"
+    "transcript": "Didn't the client say they'd prefer to tour the factory today?\nA. A job application.\nB. Their schedule is already full.\nC. It's a new building.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8ee4d5d7d18729ab6305339350c52ec379beff5e287dd44d1fbff2e37d354f5f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "客户不是说他们今天更想参观工厂吗？\nA. 一份工作申请。\nB. 他们的日程已经满了。\nC. 这是一栋新建筑。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7c8b20a9d8d6a57083218d727eb217bb87bfaffac4224b8fee6ba56b17ae20c0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Ajob application.",
+        "A job application.",
         "Their schedule is already full.",
-        "It’s a new building."
+        "It's a new building."
       ],
       "answer": "B",
-      "question": "M Didn't the clients say they'd prefer to tour the factory today? Ew",
+      "question": "Didn't the client say they'd prefer to tour the factory today?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M Didn't the clients say they'd prefer to tour the factory today? Ew”，自然应答是“Their schedule is already full.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Their schedule is already full.）。",
-      "question_translation": "中文辅助（离线预处理）：M Didn't the clients say they'd prefer to tour the factory today?\nEw",
+      "answer_explain": "原文依据：问句或陈述是“Didn't the client say they'd prefer to tour the factory today?”，自然应答是“Their schedule is already full.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Their schedule is already full.）。",
+      "question_translation": "客户不是说他们今天更想参观工厂吗?",
       "choice_translations": [
-        "A：Ajob application.",
-        "B：Their schedule（日程） is already full.",
-        "C：It’s a new building."
+        "A：一份工作申请。",
+        "B：他们的日程已经满了。",
+        "C：这是一栋新建筑。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：M Didn't the clients say they'd prefer to tour the factory today? Ew",
+      "evidence": "参考原文第 1 段：Didn't the client say they'd prefer to tour the factory today?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：M Didn't the clients say they'd prefer to tour the factory today? Ew",
+        "evidence": "参考原文第 1 段：Didn't the client say they'd prefer to tour the factory today?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“M Didn't the clients say they'd prefer to tour the factory today? Ew”，自然应答是“Their schedule is already full.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Their schedule is already full.）。"
+        "analysis": "原文依据：问句或陈述是“Didn't the client say they'd prefer to tour the factory today?”，自然应答是“Their schedule is already full.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Their schedule is already full.）。"
       },
       "item_id": 18,
       "priority": {

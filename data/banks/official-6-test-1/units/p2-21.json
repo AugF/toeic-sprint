@@ -28,8 +28,28 @@
       "asset_key": "official-6-test-1/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "这些碗都是手工绘制的。\nA. 一位室内设计师。\nB. 它们非常漂亮。\nC. 不，这很方便。",
-    "content_translation": "这些碗都是手工绘制的。\nA. 一位室内设计师。\nB. 它们非常漂亮。\nC. 不，这很方便。"
+    "transcript": "These bowls are all hand-painted.\nA. An interior decorator.\nB. They're very beautiful.\nC. No, it's quite convenient.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c99ffa6cdb6b3c19b2182fcc4ea8c21602e3b20e7e777b7f706b664fc0e6d44a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 19
+      }
+    },
+    "transcript_translation": "这些碗都是手工绘制的。\nA. 一位室内设计师。\nB. 它们非常漂亮。\nC. 不，这相当方便。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "247319191fa6afb06ebb3a2ef1c44bdade4b5a39db34d05ffaeb60f0fe6903b7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,7 +68,7 @@
       "choice_translations": [
         "A：一位室内设计师。",
         "B：它们非常漂亮。",
-        "C：不，这很方便。"
+        "C：不,这相当方便。"
       ],
       "question_type": "陈述 / 请求应答题",
       "evidence": "参考原文第 1 段：These bowls are all hand-painted.",

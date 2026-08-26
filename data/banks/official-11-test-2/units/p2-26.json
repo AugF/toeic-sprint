@@ -28,38 +28,58 @@
       "asset_key": "official-11-test-2/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Do you have time to participate in a group interview tomorrow?\nERw",
-    "content_translation": "中文辅助（离线预处理）：Ew Do you have time to participate in a group interview tomorrow?\nERw"
+    "transcript": "Do you have time to participate in\nA. group interview tomorrow? A. I really enjoyed them, thanks.\nB. My calendar is open all week.\nC. I've heard we received another delivery.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3360cd128de4006cc08262583191613b9805bf41b0a2b2988034b81e1741a5a6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "你有时间参加\nA. 明天的小组面试？ A. 我真的很喜欢它们，谢谢。\nB. 我的日程本这周都空着。\nC. 我听说我们收到了另一批货。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f7fda99244263bc3862fd8afe0c45c078b1b5397c6aa5020c3869959a8d48c72"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "I really enjoyed them, thanks.",
+        "group interview tomorrow? A. I really enjoyed them, thanks.",
         "My calendar is open all week.",
         "I've heard we received another delivery."
       ],
       "answer": "B",
-      "question": "Ew Do you have time to participate in a group interview tomorrow? ERw",
+      "question": "Do you have time to participate in",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述为“Ew Do you have time to participate in a group interview tomorrow? ERw”，官方正确应答是“My calendar is open all week.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（My calendar is open all week.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Do you have time to participate in a group interview tomorrow?\nERw",
+      "answer_explain": "原文依据：问句或陈述为“Do you have time to participate in”，官方正确应答是“My calendar is open all week.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（My calendar is open all week.）。",
+      "question_translation": "你有时间参加",
       "choice_translations": [
-        "A：I really enjoyed them, thanks.",
-        "B：My calendar is open all week.",
-        "C：I've heard we received another delivery."
+        "A：明天的小组面试? A. 我真的很喜欢它们,谢谢。",
+        "B：我的日程本这周都空着。",
+        "C：我听说我们收到了另一批货。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Do you have time to participate in a group interview tomorrow? ERw",
+      "evidence": "参考原文第 1 段：Do you have time to participate in",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Do you have time to participate in a group interview tomorrow? ERw",
+        "evidence": "参考原文第 1 段：Do you have time to participate in",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“Ew Do you have time to participate in a group interview tomorrow? ERw”，官方正确应答是“My calendar is open all week.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（My calendar is open all week.）。"
+        "analysis": "原文依据：问句或陈述为“Do you have time to participate in”，官方正确应答是“My calendar is open all week.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（My calendar is open all week.）。"
       },
       "item_id": 26,
       "priority": {

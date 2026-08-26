@@ -37,9 +37,31 @@
       "asset_key": "official-3-test-1/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "Hi, Molly. How was your trip to meet with Xavier\nh hi, Bryan. It went really well. The retailer re\nliked our women’s footwear line, and S they've\nto place an order with us for their department\nnationwide, so it’s much bigger than we expec\nWow, congratulations!\nThanks! Of course, | know you did most of the\nanalysis. eI really helped me convince the cli\ncarry our footwear.\nI “ Don’t worry—it was my pleasure. Oh, just so’\nthere’s been a policy change and the receip’\ntrips can be submitted electronically.\nEX w Thanks. I'll take care of that this week.",
-    "transcript_translation": "嗨，莫莉。你和泽维尔会面旅行怎么样？\n嗨，布莱恩。非常好。零售商喜欢我们的女士鞋类系列，他们打算在我们整个部门下订单，所以比我们预期的要大得多。\n哇，恭喜你！\n谢谢！当然，我知道大部分分析都是你做的。这真的帮我说服了客户，让我们携带我们的鞋类产品。\n别担心——这是我的荣幸。哦，只是有个政策变动，收据现在可以通过电子方式提交了。\n好的，谢谢。我这周会处理的。",
-    "content_translation": "嗨，莫莉。你和泽维尔会面旅行怎么样？\n嗨，布莱恩。非常好。零售商喜欢我们的女士鞋类系列，他们打算在我们整个部门下订单，所以比我们预期的要大得多。\n哇，恭喜你！\n谢谢！当然，我知道大部分分析都是你做的。这真的帮我说服了客户，让我们携带我们的鞋类产品。\n别担心——这是我的荣幸。哦，只是有个政策变动，收据现在可以通过电子方式提交了。\n好的，谢谢。我这周会处理的。"
+    "transcript": "Hi Molly, how was your trip to meet with Xavier Retailers?\nOh, hi Brian.\nIt went really well.\nThe retailer really liked our women's footwear line and they've decided to place an order with us for their department stores nationwide.\nSo it's much bigger than we expected.\nWow, congratulations.\nThanks.\nOf course, I know you did most of the market analysis.\nIt really helped me convince the client to carry our footwear.\nDon't worry, it was my pleasure.\nOh, just so you know, there's been a policy change and the receipts from trips can be submitted electronically.\nThanks.\nI'll take care of that this week.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7dce5b5a0b3b8e067e70d0ad64ab26d3e6f623729ce37e44f133d1b4c76584f6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 105,
+        "legacy_word_count": 97,
+        "length_ratio": 1.082,
+        "legacy_coverage": 0.907
+      }
+    },
+    "transcript_translation": "嗨 Molly，你和 Xavier Retailers 会面旅行怎么样？\n哦，嗨 Brian。\n非常好。\n这家零售商非常喜欢我们的女士鞋类产品线，他们决定为全国的部门商店向我们下订单。\n所以比我们预期的要大得多。\n哇，恭喜你。\n谢谢。\n当然，我知道大部分市场分析是你做的。\n这真的帮我说服了客户携带我们的鞋类产品。\n别担心，这是我的荣幸。\n哦，只是让你知道，政策有变动，出差的收据现在可以电子提交了。\n谢谢。\n我这周会处理好的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c19b2aac355ba5dfb93107e5ebbc902daddacd7fa779454f98410346c8ec493b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "D",
       "question": "What has the woman recently accomplished?",
-      "answer_explain": "原文依据：听力原文中提到“to place an order with us for their department”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（She secured a large order from a client.）。",
-      "question_translation": "这位女士最近完成了什么？",
+      "answer_explain": "正确答案：D（She secured a large order from a client.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "这位女士最近完成了什么?",
       "choice_translations": [
-        "A：她设计了一条新的鞋类系列。",
-        "B：她创立了一个组织。",
-        "C：她升到了管理职位。",
-        "D：她从客户那里获得了一笔大订单。"
+        "A:她设计了一条新的鞋类系列。",
+        "B:她创立了一个组织。",
+        "C:她升到了管理职位。",
+        "D:她从客户那里获得了一笔大订单。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, Molly. How was your trip to meet with Xavier",
+      "evidence": "参考听力原文：“The retailer really liked our women's footwear line and they've decided to place an order with us for their department stores nationwide.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, Molly. How was your trip to meet with Xavier",
+        "evidence": "参考听力原文：“The retailer really liked our women's footwear line and they've decided to place an order with us for their department stores nationwide.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“to place an order with us for their department”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（She secured a large order from a client.）。"
+        "analysis": "正确答案：D（She secured a large order from a client.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -100,24 +122,24 @@
         "She needs some advice from the man."
       ],
       "answer": "C",
-      "question": "What does the woman mean when she says, “| know you did most of the market analysis”?",
-      "answer_explain": "原文依据：听力原文中提到“Of course, | know you did most of the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（She is thankful for the man’s help. 6）。",
-      "question_translation": "当这位女士说“我知道大部分市场分析都是你做的”时，她的意思是？",
+      "question": "What does the woman mean when she says, “I know you did most of the market analysis”?",
+      "answer_explain": "正确答案：C（She is thankful for the man’s help. 6）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "当这位女士说“我知道大部分市场分析都是你做的”时,她的意思是?",
       "choice_translations": [
-        "A：她期待阅读一份报告。",
-        "B：她想承担一项新任务。",
-        "C：她感谢男士的帮助。",
-        "D：她需要向男士征求一些建议。"
+        "A:她期待阅读一份报告。",
+        "B:她想承担一项新任务。",
+        "C:她感谢男士的帮助。",
+        "D:她需要向男士征求一些建议。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：analysis. eI really helped me convince the cli",
+      "evidence": "参考听力原文：“Of course, I know you did most of the market analysis.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：analysis. eI really helped me convince the cli",
+        "evidence": "参考听力原文：“Of course, I know you did most of the market analysis.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Of course, | know you did most of the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（She is thankful for the man’s help. 6）。"
+        "analysis": "正确答案：C（She is thankful for the man’s help. 6）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "B",
       "question": "What policy change does the man tell the woman about?",
-      "answer_explain": "原文依据：听力原文中提到“How was your trip to meet with Xavier”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（How to submit receipts 6:）。",
-      "question_translation": "男士告诉女士关于什么政策变化？",
+      "answer_explain": "正确答案：B（How to submit receipts 6:）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士告诉女士关于什么政策变化?",
       "choice_translations": [
-        "A：如何预订机票",
-        "B：如何提交收据",
-        "C：如何输入数据",
-        "D：如何向供应商付款"
+        "A:如何预订机票",
+        "B:如何提交收据",
+        "C:如何输入数据",
+        "D:如何向供应商付款"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：there’s been a policy change and the receip’",
+      "evidence": "参考听力原文：“Oh, just so you know, there's been a policy change and the receipts from trips can be submitted electronically.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：there’s been a policy change and the receip’",
+        "evidence": "参考听力原文：“Oh, just so you know, there's been a policy change and the receipts from trips can be submitted electronically.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“How was your trip to meet with Xavier”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（How to submit receipts 6:）。"
+        "analysis": "正确答案：B（How to submit receipts 6:）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

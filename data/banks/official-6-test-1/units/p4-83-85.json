@@ -38,9 +38,32 @@
       "asset_key": "official-6-test-1/audio/part4/q083-085.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nGood morning, everyone. ® Remember how we had been\nconcerned about meeting our monthly sales goal? Well,\nthe new sweaters have all been sold. However, ® now the\nstorage room is a mess and needs to be cleaned up—we\nhave a lot of empty boxes and packaging in there. Ol've\nupdated the duty roster with this assignment. And speaking\nof the roster, I know some of you are planning on being away\nsoon for vacation. Please make sure I have your time-off\nrequest forms by the end of the week.",
-    "transcript_translation": "一次会议。\n大家早上好。®还记得我们一直担心达到每月的销售目标吗？嗯，所有的新毛衣都卖完了。但是，®现在储藏室一片狼藉，需要打扫——里面有很多空箱子和包装材料。我已经用这个任务更新了值班表。说到值班表，我知道你们中有些人很快就要休假了。请确保在本周末前交给我您的请假申请表。",
-    "content_translation": "一次会议。\n大家早上好。®还记得我们一直担心达到每月的销售目标吗？嗯，所有的新毛衣都卖完了。但是，®现在储藏室一片狼藉，需要打扫——里面有很多空箱子和包装材料。我已经用这个任务更新了值班表。说到值班表，我知道你们中有些人很快就要休假了。请确保在本周末前交给我您的请假申请表。"
+    "transcript": "Good morning, everyone.\nRemember how we had been concerned about meeting our monthly sales goal?\nWell, the new sweaters have all been sold.\nHowever, now the storage room is a mess and needs to be cleaned up.\nWe have a lot of empty boxes and packaging in there.\nI've updated the duty roster with this assignment.\nAnd speaking of the roster, I know some of you are planning on being away soon for vacation.\nPlease make sure I have your time-off request forms by the end of the week.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:segmented_audio",
+      "audio_sha256": "08539a87b90632a6535e6706bbef564753d2cea1d39e52f33b0af14b1f8359f7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part4/q083-085.mp3",
+      "metrics": {
+        "word_count": 89,
+        "audio_duration_ms": 37590,
+        "words_per_second": 2.368,
+        "segment_count": 3
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "大家早上好。\n还记得我们之前一直担心无法完成每月销售目标吗？\n嗯，新款毛衣已经全部售罄了。\n不过，现在储藏室一片狼藉，需要清理。\n里面有很多空箱子和包装材料。\n我已经在值班表上新增了这项任务。\n说到值班表，我知道你们中有些人很快要休假。\n请务必在本周结束前把休假申请表交给我。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "manual/audio-verified",
+      "transcript_sha256": "0d0e16ef37432c8e5218dec0989ca79c360a544d2c735eeaad9d2ab03e2466a1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -52,23 +75,23 @@
       ],
       "answer": "C",
       "question": "What does the speaker mean when she says, \"the new sweaters have all been sold\"?",
-      "answer_explain": "原文依据：听力原文中提到“the new sweaters have all been sold.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A goal has been met.）。",
-      "question_translation": "说话者说“所有的新毛衣都卖完了”是什么意思？",
+      "answer_explain": "正确答案：C（A goal has been met.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者说“所有的新毛衣都卖完了”是什么意思?",
       "choice_translations": [
-        "A：她需要订购更多物品。",
-        "B：顾客会失望的。",
-        "C：一个目标已经达到了。",
-        "D：一次促销销售结束了。"
+        "A:她需要订购更多物品。",
+        "B:顾客会失望的。",
+        "C:一个目标已经达到了。",
+        "D:一次促销销售结束了。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：the new sweaters have all been sold. However, ® now the",
+      "evidence": "参考听力原文：“Well, the new sweaters have all been sold.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：the new sweaters have all been sold. However, ® now the",
+        "evidence": "参考听力原文：“Well, the new sweaters have all been sold.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the new sweaters have all been sold.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A goal has been met.）。"
+        "analysis": "正确答案：C（A goal has been met.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 83,
       "priority": {
@@ -103,23 +126,23 @@
       ],
       "answer": "B",
       "question": "What new work assignment does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“storage room is a mess and needs to be cleaned up—we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Cleaning a room）。",
-      "question_translation": "说话者提到的新的工作任务是什么？",
+      "answer_explain": "正确答案：B（Cleaning a room）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者提到的新的工作任务是什么?",
       "choice_translations": [
-        "A：整理一些文件",
-        "B：打扫一个房间",
-        "C：卸载一批货物",
-        "D：移除一些标签"
+        "A:整理一些文件",
+        "B:打扫一个房间",
+        "C:卸载一批货物",
+        "D:移除一些标签"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：updated the duty roster with this assignment. And speaking",
+      "evidence": "参考听力原文：“However, now the storage room is a mess and needs to be cleaned up.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：updated the duty roster with this assignment. And speaking",
+        "evidence": "参考听力原文：“However, now the storage room is a mess and needs to be cleaned up.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“storage room is a mess and needs to be cleaned up—we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Cleaning a room）。"
+        "analysis": "正确答案：B（Cleaning a room）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 84,
       "priority": {
@@ -154,23 +177,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker ask some listeners to do by the end of the week?",
-      "answer_explain": "原文依据：听力原文中提到“request forms by the end of the week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Submit a form）。",
-      "question_translation": "说话者要求听众在本周末前做什么？",
+      "answer_explain": "正确答案：A（Submit a form）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者要求听众在本周末前做什么?",
       "choice_translations": [
-        "A：提交一份表格",
-        "B：阅读手册",
-        "C：领取新制服",
-        "D：报名参加研讨会"
+        "A:提交一份表格",
+        "B:阅读手册",
+        "C:领取新制服",
+        "D:报名参加研讨会"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“Please make sure I have your time-off request forms by the end of the week.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“Please make sure I have your time-off request forms by the end of the week.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“request forms by the end of the week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Submit a form）。"
+        "analysis": "正确答案：A（Submit a form）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 85,
       "priority": {

@@ -38,9 +38,32 @@
       "asset_key": "official-6-test-2/audio/part4/q098-100.mp3",
       "exists": true
     },
-    "transcript": "message and schedule.\nM\nHello, Regina. It's Ezra. I wanted to give you an update about\nour client Wang Sporting Goods. ® They want to meet with\nus to discuss the artwork for their upcoming advertising\ncampaign. ®They like what we've done so far, but they have\nsome other ideas they want to share with us.\nRepresentatives from Wang Sporting Goods will be in town\non Wednesday. | reserved Conference Room A, the one\nwith the large screen, for a couple of hours.\nCould you\nplease bring your laptop computer to the meeting to show\nConference Room A Schedule\nWednesday, May 14\nA140. x#8\nA.M. Wang Sporting Goods\nFàu 10 B$\nP.M. Open\nP.M.\nDepartment Meeting\nFi287\nP.M. Freeman Incorporated\nFreeman*t",
-    "transcript_translation": "中文辅助（离线预处理）：message and schedule（日程）.\nM\nHello, Regina.\nIt's Ezra.\nI wanted to give you an update about\nour client Wang Sporting Goods.\n® They want to meet with\nus to discuss the artwork for their upcoming advertising\ncampaign.\n®They like what（什么） we've done so far, but they have\nsome other ideas they want to share with us.\nRepresentatives from Wang Sporting Goods will be in town\non Wednesday.\n| reserved Conference Room A, the one\nwith the large screen, for a couple of hours.\nCould you\nplease（请） bring your laptop computer to the meeting（会议） to show\nConference Room A Schedule（日程）\nWednesday, May 14\nA140.\nx#8\nA.M.\nWang Sporting Goods\nFàu 10 B$\nP.M.\nOpen\nP.M.\nDepartment Meeting（会议）\nFi287\nP.M.\nFreeman Incorporated\nFreeman*t",
-    "content_translation": "中文辅助（离线预处理）：message and schedule（日程）.\nM\nHello, Regina.\nIt's Ezra.\nI wanted to give you an update about\nour client Wang Sporting Goods.\n® They want to meet with\nus to discuss the artwork for their upcoming advertising\ncampaign.\n®They like what（什么） we've done so far, but they have\nsome other ideas they want to share with us.\nRepresentatives from Wang Sporting Goods will be in town\non Wednesday.\n| reserved Conference Room A, the one\nwith the large screen, for a couple of hours.\nCould you\nplease（请） bring your laptop computer to the meeting（会议） to show\nConference Room A Schedule（日程）\nWednesday, May 14\nA140.\nx#8\nA.M.\nWang Sporting Goods\nFàu 10 B$\nP.M.\nOpen\nP.M.\nDepartment Meeting（会议）\nFi287\nP.M.\nFreeman Incorporated\nFreeman*t"
+    "transcript": "Hello, Regina.\nIt's Ezra.\nI wanted to give you an update about our client Wang Sporting Goods.\nThey want to meet with us to discuss the artwork for their upcoming advertising campaign.\nThey like what we've done so far, but they have some other ideas they want to share with us.\nRepresentatives from Wang Sporting Goods will be in town on Wednesday.\nI reserved Conference Room A, the one with the large screen, for a large screen, for a large screen. could you please bring your laptop computer to the meeting to show our work?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "fa2a19b91c840830f7b2913011dde29c3af364e8abff06c2f0e8dd35fd5c0915",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 109,
+        "length_ratio": 0.89,
+        "legacy_coverage": 0.872
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/qwen3-vl:4b+audio_context",
+      "items": 3
+    },
+    "transcript_translation": "你好，Regina。\n我是 Ezra。\n我想向你更新一下关于我们的客户 Wang Sporting Goods 的情况。\n他们想与我们见面讨论他们即将推出的广告活动的艺术作品。\n他们喜欢到目前为止我们所做的工作，但他们有一些其他想法想和我们分享。\nWang Sporting Goods 的代表周三会到城里来。\n我预订了 A 会议室，就是带大屏幕的那个，用于展示我们的工作？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "ab9c9b65b63c571fb310857c66b81c32dedc472e6c3ee3c34e95b54aab602387"
+    }
   },
   "items": [
     {
@@ -52,23 +75,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker say will be discussed at the meeting?",
-      "answer_explain": "原文依据：听力原文中提到“us to discuss the artwork for their upcoming advertising”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An advertising campaign）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say will be discussed at the meeting（会议）?",
+      "answer_explain": "正确答案：D（An advertising campaign）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say will be discussed at the meeting(会议)?",
       "choice_translations": [
-        "A：An office（办公室） renovation project",
-        "B：A company（公司） merger",
-        "C：A quarterly budget",
-        "D：An advertising campaign"
+        "A:An office(办公室) renovation project",
+        "B:A company(公司) merger",
+        "C:A quarterly budget",
+        "D:An advertising campaign"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 12 段：please bring your laptop computer to the meeting to show",
+      "evidence": "参考听力原文：“They want to meet with us to discuss the artwork for their upcoming advertising campaign.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 12 段：please bring your laptop computer to the meeting to show",
+        "evidence": "参考听力原文：“They want to meet with us to discuss the artwork for their upcoming advertising campaign.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“us to discuss the artwork for their upcoming advertising”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An advertising campaign）。"
+        "analysis": "正确答案：D（An advertising campaign）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 98,
       "priority": {
@@ -102,24 +125,24 @@
         "4:00 P.M."
       ],
       "answer": "A",
-      "question": "Look at the graphic. At what time will the meeting take place? N",
-      "answer_explain": "原文依据：听力原文中提到“please bring your laptop computer to the meeting to show”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（10:00 A.M.）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nAt what（什么） time will the meeting（会议） take place?\nN",
+      "question": "Look at the graphic. At what time will the meeting take place?",
+      "answer_explain": "正确答案：A（10:00 A.M.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. At what(什么) time will the meeting(会议) take place? N",
       "choice_translations": [
-        "A：10:00 A.M.",
-        "B：1:00 P.M.",
-        "C：2:00 P.M.",
-        "D：4:00 P.M."
+        "A:10:00 A.M.",
+        "B:1:00 P.M.",
+        "C:2:00 P.M.",
+        "D:4:00 P.M."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 12 段：please bring your laptop computer to the meeting to show",
+      "evidence": "参考听力原文：“I reserved Conference Room A, the one with the large screen, for a large screen, for a large screen. could you please bring your laptop computer to the meeting to show our work?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 12 段：please bring your laptop computer to the meeting to show",
+        "evidence": "参考听力原文：“I reserved Conference Room A, the one with the large screen, for a large screen, for a large screen. could you please bring your laptop computer to the meeting to show our work?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“please bring your laptop computer to the meeting to show”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（10:00 A.M.）。"
+        "analysis": "正确答案：A（10:00 A.M.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 99,
       "priority": {
@@ -154,23 +177,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker ask the listener to do?",
-      "answer_explain": "原文依据：听力原文中提到“please bring your laptop computer to the meeting to show”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Bring a computer）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） ask the listener to do?",
+      "answer_explain": "正确答案：B（Bring a computer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) ask the listener to do?",
       "choice_translations": [
-        "A：Take some measurements",
-        "B：Bring a computer",
-        "C：Prepare some slides",
-        "D：Make a list of questions"
+        "A:Take some measurements",
+        "B:Bring a computer",
+        "C:Prepare some slides",
+        "D:Make a list of questions"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message and schedule.",
+      "evidence": "参考听力原文：“I reserved Conference Room A, the one with the large screen, for a large screen, for a large screen. could you please bring your laptop computer to the meeting to show our work?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message and schedule.",
+        "evidence": "参考听力原文：“I reserved Conference Room A, the one with the large screen, for a large screen, for a large screen. could you please bring your laptop computer to the meeting to show our work?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“please bring your laptop computer to the meeting to show”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Bring a computer）。"
+        "analysis": "正确答案：B（Bring a computer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 100,
       "priority": {

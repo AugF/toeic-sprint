@@ -37,9 +37,32 @@
       "asset_key": "official-12-test-2/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "E2P592-94 Iđ%\nmessage.\nHello, othis message is for Mr. Kwon at Quality Furniture\nCompany. This is Jessica Robertson from Salazar Supply.\nI'm calling about the metal drawer handles that you\nordered last week. el know you were expecting the handles\nthis morning, and they're on the delivery truck now. But,\nI just spoke to the driver, and he has several more stops to\nmake on his route. Sorry for the inconvenience. Oh, and\nby the way, @thank you for paying electronically. We had\na little difficulty with our payment processing, but yours was\nreceived on time.\nte.",
-    "transcript_translation": "中文辅助（离线预处理）：E2P592-94 Iđ%\nmessage.\nHello, othis message is for Mr.\nKwon at Quality Furniture\nCompany（公司）.\nThis is Jessica Robertson from Salazar Supply.\nI'm calling about the metal drawer handles that you\nordered last week.\nel know you were expecting the handles\nthis morning, and they're on the delivery truck now.\nBut,\nI just spoke to the driver, and he has several more stops to\nmake on his route.\nSorry for the inconvenience.\nOh, and\nby the way, @thank（感谢） you for paying electronically.\nWe had\na little difficulty with our payment processing, but yours was\nreceived on time.\nte.",
-    "content_translation": "中文辅助（离线预处理）：E2P592-94 Iđ%\nmessage.\nHello, othis message is for Mr.\nKwon at Quality Furniture\nCompany（公司）.\nThis is Jessica Robertson from Salazar Supply.\nI'm calling about the metal drawer handles that you\nordered last week.\nel know you were expecting the handles\nthis morning, and they're on the delivery truck now.\nBut,\nI just spoke to the driver, and he has several more stops to\nmake on his route.\nSorry for the inconvenience.\nOh, and\nby the way, @thank（感谢） you for paying electronically.\nWe had\na little difficulty with our payment processing, but yours was\nreceived on time.\nte."
+    "transcript": "Hello, this message is for Mr. Kwan at Quality Furniture Company.\nThis is Jessica Robertson from Salazar Supply.\nI'm calling about the metal drawer handles that you ordered last week.\nI know you were expecting the handles this morning and they're on the delivery truck now.\nBut I just spoke to the driver and he has several more stops to make on his route.\nSorry for the inconvenience.\nOh, and by the way, thank you for paying electronically.\nWe had a little difficulty with our payment processing, but yours was received on time.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c4c1a7837342fe05b68caefc4224056e6241422d104106b6373017cda23fb5be",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 93,
+        "legacy_word_count": 96,
+        "length_ratio": 0.969,
+        "legacy_coverage": 0.927
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "您好，这条信息是给 Quality Furniture Company 的 Kwan 先生的。\n我是 Salazar Supply 的 Jessica Robertson。\n我打电话来是关于您上周订购的金属抽屉把手的。\n我知道您预计今天早上能收到这些把手，它们现在已经在送货卡车上了。\n但我刚和司机谈过，他还有几个站点需要拜访。\n很抱歉给您带来不便。\n哦，顺便说一下，谢谢您的电子支付。\n我们的付款处理遇到了一点困难，但您的款项是准时收到的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "26bfc9f6f418a03b9b250ceafe8667cfeef13fd720f33cf9ed9e79e2ab9a9d39"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +74,23 @@
       ],
       "answer": "D",
       "question": "Where does the listener work?",
-      "answer_explain": "原文依据：听力原文中提到“Kwon at Quality Furniture”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（At a furniture store）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the listener work（工作）?",
+      "answer_explain": "正确答案：D（At a furniture store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the listener work(工作)?",
       "choice_translations": [
-        "A：At an architecture firm",
-        "B：At a car rental agency",
-        "C：At a computer center",
-        "D：At a furniture store"
+        "A:At an architecture firm",
+        "B:At a car rental agency",
+        "C:At a computer center",
+        "D:At a furniture store"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：E2P592-94 Iđ%",
+      "evidence": "参考听力原文：“Hello, this message is for Mr. Kwan at Quality Furniture Company.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：E2P592-94 Iđ%",
+        "evidence": "参考听力原文：“Hello, this message is for Mr. Kwan at Quality Furniture Company.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Kwon at Quality Furniture”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（At a furniture store）。"
+        "analysis": "正确答案：D（At a furniture store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -101,23 +124,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker mean when she says, \"he has several more stops to make on his route\"?",
-      "answer_explain": "原文依据：听力原文中提到“I just spoke to the driver, and he has several more stops to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The driver is behind schedule.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） mean when（何时） she says, \"he has several more stops to make on his route\"?",
+      "answer_explain": "正确答案：B（The driver is behind schedule.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) mean when(何时) she says, \"he has several more stops to make on his route\"?",
       "choice_translations": [
-        "A：The driver has to take a detour.",
-        "B：The driver is behind schedule（日程）.",
-        "C：The driver needs to confirm an address.",
-        "D：The driver will need updated directions."
+        "A:The driver has to take a detour.",
+        "B:The driver is behind schedule(日程).",
+        "C:The driver needs to confirm an address.",
+        "D:The driver will need updated directions."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：I just spoke to the driver, and he has several more stops to",
+      "evidence": "参考听力原文：“But I just spoke to the driver and he has several more stops to make on his route.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：I just spoke to the driver, and he has several more stops to",
+        "evidence": "参考听力原文：“But I just spoke to the driver and he has several more stops to make on his route.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I just spoke to the driver, and he has several more stops to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The driver is behind schedule.）。"
+        "analysis": "正确答案：B（The driver is behind schedule.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -151,23 +174,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker thank the listener for?",
-      "answer_explain": "原文依据：听力原文中提到“a little difficulty with our payment processing, but yours was”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Submitting a payment）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） thank（感谢） the listener for?",
+      "answer_explain": "正确答案：A（Submitting a payment）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) thank(感谢) the listener for?",
       "choice_translations": [
-        "A：Submitting a payment",
-        "B：Completing an order（订单） form",
-        "C：Providing positive feedback",
-        "D：Pointing out a billing error"
+        "A:Submitting a payment",
+        "B:Completing an order(订单) form",
+        "C:Providing positive feedback",
+        "D:Pointing out a billing error"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：by the way, @thank you for paying electronically. We had",
+      "evidence": "参考听力原文：“We had a little difficulty with our payment processing, but yours was received on time.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：by the way, @thank you for paying electronically. We had",
+        "evidence": "参考听力原文：“We had a little difficulty with our payment processing, but yours was received on time.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“a little difficulty with our payment processing, but yours was”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Submitting a payment）。"
+        "analysis": "正确答案：A（Submitting a payment）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

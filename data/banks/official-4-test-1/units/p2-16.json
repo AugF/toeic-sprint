@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-1/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：[l™ Do you have time to review some applications now?\n=",
-    "content_translation": "中文辅助（离线预处理）：[l™ Do you have time to review some applications now?\n="
+    "transcript": "Do you have time to review some applications now?\nA. It has a great view.\nB. He bought it yesterday.\nC. I'm leaving in 15 minutes.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "856eecb9b54067ec05a49b402840a2fe9f20280169f6954fbba7ae515a4d8008",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你现在有时间复习一些申请吗？\nA. 它有一个很棒的景观。\nB. 他昨天买的。\nC. 我十五分钟后就走了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c717ce2b7bb0a946793d9a3f8d8b501f774702b39dac11cfdc55949ddbbf2d4d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "It has a great view. Eig w",
+        "It has a great view.",
         "He bought it yesterday.",
-        "I’m leaving in fifteen minutes."
+        "I'm leaving in 15 minutes."
       ],
       "answer": "C",
-      "question": "[l™ Do you have time to review some applications now? =",
+      "question": "Do you have time to review some applications now?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“[l™ Do you have time to review some applications now? =”，自然应答是“I’m leaving in fifteen minutes.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I’m leaving in fifteen minutes.）。",
-      "question_translation": "中文辅助（离线预处理）：[l™ Do you have time to review some applications now?\n=",
+      "answer_explain": "原文依据：问句或陈述是“Do you have time to review some applications now?”，自然应答是“I'm leaving in 15 minutes.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'm leaving in 15 minutes.）。",
+      "question_translation": "你现在有时间复习一些申请吗?",
       "choice_translations": [
-        "A：It has a great view.\nEig w",
-        "B：He bought it yesterday.",
-        "C：I’m leaving in fifteen minutes."
+        "A：它有一个很棒的景观。",
+        "B：他昨天买的。",
+        "C：我十五分钟后就走了。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：[l™ Do you have time to review some applications now? =",
+      "evidence": "参考原文第 1 段：Do you have time to review some applications now?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：[l™ Do you have time to review some applications now? =",
+        "evidence": "参考原文第 1 段：Do you have time to review some applications now?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“[l™ Do you have time to review some applications now? =”，自然应答是“I’m leaving in fifteen minutes.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I’m leaving in fifteen minutes.）。"
+        "analysis": "原文依据：问句或陈述是“Do you have time to review some applications now?”，自然应答是“I'm leaving in 15 minutes.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'm leaving in 15 minutes.）。"
       },
       "item_id": 16,
       "priority": {

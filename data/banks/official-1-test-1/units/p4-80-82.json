@@ -38,37 +38,59 @@
       "asset_key": "official-1-test-1/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "message.\nw\nHi, Chef Bertrand, this is Shelley calling from tt\nrestaurant kitchen. We just got today’s fresh prod\ndelivery, and I’m a bit concerned. @There are qu\nextra vegetables here that aren’t on our usual orc\ndon’t remember any special events being sched\nweek, and | don’t see any listed on the calendar.\norder anything special? ©! was going to call the :\nbut | thought | should check with you first. So, uh\nneed to finish the kitchen inventory this morning\nit’s already ten o’clock. Thanks.",
-    "transcript_translation": "消息。\n嗨，Bertrand 厨师，我是来自餐厅厨房的 Shelley。我们刚收到了今天的新鲜农产品货运，我有点担心。这里有一些不在我们常规订单上的多余蔬菜，我不记得本周安排了任何特别活动，而且在日历上也没看到任何记录。您是否订购了任何特殊物品？我本来打算打电话给...，但我想先和您确认一下。所以，呃，我今天早上需要完成厨房盘点，现在已经十点了。谢谢。",
-    "content_translation": "消息。\n嗨，Bertrand 厨师，我是来自餐厅厨房的 Shelley。我们刚收到了今天的新鲜农产品货运，我有点担心。这里有一些不在我们常规订单上的多余蔬菜，我不记得本周安排了任何特别活动，而且在日历上也没看到任何记录。您是否订购了任何特殊物品？我本来打算打电话给...，但我想先和您确认一下。所以，呃，我今天早上需要完成厨房盘点，现在已经十点了。谢谢。"
+    "transcript": "Hi, Chef Bertrand, this is Shelley calling from tt restaurant kitchen.\nWe just got today's fresh produce delivery, and I'm a bit concerned.\nThere are quite a few extra vegetables here that aren't on our usual order list, but I don't remember any special events being scheduled this week, and I don't see any listed on the calendar.\nDid you order anything special?\nI was going to call the supplier, but I thought I should check with you first.\nSo, uh, remember, I need to finish the kitchen inventory this morning, and it's already ten o'clock.\nThanks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "23def11310f1644789cf099a5c1ea651baea880d81d1d16ca352eac978052086",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 83,
+        "length_ratio": 1.169,
+        "legacy_coverage": 0.988
+      }
+    },
+    "transcript_translation": "嗨，Bertrand 大厨，我是 Shelley，从 tt 餐厅厨房打来的。\n我们刚收到了今天的新鲜农产品配送，我有点担心。\n这里有一些不在我们常规订单清单上的额外的蔬菜，但我记不起来这周安排了任何特殊活动，而且我在日历上也没看到任何记录。\n你有没有订购什么特别的？\n我本来打算给供应商打电话，但我想先向您确认一下。\n所以，呃，请记住，我今天早上需要完成厨房库存盘点，现在已经是十点了。\n谢谢。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a86675db8501cc717a0c804592b2f87bc7b26e66025f340e77f0cd7c56fd2112"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Ata farm",
+        "At a farm",
         "At a market",
-        "At a restaurant (",
+        "At a restaurant",
         "At a shipping company"
       ],
       "answer": "C",
       "question": "Where does the speaker work?",
-      "answer_explain": "原文依据：听力原文中提到“restaurant kitchen.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a restaurant (）。",
+      "answer_explain": "正确答案：C（At a restaurant）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Hi, Chef Bertrand, this is Shelley calling from tt restaurant kitchen.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Hi, Chef Bertrand, this is Shelley calling from tt restaurant kitchen.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“restaurant kitchen.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a restaurant (）。"
+        "analysis": "正确答案：C（At a restaurant）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者在哪里工作？",
+      "question_translation": "说话者在哪里工作?",
       "choice_translations": [
-        "A：在农场",
-        "B：在一个市场",
-        "C：在一家餐馆",
-        "D：一家货运公司"
+        "A:在农场",
+        "B:在一个市场",
+        "C:在一家餐馆",
+        "D:一家货运公司"
       ],
       "item_id": 80,
       "priority": {
@@ -96,30 +118,30 @@
     },
     {
       "choices": [
-        "Astaff member is not at work.",
+        "A staff member is not at work.",
         "Extra items were delivered.",
-        "Abusiness is closed. (",
-        "Aspecial event has been canceled."
+        "A business is closed.",
+        "A special event has been canceled."
       ],
       "answer": "B",
       "question": "What problem does the speaker describe?",
-      "answer_explain": "原文依据：听力原文中提到“extra vegetables here that aren’t on our usual orc”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Extra items were delivered.）。",
+      "answer_explain": "正确答案：B（Extra items were delivered.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“There are quite a few extra vegetables here that aren't on our usual order list, but I don't remember any special events being scheduled this week, and I don't see any listed on the calendar.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“There are quite a few extra vegetables here that aren't on our usual order list, but I don't remember any special events being scheduled this week, and I don't see any listed on the calendar.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“extra vegetables here that aren’t on our usual orc”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Extra items were delivered.）。"
+        "analysis": "正确答案：B（Extra items were delivered.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者描述了什么问题？",
+      "question_translation": "说话者描述了什么问题?",
       "choice_translations": [
-        "A：一名员工不在工作。",
-        "B：送来了额外的物品。",
-        "C：生意关闭了。",
-        "D：一个特殊活动被取消了。"
+        "A:一名员工不在工作。",
+        "B:送来了额外的物品。",
+        "C:生意关闭了。",
+        "D:一个特殊活动被取消了。"
       ],
       "item_id": 81,
       "priority": {
@@ -148,29 +170,29 @@
     {
       "choices": [
         "She does not have enough ingredients.",
-        "Nobody has offered to help her. (",
-        "She would like a response soon. (",
-        "Aspecial event will take place this"
+        "Nobody has offered to help her.",
+        "She would like a response soon.",
+        "A special event will take place this"
       ],
       "answer": "C",
-      "question": "What does the speaker mean when she says, “| need to finish the kitchen inventory this morning”?",
-      "answer_explain": "原文依据：听力原文中提到“need to finish the kitchen inventory this morning”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（She would like a response soon. (）。",
+      "question": "What does the speaker mean when she says, “I need to finish the kitchen inventory this morning”?",
+      "answer_explain": "正确答案：C（She would like a response soon.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：restaurant kitchen. We just got today’s fresh prod",
+      "evidence": "参考听力原文：“So, uh, remember, I need to finish the kitchen inventory this morning, and it's already ten o'clock.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：restaurant kitchen. We just got today’s fresh prod",
+        "evidence": "参考听力原文：“So, uh, remember, I need to finish the kitchen inventory this morning, and it's already ten o'clock.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“need to finish the kitchen inventory this morning”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（She would like a response soon. (）。"
+        "analysis": "正确答案：C（She would like a response soon.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "当她说“我今天早上需要完成厨房盘点”是什么意思？",
+      "question_translation": "当她说“我今天早上需要完成厨房盘点”是什么意思?",
       "choice_translations": [
-        "A：她没有足够的原料。",
-        "B：没有人主动提出帮忙。",
-        "C：她希望尽快得到回复。",
-        "D：将举行一个特殊活动"
+        "A:她没有足够的原料。",
+        "B:没有人主动提出帮忙。",
+        "C:她希望尽快得到回复。",
+        "D:将举行一个特殊活动"
       ],
       "item_id": 82,
       "priority": {

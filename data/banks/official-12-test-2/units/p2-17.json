@@ -26,13 +26,33 @@
       "asset_key": "official-12-test-2/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） are the painting supplies?",
-    "content_translation": "中文辅助（离线预处理）：Where（哪里） are the painting supplies?"
+    "transcript": "Where are the painting supplies?\nA. On the cot in the hallway.\nB. A neutral color.\nC. Thanks, but I have one.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "edd8406b25b76291aba1ae93efd9d1aaed5919c141ae696134b2b509713eaff0",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "画材在哪里？\nA. 在走廊的床铺上。\nB. 一个中性颜色。\nC. 谢谢，但我有了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8e1466d3752ee9f29b86024a55b6c5860d1571193bf4ebfcbf138a6f0805d322"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "On the cart in the hallway.",
+        "On the cot in the hallway.",
         "A neutral color.",
         "Thanks, but I have one."
       ],
@@ -41,12 +61,12 @@
       "difficulty": "easy",
       "topic": "地点询问",
       "keywords": "where location response",
-      "answer_explain": "原文依据：问句或陈述是“Where are the painting supplies?”，自然应答是“On the cart in the hallway.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（On the cart in the hallway.）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） are the painting supplies?",
+      "answer_explain": "原文依据：问句或陈述是“Where are the painting supplies?”，自然应答是“On the cot in the hallway.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（On the cot in the hallway.）。",
+      "question_translation": "画材在哪里?",
       "choice_translations": [
-        "A：On the cart in the hallway.",
-        "B：A neutral color.",
-        "C：Thanks, but I have one."
+        "A：在走廊的床铺上。",
+        "B：一个中性颜色。",
+        "C：谢谢,但我有了。"
       ],
       "question_type": "地点疑问句",
       "evidence": "参考原文第 1 段：Where are the painting supplies?",
@@ -57,7 +77,7 @@
         "question_type": "地点疑问句",
         "evidence": "参考原文第 1 段：Where are the painting supplies?",
         "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Where are the painting supplies?”，自然应答是“On the cart in the hallway.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（On the cart in the hallway.）。"
+        "analysis": "原文依据：问句或陈述是“Where are the painting supplies?”，自然应答是“On the cot in the hallway.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（On the cot in the hallway.）。"
       },
       "item_id": 17,
       "priority": {

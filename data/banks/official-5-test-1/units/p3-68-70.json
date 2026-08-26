@@ -40,9 +40,32 @@
       "asset_key": "official-5-test-1/audio/part3/q068-070.mp3",
       "exists": true
     },
-    "transcript": "and flyer.\nHi, Susan.\nI wanted to talk to you about Mr. Yamada's\nretirement celebration. Since he likes bowling, I found\nthis local bowling alley that does parties.\nThat's a great idea for his retirement. What do they\noffer?\nWe'll get a certain number of lanes just for our group,\nand they also provide snacks and beverages.\nThat sounds perfect. I'II call them today.\nThanks!\nh wait, ® do you know how many people from the\noffice are coming?\nh yeah, everyone responded last week—® we have\npeople coming. Thanks again!\nHTF Bowling Party Packages\nPackage\nNumber of Guests\nRed\nUp to 10\nYellow\nto 20\nt5202\nGreen\nto 30\nZD530₴\nBlue\nto 40",
-    "transcript_translation": "中文辅助（离线预处理）：and flyer.\nHi, Susan.\nI wanted to talk to you about Mr.\nYamada's\nretirement celebration.\nSince he likes bowling, I found\nthis local bowling alley that does parties.\nThat's a great idea for his retirement.\nWhat（什么） do they\noffer?\nWe'll get a certain number of lanes just for our group,\nand they also provide snacks and beverages.\nThat sounds perfect.\nI'II call them today.\nThanks!\nh wait, ® do you know how（如何） many people from the\noffice（办公室） are coming?\nh yeah, everyone responded last week—® we have\npeople coming.\nThanks again!\nHTF Bowling Party Packages\nPackage\nNumber of Guests\nRed\nUp to 10\nYellow\nto 20\nt5202\nGreen\nto 30\nZD530₴\nBlue\nto 40",
-    "content_translation": "中文辅助（离线预处理）：and flyer.\nHi, Susan.\nI wanted to talk to you about Mr.\nYamada's\nretirement celebration.\nSince he likes bowling, I found\nthis local bowling alley that does parties.\nThat's a great idea for his retirement.\nWhat（什么） do they\noffer?\nWe'll get a certain number of lanes just for our group,\nand they also provide snacks and beverages.\nThat sounds perfect.\nI'II call them today.\nThanks!\nh wait, ® do you know how（如何） many people from the\noffice（办公室） are coming?\nh yeah, everyone responded last week—® we have\npeople coming.\nThanks again!\nHTF Bowling Party Packages\nPackage\nNumber of Guests\nRed\nUp to 10\nYellow\nto 20\nt5202\nGreen\nto 30\nZD530₴\nBlue\nto 40"
+    "transcript": "Hi, Susan.\nI wanted to talk to you about Mr. Yamada's retirement celebration.\nSince he likes bowling, I found this local bowling alley that does parties.\nThat's a great idea for his retirement.\nWhat do they offer?\nWe'll get a certain number of lanes just for our group, and they also provide snacks and beverages.\nThat sounds perfect.\nI'll call them today.\nThanks.\nOh, wait.\nDo you know how many people from the office are coming?\nOh, yeah.\nEveryone responded last week.\nWe have 25 people coming.\nThanks again.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f91797515f513441927b47253593f0ee50b1727b090d201dcfcf519fc58ae913",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part3/q068-070.mp3",
+      "metrics": {
+        "word_count": 90,
+        "legacy_word_count": 106,
+        "length_ratio": 0.849,
+        "legacy_coverage": 0.868
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，苏珊。\n我想跟你谈谈山田先生的退休庆祝活动。\n因为他喜欢打保龄球，我找到了一家提供派对的本地保龄球馆。\n这对他的退休来说是个很棒的主意。\n他们提供什么？\n我们会租用一定数量的球道给我们的团体，他们还提供零食和饮料。\n听起来完美。\n我今天就打电话给他们。\n谢谢。\n哦，等等。\n你知道办公室有多少人会来吗？\n哦，是的。\n大家上周都回复了。\n我们有 25 人会来。\n再次感谢。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "1bc7ae1a83f64d0bc39505afbf897c47a3d9a965a3702af3b45f9bddfb73b739"
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "B",
       "question": "Why is an event being held?",
-      "answer_explain": "原文依据：听力原文中提到“That's a great idea for his retirement.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To celebrate a retirement）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is an event being held?",
+      "answer_explain": "正确答案：B（To celebrate a retirement）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is an event being held?",
       "choice_translations": [
-        "A：To recognize a promotion",
-        "B：To celebrate a retirement",
-        "C：To announce a company（公司） merger",
-        "D：To entertain a client"
+        "A:To recognize a promotion",
+        "B:To celebrate a retirement",
+        "C:To announce a company(公司) merger",
+        "D:To entertain a client"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and flyer.",
+      "evidence": "参考听力原文：“I wanted to talk to you about Mr. Yamada's retirement celebration.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and flyer.",
+        "evidence": "参考听力原文：“I wanted to talk to you about Mr. Yamada's retirement celebration.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“That's a great idea for his retirement.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To celebrate a retirement）。"
+        "analysis": "正确答案：B（To celebrate a retirement）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 68,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "C",
       "question": "What does the woman say she will do?",
-      "answer_explain": "原文依据：听力原文中提到“I'II call them today.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Make a phone call）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do?",
+      "answer_explain": "正确答案：C（Make a phone call）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she will do?",
       "choice_translations": [
-        "A：Drive to a location",
-        "B：E-mail a colleague",
-        "C：Make a phone call",
-        "D：Select a menu"
+        "A:Drive to a location",
+        "B:E-mail a colleague",
+        "C:Make a phone call",
+        "D:Select a menu"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and flyer.",
+      "evidence": "参考听力原文：“I'll call them today.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and flyer.",
+        "evidence": "参考听力原文：“I'll call them today.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I'II call them today.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Make a phone call）。"
+        "analysis": "正确答案：C（Make a phone call）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 69,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. Which package will the speakers most likely purchase?",
-      "answer_explain": "原文依据：听力原文中提到“Green”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Green）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich package will the speakers most likely（最可能） purchase（购买）?",
+      "answer_explain": "正确答案：C（Green）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which package will the speakers most likely(最可能) purchase(购买)?",
       "choice_translations": [
-        "A：Red",
-        "B：Yellow",
-        "C：Green",
-        "D：Blue"
+        "A:Red",
+        "B:Yellow",
+        "C:Green",
+        "D:Blue"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 16 段：HTF Bowling Party Packages",
+      "evidence": "参考听力原文：“We'll get a certain number of lanes just for our group, and they also provide snacks and beverages.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 16 段：HTF Bowling Party Packages",
+        "evidence": "参考听力原文：“We'll get a certain number of lanes just for our group, and they also provide snacks and beverages.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Green”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Green）。"
+        "analysis": "正确答案：C（Green）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 70,
       "priority": {

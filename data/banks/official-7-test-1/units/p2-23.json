@@ -26,38 +26,58 @@
       "asset_key": "official-7-test-1/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） can I catch a bus to the airport?\nEK",
-    "content_translation": "中文辅助（离线预处理）：Where（哪里） can I catch a bus to the airport?\nEK"
+    "transcript": "Where can I catch\nA. bus to the airport? A. The 9 o'clock flight.\nB. Two tickets, please.\nC. You'll have to take a taxi.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a3534994a1301af550a50cbbdcbe98d4b7e15ffd44b3e777d6a3ab2676370dba",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "我在哪里可以搭乘\nA. 去机场的巴士？ A. 九点的航班。\nB. 两张票，请。\nC. 你得坐出租车。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "77ff699e7c6ffc46d33ec86315bf34786b050e3293448a57d84d1192b75b345c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "The nine o'clock flight.",
+        "bus to the airport? A. The 9 o'clock flight.",
         "Two tickets, please.",
         "You'll have to take a taxi."
       ],
       "answer": "C",
-      "question": "Where can I catch a bus to the airport? EK",
+      "question": "Where can I catch",
       "difficulty": "easy",
       "topic": "地点询问",
       "keywords": "where location response",
-      "answer_explain": "原文依据：问句或陈述是“Where can I catch a bus to the airport? EK”，自然应答是“You'll have to take a taxi.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You'll have to take a taxi.）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） can I catch a bus to the airport?\nEK",
+      "answer_explain": "原文依据：问句或陈述是“Where can I catch”，自然应答是“You'll have to take a taxi.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You'll have to take a taxi.）。",
+      "question_translation": "我在哪里可以搭乘",
       "choice_translations": [
-        "A：The nine o'clock flight.",
-        "B：Two tickets, please（请）.",
-        "C：You'll have to take a taxi."
+        "A：去机场的巴士? A. 九点的航班。",
+        "B：两张票,请。",
+        "C：你得坐出租车。"
       ],
       "question_type": "地点疑问句",
-      "evidence": "参考原文第 1 段：Where can I catch a bus to the airport? EK",
+      "evidence": "参考原文第 1 段：Where can I catch",
       "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "地点疑问句",
-        "evidence": "参考原文第 1 段：Where can I catch a bus to the airport? EK",
+        "evidence": "参考原文第 1 段：Where can I catch",
         "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Where can I catch a bus to the airport? EK”，自然应答是“You'll have to take a taxi.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You'll have to take a taxi.）。"
+        "analysis": "原文依据：问句或陈述是“Where can I catch”，自然应答是“You'll have to take a taxi.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You'll have to take a taxi.）。"
       },
       "item_id": 23,
       "priority": {

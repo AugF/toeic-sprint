@@ -37,9 +37,31 @@
       "asset_key": "official-5-test-2/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "What do you think about the renovation plan for the\nSarah?\noffice, Sarah?\nIt looks good. ®| like the idea of creating an open work\nspace.\nDo\neYes, I think that's a big advantage of the plan. It will\nbe easier for colleagues to share ideas, so they'll be\nmuch more likely to collaborate on their projects.\nAnd now we'll need to select the type of office furniture\nthat makes the best use of the space.\nRight. I've been thinking about that. In fact, O| have a\ncatalog here from a company that specializes in that\ntype of furniture.\nh, good. Let's check that right now to see what we\ncan order.",
-    "transcript_translation": "中文辅助（离线预处理）：What（什么） do you think about the renovation plan for the\nSarah?\noffice（办公室）, Sarah?\nIt looks good.\n®| like the idea of creating an open work（工作）\nspace.\nDo\neYes, I think that's a big advantage of the plan.\nIt will\nbe easier for colleagues to share ideas, so they'll be\nmuch more likely（最可能） to collaborate on their projects.\nAnd now we'll need to select the type of office（办公室） furniture\nthat makes the best use of the space.\nRight.\nI've been thinking about that.\nIn fact, O| have a\ncatalog here from a company（公司） that specializes in that\ntype of furniture.\nh, good.\nLet's check that right now to see what（什么） we\ncan order（订单）.",
-    "content_translation": "中文辅助（离线预处理）：What（什么） do you think about the renovation plan for the\nSarah?\noffice（办公室）, Sarah?\nIt looks good.\n®| like the idea of creating an open work（工作）\nspace.\nDo\neYes, I think that's a big advantage of the plan.\nIt will\nbe easier for colleagues to share ideas, so they'll be\nmuch more likely（最可能） to collaborate on their projects.\nAnd now we'll need to select the type of office（办公室） furniture\nthat makes the best use of the space.\nRight.\nI've been thinking about that.\nIn fact, O| have a\ncatalog here from a company（公司） that specializes in that\ntype of furniture.\nh, good.\nLet's check that right now to see what（什么） we\ncan order（订单）."
+    "transcript": "What do you think about the renovation plan for the office, Sarah?\nIt looks good.\nI like the idea of creating an open workspace.\nYes, I think that's a big advantage of the plan.\nIt will be easier for colleagues to share ideas, so they'll be much more likely to collaborate on their projects.\nAnd now we'll need to select the type of office furniture that makes the best use of the space.\nRight.\nI've been thinking about that.\nIn fact, I have a catalogue here from a company that specialises in that type of furniture.\nOh, good.\nLet's check that right now to see what we can order.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "042c37767e1b2844d6a63f3ebac566f0115a4e314ce147504e1291c5aa5145dd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 109,
+        "legacy_word_count": 109,
+        "length_ratio": 1,
+        "legacy_coverage": 0.945
+      }
+    },
+    "transcript_translation": "What do you think about the renovation plan for the office, Sarah?\n莎拉，你对办公室的翻新计划有什么看法？\nIt looks good.\n看起来不错。\nI like the idea of creating an open workspace.\n我喜欢创造一个开放式工作空间的想法。\nYes, I think that's a big advantage of the plan.\n是的，我认为这是该计划的一个很大优势。\nIt will be easier for colleagues to share ideas, so they'll be much more likely to collaborate on their projects.\n同事们会更容易分享想法，所以他们更有可能在项目上进行协作。\nAnd now we'll need to select the type of office furniture that makes the best use of the space.\n现在我们需要选择最能充分利用空间类型的办公家具了。\nRight.\n对。\nI've been thinking about that.\n我一直在想这个问题。\nIn fact, I have a catalogue here from a company that specialises in that type of furniture.\n事实上，我这里有一本来自专门从事这类家具的公司目录册。\nOh, good.\n哦，好。\nLet's check that right now to see what we can order.",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a1374480171eee38b4406aeaa6c90f8db1e7b1890979bab970e92cc3ddf93ad0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "D",
       "question": "What are the speakers discussing?",
-      "answer_explain": "原文依据：听力原文中提到“®| like the idea of creating an open work”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Renovating a work space）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers discussing?",
+      "answer_explain": "正确答案：D（Renovating a work space）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the speakers discussing?",
       "choice_translations": [
-        "A：Revising office（办公室） policies",
-        "B：Hiring additional employees",
-        "C：Planning a conference",
-        "D：Renovating a work（工作） space"
+        "A:Revising office(办公室) policies",
+        "B:Hiring additional employees",
+        "C:Planning a conference",
+        "D:Renovating a work(工作) space"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：What do you think about the renovation plan for the",
+      "evidence": "参考听力原文：“And now we'll need to select the type of office furniture that makes the best use of the space.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：What do you think about the renovation plan for the",
+        "evidence": "参考听力原文：“And now we'll need to select the type of office furniture that makes the best use of the space.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®| like the idea of creating an open work”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Renovating a work space）。"
+        "analysis": "正确答案：D（Renovating a work space）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "A",
       "question": "What advantage does the man mention?",
-      "answer_explain": "原文依据：听力原文中提到“much more likely to collaborate on their projects.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（More staff collaboration）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） advantage does the man（男士） mention?",
+      "answer_explain": "正确答案：A（More staff collaboration）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) advantage does the man(男士) mention?",
       "choice_translations": [
-        "A：More staff collaboration",
-        "B：Additional publicity",
-        "C：Reduced utility costs",
-        "D：Access to a bus line"
+        "A:More staff collaboration",
+        "B:Additional publicity",
+        "C:Reduced utility costs",
+        "D:Access to a bus line"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：eYes, I think that's a big advantage of the plan. It will",
+      "evidence": "参考听力原文：“It will be easier for colleagues to share ideas, so they'll be much more likely to collaborate on their projects.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：eYes, I think that's a big advantage of the plan. It will",
+        "evidence": "参考听力原文：“It will be easier for colleagues to share ideas, so they'll be much more likely to collaborate on their projects.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“much more likely to collaborate on their projects.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（More staff collaboration）。"
+        "analysis": "正确答案：A（More staff collaboration）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "C",
       "question": "What will the speakers probably do next?",
-      "answer_explain": "原文依据：听力原文中提到“Let's check that right now to see what we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Check a catalog）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the speakers probably（可能） do next?",
+      "answer_explain": "正确答案：C（Check a catalog）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the speakers probably(可能) do next?",
       "choice_translations": [
-        "A：Change a reservation",
-        "B：Revise a spreadsheet",
-        "C：Check a catalog",
-        "D：Look at a budget"
+        "A:Change a reservation",
+        "B:Revise a spreadsheet",
+        "C:Check a catalog",
+        "D:Look at a budget"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：What do you think about the renovation plan for the",
+      "evidence": "参考听力原文：“It will be easier for colleagues to share ideas, so they'll be much more likely to collaborate on their projects.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：What do you think about the renovation plan for the",
+        "evidence": "参考听力原文：“It will be easier for colleagues to share ideas, so they'll be much more likely to collaborate on their projects.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Let's check that right now to see what we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Check a catalog）。"
+        "analysis": "正确答案：C（Check a catalog）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

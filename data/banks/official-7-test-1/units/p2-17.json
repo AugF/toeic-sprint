@@ -28,38 +28,58 @@
       "asset_key": "official-7-test-1/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：w Should I buy this black jacket or the blue one?\nEw",
-    "content_translation": "中文辅助（离线预处理）：w Should I buy this black jacket or the blue one?\nEw"
+    "transcript": "Should I buy this black jacket or the blue one?\nA. Less than 10 miles away.\nB. Because it's sunny outside.\nC. Which one is warmer?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3b94a4571a0aee2e2046900b6b836d7a28d02c520c1ec6f124907452422803a4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "我应该买这件黑色夹克还是蓝色？\nA. 距离不到10英里。\nB. 因为外面很晴朗。\nC. 哪个更暖和？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e61611ca3b1590a7384fb6c4a6867dd61a5245c46501988c4cc2f065506df60c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Less than ten miles away.",
+        "Less than 10 miles away.",
         "Because it's sunny outside.",
         "Which one is warmer?"
       ],
       "answer": "C",
-      "question": "w Should I buy this black jacket or the blue one? Ew",
+      "question": "Should I buy this black jacket or the blue one?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“w Should I buy this black jacket or the blue one? Ew”，自然应答是“Which one is warmer?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Which one is warmer?）。",
-      "question_translation": "中文辅助（离线预处理）：w Should I buy this black jacket or the blue one?\nEw",
+      "answer_explain": "原文依据：问句或陈述是“Should I buy this black jacket or the blue one?”，自然应答是“Which one is warmer?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Which one is warmer?）。",
+      "question_translation": "我应该买这件黑色夹克还是蓝色?",
       "choice_translations": [
-        "A：Less than ten miles away.",
-        "B：Because it's sunny outside.",
-        "C：Which one is warmer?"
+        "A：距离不到10英里。",
+        "B：因为外面很晴朗。",
+        "C：哪个更暖和?"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：w Should I buy this black jacket or the blue one? Ew",
+      "evidence": "参考原文第 1 段：Should I buy this black jacket or the blue one?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：w Should I buy this black jacket or the blue one? Ew",
+        "evidence": "参考原文第 1 段：Should I buy this black jacket or the blue one?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“w Should I buy this black jacket or the blue one? Ew”，自然应答是“Which one is warmer?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Which one is warmer?）。"
+        "analysis": "原文依据：问句或陈述是“Should I buy this black jacket or the blue one?”，自然应答是“Which one is warmer?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Which one is warmer?）。"
       },
       "item_id": 17,
       "priority": {

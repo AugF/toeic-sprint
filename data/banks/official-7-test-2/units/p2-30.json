@@ -28,8 +28,28 @@
       "asset_key": "official-7-test-2/audio/part2/q030.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：EK w Why（为什么） don't we meet in the lobby at eleven thirty?\n•M",
-    "content_translation": "中文辅助（离线预处理）：EK w Why（为什么） don't we meet in the lobby at eleven thirty?\n•M"
+    "transcript": "Why don't we meet in the lobby at 11.30?\nA. Noon would work better for me.\nB. They're going to lunch.\nC. I saw him at the main entrance.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "26e5bb82d6f6ab8e1f863e70d098a75506b2b763f55010f162271a06b83ead5a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q030.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "我们不约在大堂下午 11 点半见面吗？\nA. 中午对我来说更好。\nB. 他们去吃午饭了。\nC. 我在主入口看到他了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8cf86a6dbb6a5b1443e671ed8b0874c8c3716c07a10818e2f7679ff45e5a0e34"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "I saw him at the main entrance."
       ],
       "answer": "A",
-      "question": "EK w Why don't we meet in the lobby at eleven thirty? •M",
+      "question": "Why don't we meet in the lobby at 11.30?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“EK w Why don't we meet in the lobby at eleven thirty? •M”，自然应答是“Noon would work better for me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Noon would work better for me.）。",
-      "question_translation": "中文辅助（离线预处理）：EK w Why（为什么） don't we meet in the lobby at eleven thirty?\n•M",
+      "answer_explain": "原文依据：问句或陈述是“Why don't we meet in the lobby at 11.30?”，自然应答是“Noon would work better for me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Noon would work better for me.）。",
+      "question_translation": "我们不约在大堂下午 11 点半见面吗?",
       "choice_translations": [
-        "A：Noon would work（工作） better for me.",
-        "B：They're going to lunch.",
-        "C：I saw him at the main entrance."
+        "A：中午对我来说更好。",
+        "B：他们去吃午饭了。",
+        "C：我在主入口看到他了。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：EK w Why don't we meet in the lobby at eleven thirty? •M",
+      "evidence": "参考原文第 1 段：Why don't we meet in the lobby at 11.30?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：EK w Why don't we meet in the lobby at eleven thirty? •M",
+        "evidence": "参考原文第 1 段：Why don't we meet in the lobby at 11.30?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“EK w Why don't we meet in the lobby at eleven thirty? •M”，自然应答是“Noon would work better for me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Noon would work better for me.）。"
+        "analysis": "原文依据：问句或陈述是“Why don't we meet in the lobby at 11.30?”，自然应答是“Noon would work better for me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Noon would work better for me.）。"
       },
       "item_id": 30,
       "priority": {

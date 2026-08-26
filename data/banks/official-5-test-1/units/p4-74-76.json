@@ -37,9 +37,32 @@
       "asset_key": "official-5-test-1/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "message.\nM\nHi Ms. Goldberg, it's Henry. Since you're out of the office\ntoday, I'm calling to report on how the meeting with the\nproduction team went. We started off by talking about your\nidea to use a less expensive manufacturer in another state\nfor our watches. And... ®the team did bring up one problem.\nRight now, it takes only one day for our products to get from\nthe factory to the local retail stores. If we go with a new\nfactory, then shipping could take a lot longer. Anyway, could\nyou call me back so we can discuss it more?",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nM\nHi Ms.\nGoldberg, it's Henry.\nSince you're out of the office（办公室）\ntoday, I'm calling to report on how（如何） the meeting（会议） with the\nproduction team went.\nWe started off by talking about your\nidea to use a less expensive manufacturer in another state\nfor our watches.\nAnd...\n®the team did bring up one problem.\nRight now, it takes only one day for our products to get from\nthe factory to the local retail stores.\nIf we go with a new\nfactory, then shipping could take a lot longer.\nAnyway, could\nyou call me back so we can discuss it more?",
-    "content_translation": "中文辅助（离线预处理）：message.\nM\nHi Ms.\nGoldberg, it's Henry.\nSince you're out of the office（办公室）\ntoday, I'm calling to report on how（如何） the meeting（会议） with the\nproduction team went.\nWe started off by talking about your\nidea to use a less expensive manufacturer in another state\nfor our watches.\nAnd...\n®the team did bring up one problem.\nRight now, it takes only one day for our products to get from\nthe factory to the local retail stores.\nIf we go with a new\nfactory, then shipping could take a lot longer.\nAnyway, could\nyou call me back so we can discuss it more?"
+    "transcript": "Hi Ms. Goldberg, it's Henry.\nSince you are out of the office today, I'm calling to report on how the meeting with the production team went.\nWe started off by talking about your idea to use a less expensive manufacturer in another state for our watches.\nAnd... the team did bring up one problem.\nRight now, it takes only one day for our products to get from the factory to the local retail stores.\nIf we go with a new factory, then shipping could take a lot longer.\nAnyway, could you call me back so we can discuss it more?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "afc540f7ce8e679d97ca8a63acbb9848308790935231e035af6a717f99a83e2f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 100,
+        "legacy_word_count": 100,
+        "length_ratio": 1,
+        "legacy_coverage": 0.97
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "金伯格女士，我是亨利。\n因为您今天不在办公室，我打电话来报告一下和制作团队开会的情况。\n我们首先讨论了您关于使用另一个州成本更低的制造商为我们的手表的问题。\n而且……团队提出了一个问题。\n目前，我们的产品从工厂到当地零售店只需要一天时间。\n如果我们选择一家新的工厂，那么运输可能会花费更长的时间。\n无论如何，你能回电话给我吗？这样我们可以讨论更多细节？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2699372c300cb541c94947d1e6c5ecd8583557e7bbfd7265950776c81173041c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +74,23 @@
       ],
       "answer": "D",
       "question": "Why is the speaker calling?",
-      "answer_explain": "原文依据：听力原文中提到“today, I'm calling to report on how the meeting with the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To report on a recent meeting）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the speaker（说话者） calling?",
+      "answer_explain": "正确答案：D（To report on a recent meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the speaker(说话者) calling?",
       "choice_translations": [
-        "A：To ask for assistance with a fund-raiser",
-        "B：To schedule（日程） a factory inspection",
-        "C：To confirm the details of a renovation",
-        "D：To report on a recent meeting（会议）"
+        "A:To ask for assistance with a fund-raiser",
+        "B:To schedule(日程) a factory inspection",
+        "C:To confirm the details of a renovation",
+        "D:To report on a recent meeting(会议)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：today, I'm calling to report on how the meeting with the",
+      "evidence": "参考听力原文：“Since you are out of the office today, I'm calling to report on how the meeting with the production team went.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：today, I'm calling to report on how the meeting with the",
+        "evidence": "参考听力原文：“Since you are out of the office today, I'm calling to report on how the meeting with the production team went.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“today, I'm calling to report on how the meeting with the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To report on a recent meeting）。"
+        "analysis": "正确答案：D（To report on a recent meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -101,23 +124,23 @@
       ],
       "answer": "C",
       "question": "What idea did the speaker discuss with a team?",
-      "answer_explain": "原文依据：听力原文中提到“idea to use a less expensive manufacturer in another state”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Using a new manufacturer）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） idea did the speaker（说话者） discuss with a team?",
+      "answer_explain": "正确答案：C（Using a new manufacturer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) idea did the speaker(说话者) discuss with a team?",
       "choice_translations": [
-        "A：Purchasing updated equipment",
-        "B：Restructuring a department",
-        "C：Using a new manufacturer",
-        "D：Opening a new store"
+        "A:Purchasing updated equipment",
+        "B:Restructuring a department",
+        "C:Using a new manufacturer",
+        "D:Opening a new store"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：you call me back so we can discuss it more?",
+      "evidence": "参考听力原文：“We started off by talking about your idea to use a less expensive manufacturer in another state for our watches.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：you call me back so we can discuss it more?",
+        "evidence": "参考听力原文：“We started off by talking about your idea to use a less expensive manufacturer in another state for our watches.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“idea to use a less expensive manufacturer in another state”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Using a new manufacturer）。"
+        "analysis": "正确答案：C（Using a new manufacturer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -151,23 +174,23 @@
       ],
       "answer": "B",
       "question": "What problem does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“factory, then shipping could take a lot longer.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Shipping may take too long.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） problem does the speaker（说话者） mention?",
+      "answer_explain": "正确答案：B（Shipping may take too long.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) problem does the speaker(说话者) mention?",
       "choice_translations": [
-        "A：Maintenance costs will increase.",
-        "B：Shipping may take too long.",
-        "C：Employee（员工） satisfaction may decrease.",
-        "D：More workers will be needed."
+        "A:Maintenance costs will increase.",
+        "B:Shipping may take too long.",
+        "C:Employee(员工) satisfaction may decrease.",
+        "D:More workers will be needed."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：for our watches. And... ®the team did bring up one problem.",
+      "evidence": "参考听力原文：“If we go with a new factory, then shipping could take a lot longer.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：for our watches. And... ®the team did bring up one problem.",
+        "evidence": "参考听力原文：“If we go with a new factory, then shipping could take a lot longer.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“factory, then shipping could take a lot longer.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Shipping may take too long.）。"
+        "analysis": "正确答案：B（Shipping may take too long.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

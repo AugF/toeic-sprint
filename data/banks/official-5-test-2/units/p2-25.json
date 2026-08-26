@@ -27,8 +27,28 @@
       "asset_key": "official-5-test-2/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Have you met tonight's guest speaker（说话者） before?",
-    "content_translation": "中文辅助（离线预处理）：Have you met tonight's guest speaker（说话者） before?"
+    "transcript": "Have you met tonight's guest speaker before?\nA. We need several microphones.\nB. The large room on the second floor.\nC. Yes, she and I used to be colleagues.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d6d11c9cd73f6526bf9ae32d24f747ed623870e3996a5e5f7e6ebdb2eb1236bb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "你以前见过今晚的特邀演讲嘉宾吗？\nA. 我们需要几个麦克风。\nB. 二楼的大房间。\nC. 是的，她和我以前是同事。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "412a098c21251fdaf418e0b91de344f84069521214216108150c6232a067a200"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Have you met tonight's guest speaker before?”，自然应答是“Yes, she and I used to be colleagues.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, she and I used to be colleagues.）。",
-      "question_translation": "中文辅助（离线预处理）：Have you met tonight's guest speaker（说话者） before?",
+      "question_translation": "你以前见过今晚的特邀演讲嘉宾吗?",
       "choice_translations": [
-        "A：We need several microphones.",
-        "B：The large room on the second floor.",
-        "C：Yes, she and I used to be colleagues."
+        "A：我们需要几个麦克风。",
+        "B：二楼的大房间。",
+        "C：是的,她和我以前是同事。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Have you met tonight's guest speaker before?",

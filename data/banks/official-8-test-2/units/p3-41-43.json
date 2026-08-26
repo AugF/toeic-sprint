@@ -39,9 +39,31 @@
       "asset_key": "official-8-test-2/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "Mw Laurent, ® did you get the e-mail I sent you about our\nmeeting on Wednesday? Ol'd like to meet at eleven\no'clock instead of one so I can go to the doctor in the\nafternoon.\nI can't connect to the Internet. ® But I think eleven\no'clock on Wednesday should work fine. Have you\nbeen having any issues with the Wi-Fi today?\nMw No, I was able to connect. ® Are you using the\nnew password? The IT department changed it this\nmorning — routine security maintenance.\nO! have it\nwritten down at my desk. I'll go get it for you.",
-    "transcript_translation": "中文辅助（离线预处理）：Mw Laurent, ® did you get the e-mail I sent you about our\nmeeting（会议） on Wednesday?\nOl'd like to meet at eleven\no'clock instead of one so I can go to the doctor in the\nafternoon.\nI can't connect to the Internet.\n® But I think eleven\no'clock on Wednesday should work（工作） fine.\nHave you\nbeen having any issues with the Wi-Fi today?\nMw No, I was able to connect.\n® Are you using the\nnew password?\nThe IT department changed it this\nmorning — routine security maintenance.\nO!\nhave it\nwritten down at my desk.\nI'll go get it for you.",
-    "content_translation": "中文辅助（离线预处理）：Mw Laurent, ® did you get the e-mail I sent you about our\nmeeting（会议） on Wednesday?\nOl'd like to meet at eleven\no'clock instead of one so I can go to the doctor in the\nafternoon.\nI can't connect to the Internet.\n® But I think eleven\no'clock on Wednesday should work（工作） fine.\nHave you\nbeen having any issues with the Wi-Fi today?\nMw No, I was able to connect.\n® Are you using the\nnew password?\nThe IT department changed it this\nmorning — routine security maintenance.\nO!\nhave it\nwritten down at my desk.\nI'll go get it for you."
+    "transcript": "Laurent, did you get the email I sent you about our meeting on Wednesday?\nI'd like to meet at 11 o'clock instead of 1 so I can go to the doctor in the afternoon.\nI can't connect to the Internet, but I think 11 o'clock on Wednesday should work fine.\nHave you been having any issues with the Wi-Fi today?\nNo, I was able to connect.\nAre you using the new password?\nThe IT department changed it this morning, Routine Security Maintenance.\nI have it written down at my desk.\nI'll go get it for you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d5efd80ba5692230b74fe603441b8508a49dff1aaf728bdad055a21ffbe6a39d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 93,
+        "legacy_word_count": 91,
+        "length_ratio": 1.022,
+        "legacy_coverage": 0.912
+      }
+    },
+    "transcript_translation": "Laurent，你收到我周三关于我们会议的邮件了吗？\n我想改到11点见面，而不是1点，这样下午我可以去看医生。\n我无法连接互联网，但我想周三上午11点应该没问题。\n你今天在使用Wi-Fi时遇到什么问题了吗？\n没有，我能连上。\n你用的是新密码吗？\nIT部门今天早上更改了它，例行安全维护。\n我把它写在我的桌上了。\n我去帮你拿。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2becd6a4484b7d22c626a144107369db304b6be0a53d02e4c8890935b9bcecba"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "C",
       "question": "Why does the woman want to change a meeting time?",
-      "answer_explain": "原文依据：听力原文中提到“o'clock instead of one so I can go to the doctor in the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（She has a doctor's appointment.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） want to change a meeting（会议） time?",
+      "answer_explain": "正确答案：C（She has a doctor's appointment.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the woman(女士) want to change a meeting(会议) time?",
       "choice_translations": [
-        "A：She will be training some employees.",
-        "B：She is scheduled to attend a lunch.",
-        "C：She has a doctor's appointment（预约）.",
-        "D：She is finishing a report."
+        "A:She will be training some employees.",
+        "B:She is scheduled to attend a lunch.",
+        "C:She has a doctor's appointment(预约).",
+        "D:She is finishing a report."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：meeting on Wednesday? Ol'd like to meet at eleven",
+      "evidence": "参考听力原文：“Laurent, did you get the email I sent you about our meeting on Wednesday?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：meeting on Wednesday? Ol'd like to meet at eleven",
+        "evidence": "参考听力原文：“Laurent, did you get the email I sent you about our meeting on Wednesday?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“o'clock instead of one so I can go to the doctor in the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（She has a doctor's appointment.）。"
+        "analysis": "正确答案：C（She has a doctor's appointment.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What does the man imply when he says, \"I can't connect to the Internet\"?",
-      "answer_explain": "原文依据：听力原文中提到“Mw Laurent, ® did you get the e-mail I sent you about our”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（He has not read an e-mail.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） imply when（何时） he says, \"I can't connect to the Internet\"?",
+      "answer_explain": "正确答案：B（He has not read an e-mail.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) imply when(何时) he says, \"I can't connect to the Internet\"?",
       "choice_translations": [
-        "A：A meeting（会议） place is unsuitable.",
-        "B：He has not read an e-mail.",
-        "C：A project he is working on is delayed.",
-        "D：He needs to buy a new computer."
+        "A:A meeting(会议) place is unsuitable.",
+        "B:He has not read an e-mail.",
+        "C:A project he is working on is delayed.",
+        "D:He needs to buy a new computer."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 5 段：I can't connect to the Internet. ® But I think eleven",
+      "evidence": "参考听力原文：“I can't connect to the Internet, but I think 11 o'clock on Wednesday should work fine.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 5 段：I can't connect to the Internet. ® But I think eleven",
+        "evidence": "参考听力原文：“I can't connect to the Internet, but I think 11 o'clock on Wednesday should work fine.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Mw Laurent, ® did you get the e-mail I sent you about our”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（He has not read an e-mail.）。"
+        "analysis": "正确答案：B（He has not read an e-mail.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "A",
       "question": "What will the woman get for the man?",
-      "answer_explain": "原文依据：听力原文中提到“new password?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A password）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） get for the man（男士）?",
+      "answer_explain": "正确答案：A（A password）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) get for the man(男士)?",
       "choice_translations": [
-        "A：A password",
-        "B：A calendar",
-        "C：An operator's manual",
-        "D：A manager（经理）'s signature"
+        "A:A password",
+        "B:A calendar",
+        "C:An operator's manual",
+        "D:A manager(经理)'s signature"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Mw Laurent, ® did you get the e-mail I sent you about our",
+      "evidence": "参考听力原文：“Laurent, did you get the email I sent you about our meeting on Wednesday?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Mw Laurent, ® did you get the e-mail I sent you about our",
+        "evidence": "参考听力原文：“Laurent, did you get the email I sent you about our meeting on Wednesday?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“new password?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A password）。"
+        "analysis": "正确答案：A（A password）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

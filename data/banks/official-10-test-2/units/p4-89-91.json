@@ -37,9 +37,32 @@
       "asset_key": "official-10-test-2/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "at 89-9\nM\nHello, Marion County! Looking for something fun and family\nfriendly to do this weekend? Come to the annual marathon\nin downtown Clarke City. Everyone looks forward to this\nevent all year long, especially runners! ® This year's race\nis very special: it's the fiftieth annual Clarke City marathon.\nTo celebrate this milestone, county officials will have free\nsouvenirs available at the finish line area. Please note:\nmarathon runners should be sure to arrive early in order to\nget to the starting line before the race begins at 8 A.M.\nWhat type of event is being held?\nA) A running race\nB) A holiday parade\nC) A speech\nD) A seasonal sale\nAccording to the speaker, why is the event special?\nA) More people are expected to participate than in the\npast.\nB) It features local products.\nC) It has happened for 50 years.\nD) Admission is free.\nB\nac\nWhat does the speaker recommend some of the\nlisteners do?\nA) Try some new equipment\nB) Select seats online\nC) Bring a friend\nD) Arrive early\nth\nA\ncounty BB\nlook for ~ ~5119\nfamily friendly\nannual\ndowntown\nlook forward to ~\ncelebrate 555\nbe sure do 493\narrive\nstarting line",
-    "transcript_translation": "中文辅助（离线预处理）：at 89-9\nM\nHello, Marion County!\nLooking for something fun and family\nfriendly to do this weekend?\nCome to the annual marathon\nin downtown Clarke City.\nEveryone looks forward to this\nevent all year long, especially runners!\n® This year's race\nis very special: it's the fiftieth annual Clarke City marathon.\nTo celebrate this milestone, county officials will have free\nsouvenirs available（可用的） at the finish line area.\nPlease（请） note:\nmarathon runners should be sure to arrive early in order（订单） to\nget to the starting line before the race begins at 8 A.M.\nWhat（什么） type of event is being held?\nA) A running race\nB) A holiday parade\nC) A speech\nD) A seasonal sale\nAccording（根据） to the speaker（说话者）, why（为什么） is the event special?\nA) More people are expected to participate than in the\npast.\nB) It features local products.\nC) It has happened for 50 years.\nD) Admission is free.\nB\nac\nWhat（什么） does the speaker（说话者） recommend some of the\nlisteners do?\nA) Try some new equipment\nB) Select seats online\nC) Bring a friend\nD) Arrive early\nth\nA\ncounty BB\nlook for ~ ~5119\nfamily friendly\nannual\ndowntown\nlook forward to ~\ncelebrate 555\nbe sure do 493\narrive\nstarting line",
-    "content_translation": "中文辅助（离线预处理）：at 89-9\nM\nHello, Marion County!\nLooking for something fun and family\nfriendly to do this weekend?\nCome to the annual marathon\nin downtown Clarke City.\nEveryone looks forward to this\nevent all year long, especially runners!\n® This year's race\nis very special: it's the fiftieth annual Clarke City marathon.\nTo celebrate this milestone, county officials will have free\nsouvenirs available（可用的） at the finish line area.\nPlease（请） note:\nmarathon runners should be sure to arrive early in order（订单） to\nget to the starting line before the race begins at 8 A.M.\nWhat（什么） type of event is being held?\nA) A running race\nB) A holiday parade\nC) A speech\nD) A seasonal sale\nAccording（根据） to the speaker（说话者）, why（为什么） is the event special?\nA) More people are expected to participate than in the\npast.\nB) It features local products.\nC) It has happened for 50 years.\nD) Admission is free.\nB\nac\nWhat（什么） does the speaker（说话者） recommend some of the\nlisteners do?\nA) Try some new equipment\nB) Select seats online\nC) Bring a friend\nD) Arrive early\nth\nA\ncounty BB\nlook for ~ ~5119\nfamily friendly\nannual\ndowntown\nlook forward to ~\ncelebrate 555\nbe sure do 493\narrive\nstarting line"
+    "transcript": "This is very special.\nIt's the 50th annual Clark City Marathon.\nTo celebrate this milestone, county officials will have free souvenirs available at the finish line area.\nPlease note, marathon runners should be sure to arrive early in order to get to the starting line before the race begins at 8am.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "8163f0ffe32e168096bce94ec60848fbe1ae8ce32187f6437b8db08e36125d10",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 51,
+        "legacy_word_count": 87,
+        "length_ratio": 0.586,
+        "legacy_coverage": 0.713,
+        "prompted_failure": "missing spoken Questions 89 through 91 introduction"
+      }
+    },
+    "transcript_translation": "这非常特别。\n这是第50届Clark City马拉松。\n为了庆祝这个里程碑，县官员将在终点线区域提供免费纪念品。\n请注意，马拉松跑者务必提早到达，以便在比赛于早上8点开始前到达起点线。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7c5060afd88fdfe1456b5862d114c91a0efb8e9ad9f594ea032b63193fa92039"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +74,23 @@
       ],
       "answer": "A",
       "question": "What type of event is being held?",
-      "answer_explain": "原文依据：听力原文中提到“A) A running race”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A running race）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of event is being held?",
+      "answer_explain": "正确答案：A（A running race）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of event is being held?",
       "choice_translations": [
-        "A：A running race",
-        "B：A holiday parade",
-        "C：A speech",
-        "D：A seasonal sale"
+        "A:A running race",
+        "B:A holiday parade",
+        "C:A speech",
+        "D:A seasonal sale"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：event all year long, especially runners! ® This year's race",
+      "evidence": "参考听力原文：“Please note, marathon runners should be sure to arrive early in order to get to the starting line before the race begins at 8am.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：event all year long, especially runners! ® This year's race",
+        "evidence": "参考听力原文：“Please note, marathon runners should be sure to arrive early in order to get to the starting line before the race begins at 8am.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“A) A running race”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A running race）。"
+        "analysis": "正确答案：A（A running race）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 89,
       "priority": {
@@ -101,23 +124,23 @@
       ],
       "answer": "C",
       "question": "According to the speaker, why is the event special?",
-      "answer_explain": "原文依据：听力原文中提到“C) It has happened for 50 years.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It has happened for 50 years.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, why（为什么） is the event special?",
+      "answer_explain": "正确答案：C（It has happened for 50 years.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), why(为什么) is the event special?",
       "choice_translations": [
-        "A：More people are expected to participate than in the past.",
-        "B：It features local products.",
-        "C：It has happened for 50 years.",
-        "D：Admission is free."
+        "A:More people are expected to participate than in the past.",
+        "B:It features local products.",
+        "C:It has happened for 50 years.",
+        "D:Admission is free."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：event all year long, especially runners! ® This year's race",
+      "evidence": "参考听力原文：“This is very special.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：event all year long, especially runners! ® This year's race",
+        "evidence": "参考听力原文：“This is very special.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“C) It has happened for 50 years.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It has happened for 50 years.）。"
+        "analysis": "正确答案：C（It has happened for 50 years.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 90,
       "priority": {
@@ -151,23 +174,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker recommend some of the listeners do?",
-      "answer_explain": "原文依据：听力原文中提到“marathon runners should be sure to arrive early in order to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Arrive early）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） recommend some of the listeners do?",
+      "answer_explain": "正确答案：D（Arrive early）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) recommend some of the listeners do?",
       "choice_translations": [
-        "A：Try some new equipment",
-        "B：Select seats online",
-        "C：Bring a friend",
-        "D：Arrive early"
+        "A:Try some new equipment",
+        "B:Select seats online",
+        "C:Bring a friend",
+        "D:Arrive early"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 17 段：According to the speaker, why is the event special?",
+      "evidence": "参考听力原文：“Please note, marathon runners should be sure to arrive early in order to get to the starting line before the race begins at 8am.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 17 段：According to the speaker, why is the event special?",
+        "evidence": "参考听力原文：“Please note, marathon runners should be sure to arrive early in order to get to the starting line before the race begins at 8am.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“marathon runners should be sure to arrive early in order to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Arrive early）。"
+        "analysis": "正确答案：D（Arrive early）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 91,
       "priority": {

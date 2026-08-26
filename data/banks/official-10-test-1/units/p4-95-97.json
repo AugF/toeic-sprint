@@ -45,9 +45,32 @@
       "asset_key": "official-10-test-1/images/part4/q095-097.jpg",
       "exists": true
     },
-    "transcript": "at 95-9\nand table.\nEKW\nAre you searching for work? ® The Richardson Jobs\nNetwork can help! The Richardson Jobs Network offers\nSatana\nopportunities from all types of businesses, from large\ncorporations to local shops. ® We have listings for jobs\ncovering a wide range of skills. Are you a great salesperson,\neditor, or graphic designer? There are currently job openings\nfor you! And we recently added a huge number of listings\nfor IT specialists. ®Our largest number of jobs is in this\nfield at the moment. And ®we have several discounts; one\nservice is 50 percent off right now! ® Visit our Web site for\nour full list of discounts.\nCurrent Discounts\nRésumé support\nCover letter editing\nDesigning business cards\nInterview practice",
-    "transcript_translation": "在 95-9\n和桌子旁。\n您正在寻找工作吗？理查森招聘网络可以帮到您！理查森招聘网络提供来自所有类型企业的机会，从大型公司到本地商店。我们有涵盖广泛技能的工作列表。您是出色的销售人员、编辑还是平面设计师？目前有适合您的职位空缺！而且我们最近为 IT 专家增加了大量职位列表。目前我们最大的职位数量就在这个领域。我们还有几项折扣；其中一项服务现在可以享受五折优惠！请访问我们的网站查看完整的折扣清单。\n当前折扣\n简历支持\n求职信编辑\n名片设计\n面试练习",
-    "content_translation": "在 95-9\n和桌子旁。\n您正在寻找工作吗？理查森招聘网络可以帮到您！理查森招聘网络提供来自所有类型企业的机会，从大型公司到本地商店。我们有涵盖广泛技能的工作列表。您是出色的销售人员、编辑还是平面设计师？目前有适合您的职位空缺！而且我们最近为 IT 专家增加了大量职位列表。目前我们最大的职位数量就在这个领域。我们还有几项折扣；其中一项服务现在可以享受五折优惠！请访问我们的网站查看完整的折扣清单。\n当前折扣\n简历支持\n求职信编辑\n名片设计\n面试练习"
+    "transcript": "We have a large number of listings for IT specialists.\nOur largest number of jobs is in this field at the moment.\nAnd we have several discounts.\nOne service is 50% off right now.\nVisit our website for our full list of discounts.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "38459fb374ae14d665246d41c9e012e9cf627c48711ec8cd4115e23096e0791e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 44,
+        "legacy_word_count": 63,
+        "length_ratio": 0.698,
+        "legacy_coverage": 0.714
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "我们有大量 IT 专家职位空缺。\n目前我们这个领域的工作机会最多。\n而且我们还有几项折扣优惠。\n一项服务现在可以享受五折优惠。\n请访问我们的网站查看完整的折扣列表。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "af12d0d0b99105574e70f273ff6135c77de24f718dcab0c87d124b46b296f588"
+    }
   },
   "items": [
     {
@@ -59,23 +82,23 @@
       ],
       "answer": "C",
       "question": "What is the advertisement mainly about?",
-      "answer_explain": "原文依据：听力原文中提到“The Richardson Jobs Network offers”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Finding the right job）。",
-      "question_translation": "这则广告主要关于什么？",
+      "answer_explain": "正确答案：C（Finding the right job）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "这则广告主要关于什么?",
       "choice_translations": [
-        "A：提供工作培训",
-        "B：创办新业务",
-        "C：寻找合适的职位",
-        "D：了解客户需求"
+        "A:提供工作培训",
+        "B:创办新业务",
+        "C:寻找合适的职位",
+        "D:了解客户需求"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：at 95-9",
+      "evidence": "参考听力原文：“One service is 50% off right now.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：at 95-9",
+        "evidence": "参考听力原文：“One service is 50% off right now.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“The Richardson Jobs Network offers”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Finding the right job）。"
+        "analysis": "正确答案：C（Finding the right job）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 95,
       "priority": {
@@ -112,23 +135,23 @@
       ],
       "answer": "D",
       "question": "According to the speaker, which job has the most listings?",
-      "answer_explain": "原文依据：听力原文中提到“And we recently added a huge number of listings”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（IT specialist）。",
-      "question_translation": "根据演讲者说，哪个工作的职位列表最多？",
+      "answer_explain": "正确答案：D（IT specialist）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "根据演讲者说,哪个工作的职位列表最多?",
       "choice_translations": [
-        "A：销售人员",
-        "B：编辑",
-        "C：平面设计师",
-        "D：IT 专家"
+        "A:销售人员",
+        "B:编辑",
+        "C:平面设计师",
+        "D:IT 专家"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 8 段：corporations to local shops. ® We have listings for jobs",
+      "evidence": "参考听力原文：“We have a large number of listings for IT specialists.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 8 段：corporations to local shops. ® We have listings for jobs",
+        "evidence": "参考听力原文：“We have a large number of listings for IT specialists.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“And we recently added a huge number of listings”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（IT specialist）。"
+        "analysis": "正确答案：D（IT specialist）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 96,
       "priority": {
@@ -165,23 +188,23 @@
       ],
       "answer": "D",
       "question": "Look at the graphic. Which service is mentioned in the advertisement?",
-      "answer_explain": "原文依据：听力原文中提到“Interview practice”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Interview practice）。",
-      "question_translation": "看看图表。广告中提到了哪项服务？",
+      "answer_explain": "正确答案：D（Interview practice）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "看看图表。广告中提到了哪项服务?",
       "choice_translations": [
-        "A：简历支持",
-        "B：求职信编辑",
-        "C：名片设计",
-        "D：面试练习"
+        "A:简历支持",
+        "B:求职信编辑",
+        "C:名片设计",
+        "D:面试练习"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 10 段：editor, or graphic designer? There are currently job openings",
+      "evidence": "参考听力原文：“One service is 50% off right now.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 10 段：editor, or graphic designer? There are currently job openings",
+        "evidence": "参考听力原文：“One service is 50% off right now.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Interview practice”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Interview practice）。"
+        "analysis": "正确答案：D（Interview practice）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 97,
       "priority": {

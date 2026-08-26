@@ -26,8 +26,28 @@
       "asset_key": "official-10-test-1/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "EKW 我们把新手机的广告放在哪里？ M\nA. 工作人员现在在那里。\nB. 我昨天和她谈过了。\nC. 设计甚至还没有完成。",
-    "content_translation": "EKW 我们把新手机的广告放在哪里？ M\nA. 工作人员现在在那里。\nB. 我昨天和她谈过了。\nC. 设计甚至还没有完成。"
+    "transcript": "Where will we place the ads for the new phone?\nA. The staff is there now.\nB. I spoke with her yesterday.\nC. The design isn't even finished yet.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c273ace384abb27d64c7b74ca1ce31cb5c58642668e00786c5ea2b0533bfaf42",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "我们把新手机的广告放在哪里？\nA. 工作人员现在在那里。\nB. 我昨天和她谈过了。\nC. 设计甚至还没有完成。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b9bb8e2ca4d71d3513e1befb25758de9a989f2ba0363f1e6c2e1f01933a5e439"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "The design isn't even finished yet."
       ],
       "answer": "C",
-      "question": "EKW Where will we place the ads for the new phone? M",
+      "question": "Where will we place the ads for the new phone?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“EKW Where will we place the ads for the new phone? M”，自然应答是“The design isn't even finished yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The design isn't even finished yet.）。",
-      "question_translation": "EKW 我们把新手机的广告放在哪里？ M",
+      "answer_explain": "原文依据：问句或陈述是“Where will we place the ads for the new phone?”，自然应答是“The design isn't even finished yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The design isn't even finished yet.）。",
+      "question_translation": "我们把新手机的广告放在哪里?",
       "choice_translations": [
         "A：工作人员现在在那里。",
         "B：我昨天和她谈过了。",
         "C：设计甚至还没有完成。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：EKW Where will we place the ads for the new phone? M",
+      "evidence": "参考原文第 1 段：Where will we place the ads for the new phone?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：EKW Where will we place the ads for the new phone? M",
+        "evidence": "参考原文第 1 段：Where will we place the ads for the new phone?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“EKW Where will we place the ads for the new phone? M”，自然应答是“The design isn't even finished yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The design isn't even finished yet.）。"
+        "analysis": "原文依据：问句或陈述是“Where will we place the ads for the new phone?”，自然应答是“The design isn't even finished yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The design isn't even finished yet.）。"
       },
       "item_id": 26,
       "priority": {

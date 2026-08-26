@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-1/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "我们不得不取消公司野餐会了。\nA. DG。\nB. 哪个餐饮服务？hO2 BaIC TID CMA TS\nC. 是的，他们办过一次。the eventélé#3lcHS 公司野餐会",
-    "content_translation": "我们不得不取消公司野餐会了。\nA. DG。\nB. 哪个餐饮服务？hO2 BaIC TID CMA TS\nC. 是的，他们办过一次。the eventélé#3lcHS 公司野餐会"
+    "transcript": "We'll have to cancel the company picnic.\nA. Two days before the event.\nB. Which catering service?\nC. Yes, they had one.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e9b140fccbab9a0fc804fb96990136b1fc06e45d26fe22c4b3b4b4d6948431bc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "我们将不得不取消公司野餐会。\nA. 事件前两天。\nB. 哪家餐饮服务？\nC. 是的，他们有一个。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "a40a4133e94d4a80c2bb2bad58fa9365323a537021f216739c23e941fe497879"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "DG.",
-        "Which catering service? hO2 BaIC TID CMA TS",
-        "Yes, they had one. the eventélé#3lcHS the company picnic"
+        "Two days before the event.",
+        "Which catering service?",
+        "Yes, they had one."
       ],
       "answer": "A",
-      "question": "Ew We'll have to cancel the company picnic. iS 3 Gio",
+      "question": "We'll have to cancel the company picnic.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew We'll have to cancel the company picnic. iS 3 Gio”，自然应答是“DG.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（DG.）。",
+      "answer_explain": "原文依据：问句或陈述是“We'll have to cancel the company picnic.”，自然应答是“Two days before the event.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Two days before the event.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew We'll have to cancel the company picnic. iS 3 Gio",
+      "evidence": "参考原文第 1 段：We'll have to cancel the company picnic.",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew We'll have to cancel the company picnic. iS 3 Gio",
+        "evidence": "参考原文第 1 段：We'll have to cancel the company picnic.",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Ew We'll have to cancel the company picnic. iS 3 Gio”，自然应答是“DG.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（DG.）。"
+        "analysis": "原文依据：问句或陈述是“We'll have to cancel the company picnic.”，自然应答是“Two days before the event.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Two days before the event.）。"
       },
-      "question_translation": "我们不得不取消公司野餐会了。",
+      "question_translation": "我们将不得不取消公司野餐会。",
       "choice_translations": [
-        "A：DG。",
-        "B：哪个餐饮服务？hO2 BaIC TID CMA TS",
-        "C：是的，他们办过一次。the eventélé#3lcHS 公司野餐会"
+        "A：事件前两天。",
+        "B：哪家餐饮服务?",
+        "C：是的,他们有一个。"
       ],
       "item_id": 29,
       "priority": {

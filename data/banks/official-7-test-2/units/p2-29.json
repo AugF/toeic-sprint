@@ -26,38 +26,58 @@
       "asset_key": "official-7-test-2/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） is the new printer being installed?\nw",
-    "content_translation": "中文辅助（离线预处理）：Where（哪里） is the new printer being installed?\nw"
+    "transcript": "Where is the new printer being installed?\nA. 20 color copies, please.\nB. The manager didn't approve that purchase.\nC. I already downloaded the program.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0759a3bd964840e3423e32fa23f265cb1659e6a59aa116fa9a73e00e6e8908d6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "新的打印机安装在哪里？\nA. 20 张彩色复印件，请。\nB. 经理没有批准这项购买。\nC. 我已经下载了程序。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4cde3b0bff9ffa2369990a088fee4d7a5cc53e804facd465ebfd3efeacab1bbd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Twenty color copies, please.",
+        "20 color copies, please.",
         "The manager didn't approve that purchase.",
         "I already downloaded the program."
       ],
       "answer": "B",
-      "question": "Where is the new printer being installed? w",
+      "question": "Where is the new printer being installed?",
       "difficulty": "easy",
       "topic": "地点询问",
       "keywords": "where location response",
-      "answer_explain": "原文依据：问句或陈述是“Where is the new printer being installed? w”，自然应答是“The manager didn't approve that purchase.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The manager didn't approve that purchase.）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the new printer being installed?\nw",
+      "answer_explain": "原文依据：问句或陈述是“Where is the new printer being installed?”，自然应答是“The manager didn't approve that purchase.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The manager didn't approve that purchase.）。",
+      "question_translation": "新的打印机安装在哪里?",
       "choice_translations": [
-        "A：Twenty color copies, please（请）.",
-        "B：The manager（经理） didn't approve that purchase（购买）.",
-        "C：I already downloaded the program."
+        "A：20 张彩色复印件,请。",
+        "B：经理没有批准这项购买。",
+        "C：我已经下载了程序。"
       ],
       "question_type": "地点疑问句",
-      "evidence": "参考原文第 1 段：Where is the new printer being installed? w",
+      "evidence": "参考原文第 1 段：Where is the new printer being installed?",
       "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "地点疑问句",
-        "evidence": "参考原文第 1 段：Where is the new printer being installed? w",
+        "evidence": "参考原文第 1 段：Where is the new printer being installed?",
         "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Where is the new printer being installed? w”，自然应答是“The manager didn't approve that purchase.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The manager didn't approve that purchase.）。"
+        "analysis": "原文依据：问句或陈述是“Where is the new printer being installed?”，自然应答是“The manager didn't approve that purchase.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The manager didn't approve that purchase.）。"
       },
       "item_id": 29,
       "priority": {

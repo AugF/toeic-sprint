@@ -40,9 +40,33 @@
       "asset_key": "official-11-test-1/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "I'll be conducting a refresher training for all certified forklift\noperators in the warehouse next week, but I need to make\nyou aware of a few things now. It's come to my attention\nthat only the crew working the morning shift has been\ncompleting the forklift inspection checklist. However,\nthe forklifts must be inspected at the beginning of every\neight-hour shift. That's three times a day. Also, if you notice\nanything that isn't functioning properly, please don't forget to\ndocument it. We have a logbook on the wall over there for\nthis purpose.",
-    "transcript_translation": "下周，我将为仓库内所有持证的叉车操作员进行复训，不过有几件事我现在就需要提醒大家。我注意到，目前只有早班员工完成了叉车检查清单。然而，每个八小时班次开始时都必须检查叉车，也就是每天三次。另外，如果你发现任何设备功能异常，请不要忘记记录。那边墙上挂着一本日志，专门用来记录这些问题。",
-    "content_translation": "本段听力围绕“仓储安全说明”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "I'll be conducting a refresher training for all certified forklift operators in the warehouse next week, but I need to make you aware of a few things now.\nIt's come to my attention that only the crew working the morning shift has been completing the forklift inspection checklist.\nHowever, the forklifts must be inspected at the... beginning of every eight-hour shift.\nThat's three times a day.\nAlso, if you notice anything that isn't functioning properly, please don't forget to document it.\nWe have a logbook on the wall over there for this purpose.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "a68e836a4161ff2ea47ed9f4ce299601b53b66fe3e7decddc187e7d5ac512820",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 93,
+        "legacy_word_count": 92,
+        "length_ratio": 1.011,
+        "legacy_coverage": 0.989,
+        "prompted_failure": "audio transcript appears truncated (ratio=0.28, coverage=0.43)"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "我下周将在仓库为所有认证的叉车操作员进行一次复习培训，但现在需要提醒你几件事。\n我的注意是只有上早班的员工完成了叉车检查清单。\n然而，叉车必须在...每个八小时轮班开始时进行检查。\n那是每天三次。\n另外，如果你注意到任何功能不正常的地方，请不要忘记记录下来。\n我们在那面墙上有本日志册用于此目的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ab78a372f5f213262b748dd2160544f6a68047c1255b3476cb143d67375eb7f3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,24 +78,24 @@
         "Medical assistants"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：讲话面向 certified forklift operators in the warehouse。 选择理由：最可能的听众是仓库工人，对应C。正确答案：C（Warehouse workers）。",
+      "answer_explain": "正确答案：C（Warehouse workers）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 1 段第 1 句：I'll be conducting a refresher training for all certified forklift",
+      "evidence": "参考听力原文：“I'll be conducting a refresher training for all certified forklift operators in the warehouse next week, but I need to make you aware of a few things now.”",
       "choice_translations": [
-        "A：空乘人员",
-        "B：护林员",
-        "C：仓库工作人员",
-        "D：医疗助理"
+        "A:空乘人员",
+        "B:护林员",
+        "C:仓库工作人员",
+        "D:医疗助理"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 1 段第 1 句：I'll be conducting a refresher training for all certified forklift",
+        "evidence": "参考听力原文：“I'll be conducting a refresher training for all certified forklift operators in the warehouse next week, but I need to make you aware of a few things now.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：讲话面向 certified forklift operators in the warehouse。 选择理由：最可能的听众是仓库工人，对应C。正确答案：C（Warehouse workers）。"
+        "analysis": "正确答案：C（Warehouse workers）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "听众最可能是什么人？",
+      "question_translation": "听众最可能是什么人?",
       "item_id": 86,
       "priority": {
         "level": "P1",
@@ -107,24 +131,24 @@
         "To complain about a policy"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：每个eight-hour shift都要检查叉车，随后解释 That's three times a day。 选择理由：这句话是在明确每天三次的检查责任，对应C。正确答案：C（To clarify a responsibility）。",
+      "answer_explain": "正确答案：C（To clarify a responsibility）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段第 1 句：eight-hour shift. That's three times a day. Also, if you notice",
+      "evidence": "参考听力原文：“That's three times a day.”",
       "choice_translations": [
-        "A：为了质疑一项新流程",
-        "B：为了提倡练习一项技能",
-        "C：为了说明清楚一项职责",
-        "D：为了抱怨一项政策"
+        "A:为了质疑一项新流程",
+        "B:为了提倡练习一项技能",
+        "C:为了说明清楚一项职责",
+        "D:为了抱怨一项政策"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段第 1 句：eight-hour shift. That's three times a day. Also, if you notice",
+        "evidence": "参考听力原文：“That's three times a day.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：每个eight-hour shift都要检查叉车，随后解释 That's three times a day。 选择理由：这句话是在明确每天三次的检查责任，对应C。正确答案：C（To clarify a responsibility）。"
+        "analysis": "正确答案：C（To clarify a responsibility）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者为什么说“也就是每天三次”？",
+      "question_translation": "说话者为什么说“也就是每天三次”?",
       "item_id": 87,
       "priority": {
         "level": "P1",
@@ -160,24 +184,24 @@
         "Driving distances"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：如发现 anything that isn't functioning properly，要记录在logbook。 选择理由：记录的是机械故障，对应C。正确答案：C（Mechanical issues）。",
+      "answer_explain": "正确答案：C（Mechanical issues）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段第 1 句：document it. We have a logbook on the wall over there for",
+      "evidence": "参考听力原文：“We have a logbook on the wall over there for this purpose.”",
       "choice_translations": [
-        "A：用品库存",
-        "B：培训时数",
-        "C：机械故障",
-        "D：驾驶距离"
+        "A:用品库存",
+        "B:培训时数",
+        "C:机械故障",
+        "D:驾驶距离"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段第 1 句：document it. We have a logbook on the wall over there for",
+        "evidence": "参考听力原文：“We have a logbook on the wall over there for this purpose.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：如发现 anything that isn't functioning properly，要记录在logbook。 选择理由：记录的是机械故障，对应C。正确答案：C（Mechanical issues）。"
+        "analysis": "正确答案：C（Mechanical issues）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "听众被要求在日志中记录什么？",
+      "question_translation": "听众被要求在日志中记录什么?",
       "item_id": 88,
       "priority": {
         "level": "P1",

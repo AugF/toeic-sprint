@@ -27,14 +27,34 @@
       "asset_key": "official-6-test-2/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Would you like to look at the report before I submit it?",
-    "content_translation": "中文辅助（离线预处理）：Would you like to look at the report before I submit it?"
+    "transcript": "Would you like to look at the report before I submit it?\nA. I saw that play yesterday.\nB. Yes, just email it to me.\nC. She's already been there.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6946b4133bbd0f05ec3cf81cab9cb39cc9959398867841dc9e5ddb530aceb7bf",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "在我提交它之前，你想看看这份报告吗？\nA. 我昨天看了那部电影。\nB. 是的，直接发邮件给我就行。\nC. 她已经去过那里了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b4fcb5aa5589f923dcd72a333cef1500c4feb0a1f4f44f15fd76380e3cfd3d76"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "I saw that play yesterday.",
-        "Yes, just e-mail it to me.",
+        "Yes, just email it to me.",
         "She's already been there."
       ],
       "answer": "B",
@@ -42,12 +62,12 @@
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Would you like to look at the report before I submit it?”，自然应答是“Yes, just e-mail it to me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, just e-mail it to me.）。",
-      "question_translation": "中文辅助（离线预处理）：Would you like to look at the report before I submit it?",
+      "answer_explain": "原文依据：问句或陈述是“Would you like to look at the report before I submit it?”，自然应答是“Yes, just email it to me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, just email it to me.）。",
+      "question_translation": "在我提交它之前,你想看看这份报告吗?",
       "choice_translations": [
-        "A：I saw that play yesterday.",
-        "B：Yes, just e-mail it to me.",
-        "C：She's already been there."
+        "A：我昨天看了那部电影。",
+        "B：是的,直接发邮件给我就行。",
+        "C：她已经去过那里了。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Would you like to look at the report before I submit it?",
@@ -58,7 +78,7 @@
         "question_type": "一般疑问句",
         "evidence": "参考原文第 1 段：Would you like to look at the report before I submit it?",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Would you like to look at the report before I submit it?”，自然应答是“Yes, just e-mail it to me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, just e-mail it to me.）。"
+        "analysis": "原文依据：问句或陈述是“Would you like to look at the report before I submit it?”，自然应答是“Yes, just email it to me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, just email it to me.）。"
       },
       "item_id": 26,
       "priority": {

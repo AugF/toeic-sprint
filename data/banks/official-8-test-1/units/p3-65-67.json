@@ -40,9 +40,31 @@
       "asset_key": "official-8-test-1/audio/part3/q065-067.mp3",
       "exists": true
     },
-    "transcript": "and report.\nElEw Alonso, ®do ycu have an update on the status of the\nWoodWorks LLC shipment from Australia? ®We need\nto deliver their timber and building materials by October\ntenth. Are we going to meet the deadline?\nB m I think so, ®but we probably shouldn't ship that timber\nto the port we typically use. ® The average wait time at\nthe port is 53 hours. It's too long.\nEw Well, ® that was last week. So, before we make any\nchanges, we should follow up with the port authority\ndirector.\nReport on Port Congestion\nPort Location\nWait Time (in Hours)\nBa)\nTokyo\nOsaka\nNagoya\nShimonoseki\nFIN",
-    "transcript_translation": "中文辅助（离线预处理）：and report.\nElEw Alonso, ®do ycu have an update on the status of the\nWoodWorks LLC shipment from Australia?\n®We need\nto deliver their timber and building materials by October\ntenth.\nAre we going to meet the deadline?\nB m I think so, ®but we probably（可能） shouldn't ship that timber\nto the port we typically use.\n® The average wait time at\nthe port is 53 hours.\nIt's too long.\nEw Well, ® that was last week.\nSo, before we make any\nchanges, we should follow up with the port authority\ndirector.\nReport on Port Congestion\nPort Location\nWait Time (in Hours)\nBa)\nTokyo\nOsaka\nNagoya\nShimonoseki\nFIN",
-    "content_translation": "中文辅助（离线预处理）：and report.\nElEw Alonso, ®do ycu have an update on the status of the\nWoodWorks LLC shipment from Australia?\n®We need\nto deliver their timber and building materials by October\ntenth.\nAre we going to meet the deadline?\nB m I think so, ®but we probably（可能） shouldn't ship that timber\nto the port we typically use.\n® The average wait time at\nthe port is 53 hours.\nIt's too long.\nEw Well, ® that was last week.\nSo, before we make any\nchanges, we should follow up with the port authority\ndirector.\nReport on Port Congestion\nPort Location\nWait Time (in Hours)\nBa)\nTokyo\nOsaka\nNagoya\nShimonoseki\nFIN"
+    "transcript": "and report.\nAlonso, do you have an update on the status of the Woodworks LLC shipment from Australia?\nWe need to deliver their timber and building materials by October 10th.\nAre we going to meet the deadline?\nI think so, but we probably shouldn't ship that timber to the port we typically use.\nThe average wait time at the port is 53 hours.\nIt's too long.\nWell, that was last week.\nSo, before we make any changes, we should follow up with the Port Authority Director.\nThank you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "299fa4cb1be37d26fa410c3b8988fab9c86a48c14c50b286168acaa13420fc53",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 87,
+        "legacy_word_count": 103,
+        "length_ratio": 0.845,
+        "legacy_coverage": 0.864
+      }
+    },
+    "transcript_translation": "和报告。\nAlonso，你有没有关于来自澳大利亚的 Woodworks LLC 货物的最新情况？\n我们需要在 10 月 10 日之前运送他们的木材和建筑材料。\n我们能赶上这个期限吗？\n我想可以，但我们可能不应该把那批木材运到我们通常使用的港口。\n港口的平均等待时间是 53 小时。\n太久了。\n嗯，那是上周的事了。\n所以，在我们做任何改变之前，我们应该跟进一下港务局主任。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3906e0014d0dffa0b0889d4e8da8a628144bbf05ff95d78fa44c6185adb9ee31"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "D",
       "question": "According to the speakers, what are the contents of a shipment?",
-      "answer_explain": "原文依据：听力原文中提到“to deliver their timber and building materials by October”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Construction materials）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speakers, what（什么） are the contents of a shipment?",
+      "answer_explain": "正确答案：D（Construction materials）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speakers, what(什么) are the contents of a shipment?",
       "choice_translations": [
-        "A：Books",
-        "B：Clothing",
-        "C：Sports equipment",
-        "D：Construction materials"
+        "A:Books",
+        "B:Clothing",
+        "C:Sports equipment",
+        "D:Construction materials"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：WoodWorks LLC shipment from Australia? ®We need",
+      "evidence": "参考听力原文：“Alonso, do you have an update on the status of the Woodworks LLC shipment from Australia?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：WoodWorks LLC shipment from Australia? ®We need",
+        "evidence": "参考听力原文：“Alonso, do you have an update on the status of the Woodworks LLC shipment from Australia?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“to deliver their timber and building materials by October”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Construction materials）。"
+        "analysis": "正确答案：D（Construction materials）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 65,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "B",
       "question": "Look at the graphic. Which port do the speakers usually use?",
-      "answer_explain": "原文依据：听力原文中提到“Osaka”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Osaka）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich port do the speakers usually use?",
+      "answer_explain": "正确答案：B（Osaka）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which port do the speakers usually use?",
       "choice_translations": [
-        "A：Tokyo",
-        "B：Osaka",
-        "C：Nagoya",
-        "D：Shimonoseki"
+        "A:Tokyo",
+        "B:Osaka",
+        "C:Nagoya",
+        "D:Shimonoseki"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and report.",
+      "evidence": "参考听力原文：“I think so, but we probably shouldn't ship that timber to the port we typically use.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and report.",
+        "evidence": "参考听力原文：“I think so, but we probably shouldn't ship that timber to the port we typically use.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Osaka”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Osaka）。"
+        "analysis": "正确答案：B（Osaka）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 66,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "A",
       "question": "What will the speakers most likely do?",
-      "answer_explain": "原文依据：听力原文中提到“director.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Contact a director）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the speakers most likely（最可能） do?",
+      "answer_explain": "正确答案：A（Contact a director）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the speakers most likely(最可能) do?",
       "choice_translations": [
-        "A：Contact a director",
-        "B：Submit a report",
-        "C：Meet with a client",
-        "D：Change a deadline"
+        "A:Contact a director",
+        "B:Submit a report",
+        "C:Meet with a client",
+        "D:Change a deadline"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：and report.",
+      "evidence": "参考听力原文：“So, before we make any changes, we should follow up with the Port Authority Director.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：and report.",
+        "evidence": "参考听力原文：“So, before we make any changes, we should follow up with the Port Authority Director.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“director.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Contact a director）。"
+        "analysis": "正确答案：A（Contact a director）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 67,
       "priority": {

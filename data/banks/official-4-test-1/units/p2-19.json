@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-1/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：M Aren't we putting these books on sale next w Ew",
-    "content_translation": "中文辅助（离线预处理）：M Aren't we putting these books on sale next w Ew"
+    "transcript": "Aren't we putting these books on sale next week?\nA. Yes, they'll be 40% off.\nB. No, I booked a trip for this week.\nC. That's one of my favorite books.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "60f7ebca60350316382ab5da4eef7e90449d272b5f01aa90fad6a0da980ad5ba",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "我们不是下周要将这些书打折吗？\nA. 是的，它们将有八折优惠。\nB. 不，我预订了本周的旅行。\nC. 这是我最喜欢的书之一。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f06deaaee51e19f917696b0aa0c53605aef3dcc28f3fac0be33b3520e5c0f65a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Yes, they'll be 40 percent off.",
-        "No, | booked a trip for this week.",
-        "That’s one of my favorite books."
+        "Yes, they'll be 40% off.",
+        "No, I booked a trip for this week.",
+        "That's one of my favorite books."
       ],
       "answer": "A",
-      "question": "M Aren't we putting these books on sale next w Ew",
+      "question": "Aren't we putting these books on sale next week?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M Aren't we putting these books on sale next w Ew”，自然应答是“Yes, they'll be 40 percent off.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, they'll be 40 percent off.）。",
-      "question_translation": "中文辅助（离线预处理）：M Aren't we putting these books on sale next w Ew",
+      "answer_explain": "原文依据：问句或陈述是“Aren't we putting these books on sale next week?”，自然应答是“Yes, they'll be 40% off.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, they'll be 40% off.）。",
+      "question_translation": "我们不是下周要将这些书打折吗?",
       "choice_translations": [
-        "A：Yes, they'll be 40 percent off.",
-        "B：No, | booked a trip for this week.",
-        "C：That’s one of my favorite books."
+        "A：是的,它们将有八折优惠。",
+        "B：不,我预订了本周的旅行。",
+        "C：这是我最喜欢的书之一。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：M Aren't we putting these books on sale next w Ew",
+      "evidence": "参考原文第 1 段：Aren't we putting these books on sale next week?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：M Aren't we putting these books on sale next w Ew",
+        "evidence": "参考原文第 1 段：Aren't we putting these books on sale next week?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“M Aren't we putting these books on sale next w Ew”，自然应答是“Yes, they'll be 40 percent off.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, they'll be 40 percent off.）。"
+        "analysis": "原文依据：问句或陈述是“Aren't we putting these books on sale next week?”，自然应答是“Yes, they'll be 40% off.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, they'll be 40% off.）。"
       },
       "item_id": 19,
       "priority": {

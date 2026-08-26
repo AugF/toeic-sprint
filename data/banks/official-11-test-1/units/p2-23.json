@@ -42,28 +42,48 @@
       "asset_key": "official-11-test-1/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "宴会邀请函上的日期是哪一天？\nA：市中心的一个地点。\nB：在打印机旁边的桌子上。\nC：四月十四日。",
-    "content_translation": "本段听力围绕“时间询问”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "What's the date on the invitation to the banquet?\nA. A location in the city centre.\nB. On the desk by the printer.\nC. April 14th.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "955e32ac53c41f48f9b6171b7ac611c134aa5c714f6976544ffb1a7052ba9106",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "宴会邀请函上的日期是什么？\nA. 市中心的地点。\nB. 打印机旁边的桌子上。\nC. 4月14日。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c79979e8a5c2b894343882373bab3bff046e612df58232939bf9132cd692c459"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "question": "What's the date on the invitation to the banquet?",
       "choices": [
-        "A location in the city center.",
+        "A location in the city centre.",
         "On the desk by the printer.",
-        "April fourteenth."
+        "April 14th."
       ],
       "answer": "C",
       "difficulty": "easy",
       "topic": "时间询问",
       "keywords": "when date time response",
-      "answer_explain": "原文依据：What's the date询问宴会邀请函日期，答句为 April fourteenth。 选择理由：C直接给出日期；A是地点，B是物品位置。正确答案：C（April fourteenth.）。",
+      "answer_explain": "原文依据：What's the date询问宴会邀请函日期，答句为 April fourteenth。 选择理由：C直接给出日期；A是地点，B是物品位置。正确答案：C（April 14th.）。",
       "question_type": "时间疑问句",
       "evidence": "参考原文第 1 段第 1 句：What's the date on the invitation to the banquet?",
       "choice_translations": [
-        "A：市中心的一个地点。",
-        "B：在打印机旁边的桌子上。",
-        "C：四月十四日。"
+        "A：市中心的地点。",
+        "B：打印机旁边的桌子上。",
+        "C：4月14日。"
       ],
       "response_style": "应直接提供疑问词所要求的信息，也要留意自然的间接回答",
       "strategy": "先判断为特殊疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
@@ -72,9 +92,9 @@
         "question_type": "特殊疑问句",
         "evidence": "参考原文第 1 段第 1 句：What's the date on the invitation to the banquet?",
         "strategy": "先判断为特殊疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
-        "analysis": "原文依据：What's the date询问宴会邀请函日期，答句为 April fourteenth。 选择理由：C直接给出日期；A是地点，B是物品位置。正确答案：C（April fourteenth.）。"
+        "analysis": "原文依据：What's the date询问宴会邀请函日期，答句为 April fourteenth。 选择理由：C直接给出日期；A是地点，B是物品位置。正确答案：C（April 14th.）。"
       },
-      "question_translation": "宴会邀请函上的日期是哪一天？",
+      "question_translation": "宴会邀请函上的日期是什么?",
       "item_id": 23,
       "priority": {
         "level": "P3",

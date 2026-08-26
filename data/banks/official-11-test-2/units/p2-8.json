@@ -28,8 +28,28 @@
       "asset_key": "official-11-test-2/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：ERw Would you like me to help you hang the wallpaper?\n฿ m",
-    "content_translation": "中文辅助（离线预处理）：ERw Would you like me to help you hang the wallpaper?\n฿ m"
+    "transcript": "Would you like me to help you hang the wallpaper?\nA. It's a striped pattern.\nB. Yes, I'd appreciate it.\nC. I'll print it out now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fcf7a9bbf3ac45a05827d7d394933ae30fd76dcb8d8dddd4b58a76a6a9c39880",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "你想让我帮你挂壁纸吗？\nA. 它是一种条纹图案。\nB. 是的，我很感激。\nC. 我现在打印出来。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2857c2306ccd6284fb9bc0e90fb7939ced23ac6f97ab5a885e9863f33ebbc13b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "I'll print it out now."
       ],
       "answer": "B",
-      "question": "ERw Would you like me to help you hang the wallpaper? ฿ m",
+      "question": "Would you like me to help you hang the wallpaper?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述为“ERw Would you like me to help you hang the wallpaper? ฿ m”，官方正确应答是“Yes, I'd appreciate it.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（Yes, I'd appreciate it.）。",
-      "question_translation": "中文辅助（离线预处理）：ERw Would you like me to help you hang the wallpaper?\n฿ m",
+      "answer_explain": "原文依据：问句或陈述为“Would you like me to help you hang the wallpaper?”，官方正确应答是“Yes, I'd appreciate it.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（Yes, I'd appreciate it.）。",
+      "question_translation": "你想让我帮你挂壁纸吗?",
       "choice_translations": [
-        "A：It's a striped pattern.",
-        "B：Yes, I'd appreciate it.",
-        "C：I'll print it out now."
+        "A：它是一种条纹图案。",
+        "B：是的,我很感激。",
+        "C：我现在打印出来。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：ERw Would you like me to help you hang the wallpaper? ฿ m",
+      "evidence": "参考原文第 1 段：Would you like me to help you hang the wallpaper?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：ERw Would you like me to help you hang the wallpaper? ฿ m",
+        "evidence": "参考原文第 1 段：Would you like me to help you hang the wallpaper?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“ERw Would you like me to help you hang the wallpaper? ฿ m”，官方正确应答是“Yes, I'd appreciate it.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（Yes, I'd appreciate it.）。"
+        "analysis": "原文依据：问句或陈述为“Would you like me to help you hang the wallpaper?”，官方正确应答是“Yes, I'd appreciate it.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（Yes, I'd appreciate it.）。"
       },
       "item_id": 8,
       "priority": {

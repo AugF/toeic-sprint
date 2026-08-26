@@ -27,8 +27,28 @@
       "asset_key": "official-9-test-1/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Why（为什么） has the conference room been reserved all day?\nle[M",
-    "content_translation": "中文辅助（离线预处理）：Ew Why（为什么） has the conference room been reserved all day?\nle[M"
+    "transcript": "Why has the conference room been reserved all day?\nA. A table on the patio, please.\nB. No, but I have a pen you could borrow.\nC. Do you need a meeting space?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "882b3f17e9db04ffed1dc52c8163f15fb616a59110b8e6f2ea960f430b668027",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 34
+      }
+    },
+    "transcript_translation": "为什么会议室被预订了一整天？\nA. 请在庭院找一张桌子。\nB. 不，但我有一支你可以借的笔。\nC. 你需要一个会议空间吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5f723337f365bee24bc6dc28fe6c9eff32bc34e590f9a3982adfe32dd785f6e8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "Do you need a meeting space?"
       ],
       "answer": "C",
-      "question": "Ew Why has the conference room been reserved all day? le[M",
+      "question": "Why has the conference room been reserved all day?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Why has the conference room been reserved all day? le[M”，自然应答是“Do you need a meeting space?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you need a meeting space?）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Why（为什么） has the conference room been reserved all day?\nle[M",
+      "answer_explain": "原文依据：问句或陈述是“Why has the conference room been reserved all day?”，自然应答是“Do you need a meeting space?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you need a meeting space?）。",
+      "question_translation": "为什么会议室被预订了一整天?",
       "choice_translations": [
-        "A：A table on the patio, please（请）.",
-        "B：No, but I have a pen you could borrow.",
-        "C：Do you need a meeting（会议） space?"
+        "A：请在庭院找一张桌子。",
+        "B：不,但我有一支你可以借的笔。",
+        "C：你需要一个会议空间吗?"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Why has the conference room been reserved all day? le[M",
+      "evidence": "参考原文第 1 段：Why has the conference room been reserved all day?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Why has the conference room been reserved all day? le[M",
+        "evidence": "参考原文第 1 段：Why has the conference room been reserved all day?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Why has the conference room been reserved all day? le[M”，自然应答是“Do you need a meeting space?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you need a meeting space?）。"
+        "analysis": "原文依据：问句或陈述是“Why has the conference room been reserved all day?”，自然应答是“Do you need a meeting space?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you need a meeting space?）。"
       },
       "item_id": 24,
       "priority": {

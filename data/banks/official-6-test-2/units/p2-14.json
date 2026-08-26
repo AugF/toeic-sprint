@@ -26,8 +26,28 @@
       "asset_key": "official-6-test-2/audio/part2/q014.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：When（何时） are you going to update Mr.\nSalem's contact information（信息）?",
-    "content_translation": "中文辅助（离线预处理）：When（何时） are you going to update Mr.\nSalem's contact information（信息）?"
+    "transcript": "When are you going to update Mr. Salim's contact information?\nA. By this Friday.\nB. In the filing cabinet.\nC. I don't have any to lend you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "06c4b57843b79509f73906799c2bc1b7f716c4d333e8b05f3280428911fc5c34",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q014.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "你什么时候更新萨利姆先生的联系信息？\nA. 在本周五之前。\nB. 在档案柜里。\nC. 我没有可以借给你的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "322e55506cf9e7b9fd2f101333440cbd654ae5107b2fb15f57603e12e3406785"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "I don't have any to lend you."
       ],
       "answer": "A",
-      "question": "When are you going to update Mr. Salem's contact information?",
+      "question": "When are you going to update Mr. Salim's contact information?",
       "difficulty": "easy",
       "topic": "时间询问",
       "keywords": "when time response",
-      "answer_explain": "原文依据：问句或陈述是“When are you going to update Mr. Salem's contact information?”，自然应答是“By this Friday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（By this Friday.）。",
-      "question_translation": "中文辅助（离线预处理）：When（何时） are you going to update Mr.\nSalem's contact information（信息）?",
+      "answer_explain": "原文依据：问句或陈述是“When are you going to update Mr. Salim's contact information?”，自然应答是“By this Friday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（By this Friday.）。",
+      "question_translation": "你什么时候更新萨利姆先生的联系信息?",
       "choice_translations": [
-        "A：By this Friday.",
-        "B：In the filing cabinet.",
-        "C：I don't have any to lend you."
+        "A：在本周五之前。",
+        "B：在档案柜里。",
+        "C：我没有可以借给你的。"
       ],
       "question_type": "时间疑问句",
-      "evidence": "参考原文第 1 段：When are you going to update Mr. Salem's contact information?",
+      "evidence": "参考原文第 1 段：When are you going to update Mr. Salim's contact information?",
       "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "时间疑问句",
-        "evidence": "参考原文第 1 段：When are you going to update Mr. Salem's contact information?",
+        "evidence": "参考原文第 1 段：When are you going to update Mr. Salim's contact information?",
         "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“When are you going to update Mr. Salem's contact information?”，自然应答是“By this Friday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（By this Friday.）。"
+        "analysis": "原文依据：问句或陈述是“When are you going to update Mr. Salim's contact information?”，自然应答是“By this Friday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（By this Friday.）。"
       },
       "item_id": 14,
       "priority": {

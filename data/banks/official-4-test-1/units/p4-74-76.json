@@ -39,37 +39,59 @@
       "asset_key": "official-4-test-1/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "iu\nrd like to update the management team on the new fru\ndrink that our product developers have been working on.\nThere are two different recipes we’re considering: one\nusing sugar, and the other using honey as a sweetener. E\nwe're not sure which recipe to use in production—the\none using honey would cost more, but it has a very speci\nflavor. The marketing department will conduct some\nresearch with a focus group to find out which drink recipe\ncustomers prefer. This research will be conducted next\nweek, and then we'll have the information we need to ma\na decision.",
-    "transcript_translation": "中文辅助（离线预处理）：iu\nrd like to update the management team on the new fru\ndrink that our product developers have been working on.\nThere are two different recipes we’re considering: one\nusing sugar, and the other using honey as a sweetener.\nE\nwe're not sure which recipe to use in production—the\none using honey would cost more, but it has a very speci\nflavor.\nThe marketing department will conduct some\nresearch with a focus group to find out which drink recipe\ncustomers prefer.\nThis research will be conducted next\nweek, and then we'll have the information（信息） we need to ma\na decision.",
-    "content_translation": "中文辅助（离线预处理）：iu\nrd like to update the management team on the new fru\ndrink that our product developers have been working on.\nThere are two different recipes we’re considering: one\nusing sugar, and the other using honey as a sweetener.\nE\nwe're not sure which recipe to use in production—the\none using honey would cost more, but it has a very speci\nflavor.\nThe marketing department will conduct some\nresearch with a focus group to find out which drink recipe\ncustomers prefer.\nThis research will be conducted next\nweek, and then we'll have the information（信息） we need to ma\na decision."
+    "transcript": "I'd like to update the management team on the new fruit drink that our product developers have been working on.\nThere are two different recipes we're considering, one using sugar and the other using honey as a sweetener.\nBut we're not sure which recipe to use in production.\nThe one using honey would cost more, but it has a very special flavor.\nThe marketing department will conduct some research with a focus group to find out which drink recipe customers prefer.\nThis research will be conducted next week, and then we'll have the information we need to make a decision.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4947dd9379317a6ff1978bb58456f11ade7d3b6d41c4d35bf7e7f6e87bf7f0c3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 100,
+        "legacy_word_count": 100,
+        "length_ratio": 1,
+        "legacy_coverage": 0.95
+      }
+    },
+    "transcript_translation": "我想向管理团队汇报一下我们的产品开发人员正在研究的新果汁饮品。\n我们正在考虑两种不同的配方，一种使用糖，另一种使用蜂蜜作为甜味剂。\n但我们不确定应该在生产中使用哪种配方。\n用蜂蜜的成本会更高，但它有一种非常特别的味道。\n市场部将与焦点小组进行一些研究，以了解客户更喜欢哪种饮品配方。\n这项研究将在下周进行，然后我们将获得做出决策所需的资料。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b3eff3304e08c6e3d4c07acdb63731541ef20e26e89543e13c00fc2813148246"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Acafé",
-        "Acandy bar",
+        "A café",
+        "A candy bar",
         "A fruit drink",
         "A cookbook"
       ],
       "answer": "C",
       "question": "What is the speaker mainly discussing?",
-      "answer_explain": "原文依据：听力原文中提到“research with a focus group to find out which drink recipe”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A fruit drink）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the speaker（说话者） mainly discussing?",
+      "answer_explain": "正确答案：C（A fruit drink）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the speaker(说话者) mainly discussing?",
       "choice_translations": [
-        "A：Acafé",
-        "B：Acandy bar",
-        "C：A fruit drink",
-        "D：A cookbook"
+        "A:A café",
+        "B:A candy bar",
+        "C:A fruit drink",
+        "D:A cookbook"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：iu",
+      "evidence": "参考听力原文：“I'd like to update the management team on the new fruit drink that our product developers have been working on.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：iu",
+        "evidence": "参考听力原文：“I'd like to update the management team on the new fruit drink that our product developers have been working on.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“research with a focus group to find out which drink recipe”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A fruit drink）。"
+        "analysis": "正确答案：C（A fruit drink）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker say needs to be decided?",
-      "answer_explain": "原文依据：听力原文中提到“we're not sure which recipe to use in production—the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Which recipe to use）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say needs to be decided?",
+      "answer_explain": "正确答案：A（Which recipe to use）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say needs to be decided?",
       "choice_translations": [
-        "A：Which recipe to use",
-        "B：When（何时） to start production",
-        "C：Where（哪里） to purchase（购买） ingredients",
-        "D：How（如何） much to charge for an item"
+        "A:Which recipe to use",
+        "B:When(何时) to start production",
+        "C:Where(哪里) to purchase(购买) ingredients",
+        "D:How(如何) much to charge for an item"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：iu",
+      "evidence": "参考听力原文：“But we're not sure which recipe to use in production.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：iu",
+        "evidence": "参考听力原文：“But we're not sure which recipe to use in production.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“we're not sure which recipe to use in production—the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Which recipe to use）。"
+        "analysis": "正确答案：A（Which recipe to use）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -152,28 +174,28 @@
       "choices": [
         "Some sales promotions",
         "Some market research",
-        "Aboard of directors meeting",
-        "Arestaurant opening"
+        "A board of directors meeting",
+        "A restaurant opening"
       ],
       "answer": "B",
       "question": "According to the speaker, what will take place next week?",
-      "answer_explain": "原文依据：听力原文中提到“This research will be conducted next”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some market research）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） will take place next week?",
+      "answer_explain": "正确答案：B（Some market research）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) will take place next week?",
       "choice_translations": [
-        "A：Some sales promotions",
-        "B：Some market research",
-        "C：Aboard of directors meeting（会议）",
-        "D：Arestaurant opening"
+        "A:Some sales promotions",
+        "B:Some market research",
+        "C:A board of directors meeting(会议)",
+        "D:A restaurant opening"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：iu",
+      "evidence": "参考听力原文：“This research will be conducted next week, and then we'll have the information we need to make a decision.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：iu",
+        "evidence": "参考听力原文：“This research will be conducted next week, and then we'll have the information we need to make a decision.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“This research will be conducted next”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some market research）。"
+        "analysis": "正确答案：B（Some market research）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

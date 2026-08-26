@@ -43,9 +43,32 @@
       "asset_key": "official-2-test-1/images/part3/q062-064.jpg",
       "exists": true
     },
-    "transcript": "Good morning, Ms. Lee. This is Clyde Anderson fror\nBusiness Global Magazine. ®\\'m writing an article on\nwaste reduction programs, and | understand your com\nhas made significant achievements in that regard at y\nmanufacturing plants.\nThat’s right. There are programs in place at our food p\nin both Shanghai and Mexico City. We've reduced tt\namount of packaging waste by 40 percent in the last y\nThat's quite impressive! Will you be implementing the\nprogram in the United States soon?\nWell, we'd like to. ®t might be hard to do at our\nCalifornia-based plant though. There are a lot of\nregulations to consider.\nSa",
-    "transcript_translation": "Lee女士，早上好。我是来自 Business Global Magazine 的 Clyde Anderson。我正在撰写一篇关于废物减少计划的文章，我了解到贵公司在制造工厂方面在这方面取得了显著的成就。\n是的。我们在上海和墨西哥城的食品厂都有实施的项目。过去一年，我们将包装废物的量减少了 40%。\n那相当令人印象深刻！你们很快会在美国推行这个项目吗？\n嗯，我们希望可以。不过在我们在加州的工厂可能有点困难。有很多规定需要考虑。\n萨",
-    "content_translation": "Lee女士，早上好。我是来自 Business Global Magazine 的 Clyde Anderson。我正在撰写一篇关于废物减少计划的文章，我了解到贵公司在制造工厂方面在这方面取得了显著的成就。\n是的。我们在上海和墨西哥城的食品厂都有实施的项目。过去一年，我们将包装废物的量减少了 40%。\n那相当令人印象深刻！你们很快会在美国推行这个项目吗？\n嗯，我们希望可以。不过在我们在加州的工厂可能有点困难。有很多规定需要考虑。\n萨"
+    "transcript": "Good morning, Ms. Lee.\nThis is Clyde Anderson from Business Global Magazine.\nI'm writing an article on waste reduction programs, and I understand your company has made significant achievements in that regard at your manufacturing plants.\nThat's right.\nThere are programs in place at our food plants in both Shanghai and Mexico City.\nWe've reduced the amount of packaging waste by 40% in the last year.\nThat's quite impressive.\nWill you be implementing the same program in the United States soon?\nWell, we'd like to.\nIt might be hard to do at our California-based plant, though.\nThere are a lot of regulations to consider.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "dbf0d3c4c7d138a394ed6e682e7adb77c51dea840d40231b2c6b443e7d78e76a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-1/audio/part3/q062-064.mp3",
+      "metrics": {
+        "word_count": 103,
+        "legacy_word_count": 103,
+        "length_ratio": 1,
+        "legacy_coverage": 0.903
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "李女士，早上好。\n我是来自 Business Global Magazine 的 Clyde Anderson。\n我正在撰写一篇关于废物减少计划的文章，我知道贵公司在制造工厂方面在这方面取得了显著成就。\n是的。\n我们在上海和墨西哥城两地的食品厂都有实施的计划。\n去年我们将包装废料减少了 40%。\n这相当令人印象深刻。\n您是否很快会在美国也实施同样的计划？\n嗯，我们希望如此。\n不过，在我们的加州工厂可能很难做到。\n有很多规定需要考虑。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d72dd50738b8d738d6af05a02db4c9765411eb3ddce4a5825d60b3ced124f68f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -57,23 +80,23 @@
       ],
       "answer": "B",
       "question": "What is the man’s job?",
-      "answer_explain": "原文依据：听力原文中提到“amount of packaging waste by 40 percent in the last y”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Journalist）。",
-      "question_translation": "男士的工作是什么？",
+      "answer_explain": "正确答案：B（Journalist）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士的工作是什么?",
       "choice_translations": [
-        "A：科学家",
-        "B：记者",
-        "C：市政官员",
-        "D：工程师"
+        "A:科学家",
+        "B:记者",
+        "C:市政官员",
+        "D:工程师"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 1 段：Good morning, Ms. Lee. This is Clyde Anderson fror",
+      "evidence": "参考听力原文：“I'm writing an article on waste reduction programs, and I understand your company has made significant achievements in that regard at your manufacturing plants.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 1 段：Good morning, Ms. Lee. This is Clyde Anderson fror",
+        "evidence": "参考听力原文：“I'm writing an article on waste reduction programs, and I understand your company has made significant achievements in that regard at your manufacturing plants.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“amount of packaging waste by 40 percent in the last y”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Journalist）。"
+        "analysis": "正确答案：B（Journalist）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 62,
       "priority": {
@@ -108,23 +131,23 @@
       ],
       "answer": "A",
       "question": "What has the company done during the past year?",
-      "answer_explain": "原文依据：听力原文中提到“amount of packaging waste by 40 percent in the last y”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Reduced waste a）。",
-      "question_translation": "过去一年公司做了什么？",
+      "answer_explain": "正确答案：A（Reduced waste a）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "过去一年公司做了什么?",
       "choice_translations": [
-        "A：减少了废物量",
-        "B：增加了销售额",
-        "C：启动了一个培训计划",
-        "D：推销了新产品"
+        "A:减少了废物量",
+        "B:增加了销售额",
+        "C:启动了一个培训计划",
+        "D:推销了新产品"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 1 段：Good morning, Ms. Lee. This is Clyde Anderson fror",
+      "evidence": "参考听力原文：“I'm writing an article on waste reduction programs, and I understand your company has made significant achievements in that regard at your manufacturing plants.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 1 段：Good morning, Ms. Lee. This is Clyde Anderson fror",
+        "evidence": "参考听力原文：“I'm writing an article on waste reduction programs, and I understand your company has made significant achievements in that regard at your manufacturing plants.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“amount of packaging waste by 40 percent in the last y”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Reduced waste a）。"
+        "analysis": "正确答案：A（Reduced waste a）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 63,
       "priority": {
@@ -159,23 +182,23 @@
       ],
       "answer": "B",
       "question": "Why does the woman say, “Well, we’d like to”?",
-      "answer_explain": "原文依据：听力原文中提到“Well, we'd like to.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To express doubt）。",
-      "question_translation": "女士说“嗯，我们希望可以”是什么意思？",
+      "answer_explain": "正确答案：B（To express doubt）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士说“嗯,我们希望可以”是什么意思?",
       "choice_translations": [
-        "A：接受一个提议",
-        "B：表达怀疑",
-        "C：请求意见",
-        "D：给予赞美"
+        "A:接受一个提议",
+        "B:表达怀疑",
+        "C:请求意见",
+        "D:给予赞美"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 1 段：Good morning, Ms. Lee. This is Clyde Anderson fror",
+      "evidence": "参考听力原文：“Well, we'd like to.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 1 段：Good morning, Ms. Lee. This is Clyde Anderson fror",
+        "evidence": "参考听力原文：“Well, we'd like to.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Well, we'd like to.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To express doubt）。"
+        "analysis": "正确答案：B（To express doubt）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 64,
       "priority": {

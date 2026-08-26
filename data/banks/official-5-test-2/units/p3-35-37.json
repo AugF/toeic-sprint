@@ -36,9 +36,31 @@
       "asset_key": "official-5-test-2/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "Hi, Esteban. • Thanks a lot for reviewing my\npresentation slides. Your comments were helpful.\nNo problem. I think your presentation will go really well.\nThanks. I spent a lot of time over the weekend working\non it. | hope your weekend was better than mine.\nh, mine was pretty good. I went to a cooking class\nat a restaurant downtown, and learned how to modify\nrecipes to make them healthier.\nThat sounds interesting. ® Which restaurant hosted the\nclass? I'd like to see if they have any more coming up.\nlt's called Henderson's Café. I'll send you a link to\ntheir Web site.",
-    "transcript_translation": "中文辅助（离线预处理）：Hi, Esteban.\n• Thanks a lot for reviewing my\npresentation slides.\nYour comments were helpful.\nNo problem.\nI think your presentation will go really well.\nThanks.\nI spent a lot of time over the weekend working\non it.\n| hope your weekend was better than mine.\nh, mine was pretty good.\nI went to a cooking class\nat a restaurant downtown, and learned how（如何） to modify\nrecipes to make them healthier.\nThat sounds interesting.\n® Which restaurant hosted the\nclass?\nI'd like to see if they have any more coming up.\nlt's called Henderson's Café.\nI'll send you a link to\ntheir Web site.",
-    "content_translation": "中文辅助（离线预处理）：Hi, Esteban.\n• Thanks a lot for reviewing my\npresentation slides.\nYour comments were helpful.\nNo problem.\nI think your presentation will go really well.\nThanks.\nI spent a lot of time over the weekend working\non it.\n| hope your weekend was better than mine.\nh, mine was pretty good.\nI went to a cooking class\nat a restaurant downtown, and learned how（如何） to modify\nrecipes to make them healthier.\nThat sounds interesting.\n® Which restaurant hosted the\nclass?\nI'd like to see if they have any more coming up.\nlt's called Henderson's Café.\nI'll send you a link to\ntheir Web site."
+    "transcript": "Hi Esteban.\nThanks a lot for reviewing my presentation slides.\nYour comments were helpful.\nNo problem.\nI think your presentation will go really well.\nThanks.\nI spent a lot of time over the weekend working on it.\nI hope your weekend was better than mine.\nOh, mine was pretty good.\nI went to a cooking class at a restaurant downtown and learned how to modify recipes to make them healthier.\nThat sounds interesting.\nWhich restaurant hosted the class?\nI'd like to see if they have any more coming up.\nIt's called Henderson's Cafe.\nI'll send you a link to their website.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "42245e359f4c2d83a6a6b5fbeb8bd347424fe8989eab0f79fbf5cce09c26a3ec",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 101,
+        "legacy_word_count": 98,
+        "length_ratio": 1.031,
+        "legacy_coverage": 0.929
+      }
+    },
+    "transcript_translation": "嗨，Esteban。\n非常感谢你审阅我的演示文稿幻灯片。\n你的评论很有帮助。\n没问题。\n我想你的演示会进行得很顺利。\n谢谢。\n我周末花了很多时间在上面工作。\n希望你的周末比我好。\n哦，我的挺好的。\n我去市中心一家餐厅上了一堂烹饪课，学了如何修改食谱使其更健康。\n听起来很有趣。\n是哪家餐厅举办的课程？\n我想看看他们是否还有其他课程。\n它叫Henderson's Cafe。\n我把他们的网站链接发给你。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2898c432452edc858d860276e567df6b01727c5a4db920bbac41fde10a39458d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "B",
       "question": "What did the man do for the woman?",
-      "answer_explain": "原文依据：听力原文中提到“I think your presentation will go really well.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（He reviewed a presentation.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） did the man（男士） do for the woman（女士）?",
+      "answer_explain": "正确答案：B（He reviewed a presentation.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) did the man(男士) do for the woman(女士)?",
       "choice_translations": [
-        "A：He picked up some supplies.",
-        "B：He reviewed a presentation.",
-        "C：He forwarded a meeting（会议） invitation.",
-        "D：He wrote a reference letter."
+        "A:He picked up some supplies.",
+        "B:He reviewed a presentation.",
+        "C:He forwarded a meeting(会议) invitation.",
+        "D:He wrote a reference letter."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, Esteban. • Thanks a lot for reviewing my",
+      "evidence": "参考听力原文：“I think your presentation will go really well.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, Esteban. • Thanks a lot for reviewing my",
+        "evidence": "参考听力原文：“I think your presentation will go really well.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I think your presentation will go really well.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（He reviewed a presentation.）。"
+        "analysis": "正确答案：B（He reviewed a presentation.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "A",
       "question": "What type of event did the man attend?",
-      "answer_explain": "原文依据：听力原文中提到“I went to a cooking class”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A cooking class）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of event did the man（男士） attend?",
+      "answer_explain": "正确答案：A（A cooking class）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of event did the man(男士) attend?",
       "choice_translations": [
-        "A：A cooking class",
-        "B：A sports competition",
-        "C：A book signing",
-        "D：A retirement dinner"
+        "A:A cooking class",
+        "B:A sports competition",
+        "C:A book signing",
+        "D:A retirement dinner"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, Esteban. • Thanks a lot for reviewing my",
+      "evidence": "参考听力原文：“I went to a cooking class at a restaurant downtown and learned how to modify recipes to make them healthier.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, Esteban. • Thanks a lot for reviewing my",
+        "evidence": "参考听力原文：“I went to a cooking class at a restaurant downtown and learned how to modify recipes to make them healthier.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I went to a cooking class”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A cooking class）。"
+        "analysis": "正确答案：A（A cooking class）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "C",
       "question": "What does the woman ask the man for?",
-      "answer_explain": "原文依据：听力原文中提到“I spent a lot of time over the weekend working”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The name of a business）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） ask the man（男士） for?",
+      "answer_explain": "正确答案：C（The name of a business）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) ask the man(男士) for?",
       "choice_translations": [
-        "A：The ingredients for a recipe",
-        "B：A colleague's address",
-        "C：The name of a business",
-        "D：The time of a workshop"
+        "A:The ingredients for a recipe",
+        "B:A colleague's address",
+        "C:The name of a business",
+        "D:The time of a workshop"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, Esteban. • Thanks a lot for reviewing my",
+      "evidence": "参考听力原文：“I went to a cooking class at a restaurant downtown and learned how to modify recipes to make them healthier.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, Esteban. • Thanks a lot for reviewing my",
+        "evidence": "参考听力原文：“I went to a cooking class at a restaurant downtown and learned how to modify recipes to make them healthier.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I spent a lot of time over the weekend working”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The name of a business）。"
+        "analysis": "正确答案：C（The name of a business）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

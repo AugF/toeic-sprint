@@ -27,8 +27,28 @@
       "asset_key": "official-6-test-1/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "你把清洁用品加到购物清单了吗？\nA. 是的，我加了。\nB. 一个新的电视广告。\nC. 厨房地板。",
-    "content_translation": "你把清洁用品加到购物清单了吗？\nA. 是的，我加了。\nB. 一个新的电视广告。\nC. 厨房地板。"
+    "transcript": "Did you add cleaning products to the shopping list?\nA. Yes, I did.\nB. A new television commercial.\nC. The kitchen floor.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5f03a1cb125cffb548ed00be2098a8d057ccf2df1d99531513d3268548896050",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "你在购物清单上加清洁用品了吗？\nA. 是的，我加了。\nB. 一个新的电视广告。\nC. 厨房地板。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b4e99b658d6cfc293faba85e50a7a78917751e78d51b96bc0a68339f072d09e1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,9 +63,9 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Did you add cleaning products to the shopping list?”，自然应答是“Yes, I did.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, I did.）。",
-      "question_translation": "你把清洁用品加到购物清单了吗？",
+      "question_translation": "你在购物清单上加清洁用品了吗?",
       "choice_translations": [
-        "A：是的，我加了。",
+        "A：是的,我加了。",
         "B：一个新的电视广告。",
         "C：厨房地板。"
       ],

@@ -28,8 +28,28 @@
       "asset_key": "official-8-test-2/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：3w Is there enough seating for the seminar?\nм",
-    "content_translation": "中文辅助（离线预处理）：3w Is there enough seating for the seminar?\nм"
+    "transcript": "Is there enough seating for the seminar?\nA. Yes, we added extra chairs in the back.\nB. A biology conference.\nC. Because I sat in economy class.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7b4ce96b7486d3537d799762cc82dfcba00a20d2522d5707ad0953bec1f72cc3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "研讨会够不够座位？\nA. 是的，我们在后面加了额外的椅子。\nB. 一个生物学会议。\nC. 因为我坐的是经济舱。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b063c3c41c485e435add22ec9a87840d8109c24b30fd4a7901bc101ca119852e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Because I sat in economy class."
       ],
       "answer": "A",
-      "question": "3w Is there enough seating for the seminar? м",
+      "question": "Is there enough seating for the seminar?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“3w Is there enough seating for the seminar? м”，自然应答是“Yes, we added extra chairs in the back.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, we added extra chairs in the back.）。",
-      "question_translation": "中文辅助（离线预处理）：3w Is there enough seating for the seminar?\nм",
+      "answer_explain": "原文依据：问句或陈述是“Is there enough seating for the seminar?”，自然应答是“Yes, we added extra chairs in the back.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, we added extra chairs in the back.）。",
+      "question_translation": "研讨会够不够座位?",
       "choice_translations": [
-        "A：Yes, we added extra chairs in the back.",
-        "B：A biology conference.",
-        "C：Because I sat in economy class."
+        "A：是的,我们在后面加了额外的椅子。",
+        "B：一个生物学会议。",
+        "C：因为我坐的是经济舱。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：3w Is there enough seating for the seminar? м",
+      "evidence": "参考原文第 1 段：Is there enough seating for the seminar?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：3w Is there enough seating for the seminar? м",
+        "evidence": "参考原文第 1 段：Is there enough seating for the seminar?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“3w Is there enough seating for the seminar? м”，自然应答是“Yes, we added extra chairs in the back.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, we added extra chairs in the back.）。"
+        "analysis": "原文依据：问句或陈述是“Is there enough seating for the seminar?”，自然应答是“Yes, we added extra chairs in the back.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, we added extra chairs in the back.）。"
       },
       "item_id": 17,
       "priority": {

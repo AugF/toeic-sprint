@@ -26,14 +26,34 @@
       "asset_key": "official-5-test-2/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Who（谁） has time to buy supplies for the party?",
-    "content_translation": "中文辅助（离线预处理）：Who（谁） has time to buy supplies for the party?"
+    "transcript": "Who has time to buy supplies for the party?\nA. A lot of small parts.\nB. There are balloons and plates in the closet.\nC. They normally give us three weeks of vacation.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fe10b874ab5b8b535112ba901dab8b1eba8beef8ea9c8309394c3ef350cf25be",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 34
+      }
+    },
+    "transcript_translation": "谁有时间买派对用品？\nA. 很多小零件。\nB. 衣柜里有气球和盘子。\nC. 他们通常给我们三周的假期。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "372392f3dcda674653587db3ee2ca9927ab97fb3184d88a11f3d8e2a9763727c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "A lot of small parts.",
-        "There're balloons and plates in the closet.",
+        "There are balloons and plates in the closet.",
         "They normally give us three weeks of vacation."
       ],
       "answer": "B",
@@ -41,12 +61,12 @@
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Who has time to buy supplies for the party?”，自然应答是“There're balloons and plates in the closet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（There're balloons and plates in the closet.）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） has time to buy supplies for the party?",
+      "answer_explain": "原文依据：问句或陈述是“Who has time to buy supplies for the party?”，自然应答是“There are balloons and plates in the closet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（There are balloons and plates in the closet.）。",
+      "question_translation": "谁有时间买派对用品?",
       "choice_translations": [
-        "A：A lot of small parts.",
-        "B：There're balloons and plates in the closet.",
-        "C：They normally give us three weeks of vacation."
+        "A：很多小零件。",
+        "B：衣柜里有气球和盘子。",
+        "C：他们通常给我们三周的假期。"
       ],
       "question_type": "人物疑问句",
       "evidence": "参考原文第 1 段：Who has time to buy supplies for the party?",
@@ -57,7 +77,7 @@
         "question_type": "人物疑问句",
         "evidence": "参考原文第 1 段：Who has time to buy supplies for the party?",
         "strategy": "先识别人物疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Who has time to buy supplies for the party?”，自然应答是“There're balloons and plates in the closet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（There're balloons and plates in the closet.）。"
+        "analysis": "原文依据：问句或陈述是“Who has time to buy supplies for the party?”，自然应答是“There are balloons and plates in the closet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（There are balloons and plates in the closet.）。"
       },
       "item_id": 28,
       "priority": {

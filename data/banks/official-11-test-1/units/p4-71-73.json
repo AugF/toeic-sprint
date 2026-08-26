@@ -39,9 +39,33 @@
       "asset_key": "official-11-test-1/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "Do you have a big move coming up? Look no further than\nMartin Movers! oWe can pack up all your belongings and\nget them where they need to go in our spacious moving\ntrucks. Customers rave about how fast, clean, and reliable\nour service is. We are proud of our ten years of experience\nserving the community. OTo celebrate our tenth anniversary,\nwe're waiving the cost of supplies for the month of May.\nThat's free boxes, tape, and foam wrap for your\nbreakables! Schedule today to get this great deal!",
-    "transcript_translation": "你近期要进行一次大规模搬家吗？马丁搬家公司就是您的最佳选择！我们可以打包您的全部物品，并用宽敞的搬家卡车把它们运到目的地。顾客都对我们快速、整洁而可靠的服务赞不绝口。我们为自己服务社区长达十年的经验感到自豪。为庆祝成立十周年，五月份我们将免收包装用品费用。也就是说，易碎物品所需的纸箱、胶带和泡沫包装材料全都免费！立即预约，即可享受这项超值优惠！",
-    "content_translation": "本段听力围绕“搬家服务广告”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Do you have a big move coming up?\nLook no further than Martin Movers.\nWe can pack up all your belongings and get them where they need to go in our spacious moving trucks.\nCustomers rave about how fast, clean, and reliable our service is.\nWe are proud of our 10 years of experience. serving the community.\nTo celebrate our 10th anniversary, we're waiving the cost of supplies for the month of May.\nThat's free boxes, tape, and foam wrap for your breakables.\nSchedule today to get this great deal.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "91ba6b304efdf00b6d208429cd1010c699d01d51b3a83c2bac5ece6e68dbc8cd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 89,
+        "legacy_word_count": 90,
+        "length_ratio": 0.989,
+        "legacy_coverage": 0.956,
+        "prompted_failure": "implausible Part 4 transcript length 17"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "你最近有搬家计划吗？\n不用找了，Martin Movers。\n我们可以打包您所有的物品，并用我们宽敞的搬家卡车将它们运送到目的地。\n客户们对我们的服务赞不绝口，称其快速、干净、可靠。\n我们为自己拥有10年的经验感到自豪，一直服务着社区。\n为了庆祝我们的十周年纪念日，五月份我们将免除用品费用。\n这意味着免费的箱子、胶带和易碎品泡沫包装。\n今天就预约，享受这个优惠吧。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e3b793289b504ac63a6bc7e61367c97231ac7de164ed354c66d4909ba2c3c1d8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,24 +77,24 @@
         "Moving"
       ],
       "answer": "D",
-      "answer_explain": "原文依据：广告名为 Martin Movers，并说 pack belongings、moving trucks。 选择理由：这些信息明确是搬家服务，对应D。正确答案：D（Moving）。",
+      "answer_explain": "正确答案：D（Moving）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 5 段第 1 句：our service is. We are proud of our ten years of experience",
+      "evidence": "参考听力原文：“We can pack up all your belongings and get them where they need to go in our spacious moving trucks.”",
       "choice_translations": [
-        "A：清洁",
-        "B：室内装饰",
-        "C：园林绿化",
-        "D：搬家"
+        "A:清洁",
+        "B:室内装饰",
+        "C:园林绿化",
+        "D:搬家"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 5 段第 1 句：our service is. We are proud of our ten years of experience",
+        "evidence": "参考听力原文：“We can pack up all your belongings and get them where they need to go in our spacious moving trucks.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：广告名为 Martin Movers，并说 pack belongings、moving trucks。 选择理由：这些信息明确是搬家服务，对应D。正确答案：D（Moving）。"
+        "analysis": "正确答案：D（Moving）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "广告宣传的是哪类服务？",
+      "question_translation": "广告宣传的是哪类服务?",
       "item_id": 71,
       "priority": {
         "level": "P2",
@@ -105,24 +129,24 @@
         "The rewards it has received"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：公司称 proud of our ten years of experience。 选择理由：直接对应C years of experience。正确答案：C（Its years of experience）。",
+      "answer_explain": "正确答案：C（Its years of experience）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段第 1 句：our service is. We are proud of our ten years of experience",
+      "evidence": "参考听力原文：“We are proud of our 10 years of experience. serving the community.”",
       "choice_translations": [
-        "A：合理的价格",
-        "B：社区项目",
-        "C：多年的经验",
-        "D：获得的奖项"
+        "A:合理的价格",
+        "B:社区项目",
+        "C:多年的经验",
+        "D:获得的奖项"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段第 1 句：our service is. We are proud of our ten years of experience",
+        "evidence": "参考听力原文：“We are proud of our 10 years of experience. serving the community.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：公司称 proud of our ten years of experience。 选择理由：直接对应C years of experience。正确答案：C（Its years of experience）。"
+        "analysis": "正确答案：C（Its years of experience）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者说公司为什么感到自豪？",
+      "question_translation": "说话者说公司为什么感到自豪?",
       "item_id": 72,
       "priority": {
         "level": "P2",
@@ -157,24 +181,24 @@
         "A discounted hourly rate"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：五月将 waiving the cost of supplies，并说明 free boxes, tape, and foam wrap。 选择理由：促销是免费用品，对应A。正确答案：A（Free supplies）。",
+      "answer_explain": "正确答案：A（Free supplies）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Do you have a big move coming up? Look no further than",
+      "evidence": "参考听力原文：“To celebrate our 10th anniversary, we're waiving the cost of supplies for the month of May.”",
       "choice_translations": [
-        "A：免费用品",
-        "B：免费咨询",
-        "C：会员费折扣",
-        "D：小时费率折扣"
+        "A:免费用品",
+        "B:免费咨询",
+        "C:会员费折扣",
+        "D:小时费率折扣"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Do you have a big move coming up? Look no further than",
+        "evidence": "参考听力原文：“To celebrate our 10th anniversary, we're waiving the cost of supplies for the month of May.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：五月将 waiving the cost of supplies，并说明 free boxes, tape, and foam wrap。 选择理由：促销是免费用品，对应A。正确答案：A（Free supplies）。"
+        "analysis": "正确答案：A（Free supplies）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者提到了什么促销优惠？",
+      "question_translation": "说话者提到了什么促销优惠?",
       "item_id": 73,
       "priority": {
         "level": "P2",

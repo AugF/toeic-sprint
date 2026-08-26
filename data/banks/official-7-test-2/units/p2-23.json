@@ -28,8 +28,28 @@
       "asset_key": "official-7-test-2/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：We have an employee（员工） appreciation dinner every quarter.\nM",
-    "content_translation": "中文辅助（离线预处理）：We have an employee（员工） appreciation dinner every quarter.\nM"
+    "transcript": "We have an employee appreciation dinner every quarter.\nA. When is the next one?\nB. I just bought new dishes.\nC. That position has been filled.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f49312b0dcc6122e1367ed284ec2c35bbe3b7fc3570e9bc9ad4f9ae3b0cc2864",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "我们每季度都会举办一次员工感谢晚宴。\nA. 下一次是什么时候？\nB. 我刚买了一些新餐具。\nC. 那个职位已经空缺了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d4847ccf5000c59a6ab92fa477868ce8b497e371e105e07c51392c57320e1be5"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "That position has been filled."
       ],
       "answer": "A",
-      "question": "We have an employee appreciation dinner every quarter. M",
+      "question": "We have an employee appreciation dinner every quarter.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“We have an employee appreciation dinner every quarter. M”，自然应答是“When is the next one?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（When is the next one?）。",
-      "question_translation": "中文辅助（离线预处理）：We have an employee（员工） appreciation dinner every quarter.\nM",
+      "answer_explain": "原文依据：问句或陈述是“We have an employee appreciation dinner every quarter.”，自然应答是“When is the next one?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（When is the next one?）。",
+      "question_translation": "我们每季度都会举办一次员工感谢晚宴。",
       "choice_translations": [
-        "A：When（何时） is the next one?",
-        "B：I just bought new dishes.",
-        "C：That position has been filled."
+        "A：下一次是什么时候?",
+        "B：我刚买了一些新餐具。",
+        "C：那个职位已经空缺了。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：We have an employee appreciation dinner every quarter. M",
+      "evidence": "参考原文第 1 段：We have an employee appreciation dinner every quarter.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：We have an employee appreciation dinner every quarter. M",
+        "evidence": "参考原文第 1 段：We have an employee appreciation dinner every quarter.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“We have an employee appreciation dinner every quarter. M”，自然应答是“When is the next one?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（When is the next one?）。"
+        "analysis": "原文依据：问句或陈述是“We have an employee appreciation dinner every quarter.”，自然应答是“When is the next one?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（When is the next one?）。"
       },
       "item_id": 23,
       "priority": {

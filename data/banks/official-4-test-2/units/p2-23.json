@@ -26,8 +26,28 @@
       "asset_key": "official-4-test-2/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Where（哪里）’s the publishing convention going to be?\n=w",
-    "content_translation": "中文辅助（离线预处理）：Where（哪里）’s the publishing convention going to be?\n=w"
+    "transcript": "Where's the publishing convention going to be?\nA. For three days.\nB. It changes every year.\nC. Two months from now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f87329cfeabdf570e808b2da9e496b4d7be6a476ec96a7b0d11bb9e7b073e568",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 22
+      }
+    },
+    "transcript_translation": "出版大会在哪里举行？\nA. 为期三天。\nB. 它每年都在变。\nC. 在两个月后。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4f9ca797320a25181f84a3e0aea694dffc696204d66469a0f2665224c5000777"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "Two months from now."
       ],
       "answer": "B",
-      "question": "Where’s the publishing convention going to be? =w",
+      "question": "Where's the publishing convention going to be?",
       "difficulty": "easy",
       "topic": "地点询问",
       "keywords": "where location response",
-      "answer_explain": "原文依据：问句或陈述是“Where’s the publishing convention going to be? =w”，自然应答是“It changes every year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It changes every year.）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里）’s the publishing convention going to be?\n=w",
+      "answer_explain": "原文依据：问句或陈述是“Where's the publishing convention going to be?”，自然应答是“It changes every year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It changes every year.）。",
+      "question_translation": "出版大会在哪里举行?",
       "choice_translations": [
-        "A：For three days.",
-        "B：It changes every year.",
-        "C：Two months from now."
+        "A：为期三天。",
+        "B：它每年都在变。",
+        "C：在两个月后。"
       ],
       "question_type": "地点疑问句",
-      "evidence": "参考原文第 1 段：Where’s the publishing convention going to be? =w",
+      "evidence": "参考原文第 1 段：Where's the publishing convention going to be?",
       "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "地点疑问句",
-        "evidence": "参考原文第 1 段：Where’s the publishing convention going to be? =w",
+        "evidence": "参考原文第 1 段：Where's the publishing convention going to be?",
         "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Where’s the publishing convention going to be? =w”，自然应答是“It changes every year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It changes every year.）。"
+        "analysis": "原文依据：问句或陈述是“Where's the publishing convention going to be?”，自然应答是“It changes every year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It changes every year.）。"
       },
       "item_id": 23,
       "priority": {

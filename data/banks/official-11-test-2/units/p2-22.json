@@ -28,8 +28,28 @@
       "asset_key": "official-11-test-2/audio/part2/q022.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：*Kw Our department needs to place an order（订单） for office（办公室） supplies this week.\nM",
-    "content_translation": "中文辅助（离线预处理）：*Kw Our department needs to place an order（订单） for office（办公室） supplies this week.\nM"
+    "transcript": "Our department needs to place an order for office supplies this week.\nA. My apartment's on the fifth floor.\nB. Do you need help making a list?\nC. A surprise party next week.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "52f19779ef8556ded1732ec8474c8554efc20c0040b97763984fb6f296801484",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q022.mp3",
+      "metrics": {
+        "word_count": 34
+      }
+    },
+    "transcript_translation": "我们部门这周需要订购办公用品。\nA. 我的公寓在五楼。\nB. 你需要我帮你列清单吗？\nC. 下周一个惊喜派对。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "fd67f9f30866dd6caf0c37bb2aaf2c0e7ff7ec544b6c1102759cbcf74b55c707"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "A surprise party next week."
       ],
       "answer": "B",
-      "question": "*Kw Our department needs to place an order for office supplies this week. M",
+      "question": "Our department needs to place an order for office supplies this week.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述为“*Kw Our department needs to place an order for office supplies this week. M”，官方正确应答是“Do you need help making a list?”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（Do you need help making a list?）。",
-      "question_translation": "中文辅助（离线预处理）：*Kw Our department needs to place an order（订单） for office（办公室） supplies this week.\nM",
+      "answer_explain": "原文依据：问句或陈述为“Our department needs to place an order for office supplies this week.”，官方正确应答是“Do you need help making a list?”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（Do you need help making a list?）。",
+      "question_translation": "我们部门这周需要订购办公用品。",
       "choice_translations": [
-        "A：My apartment's on the fifth floor.",
-        "B：Do you need help making a list?",
-        "C：A surprise party next week."
+        "A：我的公寓在五楼。",
+        "B：你需要我帮你列清单吗?",
+        "C：下周一个惊喜派对。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：*Kw Our department needs to place an order for office supplies this week. M",
+      "evidence": "参考原文第 1 段：Our department needs to place an order for office supplies this week.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：*Kw Our department needs to place an order for office supplies this week. M",
+        "evidence": "参考原文第 1 段：Our department needs to place an order for office supplies this week.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“*Kw Our department needs to place an order for office supplies this week. M”，官方正确应答是“Do you need help making a list?”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（Do you need help making a list?）。"
+        "analysis": "原文依据：问句或陈述为“Our department needs to place an order for office supplies this week.”，官方正确应答是“Do you need help making a list?”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（Do you need help making a list?）。"
       },
       "item_id": 22,
       "priority": {

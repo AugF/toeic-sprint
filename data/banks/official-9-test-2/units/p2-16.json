@@ -28,27 +28,47 @@
       "asset_key": "official-9-test-2/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Which contractor did you use for your kitchen renovation?",
-    "content_translation": "中文辅助（离线预处理）：Which contractor did you use for your kitchen renovation?"
+    "transcript": "Which contractor did you use for your kitchen renovation?\nA. Sure, you can borrow it.\nB. Two months long.\nC. I hired the Martino brothers.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7155c61da59cf12cc4ad671e5cc2e7077c8cf16f9a109a15eb83df85039ad6c8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你为厨房翻新使用了哪家承包商？\nA. 当然，你可以借用它。\nB. 持续两个月。\nC. 我请了 Martino 兄弟。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "848b40fcb3a17a5859fc9054a000abfd5c0ca039722dbbf2fb6af26a718c95f8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Sure, you can borrow it.",
         "Two months long.",
-        "I hired the Martino Brothers."
+        "I hired the Martino brothers."
       ],
       "answer": "C",
       "question": "Which contractor did you use for your kitchen renovation?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Which contractor did you use for your kitchen renovation?”，自然应答是“I hired the Martino Brothers.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I hired the Martino Brothers.）。",
-      "question_translation": "中文辅助（离线预处理）：Which contractor did you use for your kitchen renovation?",
+      "answer_explain": "原文依据：问句或陈述是“Which contractor did you use for your kitchen renovation?”，自然应答是“I hired the Martino brothers.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I hired the Martino brothers.）。",
+      "question_translation": "你为厨房翻新使用了哪家承包商?",
       "choice_translations": [
-        "A：Sure, you can borrow it.",
-        "B：Two months long.",
-        "C：I hired the Martino Brothers."
+        "A：当然,你可以借用它。",
+        "B：持续两个月。",
+        "C：我请了 Martino 兄弟。"
       ],
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段：Which contractor did you use for your kitchen renovation?",
@@ -59,7 +79,7 @@
         "question_type": "选择疑问句",
         "evidence": "参考原文第 1 段：Which contractor did you use for your kitchen renovation?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Which contractor did you use for your kitchen renovation?”，自然应答是“I hired the Martino Brothers.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I hired the Martino Brothers.）。"
+        "analysis": "原文依据：问句或陈述是“Which contractor did you use for your kitchen renovation?”，自然应答是“I hired the Martino brothers.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I hired the Martino brothers.）。"
       },
       "item_id": 16,
       "priority": {

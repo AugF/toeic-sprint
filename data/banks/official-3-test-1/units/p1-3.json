@@ -31,8 +31,28 @@
       "asset_key": "official-3-test-1/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 其中一位男士正在脱下他的背包。\nB. 其中一位男士正在阅读宣传册。\nC. 有些人正在组装一张桌子。\nD. 有些人正在重新布置椅子。",
-    "content_translation": "A. 其中一位男士正在脱下他的背包。\nB. 其中一位男士正在阅读宣传册。\nC. 有些人正在组装一张桌子。\nD. 有些人正在重新布置椅子。"
+    "transcript": "A. One of the men is taking off his backpack.\nB. One of the men is reading a brochure.\nC. Some people are assembling a table.\nD. Some people are rearranging chairs.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9c837d489816b502414bf83d6cbab6afae07588769bd28de2cf1c3472866a7b4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 43
+      }
+    },
+    "transcript_translation": "A. 其中一名男子正在脱下他的背包。\nB. 其中一名男子正在阅读宣传册。\nC. 有些人正在组装一张桌子。\nD. 有些人正在重新布置椅子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a040b1699c08a999d9cac6926dbd014f20d8f551ced7aa523f45396af50f470c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,8 +68,8 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“One of the men is reading a brochure.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（One of the men is reading a brochure.）。",
       "choice_translations": [
-        "A：其中一位男士正在脱下他的背包。",
-        "B：其中一位男士正在阅读宣传册。",
+        "A：其中一名男子正在脱下他的背包。",
+        "B：其中一名男子正在阅读宣传册。",
         "C：有些人正在组装一张桌子。",
         "D：有些人正在重新布置椅子。"
       ],
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-1/p1-3/3"
+      "item_key": "official-3-test-1/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

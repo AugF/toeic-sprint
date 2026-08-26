@@ -26,14 +26,34 @@
       "asset_key": "official-6-test-1/audio/part2/q015.mp3",
       "exists": true
     },
-    "transcript_translation": "我们什么时候举行公司野餐会？\nA. 大约五十人。\nB. Han先生正在安排那个。\nC. 小心握住把手。",
-    "content_translation": "我们什么时候举行公司野餐会？\nA. 大约五十人。\nB. Han先生正在安排那个。\nC. 小心握住把手。"
+    "transcript": "When should we hold the company picnic?\nA. Around 50 people.\nB. Mr. Hahn is arranging that.\nC. Hold the handle carefully.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "eec5b659b37fd7c1021960c93a3c371b142e969ade1cf812dd3d67dab07ac5db",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q015.mp3",
+      "metrics": {
+        "word_count": 22
+      }
+    },
+    "transcript_translation": "我们应该什么时候举行公司野餐会？\nA. 大约 50 人。\nB. Hahn 先生正在安排这件事。\nC. 小心握住手柄。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "053ac1970dbe5936e4cf883aa54ddd4a61183302c856d2cede629ab74a9560e9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Around 50 people.",
-        "Mr. Han is arranging that.",
+        "Mr. Hahn is arranging that.",
         "Hold the handle carefully."
       ],
       "answer": "B",
@@ -41,12 +61,12 @@
       "difficulty": "easy",
       "topic": "时间询问",
       "keywords": "when time response",
-      "answer_explain": "原文依据：问句或陈述是“When should we hold the company picnic?”，自然应答是“Mr. Han is arranging that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Mr. Han is arranging that.）。",
-      "question_translation": "我们什么时候举行公司野餐会？",
+      "answer_explain": "原文依据：问句或陈述是“When should we hold the company picnic?”，自然应答是“Mr. Hahn is arranging that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Mr. Hahn is arranging that.）。",
+      "question_translation": "我们应该什么时候举行公司野餐会?",
       "choice_translations": [
-        "A：大约五十人。",
-        "B：Han先生正在安排那个。",
-        "C：小心握住把手。"
+        "A：大约 50 人。",
+        "B：Hahn 先生正在安排这件事。",
+        "C：小心握住手柄。"
       ],
       "question_type": "时间疑问句",
       "evidence": "参考原文第 1 段：When should we hold the company picnic?",
@@ -57,7 +77,7 @@
         "question_type": "时间疑问句",
         "evidence": "参考原文第 1 段：When should we hold the company picnic?",
         "strategy": "先判断为时间疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“When should we hold the company picnic?”，自然应答是“Mr. Han is arranging that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Mr. Han is arranging that.）。"
+        "analysis": "原文依据：问句或陈述是“When should we hold the company picnic?”，自然应答是“Mr. Hahn is arranging that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Mr. Hahn is arranging that.）。"
       },
       "item_id": 15,
       "priority": {

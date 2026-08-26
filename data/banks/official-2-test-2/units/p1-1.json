@@ -31,26 +31,46 @@
       "asset_key": "official-2-test-2/images/part1/q001.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 她正在接电话。\nB. 她正在系头巾。\nC. 她正在纸上写字。\nD. 她正在移动一些椅子。",
-    "content_translation": "A. 她正在接电话。\nB. 她正在系头巾。\nC. 她正在纸上写字。\nD. 她正在移动一些椅子。"
+    "transcript": "A. She's answering her phone.\nB. She's tying her headscarf.\nC. She's writing on some paper.\nD. She's moving some chairs.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a87ad4a8a24018082458d094d439185357f49ed7ba2848761dbe73d60194a833",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part1/q001.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "A. 她正在接电话。\nB. 她正在系头巾。\nC. 她正在在一张纸上写字。\nD. 她正在移动一些椅子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2f6ecf5cd40bdbad533c7e5ee3ebe844943f8068f875722f5f478b4564ba5fd9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "She’s answering her phone.",
-        "She’s tying her headscarf.",
-        "She’s writing on some paper.",
-        "She’s moving some chairs."
+        "She's answering her phone.",
+        "She's tying her headscarf.",
+        "She's writing on some paper.",
+        "She's moving some chairs."
       ],
       "answer": "C",
       "difficulty": "medium",
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
-      "answer_explain": "原文依据：照片中可见信息与描述“She’s writing on some paper.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（She’s writing on some paper.）。",
+      "answer_explain": "原文依据：照片中可见信息与描述“She's writing on some paper.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（She's writing on some paper.）。",
       "choice_translations": [
         "A：她正在接电话。",
         "B：她正在系头巾。",
-        "C：她正在纸上写字。",
+        "C：她正在在一张纸上写字。",
         "D：她正在移动一些椅子。"
       ],
       "question_type": "照片细节题",
@@ -61,7 +81,7 @@
         "question_type": "照片细节题",
         "evidence": "根据题干结构、选项语义和上下文判断。",
         "strategy": "本题属于照片细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：照片中可见信息与描述“She’s writing on some paper.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（She’s writing on some paper.）。"
+        "analysis": "原文依据：照片中可见信息与描述“She's writing on some paper.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（She's writing on some paper.）。"
       },
       "item_id": 1,
       "priority": {
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p1-1/1"
+      "item_key": "official-2-test-2/p1-1/1",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

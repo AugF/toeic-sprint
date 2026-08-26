@@ -28,14 +28,34 @@
       "asset_key": "official-9-test-2/audio/part2/q030.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Does your team want to have food delivered or to go out for lunch?",
-    "content_translation": "中文辅助（离线预处理）：Does your team want to have food delivered or to go out for lunch?"
+    "transcript": "Does your team want to have food delivered or to go out for lunch?\nA. An empty office on Water Street.\nB. I enjoyed that meal too.\nC. There's a buffet at the company cafeteria.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "eefab2f687f83d498f02f575ae5c235952a11e168378a7bff43aab85b5f60851",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q030.mp3",
+      "metrics": {
+        "word_count": 36
+      }
+    },
+    "transcript_translation": "你的团队想是叫外卖还是出去吃午饭？\nA. Water Street 上空着的一间办公室。\nB. 我也喜欢那顿饭。\nC. 公司食堂有自助餐。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a6ed6bc64089c2283b6608cebab6bb77e9d138f44a6c6d3304332e227452a703"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "An empty office on Water Street.",
-        "I enjoyed that meal, too.",
+        "I enjoyed that meal too.",
         "There's a buffet at the company cafeteria."
       ],
       "answer": "C",
@@ -44,11 +64,11 @@
       "topic": "选择问句",
       "keywords": "choice indirect response",
       "answer_explain": "原文依据：问句或陈述是“Does your team want to have food delivered or to go out for lunch?”，自然应答是“There's a buffet at the company cafeteria.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（There's a buffet at the company cafeteria.）。",
-      "question_translation": "中文辅助（离线预处理）：Does your team want to have food delivered or to go out for lunch?",
+      "question_translation": "你的团队想是叫外卖还是出去吃午饭?",
       "choice_translations": [
-        "A：An empty office（办公室） on Water Street.",
-        "B：I enjoyed that meal, too.",
-        "C：There's a buffet at the company（公司） cafeteria."
+        "A：Water Street 上空着的一间办公室。",
+        "B：我也喜欢那顿饭。",
+        "C：公司食堂有自助餐。"
       ],
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段：Does your team want to have food delivered or to go out for lunch?",

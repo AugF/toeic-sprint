@@ -36,9 +36,32 @@
       "asset_key": "official-5-test-1/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "Looking for ways to get into better shape this year? ® Why\nnot join Nelson's Gym? We have all the sports and exercise\nequipment you could need. There's no need to make an\nappointment®stop by any of our locations between twelve\nnoon and three P.M., and one of our fitness experts will give\nyou a personalized tour of the facility. And if two people\nsign up together, you'll both get fifteen percent off your\nannual membership fees. So bring a friend, and register\ntoday!",
-    "transcript_translation": "中文辅助（离线预处理）：Looking for ways to get into better shape this year?\n® Why（为什么）\nnot join Nelson's Gym?\nWe have all the sports and exercise\nequipment you could need.\nThere's no need to make an\nappointment（预约）®stop by any of our locations between twelve\nnoon and three P.M., and one of our fitness experts will give\nyou a personalized tour of the facility.\nAnd if two people\nsign up together, you'll both get fifteen percent off your\nannual membership fees.\nSo bring a friend, and register\ntoday!",
-    "content_translation": "中文辅助（离线预处理）：Looking for ways to get into better shape this year?\n® Why（为什么）\nnot join Nelson's Gym?\nWe have all the sports and exercise\nequipment you could need.\nThere's no need to make an\nappointment（预约）®stop by any of our locations between twelve\nnoon and three P.M., and one of our fitness experts will give\nyou a personalized tour of the facility.\nAnd if two people\nsign up together, you'll both get fifteen percent off your\nannual membership fees.\nSo bring a friend, and register\ntoday!"
+    "transcript": "Looking for ways to get into better shape this year?\nWhy not join Nelson's Gym?\nWe have all the sports and exercise equipment you could need.\nThere's no need to make an appointment.\nStop by any of our locations between 12 noon and 3 p.m. and one of our fitness experts will give you a personalized tour of the facility.\nAnd if two people sign up together, you'll both get 15% off your annual membership fees.\nSo bring a friend and register today.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:segmented_audio",
+      "audio_sha256": "abadecf021c19a608dfa53a0ff2e285a25b263bb8bace18d323b32755c57b3a6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 83,
+        "legacy_word_count": 83,
+        "length_ratio": 1,
+        "legacy_coverage": 1
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "今年想找到改善体型的方法吗？\n为什么不加入 Nelson's Gym 呢？\n我们拥有您可能需要的各种运动和健身器材。\n无需预约。\n请在中午 12 点到下午 3 点之间光临我们的任何一个地点，我们的健身专家会为您提供一次个性化的设施参观。\n如果两个人一起注册，你们两人都能享受年度会员费 15% 的折扣。\n所以带上朋友今天就来注册吧。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f751536d2b080b3c8826c6d695e51aba9ca7ab511c5a5f14e75c1a5611e1eec2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +73,23 @@
       ],
       "answer": "B",
       "question": "What is being advertised?",
-      "answer_explain": "原文依据：听力原文中提到“noon and three P.M., and one of our fitness experts will give”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A fitness center）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is being advertised?",
+      "answer_explain": "正确答案：B（A fitness center）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is being advertised?",
       "choice_translations": [
-        "A：A pharmacy",
-        "B：A fitness center",
-        "C：A movie theater",
-        "D：A sports competition"
+        "A:A pharmacy",
+        "B:A fitness center",
+        "C:A movie theater",
+        "D:A sports competition"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Looking for ways to get into better shape this year? ® Why",
+      "evidence": "参考听力原文：“Stop by any of our locations between 12 noon and 3 p.m. and one of our fitness experts will give you a personalized tour of the facility.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Looking for ways to get into better shape this year? ® Why",
+        "evidence": "参考听力原文：“Stop by any of our locations between 12 noon and 3 p.m. and one of our fitness experts will give you a personalized tour of the facility.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“noon and three P.M., and one of our fitness experts will give”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A fitness center）。"
+        "analysis": "正确答案：B（A fitness center）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -99,23 +122,23 @@
       ],
       "answer": "C",
       "question": "According to the speaker, what is offered between noon and 3:00 P.M.?",
-      "answer_explain": "原文依据：听力原文中提到“you a personalized tour of the facility.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Facility tours）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） is offered between noon and 3:00 P.M.?",
+      "answer_explain": "正确答案：C（Facility tours）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) is offered between noon and 3:00 P.M.?",
       "choice_translations": [
-        "A：Group classes",
-        "B：Healthy snacks",
-        "C：Facility tours",
-        "D：Equipment demonstrations"
+        "A:Group classes",
+        "B:Healthy snacks",
+        "C:Facility tours",
+        "D:Equipment demonstrations"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：appointment®stop by any of our locations between twelve",
+      "evidence": "参考听力原文：“Stop by any of our locations between 12 noon and 3 p.m. and one of our fitness experts will give you a personalized tour of the facility.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：appointment®stop by any of our locations between twelve",
+        "evidence": "参考听力原文：“Stop by any of our locations between 12 noon and 3 p.m. and one of our fitness experts will give you a personalized tour of the facility.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“you a personalized tour of the facility.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Facility tours）。"
+        "analysis": "正确答案：C（Facility tours）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -148,23 +171,23 @@
       ],
       "answer": "C",
       "question": "What should the listeners do to receive a discount?",
-      "answer_explain": "原文依据：听力原文中提到“So bring a friend, and register”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Register with a friend）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） should the listeners do to receive a discount?",
+      "answer_explain": "正确答案：C（Register with a friend）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) should the listeners do to receive a discount?",
       "choice_translations": [
-        "A：Arrive early",
-        "B：Present a coupon",
-        "C：Register with a friend",
-        "D：Mention an advertisement"
+        "A:Arrive early",
+        "B:Present a coupon",
+        "C:Register with a friend",
+        "D:Mention an advertisement"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Looking for ways to get into better shape this year? ® Why",
+      "evidence": "参考听力原文：“So bring a friend and register today.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Looking for ways to get into better shape this year? ® Why",
+        "evidence": "参考听力原文：“So bring a friend and register today.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“So bring a friend, and register”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Register with a friend）。"
+        "analysis": "正确答案：C（Register with a friend）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

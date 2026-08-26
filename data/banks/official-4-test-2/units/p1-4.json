@@ -31,14 +31,34 @@
       "asset_key": "official-4-test-2/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. A large tent is being assembled.\nB. Some stairs lead to a boat.\nC. Some umbrellas have fallen on the ground.\nD. Some chairs are facing the water.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "430e35f275e3372cb22115dcc64b140b515aae3c0d1bd8c2398a17537e3896ec",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 40
+      }
+    },
+    "transcript_translation": "A. 一个大型帐篷正在被组装。\nB. 有些楼梯通往一艘船。\nC. 有些雨伞掉在地上。\nD. 有些椅子面向水面。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "54e169b112be80b534f0b0868480e14c2d1680d6534a8ac39bfcf2724b258504"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "tentIFY Kl.",
-        "stairs [PERI S5 TSH, KR NOBUT",
+        "A large tent is being assembled.",
+        "Some stairs lead to a boat.",
         "Some umbrellas have fallen on the ground.",
         "Some chairs are facing the water."
       ],
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some chairs are facing the water.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（Some chairs are facing the water.）。",
       "choice_translations": [
-        "A：tentIFY Kl.",
-        "B：stairs [PERI S5 TSH, KR NOBUT",
-        "C：Some umbrellas have fallen on the ground.",
-        "D：Some chairs are facing the water."
+        "A：一个大型帐篷正在被组装。",
+        "B：有些楼梯通往一艘船。",
+        "C：有些雨伞掉在地上。",
+        "D：有些椅子面向水面。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-4-test-2/p1-4/4"
+      "item_key": "official-4-test-2/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

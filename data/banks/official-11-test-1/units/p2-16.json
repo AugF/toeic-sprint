@@ -42,8 +42,28 @@
       "asset_key": "official-11-test-1/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "你为什么还没有完成报告？\nA：海边的港口。\nB：因为我还缺少一些数据。\nC：为了更换门锁。",
-    "content_translation": "本段听力围绕“原因询问”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Why haven't you finished your report yet?\nA. The seaside port.\nB. Because I'm missing some data.\nC. To change the door lock.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "97bbced3c00c38c57051dc9ecc1031d0e1ca289c6a08063d108a24c3a72bbd36",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "你为什么还没有完成你的报告？\nA. 海边港口。\nB. 因为我缺少一些数据。\nC. 为了更换门锁。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e5d06143b066c37ee405475d2d4a0a6e97db1652361df6db9e055fe6573e72ec"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -61,8 +81,8 @@
       "question_type": "原因疑问句",
       "evidence": "参考原文第 1 段第 1 句：Why haven't you finished your report yet?",
       "choice_translations": [
-        "A：海边的港口。",
-        "B：因为我还缺少一些数据。",
+        "A：海边港口。",
+        "B：因为我缺少一些数据。",
         "C：为了更换门锁。"
       ],
       "response_style": "应直接提供疑问词所要求的信息，也要留意自然的间接回答",
@@ -74,7 +94,7 @@
         "strategy": "先判断为原因疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：Why问报告为何未完成，答句说 Because I'm missing some data。 选择理由：B直接说明缺少数据这一原因；A和C答非所问。正确答案：B（Because I'm missing some data.）。"
       },
-      "question_translation": "你为什么还没有完成报告？",
+      "question_translation": "你为什么还没有完成你的报告?",
       "item_id": 16,
       "priority": {
         "level": "P2",

@@ -37,37 +37,59 @@
       "asset_key": "official-2-test-1/audio/part4/q083-085.mp3",
       "exists": true
     },
-    "transcript": "announcement.\nw\nur company’s annual health fair will be taking place\nnext week. I’m excited to tell you that this year you'll be\nable to meet individually with a nutritionist to ask questions\nabout your diet and get a personal nutrition plan. What an\nopportunity! How could you miss this? | hope everyone will\nhave time to participate. Oh, and we're asking that ®@you\nsign up ahead of time on the sheet posted in the break\nroom—we need to know how many of you will be attending.",
-    "transcript_translation": "公告。\n我们公司一年一度的健康博览会将在下周举行。我很高兴地告诉大家，今年您将有机会与营养师进行一对一交流，咨询您的饮食问题并获得个性化的营养计划。多么难得的机会啊！怎能错过呢？| 希望每个人都有时间参加。哦，另外，我们要求大家提前在休息室张贴的表格上报名——我们需要知道有多少人会参加。",
-    "content_translation": "公告。\n我们公司一年一度的健康博览会将在下周举行。我很高兴地告诉大家，今年您将有机会与营养师进行一对一交流，咨询您的饮食问题并获得个性化的营养计划。多么难得的机会啊！怎能错过呢？| 希望每个人都有时间参加。哦，另外，我们要求大家提前在休息室张贴的表格上报名——我们需要知道有多少人会参加。"
+    "transcript": "Our company's annual health fair will be taking place next week.\nI'm excited to tell you that this year you'll be able to meet individually with a nutritionist to ask questions about your diet and get a personal nutrition plan.\nWhat an opportunity!\nHow could you miss this?\nI hope everyone will have time to participate.\nOh, and we're asking that you sign up ahead of time on the sheet posted in the break room.\nWe need to know how many of you will be attending.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "34282500b4670e39e83f920c49528a750189ed79f67ebfae2f9b1df8ffb593f6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-1/audio/part4/q083-085.mp3",
+      "metrics": {
+        "word_count": 86,
+        "legacy_word_count": 87,
+        "length_ratio": 0.989,
+        "legacy_coverage": 0.954
+      }
+    },
+    "transcript_translation": "我们公司一年一度的健康博览会将在下周举行。\n我很高兴地告诉您，今年您可以与营养师进行单独会面，询问关于饮食的问题并获得个性化的营养计划。\n多好的机会啊！\n怎么能错过呢？\n希望每个人都有时间参与。\n哦，我们要求您提前在休息室张贴的表格上报名。\n我们需要知道有多少人会参加。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "74a8335f331a02c029c805b2659701458dc0fb42b86dcc8fd54a1c9754ea5bce"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Alecture series",
+        "A lecture series",
         "The dedication of a building",
         "The opening of a business",
-        "Acompany health fair"
+        "A company health fair"
       ],
       "answer": "D",
       "question": "What event does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“ur company’s annual health fair will be taking place”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Acompany health fair）。",
-      "question_translation": "演讲者提到了什么活动？",
+      "answer_explain": "正确答案：D（A company health fair）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者提到了什么活动?",
       "choice_translations": [
-        "A：讲座系列",
-        "B：建筑落成典礼",
-        "C：开业",
-        "D：公司健康博览会"
+        "A:讲座系列",
+        "B:建筑落成典礼",
+        "C:开业",
+        "D:公司健康博览会"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：announcement.",
+      "evidence": "参考听力原文：“Our company's annual health fair will be taking place next week.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：announcement.",
+        "evidence": "参考听力原文：“Our company's annual health fair will be taking place next week.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“ur company’s annual health fair will be taking place”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Acompany health fair）。"
+        "analysis": "正确答案：D（A company health fair）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 83,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "C",
       "question": "Why does the speaker say, “How could you miss this”?",
-      "answer_explain": "原文依据：听力原文中提到“How could you miss this?”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To encourage participation）。",
-      "question_translation": "演讲者说“怎能错过呢？”是为了什么？",
+      "answer_explain": "正确答案：C（To encourage participation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者说“怎能错过呢?”是为了什么?",
       "choice_translations": [
-        "A：澄清一个程序",
-        "B：强调一个截止日期",
-        "C：鼓励参与",
-        "D：提出批评"
+        "A:澄清一个程序",
+        "B:强调一个截止日期",
+        "C:鼓励参与",
+        "D:提出批评"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：announcement.",
+      "evidence": "参考听力原文：“How could you miss this?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：announcement.",
+        "evidence": "参考听力原文：“How could you miss this?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“How could you miss this?”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To encourage participation）。"
+        "analysis": "正确答案：C（To encourage participation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 84,
       "priority": {
@@ -144,30 +166,30 @@
     },
     {
       "choices": [
-        "Asign-up sheet",
-        "Alist of Web sites",
-        "Asafety notice",
+        "A sign-up sheet",
+        "A list of Web sites",
+        "A safety notice",
         "A newspaper article"
       ],
       "answer": "A",
       "question": "What does the speaker say is posted in the break room?",
-      "answer_explain": "原文依据：听力原文中提到“sign up ahead of time on the sheet posted in the break”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Asign-up sheet）。",
-      "question_translation": "演讲者说休息室张贴了什么？",
+      "answer_explain": "正确答案：A（A sign-up sheet）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者说休息室张贴了什么?",
       "choice_translations": [
-        "A：报名表",
-        "B：网站列表",
-        "C：安全通知",
-        "D：报纸文章"
+        "A:报名表",
+        "B:网站列表",
+        "C:安全通知",
+        "D:报纸文章"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：sign up ahead of time on the sheet posted in the break",
+      "evidence": "参考听力原文：“Oh, and we're asking that you sign up ahead of time on the sheet posted in the break room.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：sign up ahead of time on the sheet posted in the break",
+        "evidence": "参考听力原文：“Oh, and we're asking that you sign up ahead of time on the sheet posted in the break room.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“sign up ahead of time on the sheet posted in the break”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Asign-up sheet）。"
+        "analysis": "正确答案：A（A sign-up sheet）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 85,
       "priority": {

@@ -28,27 +28,47 @@
       "asset_key": "official-5-test-1/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：We really need to find an experienced plumber.",
-    "content_translation": "中文辅助（离线预处理）：We really need to find an experienced plumber."
+    "transcript": "We really need to find an experienced plumber.\nA. Do you remember where you left the key?\nB. I'd like more coffee, thanks.\nC. You're right. I know one we can call.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "923f06d0fd036f76c90a69c96ee88e6bc2d5ed75dc5090de8f1e29dd7a37defd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "我们真的需要找一个有经验的水管工。\nA. 你还记得你把钥匙放在哪里了吗？\nB. 我想要更多的咖啡，谢谢。\nC. 你说得对。我知道我们可以打给的一个。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "31eec563083024eab2f3efaeb6af84e7656139c0eda754bde361572cb4e72e81"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Do you remember where you left the key?",
         "I'd like more coffee, thanks.",
-        "You're right- I know one we can call."
+        "You're right. I know one we can call."
       ],
       "answer": "C",
       "question": "We really need to find an experienced plumber.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“We really need to find an experienced plumber.”，自然应答是“You're right- I know one we can call.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You're right- I know one we can call.）。",
-      "question_translation": "中文辅助（离线预处理）：We really need to find an experienced plumber.",
+      "answer_explain": "原文依据：问句或陈述是“We really need to find an experienced plumber.”，自然应答是“You're right. I know one we can call.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You're right. I know one we can call.）。",
+      "question_translation": "我们真的需要找一个有经验的水管工。",
       "choice_translations": [
-        "A：Do you remember where（哪里） you left the key?",
-        "B：I'd like more coffee, thanks.",
-        "C：You're right- I know one we can call."
+        "A：你还记得你把钥匙放在哪里了吗?",
+        "B：我想要更多的咖啡,谢谢。",
+        "C：你说得对。我知道我们可以打给的一个。"
       ],
       "question_type": "陈述 / 请求应答题",
       "evidence": "参考原文第 1 段：We really need to find an experienced plumber.",
@@ -59,7 +79,7 @@
         "question_type": "陈述 / 请求应答题",
         "evidence": "参考原文第 1 段：We really need to find an experienced plumber.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“We really need to find an experienced plumber.”，自然应答是“You're right- I know one we can call.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You're right- I know one we can call.）。"
+        "analysis": "原文依据：问句或陈述是“We really need to find an experienced plumber.”，自然应答是“You're right. I know one we can call.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You're right. I know one we can call.）。"
       },
       "item_id": 18,
       "priority": {

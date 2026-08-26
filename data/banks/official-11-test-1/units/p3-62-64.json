@@ -45,9 +45,32 @@
       "asset_key": "official-11-test-1/images/part3/q062-064.jpg",
       "exists": true
     },
-    "transcript": "Hi there. Can I help you find anything today?\nI begin a new job next week, and I want to get some\nclothes. I was just looking at this shirt — | really like\nthe material. It's such good quality.\nYes. These shirts are very popular. Actually, this\nweekend we're running a promotion on men's shirts.\nThe more you buy, the greater the discount.\nHmm. This is a good discount. I originally only wanted\none shirt, but now I'll get three.",
-    "transcript_translation": "你好，今天需要我帮你找什么吗？\n我下周开始一份新工作，想买些衣服。我刚刚在看这件衬衫——我很喜欢它的面料，质量真好。\n是的，这些衬衫很受欢迎。事实上，本周末我们的男士衬衫正在做促销：买得越多，折扣越大。\n嗯，这个折扣不错。我原来只想买一件，不过现在我要买三件。",
-    "content_translation": "本段听力围绕“服装购物”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Hi there.\nCan I help you find anything today?\nI begin a new job next week, and I want to get some clothes.\nI was just looking at this shirt.\nI really like the material.\nIt's such good quality.\nYes, these shirts are very popular.\nActually, this weekend we're running a promotion on men's shirts.\nThe more you buy, the greater the discount.\nHmm.\nThis is a good discount.\nI originally only wanted one shirt, but now I'll get three.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4e2f9886424745c58a1d7a4d5b34df243041c99efd4e302cba390845566ace79",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part3/q062-064.mp3",
+      "metrics": {
+        "word_count": 82,
+        "legacy_word_count": 74,
+        "length_ratio": 1.108,
+        "legacy_coverage": 0.986
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨。\n今天我可以帮您找点什么吗？\n我下周开始一份新工作，我想买一些衣服。\n我刚才在看这件衬衫。\n我真的很喜欢这个材质。\n它质量太好了。\n是的，这些衬衫非常受欢迎。\n实际上，这个周末我们正在对男士衬衫进行促销活动。\n买得越多，折扣越大。\n嗯。\n这是一个很好的折扣。\n我本来只想要一件衬衫，但现在我要买三件了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "02a2a140b9a7b13964b61d0c9432ba60d6f6f90e7422564b5cdac3a76d5650c0"
+    }
   },
   "items": [
     {
@@ -59,24 +82,24 @@
         "Sign a contract"
       ],
       "answer": "B",
-      "answer_explain": "原文依据：男方说 I begin a new job next week。 选择理由：下周将开始新工作，对应B。正确答案：B（Start a new job）。",
+      "answer_explain": "正确答案：B（Start a new job）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Hi there. Can I help you find anything today?",
+      "evidence": "参考听力原文：“I begin a new job next week, and I want to get some clothes.”",
       "choice_translations": [
-        "A：去旅行",
-        "B：开始一份新工作",
-        "C：参加聚会",
-        "D：签署合同"
+        "A:去旅行",
+        "B:开始一份新工作",
+        "C:参加聚会",
+        "D:签署合同"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Hi there. Can I help you find anything today?",
+        "evidence": "参考听力原文：“I begin a new job next week, and I want to get some clothes.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：男方说 I begin a new job next week。 选择理由：下周将开始新工作，对应B。正确答案：B（Start a new job）。"
+        "analysis": "正确答案：B（Start a new job）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士说他下周会做什么？",
+      "question_translation": "男士说他下周会做什么?",
       "item_id": 62,
       "priority": {
         "level": "P1",
@@ -112,24 +135,24 @@
         "The length"
       ],
       "answer": "B",
-      "answer_explain": "原文依据：男方说 I really like the material，女方也谈到衬衫品质。 选择理由：material在服装语境中对应fabric，因此B正确。正确答案：B（The fabric）。",
+      "answer_explain": "正确答案：B（The fabric）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 3 段第 1 句：clothes. I was just looking at this shirt — | really like",
+      "evidence": "参考听力原文：“I originally only wanted one shirt, but now I'll get three.”",
       "choice_translations": [
-        "A：颜色",
-        "B：面料",
-        "C：款式",
-        "D：长度"
+        "A:颜色",
+        "B:面料",
+        "C:款式",
+        "D:长度"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 3 段第 1 句：clothes. I was just looking at this shirt — | really like",
+        "evidence": "参考听力原文：“I originally only wanted one shirt, but now I'll get three.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：男方说 I really like the material，女方也谈到衬衫品质。 选择理由：material在服装语境中对应fabric，因此B正确。正确答案：B（The fabric）。"
+        "analysis": "正确答案：B（The fabric）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士说他喜欢衬衫的哪一点？",
+      "question_translation": "男士说他喜欢衬衫的哪一点?",
       "item_id": 63,
       "priority": {
         "level": "P1",
@@ -165,24 +188,24 @@
         "35%"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：男方决定买 three shirts；图表显示3件可享20% off。 选择理由：把对话购买数量与优惠图对应，可得C 20%。正确答案：C（20%）。",
+      "answer_explain": "正确答案：C（20%）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段第 1 句：The more you buy, the greater the discount.",
+      "evidence": "参考听力原文：“The more you buy, the greater the discount.”",
       "choice_translations": [
-        "A：5%（百分之五）",
-        "B：10%（百分之十）",
-        "C：20%（百分之二十）",
-        "D：35%（百分之三十五）"
+        "A:5%(百分之五)",
+        "B:10%(百分之十)",
+        "C:20%(百分之二十)",
+        "D:35%(百分之三十五)"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段第 1 句：The more you buy, the greater the discount.",
+        "evidence": "参考听力原文：“The more you buy, the greater the discount.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：男方决定买 three shirts；图表显示3件可享20% off。 选择理由：把对话购买数量与优惠图对应，可得C 20%。正确答案：C（20%）。"
+        "analysis": "正确答案：C（20%）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "请看图表。男士购买商品将获得多少折扣？",
+      "question_translation": "请看图表。男士购买商品将获得多少折扣?",
       "item_id": 64,
       "priority": {
         "level": "P1",

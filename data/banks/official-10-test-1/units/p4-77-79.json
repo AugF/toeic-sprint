@@ -37,9 +37,31 @@
       "asset_key": "official-10-test-1/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "meeting.\nEKW\nGood afternoon.\nAt today's meeting l'd like to focus on\nticket sales. As you know, sales have been declining. We\ncontinue to offer top-quality films, but the availability of\nonline entertainment options is responsible for this decline.\nWe've lost young moviegoers in particular. So today I want\nyou to brainstorm ways we could attract a greater turnout to\nour theater-especially a younger audience. But ® before\nwe begin, we'll take a look at the annual report to review our\ntatä@tal\nincome and expenses. ®Let me just bring the figures up on\nmy laptop so we can all view them on the screen.",
-    "transcript_translation": "会议。\nEKW\n下午好。在今天的会议上，我想重点讨论门票销售。如您所知，销量一直在下降。我们继续提供顶级影片，但在线娱乐选项的可获得性是造成这种下降的原因。我们尤其失去了年轻的电影观众。所以今天我想让大家集思广益，想出一些方法来吸引更多人到我们的影院——特别是更年轻的观众。但在我们开始之前，我们将看一下年度报告，回顾我们的收入和支出。让我把数据调到我的笔记本上，这样我们都能在屏幕上看到。",
-    "content_translation": "会议。\nEKW\n下午好。在今天的会议上，我想重点讨论门票销售。如您所知，销量一直在下降。我们继续提供顶级影片，但在线娱乐选项的可获得性是造成这种下降的原因。我们尤其失去了年轻的电影观众。所以今天我想让大家集思广益，想出一些方法来吸引更多人到我们的影院——特别是更年轻的观众。但在我们开始之前，我们将看一下年度报告，回顾我们的收入和支出。让我把数据调到我的笔记本上，这样我们都能在屏幕上看到。"
+    "transcript": "But before we begin, we'll take a look at the annual report to review our income and expenses.\nLet me just bring the figures up on my laptop so we can all view them on the screen.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c2b5d9e86e7a3edbb82813594d92c31695f4a3b48d4e21e29bbe76d539de6b04",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 37,
+        "legacy_word_count": 63,
+        "length_ratio": 0.587,
+        "legacy_coverage": 0.698
+      }
+    },
+    "transcript_translation": "但在我们开始之前，我们将看一下年度报告，回顾我们的收入和支出。\n让我把这些数字在我的笔记本上调出来，这样我们都能在屏幕上看。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "629c5ad92631c71cf901bdde57d4623a9961e66b1e1a705ecb1f09357861a14f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "C",
       "question": "According to the speaker, what has recently happened?",
-      "answer_explain": "原文依据：听力原文中提到“ticket sales.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Ticket sales have dropped）。",
-      "question_translation": "根据演讲者所说，最近发生了什么？",
+      "answer_explain": "正确答案：C（Ticket sales have dropped）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "根据演讲者所说,最近发生了什么?",
       "choice_translations": [
-        "A：一栋建筑的租约已过期",
-        "B：有竞争对手影院开业。",
-        "C：门票销售下降",
-        "D：贷款付款已延迟。"
+        "A:一栋建筑的租约已过期",
+        "B:有竞争对手影院开业。",
+        "C:门票销售下降",
+        "D:贷款付款已延迟。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：meeting.",
+      "evidence": "参考听力原文：“But before we begin, we'll take a look at the annual report to review our income and expenses.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：meeting.",
+        "evidence": "参考听力原文：“But before we begin, we'll take a look at the annual report to review our income and expenses.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“ticket sales.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Ticket sales have dropped）。"
+        "analysis": "正确答案：C（Ticket sales have dropped）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker want the listeners to do?",
-      "answer_explain": "原文依据：听力原文中提到“you to brainstorm ways we could attract a greater turnout to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Discuss strategies to attract customers）。",
-      "question_translation": "演讲者希望听众做什么？",
+      "answer_explain": "正确答案：D（Discuss strategies to attract customers）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者希望听众做什么?",
       "choice_translations": [
-        "A：选择新的食品供应商",
-        "B：集思广益替代招聘做法",
-        "C：测试新的影院座位",
-        "D：讨论吸引顾客的策略"
+        "A:选择新的食品供应商",
+        "B:集思广益替代招聘做法",
+        "C:测试新的影院座位",
+        "D:讨论吸引顾客的策略"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：meeting.",
+      "evidence": "参考听力原文：“But before we begin, we'll take a look at the annual report to review our income and expenses.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：meeting.",
+        "evidence": "参考听力原文：“But before we begin, we'll take a look at the annual report to review our income and expenses.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“you to brainstorm ways we could attract a greater turnout to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Discuss strategies to attract customers）。"
+        "analysis": "正确答案：D（Discuss strategies to attract customers）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "A",
       "question": "What will the speaker do next?",
-      "answer_explain": "原文依据：听力原文中提到“we begin, we'll take a look at the annual report to review our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Present an annual report）。",
-      "question_translation": "演讲者接下来会做什么？",
+      "answer_explain": "正确答案：A（Present an annual report）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者接下来会做什么?",
       "choice_translations": [
-        "A：展示年度报告",
-        "B：评估电影合同",
-        "C：介绍特邀演讲嘉宾",
-        "D：审查回收政策"
+        "A:展示年度报告",
+        "B:评估电影合同",
+        "C:介绍特邀演讲嘉宾",
+        "D:审查回收政策"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：meeting.",
+      "evidence": "参考听力原文：“But before we begin, we'll take a look at the annual report to review our income and expenses.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：meeting.",
+        "evidence": "参考听力原文：“But before we begin, we'll take a look at the annual report to review our income and expenses.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“we begin, we'll take a look at the annual report to review our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Present an annual report）。"
+        "analysis": "正确答案：A（Present an annual report）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

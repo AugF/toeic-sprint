@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-1/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "@Mi™ 今天晚上我们可以去那家巴西咖啡馆试试吗？ Ew\nA. 比那个多了一些。\nB. 上周去了那里。\nC. 五人的预订。",
-    "content_translation": "@Mi™ 今天晚上我们可以去那家巴西咖啡馆试试吗？ Ew\nA. 比那个多了一些。\nB. 上周去了那里。\nC. 五人的预订。"
+    "transcript": "Can we try that Brazilian cafe tonight?\nA. There were a few more than that.\nB. I went there last week.\nC. A reservation for five.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "82fb9a0b1900c89cf252dbe1d5fdbbd0194b0e496803786e3a50be85d576193c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "我们今晚可以去那家巴西咖啡馆吗？\nA. 比那个多一些。\nB. 我上周去了那里。\nC. 为五人的预订。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "342a5324a949cdaa47be9d67e5bc29efd66c5760a6c7b0f73a9501494da81e35"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "There were a few more than that.",
-        "went there last week.",
-        "Areservation for five."
+        "I went there last week.",
+        "A reservation for five."
       ],
       "answer": "B",
-      "question": "@Mi™ Can we try that Brazilian café tonight? Ew",
+      "question": "Can we try that Brazilian cafe tonight?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“@Mi™ Can we try that Brazilian café tonight? Ew”，自然应答是“went there last week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（went there last week.）。",
+      "answer_explain": "原文依据：问句或陈述是“Can we try that Brazilian cafe tonight?”，自然应答是“I went there last week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I went there last week.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：@Mi™ Can we try that Brazilian café tonight? Ew",
+      "evidence": "参考原文第 1 段：Can we try that Brazilian cafe tonight?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：@Mi™ Can we try that Brazilian café tonight? Ew",
+        "evidence": "参考原文第 1 段：Can we try that Brazilian cafe tonight?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“@Mi™ Can we try that Brazilian café tonight? Ew”，自然应答是“went there last week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（went there last week.）。"
+        "analysis": "原文依据：问句或陈述是“Can we try that Brazilian cafe tonight?”，自然应答是“I went there last week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I went there last week.）。"
       },
-      "question_translation": "@Mi™ 今天晚上我们可以去那家巴西咖啡馆试试吗？ Ew",
+      "question_translation": "我们今晚可以去那家巴西咖啡馆吗?",
       "choice_translations": [
-        "A：比那个多了一些。",
-        "B：上周去了那里。",
-        "C：五人的预订。"
+        "A：比那个多一些。",
+        "B：我上周去了那里。",
+        "C：为五人的预订。"
       ],
       "item_id": 12,
       "priority": {

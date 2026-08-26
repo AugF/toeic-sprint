@@ -28,38 +28,58 @@
       "asset_key": "official-2-test-2/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "M Jay 昨天没有批准费用报告吗？ E¥w\nA. 那太贵了。\nB. 不，他今天会做。\nC. 没有试穿。",
-    "content_translation": "M Jay 昨天没有批准费用报告吗？ E¥w\nA. 那太贵了。\nB. 不，他今天会做。\nC. 没有试穿。"
+    "transcript": "Didn't Jay approve the expense report yesterday?\nA. That's expensive.\nB. No, he'll do it today.\nC. I didn't try it on.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c41ac89850003ac30563069644ebc48f8291d163b449fc6d147aa68e761e9b67",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "Jay 昨天没有批准费用报告吗？\nA. 那很贵。\nB. 不，他今天会做。\nC. 我没试过。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2b49a85905d5cb90b1c113095e7970ed04962cd61ab45880cb27dee7a7b3d0ee"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "That's expensive.",
         "No, he'll do it today.",
-        "didn’t try it on."
+        "I didn't try it on."
       ],
       "answer": "B",
-      "question": "M Didn’t Jay approve the expense report yesterday? E¥w",
+      "question": "Didn't Jay approve the expense report yesterday?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M Didn’t Jay approve the expense report yesterday? E¥w”，自然应答是“No, he'll do it today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, he'll do it today.）。",
-      "question_translation": "M Jay 昨天没有批准费用报告吗？ E¥w",
+      "answer_explain": "原文依据：问句或陈述是“Didn't Jay approve the expense report yesterday?”，自然应答是“No, he'll do it today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, he'll do it today.）。",
+      "question_translation": "Jay 昨天没有批准费用报告吗?",
       "choice_translations": [
-        "A：那太贵了。",
-        "B：不，他今天会做。",
-        "C：没有试穿。"
+        "A：那很贵。",
+        "B：不,他今天会做。",
+        "C：我没试过。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M Didn’t Jay approve the expense report yesterday? E¥w",
+      "evidence": "参考原文第 1 段：Didn't Jay approve the expense report yesterday?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M Didn’t Jay approve the expense report yesterday? E¥w",
+        "evidence": "参考原文第 1 段：Didn't Jay approve the expense report yesterday?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“M Didn’t Jay approve the expense report yesterday? E¥w”，自然应答是“No, he'll do it today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, he'll do it today.）。"
+        "analysis": "原文依据：问句或陈述是“Didn't Jay approve the expense report yesterday?”，自然应答是“No, he'll do it today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, he'll do it today.）。"
       },
       "item_id": 11,
       "priority": {

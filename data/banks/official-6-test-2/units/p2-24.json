@@ -28,8 +28,28 @@
       "asset_key": "official-6-test-2/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Which aisle are the paper plates in?",
-    "content_translation": "中文辅助（离线预处理）：Which aisle are the paper plates in?"
+    "transcript": "Which aisle are the paper plates in?\nA. There's extra copy paper in the cabinet.\nB. You can set them on the table.\nC. We'll have more in stock tomorrow.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "629964b8d7dc5cc5a24cdade0c09ea7b147cb46e7e5340e6c5d0fda86a4d685c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "纸盘在哪里？\nA. 柜子里有额外的复印纸。\nB. 你可以把它们放在桌子上。\nC. 我们明天会有更多存货。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5b73ba7e41e41f44e4699d803b8fa4b44ff682f08371c03f468a1ad1114bf4f6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Which aisle are the paper plates in?”，自然应答是“We'll have more in stock tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（We'll have more in stock tomorrow.）。",
-      "question_translation": "中文辅助（离线预处理）：Which aisle are the paper plates in?",
+      "question_translation": "纸盘在哪里?",
       "choice_translations": [
-        "A：There's extra copy paper in the cabinet.",
-        "B：You can set them on the table.",
-        "C：We'll have more in stock tomorrow."
+        "A：柜子里有额外的复印纸。",
+        "B：你可以把它们放在桌子上。",
+        "C：我们明天会有更多存货。"
       ],
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段：Which aisle are the paper plates in?",

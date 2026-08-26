@@ -41,9 +41,32 @@
       "asset_key": "official-4-test-1/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "ER w Hello, Mr. Simmons. This is Nakeesha Williams, frc\nKansity Pharmaceuticals. We were very impress\nwith your interview and would like to offer you a jok\nas a full-time sales representative.\nmM Wow, that’s great news. I'd like to accept your offer\nbut | can’t start right away. | have to give my currer\nemployer two weeks notice before leaving.\nThat's fine. @You just have to come in next Monda\nto sign the paperwork. My office is on the fifth\nfloor—it’s room 57-N, but maybe | should meet yo\nin the lobby so you know how to get here.\niv Oh, that’s not necessary. Anyway, | have your\nphone number.",
-    "transcript_translation": "中文辅助（离线预处理）：ER w Hello, Mr.\nSimmons.\nThis is Nakeesha Williams, frc\nKansity Pharmaceuticals.\nWe were very impress\nwith your interview and would like to offer you a jok\nas a full-time sales representative.\nmM Wow, that’s great news.\nI'd like to accept your offer\nbut | can’t start right away.\n| have to give my currer\nemployer two weeks notice before leaving.\nThat's fine.\n@You just have to come in next Monda\nto sign the paperwork.\nMy office（办公室） is on the fifth\nfloor—it’s room 57-N, but maybe | should meet yo\nin the lobby so you know how（如何） to get here.\niv Oh, that’s not necessary.\nAnyway, | have your\nphone number.",
-    "content_translation": "中文辅助（离线预处理）：ER w Hello, Mr.\nSimmons.\nThis is Nakeesha Williams, frc\nKansity Pharmaceuticals.\nWe were very impress\nwith your interview and would like to offer you a jok\nas a full-time sales representative.\nmM Wow, that’s great news.\nI'd like to accept your offer\nbut | can’t start right away.\n| have to give my currer\nemployer two weeks notice before leaving.\nThat's fine.\n@You just have to come in next Monda\nto sign the paperwork.\nMy office（办公室） is on the fifth\nfloor—it’s room 57-N, but maybe | should meet yo\nin the lobby so you know how（如何） to get here.\niv Oh, that’s not necessary.\nAnyway, | have your\nphone number."
+    "transcript": "Hello, Mr. Simmons.\nThis is Nikesha Williams from Kansas City Pharmaceuticals.\nWe were very impressed with your interview and would like to offer you a job as a full-time sales representative.\nWow, that's great news.\nI'd like to accept your offer, but I can't start right away.\nI have to give my current employer two weeks' notice before leaving.\nThat's fine.\nYou just have to come in next Monday to sign the paperwork.\nMy office is on the fifth floor.\nIt's room 57N, but maybe I should meet you in the lobby so you know how to get here.\nOh, that's not necessary.\nAnyway, I have your phone number.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "dc6dc2bc4a08b6831c0f8a29e2ced6e240f8145b59f7c229f076dd7daf9604e5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 109,
+        "legacy_word_count": 106,
+        "length_ratio": 1.028,
+        "legacy_coverage": 0.887
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "您好，Simmons 先生。\n我是来自堪萨斯城制药公司的 Nikesha Williams。\n我们对您的面试印象深刻，想为您提供一名全职销售代表的职位。\n哇，这是个好消息。\n我想接受您的提议，但我不能马上开始工作。\n我必须提前两周通知我的现雇主才能离开。\n没关系。\n您只需要下周一来签署文件就行了。\n我的办公室在五楼。\n是 57N 室，但也许我应该在大厅和您见面，这样您就知道怎么到这里了。\n哦，那没有必要。\n无论如何，我有您的电话号码了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "faeb7d34dfe828a19bd4b7b5c16da2d7ba5efa8be8cce7e21a27918c7889e6e1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +78,23 @@
       ],
       "answer": "A",
       "question": "Why does the woman call the man?",
-      "answer_explain": "原文依据：听力原文中提到“with your interview and would like to offer you a jok”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To offer him a job）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） call the man（男士）?",
+      "answer_explain": "正确答案：A（To offer him a job）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the woman(女士) call the man(男士)?",
       "choice_translations": [
-        "A：To offer him a job",
-        "B：To ask him about an invoice",
-        "C：To explain a project",
-        "D：To discuss a company（公司） merger"
+        "A:To offer him a job",
+        "B:To ask him about an invoice",
+        "C:To explain a project",
+        "D:To discuss a company(公司) merger"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：ER w Hello, Mr. Simmons. This is Nakeesha Williams, frc",
+      "evidence": "参考听力原文：“We were very impressed with your interview and would like to offer you a job as a full-time sales representative.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：ER w Hello, Mr. Simmons. This is Nakeesha Williams, frc",
+        "evidence": "参考听力原文：“We were very impressed with your interview and would like to offer you a job as a full-time sales representative.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“with your interview and would like to offer you a jok”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To offer him a job）。"
+        "analysis": "正确答案：A（To offer him a job）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -109,23 +132,23 @@
       ],
       "answer": "B",
       "question": "What will the man most likely do on Monday?",
-      "answer_explain": "原文依据：听力原文中提到“to sign the paperwork.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Sign some documents）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） most likely（最可能） do on Monday?",
+      "answer_explain": "正确答案：B（Sign some documents）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) most likely(最可能) do on Monday?",
       "choice_translations": [
-        "A：Submit a proposal",
-        "B：Sign some documents",
-        "C：Meet with a client",
-        "D：Pick up an order（订单）"
+        "A:Submit a proposal",
+        "B:Sign some documents",
+        "C:Meet with a client",
+        "D:Pick up an order(订单)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：ER w Hello, Mr. Simmons. This is Nakeesha Williams, frc",
+      "evidence": "参考听力原文：“You just have to come in next Monday to sign the paperwork.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：ER w Hello, Mr. Simmons. This is Nakeesha Williams, frc",
+        "evidence": "参考听力原文：“You just have to come in next Monday to sign the paperwork.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“to sign the paperwork.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Sign some documents）。"
+        "analysis": "正确答案：B（Sign some documents）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -163,23 +186,23 @@
       ],
       "answer": "A",
       "question": "What does the man imply when he says, “I olan have your phone number’?",
-      "answer_explain": "原文依据：听力原文中提到“in the lobby so you know how to get here.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（He will call the woman if he gets lost.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） imply when（何时） he says, “I olan have your phone number’?",
+      "answer_explain": "正确答案：A（He will call the woman if he gets lost.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) imply when(何时) he says, “I olan have your phone number’?",
       "choice_translations": [
-        "A：He will call the woman（女士） if he gets lost.",
-        "B：He does not have time to meet the woman（女士） in person.",
-        "C：He does not need to be given some t contact information（信息）.",
-        "D：He will explain a decision as quickly as"
+        "A:He will call the woman(女士) if he gets lost.",
+        "B:He does not have time to meet the woman(女士) in person.",
+        "C:He does not need to be given some t contact information(信息).",
+        "D:He will explain a decision as quickly as"
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 13 段：phone number.",
+      "evidence": "参考听力原文：“Anyway, I have your phone number.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 13 段：phone number.",
+        "evidence": "参考听力原文：“Anyway, I have your phone number.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“in the lobby so you know how to get here.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（He will call the woman if he gets lost.）。"
+        "analysis": "正确答案：A（He will call the woman if he gets lost.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

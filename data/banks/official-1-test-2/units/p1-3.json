@@ -31,14 +31,34 @@
       "asset_key": "official-1-test-2/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 她指向一座建筑。\nB. 她把雨伞递给那位男士。\nC. 他们在互相问好。\nD. 他们并肩而行。",
-    "content_translation": "A. 她指向一座建筑。\nB. 她把雨伞递给那位男士。\nC. 他们在互相问好。\nD. 他们并肩而行。"
+    "transcript": "A. She's pointing toward a building.\nB. She's handing the man an umbrella.\nC. They're greeting each other.\nD. They're walking side by side.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3e16a69889bd2aed11f8ccfa358e35c36f533d45e029b27085d3cbb83dc28444",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 35
+      }
+    },
+    "transcript_translation": "A. 她正指向一栋建筑。\nB. 她正把一把伞递给那位男士。\nC. 他们正在互相打招呼。\nD. 他们并肩而行。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c06439eb8693882d9ee72a823f804dc03e40de1b19c7eb03b5f56a32d81baaed"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "She’s pointing toward a building.",
-        "She’s handing the man an umbrella.",
+        "She's pointing toward a building.",
+        "She's handing the man an umbrella.",
         "They're greeting each other.",
         "They're walking side by side."
       ],
@@ -48,9 +68,9 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“They're greeting each other.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（They're greeting each other.）。",
       "choice_translations": [
-        "A：她指向一座建筑。",
-        "B：她把雨伞递给那位男士。",
-        "C：他们在互相问好。",
+        "A：她正指向一栋建筑。",
+        "B：她正把一把伞递给那位男士。",
+        "C：他们正在互相打招呼。",
         "D：他们并肩而行。"
       ],
       "question_type": "照片细节题",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p1-3/3"
+      "item_key": "official-1-test-2/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

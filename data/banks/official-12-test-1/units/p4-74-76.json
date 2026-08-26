@@ -37,9 +37,31 @@
       "asset_key": "official-12-test-1/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "meeting.\nEKW\nBefore we end our meeting today, ol have two updates that'll\naffect our library. First, Othe parking area's being resurfaced\non Sunday. Although we'll be closed, we'll post signs letting\npatrons know they can access the book return box by using\nthe walkway on the east side of the building. Also, Owe met\nour fund-raising goal to modernize our building's technology\nsystems! Ol can't list all the benefits, but new computers will\nstart arriving Monday. More exciting updates will follow.",
-    "transcript_translation": "中文辅助（离线预处理）：meeting（会议）.\nEKW\nBefore we end our meeting（会议） today, ol have two updates that'll\naffect our library.\nFirst, Othe parking area's being resurfaced\non Sunday.\nAlthough we'll be closed, we'll post signs letting\npatrons know they can access the book return box by using\nthe walkway on the east side of the building.\nAlso, Owe met\nour fund-raising goal to modernize our building's technology\nsystems!\nOl can't list all the benefits, but new computers will\nstart arriving Monday.\nMore exciting updates will follow.",
-    "content_translation": "中文辅助（离线预处理）：meeting（会议）.\nEKW\nBefore we end our meeting（会议） today, ol have two updates that'll\naffect our library.\nFirst, Othe parking area's being resurfaced\non Sunday.\nAlthough we'll be closed, we'll post signs letting\npatrons know they can access the book return box by using\nthe walkway on the east side of the building.\nAlso, Owe met\nour fund-raising goal to modernize our building's technology\nsystems!\nOl can't list all the benefits, but new computers will\nstart arriving Monday.\nMore exciting updates will follow."
+    "transcript": "Before we end our meeting today, I have two updates that will affect our library.\nFirst, the parking area is being resurfaced on Sunday.\nAlthough we'll be closed, we'll post signs letting patrons know they can access the book return box by using the walkway on the east side of the building.\nAlso, we met our fundraising goal to modernize our building's technology systems.\nI can't list all the benefits, but new computers will start arriving Monday.\nMore exciting updates will follow.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d59242777e4cb8061b2817f35c3d66a12e20cd908def4718b11ec724a3d824dd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 82,
+        "legacy_word_count": 82,
+        "length_ratio": 1,
+        "legacy_coverage": 0.902
+      }
+    },
+    "transcript_translation": "在我们结束今天的会议之前，我有两个会影响我们图书馆的更新。\n首先，停车区域将在周日重新铺设路面。\n虽然我们将关闭，但我们会张贴告示让顾客知道，他们可以通过建筑东侧的人行道使用图书归还箱。\n此外，我们达到了现代化本馆技术系统的筹款目标。\n我不能列出所有好处，但新电脑将于周一开始到货。\n更多令人兴奋的更新即将到来。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3a243ef7830a31ca33dc309d1a962646e7a1d746193ad265dc1e25fd9be42e07"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,24 +72,24 @@
         "At a bookstore"
       ],
       "answer": "A",
-      "question": "Where does the speaker work? EM A",
-      "answer_explain": "原文依据：听力原文中提到“affect our library.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（At a library）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the speaker（说话者） work（工作）?\nEM A",
+      "question": "Where does the speaker work?",
+      "answer_explain": "正确答案：A（At a library）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the speaker(说话者) work(工作)? EM A",
       "choice_translations": [
-        "A：At a library",
-        "B：At a hospital",
-        "C：At a city hall",
-        "D：At a bookstore"
+        "A:At a library",
+        "B:At a hospital",
+        "C:At a city hall",
+        "D:At a bookstore"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：meeting.",
+      "evidence": "参考听力原文：“Before we end our meeting today, I have two updates that will affect our library.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：meeting.",
+        "evidence": "参考听力原文：“Before we end our meeting today, I have two updates that will affect our library.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“affect our library.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（At a library）。"
+        "analysis": "正确答案：A（At a library）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "B",
       "question": "Why will signs be posted?",
-      "answer_explain": "原文依据：听力原文中提到“Although we'll be closed, we'll post signs letting”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To point out a temporary change）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） will signs be posted?",
+      "answer_explain": "正确答案：B（To point out a temporary change）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) will signs be posted?",
       "choice_translations": [
-        "A：To identify some special discounts",
-        "B：To point out a temporary change",
-        "C：To announce a fund-raising event",
-        "D：To celebrate employee（员工） achievements"
+        "A:To identify some special discounts",
+        "B:To point out a temporary change",
+        "C:To announce a fund-raising event",
+        "D:To celebrate employee(员工) achievements"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：on Sunday. Although we'll be closed, we'll post signs letting",
+      "evidence": "参考听力原文：“Although we'll be closed, we'll post signs letting patrons know they can access the book return box by using the walkway on the east side of the building.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：on Sunday. Although we'll be closed, we'll post signs letting",
+        "evidence": "参考听力原文：“Although we'll be closed, we'll post signs letting patrons know they can access the book return box by using the walkway on the east side of the building.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Although we'll be closed, we'll post signs letting”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To point out a temporary change）。"
+        "analysis": "正确答案：B（To point out a temporary change）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -150,24 +172,24 @@
         "To assign a task"
       ],
       "answer": "C",
-      "question": "Why does the speaker say,\"newcomputers 82. What should the listeners do to make Will start arriving Monday\"?",
-      "answer_explain": "原文依据：听力原文中提到“start arriving Monday.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To give an example）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say,\"newcomputers 82.\nWhat（什么） should the listeners do to make Will start arriving Monday\"?",
+      "question": "Why does the speaker say, \"new computers will start arriving Monday\"?",
+      "answer_explain": "正确答案：C（To give an example）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say,\"newcomputers What(什么) should the listeners do to make Will start arriving Monday\"?",
       "choice_translations": [
-        "A：To correct a date",
-        "B：To provide a reminder",
-        "C：To give an example",
-        "D：To assign a task"
+        "A:To correct a date",
+        "B:To provide a reminder",
+        "C:To give an example",
+        "D:To assign a task"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：start arriving Monday. More exciting updates will follow.",
+      "evidence": "参考听力原文：“I can't list all the benefits, but new computers will start arriving Monday.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：start arriving Monday. More exciting updates will follow.",
+        "evidence": "参考听力原文：“I can't list all the benefits, but new computers will start arriving Monday.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“start arriving Monday.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To give an example）。"
+        "analysis": "正确答案：C（To give an example）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

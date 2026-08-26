@@ -39,9 +39,31 @@
       "asset_key": "official-8-test-1/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "I'm here to pick up the photographs your studio took\nof me and my family last month. The last name is Park.\nEw OK, ®let me go find them in the back room. ®While\nDUCEDELE ROBEENSERENCEDES.\nyou're waiting, here's a catalog that shows other items\nwe can put photographs on, like T-shirts, calendars, or\nmugs.\nm That's a great idea. I see there are lots of items to\nchoose from.\nw Yes, and Owe have a special offer this month. ®We'll\nship anything you purchase free of charge.",
-    "transcript_translation": "中文辅助（离线预处理）：I'm here to pick up the photographs your studio took\nof me and my family last month.\nThe last name is Park.\nEw OK, ®let me go find them in the back room.\n®While\nDUCEDELE ROBEENSERENCEDES.\nyou're waiting, here's a catalog that shows other items\nwe can put photographs on, like T-shirts, calendars, or\nmugs.\nm That's a great idea.\nI see there are lots of items to\nchoose from.\nw Yes, and Owe have a special offer this month.\n®We'll\nship anything you purchase（购买） free of charge.",
-    "content_translation": "中文辅助（离线预处理）：I'm here to pick up the photographs your studio took\nof me and my family last month.\nThe last name is Park.\nEw OK, ®let me go find them in the back room.\n®While\nDUCEDELE ROBEENSERENCEDES.\nyou're waiting, here's a catalog that shows other items\nwe can put photographs on, like T-shirts, calendars, or\nmugs.\nm That's a great idea.\nI see there are lots of items to\nchoose from.\nw Yes, and Owe have a special offer this month.\n®We'll\nship anything you purchase（购买） free of charge."
+    "transcript": "I'm here to pick up the photographs your studio took of me and my family last month.\nThe last name is Park.\nOkay, let me go find them in the back room.\nWhile you're waiting, here's a catalog that shows other items we can put photographs on, like t-shirts, calendars, or mugs.\nThat's a great idea.\nI see there are lots of items to choose from.\nYes, and we have a special offer this month.\nWe'll ship anything you purchase free of charge.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6658d05182202030e40aa62eb651b6bf9044792add4aa144d48c135805c72d5e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 83,
+        "legacy_word_count": 86,
+        "length_ratio": 0.965,
+        "legacy_coverage": 0.907
+      }
+    },
+    "transcript_translation": "我是来取上个月你们工作室为我和我的家人拍摄的照片的。\n姓氏是朴。\n好的，让我去后室找一下。\n在你等待的时候，这里有一本目录，展示了我们可以将照片印在其他物品上的，比如T恤、日历或马克杯。\n这是个好主意。\n我看到有很多可以挑选的物品。\n是的，而且我们这个月有特别优惠。\n购买任何东西都可以免费寄送。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c83871018a736c1d5840af72d1a829b1403957ed54c12af03671077e9a67c967"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "C",
       "question": "Where most likely are the speakers?",
-      "answer_explain": "原文依据：听力原文中提到“I'm here to pick up the photographs your studio took”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a photography studio）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） most likely（最可能） are the speakers?",
+      "answer_explain": "正确答案：C（At a photography studio）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) most likely(最可能) are the speakers?",
       "choice_translations": [
-        "A：At a clothing shop",
-        "B：At an art gallery",
-        "C：At a photography studio",
-        "D：At a stationery store"
+        "A:At a clothing shop",
+        "B:At an art gallery",
+        "C:At a photography studio",
+        "D:At a stationery store"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：I'm here to pick up the photographs your studio took",
+      "evidence": "参考听力原文：“I'm here to pick up the photographs your studio took of me and my family last month.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：I'm here to pick up the photographs your studio took",
+        "evidence": "参考听力原文：“I'm here to pick up the photographs your studio took of me and my family last month.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I'm here to pick up the photographs your studio took”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a photography studio）。"
+        "analysis": "正确答案：C（At a photography studio）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What does the woman give the man?",
-      "answer_explain": "原文依据：听力原文中提到“you're waiting, here's a catalog that shows other items”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A catalog）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） give the man（男士）?",
+      "answer_explain": "正确答案：B（A catalog）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) give the man(男士)?",
       "choice_translations": [
-        "A：A poster",
-        "B：A catalog",
-        "C：A gift card",
-        "D：An instruction manual"
+        "A:A poster",
+        "B:A catalog",
+        "C:A gift card",
+        "D:An instruction manual"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：I'm here to pick up the photographs your studio took",
+      "evidence": "参考听力原文：“While you're waiting, here's a catalog that shows other items we can put photographs on, like t-shirts, calendars, or mugs.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：I'm here to pick up the photographs your studio took",
+        "evidence": "参考听力原文：“While you're waiting, here's a catalog that shows other items we can put photographs on, like t-shirts, calendars, or mugs.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“you're waiting, here's a catalog that shows other items”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A catalog）。"
+        "analysis": "正确答案：B（A catalog）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "A",
       "question": "What special offer does the woman mention?",
-      "answer_explain": "原文依据：听力原文中提到“ship anything you purchase free of charge.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Free shipping）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） special offer does the woman（女士） mention?",
+      "answer_explain": "正确答案：A（Free shipping）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) special offer does the woman(女士) mention?",
       "choice_translations": [
-        "A：Free shipping",
-        "B：Early entrance",
-        "C：A sales discount",
-        "D：A customer（顾客） loyalty program"
+        "A:Free shipping",
+        "B:Early entrance",
+        "C:A sales discount",
+        "D:A customer(顾客) loyalty program"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：w Yes, and Owe have a special offer this month. ®We'll",
+      "evidence": "参考听力原文：“Yes, and we have a special offer this month.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：w Yes, and Owe have a special offer this month. ®We'll",
+        "evidence": "参考听力原文：“Yes, and we have a special offer this month.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“ship anything you purchase free of charge.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Free shipping）。"
+        "analysis": "正确答案：A（Free shipping）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

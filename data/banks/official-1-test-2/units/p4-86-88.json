@@ -39,9 +39,31 @@
       "asset_key": "official-1-test-2/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "w\nGood evening! @1’m so glad you all could make it\ncelebrate our company’s expansion. @When | firs\ngreeting card company, it was only a small team o\nstruggling to make our business work. And now wi\nfull-time employees, we’ve expanded our distributi\neven have a new, much larger office space. So ©;\nyou leave the banquet, pick up your gift bag. It’s m\ntoken of appreciation to thank all of you for your cc\nour company’s success.",
-    "transcript_translation": "晚上好！我很高兴大家能来参加庆祝我们公司扩张的活动。当初，作为一家初创的公司，我们只是一个为维持生计而挣扎的小团队。而现在，有了全职员工，我们的分销范围都扩大了，甚至拥有了一个更大、全新的办公空间。所以，当您离开宴会时，请带上您的礼品袋。这是公司对感谢各位为公司的成功所做出的心意。\n",
-    "content_translation": "晚上好！我很高兴大家能来参加庆祝我们公司扩张的活动。当初，作为一家初创的公司，我们只是一个为维持生计而挣扎的小团队。而现在，有了全职员工，我们的分销范围都扩大了，甚至拥有了一个更大、全新的办公空间。所以，当您离开宴会时，请带上您的礼品袋。这是公司对感谢各位为公司的成功所做出的心意。\n"
+    "transcript": "Good evening!\nI'm so glad you all could make it tonight to celebrate our company's expansion.\nWhen I first started this greeting card company, it was only a small team of three people struggling to make our business work.\nAnd now we have 20 full-time employees, we've expanded our distribution, and we even have a new, much larger office space.\nSo please, before you leave the banquet, pick up your gift bag.\nIt's my personal token of appreciation to thank all of you for your contribution to our company's success.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "2746cd6af2c5d2089f68b74fb7179e042482aa187696998c9583fe02bc9b0216",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 89,
+        "legacy_word_count": 76,
+        "length_ratio": 1.171,
+        "legacy_coverage": 0.895
+      }
+    },
+    "transcript_translation": "大家晚上好！\n我很高兴今晚能邀请到各位来庆祝我们公司的扩张。\n当我刚创立这家贺卡公司时，只有三个人组成的微小团队，努力让我们的生意运转起来。\n而现在我们有 20 名全职员工，扩大了分销范围，甚至还有一个新的、更大的办公空间。\n所以请各位在离开宴会前，领取您的伴手礼袋。\n这是我个人的一点心意，感谢大家对公司成功的贡献。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3dd0ef8b9772b71a7a16d79fbb20f3b25c76585fa71d2fcbf6e0f3079b42faa1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "What is being celebrated?",
-      "answer_explain": "原文依据：听力原文中提到“greeting card company, it was only a small team o”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（The growth of a company）。",
-      "question_translation": "正在庆祝什么？",
+      "answer_explain": "正确答案：D（The growth of a company）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "正在庆祝什么?",
       "choice_translations": [
-        "A：完成了一些翻修工程",
-        "B：一位同事的退休",
-        "C：一项社区服务奖项",
-        "D：一家公司的发展"
+        "A:完成了一些翻修工程",
+        "B:一位同事的退休",
+        "C:一项社区服务奖项",
+        "D:一家公司的发展"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：w",
+      "evidence": "参考听力原文：“When I first started this greeting card company, it was only a small team of three people struggling to make our business work.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：w",
+        "evidence": "参考听力原文：“When I first started this greeting card company, it was only a small team of three people struggling to make our business work.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“greeting card company, it was only a small team o”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（The growth of a company）。"
+        "analysis": "正确答案：D（The growth of a company）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 86,
       "priority": {
@@ -99,29 +121,29 @@
     {
       "choices": [
         "A lead architect",
-        "Abusiness owner",
-        "Acurrent client",
-        "Aconference coordinator"
+        "A business owner",
+        "A current client",
+        "A conference coordinator"
       ],
       "answer": "B",
       "question": "Who most likely is the speaker?",
-      "answer_explain": "原文依据：听力原文中提到“you leave the banquet, pick up your gift bag.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Abusiness owner）。",
-      "question_translation": "说话者最可能是谁？",
+      "answer_explain": "正确答案：B（A business owner）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者最可能是谁?",
       "choice_translations": [
-        "A：首席建筑师",
-        "B：企业主",
-        "C：现任客户",
-        "D：会议协调员"
+        "A:首席建筑师",
+        "B:企业主",
+        "C:现任客户",
+        "D:会议协调员"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：w",
+      "evidence": "参考听力原文：“When I first started this greeting card company, it was only a small team of three people struggling to make our business work.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：w",
+        "evidence": "参考听力原文：“When I first started this greeting card company, it was only a small team of three people struggling to make our business work.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“you leave the banquet, pick up your gift bag.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Abusiness owner）。"
+        "analysis": "正确答案：B（A business owner）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 87,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "D",
       "question": "What are employees asked to do before t leave?",
-      "answer_explain": "原文依据：听力原文中提到“you leave the banquet, pick up your gift bag.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Collect a gift）。",
-      "question_translation": "员工在离开前被要求做什么？",
+      "answer_explain": "正确答案：D（Collect a gift）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "员工在离开前被要求做什么?",
       "choice_translations": [
-        "A：会见一位公职人员",
-        "B：合影留念",
-        "C：做捐款",
-        "D：领取一份礼物"
+        "A:会见一位公职人员",
+        "B:合影留念",
+        "C:做捐款",
+        "D:领取一份礼物"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：full-time employees, we’ve expanded our distributi",
+      "evidence": "参考听力原文：“So please, before you leave the banquet, pick up your gift bag.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：full-time employees, we’ve expanded our distributi",
+        "evidence": "参考听力原文：“So please, before you leave the banquet, pick up your gift bag.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“you leave the banquet, pick up your gift bag.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Collect a gift）。"
+        "analysis": "正确答案：D（Collect a gift）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 88,
       "priority": {

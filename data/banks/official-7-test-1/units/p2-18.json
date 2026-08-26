@@ -28,8 +28,28 @@
       "asset_key": "official-7-test-1/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：W",
-    "content_translation": "中文辅助（离线预处理）：W"
+    "transcript": "I can recycle this milk container, right?\nA. I rode my bicycle yesterday.\nB. Correct, so please put it in this bin.\nC. I prefer to drink tea.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3e544cbf1b5275f03ff3a336c6428e3ea60ab3da353c5ad887c86dfa501431a4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "我能回收这个牛奶容器，对吗？\nA. 我昨天骑了自行车。\nB. 对的，请把它放进这个垃圾桶里。\nC. 我更喜欢喝茶。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ee11d9c067758d96a0b4bda8daa59224405017595c6c162dfbfa3d2e7a2befc9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "I prefer to drink tea."
       ],
       "answer": "B",
-      "question": "W",
+      "question": "I can recycle this milk container, right?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“W”，自然应答是“Correct, so please put it in this bin.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Correct, so please put it in this bin.）。",
-      "question_translation": "中文辅助（离线预处理）：W",
+      "answer_explain": "原文依据：问句或陈述是“I can recycle this milk container, right?”，自然应答是“Correct, so please put it in this bin.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Correct, so please put it in this bin.）。",
+      "question_translation": "我能回收这个牛奶容器,对吗?",
       "choice_translations": [
-        "A：I rode my bicycle yesterday.",
-        "B：Correct, so please（请） put it in this bin.",
-        "C：I prefer to drink tea."
+        "A：我昨天骑了自行车。",
+        "B：对的,请把它放进这个垃圾桶里。",
+        "C：我更喜欢喝茶。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：W",
+      "evidence": "参考原文第 1 段：I can recycle this milk container, right?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：W",
+        "evidence": "参考原文第 1 段：I can recycle this milk container, right?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“W”，自然应答是“Correct, so please put it in this bin.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Correct, so please put it in this bin.）。"
+        "analysis": "原文依据：问句或陈述是“I can recycle this milk container, right?”，自然应答是“Correct, so please put it in this bin.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Correct, so please put it in this bin.）。"
       },
       "item_id": 18,
       "priority": {

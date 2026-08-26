@@ -40,9 +40,31 @@
       "asset_key": "official-12-test-1/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "W\nEveryone-othanks for your help moving the leftover\nsummer and fall items to the back of the store. OK. e The\nshipment of winter wear - coats, sweaters, and hats—\nshould arrive soon. The truck driver just texted me. e Can\nanyone help unload the truck? ... • Thanks for volunteering,\nTariq and Rodrigo. I appreciate it! Oh, and edid anyone see\nthat today's newspaper advertisement says seasonal sale is\nn15 SA\ntomorrow? Well, that sales promotion is next week. ® Be sure\nto tell customers about it if they ask you. I'm sure it's going to\ncause some confusion.",
-    "transcript_translation": "中文辅助（离线预处理）：W\nEveryone-othanks for your help moving the leftover\nsummer and fall items to the back of the store.\nOK.\ne The\nshipment of winter wear - coats, sweaters, and hats—\nshould arrive soon.\nThe truck driver just texted me.\ne Can\nanyone help unload the truck?\n...\n• Thanks for volunteering,\nTariq and Rodrigo.\nI appreciate it!\nOh, and edid anyone see\nthat today's newspaper advertisement says seasonal sale is\nn15 SA\ntomorrow?\nWell, that sales promotion is next week.\n® Be sure\nto tell customers about it if they ask you.\nI'm sure it's going to\ncause some confusion.",
-    "content_translation": "中文辅助（离线预处理）：W\nEveryone-othanks for your help moving the leftover\nsummer and fall items to the back of the store.\nOK.\ne The\nshipment of winter wear - coats, sweaters, and hats—\nshould arrive soon.\nThe truck driver just texted me.\ne Can\nanyone help unload the truck?\n...\n• Thanks for volunteering,\nTariq and Rodrigo.\nI appreciate it!\nOh, and edid anyone see\nthat today's newspaper advertisement says seasonal sale is\nn15 SA\ntomorrow?\nWell, that sales promotion is next week.\n® Be sure\nto tell customers about it if they ask you.\nI'm sure it's going to\ncause some confusion."
+    "transcript": "Everyone, thanks for your help moving the leftover summer and fall items to the back of the store.\nOkay, the shipment of winter wear, coats, sweaters, and hats should arrive soon.\nThe truck driver just texted me.\nCan anyone help unload the truck?\nThanks for volunteering, Tariq and Rodrigo.\nI appreciate it.\nOh, and did anyone see that today's newspaper advertisement says seasonal sale is tomorrow?\nWell, that sales promotion is next week.\nBe sure to tell customers about it if they ask you.\nI'm sure it's going to cause some confusion.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7b2a64017fb82a803c8fbced9a18b47132f935ca0f3c70a49cf4ed3fb16c696a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 92,
+        "legacy_word_count": 92,
+        "length_ratio": 1,
+        "legacy_coverage": 0.935
+      }
+    },
+    "transcript_translation": "大家，感谢你们帮忙把剩余的夏季和秋季物品搬到店后。\n好的，冬季服装、大衣、毛衣和帽子这批货应该很快就到了。\n卡车司机刚刚给我发了短信。\n有没有人能帮着卸货？\n谢谢你们主动帮忙，Tariq 和 Rodrigo。\n我很感激。\n哦，还有，有人看到今天的报纸广告说季节性促销是明天吗？\n嗯，那个销售活动是下周的。\n如果顾客问起，一定要告诉他们。\n我敢肯定这会引起一些混淆。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9d02233f78702379cc1c2c74c4f1fea1e32e6d69730539fa3a26fe3e783ce1c2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,24 +75,24 @@
         "At a furniture store"
       ],
       "answer": "B",
-      "question": "Where do the listeners most likely work? TEM",
-      "answer_explain": "原文依据：听力原文中提到“summer and fall items to the back of the store.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（At a clothing store）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） do the listeners most likely（最可能） work（工作）?\nTEM",
+      "question": "Where do the listeners most likely work?",
+      "answer_explain": "正确答案：B（At a clothing store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) do the listeners most likely(最可能) work(工作)? TEM",
       "choice_translations": [
-        "A：At an electronics store",
-        "B：At a clothing store",
-        "C：At a grocery store",
-        "D：At a furniture store"
+        "A:At an electronics store",
+        "B:At a clothing store",
+        "C:At a grocery store",
+        "D:At a furniture store"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：W",
+      "evidence": "参考听力原文：“Everyone, thanks for your help moving the leftover summer and fall items to the back of the store.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：W",
+        "evidence": "参考听力原文：“Everyone, thanks for your help moving the leftover summer and fall items to the back of the store.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“summer and fall items to the back of the store.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（At a clothing store）。"
+        "analysis": "正确答案：B（At a clothing store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "D",
       "question": "What do Tariq and Rodrigo volunteer to do?",
-      "answer_explain": "原文依据：听力原文中提到“anyone help unload the truck?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Unload a truck）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） do Tariq and Rodrigo volunteer to do?",
+      "answer_explain": "正确答案：D（Unload a truck）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) do Tariq and Rodrigo volunteer to do?",
       "choice_translations": [
-        "A：Assist some customers",
-        "B：Demonstrate some merchandise",
-        "C：Pack some boxes",
-        "D：Unload a truck"
+        "A:Assist some customers",
+        "B:Demonstrate some merchandise",
+        "C:Pack some boxes",
+        "D:Unload a truck"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：anyone help unload the truck? ... • Thanks for volunteering,",
+      "evidence": "参考听力原文：“Can anyone help unload the truck?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：anyone help unload the truck? ... • Thanks for volunteering,",
+        "evidence": "参考听力原文：“Can anyone help unload the truck?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“anyone help unload the truck?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Unload a truck）。"
+        "analysis": "正确答案：D（Unload a truck）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -153,30 +175,30 @@
     },
     {
       "choices": [
-        "She is surprised by a business decision. Duce. FI",
-        "She will wait to purchase some items. *5nt5zn",
+        "She is surprised by a business decision.",
+        "She will wait to purchase some items.",
         "An advertisement contained an error.",
         "Some preparations must be completed soon."
       ],
       "answer": "C",
-      "question": "What does the speaker imply when she says, \"that TEM sales promotion is next week™?",
-      "answer_explain": "原文依据：听力原文中提到“that today's newspaper advertisement says seasonal sale is”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（An advertisement contained an error.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） imply when（何时） she says, \"that TEM sales promotion is next week™?",
+      "question": "What does the speaker imply when she says, \"that sales promotion is next week?\"",
+      "answer_explain": "正确答案：C（An advertisement contained an error.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) imply when(何时) she says, \"that TEM sales promotion is next weekTM?",
       "choice_translations": [
-        "A：She is surprised by a business decision.\nDuce.\nFI",
-        "B：She will wait to purchase（购买） some items.\n*5nt5zn",
-        "C：An advertisement contained an error.",
-        "D：Some preparations must be completed soon."
+        "A:She is surprised by a business decision. Duce. FI",
+        "B:She will wait to purchase(购买) some items. *5nt5zn",
+        "C:An advertisement contained an error.",
+        "D:Some preparations must be completed soon."
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 10 段：tomorrow? Well, that sales promotion is next week. ® Be sure",
+      "evidence": "参考听力原文：“Well, that sales promotion is next week.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 10 段：tomorrow? Well, that sales promotion is next week. ® Be sure",
+        "evidence": "参考听力原文：“Well, that sales promotion is next week.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“that today's newspaper advertisement says seasonal sale is”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（An advertisement contained an error.）。"
+        "analysis": "正确答案：C（An advertisement contained an error.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

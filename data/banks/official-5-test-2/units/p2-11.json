@@ -27,8 +27,28 @@
       "asset_key": "official-5-test-2/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Is my prescription ready yet?",
-    "content_translation": "中文辅助（离线预处理）：Is my prescription ready yet?"
+    "transcript": "Is my prescription ready yet?\nA. The medical clinic.\nB. Let me check.\nC. One after every meal.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "557602d6af5ce003d54016038f94785b0f1c21e91f2683fb2453bdbc2d869323",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 19
+      }
+    },
+    "transcript_translation": "我的处方药准备好了吗？\nA. 医疗诊所。\nB. 让我查一下。\nC. 每顿饭后服用一次。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5e80c7be0f6574207063334bbe4e15d25db76180933281fc2f991ffe0f24d8c4"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Is my prescription ready yet?”，自然应答是“Let me check.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Let me check.）。",
-      "question_translation": "中文辅助（离线预处理）：Is my prescription ready yet?",
+      "question_translation": "我的处方药准备好了吗?",
       "choice_translations": [
-        "A：The medical clinic.",
-        "B：Let me check.",
-        "C：One after every meal."
+        "A：医疗诊所。",
+        "B：让我查一下。",
+        "C：每顿饭后服用一次。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Is my prescription ready yet?",

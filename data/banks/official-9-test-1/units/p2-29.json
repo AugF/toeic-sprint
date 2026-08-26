@@ -27,8 +27,28 @@
       "asset_key": "official-9-test-1/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Can the housekeeping staff start cleaning all the rooms by two o'clock?",
-    "content_translation": "中文辅助（离线预处理）：Can the housekeeping staff start cleaning all the rooms by two o'clock?"
+    "transcript": "Can the housekeeping staff start cleaning all the rooms by 2 o'clock?\nA. There's a house for sale on Taylor Street.\nB. Some hotel guests check out late.\nC. We offer morning and afternoon flights.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a77c9214ad2a944fe3ec9f95287eaf1f1115edda8e877d823bcfd7955aad6988",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 35
+      }
+    },
+    "transcript_translation": "客房服务人员能在两点前开始清洁所有房间吗？\nA. Taylor街有一栋待售的房子。\nB. 有些酒店客人退房时间晚。\nC. 我们提供上午和下午的航班。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "12f9e941b8f86b10d18e3fb3d63e21766f39381b0c9034d88187ae5d22658aaa"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "We offer morning and afternoon flights."
       ],
       "answer": "B",
-      "question": "Can the housekeeping staff start cleaning all the rooms by two o'clock?",
+      "question": "Can the housekeeping staff start cleaning all the rooms by 2 o'clock?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Can the housekeeping staff start cleaning all the rooms by two o'clock?”，自然应答是“Some hotel guests check out late.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Some hotel guests check out late.）。",
-      "question_translation": "中文辅助（离线预处理）：Can the housekeeping staff start cleaning all the rooms by two o'clock?",
+      "answer_explain": "原文依据：问句或陈述是“Can the housekeeping staff start cleaning all the rooms by 2 o'clock?”，自然应答是“Some hotel guests check out late.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Some hotel guests check out late.）。",
+      "question_translation": "客房服务人员能在两点前开始清洁所有房间吗?",
       "choice_translations": [
-        "A：There's a house for sale on Taylor Street.",
-        "B：Some hotel guests check out late.",
-        "C：We offer morning and afternoon flights."
+        "A：Taylor街有一栋待售的房子。",
+        "B：有些酒店客人退房时间晚。",
+        "C：我们提供上午和下午的航班。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：Can the housekeeping staff start cleaning all the rooms by two o'clock?",
+      "evidence": "参考原文第 1 段：Can the housekeeping staff start cleaning all the rooms by 2 o'clock?",
       "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：Can the housekeeping staff start cleaning all the rooms by two o'clock?",
+        "evidence": "参考原文第 1 段：Can the housekeeping staff start cleaning all the rooms by 2 o'clock?",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Can the housekeeping staff start cleaning all the rooms by two o'clock?”，自然应答是“Some hotel guests check out late.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Some hotel guests check out late.）。"
+        "analysis": "原文依据：问句或陈述是“Can the housekeeping staff start cleaning all the rooms by 2 o'clock?”，自然应答是“Some hotel guests check out late.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Some hotel guests check out late.）。"
       },
       "item_id": 29,
       "priority": {

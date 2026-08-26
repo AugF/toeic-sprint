@@ -27,8 +27,28 @@
       "asset_key": "official-5-test-2/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：What（什么） was presented at last week's budget meeting（会议）?",
-    "content_translation": "中文辅助（离线预处理）：What（什么） was presented at last week's budget meeting（会议）?"
+    "transcript": "What was presented at last week's budget meeting?\nA. Yes, it was held last Thursday.\nB. The manufacturing cost estimates.\nC. At Mr. Nakamura's office.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e231b9577cf603b372d21a0809d979fd8b25b9bc3c4e24914eaa4684c2666a49",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "上周的预算会议上展示了什么？\nA. 是的，它是在上周四举行的。\nB. 制造成本估算。\nC. 在中村先生的办公室。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "15331750d90c0ad61ede1b7613df7b5a5c8869c5f4e8e238eb183b5913902c56"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“What was presented at last week's budget meeting?”，自然应答是“The manufacturing cost estimates.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The manufacturing cost estimates.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） was presented at last week's budget meeting（会议）?",
+      "question_translation": "上周的预算会议上展示了什么?",
       "choice_translations": [
-        "A：Yes, it was held last Thursday.",
-        "B：The manufacturing cost estimates.",
-        "C：At Mr.\nNakamura's office（办公室）."
+        "A：是的,它是在上周四举行的。",
+        "B：制造成本估算。",
+        "C：在中村先生的办公室。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：What was presented at last week's budget meeting?",

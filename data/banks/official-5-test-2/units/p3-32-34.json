@@ -41,9 +41,31 @@
       "asset_key": "official-5-test-2/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "Hi, Lucas. How's the annual revenue report coming\nalong? I'm looking forward to seeing the results.\nI just finished it this morning. ® You'll be happy to know\nthat our yearly profit was higher than we predicted\nthanks to the strong sales of our new headphones.\nEk w Yes—® consumers really like the wireless feature of the\nheadphones, and we've received great reviews on their\nsound quality. Have you shared this news with the\nboard of directors?\nNot yet— Ol'm just about to e-mail them now.",
-    "transcript_translation": "中文辅助（离线预处理）：Hi, Lucas.\nHow（如何）'s the annual revenue report coming\nalong?\nI'm looking forward to seeing the results.\nI just finished it this morning.\n® You'll be happy to know\nthat our yearly profit was higher than we predicted\nthanks to the strong sales of our new headphones.\nEk w Yes—® consumers really like the wireless feature of the\nheadphones, and we've received great reviews on their\nsound quality.\nHave you shared this news with the\nboard of directors?\nNot yet— Ol'm just about to e-mail them now.",
-    "content_translation": "中文辅助（离线预处理）：Hi, Lucas.\nHow（如何）'s the annual revenue report coming\nalong?\nI'm looking forward to seeing the results.\nI just finished it this morning.\n® You'll be happy to know\nthat our yearly profit was higher than we predicted\nthanks to the strong sales of our new headphones.\nEk w Yes—® consumers really like the wireless feature of the\nheadphones, and we've received great reviews on their\nsound quality.\nHave you shared this news with the\nboard of directors?\nNot yet— Ol'm just about to e-mail them now."
+    "transcript": "Hi Lucas.\nHow's the annual revenue report coming along?\nI'm looking forward to seeing the results.\nI just finished it this morning.\nYou'll be happy to know that our yearly profit was higher than we predicted thanks to the strong sales of our new headphones.\nYes, consumers really like the wireless feature of the headphones, and we've received great reviews on their sound quality.\nHave you shared this news with the board of directors?\nNot yet.\nI'm just about to email them now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a534f12d60f1ed34f05ca1a2c04cb5cbae43063efcf8a4230154acc09eb0c9c3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 83,
+        "legacy_word_count": 84,
+        "length_ratio": 0.988,
+        "legacy_coverage": 0.94
+      }
+    },
+    "transcript_translation": "嗨 Lucas。\n年度营收报告进展如何？\n我期待看到结果。\n我今天早上刚完成的。\n你会很高兴知道，由于我们新款耳机的强劲销量，我们的年利润高于预期。\n是的，消费者真的很喜欢耳机无线的功能，而且我们收到了关于其音质的好评。\n你和董事会分享这个消息了吗？\n还没有。\n我现在正要给他们发邮件。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8bb5dadf43cb3d6053197b31ee4064011b1866747214fecd5d1630ddfa268844"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "A",
       "question": "What does the woman ask the man about?",
-      "answer_explain": "原文依据：听力原文中提到“How's the annual revenue report coming”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A financial report）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） ask the man（男士） about?",
+      "answer_explain": "正确答案：A（A financial report）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) ask the man(男士) about?",
       "choice_translations": [
-        "A：A financial report",
-        "B：A newspaper article",
-        "C：A customer（顾客） compliment",
-        "D：An advertising campaign"
+        "A:A financial report",
+        "B:A newspaper article",
+        "C:A customer(顾客) compliment",
+        "D:An advertising campaign"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Hi, Lucas. How's the annual revenue report coming",
+      "evidence": "参考听力原文：“How's the annual revenue report coming along?”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Hi, Lucas. How's the annual revenue report coming",
+        "evidence": "参考听力原文：“How's the annual revenue report coming along?”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“How's the annual revenue report coming”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A financial report）。"
+        "analysis": "正确答案：A（A financial report）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "D",
       "question": "What product do the speakers mention?",
-      "answer_explain": "原文依据：听力原文中提到“thanks to the strong sales of our new headphones.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Headphones）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） product do the speakers mention?",
+      "answer_explain": "正确答案：D（Headphones）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) product do the speakers mention?",
       "choice_translations": [
-        "A：Computers",
-        "B：Printers",
-        "C：Televisions",
-        "D：Headphones"
+        "A:Computers",
+        "B:Printers",
+        "C:Televisions",
+        "D:Headphones"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, Lucas. How's the annual revenue report coming",
+      "evidence": "参考听力原文：“You'll be happy to know that our yearly profit was higher than we predicted thanks to the strong sales of our new headphones.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, Lucas. How's the annual revenue report coming",
+        "evidence": "参考听力原文：“You'll be happy to know that our yearly profit was higher than we predicted thanks to the strong sales of our new headphones.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“thanks to the strong sales of our new headphones.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Headphones）。"
+        "analysis": "正确答案：D（Headphones）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "C",
       "question": "What will the man most likely do next?",
-      "answer_explain": "原文依据：听力原文中提到“Not yet— Ol'm just about to e-mail them now.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Send an e-mail）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） most likely（最可能） do next?",
+      "answer_explain": "正确答案：C（Send an e-mail）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) most likely(最可能) do next?",
       "choice_translations": [
-        "A：Confirm travel plans",
-        "B：Hold a press conference",
-        "C：Send an e-mail",
-        "D：Demonstrate a procedure"
+        "A:Confirm travel plans",
+        "B:Hold a press conference",
+        "C:Send an e-mail",
+        "D:Demonstrate a procedure"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Hi, Lucas. How's the annual revenue report coming",
+      "evidence": "参考听力原文：“You'll be happy to know that our yearly profit was higher than we predicted thanks to the strong sales of our new headphones.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Hi, Lucas. How's the annual revenue report coming",
+        "evidence": "参考听力原文：“You'll be happy to know that our yearly profit was higher than we predicted thanks to the strong sales of our new headphones.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Not yet— Ol'm just about to e-mail them now.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Send an e-mail）。"
+        "analysis": "正确答案：C（Send an e-mail）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

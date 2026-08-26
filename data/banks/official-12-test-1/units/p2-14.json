@@ -28,38 +28,58 @@
       "asset_key": "official-12-test-1/audio/part2/q014.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Did you select Jingdao Wei to lead the DEM initiative?\nW",
-    "content_translation": "中文辅助（离线预处理）：Did you select Jingdao Wei to lead the DEM initiative?\nW"
+    "transcript": "Did you select Jingdao Wei to leave you mischief?\nA. I thought it was a good speech.\nB. At the leadership skills workshop.\nC. No, he didn't have the right qualifications.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "221656c66626bbb7926980807da06c8f563ffaef085761678ea2c7c0a968229c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q014.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "你选择 Jingdao Wei 来给你制造麻烦？\nA. 我觉得那是一篇好的演讲。\nB. 在领导力技能研讨会上。\nC. 不，他没有合适的资格。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "760d084922f8d3a5143d4ea9122da96d25fa40250f7e88d1ce64e4d7bd1c0bf2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "I thought it was a good speech.",
-        "At the leadership-skills workshop. qualifications",
+        "At the leadership skills workshop.",
         "No, he didn't have the right qualifications."
       ],
       "answer": "C",
-      "question": "Did you select Jingdao Wei to lead the DEM initiative? W",
+      "question": "Did you select Jingdao Wei to leave you mischief?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Did you select Jingdao Wei to lead the DEM initiative? W”，自然应答是“No, he didn't have the right qualifications.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（No, he didn't have the right qualifications.）。",
-      "question_translation": "中文辅助（离线预处理）：Did you select Jingdao Wei to lead the DEM initiative?\nW",
+      "answer_explain": "原文依据：问句或陈述是“Did you select Jingdao Wei to leave you mischief?”，自然应答是“No, he didn't have the right qualifications.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（No, he didn't have the right qualifications.）。",
+      "question_translation": "你选择 Jingdao Wei 来给你制造麻烦?",
       "choice_translations": [
-        "A：I thought it was a good speech.",
-        "B：At the leadership-skills workshop.\nqualifications",
-        "C：No, he didn't have the right qualifications."
+        "A：我觉得那是一篇好的演讲。",
+        "B：在领导力技能研讨会上。",
+        "C：不,他没有合适的资格。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Did you select Jingdao Wei to lead the DEM initiative? W",
+      "evidence": "参考原文第 1 段：Did you select Jingdao Wei to leave you mischief?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Did you select Jingdao Wei to lead the DEM initiative? W",
+        "evidence": "参考原文第 1 段：Did you select Jingdao Wei to leave you mischief?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Did you select Jingdao Wei to lead the DEM initiative? W”，自然应答是“No, he didn't have the right qualifications.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（No, he didn't have the right qualifications.）。"
+        "analysis": "原文依据：问句或陈述是“Did you select Jingdao Wei to leave you mischief?”，自然应答是“No, he didn't have the right qualifications.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（No, he didn't have the right qualifications.）。"
       },
       "item_id": 14,
       "priority": {

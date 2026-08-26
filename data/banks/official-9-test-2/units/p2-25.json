@@ -27,8 +27,28 @@
       "asset_key": "official-9-test-2/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：How（如何） are we going to meet Thursday's production quota?",
-    "content_translation": "中文辅助（离线预处理）：How（如何） are we going to meet Thursday's production quota?"
+    "transcript": "How are we going to meet Thursday's production quota?\nA. That's good to hear.\nB. On top of the file cabinet.\nC. By working overtime.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ee17734d02393a042824f3310abaf149d099eb46d3fdc7fc2e8fe60804188a41",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "我们如何才能达到周四的生产配额？\nA. 听到这个很好。\nB. 在文件柜上。\nC. 通过加班工作。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d26655909f75263b4b5d91a07e76ae2b0ccc7eff7ed4e09c945e90493e156eff"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“How are we going to meet Thursday's production quota?”，自然应答是“By working overtime.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（By working overtime.）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） are we going to meet Thursday's production quota?",
+      "question_translation": "我们如何才能达到周四的生产配额?",
       "choice_translations": [
-        "A：That's good to hear.",
-        "B：On top of the file cabinet.",
-        "C：By working overtime."
+        "A：听到这个很好。",
+        "B：在文件柜上。",
+        "C：通过加班工作。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：How are we going to meet Thursday's production quota?",

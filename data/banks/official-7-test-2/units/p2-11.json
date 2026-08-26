@@ -26,38 +26,58 @@
       "asset_key": "official-7-test-2/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：I*m When（何时） are you meeting（会议） the client from India?\n-w",
-    "content_translation": "中文辅助（离线预处理）：I*m When（何时） are you meeting（会议） the client from India?\n-w"
+    "transcript": "When are you meeting the client from India?\nA. Yes, I know that area well.\nB. The new pamphlets.\nC. At 9 a. m. on Tuesday.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3f15cc5bac0a34742ad53b6ea12e9ca0e3eb6b2fb4050b58b73cb6c0eeb8128a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你什么时候和来自印度的客户会面？\nA. 是的，我熟悉那个区域。\nB. 新的小册子。\nC. 周二上午九点。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "590d4be8fa2793c02f5202023a43330db161a1fe9d8d0c4d10372f205ddc23fd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Yes, I know that area well.",
         "The new pamphlets.",
-        "At nine A.M on Tuesday."
+        "At 9 a. m. on Tuesday."
       ],
       "answer": "C",
-      "question": "I*m When are you meeting the client from India? -w",
+      "question": "When are you meeting the client from India?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“I*m When are you meeting the client from India? -w”，自然应答是“At nine A.M on Tuesday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（At nine A.M on Tuesday.）。",
-      "question_translation": "中文辅助（离线预处理）：I*m When（何时） are you meeting（会议） the client from India?\n-w",
+      "answer_explain": "原文依据：问句或陈述是“When are you meeting the client from India?”，自然应答是“At 9 a. m. on Tuesday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（At 9 a. m. on Tuesday.）。",
+      "question_translation": "你什么时候和来自印度的客户会面?",
       "choice_translations": [
-        "A：Yes, I know that area well.",
-        "B：The new pamphlets.",
-        "C：At nine A.M on Tuesday."
+        "A：是的,我熟悉那个区域。",
+        "B：新的小册子。",
+        "C：周二上午九点。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：I*m When are you meeting the client from India? -w",
+      "evidence": "参考原文第 1 段：When are you meeting the client from India?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：I*m When are you meeting the client from India? -w",
+        "evidence": "参考原文第 1 段：When are you meeting the client from India?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“I*m When are you meeting the client from India? -w”，自然应答是“At nine A.M on Tuesday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（At nine A.M on Tuesday.）。"
+        "analysis": "原文依据：问句或陈述是“When are you meeting the client from India?”，自然应答是“At 9 a. m. on Tuesday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（At 9 a. m. on Tuesday.）。"
       },
       "item_id": 11,
       "priority": {

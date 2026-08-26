@@ -39,9 +39,32 @@
       "asset_key": "official-5-test-2/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "message.\nHi—this is Monique. I was your nurse during your visit to\nDr. Balani's office earlier today. Ol'm calling to let you know\nwe've contacted the pharmacy near your home and placed\nthe order for your new medication. ® The pharmacist said\nthe prescription will be ready at one o'clock, so you can get it\nthen. Also, ®our clinic would like your feedback. ® You'll be\nmailed a patient satisfaction survey about the care provided\nto you today by our doctors, nurses, and receptionists. We'd\nappreciate it if you'd fill out the survey and mail it back to us.\nThanks, and have a good day.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nHi—this is Monique.\nI was your nurse during your visit to\nDr.\nBalani's office（办公室） earlier today.\nOl'm calling to let you know\nwe've contacted the pharmacy near your home and placed\nthe order（订单） for your new medication.\n® The pharmacist said\nthe prescription will be ready at one o'clock, so you can get it\nthen.\nAlso, ®our clinic would like your feedback.\n® You'll be\nmailed a patient satisfaction survey about the care provided\nto you today by our doctors, nurses, and receptionists.\nWe'd\nappreciate it if you'd fill out the survey and mail it back to us.\nThanks, and have a good day.",
-    "content_translation": "中文辅助（离线预处理）：message.\nHi—this is Monique.\nI was your nurse during your visit to\nDr.\nBalani's office（办公室） earlier today.\nOl'm calling to let you know\nwe've contacted the pharmacy near your home and placed\nthe order（订单） for your new medication.\n® The pharmacist said\nthe prescription will be ready at one o'clock, so you can get it\nthen.\nAlso, ®our clinic would like your feedback.\n® You'll be\nmailed a patient satisfaction survey about the care provided\nto you today by our doctors, nurses, and receptionists.\nWe'd\nappreciate it if you'd fill out the survey and mail it back to us.\nThanks, and have a good day."
+    "transcript": "Hi, this is Monique.\nI was your nurse during your visit to Dr. Balani's office earlier today.\nI'm calling to let you know we've contacted the pharmacy near your home and placed the order for your new medication.\nThe pharmacist said the prescription will be ready at 1 o'clock, so you can get it then.\nAlso, our clinic would like your feedback.\nYou'll be mailed a patient satisfaction survey about the care provided to you today by our doctors, nurses, and receptionists.\nWe'd appreciate it if you'd fill out the survey and mail it back to us.\nThanks, and have a good day.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:segmented_audio",
+      "audio_sha256": "d130c8ee75a9f8aac36b5f705ad6ecc2ee565e097d9ac3b2b7cad9f6ef6165b2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 103,
+        "audio_duration_ms": 40098,
+        "words_per_second": 2.569,
+        "segment_count": 3
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "您好，我是 Monique。\n我今天早些时候在您拜访 Balani 医生诊所时是您的护士。\n我打电话来告诉您，我们已经联系了您家附近的药房，并为您的新药物下了订单。\n药剂师说处方将在一点准备好，您可以那时取走。\n另外，我们的诊所希望了解您的反馈。\n关于今天由我们的医生、护士和接待人员为您提供的护理，您会收到一份患者满意度调查问卷通过邮件寄给您。\n如果您能填写这份调查问卷并邮寄回来，我们将不胜感激。\n谢谢，祝您有美好的一天。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5ad55412fe851aeddb744138898924bb7be3e4838e2d5779bba06815a8bf36b8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "A",
       "question": "Where does the speaker most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“Also, ®our clinic would like your feedback.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At a medical clinic）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the speaker（说话者） most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：A（At a medical clinic）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the speaker(说话者) most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a medical clinic",
-        "B：At a fitness center",
-        "C：At a news agency",
-        "D：At a post office（办公室）"
+        "A:At a medical clinic",
+        "B:At a fitness center",
+        "C:At a news agency",
+        "D:At a post office(办公室)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Also, our clinic would like your feedback.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Also, our clinic would like your feedback.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Also, ®our clinic would like your feedback.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At a medical clinic）。"
+        "analysis": "正确答案：A（At a medical clinic）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, what can the listener do at one o'clock?",
-      "answer_explain": "原文依据：听力原文中提到“the order for your new medication.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Pick up an order）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） can the listener do at one o'clock?",
+      "answer_explain": "正确答案：B（Pick up an order）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) can the listener do at one o'clock?",
       "choice_translations": [
-        "A：Register for a class",
-        "B：Pick up an order（订单）",
-        "C：Listen to a broadcast",
-        "D：Speak to a manager（经理）"
+        "A:Register for a class",
+        "B:Pick up an order(订单)",
+        "C:Listen to a broadcast",
+        "D:Speak to a manager(经理)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：the prescription will be ready at one o'clock, so you can get it",
+      "evidence": "参考听力原文：“The pharmacist said the prescription will be ready at 1 o'clock, so you can get it then.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：the prescription will be ready at one o'clock, so you can get it",
+        "evidence": "参考听力原文：“The pharmacist said the prescription will be ready at 1 o'clock, so you can get it then.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the order for your new medication.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Pick up an order）。"
+        "analysis": "正确答案：B（Pick up an order）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker ask the listener to do?",
-      "answer_explain": "原文依据：听力原文中提到“appreciate it if you'd fill out the survey and mail it back to us.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Complete a survey）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） ask the listener to do?",
+      "answer_explain": "正确答案：D（Complete a survey）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) ask the listener to do?",
       "choice_translations": [
-        "A：Give additional contact information（信息）",
-        "B：Submit an extra fee",
-        "C：Arrive early for an appointment（预约）",
-        "D：Complete a survey"
+        "A:Give additional contact information(信息)",
+        "B:Submit an extra fee",
+        "C:Arrive early for an appointment(预约)",
+        "D:Complete a survey"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“You'll be mailed a patient satisfaction survey about the care provided to you today by our doctors, nurses, and receptionists.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“You'll be mailed a patient satisfaction survey about the care provided to you today by our doctors, nurses, and receptionists.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“appreciate it if you'd fill out the survey and mail it back to us.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Complete a survey）。"
+        "analysis": "正确答案：D（Complete a survey）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

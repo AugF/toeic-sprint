@@ -37,9 +37,32 @@
       "asset_key": "official-11-test-2/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "Good evening, everyone, and welcome to the Montreal\nTheater. My name is Marie Clement. On behalf of our loc\nYoung Performing Artists Coalition, it is an honor to host th\nperformance of the original play titled The Three Doors. Fir\ncongratulations to the students performing tonight. oThe\nhave worked long hours rehearsing to master their roles for\nyou. Ol ask that you now put any devices into silent mode:\nthat there will be no interruptions during the show. You are\nfor a wonderful evening watching stars in the making.",
-    "transcript_translation": "中文辅助（离线预处理）：Good evening, everyone, and welcome to the Montreal\nTheater.\nMy name is Marie Clement.\nOn behalf of our loc\nYoung Performing Artists Coalition, it is an honor to host th\nperformance of the original play titled The Three Doors.\nFir\ncongratulations to the students performing tonight.\noThe\nhave worked long hours rehearsing to master their roles for\nyou.\nOl ask that you now put any devices into silent mode:\nthat there will be no interruptions during the show.\nYou are\nfor a wonderful evening watching stars in the making.",
-    "content_translation": "中文辅助（离线预处理）：Good evening, everyone, and welcome to the Montreal\nTheater.\nMy name is Marie Clement.\nOn behalf of our loc\nYoung Performing Artists Coalition, it is an honor to host th\nperformance of the original play titled The Three Doors.\nFir\ncongratulations to the students performing tonight.\noThe\nhave worked long hours rehearsing to master their roles for\nyou.\nOl ask that you now put any devices into silent mode:\nthat there will be no interruptions during the show.\nYou are\nfor a wonderful evening watching stars in the making."
+    "transcript": "Good evening, everyone, and welcome to the Montreal Theater.\nMy name is Marie Clement.\nOn behalf of our local Young Performing Artists Coalition, it is an honor to host the performance of the original play titled The Three Doors.\nFirst, congratulations to the students performing tonight.\nThey have worked long hours rehearsing to master their roles for you.\nI ask that you now put any devices into the studio. the studio.\nYou are in for a wonderful evening watching stars in the making.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "35a148090f6c7aa307ce0c83b32c3fa90007ab9ecdf79fce933a6ec2d02a694e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 83,
+        "legacy_word_count": 89,
+        "length_ratio": 0.933,
+        "legacy_coverage": 0.843
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "大家晚上好，欢迎来到蒙特利尔剧院。\n我的名字是 Marie Clement。\n我代表我们当地的 Young Performing Artists Coalition，很荣幸能举办这部名为 The Three Doors 的原创戏剧表演。\n首先，祝贺今晚表演的学生们。\n他们付出了许多时间进行排练，以掌握他们的角色献给您。\n我要求大家现在将任何设备放入工作室。the studio。\n你们即将度过一个观看未来明星的精彩夜晚。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a1df4af3d2b41bc577d9dd79e7a507907c0b9156cc53c5e8d1b1743909ea3808"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +74,23 @@
       ],
       "answer": "B",
       "question": "Where are the listeners?",
-      "answer_explain": "原文依据：听力原文与题目“Where are the listeners?”对应，官方答案为“In a theater”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（In a theater）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） are the listeners?",
+      "answer_explain": "正确答案：B（In a theater）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) are the listeners?",
       "choice_translations": [
-        "A：In a sports arena",
-        "B：In a theater",
-        "C：In a classroom",
-        "D：In a bookstore"
+        "A:In a sports arena",
+        "B:In a theater",
+        "C:In a classroom",
+        "D:In a bookstore"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Good evening, everyone, and welcome to the Montreal",
+      "evidence": "参考听力原文：“Good evening, everyone, and welcome to the Montreal Theater.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Good evening, everyone, and welcome to the Montreal",
+        "evidence": "参考听力原文：“Good evening, everyone, and welcome to the Montreal Theater.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Where are the listeners?”对应，官方答案为“In a theater”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（In a theater）。"
+        "analysis": "正确答案：B（In a theater）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 89,
       "priority": {
@@ -101,23 +124,23 @@
       ],
       "answer": "D",
       "question": "Why does the speaker praise some students?",
-      "answer_explain": "原文依据：听力原文与题目“Why does the speaker praise some students?”对应，官方答案为“They dedicated a lot of time to a project.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（They dedicated a lot of time to a project.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） praise some students?",
+      "answer_explain": "正确答案：D（They dedicated a lot of time to a project.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) praise some students?",
       "choice_translations": [
-        "A：Their financial goals were met.",
-        "B：Their project received many positive reviews.",
-        "C：They solved a problem quickly.",
-        "D：They dedicated a lot of time to a project."
+        "A:Their financial goals were met.",
+        "B:Their project received many positive reviews.",
+        "C:They solved a problem quickly.",
+        "D:They dedicated a lot of time to a project."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：congratulations to the students performing tonight. oThe",
+      "evidence": "参考听力原文：“First, congratulations to the students performing tonight.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：congratulations to the students performing tonight. oThe",
+        "evidence": "参考听力原文：“First, congratulations to the students performing tonight.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Why does the speaker praise some students?”对应，官方答案为“They dedicated a lot of time to a project.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（They dedicated a lot of time to a project.）。"
+        "analysis": "正确答案：D（They dedicated a lot of time to a project.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 90,
       "priority": {
@@ -151,23 +174,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker ask the listeners to do?",
-      "answer_explain": "原文依据：听力原文与题目“What does the speaker ask the listeners to do?”对应，官方答案为“Silence electronic devices”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Silence electronic devices）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） ask the listeners to do?",
+      "answer_explain": "正确答案：D（Silence electronic devices）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) ask the listeners to do?",
       "choice_translations": [
-        "A：Take their seats",
-        "B：Gather in the lobby",
-        "C：Enjoy some refreshments",
-        "D：Silence electronic devices"
+        "A:Take their seats",
+        "B:Gather in the lobby",
+        "C:Enjoy some refreshments",
+        "D:Silence electronic devices"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Good evening, everyone, and welcome to the Montreal",
+      "evidence": "参考听力原文：“I ask that you now put any devices into the studio. the studio.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Good evening, everyone, and welcome to the Montreal",
+        "evidence": "参考听力原文：“I ask that you now put any devices into the studio. the studio.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What does the speaker ask the listeners to do?”对应，官方答案为“Silence electronic devices”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Silence electronic devices）。"
+        "analysis": "正确答案：D（Silence electronic devices）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 91,
       "priority": {

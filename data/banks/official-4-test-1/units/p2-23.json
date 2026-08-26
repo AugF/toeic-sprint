@@ -27,8 +27,28 @@
       "asset_key": "official-4-test-1/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew what（什么） color should we paint the office（办公室）?\n[Iu",
-    "content_translation": "中文辅助（离线预处理）：Ew what（什么） color should we paint the office（办公室）?\n[Iu"
+    "transcript": "What color should we paint the office?\nA. Let me see the choices again.\nB. An updated invoice.\nC. You can print it in black and white.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e8682e1bdcae3641dd29adde11021f3a976b9f8b7cd7b16679794ac5c14b9b5f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "我们应该把办公室漆成什么颜色？\nA. 让我再看看选择。\nB. 一份更新的发票。\nC. 你可以用黑白打印它。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3bcc7ea0dceb33dd75962ad3b001e277a5c897582594f0324ba31ea1ce726886"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "You can print it in black and white."
       ],
       "answer": "A",
-      "question": "Ew what color should we paint the office? [Iu",
+      "question": "What color should we paint the office?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew what color should we paint the office? [Iu”，自然应答是“Let me see the choices again.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Let me see the choices again.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew what（什么） color should we paint the office（办公室）?\n[Iu",
+      "answer_explain": "原文依据：问句或陈述是“What color should we paint the office?”，自然应答是“Let me see the choices again.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Let me see the choices again.）。",
+      "question_translation": "我们应该把办公室漆成什么颜色?",
       "choice_translations": [
-        "A：Let me see the choices again.",
-        "B：An updated invoice.",
-        "C：You can print it in black and white."
+        "A：让我再看看选择。",
+        "B：一份更新的发票。",
+        "C：你可以用黑白打印它。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew what color should we paint the office? [Iu",
+      "evidence": "参考原文第 1 段：What color should we paint the office?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew what color should we paint the office? [Iu",
+        "evidence": "参考原文第 1 段：What color should we paint the office?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew what color should we paint the office? [Iu”，自然应答是“Let me see the choices again.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Let me see the choices again.）。"
+        "analysis": "原文依据：问句或陈述是“What color should we paint the office?”，自然应答是“Let me see the choices again.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Let me see the choices again.）。"
       },
       "item_id": 23,
       "priority": {

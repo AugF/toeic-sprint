@@ -37,37 +37,59 @@
       "asset_key": "official-3-test-2/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "Ei u Hello, | saw your ad on television, and ®1'd like j\nto order 200 business cards. Could | have my (\ncompany’s logo printed on them? 1\nfcourse. All you have to do is send me an ’\nelectronic copy of your company logo, and we can ]\ntake care of that for you. By the way, right now i\nwe're having a special on business cards. ® Orders\nof 500 or more are ten percent off.\nHonestly, I’ve just started my business. 1\nK, we'll make it 200 then. Be sure to send your 4\nlogo, and ®1'| work on a sample business card for\nyou. 1 should be able to do it this afternoon.\nsatpusssemupasrenamennnenennieaneiamiasinsiieiiiiaiiiiiniiiiinaiiiinisinaitinamaninnaiiniae",
-    "transcript_translation": "中文辅助（离线预处理）：Ei u Hello, | saw your ad on television, and ®1'd like j\nto order（订单） 200 business cards.\nCould | have my (\ncompany（公司）’s logo printed on them?\n1\nfcourse.\nAll you have to do is send me an ’\nelectronic copy of your company（公司） logo, and we can ]\ntake care of that for you.\nBy the way, right now i\nwe're having a special on business cards.\n® Orders\nof 500 or more are ten percent off.\nHonestly, I’ve just started my business.\n1\nK, we'll make it 200 then.\nBe sure to send your 4\nlogo, and ®1'| work（工作） on a sample business card for\nyou.\n1 should be able to do it this afternoon.\nsatpusssemupasrenamennnenennieaneiamiasinsiieiiiiaiiiiiniiiiinaiiiinisinaitinamaninnaiiniae",
-    "content_translation": "中文辅助（离线预处理）：Ei u Hello, | saw your ad on television, and ®1'd like j\nto order（订单） 200 business cards.\nCould | have my (\ncompany（公司）’s logo printed on them?\n1\nfcourse.\nAll you have to do is send me an ’\nelectronic copy of your company（公司） logo, and we can ]\ntake care of that for you.\nBy the way, right now i\nwe're having a special on business cards.\n® Orders\nof 500 or more are ten percent off.\nHonestly, I’ve just started my business.\n1\nK, we'll make it 200 then.\nBe sure to send your 4\nlogo, and ®1'| work（工作） on a sample business card for\nyou.\n1 should be able to do it this afternoon.\nsatpusssemupasrenamennnenennieaneiamiasinsiieiiiiaiiiiiniiiiinaiiiinisinaitinamaninnaiiniae"
+    "transcript": "Hello, I saw your ad on television and I'd like to order 200 business cards.\nCould I have my company's logo printed on them?\nOf course.\nAll you have to do is send me an electronic copy of your company logo and we can take care of that for you.\nBy the way, right now we're having a special on business cards.\nOrders of 500 or more are 10% off.\nHonestly, I've just started my business.\nOkay, we'll make it 200 then.\nBe sure to send your logo and I'll work on a sample business card for you.\nI should be able to do it this afternoon.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c67b7925de5c309006e30f397f65f08ff5d019639f8e42e59021b04a98b1d480",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 103,
+        "legacy_word_count": 104,
+        "length_ratio": 0.99,
+        "legacy_coverage": 0.913
+      }
+    },
+    "transcript_translation": "您好，我在电视上看到了您的广告，我想订购 200 张名片。\n可以在上面印上我公司的标志吗？\n当然可以。\n您只需要把公司标志的电子版发给我，我们就能帮您处理了。\n顺便说一下，我们现在名片有特别优惠。\n订单达到 500 张或以上可享受九折优惠。\n老实说，我刚开始我的生意。\n好的，那我们就做 200 张吧。\n请务必把您的标志发给我，我会为您制作一张样品名片。\n我今天下午应该能完成。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b6c1daa46e7ff670697dc2b561143e6de6cc6cbeba7db815d22e2fb4390756a2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "A television",
-        "Alaptop computer",
+        "A laptop computer",
         "Printing paper",
         "Business cards"
       ],
       "answer": "D",
       "question": "What is the man purchasing?",
-      "answer_explain": "原文依据：听力原文中提到“we're having a special on business cards.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Business cards）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the man（男士） purchasing?",
+      "answer_explain": "正确答案：D（Business cards）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the man(男士) purchasing?",
       "choice_translations": [
-        "A：A television",
-        "B：Alaptop computer",
-        "C：Printing paper",
-        "D：Business cards"
+        "A:A television",
+        "B:A laptop computer",
+        "C:Printing paper",
+        "D:Business cards"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ei u Hello, | saw your ad on television, and ®1'd like j",
+      "evidence": "参考听力原文：“Hello, I saw your ad on television and I'd like to order 200 business cards.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ei u Hello, | saw your ad on television, and ®1'd like j",
+        "evidence": "参考听力原文：“Hello, I saw your ad on television and I'd like to order 200 business cards.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“we're having a special on business cards.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Business cards）。"
+        "analysis": "正确答案：D（Business cards）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "B",
       "question": "Why does the man say, “I’ve just started my business”?",
-      "answer_explain": "原文依据：听力原文中提到“Honestly, I’ve just started my business.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To reject an offer）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） say, “I’ve just started my business”?",
+      "answer_explain": "正确答案：B（To reject an offer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the man(男士) say, “I’ve just started my business”?",
       "choice_translations": [
-        "A：To explain an error",
-        "B：To reject an offer",
-        "C：To express pride",
-        "D：To update a friend"
+        "A:To explain an error",
+        "B:To reject an offer",
+        "C:To express pride",
+        "D:To update a friend"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：to order 200 business cards. Could | have my (",
+      "evidence": "参考听力原文：“Honestly, I've just started my business.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：to order 200 business cards. Could | have my (",
+        "evidence": "参考听力原文：“Honestly, I've just started my business.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Honestly, I’ve just started my business.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To reject an offer）。"
+        "analysis": "正确答案：B（To reject an offer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "C",
       "question": "What does the woman say she will do this afternoon?",
-      "answer_explain": "原文依据：听力原文中提到“logo, and ®1'| work on a sample business card for”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Create a sample）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do this afternoon?",
+      "answer_explain": "正确答案：C（Create a sample）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she will do this afternoon?",
       "choice_translations": [
-        "A：Meet with a colleague",
-        "B：Market a product",
-        "C：Create a sample",
-        "D：Return a phone call"
+        "A:Meet with a colleague",
+        "B:Market a product",
+        "C:Create a sample",
+        "D:Return a phone call"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 12 段：you. 1 should be able to do it this afternoon.",
+      "evidence": "参考听力原文：“Be sure to send your logo and I'll work on a sample business card for you.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 12 段：you. 1 should be able to do it this afternoon.",
+        "evidence": "参考听力原文：“Be sure to send your logo and I'll work on a sample business card for you.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“logo, and ®1'| work on a sample business card for”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Create a sample）。"
+        "analysis": "正确答案：C（Create a sample）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

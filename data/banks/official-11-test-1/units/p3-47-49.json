@@ -40,9 +40,31 @@
       "asset_key": "official-11-test-1/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "Hi, Xinyu. How was the budget meeting this morning?\nWell, it was a long meeting, but the board of directors\nfinally agreed that we don't have enough employees.\nFinally that's good news. We're getting lots of\nnew clients, and we need people to work on their\naccounts. By the way, the possible logo designs for\nthe Jefferson account were just sent over from the art\ndepartment. Want to come to my office to look at\nthem?\nI have to go to another meeting right now.\nOK, well, we have until next week to provide\nfeedback.",
-    "transcript_translation": "你好，欣瑜。今天上午的预算会议怎么样？\n嗯，会议开了很久，不过董事会最后终于同意我们的人手不够。\n终于有好消息了。我们接到了很多新客户，需要人来负责他们的账户。对了，美术部刚刚把杰斐逊客户项目的几款标志设计发过来了。想来我办公室一起看看吗？\n我现在得去参加另一个会议。\n好的，不过我们到下周之前都还可以提供反馈。",
-    "content_translation": "本段听力围绕“公司品牌设计”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Hi, Xinyu.\nHow was the budget meeting this morning?\nWell, it was a long meeting, but the Board of Directors finally agreed that we don't have enough employees.\nFinally.\nThat's good news.\nWe're getting lots of new clients, and we need people to work on their accounts.\nBy the way, the possible logo designs for the Jefferson account were just sent over from the Art Department.\nWant to come to my office to look at them?\nI have to go to another meeting right now.\nOkay.\nWell, we have until next week to provide feedback.\nThank you for today.\nThank you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d5cf18695fbb78cd2b94ab2a4750b089e460a3490a7972526597c649e35b0d4d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 101,
+        "legacy_word_count": 93,
+        "length_ratio": 1.086,
+        "legacy_coverage": 1
+      }
+    },
+    "transcript_translation": "嗨，Xinyu。\n今天上午的预算会议怎么样？\n嗯，开会时间很长，但董事会最终同意我们员工不够多。\n终于了。\n这是个好消息。\n我们正在获得很多新客户，需要人来处理他们的账户。\n顺便说一下，Jefferson账户可能的标志设计方案刚刚从艺术部门发过来了。\n想不想来我的办公室看看？\n我现在必须去另一个会议。\n好的。\n嗯，我们到下周才有时间提供反馈。\n谢谢你今天。\n不客气。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6ccc36d0d00a57302b5cd3e05b04a640281ec403b489d3522fa0108602d9aa08"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,24 +76,24 @@
         "Purchase better equipment"
       ],
       "answer": "B",
-      "answer_explain": "原文依据：董事会同意公司 employees 不够，而新客户增加、需要人手。 选择理由：由此可推断董事会同意招聘员工，对应B。正确答案：B（Hire some staff members）。",
+      "answer_explain": "正确答案：B（Hire some staff members）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 2 段第 1 句：Well, it was a long meeting, but the board of directors",
+      "evidence": "参考听力原文：“Well, it was a long meeting, but the Board of Directors finally agreed that we don't have enough employees.”",
       "choice_translations": [
-        "A：翻新办公空间",
-        "B：招聘一些员工",
-        "C：开展广告宣传活动",
-        "D：购买更好的设备"
+        "A:翻新办公空间",
+        "B:招聘一些员工",
+        "C:开展广告宣传活动",
+        "D:购买更好的设备"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 2 段第 1 句：Well, it was a long meeting, but the board of directors",
+        "evidence": "参考听力原文：“Well, it was a long meeting, but the Board of Directors finally agreed that we don't have enough employees.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：董事会同意公司 employees 不够，而新客户增加、需要人手。 选择理由：由此可推断董事会同意招聘员工，对应B。正确答案：B（Hire some staff members）。"
+        "analysis": "正确答案：B（Hire some staff members）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "董事会最可能同意做什么？",
+      "question_translation": "董事会最可能同意做什么?",
       "item_id": 47,
       "priority": {
         "level": "P1",
@@ -107,24 +129,24 @@
         "Some shipping supplies"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：男方说 possible logo designs were just sent over from the art department。 选择理由：刚收到的是logo designs，对应C。正确答案：C（Some logo designs）。",
+      "answer_explain": "正确答案：C（Some logo designs）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Hi, Xinyu. How was the budget meeting this morning?",
+      "evidence": "参考听力原文：“By the way, the possible logo designs for the Jefferson account were just sent over from the Art Department.”",
       "choice_translations": [
-        "A：一份雇佣合同",
-        "B：一份销售报告",
-        "C：几款标志设计",
-        "D：一些运输用品"
+        "A:一份雇佣合同",
+        "B:一份销售报告",
+        "C:几款标志设计",
+        "D:一些运输用品"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Hi, Xinyu. How was the budget meeting this morning?",
+        "evidence": "参考听力原文：“By the way, the possible logo designs for the Jefferson account were just sent over from the Art Department.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：男方说 possible logo designs were just sent over from the art department。 选择理由：刚收到的是logo designs，对应C。正确答案：C（Some logo designs）。"
+        "analysis": "正确答案：C（Some logo designs）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士刚刚收到了什么？",
+      "question_translation": "男士刚刚收到了什么?",
       "item_id": 48,
       "priority": {
         "level": "P1",
@@ -160,24 +182,24 @@
         "To explain a schedule change"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：男方邀请她去办公室看设计，她回答 I have to go to another meeting right now。 选择理由：这句话用于婉拒当前邀请，因此A正确。正确答案：A（To decline an invitation）。",
+      "answer_explain": "正确答案：A（To decline an invitation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Hi, Xinyu. How was the budget meeting this morning?",
+      "evidence": "参考听力原文：“I have to go to another meeting right now.”",
       "choice_translations": [
-        "A：为了婉拒邀请",
-        "B：为了纠正误解",
-        "C：为了表达兴奋",
-        "D：为了解释日程变动"
+        "A:为了婉拒邀请",
+        "B:为了纠正误解",
+        "C:为了表达兴奋",
+        "D:为了解释日程变动"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Hi, Xinyu. How was the budget meeting this morning?",
+        "evidence": "参考听力原文：“I have to go to another meeting right now.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：男方邀请她去办公室看设计，她回答 I have to go to another meeting right now。 选择理由：这句话用于婉拒当前邀请，因此A正确。正确答案：A（To decline an invitation）。"
+        "analysis": "正确答案：A（To decline an invitation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士为什么说“我现在得去参加另一个会议”？",
+      "question_translation": "女士为什么说“我现在得去参加另一个会议”?",
       "item_id": 49,
       "priority": {
         "level": "P1",

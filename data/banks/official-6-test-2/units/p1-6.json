@@ -32,8 +32,28 @@
       "asset_key": "official-6-test-2/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 一个留言板被放置在两个长椅之间。\nB. 一条人行道上铺满了鲜花。\nC. 有一些岩石正在从花园中移走。\nD. 有一些树木正在被砍伐。",
-    "content_translation": "A. 一个留言板被放置在两个长椅之间。\nB. 一条人行道上铺满了鲜花。\nC. 有一些岩石正在从花园中移走。\nD. 有一些树木正在被砍伐。"
+    "transcript": "A. A message board has been placed between two benches.\nB. A walkway is covered with flowers.\nC. Some rocks are being removed from a garden.\nD. Some trees are being cut down.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c32db99a46a1480eaf0f19a053a1ead0feaa1c11d3c4ac7b6cff3cbb2a8e7bae",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 273
+      }
+    },
+    "transcript_translation": "A. 在两张长椅之间放置了一个留言板。\nB. 一条人行道上铺满了鲜花。\nC. 有些岩石正在从花园中移除。\nD. 有些树木正在被砍伐。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5b0909ac89090d2d5fe6a28a12aa22a438ffc1b8139b7aba29a587477da2d2cb"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“A message board has been placed between two benches.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（A message board has been placed between two benches.）。",
       "choice_translations": [
-        "A：一个留言板被放置在两个长椅之间。",
+        "A：在两张长椅之间放置了一个留言板。",
         "B：一条人行道上铺满了鲜花。",
-        "C：有一些岩石正在从花园中移走。",
-        "D：一些树木正在被砍伐。"
+        "C：有些岩石正在从花园中移除。",
+        "D：有些树木正在被砍伐。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-2/p1-6/6"
+      "item_key": "official-6-test-2/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -28,8 +28,28 @@
       "asset_key": "official-6-test-1/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "这些机器明天要修理，对吗？\nA. 技术人员昨天来了。\nB. 我还有一副太阳镜。\nC. 在去机场的路上。",
-    "content_translation": "这些机器明天要修理，对吗？\nA. 技术人员昨天来了。\nB. 我还有一副太阳镜。\nC. 在去机场的路上。"
+    "transcript": "The machines are being repaired tomorrow, aren't they?\nA. The technician came yesterday.\nB. I have another pair of sunglasses.\nC. On the way to the airport.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3ac7da84b910a84b3d8667c1828aa5be7678a55264bab6b4fe9e61ba487229bc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "机器明天要修理，对吗？\nA. 技术人员昨天来了。\nB. 我还有一副太阳镜。\nC. 在去机场的路上。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3b36cc4cbcbc0e6c02973aad6f65edcf2567dc271b356c0c098d978ff47f5fb2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,7 +64,7 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“The machines are being repaired tomorrow, aren't they?”，自然应答是“The technician came yesterday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The technician came yesterday.）。",
-      "question_translation": "这些机器明天要修理，对吗？",
+      "question_translation": "机器明天要修理,对吗?",
       "choice_translations": [
         "A：技术人员昨天来了。",
         "B：我还有一副太阳镜。",

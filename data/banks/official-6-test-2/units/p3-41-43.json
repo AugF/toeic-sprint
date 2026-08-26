@@ -39,9 +39,31 @@
       "asset_key": "official-6-test-2/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "Hi, Francesca. O The graphic designer just sent us\nd Frandeza\nsome sample logos for our camping company. Since\nyou'll be updating our company's Web site, I wanted to\nget your opinion on which one would look best.\nSw Let's see... I like the second one. The image and fonts\nare really clean, so it'll be easy for me to integrate it\ninto our existing Web site. ® But I don't like the color.\nm | agree. A lot of other companies that make camping\ngear already use green logos.\nEw What if we use orange instead?\nm Good idea. ® Let's get the team's opinion during\ntomorow's meeting.",
-    "transcript_translation": "中文辅助（离线预处理）：Hi, Francesca.\nO The graphic designer just sent us\nd Frandeza\nsome sample logos for our camping company（公司）.\nSince\nyou'll be updating our company（公司）'s Web site, I wanted to\nget your opinion on which one would look best.\nSw Let's see...\nI like the second one.\nThe image and fonts\nare really clean, so it'll be easy for me to integrate it\ninto our existing Web site.\n® But I don't like the color.\nm | agree.\nA lot of other companies that make camping\ngear already use green logos.\nEw What（什么） if we use orange instead?\nm Good idea.\n® Let's get the team's opinion during\ntomorow's meeting（会议）.",
-    "content_translation": "中文辅助（离线预处理）：Hi, Francesca.\nO The graphic designer just sent us\nd Frandeza\nsome sample logos for our camping company（公司）.\nSince\nyou'll be updating our company（公司）'s Web site, I wanted to\nget your opinion on which one would look best.\nSw Let's see...\nI like the second one.\nThe image and fonts\nare really clean, so it'll be easy for me to integrate it\ninto our existing Web site.\n® But I don't like the color.\nm | agree.\nA lot of other companies that make camping\ngear already use green logos.\nEw What（什么） if we use orange instead?\nm Good idea.\n® Let's get the team's opinion during\ntomorow's meeting（会议）."
+    "transcript": "Hi, Francesca.\nThe graphic designer just sent us some sample logos for our camping company.\nSince you'll be updating our company's Web site, I wanted to get your opinion on which one would look best.\nSw Let's see...\nI like the second one.\nThe image and fonts are really clean, so it'll be easy for me to integrate it into our existing Web site.\nBut I don't like the color.\nI agree.\nA lot of other companies that make camping gear already use green logos.\nWhat if we use orange instead?\nGood idea.\nLet's get the team's opinion during tomorrow's meeting.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "f5ea07d58f90d807727eb9c1b1220ce41b8aa2267bec5ee1b5c8bcbd04cab41a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 101,
+        "legacy_word_count": 101,
+        "length_ratio": 1,
+        "legacy_coverage": 0.941
+      }
+    },
+    "transcript_translation": "嗨，Francesca。\n平面设计师刚刚给我们发送了一些关于我们露营公司的样品标志。\n因为你正在更新我们公司的网站，我想听听你的意见，看看哪个看起来最好。\n让我们看看……\n我喜欢第二个。\n图像和字体都很干净，这样对我来说很容易将其整合到我们现有的网站中。\n但我不喜欢这个颜色。\n我同意。\n很多制作露营装备的公司已经在使用绿色标志了。\n如果我们用橙色怎么样？\n好主意。\n我们明天会议上听取团队的意见吧。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f2ce1898eae6f94783497e4e51d5f59e2849d16a561d111b084ba5b06e93b18c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "B",
       "question": "Who most likely is the woman?",
-      "answer_explain": "原文依据：听力原文中提到“you'll be updating our company's Web site, I wanted to”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A Web site designer）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the woman（女士）?",
+      "answer_explain": "正确答案：B（A Web site designer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is the woman(女士)?",
       "choice_translations": [
-        "A：A factory supervisor",
-        "B：A Web site designer",
-        "C：A financial planner",
-        "D：A clothing manufacturer"
+        "A:A factory supervisor",
+        "B:A Web site designer",
+        "C:A financial planner",
+        "D:A clothing manufacturer"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Hi, Francesca. O The graphic designer just sent us",
+      "evidence": "参考听力原文：“Since you'll be updating our company's Web site, I wanted to get your opinion on which one would look best.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Hi, Francesca. O The graphic designer just sent us",
+        "evidence": "参考听力原文：“Since you'll be updating our company's Web site, I wanted to get your opinion on which one would look best.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“you'll be updating our company's Web site, I wanted to”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A Web site designer）。"
+        "analysis": "正确答案：B（A Web site designer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "A",
       "question": "What does the woman suggest?",
-      "answer_explain": "原文依据：听力原文中提到“® But I don't like the color.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Changing a color）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） suggest（表明/建议）?",
+      "answer_explain": "正确答案：A（Changing a color）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) suggest(表明/建议)?",
       "choice_translations": [
-        "A：Changing a color",
-        "B：Replacing a machine",
-        "C：Hiring a consultant",
-        "D：Lowering a price"
+        "A:Changing a color",
+        "B:Replacing a machine",
+        "C:Hiring a consultant",
+        "D:Lowering a price"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Hi, Francesca. O The graphic designer just sent us",
+      "evidence": "参考听力原文：“But I don't like the color.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Hi, Francesca. O The graphic designer just sent us",
+        "evidence": "参考听力原文：“But I don't like the color.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® But I don't like the color.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Changing a color）。"
+        "analysis": "正确答案：A（Changing a color）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What will happen at tomorrow's meeting?",
-      "answer_explain": "原文依据：听力原文中提到“® But I don't like the color.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The speakers will gather feedback.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will happen at tomorrow's meeting（会议）?",
+      "answer_explain": "正确答案：C（The speakers will gather feedback.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will happen at tomorrow's meeting(会议)?",
       "choice_translations": [
-        "A：New team members will be introduced.",
-        "B：A product demonstration will take place.",
-        "C：The speakers will gather feedback.",
-        "D：A budget will be revised."
+        "A:New team members will be introduced.",
+        "B:A product demonstration will take place.",
+        "C:The speakers will gather feedback.",
+        "D:A budget will be revised."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 13 段：tomorow's meeting.",
+      "evidence": "参考听力原文：“Let's get the team's opinion during tomorrow's meeting.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 13 段：tomorow's meeting.",
+        "evidence": "参考听力原文：“Let's get the team's opinion during tomorrow's meeting.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® But I don't like the color.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The speakers will gather feedback.）。"
+        "analysis": "正确答案：C（The speakers will gather feedback.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

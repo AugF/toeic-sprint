@@ -41,9 +41,31 @@
       "asset_key": "official-5-test-1/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "EK w Hi, Steve. My name's Amira, and I'll be training you\nChul5ld. Steve. 74080l Amira C9. Cine-Theater\nduring your first week at Cine-Theater Eight.\nThanks, I'm excited to get started.\nWe're going to begin in the box office, where I'll show\nyou how to print the movie tickets and use the register.\nK. Do we use the same type of register in the\nconcession stand?\nIt's a little different—® we use tablets with touch\nscreens in the concession stand so we can easily tap\non the beverages or snacks being purchased. Since\nwe have a lot of different snacks, this is useful when\nlines are long.",
-    "transcript_translation": "中文辅助（离线预处理）：EK w Hi, Steve.\nMy name's Amira, and I'll be training you\nChul5ld.\nSteve.\n74080l Amira C9.\nCine-Theater\nduring your first week at Cine-Theater Eight.\nThanks, I'm excited to get started.\nWe're going to begin in the box office（办公室）, where（哪里） I'll show\nyou how（如何） to print the movie tickets and use the register.\nK.\nDo we use the same type of register in the\nconcession stand?\nIt's a little different—® we use tablets with touch\nscreens in the concession stand so we can easily tap\non the beverages or snacks being purchased.\nSince\nwe have a lot of different snacks, this is useful when（何时）\nlines are long.",
-    "content_translation": "中文辅助（离线预处理）：EK w Hi, Steve.\nMy name's Amira, and I'll be training you\nChul5ld.\nSteve.\n74080l Amira C9.\nCine-Theater\nduring your first week at Cine-Theater Eight.\nThanks, I'm excited to get started.\nWe're going to begin in the box office（办公室）, where（哪里） I'll show\nyou how（如何） to print the movie tickets and use the register.\nK.\nDo we use the same type of register in the\nconcession stand?\nIt's a little different—® we use tablets with touch\nscreens in the concession stand so we can easily tap\non the beverages or snacks being purchased.\nSince\nwe have a lot of different snacks, this is useful when（何时）\nlines are long."
+    "transcript": "Hi Steve, my name's Amira and I'll be training you during your first week at Cine Theatre 8.\nThanks, I'm excited to get started.\nWe're going to begin in the box office where I'll show you how to print the movie tickets and use the register.\nOkay, do we use the same type of register in the concession stand?\nIt's a little different.\nWe use tablets with touchscreens in the concession stand so we can easily tap on the beverages or snacks being purchased.\nSince we have a lot of different snacks, this is useful when lines are long.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3d7cc02b76534fddff44844ca1636109a165c53564d30bf691d4c6cbfb9592f5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 98,
+        "legacy_word_count": 106,
+        "length_ratio": 0.925,
+        "legacy_coverage": 0.877
+      }
+    },
+    "transcript_translation": "嗨Steve，我叫Amira，在Cine Theatre 8，我会在您第一周为您培训。\n谢谢，我很期待开始工作。\n我们将在票务处开始，我会教您如何打印电影票和使用收银机。\n好的，我们在小吃店用的是同类型的收银机吗？\n有点不同。\n我们在小吃店使用的是触摸屏平板电脑，这样我们可以轻松地点击购买的饮料或零食。\n因为我们有很多不同的零食，当排队人多时这一点很有用。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7b19c6445cb1cdf80c22fb5c3283a7cfe36a367c9aa3fa24738e7f008ce3b964"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "A",
       "question": "What will the man do this week?",
-      "answer_explain": "原文依据：听力原文中提到“My name's Amira, and I'll be training you”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Receive training）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） do this week?",
+      "answer_explain": "正确答案：A（Receive training）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) do this week?",
       "choice_translations": [
-        "A：Receive training",
-        "B：Meet with an investor",
-        "C：Order（订单） supplies",
-        "D：Hang promotional signs"
+        "A:Receive training",
+        "B:Meet with an investor",
+        "C:Order(订单) supplies",
+        "D:Hang promotional signs"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EK w Hi, Steve. My name's Amira, and I'll be training you",
+      "evidence": "参考听力原文：“Hi Steve, my name's Amira and I'll be training you during your first week at Cine Theatre 8.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EK w Hi, Steve. My name's Amira, and I'll be training you",
+        "evidence": "参考听力原文：“Hi Steve, my name's Amira and I'll be training you during your first week at Cine Theatre 8.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“My name's Amira, and I'll be training you”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Receive training）。"
+        "analysis": "正确答案：A（Receive training）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "D",
       "question": "Where do the speakers most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“you how to print the movie tickets and use the register.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a movie theater）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） do the speakers most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：D（At a movie theater）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) do the speakers most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a clothing store",
-        "B：At a travel agency",
-        "C：At a restaurant",
-        "D：At a movie theater"
+        "A:At a clothing store",
+        "B:At a travel agency",
+        "C:At a restaurant",
+        "D:At a movie theater"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：EK w Hi, Steve. My name's Amira, and I'll be training you",
+      "evidence": "参考听力原文：“We're going to begin in the box office where I'll show you how to print the movie tickets and use the register.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：EK w Hi, Steve. My name's Amira, and I'll be training you",
+        "evidence": "参考听力原文：“We're going to begin in the box office where I'll show you how to print the movie tickets and use the register.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“you how to print the movie tickets and use the register.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a movie theater）。"
+        "analysis": "正确答案：D（At a movie theater）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "B",
       "question": "What does the woman like about using tablet computers?",
-      "answer_explain": "原文依据：听力原文中提到“you how to print the movie tickets and use the register.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The touch screens are easy to use.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） like about using tablet computers?",
+      "answer_explain": "正确答案：B（The touch screens are easy to use.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) like about using tablet computers?",
       "choice_translations": [
-        "A：They are not heavy.",
-        "B：The touch screens are easy to use.",
-        "C：The speakers are high quality.",
-        "D：They automatically shut off."
+        "A:They are not heavy.",
+        "B:The touch screens are easy to use.",
+        "C:The speakers are high quality.",
+        "D:They automatically shut off."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 9 段：It's a little different—® we use tablets with touch",
+      "evidence": "参考听力原文：“We're going to begin in the box office where I'll show you how to print the movie tickets and use the register.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 9 段：It's a little different—® we use tablets with touch",
+        "evidence": "参考听力原文：“We're going to begin in the box office where I'll show you how to print the movie tickets and use the register.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“you how to print the movie tickets and use the register.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The touch screens are easy to use.）。"
+        "analysis": "正确答案：B（The touch screens are easy to use.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

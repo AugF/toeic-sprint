@@ -28,38 +28,58 @@
       "asset_key": "official-10-test-2/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：M",
-    "content_translation": "中文辅助（离线预处理）：M"
+    "transcript": "Should we discuss the proposed park expansion next week?\nA. The director wants an answer tomorrow.\nB. The trails hadn't been cleared.\nC. I'd say about a month.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b6f4d26a3551335c5b5e53a6c598d62c86496af1400534cd57cc00c7eae2d410",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "我们下周讨论一下拟议的公园扩建好吗？\nA. 总监希望明天得到答复。\nB. 小径还没有清理干净。\nC. 我说大概一个月。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b6b87f04869fc0a2c75f565890449a374ef2ec28649ba85d7cdd16db0ad1de55"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "The director wants an answer tomorrow. i",
-        "The trails hadn't been cleared. llE",
+        "The director wants an answer tomorrow.",
+        "The trails hadn't been cleared.",
         "I'd say about a month."
       ],
       "answer": "A",
-      "question": "M",
+      "question": "Should we discuss the proposed park expansion next week?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M”，自然应答是“The director wants an answer tomorrow. i”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The director wants an answer tomorrow. i）。",
-      "question_translation": "中文辅助（离线预处理）：M",
+      "answer_explain": "原文依据：问句或陈述是“Should we discuss the proposed park expansion next week?”，自然应答是“The director wants an answer tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The director wants an answer tomorrow.）。",
+      "question_translation": "我们下周讨论一下拟议的公园扩建好吗?",
       "choice_translations": [
-        "A：The director wants an answer tomorrow.\ni",
-        "B：The trails hadn't been cleared.\nllE",
-        "C：I'd say about a month."
+        "A：总监希望明天得到答复。",
+        "B：小径还没有清理干净。",
+        "C：我说大概一个月。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M",
+      "evidence": "参考原文第 1 段：Should we discuss the proposed park expansion next week?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M",
+        "evidence": "参考原文第 1 段：Should we discuss the proposed park expansion next week?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“M”，自然应答是“The director wants an answer tomorrow. i”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The director wants an answer tomorrow. i）。"
+        "analysis": "原文依据：问句或陈述是“Should we discuss the proposed park expansion next week?”，自然应答是“The director wants an answer tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The director wants an answer tomorrow.）。"
       },
       "item_id": 28,
       "priority": {

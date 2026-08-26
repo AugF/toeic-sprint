@@ -28,38 +28,58 @@
       "asset_key": "official-7-test-1/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：w The bookstore is hosting a writing workshop on Wednesday night.\n• M",
-    "content_translation": "中文辅助（离线预处理）：w The bookstore is hosting a writing workshop on Wednesday night.\n• M"
+    "transcript": "The bookstore is hosting\nA. writing workshop on Wednesday night. A. They're children's books.\nB. No, I haven't been there before.\nC. Do you have to register to attend?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "195274110a54d509b6f0b6f93b2fd76ee21691c1c0c4bf37672b8f0201cd3afc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "这家书店正在举办\nA. 周三晚上的写作工作坊。 A. 它们是儿童读物。\nB. 不，我以前没去过。\nC. 你需要注册才能参加吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0d9c2cf1260f9e560db669261e62f51431278169697e3c69e143a7ac9206a204"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "They're children's books.",
+        "writing workshop on Wednesday night. A. They're children's books.",
         "No, I haven't been there before.",
         "Do you have to register to attend?"
       ],
       "answer": "C",
-      "question": "w The bookstore is hosting a writing workshop on Wednesday night. • M",
+      "question": "The bookstore is hosting",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“w The bookstore is hosting a writing workshop on Wednesday night. • M”，自然应答是“Do you have to register to attend?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you have to register to attend?）。",
-      "question_translation": "中文辅助（离线预处理）：w The bookstore is hosting a writing workshop on Wednesday night.\n• M",
+      "answer_explain": "原文依据：问句或陈述是“The bookstore is hosting”，自然应答是“Do you have to register to attend?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you have to register to attend?）。",
+      "question_translation": "这家书店正在举办",
       "choice_translations": [
-        "A：They're children's books.",
-        "B：No, I haven't been there before.",
-        "C：Do you have to register to attend?"
+        "A：周三晚上的写作工作坊。 A. 它们是儿童读物。",
+        "B：不,我以前没去过。",
+        "C：你需要注册才能参加吗?"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：w The bookstore is hosting a writing workshop on Wednesday night. • M",
+      "evidence": "参考原文第 1 段：The bookstore is hosting",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：w The bookstore is hosting a writing workshop on Wednesday night. • M",
+        "evidence": "参考原文第 1 段：The bookstore is hosting",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“w The bookstore is hosting a writing workshop on Wednesday night. • M”，自然应答是“Do you have to register to attend?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you have to register to attend?）。"
+        "analysis": "原文依据：问句或陈述是“The bookstore is hosting”，自然应答是“Do you have to register to attend?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you have to register to attend?）。"
       },
       "item_id": 29,
       "priority": {

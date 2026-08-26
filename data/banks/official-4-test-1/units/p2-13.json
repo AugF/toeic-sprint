@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-1/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：E*I™ You received your payment, didn’t you?\nvw",
-    "content_translation": "中文辅助（离线预处理）：E*I™ You received your payment, didn’t you?\nvw"
+    "transcript": "You received your payment, didn't you?\nA. No, I didn't buy any.\nB. The shipment's coming.\nC. I'll look at my bank account.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d5c5d1b7415a8647b5476fa0dc6056a705acb6e0b679ed6ecd5187cfefd860b6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "你收到你的付款了，对吗？\nA. 不，我什么都没买。\nB. 货物快到了。\nC. 我看看我的银行账户。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7dde6dd3fb3bc1aa6ab2e5bb323c4d5aff9be97f46501892784e077b958282ca"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "No, | didn’t buy any. ER C",
-        "The shipment’s coming. COU THD OTS. THUCHL, [RAOBER",
-        "I'll look at my bank account. THEIEMNT, THY SHDHSTE BEAT"
+        "No, I didn't buy any.",
+        "The shipment's coming.",
+        "I'll look at my bank account."
       ],
       "answer": "C",
-      "question": "E*I™ You received your payment, didn’t you? vw",
+      "question": "You received your payment, didn't you?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“E*I™ You received your payment, didn’t you? vw”，自然应答是“I'll look at my bank account. THEIEMNT, THY SHDHSTE BEAT”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'll look at my bank account. THEIEMNT, THY SHDHSTE BEAT）。",
-      "question_translation": "中文辅助（离线预处理）：E*I™ You received your payment, didn’t you?\nvw",
+      "answer_explain": "原文依据：问句或陈述是“You received your payment, didn't you?”，自然应答是“I'll look at my bank account.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'll look at my bank account.）。",
+      "question_translation": "你收到你的付款了,对吗?",
       "choice_translations": [
-        "A：No, | didn’t buy any.\nER C",
-        "B：The shipment’s coming.\nCOU THD OTS.\nTHUCHL, [RAOBER",
-        "C：I'll look at my bank account.\nTHEIEMNT, THY SHDHSTE BEAT"
+        "A：不,我什么都没买。",
+        "B：货物快到了。",
+        "C：我看看我的银行账户。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：E*I™ You received your payment, didn’t you? vw",
+      "evidence": "参考原文第 1 段：You received your payment, didn't you?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：E*I™ You received your payment, didn’t you? vw",
+        "evidence": "参考原文第 1 段：You received your payment, didn't you?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“E*I™ You received your payment, didn’t you? vw”，自然应答是“I'll look at my bank account. THEIEMNT, THY SHDHSTE BEAT”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'll look at my bank account. THEIEMNT, THY SHDHSTE BEAT）。"
+        "analysis": "原文依据：问句或陈述是“You received your payment, didn't you?”，自然应答是“I'll look at my bank account.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'll look at my bank account.）。"
       },
       "item_id": 13,
       "priority": {

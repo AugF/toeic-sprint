@@ -28,38 +28,58 @@
       "asset_key": "official-12-test-1/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：akw Dr.\nOgawa sent the report to the board of directors.\nEW",
-    "content_translation": "中文辅助（离线预处理）：akw Dr.\nOgawa sent the report to the board of directors.\nEW"
+    "transcript": "Dr. Ogawa sent the report to the Board of Directors.\nA. Page 2, 3rd paragraph.\nB. Are copies available?\nC. I'm watching a news report.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "caf708b512934f69d97155678021ebf198b4d7ff741176969f02ede3caf4e80e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "小川博士把报告发给了董事会。\nA. 第 2 页，第 3 段。\nB. 有副本吗？\nC. 我正在看新闻报道。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "27db6753d8ccb08ebd4412d9c030b5e54808b1af4b50e4c9c92eefcd81609782"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Page two, third paragraph.",
-        "Are copies available? available 1E",
+        "Page 2, 3rd paragraph.",
+        "Are copies available?",
         "I'm watching a news report."
       ],
       "answer": "B",
-      "question": "akw Dr. Ogawa sent the report to the board of directors. EW",
+      "question": "Dr. Ogawa sent the report to the Board of Directors.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“akw Dr. Ogawa sent the report to the board of directors. EW”，自然应答是“Are copies available? available 1E”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Are copies available? available 1E）。",
-      "question_translation": "中文辅助（离线预处理）：akw Dr.\nOgawa sent the report to the board of directors.\nEW",
+      "answer_explain": "原文依据：问句或陈述是“Dr. Ogawa sent the report to the Board of Directors.”，自然应答是“Are copies available?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Are copies available?）。",
+      "question_translation": "小川博士把报告发给了董事会。",
       "choice_translations": [
-        "A：Page two, third paragraph.",
-        "B：Are copies available（可用的）?\navailable（可用的） 1E",
-        "C：I'm watching a news report."
+        "A：第 2 页,第 3 段。",
+        "B：有副本吗?",
+        "C：我正在看新闻报道。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：akw Dr. Ogawa sent the report to the board of directors. EW",
+      "evidence": "参考原文第 1 段：Dr. Ogawa sent the report to the Board of Directors.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：akw Dr. Ogawa sent the report to the board of directors. EW",
+        "evidence": "参考原文第 1 段：Dr. Ogawa sent the report to the Board of Directors.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“akw Dr. Ogawa sent the report to the board of directors. EW”，自然应答是“Are copies available? available 1E”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Are copies available? available 1E）。"
+        "analysis": "原文依据：问句或陈述是“Dr. Ogawa sent the report to the Board of Directors.”，自然应答是“Are copies available?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Are copies available?）。"
       },
       "item_id": 23,
       "priority": {

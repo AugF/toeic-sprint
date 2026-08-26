@@ -26,38 +26,58 @@
       "asset_key": "official-12-test-1/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：aKw Who（谁）'s responsible for booking our plane IE#F tickets?\n• m",
-    "content_translation": "中文辅助（离线预处理）：aKw Who（谁）'s responsible for booking our plane IE#F tickets?\n• m"
+    "transcript": "Who's responsible for booking our plane tickets?\nA. Several weeks ago.\nB. I'll check our company's travel policy.\nC. Yes, the main terminal.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "360a3e7cfab227b000abc39b0d66ca48404103d7d6781e569e16f885981263cb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "谁负责预订我们的机票？\nA. 好几周前。\nB. 我会查一下我们公司的差旅政策。\nC. 是的，主航站楼。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9763f0c7b00a5ed08554ba11756f23cbd167ed15e0d421adce4b58617c70b9cf"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Several weeks ago. L3",
+        "Several weeks ago.",
         "I'll check our company's travel policy.",
         "Yes, the main terminal."
       ],
       "answer": "B",
-      "question": "aKw Who's responsible for booking our plane IE#F tickets? • m",
+      "question": "Who's responsible for booking our plane tickets?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“aKw Who's responsible for booking our plane IE#F tickets? • m”，自然应答是“I'll check our company's travel policy.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll check our company's travel policy.）。",
-      "question_translation": "中文辅助（离线预处理）：aKw Who（谁）'s responsible for booking our plane IE#F tickets?\n• m",
+      "answer_explain": "原文依据：问句或陈述是“Who's responsible for booking our plane tickets?”，自然应答是“I'll check our company's travel policy.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll check our company's travel policy.）。",
+      "question_translation": "谁负责预订我们的机票?",
       "choice_translations": [
-        "A：Several weeks ago.\nL3",
-        "B：I'll check our company（公司）'s travel policy.",
-        "C：Yes, the main terminal."
+        "A：好几周前。",
+        "B：我会查一下我们公司的差旅政策。",
+        "C：是的,主航站楼。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：aKw Who's responsible for booking our plane IE#F tickets? • m",
+      "evidence": "参考原文第 1 段：Who's responsible for booking our plane tickets?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：aKw Who's responsible for booking our plane IE#F tickets? • m",
+        "evidence": "参考原文第 1 段：Who's responsible for booking our plane tickets?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“aKw Who's responsible for booking our plane IE#F tickets? • m”，自然应答是“I'll check our company's travel policy.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll check our company's travel policy.）。"
+        "analysis": "原文依据：问句或陈述是“Who's responsible for booking our plane tickets?”，自然应答是“I'll check our company's travel policy.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll check our company's travel policy.）。"
       },
       "item_id": 28,
       "priority": {

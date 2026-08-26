@@ -41,9 +41,31 @@
       "asset_key": "official-12-test-2/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "meeting.\nGood morning everyone, and welcome to this training\nsession on my company's database software. I'm Francesca\nRomero with Global Medical, and I'll be facilitating this\nRomero &#\nsession. We're excited to continue providing your\npatients with the highest quality care by helping keep\naccurate records for your doctors and nurses. Let's start\nfirst by logging in to the Web site with the username and\nautomatically generated password you were provided via\ne-mail earlier this week. •Once you've logged in, please\nupdate your password, adhering to the requirements noted\non the page.",
-    "transcript_translation": "中文辅助（离线预处理）：meeting（会议）.\nGood morning everyone, and welcome to this training\nsession on my company（公司）'s database software.\nI'm Francesca\nRomero with Global Medical, and I'll be facilitating this\nRomero &#\nsession.\nWe're excited to continue providing your\npatients with the highest quality care by helping keep\naccurate records for your doctors and nurses.\nLet's start\nfirst by logging in to the Web site with the username and\nautomatically generated password you were provided via\ne-mail earlier this week.\n•Once you've logged in, please（请）\nupdate your password, adhering to the requirements noted\non the page.",
-    "content_translation": "中文辅助（离线预处理）：meeting（会议）.\nGood morning everyone, and welcome to this training\nsession on my company（公司）'s database software.\nI'm Francesca\nRomero with Global Medical, and I'll be facilitating this\nRomero &#\nsession.\nWe're excited to continue providing your\npatients with the highest quality care by helping keep\naccurate records for your doctors and nurses.\nLet's start\nfirst by logging in to the Web site with the username and\nautomatically generated password you were provided via\ne-mail earlier this week.\n•Once you've logged in, please（请）\nupdate your password, adhering to the requirements noted\non the page."
+    "transcript": "Good morning, everyone, and welcome to this training session on my company's database software.\nI'm Francesca Romero with Global Medical, and I'll be facilitating this session.\nWe're excited to continue providing your patients with the highest quality care by helping keep accurate records for your doctors and nurses.\nLet's start first by logging into the website with the username and automatically generated password you were provided via email earlier this week.\nOnce you've logged in, please update your password, adhering to the requirements noted on the page.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7b1e1bf6deb70e7169a837a691c6a41739e460d07e79106b86084f55e5732fbf",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 87,
+        "legacy_word_count": 91,
+        "length_ratio": 0.956,
+        "legacy_coverage": 0.934
+      }
+    },
+    "transcript_translation": "大家早上好，欢迎参加本次关于我公司数据库软件的培训课程。\n我是来自 Global Medical 的 Francesca Romero，我将主持本次会议。\n我们很高兴继续通过帮助为您的医生和护士保留准确记录，为您提供最高质量的护理。\n首先，请使用本周早些时候通过电子邮件提供的用户名和自动生成的密码登录网站。\n登录后，请更新您的密码，并遵守页面上注明的要求。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "11bdbbf5b4b81037468e3b5dabcc5840c65ce61c4a28f61e1842cba6cc3970c3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "D",
       "question": "What is the purpose of the session?",
-      "answer_explain": "原文依据：听力原文中提到“session on my company's database software.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To provide some software training）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the purpose（目的） of the session?",
+      "answer_explain": "正确答案：D（To provide some software training）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the purpose(目的) of the session?",
       "choice_translations": [
-        "A：To brainstorm new work（工作） strategies",
-        "B：To revise a checklist",
-        "C：To analyze customer（顾客） comments",
-        "D：To provide some software training"
+        "A:To brainstorm new work(工作) strategies",
+        "B:To revise a checklist",
+        "C:To analyze customer(顾客) comments",
+        "D:To provide some software training"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 3 段：session on my company's database software. I'm Francesca",
+      "evidence": "参考听力原文：“Good morning, everyone, and welcome to this training session on my company's database software.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 3 段：session on my company's database software. I'm Francesca",
+        "evidence": "参考听力原文：“Good morning, everyone, and welcome to this training session on my company's database software.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“session on my company's database software.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To provide some software training）。"
+        "analysis": "正确答案：D（To provide some software training）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "A",
       "question": "Where do the listeners most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“first by logging in to the Web site with the username and”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At a hospital）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） do the listeners most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：A（At a hospital）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) do the listeners most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a hospital",
-        "B：At a hotel",
-        "C：At a restaurant",
-        "D：At a computer store"
+        "A:At a hospital",
+        "B:At a hotel",
+        "C:At a restaurant",
+        "D:At a computer store"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：meeting.",
+      "evidence": "参考听力原文：“We're excited to continue providing your patients with the highest quality care by helping keep accurate records for your doctors and nurses.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：meeting.",
+        "evidence": "参考听力原文：“We're excited to continue providing your patients with the highest quality care by helping keep accurate records for your doctors and nurses.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“first by logging in to the Web site with the username and”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At a hospital）。"
+        "analysis": "正确答案：A（At a hospital）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "C",
       "question": "What are the listeners told to do?",
-      "answer_explain": "原文依据：听力原文中提到“update your password, adhering to the requirements noted”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Update a password）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the listeners told to do?",
+      "answer_explain": "正确答案：C（Update a password）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the listeners told to do?",
       "choice_translations": [
-        "A：Watch an instructional video",
-        "B：Register for the next course",
-        "C：Update a password",
-        "D：Read a manual"
+        "A:Watch an instructional video",
+        "B:Register for the next course",
+        "C:Update a password",
+        "D:Read a manual"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：meeting.",
+      "evidence": "参考听力原文：“Once you've logged in, please update your password, adhering to the requirements noted on the page.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：meeting.",
+        "evidence": "参考听力原文：“Once you've logged in, please update your password, adhering to the requirements noted on the page.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“update your password, adhering to the requirements noted”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Update a password）。"
+        "analysis": "正确答案：C（Update a password）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

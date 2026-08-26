@@ -36,9 +36,31 @@
       "asset_key": "official-10-test-1/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nm Hello. It's nice to meet you both. I understand you're\nlooking to hire some support staff?\nw Yes. ® We're both physicians, and we're opening our\nown medical clinic this year. ®We need a few good\nreceptionists, which is why we've come to your hiring\nagency.\nm Exciting! Yes, we have lots of experienced\nreceptionists. Any special requirements?\nw ®We definitely want someone who has filed insurance\npaperwork before.\na.\nI w Absolutely. ®We want someone who's no stranger to\nthis kind of work.\nGot it.\nWhat are the speakers discussing?\nA) Hiring new employees\nB) Merging two companies\nC) Investing money in a company\nD) Changing an employment contract\nWho are the women?\nA) Lawyers\nB) Doctors\nC) Investors\nD) Receptionists\nA) 217X\nB)\nWhat do the women express concern about?\nA) Agency fees\nB) Insurance costs\nC) A filing system\nD) Work experience\nB) 1719*4\nD) *1*Z5\nreceptionist\nhiring ag\npaperwork\nbe no stranger to~",
-    "transcript_translation": "有三位说话者。\nm 您好。很高兴认识你们两位。我了解到你们正在招聘一些支持人员？\nw 是的。我们都是医生，今年要开自己的诊所了。®我们需要几个好的接待员，这就是我们来你们招聘机构的原因。\nm 太棒了！是的，我们有很多经验丰富的接待员。有什么特殊要求吗？\nw ®我们绝对需要一个之前办理过保险文件的人。\na.\n我 w 没问题。®我们需要的是对这类工作不陌生的人。\n明白了。\n说话者们在讨论什么？\nA) 招聘新员工\nB) 合并两家公司\nC) 向公司投资资金\nD) 更改雇佣合同\n两位女士是谁？\nA) 律师\nB) 医生\nC) 投资者\nD) 接待员\n两位女士担心什么？\nA) 机构费用\nB) 保险成本\nC) 文件系统\nD) 工作经验",
-    "content_translation": "有三位说话者。\nm 您好。很高兴认识你们两位。我了解到你们正在招聘一些支持人员？\nw 是的。我们都是医生，今年要开自己的诊所了。®我们需要几个好的接待员，这就是我们来你们招聘机构的原因。\nm 太棒了！是的，我们有很多经验丰富的接待员。有什么特殊要求吗？\nw ®我们绝对需要一个之前办理过保险文件的人。\na.\n我 w 没问题。®我们需要的是对这类工作不陌生的人。\n明白了。\n说话者们在讨论什么？\nA) 招聘新员工\nB) 合并两家公司\nC) 向公司投资资金\nD) 更改雇佣合同\n两位女士是谁？\nA) 律师\nB) 医生\nC) 投资者\nD) 接待员\n两位女士担心什么？\nA) 机构费用\nB) 保险成本\nC) 文件系统\nD) 工作经验"
+    "transcript": "Hello, it's nice to meet you both.\nI understand you're looking to hire some support staff?\nYes, we're both physicians and we're opening our own medical clinic this year.\nWe need a few good receptionists, which is why we've come to your hiring agency.\nExciting.\nYes, we have lots of experienced receptionists.\nAny special requirements?\nWe definitely want someone who has filed insurance paperwork before.\nAbsolutely.\nWe want someone who's no stranger to this kind of work.\nGot it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "933767956dcbd8dfe6a1a95776ca768e1506e95b0006deb2b1867bfb1ac51e50",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 79,
+        "legacy_word_count": 78,
+        "length_ratio": 1.013,
+        "legacy_coverage": 1
+      }
+    },
+    "transcript_translation": "您好，很高兴认识你们两位。\n我明白你们正在寻找一些行政支持人员？\n是的，我们都是医生，今年我们要开自己的诊所。\n我们需要几个好的接待员，这就是我们来找贵招聘机构的原因。\n令人兴奋。\n是的，我们有很多经验丰富的接待员。\n有什么特殊要求吗？\n我们绝对想要一个之前处理过保险文件的人。\n当然可以。\n我们想要的是对这类工作不陌生的人。\n明白了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5ad870c57f9880a0819025315b34620209391d8af6318e97ea3aa56c4c083a47"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "A",
       "question": "What are the speakers discussing?",
-      "answer_explain": "原文依据：听力原文中提到“A) Hiring new employees”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Hiring new employees）。",
-      "question_translation": "说话者们在讨论什么？",
+      "answer_explain": "正确答案：A（Hiring new employees）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者们在讨论什么?",
       "choice_translations": [
-        "A：招聘新员工",
-        "B：合并两家公司",
-        "C：向公司投资资金",
-        "D：更改雇佣合同"
+        "A:招聘新员工",
+        "B:合并两家公司",
+        "C:向公司投资资金",
+        "D:更改雇佣合同"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“We need a few good receptionists, which is why we've come to your hiring agency.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“We need a few good receptionists, which is why we've come to your hiring agency.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“A) Hiring new employees”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Hiring new employees）。"
+        "analysis": "正确答案：A（Hiring new employees）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "B",
       "question": "Who are the women?",
-      "answer_explain": "原文依据：听力原文中提到“Who are the women?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Doctors）。",
-      "question_translation": "两位女士是谁？",
+      "answer_explain": "正确答案：B（Doctors）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "两位女士是谁?",
       "choice_translations": [
-        "A：律师",
-        "B：医生",
-        "C：投资者",
-        "D：接待员"
+        "A:律师",
+        "B:医生",
+        "C:投资者",
+        "D:接待员"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 21 段：Who are the women?",
+      "evidence": "参考听力原文：“Yes, we're both physicians and we're opening our own medical clinic this year.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 21 段：Who are the women?",
+        "evidence": "参考听力原文：“Yes, we're both physicians and we're opening our own medical clinic this year.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Who are the women?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Doctors）。"
+        "analysis": "正确答案：B（Doctors）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "D",
       "question": "What do the women express concern about?",
-      "answer_explain": "原文依据：听力原文中提到“D) Work experience”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Work experience）。",
-      "question_translation": "两位女士担心什么？",
+      "answer_explain": "正确答案：D（Work experience）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "两位女士担心什么?",
       "choice_translations": [
-        "A：机构费用",
-        "B：保险成本",
-        "C：文件系统",
-        "D：工作经验"
+        "A:机构费用",
+        "B:保险成本",
+        "C:文件系统",
+        "D:工作经验"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 21 段：Who are the women?",
+      "evidence": "参考听力原文：“We want someone who's no stranger to this kind of work.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 21 段：Who are the women?",
+        "evidence": "参考听力原文：“We want someone who's no stranger to this kind of work.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“D) Work experience”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Work experience）。"
+        "analysis": "正确答案：D（Work experience）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

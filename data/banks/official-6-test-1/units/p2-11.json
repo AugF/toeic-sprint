@@ -27,8 +27,28 @@
       "asset_key": "official-6-test-1/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "你开始在这里工作前在做什么？\nA. 是的，我计划很快开始。\nB. 我是一名房地产经纪人。\nC. 每天早上九点。",
-    "content_translation": "你开始在这里工作前在做什么？\nA. 是的，我计划很快开始。\nB. 我是一名房地产经纪人。\nC. 每天早上九点。"
+    "transcript": "What were you doing before you started working here?\nA. Yes, I plan to start soon.\nB. I was a real estate agent.\nC. Nine o'clock every morning.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "dd24cfa44557b89f59058c7376f1d4f9cde01433b6054474596af317a924f27f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "在你开始在这里工作之前你在做什么？\nA. 是的，我计划很快开始。\nB. 我是一名房地产经纪人。\nC. 每天早上九点。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "cad7b866bc82641061aa971020be15681489c4d616dc64380727bc9633e3497a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,9 +63,9 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“What were you doing before you started working here?”，自然应答是“I was a real estate agent.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I was a real estate agent.）。",
-      "question_translation": "你开始在这里工作前在做什么？",
+      "question_translation": "在你开始在这里工作之前你在做什么?",
       "choice_translations": [
-        "A：是的，我计划很快开始。",
+        "A：是的,我计划很快开始。",
         "B：我是一名房地产经纪人。",
         "C：每天早上九点。"
       ],

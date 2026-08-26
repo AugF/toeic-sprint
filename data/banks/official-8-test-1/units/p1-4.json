@@ -31,8 +31,28 @@
       "asset_key": "official-8-test-1/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. The man is entering a waiting area.\nB. The man is holding a door open.\nC. One of the women is looking at a monitor.\nD. One of the women is reaching for a bag on the floor.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3659f72232133e751300c9c7d536733b6fa8879200e4e2aadc205fd5fb3770c5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 50
+      }
+    },
+    "transcript_translation": "A. 这名男子正在进入一个等候区。\nB. 这名男子正在扶着门开着。\nC. 其中一名女子正在看一台显示器。\nD. 其中一名女子正伸手去拿地板上的一个袋子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a7e966d8aa46554538786817157d0aada7f92199f924da86d86360e7f061d5b1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“The man is entering a waiting area.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（The man is entering a waiting area.）。",
       "choice_translations": [
-        "A：The man（男士） is entering a waiting area.",
-        "B：The man（男士） is holding a door open.",
-        "C：One of the women is looking at a monitor.",
-        "D：One of the women is reaching for a bag on the floor."
+        "A：这名男子正在进入一个等候区。",
+        "B：这名男子正在扶着门开着。",
+        "C：其中一名女子正在看一台显示器。",
+        "D：其中一名女子正伸手去拿地板上的一个袋子。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-8-test-1/p1-4/4"
+      "item_key": "official-8-test-1/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

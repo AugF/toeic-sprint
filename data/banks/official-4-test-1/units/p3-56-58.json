@@ -39,9 +39,31 @@
       "asset_key": "official-4-test-1/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nmM Welcome to Capital Supermarket! Today I’m\ndemonstrating this great new food dehydrator—mad\nby Sillco. Dehydrating, or drying, is a way to remove\nwater from food. Does anyone already own a food\ndehydrator?\ndo. Drying makes foods smaller and lighter, so @!\nactually buy fruit here at this grocery store and then\ndehydrate it at home to take it when | go camping.\niv Mmm-hmm. The dehydration process is usually\nquite long—about fifteen hours for most machines!\nBut ©the Sillco Food Dehydrator does the same\nwork in half the time.\nwant to try this product, but it's expensive. ©lf\ndon’t like it, can | bring it back?\nDefinitely —there’s a 60-day, money-back guarante:",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nmM Welcome to Capital Supermarket!\nToday I’m\ndemonstrating this great new food dehydrator—mad\nby Sillco.\nDehydrating, or drying, is a way to remove\nwater from food.\nDoes anyone already own a food\ndehydrator?\ndo.\nDrying makes foods smaller and lighter, so @!\nactually buy fruit here at this grocery store and then\ndehydrate it at home to take it when（何时） | go camping.\niv Mmm-hmm.\nThe dehydration process is usually\nquite long—about fifteen hours for most machines!\nBut ©the Sillco Food Dehydrator does the same\nwork（工作） in half the time.\nwant to try this product, but it's expensive.\n©lf\ndon’t like it, can | bring it back?\nDefinitely —there’s a 60-day, money-back guarante:",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nmM Welcome to Capital Supermarket!\nToday I’m\ndemonstrating this great new food dehydrator—mad\nby Sillco.\nDehydrating, or drying, is a way to remove\nwater from food.\nDoes anyone already own a food\ndehydrator?\ndo.\nDrying makes foods smaller and lighter, so @!\nactually buy fruit here at this grocery store and then\ndehydrate it at home to take it when（何时） | go camping.\niv Mmm-hmm.\nThe dehydration process is usually\nquite long—about fifteen hours for most machines!\nBut ©the Sillco Food Dehydrator does the same\nwork（工作） in half the time.\nwant to try this product, but it's expensive.\n©lf\ndon’t like it, can | bring it back?\nDefinitely —there’s a 60-day, money-back guarante:"
+    "transcript": "Welcome to Capital Supermarket.\nToday I'm demonstrating this great new food dehydrator made by Silco.\nDehydrating or drying is a way to remove water from food.\nDoes anyone already own a food dehydrator?\nI do.\nDrying makes food smaller and lighter.\nSo I actually buy fruit here at this grocery store and then dehydrate it at home to take it when I go camping.\nMm-hmm.\nThe dehydration process is usually quite long, about 15 hours for most machines.\nBut the Silco food dehydrator does the same work in half the time.\nI want to try this product, but it's expensive.\nIf I don't like it, can I bring it back?\nDefinitely.\nThere's a 60-day money-back guarantee.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "57ac26b87dae709521989568f52a455f93b973c1411ab21c424d5140c84fd664",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 115,
+        "legacy_word_count": 115,
+        "length_ratio": 1,
+        "legacy_coverage": 0.878
+      }
+    },
+    "transcript_translation": "欢迎光临资本超市。\n今天我要展示这款由 Silco 制造的很棒的新食品脱水器。\n脱水或干燥是一种去除食物水分的方法。\n有人已经拥有过食品脱水器吗？\n我拥有。\n干燥能让食物更小、更轻。\n所以我实际上是在这家杂货店买水果，然后在家里把它脱水，带去露营时用。\n嗯哼。\n脱水过程通常相当长，大多数机器需要大约 15 个小时。\n但 Silco 食品脱水器可以在一半的时间内完成同样的工作。\n我想试试这个产品，但它很贵。\n如果我不喜欢它，我可以退货吗？\n当然可以。\n有 60 天的退款保证。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "dfda69fa517933b7f522a7ee8ef200203b6aea16b0eddec56cf7b434b0bf2509"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "Where does the conversation take place?",
-      "answer_explain": "原文依据：听力原文中提到“actually buy fruit here at this grocery store and then”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（At a grocery store）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the conversation take place?",
+      "answer_explain": "正确答案：D（At a grocery store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the conversation take place?",
       "choice_translations": [
-        "A：At a dry cleaner",
-        "B：At a hardware store",
-        "C：At a camping site",
-        "D：At a grocery store"
+        "A:At a dry cleaner",
+        "B:At a hardware store",
+        "C:At a camping site",
+        "D:At a grocery store"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“So I actually buy fruit here at this grocery store and then dehydrate it at home to take it when I go camping.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“So I actually buy fruit here at this grocery store and then dehydrate it at home to take it when I go camping.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“actually buy fruit here at this grocery store and then”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（At a grocery store）。"
+        "analysis": "正确答案：D（At a grocery store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "A",
       "question": "What is different about the Sillco product?",
-      "answer_explain": "原文依据：听力原文中提到“But ©the Sillco Food Dehydrator does the same”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It works quickly.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is different about the Sillco product?",
+      "answer_explain": "正确答案：A（It works quickly.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is different about the Sillco product?",
       "choice_translations": [
-        "A：It works quickly.",
-        "B：It removes odors.",
-        "C：It is easy to clean.",
-        "D：It is very small."
+        "A:It works quickly.",
+        "B:It removes odors.",
+        "C:It is easy to clean.",
+        "D:It is very small."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 4 段：by Sillco. Dehydrating, or drying, is a way to remove",
+      "evidence": "参考听力原文：“The dehydration process is usually quite long, about 15 hours for most machines.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 4 段：by Sillco. Dehydrating, or drying, is a way to remove",
+        "evidence": "参考听力原文：“The dehydration process is usually quite long, about 15 hours for most machines.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But ©the Sillco Food Dehydrator does the same”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It works quickly.）。"
+        "analysis": "正确答案：A（It works quickly.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -150,30 +172,30 @@
     },
     {
       "choices": [
-        "Aspecial discount",
+        "A special discount",
         "An online purchase option",
-        "Areturn policy",
-        "Adelivery schedule"
+        "A return policy",
+        "A delivery schedule"
       ],
       "answer": "C",
       "question": "What does the woman ask about?",
-      "answer_explain": "原文依据：听力原文中提到“But ©the Sillco Food Dehydrator does the same”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Areturn policy）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） ask about?",
+      "answer_explain": "正确答案：C（A return policy）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) ask about?",
       "choice_translations": [
-        "A：Aspecial discount",
-        "B：An online purchase（购买） option",
-        "C：Areturn policy",
-        "D：Adelivery schedule（日程）"
+        "A:A special discount",
+        "B:An online purchase(购买) option",
+        "C:A return policy",
+        "D:A delivery schedule(日程)"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“The dehydration process is usually quite long, about 15 hours for most machines.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“The dehydration process is usually quite long, about 15 hours for most machines.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But ©the Sillco Food Dehydrator does the same”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Areturn policy）。"
+        "analysis": "正确答案：C（A return policy）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

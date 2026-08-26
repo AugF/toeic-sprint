@@ -39,37 +39,59 @@
       "asset_key": "official-4-test-2/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "Ew\nAttention, Hibben Foods shoppers: Starting in April, our\nstore will have a new policy. We will no longer offer\nsingle-use plastic bags at the checkout counter. You’re\nwelcome to bring your own bags. However, @we also ha\\\ncloth tote bags available for purchase at the checkout\ncounter. And these are not your ordinary shopping bags.\nWhat’s special about them is that they're available in te\ndifferent colorful patterns that we’re sure you'll love. We\ndecided to offer these tote bags in response to the\ncommunity’s feedback. You made your voices heard, and\nHibben Foods has listened!",
-    "transcript_translation": "中文辅助（离线预处理）：Ew\nAttention, Hibben Foods shoppers: Starting in April, our\nstore will have a new policy.\nWe will no longer offer\nsingle-use plastic bags at the checkout counter.\nYou’re\nwelcome to bring your own bags.\nHowever, @we also ha\\\ncloth tote bags available（可用的） for purchase（购买） at the checkout\ncounter.\nAnd these are not your ordinary shopping bags.\nWhat（什么）’s special about them is that they're available（可用的） in te\ndifferent colorful patterns that we’re sure you'll love.\nWe\ndecided to offer these tote bags in response to the\ncommunity’s feedback.\nYou made your voices heard, and\nHibben Foods has listened!",
-    "content_translation": "中文辅助（离线预处理）：Ew\nAttention, Hibben Foods shoppers: Starting in April, our\nstore will have a new policy.\nWe will no longer offer\nsingle-use plastic bags at the checkout counter.\nYou’re\nwelcome to bring your own bags.\nHowever, @we also ha\\\ncloth tote bags available（可用的） for purchase（购买） at the checkout\ncounter.\nAnd these are not your ordinary shopping bags.\nWhat（什么）’s special about them is that they're available（可用的） in te\ndifferent colorful patterns that we’re sure you'll love.\nWe\ndecided to offer these tote bags in response to the\ncommunity’s feedback.\nYou made your voices heard, and\nHibben Foods has listened!"
+    "transcript": "Attention, Hibbin food shoppers.\nStarting in April, our store will have a new policy.\nWe will no longer offer single-use plastic bags at the checkout counter.\nYou're welcome to bring your own bags.\nHowever, we also have cloth tote bags available for purchase at the checkout counter.\nAnd these are not your ordinary shopping bags.\nWhat's special about them is that they're available in ten different colorful patterns that we're sure you'll love.\nWe've decided to offer these tote bags in response to the community's feedback.\nYou made your voices heard, and Hibbin Foods has listened.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b981596d637e14247928791a3ef4352dc1f718ba18bf2a7b8dac0aca28479be8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 96,
+        "legacy_word_count": 97,
+        "length_ratio": 0.99,
+        "legacy_coverage": 0.948
+      }
+    },
+    "transcript_translation": "请注意，Hibbin 食品购物者们。\n从四月开始，我们的店将有新的政策。\n我们在收银台将不再提供一次性塑料袋。\n欢迎您自带购物袋。\n不过，我们也在收银台出售布制手提袋。\n而且这些可不是普通的购物袋。\n它们特别之处在于，它们有十种不同的彩色图案供您选择，我们确信您会喜欢。\n我们决定提供这些手提袋是为了回应社区的反馈。\n你们让自己的声音被听到了，Hibbin Foods 也听到了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "29587a2fc92b56e6c1fbb934d8a2f7f4b378bb093d737c561b884a7f5706eacc"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Acompany policy",
-        "Astore layout",
+        "A company policy",
+        "A store layout",
         "Nutrition labels",
         "Product prices"
       ],
       "answer": "A",
       "question": "What does the speaker say will change in April?",
-      "answer_explain": "原文依据：听力原文中提到“store will have a new policy.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Acompany policy）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say will change in April?",
+      "answer_explain": "正确答案：A（A company policy）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say will change in April?",
       "choice_translations": [
-        "A：Acompany policy",
-        "B：Astore layout",
-        "C：Nutrition labels",
-        "D：Product prices"
+        "A:A company policy",
+        "B:A store layout",
+        "C:Nutrition labels",
+        "D:Product prices"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：Attention, Hibben Foods shoppers: Starting in April, our",
+      "evidence": "参考听力原文：“Starting in April, our store will have a new policy.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：Attention, Hibben Foods shoppers: Starting in April, our",
+        "evidence": "参考听力原文：“Starting in April, our store will have a new policy.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“store will have a new policy.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Acompany policy）。"
+        "analysis": "正确答案：A（A company policy）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "D",
       "question": "What is special about the store’s tote bags?",
-      "answer_explain": "原文依据：听力原文中提到“And these are not your ordinary shopping bags.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（They are colorful.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is special about the store’s tote bags?",
+      "answer_explain": "正确答案：D（They are colorful.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is special about the store’s tote bags?",
       "choice_translations": [
-        "A：They are inexpensive.",
-        "B：They are lightweight.",
-        "C：They are waterproof.",
-        "D：They are colorful."
+        "A:They are inexpensive.",
+        "B:They are lightweight.",
+        "C:They are waterproof.",
+        "D:They are colorful."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 3 段：store will have a new policy. We will no longer offer",
+      "evidence": "参考听力原文：“What's special about them is that they're available in ten different colorful patterns that we're sure you'll love.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 3 段：store will have a new policy. We will no longer offer",
+        "evidence": "参考听力原文：“What's special about them is that they're available in ten different colorful patterns that we're sure you'll love.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“And these are not your ordinary shopping bags.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（They are colorful.）。"
+        "analysis": "正确答案：D（They are colorful.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, what was the main reason for the change?",
-      "answer_explain": "原文依据：听力原文中提到“community’s feedback.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Community feedback）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） was the main reason for the change?",
+      "answer_explain": "正确答案：B（Community feedback）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) was the main reason for the change?",
       "choice_translations": [
-        "A：New ownership",
-        "B：Community feedback",
-        "C：Local business competition",
-        "D：Increased shipping costs"
+        "A:New ownership",
+        "B:Community feedback",
+        "C:Local business competition",
+        "D:Increased shipping costs"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ew",
+      "evidence": "参考听力原文：“We've decided to offer these tote bags in response to the community's feedback.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ew",
+        "evidence": "参考听力原文：“We've decided to offer these tote bags in response to the community's feedback.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“community’s feedback.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Community feedback）。"
+        "analysis": "正确答案：B（Community feedback）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

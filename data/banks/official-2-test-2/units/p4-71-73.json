@@ -36,9 +36,31 @@
       "asset_key": "official-2-test-2/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "elu\nDo you love to read? Then ®the Pace E-Reader is\nThe Pace E-Reader is an electronic reading device\nhold up to one thousand books. And @the best pat\nlightweight and fits into any bag! So, now you don’\nworry about carrying several heavy books to get yc\na vacation. Just download your favorite books to th\nE-Reader, put it in your bag, and travel light! And v\nmore, © if you buy a Pace E-Reader this month, yc\na coupon for a free download of an electronic book\nchoice.",
-    "transcript_translation": "elu\n你喜欢阅读吗？那么 Pace E-Reader 就是\nPace E-Reader 是一种电子阅读设备，可以\n装载多达一千本书。而且@轻便，可放入任何包里！所以，现在您\n再也不用担心带着几本沉重的书去度假了。只需将您喜欢的书籍下载到\nE-Reader 中，把它放进您的包里，就能轻松旅行！此外，© 如果您本月购买 Pace E-Reader，您还可以获得电子书免费下载的优惠券。",
-    "content_translation": "elu\n你喜欢阅读吗？那么 Pace E-Reader 就是\nPace E-Reader 是一种电子阅读设备，可以\n装载多达一千本书。而且@轻便，可放入任何包里！所以，现在您\n再也不用担心带着几本沉重的书去度假了。只需将您喜欢的书籍下载到\nE-Reader 中，把它放进您的包里，就能轻松旅行！此外，© 如果您本月购买 Pace E-Reader，您还可以获得电子书免费下载的优惠券。"
+    "transcript": "Do you love to read?\nThen the Pace e-reader is for you.\nThe Pace e-reader is an electronic reading device that can hold up to 1,000 books.\nAnd the best part is that it's lightweight and fits into any bag.\nSo now you don't need to worry about carrying several heavy books to get you through a vacation.\nJust download your favorite books to the Pace e-reader.\nPut it in your bag and travel light.\nAnd what's more, if you buy a Pace e-reader this month, you'll receive a coupon for a free download of an electronic book of your choice.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "611a25930a5a1f66ac57d01b9bc01a4b07222f31bc8eca76892875b9481c6866",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 100,
+        "legacy_word_count": 89,
+        "length_ratio": 1.124,
+        "legacy_coverage": 0.854
+      }
+    },
+    "transcript_translation": "你喜欢阅读吗？\n那么 Pace e-reader 就是为你准备的。\nPace e-reader 是一种电子阅读设备，可以存储多达 1,000 本书籍。\n最棒的是它轻巧，可以放进任何包里。\n所以现在你不必担心带上好几本沉重的书去度过假期了。\n只需将你喜欢的书籍下载到 Pace e-reader 上。\n把它放进你的包里，轻松旅行。\n更重要的是，如果你本月购买了一台 Pace e-reader，你将收到一张免费下载任意电子书的优惠券。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e852bc1f0d7e952e24f19ffeb142aa982e3f105fba2740052fe5c0c5f004ac01"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -49,24 +71,24 @@
         "An electronic device"
       ],
       "answer": "D",
-      "question": "What is the advertisement for? 77.",
-      "answer_explain": "原文依据：听力原文中提到“The Pace E-Reader is an electronic reading device”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An electronic device）。",
-      "question_translation": "这份广告是关于什么的？",
+      "question": "What is the advertisement for?",
+      "answer_explain": "正确答案：D（An electronic device）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "这份广告是关于什么的?",
       "choice_translations": [
-        "A：一些行李",
-        "B：一种能量饮料",
-        "C：一些服装",
-        "D：一个电子设备"
+        "A:一些行李",
+        "B:一种能量饮料",
+        "C:一些服装",
+        "D:一个电子设备"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：elu",
+      "evidence": "参考听力原文：“The Pace e-reader is an electronic reading device that can hold up to 1,000 books.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：elu",
+        "evidence": "参考听力原文：“The Pace e-reader is an electronic reading device that can hold up to 1,000 books.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“The Pace E-Reader is an electronic reading device”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An electronic device）。"
+        "analysis": "正确答案：D（An electronic device）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 71,
       "priority": {
@@ -98,24 +120,24 @@
         "Its weight"
       ],
       "answer": "D",
-      "question": "What feature of the product does the 78. speaker emphasize?",
-      "answer_explain": "原文依据：听力原文中提到“The Pace E-Reader is an electronic reading device”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Its weight）。",
-      "question_translation": "演讲者强调了该产品的哪个特点？",
+      "question": "What feature of the product does the speaker emphasize?",
+      "answer_explain": "正确答案：D（Its weight）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者强调了该产品的哪个特点?",
       "choice_translations": [
-        "A：它的材质",
-        "B：它的颜色",
-        "C：它的成本",
-        "D：它的重量"
+        "A:它的材质",
+        "B:它的颜色",
+        "C:它的成本",
+        "D:它的重量"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：elu",
+      "evidence": "参考听力原文：“And what's more, if you buy a Pace e-reader this month, you'll receive a coupon for a free download of an electronic book of your choice.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：elu",
+        "evidence": "参考听力原文：“And what's more, if you buy a Pace e-reader this month, you'll receive a coupon for a free download of an electronic book of your choice.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“The Pace E-Reader is an electronic reading device”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Its weight）。"
+        "analysis": "正确答案：D（Its weight）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 72,
       "priority": {
@@ -141,30 +163,30 @@
     },
     {
       "choices": [
-        "Aproduct sample",
+        "A product sample",
         "Free gift wrapping",
-        "Acoupon _",
-        "Amagazine subscription"
+        "A coupon",
+        "A magazine subscription"
       ],
       "answer": "C",
       "question": "According to the speaker, what is offered with a purchase?",
-      "answer_explain": "原文依据：听力原文中提到“The Pace E-Reader is an electronic reading device”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Acoupon _）。",
-      "question_translation": "根据演讲者所说，购买时会提供什么？",
+      "answer_explain": "正确答案：C（A coupon）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "根据演讲者所说,购买时会提供什么?",
       "choice_translations": [
-        "A：产品样品",
-        "B：免费礼品包装",
-        "C：优惠券",
-        "D：杂志订阅"
+        "A:产品样品",
+        "B:免费礼品包装",
+        "C:优惠券",
+        "D:杂志订阅"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：elu",
+      "evidence": "参考听力原文：“And what's more, if you buy a Pace e-reader this month, you'll receive a coupon for a free download of an electronic book of your choice.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：elu",
+        "evidence": "参考听力原文：“And what's more, if you buy a Pace e-reader this month, you'll receive a coupon for a free download of an electronic book of your choice.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“The Pace E-Reader is an electronic reading device”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Acoupon _）。"
+        "analysis": "正确答案：C（A coupon）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 73,
       "priority": {

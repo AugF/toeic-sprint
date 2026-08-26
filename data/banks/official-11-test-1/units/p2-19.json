@@ -42,8 +42,28 @@
       "asset_key": "official-11-test-1/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "我可以看看用品订单上都有什么吗？\nA：它不在清单上。\nB：本来应该由他来做。\nC：今天下午应该就能准备好。",
-    "content_translation": "本段听力围绕“一般疑问句”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Can I see what's on the supply order?\nA. It wasn't on the list.\nB. He was supposed to.\nC. It should be ready this afternoon.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e4a89441a6e7f37431acd7f0d3dda25a81df30d8be0119fb06c05a883149c0db",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "我可以看看供应订单上有什么吗？\nA. 它不在清单上。\nB. 他本该的。\nC. 今天下午应该准备好了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4d8232670009366c58ec3c5b61b9b931d463f520a5836d3ab672bef3ce65607a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -62,8 +82,8 @@
       "evidence": "参考原文第 1 段第 1 句：Can I see what's on the supply order?",
       "choice_translations": [
         "A：它不在清单上。",
-        "B：本来应该由他来做。",
-        "C：今天下午应该就能准备好。"
+        "B：他本该的。",
+        "C：今天下午应该准备好了。"
       ],
       "response_style": "可直接回答，也常用补充信息间接回答",
       "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
@@ -74,7 +94,7 @@
         "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：询问能否查看订货单，答句说 It should be ready this afternoon。 选择理由：C说明订货单稍后才能查看，是对请求的间接回应；A和B不能自然解释当前是否可看。正确答案：C（It should be ready this afternoon.）。"
       },
-      "question_translation": "我可以看看用品订单上都有什么吗？",
+      "question_translation": "我可以看看供应订单上有什么吗?",
       "item_id": 19,
       "priority": {
         "level": "P1",

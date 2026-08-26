@@ -27,8 +27,28 @@
       "asset_key": "official-6-test-2/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Is Munich your final destination?",
-    "content_translation": "中文辅助（离线预处理）：Is Munich your final destination?"
+    "transcript": "Is Munich your final destination?\nA. No, I'm flying to Berlin.\nB. A window seat, please.\nC. Did you purchase a ticket?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4bcb73427ffd01b0c027600bb4929d1f964116f40fba1e77bbc6578632e0ca2d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "您最终目的地是慕尼黑吗？\nA. 不，我飞往柏林。\nB. 请给我靠窗的座位。\nC. 您购买票了吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d4449ebdcb59faf9c7a6cb558699eaa34885fc348f5ae4f7d9c07797fc366a91"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Is Munich your final destination?”，自然应答是“No, I'm flying to Berlin.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, I'm flying to Berlin.）。",
-      "question_translation": "中文辅助（离线预处理）：Is Munich your final destination?",
+      "question_translation": "您最终目的地是慕尼黑吗?",
       "choice_translations": [
-        "A：No, I'm flying to Berlin.",
-        "B：A window seat, please（请）.",
-        "C：Did you purchase（购买） a ticket?"
+        "A：不,我飞往柏林。",
+        "B：请给我靠窗的座位。",
+        "C：您购买票了吗?"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Is Munich your final destination?",

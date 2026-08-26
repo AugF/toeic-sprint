@@ -27,38 +27,58 @@
       "asset_key": "official-10-test-2/audio/part2/q027.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：next month?",
-    "content_translation": "中文辅助（离线预处理）：next month?"
+    "transcript": "Isn't the dance studio opening\nA. second location next month? A. A wonderful dance routine.\nB. No, the botanical gardens are closed today.\nC. The first classes begin in three weeks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b03db7ccbb0950d15f1bebc12552aa8cef269f365b4f00435c151d359d60e1dd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q027.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "舞蹈工作室不是要开业了吗？\nA. 下个月第二个地点吗？ A. 一个精彩的舞蹈动作。\nB. 不，植物园今天关闭了。\nC. 第一节课在三周后开始。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "11eed98f3cd758474260616dda312b5c85b6576b089219d4f977c3c0e5b4dbbb"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "A wonderful dance routine.",
-        "No, the botanical gardens are closed today. e",
+        "second location next month? A. A wonderful dance routine.",
+        "No, the botanical gardens are closed today.",
         "The first classes begin in three weeks."
       ],
       "answer": "C",
-      "question": "next month?",
+      "question": "Isn't the dance studio opening",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“next month?”，自然应答是“The first classes begin in three weeks.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The first classes begin in three weeks.）。",
-      "question_translation": "中文辅助（离线预处理）：next month?",
+      "answer_explain": "原文依据：问句或陈述是“Isn't the dance studio opening”，自然应答是“The first classes begin in three weeks.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The first classes begin in three weeks.）。",
+      "question_translation": "舞蹈工作室不是要开业了吗?",
       "choice_translations": [
-        "A：A wonderful dance routine.",
-        "B：No, the botanical gardens are closed today.\ne",
-        "C：The first classes begin in three weeks."
+        "A：下个月第二个地点吗? A. 一个精彩的舞蹈动作。",
+        "B：不,植物园今天关闭了。",
+        "C：第一节课在三周后开始。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：next month?",
+      "evidence": "参考原文第 1 段：Isn't the dance studio opening",
       "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：next month?",
+        "evidence": "参考原文第 1 段：Isn't the dance studio opening",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“next month?”，自然应答是“The first classes begin in three weeks.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The first classes begin in three weeks.）。"
+        "analysis": "原文依据：问句或陈述是“Isn't the dance studio opening”，自然应答是“The first classes begin in three weeks.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The first classes begin in three weeks.）。"
       },
       "item_id": 27,
       "priority": {

@@ -45,9 +45,32 @@
       "asset_key": "official-12-test-1/images/part3/q068-070.jpg",
       "exists": true
     },
-    "transcript": "and menu.\nm Natalie, Owhy do we have so many boxes of cod fish\nNatalie, C5LZ\nin the refrigerator?\nas w Our supplier sent us twice our regular order by\nmistake. Since he could not take it back, he gave it to\nus for free.\nWhat are we going to do with it?\nw Don't worry. Ol have a special recipe I can make that\nI'm sure our customers will love.\nm OK. Let's call the new dish the Chef's Special.\nTell our servers that it is a limited-time menu item\nwith a reduced price. If people like it, we can add it to\nthe menu in the future.\nThe Fresh Fish\nFactory\nToday's Specials\nE0\nAPPETIZERS\nBU\nClam Chowder\nShrimp Platter\nMAIN DISHES\nChef's Special\nCatch of the Day",
-    "transcript_translation": "中文辅助（离线预处理）：and menu.\nm Natalie, Owhy do we have so many boxes of cod fish\nNatalie, C5LZ\nin the refrigerator?\nas w Our supplier sent us twice our regular order（订单） by\nmistake.\nSince he could not take it back, he gave it to\nus for free.\nWhat（什么） are we going to do with it?\nw Don't worry.\nOl have a special recipe I can make that\nI'm sure our customers will love.\nm OK.\nLet's call the new dish the Chef's Special.\nTell our servers that it is a limited-time menu item\nwith a reduced price.\nIf people like it, we can add it to\nthe menu in the future.\nThe Fresh Fish\nFactory\nToday's Specials\nE0\nAPPETIZERS\nBU\nClam Chowder\nShrimp Platter\nMAIN DISHES\nChef's Special\nCatch of the Day",
-    "content_translation": "中文辅助（离线预处理）：and menu.\nm Natalie, Owhy do we have so many boxes of cod fish\nNatalie, C5LZ\nin the refrigerator?\nas w Our supplier sent us twice our regular order（订单） by\nmistake.\nSince he could not take it back, he gave it to\nus for free.\nWhat（什么） are we going to do with it?\nw Don't worry.\nOl have a special recipe I can make that\nI'm sure our customers will love.\nm OK.\nLet's call the new dish the Chef's Special.\nTell our servers that it is a limited-time menu item\nwith a reduced price.\nIf people like it, we can add it to\nthe menu in the future.\nThe Fresh Fish\nFactory\nToday's Specials\nE0\nAPPETIZERS\nBU\nClam Chowder\nShrimp Platter\nMAIN DISHES\nChef's Special\nCatch of the Day"
+    "transcript": "Natalie, why do we have so many boxes of cod fish in the refrigerator?\nOur supplier sent us twice our regular order by mistake.\nSince he could not take it back, he gave it to us for free.\nWhat are we going to do with it?\nDon't worry.\nI have a special recipe I can make that I'm sure our customers will love.\nOkay.\nLet's call the new dish the Chef Special.\nTell our servers that it is a limited time menu item with a reduced price.\nIf people like it, we can add it to the menu in the future.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ebca6e4cc7aa1f894d0b5e0326774788eacb82e5cd14ce1c9a8bf813c600869a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part3/q068-070.mp3",
+      "metrics": {
+        "word_count": 103,
+        "legacy_word_count": 128,
+        "length_ratio": 0.805,
+        "legacy_coverage": 0.789
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "Natalie，我们冰箱里为什么有这么多鳕鱼箱子？\n我们的供应商错误地给我们发了双倍的常规订单。\n因为他不能退回，所以免费给了我们。\n我们要用这些做什么呢？\n别担心。\n我有一个特别的食谱，我相信我们的顾客会喜欢的。\n好的。\n我们把这道新菜命名为“主厨特选”。\n告诉我们的服务员，这是一个限时菜单项目，价格也会降低。\n如果大家喜欢，将来我们可以把它加到菜单上。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "02aa1f03d60da1110fcc13846e8f54855f554e6cf580e62c146a6da03fd6910a"
+    }
   },
   "items": [
     {
@@ -59,23 +82,23 @@
       ],
       "answer": "B",
       "question": "What does the man ask the woman to confirm?",
-      "answer_explain": "原文依据：听力原文中提到“Let's call the new dish the Chef's Special.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Whether the amount of an item is correct）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） ask the woman（女士） to confirm?",
+      "answer_explain": "正确答案：B（Whether the amount of an item is correct）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) ask the woman(女士) to confirm?",
       "choice_translations": [
-        "A：Why（为什么） customers dislike amenu item",
-        "B：Whether the amount of an item is correct",
-        "C：Where（哪里） a delivery should be stored",
-        "D：When（何时） an employee（员工） will arrive"
+        "A:Why(为什么) customers dislike amenu item",
+        "B:Whether the amount of an item is correct",
+        "C:Where(哪里) a delivery should be stored",
+        "D:When(何时) an employee(员工) will arrive"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and menu.",
+      "evidence": "参考听力原文：“Tell our servers that it is a limited time menu item with a reduced price.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and menu.",
+        "evidence": "参考听力原文：“Tell our servers that it is a limited time menu item with a reduced price.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Let's call the new dish the Chef's Special.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Whether the amount of an item is correct）。"
+        "analysis": "正确答案：B（Whether the amount of an item is correct）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 68,
       "priority": {
@@ -112,23 +135,23 @@
       ],
       "answer": "D",
       "question": "What most likely is the woman's job?",
-      "answer_explain": "原文依据：听力原文中提到“Let's call the new dish the Chef's Special.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Chef）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） most likely（最可能） is the woman（女士）'s job?",
+      "answer_explain": "正确答案：D（Chef）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) most likely(最可能) is the woman(女士)'s job?",
       "choice_translations": [
-        "A：Server",
-        "B：Dishwasher",
-        "C：Manager（经理）",
-        "D：Chef"
+        "A:Server",
+        "B:Dishwasher",
+        "C:Manager(经理)",
+        "D:Chef"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：and menu.",
+      "evidence": "参考听力原文：“Let's call the new dish the Chef Special.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：and menu.",
+        "evidence": "参考听力原文：“Let's call the new dish the Chef Special.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Let's call the new dish the Chef's Special.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Chef）。"
+        "analysis": "正确答案：D（Chef）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 69,
       "priority": {
@@ -165,23 +188,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic.How much will the new dish cost?",
-      "answer_explain": "原文依据：听力原文中提到“Let's call the new dish the Chef's Special.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（$12.99）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.How（如何） much will the new dish cost?",
+      "answer_explain": "正确答案：C（$12.99）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic.How(如何) much will the new dish cost?",
       "choice_translations": [
-        "A：$3.99",
-        "B：$9.99",
-        "C：$12.99",
-        "D：$19.99"
+        "A:$3.99",
+        "B:$9.99",
+        "C:$12.99",
+        "D:$19.99"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and menu.",
+      "evidence": "参考听力原文：“Let's call the new dish the Chef Special.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and menu.",
+        "evidence": "参考听力原文：“Let's call the new dish the Chef Special.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Let's call the new dish the Chef's Special.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（$12.99）。"
+        "analysis": "正确答案：C（$12.99）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 70,
       "priority": {

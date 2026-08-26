@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-2/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：W Sales of our portable printers keep increasing m",
-    "content_translation": "中文辅助（离线预处理）：W Sales of our portable printers keep increasing m"
+    "transcript": "Sales of our portable printers keep increasing.\nA. They are popular with business travelers.\nB. You can find them on the third floor.\nC. I have a document to photocopy.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6f2283b659b9e030db584d4f4abe5f115c3cc8236f27587d5e474e42e1d27217",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "我们便携式打印机的销量持续增加。\nA. 它们在商务旅客中很受欢迎。\nB. 你可以在三楼找到它们。\nC. 我有一份文件需要复印。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e188b6f5302e674820a88e416e8663b62082dd13e148087f53ae1e2431c92b2a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "They are popular with business travelers.",
         "You can find them on the third floor.",
-        "have a document to photocopy."
+        "I have a document to photocopy."
       ],
       "answer": "A",
-      "question": "W Sales of our portable printers keep increasing m",
+      "question": "Sales of our portable printers keep increasing.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“W Sales of our portable printers keep increasing m”，自然应答是“They are popular with business travelers.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（They are popular with business travelers.）。",
-      "question_translation": "中文辅助（离线预处理）：W Sales of our portable printers keep increasing m",
+      "answer_explain": "原文依据：问句或陈述是“Sales of our portable printers keep increasing.”，自然应答是“They are popular with business travelers.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（They are popular with business travelers.）。",
+      "question_translation": "我们便携式打印机的销量持续增加。",
       "choice_translations": [
-        "A：They are popular with business travelers.",
-        "B：You can find them on the third floor.",
-        "C：have a document to photocopy."
+        "A：它们在商务旅客中很受欢迎。",
+        "B：你可以在三楼找到它们。",
+        "C：我有一份文件需要复印。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：W Sales of our portable printers keep increasing m",
+      "evidence": "参考原文第 1 段：Sales of our portable printers keep increasing.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：W Sales of our portable printers keep increasing m",
+        "evidence": "参考原文第 1 段：Sales of our portable printers keep increasing.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“W Sales of our portable printers keep increasing m”，自然应答是“They are popular with business travelers.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（They are popular with business travelers.）。"
+        "analysis": "原文依据：问句或陈述是“Sales of our portable printers keep increasing.”，自然应答是“They are popular with business travelers.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（They are popular with business travelers.）。"
       },
       "item_id": 26,
       "priority": {

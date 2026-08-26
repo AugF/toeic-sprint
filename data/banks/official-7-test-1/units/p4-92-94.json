@@ -40,9 +40,33 @@
       "asset_key": "official-7-test-1/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "Thanks for listening to Radio 101, Ashton's local news station.\nTonight's featured story is the town's plan to renovate the\nold railroad line that runs alongside Dorset Avenue. The line\nhas been out of service for over 40 years and the tracks\nare now rusted. ® The line will be converted into a beautiful\nwalking path and new community garden. Several designs\nhave been proposed, and digital images are available on the\ntown's Web site. Residents are encouraged to view the\ndesigns and vote on their favorite. ® Just keep in mind that\nconstruction will begin in two months.\nSteal",
-    "transcript_translation": "中文辅助（离线预处理）：Thanks for listening to Radio 101, Ashton's local news station.\nTonight's featured story is the town's plan to renovate the\nold railroad line that runs alongside Dorset Avenue.\nThe line\nhas been out of service（服务） for over 40 years and the tracks\nare now rusted.\n® The line will be converted into a beautiful\nwalking path and new community garden.\nSeveral designs\nhave been proposed, and digital images are available（可用的） on the\ntown's Web site.\nResidents are encouraged to view the\ndesigns and vote on their favorite.\n® Just keep in mind that\nconstruction will begin in two months.\nSteal",
-    "content_translation": "中文辅助（离线预处理）：Thanks for listening to Radio 101, Ashton's local news station.\nTonight's featured story is the town's plan to renovate the\nold railroad line that runs alongside Dorset Avenue.\nThe line\nhas been out of service（服务） for over 40 years and the tracks\nare now rusted.\n® The line will be converted into a beautiful\nwalking path and new community garden.\nSeveral designs\nhave been proposed, and digital images are available（可用的） on the\ntown's Web site.\nResidents are encouraged to view the\ndesigns and vote on their favorite.\n® Just keep in mind that\nconstruction will begin in two months.\nSteal"
+    "transcript": "Thanks for listening to Radio 101, Ashton's local news station.\nTonight's featured story is the town's plan to renovate the old railroad line that runs alongside Dorset Avenue.\nThe line has been out of service for over 40 years and the tracks are now rusted.\nThe line will be converted into a beautiful walking... path and new community garden.\nSeveral designs have been proposed and digital images are available on the town's website.\nResidents are encouraged to view the designs and vote on their favorite.\nJust keep in mind that construction will begin in two months.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "da83538bc3a59e4d72484c103c797905ee5fad9d21ff9a8bdf1abc89d50af31d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 94,
+        "legacy_word_count": 96,
+        "length_ratio": 0.979,
+        "legacy_coverage": 0.969,
+        "prompted_failure": "audio transcript appears truncated (ratio=0.33, coverage=0.48)"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "感谢收听Radio 101，阿什顿当地新闻台。\n今晚的重点报道是该镇计划翻修沿着多塞特大道（Dorset Avenue）运行的旧铁路线。\n这条线路已经停运了超过40年，铁轨现在已经生锈了。\n这条线路将被改造成一条美丽的步行...小径和新的社区花园。\n已经提出了几个设计方案，并在镇的网站上可以查看数字图片。\n鼓励居民查看这些设计并投票选出最喜欢的。\n请记住，施工将在两个月后开始。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c7f39da3a8a8869180c516cd8869e47bbbbcadbf4d2577ccf296a93065a6f083"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +78,23 @@
       ],
       "answer": "C",
       "question": "What project is being discussed?",
-      "answer_explain": "原文依据：听力原文中提到“® The line will be converted into a beautiful”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The conversion of a railroad line）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） project is being discussed?",
+      "answer_explain": "正确答案：C（The conversion of a railroad line）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) project is being discussed?",
       "choice_translations": [
-        "A：The opening of a town library",
-        "B：The construction of a new bus station",
-        "C：The conversion of a railroad line",
-        "D：The demolition of a historic building"
+        "A:The opening of a town library",
+        "B:The construction of a new bus station",
+        "C:The conversion of a railroad line",
+        "D:The demolition of a historic building"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Thanks for listening to Radio 101, Ashton's local news station.",
+      "evidence": "参考听力原文：“Tonight's featured story is the town's plan to renovate the old railroad line that runs alongside Dorset Avenue.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Thanks for listening to Radio 101, Ashton's local news station.",
+        "evidence": "参考听力原文：“Tonight's featured story is the town's plan to renovate the old railroad line that runs alongside Dorset Avenue.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® The line will be converted into a beautiful”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The conversion of a railroad line）。"
+        "analysis": "正确答案：C（The conversion of a railroad line）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -107,23 +131,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, what can the listeners view on the town's Web site?",
-      "answer_explain": "原文依据：听力原文中提到“have been proposed, and digital images are available on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some images）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） can the listeners view on the town's Web site?",
+      "answer_explain": "正确答案：B（Some images）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) can the listeners view on the town's Web site?",
       "choice_translations": [
-        "A：A map",
-        "B：Some images",
-        "C：The annual budget",
-        "D：A list of upcoming events"
+        "A:A map",
+        "B:Some images",
+        "C:The annual budget",
+        "D:A list of upcoming events"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Thanks for listening to Radio 101, Ashton's local news station.",
+      "evidence": "参考听力原文：“Several designs have been proposed and digital images are available on the town's website.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Thanks for listening to Radio 101, Ashton's local news station.",
+        "evidence": "参考听力原文：“Several designs have been proposed and digital images are available on the town's website.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“have been proposed, and digital images are available on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some images）。"
+        "analysis": "正确答案：B（Some images）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -160,23 +184,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker imply when she says, \"construction will begin in two months\"?",
-      "answer_explain": "原文依据：听力原文中提到“has been out of service for over 40 years and the tracks”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（The listeners should make a choice）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） imply when（何时） she says, \"construction will begin in two months\"?",
+      "answer_explain": "正确答案：D（The listeners should make a choice）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) imply when(何时) she says, \"construction will begin in two months\"?",
       "choice_translations": [
-        "A：Some work（工作） is on schedule（日程）.",
-        "B：Noise in an area will likely（最可能） increase.",
-        "C：The listeners might experience traffic delays.",
-        "D：The listeners should make a choice"
+        "A:Some work(工作) is on schedule(日程).",
+        "B:Noise in an area will likely(最可能) increase.",
+        "C:The listeners might experience traffic delays.",
+        "D:The listeners should make a choice"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 10 段：construction will begin in two months.",
+      "evidence": "参考听力原文：“Just keep in mind that construction will begin in two months.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 10 段：construction will begin in two months.",
+        "evidence": "参考听力原文：“Just keep in mind that construction will begin in two months.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“has been out of service for over 40 years and the tracks”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（The listeners should make a choice）。"
+        "analysis": "正确答案：D（The listeners should make a choice）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

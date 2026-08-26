@@ -26,38 +26,58 @@
       "asset_key": "official-12-test-2/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：aK w Who（谁） will be responsible for editing the advertisement?\nw",
-    "content_translation": "中文辅助（离线预处理）：aK w Who（谁） will be responsible for editing the advertisement?\nw"
+    "transcript": "Who will be responsible for editing the advertisement?\nA. The work assignments are posted online.\nB. A 20-second radio advertisement.\nC. I'll adjust the air conditioner.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "be05561576fa41df7b35e06a914bf54bf68d8ef35ea1f84c067b7600cc7be6eb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "谁将负责编辑广告？\nA. 工作分配已发布在线。\nB. 一个 20 秒的广播广告。\nC. 我来调整空调。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ffca0696d020714968b320f99c5895513d4737df2b2239fddc9e7fca4abe7798"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "The work assignments are posted online. ·EZ293",
-        "A twenty-second radio advertisement. #93 work",
+        "The work assignments are posted online.",
+        "A 20-second radio advertisement.",
         "I'll adjust the air conditioner."
       ],
       "answer": "A",
-      "question": "aK w Who will be responsible for editing the advertisement? w",
+      "question": "Who will be responsible for editing the advertisement?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“aK w Who will be responsible for editing the advertisement? w”，自然应答是“The work assignments are posted online. ·EZ293”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The work assignments are posted online. ·EZ293）。",
-      "question_translation": "中文辅助（离线预处理）：aK w Who（谁） will be responsible for editing the advertisement?\nw",
+      "answer_explain": "原文依据：问句或陈述是“Who will be responsible for editing the advertisement?”，自然应答是“The work assignments are posted online.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The work assignments are posted online.）。",
+      "question_translation": "谁将负责编辑广告?",
       "choice_translations": [
-        "A：The work（工作） assignments are posted online.\n·EZ293",
-        "B：A twenty-second radio advertisement.\n#93 work（工作）",
-        "C：I'll adjust the air conditioner."
+        "A：工作分配已发布在线。",
+        "B：一个 20 秒的广播广告。",
+        "C：我来调整空调。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：aK w Who will be responsible for editing the advertisement? w",
+      "evidence": "参考原文第 1 段：Who will be responsible for editing the advertisement?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：aK w Who will be responsible for editing the advertisement? w",
+        "evidence": "参考原文第 1 段：Who will be responsible for editing the advertisement?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“aK w Who will be responsible for editing the advertisement? w”，自然应答是“The work assignments are posted online. ·EZ293”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The work assignments are posted online. ·EZ293）。"
+        "analysis": "原文依据：问句或陈述是“Who will be responsible for editing the advertisement?”，自然应答是“The work assignments are posted online.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The work assignments are posted online.）。"
       },
       "item_id": 24,
       "priority": {

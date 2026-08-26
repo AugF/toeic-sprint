@@ -28,38 +28,58 @@
       "asset_key": "official-12-test-2/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：1м",
-    "content_translation": "中文辅助（离线预处理）：1м"
+    "transcript": "There are\nA. lot of people at the bus stop, aren't there? A. Can I have your ticket, please?\nB. The loading dock on 5th Street.\nC. Yes, it's crowded this time of day.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "eb8fbcd7559607a8ffb69d01872006a39e974e8dfcd3890e847fa29e95c62933",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 35
+      }
+    },
+    "transcript_translation": "公交站有很多人了，对吗？\nA. 很多人在公交站，对吗？ 我可以看看您的票吗？\nB. 第五街的装货区。\nC. 是的，这个时间段人比较多。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f169970b46a905b0071777051df033e05c0ce2054b67563e22865e2a0be57207"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Can I have your ticket, please?",
-        "The loading dock on Fifth Street.",
+        "lot of people at the bus stop, aren't there? A. Can I have your ticket, please?",
+        "The loading dock on 5th Street.",
         "Yes, it's crowded this time of day."
       ],
       "answer": "C",
-      "question": "1м",
+      "question": "There are",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“1м”，自然应答是“Yes, it's crowded this time of day.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, it's crowded this time of day.）。",
-      "question_translation": "中文辅助（离线预处理）：1м",
+      "answer_explain": "原文依据：问句或陈述是“There are”，自然应答是“Yes, it's crowded this time of day.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, it's crowded this time of day.）。",
+      "question_translation": "公交站有很多人了,对吗?",
       "choice_translations": [
-        "A：Can I have your ticket, please（请）?",
-        "B：The loading dock on Fifth Street.",
-        "C：Yes, it's crowded this time of day."
+        "A：很多人在公交站,对吗? 我可以看看您的票吗?",
+        "B：第五街的装货区。",
+        "C：是的,这个时间段人比较多。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：1м",
+      "evidence": "参考原文第 1 段：There are",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：1м",
+        "evidence": "参考原文第 1 段：There are",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“1м”，自然应答是“Yes, it's crowded this time of day.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, it's crowded this time of day.）。"
+        "analysis": "原文依据：问句或陈述是“There are”，自然应答是“Yes, it's crowded this time of day.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, it's crowded this time of day.）。"
       },
       "item_id": 12,
       "priority": {

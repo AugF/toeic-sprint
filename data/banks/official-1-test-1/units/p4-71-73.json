@@ -36,37 +36,60 @@
       "asset_key": "official-1-test-1/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "message.\niu\nHi, Ms. Saldana, @this is Ricardo Valdez from Wagner's Home\nFurnishings. I’m calling about @the dining table and chairs that\nyou recently bought at our store. It appears that we made a\nmistake in entering your address into our customer files.\nWhen we tried to deliver your items, ®our truck driver found\nthat the address we had for you didn’t exist! When you get a\nchance, @please call back and give us your correct address.\nThe truck’s going out again tomorrow morning, so if you\ncall us by five PM., we can deliver the dining set sometime\ntomorrow.",
-    "transcript_translation": "消息。\n您好，Saldana 女士，我是来自 Wagner's Home Furnishings 的 Ricardo Valdez。\n我打电话是关于您最近在我们店购买的餐桌和椅子。我们发现我们在客户档案中输入您的地址时出了个错误。\n当我们试图派送您的物品时，我们的卡车司机发现我们记录的地址根本不存在！您有空的时候，请回电给我们告知正确的地址。\n卡车明天早上又要出发了，所以如果您能在下午五点前给我们打电话，我们可以安排在明天某个时间段运送餐桌套装。",
-    "content_translation": "消息。\n您好，Saldana 女士，我是来自 Wagner's Home Furnishings 的 Ricardo Valdez。\n我打电话是关于您最近在我们店购买的餐桌和椅子。我们发现我们在客户档案中输入您的地址时出了个错误。\n当我们试图派送您的物品时，我们的卡车司机发现我们记录的地址根本不存在！您有空的时候，请回电给我们告知正确的地址。\n卡车明天早上又要出发了，所以如果您能在下午五点前给我们打电话，我们可以安排在明天某个时间段运送餐桌套装。"
+    "transcript": "Hi Ms. Saldana, this is Ricardo Valdez from Wagner's Home Furnishings.\nI'm calling about the dining table and chairs that you recently bought at our store.\nIt appears that we made a mistake in entering your address into our customer files.\nWhen we tried to deliver your items, our truck driver found that the address we had for you didn't exist.\nWhen you get a chance, please call back and give us your correct address.\nThe truck's going out again tomorrow morning, so if you call us by 5pm, we can deliver the dining set sometime tomorrow.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0e6fa1d220f950963b7f5c09ea746c975bc3b15f95a1d8d48537de83f83e2f92",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 97,
+        "length_ratio": 1,
+        "legacy_coverage": 0.99
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "Saldana 小姐，您好，我是来自 Wagner's Home Furnishings 的 Ricardo Valdez。\n我打电话是关于您最近在我们店购买的餐桌和椅子。\n看来我们在客户档案中输入您的地址时犯了一个错误。\n当我们尝试送货时，我们的卡车司机发现我们记录的地址不存在。\n您有空的时候，请回电给我们，告知我们正确的地址。\n卡车明天早上又要出发了，所以如果您在下午 5 点前给我们打电话，我们可以安排在明天某个时间交货。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7e6d5222c2d38a14dcd7c56bc665b767aa8387ef8249eb9c3c66c41f0c1ced95"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Furniture (",
+        "Furniture",
         "Automobiles",
-        "Factory equipment (",
-        "Real estate ("
+        "Factory equipment",
+        "Real estate"
       ],
       "answer": "A",
-      "question": "What does the speaker’s business sell? Tl",
-      "answer_explain": "原文依据：听力原文中提到“call us by five PM., we can deliver the dining set sometime”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Furniture (）。",
+      "question": "What does the speaker’s business sell?",
+      "answer_explain": "正确答案：A（Furniture）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“The truck's going out again tomorrow morning, so if you call us by 5pm, we can deliver the dining set sometime tomorrow.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“The truck's going out again tomorrow morning, so if you call us by 5pm, we can deliver the dining set sometime tomorrow.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“call us by five PM., we can deliver the dining set sometime”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Furniture (）。"
+        "analysis": "正确答案：A（Furniture）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者的公司销售什么？",
+      "question_translation": "说话者的公司销售什么?",
       "choice_translations": [
-        "A：家具",
-        "B：汽车",
-        "C：工厂设备",
-        "D：房地产"
+        "A:家具",
+        "B:汽车",
+        "C:工厂设备",
+        "D:房地产"
       ],
       "item_id": 71,
       "priority": {
@@ -92,30 +115,30 @@
     },
     {
       "choices": [
-        "An order number (",
-        "Alaunch date (",
-        "An inventory (",
-        "An address ("
+        "An order number",
+        "A launch date",
+        "An inventory",
+        "An address"
       ],
       "answer": "D",
-      "question": "What information does the speaker request? 78.",
-      "answer_explain": "原文依据：听力原文中提到“that the address we had for you didn’t exist!”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An address (）。",
+      "question": "What information does the speaker request?",
+      "answer_explain": "正确答案：D（An address）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“When we tried to deliver your items, our truck driver found that the address we had for you didn't exist.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“When we tried to deliver your items, our truck driver found that the address we had for you didn't exist.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“that the address we had for you didn’t exist!”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An address (）。"
+        "analysis": "正确答案：D（An address）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者要求提供什么信息？",
+      "question_translation": "说话者要求提供什么信息?",
       "choice_translations": [
-        "A：订单号",
-        "B：发货日期",
-        "C：库存量",
-        "D：地址"
+        "A:订单号",
+        "B:发货日期",
+        "C:库存量",
+        "D:地址"
       ],
       "item_id": 72,
       "priority": {
@@ -141,30 +164,30 @@
     },
     {
       "choices": [
-        "Anew store location will open.",
-        "A factory will resume production. (",
-        "A truck will make deliveries. (",
-        "Asales promotion will begin. ("
+        "A new store location will open.",
+        "A factory will resume production.",
+        "A truck will make deliveries.",
+        "A sales promotion will begin."
       ],
       "answer": "C",
-      "question": "What is scheduled to happen tomorrow? 79.",
-      "answer_explain": "原文依据：听力原文中提到“The truck’s going out again tomorrow morning, so if you”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A truck will make deliveries. (）。",
+      "question": "What is scheduled to happen tomorrow?",
+      "answer_explain": "正确答案：C（A truck will make deliveries.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：The truck’s going out again tomorrow morning, so if you",
+      "evidence": "参考听力原文：“The truck's going out again tomorrow morning, so if you call us by 5pm, we can deliver the dining set sometime tomorrow.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：The truck’s going out again tomorrow morning, so if you",
+        "evidence": "参考听力原文：“The truck's going out again tomorrow morning, so if you call us by 5pm, we can deliver the dining set sometime tomorrow.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“The truck’s going out again tomorrow morning, so if you”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A truck will make deliveries. (）。"
+        "analysis": "正确答案：C（A truck will make deliveries.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "明天计划发生什么事？",
+      "question_translation": "明天计划发生什么事?",
       "choice_translations": [
-        "A：将开一家新店。",
-        "B：一个工厂将恢复生产。",
-        "C：卡车将进行派送。",
-        "D：一场促销活动即将开始。"
+        "A:将开一家新店。",
+        "B:一个工厂将恢复生产。",
+        "C:卡车将进行派送。",
+        "D:一场促销活动即将开始。"
       ],
       "item_id": 73,
       "priority": {

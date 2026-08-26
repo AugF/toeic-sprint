@@ -36,9 +36,32 @@
       "asset_key": "official-12-test-2/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "M\nOn July fifth, the town of Pennington will host its annual\nA5BK.^\nmusic festival in Maple Park, and the organizers are\nseeking volunteers from our community to help make the\nevent a success. On June twelfth, there will be auditions\nfor local musicians at the town recreation center. OThe\norganizers would like you to help select which acts will\nperform onstage. Olf you're interested in helping out, please\ne-mail musicfest@mymail.com with your name and phone\nmymail.com",
-    "transcript_translation": "中文辅助（离线预处理）：M\nOn July fifth, the town of Pennington will host its annual\nA5BK.^\nmusic festival in Maple Park, and the organizers are\nseeking volunteers from our community to help make the\nevent a success.\nOn June twelfth, there will be auditions\nfor local musicians at the town recreation center.\nOThe\norganizers would like you to help select which acts will\nperform onstage.\nOlf you're interested in helping out, please（请）\ne-mail musicfest@mymail.com with your name and phone\nmymail.com",
-    "content_translation": "中文辅助（离线预处理）：M\nOn July fifth, the town of Pennington will host its annual\nA5BK.^\nmusic festival in Maple Park, and the organizers are\nseeking volunteers from our community to help make the\nevent a success.\nOn June twelfth, there will be auditions\nfor local musicians at the town recreation center.\nOThe\norganizers would like you to help select which acts will\nperform onstage.\nOlf you're interested in helping out, please（请）\ne-mail musicfest@mymail.com with your name and phone\nmymail.com"
+    "transcript": "On July 5th, the town of Pennington will host its annual music festival in Maple Park, and the organizers are seeking volunteers from our community to help make the event a success.\nOn June 12th, there will be auditions for local musicians at the town recreation center.\nThe organizers would like you to help select which acts will perform on stage.\nIf you're interested in helping out, please email musicfest at mymail. com with your name and phone number.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d26e3f483dc8e45ebfb31de37f524fa5977118ccfbeb3a0d697f2400f863d56d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 79,
+        "legacy_word_count": 80,
+        "length_ratio": 0.988,
+        "legacy_coverage": 0.912
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "7月5日，彭宁顿镇将在枫叶公园举办一年一度的音乐节，组织者正在社区招募志愿者以帮助活动取得成功。\n6月12日，镇娱乐中心将举行本地音乐家的试音。\n组织者希望您能帮忙挑选哪些表演节目要在舞台上进行。\n如果您有兴趣帮忙，请发送邮件至 musicfest at mymail. com，并附上您的姓名和电话号码。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2d2c4ddf8bdd38a6a5386089d3afb1442af40e85d7bccbb790a4f5a37dcb6166"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +73,23 @@
       ],
       "answer": "D",
       "question": "Where will a music festival take place?",
-      "answer_explain": "原文依据：听力原文中提到“music festival in Maple Park, and the organizers are”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（In a park）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） will a music festival take place?",
+      "answer_explain": "正确答案：D（In a park）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) will a music festival take place?",
       "choice_translations": [
-        "A：In a community center",
-        "B：In a sports arena",
-        "C：In a school",
-        "D：In a park"
+        "A:In a community center",
+        "B:In a sports arena",
+        "C:In a school",
+        "D:In a park"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：music festival in Maple Park, and the organizers are",
+      "evidence": "参考听力原文：“On July 5th, the town of Pennington will host its annual music festival in Maple Park, and the organizers are seeking volunteers from our community to help make the event a success.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：music festival in Maple Park, and the organizers are",
+        "evidence": "参考听力原文：“On July 5th, the town of Pennington will host its annual music festival in Maple Park, and the organizers are seeking volunteers from our community to help make the event a success.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“music festival in Maple Park, and the organizers are”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（In a park）。"
+        "analysis": "正确答案：D（In a park）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 86,
       "priority": {
@@ -99,23 +122,23 @@
       ],
       "answer": "A",
       "question": "What will volunteers do to help with the music festival?",
-      "answer_explain": "原文依据：听力原文中提到“organizers would like you to help select which acts will”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Choose musical acts）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will volunteers do to help with the music festival?",
+      "answer_explain": "正确答案：A（Choose musical acts）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will volunteers do to help with the music festival?",
       "choice_translations": [
-        "A：Choose musical acts",
-        "B：Sell refreshments",
-        "C：Answer guest questions",
-        "D：Set up a performance area"
+        "A:Choose musical acts",
+        "B:Sell refreshments",
+        "C:Answer guest questions",
+        "D:Set up a performance area"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：music festival in Maple Park, and the organizers are",
+      "evidence": "参考听力原文：“On July 5th, the town of Pennington will host its annual music festival in Maple Park, and the organizers are seeking volunteers from our community to help make the event a success.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：music festival in Maple Park, and the organizers are",
+        "evidence": "参考听力原文：“On July 5th, the town of Pennington will host its annual music festival in Maple Park, and the organizers are seeking volunteers from our community to help make the event a success.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“organizers would like you to help select which acts will”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Choose musical acts）。"
+        "analysis": "正确答案：A（Choose musical acts）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 87,
       "priority": {
@@ -148,23 +171,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, how can volunteers sign up?",
-      "answer_explain": "原文依据：听力原文中提到“e-mail musicfest@mymail.com with your name and phone”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（By sending an e-mail）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, how（如何） can volunteers sign up?",
+      "answer_explain": "正确答案：B（By sending an e-mail）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), how(如何) can volunteers sign up?",
       "choice_translations": [
-        "A：By visiting a Web site",
-        "B：By sending an e-mail",
-        "C：By making a phone call",
-        "D：By going to city hall"
+        "A:By visiting a Web site",
+        "B:By sending an e-mail",
+        "C:By making a phone call",
+        "D:By going to city hall"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：seeking volunteers from our community to help make the",
+      "evidence": "参考听力原文：“On July 5th, the town of Pennington will host its annual music festival in Maple Park, and the organizers are seeking volunteers from our community to help make the event a success.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：seeking volunteers from our community to help make the",
+        "evidence": "参考听力原文：“On July 5th, the town of Pennington will host its annual music festival in Maple Park, and the organizers are seeking volunteers from our community to help make the event a success.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“e-mail musicfest@mymail.com with your name and phone”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（By sending an e-mail）。"
+        "analysis": "正确答案：B（By sending an e-mail）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 88,
       "priority": {

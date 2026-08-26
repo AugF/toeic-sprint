@@ -36,9 +36,31 @@
       "asset_key": "official-6-test-1/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "m OWelcome to Hersch Automotives, Linda. We\nappreciate your coming in as a marketing consultant\nfor the next few months.\nw Glad to be here. I've worked with many companies to\nimprove their marketing strategies. I'm sure I'll be able\nto help you increase your sales as well.\nWonderful! Olf you need access to any of our data,\njust let me know.\nw Well, ®it would be useful to look at your sales figures\nfor the past six months.\nCuaS.\nm OK—!'!! get those to you shortly. Also, Owe had\nalready scheduled a focus group for next week on\nMonday. You're welcome to attend.\nEs w Thanks. I'll put it on my calendar.",
-    "transcript_translation": "m 欢迎来到 Hersch Automotives，Linda。我们\n很感谢您能作为营销顾问来这里，接下来的几个月。\n很高兴来到这里。我曾与许多公司合作过，以\n改进他们的营销策略。我相信我也能帮助你们提高销量。\n太棒了！如果您需要查阅我们的任何数据，\n请告诉我。\n嗯，看看过去六个月的销售数据会很有用。\n好的。\n没问题——我会很快把这些给您。另外，我们已经为下周一安排了一个焦点小组会议。欢迎您参加。\n谢谢。我会记在日程上的。",
-    "content_translation": "m 欢迎来到 Hersch Automotives，Linda。我们\n很感谢您能作为营销顾问来这里，接下来的几个月。\n很高兴来到这里。我曾与许多公司合作过，以\n改进他们的营销策略。我相信我也能帮助你们提高销量。\n太棒了！如果您需要查阅我们的任何数据，\n请告诉我。\n嗯，看看过去六个月的销售数据会很有用。\n好的。\n没问题——我会很快把这些给您。另外，我们已经为下周一安排了一个焦点小组会议。欢迎您参加。\n谢谢。我会记在日程上的。"
+    "transcript": "Welcome to Hirsch Automotives, Linda.\nWe appreciate your coming in as a marketing consultant for the next few months.\nGlad to be here.\nI've worked with many companies to improve their marketing strategies.\nI'm sure I'll be able to help you increase your sales as well.\nWonderful.\nIf you need access to any of our data, just let me know.\nWell, it would be useful to look at your sales figures for the past six months.\nOkay.\nI'll get those to you shortly.\nAlso, we had already scheduled a focus group for next week on Monday.\nYou're welcome to attend.\nThanks.\nI'll put it on my calendar.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7baf73643c92d81740435846ae1b1172f2835a03fb934d5df5d1b42d59a118de",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 107,
+        "legacy_word_count": 112,
+        "length_ratio": 0.955,
+        "legacy_coverage": 0.866
+      }
+    },
+    "transcript_translation": "欢迎来到 Hirsch Automotives，Linda。\n我们很感谢您能作为营销顾问在接下来的几个月来加入。\n很高兴来到这里。\n我曾与许多公司合作改进它们的营销策略。\n我相信我也能帮助你们提高销售额的。\n太棒了。\n如果您需要查阅我们的任何数据，请告诉我。\n嗯，看看过去六个月的销售数字会很有用。\n好的。\n我很快把这些给您。\n另外，我们已经安排了下周一的焦点小组会议。\n欢迎您参加。\n谢谢。\n我会记在我的日程表上的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f5cff569eaf37fa5d8cff2b01f4ef0246c05ab96f27b8dcc3ecaa90f9e9aa9c2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "B",
       "question": "Why is the woman at the company?",
-      "answer_explain": "原文依据：听力原文中提到“appreciate your coming in as a marketing consultant”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To serve as a consultant）。",
-      "question_translation": "女士来公司做什么？",
+      "answer_explain": "正确答案：B（To serve as a consultant）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士来公司做什么?",
       "choice_translations": [
-        "A：检查房产",
-        "B：担任顾问",
-        "C：申请职位",
-        "D：签署合同"
+        "A:检查房产",
+        "B:担任顾问",
+        "C:申请职位",
+        "D:签署合同"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m OWelcome to Hersch Automotives, Linda. We",
+      "evidence": "参考听力原文：“We appreciate your coming in as a marketing consultant for the next few months.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m OWelcome to Hersch Automotives, Linda. We",
+        "evidence": "参考听力原文：“We appreciate your coming in as a marketing consultant for the next few months.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“appreciate your coming in as a marketing consultant”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To serve as a consultant）。"
+        "analysis": "正确答案：B（To serve as a consultant）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "C",
       "question": "What would the woman like to review?",
-      "answer_explain": "原文依据：听力原文中提到“w Well, ®it would be useful to look at your sales figures”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some recent sales data）。",
-      "question_translation": "女士想查看什么？",
+      "answer_explain": "正确答案：C（Some recent sales data）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士想查看什么?",
       "choice_translations": [
-        "A：员工手册",
-        "B：潜在客户名单",
-        "C：一些最近的销售数据",
-        "D：设施地图"
+        "A:员工手册",
+        "B:潜在客户名单",
+        "C:一些最近的销售数据",
+        "D:设施地图"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m OWelcome to Hersch Automotives, Linda. We",
+      "evidence": "参考听力原文：“Well, it would be useful to look at your sales figures for the past six months.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m OWelcome to Hersch Automotives, Linda. We",
+        "evidence": "参考听力原文：“Well, it would be useful to look at your sales figures for the past six months.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“w Well, ®it would be useful to look at your sales figures”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some recent sales data）。"
+        "analysis": "正确答案：C（Some recent sales data）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "A",
       "question": "What is scheduled for next week?",
-      "answer_explain": "原文依据：听力原文中提到“already scheduled a focus group for next week on”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A focus group）。",
-      "question_translation": "下周有什么安排？",
+      "answer_explain": "正确答案：A（A focus group）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "下周有什么安排?",
       "choice_translations": [
-        "A：一个焦点小组会议",
-        "B：一个翻修项目",
-        "C：一个职业博览会",
-        "D：一次产品发布"
+        "A:一个焦点小组会议",
+        "B:一个翻修项目",
+        "C:一个职业博览会",
+        "D:一次产品发布"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 13 段：already scheduled a focus group for next week on",
+      "evidence": "参考听力原文：“Also, we had already scheduled a focus group for next week on Monday.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 13 段：already scheduled a focus group for next week on",
+        "evidence": "参考听力原文：“Also, we had already scheduled a focus group for next week on Monday.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“already scheduled a focus group for next week on”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A focus group）。"
+        "analysis": "正确答案：A（A focus group）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

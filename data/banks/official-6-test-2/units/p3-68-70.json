@@ -40,9 +40,32 @@
       "asset_key": "official-6-test-2/audio/part3/q068-070.mp3",
       "exists": true
     },
-    "transcript": "and pie chart.\nEw Hi, Paul. We need to discuss the budget before we\npresent it at tomorrow's meeting with the company\npresident. Look what percentage of our expenses go\nto rent! I think we should suggest downsizing. I looked\nonline at some office spaces, and ®we could easily\ncut our rent expenses by five percent.\nm ® That's a good point. Plus, many employees have\nstarted to work remotely from their homes, so we\nreally don't need an office this size any more.\nas w I'm glad that you agree. ® Why don't we adjust the\npresentation for tomorrow's meeting to include more\ninformation about this idea?\nm Sounds good.\nExpenses\nOther\nZ01t\nPayroll\nMaterials\nRent",
-    "transcript_translation": "中文辅助（离线预处理）：and pie chart.\nEw Hi, Paul.\nWe need to discuss the budget before we\npresent it at tomorrow's meeting（会议） with the company（公司）\npresident.\nLook what（什么） percentage of our expenses go\nto rent!\nI think we should suggest（表明/建议） downsizing.\nI looked\nonline at some office（办公室） spaces, and ®we could easily\ncut our rent expenses by five percent.\nm ® That's a good point.\nPlus, many employees have\nstarted to work（工作） remotely from their homes, so we\nreally don't need an office（办公室） this size any more.\nas w I'm glad that you agree.\n® Why（为什么） don't we adjust the\npresentation for tomorrow's meeting（会议） to include more\ninformation（信息） about this idea?\nm Sounds good.\nExpenses\nOther\nZ01t\nPayroll\nMaterials\nRent",
-    "content_translation": "中文辅助（离线预处理）：and pie chart.\nEw Hi, Paul.\nWe need to discuss the budget before we\npresent it at tomorrow's meeting（会议） with the company（公司）\npresident.\nLook what（什么） percentage of our expenses go\nto rent!\nI think we should suggest（表明/建议） downsizing.\nI looked\nonline at some office（办公室） spaces, and ®we could easily\ncut our rent expenses by five percent.\nm ® That's a good point.\nPlus, many employees have\nstarted to work（工作） remotely from their homes, so we\nreally don't need an office（办公室） this size any more.\nas w I'm glad that you agree.\n® Why（为什么） don't we adjust the\npresentation for tomorrow's meeting（会议） to include more\ninformation（信息） about this idea?\nm Sounds good.\nExpenses\nOther\nZ01t\nPayroll\nMaterials\nRent"
+    "transcript": "Hi Paul.\nWe need to discuss the budget before we presented it tomorrow's meeting with the company president.\nLook what percentage of our expenses go to rent.\nI think we should suggest downsizing.\nI looked online at some office spaces and we could easily cut our rent expenses by 5%.\nThat's a good point.\nPlus many employees have started to work remotely from their homes so we really don't need an office this size anymore.\nI'm glad that you agree.\nWhy don't we adjust the presentation for tomorrow's meeting to include more information about this idea.\nSounds good.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ec6c230d09d1a146189efd17e32ed0e800037ab484454e1c2f93868827e8edb6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part3/q068-070.mp3",
+      "metrics": {
+        "word_count": 100,
+        "legacy_word_count": 114,
+        "length_ratio": 0.877,
+        "legacy_coverage": 0.868
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，保罗。\n我们需要讨论一下预算，因为明天要向公司总裁展示它。\n看看我们的开支中有多少百分比用于租金。\n我想我们应该建议缩小规模。\n我在网上看了些办公空间，我们可以轻松地把租金支出减少5%。\n这是个好观点。\n而且很多员工已经开始在家远程工作了，所以我们真的不需要这么大的办公室了。\n我很高兴你同意。\n为什么不调整一下明天会议的演示文稿，加入更多关于这个想法的信息呢？\n听起来不错。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "85a80d43e494b70d3df63b042dbb684b3664b97457caa017ba81840cd1d4bdfd"
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. Which percentage do the speakers hope to reduce?",
-      "answer_explain": "原文依据：听力原文中提到“Look what percentage of our expenses go”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（30%）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich percentage do the speakers hope to reduce?",
+      "answer_explain": "正确答案：C（30%）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which percentage do the speakers hope to reduce?",
       "choice_translations": [
-        "A：10%",
-        "B：20%",
-        "C：30%",
-        "D：40%"
+        "A:10%",
+        "B:20%",
+        "C:30%",
+        "D:40%"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：president. Look what percentage of our expenses go",
+      "evidence": "参考听力原文：“Look what percentage of our expenses go to rent.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：president. Look what percentage of our expenses go",
+        "evidence": "参考听力原文：“Look what percentage of our expenses go to rent.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Look what percentage of our expenses go”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（30%）。"
+        "analysis": "正确答案：C（30%）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 68,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "A",
       "question": "According to the man, what has changed at the company?",
-      "answer_explain": "原文依据：听力原文中提到“Plus, many employees have”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Many employees now work from home.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the man（男士）, what（什么） has changed at the company（公司）?",
+      "answer_explain": "正确答案：A（Many employees now work from home.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the man(男士), what(什么) has changed at the company(公司)?",
       "choice_translations": [
-        "A：Many employees now work（工作） from home.",
-        "B：Several products are not selling well.",
-        "C：The company（公司） is expanding into a new market.",
-        "D：The company（公司） has updated its hiring"
+        "A:Many employees now work(工作) from home.",
+        "B:Several products are not selling well.",
+        "C:The company(公司) is expanding into a new market.",
+        "D:The company(公司) has updated its hiring"
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 3 段：present it at tomorrow's meeting with the company",
+      "evidence": "参考听力原文：“Plus many employees have started to work remotely from their homes so we really don't need an office this size anymore.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 3 段：present it at tomorrow's meeting with the company",
+        "evidence": "参考听力原文：“Plus many employees have started to work remotely from their homes so we really don't need an office this size anymore.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Plus, many employees have”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Many employees now work from home.）。"
+        "analysis": "正确答案：A（Many employees now work from home.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 69,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "A",
       "question": "What will the speakers do next?",
-      "answer_explain": "原文依据：听力原文中提到“presentation for tomorrow's meeting to include more”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Update a presentation）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the speakers do next?",
+      "answer_explain": "正确答案：A（Update a presentation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the speakers do next?",
       "choice_translations": [
-        "A：Update a presentation",
-        "B：Speak with a consultant",
-        "C：Check some inventory",
-        "D：Make some travel reservations"
+        "A:Update a presentation",
+        "B:Speak with a consultant",
+        "C:Check some inventory",
+        "D:Make some travel reservations"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and pie chart.",
+      "evidence": "参考听力原文：“Why don't we adjust the presentation for tomorrow's meeting to include more information about this idea.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and pie chart.",
+        "evidence": "参考听力原文：“Why don't we adjust the presentation for tomorrow's meeting to include more information about this idea.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“presentation for tomorrow's meeting to include more”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Update a presentation）。"
+        "analysis": "正确答案：A（Update a presentation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 70,
       "priority": {

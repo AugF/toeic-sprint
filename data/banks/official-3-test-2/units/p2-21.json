@@ -28,8 +28,28 @@
       "asset_key": "official-3-test-2/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：ER w iu",
-    "content_translation": "中文辅助（离线预处理）：ER w iu"
+    "transcript": "Where are your photographs being exhibited now?\nA. Only in black and white.\nB. At the community center.\nC. Almost a month.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1f4c4c074529f323d79298fa0835e4143e6d714ab084f1c884436978be448256",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "您的照片现在在哪里展出？\nA. 只用黑白照片。\nB. 在社区中心。\nC. 将近一个月了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "da2011c6e0649acb22436b17395b4670de014d3614a4be2fdc8ad944a55baeb0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Almost a month."
       ],
       "answer": "B",
-      "question": "ER w iu",
+      "question": "Where are your photographs being exhibited now?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“ER w iu”，自然应答是“At the community center.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（At the community center.）。",
-      "question_translation": "中文辅助（离线预处理）：ER w iu",
+      "answer_explain": "原文依据：问句或陈述是“Where are your photographs being exhibited now?”，自然应答是“At the community center.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（At the community center.）。",
+      "question_translation": "您的照片现在在哪里展出?",
       "choice_translations": [
-        "A：Only in black and white.",
-        "B：At the community center.",
-        "C：Almost a month."
+        "A：只用黑白照片。",
+        "B：在社区中心。",
+        "C：将近一个月了。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：ER w iu",
+      "evidence": "参考原文第 1 段：Where are your photographs being exhibited now?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：ER w iu",
+        "evidence": "参考原文第 1 段：Where are your photographs being exhibited now?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“ER w iu”，自然应答是“At the community center.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（At the community center.）。"
+        "analysis": "原文依据：问句或陈述是“Where are your photographs being exhibited now?”，自然应答是“At the community center.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（At the community center.）。"
       },
       "item_id": 21,
       "priority": {

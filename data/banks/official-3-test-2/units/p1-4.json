@@ -31,27 +31,47 @@
       "asset_key": "official-3-test-2/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "A. distribute [~#ewd). handout [ Gets)\nB. F—-FIVS SD TLV. fold up ~f~HTD BO].\nC. HOSAlc artwork [Leama [SHI 5NT WS, RHIENEHITTUSETS TIAL. hang[~@#HF 2].\nD. combi (EVES UTEDT Jo ERC Bic uelseESLT. BASIE RPLTS. greet ~lcHUADz= $4). one another[BvicI.]",
-    "content_translation": "A. distribute [~#ewd). handout [ Gets)\nB. F—-FIVS SD TLV. fold up ~f~HTD BO].\nC. HOSAlc artwork [Leama [SHI 5NT WS, RHIENEHITTUSETS TIAL. hang[~@#HF 2].\nD. combi (EVES UTEDT Jo ERC Bic uelseESLT. BASIE RPLTS. greet ~lcHUADz= $4). one another[BvicI.]"
+    "transcript": "A. She's putting on an apron.\nB. She's pushing a cart.\nC. She's removing food from shopping bags.\nD. She's placing a tray on a rack.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e3ede8eb45811c4ec005f2c38b868bd6dc017013bde371987ca14263abd846d0",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 37
+      }
+    },
+    "transcript_translation": "A. 她正在穿围裙。\nB. 她正在推一辆手推车。\nC. 她正在从购物袋中取出食物。\nD. 她正在将一个托盘放在架子上。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "062c5c9d57e78281199249d0f7434106a4ecb193f3bab9018825209c1cc92718"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "distribute [~#ewd). handout [ Gets)",
-        "F—-FIVS SD TLV. fold up ~f~HTD BO].",
-        "HOSAlc artwork [Leama [SHI 5NT WS, RHIENEHITTUSETS TIAL. hang[~@#HF 2].",
-        "combi (EVES UTEDT Jo ERC Bic uelseESLT. BASIE RPLTS. greet ~lcHUADz= $4). one another[BvicI."
+        "She's putting on an apron.",
+        "She's pushing a cart.",
+        "She's removing food from shopping bags.",
+        "She's placing a tray on a rack."
       ],
       "answer": "D",
       "difficulty": "medium",
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
-      "answer_explain": "原文依据：照片中可见信息与描述“combi (EVES UTEDT Jo ERC Bic uelseESLT. BASIE RPLTS. greet ~lcHUADz= $4). one another[BvicI.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（combi (EVES UTEDT Jo ERC Bic uelseESLT. BASIE RPLTS. greet ~lcHUADz= $4). one another[BvicI.）。",
+      "answer_explain": "原文依据：照片中可见信息与描述“She's placing a tray on a rack.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（She's placing a tray on a rack.）。",
       "choice_translations": [
-        "A：distribute [~#ewd). handout [ Gets)",
-        "B：F—-FIVS SD TLV. fold up ~f~HTD BO].",
-        "C：HOSAlc artwork [Leama [SHI 5NT WS, RHIENEHITTUSETS TIAL. hang[~@#HF 2].",
-        "D：combi (EVES UTEDT Jo ERC Bic uelseESLT. BASIE RPLTS. greet ~lcHUADz= $4). one another[BvicI.]"
+        "A：她正在穿围裙。",
+        "B：她正在推一辆手推车。",
+        "C：她正在从购物袋中取出食物。",
+        "D：她正在将一个托盘放在架子上。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -61,7 +81,7 @@
         "question_type": "照片细节题",
         "evidence": "根据题干结构、选项语义和上下文判断。",
         "strategy": "本题属于照片细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：照片中可见信息与描述“combi (EVES UTEDT Jo ERC Bic uelseESLT. BASIE RPLTS. greet ~lcHUADz= $4). one another[BvicI.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（combi (EVES UTEDT Jo ERC Bic uelseESLT. BASIE RPLTS. greet ~lcHUADz= $4). one another[BvicI.）。"
+        "analysis": "原文依据：照片中可见信息与描述“She's placing a tray on a rack.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（She's placing a tray on a rack.）。"
       },
       "item_id": 4,
       "priority": {
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-2/p1-4/4"
+      "item_key": "official-3-test-2/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

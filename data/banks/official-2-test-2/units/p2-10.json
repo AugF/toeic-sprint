@@ -28,38 +28,58 @@
       "asset_key": "official-2-test-2/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "Ew Kathy 的办公室是哪个？ Ef w\nA. 当然，我可以做到。\nB. 拐角那间。\nC. 她很有条理。",
-    "content_translation": "Ew Kathy 的办公室是哪个？ Ef w\nA. 当然，我可以做到。\nB. 拐角那间。\nC. 她很有条理。"
+    "transcript": "Which office is Kathy's?\nA. Sure, I can do that.\nB. The corner one.\nC. She's very organized.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "993d03fd1d2ac59806c27de72e5fc416161c87d408ab4c792ca1efdf2213d58a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 19
+      }
+    },
+    "transcript_translation": "哪个办公室是 Kathy 的？\nA. 当然，我可以做到。\nB. 那个角落的。\nC. 她非常有条理。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d3c34d2df7c9822a5821f703f134933845d6c27bb3575bbb5b74287be8793e93"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Sure, | can do that.",
+        "Sure, I can do that.",
         "The corner one.",
         "She's very organized."
       ],
       "answer": "B",
-      "question": "Ew which office is Kathy's? Ef w",
+      "question": "Which office is Kathy's?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew which office is Kathy's? Ef w”，自然应答是“The corner one.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The corner one.）。",
-      "question_translation": "Ew Kathy 的办公室是哪个？ Ef w",
+      "answer_explain": "原文依据：问句或陈述是“Which office is Kathy's?”，自然应答是“The corner one.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The corner one.）。",
+      "question_translation": "哪个办公室是 Kathy 的?",
       "choice_translations": [
-        "A：当然，我可以做到。",
-        "B：拐角那间。",
-        "C：她很有条理。"
+        "A：当然,我可以做到。",
+        "B：那个角落的。",
+        "C：她非常有条理。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Ew which office is Kathy's? Ef w",
+      "evidence": "参考原文第 1 段：Which office is Kathy's?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Ew which office is Kathy's? Ef w",
+        "evidence": "参考原文第 1 段：Which office is Kathy's?",
         "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Ew which office is Kathy's? Ef w”，自然应答是“The corner one.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The corner one.）。"
+        "analysis": "原文依据：问句或陈述是“Which office is Kathy's?”，自然应答是“The corner one.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The corner one.）。"
       },
       "item_id": 10,
       "priority": {

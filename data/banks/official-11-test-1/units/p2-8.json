@@ -42,14 +42,34 @@
       "asset_key": "official-11-test-1/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "为什么会议改到三楼了？\nA：大约十五个人。\nB：在电梯处左转。\nC：因为我们平常用的会议室锁着。",
-    "content_translation": "本段听力围绕“原因询问”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Why is the meeting being moved to the third floor?\nA. About 15 people.\nB. Turn left at the elevator.\nC. Because our usual room is locked.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2dbc3952682f1936ee0a52e38ff0475645a5569cb08b2b5908e6d16ff3bc402d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "为什么会议要移到三楼？\nA. 大约有15个人。\nB. 在电梯处左转。\nC. 因为我们常用的房间锁了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7fb4d59bdfd8a2f8ec9538674882f97f87faf361a10402f5384792750df344a9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
-      "question": "Why's the meeting been moved to the third floor?",
+      "question": "Why is the meeting being moved to the third floor?",
       "choices": [
-        "About fifteen people.",
+        "About 15 people.",
         "Turn left at the elevator.",
         "Because our usual room is locked."
       ],
@@ -59,22 +79,22 @@
       "keywords": "why reason response",
       "answer_explain": "原文依据：Why问会议为何移到三楼，答句说 usual room is locked。 选择理由：C给出搬会议室的原因；A是人数，B是路线。正确答案：C（Because our usual room is locked.）。",
       "question_type": "原因疑问句",
-      "evidence": "参考原文第 1 段第 1 句：Why's the meeting been moved to the third floor?",
+      "evidence": "参考原文第 1 段第 1 句：Why is the meeting being moved to the third floor?",
       "choice_translations": [
-        "A：大约十五个人。",
+        "A：大约有15个人。",
         "B：在电梯处左转。",
-        "C：因为我们平常用的会议室锁着。"
+        "C：因为我们常用的房间锁了。"
       ],
       "response_style": "应直接提供疑问词所要求的信息，也要留意自然的间接回答",
       "strategy": "先判断为原因疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "原因疑问句",
-        "evidence": "参考原文第 1 段第 1 句：Why's the meeting been moved to the third floor?",
+        "evidence": "参考原文第 1 段第 1 句：Why is the meeting being moved to the third floor?",
         "strategy": "先判断为原因疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：Why问会议为何移到三楼，答句说 usual room is locked。 选择理由：C给出搬会议室的原因；A是人数，B是路线。正确答案：C（Because our usual room is locked.）。"
       },
-      "question_translation": "为什么会议改到三楼了？",
+      "question_translation": "为什么会议要移到三楼?",
       "item_id": 8,
       "priority": {
         "level": "P2",

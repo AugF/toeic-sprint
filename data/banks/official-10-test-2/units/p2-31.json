@@ -28,38 +28,58 @@
       "asset_key": "official-10-test-2/audio/part2/q031.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：No Cla ELAS * m",
-    "content_translation": "中文辅助（离线预处理）：No Cla ELAS * m"
+    "transcript": "Where's the best place to get\nA. quick meal? A. I don't think we have time before the meeting.\nB. The contractor has responded with an offer.\nC. With a tax bill.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "14671132565acb5bb8846ea140d28687ed71fa8d0b863fba6ef63745a9e9c364",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q031.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "哪里是最好的地方可以吃到\nA. 快餐？ A. 我不觉得我们在会议前有时间。\nB. 承包商已经回复了一个报价。\nC. 带税单。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7734d9ce999e5c8bbe09bc16b18d18202125ec0f22a7700ac755ea6935062a00"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "I don't think we have time before the meeting.",
-        "The contractor has responded with an offer. HU*.",
+        "quick meal? A. I don't think we have time before the meeting.",
+        "The contractor has responded with an offer.",
         "With a tax bill."
       ],
       "answer": "A",
-      "question": "No Cla ELAS * m",
+      "question": "Where's the best place to get",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“No Cla ELAS * m”，自然应答是“I don't think we have time before the meeting.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I don't think we have time before the meeting.）。",
-      "question_translation": "中文辅助（离线预处理）：No Cla ELAS * m",
+      "answer_explain": "原文依据：问句或陈述是“Where's the best place to get”，自然应答是“quick meal? A. I don't think we have time before the meeting.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（quick meal? A. I don't think we have time before the meeting.）。",
+      "question_translation": "哪里是最好的地方可以吃到",
       "choice_translations": [
-        "A：I don't think we have time before the meeting（会议）.",
-        "B：The contractor has responded with an offer.\nHU*.",
-        "C：With a tax bill."
+        "A：快餐? A. 我不觉得我们在会议前有时间。",
+        "B：承包商已经回复了一个报价。",
+        "C：带税单。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：No Cla ELAS * m",
+      "evidence": "参考原文第 1 段：Where's the best place to get",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：No Cla ELAS * m",
+        "evidence": "参考原文第 1 段：Where's the best place to get",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“No Cla ELAS * m”，自然应答是“I don't think we have time before the meeting.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I don't think we have time before the meeting.）。"
+        "analysis": "原文依据：问句或陈述是“Where's the best place to get”，自然应答是“quick meal? A. I don't think we have time before the meeting.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（quick meal? A. I don't think we have time before the meeting.）。"
       },
       "item_id": 31,
       "priority": {

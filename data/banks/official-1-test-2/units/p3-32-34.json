@@ -37,37 +37,59 @@
       "asset_key": "official-1-test-2/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "Hi Karen, | wonder if you can help me. ®! have a doctor's\nappointment tomorrow afternoon, so ®| need someone tc\ntake my shift at the restaurant.\nNo problem—| can do that. ® Would you cover my shift\nnext Monday evening in exchange?\nlw Of course. ©1'll let the supervisor know about the change\nin schedule right now.",
-    "transcript_translation": "嗨 Karen，我不知道你是否能帮我。我明天下午有一次看医生的预约，所以我需要有人替我在餐馆值班。\n没问题——我可以做那个。你要不要换一下下周一晚上的班？\n当然可以。我现在就通知主管这个日程变动。",
-    "content_translation": "嗨 Karen，我不知道你是否能帮我。我明天下午有一次看医生的预约，所以我需要有人替我在餐馆值班。\n没问题——我可以做那个。你要不要换一下下周一晚上的班？\n当然可以。我现在就通知主管这个日程变动。"
+    "transcript": "Hi, Karen.\nI wonder if you can help me.\nI have a doctor's appointment tomorrow afternoon, so I need someone to take my shift at the restaurant.\nNo problem.\nI can do that.\nWould you cover my shift next Monday evening in exchange?\nOf course.\nI'll let the supervisor know about the change in schedule right now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "45ce2ef0e6107bb231c41cda5135a02483ca2797baaea2cb766a99a401f0bb10",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 57,
+        "legacy_word_count": 53,
+        "length_ratio": 1.075,
+        "legacy_coverage": 0.981
+      }
+    },
+    "transcript_translation": "嗨，Karen。\n我想知道你是否能帮我。\n我明天下午有医生预约，所以我需要有人替我在餐厅值班。\n没问题。\n我可以做到。\n你愿意用下周一晚上的班来交换吗？\n当然可以。\n我现在就让主管知道一下日程的变动。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1e13ca26a513cb0ce684cdc1da1cbbdba9d07971bb45e96a05370e1fc464b76b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Have his car fixed (",
-        "See a doctor (",
-        "Submit a report (",
-        "Plan an event ("
+        "Have his car fixed",
+        "See a doctor",
+        "Submit a report",
+        "Plan an event"
       ],
       "answer": "B",
-      "question": "What does the man say he has to do 38. \\ tomorrow?",
-      "answer_explain": "原文依据：听力原文中提到“©1'll let the supervisor know about the change”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（See a doctor (）。",
-      "question_translation": "男士说他明天必须做什么？",
+      "question": "What does the man say he has to do tomorrow?",
+      "answer_explain": "正确答案：B（See a doctor）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士说他明天必须做什么?",
       "choice_translations": [
-        "A：修理他的车",
-        "B：看医生",
-        "C：提交报告",
-        "D：计划一个活动"
+        "A:修理他的车",
+        "B:看医生",
+        "C:提交报告",
+        "D:计划一个活动"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：appointment tomorrow afternoon, so ®| need someone tc",
+      "evidence": "参考听力原文：“I have a doctor's appointment tomorrow afternoon, so I need someone to take my shift at the restaurant.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：appointment tomorrow afternoon, so ®| need someone tc",
+        "evidence": "参考听力原文：“I have a doctor's appointment tomorrow afternoon, so I need someone to take my shift at the restaurant.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“©1'll let the supervisor know about the change”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（See a doctor (）。"
+        "analysis": "正确答案：B（See a doctor）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -94,30 +116,30 @@
     },
     {
       "choices": [
-        "Collaborate on a project (",
-        "Meet at a restaurant (",
-        "Exchange contact information (",
-        "Trade work shifts ("
+        "Collaborate on a project",
+        "Meet at a restaurant",
+        "Exchange contact information",
+        "Trade work shifts"
       ],
       "answer": "D",
-      "question": "What do the speakers agree to do? 39. \\V",
-      "answer_explain": "原文依据：听力原文中提到“©1'll let the supervisor know about the change”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Trade work shifts (）。",
-      "question_translation": "说话者们同意做什么？",
+      "question": "What do the speakers agree to do?",
+      "answer_explain": "正确答案：D（Trade work shifts）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者们同意做什么?",
       "choice_translations": [
-        "A：合作一个项目",
-        "B：在餐馆见面",
-        "C：交换联系信息",
-        "D：交换工作班次"
+        "A:合作一个项目",
+        "B:在餐馆见面",
+        "C:交换联系信息",
+        "D:交换工作班次"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi Karen, | wonder if you can help me. ®! have a doctor's",
+      "evidence": "参考听力原文：“I have a doctor's appointment tomorrow afternoon, so I need someone to take my shift at the restaurant.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi Karen, | wonder if you can help me. ®! have a doctor's",
+        "evidence": "参考听力原文：“I have a doctor's appointment tomorrow afternoon, so I need someone to take my shift at the restaurant.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“©1'll let the supervisor know about the change”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Trade work shifts (）。"
+        "analysis": "正确答案：D（Trade work shifts）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -144,30 +166,30 @@
     },
     {
       "choices": [
-        "Notify a manager (",
-        "Cancel an appointment (",
-        "Train new staff (",
-        "Clean a work area ("
+        "Notify a manager",
+        "Cancel an appointment",
+        "Train new staff",
+        "Clean a work area"
       ],
       "answer": "A",
-      "question": "What will the man probably do next? 40. \\",
-      "answer_explain": "原文依据：听力原文中提到“©1'll let the supervisor know about the change”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Notify a manager (）。",
-      "question_translation": "男士接下来可能会做什么？",
+      "question": "What will the man probably do next?",
+      "answer_explain": "正确答案：A（Notify a manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士接下来可能会做什么?",
       "choice_translations": [
-        "A：通知经理",
-        "B：取消预约",
-        "C：培训新员工",
-        "D：清洁工作区域"
+        "A:通知经理",
+        "B:取消预约",
+        "C:培训新员工",
+        "D:清洁工作区域"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi Karen, | wonder if you can help me. ®! have a doctor's",
+      "evidence": "参考听力原文：“Would you cover my shift next Monday evening in exchange?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi Karen, | wonder if you can help me. ®! have a doctor's",
+        "evidence": "参考听力原文：“Would you cover my shift next Monday evening in exchange?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“©1'll let the supervisor know about the change”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Notify a manager (）。"
+        "analysis": "正确答案：A（Notify a manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

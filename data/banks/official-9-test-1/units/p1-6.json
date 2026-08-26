@@ -32,8 +32,28 @@
       "asset_key": "official-9-test-1/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. A bowl has been filled with bunches of grapes.\nB. Some chairs are occupied.\nC. Some flattened boxes are stacked on shelves.\nD. Some plastic bottles are being filled.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bc6aa722b5dae1dc0216a10e845fdbe0da7e70ec2774f9f54b8a565108a6f36e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 159
+      }
+    },
+    "transcript_translation": "A. 一个碗里装满了串葡萄。\nB. 有一些椅子被占用了。\nC. 一些压平的箱子堆在架子上。\nD. 一些塑料瓶正在被装满。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "423fd60218761f67b431439675cfc670b3d95a0830f59968d9c652b81f8a69ae"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some flattened boxes are stacked on shelves.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Some flattened boxes are stacked on shelves.）。",
       "choice_translations": [
-        "A：A bowl has been filled with bunches of grapes.",
-        "B：Some chairs are occupied.",
-        "C：Some flattened boxes are stacked on shelves.",
-        "D：Some plastic bottles are being filled."
+        "A：一个碗里装满了串葡萄。",
+        "B：有一些椅子被占用了。",
+        "C：一些压平的箱子堆在架子上。",
+        "D：一些塑料瓶正在被装满。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-1/p1-6/6"
+      "item_key": "official-9-test-1/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

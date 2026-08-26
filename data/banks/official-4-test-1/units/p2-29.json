@@ -27,38 +27,58 @@
       "asset_key": "official-4-test-1/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Can you join us for a client meeting（会议） at four P.M.?",
-    "content_translation": "中文辅助（离线预处理）：Can you join us for a client meeting（会议） at four P.M.?"
+    "transcript": "Can you join us for\nA. client meeting at 4 p. m.? A. A new design project.\nB. I made four copies in total.\nC. I'm free all day.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ee35cb3dec9d6416d2e81842256a8f849c55ae7b854eb1728ccfc3768b1c6413",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "你能加入我们参加的\nA. 下午 4 点的客户会议？ A. 一个新的设计项目。\nB. 我总共做了四份副本。\nC. 我全天都有空。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4c5fde3b218a0e43dd26de76dd2919002cf08a207e863dd1e92d75b896182198"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "A new design project.",
+        "client meeting at 4 p. m.? A. A new design project.",
         "I made four copies in total.",
         "I'm free all day."
       ],
       "answer": "C",
-      "question": "Can you join us for a client meeting at four P.M.?",
+      "question": "Can you join us for",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Can you join us for a client meeting at four P.M.?”，自然应答是“I'm free all day.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'm free all day.）。",
-      "question_translation": "中文辅助（离线预处理）：Can you join us for a client meeting（会议） at four P.M.?",
+      "answer_explain": "原文依据：问句或陈述是“Can you join us for”，自然应答是“I'm free all day.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'm free all day.）。",
+      "question_translation": "你能加入我们参加的",
       "choice_translations": [
-        "A：A new design project.",
-        "B：I made four copies in total.",
-        "C：I'm free all day."
+        "A：下午 4 点的客户会议? A. 一个新的设计项目。",
+        "B：我总共做了四份副本。",
+        "C：我全天都有空。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：Can you join us for a client meeting at four P.M.?",
+      "evidence": "参考原文第 1 段：Can you join us for",
       "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：Can you join us for a client meeting at four P.M.?",
+        "evidence": "参考原文第 1 段：Can you join us for",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Can you join us for a client meeting at four P.M.?”，自然应答是“I'm free all day.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'm free all day.）。"
+        "analysis": "原文依据：问句或陈述是“Can you join us for”，自然应答是“I'm free all day.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'm free all day.）。"
       },
       "item_id": 29,
       "priority": {

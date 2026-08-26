@@ -28,8 +28,28 @@
       "asset_key": "official-12-test-2/audio/part2/q020.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：The retirement celebration for David will be held on Tuesday.",
-    "content_translation": "中文辅助（离线预处理）：The retirement celebration for David will be held on Tuesday."
+    "transcript": "The retirement celebration for David will be held on Tuesday.\nA. You can set the packages over there.\nB. I'll be attending an off-site trade show.\nC. That's a good question.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6b70957c2b86c58f35d580d34e02726f3f556866c1e054d686a2bdc30c99feba",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q020.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "David的退休庆祝活动将在周二举行。\nA. 你可以在那边设置包裹。\nB. 我将参加一个异地贸易展览会。\nC. 这是一个好问题。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d6083cfa5c05e519db18578c964bf922a57fa493c09d34225e87187853e539fd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“The retirement celebration for David will be held on Tuesday.”，自然应答是“I'll be attending an off-site trade show.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll be attending an off-site trade show.）。",
-      "question_translation": "中文辅助（离线预处理）：The retirement celebration for David will be held on Tuesday.",
+      "question_translation": "David的退休庆祝活动将在周二举行。",
       "choice_translations": [
-        "A：You can set the packages over there.",
-        "B：I'll be attending an off-site trade show.",
-        "C：That's a good question."
+        "A：你可以在那边设置包裹。",
+        "B：我将参加一个异地贸易展览会。",
+        "C：这是一个好问题。"
       ],
       "question_type": "陈述 / 请求应答题",
       "evidence": "参考原文第 1 段：The retirement celebration for David will be held on Tuesday.",

@@ -28,8 +28,28 @@
       "asset_key": "official-3-test-2/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Is Maria going to present the sales report, or are you doing it?",
-    "content_translation": "中文辅助（离线预处理）：Is Maria going to present the sales report, or are you doing it?"
+    "transcript": "Is Maria going to present the sales report or are you doing it?\nA. We're doing it together.\nB. It's on sale today.\nC. In a couple of weeks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8fbfd476ce6e65320bfb9d3c919fbb95c02d3855b0e10c454d703691c29e21e3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "是玛丽亚要展示销售报告，还是你来做？\nA. 我们一起做的。\nB. 今天正在促销。\nC. 在几周后。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7d4f524c1d3ae534eb40d35443ca4eb3902c986ea91ffe36a0b8378415697ea3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "In a couple of weeks."
       ],
       "answer": "A",
-      "question": "Is Maria going to present the sales report, or are you doing it?",
+      "question": "Is Maria going to present the sales report or are you doing it?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“Is Maria going to present the sales report, or are you doing it?”，自然应答是“We're doing it together.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We're doing it together.）。",
-      "question_translation": "中文辅助（离线预处理）：Is Maria going to present the sales report, or are you doing it?",
+      "answer_explain": "原文依据：问句或陈述是“Is Maria going to present the sales report or are you doing it?”，自然应答是“We're doing it together.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We're doing it together.）。",
+      "question_translation": "是玛丽亚要展示销售报告,还是你来做?",
       "choice_translations": [
-        "A：We're doing it together.",
-        "B：It's on sale today.",
-        "C：In a couple of weeks."
+        "A：我们一起做的。",
+        "B：今天正在促销。",
+        "C：在几周后。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Is Maria going to present the sales report, or are you doing it?",
+      "evidence": "参考原文第 1 段：Is Maria going to present the sales report or are you doing it?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Is Maria going to present the sales report, or are you doing it?",
+        "evidence": "参考原文第 1 段：Is Maria going to present the sales report or are you doing it?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Is Maria going to present the sales report, or are you doing it?”，自然应答是“We're doing it together.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We're doing it together.）。"
+        "analysis": "原文依据：问句或陈述是“Is Maria going to present the sales report or are you doing it?”，自然应答是“We're doing it together.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We're doing it together.）。"
       },
       "item_id": 11,
       "priority": {

@@ -39,9 +39,32 @@
       "asset_key": "official-6-test-1/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "M\nAttention, Lenner's Supermarket shoppers! ® Are you a\nmember of our loyal-shopper rewards program? Then you\nknow that this program allows you to earn reward points on\nevery purchase you make. ®We're now offering a group\nmembership that you and your family can share. With this\ngroup membership, anyone in your family can earn points\nand use them for discounts on future purchases at Lenner's.\nThe first 100 customers to register will receive a free coffee\nmug. So sign up and receive your mug at our customer\nservice desk today!",
-    "transcript_translation": "注意，Lenner's超市购物者！®您是我们的忠实顾客奖励计划的会员吗？那么您知道该计划允许您在每次购物中赚取奖励积分。®我们现在提供一个您和您的家人可以共享的团体会员资格。有了这个团体会员资格，您家中的任何人都可以在Lenner's使用积分享受未来购买折扣。前100名注册顾客将收到一个免费咖啡马克杯。所以请今天在我们的客户服务台注册并领取您的马克杯！",
-    "content_translation": "注意，Lenner's超市购物者！®您是我们的忠实顾客奖励计划的会员吗？那么您知道该计划允许您在每次购物中赚取奖励积分。®我们现在提供一个您和您的家人可以共享的团体会员资格。有了这个团体会员资格，您家中的任何人都可以在Lenner's使用积分享受未来购买折扣。前100名注册顾客将收到一个免费咖啡马克杯。所以请今天在我们的客户服务台注册并领取您的马克杯！"
+    "transcript": "with this group membership anyone in your family can earn points and use them for discounts on future purchases at Lenners the first 100 customers to register will receive a free coffee mug so sign up and receive your mug at our customer service desk today",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "b2e531d497ab236386e48b1293acf9e4a25ee529de22543db94d65a355cad944",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 45,
+        "legacy_word_count": 88,
+        "length_ratio": 0.511,
+        "legacy_coverage": 0.659,
+        "prompted_failure": "audio transcript appears truncated (ratio=0.27, coverage=0.38)"
+      }
+    },
+    "transcript_translation": "通过加入本团体，您家中的任何人都可赚取积分，并在未来在 Lenners 购买时用于折扣。前 100 位注册的顾客将获得一个免费咖啡马克杯，所以请今天到我们的客户服务台注册并领取您的马克杯。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5c8a0bc81729ffe878d60a56b74b275d82244dbce8339efd959ac3696a67be7c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "D",
       "question": "Where most likely are the listeners?",
-      "answer_explain": "原文依据：听力原文中提到“Attention, Lenner's Supermarket shoppers!”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a supermarket）。",
-      "question_translation": "听众们最有可能在哪里？",
+      "answer_explain": "正确答案：D（At a supermarket）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "听众们最有可能在哪里?",
       "choice_translations": [
-        "A：在机场",
-        "B：在一个体育馆",
-        "C：在银行",
-        "D：在一个超市"
+        "A:在机场",
+        "B:在一个体育馆",
+        "C:在银行",
+        "D:在一个超市"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：M",
+      "evidence": "参考听力原文：“with this group membership anyone in your family can earn points and use them for discounts on future purchases at Lenners the first 100 customers to register will receive a free coffee mug so sign up and receive your mug at our customer service desk today”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：M",
+        "evidence": "参考听力原文：“with this group membership anyone in your family can earn points and use them for discounts on future purchases at Lenners the first 100 customers to register will receive a free coffee mug so sign up and receive your mug at our customer service desk today”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Attention, Lenner's Supermarket shoppers!”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a supermarket）。"
+        "analysis": "正确答案：D（At a supermarket）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 86,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "B",
       "question": "What new program feature does the speaker announce?",
-      "answer_explain": "原文依据：听力原文中提到“group membership, anyone in your family can earn points”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A group membership is available.）。",
-      "question_translation": "说话者宣布了什么新的计划功能？",
+      "answer_explain": "正确答案：B（A group membership is available.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者宣布了什么新的计划功能?",
       "choice_translations": [
-        "A：一项服务可以在国际上使用。",
-        "B：提供团体会员资格。",
-        "C：注册费降低了。",
-        "D：将增加班车服务频率。"
+        "A:一项服务可以在国际上使用。",
+        "B:提供团体会员资格。",
+        "C:注册费降低了。",
+        "D:将增加班车服务频率。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：member of our loyal-shopper rewards program? Then you",
+      "evidence": "参考听力原文：“with this group membership anyone in your family can earn points and use them for discounts on future purchases at Lenners the first 100 customers to register will receive a free coffee mug so sign up and receive your mug at our customer service desk today”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：member of our loyal-shopper rewards program? Then you",
+        "evidence": "参考听力原文：“with this group membership anyone in your family can earn points and use them for discounts on future purchases at Lenners the first 100 customers to register will receive a free coffee mug so sign up and receive your mug at our customer service desk today”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“group membership, anyone in your family can earn points”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A group membership is available.）。"
+        "analysis": "正确答案：B（A group membership is available.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 87,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "A",
       "question": "What will some customers receive?",
-      "answer_explain": "原文依据：听力原文中提到“The first 100 customers to register will receive a free coffee”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A coffee mug）。",
-      "question_translation": "一些顾客会收到什么？",
+      "answer_explain": "正确答案：A（A coffee mug）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "一些顾客会收到什么?",
       "choice_translations": [
-        "A：一个咖啡马克杯",
-        "B：一本优惠券册",
-        "C：一个购物袋",
-        "D：一个停车证"
+        "A:一个咖啡马克杯",
+        "B:一本优惠券册",
+        "C:一个购物袋",
+        "D:一个停车证"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：The first 100 customers to register will receive a free coffee",
+      "evidence": "参考听力原文：“with this group membership anyone in your family can earn points and use them for discounts on future purchases at Lenners the first 100 customers to register will receive a free coffee mug so sign up and receive your mug at our customer service desk today”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：The first 100 customers to register will receive a free coffee",
+        "evidence": "参考听力原文：“with this group membership anyone in your family can earn points and use them for discounts on future purchases at Lenners the first 100 customers to register will receive a free coffee mug so sign up and receive your mug at our customer service desk today”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“The first 100 customers to register will receive a free coffee”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A coffee mug）。"
+        "analysis": "正确答案：A（A coffee mug）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 88,
       "priority": {

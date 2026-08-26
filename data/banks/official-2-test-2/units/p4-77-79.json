@@ -36,9 +36,31 @@
       "asset_key": "official-2-test-2/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "ew\nmaking headlines today is the City Art Museum. /\nmonths of renovations, the museum is finally reope\npublic! To celebrate, they're presenting a temporary\ntitled Art of Today. This show will feature artworks\nthe most acclaimed contemporary Canadian artists\nSoo-Min Lee, recipient of the Canadian Artist of the\nThis Saturday, the mayor will give an address at t\nceremony. Visit the City Art Museum's Web site for",
-    "transcript_translation": "ew\n今天头条是市艺术博物馆。/经过数月的翻修，博物馆终于重新向公众开放了！为庆祝这一天，他们举办了一个名为《今日艺术》的临时展览。该展出了一些来自加拿大最负盛名的当代艺术家们的作品。Soo-Min Lee，加拿大艺术家奖得主。本周六，市长将在典礼上发表讲话。请访问市艺术博物馆网站了解更多信息。",
-    "content_translation": "ew\n今天头条是市艺术博物馆。/经过数月的翻修，博物馆终于重新向公众开放了！为庆祝这一天，他们举办了一个名为《今日艺术》的临时展览。该展出了一些来自加拿大最负盛名的当代艺术家们的作品。Soo-Min Lee，加拿大艺术家奖得主。本周六，市长将在典礼上发表讲话。请访问市艺术博物馆网站了解更多信息。"
+    "transcript": "Making headlines today is the City Art Museum.\nAfter two months of renovations, the museum is finally reopening to the public.\nTo celebrate, they are presenting a temporary exhibition titled Art of Today.\nThis show will feature artworks by some of the most acclaimed contemporary Canadian artists, including Su Min Lee, recipient of the Canadian Artist of the Year Award.\nThis Saturday, the mayor will give an address at the opening ceremony.\nVisit the City Art Museum's website for more details.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "05c1b6b4b2749e9e5ea870c7ae284db64e40d849ae92a108e9c97615f3e8a4f1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 81,
+        "legacy_word_count": 67,
+        "length_ratio": 1.209,
+        "legacy_coverage": 0.896
+      }
+    },
+    "transcript_translation": "今天登上头条的是城市艺术博物馆。\n经过两个月的翻修，该博物馆终于向公众重新开放了。\n为庆祝这一消息，他们正在举办一个名为“今日艺术”的临时展览。\n本次展出将展示一些最著名的当代加拿大艺术家（包括获得年度加拿大艺术家奖的 Su Min Lee）的作品。\n本周六，市长将在开幕式上发表讲话。\n请访问城市艺术博物馆的网站了解更多详情。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f1a54ce006791dc81145e1e77449368db74af14a2757c4e55bd8e6965e09321a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "D",
       "question": "What is the main topic of the news report?",
-      "answer_explain": "原文依据：听力原文中提到“making headlines today is the City Art Museum.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（The reopening of a museum）。",
-      "question_translation": "新闻报道的主要话题是什么？",
+      "answer_explain": "正确答案：D（The reopening of a museum）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "新闻报道的主要话题是什么?",
       "choice_translations": [
-        "A：一个艺术比赛",
-        "B：一个筹款活动",
-        "C：市政厅的翻修",
-        "D：一个博物馆的重新开放"
+        "A:一个艺术比赛",
+        "B:一个筹款活动",
+        "C:市政厅的翻修",
+        "D:一个博物馆的重新开放"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：ew",
+      "evidence": "参考听力原文：“After two months of renovations, the museum is finally reopening to the public.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：ew",
+        "evidence": "参考听力原文：“After two months of renovations, the museum is finally reopening to the public.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“making headlines today is the City Art Museum.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（The reopening of a museum）。"
+        "analysis": "正确答案：D（The reopening of a museum）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -93,29 +115,29 @@
     {
       "choices": [
         "An artist",
-        "Acurator =",
-        "Astudent ”",
+        "A curator",
+        "A student ”",
         "A politician 4"
       ],
       "answer": "A",
       "question": "Who is Soo-Min Lee?",
-      "answer_explain": "原文依据：听力原文中提到“Soo-Min Lee, recipient of the Canadian Artist of the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An artist）。",
-      "question_translation": "Soo-Min Lee 是谁？",
+      "answer_explain": "正确答案：A（An artist）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "Soo-Min Lee 是谁?",
       "choice_translations": [
-        "A：一位艺术家",
-        "B：一位策展人",
-        "C：一位学生",
-        "D：一位政治家"
+        "A:一位艺术家",
+        "B:一位策展人",
+        "C:一位学生",
+        "D:一位政治家"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：ew",
+      "evidence": "参考听力原文：“This show will feature artworks by some of the most acclaimed contemporary Canadian artists, including Su Min Lee, recipient of the Canadian Artist of the Year Award.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：ew",
+        "evidence": "参考听力原文：“This show will feature artworks by some of the most acclaimed contemporary Canadian artists, including Su Min Lee, recipient of the Canadian Artist of the Year Award.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Soo-Min Lee, recipient of the Canadian Artist of the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An artist）。"
+        "analysis": "正确答案：A（An artist）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "C",
       "question": "What will the mayor do on Saturday?",
-      "answer_explain": "原文依据：听力原文中提到“This Saturday, the mayor will give an address at t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Give a speech at a ceremony）。",
-      "question_translation": "市长周六会做什么？",
+      "answer_explain": "正确答案：C（Give a speech at a ceremony）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "市长周六会做什么?",
       "choice_translations": [
-        "A：访问另一个城市",
-        "B：参加一场辩论",
-        "C：在一个仪式上发表讲话",
-        "D：宣布获奖者"
+        "A:访问另一个城市",
+        "B:参加一场辩论",
+        "C:在一个仪式上发表讲话",
+        "D:宣布获奖者"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：This Saturday, the mayor will give an address at t",
+      "evidence": "参考听力原文：“This Saturday, the mayor will give an address at the opening ceremony.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：This Saturday, the mayor will give an address at t",
+        "evidence": "参考听力原文：“This Saturday, the mayor will give an address at the opening ceremony.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“This Saturday, the mayor will give an address at t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Give a speech at a ceremony）。"
+        "analysis": "正确答案：C（Give a speech at a ceremony）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

@@ -27,8 +27,28 @@
       "asset_key": "official-5-test-2/audio/part2/q009.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：How（如何） did you find out about this apartment complex?",
-    "content_translation": "中文辅助（离线预处理）：How（如何） did you find out about this apartment complex?"
+    "transcript": "How did you find out about this apartment complex?\nA. A rental deposit.\nB. My brother told me about it.\nC. Yes, it was missing for a while.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "757f1335b3c6acd60af3a1e2721e35165712f5c77d336408c88959a54b85f704",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q009.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "你是怎么知道这个公寓群的？\nA. 一笔租金押金。\nB. 我哥哥告诉我了。\nC. 是的，它丢失了一段时间。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b8bb917798016392551223b46fbbc2ade7668e6af03f4eb52729b5c028308fe8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“How did you find out about this apartment complex?”，自然应答是“My brother told me about it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（My brother told me about it.）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） did you find out about this apartment complex?",
+      "question_translation": "你是怎么知道这个公寓群的?",
       "choice_translations": [
-        "A：A rental deposit.",
-        "B：My brother told me about it.",
-        "C：Yes, it was missing for a while."
+        "A：一笔租金押金。",
+        "B：我哥哥告诉我了。",
+        "C：是的,它丢失了一段时间。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：How did you find out about this apartment complex?",

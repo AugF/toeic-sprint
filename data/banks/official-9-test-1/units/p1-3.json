@@ -31,8 +31,28 @@
       "asset_key": "official-9-test-1/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. The people are standing next to each other.\nB. The people are arranging some magazines on a display.\nC. One of the people is cooking food in an oven.\nD. One of the people is looking at a refrigerator.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "08a75e42358e96a1663969e7e55c940470b0543d288bb744476657ee8ae7e755",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 51
+      }
+    },
+    "transcript_translation": "A. 人们并排站着。\nB. 人们正在一个展示架上摆放一些杂志。\nC. 其中一个人在一个烤箱里做饭。\nD. 其中一个人在看一台冰箱。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "50b28ed9de74e9c93e6aa4e13624fcc760bf0e189d76b3c8f0499a78e26a17f1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“One of the people is looking at a refrigerator.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（One of the people is looking at a refrigerator.）。",
       "choice_translations": [
-        "A：The people are standing next to each other.",
-        "B：The people are arranging some magazines on a display.",
-        "C：One of the people is cooking food in an oven.",
-        "D：One of the people is looking at a refrigerator."
+        "A：人们并排站着。",
+        "B：人们正在一个展示架上摆放一些杂志。",
+        "C：其中一个人在一个烤箱里做饭。",
+        "D：其中一个人在看一台冰箱。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-1/p1-3/3"
+      "item_key": "official-9-test-1/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

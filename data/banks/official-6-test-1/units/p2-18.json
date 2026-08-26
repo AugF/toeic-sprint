@@ -28,14 +28,34 @@
       "asset_key": "official-6-test-1/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "我想续借这本书。\nA. 图书馆确实举办很棒的活动。\nB. 好的，我可以帮您这个忙。\nC. 不，我不记得了。",
-    "content_translation": "我想续借这本书。\nA. 图书馆确实举办很棒的活动。\nB. 好的，我可以帮您这个忙。\nC. 不，我不记得了。"
+    "transcript": "I'd like to renew this library book.\nA. The library does host wonderful events.\nB. Okay, I can help you with that.\nC. No, not that I can remember.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7dd0f0a65771827a05b7d4c54b51ca4d639c85aaaa56ec0e4d703950424e3cd3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "我想续借这本图书馆的书。\nA. 图书馆确实举办了精彩的活动。\nB. 好的，我可以帮您处理。\nC. 不，我记不起来。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d41b0fa53b8e6d4da7d06664968266cac8992819e794a743421962e0fe9597ac"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "The library does host wonderful events.",
-        "OK, I can help you with that.",
+        "Okay, I can help you with that.",
         "No, not that I can remember."
       ],
       "answer": "B",
@@ -43,12 +63,12 @@
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“I'd like to renew this library book.”，自然应答是“OK, I can help you with that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（OK, I can help you with that.）。",
-      "question_translation": "我想续借这本书。",
+      "answer_explain": "原文依据：问句或陈述是“I'd like to renew this library book.”，自然应答是“Okay, I can help you with that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Okay, I can help you with that.）。",
+      "question_translation": "我想续借这本图书馆的书。",
       "choice_translations": [
-        "A：图书馆确实举办很棒的活动。",
-        "B：好的，我可以帮您这个忙。",
-        "C：不，我不记得了。"
+        "A：图书馆确实举办了精彩的活动。",
+        "B：好的,我可以帮您处理。",
+        "C：不,我记不起来。"
       ],
       "question_type": "陈述 / 请求应答题",
       "evidence": "参考原文第 1 段：I'd like to renew this library book.",
@@ -59,7 +79,7 @@
         "question_type": "陈述 / 请求应答题",
         "evidence": "参考原文第 1 段：I'd like to renew this library book.",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“I'd like to renew this library book.”，自然应答是“OK, I can help you with that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（OK, I can help you with that.）。"
+        "analysis": "原文依据：问句或陈述是“I'd like to renew this library book.”，自然应答是“Okay, I can help you with that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Okay, I can help you with that.）。"
       },
       "item_id": 18,
       "priority": {

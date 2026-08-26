@@ -28,38 +28,58 @@
       "asset_key": "official-3-test-2/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Will you stay after the show to meet the musicians?\nEu",
-    "content_translation": "中文辅助（离线预处理）：Ew Will you stay after the show to meet the musicians?\nEu"
+    "transcript": "Will you stay after the show to meet the musicians?\nA. I think so too.\nB. Almost as long as the previous show.\nC. Don't they leave as soon as it's over?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d40fd111d0be33752fe5f79fb322bdb6e23b686b770cadf7144ed762092545d2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "演出结束后你会留下来和音乐家们见面吗？\nA. 我也觉得会的。\nB. 差不多和上次的演出一样久。\nC. 他们不会一结束就走了吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0cc217c2f1142004fd9967fe5d28511e44405b2a314a11d2270f42a4acf4a204"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "I think so too.",
         "Almost as long as the previous show.",
-        "Don’t they leave as soon as it’s over?"
+        "Don't they leave as soon as it's over?"
       ],
       "answer": "C",
-      "question": "Ew Will you stay after the show to meet the musicians? Eu",
+      "question": "Will you stay after the show to meet the musicians?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Will you stay after the show to meet the musicians? Eu”，自然应答是“Don’t they leave as soon as it’s over?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Don’t they leave as soon as it’s over?）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Will you stay after the show to meet the musicians?\nEu",
+      "answer_explain": "原文依据：问句或陈述是“Will you stay after the show to meet the musicians?”，自然应答是“Don't they leave as soon as it's over?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Don't they leave as soon as it's over?）。",
+      "question_translation": "演出结束后你会留下来和音乐家们见面吗?",
       "choice_translations": [
-        "A：I think so too.",
-        "B：Almost as long as the previous show.",
-        "C：Don’t they leave as soon as it’s over?"
+        "A：我也觉得会的。",
+        "B：差不多和上次的演出一样久。",
+        "C：他们不会一结束就走了吗?"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Will you stay after the show to meet the musicians? Eu",
+      "evidence": "参考原文第 1 段：Will you stay after the show to meet the musicians?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Will you stay after the show to meet the musicians? Eu",
+        "evidence": "参考原文第 1 段：Will you stay after the show to meet the musicians?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Will you stay after the show to meet the musicians? Eu”，自然应答是“Don’t they leave as soon as it’s over?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Don’t they leave as soon as it’s over?）。"
+        "analysis": "原文依据：问句或陈述是“Will you stay after the show to meet the musicians?”，自然应答是“Don't they leave as soon as it's over?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Don't they leave as soon as it's over?）。"
       },
       "item_id": 16,
       "priority": {

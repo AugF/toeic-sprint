@@ -38,9 +38,31 @@
       "asset_key": "official-7-test-1/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "Ew Hello, ®Technical Support. This is Maria Diaz.\nHi, Maria. ®I'm having trouble signing onto my work\ncomputer. The computer doesn't seem to recognize\nmy password.\nEK w OK, I should be able to help you with that. I just need\nto get some basic information. What's your\ncomputer's identification number? You'll find that on\nthe side of the computer.\nBm Let's see. It's A45HR2. And ®just so you know, I'm\npresenting at a meeting in 30 minutes.\nEKw OK. In that case, let me give you a temporary\npassword. You'll be able to log in, and you can change\nit later.",
-    "transcript_translation": "中文辅助（离线预处理）：Ew Hello, ®Technical Support.\nThis is Maria Diaz.\nHi, Maria.\n®I'm having trouble signing onto my work（工作）\ncomputer.\nThe computer doesn't seem to recognize\nmy password.\nEK w OK, I should be able to help you with that.\nI just need\nto get some basic information（信息）.\nWhat（什么）'s your\ncomputer's identification number?\nYou'll find that on\nthe side of the computer.\nBm Let's see.\nIt's A45HR2.\nAnd ®just so you know, I'm\npresenting at a meeting（会议） in 30 minutes.\nEKw OK.\nIn that case, let me give you a temporary\npassword.\nYou'll be able to log in, and you can change\nit later.",
-    "content_translation": "中文辅助（离线预处理）：Ew Hello, ®Technical Support.\nThis is Maria Diaz.\nHi, Maria.\n®I'm having trouble signing onto my work（工作）\ncomputer.\nThe computer doesn't seem to recognize\nmy password.\nEK w OK, I should be able to help you with that.\nI just need\nto get some basic information（信息）.\nWhat（什么）'s your\ncomputer's identification number?\nYou'll find that on\nthe side of the computer.\nBm Let's see.\nIt's A45HR2.\nAnd ®just so you know, I'm\npresenting at a meeting（会议） in 30 minutes.\nEKw OK.\nIn that case, let me give you a temporary\npassword.\nYou'll be able to log in, and you can change\nit later."
+    "transcript": "Hello, Technical Support.\nThis is Maria Diaz.\nHi, Maria.\nI'm having trouble signing on to my work computer.\nThe computer doesn't seem to recognize my password.\nOkay, I should be able to help you with that.\nI just need to get some basic information.\nWhat's your computer's identification number?\nYou'll find that on the side of the computer.\nLet's see.\nIt's A45HR2.\nAnd just so you know, I'm presenting at a meeting in 30 minutes.\nOkay.\nIn that case, let me give you a temporary password.\nYou'll be able to log in and you can change it later.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6acc182cc382d7293ca2af8fa1d01ab6f5f2d8fc67e6b2a6f2fd6d37d79476ff",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 98,
+        "legacy_word_count": 97,
+        "length_ratio": 1.01,
+        "legacy_coverage": 0.928
+      }
+    },
+    "transcript_translation": "您好，技术支持。\n我是Maria Diaz。\n嗨，玛丽亚。\n我登录我的工作电脑时遇到问题。\n电脑似乎无法识别我的密码。\n好的，我可以帮您解决这个问题。\n我只需要一些基本信息。\n您的电脑识别号是什么？\n您可以在电脑侧面找到它。\n让我看看。\n是A45HR2。\n另外提醒一下，我在30分钟后有一个会议。\n好的。\n在这种情况下，我给您一个临时密码。\n您将能够登录，之后可以更改它。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9f971152159b1d93a7694f0490843c0a97cb98ca39ba5451efdaa1732a81943a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -52,23 +74,23 @@
       ],
       "answer": "B",
       "question": "Why is the man calling?",
-      "answer_explain": "原文依据：听力原文中提到“The computer doesn't seem to recognize”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To report a computer problem）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the man（男士） calling?",
+      "answer_explain": "正确答案：B（To report a computer problem）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the man(男士) calling?",
       "choice_translations": [
-        "A：To check the status of an order（订单）",
-        "B：To report a computer problem",
-        "C：To propose a policy change",
-        "D：To discuss a software installation"
+        "A:To check the status of an order(订单)",
+        "B:To report a computer problem",
+        "C:To propose a policy change",
+        "D:To discuss a software installation"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ew Hello, ®Technical Support. This is Maria Diaz.",
+      "evidence": "参考听力原文：“I'm having trouble signing on to my work computer.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ew Hello, ®Technical Support. This is Maria Diaz.",
+        "evidence": "参考听力原文：“I'm having trouble signing on to my work computer.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“The computer doesn't seem to recognize”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To report a computer problem）。"
+        "analysis": "正确答案：B（To report a computer problem）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -103,23 +125,23 @@
       ],
       "answer": "D",
       "question": "What information does the woman request?",
-      "answer_explain": "原文依据：听力原文中提到“computer's identification number?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An identification number）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） information（信息） does the woman（女士） request?",
+      "answer_explain": "正确答案：D（An identification number）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) information(信息) does the woman(女士) request?",
       "choice_translations": [
-        "A：A username",
-        "B：A call-back number",
-        "C：An office（办公室） location",
-        "D：An identification number"
+        "A:A username",
+        "B:A call-back number",
+        "C:An office(办公室) location",
+        "D:An identification number"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：to get some basic information. What's your",
+      "evidence": "参考听力原文：“What's your computer's identification number?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：to get some basic information. What's your",
+        "evidence": "参考听力原文：“What's your computer's identification number?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“computer's identification number?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An identification number）。"
+        "analysis": "正确答案：D（An identification number）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -154,23 +176,23 @@
       ],
       "answer": "A",
       "question": "Why does the man say, \"I'm presenting at a meeting in 30 minutes\"?",
-      "answer_explain": "原文依据：听力原文中提到“presenting at a meeting in 30 minutes.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To express urgency）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） say, \"I'm presenting at a meeting（会议） in 30 minutes\"?",
+      "answer_explain": "正确答案：A（To express urgency）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the man(男士) say, \"I'm presenting at a meeting(会议) in 30 minutes\"?",
       "choice_translations": [
-        "A：To express urgency",
-        "B：To decline an invitation",
-        "C：To correct a misunderstanding",
-        "D：To request a deadline extension"
+        "A:To express urgency",
+        "B:To decline an invitation",
+        "C:To correct a misunderstanding",
+        "D:To request a deadline extension"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：presenting at a meeting in 30 minutes.",
+      "evidence": "参考听力原文：“And just so you know, I'm presenting at a meeting in 30 minutes.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：presenting at a meeting in 30 minutes.",
+        "evidence": "参考听力原文：“And just so you know, I'm presenting at a meeting in 30 minutes.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“presenting at a meeting in 30 minutes.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To express urgency）。"
+        "analysis": "正确答案：A（To express urgency）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

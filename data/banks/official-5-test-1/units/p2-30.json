@@ -27,8 +27,28 @@
       "asset_key": "official-5-test-1/audio/part2/q030.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Can I take some vacation days next week?",
-    "content_translation": "中文辅助（离线预处理）：Can I take some vacation days next week?"
+    "transcript": "Can I take some vacation days next week?\nA. We have a lot of work this month.\nB. You can borrow my phone.\nC. A great travel deal.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3ce94dbf16d73aa0b5765ab9c44e742e90afa3f00b13ffd3af5c48c03fb157b0",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q030.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "我下周能休一些年假吗？\nA. 我们这个月工作很多。\nB. 你可以借我的手机。\nC. 一个很棒的旅行优惠。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9311ae37f3d21dc786de5366c41b32c13ceda1f7c33d8f55623295815c54bf6f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Can I take some vacation days next week?”，自然应答是“We have a lot of work this month.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We have a lot of work this month.）。",
-      "question_translation": "中文辅助（离线预处理）：Can I take some vacation days next week?",
+      "question_translation": "我下周能休一些年假吗?",
       "choice_translations": [
-        "A：We have a lot of work（工作） this month.",
-        "B：You can borrow my phone.",
-        "C：A great travel deal."
+        "A：我们这个月工作很多。",
+        "B：你可以借我的手机。",
+        "C：一个很棒的旅行优惠。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Can I take some vacation days next week?",

@@ -28,8 +28,28 @@
       "asset_key": "official-7-test-2/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：m Would you like to get some lunch now?\nEM",
-    "content_translation": "中文辅助（离线预处理）：m Would you like to get some lunch now?\nEM"
+    "transcript": "Would you like to get some lunch now?\nA. A cooking class at night.\nB. Sure, I'm hungry.\nC. Two days ago.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "607696ea4d06d847f4de5723821c8adf995121dda13a8ca37df56add52644f77",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "你现在想吃午饭吗？\nA. 一个晚上的烹饪课。\nB. 当然，我饿了。\nC. 两天前。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "614758263e707d2e046400d79c6bc38819b82f2f057f64ea7d5a6ba6a23732e8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Two days ago."
       ],
       "answer": "B",
-      "question": "m Would you like to get some lunch now? EM",
+      "question": "Would you like to get some lunch now?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“m Would you like to get some lunch now? EM”，自然应答是“Sure, I'm hungry.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Sure, I'm hungry.）。",
-      "question_translation": "中文辅助（离线预处理）：m Would you like to get some lunch now?\nEM",
+      "answer_explain": "原文依据：问句或陈述是“Would you like to get some lunch now?”，自然应答是“Sure, I'm hungry.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Sure, I'm hungry.）。",
+      "question_translation": "你现在想吃午饭吗?",
       "choice_translations": [
-        "A：A cooking class at night.",
-        "B：Sure, I'm hungry.",
-        "C：Two days ago."
+        "A：一个晚上的烹饪课。",
+        "B：当然,我饿了。",
+        "C：两天前。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：m Would you like to get some lunch now? EM",
+      "evidence": "参考原文第 1 段：Would you like to get some lunch now?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：m Would you like to get some lunch now? EM",
+        "evidence": "参考原文第 1 段：Would you like to get some lunch now?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“m Would you like to get some lunch now? EM”，自然应答是“Sure, I'm hungry.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Sure, I'm hungry.）。"
+        "analysis": "原文依据：问句或陈述是“Would you like to get some lunch now?”，自然应答是“Sure, I'm hungry.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Sure, I'm hungry.）。"
       },
       "item_id": 12,
       "priority": {

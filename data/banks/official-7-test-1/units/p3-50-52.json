@@ -39,9 +39,31 @@
       "asset_key": "official-7-test-1/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "BliM So what did I miss from the staff meeting?\nEw Well, Othey're finally repaving the parking lot here at\nthe office next week. So we won't be able to park there.\nB But where are we supposed to park while the work is\nbeing done?\nEw Well, since most of the employees have laptops now,\nthe company's encouraging us to work from home\nwhile the repaving's being done.\nElM OK. But Ol don't have a work laptop yet. What should I\ndo?\nEw OYou can go ask the office manager to lend you one.",
-    "transcript_translation": "中文辅助（离线预处理）：BliM So what（什么） did I miss from the staff meeting（会议）?\nEw Well, Othey're finally repaving the parking lot here at\nthe office（办公室） next week.\nSo we won't be able to park there.\nB But where（哪里） are we supposed to park while the work（工作） is\nbeing done?\nEw Well, since most of the employees have laptops now,\nthe company（公司）'s encouraging us to work（工作） from home\nwhile the repaving's being done.\nElM OK.\nBut Ol don't have a work（工作） laptop yet.\nWhat（什么） should I\ndo?\nEw OYou can go ask the office（办公室） manager（经理） to lend you one.",
-    "content_translation": "中文辅助（离线预处理）：BliM So what（什么） did I miss from the staff meeting（会议）?\nEw Well, Othey're finally repaving the parking lot here at\nthe office（办公室） next week.\nSo we won't be able to park there.\nB But where（哪里） are we supposed to park while the work（工作） is\nbeing done?\nEw Well, since most of the employees have laptops now,\nthe company（公司）'s encouraging us to work（工作） from home\nwhile the repaving's being done.\nElM OK.\nBut Ol don't have a work（工作） laptop yet.\nWhat（什么） should I\ndo?\nEw OYou can go ask the office（办公室） manager（经理） to lend you one."
+    "transcript": "So what did I miss from the staff meeting?\nWell, they're finally repaving the parking lot here at the office next week, so we won't be able to park there.\nBut where are we supposed to park while the work is being done?\nWell, since most of the employees have laptops now, the company's encouraging us to work from home while the repaving's being done.\nOkay, but I don't have a work laptop yet.\nWhat should I do?\nYou can go ask the office manager to lend you one.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "76efcb967110b158c88bf873ad55620d7b8956c73c3ce9bb909178d9a5f1c3fb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 89,
+        "legacy_word_count": 91,
+        "length_ratio": 0.978,
+        "legacy_coverage": 0.912
+      }
+    },
+    "transcript_translation": "那我在员工会议上错过了什么？\n嗯，他们下周要重新铺设这里的办公室停车场，所以我们不能停在那里了。\n但施工期间我们应该在哪里停车呢？\n嗯，由于大多数员工现在都有笔记本电脑了，公司鼓励我们在重新铺设期间居家办公。\n好的，但我还没有工作用的笔记本电脑。\n我该怎么办？\n你可以去问一下办公室经理能不能借你一台。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "50d70f542a0456e3c12da31d750f61d37755f4fa1d2c8839e572849b899e90d8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "A",
       "question": "According to the woman, what will the company do next week?",
-      "answer_explain": "原文依据：听力原文中提到“Ew Well, Othey're finally repaving the parking lot here at”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Repave a parking area）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the woman（女士）, what（什么） will the company（公司） do next week?",
+      "answer_explain": "正确答案：A（Repave a parking area）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the woman(女士), what(什么) will the company(公司) do next week?",
       "choice_translations": [
-        "A：Repave a parking area",
-        "B：Hold an annual staff meeting（会议）",
-        "C：Update a vacation policy",
-        "D：Have an anniversary celebration"
+        "A:Repave a parking area",
+        "B:Hold an annual staff meeting(会议)",
+        "C:Update a vacation policy",
+        "D:Have an anniversary celebration"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：the company's encouraging us to work from home",
+      "evidence": "参考听力原文：“Well, they're finally repaving the parking lot here at the office next week, so we won't be able to park there.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：the company's encouraging us to work from home",
+        "evidence": "参考听力原文：“Well, they're finally repaving the parking lot here at the office next week, so we won't be able to park there.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew Well, Othey're finally repaving the parking lot here at”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Repave a parking area）。"
+        "analysis": "正确答案：A（Repave a parking area）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "D",
       "question": "What are employees encouraged to do?",
-      "answer_explain": "原文依据：听力原文中提到“the company's encouraging us to work from home”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Work from home）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are employees encouraged to do?",
+      "answer_explain": "正确答案：D（Work from home）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are employees encouraged to do?",
       "choice_translations": [
-        "A：Sign up for additional tasks",
-        "B：Complete a questionnaire",
-        "C：Apply for a business course",
-        "D：Work（工作） from home"
+        "A:Sign up for additional tasks",
+        "B:Complete a questionnaire",
+        "C:Apply for a business course",
+        "D:Work(工作) from home"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：Ew Well, since most of the employees have laptops now,",
+      "evidence": "参考听力原文：“Well, since most of the employees have laptops now, the company's encouraging us to work from home while the repaving's being done.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：Ew Well, since most of the employees have laptops now,",
+        "evidence": "参考听力原文：“Well, since most of the employees have laptops now, the company's encouraging us to work from home while the repaving's being done.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the company's encouraging us to work from home”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Work from home）。"
+        "analysis": "正确答案：D（Work from home）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "B",
       "question": "Who will the man most likely talk to?",
-      "answer_explain": "原文依据：听力原文中提到“Ew OYou can go ask the office manager to lend you one.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（An office manager）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） will the man（男士） most likely（最可能） talk to?",
+      "answer_explain": "正确答案：B（An office manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) will the man(男士) most likely(最可能) talk to?",
       "choice_translations": [
-        "A：A building contractor",
-        "B：An office（办公室） manager（经理）",
-        "C：A training coordinator",
-        "D：A computer salesperson"
+        "A:A building contractor",
+        "B:An office(办公室) manager(经理)",
+        "C:A training coordinator",
+        "D:A computer salesperson"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：BliM So what did I miss from the staff meeting?",
+      "evidence": "参考听力原文：“You can go ask the office manager to lend you one.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：BliM So what did I miss from the staff meeting?",
+        "evidence": "参考听力原文：“You can go ask the office manager to lend you one.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew OYou can go ask the office manager to lend you one.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（An office manager）。"
+        "analysis": "正确答案：B（An office manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

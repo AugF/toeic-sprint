@@ -45,37 +45,59 @@
       "asset_key": "official-2-test-2/images/part4/q092-094.jpg",
       "exists": true
     },
-    "transcript": "message.\nHello, this is Keiko Sato, the office manager of Fastree\nMedical Company. ®)'m calling about the office space in\nLondon that you advertised on your Web site. | e-mailed\nyour rental agency last week to set up an appointment,\nbut no one has contacted me yet. Could you please call me\nback to let me know if you still have space available? erg\nlike to set up an appointment to view it. we're planning on\nopening a location in London in November, so we'd like to\nstart looking at office spaces immediately. Thanks.\nsince nescence",
-    "transcript_translation": "信息。\n您好，这里是 Fastree Medical Company 的办公室经理 Keiko Sato。我打电话来咨询贵网站上刊登的伦敦的办公空间。我上周给您的租赁中介发了电子邮件，但还没有人联系我。您能回电告诉我是否还有空余空间吗？我很想安排一次看房约会。我们计划在十一月在伦敦开设一个分店，所以希望立即开始寻找办公空间。谢谢。",
-    "content_translation": "信息。\n您好，这里是 Fastree Medical Company 的办公室经理 Keiko Sato。我打电话来咨询贵网站上刊登的伦敦的办公空间。我上周给您的租赁中介发了电子邮件，但还没有人联系我。您能回电告诉我是否还有空余空间吗？我很想安排一次看房约会。我们计划在十一月在伦敦开设一个分店，所以希望立即开始寻找办公空间。谢谢。"
+    "transcript": "Hello, this is Keiko Sato, the office manager of Fastree Medical Company.\nI'm calling about the office space in London that you advertised on your Web site.\nI e-mailed your rental agency last week to set up an appointment, but no one has contacted me yet.\nCould you please call me back to let me know if you still have space available?\nI'd like to set up an appointment to view it.\nWe're planning on opening a location in London in November, so we'd like to start looking at office spaces immediately.\nThanks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "9cfecdfbee14b020f9ce79ffbee30bf83b426016540e6471596e6fb83f1dd105",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 93,
+        "legacy_word_count": 95,
+        "length_ratio": 0.979,
+        "legacy_coverage": 0.947
+      }
+    },
+    "transcript_translation": "您好，我是 Keiko Sato，Fastree Medical Company 的办公室经理。\n我打电话来咨询您网站上刊登的伦敦办公空间。\n我上周给您的租赁机构发送了电子邮件来安排预约，但还没有人联系我。\n您能回电话给我，告诉我是否还有空余空间吗？\n我想安排一次看房的预约。\n我们计划在十一月在伦敦开设一个分店，所以想立即开始寻找办公空间。\n谢谢。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "391dc7a3563a807e4180043ca7903e55eb8209f08a25547e3f276cbf1f875534"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "A law firm",
-        "Areal estate office",
+        "A real estate office",
         "An office-supply store",
         "An advertising agency"
       ],
       "answer": "B",
       "question": "What type of business is the speaker calling?",
-      "answer_explain": "原文依据：听力原文中提到“®)'m calling about the office space in”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Areal estate office）。",
-      "question_translation": "说话者打电话的公司是什么类型的业务？",
+      "answer_explain": "正确答案：B（A real estate office）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者打电话的公司是什么类型的业务?",
       "choice_translations": [
-        "A：律师事务所",
-        "B：房地产办公室",
-        "C：办公用品店",
-        "D：广告公司"
+        "A:律师事务所",
+        "B:房地产办公室",
+        "C:办公用品店",
+        "D:广告公司"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 3 段：Medical Company. ®)'m calling about the office space in",
+      "evidence": "参考听力原文：“I'm calling about the office space in London that you advertised on your Web site.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 3 段：Medical Company. ®)'m calling about the office space in",
+        "evidence": "参考听力原文：“I'm calling about the office space in London that you advertised on your Web site.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“®)'m calling about the office space in”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Areal estate office）。"
+        "analysis": "正确答案：B（A real estate office）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -112,23 +134,23 @@
       ],
       "answer": "D",
       "question": "Why is the speaker calling?",
-      "answer_explain": "原文依据：听力原文中提到“your rental agency last week to set up an appointment,”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To make an appointment）。",
-      "question_translation": "说话者打电话的原因是什么？",
+      "answer_explain": "正确答案：D（To make an appointment）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者打电话的原因是什么?",
       "choice_translations": [
-        "A：提供更改地址",
-        "B：要求退款",
-        "C：确认一批货物的运输",
-        "D：预约看房"
+        "A:提供更改地址",
+        "B:要求退款",
+        "C:确认一批货物的运输",
+        "D:预约看房"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 3 段：Medical Company. ®)'m calling about the office space in",
+      "evidence": "参考听力原文：“I e-mailed your rental agency last week to set up an appointment, but no one has contacted me yet.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 3 段：Medical Company. ®)'m calling about the office space in",
+        "evidence": "参考听力原文：“I e-mailed your rental agency last week to set up an appointment, but no one has contacted me yet.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“your rental agency last week to set up an appointment,”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To make an appointment）。"
+        "analysis": "正确答案：D（To make an appointment）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -159,29 +181,29 @@
     {
       "choices": [
         "A product will be advertised.",
-        "Acontract will expire.",
+        "A contract will expire.",
         "An office will open.",
         "AWeb site will be launched."
       ],
       "answer": "C",
       "question": "What does the speaker say will happen in November?",
-      "answer_explain": "原文依据：听力原文中提到“Hello, this is Keiko Sato, the office manager of Fastree”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An office will open.）。",
-      "question_translation": "说话者说十一月会发生什么？",
+      "answer_explain": "正确答案：C（An office will open.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者说十一月会发生什么?",
       "choice_translations": [
-        "A：将宣传一种产品。",
-        "B：一份合同到期。",
-        "C：一个办公室将会开业。",
-        "D：一个网站将被上线。"
+        "A:将宣传一种产品。",
+        "B:一份合同到期。",
+        "C:一个办公室将会开业。",
+        "D:一个网站将被上线。"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 9 段：opening a location in London in November, so we'd like to",
+      "evidence": "参考听力原文：“We're planning on opening a location in London in November, so we'd like to start looking at office spaces immediately.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 9 段：opening a location in London in November, so we'd like to",
+        "evidence": "参考听力原文：“We're planning on opening a location in London in November, so we'd like to start looking at office spaces immediately.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Hello, this is Keiko Sato, the office manager of Fastree”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An office will open.）。"
+        "analysis": "正确答案：C（An office will open.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

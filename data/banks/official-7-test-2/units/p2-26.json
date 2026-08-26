@@ -27,38 +27,58 @@
       "asset_key": "official-7-test-2/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：BM What（什么） documents should I bring to the meeting（会议）?\nEK",
-    "content_translation": "中文辅助（离线预处理）：BM What（什么） documents should I bring to the meeting（会议）?\nEK"
+    "transcript": "What documents should I bring to the meeting?\nA. Tomorrow at 3 o'clock.\nB. You'll just be watching a presentation.\nC. She prefers a vegetarian dish.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5f4bf3a607366efd653b1e92fc1ffbe136abe02cde40a18826dbef9ab007e8d6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "我需要带什么文件参加会议？\nA. 明天下午三点。\nB. 你只需要观看一个演示文稿。\nC. 她更喜欢素食菜。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "28f93cbac3da2a0aa7f197ec877bbef861808cadaa7ff6b3aa754e1dfcc33093"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Tomorrow at three o'clock.",
+        "Tomorrow at 3 o'clock.",
         "You'll just be watching a presentation.",
         "She prefers a vegetarian dish."
       ],
       "answer": "B",
-      "question": "BM What documents should I bring to the meeting? EK",
+      "question": "What documents should I bring to the meeting?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“BM What documents should I bring to the meeting? EK”，自然应答是“You'll just be watching a presentation.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（You'll just be watching a presentation.）。",
-      "question_translation": "中文辅助（离线预处理）：BM What（什么） documents should I bring to the meeting（会议）?\nEK",
+      "answer_explain": "原文依据：问句或陈述是“What documents should I bring to the meeting?”，自然应答是“You'll just be watching a presentation.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（You'll just be watching a presentation.）。",
+      "question_translation": "我需要带什么文件参加会议?",
       "choice_translations": [
-        "A：Tomorrow at three o'clock.",
-        "B：You'll just be watching a presentation.",
-        "C：She prefers a vegetarian dish."
+        "A：明天下午三点。",
+        "B：你只需要观看一个演示文稿。",
+        "C：她更喜欢素食菜。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：BM What documents should I bring to the meeting? EK",
+      "evidence": "参考原文第 1 段：What documents should I bring to the meeting?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：BM What documents should I bring to the meeting? EK",
+        "evidence": "参考原文第 1 段：What documents should I bring to the meeting?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“BM What documents should I bring to the meeting? EK”，自然应答是“You'll just be watching a presentation.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（You'll just be watching a presentation.）。"
+        "analysis": "原文依据：问句或陈述是“What documents should I bring to the meeting?”，自然应答是“You'll just be watching a presentation.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（You'll just be watching a presentation.）。"
       },
       "item_id": 26,
       "priority": {

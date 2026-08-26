@@ -28,27 +28,47 @@
       "asset_key": "official-6-test-2/audio/part2/q020.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：This is where（哪里） the leadership training is being held, right?",
-    "content_translation": "中文辅助（离线预处理）：This is where（哪里） the leadership training is being held, right?"
+    "transcript": "This is where the leadership training is being held, right?\nA. I had trouble finding the room too.\nB. The train to Barcelona.\nC. At least 10 boxes please.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7b3318b88b11c6d32ded923085302b6793335e4ed23d8ed14074356a0fa2daf4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q020.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "这是举行领导力培训的地方，对吗？\nA. 我也找不到房间。\nB. 去巴塞罗那的火车。\nC. 至少十个箱子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "fd6e53ac89fa12c4bdb1a4561cd6abb2e5862a60dd9a758e3dcd360ce94fbfe6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "I had trouble finding the room, too.",
+        "I had trouble finding the room too.",
         "The train to Barcelona.",
-        "At least ten boxes, please."
+        "At least 10 boxes please."
       ],
       "answer": "A",
       "question": "This is where the leadership training is being held, right?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“This is where the leadership training is being held, right?”，自然应答是“I had trouble finding the room, too.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I had trouble finding the room, too.）。",
-      "question_translation": "中文辅助（离线预处理）：This is where（哪里） the leadership training is being held, right?",
+      "answer_explain": "原文依据：问句或陈述是“This is where the leadership training is being held, right?”，自然应答是“I had trouble finding the room too.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I had trouble finding the room too.）。",
+      "question_translation": "这是举行领导力培训的地方,对吗?",
       "choice_translations": [
-        "A：I had trouble finding the room, too.",
-        "B：The train to Barcelona.",
-        "C：At least ten boxes, please（请）."
+        "A：我也找不到房间。",
+        "B：去巴塞罗那的火车。",
+        "C：至少十个箱子。"
       ],
       "question_type": "否定 / 反意疑问句",
       "evidence": "参考原文第 1 段：This is where the leadership training is being held, right?",
@@ -59,7 +79,7 @@
         "question_type": "否定 / 反意疑问句",
         "evidence": "参考原文第 1 段：This is where the leadership training is being held, right?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“This is where the leadership training is being held, right?”，自然应答是“I had trouble finding the room, too.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I had trouble finding the room, too.）。"
+        "analysis": "原文依据：问句或陈述是“This is where the leadership training is being held, right?”，自然应答是“I had trouble finding the room too.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I had trouble finding the room too.）。"
       },
       "item_id": 20,
       "priority": {

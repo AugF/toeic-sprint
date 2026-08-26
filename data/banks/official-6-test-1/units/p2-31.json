@@ -27,15 +27,35 @@
       "asset_key": "official-6-test-1/audio/part2/q031.mp3",
       "exists": true
     },
-    "transcript_translation": "周二你能早点来上班吗？\nA. 也许Sam可以。\nB. 大约十个月前。\nC. 那张桌子是雪松木做的。",
-    "content_translation": "周二你能早点来上班吗？\nA. 也许Sam可以。\nB. 大约十个月前。\nC. 那张桌子是雪松木做的。"
+    "transcript": "Would you be able to come to work early on Tuesday?\nA. Maybe Sam can.\nB. About ten months ago.\nC. That table's made out of cedar wood.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5979ff33d6954b4661cb8ed3b1f1449c330f35f2473b68ad1896e2c1252a149c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q031.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "你周二能早点来上班吗？\nA. 也许山姆可以。\nB. 大约十个月前。\nC. 这张桌子是用雪松木做的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "72d547a63f28f348f4e8b57adb7264aef1b2633ce34b3f56af56c60af74ad493"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Maybe Sam can.",
         "About ten months ago.",
-        "That table's made out of cedarwood."
+        "That table's made out of cedar wood."
       ],
       "answer": "A",
       "question": "Would you be able to come to work early on Tuesday?",
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Would you be able to come to work early on Tuesday?”，自然应答是“Maybe Sam can.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Maybe Sam can.）。",
-      "question_translation": "周二你能早点来上班吗？",
+      "question_translation": "你周二能早点来上班吗?",
       "choice_translations": [
-        "A：也许Sam可以。",
+        "A：也许山姆可以。",
         "B：大约十个月前。",
-        "C：那张桌子是雪松木做的。"
+        "C：这张桌子是用雪松木做的。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Would you be able to come to work early on Tuesday?",

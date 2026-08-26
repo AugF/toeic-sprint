@@ -26,8 +26,28 @@
       "asset_key": "official-9-test-1/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：м Where（哪里） can I find the notes from yesterday's meeting（会议）?",
-    "content_translation": "中文辅助（离线预处理）：м Where（哪里） can I find the notes from yesterday's meeting（会议）?"
+    "transcript": "Where can I find the notes from yesterday's meeting?\nA. In the department's shared folder.\nB. At noon tomorrow.\nC. No, I wasn't at my desk.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b2885252d2f431a5ae49d0e7d3fb2b499f857bd885fdb18fa3ad61c122ac3c48",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "我可以在哪里找到昨天会议的笔记？\nA. 在部门的共享文件夹里。\nB. 明天中午。\nC. 不，我不在我的桌子前。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "34c70c46845feaddad842d728fbaa129eab6ea89eacd570bfcfec7b4f2ca2dff"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "No, I wasn't at my desk."
       ],
       "answer": "A",
-      "question": "м Where can I find the notes from yesterday's meeting?",
+      "question": "Where can I find the notes from yesterday's meeting?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“м Where can I find the notes from yesterday's meeting?”，自然应答是“In the department's shared folder.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（In the department's shared folder.）。",
-      "question_translation": "中文辅助（离线预处理）：м Where（哪里） can I find the notes from yesterday's meeting（会议）?",
+      "answer_explain": "原文依据：问句或陈述是“Where can I find the notes from yesterday's meeting?”，自然应答是“In the department's shared folder.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（In the department's shared folder.）。",
+      "question_translation": "我可以在哪里找到昨天会议的笔记?",
       "choice_translations": [
-        "A：In the department's shared folder.",
-        "B：At noon tomorrow.",
-        "C：No, I wasn't at my desk."
+        "A：在部门的共享文件夹里。",
+        "B：明天中午。",
+        "C：不,我不在我的桌子前。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：м Where can I find the notes from yesterday's meeting?",
+      "evidence": "参考原文第 1 段：Where can I find the notes from yesterday's meeting?",
       "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：м Where can I find the notes from yesterday's meeting?",
+        "evidence": "参考原文第 1 段：Where can I find the notes from yesterday's meeting?",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“м Where can I find the notes from yesterday's meeting?”，自然应答是“In the department's shared folder.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（In the department's shared folder.）。"
+        "analysis": "原文依据：问句或陈述是“Where can I find the notes from yesterday's meeting?”，自然应答是“In the department's shared folder.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（In the department's shared folder.）。"
       },
       "item_id": 21,
       "priority": {

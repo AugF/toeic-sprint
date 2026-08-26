@@ -45,9 +45,31 @@
       "asset_key": "official-12-test-2/images/part4/q095-097.jpg",
       "exists": true
     },
-    "transcript": "IXM595-97 (đ/20\ninformation and map.\nWelcome, hikers! Today, your self-guided journey will begin\nalong Chamberlain Trail. After a short hike on that trail, you'll\ncome to a place where it splits in three. O The trail on the\nright leads to the ruins of a castle that was built hundreds of\nyears ago. The left trail takes you along a forest. Continue\nstraight ahead only if you're an experienced hiker—there's\nrugged terrain along that trail. Now, othere's a drinking\nfountain in the visitor's center. Ol recommend filling your\nbottles before you start.\nEnd\nFowler\nFowler/J\nTrail\nForest\nHanover\nTrail\nWalnut\nTrail\nCastle\nChamberlain\nCha\nStart\nTrail\nWALA",
-    "transcript_translation": "中文辅助（离线预处理）：IXM595-97 (đ/20\ninformation（信息） and map.\nWelcome, hikers!\nToday, your self-guided journey will begin\nalong Chamberlain Trail.\nAfter a short hike on that trail, you'll\ncome to a place where（哪里） it splits in three.\nO The trail on the\nright leads to the ruins of a castle that was built hundreds of\nyears ago.\nThe left trail takes you along a forest.\nContinue\nstraight ahead only if you're an experienced hiker—there's\nrugged terrain along that trail.\nNow, othere's a drinking\nfountain in the visitor's center.\nOl recommend filling your\nbottles before you start.\nEnd\nFowler\nFowler/J\nTrail\nForest\nHanover\nTrail\nWalnut\nTrail\nCastle\nChamberlain\nCha\nStart\nTrail\nWALA",
-    "content_translation": "中文辅助（离线预处理）：IXM595-97 (đ/20\ninformation（信息） and map.\nWelcome, hikers!\nToday, your self-guided journey will begin\nalong Chamberlain Trail.\nAfter a short hike on that trail, you'll\ncome to a place where（哪里） it splits in three.\nO The trail on the\nright leads to the ruins of a castle that was built hundreds of\nyears ago.\nThe left trail takes you along a forest.\nContinue\nstraight ahead only if you're an experienced hiker—there's\nrugged terrain along that trail.\nNow, othere's a drinking\nfountain in the visitor's center.\nOl recommend filling your\nbottles before you start.\nEnd\nFowler\nFowler/J\nTrail\nForest\nHanover\nTrail\nWalnut\nTrail\nCastle\nChamberlain\nCha\nStart\nTrail\nWALA"
+    "transcript": "information and map.\nWelcome hikers.\nToday your self-guided journey will begin along Chamberlain Trail.\nAfter a short hike on that trail, you'll come to a place where it splits in three.\nThe trail on the right leads to the ruins of a castle that was built hundreds of years ago.\nThe left trail takes you along a forest.\nContinue straight ahead only if you're an experienced hiker.\nThere's rugged terrain along that trail.\nNow there's a drinking fountain in the visitor's center.\nI recommend filling your bottles before you start.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8d24b03573f74cd340bad348338dbf61ee0b2514c14bcaf7ea2bfd3010daaa08",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 90,
+        "legacy_word_count": 106,
+        "length_ratio": 0.849,
+        "legacy_coverage": 0.906
+      }
+    },
+    "transcript_translation": "信息和地图。\n欢迎徒步旅行者。\n您今天的自助旅程将沿着 Chamberlain Trail 开始。\n在沿着这条小径短途徒步后，您会来到一个分叉成三条路的地方。\n右边的小径通往一座数百年前建造的城堡遗址。\n左边的小径带您穿过一片森林。\n只有如果您是经验丰富的徒步旅行者，才继续直行。\n沿着那条小径有崎岖的地形。\n现在访客中心有一个饮水机。\n我建议您在开始前装满您的瓶子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ff380e4680c7e6aa1c4720dd94f6b8527d9f0a6f9bdb3370ffa9d0828f672aad"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -59,23 +81,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker say about a castle?",
-      "answer_explain": "原文依据：听力原文中提到“right leads to the ruins of a castle that was built hundreds of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It is old.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say about a castle?",
+      "answer_explain": "正确答案：A（It is old.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say about a castle?",
       "choice_translations": [
-        "A：It is old.",
-        "B：It is well maintained.",
-        "C：It is made of stone.",
-        "D：It is next to a waterfall."
+        "A:It is old.",
+        "B:It is well maintained.",
+        "C:It is made of stone.",
+        "D:It is next to a waterfall."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 6 段：right leads to the ruins of a castle that was built hundreds of",
+      "evidence": "参考听力原文：“The trail on the right leads to the ruins of a castle that was built hundreds of years ago.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 6 段：right leads to the ruins of a castle that was built hundreds of",
+        "evidence": "参考听力原文：“The trail on the right leads to the ruins of a castle that was built hundreds of years ago.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“right leads to the ruins of a castle that was built hundreds of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It is old.）。"
+        "analysis": "正确答案：A（It is old.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 95,
       "priority": {
@@ -112,23 +134,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. Which trail does the speaker say is for experienced hikers only?",
-      "answer_explain": "原文依据：听力原文中提到“The left trail takes you along a forest.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Hanover Trail）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich trail does the speaker（说话者） say is for experienced hikers only?",
+      "answer_explain": "正确答案：C（Hanover Trail）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which trail does the speaker(说话者) say is for experienced hikers only?",
       "choice_translations": [
-        "A：Chamberlain Trail",
-        "B：Fowler Trail",
-        "C：Hanover Trail",
-        "D：Walnut Trail"
+        "A:Chamberlain Trail",
+        "B:Fowler Trail",
+        "C:Hanover Trail",
+        "D:Walnut Trail"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：Welcome, hikers! Today, your self-guided journey will begin",
+      "evidence": "参考听力原文：“Continue straight ahead only if you're an experienced hiker.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：Welcome, hikers! Today, your self-guided journey will begin",
+        "evidence": "参考听力原文：“Continue straight ahead only if you're an experienced hiker.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“The left trail takes you along a forest.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Hanover Trail）。"
+        "analysis": "正确答案：C（Hanover Trail）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 96,
       "priority": {
@@ -165,23 +187,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker encourage the listeners to do?",
-      "answer_explain": "原文依据：听力原文中提到“right leads to the ruins of a castle that was built hundreds of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Fill a water bottle）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） encourage the listeners to do?",
+      "answer_explain": "正确答案：D（Fill a water bottle）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) encourage the listeners to do?",
       "choice_translations": [
-        "A：Sign up for a lecture",
-        "B：Download an area map",
-        "C：Post pictures to social media",
-        "D：Fill a water bottle"
+        "A:Sign up for a lecture",
+        "B:Download an area map",
+        "C:Post pictures to social media",
+        "D:Fill a water bottle"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：IXM595-97 (đ/20",
+      "evidence": "参考听力原文：“Today your self-guided journey will begin along Chamberlain Trail.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：IXM595-97 (đ/20",
+        "evidence": "参考听力原文：“Today your self-guided journey will begin along Chamberlain Trail.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“right leads to the ruins of a castle that was built hundreds of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Fill a water bottle）。"
+        "analysis": "正确答案：D（Fill a water bottle）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 97,
       "priority": {

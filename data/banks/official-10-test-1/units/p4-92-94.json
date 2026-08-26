@@ -38,9 +38,31 @@
       "asset_key": "official-10-test-1/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "meeting.\nW\nHello, my name is Lisa Lee. Thank you for inviting me to\nch\nstE\nthe management meeting. I'm here to represent the\ntE<\nfront-desk workers at the company's veterinary clinics.\nWe have a request: we would like to wear scrubs, like the\nta5\nones doctors wear, instead of formal clothing while on the\nEt\njob. ® The requirement of wearing business-professional\nattire is problematic. Since we handle so many animals,\nour clothes often get very dirty, and they tend to wear out\nquickly. Formal clothes can be very expensive",
-    "transcript_translation": "会议。\n你好，我叫 Lisa Lee。感谢您邀请我参加\n管理会议。我代表公司兽医诊所的前台工作人员来这里。\n我们有一个请求：我们希望在工作时穿着像医生穿的那种工作服，而不是正装。要求穿商务正装很成问题。因为我们处理了太多的动物，我们的衣服经常变得非常脏，而且容易磨损。正装可能非常昂贵。",
-    "content_translation": "会议。\n你好，我叫 Lisa Lee。感谢您邀请我参加\n管理会议。我代表公司兽医诊所的前台工作人员来这里。\n我们有一个请求：我们希望在工作时穿着像医生穿的那种工作服，而不是正装。要求穿商务正装很成问题。因为我们处理了太多的动物，我们的衣服经常变得非常脏，而且容易磨损。正装可能非常昂贵。"
+    "transcript": "Hello, my name is Lisa Lee.\nThank you for inviting me to the management meeting.\nI'm here to represent the front desk workers at the company's veterinary clinics.\nWe have a request.\nWe would like to wear scrubs, like the ones doctors wear, instead of formal clothing while on the job.\nThe requirement of wearing business professional attire is problematic.\nSince we handle so many animals, our clothes often get very dirty and they tend to wear out quickly.\nFormal clothes can be very expensive.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4ce69b7da5a8ef4c20c77898341665aa94b57c65fab93a4fda28920f538376da",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 85,
+        "legacy_word_count": 85,
+        "length_ratio": 1,
+        "legacy_coverage": 0.988
+      }
+    },
+    "transcript_translation": "大家好，我叫丽莎·李（Lisa Lee）。\n感谢您邀请我参加这次管理会议。\n我代表公司兽医诊所的前台工作人员来这里。\n我们有一个请求。\n我们希望在工作时能穿手术服（scrubs），就像医生们穿的那种，而不是正式的服装。\n要求穿着商务正装是存在问题的。\n因为我们处理了这么多的动物，我们的衣服经常会变得非常脏，而且很容易磨损。\n正式的衣服成本很高。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d2cdacfb1a9e9c77313f2948686bf1ea2a59ce376a99c3239de31ca1127b04b9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -52,23 +74,23 @@
       ],
       "answer": "A",
       "question": "Where does the speaker work?",
-      "answer_explain": "原文依据：听力原文中提到“front-desk workers at the company's veterinary clinics.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（In a veterinary office）。",
-      "question_translation": "演讲者在哪里工作？",
+      "answer_explain": "正确答案：A（In a veterinary office）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者在哪里工作?",
       "choice_translations": [
-        "A：在兽医诊所",
-        "B：在药店",
-        "C：在一个录音室",
-        "D：在一个会计办公室"
+        "A:在兽医诊所",
+        "B:在药店",
+        "C:在一个录音室",
+        "D:在一个会计办公室"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：meeting.",
+      "evidence": "参考听力原文：“I'm here to represent the front desk workers at the company's veterinary clinics.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：meeting.",
+        "evidence": "参考听力原文：“I'm here to represent the front desk workers at the company's veterinary clinics.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“front-desk workers at the company's veterinary clinics.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（In a veterinary office）。"
+        "analysis": "正确答案：A（In a veterinary office）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -103,23 +125,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker say is problematic?",
-      "answer_explain": "原文依据：听力原文中提到“We have a request: we would like to wear scrubs, like the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A company policy）。",
-      "question_translation": "演讲者说什么是有问题的？",
+      "answer_explain": "正确答案：A（A company policy）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者说什么是有问题的?",
       "choice_translations": [
-        "A：公司政策",
-        "B：业务扩张计划",
-        "C：近期事件的媒体报道",
-        "D：竞争对手的市场策略"
+        "A:公司政策",
+        "B:业务扩张计划",
+        "C:近期事件的媒体报道",
+        "D:竞争对手的市场策略"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 14 段：attire is problematic. Since we handle so many animals,",
+      "evidence": "参考听力原文：“The requirement of wearing business professional attire is problematic.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 14 段：attire is problematic. Since we handle so many animals,",
+        "evidence": "参考听力原文：“The requirement of wearing business professional attire is problematic.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“We have a request: we would like to wear scrubs, like the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A company policy）。"
+        "analysis": "正确答案：A（A company policy）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -154,23 +176,23 @@
       ],
       "answer": "B",
       "question": "Why does the speaker say, \"Formal clothes can be very expensive\"?",
-      "answer_explain": "原文依据：听力原文中提到“We have a request: we would like to wear scrubs, like the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To provide support for a request）。",
-      "question_translation": "演讲者说“正装可能非常昂贵”的原因是什么？",
+      "answer_explain": "正确答案：B（To provide support for a request）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者说“正装可能非常昂贵”的原因是什么?",
       "choice_translations": [
-        "A：表示对最新趋势感到惊讶",
-        "B：为一项请求提供支持",
-        "C：纠正员工的错误",
-        "D：承认价格的变化"
+        "A:表示对最新趋势感到惊讶",
+        "B:为一项请求提供支持",
+        "C:纠正员工的错误",
+        "D:承认价格的变化"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：ones doctors wear, instead of formal clothing while on the",
+      "evidence": "参考听力原文：“Formal clothes can be very expensive.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：ones doctors wear, instead of formal clothing while on the",
+        "evidence": "参考听力原文：“Formal clothes can be very expensive.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“We have a request: we would like to wear scrubs, like the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To provide support for a request）。"
+        "analysis": "正确答案：B（To provide support for a request）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

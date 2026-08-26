@@ -31,8 +31,28 @@
       "asset_key": "official-3-test-2/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 他们正在整理一些文件。\nB. 他们正在重新布置一些椅子。\nC. 他们正在电脑前工作。\nD. 他们正在打开灯。",
-    "content_translation": "A. 他们正在整理一些文件。\nB. 他们正在重新布置一些椅子。\nC. 他们正在电脑前工作。\nD. 他们正在打开灯。"
+    "transcript": "A. They're organizing some papers.\nB. They're rearranging some chairs.\nC. They're working at computers.\nD. They're turning on lights.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6a71bc40afcc171ad13e1fedd2e31d137a0fbfb962083e6a8e725ffcc7b2eae4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "A. 他们正在整理一些文件。\nB. 他们正在重新排列一些椅子。\nC. 他们正在电脑前工作。\nD. 他们正在打开灯。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c0e4e1df64305a7f83041aa2d8f35379008a88567201f821fc1be2330e04cfe3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -40,7 +60,7 @@
         "They're organizing some papers.",
         "They're rearranging some chairs.",
         "They're working at computers.",
-        "They’re turning on lights."
+        "They're turning on lights."
       ],
       "answer": "C",
       "difficulty": "medium",
@@ -49,7 +69,7 @@
       "answer_explain": "原文依据：照片中可见信息与描述“They're working at computers.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（They're working at computers.）。",
       "choice_translations": [
         "A：他们正在整理一些文件。",
-        "B：他们正在重新布置一些椅子。",
+        "B：他们正在重新排列一些椅子。",
         "C：他们正在电脑前工作。",
         "D：他们正在打开灯。"
       ],
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-2/p1-3/3"
+      "item_key": "official-3-test-2/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

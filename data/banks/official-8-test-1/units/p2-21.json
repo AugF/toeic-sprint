@@ -26,8 +26,28 @@
       "asset_key": "official-8-test-1/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：When（何时） is my article going to be published?\nEw",
-    "content_translation": "中文辅助（离线预处理）：When（何时） is my article going to be published?\nEw"
+    "transcript": "When is my article going to be published?\nA. Your editor's out of town this week.\nB. Yes, that illustration works.\nC. Because they finished earlier than expected.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "cc8b78e3815fa79ece3401d1421e96c649927b0ef92721a2f808fda4ce3d8145",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "我的文章什么时候能发表？\nA. 你的编辑这周不在城里。\nB. 是的，这个插图可以。\nC. 因为他们比预期的早完成了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "59b89cc302bd4bda9473e905a5655695a841e9bd5a96a7ea3ba0c63c792fbb86"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "Because they finished earlier than expected."
       ],
       "answer": "A",
-      "question": "When is my article going to be published? Ew",
+      "question": "When is my article going to be published?",
       "difficulty": "easy",
       "topic": "时间询问",
       "keywords": "when time response",
-      "answer_explain": "原文依据：问句或陈述是“When is my article going to be published? Ew”，自然应答是“Your editor's out of town this week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Your editor's out of town this week.）。",
-      "question_translation": "中文辅助（离线预处理）：When（何时） is my article going to be published?\nEw",
+      "answer_explain": "原文依据：问句或陈述是“When is my article going to be published?”，自然应答是“Your editor's out of town this week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Your editor's out of town this week.）。",
+      "question_translation": "我的文章什么时候能发表?",
       "choice_translations": [
-        "A：Your editor's out of town this week.",
-        "B：Yes, that illustration works.",
-        "C：Because they finished earlier than expected."
+        "A：你的编辑这周不在城里。",
+        "B：是的,这个插图可以。",
+        "C：因为他们比预期的早完成了。"
       ],
       "question_type": "时间疑问句",
-      "evidence": "参考原文第 1 段：When is my article going to be published? Ew",
+      "evidence": "参考原文第 1 段：When is my article going to be published?",
       "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "时间疑问句",
-        "evidence": "参考原文第 1 段：When is my article going to be published? Ew",
+        "evidence": "参考原文第 1 段：When is my article going to be published?",
         "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“When is my article going to be published? Ew”，自然应答是“Your editor's out of town this week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Your editor's out of town this week.）。"
+        "analysis": "原文依据：问句或陈述是“When is my article going to be published?”，自然应答是“Your editor's out of town this week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Your editor's out of town this week.）。"
       },
       "item_id": 21,
       "priority": {

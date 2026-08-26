@@ -42,9 +42,32 @@
       "asset_key": "official-10-test-2/images/part4/q095-097.jpg",
       "exists": true
     },
-    "transcript": "M\nThis is our final preparation meeting before the Carsonville\nstreet fair this weekend. ® Remember, this is a huge\nC9. LIl\nopportunity for us at Marko Kitchen Supplies. Attendees\nwill have the chance to get hands-on experience with our\nnewest small appliances and cooking utensils. I need all of\nyou to arrive by 9 A.M. to set up our tables and displays.\nThe town council told me that parking for the fair is always\ndifficult. The public will be able to park in the municipal\ngarages close to Mercer Square and on the riverfront, but\nwe'll need to park in the lot near Spruce Street. Happily,\nit's a short walk to the fair site.\nParking\nB\nSpruce Street\nB\nPeace River\nParking\nParking\nA\nC\nMain Street→\nMercer\nOak Street\nSquare\nParking\nD\nD",
-    "transcript_translation": "中文辅助（离线预处理）：M\nThis is our final preparation meeting（会议） before the Carsonville\nstreet fair this weekend.\n® Remember, this is a huge\nC9.\nLIl\nopportunity for us at Marko Kitchen Supplies.\nAttendees\nwill have the chance to get hands-on experience with our\nnewest small appliances and cooking utensils.\nI need all of\nyou to arrive by 9 A.M.\nto set up our tables and displays.\nThe town council told me that parking for the fair is always\ndifficult.\nThe public will be able to park in the municipal\ngarages close to Mercer Square and on the riverfront, but\nwe'll need to park in the lot near Spruce Street.\nHappily,\nit's a short walk to the fair site.\nParking\nB\nSpruce Street\nB\nPeace River\nParking\nParking\nA\nC\nMain Street→\nMercer\nOak Street\nSquare\nParking\nD\nD",
-    "content_translation": "中文辅助（离线预处理）：M\nThis is our final preparation meeting（会议） before the Carsonville\nstreet fair this weekend.\n® Remember, this is a huge\nC9.\nLIl\nopportunity for us at Marko Kitchen Supplies.\nAttendees\nwill have the chance to get hands-on experience with our\nnewest small appliances and cooking utensils.\nI need all of\nyou to arrive by 9 A.M.\nto set up our tables and displays.\nThe town council told me that parking for the fair is always\ndifficult.\nThe public will be able to park in the municipal\ngarages close to Mercer Square and on the riverfront, but\nwe'll need to park in the lot near Spruce Street.\nHappily,\nit's a short walk to the fair site.\nParking\nB\nSpruce Street\nB\nPeace River\nParking\nParking\nA\nC\nMain Street→\nMercer\nOak Street\nSquare\nParking\nD\nD"
+    "transcript": "This is our final preparation meeting before the Carsonville Street Fair this weekend.\nRemember, this is a huge opportunity for us at Marco Kitchen Supplies.\nAttendees will have the chance to get hands-on experience with our newest small appliances and cooking utensils.\nI need all of you to arrive by 9 a.m. to set up our tables and displays.\nThe Town Council told me that parking for the fair is always difficult.\nThe public will be able to park in the municipal garages close to Mercer Square and on the riverfront, but we'll need to park in the lot near Spruce Street.\nHappily, it's a short walk to the fair site.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3f36a1f3446c7067e79fb2055ba16cc1919e802bb706217da0a63dc1aa4b8baf",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 113,
+        "legacy_word_count": 124,
+        "length_ratio": 0.911,
+        "legacy_coverage": 0.944
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "这是我们在本周末卡森维尔街市集前的最后一次准备会议。\n请记住，这对我们马可厨房用品公司来说是一个巨大的机会。\n与会者将有机会使用我们最新的小型电器和烹饪用具进行实践体验。\n我需要你们所有人都在早上 9 点前到达，以便布置我们的桌子和展品。\n镇议会告诉我，为这个市集停车总是很困难的。\n公众可以在靠近默瑟广场和河滨的市政车库停车，但我们需要在斯普鲁斯街附近的停车场停车。\n幸运的是，到市集地点步行很近。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8f4472de09671d1a3d91244f3e5f8b21932f28b4bc8d6853afe7bc700f0e6a2b"
+    }
   },
   "items": [
     {
@@ -56,23 +79,23 @@
       ],
       "answer": "A",
       "question": "What kind of event is the speaker discussing?",
-      "answer_explain": "原文依据：听力原文中提到“The town council told me that parking for the fair is always”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A local festival）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） kind of event is the speaker（说话者） discussing?",
+      "answer_explain": "正确答案：A（A local festival）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) kind of event is the speaker(说话者) discussing?",
       "choice_translations": [
-        "A：A local festival",
-        "B：An art exhibition",
-        "C：An automobile show",
-        "D：A bicycle race"
+        "A:A local festival",
+        "B:An art exhibition",
+        "C:An automobile show",
+        "D:A bicycle race"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：M",
+      "evidence": "参考听力原文：“The public will be able to park in the municipal garages close to Mercer Square and on the riverfront, but we'll need to park in the lot near Spruce Street.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：M",
+        "evidence": "参考听力原文：“The public will be able to park in the municipal garages close to Mercer Square and on the riverfront, but we'll need to park in the lot near Spruce Street.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“The town council told me that parking for the fair is always”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A local festival）。"
+        "analysis": "正确答案：A（A local festival）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 95,
       "priority": {
@@ -106,23 +129,23 @@
       ],
       "answer": "B",
       "question": "What kind of company do the listeners work for?",
-      "answer_explain": "原文依据：听力原文中提到“The town council told me that parking for the fair is always”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A cookware retailer）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） kind of company（公司） do the listeners work（工作） for?",
+      "answer_explain": "正确答案：B（A cookware retailer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) kind of company(公司) do the listeners work(工作) for?",
       "choice_translations": [
-        "A：A catering company（公司）",
-        "B：A cookware retailer",
-        "C：An art supply store",
-        "D：A parking facility"
+        "A:A catering company(公司)",
+        "B:A cookware retailer",
+        "C:An art supply store",
+        "D:A parking facility"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：M",
+      "evidence": "参考听力原文：“The public will be able to park in the municipal garages close to Mercer Square and on the riverfront, but we'll need to park in the lot near Spruce Street.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：M",
+        "evidence": "参考听力原文：“The public will be able to park in the municipal garages close to Mercer Square and on the riverfront, but we'll need to park in the lot near Spruce Street.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“The town council told me that parking for the fair is always”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A cookware retailer）。"
+        "analysis": "正确答案：B（A cookware retailer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 96,
       "priority": {
@@ -156,23 +179,23 @@
       ],
       "answer": "B",
       "question": "Look at the graphic. Where are the listeners told to park?",
-      "answer_explain": "原文依据：听力原文中提到“The town council told me that parking for the fair is always”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Parking B）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhere（哪里） are the listeners told to park?",
+      "answer_explain": "正确答案：B（Parking B）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Where(哪里) are the listeners told to park?",
       "choice_translations": [
-        "A：Parking A",
-        "B：Parking B",
-        "C：Parking C",
-        "D：Parking D"
+        "A:Parking A",
+        "B:Parking B",
+        "C:Parking C",
+        "D:Parking D"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：M",
+      "evidence": "参考听力原文：“The public will be able to park in the municipal garages close to Mercer Square and on the riverfront, but we'll need to park in the lot near Spruce Street.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：M",
+        "evidence": "参考听力原文：“The public will be able to park in the municipal garages close to Mercer Square and on the riverfront, but we'll need to park in the lot near Spruce Street.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“The town council told me that parking for the fair is always”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Parking B）。"
+        "analysis": "正确答案：B（Parking B）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 97,
       "priority": {

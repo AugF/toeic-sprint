@@ -28,38 +28,58 @@
       "asset_key": "official-9-test-1/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Doesn't the building have a backup generator?",
-    "content_translation": "中文辅助（离线预处理）：Doesn't the building have a backup generator?"
+    "transcript": "Doesn't the building have\nA. backup generator? A. 15 apartment buildings.\nB. It broke last year.\nC. Okay, I'll meet you at the front.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b200fc1d17e1e5760e767c17a6a5fd27ec7e42b5cc20987a0c45de6085d1ad46",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "这栋楼没有\nA. 备用发电机？ A. 15座公寓楼。\nB. 它去年坏了。\nC. 好的，我在前台见你。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "23c3e17047e681c3fc383df665dde53039c9fc5897b62aed1f053bc02db11f3a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Fifteen apartment buildings.",
+        "backup generator? A. 15 apartment buildings.",
         "It broke last year.",
-        "OK, I'll meet you at the front."
+        "Okay, I'll meet you at the front."
       ],
       "answer": "B",
-      "question": "Doesn't the building have a backup generator?",
+      "question": "Doesn't the building have",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Doesn't the building have a backup generator?”，自然应答是“It broke last year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It broke last year.）。",
-      "question_translation": "中文辅助（离线预处理）：Doesn't the building have a backup generator?",
+      "answer_explain": "原文依据：问句或陈述是“Doesn't the building have”，自然应答是“It broke last year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It broke last year.）。",
+      "question_translation": "这栋楼没有",
       "choice_translations": [
-        "A：Fifteen apartment buildings.",
-        "B：It broke last year.",
-        "C：OK, I'll meet you at the front."
+        "A：备用发电机? A. 15座公寓楼。",
+        "B：它去年坏了。",
+        "C：好的,我在前台见你。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Doesn't the building have a backup generator?",
+      "evidence": "参考原文第 1 段：Doesn't the building have",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Doesn't the building have a backup generator?",
+        "evidence": "参考原文第 1 段：Doesn't the building have",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Doesn't the building have a backup generator?”，自然应答是“It broke last year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It broke last year.）。"
+        "analysis": "原文依据：问句或陈述是“Doesn't the building have”，自然应答是“It broke last year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It broke last year.）。"
       },
       "item_id": 28,
       "priority": {

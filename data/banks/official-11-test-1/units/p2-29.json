@@ -42,16 +42,36 @@
       "asset_key": "official-11-test-1/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "会计部每周发报告吗？\nA：不，他们每月发一次。\nB：为期一周的假期。\nC：她是《先驱报》的记者。",
-    "content_translation": "本段听力围绕“一般疑问句”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Does the accounting department send out weekly reports?\nA. No, they do it monthly.\nB. A week-long vacation.\nC. She's a reporter for the Herald.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b95c33af398bd078d9070b0e7f79b988f8b767f1bc880c0ae397c328454ffa1f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "会计部门会发送每周报告吗？\nA. 不，他们是每月发送的。\nB. 一个星期的假期。\nC. 她是《先驱报》的记者。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "bef0aed6141cbf8eecd937220298650c5f74b03164438dec097fbda3867961c5"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "question": "Does the accounting department send out weekly reports?",
       "choices": [
         "No, they do it monthly.",
-        "A weeklong vacation.",
-        "She's a reporter for The Herald."
+        "A week-long vacation.",
+        "She's a reporter for the Herald."
       ],
       "answer": "A",
       "difficulty": "medium",
@@ -61,8 +81,8 @@
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段第 1 句：Does the accounting department send out weekly reports?",
       "choice_translations": [
-        "A：不，他们每月发一次。",
-        "B：为期一周的假期。",
+        "A：不,他们是每月发送的。",
+        "B：一个星期的假期。",
         "C：她是《先驱报》的记者。"
       ],
       "response_style": "应直接提供疑问词所要求的信息，也要留意自然的间接回答",
@@ -74,7 +94,7 @@
         "strategy": "先判断为特殊疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：问会计部是否每周发报告，答句纠正为 No, they do it monthly。 选择理由：A直接纠正频率；B和C仅与 week/reporter 表面相似。正确答案：A（No, they do it monthly.）。"
       },
-      "question_translation": "会计部每周发报告吗？",
+      "question_translation": "会计部门会发送每周报告吗?",
       "item_id": 29,
       "priority": {
         "level": "P1",

@@ -41,9 +41,32 @@
       "asset_key": "official-6-test-2/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nEw Hi, Mr. Darren. I'm Jean Potter, and this is Shirley\nDarrenth. #ItJean Potter. 2 55l₫Shirley\nOlson. We're engineers here at Shellner Motors.\nMOThanks for agreeing to this interview. ®The\nmagazine I work for has assigned me to write an article\non self-parking cars, and your company's the leader in\nthis field. So, how does it work?\nw We're constantly improving the technology, but\nessentially what happens is the driver positions the car,\nsensors scan the parking space, and the car moves\ninto that space.\nWow—® could you give me a demonstration so I can\ninclude some photos in the article?\nSEw Sure\nOwe have a car right outside. You can watch it\npark on its own.",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nEw Hi, Mr.\nDarren.\nI'm Jean Potter, and this is Shirley\nDarrenth.\n#ItJean Potter.\n2 55l₫Shirley\nOlson.\nWe're engineers here at Shellner Motors.\nMOThanks for agreeing to this interview.\n®The\nmagazine I work（工作） for has assigned me to write an article\non self-parking cars, and your company（公司）'s the leader in\nthis field.\nSo, how（如何） does it work（工作）?\nw We're constantly improving the technology, but\nessentially what（什么） happens is the driver positions the car,\nsensors scan the parking space, and the car moves\ninto that space.\nWow—® could you give me a demonstration so I can\ninclude some photos in the article?\nSEw Sure\nOwe have a car right outside.\nYou can watch it\npark on its own.",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nEw Hi, Mr.\nDarren.\nI'm Jean Potter, and this is Shirley\nDarrenth.\n#ItJean Potter.\n2 55l₫Shirley\nOlson.\nWe're engineers here at Shellner Motors.\nMOThanks for agreeing to this interview.\n®The\nmagazine I work（工作） for has assigned me to write an article\non self-parking cars, and your company（公司）'s the leader in\nthis field.\nSo, how（如何） does it work（工作）?\nw We're constantly improving the technology, but\nessentially what（什么） happens is the driver positions the car,\nsensors scan the parking space, and the car moves\ninto that space.\nWow—® could you give me a demonstration so I can\ninclude some photos in the article?\nSEw Sure\nOwe have a car right outside.\nYou can watch it\npark on its own."
+    "transcript": "Hi, Mr. Darren.\nI'm Gene Potter, and this is Shirley Olson.\nWe're engineers here at Shellner Motors.\nThanks for agreeing to this interview.\nThe magazine I work for has assigned me to write an article on self-parking cars, and your company's the leader in this field.\nSo, how does it work?\nWe're constantly improving the technology, but essentially what happens is the driver positions the car, sensors scan the parking space, and the car moves into that space.\nWow.\nCould you give me a demonstration so I can include some photos in the article?\nSure.\nWe have a car right outside.\nYou can watch it park on its own.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bd5adcc818c44a6b01fabaf14de9595be78d9e5db5f8fbd3a583b5511468d52a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 109,
+        "legacy_word_count": 118,
+        "length_ratio": 0.924,
+        "legacy_coverage": 0.89
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "嗨，达伦先生。\n我是吉恩·波特，这是雪莉·奥尔森。我们是 Shellner Motors 的工程师。\n感谢您同意接受这次采访。\n我工作的杂志让我撰写一篇关于自动泊车汽车的文章，而贵公司就是这个领域的领导者。\n那么，它是如何运作的呢？\n我们不断改进这项技术，但本质上发生的事情是：司机将车停好，传感器扫描停车位，然后汽车就会移动到那个位置。\n哇。\n您能给我演示一下吗？这样我就可以在文章中包含一些照片了？\n当然可以。\n我们外面有一辆车。\n您可以看它自己停泊。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a818cd0e37464a24fe3b8e3cdb9b0ed5d9420833a485e7409e13f6c849434d2f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +78,23 @@
       ],
       "answer": "A",
       "question": "Who is the man?",
-      "answer_explain": "原文依据：听力原文中提到“sensors scan the parking space, and the car moves”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A journalist）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） is the man（男士）?",
+      "answer_explain": "正确答案：A（A journalist）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) is the man(男士)?",
       "choice_translations": [
-        "A：A journalist",
-        "B：A taxi driver",
-        "C：A laboratory assistant",
-        "D：A parking garage attendant"
+        "A:A journalist",
+        "B:A taxi driver",
+        "C:A laboratory assistant",
+        "D:A parking garage attendant"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“We're constantly improving the technology, but essentially what happens is the driver positions the car, sensors scan the parking space, and the car moves into that space.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“We're constantly improving the technology, but essentially what happens is the driver positions the car, sensors scan the parking space, and the car moves into that space.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“sensors scan the parking space, and the car moves”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A journalist）。"
+        "analysis": "正确答案：A（A journalist）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -109,23 +132,23 @@
       ],
       "answer": "C",
       "question": "What are the speakers mainly discussing?",
-      "answer_explain": "原文依据：听力原文中提到“on self-parking cars, and your company's the leader in”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Self-parking technology for vehicles）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers mainly discussing?",
+      "answer_explain": "正确答案：C（Self-parking technology for vehicles）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the speakers mainly discussing?",
       "choice_translations": [
-        "A：Updates to environmental regulations",
-        "B：Effective magazine advertisements",
-        "C：Self-parking technology for vehicles",
-        "D：Cost estimates for a new project"
+        "A:Updates to environmental regulations",
+        "B:Effective magazine advertisements",
+        "C:Self-parking technology for vehicles",
+        "D:Cost estimates for a new project"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“We're constantly improving the technology, but essentially what happens is the driver positions the car, sensors scan the parking space, and the car moves into that space.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“We're constantly improving the technology, but essentially what happens is the driver positions the car, sensors scan the parking space, and the car moves into that space.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“on self-parking cars, and your company's the leader in”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Self-parking technology for vehicles）。"
+        "analysis": "正确答案：C（Self-parking technology for vehicles）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -163,23 +186,23 @@
       ],
       "answer": "D",
       "question": "What will the man most likely do next?",
-      "answer_explain": "原文依据：听力原文中提到“Wow—® could you give me a demonstration so I can”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Watch a demonstration）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） most likely（最可能） do next?",
+      "answer_explain": "正确答案：D（Watch a demonstration）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) most likely(最可能) do next?",
       "choice_translations": [
-        "A：Fill out an insurance form",
-        "B：Read an instruction manual",
-        "C：Complete a purchase（购买）",
-        "D：Watch a demonstration"
+        "A:Fill out an insurance form",
+        "B:Read an instruction manual",
+        "C:Complete a purchase(购买)",
+        "D:Watch a demonstration"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Could you give me a demonstration so I can include some photos in the article?”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Could you give me a demonstration so I can include some photos in the article?”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Wow—® could you give me a demonstration so I can”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Watch a demonstration）。"
+        "analysis": "正确答案：D（Watch a demonstration）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

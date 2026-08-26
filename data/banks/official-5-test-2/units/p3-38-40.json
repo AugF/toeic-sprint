@@ -41,9 +41,32 @@
       "asset_key": "official-5-test-2/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "Welcome to McDougall's Shipping Service. How can I\nhelp you?\nl'd like to have this package shipped to Toronto. It's\na coat and a shirt.\nSure. Just fill out a label with the recipient's address\nand the return address.\nl'm glad you have express shipping so I can get the\npackage there in one day. It's for my friend's birthday\ntomorrow.\nUh... express shipping takes two days.\nh, that'll have to do. How much does it cost?\nThirteen dollars and seventy-five cents. And, we\noffer a new tracking application for mobile phones. If\nyou download it, it'll notify you when your package has\nbeen delivered",
-    "transcript_translation": "中文辅助（离线预处理）：Welcome to McDougall's Shipping Service（服务）.\nHow（如何） can I\nhelp you?\nl'd like to have this package shipped to Toronto.\nIt's\na coat and a shirt.\nSure.\nJust fill out a label with the recipient's address\nand the return address.\nl'm glad you have express shipping so I can get the\npackage there in one day.\nIt's for my friend's birthday\ntomorrow.\nUh...\nexpress shipping takes two days.\nh, that'll have to do.\nHow（如何） much does it cost?\nThirteen dollars and seventy-five cents.\nAnd, we\noffer a new tracking application for mobile phones.\nIf\nyou download it, it'll notify you when（何时） your package has\nbeen delivered",
-    "content_translation": "中文辅助（离线预处理）：Welcome to McDougall's Shipping Service（服务）.\nHow（如何） can I\nhelp you?\nl'd like to have this package shipped to Toronto.\nIt's\na coat and a shirt.\nSure.\nJust fill out a label with the recipient's address\nand the return address.\nl'm glad you have express shipping so I can get the\npackage there in one day.\nIt's for my friend's birthday\ntomorrow.\nUh...\nexpress shipping takes two days.\nh, that'll have to do.\nHow（如何） much does it cost?\nThirteen dollars and seventy-five cents.\nAnd, we\noffer a new tracking application for mobile phones.\nIf\nyou download it, it'll notify you when（何时） your package has\nbeen delivered"
+    "transcript": "Welcome to McDougall's Shipping Service.\nHow can I help you?\nI'd like to have this package shipped to Toronto.\nIt's a coat and a shirt.\nSure.\nJust fill out a label with the recipient's address and the return address.\nI'm glad you have Express Shipping, so I can get the package there in one day.\nIt's for my friend's birthday tomorrow.\nUh, Express Shipping takes two days.\nOh, that'll have to do.\nHow much does it cost? $13.\n75.\nAnd we offer a new tracking application for mobile phones.\nIf you download it, it'll notify you when your package has been delivered.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "d39d5f2a10033da4bf658c573753aa18f1c369710db2cfc9fb6297c08c22cd88",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 100,
+        "legacy_word_count": 103,
+        "length_ratio": 0.971,
+        "legacy_coverage": 0.932
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "欢迎来到 McDougall's Shipping Service。\n我能帮您什么？\n我想把这个包裹寄到多伦多。\n这是一件外套和一件衬衫。\n好的。\n只需用收件人的地址和退回的地址填写一个标签即可。\n很高兴您有快递服务，这样我可以让包裹一天内送到那里。\n这是给我朋友明天生日的礼物。\n呃，快递需要两天时间。\n哦，那也行吧。\n费用是多少？13美元。\n75。\n我们还提供了一个用于手机的新追踪应用程序。\n如果您下载它，当您的包裹送达时它会通知您所在的位置。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b02b4020eae33e6219aaf65b8f92e308c4a651f7fd63eb41f7145b14c75371f3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +78,23 @@
       ],
       "answer": "A",
       "question": "What does the woman want to ship?",
-      "answer_explain": "原文依据：听力原文中提到“l'm glad you have express shipping so I can get the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Some clothes）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） want to ship?",
+      "answer_explain": "正确答案：A（Some clothes）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) want to ship?",
       "choice_translations": [
-        "A：Some clothes",
-        "B：Some books",
-        "C：Some toys",
-        "D：Some artwork"
+        "A:Some clothes",
+        "B:Some books",
+        "C:Some toys",
+        "D:Some artwork"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Welcome to McDougall's Shipping Service. How can I",
+      "evidence": "参考听力原文：“I'm glad you have Express Shipping, so I can get the package there in one day.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Welcome to McDougall's Shipping Service. How can I",
+        "evidence": "参考听力原文：“I'm glad you have Express Shipping, so I can get the package there in one day.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“l'm glad you have express shipping so I can get the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Some clothes）。"
+        "analysis": "正确答案：A（Some clothes）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -109,23 +132,23 @@
       ],
       "answer": "B",
       "question": "Why does the man say, \"express shipping takes two days\"?",
-      "answer_explain": "原文依据：听力原文中提到“express shipping takes two days.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To correct a misunderstanding）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） say, \"express shipping takes two days\"?",
+      "answer_explain": "正确答案：B（To correct a misunderstanding）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the man(男士) say, \"express shipping takes two days\"?",
       "choice_translations": [
-        "A：To recommend a service（服务）",
-        "B：To correct a misunderstanding",
-        "C：To complain about a cost",
-        "D：To urge staff to work（工作） quickly"
+        "A:To recommend a service(服务)",
+        "B:To correct a misunderstanding",
+        "C:To complain about a cost",
+        "D:To urge staff to work(工作) quickly"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Welcome to McDougall's Shipping Service. How can I",
+      "evidence": "参考听力原文：“Uh, Express Shipping takes two days.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Welcome to McDougall's Shipping Service. How can I",
+        "evidence": "参考听力原文：“Uh, Express Shipping takes two days.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“express shipping takes two days.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To correct a misunderstanding）。"
+        "analysis": "正确答案：B（To correct a misunderstanding）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -163,23 +186,23 @@
       ],
       "answer": "D",
       "question": "What does the man suggest the woman do?",
-      "answer_explain": "原文依据：听力原文中提到“l'm glad you have express shipping so I can get the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Demonstrate a procedure）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） suggest（表明/建议） the woman（女士） do?",
+      "answer_explain": "正确答案：D（Demonstrate a procedure）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) suggest(表明/建议) the woman(女士) do?",
       "choice_translations": [
-        "A：Confirm travel plans",
-        "B：Hold a press conference",
-        "C：Send an e-mail",
-        "D：Demonstrate a procedure"
+        "A:Confirm travel plans",
+        "B:Hold a press conference",
+        "C:Send an e-mail",
+        "D:Demonstrate a procedure"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Welcome to McDougall's Shipping Service. How can I",
+      "evidence": "参考听力原文：“I'm glad you have Express Shipping, so I can get the package there in one day.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Welcome to McDougall's Shipping Service. How can I",
+        "evidence": "参考听力原文：“I'm glad you have Express Shipping, so I can get the package there in one day.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“l'm glad you have express shipping so I can get the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Demonstrate a procedure）。"
+        "analysis": "正确答案：D（Demonstrate a procedure）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

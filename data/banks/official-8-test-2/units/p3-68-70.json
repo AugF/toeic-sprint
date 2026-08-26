@@ -40,9 +40,32 @@
       "asset_key": "official-8-test-2/audio/part3/q068-070.mp3",
       "exists": true
     },
-    "transcript": "and bar graph.\nIw Hi, Jae-Min. ®| know you missed the meeting\nyesterday to tour the new factory, but there was a\npresentation on the quarterly report. ® Did you have a\nchance to review it?\nm Yes, I did! It was a great report!\nw I agree. ®We're producing more automobiles than ever\nbefore.\nTUET.\nm OI'm especially happy that we hit a peak of 387,000\nunits.\nw Yes, that was the highlight of the presentation. ®| was\nalso encouraged because production costs should fall\nsignificantly next year. ® Our raw material suppliers are\nlowering prices.\nUnits Produced per Month\nACCOSMAR\nin hundreds of thousands)\nF##(St)\nApril\nMay\nJune\nJuly\nF\nA\nA\nF",
-    "transcript_translation": "中文辅助（离线预处理）：and bar graph.\nIw Hi, Jae-Min.\n®| know you missed the meeting（会议）\nyesterday to tour the new factory, but there was a\npresentation on the quarterly report.\n® Did you have a\nchance to review it?\nm Yes, I did!\nIt was a great report!\nw I agree.\n®We're producing more automobiles than ever\nbefore.\nTUET.\nm OI'm especially happy that we hit a peak of 387,000\nunits.\nw Yes, that was the highlight of the presentation.\n®| was\nalso encouraged because production costs should fall\nsignificantly next year.\n® Our raw material suppliers are\nlowering prices.\nUnits Produced per Month\nACCOSMAR\nin hundreds of thousands)\nF##(St)\nApril\nMay\nJune\nJuly\nF\nA\nA\nF",
-    "content_translation": "中文辅助（离线预处理）：and bar graph.\nIw Hi, Jae-Min.\n®| know you missed the meeting（会议）\nyesterday to tour the new factory, but there was a\npresentation on the quarterly report.\n® Did you have a\nchance to review it?\nm Yes, I did!\nIt was a great report!\nw I agree.\n®We're producing more automobiles than ever\nbefore.\nTUET.\nm OI'm especially happy that we hit a peak of 387,000\nunits.\nw Yes, that was the highlight of the presentation.\n®| was\nalso encouraged because production costs should fall\nsignificantly next year.\n® Our raw material suppliers are\nlowering prices.\nUnits Produced per Month\nACCOSMAR\nin hundreds of thousands)\nF##(St)\nApril\nMay\nJune\nJuly\nF\nA\nA\nF"
+    "transcript": "Hi, J-Min.\nI know you missed the meeting yesterday to tour the new factory, but there was a presentation on the quarterly report.\nDid you have a chance to review it?\nYes, I did.\nIt was a great report.\nI agree.\nWe're producing more automobiles than ever before.\nI'm especially happy that we hit a peak of 387,000 units.\nYes, that was the highlight of the presentation.\nI was also encouraged because production costs should fall significantly next year.\nOur raw material suppliers are lowering prices.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d41a4240165bf29f18060905f5c8c6deab0c3f90c9f0846062b62aa22e7342b0",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part3/q068-070.mp3",
+      "metrics": {
+        "word_count": 88,
+        "legacy_word_count": 104,
+        "length_ratio": 0.846,
+        "legacy_coverage": 0.808
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，J-Min。\n我知道你昨天错过了参观新工厂的会议，但关于季度报告的演示已经进行了。\n你有机会回顾了吗？\n是的，我有。\n这是一份很棒的报告。\n我同意。\n我们的汽车产量比以往任何时候都多。\n我特别高兴我们达到了387,000辆的峰值。\n是的，这是演示的亮点。\n我也感到鼓舞，因为明年生产成本应该会显著下降。\n我们的原材料供应商正在降低价格。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "603997f86670152a0edf9a18106f049115188dae218ad89ba81d12ea2f74b31a"
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "A",
       "question": "What does the woman ask the man about?",
-      "answer_explain": "原文依据：听力原文中提到“presentation on the quarterly report.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A quarterly report）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） ask the man（男士） about?",
+      "answer_explain": "正确答案：A（A quarterly report）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) ask the man(男士) about?",
       "choice_translations": [
-        "A：A quarterly report",
-        "B：A production schedule（日程）",
-        "C：An expense statement",
-        "D：A factory location"
+        "A:A quarterly report",
+        "B:A production schedule(日程)",
+        "C:An expense statement",
+        "D:A factory location"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：and bar graph.",
+      "evidence": "参考听力原文：“I know you missed the meeting yesterday to tour the new factory, but there was a presentation on the quarterly report.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：and bar graph.",
+        "evidence": "参考听力原文：“I know you missed the meeting yesterday to tour the new factory, but there was a presentation on the quarterly report.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“presentation on the quarterly report.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A quarterly report）。"
+        "analysis": "正确答案：A（A quarterly report）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 68,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "B",
       "question": "Look at the graphic. What month is the man referring to?",
-      "answer_explain": "原文依据：听力原文中提到“May”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（May）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhat（什么） month is the man（男士） referring to?",
+      "answer_explain": "正确答案：B（May）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. What(什么) month is the man(男士) referring to?",
       "choice_translations": [
-        "A：April",
-        "B：May",
-        "C：June",
-        "D：July"
+        "A:April",
+        "B:May",
+        "C:June",
+        "D:July"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 16 段：Units Produced per Month",
+      "evidence": "参考听力原文：“I know you missed the meeting yesterday to tour the new factory, but there was a presentation on the quarterly report.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 16 段：Units Produced per Month",
+        "evidence": "参考听力原文：“I know you missed the meeting yesterday to tour the new factory, but there was a presentation on the quarterly report.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“May”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（May）。"
+        "analysis": "正确答案：B（May）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 69,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "C",
       "question": "Why is the woman optimistic about next year?",
-      "answer_explain": "原文依据：听力原文中提到“also encouraged because production costs should fall”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Raw material costs will fall.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the woman（女士） optimistic about next year?",
+      "answer_explain": "正确答案：C（Raw material costs will fall.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the woman(女士) optimistic about next year?",
       "choice_translations": [
-        "A：A new factory will open.",
-        "B：Demand is expected to increase.",
-        "C：Raw material costs will fall.",
-        "D：A new product will be available（可用的）."
+        "A:A new factory will open.",
+        "B:Demand is expected to increase.",
+        "C:Raw material costs will fall.",
+        "D:A new product will be available(可用的)."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：and bar graph.",
+      "evidence": "参考听力原文：“I was also encouraged because production costs should fall significantly next year.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：and bar graph.",
+        "evidence": "参考听力原文：“I was also encouraged because production costs should fall significantly next year.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“also encouraged because production costs should fall”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Raw material costs will fall.）。"
+        "analysis": "正确答案：C（Raw material costs will fall.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 70,
       "priority": {

@@ -46,9 +46,32 @@
       "asset_key": "official-10-test-1/images/part3/q062-064.jpg",
       "exists": true
     },
-    "transcript": "and receipt.\nWelcome to Blue Brook Outdoor Supplies. How can I\nBlue\nhelp you?\nw Ol'd like to return these binoculars. I bought them\nyesterday, but it turns out my husband had already\nordered some online.\nIM No problem. ®Do you have your receipt?\nw Yes, but ®I also wanted to purchase a new water\nbottle and a few other things.\nLIM OK, I can hold on to these binoculars for you while\nb'be\nyou shop if you like. ®When you're ready, you can\njust come back here, and I'll process the exchange.\nTE5.\nBlue Brook\nOutdoor Supplies\nReceipt\nJuly 10\nBinoculars\nBatteries\nUtensils\nHiking poles\nTotal",
-    "transcript_translation": "和收据。\n欢迎光临 Blue Brook Outdoor Supplies。我能帮您什么忙？\nw：我想退掉这对双筒望远镜。我是昨天买的，但结果我丈夫已经在线订购了。\nIM：没问题。您有收据吗？\nw：有，但我还想买一个新水瓶和一些其他东西。\nLIM：好的，我可以帮您保管这对双筒望远镜，等您逛逛。®如果您准备好了，可以回来找我，我会为您办理换货手续。\nBlue Brook Outdoor Supplies\n收据\n7月10日\n双筒望远镜\n电池\n餐具\n徒步登山杖\n总计",
-    "content_translation": "和收据。\n欢迎光临 Blue Brook Outdoor Supplies。我能帮您什么忙？\nw：我想退掉这对双筒望远镜。我是昨天买的，但结果我丈夫已经在线订购了。\nIM：没问题。您有收据吗？\nw：有，但我还想买一个新水瓶和一些其他东西。\nLIM：好的，我可以帮您保管这对双筒望远镜，等您逛逛。®如果您准备好了，可以回来找我，我会为您办理换货手续。\nBlue Brook Outdoor Supplies\n收据\n7月10日\n双筒望远镜\n电池\n餐具\n徒步登山杖\n总计"
+    "transcript": "Welcome to Blue Brook Outdoor Supplies.\nHow can I help you?\nI'd like to return these binoculars.\nI bought them yesterday, but it turns out my husband had already ordered some online.\nNo problem.\nDo you have your receipt?\nYes, but I also wanted to purchase a new water bottle and a few other things.\nOkay, I can hold on to these binoculars for you while you shop if you like.\nWhen you're ready, you can just come back here and I'll process the exchange.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "037069b999f887ef443d0a4f0b5162cd2289951583a5394b113a3e629cadfbfc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part3/q062-064.mp3",
+      "metrics": {
+        "word_count": 87,
+        "legacy_word_count": 83,
+        "length_ratio": 1.048,
+        "legacy_coverage": 0.976
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "欢迎来到 Blue Brook Outdoor Supplies。\n我能帮您什么？\n我想退回这些双筒望远镜。\n我是昨天买的，但结果我丈夫已经在线订购了一些了。\n没问题。\n您有收据吗？\n是的，但我还想购买一个新水瓶和一些其他东西。\n好的，如果您愿意，我可以帮您保管这些双筒望远镜，直到您购物完。\n等您准备好了，您可以回来这里，我会处理退换货的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9a1c9cbf31828eb768646cd0d31493bcf58432f1cb07005208b782372d9b0d00"
+    }
   },
   "items": [
     {
@@ -60,23 +83,23 @@
       ],
       "answer": "A",
       "question": "Look at the graphic. What is the price of the item the speakers are mainly discussing?",
-      "answer_explain": "原文依据：听力原文中提到“just come back here, and I'll process the exchange.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（$30）。",
-      "question_translation": "看图表。说话者们主要讨论的物品的价格是多少？",
+      "answer_explain": "正确答案：A（$30）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "看图表。说话者们主要讨论的物品的价格是多少?",
       "choice_translations": [
-        "A：$30",
-        "B：$7",
-        "C：$20",
-        "D：$65"
+        "A:$30",
+        "B:$7",
+        "C:$20",
+        "D:$65"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：and receipt.",
+      "evidence": "参考听力原文：“I bought them yesterday, but it turns out my husband had already ordered some online.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：and receipt.",
+        "evidence": "参考听力原文：“I bought them yesterday, but it turns out my husband had already ordered some online.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“just come back here, and I'll process the exchange.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（$30）。"
+        "analysis": "正确答案：A（$30）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 62,
       "priority": {
@@ -114,23 +137,23 @@
       ],
       "answer": "D",
       "question": "What does the man ask the woman for?",
-      "answer_explain": "原文依据：听力原文中提到“LIM OK, I can hold on to these binoculars for you while”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A document）。",
-      "question_translation": "男士向女士要什么？",
+      "answer_explain": "正确答案：D（A document）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士向女士要什么?",
       "choice_translations": [
-        "A：一个电子邮件地址",
-        "B：一个水瓶",
-        "C：一个袋子",
-        "D：一份文件"
+        "A:一个电子邮件地址",
+        "B:一个水瓶",
+        "C:一个袋子",
+        "D:一份文件"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 1 段：and receipt.",
+      "evidence": "参考听力原文：“I bought them yesterday, but it turns out my husband had already ordered some online.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 1 段：and receipt.",
+        "evidence": "参考听力原文：“I bought them yesterday, but it turns out my husband had already ordered some online.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“LIM OK, I can hold on to these binoculars for you while”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A document）。"
+        "analysis": "正确答案：D（A document）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 63,
       "priority": {
@@ -168,23 +191,23 @@
       ],
       "answer": "B",
       "question": "What will the woman most likely do next?",
-      "answer_explain": "原文依据：听力原文中提到“LIM OK, I can hold on to these binoculars for you while”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Shop for some items）。",
-      "question_translation": "女士接下来最有可能做什么？",
+      "answer_explain": "正确答案：B（Shop for some items）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士接下来最有可能做什么?",
       "choice_translations": [
-        "A：在网上查找一些信息",
-        "B：逛一些商品",
-        "C：去另一家商店",
-        "D：打电话给她丈夫"
+        "A:在网上查找一些信息",
+        "B:逛一些商品",
+        "C:去另一家商店",
+        "D:打电话给她丈夫"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：and receipt.",
+      "evidence": "参考听力原文：“I bought them yesterday, but it turns out my husband had already ordered some online.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：and receipt.",
+        "evidence": "参考听力原文：“I bought them yesterday, but it turns out my husband had already ordered some online.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“LIM OK, I can hold on to these binoculars for you while”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Shop for some items）。"
+        "analysis": "正确答案：B（Shop for some items）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 64,
       "priority": {

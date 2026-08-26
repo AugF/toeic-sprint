@@ -36,37 +36,59 @@
       "asset_key": "official-4-test-1/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nw\nMy name is Cindy Dawson and ®1'm a trainer at\nMcLeland’s Gym. Your management team asked me to\ntalk to you about the wellness program we're offering to <\nfull-time employees. For only fifteen dollars a month you’\nhave full access to our facility. ® You must join the fitness\ncenter by May thirtieth in order to take advantage of thes\nintroductory rates. I’m passing around a sign-up sheet.\nlF you're interested, please write your name and e-mail\naddress so | can send you information.",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nw\nMy name is Cindy Dawson and ®1'm a trainer at\nMcLeland’s Gym.\nYour management team asked me to\ntalk to you about the wellness program we're offering to <\nfull-time employees.\nFor only fifteen dollars a month you’\nhave full access to our facility.\n® You must join the fitness\ncenter by May thirtieth in order（订单） to take advantage of thes\nintroductory rates.\nI’m passing around a sign-up sheet.\nlF you're interested, please（请） write your name and e-mail\naddress so | can send you information（信息）.",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nw\nMy name is Cindy Dawson and ®1'm a trainer at\nMcLeland’s Gym.\nYour management team asked me to\ntalk to you about the wellness program we're offering to <\nfull-time employees.\nFor only fifteen dollars a month you’\nhave full access to our facility.\n® You must join the fitness\ncenter by May thirtieth in order（订单） to take advantage of thes\nintroductory rates.\nI’m passing around a sign-up sheet.\nlF you're interested, please（请） write your name and e-mail\naddress so | can send you information（信息）."
+    "transcript": "My name is Cindy Dawson and I'm a trainer at MacLeland's Gym.\nYour management team asked me to talk to you about the wellness program we're offering to all full-time employees.\nFor only $15 a month, you'll have full access to our facility.\nYou must join the fitness center by May 30th in order to take advantage of these introductory rates.\nI'm passing around a sign-up sheet.\nIf you're interested, please write your name and email address so I can send you information.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9591bef6e17b702a7cf3b9cf715c0f8d7cb1b032ba67fd47bbe11261b87d0078",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 82,
+        "legacy_word_count": 85,
+        "length_ratio": 0.965,
+        "legacy_coverage": 0.871
+      }
+    },
+    "transcript_translation": "我叫 Cindy Dawson，是 MacLeland's Gym 的训练师。\n你们的管理团队让我来和大家谈谈我们为所有全职员工提供的健康计划。\n只需每月 15 美元，您就可以充分使用我们的设施。\n您必须在 5 月 30 日之前加入健身中心，才能享受这些介绍性价格。\n我正在分发一份报名表。\n如果您有兴趣，请写下您的姓名和电子邮件地址，这样我可以给您发送信息。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ff870eebb7495e6bd2b4aed99b36fef0a27663b63d74f663363c46c70d3ccea7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Ata fitness center",
+        "At a fitness center",
         "At a medical clinic",
         "At a bank",
         "At a sporting goods store"
       ],
       "answer": "A",
       "question": "Where does the speaker work?",
-      "answer_explain": "原文依据：听力原文中提到“® You must join the fitness”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Ata fitness center）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the speaker（说话者） work（工作）?",
+      "answer_explain": "正确答案：A（At a fitness center）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the speaker(说话者) work(工作)?",
       "choice_translations": [
-        "A：Ata fitness center",
-        "B：At a medical clinic",
-        "C：At a bank",
-        "D：At a sporting goods store"
+        "A:At a fitness center",
+        "B:At a medical clinic",
+        "C:At a bank",
+        "D:At a sporting goods store"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“You must join the fitness center by May 30th in order to take advantage of these introductory rates.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“You must join the fitness center by May 30th in order to take advantage of these introductory rates.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® You must join the fitness”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Ata fitness center）。"
+        "analysis": "正确答案：A（At a fitness center）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -93,29 +115,29 @@
     {
       "choices": [
         "Tickets to an event",
-        "Acomplimentary gift",
-        "Adiscounted rate",
+        "A complimentary gift",
+        "A discounted rate",
         "Free consultations"
       ],
       "answer": "C",
       "question": "What is available until May 30?",
-      "answer_explain": "原文依据：听力原文中提到“center by May thirtieth in order to take advantage of thes”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Adiscounted rate）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is available（可用的） until May 30?",
+      "answer_explain": "正确答案：C（A discounted rate）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is available(可用的) until May 30?",
       "choice_translations": [
-        "A：Tickets to an event",
-        "B：Acomplimentary gift",
-        "C：Adiscounted rate",
-        "D：Free consultations"
+        "A:Tickets to an event",
+        "B:A complimentary gift",
+        "C:A discounted rate",
+        "D:Free consultations"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“You must join the fitness center by May 30th in order to take advantage of these introductory rates.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“You must join the fitness center by May 30th in order to take advantage of these introductory rates.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“center by May thirtieth in order to take advantage of thes”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Adiscounted rate）。"
+        "analysis": "正确答案：C（A discounted rate）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -143,28 +165,28 @@
       "choices": [
         "Instructor evaluations",
         "Payment information",
-        "Arevised schedule",
+        "A revised schedule",
         "Contact details"
       ],
       "answer": "D",
       "question": "What does the speaker request?",
-      "answer_explain": "原文依据：听力原文中提到“talk to you about the wellness program we're offering to <”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Contact details）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） request?",
+      "answer_explain": "正确答案：D（Contact details）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) request?",
       "choice_translations": [
-        "A：Instructor evaluations",
-        "B：Payment information（信息）",
-        "C：Arevised schedule（日程）",
-        "D：Contact details"
+        "A:Instructor evaluations",
+        "B:Payment information(信息)",
+        "C:A revised schedule(日程)",
+        "D:Contact details"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“Your management team asked me to talk to you about the wellness program we're offering to all full-time employees.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“Your management team asked me to talk to you about the wellness program we're offering to all full-time employees.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“talk to you about the wellness program we're offering to <”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Contact details）。"
+        "analysis": "正确答案：D（Contact details）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

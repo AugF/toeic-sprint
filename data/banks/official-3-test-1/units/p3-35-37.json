@@ -36,37 +36,59 @@
       "asset_key": "official-3-test-1/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nE& w Thanks, Frank and Ming, for coming by on such short\nnotice. | just met with our chief financial officer and\nwe need to reduce our company’s costs. Our home\nappliances are selling well, but production costs are\nstill too high.\nHmm... @what about outsourcing some operations?\nIf we hire someone else to do things like warehousing\nand delivery, it could cut down on our expenses. What\ndo you think, Ming?\nagree, Frank. It sounds like something we should\nconsider. Tell you what... ®| can research some\ncompanies and put together a list of names for\nThursday. Then we can start compiling some numbers.",
-    "transcript_translation": "有三位说话者。\nE& w 谢谢你，弗兰克和明，这么短时间能过来。我刚和我首席财务官开完会，我们需要降低公司的成本。我们的家用电器卖得很好，但生产成本仍然太高。\n嗯……那外包一些业务怎么样？如果我们雇别人来做仓储和配送等事情，可能会削减我们的开支。你觉得呢，明？\n同意，弗兰克。听起来是我们应该考虑的事情。这样吧……我可以研究一些公司，并在周四准备一份名单。然后我们可以开始整理一些数字。",
-    "content_translation": "有三位说话者。\nE& w 谢谢你，弗兰克和明，这么短时间能过来。我刚和我首席财务官开完会，我们需要降低公司的成本。我们的家用电器卖得很好，但生产成本仍然太高。\n嗯……那外包一些业务怎么样？如果我们雇别人来做仓储和配送等事情，可能会削减我们的开支。你觉得呢，明？\n同意，弗兰克。听起来是我们应该考虑的事情。这样吧……我可以研究一些公司，并在周四准备一份名单。然后我们可以开始整理一些数字。"
+    "transcript": "Thanks, Frank and Ming, for coming by on such short notice.\nI just met with our chief financial officer and we need to reduce our company's costs.\nOur home appliances are selling well, but production costs are still too high.\nHmm.\nWhat about outsourcing some operations?\nIf we hire someone else to do things like warehousing and delivery, it could cut down on our expenses.\nWhat do you think, Ming?\nI agree, Frank.\nIt sounds like something we should consider.\nTell you what, I can research some companies and put together a list of names for Thursday.\nThen we can start compiling some numbers.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c87f388d3a6e6a3347a394f9e31c0a2ee723d60079e1841439dac07f2e4b503c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 104,
+        "legacy_word_count": 105,
+        "length_ratio": 0.99,
+        "legacy_coverage": 0.971
+      }
+    },
+    "transcript_translation": "感谢 Frank 和 Ming，能在这么短的时间内过来。\n我刚和我们的首席财务官开完会，我们需要降低公司的成本。\n我们的家用电器卖得很好，但生产成本仍然太高。\n嗯。\n关于外包一些业务怎么样？\n如果我们雇别人来做仓储和配送之类的事情，可能会削减我们的开支。\n你觉得呢，Ming？\n我同意，Frank。\n听起来是我们应该考虑的事情。\n这样吧，我可以研究一些公司，并在周四准备一份名单。\n然后我们可以开始整理一些数字了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8a07159871f7e9af65bb9dd021e313162efb8019fe5c13f5db8849c2391453ba"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Reduce the cost of operations 4",
+        "Reduce the cost of operations",
         "Organize a team-building event",
         "Open a second warehouse",
         "Try an advertising strategy"
       ],
       "answer": "A",
-      "question": "What does the woman want to do? 7",
-      "answer_explain": "原文依据：听力原文中提到“we need to reduce our company’s costs.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Reduce the cost of operations 4）。",
-      "question_translation": "女士想做什么？",
+      "question": "What does the woman want to do?",
+      "answer_explain": "正确答案：A（Reduce the cost of operations）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士想做什么?",
       "choice_translations": [
-        "A：降低运营成本",
-        "B：组织团队建设活动",
-        "C：开设第二个仓库",
-        "D：尝试广告策略"
+        "A:降低运营成本",
+        "B:组织团队建设活动",
+        "C:开设第二个仓库",
+        "D:尝试广告策略"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“I just met with our chief financial officer and we need to reduce our company's costs.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“I just met with our chief financial officer and we need to reduce our company's costs.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“we need to reduce our company’s costs.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Reduce the cost of operations 4）。"
+        "analysis": "正确答案：A（Reduce the cost of operations）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -92,30 +114,30 @@
     },
     {
       "choices": [
-        "Hosting a business seminar 4",
+        "Hosting a business seminar",
         "Reducing overtime hours",
         "Hiring an outside company",
         "Promoting a product on television"
       ],
       "answer": "C",
       "question": "What solution does Frank propose?",
-      "answer_explain": "原文依据：听力原文中提到“we need to reduce our company’s costs.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Hiring an outside company）。",
-      "question_translation": "弗兰克提出了什么解决方案？",
+      "answer_explain": "正确答案：C（Hiring an outside company）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "弗兰克提出了什么解决方案?",
       "choice_translations": [
-        "A：举办商业研讨会",
-        "B：减少加班时间",
-        "C：聘请外部公司",
-        "D：在电视上推广产品"
+        "A:举办商业研讨会",
+        "B:减少加班时间",
+        "C:聘请外部公司",
+        "D:在电视上推广产品"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：E& w Thanks, Frank and Ming, for coming by on such short",
+      "evidence": "参考听力原文：“Thanks, Frank and Ming, for coming by on such short notice.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：E& w Thanks, Frank and Ming, for coming by on such short",
+        "evidence": "参考听力原文：“Thanks, Frank and Ming, for coming by on such short notice.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“we need to reduce our company’s costs.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Hiring an outside company）。"
+        "analysis": "正确答案：C（Hiring an outside company）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -141,30 +163,30 @@
     },
     {
       "choices": [
-        "Some corrected numbers .",
-        "Some meeting notes 4",
-        "Alist of companies",
+        "Some corrected numbers",
+        "Some meeting notes",
+        "A list of companies",
         "A floor plan"
       ],
       "answer": "C",
       "question": "What will Ming prepare for Thursday?",
-      "answer_explain": "原文依据：听力原文中提到“companies and put together a list of names for”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Alist of companies）。",
-      "question_translation": "明周四将准备什么？",
+      "answer_explain": "正确答案：C（A list of companies）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "明周四将准备什么?",
       "choice_translations": [
-        "A：一些更正后的数字",
-        "B：一些会议记录",
-        "C：一家公司的名单",
-        "D：一张平面图"
+        "A:一些更正后的数字",
+        "B:一些会议记录",
+        "C:一家公司的名单",
+        "D:一张平面图"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 14 段：Thursday. Then we can start compiling some numbers.",
+      "evidence": "参考听力原文：“Tell you what, I can research some companies and put together a list of names for Thursday.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 14 段：Thursday. Then we can start compiling some numbers.",
+        "evidence": "参考听力原文：“Tell you what, I can research some companies and put together a list of names for Thursday.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“companies and put together a list of names for”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Alist of companies）。"
+        "analysis": "正确答案：C（A list of companies）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

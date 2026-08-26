@@ -28,8 +28,28 @@
       "asset_key": "official-7-test-2/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：*Kw Do you like the new office（办公室） chairs?\n•M",
-    "content_translation": "中文辅助（离线预处理）：*Kw Do you like the new office（办公室） chairs?\n•M"
+    "transcript": "Do you like the new office chairs?\nA. They're not worth the expense.\nB. From an advertisement in the newspaper.\nC. He's the president of the company.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2739d6e74e04df29340e285deb6eae99d2b03be453fb4cb11499459f4818a127",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "你喜欢新的办公室椅子吗？\nA. 它们不值这个开销。\nB. 从报纸上的广告里。\nC. 他是公司的总裁。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "47a54d54e385892839d017fb7e8490335ebedd2d9e7d83410f59410b01dd9f00"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "He's the president of the company."
       ],
       "answer": "A",
-      "question": "*Kw Do you like the new office chairs? •M",
+      "question": "Do you like the new office chairs?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“*Kw Do you like the new office chairs? •M”，自然应答是“They're not worth the expense.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（They're not worth the expense.）。",
-      "question_translation": "中文辅助（离线预处理）：*Kw Do you like the new office（办公室） chairs?\n•M",
+      "answer_explain": "原文依据：问句或陈述是“Do you like the new office chairs?”，自然应答是“They're not worth the expense.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（They're not worth the expense.）。",
+      "question_translation": "你喜欢新的办公室椅子吗?",
       "choice_translations": [
-        "A：They're not worth the expense.",
-        "B：From an advertisement in the newspaper.",
-        "C：He's the president of the company（公司）."
+        "A：它们不值这个开销。",
+        "B：从报纸上的广告里。",
+        "C：他是公司的总裁。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：*Kw Do you like the new office chairs? •M",
+      "evidence": "参考原文第 1 段：Do you like the new office chairs?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：*Kw Do you like the new office chairs? •M",
+        "evidence": "参考原文第 1 段：Do you like the new office chairs?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“*Kw Do you like the new office chairs? •M”，自然应答是“They're not worth the expense.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（They're not worth the expense.）。"
+        "analysis": "原文依据：问句或陈述是“Do you like the new office chairs?”，自然应答是“They're not worth the expense.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（They're not worth the expense.）。"
       },
       "item_id": 13,
       "priority": {

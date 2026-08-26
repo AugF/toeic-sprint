@@ -26,14 +26,34 @@
       "asset_key": "official-12-test-2/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：When（何时） are you interviewing the new art director?",
-    "content_translation": "中文辅助（离线预处理）：When（何时） are you interviewing the new art director?"
+    "transcript": "When are you interviewing the new art director?\nA. Thank you for the donation.\nB. On the 15th of June.\nC. The gallery on George Street.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1828b21a3bff141981c31fb67275426c593f39fc9eaf3bbce8b7e44dada0e6cb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "您什么时候面试新的艺术总监？\nA. 感谢您的捐赠。\nB. 在6月15日。\nC. 地理街的画廊。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "af5499cb223da6b3074dd6b88ac8f8b0a517112c8aaf706c9b197a3746c9835d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Thank you for the donation.",
-        "On the fifteenth of June.",
+        "On the 15th of June.",
         "The gallery on George Street."
       ],
       "answer": "B",
@@ -41,12 +61,12 @@
       "difficulty": "easy",
       "topic": "时间询问",
       "keywords": "when time response",
-      "answer_explain": "原文依据：问句或陈述是“When are you interviewing the new art director?”，自然应答是“On the fifteenth of June.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（On the fifteenth of June.）。",
-      "question_translation": "中文辅助（离线预处理）：When（何时） are you interviewing the new art director?",
+      "answer_explain": "原文依据：问句或陈述是“When are you interviewing the new art director?”，自然应答是“On the 15th of June.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（On the 15th of June.）。",
+      "question_translation": "您什么时候面试新的艺术总监?",
       "choice_translations": [
-        "A：Thank（感谢） you for the donation.",
-        "B：On the fifteenth of June.",
-        "C：The gallery on George Street."
+        "A：感谢您的捐赠。",
+        "B：在6月15日。",
+        "C：地理街的画廊。"
       ],
       "question_type": "时间疑问句",
       "evidence": "参考原文第 1 段：When are you interviewing the new art director?",
@@ -57,7 +77,7 @@
         "question_type": "时间疑问句",
         "evidence": "参考原文第 1 段：When are you interviewing the new art director?",
         "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“When are you interviewing the new art director?”，自然应答是“On the fifteenth of June.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（On the fifteenth of June.）。"
+        "analysis": "原文依据：问句或陈述是“When are you interviewing the new art director?”，自然应答是“On the 15th of June.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（On the 15th of June.）。"
       },
       "item_id": 10,
       "priority": {

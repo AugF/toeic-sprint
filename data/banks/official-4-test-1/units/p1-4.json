@@ -32,15 +32,35 @@
       "asset_key": "official-4-test-1/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. Some drawers have been opened.\nB. Office supplies have been placed on a chair.\nC. A work area is being cleaned.\nD. Some boxes are stacked above the cabinets.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "434d7a395334e26963531d10129b052b48d0d4a0733ec0c2b3b06ea394664b23",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 41
+      }
+    },
+    "transcript_translation": "A. 有几个抽屉被打开了。\nB. 办公用品放在椅子上。\nC. 一个工作区域正在清理。\nD. 一些箱子堆在柜子上方。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d817cba8f8695f8c47ed72dd7949027b2770cf4db8188a6a64ba8ded09d02f5a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Some drawers have been opened.",
         "Office supplies have been placed on a chair.",
-        "Awork area is being cleaned.",
+        "A work area is being cleaned.",
         "Some boxes are stacked above the cabinets."
       ],
       "answer": "D",
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some boxes are stacked above the cabinets.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（Some boxes are stacked above the cabinets.）。",
       "choice_translations": [
-        "A：Some drawers have been opened.",
-        "B：Office（办公室） supplies have been placed on a chair.",
-        "C：Awork area is being cleaned.",
-        "D：Some boxes are stacked above the cabinets."
+        "A：有几个抽屉被打开了。",
+        "B：办公用品放在椅子上。",
+        "C：一个工作区域正在清理。",
+        "D：一些箱子堆在柜子上方。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-4-test-1/p1-4/4"
+      "item_key": "official-4-test-1/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

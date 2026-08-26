@@ -37,9 +37,32 @@
       "asset_key": "official-7-test-2/audio/part4/q098-100.mp3",
       "exists": true
     },
-    "transcript": "a meeting and schedule.\nOK, ®next I want to discuss some of the current marketing\ncampaigns we're working on. lt's great that we're handling\nthe marketing for so many companies, but it does require\ncareful planning. ®Here's the schedule of the client meetings\ncoming up in August. As you can see, one of them is with our\nnewest client, the Bedham Corporation. ® This is one of the\nlargest accounts we've handled, so everyone should be here\nfor that meeting. To familiarize you with this company,\nOl've prepared a packet of information about their history\nand major products. The packets are at the back of the room.\nPlease be sure to pick up a packet on your way out.\nUpcoming Client Meetings\nAugust 3\nChung Associates\nAugust 14\nBedham Corporation\nAugust 18\nMarsten Company\nAugust 24\nSatero Construction\nChung Associates #\nBedham 7t\nA188\nMarstentt",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议） and schedule（日程）.\nOK, ®next I want to discuss some of the current marketing\ncampaigns we're working on.\nlt's great that we're handling\nthe marketing for so many companies, but it does require\ncareful planning.\n®Here's the schedule（日程） of the client meetings\ncoming up in August.\nAs you can see, one of them is with our\nnewest client, the Bedham Corporation.\n® This is one of the\nlargest accounts we've handled, so everyone should be here\nfor that meeting（会议）.\nTo familiarize you with this company（公司）,\nOl've prepared a packet of information（信息） about their history\nand major products.\nThe packets are at the back of the room.\nPlease（请） be sure to pick up a packet on your way out.\nUpcoming Client Meetings\nAugust 3\nChung Associates\nAugust 14\nBedham Corporation\nAugust 18\nMarsten Company（公司）\nAugust 24\nSatero Construction\nChung Associates #\nBedham 7t\nA188\nMarstentt",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议） and schedule（日程）.\nOK, ®next I want to discuss some of the current marketing\ncampaigns we're working on.\nlt's great that we're handling\nthe marketing for so many companies, but it does require\ncareful planning.\n®Here's the schedule（日程） of the client meetings\ncoming up in August.\nAs you can see, one of them is with our\nnewest client, the Bedham Corporation.\n® This is one of the\nlargest accounts we've handled, so everyone should be here\nfor that meeting（会议）.\nTo familiarize you with this company（公司）,\nOl've prepared a packet of information（信息） about their history\nand major products.\nThe packets are at the back of the room.\nPlease（请） be sure to pick up a packet on your way out.\nUpcoming Client Meetings\nAugust 3\nChung Associates\nAugust 14\nBedham Corporation\nAugust 18\nMarsten Company（公司）\nAugust 24\nSatero Construction\nChung Associates #\nBedham 7t\nA188\nMarstentt"
+    "transcript": "Okay, next I want to discuss some of the current marketing campaigns we're working on.\nIt's great that we're handling the marketing for so many companies, but it does require careful planning.\nHere's the schedule of the client meetings coming up in August.\nAs you can see, one of them is with our newest client, the Bedham Corporation.\nThis is one of the largest accounts we've handled, so everyone should be here for that meeting.\nTo familiarize you with this company, I've prepared a packet of information about their history and major products.\nThe packets are at the back of the room.\nPlease be sure to pick up a packet on your way out.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f2f4099c12b0fe94466471378278231388868c9ea05d0007d3582eec9d75ef0a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 116,
+        "legacy_word_count": 137,
+        "length_ratio": 0.847,
+        "legacy_coverage": 0.912
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "好的，接下来我想讨论一下我们正在处理的一些当前的营销活动。\n我们为这么多公司处理营销工作真是太棒了，但这确实需要仔细的规划。\n这是八月份即将到来的客户会议日程表。\n如你所见，其中之一是与我们最新的客户Bedham Corporation的会面。\n这是我们处理过的最大的几个账户之一，所以每个人都应该参加这次会议。\n为了让你熟悉这家公司，我准备了一份关于其历史和主要产品的资料包。\n资料包在房间的后面。\n请确保在离开时取一个资料包。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "c992939264d0ff0661cc4cbcbd89a97afa5d910c3cba2f6038e859860f531c21"
+    }
   },
   "items": [
     {
@@ -51,23 +74,23 @@
       ],
       "answer": "A",
       "question": "What type of business does the speaker work for?",
-      "answer_explain": "原文依据：听力原文中提到“the marketing for so many companies, but it does require”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A marketing firm）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of business does the speaker（说话者） work（工作） for?",
+      "answer_explain": "正确答案：A（A marketing firm）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of business does the speaker(说话者) work(工作) for?",
       "choice_translations": [
-        "A：A marketing firm",
-        "B：A Web-design company（公司）",
-        "C：A shipping service（服务）",
-        "D：A law firm"
+        "A:A marketing firm",
+        "B:A Web-design company(公司)",
+        "C:A shipping service(服务)",
+        "D:A law firm"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting and schedule.",
+      "evidence": "参考听力原文：“Okay, next I want to discuss some of the current marketing campaigns we're working on.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting and schedule.",
+        "evidence": "参考听力原文：“Okay, next I want to discuss some of the current marketing campaigns we're working on.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the marketing for so many companies, but it does require”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A marketing firm）。"
+        "analysis": "正确答案：A（A marketing firm）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 98,
       "priority": {
@@ -101,23 +124,23 @@
       ],
       "answer": "B",
       "question": "Look at the graphic. What day are the listeners asked to be available?",
-      "answer_explain": "原文依据：听力原文中提到“coming up in August.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（August 14）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhat（什么） day are the listeners asked to be available（可用的）?",
+      "answer_explain": "正确答案：B（August 14）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. What(什么) day are the listeners asked to be available(可用的)?",
       "choice_translations": [
-        "A：August 3",
-        "B：August 14",
-        "C：August 18",
-        "D：August 24"
+        "A:August 3",
+        "B:August 14",
+        "C:August 18",
+        "D:August 24"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting and schedule.",
+      "evidence": "参考听力原文：“Here's the schedule of the client meetings coming up in August.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting and schedule.",
+        "evidence": "参考听力原文：“Here's the schedule of the client meetings coming up in August.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“coming up in August.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（August 14）。"
+        "analysis": "正确答案：B（August 14）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 99,
       "priority": {
@@ -151,23 +174,23 @@
       ],
       "answer": "D",
       "question": "What will the listeners find at the back of the room?",
-      "answer_explain": "原文依据：听力原文中提到“The packets are at the back of the room.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Information packets）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the listeners find at the back of the room?",
+      "answer_explain": "正确答案：D（Information packets）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the listeners find at the back of the room?",
       "choice_translations": [
-        "A：Name tags",
-        "B：Some product samples",
-        "C：Some refreshments",
-        "D：Information（信息） packets"
+        "A:Name tags",
+        "B:Some product samples",
+        "C:Some refreshments",
+        "D:Information(信息) packets"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting and schedule.",
+      "evidence": "参考听力原文：“The packets are at the back of the room.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting and schedule.",
+        "evidence": "参考听力原文：“The packets are at the back of the room.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“The packets are at the back of the room.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Information packets）。"
+        "analysis": "正确答案：D（Information packets）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 100,
       "priority": {

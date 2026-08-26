@@ -40,9 +40,31 @@
       "asset_key": "official-5-test-1/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "meeting.\nGood morning, everyone. At your seat, you'll find copies of\nthe twenty applications we've received for the open position\nhere in our advertising department. The applications include\na cover letter, résumé, and the sample advertisements each\ncandidate has submitted. Our task today is to choose our\ntop four candidates, and we have this room until eleven thirty.\nAfter we make our selections, I'll contact those candidates\nand schedule their interviews for next week. Please\npay special attention to applicants who can use the latest\ncomputer software. ® Since most of our ads are designed by\ncomputer, this skill will be essential.",
-    "transcript_translation": "中文辅助（离线预处理）：meeting（会议）.\nGood morning, everyone.\nAt your seat, you'll find copies of\nthe twenty applications we've received for the open position\nhere in our advertising department.\nThe applications include\na cover letter, résumé, and the sample advertisements each\ncandidate has submitted.\nOur task today is to choose our\ntop four candidates, and we have this room until eleven thirty.\nAfter we make our selections, I'll contact those candidates\nand schedule（日程） their interviews for next week.\nPlease（请）\npay special attention to applicants who（谁） can use the latest\ncomputer software.\n® Since most of our ads are designed by\ncomputer, this skill will be essential.",
-    "content_translation": "中文辅助（离线预处理）：meeting（会议）.\nGood morning, everyone.\nAt your seat, you'll find copies of\nthe twenty applications we've received for the open position\nhere in our advertising department.\nThe applications include\na cover letter, résumé, and the sample advertisements each\ncandidate has submitted.\nOur task today is to choose our\ntop four candidates, and we have this room until eleven thirty.\nAfter we make our selections, I'll contact those candidates\nand schedule（日程） their interviews for next week.\nPlease（请）\npay special attention to applicants who（谁） can use the latest\ncomputer software.\n® Since most of our ads are designed by\ncomputer, this skill will be essential."
+    "transcript": "Good morning, everyone.\nAt your seat, you'll find copies of the 20 applications we've received for the open position here in our advertising department.\nThe applications include a cover letter, resume, and the sample advertisements each candidate has submitted.\nOur task today is to choose our top four candidates, and we have this room until 11.\n30.\nAfter we make our selections, I'll contact those candidates and schedule their interviews for next week.\nPlease pay special attention to applicants who can use the latest computer software.\nSince most of our ads are designed by computer, this skill will be essential.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7d6f94be483f7765bdc024913afa54bba1a8ee05b5df4af975a6b522974d1483",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 102,
+        "length_ratio": 0.951,
+        "legacy_coverage": 0.931
+      }
+    },
+    "transcript_translation": "大家早上好。\n在您的座位上，您会找到我们收到的 20 个空缺职位的申请表。这些职位是在我们的广告部门的。\n这些申请包括求职信、简历以及每位候选人提交的样广告。\n我们今天的任务是选出前四名候选人，而且我们有到 11 点的时间。\n30。\n在我们做出选择后，我会联系这些候选人，并安排他们下周进行面试。\n请特别关注那些能使用最新计算机软件的申请者。\n因为我们的大部分广告都是用电脑设计的，这项技能将是必不可少的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "86c4f0ff8ba36320c2de0e64a96bf8dafc3cb609219c63ea7dcc424fed453ba9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "In which department is there a job opening?",
-      "answer_explain": "原文依据：听力原文中提到“here in our advertising department.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Advertising）。",
-      "question_translation": "中文辅助（离线预处理）：In which department is there a job opening?",
+      "answer_explain": "正确答案：C（Advertising）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):In which department is there a job opening?",
       "choice_translations": [
-        "A：Maintenance",
-        "B：Accounting",
-        "C：Advertising",
-        "D：Security"
+        "A:Maintenance",
+        "B:Accounting",
+        "C:Advertising",
+        "D:Security"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：here in our advertising department. The applications include",
+      "evidence": "参考听力原文：“At your seat, you'll find copies of the 20 applications we've received for the open position here in our advertising department.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：here in our advertising department. The applications include",
+        "evidence": "参考听力原文：“At your seat, you'll find copies of the 20 applications we've received for the open position here in our advertising department.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“here in our advertising department.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Advertising）。"
+        "analysis": "正确答案：C（Advertising）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "A",
       "question": "Why does the speaker say, \"we have this room until 11:30\"?",
-      "answer_explain": "原文依据：听力原文中提到“the twenty applications we've received for the open position”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To indicate the deadline for a selection）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"we have this room until 11:30\"?",
+      "answer_explain": "正确答案：A（To indicate the deadline for a selection）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"we have this room until 11:30\"?",
       "choice_translations": [
-        "A：To indicate the deadline for a selection",
-        "B：To show why（为什么） an agenda item is incorrect",
-        "C：To complain about a corporate policy",
-        "D：To decline an invitation"
+        "A:To indicate the deadline for a selection",
+        "B:To show why(为什么) an agenda item is incorrect",
+        "C:To complain about a corporate policy",
+        "D:To decline an invitation"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 7 段：top four candidates, and we have this room until eleven thirty.",
+      "evidence": "参考听力原文：“Our task today is to choose our top four candidates, and we have this room until 11.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 7 段：top four candidates, and we have this room until eleven thirty.",
+        "evidence": "参考听力原文：“Our task today is to choose our top four candidates, and we have this room until 11.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the twenty applications we've received for the open position”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To indicate the deadline for a selection）。"
+        "analysis": "正确答案：A（To indicate the deadline for a selection）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "What qualification does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“computer software.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Knowledge of software programs）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） qualification does the speaker（说话者） mention?",
+      "answer_explain": "正确答案：B（Knowledge of software programs）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) qualification does the speaker(说话者) mention?",
       "choice_translations": [
-        "A：Professional certification",
-        "B：Knowledge of software programs",
-        "C：Supervisory experience",
-        "D：Foreign language ability"
+        "A:Professional certification",
+        "B:Knowledge of software programs",
+        "C:Supervisory experience",
+        "D:Foreign language ability"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：meeting.",
+      "evidence": "参考听力原文：“Please pay special attention to applicants who can use the latest computer software.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：meeting.",
+        "evidence": "参考听力原文：“Please pay special attention to applicants who can use the latest computer software.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“computer software.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Knowledge of software programs）。"
+        "analysis": "正确答案：B（Knowledge of software programs）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

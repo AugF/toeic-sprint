@@ -42,8 +42,28 @@
       "asset_key": "official-11-test-1/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "你建议雇一名电工吗？\nA：市场营销部。\nB：是的，他们熟悉所有安全操作流程。\nC：那堆篝火真不错。",
-    "content_translation": "本段听力围绕“一般疑问句”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Do you recommend hiring an electrician?\nA. The marketing department.\nB. Yes, they know all the safety processes.\nC. That's a nice campfire.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4d253a79e543336b0fbb0ba73afa5340502f40a4109c8850052694e7cd493ced",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "你推荐雇一个电工吗？\nA. 市场部。\nB. 是的，他们了解所有的安全流程。\nC. 那是个漂亮的篝火。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "bc289a25ba5c6e76fb58fbebd6c7bf396c8ddb6a32b0c2f3c34c51ca6e202ee1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -61,9 +81,9 @@
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段第 1 句：Do you recommend hiring an electrician?",
       "choice_translations": [
-        "A：市场营销部。",
-        "B：是的，他们熟悉所有安全操作流程。",
-        "C：那堆篝火真不错。"
+        "A：市场部。",
+        "B：是的,他们了解所有的安全流程。",
+        "C：那是个漂亮的篝火。"
       ],
       "response_style": "可直接回答，也常用补充信息间接回答",
       "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
@@ -74,7 +94,7 @@
         "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：问是否建议请电工，答句肯定并说明 they know all the safety processes。 选择理由：B对建议作出肯定评价并给出理由；A和C与电工无关。正确答案：B（Yes, they know all the safety processes.）。"
       },
-      "question_translation": "你建议雇一名电工吗？",
+      "question_translation": "你推荐雇一个电工吗?",
       "item_id": 10,
       "priority": {
         "level": "P2",

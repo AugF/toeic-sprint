@@ -27,38 +27,58 @@
       "asset_key": "official-8-test-1/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：w How（如何） often are the storage tanks inspected?\nB8 m",
-    "content_translation": "中文辅助（离线预处理）：w How（如何） often are the storage tanks inspected?\nB8 m"
+    "transcript": "How often are the storage tanks inspected?\nA. You can check the records.\nB. There's a fuel station nearby.\nC. No, the inspector has left.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "dbb276f29d90c222d63a4357333b7b782b25dbb46a8dc9a3ce16d8a9990ff559",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "储罐多久检查一次？\nA. 你可以查阅记录。\nB. 附近有一个加油站。\nC. 不，检查员已经离开了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5f11139aaaeedf64dff5d80e376b993f7d97b6d6838f9d8eff914f7e4c82cc70"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "You can check the records",
+        "You can check the records.",
         "There's a fuel station nearby.",
         "No, the inspector has left."
       ],
       "answer": "A",
-      "question": "w How often are the storage tanks inspected? B8 m",
+      "question": "How often are the storage tanks inspected?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“w How often are the storage tanks inspected? B8 m”，自然应答是“You can check the records”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（You can check the records）。",
-      "question_translation": "中文辅助（离线预处理）：w How（如何） often are the storage tanks inspected?\nB8 m",
+      "answer_explain": "原文依据：问句或陈述是“How often are the storage tanks inspected?”，自然应答是“You can check the records.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（You can check the records.）。",
+      "question_translation": "储罐多久检查一次?",
       "choice_translations": [
-        "A：You can check the records",
-        "B：There's a fuel station nearby.",
-        "C：No, the inspector has left."
+        "A：你可以查阅记录。",
+        "B：附近有一个加油站。",
+        "C：不,检查员已经离开了。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：w How often are the storage tanks inspected? B8 m",
+      "evidence": "参考原文第 1 段：How often are the storage tanks inspected?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：w How often are the storage tanks inspected? B8 m",
+        "evidence": "参考原文第 1 段：How often are the storage tanks inspected?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“w How often are the storage tanks inspected? B8 m”，自然应答是“You can check the records”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（You can check the records）。"
+        "analysis": "原文依据：问句或陈述是“How often are the storage tanks inspected?”，自然应答是“You can check the records.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（You can check the records.）。"
       },
       "item_id": 29,
       "priority": {

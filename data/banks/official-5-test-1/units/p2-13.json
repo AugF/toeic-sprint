@@ -27,8 +27,28 @@
       "asset_key": "official-5-test-1/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：How（如何） can we increase our customer（顾客） approval rating?",
-    "content_translation": "中文辅助（离线预处理）：How（如何） can we increase our customer（顾客） approval rating?"
+    "transcript": "How can we increase our customer approval rating?\nA. His application's been approved.\nB. Yes, the current rates.\nC. We can offer a discount to returning clients.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d93cc744302dd954b6e059f9ac5704f11a2ec7eb4adc87a8a03758d853e3e1b6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "我们如何提高客户满意度评分？\nA. 他的申请已经获批了。\nB. 是的，目前的费率。\nC. 我们可以向回头客提供折扣。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "744b676c0c2c5e36d344775905cd6793669565dc6d8505e5c058c5943c35f138"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“How can we increase our customer approval rating?”，自然应答是“We can offer a discount to returning clients.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（We can offer a discount to returning clients.）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） can we increase our customer（顾客） approval rating?",
+      "question_translation": "我们如何提高客户满意度评分?",
       "choice_translations": [
-        "A：His application's been approved.",
-        "B：Yes, the current rates.",
-        "C：We can offer a discount to returning clients."
+        "A：他的申请已经获批了。",
+        "B：是的,目前的费率。",
+        "C：我们可以向回头客提供折扣。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：How can we increase our customer approval rating?",

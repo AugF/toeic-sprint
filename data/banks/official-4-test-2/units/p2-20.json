@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-2/audio/part2/q020.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：ERw Should we start production before or after the holidays?\n=w",
-    "content_translation": "中文辅助（离线预处理）：ERw Should we start production before or after the holidays?\n=w"
+    "transcript": "Should we start production before or after the holidays?\nA. Yes, that's fine.\nB. A factory tour.\nC. Talk to the manager.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b0d0367b5e51ed5f1e8dbb72acf9568058f6fade0c7562ff12b5cb4e8cb9f28c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q020.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "我们是在假期前还是之后开始生产？\nA. 是的，没问题。\nB. 工厂参观。\nC. 和经理谈谈。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "19455fc28b05b4ae86966baa8d11f40db0f6b6a14e5ba14bcb26b8113a908089"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Yes, that’s fine.",
+        "Yes, that's fine.",
         "A factory tour.",
         "Talk to the manager."
       ],
       "answer": "C",
-      "question": "ERw Should we start production before or after the holidays? =w",
+      "question": "Should we start production before or after the holidays?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“ERw Should we start production before or after the holidays? =w”，自然应答是“Talk to the manager.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Talk to the manager.）。",
-      "question_translation": "中文辅助（离线预处理）：ERw Should we start production before or after the holidays?\n=w",
+      "answer_explain": "原文依据：问句或陈述是“Should we start production before or after the holidays?”，自然应答是“Talk to the manager.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Talk to the manager.）。",
+      "question_translation": "我们是在假期前还是之后开始生产?",
       "choice_translations": [
-        "A：Yes, that’s fine.",
-        "B：A factory tour.",
-        "C：Talk to the manager（经理）."
+        "A：是的,没问题。",
+        "B：工厂参观。",
+        "C：和经理谈谈。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：ERw Should we start production before or after the holidays? =w",
+      "evidence": "参考原文第 1 段：Should we start production before or after the holidays?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：ERw Should we start production before or after the holidays? =w",
+        "evidence": "参考原文第 1 段：Should we start production before or after the holidays?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“ERw Should we start production before or after the holidays? =w”，自然应答是“Talk to the manager.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Talk to the manager.）。"
+        "analysis": "原文依据：问句或陈述是“Should we start production before or after the holidays?”，自然应答是“Talk to the manager.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Talk to the manager.）。"
       },
       "item_id": 20,
       "priority": {

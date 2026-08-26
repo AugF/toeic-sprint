@@ -37,9 +37,32 @@
       "asset_key": "official-3-test-1/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "Akira, @do you have time to send an e-mail to the\nstaff this afternoon? ®1'd do it myself ®but the\nBoard of Trustees meeting starts in ten minutes,\nand I'm presenting the opening report.\nNo problem at all. What would you like the memo to\nsay?\nThe entire law office will close early on Friday, at\nthree pm. Some contractors are coming in to paint\nthe conference room and lobby walls.\nJ ™ K, I'll get that out right away.",
-    "transcript_translation": "明，你今天下午有时间给员工发电子邮件吗？我本来想自己做®但信托委员会会议十分钟后就要开始了，我还要做开场报告。没问题。备忘录上需要写什么？周五整个律师事务所要提前关门，下午三点。一些承包商来粉刷会议室和大堂的墙壁。好的，我会马上发出去的。",
-    "content_translation": "明，你今天下午有时间给员工发电子邮件吗？我本来想自己做®但信托委员会会议十分钟后就要开始了，我还要做开场报告。没问题。备忘录上需要写什么？周五整个律师事务所要提前关门，下午三点。一些承包商来粉刷会议室和大堂的墙壁。好的，我会马上发出去的。"
+    "transcript": "Akira, do you have time to send an email to the staff this afternoon?\nI do it myself, but the Board of Trustees meeting starts in 10 minutes, and I'm presenting the opening report.\nNo problem at all.\nWhat would you like the memo to say?\nThe entire law office will close early on Friday at 3 p.m.\nSome contractors are coming in to paint the conference room and lobby walls.\nOkay, I'll get that out right away.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "49f9f6f24dbfd805e182948ee1a25b6c33e51dd395e48369853991f3bdc5686c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 77,
+        "legacy_word_count": 77,
+        "length_ratio": 1,
+        "legacy_coverage": 0.922
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "Akira，你今天下午有时间给员工发送一封电子邮件吗？\n我自己来，但是信托委员会会议在 10 分钟后开始，我正在做开场报告。\n没问题。\n你想让备忘录说些什么？\n整个律师事务所周五下午 3 点会提前关闭。\n一些承包商要来粉刷会议室和大堂的墙壁。\n好的，我马上发出。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ce809855eff267aa892676501d670a7d3abf66d0aada6dfb3a3602951e43aeff"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +74,23 @@
       ],
       "answer": "A",
       "question": "What does the woman ask the man to do?",
-      "answer_explain": "原文依据：听力原文中提到“Akira, @do you have time to send an e-mail to the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Send an e-mail）。",
-      "question_translation": "女士让男士做什么？",
+      "answer_explain": "正确答案：A（Send an e-mail）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士让男士做什么?",
       "choice_translations": [
-        "A：发送电子邮件",
-        "B：修改报告",
-        "C：安排维修",
-        "D：挂画作"
+        "A:发送电子邮件",
+        "B:修改报告",
+        "C:安排维修",
+        "D:挂画作"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Akira, @do you have time to send an e-mail to the",
+      "evidence": "参考听力原文：“Akira, do you have time to send an email to the staff this afternoon?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Akira, @do you have time to send an e-mail to the",
+        "evidence": "参考听力原文：“Akira, do you have time to send an email to the staff this afternoon?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Akira, @do you have time to send an e-mail to the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Send an e-mail）。"
+        "analysis": "正确答案：A（Send an e-mail）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -101,23 +124,23 @@
       ],
       "answer": "C",
       "question": "Why is the woman unable to complete the task?",
-      "answer_explain": "原文依据：听力原文中提到“Akira, @do you have time to send an e-mail to the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（She has to give a presentation.）。",
-      "question_translation": "为什么女士无法完成任务？",
+      "answer_explain": "正确答案：C（She has to give a presentation.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "为什么女士无法完成任务?",
       "choice_translations": [
-        "A：她有电脑问题。",
-        "B：她必须咨询同事。",
-        "C：她必须做一次演示。",
-        "D：她有一个出差。"
+        "A:她有电脑问题。",
+        "B:她必须咨询同事。",
+        "C:她必须做一次演示。",
+        "D:她有一个出差。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Akira, @do you have time to send an e-mail to the",
+      "evidence": "参考听力原文：“I do it myself, but the Board of Trustees meeting starts in 10 minutes, and I'm presenting the opening report.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Akira, @do you have time to send an e-mail to the",
+        "evidence": "参考听力原文：“I do it myself, but the Board of Trustees meeting starts in 10 minutes, and I'm presenting the opening report.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Akira, @do you have time to send an e-mail to the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（She has to give a presentation.）。"
+        "analysis": "正确答案：C（She has to give a presentation.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -146,28 +169,28 @@
       "choices": [
         "Some furniture will be installed.",
         "Some walls will be painted.",
-        "Aconference will begin.",
-        "Aluncheon will take place."
+        "A conference will begin.",
+        "A luncheon will take place."
       ],
       "answer": "B",
       "question": "What will happen on Friday afternoon?",
-      "answer_explain": "原文依据：听力原文中提到“Some contractors are coming in to paint”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some walls will be painted.）。",
-      "question_translation": "周五下午会发生什么？",
+      "answer_explain": "正确答案：B（Some walls will be painted.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "周五下午会发生什么?",
       "choice_translations": [
-        "A：一些家具将被安装。",
-        "B：一些墙壁将被粉刷。",
-        "C：一个会议开始。",
-        "D：将举行一次午餐会。"
+        "A:一些家具将被安装。",
+        "B:一些墙壁将被粉刷。",
+        "C:一个会议开始。",
+        "D:将举行一次午餐会。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：staff this afternoon? ®1'd do it myself ®but the",
+      "evidence": "参考听力原文：“Some contractors are coming in to paint the conference room and lobby walls.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：staff this afternoon? ®1'd do it myself ®but the",
+        "evidence": "参考听力原文：“Some contractors are coming in to paint the conference room and lobby walls.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Some contractors are coming in to paint”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some walls will be painted.）。"
+        "analysis": "正确答案：B（Some walls will be painted.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

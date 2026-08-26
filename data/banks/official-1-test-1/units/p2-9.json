@@ -27,38 +27,58 @@
       "asset_key": "official-1-test-1/audio/part2/q009.mp3",
       "exists": true
     },
-    "transcript_translation": "i 修好这份副本需要多长时间？ BIA. 多久 ~71CHL, mics BMH\nA. DERE. 修好 ~\nB. [SABI SN TUE.\nC. 当然，我可以修好。",
-    "content_translation": "i 修好这份副本需要多长时间？ BIA. 多久 ~71CHL, mics BMH\nA. DERE. 修好 ~\nB. [SABI SN TUE.\nC. 当然，我可以修好。"
+    "transcript": "How long will it take to fix the copy machine?\nA. About an hour.\nB. Once every two weeks.\nC. Sure, I can fix it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bf1aa7d5de5bff0a810bfaeea95a58fe8c46a2ddb93351964a9b6afe935bbfa8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q009.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "修复印机需要多长时间？\nA. 大约一小时。\nB. 每两周一次。\nC. 当然，我可以修好。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "602f34748c5b08b577dd04f9fc9b3d1d4e2ea866dd30cb55a41fd28a7b5072ff"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "DERE. fix ~",
-        "[SABI SN TUE.",
-        "Sure, | can fix it."
+        "About an hour.",
+        "Once every two weeks.",
+        "Sure, I can fix it."
       ],
       "answer": "A",
-      "question": "i How long will it take to fix the copy BIA. How tong ~71CHL, mics BMH",
+      "question": "How long will it take to fix the copy machine?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“i How long will it take to fix the copy BIA. How tong ~71CHL, mics BMH”，自然应答是“DERE. fix ~”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（DERE. fix ~）。",
+      "answer_explain": "原文依据：问句或陈述是“How long will it take to fix the copy machine?”，自然应答是“About an hour.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（About an hour.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：i How long will it take to fix the copy BIA. How tong ~71CHL, mics BMH",
+      "evidence": "参考原文第 1 段：How long will it take to fix the copy machine?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：i How long will it take to fix the copy BIA. How tong ~71CHL, mics BMH",
+        "evidence": "参考原文第 1 段：How long will it take to fix the copy machine?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“i How long will it take to fix the copy BIA. How tong ~71CHL, mics BMH”，自然应答是“DERE. fix ~”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（DERE. fix ~）。"
+        "analysis": "原文依据：问句或陈述是“How long will it take to fix the copy machine?”，自然应答是“About an hour.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（About an hour.）。"
       },
-      "question_translation": "i 修好这份副本需要多长时间？ BIA. 多久 ~71CHL, mics BMH",
+      "question_translation": "修复印机需要多长时间?",
       "choice_translations": [
-        "A：DERE. 修好 ~",
-        "B：[SABI SN TUE.",
-        "C：当然，我可以修好。"
+        "A：大约一小时。",
+        "B：每两周一次。",
+        "C：当然,我可以修好。"
       ],
       "item_id": 9,
       "priority": {

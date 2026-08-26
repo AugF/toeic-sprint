@@ -31,8 +31,28 @@
       "asset_key": "official-12-test-1/images/part1/q001.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. The woman is wiping down some outdoor furniture.\nB. The woman is working under an open umbrella.\nC. The woman is sweeping the patio in front of a restaurant.\nD. The woman is dining at a sidewalk cafe.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f16316fb4b7cab3c8c6ed41beb46887388d79ee58a4aa9e1848ca54c540e6cfe",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part1/q001.mp3",
+      "metrics": {
+        "word_count": 53
+      }
+    },
+    "transcript_translation": "A. 这名女士正在擦拭一些户外家具。\nB. 这名女士正在一个敞开的雨伞下工作。\nC. 这名女士正在一家餐厅前扫地。\nD. 这名女士正在路边咖啡馆用餐。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f9691e178dad781f9594d285f09d28fa8c2cb5401f300faf492c4be5de6c32d3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“The woman is wiping down some outdoor furniture.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（The woman is wiping down some outdoor furniture.）。",
       "choice_translations": [
-        "A：The woman（女士） is wiping down some outdoor furniture.",
-        "B：The woman（女士） is working under an open umbrella.",
-        "C：The woman（女士） is sweeping the patio in front of a restaurant.",
-        "D：The woman（女士） is dining at a sidewalk cafe."
+        "A：这名女士正在擦拭一些户外家具。",
+        "B：这名女士正在一个敞开的雨伞下工作。",
+        "C：这名女士正在一家餐厅前扫地。",
+        "D：这名女士正在路边咖啡馆用餐。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-12-test-1/p1-1/1"
+      "item_key": "official-12-test-1/p1-1/1",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

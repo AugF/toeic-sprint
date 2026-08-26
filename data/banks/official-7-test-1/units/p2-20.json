@@ -27,38 +27,58 @@
       "asset_key": "official-7-test-1/audio/part2/q020.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：m How（如何） long will we have to wait for a table?\nLEW",
-    "content_translation": "中文辅助（离线预处理）：m How（如何） long will we have to wait for a table?\nLEW"
+    "transcript": "How long will we have to wait for\nA. table? A. Do you want to sit inside or outside?\nB. The food was delicious.\nC. About 14 meters.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "79ae19fb6dc5f2c6d9990591a3e606d8c2f00fd47ea0a31a3bcaa11945241668",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q020.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "我们得等多久才能用\nA. 桌子？ A. 你想坐在室内还是室外？\nB. 食物很好吃。\nC. 大约 14 米。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "973cc23bc61ec4f2e8f6001564831d5aa0324de861206de705d05eb521ad863f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Do you want to sit inside or outside?",
+        "table? A. Do you want to sit inside or outside?",
         "The food was delicious.",
-        "About fourteen meters."
+        "About 14 meters."
       ],
       "answer": "A",
-      "question": "m How long will we have to wait for a table? LEW",
+      "question": "How long will we have to wait for",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“m How long will we have to wait for a table? LEW”，自然应答是“Do you want to sit inside or outside?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Do you want to sit inside or outside?）。",
-      "question_translation": "中文辅助（离线预处理）：m How（如何） long will we have to wait for a table?\nLEW",
+      "answer_explain": "原文依据：问句或陈述是“How long will we have to wait for”，自然应答是“table? A. Do you want to sit inside or outside?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（table? A. Do you want to sit inside or outside?）。",
+      "question_translation": "我们得等多久才能用",
       "choice_translations": [
-        "A：Do you want to sit inside or outside?",
-        "B：The food was delicious.",
-        "C：About fourteen meters."
+        "A：桌子? A. 你想坐在室内还是室外?",
+        "B：食物很好吃。",
+        "C：大约 14 米。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：m How long will we have to wait for a table? LEW",
+      "evidence": "参考原文第 1 段：How long will we have to wait for",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：m How long will we have to wait for a table? LEW",
+        "evidence": "参考原文第 1 段：How long will we have to wait for",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“m How long will we have to wait for a table? LEW”，自然应答是“Do you want to sit inside or outside?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Do you want to sit inside or outside?）。"
+        "analysis": "原文依据：问句或陈述是“How long will we have to wait for”，自然应答是“table? A. Do you want to sit inside or outside?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（table? A. Do you want to sit inside or outside?）。"
       },
       "item_id": 20,
       "priority": {

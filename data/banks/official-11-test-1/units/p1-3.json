@@ -46,8 +46,28 @@
       "asset_key": "official-11-test-1/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 一些男子正站在船上。\nB. 一些男子正搬运一捆捆绳索。\nC. 一些男子正在修理屋顶。\nD. 一些男子正在爬楼梯。",
-    "content_translation": "本段听力围绕“码头与船只”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "A. Some men are standing on a boat.\nB. Some men are carrying bundles of rope.\nC. Some men are repairing a roof.\nD. Some men are climbing a stairway.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "edfa4b72818d092104a9ef3e8ec2d52d60359777f338ac10a98936ff67b733ba",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 41
+      }
+    },
+    "transcript_translation": "A. 一些男人正站在一艘船上。\nB. 一些男人正搬运绳索捆。\nC. 一些男人正在修理一个屋顶。\nD. 一些男人正在爬楼梯。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "96f3bb271743858550d9c6ce4d273ce752e23d6b6a8183ced785851437d8e30e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -65,10 +85,10 @@
       "question_type": "细节题",
       "evidence": "根据题干的语法结构、固定搭配及上下文判断。",
       "choice_translations": [
-        "A：Some men are standing on a boat.",
-        "B：Some men are carrying bundles of rope.",
-        "C：Some men are repairing a roof.",
-        "D：Some men are climbing a stairway."
+        "A：一些男人正站在一艘船上。",
+        "B：一些男人正搬运绳索捆。",
+        "C：一些男人正在修理一个屋顶。",
+        "D：一些男人正在爬楼梯。"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
@@ -105,7 +125,9 @@
         "unit_id": "part1-3",
         "model": "toeic_priority_v1"
       },
-      "item_key": "official-11-test-1/p1-3/3"
+      "item_key": "official-11-test-1/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -39,9 +39,31 @@
       "asset_key": "official-6-test-1/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "m Hi, my name is Joseph Kent. I have an appointment at\nthree o'clock today-®| brought the new patient forms\nthat you asked me to fill out at home.\nAK w Great, thanks. That will save us some time. Um...\nunfortunately, ®the doctor is running about 30 minutes\nbehind. Please take a seat. We have some magazines,\nand there's coffee and tea.\nElm Oh, ®tea sounds nice, especially since it's such a cold\nday.",
-    "transcript_translation": "男：嗨，我叫 Joseph Kent。我今天三点有预约——我带了您让我在家填写的新的病患表格。\n女：太好了，谢谢。这能帮我们省些时间。嗯……很不巧，医生要推迟大约30分钟。请坐。我们有一些杂志，还有咖啡和茶。\n男：哦，茶听起来不错，尤其是在这么冷的天气。\n",
-    "content_translation": "男：嗨，我叫 Joseph Kent。我今天三点有预约——我带了您让我在家填写的新的病患表格。\n女：太好了，谢谢。这能帮我们省些时间。嗯……很不巧，医生要推迟大约30分钟。请坐。我们有一些杂志，还有咖啡和茶。\n男：哦，茶听起来不错，尤其是在这么冷的天气。\n"
+    "transcript": "Hi, my name is Joseph Kent.\nI have an appointment at 3 o'clock today.\nI brought the new patient forms that you asked me to fill out at home.\nGreat, thanks.\nThat will save us some time.\nUm, unfortunately, the doctor is running about 30 minutes behind.\nPlease take a seat.\nWe have some magazines and there's coffee and tea.\nOh, tea sounds nice, especially since it's such a cold day.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "409f3fb48795815bf062b74ecc407404e3eff8709b20a08531d98cf9a8f0d15d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 69,
+        "legacy_word_count": 71,
+        "length_ratio": 0.972,
+        "legacy_coverage": 0.944
+      }
+    },
+    "transcript_translation": "嗨，我叫约瑟夫·肯特。\n我今天三点有个预约。\n我带了您让我回家填的新的病患表格。\n太好了，谢谢。\n那能帮我们节省一些时间。\n嗯，不幸的是，医生要迟到大约30分钟。\n请坐。\n我们有杂志，还有咖啡和茶。\n哦，听起来茶不错，尤其是在这么冷的一天。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1eddf7a551201e08b926410a1ed802067e537a91edaadda5e29d6cd3c9d7ed75"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "C",
       "question": "What did the man do in advance?",
-      "answer_explain": "原文依据：听力原文中提到“That will save us some time.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He completed some paperwork.）。",
-      "question_translation": "男士事先做了什么？",
+      "answer_explain": "正确答案：C（He completed some paperwork.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士事先做了什么?",
       "choice_translations": [
-        "A：他查了公交地图。",
-        "B：他支付了一笔货款。",
-        "C：他填写了一些文件。",
-        "D：他在网上阅读了一些评论。"
+        "A:他查了公交地图。",
+        "B:他支付了一笔货款。",
+        "C:他填写了一些文件。",
+        "D:他在网上阅读了一些评论。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
+      "evidence": "参考听力原文：“We have some magazines and there's coffee and tea.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
+        "evidence": "参考听力原文：“We have some magazines and there's coffee and tea.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“That will save us some time.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He completed some paperwork.）。"
+        "analysis": "正确答案：C（He completed some paperwork.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "C",
       "question": "Where does the woman most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“three o'clock today-®| brought the new patient forms”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a medical office）。",
-      "question_translation": "女士最有可能在哪里工作？",
+      "answer_explain": "正确答案：C（At a medical office）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士最有可能在哪里工作?",
       "choice_translations": [
-        "A：在一家药店",
-        "B：在一家咖啡店",
-        "C：在一个医疗办公室",
-        "D：在一家书店"
+        "A:在一家药店",
+        "B:在一家咖啡店",
+        "C:在一个医疗办公室",
+        "D:在一家书店"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
+      "evidence": "参考听力原文：“Oh, tea sounds nice, especially since it's such a cold day.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
+        "evidence": "参考听力原文：“Oh, tea sounds nice, especially since it's such a cold day.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“three o'clock today-®| brought the new patient forms”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a medical office）。"
+        "analysis": "正确答案：C（At a medical office）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "B",
       "question": "What will the man probably do next?",
-      "answer_explain": "原文依据：听力原文中提到“Elm Oh, ®tea sounds nice, especially since it's such a cold”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Have some tea）。",
-      "question_translation": "男士接下来可能会做什么？",
+      "answer_explain": "正确答案：B（Have some tea）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士接下来可能会做什么?",
       "choice_translations": [
-        "A：重新安排他的预约",
-        "B：喝点茶",
-        "C：给朋友打电话",
-        "D：去另一个地方拜访"
+        "A:重新安排他的预约",
+        "B:喝点茶",
+        "C:给朋友打电话",
+        "D:去另一个地方拜访"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
+      "evidence": "参考听力原文：“We have some magazines and there's coffee and tea.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m Hi, my name is Joseph Kent. I have an appointment at",
+        "evidence": "参考听力原文：“We have some magazines and there's coffee and tea.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Elm Oh, ®tea sounds nice, especially since it's such a cold”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Have some tea）。"
+        "analysis": "正确答案：B（Have some tea）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

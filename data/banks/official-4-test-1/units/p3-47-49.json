@@ -37,37 +37,59 @@
       "asset_key": "official-4-test-1/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "Hello. ©] own a jewelry store right by the history\nmuseum, and visitors to the museum are always\nusing my parking spaces. | need a sign that lets\npeople know the parking spaces are reserved for n\ncustomers.\nlv Of course. @We offer a few standard signs that\nsay “No Parking Allowed,” or we could customize a\nspecial sign for your business.\ndon’t want my customers to think they can’t park\nbeside the store, so 91 think a custom sign would t\nbest. But... I’m worried that might be too expensive\nIv Well, it really depends on the template that you\nchoose. Why don’t you go through our template\nselection in this book, and I'll tell you how much it'll b",
-    "transcript_translation": "中文辅助（离线预处理）：Hello.\n©] own a jewelry store right by the history\nmuseum, and visitors to the museum are always\nusing my parking spaces.\n| need a sign that lets\npeople know the parking spaces are reserved for n\ncustomers.\nlv Of course.\n@We offer a few standard signs that\nsay “No Parking Allowed,” or we could customize a\nspecial sign for your business.\ndon’t want my customers to think they can’t park\nbeside the store, so 91 think a custom sign would t\nbest.\nBut...\nI’m worried that might be too expensive\nIv Well, it really depends on the template that you\nchoose.\nWhy（为什么） don’t you go through our template\nselection in this book, and I'll tell you how（如何） much it'll b",
-    "content_translation": "中文辅助（离线预处理）：Hello.\n©] own a jewelry store right by the history\nmuseum, and visitors to the museum are always\nusing my parking spaces.\n| need a sign that lets\npeople know the parking spaces are reserved for n\ncustomers.\nlv Of course.\n@We offer a few standard signs that\nsay “No Parking Allowed,” or we could customize a\nspecial sign for your business.\ndon’t want my customers to think they can’t park\nbeside the store, so 91 think a custom sign would t\nbest.\nBut...\nI’m worried that might be too expensive\nIv Well, it really depends on the template that you\nchoose.\nWhy（为什么） don’t you go through our template\nselection in this book, and I'll tell you how（如何） much it'll b"
+    "transcript": "Hello, I own a jewelry store right by the History Museum, and visitors to the museum are always using my parking spaces.\nI need a sign that lets people know the parking spaces are reserved for my customers.\nOf course.\nWe offer a few standard signs that say no parking allowed, or we could customize a special sign for your business.\nI don't want my customers to think they can't park beside the store, so I think a custom sign would be best.\nBut I'm worried that might be too expensive.\nWell, it really depends on the template that you choose.\nWhy don't you go through our template selection in this book, and I'll tell you how much it'll be.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "96111b8c38597044c2c1c770dc2d45278bfeb0b161ae0bfbd85b72e276a114c7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 120,
+        "legacy_word_count": 118,
+        "length_ratio": 1.017,
+        "legacy_coverage": 0.941
+      }
+    },
+    "transcript_translation": "您好，我在历史博物馆旁边开了一家珠宝店，博物馆的游客总是占用我的停车位。\n我需要一个标牌，让人们知道这些停车位是为我的顾客保留的。\n当然可以。\n我们提供一些标准的“禁止停车”标牌，或者我们可以为您定制特殊的招牌。\n我不希望我的顾客觉得他们不能停在店旁边，所以我认为定制的招牌最好。\n但我担心那可能太贵了。\n嗯，这真的取决于您选择的模板。\n您可以在这本书里浏览我们的模板选择，我来告诉您费用是多少。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c4ac8a140bf9264a0383e2fdbac3e7f5feaa33482e095ee7404971fd4485181b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Amuseum is closed for renovations.",
-        "Astreet has been under construction for a long time.",
-        "Aparking area is being used without permission.",
-        "Ajewelry business must relocate."
+        "A museum is closed for renovations.",
+        "A street has been under construction for a long time.",
+        "A parking area is being used without permission.",
+        "A jewelry business must relocate."
       ],
       "answer": "C",
-      "question": "What problem does the woman mention? 5.",
-      "answer_explain": "原文依据：听力原文中提到“beside the store, so 91 think a custom sign would t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Aparking area is being used without permission.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） problem does the woman（女士） mention?\n5.",
+      "question": "What problem does the woman mention?",
+      "answer_explain": "正确答案：C（A parking area is being used without permission.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) problem does the woman(女士) mention? 5.",
       "choice_translations": [
-        "A：Amuseum is closed for renovations.",
-        "B：Astreet has been under construction for a long time.",
-        "C：Aparking area is being used without permission.",
-        "D：Ajewelry business must relocate."
+        "A:A museum is closed for renovations.",
+        "B:A street has been under construction for a long time.",
+        "C:A parking area is being used without permission.",
+        "D:A jewelry business must relocate."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hello. ©] own a jewelry store right by the history",
+      "evidence": "参考听力原文：“Hello, I own a jewelry store right by the History Museum, and visitors to the museum are always using my parking spaces.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hello. ©] own a jewelry store right by the history",
+        "evidence": "参考听力原文：“Hello, I own a jewelry store right by the History Museum, and visitors to the museum are always using my parking spaces.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“beside the store, so 91 think a custom sign would t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Aparking area is being used without permission.）。"
+        "analysis": "正确答案：C（A parking area is being used without permission.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -94,30 +116,30 @@
     },
     {
       "choices": [
-        "Acustom-made sign",
-        "Acompany logo",
-        "Aset of furniture",
-        "Anewspaper advertisement"
+        "A custom-made sign",
+        "A company logo",
+        "A set of furniture",
+        "A newspaper advertisement"
       ],
       "answer": "A",
       "question": "What will the man create?",
-      "answer_explain": "原文依据：听力原文中提到“beside the store, so 91 think a custom sign would t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Acustom-made sign）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） create?",
+      "answer_explain": "正确答案：A（A custom-made sign）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) create?",
       "choice_translations": [
-        "A：Acustom-made sign",
-        "B：Acompany logo",
-        "C：Aset of furniture",
-        "D：Anewspaper advertisement"
+        "A:A custom-made sign",
+        "B:A company logo",
+        "C:A set of furniture",
+        "D:A newspaper advertisement"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hello. ©] own a jewelry store right by the history",
+      "evidence": "参考听力原文：“I don't want my customers to think they can't park beside the store, so I think a custom sign would be best.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hello. ©] own a jewelry store right by the history",
+        "evidence": "参考听力原文：“I don't want my customers to think they can't park beside the store, so I think a custom sign would be best.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“beside the store, so 91 think a custom sign would t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Acustom-made sign）。"
+        "analysis": "正确答案：A（A custom-made sign）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -146,28 +168,28 @@
       "choices": [
         "Her contact information",
         "Her choice of template",
-        "Acredit card number",
-        "Aphotograph"
+        "A credit card number",
+        "A photograph"
       ],
       "answer": "B",
       "question": "What does the man ask the woman for?",
-      "answer_explain": "原文依据：听力原文中提到“Iv Well, it really depends on the template that you”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Her choice of template）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） ask the woman（女士） for?",
+      "answer_explain": "正确答案：B（Her choice of template）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) ask the woman(女士) for?",
       "choice_translations": [
-        "A：Her contact information（信息）",
-        "B：Her choice of template",
-        "C：Acredit card number",
-        "D：Aphotograph"
+        "A:Her contact information(信息)",
+        "B:Her choice of template",
+        "C:A credit card number",
+        "D:A photograph"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hello. ©] own a jewelry store right by the history",
+      "evidence": "参考听力原文：“Why don't you go through our template selection in this book, and I'll tell you how much it'll be.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hello. ©] own a jewelry store right by the history",
+        "evidence": "参考听力原文：“Why don't you go through our template selection in this book, and I'll tell you how much it'll be.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Iv Well, it really depends on the template that you”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Her choice of template）。"
+        "analysis": "正确答案：B（Her choice of template）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

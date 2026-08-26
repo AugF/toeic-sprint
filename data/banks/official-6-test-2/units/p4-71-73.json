@@ -36,9 +36,33 @@
       "asset_key": "official-6-test-2/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "M\nIn local news, Owe have a report from the Pine Brook\nCommunity Center, where activities are underway to plant\na vegetable garden. ® The project was started by Jessica\nPlank, the director of the center. Ms. Plank has been\nnæ Plank 2½ 00-0·\nrecognized for her work at the center before. Just last month,\nshe was honored for her commitment to community service at\nthe town's outstanding citizens' awards ceremony. All of the\ngardening tools for the project were donated by the Endo\nCompany, one of the area's largest landscaping firms.",
-    "transcript_translation": "中文辅助（离线预处理）：M\nIn local news, Owe have a report from the Pine Brook\nCommunity Center, where（哪里） activities are underway to plant\na vegetable garden.\n® The project was started by Jessica\nPlank, the director of the center.\nMs.\nPlank has been\nnæ Plank 2½ 00-0·\nrecognized for her work（工作） at the center before.\nJust last month,\nshe was honored for her commitment to community service（服务） at\nthe town's outstanding citizens' awards ceremony.\nAll of the\ngardening tools for the project were donated by the Endo\nCompany（公司）, one of the area's largest landscaping firms.",
-    "content_translation": "中文辅助（离线预处理）：M\nIn local news, Owe have a report from the Pine Brook\nCommunity Center, where（哪里） activities are underway to plant\na vegetable garden.\n® The project was started by Jessica\nPlank, the director of the center.\nMs.\nPlank has been\nnæ Plank 2½ 00-0·\nrecognized for her work（工作） at the center before.\nJust last month,\nshe was honored for her commitment to community service（服务） at\nthe town's outstanding citizens' awards ceremony.\nAll of the\ngardening tools for the project were donated by the Endo\nCompany（公司）, one of the area's largest landscaping firms."
+    "transcript": "In local news, we have a report from the Pinebrook Community Centre where activities are underway to plan a vegetable garden.\nThe project was started by Jessica Plank, the director of the centre.\nMs Plank has been recognised for her work at the centre before.\nJust last month, she was honoured for her commitment to community... service at the Town's Outstanding Citizens' Awards ceremony.\nAll of the gardening tools for the project were donated by the Endo Company, one of the area's largest landscaping firms.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "18fad01686b4f071601d0c7cb62566d89aef3e5933a06fba35b00d20beeab9ba",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 85,
+        "legacy_word_count": 88,
+        "length_ratio": 0.966,
+        "legacy_coverage": 0.886,
+        "prompted_failure": "missing spoken Questions 71 through 73 introduction"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "在当地新闻中，我们有来自 Pinebrook Community Centre 的报道，那里正在进行活动来计划一个菜园。\n这个项目由中心主任 Jessica Plank 发起。\nPlank 女士之前也因她在中心的贡献而受到认可。\n就在上个月，她因对社区...服务做出的承诺，在 Town's Outstanding Citizens' Awards 颁奖典礼上获得了荣誉。\n所有用于该项目的园艺工具都由 Endo Company 捐赠，该公司是该地区最大的景观公司之一。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7b4599f7d6827b5504d1e3e9bdc6f26dafdaa5b97e7ad18e98c4da1a5f1da2a7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +74,23 @@
       ],
       "answer": "A",
       "question": "Where does Jessica Plank work?",
-      "answer_explain": "原文依据：听力原文中提到“Community Center, where activities are underway to plant”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（At a community center）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does Jessica Plank work（工作）?",
+      "answer_explain": "正确答案：A（At a community center）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does Jessica Plank work(工作)?",
       "choice_translations": [
-        "A：At a community center",
-        "B：At a radio station",
-        "C：At a park",
-        "D：At a restaurant"
+        "A:At a community center",
+        "B:At a radio station",
+        "C:At a park",
+        "D:At a restaurant"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：a vegetable garden. ® The project was started by Jessica",
+      "evidence": "参考听力原文：“Ms Plank has been recognised for her work at the centre before.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：a vegetable garden. ® The project was started by Jessica",
+        "evidence": "参考听力原文：“Ms Plank has been recognised for her work at the centre before.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Community Center, where activities are underway to plant”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（At a community center）。"
+        "analysis": "正确答案：A（At a community center）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 71,
       "priority": {
@@ -99,23 +123,23 @@
       ],
       "answer": "D",
       "question": "What took place last month?",
-      "answer_explain": "原文依据：听力原文中提到“the town's outstanding citizens' awards ceremony.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An awards ceremony）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） took place last month?",
+      "answer_explain": "正确答案：D（An awards ceremony）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) took place last month?",
       "choice_translations": [
-        "A：A store opening",
-        "B：A job fair",
-        "C：A landscaping contest",
-        "D：An awards ceremony"
+        "A:A store opening",
+        "B:A job fair",
+        "C:A landscaping contest",
+        "D:An awards ceremony"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：recognized for her work at the center before. Just last month,",
+      "evidence": "参考听力原文：“Just last month, she was honoured for her commitment to community... service at the Town's Outstanding Citizens' Awards ceremony.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：recognized for her work at the center before. Just last month,",
+        "evidence": "参考听力原文：“Just last month, she was honoured for her commitment to community... service at the Town's Outstanding Citizens' Awards ceremony.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the town's outstanding citizens' awards ceremony.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An awards ceremony）。"
+        "analysis": "正确答案：D（An awards ceremony）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 72,
       "priority": {
@@ -148,23 +172,23 @@
       ],
       "answer": "B",
       "question": "What did the Endo Company do?",
-      "answer_explain": "原文依据：听力原文中提到“gardening tools for the project were donated by the Endo”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（It donated some tools.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） did the Endo Company（公司） do?",
+      "answer_explain": "正确答案：B（It donated some tools.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) did the Endo Company(公司) do?",
       "choice_translations": [
-        "A：It started an internship program.",
-        "B：It donated some tools.",
-        "C：It created a new slogan.",
-        "D：It opened a second location."
+        "A:It started an internship program.",
+        "B:It donated some tools.",
+        "C:It created a new slogan.",
+        "D:It opened a second location."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：Company, one of the area's largest landscaping firms.",
+      "evidence": "参考听力原文：“All of the gardening tools for the project were donated by the Endo Company, one of the area's largest landscaping firms.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：Company, one of the area's largest landscaping firms.",
+        "evidence": "参考听力原文：“All of the gardening tools for the project were donated by the Endo Company, one of the area's largest landscaping firms.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“gardening tools for the project were donated by the Endo”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（It donated some tools.）。"
+        "analysis": "正确答案：B（It donated some tools.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 73,
       "priority": {

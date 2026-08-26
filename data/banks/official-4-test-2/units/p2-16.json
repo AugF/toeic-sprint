@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-2/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：[I™ Can | put these boxes in the storage room?\ni",
-    "content_translation": "中文辅助（离线预处理）：[I™ Can | put these boxes in the storage room?\ni"
+    "transcript": "Can I put these boxes in the storage room?\nA. The yearly inspection.\nB. My phone stores over 500 photos.\nC. There's some space in this closet.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a30fd95ddda68de25a311fbc7f11b3c4f58b248ddffffe72f9ea6866f86e28df",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "我可以把这些箱子放进储物室吗？\nA. 年度检查。\nB. 我的手机存储了超过 500 张照片。\nC. 这个衣柜还有一些空间。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "beecce5be2393a8db7ab2127ca8f0ba64095b90678361233dc2cd561fc54527e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "The yearly inspection.",
         "My phone stores over 500 photos.",
-        "There’s some space in this closet."
+        "There's some space in this closet."
       ],
       "answer": "C",
-      "question": "[I™ Can | put these boxes in the storage room? i",
+      "question": "Can I put these boxes in the storage room?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“[I™ Can | put these boxes in the storage room? i”，自然应答是“There’s some space in this closet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（There’s some space in this closet.）。",
-      "question_translation": "中文辅助（离线预处理）：[I™ Can | put these boxes in the storage room?\ni",
+      "answer_explain": "原文依据：问句或陈述是“Can I put these boxes in the storage room?”，自然应答是“There's some space in this closet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（There's some space in this closet.）。",
+      "question_translation": "我可以把这些箱子放进储物室吗?",
       "choice_translations": [
-        "A：The yearly inspection.",
-        "B：My phone stores over 500 photos.",
-        "C：There’s some space in this closet."
+        "A：年度检查。",
+        "B：我的手机存储了超过 500 张照片。",
+        "C：这个衣柜还有一些空间。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：[I™ Can | put these boxes in the storage room? i",
+      "evidence": "参考原文第 1 段：Can I put these boxes in the storage room?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：[I™ Can | put these boxes in the storage room? i",
+        "evidence": "参考原文第 1 段：Can I put these boxes in the storage room?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“[I™ Can | put these boxes in the storage room? i”，自然应答是“There’s some space in this closet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（There’s some space in this closet.）。"
+        "analysis": "原文依据：问句或陈述是“Can I put these boxes in the storage room?”，自然应答是“There's some space in this closet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（There's some space in this closet.）。"
       },
       "item_id": 16,
       "priority": {

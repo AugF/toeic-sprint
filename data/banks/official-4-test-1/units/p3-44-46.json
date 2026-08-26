@@ -39,37 +39,59 @@
       "asset_key": "official-4-test-1/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "iw Hi Ana. Are we still waiting for the titanium bolts to\nundergo safety testing? We were supposed to sta\nassembling the aircraft parts this week, but now we’\nbehind schedule.\nUnfortunately, we won't be able to complete the safe\ntesting until Friday. Regulations require an official\ninspection of the testing process, and we can’t get a\ncertified inspector to come out until then.\nHu In that case ©we'll need to revise the production\nschedule. © Please tell the rest of the team that we'l\nmeet in my office at four o’clock to discuss it.",
-    "transcript_translation": "中文辅助（离线预处理）：iw Hi Ana.\nAre we still waiting for the titanium bolts to\nundergo safety testing?\nWe were supposed to sta\nassembling the aircraft parts this week, but now we’\nbehind schedule（日程）.\nUnfortunately, we won't be able to complete the safe\ntesting until Friday.\nRegulations require an official\ninspection of the testing process, and we can’t get a\ncertified inspector to come out until then.\nHu In that case ©we'll need to revise the production\nschedule（日程）.\n© Please（请） tell the rest of the team that we'l\nmeet in my office（办公室） at four o’clock to discuss it.",
-    "content_translation": "中文辅助（离线预处理）：iw Hi Ana.\nAre we still waiting for the titanium bolts to\nundergo safety testing?\nWe were supposed to sta\nassembling the aircraft parts this week, but now we’\nbehind schedule（日程）.\nUnfortunately, we won't be able to complete the safe\ntesting until Friday.\nRegulations require an official\ninspection of the testing process, and we can’t get a\ncertified inspector to come out until then.\nHu In that case ©we'll need to revise the production\nschedule（日程）.\n© Please（请） tell the rest of the team that we'l\nmeet in my office（办公室） at four o’clock to discuss it."
+    "transcript": "Hi Anna, are we still waiting for the titanium bolts to undergo safety testing?\nWe were supposed to start assembling the aircraft parts this week, but now we're behind schedule.\nUnfortunately, we won't be able to complete the safety testing until Friday.\nRegulations require an official inspection of the testing process, and we can't get a certified inspector to come out until then.\nIn that case, we'll need to revise the production schedule.\nPlease tell the rest of the team that will meet in my office at 4 o'clock to discuss it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6d4c7606dc152d96d973171a400dba72de0011925ce2ad1f2fa07832e5fa1b76",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 91,
+        "legacy_word_count": 94,
+        "length_ratio": 0.968,
+        "legacy_coverage": 0.926
+      }
+    },
+    "transcript_translation": "嗨 Anna，我们还在等钛螺栓进行安全测试吗？\n我们本周应该开始组装飞机部件，但现在落后了进度。\n很遗憾，我们直到周五才能完成安全测试。\n规定要求对测试过程进行官方检查，而且我们不能等到那时才能请到认证的检查员来。\n在这种情况下，我们需要修改生产计划。\n请告诉剩下的团队成员，他们将在我办公室下午 4 点集合讨论此事。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c82649f4dff4a743ec37140c9b4b30d072d008567b90612e582d517e716cbf94"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "A project budget",
         "A production delay",
-        "Asafety presentation",
+        "A safety presentation",
         "A factory layout"
       ],
       "answer": "B",
-      "question": "What is the conversation mainly about? 5",
-      "answer_explain": "原文依据：听力原文中提到“Hu In that case ©we'll need to revise the production”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A production delay）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the conversation mainly about?\n5",
+      "question": "What is the conversation mainly about?",
+      "answer_explain": "正确答案：B（A production delay）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the conversation mainly about? 5",
       "choice_translations": [
-        "A：A project budget",
-        "B：A production delay",
-        "C：Asafety presentation",
-        "D：A factory layout"
+        "A:A project budget",
+        "B:A production delay",
+        "C:A safety presentation",
+        "D:A factory layout"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：iw Hi Ana. Are we still waiting for the titanium bolts to",
+      "evidence": "参考听力原文：“In that case, we'll need to revise the production schedule.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：iw Hi Ana. Are we still waiting for the titanium bolts to",
+        "evidence": "参考听力原文：“In that case, we'll need to revise the production schedule.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Hu In that case ©we'll need to revise the production”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A production delay）。"
+        "analysis": "正确答案：B（A production delay）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -98,30 +120,30 @@
     },
     {
       "choices": [
-        "Areplacement part",
-        "Atraining session",
-        "Amanager’s approval",
+        "A replacement part",
+        "A training session",
+        "A manager’s approval",
         "An official inspection"
       ],
       "answer": "D",
-      "question": "According to the woman, whatis required? 5”",
-      "answer_explain": "原文依据：听力原文中提到“inspection of the testing process, and we can’t get a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An official inspection）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the woman（女士）, whatis required?\n5”",
+      "question": "According to the woman, what is required?",
+      "answer_explain": "正确答案：D（An official inspection）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the woman(女士), whatis required? 5”",
       "choice_translations": [
-        "A：Areplacement part",
-        "B：Atraining session",
-        "C：Amanager’s approval",
-        "D：An official inspection"
+        "A:A replacement part",
+        "B:A training session",
+        "C:A manager’s approval",
+        "D:An official inspection"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：iw Hi Ana. Are we still waiting for the titanium bolts to",
+      "evidence": "参考听力原文：“Regulations require an official inspection of the testing process, and we can't get a certified inspector to come out until then.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：iw Hi Ana. Are we still waiting for the titanium bolts to",
+        "evidence": "参考听力原文：“Regulations require an official inspection of the testing process, and we can't get a certified inspector to come out until then.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“inspection of the testing process, and we can’t get a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An official inspection）。"
+        "analysis": "正确答案：D（An official inspection）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -156,24 +178,24 @@
         "To review some figures"
       ],
       "answer": "B",
-      "question": "Why will a meeting be held? 5:",
-      "answer_explain": "原文依据：听力原文中提到“Hu In that case ©we'll need to revise the production”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To revise a schedule）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） will a meeting（会议） be held?\n5:",
+      "question": "Why will a meeting be held?",
+      "answer_explain": "正确答案：B（To revise a schedule）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) will a meeting(会议) be held? 5:",
       "choice_translations": [
-        "A：To change a design",
-        "B：To revise a schedule（日程）",
-        "C：To request feedback",
-        "D：To review some figures"
+        "A:To change a design",
+        "B:To revise a schedule(日程)",
+        "C:To request feedback",
+        "D:To review some figures"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：iw Hi Ana. Are we still waiting for the titanium bolts to",
+      "evidence": "参考听力原文：“In that case, we'll need to revise the production schedule.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：iw Hi Ana. Are we still waiting for the titanium bolts to",
+        "evidence": "参考听力原文：“In that case, we'll need to revise the production schedule.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Hu In that case ©we'll need to revise the production”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To revise a schedule）。"
+        "analysis": "正确答案：B（To revise a schedule）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

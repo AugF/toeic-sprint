@@ -40,9 +40,31 @@
       "asset_key": "official-3-test-1/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "telephone message.\niu\nHello, rm calling from Mahmud’s Printers about the vl\nbusiness cards your company recently ordered from te\nmy printing shop. That’s a very big order. So | wanted ot\nto talk with you before going through with it. Of course, 57\nr1 send you an example of the card before we print 3!\nso many, but ®please call me back to confirm the Be\nnumber. Oh, and regarding the color scheme. 9 don't &?\nhave the exact pale yellow you want for your logo, so | TE\nhad to change that. | do have a similar hue, though— Rl\nhope you like it. Thanks! Li",
-    "transcript_translation": "电话留言。\n您好，我是来自马赫穆德印刷厂的人。关于贵公司最近从我们印刷店订购的名片。这是一个非常大的订单。所以我想在继续之前和您谈谈。当然，我会在打印很多张之前先给您发送一张卡片的样品，但请回电确认一下收件人号码。哦，还有关于配色方案。我没有您想要的确切的浅黄色用于您的标志，所以我不得不更改了。不过，我确实有一个相似的色调——希望您喜欢。谢谢！",
-    "content_translation": "电话留言。\n您好，我是来自马赫穆德印刷厂的人。关于贵公司最近从我们印刷店订购的名片。这是一个非常大的订单。所以我想在继续之前和您谈谈。当然，我会在打印很多张之前先给您发送一张卡片的样品，但请回电确认一下收件人号码。哦，还有关于配色方案。我没有您想要的确切的浅黄色用于您的标志，所以我不得不更改了。不过，我确实有一个相似的色调——希望您喜欢。谢谢！"
+    "transcript": "Hello, I'm calling from Mahmud's Printers about the vl business cards your company recently ordered from my printing shop.\nThat's a very big order.\nSo I wanted to talk with you before going through with it.\nOf course, I'll send you an example of the card before we print so many, but please call me back to confirm the number.\nOh, and regarding the color scheme, I don't have the exact pale yellow you want for your logo, so I had to change that.\nI do have a similar hue, though.\nI hope you like it.\nThanks!",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "76a8cc749f25ee0bbdfabc2af1abe5e9a7647bbcfde851ed98ded4d5750aac73",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 100,
+        "length_ratio": 0.97,
+        "legacy_coverage": 0.9
+      }
+    },
+    "transcript_translation": "您好，我是来自 Mahmud's Printers 的，是关于贵公司最近从我的印刷店订购的 vl 名片。\n这是一个非常大的订单。\n所以我想在继续之前和您谈谈。\n当然，在我们印制大量名片之前，我会给您发送一个样品，但请您回电话给我确认数量。\n哦，还有关于配色方案，我没有您想要的确切浅黄色用于您的标志，所以我不得不更改了它。\n不过我有一个相似的色调。\n希望您喜欢。\n谢谢！",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d1dd3c4b9222ea4318823a40b8bb0cb9273165391a30d7da8ece75e243707e1c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker imply when he says, “That’s a very big order’?",
-      "answer_explain": "原文依据：听力原文中提到“That’s a very big order.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（He thinks a request may be incorrect.）。",
-      "question_translation": "当演讲者说“这是一个非常大的订单”时，他暗示了什么？",
+      "answer_explain": "正确答案：D（He thinks a request may be incorrect.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "当演讲者说“这是一个非常大的订单”时,他暗示了什么?",
       "choice_translations": [
-        "A：他无法按时完成订单。",
-        "B：他将收取比平时更多的费用。",
-        "C：他需要听众帮个忙。",
-        "D：他认为一个请求可能是错误的。"
+        "A:他无法按时完成订单。",
+        "B:他将收取比平时更多的费用。",
+        "C:他需要听众帮个忙。",
+        "D:他认为一个请求可能是错误的。"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 4 段：business cards your company recently ordered from te",
+      "evidence": "参考听力原文：“That's a very big order.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 4 段：business cards your company recently ordered from te",
+        "evidence": "参考听力原文：“That's a very big order.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“That’s a very big order.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（He thinks a request may be incorrect.）。"
+        "analysis": "正确答案：D（He thinks a request may be incorrect.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 86,
       "priority": {
@@ -100,30 +122,30 @@
     },
     {
       "choices": [
-        "Asigned paper",
-        "Aproduct sample",
-        "Acolor printer",
-        "Acatalog"
+        "A signed paper",
+        "A product sample",
+        "A color printer",
+        "A catalog"
       ],
       "answer": "B",
       "question": "What will the speaker send the listener?",
-      "answer_explain": "原文依据：听力原文中提到“r1 send you an example of the card before we print 3!”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Aproduct sample）。",
-      "question_translation": "演讲者会给听众发送什么？",
+      "answer_explain": "正确答案：B（A product sample）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者会给听众发送什么?",
       "choice_translations": [
-        "A：打印纸张",
-        "B：产品样品",
-        "C：颜色打印机",
-        "D：目录册"
+        "A:打印纸张",
+        "B:产品样品",
+        "C:颜色打印机",
+        "D:目录册"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：telephone message.",
+      "evidence": "参考听力原文：“Of course, I'll send you an example of the card before we print so many, but please call me back to confirm the number.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：telephone message.",
+        "evidence": "参考听力原文：“Of course, I'll send you an example of the card before we print so many, but please call me back to confirm the number.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“r1 send you an example of the card before we print 3!”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Aproduct sample）。"
+        "analysis": "正确答案：B（A product sample）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 87,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker say he has changed?",
-      "answer_explain": "原文依据：听力原文中提到“Oh, and regarding the color scheme.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（The color of a design）。",
-      "question_translation": "演讲者说他改变了什么？",
+      "answer_explain": "正确答案：A（The color of a design）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者说他改变了什么?",
       "choice_translations": [
-        "A：设计的颜色",
-        "B：某些信息的位置",
-        "C：约会的时间",
-        "D：标志的地点"
+        "A:设计的颜色",
+        "B:某些信息的位置",
+        "C:约会的时间",
+        "D:标志的地点"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：telephone message.",
+      "evidence": "参考听力原文：“Oh, and regarding the color scheme, I don't have the exact pale yellow you want for your logo, so I had to change that.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：telephone message.",
+        "evidence": "参考听力原文：“Oh, and regarding the color scheme, I don't have the exact pale yellow you want for your logo, so I had to change that.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Oh, and regarding the color scheme.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（The color of a design）。"
+        "analysis": "正确答案：A（The color of a design）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 88,
       "priority": {

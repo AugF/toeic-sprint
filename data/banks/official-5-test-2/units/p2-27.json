@@ -27,15 +27,35 @@
       "asset_key": "official-5-test-2/audio/part2/q027.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：How（如何） many people are coming to the conference?",
-    "content_translation": "中文辅助（离线预处理）：How（如何） many people are coming to the conference?"
+    "transcript": "How many people are coming to the conference?\nA. Sometime this afternoon.\nB. Registration's still open.\nC. It's by the convention centre.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7c8235fa20814afc620c675d5e4f04741f9d8426958294bd09e39810f31a1499",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q027.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "有多少人参加会议？\nA. 今天下午某个时候。\nB. 注册还开着。\nC. 在会议中心旁。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "14f55b2e65ef072c78cf6e0ccff3de3803e2cb342a21d20003174a1cbc0aec08"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Sometime this afternoon.",
         "Registration's still open.",
-        "It's by the convention center."
+        "It's by the convention centre."
       ],
       "answer": "B",
       "question": "How many people are coming to the conference?",
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“How many people are coming to the conference?”，自然应答是“Registration's still open.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Registration's still open.）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） many people are coming to the conference?",
+      "question_translation": "有多少人参加会议?",
       "choice_translations": [
-        "A：Sometime this afternoon.",
-        "B：Registration's still open.",
-        "C：It's by the convention center."
+        "A：今天下午某个时候。",
+        "B：注册还开着。",
+        "C：在会议中心旁。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：How many people are coming to the conference?",

@@ -39,9 +39,32 @@
       "asset_key": "official-7-test-2/audio/part3/q062-064.mp3",
       "exists": true
     },
-    "transcript": "and directory.\nCarol, O did you see the sales report from last quarter?\nw I did... and I'm surprised. Our paper products really\naren't selling well.\nam I noticed that too. ® How about moving some of the\nproducts there to other locations? For example, we\ncould put facial tissues in the beauty supplies aisle.\nEw Hm, good idea. We should put them next to the face\nlotions.\nEM OK. Ol'll keep that in mind when the next shipment\ncomes in on Thursday.\nStore Directory\nAisle 1\nAisle 2\nBeauty supplies\nPaper products\nAisle 3\nAisle 4\ni8284\nCleaning supplies\nPet food",
-    "transcript_translation": "中文辅助（离线预处理）：and directory.\nCarol, O did you see the sales report from last quarter?\nw I did...\nand I'm surprised.\nOur paper products really\naren't selling well.\nam I noticed that too.\n® How（如何） about moving some of the\nproducts there to other locations?\nFor example, we\ncould put facial tissues in the beauty supplies aisle.\nEw Hm, good idea.\nWe should put them next to the face\nlotions.\nEM OK.\nOl'll keep that in mind when（何时） the next shipment\ncomes in on Thursday.\nStore Directory\nAisle 1\nAisle 2\nBeauty supplies\nPaper products\nAisle 3\nAisle 4\ni8284\nCleaning supplies\nPet food",
-    "content_translation": "中文辅助（离线预处理）：and directory.\nCarol, O did you see the sales report from last quarter?\nw I did...\nand I'm surprised.\nOur paper products really\naren't selling well.\nam I noticed that too.\n® How（如何） about moving some of the\nproducts there to other locations?\nFor example, we\ncould put facial tissues in the beauty supplies aisle.\nEw Hm, good idea.\nWe should put them next to the face\nlotions.\nEM OK.\nOl'll keep that in mind when（何时） the next shipment\ncomes in on Thursday.\nStore Directory\nAisle 1\nAisle 2\nBeauty supplies\nPaper products\nAisle 3\nAisle 4\ni8284\nCleaning supplies\nPet food"
+    "transcript": "Carol, did you see the sales report from last quarter?\nI did, and I'm surprised.\nOur paper products really aren't selling well.\nI noticed that too.\nHow about moving some of the products there to other locations?\nFor example, we could put facial tissues in the beauty supplies aisle.\nHmm, good idea.\nWe should put them next to the face lotions.\nOkay.\nI'll keep that in mind when the next shipment comes in on Thursday.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e8472cfc9c213857787b6ce39da931fb9dfb62ba506d5b3289f0a3ed3363484f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part3/q062-064.mp3",
+      "metrics": {
+        "word_count": 77,
+        "legacy_word_count": 92,
+        "length_ratio": 0.837,
+        "legacy_coverage": 0.891
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "Carol，你看到上个季度的销售报告了吗？\n看到了，我很惊讶。\n我们的纸制品真的卖得不好。\n我也注意到了。\n把一些产品移到其他地点怎么样？\n例如，我们可以把面巾纸放在美容用品通道里。\n嗯，好主意。\n我们应该把它们放在乳液旁边。\n好的。\n下周四新一批货到的时候我会记住的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "b2a575cdb1304bea0cff0139a48727fdcec4d6769dc7e3e090b06bb863729e0e"
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "C",
       "question": "Why is the woman surprised?",
-      "answer_explain": "原文依据：听力原文中提到“aren't selling well.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some merchandise is not selling well.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the woman（女士） surprised?",
+      "answer_explain": "正确答案：C（Some merchandise is not selling well.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the woman(女士) surprised?",
       "choice_translations": [
-        "A：Customers have complained about a brand.",
-        "B：An inspection will take place soon.",
-        "C：Some merchandise is not selling well.",
-        "D：A supplier has gone out of business."
+        "A:Customers have complained about a brand.",
+        "B:An inspection will take place soon.",
+        "C:Some merchandise is not selling well.",
+        "D:A supplier has gone out of business."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 3 段：w I did... and I'm surprised. Our paper products really",
+      "evidence": "参考听力原文：“Our paper products really aren't selling well.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 3 段：w I did... and I'm surprised. Our paper products really",
+        "evidence": "参考听力原文：“Our paper products really aren't selling well.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“aren't selling well.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some merchandise is not selling well.）。"
+        "analysis": "正确答案：C（Some merchandise is not selling well.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 62,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "A",
       "question": "Look at the graphic. Which aisle will some products be moved to?",
-      "answer_explain": "原文依据：听力原文中提到“could put facial tissues in the beauty supplies aisle.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（Aisle 1）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich aisle will some products be moved to?",
+      "answer_explain": "正确答案：A（Aisle 1）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which aisle will some products be moved to?",
       "choice_translations": [
-        "A：Aisle 1",
-        "B：Aisle 2",
-        "C：Aisle 3",
-        "D：Aisle 4"
+        "A:Aisle 1",
+        "B:Aisle 2",
+        "C:Aisle 3",
+        "D:Aisle 4"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：w I did... and I'm surprised. Our paper products really",
+      "evidence": "参考听力原文：“How about moving some of the products there to other locations?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：w I did... and I'm surprised. Our paper products really",
+        "evidence": "参考听力原文：“How about moving some of the products there to other locations?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“could put facial tissues in the beauty supplies aisle.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（Aisle 1）。"
+        "analysis": "正确答案：A（Aisle 1）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 63,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "B",
       "question": "What is scheduled to happen on Thursday?",
-      "answer_explain": "原文依据：听力原文中提到“Ol'll keep that in mind when the next shipment”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A shipment will arrive.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is scheduled to happen on Thursday?",
+      "answer_explain": "正确答案：B（A shipment will arrive.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is scheduled to happen on Thursday?",
       "choice_translations": [
-        "A：A training will be held.",
-        "B：A shipment will arrive.",
-        "C：A promotional event will begin.",
-        "D：A budget report will be updated."
+        "A:A training will be held.",
+        "B:A shipment will arrive.",
+        "C:A promotional event will begin.",
+        "D:A budget report will be updated."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：comes in on Thursday.",
+      "evidence": "参考听力原文：“I'll keep that in mind when the next shipment comes in on Thursday.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：comes in on Thursday.",
+        "evidence": "参考听力原文：“I'll keep that in mind when the next shipment comes in on Thursday.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ol'll keep that in mind when the next shipment”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A shipment will arrive.）。"
+        "analysis": "正确答案：B（A shipment will arrive.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 64,
       "priority": {

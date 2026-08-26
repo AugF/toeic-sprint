@@ -39,9 +39,31 @@
       "asset_key": "official-5-test-1/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "Hi, Mei Li. We have a small problem — it looks like\nwe both booked conference room C for our two o'clock\nmeetings today.\nEK w Oh, you know, ®the room reservation software\nwas updated last week. My manager told me that\nthere have been some problems with making room\nreservations ever since it was updated.\nK, well, ®my meeting doesn't have to be today.\nYou can use the room, and I'll move my meeting to\ntomorrow instead.",
-    "transcript_translation": "中文辅助（离线预处理）：Hi, Mei Li.\nWe have a small problem — it looks like\nwe both booked conference room C for our two o'clock\nmeetings today.\nEK w Oh, you know, ®the room reservation software\nwas updated last week.\nMy manager（经理） told me that\nthere have been some problems with making room\nreservations ever since it was updated.\nK, well, ®my meeting（会议） doesn't have to be today.\nYou can use the room, and I'll move my meeting（会议） to\ntomorrow instead.",
-    "content_translation": "中文辅助（离线预处理）：Hi, Mei Li.\nWe have a small problem — it looks like\nwe both booked conference room C for our two o'clock\nmeetings today.\nEK w Oh, you know, ®the room reservation software\nwas updated last week.\nMy manager（经理） told me that\nthere have been some problems with making room\nreservations ever since it was updated.\nK, well, ®my meeting（会议） doesn't have to be today.\nYou can use the room, and I'll move my meeting（会议） to\ntomorrow instead."
+    "transcript": "Hi, May Lee.\nWe have a small problem.\nIt looks like we both booked Conference Room C for our 2 o'clock meetings today.\nOh, you know the room reservation software was updated last week.\nMy manager told me that there have been some problems with making room reservations ever since it was updated.\nOkay, well, my meeting doesn't have to be today.\nYou can use the room and I'll move my meeting to tomorrow instead.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ece034f1ee6b3c0496407ae19716fcfadcf4a122517ccfd5c3eb2bb065b578fc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 74,
+        "legacy_word_count": 74,
+        "length_ratio": 1,
+        "legacy_coverage": 0.932
+      }
+    },
+    "transcript_translation": "嗨，May Lee。\n我们有个小问题。\n看起来我们俩都预订了今天下午两点的 C 会议室。\n哦，你知道会议室预订软件上周更新了。\n我的经理告诉我，自从它更新以来，预订会议室一直有些问题。\n好的，我开会不一定非得是今天。\n你可以用这个房间，我改到明天开会。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2bf3b2fa49efbe5dfa2521e73e417ddefdc934e4ae8b0f6eb2622a3fc15fc866"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "What problem does the man mention?",
-      "answer_explain": "原文依据：听力原文中提到“You can use the room, and I'll move my meeting to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A room has been double-booked.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） problem does the man（男士） mention?",
+      "answer_explain": "正确答案：D（A room has been double-booked.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) problem does the man(男士) mention?",
       "choice_translations": [
-        "A：There has been a payroll error.",
-        "B：Some staff have not received an e-mail.",
-        "C：Several files have disappeared.",
-        "D：A room has been double-booked."
+        "A:There has been a payroll error.",
+        "B:Some staff have not received an e-mail.",
+        "C:Several files have disappeared.",
+        "D:A room has been double-booked."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：Hi, Mei Li. We have a small problem — it looks like",
+      "evidence": "参考听力原文：“My manager told me that there have been some problems with making room reservations ever since it was updated.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：Hi, Mei Li. We have a small problem — it looks like",
+        "evidence": "参考听力原文：“My manager told me that there have been some problems with making room reservations ever since it was updated.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“You can use the room, and I'll move my meeting to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A room has been double-booked.）。"
+        "analysis": "正确答案：D（A room has been double-booked.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "A",
       "question": "According to the woman, what recently happened?",
-      "answer_explain": "原文依据：听力原文中提到“reservations ever since it was updated.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Some software was updated.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the woman（女士）, what（什么） recently happened?",
+      "answer_explain": "正确答案：A（Some software was updated.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the woman(女士), what(什么) recently happened?",
       "choice_translations": [
-        "A：Some software was updated.",
-        "B：Some offices were remodeled.",
-        "C：A manual was printed.",
-        "D：A security policy was adopted."
+        "A:Some software was updated.",
+        "B:Some offices were remodeled.",
+        "C:A manual was printed.",
+        "D:A security policy was adopted."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, Mei Li. We have a small problem — it looks like",
+      "evidence": "参考听力原文：“My manager told me that there have been some problems with making room reservations ever since it was updated.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, Mei Li. We have a small problem — it looks like",
+        "evidence": "参考听力原文：“My manager told me that there have been some problems with making room reservations ever since it was updated.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“reservations ever since it was updated.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Some software was updated.）。"
+        "analysis": "正确答案：A（Some software was updated.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What does the man offer to do?",
-      "answer_explain": "原文依据：听力原文中提到“You can use the room, and I'll move my meeting to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Take a lunch break）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） offer to do?",
+      "answer_explain": "正确答案：C（Take a lunch break）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) offer to do?",
       "choice_translations": [
-        "A：Post a job announcement",
-        "B：Confirm some information（信息）",
-        "C：Take a lunch break",
-        "D：Check some inventory"
+        "A:Post a job announcement",
+        "B:Confirm some information(信息)",
+        "C:Take a lunch break",
+        "D:Check some inventory"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, Mei Li. We have a small problem — it looks like",
+      "evidence": "参考听力原文：“My manager told me that there have been some problems with making room reservations ever since it was updated.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, Mei Li. We have a small problem — it looks like",
+        "evidence": "参考听力原文：“My manager told me that there have been some problems with making room reservations ever since it was updated.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“You can use the room, and I'll move my meeting to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Take a lunch break）。"
+        "analysis": "正确答案：C（Take a lunch break）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

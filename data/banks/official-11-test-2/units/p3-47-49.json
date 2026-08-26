@@ -39,9 +39,31 @@
       "asset_key": "official-11-test-2/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "EK w Well, Oit appears that we won't be going to the trad\nshow in New York next week after all.\nOh no! But we've been preparing to launch the ne\ndigital advertising software there. Has something\nhappened?\nEK w I just got off the phone with the manager of the\ndevelopment team. O They found a serious defect in\nsoftware. It's going to take them at least a month to f\nM Well, I'm glad they discovered the issue in advance\nEw Me, too. Anyway, Ol guess I'll go and let the travel\nagent know to cancel all our trip reservations.",
-    "transcript_translation": "中文辅助（离线预处理）：EK w Well, Oit appears that we won't be going to the trad\nshow in New York next week after all.\nOh no!\nBut we've been preparing to launch the ne\ndigital advertising software there.\nHas something\nhappened?\nEK w I just got off the phone with the manager（经理） of the\ndevelopment team.\nO They found a serious defect in\nsoftware.\nIt's going to take them at least a month to f\nM Well, I'm glad they discovered the issue in advance\nEw Me, too.\nAnyway, Ol guess I'll go and let the travel\nagent know to cancel all our trip reservations.",
-    "content_translation": "中文辅助（离线预处理）：EK w Well, Oit appears that we won't be going to the trad\nshow in New York next week after all.\nOh no!\nBut we've been preparing to launch the ne\ndigital advertising software there.\nHas something\nhappened?\nEK w I just got off the phone with the manager（经理） of the\ndevelopment team.\nO They found a serious defect in\nsoftware.\nIt's going to take them at least a month to f\nM Well, I'm glad they discovered the issue in advance\nEw Me, too.\nAnyway, Ol guess I'll go and let the travel\nagent know to cancel all our trip reservations."
+    "transcript": "Well, it appears that we won't be going to the trade show in New York next week after all.\nOh no, but we've been preparing to launch the new digital advertising software there.\nHas something happened?\nI just got off the phone with the manager of the development team.\nThey found a serious defect in the software.\nIt's going to take them at least a month to fix it.\nWell, I'm glad they discovered the issue in advance.\nMe too.\nAnyway, I guess I'll go and let the travel agent know to cancel all our trip reservations.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6f6f3c1beff6cd9a84764d2d7cef9d770df6b6c8bf55197bf786aeb3d24e9f67",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 97,
+        "length_ratio": 1,
+        "legacy_coverage": 0.897
+      }
+    },
+    "transcript_translation": "嗯，看来我们下周不会去纽约的贸易展了。\n哦不，但我们一直在那里准备发布新的数字广告软件。\n发生什么事了吗？\n我刚和开发团队的经理通完电话。\n他们在软件中发现了一个严重的缺陷。\n他们至少需要一个月时间来修复它。\n嗯，很高兴他们能提前发现这个问题。\n我也是。\n无论如何，我想去让旅行社知道取消我们所有的行程预订。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7160ff4c90afdfa132a49363aea4424d1c223a56b7f4978580d2f156f6785711"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "Where do the speakers most likely work?",
-      "answer_explain": "原文依据：听力原文与题目“Where do the speakers most likely work?”对应，官方答案为“At a technology company”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（At a technology company）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） do the speakers most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：D（At a technology company）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) do the speakers most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At an automobile manufacturer",
-        "B：At a cosmetics developer",
-        "C：At a construction firm",
-        "D：At a technology company（公司）"
+        "A:At an automobile manufacturer",
+        "B:At a cosmetics developer",
+        "C:At a construction firm",
+        "D:At a technology company(公司)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：EK w Well, Oit appears that we won't be going to the trad",
+      "evidence": "参考听力原文：“Well, it appears that we won't be going to the trade show in New York next week after all.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：EK w Well, Oit appears that we won't be going to the trad",
+        "evidence": "参考听力原文：“Well, it appears that we won't be going to the trade show in New York next week after all.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Where do the speakers most likely work?”对应，官方答案为“At a technology company”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（At a technology company）。"
+        "analysis": "正确答案：D（At a technology company）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "C",
       "question": "Why was a business trip canceled?",
-      "answer_explain": "原文依据：听力原文与题目“Why was a business trip canceled?”对应，官方答案为“A flaw in a product was discovered.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A flaw in a product was discovered.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） was a business trip canceled?",
+      "answer_explain": "正确答案：C（A flaw in a product was discovered.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) was a business trip canceled?",
       "choice_translations": [
-        "A：A client ended a contract.",
-        "B：A supplier will be replaced.",
-        "C：A flaw in a product was discovered.",
-        "D：A flight was canceled."
+        "A:A client ended a contract.",
+        "B:A supplier will be replaced.",
+        "C:A flaw in a product was discovered.",
+        "D:A flight was canceled."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EK w Well, Oit appears that we won't be going to the trad",
+      "evidence": "参考听力原文：“Anyway, I guess I'll go and let the travel agent know to cancel all our trip reservations.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EK w Well, Oit appears that we won't be going to the trad",
+        "evidence": "参考听力原文：“Anyway, I guess I'll go and let the travel agent know to cancel all our trip reservations.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Why was a business trip canceled?”对应，官方答案为“A flaw in a product was discovered.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A flaw in a product was discovered.）。"
+        "analysis": "正确答案：C（A flaw in a product was discovered.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "A",
       "question": "What does the woman say she will do?",
-      "answer_explain": "原文依据：听力原文与题目“What does the woman say she will do?”对应，官方答案为“Contact a travel agent”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Contact a travel agent）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do?",
+      "answer_explain": "正确答案：A（Contact a travel agent）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she will do?",
       "choice_translations": [
-        "A：Contact a travel agent",
-        "B：Review some presentation slides",
-        "C：Apply for more funding",
-        "D：Revise an instruction manual"
+        "A:Contact a travel agent",
+        "B:Review some presentation slides",
+        "C:Apply for more funding",
+        "D:Revise an instruction manual"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EK w Well, Oit appears that we won't be going to the trad",
+      "evidence": "参考听力原文：“Anyway, I guess I'll go and let the travel agent know to cancel all our trip reservations.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EK w Well, Oit appears that we won't be going to the trad",
+        "evidence": "参考听力原文：“Anyway, I guess I'll go and let the travel agent know to cancel all our trip reservations.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What does the woman say she will do?”对应，官方答案为“Contact a travel agent”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Contact a travel agent）。"
+        "analysis": "正确答案：A（Contact a travel agent）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

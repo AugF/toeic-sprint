@@ -28,8 +28,28 @@
       "asset_key": "official-10-test-1/audio/part2/q015.mp3",
       "exists": true
     },
-    "transcript_translation": "我们应该在我的办公室还是在会议室见面？\nA. 我们将吃素食餐，谢谢。\nB. 我更喜欢会议室。\nC. 一张桌子和一些椅子。",
-    "content_translation": "我们应该在我的办公室还是在会议室见面？\nA. 我们将吃素食餐，谢谢。\nB. 我更喜欢会议室。\nC. 一张桌子和一些椅子。"
+    "transcript": "Should we meet in my office or in the conference room?\nA. We'll have a vegetarian meal, please.\nB. I prefer the conference room.\nC. A table and some chairs.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "44b1e8058e75d48dac010540a3b995521e0b4bd36fd03286b934e7318aecd58d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part2/q015.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "我们应该在我的办公室还是在会议室见面？\nA. 我们吃素食餐，好吗？\nB. 我更喜欢会议室。\nC. 一张桌子和一些椅子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7981c26a46f50714428a195c5edb7101d05b890f34ff48a78060702a0c939be7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,9 +64,9 @@
       "topic": "选择问句",
       "keywords": "choice indirect response",
       "answer_explain": "原文依据：问句或陈述是“Should we meet in my office or in the conference room?”，自然应答是“I prefer the conference room.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I prefer the conference room.）。",
-      "question_translation": "我们应该在我的办公室还是在会议室见面？",
+      "question_translation": "我们应该在我的办公室还是在会议室见面?",
       "choice_translations": [
-        "A：我们将吃素食餐，谢谢。",
+        "A：我们吃素食餐,好吗?",
         "B：我更喜欢会议室。",
         "C：一张桌子和一些椅子。"
       ],

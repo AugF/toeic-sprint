@@ -28,8 +28,28 @@
       "asset_key": "official-6-test-1/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "没有人购买那幅画吗？\nA. 不，最近生意不太好。\nB. 我们接受所有信用卡。\nC. 请给我三罐浅蓝色。",
-    "content_translation": "没有人购买那幅画吗？\nA. 不，最近生意不太好。\nB. 我们接受所有信用卡。\nC. 请给我三罐浅蓝色。"
+    "transcript": "Hasn't anyone purchased that painting yet?\nA. No, business has been slow recently.\nB. We accept all credit cards.\nC. Three cans of light blue, please.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e24568ebbeb6096d259a41df2990660d1838bc676932f6a383e935ab68c3ebe7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "是否有人购买那幅画了？\nA. 不，最近生意很慢。\nB. 我们接受所有信用卡。\nC. 请给我三罐浅蓝色。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5d6c750f66daff91f4bcefcc6efc3740eace69112d715854532050cd61420583"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,9 +64,9 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Hasn't anyone purchased that painting yet?”，自然应答是“No, business has been slow recently.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, business has been slow recently.）。",
-      "question_translation": "没有人购买那幅画吗？",
+      "question_translation": "是否有人购买那幅画了?",
       "choice_translations": [
-        "A：不，最近生意不太好。",
+        "A：不,最近生意很慢。",
         "B：我们接受所有信用卡。",
         "C：请给我三罐浅蓝色。"
       ],

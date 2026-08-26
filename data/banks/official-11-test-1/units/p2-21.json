@@ -42,8 +42,28 @@
       "asset_key": "official-11-test-1/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "桑托罗先生不是要自己整理文件吗？\nA：不是，他需要我帮忙。\nB：你能去拿些零食吗？\nC：这是一个新的文件柜。",
-    "content_translation": "本段听力围绕“否定问句与反意问句”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Isn't Mr. Santoro going to organize the files by himself?\nA. No, he needs my help.\nB. Can you pick up some snacks?\nC. It's a new filing cabinet.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "30d546ca94ac4f161bb878d56d95bea197e3f2b4424a546f896db972ebbd026e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "桑托罗先生不是要自己整理文件吗？\nA. 不，他需要我的帮助。\nB. 你能带一些零食吗？\nC. 这是一个新的档案柜。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ffab25760b8508f1f921a1712619de3be53c0af8cc53ad5234edd42b829a6759"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -61,9 +81,9 @@
       "question_type": "否定疑问句",
       "evidence": "参考原文第 1 段第 1 句：Isn't Mr. Santoro going to organize the files by himself?",
       "choice_translations": [
-        "A：不是，他需要我帮忙。",
-        "B：你能去拿些零食吗？",
-        "C：这是一个新的文件柜。"
+        "A：不,他需要我的帮助。",
+        "B：你能带一些零食吗?",
+        "C：这是一个新的档案柜。"
       ],
       "response_style": "应直接提供疑问词所要求的信息，也要留意自然的间接回答",
       "strategy": "先判断为特殊疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
@@ -74,7 +94,7 @@
         "strategy": "先判断为特殊疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：否定问句确认 Santoro 是否独自整理文件，答句说 No, he needs my help。 选择理由：A明确否定 by himself 并说明需要帮助；B和C没有回应。正确答案：A（No, he needs my help.）。"
       },
-      "question_translation": "桑托罗先生不是要自己整理文件吗？",
+      "question_translation": "桑托罗先生不是要自己整理文件吗?",
       "item_id": 21,
       "priority": {
         "level": "P1",

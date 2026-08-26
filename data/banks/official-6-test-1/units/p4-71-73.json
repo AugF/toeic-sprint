@@ -39,9 +39,32 @@
       "asset_key": "official-6-test-1/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "Looking for something to do this week? ® The exhibit \"Our\nGalaxy\" opens on September third at the Ashton Science\nPC ERA 50\nMuseum. Learn about the planets in our galaxy and step\ninto a real spacecraft. ®On opening night, Gregory Alvarez,\nthe world-famous photographer, will be talking about his\nAlvarezt d\nexperience photographing the stars. Tickets for the exhibit\ninclude admission to the movie Nature's Wonders. This\naward-winning movie is entertaining for people of all ages.\nSo be sure to purchase your museum tickets online now!\nA < teal!",
-    "transcript_translation": "本周有什么事情可以做吗？® \"我们的银河系\"展览于9月3日在Ashton Science PC ERA 50博物馆开幕。了解我们银河系的行星，并进入一个真实的航天器。®在开幕之夜，世界著名的摄影师Gregory Alvarez将谈论他拍摄恒星的经历。展出的门票包含参观《自然奇观》电影的门票。这部屡获殊荣的电影让所有年龄段的人都感到娱乐。所以一定要现在在线购买您的博物馆门票！\n一个青色！",
-    "content_translation": "本周有什么事情可以做吗？® \"我们的银河系\"展览于9月3日在Ashton Science PC ERA 50博物馆开幕。了解我们银河系的行星，并进入一个真实的航天器。®在开幕之夜，世界著名的摄影师Gregory Alvarez将谈论他拍摄恒星的经历。展出的门票包含参观《自然奇观》电影的门票。这部屡获殊荣的电影让所有年龄段的人都感到娱乐。所以一定要现在在线购买您的博物馆门票！\n一个青色！"
+    "transcript": "famous photographer will be talking about his experience photographing the stars.\nTickets for the exhibit include admission to the movie Nature's Wonders.\nThis award-winning movie is entertaining for people of all ages, so be sure to purchase your museum tickets online now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "3118d985b2bb61e91e7f4b17181608c35e0cc06d9839c8c37947cdc634bc398d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 42,
+        "legacy_word_count": 85,
+        "length_ratio": 0.494,
+        "legacy_coverage": 0.6,
+        "prompted_failure": "missing spoken Questions 71 through 73 introduction"
+      }
+    },
+    "transcript_translation": "著名的摄影师将谈论他拍摄星星的经历。\n展览门票包含进入电影《自然奇观》的资格。\n这部屡获殊荣的电影适合所有年龄段的人，所以请务必现在在线购买您的博物馆门票。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "048ec5df92b041494de113a9600fe951afb4667847e7c71156ce2c5bc07b1a37"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "D",
       "question": "What is the advertisement mainly about?",
-      "answer_explain": "原文依据：听力原文中提到“® The exhibit \"Our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A museum exhibit opening）。",
-      "question_translation": "这份广告主要讲的是什么？",
+      "answer_explain": "正确答案：D（A museum exhibit opening）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "这份广告主要讲的是什么?",
       "choice_translations": [
-        "A：艺术节",
-        "B：音乐会系列",
-        "C：建筑之旅",
-        "D：博物馆展览开幕"
+        "A:艺术节",
+        "B:音乐会系列",
+        "C:建筑之旅",
+        "D:博物馆展览开幕"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Looking for something to do this week? ® The exhibit \"Our",
+      "evidence": "参考听力原文：“This award-winning movie is entertaining for people of all ages, so be sure to purchase your museum tickets online now.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Looking for something to do this week? ® The exhibit \"Our",
+        "evidence": "参考听力原文：“This award-winning movie is entertaining for people of all ages, so be sure to purchase your museum tickets online now.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“® The exhibit \"Our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A museum exhibit opening）。"
+        "analysis": "正确答案：D（A museum exhibit opening）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 71,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "C",
       "question": "Who is Gregory Alvarez?",
-      "answer_explain": "原文依据：听力原文中提到“the world-famous photographer, will be talking about his”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A photographer）。",
-      "question_translation": "Gregory Alvarez是谁？",
+      "answer_explain": "正确答案：C（A photographer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "Gregory Alvarez是谁?",
       "choice_translations": [
-        "A：厨师",
-        "B：科学家",
-        "C：摄影师",
-        "D：大学教授"
+        "A:厨师",
+        "B:科学家",
+        "C:摄影师",
+        "D:大学教授"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：into a real spacecraft. ®On opening night, Gregory Alvarez,",
+      "evidence": "参考听力原文：“famous photographer will be talking about his experience photographing the stars.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：into a real spacecraft. ®On opening night, Gregory Alvarez,",
+        "evidence": "参考听力原文：“famous photographer will be talking about his experience photographing the stars.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the world-famous photographer, will be talking about his”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A photographer）。"
+        "analysis": "正确答案：C（A photographer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 72,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "B",
       "question": "What is included with the price of admission?",
-      "answer_explain": "原文依据：听力原文中提到“include admission to the movie Nature's Wonders.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A movie ticket）。",
-      "question_translation": "入场费包含什么？",
+      "answer_explain": "正确答案：B（A movie ticket）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "入场费包含什么?",
       "choice_translations": [
-        "A：现场停车位",
-        "B：电影票",
-        "C：食品券",
-        "D：纪念T恤"
+        "A:现场停车位",
+        "B:电影票",
+        "C:食品券",
+        "D:纪念T恤"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：include admission to the movie Nature's Wonders. This",
+      "evidence": "参考听力原文：“Tickets for the exhibit include admission to the movie Nature's Wonders.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：include admission to the movie Nature's Wonders. This",
+        "evidence": "参考听力原文：“Tickets for the exhibit include admission to the movie Nature's Wonders.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“include admission to the movie Nature's Wonders.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A movie ticket）。"
+        "analysis": "正确答案：B（A movie ticket）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 73,
       "priority": {

@@ -39,9 +39,32 @@
       "asset_key": "official-4-test-1/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "lw Good morning, @ this is Westlake Medical Clinic.\nHow can | help you?\nHi. This is Jason Kim. @| just received a letter from\nyou explaining that Dr. Patel is retiring in March, but\nalready had an appointment scheduled with him\nfor April. Is there another doctor being assigned to\nhis patients?\nWell,°we've assigned another doctor to you, but\nyou also have the option to choose someone else at\nour Clinic. You can find a full biography for each one\nof our doctors on our Web site to help you make\nyour choice.\niv Oh, K. Then ®| think I'll take a look at the\nbiographies on the site before | decide. Thanks.",
-    "transcript_translation": "中文辅助（离线预处理）：lw Good morning, @ this is Westlake Medical Clinic.\nHow（如何） can | help you?\nHi.\nThis is Jason Kim.\n@| just received a letter from\nyou explaining that Dr.\nPatel is retiring in March, but\nalready had an appointment（预约） scheduled with him\nfor April.\nIs there another doctor being assigned to\nhis patients?\nWell,°we've assigned another doctor to you, but\nyou also have the option to choose someone else at\nour Clinic.\nYou can find a full biography for each one\nof our doctors on our Web site to help you make\nyour choice.\niv Oh, K.\nThen ®| think I'll take a look at the\nbiographies on the site before | decide.\nThanks.",
-    "content_translation": "中文辅助（离线预处理）：lw Good morning, @ this is Westlake Medical Clinic.\nHow（如何） can | help you?\nHi.\nThis is Jason Kim.\n@| just received a letter from\nyou explaining that Dr.\nPatel is retiring in March, but\nalready had an appointment（预约） scheduled with him\nfor April.\nIs there another doctor being assigned to\nhis patients?\nWell,°we've assigned another doctor to you, but\nyou also have the option to choose someone else at\nour Clinic.\nYou can find a full biography for each one\nof our doctors on our Web site to help you make\nyour choice.\niv Oh, K.\nThen ®| think I'll take a look at the\nbiographies on the site before | decide.\nThanks."
+    "transcript": "Good morning, this is Westlake Medical Clinic.\nHow can I help you?\nHi, this is Jason Kim.\nI just received a letter from you explaining that Dr. Patel is retiring in March, but I already had an appointment scheduled with him for April.\nIs there another doctor being assigned to his patients?\nWell, we've assigned another doctor to you, but you also have the option to choose someone else at our clinic.\nYou can find a full biography for each one of our doctors on our website to help you make your choice.\nOh, okay.\nThen I think I'll take a look at the biographies on the site before I decide.\nThanks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "21c432d34ac2cf3b79d30b8eb6b8e220a396a9fcb54a10289c183da6361e0e47",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 112,
+        "legacy_word_count": 109,
+        "length_ratio": 1.028,
+        "legacy_coverage": 0.963
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "早上好，这里是 Westlake 诊所。\n我能帮您什么？\n嗨，我是 Jason Kim。\n我刚收到您的信，解释说 Patel 医生将在三月退休，但我已经和他在四月预约了。\n是否为他的病人安排了其他医生接手？\n嗯，我们为您安排了另一位医生，但您也可以选择诊所里的其他人。\n您可以在我们的网站上找到每位医生的完整简介，帮助您做出选择。\n哦，好的。\n那我想我会在决定之前先看看网站上的这些简介。\n谢谢。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9fdeeccdf034fa8125158cf7235cff59524b1b47cf8196824cb4d423f6f1c32a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "C",
       "question": "What most likely is the woman's job?",
-      "answer_explain": "原文依据：听力原文中提到“lw Good morning, @ this is Westlake Medical Clinic.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Medical receptionist）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） most likely（最可能） is the woman（女士）'s job?",
+      "answer_explain": "正确答案：C（Medical receptionist）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) most likely(最可能) is the woman(女士)'s job?",
       "choice_translations": [
-        "A：Web site designer",
-        "B：Biology professor",
-        "C：Medical receptionist",
-        "D：Pharmacy owner"
+        "A:Web site designer",
+        "B:Biology professor",
+        "C:Medical receptionist",
+        "D:Pharmacy owner"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：lw Good morning, @ this is Westlake Medical Clinic.",
+      "evidence": "参考听力原文：“Good morning, this is Westlake Medical Clinic.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：lw Good morning, @ this is Westlake Medical Clinic.",
+        "evidence": "参考听力原文：“Good morning, this is Westlake Medical Clinic.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“lw Good morning, @ this is Westlake Medical Clinic.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Medical receptionist）。"
+        "analysis": "正确答案：C（Medical receptionist）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "A",
       "question": "What will Dr. Patel do in March?",
-      "answer_explain": "原文依据：听力原文中提到“his patients?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Retire from his job）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will Dr.\nPatel do in March?",
+      "answer_explain": "正确答案：A（Retire from his job）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will Dr. Patel do in March?",
       "choice_translations": [
-        "A：Retire from his job",
-        "B：Relocate to another city",
-        "C：Participate in a research study",
-        "D：Speak at a conference"
+        "A:Retire from his job",
+        "B:Relocate to another city",
+        "C:Participate in a research study",
+        "D:Speak at a conference"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：you explaining that Dr. Patel is retiring in March, but",
+      "evidence": "参考听力原文：“I just received a letter from you explaining that Dr. Patel is retiring in March, but I already had an appointment scheduled with him for April.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：you explaining that Dr. Patel is retiring in March, but",
+        "evidence": "参考听力原文：“I just received a letter from you explaining that Dr. Patel is retiring in March, but I already had an appointment scheduled with him for April.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“his patients?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Retire from his job）。"
+        "analysis": "正确答案：A（Retire from his job）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "B",
       "question": "What does the man say he will do before making a decision?",
-      "answer_explain": "原文依据：听力原文中提到“of our doctors on our Web site to help you make”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Review information on a Web site）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） say he will do before making a decision?",
+      "answer_explain": "正确答案：B（Review information on a Web site）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) say he will do before making a decision?",
       "choice_translations": [
-        "A：Adjust his schedule（日程）",
-        "B：Review information（信息） on a Web site",
-        "C：Meet with Dr.\nPatel",
-        "D：Consult with a coworker"
+        "A:Adjust his schedule(日程)",
+        "B:Review information(信息) on a Web site",
+        "C:Meet with Dr. Patel",
+        "D:Consult with a coworker"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 14 段：biographies on the site before | decide. Thanks.",
+      "evidence": "参考听力原文：“Then I think I'll take a look at the biographies on the site before I decide.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 14 段：biographies on the site before | decide. Thanks.",
+        "evidence": "参考听力原文：“Then I think I'll take a look at the biographies on the site before I decide.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“of our doctors on our Web site to help you make”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Review information on a Web site）。"
+        "analysis": "正确答案：B（Review information on a Web site）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

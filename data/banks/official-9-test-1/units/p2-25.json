@@ -27,38 +27,58 @@
       "asset_key": "official-9-test-1/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：*m What（什么） time is the client lunch starting?\nw",
-    "content_translation": "中文辅助（离线预处理）：*m What（什么） time is the client lunch starting?\nw"
+    "transcript": "What time is the client lunch starting?\nA. At the Meriton Conference Center.\nB. Yes, he can type the memo this afternoon.\nC. The caterer hasn't even arrived yet.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "469c791c2213fd6c77c09b324076933997ddd83d452bc0050bcaefdb3c3e843d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "客户午餐什么时候开始？\nA. 在 Meriton Conference Center。\nB. 是的，他今天下午可以打备忘录。\nC. 餐饮服务商甚至还没有到。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ad8747679d7dc8ef51e567d0d955def9d9028e936aa2e7f3deaac225ad7346cd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "At the Maryton Conference Center.",
+        "At the Meriton Conference Center.",
         "Yes, he can type the memo this afternoon.",
         "The caterer hasn't even arrived yet."
       ],
       "answer": "C",
-      "question": "*m What time is the client lunch starting? w",
+      "question": "What time is the client lunch starting?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“*m What time is the client lunch starting? w”，自然应答是“The caterer hasn't even arrived yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The caterer hasn't even arrived yet.）。",
-      "question_translation": "中文辅助（离线预处理）：*m What（什么） time is the client lunch starting?\nw",
+      "answer_explain": "原文依据：问句或陈述是“What time is the client lunch starting?”，自然应答是“The caterer hasn't even arrived yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The caterer hasn't even arrived yet.）。",
+      "question_translation": "客户午餐什么时候开始?",
       "choice_translations": [
-        "A：At the Maryton Conference Center.",
-        "B：Yes, he can type the memo this afternoon.",
-        "C：The caterer hasn't even arrived yet."
+        "A：在 Meriton Conference Center。",
+        "B：是的,他今天下午可以打备忘录。",
+        "C：餐饮服务商甚至还没有到。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：*m What time is the client lunch starting? w",
+      "evidence": "参考原文第 1 段：What time is the client lunch starting?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：*m What time is the client lunch starting? w",
+        "evidence": "参考原文第 1 段：What time is the client lunch starting?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“*m What time is the client lunch starting? w”，自然应答是“The caterer hasn't even arrived yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The caterer hasn't even arrived yet.）。"
+        "analysis": "原文依据：问句或陈述是“What time is the client lunch starting?”，自然应答是“The caterer hasn't even arrived yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The caterer hasn't even arrived yet.）。"
       },
       "item_id": 25,
       "priority": {

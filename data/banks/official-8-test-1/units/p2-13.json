@@ -28,38 +28,58 @@
       "asset_key": "official-8-test-1/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：E You've been to this warehouse before, haven't you?\nElw",
-    "content_translation": "中文辅助（离线预处理）：E You've been to this warehouse before, haven't you?\nElw"
+    "transcript": "You've been to this warehouse before, haven't you?\nA. No, I haven't.\nB. Bin number 4.\nC. The house at the corner.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "99d80b82195f9b6f3ce975c9aec7f68e6e273e0fbdd25ddcbdab44fa0edf374f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 22
+      }
+    },
+    "transcript_translation": "你以前来过这个仓库，对吧？\nA. 不，我没去过。\nB. 4号货位。\nC. 角落的房子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "085ba38eb0baa3e86817078aca1b16915ec2932e247cb9a83e94c49921c3a25c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "No, I haven't.",
-        "Bin number four.",
+        "Bin number 4.",
         "The house at the corner."
       ],
       "answer": "A",
-      "question": "E You've been to this warehouse before, haven't you? Elw",
+      "question": "You've been to this warehouse before, haven't you?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“E You've been to this warehouse before, haven't you? Elw”，自然应答是“No, I haven't.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, I haven't.）。",
-      "question_translation": "中文辅助（离线预处理）：E You've been to this warehouse before, haven't you?\nElw",
+      "answer_explain": "原文依据：问句或陈述是“You've been to this warehouse before, haven't you?”，自然应答是“No, I haven't.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, I haven't.）。",
+      "question_translation": "你以前来过这个仓库,对吧?",
       "choice_translations": [
-        "A：No, I haven't.",
-        "B：Bin number four.",
-        "C：The house at the corner."
+        "A：不,我没去过。",
+        "B：4号货位。",
+        "C：角落的房子。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：E You've been to this warehouse before, haven't you? Elw",
+      "evidence": "参考原文第 1 段：You've been to this warehouse before, haven't you?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：E You've been to this warehouse before, haven't you? Elw",
+        "evidence": "参考原文第 1 段：You've been to this warehouse before, haven't you?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“E You've been to this warehouse before, haven't you? Elw”，自然应答是“No, I haven't.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, I haven't.）。"
+        "analysis": "原文依据：问句或陈述是“You've been to this warehouse before, haven't you?”，自然应答是“No, I haven't.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, I haven't.）。"
       },
       "item_id": 13,
       "priority": {

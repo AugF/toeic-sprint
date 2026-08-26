@@ -39,9 +39,31 @@
       "asset_key": "official-12-test-1/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "P 53-55 la\nnew Welcome. OThere's about a 30-minute wait for a table\nin the dining area right now, but I can take your name\nand phone number in case something opens earlier.\nm Thanks! How long have you been open? I visited this\nneighborhood a while ago, but I don't think this was\nopen then.\nEw That's right! We're brand-new to the downtown\nneighborhood. eMany people have been surprised we\nhave a second location. Our original location is on\nthe waterfront.\nYeah, l've only been to the waterfront location. ODo\nyou have any special promotions right now?\nEw Yes! Olf you dine with us often, then sign up for our\nrewards program so you can earn points toward free",
-    "transcript_translation": "中文辅助（离线预处理）：P 53-55 la\nnew Welcome.\nOThere's about a 30-minute wait for a table\nin the dining area right now, but I can take your name\nand phone number in case something opens earlier.\nm Thanks!\nHow（如何） long have you been open?\nI visited this\nneighborhood a while ago, but I don't think this was\nopen then.\nEw That's right!\nWe're brand-new to the downtown\nneighborhood.\neMany people have been surprised we\nhave a second location.\nOur original location is on\nthe waterfront.\nYeah, l've only been to the waterfront location.\nODo\nyou have any special promotions right now?\nEw Yes!\nOlf you dine with us often, then sign up for our\nrewards program so you can earn points toward free",
-    "content_translation": "中文辅助（离线预处理）：P 53-55 la\nnew Welcome.\nOThere's about a 30-minute wait for a table\nin the dining area right now, but I can take your name\nand phone number in case something opens earlier.\nm Thanks!\nHow（如何） long have you been open?\nI visited this\nneighborhood a while ago, but I don't think this was\nopen then.\nEw That's right!\nWe're brand-new to the downtown\nneighborhood.\neMany people have been surprised we\nhave a second location.\nOur original location is on\nthe waterfront.\nYeah, l've only been to the waterfront location.\nODo\nyou have any special promotions right now?\nEw Yes!\nOlf you dine with us often, then sign up for our\nrewards program so you can earn points toward free"
+    "transcript": "Welcome.\nThere's about a 30-minute wait for a table in the dining area right now, but I can take your name and phone number in case something opens earlier.\nThanks.\nHow long have you been open?\nI visited this neighborhood a while ago, but I don't think this was open then.\nThat's right.\nWe're brand new to the downtown neighborhood.\nMany people have been surprised we have a second location.\nOur original location is on the waterfront.\nYeah, I've only been to the waterfront location.\nDo you have any special promotions right now?\nYes.\nIf you dine with us often, then sign up for our rewards program so you can earn points toward free meals.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0f4f88d7e51cc87f6949801730bca99fc473dc03a87789575651bb16b41c0d40",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 115,
+        "legacy_word_count": 115,
+        "length_ratio": 1,
+        "legacy_coverage": 0.913
+      }
+    },
+    "transcript_translation": "欢迎。\n目前餐区等桌位需要等待大约 30 分钟，但我可以记下您的姓名和电话号码，以防有更早的空位。\n谢谢。\n你们开业多久了？\n我以前来过这个街区，但我不记得当时这里是开着的。\n是的。\n我们是新来到市中心的街区的。\n很多人对我们有第二个分店感到惊讶。\n我们的原始地点在海滨。\n是的，我只去过海滨的那个分店。\n你们现在有什么特别促销活动吗？\n有的。\n如果您经常光临，可以注册我们的奖励计划，从而赚取可兑换免费餐食的积分。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e471fcf7bb032e9e862ed531a5f0a9f0c71d786c8bcfbf0f24372870011548c9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "Where is the conversation most likely taking place?",
-      "answer_explain": "原文依据：听力原文中提到“in the dining area right now, but I can take your name”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a restaurant）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the conversation most likely（最可能） taking place?",
+      "answer_explain": "正确答案：D（At a restaurant）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) is the conversation most likely(最可能) taking place?",
       "choice_translations": [
-        "A：At a convenience store",
-        "B：At a theater",
-        "C：At a bookstore",
-        "D：At a restaurant"
+        "A:At a convenience store",
+        "B:At a theater",
+        "C:At a bookstore",
+        "D:At a restaurant"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：P 53-55 la",
+      "evidence": "参考听力原文：“There's about a 30-minute wait for a table in the dining area right now, but I can take your name and phone number in case something opens earlier.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：P 53-55 la",
+        "evidence": "参考听力原文：“There's about a 30-minute wait for a table in the dining area right now, but I can take your name and phone number in case something opens earlier.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“in the dining area right now, but I can take your name”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a restaurant）。"
+        "analysis": "正确答案：D（At a restaurant）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "According to the woman, why are people surprised?",
-      "answer_explain": "原文依据：听力原文中提到“Yeah, l've only been to the waterfront location.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A new location has beenopened.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the woman（女士）, why（为什么） are people surprised?",
+      "answer_explain": "正确答案：B（A new location has beenopened.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the woman(女士), why(为什么) are people surprised?",
       "choice_translations": [
-        "A：An item is unavailable.",
-        "B：A new location has beenopened.",
-        "C：A show has beencanceled.",
-        "D：A parking lot is full."
+        "A:An item is unavailable.",
+        "B:A new location has beenopened.",
+        "C:A show has beencanceled.",
+        "D:A parking lot is full."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：neighborhood. eMany people have been surprised we",
+      "evidence": "参考听力原文：“Many people have been surprised we have a second location.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：neighborhood. eMany people have been surprised we",
+        "evidence": "参考听力原文：“Many people have been surprised we have a second location.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Yeah, l've only been to the waterfront location.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A new location has beenopened.）。"
+        "analysis": "正确答案：B（A new location has beenopened.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "How can the man take advantage of a special promotion?",
-      "answer_explain": "原文依据：听力原文中提到“rewards program so you can earn points toward free”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（By registering for arewards program）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） can the man（男士） take advantage of a special promotion?",
+      "answer_explain": "正确答案：C（By registering for arewards program）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):How(如何) can the man(男士) take advantage of a special promotion?",
       "choice_translations": [
-        "A：By writing a positivereview",
-        "B：By signing up for acustomer survey",
-        "C：By registering for arewards program",
-        "D：By ordering multipleitems"
+        "A:By writing a positivereview",
+        "B:By signing up for acustomer survey",
+        "C:By registering for arewards program",
+        "D:By ordering multipleitems"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 13 段：you have any special promotions right now?",
+      "evidence": "参考听力原文：“There's about a 30-minute wait for a table in the dining area right now, but I can take your name and phone number in case something opens earlier.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 13 段：you have any special promotions right now?",
+        "evidence": "参考听力原文：“There's about a 30-minute wait for a table in the dining area right now, but I can take your name and phone number in case something opens earlier.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“rewards program so you can earn points toward free”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（By registering for arewards program）。"
+        "analysis": "正确答案：C（By registering for arewards program）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

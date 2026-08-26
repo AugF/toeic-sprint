@@ -45,9 +45,32 @@
       "asset_key": "official-12-test-1/images/part3/q065-067.jpg",
       "exists": true
     },
-    "transcript": "and map.\nHi. I'm Andrey with Millwall Pest Control.\nZhlc5lt. Milln\nw I'm glad you're here. A resident in one of the\nBabutated s\nbuildings I manage —number four-reported ants, and\nI'd like all the apartments there treated.\nm eDo the residents know to expect someone?\nw eYes, they were notified by e-mail that treatment would\noccur today before 5:00 P.M. Ol'd also like to have\nanother building near the pool treated-the one right\nnext to building four.\nc9.\nm Oh, but o that wasn't included in the original estimate.\nzzk. Ct. zi\nLtE.\nEw No, it wasn't. So oplease add that to the bill.\nMap of Grounds\nBuilding 4\nBuilding 5\nBuilding 3\nPool\nMain\nOffice\nBuilding 2\nBuilding 1\nR",
-    "transcript_translation": "中文辅助（离线预处理）：and map.\nHi.\nI'm Andrey with Millwall Pest Control.\nZhlc5lt.\nMilln\nw I'm glad you're here.\nA resident in one of the\nBabutated s\nbuildings I manage —number four-reported ants, and\nI'd like all the apartments there treated.\nm eDo the residents know to expect someone?\nw eYes, they were notified by e-mail that treatment would\noccur today before 5:00 P.M.\nOl'd also like to have\nanother building near the pool treated-the one right\nnext to building four.\nc9.\nm Oh, but o that wasn't included in the original estimate.\nzzk.\nCt.\nzi\nLtE.\nEw No, it wasn't.\nSo oplease add that to the bill.\nMap of Grounds\nBuilding 4\nBuilding 5\nBuilding 3\nPool\nMain\nOffice（办公室）\nBuilding 2\nBuilding 1\nR",
-    "content_translation": "中文辅助（离线预处理）：and map.\nHi.\nI'm Andrey with Millwall Pest Control.\nZhlc5lt.\nMilln\nw I'm glad you're here.\nA resident in one of the\nBabutated s\nbuildings I manage —number four-reported ants, and\nI'd like all the apartments there treated.\nm eDo the residents know to expect someone?\nw eYes, they were notified by e-mail that treatment would\noccur today before 5:00 P.M.\nOl'd also like to have\nanother building near the pool treated-the one right\nnext to building four.\nc9.\nm Oh, but o that wasn't included in the original estimate.\nzzk.\nCt.\nzi\nLtE.\nEw No, it wasn't.\nSo oplease add that to the bill.\nMap of Grounds\nBuilding 4\nBuilding 5\nBuilding 3\nPool\nMain\nOffice（办公室）\nBuilding 2\nBuilding 1\nR"
+    "transcript": "Hi, I'm Andre with Millwell Pest Control.\nI'm glad you're here.\nA resident in one of the buildings I manage, number four, reported ants, and I'd like all the apartments there treated.\nDo the residents know to expect someone?\nYes, they were notified by email that treatment would occur today before 5 p.m.\nI'd also like to have another building near the pool treated, the one right next to building four.\nOh, but that wasn't included in the original estimate.\nNo, it wasn't.\nSo please add that to the bill.\nNumber four.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6efd7d6b2be377db9ce6fb9ee09a64f5cd9f15099c494f38fd694b05364e67c9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 94,
+        "legacy_word_count": 113,
+        "length_ratio": 0.832,
+        "legacy_coverage": 0.761
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，我是Millwell Pest Control的Andre。\n很高兴你来了。\n我管理的建筑之一，4号楼的一位住户报告了蚂蚁，我想让那里的所有公寓都进行处理。\n住户是否知道会有人来？\n是的，他们通过电子邮件收到了通知，说今天下午5点前会进行处理。\n我还想让附近泳池的另一栋建筑也进行处理，就是紧挨着4号楼的那一栋。\n哦，但这不在最初的估价范围内。\n不，确实没有。\n所以请把这部分加到账单上。\n编号四。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "cb30cde471464addee304d2e82aeaac8c46eb4407c69eee3c96ac38ae8d09d1f"
+    }
   },
   "items": [
     {
@@ -59,23 +82,23 @@
       ],
       "answer": "B",
       "question": "Who most likely is the woman?",
-      "answer_explain": "原文依据：听力原文中提到“m Oh, but o that wasn't included in the original estimate.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A property manager）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the woman（女士）?",
+      "answer_explain": "正确答案：B（A property manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is the woman(女士)?",
       "choice_translations": [
-        "A：A hotel clerk",
-        "B：A property manager（经理）",
-        "C：An office（办公室） assistant",
-        "D：An apartment resident"
+        "A:A hotel clerk",
+        "B:A property manager(经理)",
+        "C:An office(办公室) assistant",
+        "D:An apartment resident"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：and map.",
+      "evidence": "参考听力原文：“A resident in one of the buildings I manage, number four, reported ants, and I'd like all the apartments there treated.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：and map.",
+        "evidence": "参考听力原文：“A resident in one of the buildings I manage, number four, reported ants, and I'd like all the apartments there treated.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“m Oh, but o that wasn't included in the original estimate.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A property manager）。"
+        "analysis": "正确答案：B（A property manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 65,
       "priority": {
@@ -112,23 +135,23 @@
       ],
       "answer": "B",
       "question": "According to the woman, what wassent (by e-mail?",
-      "answer_explain": "原文依据：听力原文中提到“m Oh, but o that wasn't included in the original estimate.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A notice）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the woman（女士）, what（什么） wassent (by e-mail?",
+      "answer_explain": "正确答案：B（A notice）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the woman(女士), what(什么) wassent (by e-mail?",
       "choice_translations": [
-        "A：A contract",
-        "B：A notice",
-        "C：A pool policy",
-        "D：A party invitation"
+        "A:A contract",
+        "B:A notice",
+        "C:A pool policy",
+        "D:A party invitation"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and map.",
+      "evidence": "参考听力原文：“A resident in one of the buildings I manage, number four, reported ants, and I'd like all the apartments there treated.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and map.",
+        "evidence": "参考听力原文：“A resident in one of the buildings I manage, number four, reported ants, and I'd like all the apartments there treated.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“m Oh, but o that wasn't included in the original estimate.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A notice）。"
+        "analysis": "正确答案：B（A notice）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 66,
       "priority": {
@@ -165,23 +188,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic.What additionalbuilding will be treated?",
-      "answer_explain": "原文依据：听力原文中提到“another building near the pool treated-the one right”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Building 3）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.What（什么） additionalbuilding will be treated?",
+      "answer_explain": "正确答案：C（Building 3）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic.What(什么) additionalbuilding will be treated?",
       "choice_translations": [
-        "A：Building 1",
-        "B：Building 2",
-        "C：Building 3",
-        "D：Building 5"
+        "A:Building 1",
+        "B:Building 2",
+        "C:Building 3",
+        "D:Building 5"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：I'd like all the apartments there treated.",
+      "evidence": "参考听力原文：“I'd also like to have another building near the pool treated, the one right next to building four.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：I'd like all the apartments there treated.",
+        "evidence": "参考听力原文：“I'd also like to have another building near the pool treated, the one right next to building four.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“another building near the pool treated-the one right”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Building 3）。"
+        "analysis": "正确答案：C（Building 3）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 67,
       "priority": {

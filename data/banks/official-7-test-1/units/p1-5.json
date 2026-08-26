@@ -32,8 +32,28 @@
       "asset_key": "official-7-test-1/images/part1/q005.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. A wooden ladder is leaning against a wall.\nB. A piano is positioned in the center of the room.\nC. An audio speaker is mounted on the ceiling.\nD. Some drums are being put away in cases.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "29dae543dd1f95bf47959ee5a5325b3d0705d8dae9be66122f7c588e7fd2c30b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part1/q005.mp3",
+      "metrics": {
+        "word_count": 49
+      }
+    },
+    "transcript_translation": "A. 一架木梯靠在一面墙上。\nB. 一架钢琴位于房间中央。\nC. 一个音箱安装在天花板上。\nD. 有些鼓正被放入琴盒中。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b68fd3c454ec407dcdd8f023ead5bf2143e126aa929ddb0b2aea6a736566a96d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“A wooden ladder is leaning against a wall.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（A wooden ladder is leaning against a wall.）。",
       "choice_translations": [
-        "A：A wooden ladder is leaning against a wall.",
-        "B：A piano is positioned in the center of the room.",
-        "C：An audio speaker（说话者） is mounted on the ceiling.",
-        "D：Some drums are being put away in cases."
+        "A：一架木梯靠在一面墙上。",
+        "B：一架钢琴位于房间中央。",
+        "C：一个音箱安装在天花板上。",
+        "D：有些鼓正被放入琴盒中。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-1/p1-5/5"
+      "item_key": "official-7-test-1/p1-5/5",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

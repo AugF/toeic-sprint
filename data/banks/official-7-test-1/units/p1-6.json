@@ -31,8 +31,28 @@
       "asset_key": "official-7-test-1/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. They're looking down at the front page of a newspaper.\nB. They're setting a package on top of a mailbox.\nC. They're standing in front of a stoplight.\nD. They're climbing the stairs to an apartment building.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2853c5c7a64876b59716ad2ce42bdb6240f44165c12ec31923be00ea331991be",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 64
+      }
+    },
+    "transcript_translation": "A. 他们正在看报纸的头版。\nB. 他们正在把一个包裹放在邮箱上。\nC. 他们站在交通信号灯前。\nD. 他们正在爬通往公寓楼梯。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "09e19fc762461b5fc0ceef457b18f35dbf8e7241a99ad38b2604b8274d253b0e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“They're looking down at the front page of a newspaper.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（They're looking down at the front page of a newspaper.）。",
       "choice_translations": [
-        "A：They're looking down at the front page of a newspaper.",
-        "B：They're setting a package on top of a mailbox.",
-        "C：They're standing in front of a stoplight.",
-        "D：They're climbing the stairs to an apartment building."
+        "A：他们正在看报纸的头版。",
+        "B：他们正在把一个包裹放在邮箱上。",
+        "C：他们站在交通信号灯前。",
+        "D：他们正在爬通往公寓楼梯。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-1/p1-6/6"
+      "item_key": "official-7-test-1/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

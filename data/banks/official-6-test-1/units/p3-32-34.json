@@ -39,9 +39,31 @@
       "asset_key": "official-6-test-1/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "m Tanya, when did we start selling these reusable\ngrocery bags? Has it been two weeks? ®| want to see\nour customers using them to carry their groceries\nhome from our store, but nobody's buying them...\nEw Well, Othey are rather simple. They're in plain colors\nand only have the store's name on them.\nHmm... What could we do to make them more\ninteresting?\nLaSt\nSw Well, the store's name is on one side of the bag. What\nif we asked some local artists to design images to put\non the other side?\nm I like that. Ol'll get an ad in the local newspaper about\nthis, asking any interested artists to contact us",
-    "transcript_translation": "m Tanya，我们是什么时候开始销售这些可重复使用的\n购物袋的？是不是两周了？®| 我想看到我们的顾客用它们把买的日用品\n从我们店里带回家，但没人买……\n呃 她们相当简单。它们是纯色的\n而且上面只印着店名。\n嗯……我们能做点什么让它们更有趣呢？\n最后\n说 店名印在袋子的一个面。如果我们请一些当地的艺术家来设计图案印在另一面怎么样？\n我喜欢这个主意。我会要在当地报纸上刊登个广告，\n让有兴趣的艺术家联系我们",
-    "content_translation": "m Tanya，我们是什么时候开始销售这些可重复使用的\n购物袋的？是不是两周了？®| 我想看到我们的顾客用它们把买的日用品\n从我们店里带回家，但没人买……\n呃 她们相当简单。它们是纯色的\n而且上面只印着店名。\n嗯……我们能做点什么让它们更有趣呢？\n最后\n说 店名印在袋子的一个面。如果我们请一些当地的艺术家来设计图案印在另一面怎么样？\n我喜欢这个主意。我会要在当地报纸上刊登个广告，\n让有兴趣的艺术家联系我们"
+    "transcript": "Tanya, when did we start selling these reusable grocery bags?\nHas it been two weeks?\nI want to see our customers using them to carry their groceries home from our store, but nobody's buying them.\nWell, they are rather simple.\nThey're in plain colors and only have the store's name on them.\nHmm.\nWhat can we do to make them more interesting?\nWell, the store's name is on one side of the bag, what if we asked some local artists to design images to put on the other side?\nI like that.\nI'll get an ad in the local newspaper about this, asking any interested artists to contact us.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b71fbac2e8c74cabdbcb0ca8bd73af7dc6047d04a5f56ac3a87530286382f2e1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 109,
+        "legacy_word_count": 112,
+        "length_ratio": 0.973,
+        "legacy_coverage": 0.929
+      }
+    },
+    "transcript_translation": "Tanya，我们什么时候开始销售这些可重复使用的杂货袋？\n已经两周了吗？\n我想看到我们的顾客用它们把杂货从我们的店里带回家，但没有人买。\n嗯，它们相当简单。\n它们是纯色的，上面只印着商店的名字。\n嗯。\n我们能做些什么让它们更有趣呢？\n嗯，商店的名字印在一面袋子上，如果我们请一些当地艺术家在另一面设计图案怎么样？\n我喜欢这个主意。\n我会要在当地报纸上刊登一则广告，询问任何有兴趣的艺术家联系我们。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "432cb1c656287cdddce5037c62e68ea045c0dacd599df33d4e5e25f1e447c164"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "C",
       "question": "Where do the speakers most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“home from our store, but nobody's buying them...”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a grocery store）。",
-      "question_translation": "说话者最有可能在哪里工作？",
+      "answer_explain": "正确答案：C（At a grocery store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者最有可能在哪里工作?",
       "choice_translations": [
-        "A：在一间艺术画廊",
-        "B：在一个仓库里",
-        "C：一家杂货店",
-        "D：一个电影院"
+        "A:在一间艺术画廊",
+        "B:在一个仓库里",
+        "C:一家杂货店",
+        "D:一个电影院"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：m Tanya, when did we start selling these reusable",
+      "evidence": "参考听力原文：“I want to see our customers using them to carry their groceries home from our store, but nobody's buying them.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：m Tanya, when did we start selling these reusable",
+        "evidence": "参考听力原文：“I want to see our customers using them to carry their groceries home from our store, but nobody's buying them.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“home from our store, but nobody's buying them...”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a grocery store）。"
+        "analysis": "正确答案：C（At a grocery store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "D",
       "question": "According to the woman, what is the problem with the bags?",
-      "answer_explain": "原文依据：听力原文中提到“Sw Well, the store's name is on one side of the bag.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（The design is too simple.）。",
-      "question_translation": "根据女士的说法，袋子有什么问题？",
+      "answer_explain": "正确答案：D（The design is too simple.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "根据女士的说法,袋子有什么问题?",
       "choice_translations": [
-        "A：太贵了。",
-        "B：太小了。",
-        "C：材料太薄了。",
-        "D：设计太简单了。"
+        "A:太贵了。",
+        "B:太小了。",
+        "C:材料太薄了。",
+        "D:设计太简单了。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m Tanya, when did we start selling these reusable",
+      "evidence": "参考听力原文：“Well, the store's name is on one side of the bag, what if we asked some local artists to design images to put on the other side?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m Tanya, when did we start selling these reusable",
+        "evidence": "参考听力原文：“Well, the store's name is on one side of the bag, what if we asked some local artists to design images to put on the other side?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Sw Well, the store's name is on one side of the bag.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（The design is too simple.）。"
+        "analysis": "正确答案：D（The design is too simple.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What does the man say he will do?",
-      "answer_explain": "原文依据：听力原文中提到“Ol'll get an ad in the local newspaper about”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Place an advertisement in the newspaper）。",
-      "question_translation": "男士说他会做什么？",
+      "answer_explain": "正确答案：C（Place an advertisement in the newspaper）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士说他会做什么?",
       "choice_translations": [
-        "A：分发一些优惠券",
-        "B：联系一家工厂",
-        "C：在报纸上刊登广告",
-        "D：研究竞争对手"
+        "A:分发一些优惠券",
+        "B:联系一家工厂",
+        "C:在报纸上刊登广告",
+        "D:研究竞争对手"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m Tanya, when did we start selling these reusable",
+      "evidence": "参考听力原文：“I'll get an ad in the local newspaper about this, asking any interested artists to contact us.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m Tanya, when did we start selling these reusable",
+        "evidence": "参考听力原文：“I'll get an ad in the local newspaper about this, asking any interested artists to contact us.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Ol'll get an ad in the local newspaper about”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Place an advertisement in the newspaper）。"
+        "analysis": "正确答案：C（Place an advertisement in the newspaper）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

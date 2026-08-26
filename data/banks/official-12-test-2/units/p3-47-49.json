@@ -39,9 +39,31 @@
       "asset_key": "official-12-test-2/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "lđ;\nw Tae-Joon, can you come to the conference room? Ol'd\nTae-Joon.\nlike to get your opinion on some plans. © The architect\njust dropped them off.\nm Sure! Ol'm really excited about the new office layout.\nRight now, we don't have much space for our break\nroom.\nEw Right. We wanted to change that. This new floor\nplan offers an open concept that will help everyone\ncollaborate on major projects.\nam I see. But odo you think we could close off one of the\ncorners of the office? We could use a private lounge\nfor our breaks.\nC9.\nEw Hmm. OLet me ask the other committee members for\nopinions before we do anything else.",
-    "transcript_translation": "中文辅助（离线预处理）：lđ;\nw Tae-Joon, can you come to the conference room?\nOl'd\nTae-Joon.\nlike to get your opinion on some plans.\n© The architect\njust dropped them off.\nm Sure!\nOl'm really excited about the new office（办公室） layout.\nRight now, we don't have much space for our break\nroom.\nEw Right.\nWe wanted to change that.\nThis new floor\nplan offers an open concept that will help everyone\ncollaborate on major projects.\nam I see.\nBut odo you think we could close off one of the\ncorners of the office（办公室）?\nWe could use a private lounge\nfor our breaks.\nC9.\nEw Hmm.\nOLet me ask the other committee members for\nopinions before we do anything else.",
-    "content_translation": "中文辅助（离线预处理）：lđ;\nw Tae-Joon, can you come to the conference room?\nOl'd\nTae-Joon.\nlike to get your opinion on some plans.\n© The architect\njust dropped them off.\nm Sure!\nOl'm really excited about the new office（办公室） layout.\nRight now, we don't have much space for our break\nroom.\nEw Right.\nWe wanted to change that.\nThis new floor\nplan offers an open concept that will help everyone\ncollaborate on major projects.\nam I see.\nBut odo you think we could close off one of the\ncorners of the office（办公室）?\nWe could use a private lounge\nfor our breaks.\nC9.\nEw Hmm.\nOLet me ask the other committee members for\nopinions before we do anything else."
+    "transcript": "Hey, June.\nCan you come to the conference room?\nI'd like to get your opinion on some plans.\nThe architect just dropped them off.\nSure.\nI'm really excited about the new office layout.\nRight now, we don't have much space for our break room.\nRight.\nWe wanted to change that.\nThis new full plan offers an open concept that will help everyone collaborate on major projects.\nI see.\nBut do you think we could close off one of the corners of the office?\nWe could use a private lounge for our breaks.\nHmm.\nLet me ask the other committee members for opinions before we do anything else.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2adc52dd00f619b7f58d02954c65190b8c77916af4a7a76d0b3795daa096af71",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 107,
+        "legacy_word_count": 113,
+        "length_ratio": 0.947,
+        "legacy_coverage": 0.876
+      }
+    },
+    "transcript_translation": "嗨，June。\n你能到会议室来吗？\n我想听听你对一些计划的意见。\n建筑师刚刚把它们送过来了。\n好的。\n我对新的办公室布局感到非常兴奋。\n目前，我们的休息室空间不太够。\n是吗。\n我们想改变一下这个。\n这份新的完整方案提供了一个开放式概念，这将帮助每个人在主要项目上协作。\n我明白了。\n但你觉得我们能不能把办公室的一个角落封闭起来呢？\n我们可以用一个私人休息室来休息。\n嗯。\n在我们做任何事情之前，让我先问一下其他委员会成员的意见。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "197af2c1ec76371bba2f95cc79d3cd0863ac3b542702f49487ac63d4cf77c231"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "A",
       "question": "What does the woman most likely want to discuss?",
-      "answer_explain": "原文依据：听力原文中提到“Ol'm really excited about the new office layout.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（An office renovation）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） most likely（最可能） want to discuss?",
+      "answer_explain": "正确答案：A（An office renovation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) most likely(最可能) want to discuss?",
       "choice_translations": [
-        "A：An office（办公室） renovation",
-        "B：An upcoming meeting（会议）",
-        "C：A holiday party",
-        "D：A new work（工作） schedule（日程）"
+        "A:An office(办公室) renovation",
+        "B:An upcoming meeting(会议)",
+        "C:A holiday party",
+        "D:A new work(工作) schedule(日程)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：lđ;",
+      "evidence": "参考听力原文：“I'm really excited about the new office layout.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：lđ;",
+        "evidence": "参考听力原文：“I'm really excited about the new office layout.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ol'm really excited about the new office layout.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（An office renovation）。"
+        "analysis": "正确答案：A（An office renovation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "D",
       "question": "What does the man suggest?",
-      "answer_explain": "原文依据：听力原文中提到“plan offers an open concept that will help everyone”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Changing a plan）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） suggest（表明/建议）?",
+      "answer_explain": "正确答案：D（Changing a plan）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) suggest(表明/建议)?",
       "choice_translations": [
-        "A：Going to lunch",
-        "B：Uploading a program",
-        "C：Hiring a consultant",
-        "D：Changing a plan"
+        "A:Going to lunch",
+        "B:Uploading a program",
+        "C:Hiring a consultant",
+        "D:Changing a plan"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：lđ;",
+      "evidence": "参考听力原文：“This new full plan offers an open concept that will help everyone collaborate on major projects.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：lđ;",
+        "evidence": "参考听力原文：“This new full plan offers an open concept that will help everyone collaborate on major projects.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“plan offers an open concept that will help everyone”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Changing a plan）。"
+        "analysis": "正确答案：D（Changing a plan）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What does the woman say she will do?",
-      "answer_explain": "原文依据：听力原文中提到“OLet me ask the other committee members for”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Gather other opinions）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do?",
+      "answer_explain": "正确答案：C（Gather other opinions）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she will do?",
       "choice_translations": [
-        "A：Speak with an architect",
-        "B：Approve a design",
-        "C：Gather other opinions",
-        "D：Take a break"
+        "A:Speak with an architect",
+        "B:Approve a design",
+        "C:Gather other opinions",
+        "D:Take a break"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：lđ;",
+      "evidence": "参考听力原文：“Let me ask the other committee members for opinions before we do anything else.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：lđ;",
+        "evidence": "参考听力原文：“Let me ask the other committee members for opinions before we do anything else.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“OLet me ask the other committee members for”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Gather other opinions）。"
+        "analysis": "正确答案：C（Gather other opinions）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

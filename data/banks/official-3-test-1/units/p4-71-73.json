@@ -36,9 +36,31 @@
       "asset_key": "official-3-test-1/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "meeting.\nM\nBefore we end this meeting, ®1'q like to take a mint\nrecognize Janet Kalasky. @She’s led our departme:\nefforts for the past five years and has shown a trem\namount of dedication to the company. Recently, J\nbeen focusing on the displays that advertise our ne\nsmartphones for our booth at next week’s trade sho\ndisplays are very impressive, and 9) suggest that y\nthe staff lounge after this meeting to have a look at\nfirst, let's have a round of applause to thank Janet f\nand dedication.",
-    "transcript_translation": "会议。\n\n在结束本次会议之前，我想表彰珍妮特·卡拉斯基。她过去五年一直领导着我们的部门，并表现出了对公司的极大的奉献精神。最近，她一直专注于为我们下周贸易展馆的展位展示的新智能手机的展示品。这些展示非常令人印象深刻，并且建议我们在会议结束后去员工休息室看看。\n首先，让我们鼓掌感谢珍妮特和她的奉献精神。",
-    "content_translation": "会议。\n\n在结束本次会议之前，我想表彰珍妮特·卡拉斯基。她过去五年一直领导着我们的部门，并表现出了对公司的极大的奉献精神。最近，她一直专注于为我们下周贸易展馆的展位展示的新智能手机的展示品。这些展示非常令人印象深刻，并且建议我们在会议结束后去员工休息室看看。\n首先，让我们鼓掌感谢珍妮特和她的奉献精神。"
+    "transcript": "Before we end this meeting, I'd like to take a minute to recognize Janet Kolaski.\nShe's led our department's marketing efforts for the past five years and has shown a tremendous amount of dedication to the company.\nRecently, Janet has been focusing on the displays that advertise our new line of smartphones for our booth at next week's trade show.\nThe displays are very impressive, and I suggest that you drop by the staff lounge after this meeting to have a look at them.\nBut first, let's have a round of applause to thank Janet for her work and dedication.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "10600144ecb566b7a2f919c75310a242aa53d8cd2dc9f9da0a1a2f3b0f9c6f64",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 100,
+        "legacy_word_count": 87,
+        "length_ratio": 1.149,
+        "legacy_coverage": 0.897
+      }
+    },
+    "transcript_translation": "在结束这次会议之前，我想花一分钟时间表彰 Janet Kolaski。\n她过去五年一直领导着我们部门的营销工作，并对公司展现了巨大的奉献精神。\n最近，Janet 一直专注于为下周贸易展会展位展示我们新系列智能手机的展示品。\n这些展示品非常令人印象深刻，我建议大家在这次会议结束后到员工休息室看看它们。\n不过首先，让我们鼓掌感谢 Janet 的工作和奉献精神。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f592a0c691e15a003f6e9f2cbf787d83b7ef99209b69e3fd9112c13aff2a300e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -49,24 +71,24 @@
         "To discuss sales techniques"
       ],
       "answer": "A",
-      "question": "What is the purpose of the announcement? 77",
-      "answer_explain": "原文依据：听力原文中提到“efforts for the past five years and has shown a trem”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To acknowledge a coworker）。",
-      "question_translation": "宣布的目的是什么？",
+      "question": "What is the purpose of the announcement?",
+      "answer_explain": "正确答案：A（To acknowledge a coworker）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "宣布的目的是什么?",
       "choice_translations": [
-        "A：表彰一位同事",
-        "B：介绍一位嘉宾",
-        "C：解释一个部门政策",
-        "D：讨论销售技巧"
+        "A:表彰一位同事",
+        "B:介绍一位嘉宾",
+        "C:解释一个部门政策",
+        "D:讨论销售技巧"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：meeting.",
+      "evidence": "参考听力原文：“Recently, Janet has been focusing on the displays that advertise our new line of smartphones for our booth at next week's trade show.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：meeting.",
+        "evidence": "参考听力原文：“Recently, Janet has been focusing on the displays that advertise our new line of smartphones for our booth at next week's trade show.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“efforts for the past five years and has shown a trem”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To acknowledge a coworker）。"
+        "analysis": "正确答案：A（To acknowledge a coworker）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 71,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "D",
       "question": "What has Janet Kalasky been working on 7 recently?",
-      "answer_explain": "原文依据：听力原文中提到“been focusing on the displays that advertise our ne”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Creating promotional displays）。",
-      "question_translation": "珍妮特·卡拉斯基最近一直在做些什么？",
+      "answer_explain": "正确答案：D（Creating promotional displays）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "珍妮特·卡拉斯基最近一直在做些什么?",
       "choice_translations": [
-        "A：敲定会议议程",
-        "B：开发手机软件",
-        "C：更新培训手册",
-        "D：创建促销展示品"
+        "A:敲定会议议程",
+        "B:开发手机软件",
+        "C:更新培训手册",
+        "D:创建促销展示品"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：recognize Janet Kalasky. @She’s led our departme:",
+      "evidence": "参考听力原文：“Recently, Janet has been focusing on the displays that advertise our new line of smartphones for our booth at next week's trade show.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：recognize Janet Kalasky. @She’s led our departme:",
+        "evidence": "参考听力原文：“Recently, Janet has been focusing on the displays that advertise our new line of smartphones for our booth at next week's trade show.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“been focusing on the displays that advertise our ne”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Creating promotional displays）。"
+        "analysis": "正确答案：D（Creating promotional displays）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 72,
       "priority": {
@@ -144,27 +166,27 @@
         "To the security desk",
         "To the employee lounge",
         "To a training session",
-        "To a trade show _"
+        "To a trade show"
       ],
       "answer": "B",
       "question": "Where does the speaker encourage the Te listeners to go?",
-      "answer_explain": "原文依据：听力原文中提到“the staff lounge after this meeting to have a look at”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To the employee lounge）。",
-      "question_translation": "说话者鼓励听众去哪里？",
+      "answer_explain": "正确答案：B（To the employee lounge）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者鼓励听众去哪里?",
       "choice_translations": [
-        "A：安全台",
-        "B：员工休息室",
-        "C：培训课程",
-        "D：贸易展览会"
+        "A:安全台",
+        "B:员工休息室",
+        "C:培训课程",
+        "D:贸易展览会"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：meeting.",
+      "evidence": "参考听力原文：“The displays are very impressive, and I suggest that you drop by the staff lounge after this meeting to have a look at them.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：meeting.",
+        "evidence": "参考听力原文：“The displays are very impressive, and I suggest that you drop by the staff lounge after this meeting to have a look at them.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the staff lounge after this meeting to have a look at”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To the employee lounge）。"
+        "analysis": "正确答案：B（To the employee lounge）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 73,
       "priority": {

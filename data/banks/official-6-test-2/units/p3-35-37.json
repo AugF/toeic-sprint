@@ -40,9 +40,31 @@
       "asset_key": "official-6-test-2/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "Ew The Seafood Palace. How can I help you?\nm Hi. Ol'm calling from Kinhex Corporation about a\nparty we'd like to hold at your restaurant. We want to\ncelebrate the grand opening of our company's new\noffice here in town.\nEw Oh, yes. Congratulations on expanding your business!\nm Thanks! I'm wondering about the capacity of your\nlargest dining room. ®Is it big enough to accommodate\npeople?\nEw Oh, definitely. And Oif you'd like to reserve it for your\nparty, we ask that you pay a small fee. ® That's the only\nway we can guarantee it for you.",
-    "transcript_translation": "中文辅助（离线预处理）：Ew The Seafood Palace.\nHow（如何） can I help you?\nm Hi.\nOl'm calling from Kinhex Corporation about a\nparty we'd like to hold at your restaurant.\nWe want to\ncelebrate the grand opening of our company（公司）'s new\noffice（办公室） here in town.\nEw Oh, yes.\nCongratulations on expanding your business!\nm Thanks!\nI'm wondering about the capacity of your\nlargest dining room.\n®Is it big enough to accommodate\npeople?\nEw Oh, definitely.\nAnd Oif you'd like to reserve it for your\nparty, we ask that you pay a small fee.\n® That's the only\nway we can guarantee it for you.",
-    "content_translation": "中文辅助（离线预处理）：Ew The Seafood Palace.\nHow（如何） can I help you?\nm Hi.\nOl'm calling from Kinhex Corporation about a\nparty we'd like to hold at your restaurant.\nWe want to\ncelebrate the grand opening of our company（公司）'s new\noffice（办公室） here in town.\nEw Oh, yes.\nCongratulations on expanding your business!\nm Thanks!\nI'm wondering about the capacity of your\nlargest dining room.\n®Is it big enough to accommodate\npeople?\nEw Oh, definitely.\nAnd Oif you'd like to reserve it for your\nparty, we ask that you pay a small fee.\n® That's the only\nway we can guarantee it for you."
+    "transcript": "The Seafood Palace, how can I help you?\nHi, I'm calling from Connects Corporation about a party we'd like to hold at your restaurant.\nWe want to celebrate the grand opening of our company's new office here in town.\nOh yes, congratulations on expanding your business.\nThanks, I'm wondering about the capacity of your largest dining room.\nIs it big enough to accommodate 100 people?\nOh, definitely.\nAnd if you'd like to reserve it for your party, we ask that you pay a small fee.\nThat's the only way we can guarantee it for you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2238e1b32dfe14dbabb2e85f27499f8dfcc6b90fe190ef7a9c3a432715f077b4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 94,
+        "legacy_word_count": 98,
+        "length_ratio": 0.959,
+        "legacy_coverage": 0.908
+      }
+    },
+    "transcript_translation": "海鲜宫殿，有什么可以帮您？\n你好，我是Connects Corporation的，打电话来是想咨询一下我们在您的餐厅举办派对的事。\n我们想庆祝公司新办公室在这里开业大吉。\n哦，是的，恭喜你们扩大了业务。\n谢谢，我想了解一下您最大餐厅的容量。\n它够容纳100个人吗？\n哦，当然可以。\n如果您想预定它用于派对，我们需要您支付一笔小费用。\n这是我们能保证给您的唯一方式。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2ed1b7667c082d0f796bf787d6540af95850da5a22bb3b28e46f4aab9d001f97"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "What will Kinhex Corporation celebrate?",
-      "answer_explain": "原文依据：听力原文中提到“celebrate the grand opening of our company's new”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The opening of a new location）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will Kinhex Corporation celebrate?",
+      "answer_explain": "正确答案：C（The opening of a new location）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will Kinhex Corporation celebrate?",
       "choice_translations": [
-        "A：The start of a holiday season",
-        "B：The anniversary of its founding",
-        "C：The opening of a new location",
-        "D：The appointment（预约） of a company（公司）"
+        "A:The start of a holiday season",
+        "B:The anniversary of its founding",
+        "C:The opening of a new location",
+        "D:The appointment(预约) of a company(公司)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：m Hi. Ol'm calling from Kinhex Corporation about a",
+      "evidence": "参考听力原文：“We want to celebrate the grand opening of our company's new office here in town.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：m Hi. Ol'm calling from Kinhex Corporation about a",
+        "evidence": "参考听力原文：“We want to celebrate the grand opening of our company's new office here in town.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“celebrate the grand opening of our company's new”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The opening of a new location）。"
+        "analysis": "正确答案：C（The opening of a new location）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "D",
       "question": "What does the man ask about?",
-      "answer_explain": "原文依据：听力原文中提到“celebrate the grand opening of our company's new”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（The size of a space）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） ask about?",
+      "answer_explain": "正确答案：D（The size of a space）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) ask about?",
       "choice_translations": [
-        "A：The cost of a service（服务）",
-        "B：Operating hours",
-        "C：Entertainment options",
-        "D：The size of a space"
+        "A:The cost of a service(服务)",
+        "B:Operating hours",
+        "C:Entertainment options",
+        "D:The size of a space"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Ew The Seafood Palace. How can I help you?",
+      "evidence": "参考听力原文：“Hi, I'm calling from Connects Corporation about a party we'd like to hold at your restaurant.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Ew The Seafood Palace. How can I help you?",
+        "evidence": "参考听力原文：“Hi, I'm calling from Connects Corporation about a party we'd like to hold at your restaurant.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“celebrate the grand opening of our company's new”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（The size of a space）。"
+        "analysis": "正确答案：D（The size of a space）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "D",
       "question": "What does the woman ask the man to do?",
-      "answer_explain": "原文依据：听力原文中提到“party, we ask that you pay a small fee.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Make a payment）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） ask the man（男士） to do?",
+      "answer_explain": "正确答案：D（Make a payment）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) ask the man(男士) to do?",
       "choice_translations": [
-        "A：Sample a menu item",
-        "B：Look at a catalog",
-        "C：Talk to a manager（经理）",
-        "D：Make a payment"
+        "A:Sample a menu item",
+        "B:Look at a catalog",
+        "C:Talk to a manager(经理)",
+        "D:Make a payment"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ew The Seafood Palace. How can I help you?",
+      "evidence": "参考听力原文：“And if you'd like to reserve it for your party, we ask that you pay a small fee.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ew The Seafood Palace. How can I help you?",
+        "evidence": "参考听力原文：“And if you'd like to reserve it for your party, we ask that you pay a small fee.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“party, we ask that you pay a small fee.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Make a payment）。"
+        "analysis": "正确答案：D（Make a payment）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

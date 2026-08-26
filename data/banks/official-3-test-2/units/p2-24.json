@@ -26,38 +26,58 @@
       "asset_key": "official-3-test-2/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Where（哪里） are your photographs being exhibited now [lm",
-    "content_translation": "中文辅助（离线预处理）：Ew Where（哪里） are your photographs being exhibited now [lm"
+    "transcript": "We found some defects in the accounting software.\nA. That's unfortunate.\nB. He's on the third floor.\nC. The bank cancelled it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "799f2d9741e3945c8bf3bba0c0f61f026e21bf6913a52e49c9b29d3dd1e6c0d9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "我们在会计软件中发现了一些缺陷。\nA. 那太不妙了。\nB. 他在三楼。\nC. 银行取消了它。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ee6a0941ce15f188a317f9f3835073286b3e49d91f07b483befe05ebbf38ecc5"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Only in black and white.",
-        "At the community center.",
-        "Almost a month."
+        "That's unfortunate.",
+        "He's on the third floor.",
+        "The bank cancelled it."
       ],
       "answer": "A",
-      "question": "Ew Where are your photographs being exhibited now [lm",
+      "question": "We found some defects in the accounting software.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Where are your photographs being exhibited now [lm”，自然应答是“Only in black and white.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Only in black and white.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Where（哪里） are your photographs being exhibited now [lm",
+      "answer_explain": "原文依据：问句或陈述是“We found some defects in the accounting software.”，自然应答是“That's unfortunate.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（That's unfortunate.）。",
+      "question_translation": "我们在会计软件中发现了一些缺陷。",
       "choice_translations": [
-        "A：Only in black and white.",
-        "B：At the community center.",
-        "C：Almost a month."
+        "A：那太不妙了。",
+        "B：他在三楼。",
+        "C：银行取消了它。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Where are your photographs being exhibited now [lm",
+      "evidence": "参考原文第 1 段：We found some defects in the accounting software.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Where are your photographs being exhibited now [lm",
+        "evidence": "参考原文第 1 段：We found some defects in the accounting software.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Where are your photographs being exhibited now [lm”，自然应答是“Only in black and white.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Only in black and white.）。"
+        "analysis": "原文依据：问句或陈述是“We found some defects in the accounting software.”，自然应答是“That's unfortunate.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（That's unfortunate.）。"
       },
       "item_id": 24,
       "priority": {

@@ -42,8 +42,28 @@
       "asset_key": "official-11-test-1/audio/part2/q031.mp3",
       "exists": true
     },
-    "transcript_translation": "我们的户外家具生产进度落后了。\nA：它在门后面。\nB：你知道问题出在哪里吗？\nC：七月十一日。",
-    "content_translation": "本段听力围绕“陈述句应答”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Production on our outdoor furniture is behind schedule.\nA. It's behind the door.\nB. Do you know what the problem is?\nC. On July 11th.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "79d9d469cf30516a5192bffaa0463ce4c72d399f7a2aea9c7fa7a17e2671877e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q031.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "我们户外家具的生产进度落后了。\nA. 它在门后面。\nB. 你知道问题是什么吗？\nC. 在7月11日。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "84fe02f7ad3dae806b6d5962762fc11e236668e8ecc9fcd16fabae5f31c370bf"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -51,7 +71,7 @@
       "choices": [
         "It's behind the door.",
         "Do you know what the problem is?",
-        "On July eleventh."
+        "On July 11th."
       ],
       "answer": "B",
       "difficulty": "medium",
@@ -62,8 +82,8 @@
       "evidence": "参考原文第 1 段第 1 句：Production on our outdoor furniture is behind schedule.",
       "choice_translations": [
         "A：它在门后面。",
-        "B：你知道问题出在哪里吗？",
-        "C：七月十一日。"
+        "B：你知道问题是什么吗?",
+        "C：在7月11日。"
       ],
       "response_style": "可直接回答，也常用补充信息间接回答",
       "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
@@ -74,7 +94,7 @@
         "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：告知户外家具生产进度落后，答句问 Do you know what the problem is? 选择理由：B针对延期追问原因，符合工作对话逻辑；A只利用 behind 的字面义，C只给日期。正确答案：B（Do you know what the problem is?）。"
       },
-      "question_translation": "我们的户外家具生产进度落后了。",
+      "question_translation": "我们户外家具的生产进度落后了。",
       "item_id": 31,
       "priority": {
         "level": "P1",

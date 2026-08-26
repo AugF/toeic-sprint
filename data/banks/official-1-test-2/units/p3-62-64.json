@@ -41,37 +41,59 @@
       "asset_key": "official-1-test-2/audio/part3/q062-064.mp3",
       "exists": true
     },
-    "transcript": "Ei Hi. I’m going on a trip, and 91m interested in buying an\nelectronic reader so | don’t have to carry books with me.\nEE w Well, @we carry all major brands of e-readers here —I’m\nsure we can find the right one for you.\nh, good.\nAre you looking for any special features?\nGu lt has to be user-friendly—I'm not very good with\ntechnology. | just want to read books —not watch\nmovies or play games.\nIn that case, I’d suggest this one. It’s very easy to\ndownload e-books onto it, and it holds up to three\nhundred books. Here, let me show you how it works.",
-    "transcript_translation": "你好。我打算出差，所以有兴趣买一台电子阅读器，这样我就不用带书了。\n嗯，我们这里有所有主要品牌的电子阅读器——我相信我们能为您找到合适的。\n好的。\n您需要什么特殊功能吗？\n必须是用户友好的——我对技术不太了解。我只是想看书——而不是看电影或玩游戏。\n那样的话，我推荐这款。它非常容易下载电子书到上面，而且可以装三百本书。来，我给您看看它是怎么运作的。",
-    "content_translation": "你好。我打算出差，所以有兴趣买一台电子阅读器，这样我就不用带书了。\n嗯，我们这里有所有主要品牌的电子阅读器——我相信我们能为您找到合适的。\n好的。\n您需要什么特殊功能吗？\n必须是用户友好的——我对技术不太了解。我只是想看书——而不是看电影或玩游戏。\n那样的话，我推荐这款。它非常容易下载电子书到上面，而且可以装三百本书。来，我给您看看它是怎么运作的。"
+    "transcript": "Hi, I'm going on a trip and I'm interested in buying an electronic reader so I don't have to carry books with me.\nWell, we carry all major brands of e-readers here.\nI'm sure we can find the right one for you.\nOh, good.\nAre you looking for any special features?\nIt has to be user-friendly.\nI'm not very good with technology.\nI just want to read books, not watch movies or play games.\nIn that case, I'd suggest this one.\nIt's very easy to download e-books onto it and it holds up to 300 books.\nHere, let me show you how it works.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "844560af10814d2630d2b19424d08a0d691121d6d18be7ecb93ec1ca0e9d3ac5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part3/q062-064.mp3",
+      "metrics": {
+        "word_count": 103,
+        "legacy_word_count": 101,
+        "length_ratio": 1.02,
+        "legacy_coverage": 0.95
+      }
+    },
+    "transcript_translation": "嗨，我即将出差，对购买电子阅读器很感兴趣，这样我就不用带书了。\n嗯，我们这里携带所有主要的品牌电子阅读器。\n我相信我们可以为您找到合适的。\n哦，太好了。\n您有没有特别需要的功能？\n它必须是用户友好的。\n我对技术不太了解。\n我只是想看书，而不是看电影或玩游戏。\n在这种情况下，我建议这款。\n下载电子书到上面非常容易，而且它可以存储多达 300 本书。\n来，让我给您看看它是如何运作的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2e4ea84f34f71a7539ac35729f874008f81d16d35b0305afaf904054fe4cdc9a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "At an electronics store",
-        "Ata public library",
+        "A public library",
         "At a movie theater",
-        "Ata travel agency"
+        "At a travel agency"
       ],
       "answer": "A",
       "question": "Where does the conversation most likely take place?",
-      "answer_explain": "原文依据：听力原文中提到“sure we can find the right one for you.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At an electronics store）。",
-      "question_translation": "这段对话最可能发生在什么地方？",
+      "answer_explain": "正确答案：A（At an electronics store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "这段对话最可能发生在什么地方?",
       "choice_translations": [
-        "A：在电子产品店",
-        "B：在公共图书馆",
-        "C：在电影院",
-        "D：在旅行社"
+        "A:在电子产品店",
+        "B:在公共图书馆",
+        "C:在电影院",
+        "D:在旅行社"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Ei Hi. I’m going on a trip, and 91m interested in buying an",
+      "evidence": "参考听力原文：“Hi, I'm going on a trip and I'm interested in buying an electronic reader so I don't have to carry books with me.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Ei Hi. I’m going on a trip, and 91m interested in buying an",
+        "evidence": "参考听力原文：“Hi, I'm going on a trip and I'm interested in buying an electronic reader so I don't have to carry books with me.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“sure we can find the right one for you.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At an electronics store）。"
+        "analysis": "正确答案：A（At an electronics store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 62,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "B",
       "question": "What is the man concerned about?",
-      "answer_explain": "原文依据：听力原文中提到“technology.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Difficult technology）。",
-      "question_translation": "这位男士担心的是什么？",
+      "answer_explain": "正确答案：B（Difficult technology）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "这位男士担心的是什么?",
       "choice_translations": [
-        "A：维修费用",
-        "B：复杂的技术",
-        "C：保修条款",
-        "D：屏幕尺寸"
+        "A:维修费用",
+        "B:复杂的技术",
+        "C:保修条款",
+        "D:屏幕尺寸"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Ei Hi. I’m going on a trip, and 91m interested in buying an",
+      "evidence": "参考听力原文：“I'm not very good with technology.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Ei Hi. I’m going on a trip, and 91m interested in buying an",
+        "evidence": "参考听力原文：“I'm not very good with technology.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“technology.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Difficult technology）。"
+        "analysis": "正确答案：B（Difficult technology）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 63,
       "priority": {
@@ -158,28 +180,28 @@
       "choices": [
         "Call a supervisor",
         "Provide a demonstration",
-        "Exchange an item +",
-        "Apply a discount nl"
+        "Exchange an item",
+        "Apply a discount"
       ],
       "answer": "B",
       "question": "What does the woman offer to do?",
-      "answer_explain": "原文依据：听力原文中提到“sure we can find the right one for you.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Provide a demonstration）。",
-      "question_translation": "女士提议做什么？",
+      "answer_explain": "正确答案：B（Provide a demonstration）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士提议做什么?",
       "choice_translations": [
-        "A：叫主管",
-        "B：提供演示",
-        "C：更换物品",
-        "D：减免折扣"
+        "A:叫主管",
+        "B:提供演示",
+        "C:更换物品",
+        "D:减免折扣"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ei Hi. I’m going on a trip, and 91m interested in buying an",
+      "evidence": "参考听力原文：“Hi, I'm going on a trip and I'm interested in buying an electronic reader so I don't have to carry books with me.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ei Hi. I’m going on a trip, and 91m interested in buying an",
+        "evidence": "参考听力原文：“Hi, I'm going on a trip and I'm interested in buying an electronic reader so I don't have to carry books with me.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“sure we can find the right one for you.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Provide a demonstration）。"
+        "analysis": "正确答案：B（Provide a demonstration）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 64,
       "priority": {

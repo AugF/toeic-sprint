@@ -28,38 +28,58 @@
       "asset_key": "official-12-test-1/audio/part2/q022.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：*m Would you recommend the salmon or the TER steak?\nEW",
-    "content_translation": "中文辅助（离线预处理）：*m Would you recommend the salmon or the TER steak?\nEW"
+    "transcript": "Would you recommend the salmon or the steak?\nA. A table for three, please.\nB. A catering contract.\nC. Our restaurant specialty is pasta.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a199a2c84096abd9d6ad1a39ead81136f7853ca8bad37446f5f9a412744233c8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q022.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "你推荐三文鱼还是牛排？\nA. 一张三人桌，请。\nB. 一个餐饮合同。\nC. 我们餐厅的特色是意大利面。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "454db7b4cd19cff8e9b9891572fed74341f3e7ec890770415efbe2e40b510862"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "A table for three, please.",
-        "The catering contract. To specialty",
-        "Our restaurant's specialty is pasta."
+        "A catering contract.",
+        "Our restaurant specialty is pasta."
       ],
       "answer": "C",
-      "question": "*m Would you recommend the salmon or the TER steak? EW",
+      "question": "Would you recommend the salmon or the steak?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“*m Would you recommend the salmon or the TER steak? EW”，自然应答是“Our restaurant's specialty is pasta.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Our restaurant's specialty is pasta.）。",
-      "question_translation": "中文辅助（离线预处理）：*m Would you recommend the salmon or the TER steak?\nEW",
+      "answer_explain": "原文依据：问句或陈述是“Would you recommend the salmon or the steak?”，自然应答是“Our restaurant specialty is pasta.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Our restaurant specialty is pasta.）。",
+      "question_translation": "你推荐三文鱼还是牛排?",
       "choice_translations": [
-        "A：A table for three, please（请）.",
-        "B：The catering contract.\nTo specialty",
-        "C：Our restaurant's specialty is pasta."
+        "A：一张三人桌,请。",
+        "B：一个餐饮合同。",
+        "C：我们餐厅的特色是意大利面。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：*m Would you recommend the salmon or the TER steak? EW",
+      "evidence": "参考原文第 1 段：Would you recommend the salmon or the steak?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：*m Would you recommend the salmon or the TER steak? EW",
+        "evidence": "参考原文第 1 段：Would you recommend the salmon or the steak?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“*m Would you recommend the salmon or the TER steak? EW”，自然应答是“Our restaurant's specialty is pasta.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Our restaurant's specialty is pasta.）。"
+        "analysis": "原文依据：问句或陈述是“Would you recommend the salmon or the steak?”，自然应答是“Our restaurant specialty is pasta.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Our restaurant specialty is pasta.）。"
       },
       "item_id": 22,
       "priority": {

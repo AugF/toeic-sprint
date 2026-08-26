@@ -28,38 +28,58 @@
       "asset_key": "official-12-test-2/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：EW",
-    "content_translation": "中文辅助（离线预处理）：EW"
+    "transcript": "Shouldn't we pick up our security badges from the front desk?\nA. Yes, this is a new desk.\nB. A software security update.\nC. Okay, let's go there now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a40d6f4823c2d0fe17bf62f0c42d75afd8ef5ba284f384b75e07f894adfbbd73",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "我们不应该在前台领取我们的安全徽章吗？\nA. 是的，这是新桌子。\nB. 一个软件安全更新。\nC. 好的，我们现在去那里吧。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6001a145b5bac0caa3edae28f537f88ea4164b4089334c78b76ac03b5a94855a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Yes, this is a new desk.",
-        "A software security update. Eff. ther",
-        "OK-let's go there now."
+        "A software security update.",
+        "Okay, let's go there now."
       ],
       "answer": "C",
-      "question": "EW",
+      "question": "Shouldn't we pick up our security badges from the front desk?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“EW”，自然应答是“OK-let's go there now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（OK-let's go there now.）。",
-      "question_translation": "中文辅助（离线预处理）：EW",
+      "answer_explain": "原文依据：问句或陈述是“Shouldn't we pick up our security badges from the front desk?”，自然应答是“Okay, let's go there now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Okay, let's go there now.）。",
+      "question_translation": "我们不应该在前台领取我们的安全徽章吗?",
       "choice_translations": [
-        "A：Yes, this is a new desk.",
-        "B：A software security update.\nEff.\nther",
-        "C：OK-let's go there now."
+        "A：是的,这是新桌子。",
+        "B：一个软件安全更新。",
+        "C：好的,我们现在去那里吧。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：EW",
+      "evidence": "参考原文第 1 段：Shouldn't we pick up our security badges from the front desk?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：EW",
+        "evidence": "参考原文第 1 段：Shouldn't we pick up our security badges from the front desk?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“EW”，自然应答是“OK-let's go there now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（OK-let's go there now.）。"
+        "analysis": "原文依据：问句或陈述是“Shouldn't we pick up our security badges from the front desk?”，自然应答是“Okay, let's go there now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Okay, let's go there now.）。"
       },
       "item_id": 21,
       "priority": {

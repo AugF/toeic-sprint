@@ -37,37 +37,60 @@
       "asset_key": "official-1-test-1/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "three speakers.\nHello, ®may | speak to Min-Jae Park? It’s about the\nrenovations to Comet Bank. He's the architect, right?\nYes. But may | ask who’s calling?\nThis is Sheryl Reed, the project manager for the Comet\nBank renovations. °1’m missing the drawings with the\nmeasurements for the main entrance, and I’m ordering th\ndoors today.\nK, I'll put you through to Mr. Park. Please hold.\nER w Thanks.\nFI» Hello? Ms. Reed?\nER w Hello, Mr. Park. Could you possibly get me another\nblueprint? | can't find the drawings for the front entrance\nCertainly, Ms. Reed. It'll take some time to print the plan,\nthough. ©if you come by my office around three o'clock,\nI'll have it ready for you by then.",
-    "transcript_translation": "三位发言人。您好，请问我能和 Min-Jae Park 通话吗？是关于 Comet Bank 的翻修工程的。他是建筑师，对吗？是的。不过，请问您是哪位？我是 Sheryl Reed，Comet Bank 翻修项目的项目经理。我缺少主入口的测量图纸，今天就要订门了。好的，我给您接通 Mr. Park。请稍等。谢谢。喂？Reed 女士？您好，Mr. Park。您能给我另一份蓝图吗？我找不到前入口的图纸。当然可以，Reed 女士。打印计划需要一些时间。如果您能在三点左右来我的办公室，我到时候给您准备好。",
-    "content_translation": "三位发言人。您好，请问我能和 Min-Jae Park 通话吗？是关于 Comet Bank 的翻修工程的。他是建筑师，对吗？是的。不过，请问您是哪位？我是 Sheryl Reed，Comet Bank 翻修项目的项目经理。我缺少主入口的测量图纸，今天就要订门了。好的，我给您接通 Mr. Park。请稍等。谢谢。喂？Reed 女士？您好，Mr. Park。您能给我另一份蓝图吗？我找不到前入口的图纸。当然可以，Reed 女士。打印计划需要一些时间。如果您能在三点左右来我的办公室，我到时候给您准备好。"
+    "transcript": "Hello, may I speak to Min J Park?\nIt's about the renovations to Comet Bank.\nHe's the architect, right?\nYes, but may I ask who's calling?\nThis is Cheryl Reed, the project manager for the Comet Bank renovations.\nI'm missing the drawings with the measurements for the main entrance, and I'm ordering the doors today.\nOkay, I'll put you through to Mr. Park.\nPlease hold.\nThanks.\nHello, Ms. Reed?\nHello, Mr. Park.\nCould you possibly get me another blueprint?\nI can't find the drawings for the front entrance.\nCertainly, Ms. Reed.\nIt'll take some time to print the plan, though.\nIf you come by my office around 3 o'clock, I'll have it ready for you by then.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "37ef8bd35fa1bc50d2e009ffdd82a932dd100f1558519e6eaee35d3c8c677efb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 116,
+        "legacy_word_count": 112,
+        "length_ratio": 1.036,
+        "legacy_coverage": 0.964
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "您好，请问我能和 Min J Park 通话吗？\n这是关于 Comet Bank 的翻修工程。\n他是建筑师，对吧？\n是的，但请问您是哪位？\n我是 Cheryl Reed，Comet Bank 翻修项目的项目经理。\n我缺少主入口的测量图纸，而且我今天就要订门了。\n好的，我给您接通 Mr. Park。\n请稍等。\n谢谢。\n喂，Ms. Reed？\n你好，Mr. Park。\n您能给我另一份蓝图吗？\n我找不到前入口的图纸。\n当然可以，Ms. Reed。\n不过打印计划需要一些时间。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a769cf1ad8bcdfb04848c2923cc3f29872bb5391070b39c31391dd54904b8b19"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "A bank cashier",
-        "Aconstruction worker",
+        "A construction worker",
         "A journalist",
         "An architect"
       ],
       "answer": "D",
       "question": "Who is Mr. Park?",
-      "answer_explain": "原文依据：听力原文中提到“He's the architect, right?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An architect）。",
+      "answer_explain": "正确答案：D（An architect）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：three speakers.",
+      "evidence": "参考听力原文：“Hello, may I speak to Min J Park?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：three speakers.",
+        "evidence": "参考听力原文：“Hello, may I speak to Min J Park?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“He's the architect, right?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An architect）。"
+        "analysis": "正确答案：D（An architect）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "Mr. Park 是什么职业？",
+      "question_translation": "Mr. Park 是什么职业?",
       "choice_translations": [
-        "A：银行柜员",
-        "B：建筑工人",
-        "C：记者",
-        "D：建筑师"
+        "A:银行柜员",
+        "B:建筑工人",
+        "C:记者",
+        "D:建筑师"
       ],
       "item_id": 50,
       "priority": {
@@ -96,28 +119,28 @@
       "choices": [
         "An invoice is incomplete.",
         "An office has closed.",
-        "Adocument is missing.",
+        "A document is missing.",
         "A measurement is incorrect."
       ],
       "answer": "C",
       "question": "What problem does Ms. Reed mention?",
-      "answer_explain": "原文依据：听力原文中提到“°1’m missing the drawings with the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Adocument is missing.）。",
+      "answer_explain": "正确答案：C（A document is missing.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：three speakers.",
+      "evidence": "参考听力原文：“I'm missing the drawings with the measurements for the main entrance, and I'm ordering the doors today.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：three speakers.",
+        "evidence": "参考听力原文：“I'm missing the drawings with the measurements for the main entrance, and I'm ordering the doors today.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“°1’m missing the drawings with the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Adocument is missing.）。"
+        "analysis": "正确答案：C（A document is missing.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "Reed 女士提到了什么问题？",
+      "question_translation": "Reed 女士提到了什么问题?",
       "choice_translations": [
-        "A：发票不完整。",
-        "B：办公室关闭了。",
-        "C：缺少一份文件。",
-        "D：测量有误。"
+        "A:发票不完整。",
+        "B:办公室关闭了。",
+        "C:缺少一份文件。",
+        "D:测量有误。"
       ],
       "item_id": 51,
       "priority": {
@@ -151,23 +174,23 @@
       ],
       "answer": "B",
       "question": "What does Mr. Park ask Ms. Reed to do?",
-      "answer_explain": "原文依据：听力原文中提到“©if you come by my office around three o'clock,”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Visit an office）。",
+      "answer_explain": "正确答案：B（Visit an office）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：three speakers.",
+      "evidence": "参考听力原文：“If you come by my office around 3 o'clock, I'll have it ready for you by then.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：three speakers.",
+        "evidence": "参考听力原文：“If you come by my office around 3 o'clock, I'll have it ready for you by then.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“©if you come by my office around three o'clock,”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Visit an office）。"
+        "analysis": "正确答案：B（Visit an office）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "Mr. Park 让 Reed 女士做什么？",
+      "question_translation": "Mr. Park 让 Reed 女士做什么?",
       "choice_translations": [
-        "A：审阅一份建议书",
-        "B：拜访一个办公室",
-        "C：阅读一份提案",
-        "D：批准一个项目"
+        "A:审阅一份建议书",
+        "B:拜访一个办公室",
+        "C:阅读一份提案",
+        "D:批准一个项目"
       ],
       "item_id": 52,
       "priority": {

@@ -28,8 +28,28 @@
       "asset_key": "official-9-test-1/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：aw I photocopied the travel reimbursement forms.\n*m",
-    "content_translation": "中文辅助（离线预处理）：aw I photocopied the travel reimbursement forms.\n*m"
+    "transcript": "I photocopied the travel reimbursement forms.\nA. A hotel in the center of town.\nB. Thanks for doing that.\nC. Three more hours.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "897538cfbbb826dd9fdd9974d07a5c59eaec1d260ade887ce0530e7f3fe52365",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "我复印了差旅报销表。\nA. 市中心的一家酒店。\nB. 谢谢你帮我做这件事。\nC. 再过三个小时。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5fc1923e3754caba09b303453dc80ec1616f9f03d4a114ef292930d7140f4ffd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Three more hours."
       ],
       "answer": "B",
-      "question": "aw I photocopied the travel reimbursement forms. *m",
+      "question": "I photocopied the travel reimbursement forms.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“aw I photocopied the travel reimbursement forms. *m”，自然应答是“Thanks for doing that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Thanks for doing that.）。",
-      "question_translation": "中文辅助（离线预处理）：aw I photocopied the travel reimbursement forms.\n*m",
+      "answer_explain": "原文依据：问句或陈述是“I photocopied the travel reimbursement forms.”，自然应答是“Thanks for doing that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Thanks for doing that.）。",
+      "question_translation": "我复印了差旅报销表。",
       "choice_translations": [
-        "A：A hotel in the center of town.",
-        "B：Thanks for doing that.",
-        "C：Three more hours."
+        "A：市中心的一家酒店。",
+        "B：谢谢你帮我做这件事。",
+        "C：再过三个小时。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：aw I photocopied the travel reimbursement forms. *m",
+      "evidence": "参考原文第 1 段：I photocopied the travel reimbursement forms.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：aw I photocopied the travel reimbursement forms. *m",
+        "evidence": "参考原文第 1 段：I photocopied the travel reimbursement forms.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“aw I photocopied the travel reimbursement forms. *m”，自然应答是“Thanks for doing that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Thanks for doing that.）。"
+        "analysis": "原文依据：问句或陈述是“I photocopied the travel reimbursement forms.”，自然应答是“Thanks for doing that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Thanks for doing that.）。"
       },
       "item_id": 19,
       "priority": {

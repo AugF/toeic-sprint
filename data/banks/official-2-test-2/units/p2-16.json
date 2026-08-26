@@ -26,8 +26,28 @@
       "asset_key": "official-2-test-2/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "M 我应该把大信封放在哪里 m\nA. 是的，你应该。\nB. 我来订小号的。\nC. 请放在用品室。",
-    "content_translation": "M 我应该把大信封放在哪里 m\nA. 是的，你应该。\nB. 我来订小号的。\nC. 请放在用品室。"
+    "transcript": "Where should I put the large envelopes?\nA. Yes, you should.\nB. I'll order the small ones.\nC. In the supply room, please.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1c0bef991fa516e84f80dff8ad658ece311dcb24db47ea8b476f7c372dc84515",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "我把大信封放在哪里？\nA. 是的，你应该。\nB. 我会订小尺寸的。\nC. 请放在供应室。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "15805dfcceecfe80e3650f3e034af7bce730665415f578b11510ffb8aed043ee"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "In the supply room, please."
       ],
       "answer": "C",
-      "question": "M Where should | put the large envelopes m",
+      "question": "Where should I put the large envelopes?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M Where should | put the large envelopes m”，自然应答是“In the supply room, please.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（In the supply room, please.）。",
-      "question_translation": "M 我应该把大信封放在哪里 m",
+      "answer_explain": "原文依据：问句或陈述是“Where should I put the large envelopes?”，自然应答是“In the supply room, please.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（In the supply room, please.）。",
+      "question_translation": "我把大信封放在哪里?",
       "choice_translations": [
-        "A：是的，你应该。",
-        "B：我来订小号的。",
-        "C：请放在用品室。"
+        "A：是的,你应该。",
+        "B：我会订小尺寸的。",
+        "C：请放在供应室。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M Where should | put the large envelopes m",
+      "evidence": "参考原文第 1 段：Where should I put the large envelopes?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M Where should | put the large envelopes m",
+        "evidence": "参考原文第 1 段：Where should I put the large envelopes?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“M Where should | put the large envelopes m”，自然应答是“In the supply room, please.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（In the supply room, please.）。"
+        "analysis": "原文依据：问句或陈述是“Where should I put the large envelopes?”，自然应答是“In the supply room, please.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（In the supply room, please.）。"
       },
       "item_id": 16,
       "priority": {

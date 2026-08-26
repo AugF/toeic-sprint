@@ -31,8 +31,28 @@
       "asset_key": "official-12-test-2/images/part1/q001.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. She's picking up a coffee mug.\nB. She's paying for a pair of jeans.\nC. She's searching through a shopping bag.\nD. She's holding up an item of clothing.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e83af300fe5302f1a74927bb5ce30acac9b9f6f897dc16f9c0a3a36fffdcd99e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part1/q001.mp3",
+      "metrics": {
+        "word_count": 42
+      }
+    },
+    "transcript_translation": "A. 她正在拿起一个咖啡马克杯。\nB. 她正在为一条牛仔裤付款。\nC. 她正在从购物袋里寻找东西。\nD. 她正在举起一件衣服。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "04d19c4dc51cb0040eb9b5205c04c2f4aa7d1d8e6294232dedea682539595af2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“She's holding up an item of clothing.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（She's holding up an item of clothing.）。",
       "choice_translations": [
-        "A：She's picking up a coffee mug.",
-        "B：She's paying for a pair of jeans.",
-        "C：She's searching through a shopping bag.",
-        "D：She's holding up an item of clothing."
+        "A：她正在拿起一个咖啡马克杯。",
+        "B：她正在为一条牛仔裤付款。",
+        "C：她正在从购物袋里寻找东西。",
+        "D：她正在举起一件衣服。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-12-test-2/p1-1/1"
+      "item_key": "official-12-test-2/p1-1/1",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -39,37 +39,60 @@
       "asset_key": "official-2-test-2/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nEIR w K, Mr. Kimeta. ® Your money's been deposi\nyour savings account—here’s your receipt. Is\nanything else?\nll Yes. Can you tell me about your new loyal\ncredit cards?\nEI Sure. My supervisor here can tell you more.\nHello. I’m Barbara Wilson, the branch manag\nCustomers who've banked with us for at lez\nyears are eligible for this card. You just fill out\napplication form—we'll let you know within a\nyou've been approved.\nfi#ll Sounds good, but my lunch break’s almost o\\\nThat's K, you can do it online. You'll find t\nthe home page of our Web site.\nGood, ©1'll do that later.",
-    "transcript_translation": "有三位说话者。\nEIR w K，Kimeta先生。® 您的钱已经存入您的储蓄账户了——这是您的收据。还有其他需要帮忙的吗？\n是的。您能告诉我关于您新的忠诚信用卡的信息吗？\nEI 当然可以。我这里的主管可以告诉您更多。\n您好。我是Barbara Wilson，分行经理。\n在我们这里开户多年的客户有资格办理此卡。您只需填写申请表——我们会在几天内通知您是否获批。\n听起来不错，但我午休时间快到了。\n那是K，您可以在网上办。您可以在我们网站的主页找到它。\n好的，我稍后再做。",
-    "content_translation": "有三位说话者。\nEIR w K，Kimeta先生。® 您的钱已经存入您的储蓄账户了——这是您的收据。还有其他需要帮忙的吗？\n是的。您能告诉我关于您新的忠诚信用卡的信息吗？\nEI 当然可以。我这里的主管可以告诉您更多。\n您好。我是Barbara Wilson，分行经理。\n在我们这里开户多年的客户有资格办理此卡。您只需填写申请表——我们会在几天内通知您是否获批。\n听起来不错，但我午休时间快到了。\n那是K，您可以在网上办。您可以在我们网站的主页找到它。\n好的，我稍后再做。"
+    "transcript": "Okay, Mr. Kamata.\nYour money's been deposited into your savings account.\nHere's your receipt.\nIs there anything else?\nYes.\nCan you tell me about your new loyal customer credit cards?\nSure.\nMy supervisor here can tell you more.\nHello.\nI'm Barbara Wilson, the branch manager.\nCustomers who've banked with us for at least three years are eligible for this card.\nYou just fill out a simple application form.\nWe'll let you know within an hour if you've been approved.\nSounds good, but my lunch break's almost over.\nThat's okay.\nYou can do it online.\nYou'll find the link on the homepage of our website.\nGood.\nI'll do that later.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7aaee169fd306577febbdc829178ed8bd405d7670e041bf65ffa3ad80d05d3e4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 109,
+        "legacy_word_count": 107,
+        "length_ratio": 1.019,
+        "legacy_coverage": 0.832
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "好的，卡马塔先生。\n您的钱已经存入您的储蓄账户了。\n这是您的收据。\n还有其他需要帮忙的吗？\n是的。\n您能给我介绍一下你们新的忠诚客户信用卡吗？\n当然可以。\n我这里的主管可以告诉您更多信息。\n你好。\n我是分行经理芭芭拉·威尔逊。\n与我们开户至少三年的顾客有资格办理此卡。\n您只需要填写一份简单的申请表。\n如果通过，我们在一个小时内会通知您。\n听起来不错，但我午休时间快结束了。\n没关系。\n您可以在线办理。\n您会在我们网站的首页找到链接。\n好的。\n我稍后就做。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0d1a6a6ea0b7a98744ec63e5dfb869755913ae5bdd09f41864b1e50ce8ff0e43"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "In an office-supply store",
-        "Ina restaurant",
-        "Ina library",
-        "Ina bank"
+        "In a restaurant",
+        "In a library",
+        "In a bank"
       ],
       "answer": "D",
-      "question": "Where does the conversation most likely 38. take place?",
-      "answer_explain": "原文依据：听力原文中提到“the home page of our Web site.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Ina bank）。",
-      "question_translation": "这段对话最可能发生在什么地方？",
+      "question": "Where does the conversation most likely take place?",
+      "answer_explain": "正确答案：D（In a bank）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "这段对话最可能发生在什么地方?",
       "choice_translations": [
-        "A：办公用品店",
-        "B：餐馆",
-        "C：图书馆",
-        "D：银行"
+        "A:办公用品店",
+        "B:餐馆",
+        "C:图书馆",
+        "D:银行"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Can you tell me about your new loyal customer credit cards?”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Can you tell me about your new loyal customer credit cards?”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the home page of our Web site.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Ina bank）。"
+        "analysis": "正确答案：D（In a bank）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -100,28 +123,28 @@
       "choices": [
         "Product prices",
         "Business hours",
-        "Acredit card",
-        "Alunch reservation"
+        "A credit card",
+        "A lunch reservation"
       ],
       "answer": "C",
       "question": "What does the man inquire about?",
-      "answer_explain": "原文依据：听力原文中提到“years are eligible for this card.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Acredit card）。",
-      "question_translation": "男士询问的是什么？",
+      "answer_explain": "正确答案：C（A credit card）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士询问的是什么?",
       "choice_translations": [
-        "A：产品价格",
-        "B：营业时间",
-        "C：信用卡",
-        "D：午餐预订"
+        "A:产品价格",
+        "B:营业时间",
+        "C:信用卡",
+        "D:午餐预订"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Can you tell me about your new loyal customer credit cards?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Can you tell me about your new loyal customer credit cards?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“years are eligible for this card.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Acredit card）。"
+        "analysis": "正确答案：C（A credit card）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "A",
       "question": "What does the man say he will do later?",
-      "answer_explain": "原文依据：听力原文中提到“the home page of our Web site.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Visit a Web site）。",
-      "question_translation": "男士说他稍后会做什么？",
+      "answer_explain": "正确答案：A（Visit a Web site）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士说他稍后会做什么?",
       "choice_translations": [
-        "A：访问网站",
-        "B：取回丢失物品",
-        "C：与经理会面",
-        "D：光临展厅"
+        "A:访问网站",
+        "B:取回丢失物品",
+        "C:与经理会面",
+        "D:光临展厅"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 16 段：Good, ©1'll do that later.",
+      "evidence": "参考听力原文：“I'll do that later.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 16 段：Good, ©1'll do that later.",
+        "evidence": "参考听力原文：“I'll do that later.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the home page of our Web site.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Visit a Web site）。"
+        "analysis": "正确答案：A（Visit a Web site）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

@@ -28,38 +28,58 @@
       "asset_key": "official-9-test-1/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Im Is it going to rain tomorrow, or will it be sunny?",
-    "content_translation": "中文辅助（离线预处理）：Im Is it going to rain tomorrow, or will it be sunny?"
+    "transcript": "Is it going to rain tomorrow or will it be sunny?\nA. I think it's supposed to rain.\nB. We arrived at 4 p. m.\nC. What a beautiful sunset!",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8c2123f095833aa2562e0a07558b506f94c23435262ab962305e37e959721e94",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "明天会下雨还是晴天？\nA. 我想说的是要下雨。\nB. 我们在下午四点到达的。\nC. 多美的日落！",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3e50b0743972b9635b2592f338fb1a151cc760272c860719679f08af669329f4"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "I think it's supposed to rain.",
-        "We arrived at four P.M.",
+        "We arrived at 4 p. m.",
         "What a beautiful sunset!"
       ],
       "answer": "A",
-      "question": "Im Is it going to rain tomorrow, or will it be sunny?",
+      "question": "Is it going to rain tomorrow or will it be sunny?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“Im Is it going to rain tomorrow, or will it be sunny?”，自然应答是“I think it's supposed to rain.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I think it's supposed to rain.）。",
-      "question_translation": "中文辅助（离线预处理）：Im Is it going to rain tomorrow, or will it be sunny?",
+      "answer_explain": "原文依据：问句或陈述是“Is it going to rain tomorrow or will it be sunny?”，自然应答是“I think it's supposed to rain.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I think it's supposed to rain.）。",
+      "question_translation": "明天会下雨还是晴天?",
       "choice_translations": [
-        "A：I think it's supposed to rain.",
-        "B：We arrived at four P.M.",
-        "C：What（什么） a beautiful sunset!"
+        "A：我想说的是要下雨。",
+        "B：我们在下午四点到达的。",
+        "C：多美的日落!"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Im Is it going to rain tomorrow, or will it be sunny?",
+      "evidence": "参考原文第 1 段：Is it going to rain tomorrow or will it be sunny?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Im Is it going to rain tomorrow, or will it be sunny?",
+        "evidence": "参考原文第 1 段：Is it going to rain tomorrow or will it be sunny?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Im Is it going to rain tomorrow, or will it be sunny?”，自然应答是“I think it's supposed to rain.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I think it's supposed to rain.）。"
+        "analysis": "原文依据：问句或陈述是“Is it going to rain tomorrow or will it be sunny?”，自然应答是“I think it's supposed to rain.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I think it's supposed to rain.）。"
       },
       "item_id": 12,
       "priority": {

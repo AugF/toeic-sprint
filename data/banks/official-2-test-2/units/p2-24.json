@@ -28,38 +28,58 @@
       "asset_key": "official-2-test-2/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "Ew 你能把会议记录打字出来吗？ m\nA. 当然，我能在三点前准备好。\nB. 也有其他几种类型。\nC. 办公室里几乎每个人。",
-    "content_translation": "Ew 你能把会议记录打字出来吗？ m\nA. 当然，我能在三点前准备好。\nB. 也有其他几种类型。\nC. 办公室里几乎每个人。"
+    "transcript": "Would you type up the minutes from today's staff meeting?\nA. Sure, I'll have them ready by 3 o'clock.\nB. There are a few other types too.\nC. Almost everyone in the office.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0eac2605611675fd6d0f69ca23dabab24f7b5cd5e598da0ee4240277cccaad91",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "你能把今天员工会议的记录整理一下吗？\nA. 当然，我能在三点前准备好。\nB. 还有其他几种类型。\nC. 办公室里几乎每个人。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "45de8b13a32dbcbcc015af72b8bef9e25608e0c513e97a1d01157652d7d1c61d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Sure, I'll have them ready by three.",
-        "There are a few other types, too.",
+        "Sure, I'll have them ready by 3 o'clock.",
+        "There are a few other types too.",
         "Almost everyone in the office."
       ],
       "answer": "A",
-      "question": "Ew Would you type up the minutes from to meeting? m",
+      "question": "Would you type up the minutes from today's staff meeting?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Would you type up the minutes from to meeting? m”，自然应答是“Sure, I'll have them ready by three.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Sure, I'll have them ready by three.）。",
-      "question_translation": "Ew 你能把会议记录打字出来吗？ m",
+      "answer_explain": "原文依据：问句或陈述是“Would you type up the minutes from today's staff meeting?”，自然应答是“Sure, I'll have them ready by 3 o'clock.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Sure, I'll have them ready by 3 o'clock.）。",
+      "question_translation": "你能把今天员工会议的记录整理一下吗?",
       "choice_translations": [
-        "A：当然，我能在三点前准备好。",
-        "B：也有其他几种类型。",
+        "A：当然,我能在三点前准备好。",
+        "B：还有其他几种类型。",
         "C：办公室里几乎每个人。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Would you type up the minutes from to meeting? m",
+      "evidence": "参考原文第 1 段：Would you type up the minutes from today's staff meeting?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Would you type up the minutes from to meeting? m",
+        "evidence": "参考原文第 1 段：Would you type up the minutes from today's staff meeting?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Ew Would you type up the minutes from to meeting? m”，自然应答是“Sure, I'll have them ready by three.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Sure, I'll have them ready by three.）。"
+        "analysis": "原文依据：问句或陈述是“Would you type up the minutes from today's staff meeting?”，自然应答是“Sure, I'll have them ready by 3 o'clock.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Sure, I'll have them ready by 3 o'clock.）。"
       },
       "item_id": 24,
       "priority": {

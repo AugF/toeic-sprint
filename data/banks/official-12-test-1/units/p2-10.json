@@ -28,38 +28,58 @@
       "asset_key": "official-12-test-1/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：M",
-    "content_translation": "中文辅助（离线预处理）：M"
+    "transcript": "There's plenty of printer paper in the storage closet.\nA. Okay, then I won't order more.\nB. An important deadline.\nC. I printed another copy.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "67db2429ce1e9000de65f9f6f08f9ba6fe0423678d1df5a3fbc550da05a82b8c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "储物柜里有很多打印纸。\nA. 好的，那我就不订购更多了。\nB. 一个重要的截止日期。\nC. 我又打印了一份副本。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4a38137660c9cbb8b73c003158ddf59fff397bbf39ffb99bb3b31979f986121d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "OK, then I won't order more. *7 plen",
+        "Okay, then I won't order more.",
         "An important deadline.",
         "I printed another copy."
       ],
       "answer": "A",
-      "question": "M",
+      "question": "There's plenty of printer paper in the storage closet.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M”，自然应答是“OK, then I won't order more. *7 plen”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（OK, then I won't order more. *7 plen）。",
-      "question_translation": "中文辅助（离线预处理）：M",
+      "answer_explain": "原文依据：问句或陈述是“There's plenty of printer paper in the storage closet.”，自然应答是“Okay, then I won't order more.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Okay, then I won't order more.）。",
+      "question_translation": "储物柜里有很多打印纸。",
       "choice_translations": [
-        "A：OK, then I won't order（订单） more.\n*7 plen",
-        "B：An important deadline.",
-        "C：I printed another copy."
+        "A：好的,那我就不订购更多了。",
+        "B：一个重要的截止日期。",
+        "C：我又打印了一份副本。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M",
+      "evidence": "参考原文第 1 段：There's plenty of printer paper in the storage closet.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M",
+        "evidence": "参考原文第 1 段：There's plenty of printer paper in the storage closet.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“M”，自然应答是“OK, then I won't order more. *7 plen”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（OK, then I won't order more. *7 plen）。"
+        "analysis": "原文依据：问句或陈述是“There's plenty of printer paper in the storage closet.”，自然应答是“Okay, then I won't order more.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Okay, then I won't order more.）。"
       },
       "item_id": 10,
       "priority": {

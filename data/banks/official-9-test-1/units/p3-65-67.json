@@ -41,9 +41,32 @@
       "asset_key": "official-9-test-1/audio/part3/q065-067.mp3",
       "exists": true
     },
-    "transcript": "and floor plan.\nI-I m OWelcome to Plaza Apartments. How can I help you?\nEw Good morning.\nA friend told me that this building was\njust completed, and I'm looking for somewhere to live in\nthis area.\nI-M Great! We have several units available. What size are\nyou looking for?\nIw I don't have much furniture, so a one-bedroom is fine.\nBut I'd really like a unit with a nice view.\nim Oh, well, ®one of our available apartments has a room\nwith a large window that overlooks our courtyard.\nHere's the floor plan.\nw Wonderful. That's just what I'm looking for.\nm ®Do you have some time right now? ®| can show it to\nyou.\ncs2 (0)\nU332JA8\nV98 (A\nParking Area\nEntrance\nOr 151\nWindow\nBathroom\nZJ-4\nBedroom\nCourtyard\nLiving\nKitchen\nRoom\nemol\nART\ntha\nWindow\nSV (A)\nGENES\nOX*O",
-    "transcript_translation": "中文辅助（离线预处理）：and floor plan.\nI-I m OWelcome to Plaza Apartments.\nHow（如何） can I help you?\nEw Good morning.\nA friend told me that this building was\njust completed, and I'm looking for somewhere to live in\nthis area.\nI-M Great!\nWe have several units available（可用的）.\nWhat（什么） size are\nyou looking for?\nIw I don't have much furniture, so a one-bedroom is fine.\nBut I'd really like a unit with a nice view.\nim Oh, well, ®one of our available（可用的） apartments has a room\nwith a large window that overlooks our courtyard.\nHere's the floor plan.\nw Wonderful.\nThat's just what（什么） I'm looking for.\nm ®Do you have some time right now?\n®| can show it to\nyou.\ncs2 (0)\nU332JA8\nV98 (A\nParking Area\nEntrance\nOr 151\nWindow\nBathroom\nZJ-4\nBedroom\nCourtyard\nLiving\nKitchen\nRoom\nemol\nART\ntha\nWindow\nSV (A)\nGENES\nOX*O",
-    "content_translation": "中文辅助（离线预处理）：and floor plan.\nI-I m OWelcome to Plaza Apartments.\nHow（如何） can I help you?\nEw Good morning.\nA friend told me that this building was\njust completed, and I'm looking for somewhere to live in\nthis area.\nI-M Great!\nWe have several units available（可用的）.\nWhat（什么） size are\nyou looking for?\nIw I don't have much furniture, so a one-bedroom is fine.\nBut I'd really like a unit with a nice view.\nim Oh, well, ®one of our available（可用的） apartments has a room\nwith a large window that overlooks our courtyard.\nHere's the floor plan.\nw Wonderful.\nThat's just what（什么） I'm looking for.\nm ®Do you have some time right now?\n®| can show it to\nyou.\ncs2 (0)\nU332JA8\nV98 (A\nParking Area\nEntrance\nOr 151\nWindow\nBathroom\nZJ-4\nBedroom\nCourtyard\nLiving\nKitchen\nRoom\nemol\nART\ntha\nWindow\nSV (A)\nGENES\nOX*O"
+    "transcript": "Welcome to Plaza Apartments.\nHow can I help you?\nGood morning.\nA friend told me that this building was just completed and I'm looking for somewhere to live in this area.\nGreat.\nWe have several units available.\nWhat size are you looking for?\nI don't have much furniture, so a one-bedroom is fine, but I'd really like a unit with a nice view.\nOh, well, one of our available apartments has a room with a large window that overlooks our courtyard.\nHere's the floor plan.\nWonderful.\nThat's just what I'm looking for.\nDo you have some time right now?\nI can show it to you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ea73ee2db5c4199cb0880fc962ba018187ff630aa27b56051f6fb2b9e1acb0eb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 108,
+        "legacy_word_count": 130,
+        "length_ratio": 0.831,
+        "legacy_coverage": 0.808
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "欢迎来到 Plaza Apartments。\n我能帮您什么？\n早上好。\n一位朋友告诉我，这座大楼刚刚竣工，我在寻找这个区域的住处。\n太好了。\n我们有几个单元可供选择。\n您想要多大的尺寸呢？\n我没有太多家具，所以一居室就行，但我真的很喜欢带漂亮景观的单元。\n哦，我们的可用公寓中有一个房间，有一扇大窗户，可以俯瞰我们的庭院。\n这是平面图。\n太棒了。\n这正是我想要的。\n您现在有时间吗？\n我可以给您看看。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "45c881513aa84916609edcc15b3783f93d7677f3d8e611df07fbccbc3e235ab9"
+    }
   },
   "items": [
     {
@@ -55,23 +78,23 @@
       ],
       "answer": "D",
       "question": "How did the woman hear about the apartment building?",
-      "answer_explain": "原文依据：听力原文中提到“A friend told me that this building was”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（From a friend）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） did the woman（女士） hear about the apartment building?",
+      "answer_explain": "正确答案：D（From a friend）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):How(如何) did the woman(女士) hear about the apartment building?",
       "choice_translations": [
-        "A：From an Internet advertisement",
-        "B：From a television commercial",
-        "C：From a billboard",
-        "D：From a friend"
+        "A:From an Internet advertisement",
+        "B:From a television commercial",
+        "C:From a billboard",
+        "D:From a friend"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 2 段：I-I m OWelcome to Plaza Apartments. How can I help you?",
+      "evidence": "参考听力原文：“A friend told me that this building was just completed and I'm looking for somewhere to live in this area.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 2 段：I-I m OWelcome to Plaza Apartments. How can I help you?",
+        "evidence": "参考听力原文：“A friend told me that this building was just completed and I'm looking for somewhere to live in this area.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“A friend told me that this building was”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（From a friend）。"
+        "analysis": "正确答案：D（From a friend）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 65,
       "priority": {
@@ -109,23 +132,23 @@
       ],
       "answer": "D",
       "question": "Look at the graphic. Which room does the man refer to?",
-      "answer_explain": "原文依据：听力原文中提到“im Oh, well, ®one of our available apartments has a room”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（The living room）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich room does the man（男士） refer to?",
+      "answer_explain": "正确答案：D（The living room）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which room does the man(男士) refer to?",
       "choice_translations": [
-        "A：The bedroom",
-        "B：The bathroom",
-        "C：The kitchen",
-        "D：The living room"
+        "A:The bedroom",
+        "B:The bathroom",
+        "C:The kitchen",
+        "D:The living room"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and floor plan.",
+      "evidence": "参考听力原文：“Oh, well, one of our available apartments has a room with a large window that overlooks our courtyard.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and floor plan.",
+        "evidence": "参考听力原文：“Oh, well, one of our available apartments has a room with a large window that overlooks our courtyard.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“im Oh, well, ®one of our available apartments has a room”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（The living room）。"
+        "analysis": "正确答案：D（The living room）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 66,
       "priority": {
@@ -163,23 +186,23 @@
       ],
       "answer": "C",
       "question": "What will the woman most likely do next?",
-      "answer_explain": "原文依据：听力原文中提到“But I'd really like a unit with a nice view.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（View a unit）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） most likely（最可能） do next?",
+      "answer_explain": "正确答案：C（View a unit）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) most likely(最可能) do next?",
       "choice_translations": [
-        "A：Pay a deposit",
-        "B：Fill out an application",
-        "C：View a unit",
-        "D：Measure some furniture"
+        "A:Pay a deposit",
+        "B:Fill out an application",
+        "C:View a unit",
+        "D:Measure some furniture"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：and floor plan.",
+      "evidence": "参考听力原文：“I don't have much furniture, so a one-bedroom is fine, but I'd really like a unit with a nice view.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：and floor plan.",
+        "evidence": "参考听力原文：“I don't have much furniture, so a one-bedroom is fine, but I'd really like a unit with a nice view.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But I'd really like a unit with a nice view.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（View a unit）。"
+        "analysis": "正确答案：C（View a unit）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 67,
       "priority": {

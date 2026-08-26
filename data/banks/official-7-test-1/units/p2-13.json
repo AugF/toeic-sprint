@@ -26,8 +26,28 @@
       "asset_key": "official-7-test-1/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：LEw Who（谁） sent you this lovely gift basket?\n•M",
-    "content_translation": "中文辅助（离线预处理）：LEw Who（谁） sent you this lovely gift basket?\n•M"
+    "transcript": "Who sent you this lovely gift basket?\nA. It's actually for Anna.\nB. Thanks for taking my shift.\nC. Some fruit and nuts.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "05d7cf6cea9248cd9b40595ebf99cf27d5b92feca663510903339407e251b98b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "谁送你这个可爱的礼篮的？\nA. 它实际上是给安娜的。\nB. 谢谢你替我值班。\nC. 一些水果和坚果。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "154c7d0146bdf32ff7556027a4548e1a168c96faa8f33bec81bb4a37641017d4"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "Some fruit and nuts."
       ],
       "answer": "A",
-      "question": "LEw Who sent you this lovely gift basket? •M",
+      "question": "Who sent you this lovely gift basket?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“LEw Who sent you this lovely gift basket? •M”，自然应答是“It's actually for Anna.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（It's actually for Anna.）。",
-      "question_translation": "中文辅助（离线预处理）：LEw Who（谁） sent you this lovely gift basket?\n•M",
+      "answer_explain": "原文依据：问句或陈述是“Who sent you this lovely gift basket?”，自然应答是“It's actually for Anna.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（It's actually for Anna.）。",
+      "question_translation": "谁送你这个可爱的礼篮的?",
       "choice_translations": [
-        "A：It's actually for Anna.",
-        "B：Thanks for taking my shift.",
-        "C：Some fruit and nuts."
+        "A：它实际上是给安娜的。",
+        "B：谢谢你替我值班。",
+        "C：一些水果和坚果。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：LEw Who sent you this lovely gift basket? •M",
+      "evidence": "参考原文第 1 段：Who sent you this lovely gift basket?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：LEw Who sent you this lovely gift basket? •M",
+        "evidence": "参考原文第 1 段：Who sent you this lovely gift basket?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“LEw Who sent you this lovely gift basket? •M”，自然应答是“It's actually for Anna.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（It's actually for Anna.）。"
+        "analysis": "原文依据：问句或陈述是“Who sent you this lovely gift basket?”，自然应答是“It's actually for Anna.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（It's actually for Anna.）。"
       },
       "item_id": 13,
       "priority": {

@@ -46,9 +46,32 @@
       "asset_key": "official-11-test-2/images/part3/q065-067.jpg",
       "exists": true
     },
-    "transcript": "and purchase order.\nw OThe promotional materials for next month's art sho\njust arrived. And they all look great!\nm © Now we can start advertising the event at the gall\nLEw Wait. © Didn't we request 50 of these? I just see 20 h\nm oLet me check the order we sent to the printing\ncompany. Hmm. O Yep, we ordered 50. Looks like tr\nmade a mistake.\nEw I'll call the printing company about the order and\nrequest that they send us the missing items. Ill see\nthey can rush the batch since the error was their fal\nm OK. OWe are only a month away from the show. I h\nthe items will be delivered in time.\nItem\nQuantity\nBusiness cards\nExhibit banners 10\nBrochures\nPosters",
-    "transcript_translation": "中文辅助（离线预处理）：and purchase（购买） order（订单）.\nw OThe promotional materials for next month's art sho\njust arrived.\nAnd they all look great!\nm © Now we can start advertising the event at the gall\nLEw Wait.\n© Didn't we request 50 of these?\nI just see 20 h\nm oLet me check the order（订单） we sent to the printing\ncompany（公司）.\nHmm.\nO Yep, we ordered 50.\nLooks like tr\nmade a mistake.\nEw I'll call the printing company（公司） about the order（订单） and\nrequest that they send us the missing items.\nIll see\nthey can rush the batch since the error was their fal\nm OK.\nOWe are only a month away from the show.\nI h\nthe items will be delivered in time.\nItem\nQuantity\nBusiness cards\nExhibit banners 10\nBrochures\nPosters",
-    "content_translation": "中文辅助（离线预处理）：and purchase（购买） order（订单）.\nw OThe promotional materials for next month's art sho\njust arrived.\nAnd they all look great!\nm © Now we can start advertising the event at the gall\nLEw Wait.\n© Didn't we request 50 of these?\nI just see 20 h\nm oLet me check the order（订单） we sent to the printing\ncompany（公司）.\nHmm.\nO Yep, we ordered 50.\nLooks like tr\nmade a mistake.\nEw I'll call the printing company（公司） about the order（订单） and\nrequest that they send us the missing items.\nIll see\nthey can rush the batch since the error was their fal\nm OK.\nOWe are only a month away from the show.\nI h\nthe items will be delivered in time.\nItem\nQuantity\nBusiness cards\nExhibit banners 10\nBrochures\nPosters"
+    "transcript": "The promotional materials for next month's art show just arrived, and they all look great.\nNow we can start advertising the event at the gallery.\nWait, didn't we request 50 of these?\nI just see 20 here.\nLet me check the order we sent to the printing company.\nHmm.\nYep, we ordered 50.\nLooks like they made a mistake.\nI'll call the printing company about the order and request that they send us the missing items.\nI'll see if they can rush the batch since the error was their fault.\nOkay.\nWe are only a month away from the show.\nI hope the items will be delivered in time.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5049ae3815377486e0f7ca1a11be8ecc12d2ce1bd19d859ecf44e5e26b5ddc09",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 109,
+        "legacy_word_count": 119,
+        "length_ratio": 0.916,
+        "legacy_coverage": 0.79
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "关于下个月艺术展的宣传材料刚到，它们看起来都很棒。\n现在我们可以在画廊开始宣传这个活动了。\n等等，我们不是要求 50 个这些吗？\n我这里只看到 20 个。\n让我查一下我们发给印刷公司的订单。\n嗯。\n是的，我们订购了 50 个。\n看来他们犯了个错误。\n我打电话给印刷公司谈谈这个订单，并要求他们把缺少的物品寄给我们。\n我会看看他们是否能加快这批货的进度，因为这是他们的错。\n好的。\n离展会只剩一个月了。\n希望这些物品能及时送达。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "93180a7819ff89b238147b2b64b67d79933737f5ab968bf05381d546fc14a786"
+    }
   },
   "items": [
     {
@@ -60,23 +83,23 @@
       ],
       "answer": "A",
       "question": "What industry do the speakers most likely work in?",
-      "answer_explain": "原文依据：听力原文与题目“What industry do the speakers most likely work in?”对应，官方答案为“Art”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Art）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） industry do the speakers most likely（最可能） work（工作） in?",
+      "answer_explain": "正确答案：A（Art）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) industry do the speakers most likely(最可能) work(工作) in?",
       "choice_translations": [
-        "A：Art",
-        "B：Entertainment",
-        "C：Catering",
-        "D：Technology"
+        "A:Art",
+        "B:Entertainment",
+        "C:Catering",
+        "D:Technology"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：and purchase order.",
+      "evidence": "参考听力原文：“The promotional materials for next month's art show just arrived, and they all look great.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：and purchase order.",
+        "evidence": "参考听力原文：“The promotional materials for next month's art show just arrived, and they all look great.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What industry do the speakers most likely work in?”对应，官方答案为“Art”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Art）。"
+        "analysis": "正确答案：A（Art）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 65,
       "priority": {
@@ -114,23 +137,23 @@
       ],
       "answer": "D",
       "question": "Look at the graphic. Which item arrived in the wrong quantity?",
-      "answer_explain": "原文依据：听力原文与题目“Look at the graphic. Which item arrived in the wrong quantity?”对应，官方答案为“Posters”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Posters）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich item arrived in the wrong quantity?",
+      "answer_explain": "正确答案：D（Posters）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which item arrived in the wrong quantity?",
       "choice_translations": [
-        "A：Business cards",
-        "B：Exhibit banners",
-        "C：Brochures",
-        "D：Posters"
+        "A:Business cards",
+        "B:Exhibit banners",
+        "C:Brochures",
+        "D:Posters"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：just arrived. And they all look great!",
+      "evidence": "参考听力原文：“The promotional materials for next month's art show just arrived, and they all look great.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：just arrived. And they all look great!",
+        "evidence": "参考听力原文：“The promotional materials for next month's art show just arrived, and they all look great.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Look at the graphic. Which item arrived in the wrong quantity?”对应，官方答案为“Posters”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Posters）。"
+        "analysis": "正确答案：D（Posters）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 66,
       "priority": {
@@ -168,23 +191,23 @@
       ],
       "answer": "A",
       "question": "What is the man concerned about?",
-      "answer_explain": "原文依据：听力原文与题目“What is the man concerned about?”对应，官方答案为“A deadline”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（A deadline）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the man（男士） concerned about?",
+      "answer_explain": "正确答案：A（A deadline）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the man(男士) concerned about?",
       "choice_translations": [
-        "A：A deadline",
-        "B：Paper quality",
-        "C：A venue",
-        "D：An extra expense"
+        "A:A deadline",
+        "B:Paper quality",
+        "C:A venue",
+        "D:An extra expense"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：and purchase order.",
+      "evidence": "参考听力原文：“I'll call the printing company about the order and request that they send us the missing items.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：and purchase order.",
+        "evidence": "参考听力原文：“I'll call the printing company about the order and request that they send us the missing items.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What is the man concerned about?”对应，官方答案为“A deadline”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（A deadline）。"
+        "analysis": "正确答案：A（A deadline）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 67,
       "priority": {

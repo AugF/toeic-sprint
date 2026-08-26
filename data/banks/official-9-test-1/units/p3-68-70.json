@@ -40,9 +40,34 @@
       "asset_key": "official-9-test-1/audio/part3/q068-070.mp3",
       "exists": true
     },
-    "transcript": "and map.\nHw Hello. Are you a volunteer at this event?\nYes, I am. Are you enjoying the car show?\nEw Yes. ®l've never seen so many antique cars in one\nAR MaznaC. ZANISCO F1-D\nplace. But I'm starting to get hungry. Where are the\nfood vendors set up?\nm Just on the other side of the main hall. I recommend\na3L5MC1 Rosa'stianozz. 6tc\nRosa's. ® Their food is delicious.\nE w Rosa's? OK, I'll check it out.\nJust be warned that you may have to stand in line.\nIt's the most popular booth every year.\nFood Vendor Area\nPablo's\nRosa's\nPablo's\nKebabs\nRosa's\nCurries\nNadia's\nBob's\nNadia's\nBob's\nPizza\nChili\nsnulimul omoa eruece!\nC5021\nGASLIBA\nSushinoca p",
-    "transcript_translation": "中文辅助（离线预处理）：and map.\nHw Hello.\nAre you a volunteer at this event?\nYes, I am.\nAre you enjoying the car show?\nEw Yes.\n®l've never seen so many antique cars in one\nAR MaznaC.\nZANISCO F1-D\nplace.\nBut I'm starting to get hungry.\nWhere（哪里） are the\nfood vendors set up?\nm Just on the other side of the main hall.\nI recommend\na3L5MC1 Rosa'stianozz.\n6tc\nRosa's.\n® Their food is delicious.\nE w Rosa's?\nOK, I'll check it out.\nJust be warned that you may have to stand in line.\nIt's the most popular booth every year.\nFood Vendor Area\nPablo's\nRosa's\nPablo's\nKebabs\nRosa's\nCurries\nNadia's\nBob's\nNadia's\nBob's\nPizza\nChili\nsnulimul omoa eruece!\nC5021\nGASLIBA\nSushinoca p",
-    "content_translation": "中文辅助（离线预处理）：and map.\nHw Hello.\nAre you a volunteer at this event?\nYes, I am.\nAre you enjoying the car show?\nEw Yes.\n®l've never seen so many antique cars in one\nAR MaznaC.\nZANISCO F1-D\nplace.\nBut I'm starting to get hungry.\nWhere（哪里） are the\nfood vendors set up?\nm Just on the other side of the main hall.\nI recommend\na3L5MC1 Rosa'stianozz.\n6tc\nRosa's.\n® Their food is delicious.\nE w Rosa's?\nOK, I'll check it out.\nJust be warned that you may have to stand in line.\nIt's the most popular booth every year.\nFood Vendor Area\nPablo's\nRosa's\nPablo's\nKebabs\nRosa's\nCurries\nNadia's\nBob's\nNadia's\nBob's\nPizza\nChili\nsnulimul omoa eruece!\nC5021\nGASLIBA\nSushinoca p"
+    "transcript": "Hello.\nAre you a volunteer at this event?\nYes, I am.\nAre you enjoying the car show?\nYes. l've never seen so many antique cars in one place.\nBut I'm starting to get hungry.\nWhere are the food vendors set up?\nJust on the other side of the main hall.\nI recommend Rosa's.\nTheir food is delicious.\nRosa's?\nOkay.\nI'll check it out.\nJust be warned that you may have to stand in line.\nIt's the most popular booth every year.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "19e2e632bf019cc6629a9dbea7ea0c2011112bcce29796166d1414a0a0629ab4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part3/q068-070.mp3",
+      "metrics": {
+        "word_count": 81,
+        "legacy_word_count": 0,
+        "length_ratio": 1,
+        "legacy_coverage": 1,
+        "audio_duration_ms": 37042,
+        "words_per_second": 2.187
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "你好。\n你是这次活动的发志愿者吗？\n是的，我是。\n你喜欢这个汽车展吗？\n是的。我从未在一个地方看到这么多的古董车。\n但我开始感到饿了。\n食品摊位在哪里设置的？\n就在主厅的另一边。\n我推荐 Rosa's 的。\n他们的食物很美味。\nRosa's？\n好的。\n我去看看。\n但要提醒你，你可能需要排队。\n这是每年最受欢迎的展位。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "292b338d4b373fba06747c7130e3ae3caa2d974c2d8e89ee8d912d553f241536"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +79,23 @@
       ],
       "answer": "D",
       "question": "What event is the woman attending?",
-      "answer_explain": "原文依据：听力原文中提到“Are you enjoying the car show?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A car show）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） event is the woman（女士） attending?",
+      "answer_explain": "正确答案：D（A car show）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) event is the woman(女士) attending?",
       "choice_translations": [
-        "A：A film festival",
-        "B：A music festival",
-        "C：A furniture show",
-        "D：A car show"
+        "A:A film festival",
+        "B:A music festival",
+        "C:A furniture show",
+        "D:A car show"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：Hw Hello. Are you a volunteer at this event?",
+      "evidence": "参考听力原文：“Are you enjoying the car show?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：Hw Hello. Are you a volunteer at this event?",
+        "evidence": "参考听力原文：“Are you enjoying the car show?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Are you enjoying the car show?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A car show）。"
+        "analysis": "正确答案：D（A car show）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 68,
       "priority": {
@@ -107,23 +132,23 @@
       ],
       "answer": "B",
       "question": "Look at the graphic. What kind of food does the man recommend?",
-      "answer_explain": "原文依据：听力原文中提到“Curries”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Curries）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhat（什么） kind of food does the man（男士） recommend?",
+      "answer_explain": "正确答案：B（Curries）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. What(什么) kind of food does the man(男士) recommend?",
       "choice_translations": [
-        "A：Kebabs",
-        "B：Curries",
-        "C：Pizza",
-        "D：Chili"
+        "A:Kebabs",
+        "B:Curries",
+        "C:Pizza",
+        "D:Chili"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：m Just on the other side of the main hall. I recommend",
+      "evidence": "参考听力原文：“Where are the food vendors set up?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：m Just on the other side of the main hall. I recommend",
+        "evidence": "参考听力原文：“Where are the food vendors set up?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Curries”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Curries）。"
+        "analysis": "正确答案：B（Curries）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 69,
       "priority": {
@@ -160,23 +185,23 @@
       ],
       "answer": "A",
       "question": "What does the man warn the woman about?",
-      "answer_explain": "原文依据：听力原文中提到“Just be warned that you may have to stand in line.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（She may have to wait.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） warn the woman（女士） about?",
+      "answer_explain": "正确答案：A（She may have to wait.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) warn the woman(女士) about?",
       "choice_translations": [
-        "A：She may have to wait.",
-        "B：She will have to show her ticket.",
-        "C：The prices are high.",
-        "D：There is limited table space."
+        "A:She may have to wait.",
+        "B:She will have to show her ticket.",
+        "C:The prices are high.",
+        "D:There is limited table space."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：and map.",
+      "evidence": "参考听力原文：“Just be warned that you may have to stand in line.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：and map.",
+        "evidence": "参考听力原文：“Just be warned that you may have to stand in line.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Just be warned that you may have to stand in line.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（She may have to wait.）。"
+        "analysis": "正确答案：A（She may have to wait.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 70,
       "priority": {

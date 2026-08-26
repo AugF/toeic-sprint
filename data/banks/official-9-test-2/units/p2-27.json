@@ -28,8 +28,28 @@
       "asset_key": "official-9-test-2/audio/part2/q027.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：I'd like to go somewhere with live music.",
-    "content_translation": "中文辅助（离线预处理）：I'd like to go somewhere with live music."
+    "transcript": "I'd like to go somewhere with live music.\nA. My cousin's band is performing this weekend.\nB. Where's the pasta sauce?\nC. Yes, it was a good improvement.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "71aa40f9b810074be2cc9815568abb49d1c5678c28ec5afee22a7bbc1cb340e4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q027.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "我想去一个有现场音乐的地方。\nA. 我表弟的乐队这个周末要表演。\nB. 意大利面酱在哪里？\nC. 是的，这是一个很好的改进。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "dafbfa44d3b2c15f5c4346dd202acb4ae3f3fdbf568e126362ca3d682b9b39bf"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“I'd like to go somewhere with live music.”，自然应答是“My cousin's band is performing this weekend.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（My cousin's band is performing this weekend.）。",
-      "question_translation": "中文辅助（离线预处理）：I'd like to go somewhere with live music.",
+      "question_translation": "我想去一个有现场音乐的地方。",
       "choice_translations": [
-        "A：My cousin's band is performing this weekend.",
-        "B：Where（哪里）'s the pasta sauce?",
-        "C：Yes, it was a good improvement."
+        "A：我表弟的乐队这个周末要表演。",
+        "B：意大利面酱在哪里?",
+        "C：是的,这是一个很好的改进。"
       ],
       "question_type": "陈述 / 请求应答题",
       "evidence": "参考原文第 1 段：I'd like to go somewhere with live music.",

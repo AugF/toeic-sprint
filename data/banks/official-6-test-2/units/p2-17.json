@@ -28,8 +28,28 @@
       "asset_key": "official-6-test-2/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Why（为什么） can't they find someone to cover your shift?",
-    "content_translation": "中文辅助（离线预处理）：Why（为什么） can't they find someone to cover your shift?"
+    "transcript": "Why can't they find someone to cover your shift?\nA. Because everyone's busy now.\nB. Yes, the change will happen soon.\nC. I don't think so.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c3cb93bd202ddf3ebdc419b6106dd78b27d3b064f55ec1365fb92e5db22b5171",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "他们为什么找不到人来替你值班呢？\nA. 因为现在每个人都很忙。\nB. 是的，变化很快就会发生。\nC. 我可不这么认为。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d9c30886196ac08c262a78234524ea5008e173ae208d58f51067b5fbef1a1649"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "原因询问",
       "keywords": "why reason response",
       "answer_explain": "原文依据：问句或陈述是“Why can't they find someone to cover your shift?”，自然应答是“Because everyone's busy now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because everyone's busy now.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） can't they find someone to cover your shift?",
+      "question_translation": "他们为什么找不到人来替你值班呢?",
       "choice_translations": [
-        "A：Because everyone's busy now.",
-        "B：Yes, the change will happen soon.",
-        "C：I don't think so."
+        "A：因为现在每个人都很忙。",
+        "B：是的,变化很快就会发生。",
+        "C：我可不这么认为。"
       ],
       "question_type": "原因疑问句",
       "evidence": "参考原文第 1 段：Why can't they find someone to cover your shift?",

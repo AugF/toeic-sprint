@@ -40,37 +40,59 @@
       "asset_key": "official-3-test-2/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "I Hi, Rushali, ®can you tell me when the orde\nthe new protective eyewear will be here? We\nthe goggles next week because the workers\nfactory floor will have to wear them to operat\nnew equipment.\nEIS w Oh, I’m glad you brought it up. The shipment\ngoggles is due to arrive on Monday morning\nrequires a manager's signature, but I’m leavii\ngo on vacation tomorrow. @ Will you be able 1\nfor it?\nEI No, sorry, ©1'll be busy helping the techniciar\ninstall the new equipment. Why don’t you ask\nMorty?\nne ee a ee",
-    "transcript_translation": "中文辅助（离线预处理）：I Hi, Rushali, ®can you tell me when（何时） the orde\nthe new protective eyewear will be here?\nWe\nthe goggles next week because the workers\nfactory floor will have to wear them to operat\nnew equipment.\nEIS w Oh, I’m glad you brought it up.\nThe shipment\ngoggles is due to arrive on Monday morning\nrequires a manager（经理）'s signature, but I’m leavii\ngo on vacation tomorrow.\n@ Will you be able 1\nfor it?\nEI No, sorry, ©1'll be busy helping the techniciar\ninstall the new equipment.\nWhy（为什么） don’t you ask\nMorty?\nne ee a ee",
-    "content_translation": "中文辅助（离线预处理）：I Hi, Rushali, ®can you tell me when（何时） the orde\nthe new protective eyewear will be here?\nWe\nthe goggles next week because the workers\nfactory floor will have to wear them to operat\nnew equipment.\nEIS w Oh, I’m glad you brought it up.\nThe shipment\ngoggles is due to arrive on Monday morning\nrequires a manager（经理）'s signature, but I’m leavii\ngo on vacation tomorrow.\n@ Will you be able 1\nfor it?\nEI No, sorry, ©1'll be busy helping the techniciar\ninstall the new equipment.\nWhy（为什么） don’t you ask\nMorty?\nne ee a ee"
+    "transcript": "Hi, Ruchali.\nCan you tell me when the order for the new protective eyewear will be here?\nWe need the goggles next week because the workers on the factory floor will have to wear them to operate the new equipment.\nOh, I'm glad you brought it up.\nThe shipment of goggles is due to arrive on Monday morning and requires a manager's signature, but I'm leaving to go on vacation tomorrow.\nWill you be able to sign for it?\nNo, sorry.\nI'll be busy helping the technicians install the new equipment.\nWhy don't you ask Morty?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "03eb387c9dff47ffe7375d69aad58397a7670938b3160d00927d9ff06d9d6995",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 96,
+        "legacy_word_count": 92,
+        "length_ratio": 1.043,
+        "legacy_coverage": 0.859
+      }
+    },
+    "transcript_translation": "嗨，Ruchali。\n你能告诉我新的防护眼镜的订单什么时候能到吗？\n我们需要护目镜，因为工厂车间的工人必须戴它们来操作新设备。\n哦，我很高兴你提到了这件事。\n护目镜的货运预计周一早上到达，需要经理签字，但我明天要休假了。\n你能签收吗？\n不，抱歉。\n我会忙着帮技术人员安装新设备。\n你为什么不问 Morty？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e8dfcbbe2625a7eb99a9808386c88d45d233015734c284e8976f9981da4216b2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "Travel plans",
         "Machine repairs",
-        "Adelivery date",
-        "Apayment amount"
+        "A delivery date",
+        "A payment amount"
       ],
       "answer": "C",
-      "question": "What does the man ask the woman about? 38",
-      "answer_explain": "原文依据：听力原文中提到“I Hi, Rushali, ®can you tell me when the orde”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Adelivery date）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） ask the woman（女士） about?\n38",
+      "question": "What does the man ask the woman about?",
+      "answer_explain": "正确答案：C（A delivery date）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) ask the woman(女士) about?",
       "choice_translations": [
-        "A：Travel plans",
-        "B：Machine repairs",
-        "C：Adelivery date",
-        "D：Apayment amount"
+        "A:Travel plans",
+        "B:Machine repairs",
+        "C:A delivery date",
+        "D:A payment amount"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：I Hi, Rushali, ®can you tell me when the orde",
+      "evidence": "参考听力原文：“Why don't you ask Morty?”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：I Hi, Rushali, ®can you tell me when the orde",
+        "evidence": "参考听力原文：“Why don't you ask Morty?”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I Hi, Rushali, ®can you tell me when the orde”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Adelivery date）。"
+        "analysis": "正确答案：C（A delivery date）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "D",
       "question": "What does the woman ask the man to do?",
-      "answer_explain": "原文依据：听力原文中提到“for it?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Sign for a package）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） ask the man（男士） to do?",
+      "answer_explain": "正确答案：D（Sign for a package）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) ask the man(男士) to do?",
       "choice_translations": [
-        "A：Hire additional staff",
-        "B：Provide photo identification 39",
-        "C：Make a deposit",
-        "D：Sign for a package"
+        "A:Hire additional staff",
+        "B:Provide photo identification 39",
+        "C:Make a deposit",
+        "D:Sign for a package"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：I Hi, Rushali, ®can you tell me when the orde",
+      "evidence": "参考听力原文：“Will you be able to sign for it?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：I Hi, Rushali, ®can you tell me when the orde",
+        "evidence": "参考听力原文：“Will you be able to sign for it?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“for it?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Sign for a package）。"
+        "analysis": "正确答案：D（Sign for a package）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "Why will the man be unavailable?",
-      "answer_explain": "原文依据：听力原文中提到“I Hi, Rushali, ®can you tell me when the orde”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（He will be assisting some technicians.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） will the man（男士） be unavailable?",
+      "answer_explain": "正确答案：B（He will be assisting some technicians.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) will the man(男士) be unavailable?",
       "choice_translations": [
-        "A：He will be giving a factory tour to investors.\n40",
-        "B：He will be assisting some technicians.",
-        "C：He will be conducting a safety inspection.",
-        "D：He will be attending a training session."
+        "A:He will be giving a factory tour to investors. 40",
+        "B:He will be assisting some technicians.",
+        "C:He will be conducting a safety inspection.",
+        "D:He will be attending a training session."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：I Hi, Rushali, ®can you tell me when the orde",
+      "evidence": "参考听力原文：“We need the goggles next week because the workers on the factory floor will have to wear them to operate the new equipment.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：I Hi, Rushali, ®can you tell me when the orde",
+        "evidence": "参考听力原文：“We need the goggles next week because the workers on the factory floor will have to wear them to operate the new equipment.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I Hi, Rushali, ®can you tell me when the orde”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（He will be assisting some technicians.）。"
+        "analysis": "正确答案：B（He will be assisting some technicians.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

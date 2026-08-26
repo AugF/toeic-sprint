@@ -36,37 +36,59 @@
       "asset_key": "official-1-test-2/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "ER w Hi, I’ve just unloaded the last box of bathroom tiles. The\nwhole delivery’s in your warehouse now. Would you be\nable to sign for them? | need a signature.\nI'm sorry; this is my first day on the job. I'd better check\nwith the warehouse manager to see if I’m allowed to do\nthat.\nShould | wait here while you check?\nFl ™ Actually, if you wouldn’t mind moving your truck, that'd\nbe great, since we’re expecting some other deliveries\nshortly.",
-    "transcript_translation": "您好，我刚卸下了最后一批浴室瓷砖。整个货都在您的仓库里了。您能签收一下吗？我需要一个签名。\n对不起；这是我的第一天上班。我最好和仓库经理确认一下是否允许这样做。\n我在这里等可以吗？您检查的时候？\n实际上，如果您能把卡车挪一下就太好了，因为我们很快还预计有其他货物的到货。",
-    "content_translation": "您好，我刚卸下了最后一批浴室瓷砖。整个货都在您的仓库里了。您能签收一下吗？我需要一个签名。\n对不起；这是我的第一天上班。我最好和仓库经理确认一下是否允许这样做。\n我在这里等可以吗？您检查的时候？\n实际上，如果您能把卡车挪一下就太好了，因为我们很快还预计有其他货物的到货。"
+    "transcript": "Hi, I've just unloaded the last box of bathroom tiles.\nThe whole delivery is in your warehouse now.\nWould you be able to sign for them?\nI need a signature.\nI'm sorry, this is my first day on the job.\nI'd better check with the warehouse manager to see if I'm allowed to do that.\nShould I wait here while you check?\nActually, if you wouldn't mind moving your truck, that'd be great, since we're expecting some other deliveries shortly.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8ace3732575afc98d51a65b04f02ad172495af6b9eda6d0c0775f1c3ae5748ad",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 80,
+        "legacy_word_count": 78,
+        "length_ratio": 1.026,
+        "legacy_coverage": 0.949
+      }
+    },
+    "transcript_translation": "嗨，我刚卸下了最后一批浴室瓷砖。\n整个货运都在您的仓库里了。\n您能帮我签收一下吗？\n我需要签名。\n对不起，这是我的第一天上班。\n我最好和仓库经理确认一下是否允许这样做。\n我应该在这里等您检查吗？\n实际上，如果您能把卡车挪一下就太好了，因为我们很快还预计会有其他货物的到货。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d8184d415f297e186c2af86714e9f54cb7f46edaa11af58b2b07ba99a1ce7d47"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "An invoice",
-        "Amap",
-        "Asignature",
-        "Areplacement part"
+        "A map",
+        "A signature",
+        "A replacement part"
       ],
       "answer": "C",
       "question": "What does the woman request?",
-      "answer_explain": "原文依据：听力原文中提到“ER w Hi, I’ve just unloaded the last box of bathroom tiles.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Asignature）。",
-      "question_translation": "女士要求什么？",
+      "answer_explain": "正确答案：C（A signature）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士要求什么?",
       "choice_translations": [
-        "A：一张发票",
-        "B：一张地图",
-        "C：一个签名",
-        "D：一个替换零件"
+        "A:一张发票",
+        "B:一张地图",
+        "C:一个签名",
+        "D:一个替换零件"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：ER w Hi, I’ve just unloaded the last box of bathroom tiles. The",
+      "evidence": "参考听力原文：“I need a signature.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：ER w Hi, I’ve just unloaded the last box of bathroom tiles. The",
+        "evidence": "参考听力原文：“I need a signature.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“ER w Hi, I’ve just unloaded the last box of bathroom tiles.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Asignature）。"
+        "analysis": "正确答案：C（A signature）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "B",
       "question": "What does the man say he has to do?",
-      "answer_explain": "原文依据：听力原文中提到“ER w Hi, I’ve just unloaded the last box of bathroom tiles.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Talk with a supervisor）。",
-      "question_translation": "男士说他必须做什么？",
+      "answer_explain": "正确答案：B（Talk with a supervisor）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士说他必须做什么?",
       "choice_translations": [
-        "A：找到他的安全通行证",
-        "B：和主管谈谈",
-        "C：解锁一扇门",
-        "D：盘点库存"
+        "A:找到他的安全通行证",
+        "B:和主管谈谈",
+        "C:解锁一扇门",
+        "D:盘点库存"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：ER w Hi, I’ve just unloaded the last box of bathroom tiles. The",
+      "evidence": "参考听力原文：“Actually, if you wouldn't mind moving your truck, that'd be great, since we're expecting some other deliveries shortly.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：ER w Hi, I’ve just unloaded the last box of bathroom tiles. The",
+        "evidence": "参考听力原文：“Actually, if you wouldn't mind moving your truck, that'd be great, since we're expecting some other deliveries shortly.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“ER w Hi, I’ve just unloaded the last box of bathroom tiles.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Talk with a supervisor）。"
+        "analysis": "正确答案：B（Talk with a supervisor）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -147,24 +169,24 @@
         "Remove some boxes"
       ],
       "answer": "C",
-      "question": "What does the man ask the woman to d",
-      "answer_explain": "原文依据：听力原文中提到“ER w Hi, I’ve just unloaded the last box of bathroom tiles.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Move a vehicle）。",
-      "question_translation": "男士让女士做什么？",
+      "question": "What does the man ask the woman to do?",
+      "answer_explain": "正确答案：C（Move a vehicle）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士让女士做什么?",
       "choice_translations": [
-        "A：稍后再回来",
-        "B：降低价格",
-        "C：移动一辆车",
-        "D：移走一些箱子"
+        "A:稍后再回来",
+        "B:降低价格",
+        "C:移动一辆车",
+        "D:移走一些箱子"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：ER w Hi, I’ve just unloaded the last box of bathroom tiles. The",
+      "evidence": "参考听力原文：“Actually, if you wouldn't mind moving your truck, that'd be great, since we're expecting some other deliveries shortly.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：ER w Hi, I’ve just unloaded the last box of bathroom tiles. The",
+        "evidence": "参考听力原文：“Actually, if you wouldn't mind moving your truck, that'd be great, since we're expecting some other deliveries shortly.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“ER w Hi, I’ve just unloaded the last box of bathroom tiles.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Move a vehicle）。"
+        "analysis": "正确答案：C（Move a vehicle）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

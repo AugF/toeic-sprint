@@ -40,9 +40,31 @@
       "asset_key": "official-2-test-1/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "Hi. 9''m calling because | think | left my jacket\noverhead compartment on the plane. It’s blue\nwhite stripes. | arrived earlier today on flight 9\nLondon.\nMOK, @1'II just need your seat number so we cai\ncheck the row you were sitting in. That should\nenough information to locate the jacket.\numm... | was sitting in 36-F, in the last row of t\nplane.\nAll right. We'll call you when we find it. And just\nyou know, ®you'll have to come to the airline c\nin the baggage claim area to retrieve it.",
-    "transcript_translation": "嗨。我打电话是因为我想我的夹克掉在了飞机上的头顶行李舱里。它是蓝白条纹的。我今天早些时候乘坐飞往伦敦的 9 号航班到达的。\n好的，我只需要您的座位号，这样我们就能查到您坐的排了。这应该足够的信息来找到夹克了。\n嗯……我坐在 36-F，飞机最后一行。\n好的。我们找到它会给您打电话通知。还有，您要知道，您得到机场行李提取区来取它。",
-    "content_translation": "嗨。我打电话是因为我想我的夹克掉在了飞机上的头顶行李舱里。它是蓝白条纹的。我今天早些时候乘坐飞往伦敦的 9 号航班到达的。\n好的，我只需要您的座位号，这样我们就能查到您坐的排了。这应该足够的信息来找到夹克了。\n嗯……我坐在 36-F，飞机最后一行。\n好的。我们找到它会给您打电话通知。还有，您要知道，您得到机场行李提取区来取它。"
+    "transcript": "Hi, I'm calling because I think I left my jacket in the overhead compartment on the plane.\nIt's blue with white stripes.\nI arrived earlier today on flight 98 from London.\nOkay, I'll just need your seat number so we can check the row you were sitting in.\nThat should be enough information to locate the jacket.\nUm, I was sitting in 36F in the last row of the plane.\nAll right, we'll call you when we find it.\nAnd just so you know, you'll have to come to the airline counter in the baggage claim area to retrieve it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "54eba208c30c4cb08bca4cec97a51f3fc9f567b2e7615b7ad26246fea3e31e81",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-1/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 99,
+        "legacy_word_count": 87,
+        "length_ratio": 1.138,
+        "legacy_coverage": 0.931
+      }
+    },
+    "transcript_translation": "嗨，我打电话来是因为我想我的夹克掉在飞机上的头顶行李舱里了。\n它是蓝色的，带白色条纹的。\n我今天早些时候乘坐98航班从伦敦到达的。\n好的，我只需要你的座位号，这样我们就能查到你坐的排了。\n这应该有足够的信息来找到夹克。\n嗯，我坐在飞机最后排的36F座。\n没关系，找到它我们会打电话通知你的。\n另外提醒你，你需要到行李提取区的航空公司柜台去取。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d1cf15c2cab7452a4ef4b3901cfb8d4f1846b94aaafca247e617bf5b194016aa"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,24 +75,24 @@
         "To exchange an order"
       ],
       "answer": "C",
-      "question": "Why is the woman calling? 41.",
-      "answer_explain": "原文依据：听力原文中提到“was sitting in 36-F, in the last row of t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To ask about a lost item）。",
-      "question_translation": "女士打电话的原因是什么？",
+      "question": "Why is the woman calling?",
+      "answer_explain": "正确答案：C（To ask about a lost item）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士打电话的原因是什么?",
       "choice_translations": [
-        "A：更改行程",
-        "B：要求退款",
-        "C：询问丢失的物品",
-        "D：交换订单"
+        "A:更改行程",
+        "B:要求退款",
+        "C:询问丢失的物品",
+        "D:交换订单"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Hi. 9''m calling because | think | left my jacket",
+      "evidence": "参考听力原文：“Hi, I'm calling because I think I left my jacket in the overhead compartment on the plane.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Hi. 9''m calling because | think | left my jacket",
+        "evidence": "参考听力原文：“Hi, I'm calling because I think I left my jacket in the overhead compartment on the plane.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“was sitting in 36-F, in the last row of t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To ask about a lost item）。"
+        "analysis": "正确答案：C（To ask about a lost item）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -100,30 +122,30 @@
     },
     {
       "choices": [
-        "Adescription of an item",
-        "Aconfirmation code",
-        "Adeparture time",
-        "Aseat number"
+        "A description of an item",
+        "A confirmation code",
+        "A departure time",
+        "A seat number"
       ],
       "answer": "D",
-      "question": "What information does the man ask for? 42.",
-      "answer_explain": "原文依据：听力原文中提到“MOK, @1'II just need your seat number so we cai”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Aseat number）。",
-      "question_translation": "男士询问了什么信息？",
+      "question": "What information does the man ask for?",
+      "answer_explain": "正确答案：D（A seat number）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士询问了什么信息?",
       "choice_translations": [
-        "A：一件物品的描述",
-        "B：确认代码",
-        "C：出发时间",
-        "D：座位号"
+        "A:一件物品的描述",
+        "B:确认代码",
+        "C:出发时间",
+        "D:座位号"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：enough information to locate the jacket.",
+      "evidence": "参考听力原文：“Okay, I'll just need your seat number so we can check the row you were sitting in.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：enough information to locate the jacket.",
+        "evidence": "参考听力原文：“Okay, I'll just need your seat number so we can check the row you were sitting in.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“MOK, @1'II just need your seat number so we cai”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Aseat number）。"
+        "analysis": "正确答案：D（A seat number）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -159,24 +181,24 @@
         "Complete a form"
       ],
       "answer": "A",
-      "question": "What is the woman told to do? 43.",
-      "answer_explain": "原文依据：听力原文中提到“in the baggage claim area to retrieve it.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Go to a baggage claim area）。",
-      "question_translation": "女士被告知要做什么？",
+      "question": "What is the woman told to do?",
+      "answer_explain": "正确答案：A（Go to a baggage claim area）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士被告知要做什么?",
       "choice_translations": [
-        "A：去行李提取区",
-        "B：出示一些身份证明",
-        "C：和旅行社说说话",
-        "D：填写一份表格"
+        "A:去行李提取区",
+        "B:出示一些身份证明",
+        "C:和旅行社说说话",
+        "D:填写一份表格"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi. 9''m calling because | think | left my jacket",
+      "evidence": "参考听力原文：“And just so you know, you'll have to come to the airline counter in the baggage claim area to retrieve it.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi. 9''m calling because | think | left my jacket",
+        "evidence": "参考听力原文：“And just so you know, you'll have to come to the airline counter in the baggage claim area to retrieve it.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“in the baggage claim area to retrieve it.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Go to a baggage claim area）。"
+        "analysis": "正确答案：A（Go to a baggage claim area）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

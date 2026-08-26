@@ -28,8 +28,28 @@
       "asset_key": "official-11-test-2/audio/part2/q031.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Would you like to look at the slides now or later?\n• M",
-    "content_translation": "中文辅助（离线预处理）：Ew Would you like to look at the slides now or later?\n• M"
+    "transcript": "Would you like to look at the slides now or later?\nA. This is a very busy time of day.\nB. Yes, I'm still looking for a new one.\nC. No, they're in the conference center.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0fc282d9ce9305475dc72d105fe8e49b5807caa7d0d3dcb4730de600871d8c64",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q031.mp3",
+      "metrics": {
+        "word_count": 37
+      }
+    },
+    "transcript_translation": "您现在想看看幻灯片，还是稍后看？\nA. 今天是很忙的时候。\nB. 是的，我还在找一个新的。\nC. 不，它们在会议中心。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8cbe16e8ee4b55da5f323761095fde45c017cfe0e82856d7ecbd54188d1def6f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "No, they're in the conference center."
       ],
       "answer": "A",
-      "question": "Ew Would you like to look at the slides now or later? • M",
+      "question": "Would you like to look at the slides now or later?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述为“Ew Would you like to look at the slides now or later? • M”，官方正确应答是“This is a very busy time of day.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（This is a very busy time of day.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Would you like to look at the slides now or later?\n• M",
+      "answer_explain": "原文依据：问句或陈述为“Would you like to look at the slides now or later?”，官方正确应答是“This is a very busy time of day.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（This is a very busy time of day.）。",
+      "question_translation": "您现在想看看幻灯片,还是稍后看?",
       "choice_translations": [
-        "A：This is a very busy time of day.",
-        "B：Yes, I'm still looking for a new one.",
-        "C：No, they're in the conference center."
+        "A：今天是很忙的时候。",
+        "B：是的,我还在找一个新的。",
+        "C：不,它们在会议中心。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Ew Would you like to look at the slides now or later? • M",
+      "evidence": "参考原文第 1 段：Would you like to look at the slides now or later?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Ew Would you like to look at the slides now or later? • M",
+        "evidence": "参考原文第 1 段：Would you like to look at the slides now or later?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“Ew Would you like to look at the slides now or later? • M”，官方正确应答是“This is a very busy time of day.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（This is a very busy time of day.）。"
+        "analysis": "原文依据：问句或陈述为“Would you like to look at the slides now or later?”，官方正确应答是“This is a very busy time of day.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（This is a very busy time of day.）。"
       },
       "item_id": 31,
       "priority": {

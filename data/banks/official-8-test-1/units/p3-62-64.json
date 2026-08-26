@@ -39,9 +39,32 @@
       "asset_key": "official-8-test-1/audio/part3/q062-064.mp3",
       "exists": true
     },
-    "transcript": "and floor plan.\nEw Wataru, since there aren't any customers in the shop.\nit's a good time to talk. ® You mentioned you had an\nidea to diversify our selection?\nBlm Sure. So... ®what about adding a section of books\nwritten by people who've lived around here? I've read\nseveral novels by local authors, and they're great.\nEw Ol like that idea, but I'm afraid I'm not familiar with\nany local authors or their work. ® Could you select the\nbooks?\nm Sure, I'd be happy to. And I was thinking...\nOwe could\ndisplay them on the shelf next to the stockroom door.\nThat one's only half full.\nCafé\nStockroom\nOffice\nSeating Area\nEMIUT\nCashier",
-    "transcript_translation": "中文辅助（离线预处理）：and floor plan.\nEw Wataru, since there aren't any customers in the shop.\nit's a good time to talk.\n® You mentioned you had an\nidea to diversify our selection?\nBlm Sure.\nSo...\n®what（什么） about adding a section of books\nwritten by people who（谁）'ve lived around here?\nI've read\nseveral novels by local authors, and they're great.\nEw Ol like that idea, but I'm afraid I'm not familiar with\nany local authors or their work（工作）.\n® Could you select the\nbooks?\nm Sure, I'd be happy to.\nAnd I was thinking...\nOwe could\ndisplay them on the shelf next to the stockroom door.\nThat one's only half full.\nCafé\nStockroom\nOffice（办公室）\nSeating Area\nEMIUT\nCashier",
-    "content_translation": "中文辅助（离线预处理）：and floor plan.\nEw Wataru, since there aren't any customers in the shop.\nit's a good time to talk.\n® You mentioned you had an\nidea to diversify our selection?\nBlm Sure.\nSo...\n®what（什么） about adding a section of books\nwritten by people who（谁）'ve lived around here?\nI've read\nseveral novels by local authors, and they're great.\nEw Ol like that idea, but I'm afraid I'm not familiar with\nany local authors or their work（工作）.\n® Could you select the\nbooks?\nm Sure, I'd be happy to.\nAnd I was thinking...\nOwe could\ndisplay them on the shelf next to the stockroom door.\nThat one's only half full.\nCafé\nStockroom\nOffice（办公室）\nSeating Area\nEMIUT\nCashier"
+    "transcript": "Wataru, since there aren't any customers in the shop, it's a good time to talk.\nYou mentioned you had an idea to diversify our selection?\nSure.\nSo, what about adding a section of books written by people who lived around here?\nI've read several novels by local authors, and they're great.\nI like that idea, but I'm afraid I'm not familiar with any local authors or their work.\nCould you select the books?\nSure, I'd be happy to.\nAnd I was thinking we could display them on the shelf next to the stockroom door.\nThat one's only half full.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "be02999bb7f77c361f557c8273f474e517c7eda85266fca5f470afcbd8db6f50",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part3/q062-064.mp3",
+      "metrics": {
+        "word_count": 102,
+        "legacy_word_count": 112,
+        "length_ratio": 0.911,
+        "legacy_coverage": 0.848
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "Wataru，既然店里没有顾客，现在是谈话的好时机。\n你提到过你想多样化我们的商品选择？\n当然可以。\n那关于增加一个销售当地作家书籍的区域怎么样？\n我读过几本本地作家的小说，它们很棒。\n我很喜欢这个主意，但我恐怕不熟悉任何本地作家或他们的作品。\n你能挑选这些书吗？\n当然，我很乐意这么做。\n我想我们可以把它们展示在与库存室门旁边的架子上。\n那个地方只剩一半空间了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "46c7b6356e40a82ccdc8822ec286d41a22028600e4085266e677d3d421cae0dd"
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "A",
       "question": "What are the speakers discussing?",
-      "answer_explain": "原文依据：听力原文中提到“®what about adding a section of books”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Adding a new section of books）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers discussing?",
+      "answer_explain": "正确答案：A（Adding a new section of books）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the speakers discussing?",
       "choice_translations": [
-        "A：Adding a new section of books",
-        "B：Discounting unpopular books",
-        "C：Hosting a book-reading event",
-        "D：Buying a bookshop"
+        "A:Adding a new section of books",
+        "B:Discounting unpopular books",
+        "C:Hosting a book-reading event",
+        "D:Buying a bookshop"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and floor plan.",
+      "evidence": "参考听力原文：“So, what about adding a section of books written by people who lived around here?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and floor plan.",
+        "evidence": "参考听力原文：“So, what about adding a section of books written by people who lived around here?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®what about adding a section of books”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Adding a new section of books）。"
+        "analysis": "正确答案：A（Adding a new section of books）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 62,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "A",
       "question": "What concern does the woman express?",
-      "answer_explain": "原文依据：听力原文中提到“display them on the shelf next to the stockroom door.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（She does not have the necessary information.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） concern does the woman（女士） express?",
+      "answer_explain": "正确答案：A（She does not have the necessary information.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) concern does the woman(女士) express?",
       "choice_translations": [
-        "A：She does not have the necessary information（信息）.",
-        "B：She does not want to exceed a budget.",
-        "C：She would have to change a work（工作） schedule（日程）.",
-        "D：She would have to order（订单） more furniture."
+        "A:She does not have the necessary information(信息).",
+        "B:She does not want to exceed a budget.",
+        "C:She would have to change a work(工作) schedule(日程).",
+        "D:She would have to order(订单) more furniture."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：and floor plan.",
+      "evidence": "参考听力原文：“I like that idea, but I'm afraid I'm not familiar with any local authors or their work.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：and floor plan.",
+        "evidence": "参考听力原文：“I like that idea, but I'm afraid I'm not familiar with any local authors or their work.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“display them on the shelf next to the stockroom door.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（She does not have the necessary information.）。"
+        "analysis": "正确答案：A（She does not have the necessary information.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 63,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "B",
       "question": "Look at the graphic. Which location does the man point out?",
-      "answer_explain": "原文依据：听力原文中提到“display them on the shelf next to the stockroom door.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Location 2）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich location does the man（男士） point out?",
+      "answer_explain": "正确答案：B（Location 2）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which location does the man(男士) point out?",
       "choice_translations": [
-        "A：Location 1",
-        "B：Location 2",
-        "C：Location 3",
-        "D：Location 4"
+        "A:Location 1",
+        "B:Location 2",
+        "C:Location 3",
+        "D:Location 4"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and floor plan.",
+      "evidence": "参考听力原文：“I like that idea, but I'm afraid I'm not familiar with any local authors or their work.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and floor plan.",
+        "evidence": "参考听力原文：“I like that idea, but I'm afraid I'm not familiar with any local authors or their work.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“display them on the shelf next to the stockroom door.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Location 2）。"
+        "analysis": "正确答案：B（Location 2）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 64,
       "priority": {

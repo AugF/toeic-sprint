@@ -40,9 +40,32 @@
       "asset_key": "official-5-test-1/audio/part4/q095-097.mp3",
       "exists": true
     },
-    "transcript": "message and project plan.\nM\nHi, Luisa. It's Jimmy, from B.A.J. Kitchen Remodeling. I want\nChild Lisa BA F2Y-4immyC\nto give you an update on your kitchen renovations.\nWe've run into a small problem. The company we\nordered the tiles from called to say their deliveries are behind\nschedule. They can't send us the new floor tiles until the\nend of the week. But there is some good news.\nTomorrow\nwe'll get started removing the wood flooring that's currently\nthere. Also, because the tile company is sorry for the\ninconvenience, they've offered a special discount of twenty\npercent off your order.\nClient: Luisa Mendez\nLuisa Mendez\nJob:\nKitchen Renovation\nStage 1: Remove original flooring\nESPE 1\nStage 2: Install new flooring\nERBE 2\nStage 3: Install kitchen cabinets\nFORE 3\nStage 4: Install countertops\nE2PE4",
-    "transcript_translation": "中文辅助（离线预处理）：message and project plan.\nM\nHi, Luisa.\nIt's Jimmy, from B.A.J.\nKitchen Remodeling.\nI want\nChild Lisa BA F2Y-4immyC\nto give you an update on your kitchen renovations.\nWe've run into a small problem.\nThe company（公司） we\nordered the tiles from called to say their deliveries are behind\nschedule（日程）.\nThey can't send us the new floor tiles until the\nend of the week.\nBut there is some good news.\nTomorrow\nwe'll get started removing the wood flooring that's currently\nthere.\nAlso, because the tile company（公司） is sorry for the\ninconvenience, they've offered a special discount of twenty\npercent off your order（订单）.\nClient: Luisa Mendez\nLuisa Mendez\nJob:\nKitchen Renovation\nStage 1: Remove original flooring\nESPE 1\nStage 2: Install new flooring\nERBE 2\nStage 3: Install kitchen cabinets\nFORE 3\nStage 4: Install countertops\nE2PE4",
-    "content_translation": "中文辅助（离线预处理）：message and project plan.\nM\nHi, Luisa.\nIt's Jimmy, from B.A.J.\nKitchen Remodeling.\nI want\nChild Lisa BA F2Y-4immyC\nto give you an update on your kitchen renovations.\nWe've run into a small problem.\nThe company（公司） we\nordered the tiles from called to say their deliveries are behind\nschedule（日程）.\nThey can't send us the new floor tiles until the\nend of the week.\nBut there is some good news.\nTomorrow\nwe'll get started removing the wood flooring that's currently\nthere.\nAlso, because the tile company（公司） is sorry for the\ninconvenience, they've offered a special discount of twenty\npercent off your order（订单）.\nClient: Luisa Mendez\nLuisa Mendez\nJob:\nKitchen Renovation\nStage 1: Remove original flooring\nESPE 1\nStage 2: Install new flooring\nERBE 2\nStage 3: Install kitchen cabinets\nFORE 3\nStage 4: Install countertops\nE2PE4"
+    "transcript": "Hi Louisa, it's Jimmy from BAJ Kitchen Remodeling.\nI want to give you an update on your kitchen renovations.\nWe've run into a small problem.\nThe company we ordered the tiles from called to say their deliveries are behind schedule.\nThey can't send us the new floor tiles until the end of the week.\nBut there is some good news.\nTomorrow we'll get started removing the wood flooring that's currently there.\nAlso, because the tile company is sorry for the inconvenience, they've offered a special discount of 20% off your order.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4dd905a7d34cc58de4accd3e6b1f54c401e2e19af1dee67b5ebc3c662ae8d1a9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 93,
+        "legacy_word_count": 127,
+        "length_ratio": 0.732,
+        "legacy_coverage": 0.748
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨 Louisa，我是 BAJ Kitchen Remodeling 的 Jimmy。\n我想给你更新一下你的厨房翻修情况。\n我们遇到了一个小问题。\n我们订瓷砖的公司打电话来说他们的交货时间落后了。\n他们直到本周末才能给我们新的地板瓷砖。\n但有个好消息。\n明天我们将开始拆除目前存在的木地板。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "2e95d00f8fc032c2bcd22720523aeb46650667f728fb8073b256af6122ed0589"
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "D",
       "question": "What problem does the speaker report?",
-      "answer_explain": "原文依据：听力原文中提到“ordered the tiles from called to say their deliveries are behind”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A delivery will be late.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） problem does the speaker（说话者） report?",
+      "answer_explain": "正确答案：D（A delivery will be late.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) problem does the speaker(说话者) report?",
       "choice_translations": [
-        "A：A project budget has not been approved.",
-        "B：A building has lost power.",
-        "C：An electrician is out of town.",
-        "D：A delivery will be late."
+        "A:A project budget has not been approved.",
+        "B:A building has lost power.",
+        "C:An electrician is out of town.",
+        "D:A delivery will be late."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 6 段：We've run into a small problem. The company we",
+      "evidence": "参考听力原文：“We've run into a small problem.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 6 段：We've run into a small problem. The company we",
+        "evidence": "参考听力原文：“We've run into a small problem.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“ordered the tiles from called to say their deliveries are behind”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A delivery will be late.）。"
+        "analysis": "正确答案：D（A delivery will be late.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 95,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "A",
       "question": "Look at the graphic. Which stage of the project will begin tomorrow?",
-      "answer_explain": "原文依据：听力原文中提到“Stage 2: Install new flooring”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（Stage 1）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich stage of the project will begin tomorrow?",
+      "answer_explain": "正确答案：A（Stage 1）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which stage of the project will begin tomorrow?",
       "choice_translations": [
-        "A：Stage 1",
-        "B：Stage 2",
-        "C：Stage 3",
-        "D：Stage 4"
+        "A:Stage 1",
+        "B:Stage 2",
+        "C:Stage 3",
+        "D:Stage 4"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message and project plan.",
+      "evidence": "参考听力原文：“Tomorrow we'll get started removing the wood flooring that's currently there.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message and project plan.",
+        "evidence": "参考听力原文：“Tomorrow we'll get started removing the wood flooring that's currently there.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Stage 2: Install new flooring”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（Stage 1）。"
+        "analysis": "正确答案：A（Stage 1）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 96,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "C",
       "question": "What special offer does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“inconvenience, they've offered a special discount of twenty”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A product discount）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） special offer does the speaker（说话者） mention?",
+      "answer_explain": "正确答案：C（A product discount）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) special offer does the speaker(说话者) mention?",
       "choice_translations": [
-        "A：Free shipping",
-        "B：An extended warranty",
-        "C：A product discount",
-        "D：A complimentary consultation"
+        "A:Free shipping",
+        "B:An extended warranty",
+        "C:A product discount",
+        "D:A complimentary consultation"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 13 段：inconvenience, they've offered a special discount of twenty",
+      "evidence": "参考听力原文：“Also, because the tile company is sorry for the inconvenience, they've offered a special discount of 20% off your order.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 13 段：inconvenience, they've offered a special discount of twenty",
+        "evidence": "参考听力原文：“Also, because the tile company is sorry for the inconvenience, they've offered a special discount of 20% off your order.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“inconvenience, they've offered a special discount of twenty”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A product discount）。"
+        "analysis": "正确答案：C（A product discount）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 97,
       "priority": {

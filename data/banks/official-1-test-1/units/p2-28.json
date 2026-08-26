@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-1/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "你愿意去参加艺术画廊的开幕式吗？BPAY 你想去吗？/LERYADY y 9° EBATUSOICHL。抱歉，HD，Zw\nA. DEB. 外出 [HARL TL)\nB. 我觉得它也很出色。i> TLS\nC. 她最近的作品。CT. BCI。",
-    "content_translation": "你愿意去参加艺术画廊的开幕式吗？BPAY 你想去吗？/LERYADY y 9° EBATUSOICHL。抱歉，HD，Zw\nA. DEB. 外出 [HARL TL)\nB. 我觉得它也很出色。i> TLS\nC. 她最近的作品。CT. BCI。"
+    "transcript": "Do you want to go to the art gallery opening on Friday evening?\nA. Sorry, I'll be out of town.\nB. I thought it was outstanding too.\nC. Her most recent work.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d67d91b93dd5f920dd644456b66671c2994b04e325be33aece2b18945f73e8c6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "你想去周五晚上艺术画廊的开幕活动吗？\nA. 对不起，我要出差。\nB. 我也觉得它很出色。\nC. 她最近的作品。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "1e182639ed566561984f2983514bd4c4885e6b4fe38302f0028b67a65ce5ca11"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "DEB. Out of town [HARL TL)",
-        "thought it was outstanding, too. i> TLS",
-        "Her most recent work. CT. BCI."
+        "Sorry, I'll be out of town.",
+        "I thought it was outstanding too.",
+        "Her most recent work."
       ],
       "answer": "A",
-      "question": "EW Do you want to go to the art gallery opening on w Figetetetinge gallery opening BPAY Do you want to ~?/~LERADY y 9° EBATUSOICHL. Sorry HD, Zw",
+      "question": "Do you want to go to the art gallery opening on Friday evening?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“EW Do you want to go to the art gallery opening on w Figetetetinge gallery opening BPAY Do you want to ~?/~LERADY y 9° EBATUSOICHL. Sorry HD, Zw”，自然应答是“DEB. Out of town [HARL TL)”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（DEB. Out of town [HARL TL)）。",
+      "answer_explain": "原文依据：问句或陈述是“Do you want to go to the art gallery opening on Friday evening?”，自然应答是“Sorry, I'll be out of town.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Sorry, I'll be out of town.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：EW Do you want to go to the art gallery opening on w Figetetetinge gallery opening BPAY Do you want to ~?/~LERADY y 9° EBATUSOICHL. Sorry HD, Zw",
+      "evidence": "参考原文第 1 段：Do you want to go to the art gallery opening on Friday evening?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：EW Do you want to go to the art gallery opening on w Figetetetinge gallery opening BPAY Do you want to ~?/~LERADY y 9° EBATUSOICHL. Sorry HD, Zw",
+        "evidence": "参考原文第 1 段：Do you want to go to the art gallery opening on Friday evening?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“EW Do you want to go to the art gallery opening on w Figetetetinge gallery opening BPAY Do you want to ~?/~LERADY y 9° EBATUSOICHL. Sorry HD, Zw”，自然应答是“DEB. Out of town [HARL TL)”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（DEB. Out of town [HARL TL)）。"
+        "analysis": "原文依据：问句或陈述是“Do you want to go to the art gallery opening on Friday evening?”，自然应答是“Sorry, I'll be out of town.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Sorry, I'll be out of town.）。"
       },
-      "question_translation": "你愿意去参加艺术画廊的开幕式吗？BPAY 你想去吗？/LERYADY y 9° EBATUSOICHL。抱歉，HD，Zw",
+      "question_translation": "你想去周五晚上艺术画廊的开幕活动吗?",
       "choice_translations": [
-        "A：DEB. 外出 [HARL TL)",
-        "B：我觉得它也很出色。i> TLS",
-        "C：她最近的作品。CT. BCI。"
+        "A：对不起,我要出差。",
+        "B：我也觉得它很出色。",
+        "C：她最近的作品。"
       ],
       "item_id": 28,
       "priority": {

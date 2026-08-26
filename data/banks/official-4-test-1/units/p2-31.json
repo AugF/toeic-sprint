@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-1/audio/part2/q031.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：producel~e+#SS].\ntextile [4ita, faith].\nindustry [B.\nSe).",
-    "content_translation": "中文辅助（离线预处理）：producel~e+#SS].\ntextile [4ita, faith].\nindustry [B.\nSe)."
+    "transcript": "Would you like to use our computer while you wait for Mr. Fuller?\nA. Please check the weight on that package.\nB. That would be great.\nC. Yes, it is.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "81b2a6bc2725fa75d20c6b0e97823e20f6f828d1c73cdcc4edd8581a26b09d79",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q031.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "您等费勒先生的时候想用我们的电脑吗？\nA. 请检查一下那个包裹的重量。\nB. 那太好了。\nC. 是的，是。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d2bc62e94169b5872e2181ee54e402ac971310f8bd43286e30ba174dacdd5566"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "BEltSn5N TUE.",
-        "BfIcHS leave cle BO believe CFR.",
-        "DER. leave [MET SJ."
+        "Please check the weight on that package.",
+        "That would be great.",
+        "Yes, it is."
       ],
       "answer": "B",
-      "question": "producel~e+#SS]. textile [4ita, faith]. industry [B. Se).",
+      "question": "Would you like to use our computer while you wait for Mr. Fuller?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“producel~e+#SS]. textile [4ita, faith]. industry [B. Se).”，自然应答是“BfIcHS leave cle BO believe CFR.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（BfIcHS leave cle BO believe CFR.）。",
-      "question_translation": "中文辅助（离线预处理）：producel~e+#SS].\ntextile [4ita, faith].\nindustry [B.\nSe).",
+      "answer_explain": "原文依据：问句或陈述是“Would you like to use our computer while you wait for Mr. Fuller?”，自然应答是“That would be great.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（That would be great.）。",
+      "question_translation": "您等费勒先生的时候想用我们的电脑吗?",
       "choice_translations": [
-        "A：BEltSn5N TUE.",
-        "B：BfIcHS leave cle BO believe CFR.",
-        "C：DER.\nleave [MET SJ."
+        "A：请检查一下那个包裹的重量。",
+        "B：那太好了。",
+        "C：是的,是。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：producel~e+#SS]. textile [4ita, faith]. industry [B. Se).",
+      "evidence": "参考原文第 1 段：Would you like to use our computer while you wait for Mr. Fuller?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：producel~e+#SS]. textile [4ita, faith]. industry [B. Se).",
+        "evidence": "参考原文第 1 段：Would you like to use our computer while you wait for Mr. Fuller?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“producel~e+#SS]. textile [4ita, faith]. industry [B. Se).”，自然应答是“BfIcHS leave cle BO believe CFR.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（BfIcHS leave cle BO believe CFR.）。"
+        "analysis": "原文依据：问句或陈述是“Would you like to use our computer while you wait for Mr. Fuller?”，自然应答是“That would be great.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（That would be great.）。"
       },
       "item_id": 31,
       "priority": {

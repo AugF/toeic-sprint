@@ -39,9 +39,31 @@
       "asset_key": "official-11-test-2/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "m o The new hotel looks incredible, Sarai. o You did\nan excellent job working with the general contractor\nduring the construction process. © Now let's discus\nthe complimentary shuttle service wed like to offer\nbetween the hotel and the airport.\nEKw Right. Ol think guests will really like a free shuttle g\nhow expensive cab rides to the airport are. O Taking\nour shuttle will save them quite a bit of money. And\ndraw more guests to our hotel\nM Agreed. Could you look into how many drivers an\nvehicles we'd need in order to provide this service?",
-    "transcript_translation": "中文辅助（离线预处理）：m o The new hotel looks incredible, Sarai.\no You did\nan excellent job working with the general contractor\nduring the construction process.\n© Now let's discus\nthe complimentary shuttle service（服务） wed like to offer\nbetween the hotel and the airport.\nEKw Right.\nOl think guests will really like a free shuttle g\nhow（如何） expensive cab rides to the airport are.\nO Taking\nour shuttle will save them quite a bit of money.\nAnd\ndraw more guests to our hotel\nM Agreed.\nCould you look into how（如何） many drivers an\nvehicles we'd need in order（订单） to provide this service（服务）?",
-    "content_translation": "中文辅助（离线预处理）：m o The new hotel looks incredible, Sarai.\no You did\nan excellent job working with the general contractor\nduring the construction process.\n© Now let's discus\nthe complimentary shuttle service（服务） wed like to offer\nbetween the hotel and the airport.\nEKw Right.\nOl think guests will really like a free shuttle g\nhow（如何） expensive cab rides to the airport are.\nO Taking\nour shuttle will save them quite a bit of money.\nAnd\ndraw more guests to our hotel\nM Agreed.\nCould you look into how（如何） many drivers an\nvehicles we'd need in order（订单） to provide this service（服务）?"
+    "transcript": "The new hotel looks incredible, Sarai.\nYou did an excellent job working with the general contractor during the construction process.\nNow let's discuss the complimentary shuttle service we'd like to offer between the hotel and the airport.\nRight.\nI think guests will really like a free shuttle given how expensive cab rides to the airport are.\nTaking our shuttle will save them quite a bit of money and it'll draw more guests to our hotel.\nAgreed.\nCould you look into how many drivers and vehicles we'd need in order to provide this service?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e5a79cd144648a8cfa646b7d38631f88e01a9471016f4402a4b4c279f21a687c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 93,
+        "legacy_word_count": 96,
+        "length_ratio": 0.969,
+        "legacy_coverage": 0.917
+      }
+    },
+    "transcript_translation": "新酒店看起来太棒了，Sarai。\n你在施工过程中与总承包商合作做得非常出色。\n现在我们来讨论一下我们希望在酒店和机场之间提供的免费接驳服务。\n好的。\n我认为考虑到去机场的出租车费用这么高，客人会很喜欢免费的接驳服务。\n乘坐我们的接驳车可以为他们节省不少钱，并且能吸引更多客人到我们的酒店。\n同意。\n你能调查一下为了提供这项服务我们需要多少司机和车辆吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "55c364acdfe332f51c5d262265aa1b1708bf92d47f07c5236f6b26a71f898c0a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "B",
       "question": "What was recently built?",
-      "answer_explain": "原文依据：听力原文与题目“What was recently built?”对应，官方答案为“A hotel”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（A hotel）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） was recently built?",
+      "answer_explain": "正确答案：B（A hotel）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) was recently built?",
       "choice_translations": [
-        "A：A restaurant",
-        "B：A hotel",
-        "C：An airport",
-        "D：A parking area"
+        "A:A restaurant",
+        "B:A hotel",
+        "C:An airport",
+        "D:A parking area"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m o The new hotel looks incredible, Sarai. o You did",
+      "evidence": "参考听力原文：“Taking our shuttle will save them quite a bit of money and it'll draw more guests to our hotel.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m o The new hotel looks incredible, Sarai. o You did",
+        "evidence": "参考听力原文：“Taking our shuttle will save them quite a bit of money and it'll draw more guests to our hotel.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What was recently built?”对应，官方答案为“A hotel”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（A hotel）。"
+        "analysis": "正确答案：B（A hotel）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "D",
       "question": "According to the woman, what will customers like about a service?",
-      "answer_explain": "原文依据：听力原文与题目“According to the woman, what will customers like about a service?”对应，官方答案为“It will be free of charge.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（It will be free of charge.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the woman（女士）, what（什么） will customers like about a service（服务）?",
+      "answer_explain": "正确答案：D（It will be free of charge.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the woman(女士), what(什么) will customers like about a service(服务)?",
       "choice_translations": [
-        "A：It will be environmentally friendly.",
-        "B：It will be available（可用的） 24 hours a day.",
-        "C：It will not require reservations.",
-        "D：It will be free of charge."
+        "A:It will be environmentally friendly.",
+        "B:It will be available(可用的) 24 hours a day.",
+        "C:It will not require reservations.",
+        "D:It will be free of charge."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 4 段：the complimentary shuttle service wed like to offer",
+      "evidence": "参考听力原文：“I think guests will really like a free shuttle given how expensive cab rides to the airport are.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 4 段：the complimentary shuttle service wed like to offer",
+        "evidence": "参考听力原文：“I think guests will really like a free shuttle given how expensive cab rides to the airport are.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“According to the woman, what will customers like about a service?”对应，官方答案为“It will be free of charge.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（It will be free of charge.）。"
+        "analysis": "正确答案：D（It will be free of charge.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "A",
       "question": "What does the man ask the woman to do?",
-      "answer_explain": "原文依据：听力原文与题目“What does the man ask the woman to do?”对应，官方答案为“Gather some information”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Gather some information）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） ask the woman（女士） to do?",
+      "answer_explain": "正确答案：A（Gather some information）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) ask the woman(女士) to do?",
       "choice_translations": [
-        "A：Gather some information（信息）",
-        "B：Train some staff",
-        "C：Clean some vehicles",
-        "D：Apply for a permit"
+        "A:Gather some information(信息)",
+        "B:Train some staff",
+        "C:Clean some vehicles",
+        "D:Apply for a permit"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m o The new hotel looks incredible, Sarai. o You did",
+      "evidence": "参考听力原文：“Taking our shuttle will save them quite a bit of money and it'll draw more guests to our hotel.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m o The new hotel looks incredible, Sarai. o You did",
+        "evidence": "参考听力原文：“Taking our shuttle will save them quite a bit of money and it'll draw more guests to our hotel.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What does the man ask the woman to do?”对应，官方答案为“Gather some information”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Gather some information）。"
+        "analysis": "正确答案：A（Gather some information）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

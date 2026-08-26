@@ -45,37 +45,61 @@
       "asset_key": "official-2-test-1/images/part4/q095-097.jpg",
       "exists": true
     },
-    "transcript": "w\nAs mayor of Bloomville, I’ve called this press conf\nto announce the city’s decision about how we'll be\nallocating the remaining funds in this year’s budget.\nresearched the costs of doing various projects, and\nlooks like we'll have enough money to fund only one\nproject: adding bike lanes to the main roadways. | k\nhow popular the library expansion was, but uh,\nunfortunately, we'll have to delay that until a later tin\n'm now ready to take any questions you have abc\nbudget or about the project itself.\nCont\nLibrary Expansion $2 million\nParking Garage $2.5 million\nCommunity Center | $3 million\nme coi cD1\ng talk and table. paR895-97 lAzOHeERICHTSeOTS.\nS conference Auld BloomvilleOHRELT, SEOFROBRRELDOKI ICH\nIl be DATSDICOWT, HOREEHRI SOIT RHBARE\nudget. We MeEELE. CECKGIOVIIbLeETIOMD SBRAEH\ns, and @it BLICLTSA, YMICHSOM, ok 1 DOFOYII heKD\nnly one IOI TWSBREIOKI CT. CNSEBS(C ARB\nays. | know VEAMTSTECT. MBM WM ITSFANTUIEDE\nh, WSTEEMLTVETD, BO. WREMSENI. SHO\nater time. WARE CHAO ICLAINEEDO EA. CUTENDS, PRE\nave about the lS FOVIF hAMICHS SHAAOBMESRILET.\nion BBROMR 200 5 RIL\nllion SEBEL 250 GKIL",
-    "transcript_translation": "作为 Bloomville 的市长，我召开了这次新闻发布会，宣布市政府关于如何分配今年预算剩余资金的决定。\n我们研究了进行各种项目的成本，看起来我们只有足够的钱来资助一个项目：在主干道上增加自行车道。| 库的扩建很受欢迎，但是呃，不幸的是，我们必须推迟到以后再做。\n我现在准备回答各位的问题，无论是关于预算还是关于项目本身。\n图书馆扩建 $200 万\n停车场的车库 $250 万\n社区中心 | $300 万",
-    "content_translation": "作为 Bloomville 的市长，我召开了这次新闻发布会，宣布市政府关于如何分配今年预算剩余资金的决定。\n我们研究了进行各种项目的成本，看起来我们只有足够的钱来资助一个项目：在主干道上增加自行车道。| 库的扩建很受欢迎，但是呃，不幸的是，我们必须推迟到以后再做。\n我现在准备回答各位的问题，无论是关于预算还是关于项目本身。\n图书馆扩建 $200 万\n停车场的车库 $250 万\n社区中心 | $300 万"
+    "transcript": "As Mayor of Bloomville, I've called this press conference to announce the city's decision about how we'll be allocating the remaining funds in this year's budget.\nWe researched the costs of doing various projects, and it looks like we'll have enough money to fund only one project, adding bike lanes to the main roadways.\nI know how popular the library expansion was, but unfortunately we'll have to delay that until a later time.\nI'm now ready to take any questions you have about the budget or about the project itself.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8425114939483295da447cc2bf168837b985eaea4885a979274b1b29b2b1a250",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-1/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 90,
+        "legacy_word_count": 0,
+        "length_ratio": 1,
+        "legacy_coverage": 1,
+        "audio_duration_ms": 42005,
+        "words_per_second": 2.143
+      }
+    },
+    "transcript_translation": "作为 Bloomville 市长，我召开了这次新闻发布会，宣布市政府关于如何分配今年预算剩余资金的决定。\n我们研究了进行各种项目的成本，看起来我们只有足够的钱来资助一个项目，即在主要道路上增加自行车道。\n我知道图书馆扩建计划非常受欢迎，但很遗憾，我们必须推迟到以后再做。\n我现在准备好回答大家关于预算或关于该项目本身的任何问题了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "858044f1d84744fae9c1075a08ed182b55d88ce6a4cc7fc9bcc42defbc1a989c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "An accountant",
-        "Abusiness owner",
+        "A business owner",
         "A city official",
         "An architect"
       ],
       "answer": "C",
       "question": "Who most likely is the speaker?",
-      "answer_explain": "原文依据：听力原文中提到“to announce the city’s decision about how we'll be”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A city official）。",
-      "question_translation": "说话人最可能是谁？",
+      "answer_explain": "正确答案：C（A city official）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话人最可能是谁?",
       "choice_translations": [
-        "A：会计师",
-        "B：企业主",
-        "C：市政官员",
-        "D：建筑师"
+        "A:会计师",
+        "B:企业主",
+        "C:市政官员",
+        "D:建筑师"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：w",
+      "evidence": "参考听力原文：“We researched the costs of doing various projects, and it looks like we'll have enough money to fund only one project, adding bike lanes to the main roadways.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：w",
+        "evidence": "参考听力原文：“We researched the costs of doing various projects, and it looks like we'll have enough money to fund only one project, adding bike lanes to the main roadways.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“to announce the city’s decision about how we'll be”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A city official）。"
+        "analysis": "正确答案：C（A city official）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 95,
       "priority": {
@@ -112,23 +136,23 @@
       ],
       "answer": "A",
       "question": "Look at the graphic. How much will the 98 selected project cost?",
-      "answer_explain": "原文依据：听力原文中提到“Community Center | $3 million”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（$1 million）。",
-      "question_translation": "看看图表。选定的项目将花费多少钱？",
+      "answer_explain": "正确答案：A（$1 million）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "看看图表。选定的项目将花费多少钱?",
       "choice_translations": [
-        "A：100 万美元",
-        "B：$200 万美元",
-        "C：$250 万美元",
-        "D：$300 万美元"
+        "A:100 万美元",
+        "B:$200 万美元",
+        "C:$250 万美元",
+        "D:$300 万美元"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 5 段：researched the costs of doing various projects, and",
+      "evidence": "参考听力原文：“We researched the costs of doing various projects, and it looks like we'll have enough money to fund only one project, adding bike lanes to the main roadways.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 5 段：researched the costs of doing various projects, and",
+        "evidence": "参考听力原文：“We researched the costs of doing various projects, and it looks like we'll have enough money to fund only one project, adding bike lanes to the main roadways.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Community Center | $3 million”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（$1 million）。"
+        "analysis": "正确答案：A（$1 million）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 96,
       "priority": {
@@ -165,23 +189,23 @@
       ],
       "answer": "B",
       "question": "What will the speaker do next?",
-      "answer_explain": "原文依据：听力原文中提到“to announce the city’s decision about how we'll be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Provide additional information）。",
-      "question_translation": "说话人接下来会做什么？",
+      "answer_explain": "正确答案：B（Provide additional information）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话人接下来会做什么?",
       "choice_translations": [
-        "A：展示视频",
-        "B：提供更多信息",
-        "C：参观图书馆",
-        "D：颁发奖项"
+        "A:展示视频",
+        "B:提供更多信息",
+        "C:参观图书馆",
+        "D:颁发奖项"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 1 段：w",
+      "evidence": "参考听力原文：“We researched the costs of doing various projects, and it looks like we'll have enough money to fund only one project, adding bike lanes to the main roadways.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 1 段：w",
+        "evidence": "参考听力原文：“We researched the costs of doing various projects, and it looks like we'll have enough money to fund only one project, adding bike lanes to the main roadways.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“to announce the city’s decision about how we'll be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Provide additional information）。"
+        "analysis": "正确答案：B（Provide additional information）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 97,
       "priority": {

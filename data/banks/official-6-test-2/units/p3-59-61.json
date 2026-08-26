@@ -40,9 +40,31 @@
       "asset_key": "official-6-test-2/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "Hey, Jo-Ellen. I'm filling out the form for the supply\norder for our store. I'm ordering new shelves for our\nhome improvement section. Do we need anything else?\nLet's see... We're running low on plastic shopping\nbags. Can you add them to the supply order?\nm You know, ®I'm worried that we've been using too\nmany plastic bags in our store...\nEw I've thought about that. Why don't we offer a\ndiscount to customers who bring their own bags?\nThat'll be good for the environment, and our store will\nsave money, too!",
-    "transcript_translation": "中文辅助（离线预处理）：Hey, Jo-Ellen.\nI'm filling out the form for the supply\norder（订单） for our store.\nI'm ordering new shelves for our\nhome improvement section.\nDo we need anything else?\nLet's see...\nWe're running low on plastic shopping\nbags.\nCan you add them to the supply order（订单）?\nm You know, ®I'm worried that we've been using too\nmany plastic bags in our store...\nEw I've thought about that.\nWhy（为什么） don't we offer a\ndiscount to customers who（谁） bring their own bags?\nThat'll be good for the environment, and our store will\nsave money, too!",
-    "content_translation": "中文辅助（离线预处理）：Hey, Jo-Ellen.\nI'm filling out the form for the supply\norder（订单） for our store.\nI'm ordering new shelves for our\nhome improvement section.\nDo we need anything else?\nLet's see...\nWe're running low on plastic shopping\nbags.\nCan you add them to the supply order（订单）?\nm You know, ®I'm worried that we've been using too\nmany plastic bags in our store...\nEw I've thought about that.\nWhy（为什么） don't we offer a\ndiscount to customers who（谁） bring their own bags?\nThat'll be good for the environment, and our store will\nsave money, too!"
+    "transcript": "Hey, Joellen.\nI'm filling out the form for the supply order for our store.\nI'm ordering new shelves for our home improvement section.\nDo we need anything else?\nLet's see.\nWe're running low on plastic shopping bags.\nCan you add them to the supply order?\nYou know, I'm worried that we've been using too many plastic bags in our store.\nI've thought about that.\nWhy don't we offer a discount to customers who bring their own bags?\nThat'll be good for the environment, and our store will save money, too.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5048714dde5e82fb9e766397022cf3bb2f27785a73d3055eb979b336f27ed6ed",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 90,
+        "legacy_word_count": 92,
+        "length_ratio": 0.978,
+        "legacy_coverage": 0.924
+      }
+    },
+    "transcript_translation": "嘿，乔伦。\n我正在填写我们店的补货订单表。\n我正在订购家居装修区域的新货架。\n我们还需要别的什么吗？\n让我想想。\n我们的塑料购物袋快用完了。\n你能把它们加到补货订单上吗？\n你知道，我很担心我们在店里使用了太多塑料袋。\n我考虑过这个问题了。\n为什么不给自带袋子的顾客提供折扣呢？\n这对环境有好处，而且我们店也能省钱。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "64b99af26175b549b0cabd7c188deb66d3f875e1ab4d5610734ca53cc671ea2a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "A",
       "question": "What is the man doing?",
-      "answer_explain": "原文依据：听力原文中提到“Can you add them to the supply order?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Preparing an order form）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the man（男士） doing?",
+      "answer_explain": "正确答案：A（Preparing an order form）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the man(男士) doing?",
       "choice_translations": [
-        "A：Preparing an order（订单） form",
-        "B：Putting labels on merchandise",
-        "C：Checking employee（员工） time sheets",
-        "D：Reading customer（顾客） reviews"
+        "A:Preparing an order(订单) form",
+        "B:Putting labels on merchandise",
+        "C:Checking employee(员工) time sheets",
+        "D:Reading customer(顾客) reviews"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hey, Jo-Ellen. I'm filling out the form for the supply",
+      "evidence": "参考听力原文：“I'm filling out the form for the supply order for our store.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hey, Jo-Ellen. I'm filling out the form for the supply",
+        "evidence": "参考听力原文：“I'm filling out the form for the supply order for our store.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Can you add them to the supply order?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Preparing an order form）。"
+        "analysis": "正确答案：A（Preparing an order form）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 59,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "B",
       "question": "Why does the man say he is worried?",
-      "answer_explain": "原文依据：听力原文中提到“many plastic bags in our store...”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Too many plastic bags are being used.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） say he is worried?",
+      "answer_explain": "正确答案：B（Too many plastic bags are being used.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the man(男士) say he is worried?",
       "choice_translations": [
-        "A：Too many products have been returned.",
-        "B：Too many plastic bags are being used.",
-        "C：A competing business has recently opened.",
-        "D：An entrance is blocked by construction."
+        "A:Too many products have been returned.",
+        "B:Too many plastic bags are being used.",
+        "C:A competing business has recently opened.",
+        "D:An entrance is blocked by construction."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：m You know, ®I'm worried that we've been using too",
+      "evidence": "参考听力原文：“You know, I'm worried that we've been using too many plastic bags in our store.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：m You know, ®I'm worried that we've been using too",
+        "evidence": "参考听力原文：“You know, I'm worried that we've been using too many plastic bags in our store.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“many plastic bags in our store...”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Too many plastic bags are being used.）。"
+        "analysis": "正确答案：B（Too many plastic bags are being used.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 60,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "D",
       "question": "What does the woman suggest doing?",
-      "answer_explain": "原文依据：听力原文中提到“discount to customers who bring their own bags?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Offering a discount）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） suggest（表明/建议） doing?",
+      "answer_explain": "正确答案：D（Offering a discount）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) suggest(表明/建议) doing?",
       "choice_translations": [
-        "A：Changing business hours",
-        "B：Starting a delivery service（服务）",
-        "C：Hiring more staff",
-        "D：Offering a discount"
+        "A:Changing business hours",
+        "B:Starting a delivery service(服务)",
+        "C:Hiring more staff",
+        "D:Offering a discount"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Hey, Jo-Ellen. I'm filling out the form for the supply",
+      "evidence": "参考听力原文：“Why don't we offer a discount to customers who bring their own bags?”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Hey, Jo-Ellen. I'm filling out the form for the supply",
+        "evidence": "参考听力原文：“Why don't we offer a discount to customers who bring their own bags?”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“discount to customers who bring their own bags?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Offering a discount）。"
+        "analysis": "正确答案：D（Offering a discount）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 61,
       "priority": {

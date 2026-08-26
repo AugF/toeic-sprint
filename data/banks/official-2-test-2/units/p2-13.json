@@ -28,8 +28,28 @@
       "asset_key": "official-2-test-2/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "Should | 把价签贴到物品背面吗？ eu\nA. 是的，那太好了，谢谢。\nB. 对不起，我们所有的销售都是最终决定。\nC. 在折扣桌附近。",
-    "content_translation": "Should | 把价签贴到物品背面吗？ eu\nA. 是的，那太好了，谢谢。\nB. 对不起，我们所有的销售都是最终决定。\nC. 在折扣桌附近。"
+    "transcript": "Should I attach the price tags to the back of the items?\nA. Yes, that would be great, thanks.\nB. Sorry, all our sales are final.\nC. It's near the discount table.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "22fdfcfd1b1e86b1904a70b3b86ea78bd614b80e68952c756c5e1ad80928aa9e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "我应该把价格标签贴到物品的背面吗？\nA. 是的，那太好了，谢谢。\nB. 对不起，我们所有的销售都是最终决定。\nC. 它在折扣桌附近。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "77c1566f90cd9e0a144f40a18220bf918992d92a3681a3f72d451c5d19c1a1d4"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "It's near the discount table."
       ],
       "answer": "A",
-      "question": "Should | attach the price tags to the back of the items? eu",
+      "question": "Should I attach the price tags to the back of the items?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Should | attach the price tags to the back of the items? eu”，自然应答是“Yes, that would be great, thanks.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, that would be great, thanks.）。",
-      "question_translation": "Should | 把价签贴到物品背面吗？ eu",
+      "answer_explain": "原文依据：问句或陈述是“Should I attach the price tags to the back of the items?”，自然应答是“Yes, that would be great, thanks.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, that would be great, thanks.）。",
+      "question_translation": "我应该把价格标签贴到物品的背面吗?",
       "choice_translations": [
-        "A：是的，那太好了，谢谢。",
-        "B：对不起，我们所有的销售都是最终决定。",
-        "C：在折扣桌附近。"
+        "A：是的,那太好了,谢谢。",
+        "B：对不起,我们所有的销售都是最终决定。",
+        "C：它在折扣桌附近。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Should | attach the price tags to the back of the items? eu",
+      "evidence": "参考原文第 1 段：Should I attach the price tags to the back of the items?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Should | attach the price tags to the back of the items? eu",
+        "evidence": "参考原文第 1 段：Should I attach the price tags to the back of the items?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Should | attach the price tags to the back of the items? eu”，自然应答是“Yes, that would be great, thanks.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, that would be great, thanks.）。"
+        "analysis": "原文依据：问句或陈述是“Should I attach the price tags to the back of the items?”，自然应答是“Yes, that would be great, thanks.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, that would be great, thanks.）。"
       },
       "item_id": 13,
       "priority": {

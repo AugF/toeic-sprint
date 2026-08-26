@@ -27,38 +27,58 @@
       "asset_key": "official-4-test-1/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew How（如何） quickly can we send these products to Berlin?\n; How（如何） quickly ~?@, Ria2zixS0IcD iu",
-    "content_translation": "中文辅助（离线预处理）：Ew How（如何） quickly can we send these products to Berlin?\n; How（如何） quickly ~?@, Ria2zixS0IcD iu"
+    "transcript": "How quickly can we send these products to Berlin?\nA. I'd like a one-way ticket, please.\nB. We can get them there tomorrow.\nC. Several new models a year.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "de276157640290d5286753ca5b563f1c0336dbe9ce313d69483240a3fdb0f061",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "我们能多快把这些产品送到柏林？\nA. 请给我一张单程票。\nB. 我们明天就能把它们送到了。\nC. 一年有几个新型号。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2153bb62f63ca251f262e93577e90716e348b99174a02bf7af7fbedbd2407d11"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "I'd like a one-way ticket, please. PSBMEBATUSOICHL. THAR,",
-        "HUE",
-        "Several new models a year. 8 themlé@filcS these products *, there"
+        "I'd like a one-way ticket, please.",
+        "We can get them there tomorrow.",
+        "Several new models a year."
       ],
       "answer": "B",
-      "question": "Ew How quickly can we send these products to Berlin? ; How quickly ~?@, Ria2zixS0IcD iu",
+      "question": "How quickly can we send these products to Berlin?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew How quickly can we send these products to Berlin? ; How quickly ~?@, Ria2zixS0IcD iu”，自然应答是“HUE”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（HUE）。",
-      "question_translation": "中文辅助（离线预处理）：Ew How（如何） quickly can we send these products to Berlin?\n; How（如何） quickly ~?@, Ria2zixS0IcD iu",
+      "answer_explain": "原文依据：问句或陈述是“How quickly can we send these products to Berlin?”，自然应答是“We can get them there tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（We can get them there tomorrow.）。",
+      "question_translation": "我们能多快把这些产品送到柏林?",
       "choice_translations": [
-        "A：I'd like a one-way ticket, please（请）.\nPSBMEBATUSOICHL.\nTHAR,",
-        "B：HUE",
-        "C：Several new models a year.\n8 themlé@filcS these products *, there"
+        "A：请给我一张单程票。",
+        "B：我们明天就能把它们送到了。",
+        "C：一年有几个新型号。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew How quickly can we send these products to Berlin? ; How quickly ~?@, Ria2zixS0IcD iu",
+      "evidence": "参考原文第 1 段：How quickly can we send these products to Berlin?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew How quickly can we send these products to Berlin? ; How quickly ~?@, Ria2zixS0IcD iu",
+        "evidence": "参考原文第 1 段：How quickly can we send these products to Berlin?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew How quickly can we send these products to Berlin? ; How quickly ~?@, Ria2zixS0IcD iu”，自然应答是“HUE”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（HUE）。"
+        "analysis": "原文依据：问句或陈述是“How quickly can we send these products to Berlin?”，自然应答是“We can get them there tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（We can get them there tomorrow.）。"
       },
       "item_id": 12,
       "priority": {

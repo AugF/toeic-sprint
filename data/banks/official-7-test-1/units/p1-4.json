@@ -32,8 +32,28 @@
       "asset_key": "official-7-test-1/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. He's turning on a water faucet.\nB. He's cleaning a stove top.\nC. He's wearing a pair of gloves.\nD. He's filling a bottle with dish soap.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6d5a672a7a9208a90afec754f20fc29040f957c3d6aea11e6d880e51d1e9495b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 39
+      }
+    },
+    "transcript_translation": "A. 他正在打开一个水龙头。\nB. 他正在清洁炉灶台面。\nC. 他戴着一副手套。\nD. 他正在用洗洁精装瓶子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e01ceec19c7b2af474f66d9ede79ce9436756bac6142ea391fb1d0dc2ee87f07"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“He's wearing a pair of gloves.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（He's wearing a pair of gloves.）。",
       "choice_translations": [
-        "A：He's turning on a water faucet.",
-        "B：He's cleaning a stove top.",
-        "C：He's wearing a pair of gloves.",
-        "D：He's filling a bottle with dish soap."
+        "A：他正在打开一个水龙头。",
+        "B：他正在清洁炉灶台面。",
+        "C：他戴着一副手套。",
+        "D：他正在用洗洁精装瓶子。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-1/p1-4/4"
+      "item_key": "official-7-test-1/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

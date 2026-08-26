@@ -31,27 +31,47 @@
       "asset_key": "official-2-test-2/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 食品杂货（REMERIIAF TSH, BE\nB. 一名购物者正在把一些钱递给收银员。柜台 (2—\\—k#EO) LIAVYI—I。\nC. 一位顾客正站在收银台旁。\nD. 一名员工正在从展示架上取一个产品。SEN SDA dee EMA TISLVEL",
-    "content_translation": "A. 食品杂货（REMERIIAF TSH, BE\nB. 一名购物者正在把一些钱递给收银员。柜台 (2—\\—k#EO) LIAVYI—I。\nC. 一位顾客正站在收银台旁。\nD. 一名员工正在从展示架上取一个产品。SEN SDA dee EMA TISLVEL"
+    "transcript": "A. A man is carrying a basket full of groceries.\nB. A shopper is handing a cashier some money.\nC. A customer is standing by a checkout counter.\nD. An employee is taking a product from a display.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "66c2e49a03c66bef677ef8b529d783424266b7f120a45d3f462c295578130f1c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 49
+      }
+    },
+    "transcript_translation": "A. 一个男人正抱着一篮子杂货。\nB. 一名购物者正在把一些钱递给收银员。\nC. 一位顾客正站在收银台旁。\nD. 一名员工正在从展示架上取一个产品。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "95bd23f16a44fab799ba7fc36d7f61cad4f25cf597626edf81f8c717f6df84e7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "groceries (REMERIIAF TSH, BE",
-        "A shopper is handing a cashier some money. counterl(2—\\—k#EO) LIAVYI—I.",
-        "Acustomer is standing by a checkout counter.",
-        "An employee is taking a product from a display. SEN SDA dee EMA TISLVEL"
+        "A man is carrying a basket full of groceries.",
+        "A shopper is handing a cashier some money.",
+        "A customer is standing by a checkout counter.",
+        "An employee is taking a product from a display."
       ],
       "answer": "C",
       "difficulty": "medium",
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
-      "answer_explain": "原文依据：照片中可见信息与描述“Acustomer is standing by a checkout counter.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Acustomer is standing by a checkout counter.）。",
+      "answer_explain": "原文依据：照片中可见信息与描述“A customer is standing by a checkout counter.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（A customer is standing by a checkout counter.）。",
       "choice_translations": [
-        "A：食品杂货（REMERIIAF TSH, BE",
-        "B：一名购物者正在把一些钱递给收银员。柜台 (2—\\—k#EO) LIAVYI—I。",
+        "A：一个男人正抱着一篮子杂货。",
+        "B：一名购物者正在把一些钱递给收银员。",
         "C：一位顾客正站在收银台旁。",
-        "D：一名员工正在从展示架上取一个产品。SEN SDA dee EMA TISLVEL"
+        "D：一名员工正在从展示架上取一个产品。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -61,7 +81,7 @@
         "question_type": "动作 / 状态辨析题",
         "evidence": "根据题干结构、选项语义和上下文判断。",
         "strategy": "本题属于动作 / 状态辨析题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：照片中可见信息与描述“Acustomer is standing by a checkout counter.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Acustomer is standing by a checkout counter.）。"
+        "analysis": "原文依据：照片中可见信息与描述“A customer is standing by a checkout counter.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（A customer is standing by a checkout counter.）。"
       },
       "item_id": 4,
       "priority": {
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p1-4/4"
+      "item_key": "official-2-test-2/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

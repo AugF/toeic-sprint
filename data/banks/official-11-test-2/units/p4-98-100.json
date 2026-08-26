@@ -42,9 +42,32 @@
       "asset_key": "official-11-test-2/images/part4/q098-100.jpg",
       "exists": true
     },
-    "transcript": "message and production schedule.\nEEW\nHi, Adisa. It's Rebecca Kwon. Ol'm calling because we've\njust completed development of a new fragrance line for\nJ.M. Scents Incorporated, and now I need models of the\nbottles they'll be packaged in. Could you make 3-D prints\nof the perfume bottles, based on my digital renderings?\nThe problem is that we have a very tight timeline. oThe\nclient review is at the end of the week, so the bottles need\nto be ready by the day the clients start their review. Ol'll be\nhappy to pay extra if you can make this project a priority.\nProject Step\nBeginning Date\nModel development July 27\nClient review\nAugust 3\nPrototype revisions\nAugust 8\nProduction\nAugust 16",
-    "transcript_translation": "中文辅助（离线预处理）：message and production schedule（日程）.\nEEW\nHi, Adisa.\nIt's Rebecca Kwon.\nOl'm calling because we've\njust completed development of a new fragrance line for\nJ.M.\nScents Incorporated, and now I need models of the\nbottles they'll be packaged in.\nCould you make 3-D prints\nof the perfume bottles, based on my digital renderings?\nThe problem is that we have a very tight timeline.\noThe\nclient review is at the end of the week, so the bottles need\nto be ready by the day the clients start their review.\nOl'll be\nhappy to pay extra if you can make this project a priority.\nProject Step\nBeginning Date\nModel development July 27\nClient review\nAugust 3\nPrototype revisions\nAugust 8\nProduction\nAugust 16",
-    "content_translation": "中文辅助（离线预处理）：message and production schedule（日程）.\nEEW\nHi, Adisa.\nIt's Rebecca Kwon.\nOl'm calling because we've\njust completed development of a new fragrance line for\nJ.M.\nScents Incorporated, and now I need models of the\nbottles they'll be packaged in.\nCould you make 3-D prints\nof the perfume bottles, based on my digital renderings?\nThe problem is that we have a very tight timeline.\noThe\nclient review is at the end of the week, so the bottles need\nto be ready by the day the clients start their review.\nOl'll be\nhappy to pay extra if you can make this project a priority.\nProject Step\nBeginning Date\nModel development July 27\nClient review\nAugust 3\nPrototype revisions\nAugust 8\nProduction\nAugust 16"
+    "transcript": "Hi Adisa, it's Rebecca Kwan.\nI'm calling because we've just completed development of a new fragrance line for JM Sense Incorporated.\nAnd now I need models of the bottles they'll be packaged in.\nCould you make 3D prints of the perfume bottles based on my digital renderings?\nThe problem is that we have a very tight timeline.\nThe client review is at the end of the week, so the bottles need to be ready by the day the clients start their review.\nI'll be happy to pay extra if you can make this project a priority.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a3b78c7fa798e4bc70ac26235acc8ef6a63fe5fd3a454355c1f5344ca8136e39",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 99,
+        "legacy_word_count": 113,
+        "length_ratio": 0.876,
+        "legacy_coverage": 0.85
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，Adisa，我是Rebecca Kwan。\n我打电话来是因为我们刚刚完成了为JM Sense Incorporated开发的新香水系列。\n现在我需要它们将要包装的瓶子的模型。\n你能根据我的数字渲染图制作香水瓶的3D打印件吗？\n问题是我们的时间非常紧张。\n客户评审在周末，所以这些瓶子必须在客户开始评审的那天准备好。\n如果能把这个项目作为优先事项来处理，我很高兴支付额外的费用。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c822574beff2a4983d5bef9e4ddef2155337d127a6b36f040d91d930bae9f7bd"
+    }
   },
   "items": [
     {
@@ -56,23 +79,23 @@
       ],
       "answer": "C",
       "question": "Where does the speaker work?",
-      "answer_explain": "原文依据：听力原文与题目“Where does the speaker work?”对应，官方答案为“At a perfume developer”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（At a perfume developer）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the speaker（说话者） work（工作）?",
+      "answer_explain": "正确答案：C（At a perfume developer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the speaker(说话者) work(工作)?",
       "choice_translations": [
-        "A：At a glass factory",
-        "B：At an interior design firm",
-        "C：At a perfume developer",
-        "D：At a cosmetics store"
+        "A:At a glass factory",
+        "B:At an interior design firm",
+        "C:At a perfume developer",
+        "D:At a cosmetics store"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message and production schedule.",
+      "evidence": "参考听力原文：“Could you make 3D prints of the perfume bottles based on my digital renderings?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message and production schedule.",
+        "evidence": "参考听力原文：“Could you make 3D prints of the perfume bottles based on my digital renderings?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Where does the speaker work?”对应，官方答案为“At a perfume developer”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（At a perfume developer）。"
+        "analysis": "正确答案：C（At a perfume developer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 98,
       "priority": {
@@ -106,23 +129,23 @@
       ],
       "answer": "B",
       "question": "Look at the graphic. By which date is the listener asked to complete a project?",
-      "answer_explain": "原文依据：听力原文与题目“Look at the graphic. By which date is the listener asked to complete a project?”对应，官方答案为“August 3”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（August 3）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nBy which date is the listener asked to complete a project?",
+      "answer_explain": "正确答案：B（August 3）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. By which date is the listener asked to complete a project?",
       "choice_translations": [
-        "A：July 27",
-        "B：August 3",
-        "C：August 8",
-        "D：August 16"
+        "A:July 27",
+        "B:August 3",
+        "C:August 8",
+        "D:August 16"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：just completed development of a new fragrance line for",
+      "evidence": "参考听力原文：“I'll be happy to pay extra if you can make this project a priority.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：just completed development of a new fragrance line for",
+        "evidence": "参考听力原文：“I'll be happy to pay extra if you can make this project a priority.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Look at the graphic. By which date is the listener asked to complete a project?”对应，官方答案为“August 3”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（August 3）。"
+        "analysis": "正确答案：B（August 3）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 99,
       "priority": {
@@ -156,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What does the speaker say she will pay for?",
-      "answer_explain": "原文依据：听力原文与题目“What does the speaker say she will pay for?”对应，官方答案为“Expedited service”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（Expedited service）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say she will pay for?",
+      "answer_explain": "正确答案：C（Expedited service）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say she will pay for?",
       "choice_translations": [
-        "A：Additional materials",
-        "B：Legal fees",
-        "C：Expedited service（服务）",
-        "D：Staff training"
+        "A:Additional materials",
+        "B:Legal fees",
+        "C:Expedited service(服务)",
+        "D:Staff training"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message and production schedule.",
+      "evidence": "参考听力原文：“I'll be happy to pay extra if you can make this project a priority.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message and production schedule.",
+        "evidence": "参考听力原文：“I'll be happy to pay extra if you can make this project a priority.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What does the speaker say she will pay for?”对应，官方答案为“Expedited service”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（Expedited service）。"
+        "analysis": "正确答案：C（Expedited service）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 100,
       "priority": {

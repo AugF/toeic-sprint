@@ -39,9 +39,31 @@
       "asset_key": "official-3-test-2/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nER w Hello, thank you for coming in to meet with m\ne-mail, you mentioned that you're looking tc\nspace in an office building?\ni v Yes, our current office is too small, so my bus\npartner, Jane, and ®! would like your help in\nlarger one.\nER w Sure. Are there any requirements you have fc\nlocation?\nmM Hm. Jane, what do you think?\n] want to make sure we have enough parkir\nour employees drive to work.\nRight, and ® it’s also important that the office\nshort-term lease options. ®0ur office is still e\nand we don’t know if the space will be large e\nin the future.",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nER w Hello, thank（感谢） you for coming in to meet with m\ne-mail, you mentioned that you're looking tc\nspace in an office（办公室） building?\ni v Yes, our current office（办公室） is too small, so my bus\npartner, Jane, and ®!\nwould like your help in\nlarger one.\nER w Sure.\nAre there any requirements you have fc\nlocation?\nmM Hm.\nJane, what（什么） do you think?\n] want to make sure we have enough parkir\nour employees drive to work（工作）.\nRight, and ® it’s also important that the office（办公室）\nshort-term lease options.\n®0ur office（办公室） is still e\nand we don’t know if the space will be large e\nin the future.",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nER w Hello, thank（感谢） you for coming in to meet with m\ne-mail, you mentioned that you're looking tc\nspace in an office（办公室） building?\ni v Yes, our current office（办公室） is too small, so my bus\npartner, Jane, and ®!\nwould like your help in\nlarger one.\nER w Sure.\nAre there any requirements you have fc\nlocation?\nmM Hm.\nJane, what（什么） do you think?\n] want to make sure we have enough parkir\nour employees drive to work（工作）.\nRight, and ® it’s also important that the office（办公室）\nshort-term lease options.\n®0ur office（办公室） is still e\nand we don’t know if the space will be large e\nin the future."
+    "transcript": "Hello.\nThank you for coming in to meet with me.\nIn your email, you mentioned that you're looking to rent some space in an office building.\nYes, our current office is too small, so my business partner Jane and I would like your help in finding a larger one.\nSure.\nAre there any requirements you have for the location?\nHmm.\nJane, what do you think?\nI want to make sure we have enough parking.\nMost of our employees drive to work.\nRight.\nAnd it's also important that the office has short-term lease options.\nOur office is still expanding and we don't know if the space will be large enough in the future.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1f57f48149a5eae8166b2292afc231d60b50c9f6612f9e4612c1010a715291ea",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 112,
+        "legacy_word_count": 108,
+        "length_ratio": 1.037,
+        "legacy_coverage": 0.852
+      }
+    },
+    "transcript_translation": "您好。\n感谢您来和我见面。\n在您的邮件中，您提到您正在寻找租用办公楼空间。\n是的，我们现在的办公室太小了，所以我和我的商业伙伴 Jane 希望您能帮我们找到一个更大的地方。\n当然可以。\n您对地点有什么要求吗？\n嗯。\nJane，你觉得呢？\n我想确保我们有足够的停车位。\n我们的员工大部分是开车上班的。\n对。\n而且办公室最好提供短期租赁选项也很重要。\n我们的办公室还在扩张中，未来空间是否足够大尚不确定。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7140dfd82e78fa0535c4d4206d4966ee3bf986a19a1f04aeac12bfe66de07d28"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "A",
       "question": "What are the speakers discussing?",
-      "answer_explain": "原文依据：听力原文中提到“space in an office building?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Renting some office space）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers discussing?",
+      "answer_explain": "正确答案：A（Renting some office space）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the speakers discussing?",
       "choice_translations": [
-        "A：Renting some office（办公室） space",
-        "B：Reserving a banquet hall",
-        "C：Purchasing a car",
-        "D：Finding an apartment"
+        "A:Renting some office(办公室) space",
+        "B:Reserving a banquet hall",
+        "C:Purchasing a car",
+        "D:Finding an apartment"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“In your email, you mentioned that you're looking to rent some space in an office building.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“In your email, you mentioned that you're looking to rent some space in an office building.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“space in an office building?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Renting some office space）。"
+        "analysis": "正确答案：A（Renting some office space）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What is Jane concerned about?",
-      "answer_explain": "原文依据：听力原文中提到“and we don’t know if the space will be large e”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The availability of parking）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is Jane concerned about?",
+      "answer_explain": "正确答案：B（The availability of parking）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is Jane concerned about?",
       "choice_translations": [
-        "A：Access to wireless Internet",
-        "B：The availability of parking",
-        "C：The size of a budget",
-        "D：The proximity to a city center"
+        "A:Access to wireless Internet",
+        "B:The availability of parking",
+        "C:The size of a budget",
+        "D:The proximity to a city center"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Yes, our current office is too small, so my business partner Jane and I would like your help in finding a larger one.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Yes, our current office is too small, so my business partner Jane and I would like your help in finding a larger one.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“and we don’t know if the space will be large e”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The availability of parking）。"
+        "analysis": "正确答案：B（The availability of parking）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -152,28 +174,28 @@
       "choices": [
         "He needs to raise more money.",
         "He is moving to a new city.",
-        "Acompany is growing.",
-        "Abusiness agreement may change."
+        "A company is growing.",
+        "A business agreement may change."
       ],
       "answer": "C",
       "question": "Why does the man want a short-term contract?",
-      "answer_explain": "原文依据：听力原文中提到“and we don’t know if the space will be large e”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Acompany is growing.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） want a short-term contract?",
+      "answer_explain": "正确答案：C（A company is growing.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the man(男士) want a short-term contract?",
       "choice_translations": [
-        "A：He needs to raise more money.",
-        "B：He is moving to a new city.",
-        "C：Acompany is growing.",
-        "D：Abusiness agreement may change."
+        "A:He needs to raise more money.",
+        "B:He is moving to a new city.",
+        "C:A company is growing.",
+        "D:A business agreement may change."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 14 段：short-term lease options. ®0ur office is still e",
+      "evidence": "参考听力原文：“And it's also important that the office has short-term lease options.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 14 段：short-term lease options. ®0ur office is still e",
+        "evidence": "参考听力原文：“And it's also important that the office has short-term lease options.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“and we don’t know if the space will be large e”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Acompany is growing.）。"
+        "analysis": "正确答案：C（A company is growing.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

@@ -28,38 +28,58 @@
       "asset_key": "official-8-test-1/audio/part2/q014.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：[|м Why（为什么） haven't the tables been set for dinner service（服务）?",
-    "content_translation": "中文辅助（离线预处理）：[|м Why（为什么） haven't the tables been set for dinner service（服务）?"
+    "transcript": "Why haven't the tables been set for dinner service?\nA. Because we're short on staff.\nB. The seasonal menu is great.\nC. Yes, at 5 o'clock.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ba5a14061bffb02d73e133da59db391181198622c491b76a2b8548e6218c8dc6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q014.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "为什么餐桌还没有摆好用于晚餐服务？\nA. 因为我们人手不足。\nB. 季节性菜单很棒。\nC. 是的，在五点。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d82cabd1ccd92ee01fb2e7f420f1008e0d9560493590fe29cf4c0fc68d18b2b7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Because we're short on staff.",
         "The seasonal menu is great.",
-        "Yes, at five o'clock."
+        "Yes, at 5 o'clock."
       ],
       "answer": "A",
-      "question": "[|м Why haven't the tables been set for dinner service?",
+      "question": "Why haven't the tables been set for dinner service?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“[|м Why haven't the tables been set for dinner service?”，自然应答是“Because we're short on staff.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because we're short on staff.）。",
-      "question_translation": "中文辅助（离线预处理）：[|м Why（为什么） haven't the tables been set for dinner service（服务）?",
+      "answer_explain": "原文依据：问句或陈述是“Why haven't the tables been set for dinner service?”，自然应答是“Because we're short on staff.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because we're short on staff.）。",
+      "question_translation": "为什么餐桌还没有摆好用于晚餐服务?",
       "choice_translations": [
-        "A：Because we're short on staff.",
-        "B：The seasonal menu is great.",
-        "C：Yes, at five o'clock."
+        "A：因为我们人手不足。",
+        "B：季节性菜单很棒。",
+        "C：是的,在五点。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：[|м Why haven't the tables been set for dinner service?",
+      "evidence": "参考原文第 1 段：Why haven't the tables been set for dinner service?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：[|м Why haven't the tables been set for dinner service?",
+        "evidence": "参考原文第 1 段：Why haven't the tables been set for dinner service?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“[|м Why haven't the tables been set for dinner service?”，自然应答是“Because we're short on staff.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because we're short on staff.）。"
+        "analysis": "原文依据：问句或陈述是“Why haven't the tables been set for dinner service?”，自然应答是“Because we're short on staff.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because we're short on staff.）。"
       },
       "item_id": 14,
       "priority": {

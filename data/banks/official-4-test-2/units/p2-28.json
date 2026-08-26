@@ -26,38 +26,58 @@
       "asset_key": "official-4-test-2/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew When（何时） will the archaeological team return fron their fieldwork?\nm",
-    "content_translation": "中文辅助（离线预处理）：Ew When（何时） will the archaeological team return fron their fieldwork?\nm"
+    "transcript": "When will the archaeological team return from their fieldwork?\nA. A team of 10 researchers.\nB. They'll transfer in Tokyo.\nC. Around 5 o'clock.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "30c014d9709823e2489f906af925147f05b38c9a856c9163ab962d481fed7d8d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "考古队什么时候从实地考察回来？\nA. 10名研究人员。\nB. 他们将在东京转运。\nC. 大约五点。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "de666187b0fcd9ab2bfcbd9ef67922741acf39e2fe8bf54935f941129a7e34cc"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Ateam of ten researchers.",
+        "A team of 10 researchers.",
         "They'll transfer in Tokyo.",
-        "Around five o'clock."
+        "Around 5 o'clock."
       ],
       "answer": "C",
-      "question": "Ew When will the archaeological team return fron their fieldwork? m",
+      "question": "When will the archaeological team return from their fieldwork?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew When will the archaeological team return fron their fieldwork? m”，自然应答是“Around five o'clock.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Around five o'clock.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew When（何时） will the archaeological team return fron their fieldwork?\nm",
+      "answer_explain": "原文依据：问句或陈述是“When will the archaeological team return from their fieldwork?”，自然应答是“Around 5 o'clock.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Around 5 o'clock.）。",
+      "question_translation": "考古队什么时候从实地考察回来?",
       "choice_translations": [
-        "A：Ateam of ten researchers.",
-        "B：They'll transfer in Tokyo.",
-        "C：Around five o'clock."
+        "A：10名研究人员。",
+        "B：他们将在东京转运。",
+        "C：大约五点。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew When will the archaeological team return fron their fieldwork? m",
+      "evidence": "参考原文第 1 段：When will the archaeological team return from their fieldwork?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew When will the archaeological team return fron their fieldwork? m",
+        "evidence": "参考原文第 1 段：When will the archaeological team return from their fieldwork?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew When will the archaeological team return fron their fieldwork? m”，自然应答是“Around five o'clock.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Around five o'clock.）。"
+        "analysis": "原文依据：问句或陈述是“When will the archaeological team return from their fieldwork?”，自然应答是“Around 5 o'clock.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Around 5 o'clock.）。"
       },
       "item_id": 28,
       "priority": {

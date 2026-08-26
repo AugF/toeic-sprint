@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-1/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Bl Should wo.9o t ie networking seminar or the BY Aor BOW.\nAtRteDOUEy—e See.\nMEERMBAOESSICSMT eM fia",
-    "content_translation": "中文辅助（离线预处理）：Bl Should wo.9o t ie networking seminar or the BY Aor BOW.\nAtRteDOUEy—e See.\nMEERMBAOESSICSMT eM fia"
+    "transcript": "Should we go to the networking seminar or the writing workshop?\nA. I attended both last year.\nB. Yes, the new shop on the corner.\nC. That's the only one you have?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d148dedf5e96a603c99dcc7a09612b624b859a2178e272038c6f70224a80055a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "我们应该去参加人脉研讨会还是写作工作坊？\nA. 我去年都参加了。\nB. 是的，街角新开的店。\nC. 你只有这个吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8441d457345fa0481585681b4bcbf30ffb9638d3c65a00b3f98b9bcbaafef291"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "DER. networking [ (tO)",
-        "Yes, the new shop on the corner. DOC. [ASHE MPTICSM LIC] CB AORER",
-        "That’s the only one you have? @BA TS"
+        "I attended both last year.",
+        "Yes, the new shop on the corner.",
+        "That's the only one you have?"
       ],
       "answer": "A",
-      "question": "Bl Should wo.9o t ie networking seminar or the BY Aor BOW. AtRteDOUEy—e See. MEERMBAOESSICSMT eM fia",
+      "question": "Should we go to the networking seminar or the writing workshop?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“Bl Should wo.9o t ie networking seminar or the BY Aor BOW. AtRteDOUEy—e See. MEERMBAOESSICSMT eM fia”，自然应答是“DER. networking [ (tO)”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（DER. networking [ (tO)）。",
-      "question_translation": "中文辅助（离线预处理）：Bl Should wo.9o t ie networking seminar or the BY Aor BOW.\nAtRteDOUEy—e See.\nMEERMBAOESSICSMT eM fia",
+      "answer_explain": "原文依据：问句或陈述是“Should we go to the networking seminar or the writing workshop?”，自然应答是“I attended both last year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I attended both last year.）。",
+      "question_translation": "我们应该去参加人脉研讨会还是写作工作坊?",
       "choice_translations": [
-        "A：DER.\nnetworking [ (tO)",
-        "B：Yes, the new shop on the corner.\nDOC.\n[ASHE MPTICSM LIC] CB AORER",
-        "C：That’s the only one you have?\n@BA TS"
+        "A：我去年都参加了。",
+        "B：是的,街角新开的店。",
+        "C：你只有这个吗?"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Bl Should wo.9o t ie networking seminar or the BY Aor BOW. AtRteDOUEy—e See. MEERMBAOESSICSMT eM fia",
+      "evidence": "参考原文第 1 段：Should we go to the networking seminar or the writing workshop?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Bl Should wo.9o t ie networking seminar or the BY Aor BOW. AtRteDOUEy—e See. MEERMBAOESSICSMT eM fia",
+        "evidence": "参考原文第 1 段：Should we go to the networking seminar or the writing workshop?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Bl Should wo.9o t ie networking seminar or the BY Aor BOW. AtRteDOUEy—e See. MEERMBAOESSICSMT eM fia”，自然应答是“DER. networking [ (tO)”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（DER. networking [ (tO)）。"
+        "analysis": "原文依据：问句或陈述是“Should we go to the networking seminar or the writing workshop?”，自然应答是“I attended both last year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I attended both last year.）。"
       },
       "item_id": 25,
       "priority": {

@@ -31,8 +31,28 @@
       "asset_key": "official-11-test-2/images/part1/q001.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. He's taking off some gloves.\nB. He's carrying some boots.\nC. He's sweeping a walkway.\nD. He's using a shovel.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "096de125237e79afc7c410daa76e7c0bef485c77482d52577c55f15a7b9bca50",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part1/q001.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "A. 他正在脱一些手套。\nB. 他正在携带一些靴子。\nC. 他正在扫一条走道。\nD. 他正在使用一把铲子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3b1a73013fb485d3b9f335d76ef36694db3d496d0d2d83441c97c31bc069913f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：官方详解给出的照片描述正确项是 D（He's using a shovel.）。选择理由：该陈述与照片中可见的人物、物体、动作或状态一致，其他选项包含画面中没有出现的细节。正确答案：D（He's using a shovel.）。",
       "choice_translations": [
-        "A：He's taking off some gloves.",
-        "B：He's carrying some boots.",
-        "C：He's sweeping a walkway.",
-        "D：He's using a shovel."
+        "A：他正在脱一些手套。",
+        "B：他正在携带一些靴子。",
+        "C：他正在扫一条走道。",
+        "D：他正在使用一把铲子。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-11-test-2/p1-1/1"
+      "item_key": "official-11-test-2/p1-1/1",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

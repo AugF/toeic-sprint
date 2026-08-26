@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-1/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "EK 那家剧院总是卖光票，是吗？ 2 : ER C REN cea! = w\nA. 更喜欢喜剧。 EWS HRI, True ZS e370\nB. 我们坐在第一排。\nC. 是的，那我们现在买票吧。",
-    "content_translation": "EK 那家剧院总是卖光票，是吗？ 2 : ER C REN cea! = w\nA. 更喜欢喜剧。 EWS HRI, True ZS e370\nB. 我们坐在第一排。\nC. 是的，那我们现在买票吧。"
+    "transcript": "That theater always sells out quickly, doesn't it?\nA. I prefer comedies.\nB. We sat in the first row.\nC. True, so let's get our tickets now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3387d2e4447e179957be878eb87aca8da1f8ebb660dc479f7fc1211309609edd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "那个剧院总是很快卖完票，对吧？\nA. 我更喜欢喜剧。\nB. 我们坐在第一排。\nC. 对，所以我们现在去拿票吧。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "a6cbd77cb6a6c4e5c39aac3a3ea938fc1934c84e616713f838acb713ba00763d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "prefer comedies. EWS HRI, True ZS e370",
+        "I prefer comedies.",
         "We sat in the first row.",
-        "True, so let’s get our tickets now."
+        "True, so let's get our tickets now."
       ],
       "answer": "C",
-      "question": "EK That theater always sells out quickly, doesn’t it? 2 : ER C REN cea! = w",
+      "question": "That theater always sells out quickly, doesn't it?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“EK That theater always sells out quickly, doesn’t it? 2 : ER C REN cea! = w”，自然应答是“True, so let’s get our tickets now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（True, so let’s get our tickets now.）。",
+      "answer_explain": "原文依据：问句或陈述是“That theater always sells out quickly, doesn't it?”，自然应答是“True, so let's get our tickets now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（True, so let's get our tickets now.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：EK That theater always sells out quickly, doesn’t it? 2 : ER C REN cea! = w",
+      "evidence": "参考原文第 1 段：That theater always sells out quickly, doesn't it?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：EK That theater always sells out quickly, doesn’t it? 2 : ER C REN cea! = w",
+        "evidence": "参考原文第 1 段：That theater always sells out quickly, doesn't it?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“EK That theater always sells out quickly, doesn’t it? 2 : ER C REN cea! = w”，自然应答是“True, so let’s get our tickets now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（True, so let’s get our tickets now.）。"
+        "analysis": "原文依据：问句或陈述是“That theater always sells out quickly, doesn't it?”，自然应答是“True, so let's get our tickets now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（True, so let's get our tickets now.）。"
       },
-      "question_translation": "EK 那家剧院总是卖光票，是吗？ 2 : ER C REN cea! = w",
+      "question_translation": "那个剧院总是很快卖完票,对吧?",
       "choice_translations": [
-        "A：更喜欢喜剧。 EWS HRI, True ZS e370",
+        "A：我更喜欢喜剧。",
         "B：我们坐在第一排。",
-        "C：是的，那我们现在买票吧。"
+        "C：对,所以我们现在去拿票吧。"
       ],
       "item_id": 21,
       "priority": {

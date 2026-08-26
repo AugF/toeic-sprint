@@ -39,9 +39,31 @@
       "asset_key": "official-3-test-1/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "announcement.\nHello, I’m the director of the Human Resources Dep\nand ®!'m here to announce a new system for keepii\nof your work hours. Instead of scanning employee II\nat the Security Desk, @we have instituted an online\nfor reporting when you arrive and leave work. © Talk\nHuman Resources representative during their office\nto get more detailed information about this new proc\nYou'll be glad to know that ®the new system, which\nfully operational by the beginning of next week, will ;\nPayroll Department to send out paychecks faster.",
-    "transcript_translation": "通知。\n您好，我是人力资源部的总监，我来宣布一个关于记录您工作时间的新的系统。不再是在安保台扫描员工工卡，我们已经设立了一个在线系统，用于报告您的到岗和离岗时间。请在办公时间与人力资源代表交谈，以获取有关此新流程的更多详细信息。您会很高兴知道，这个新系统将在下周初全面投入使用，并将使薪资部门更快地发放工资单。",
-    "content_translation": "通知。\n您好，我是人力资源部的总监，我来宣布一个关于记录您工作时间的新的系统。不再是在安保台扫描员工工卡，我们已经设立了一个在线系统，用于报告您的到岗和离岗时间。请在办公时间与人力资源代表交谈，以获取有关此新流程的更多详细信息。您会很高兴知道，这个新系统将在下周初全面投入使用，并将使薪资部门更快地发放工资单。"
+    "transcript": "Hello, I'm the director of the Human Resources Department and I'm here to announce a new system for keeping track of your work hours.\nInstead of scanning employee ID cards at the Security Desk, we have instituted an online system for reporting when you arrive and leave work.\nTalk to your Human Resources representative during their office hours to get more detailed information about this new process.\nYou'll be glad to know that the new system, which will be fully operational by the beginning of next week, will allow the Payroll Department to send out paychecks faster.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "c94a2f99698348f659876c3e27b0361626d282316097ea1cc79b66434d1797c6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 87,
+        "length_ratio": 1.115,
+        "legacy_coverage": 0.931
+      }
+    },
+    "transcript_translation": "你好，我是人力资源部的总监，我来宣布一个关于追踪你们工作时间的新的系统。\n我们不再需要在安保台扫描员工证卡，而是实行了一个在线系统，用于报告你们上班和下班的时间。\n请在人力资源代表的办公时间咨询他们，以获取更多关于这个新流程的详细信息。\n很高兴地告诉大家的是，这个新系统将在下周初全面投入使用，它将允许薪资部门更快地发放工资支票。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8d64742a0140324927ba85bd43ecbd70282b3508d42ec6dad74b8a7986f823ef"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "B",
       "question": "What is the announcement mainly about?",
-      "answer_explain": "原文依据：听力原文中提到“for reporting when you arrive and leave work.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Reporting work hours）。",
-      "question_translation": "通知主要关于什么？",
+      "answer_explain": "正确答案：B（Reporting work hours）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "通知主要关于什么?",
       "choice_translations": [
-        "A：完成一个团队项目",
-        "B：报告工作时间",
-        "C：签发工牌",
-        "D：招聘更多工人"
+        "A:完成一个团队项目",
+        "B:报告工作时间",
+        "C:签发工牌",
+        "D:招聘更多工人"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：announcement.",
+      "evidence": "参考听力原文：“Hello, I'm the director of the Human Resources Department and I'm here to announce a new system for keeping track of your work hours.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：announcement.",
+        "evidence": "参考听力原文：“Hello, I'm the director of the Human Resources Department and I'm here to announce a new system for keeping track of your work hours.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“for reporting when you arrive and leave work.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Reporting work hours）。"
+        "analysis": "正确答案：B（Reporting work hours）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 89,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "D",
       "question": "According to the speaker, how can rs employees get more information?",
-      "answer_explain": "原文依据：听力原文中提到“Human Resources representative during their office”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（By speaking with a representative）。",
-      "question_translation": "根据演讲者所说，員工如何获取更多信息？",
+      "answer_explain": "正确答案：D（By speaking with a representative）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "根据演讲者所说,員工如何获取更多信息?",
       "choice_translations": [
-        "A：通过观看视频",
-        "B：通过阅读文件",
-        "C：通过填写表格",
-        "D：与代表交谈"
+        "A:通过观看视频",
+        "B:通过阅读文件",
+        "C:通过填写表格",
+        "D:与代表交谈"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：to get more detailed information about this new proc",
+      "evidence": "参考听力原文：“Talk to your Human Resources representative during their office hours to get more detailed information about this new process.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：to get more detailed information about this new proc",
+        "evidence": "参考听力原文：“Talk to your Human Resources representative during their office hours to get more detailed information about this new process.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Human Resources representative during their office”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（By speaking with a representative）。"
+        "analysis": "正确答案：D（By speaking with a representative）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 90,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What is an advantage of the new system?",
-      "answer_explain": "原文依据：听力原文中提到“You'll be glad to know that ®the new system, which”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Demonstrating a procedure）。",
-      "question_translation": "新系统的优点是什么？",
+      "answer_explain": "正确答案：C（Demonstrating a procedure）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "新系统的优点是什么?",
       "choice_translations": [
-        "A：创建一些设计",
-        "B：进行市场调研",
-        "C：演示一个程序",
-        "D：新的口味不好吃。听众？"
+        "A:创建一些设计",
+        "B:进行市场调研",
+        "C:演示一个程序",
+        "D:新的口味不好吃。听众?"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：and ®!'m here to announce a new system for keepii",
+      "evidence": "参考听力原文：“You'll be glad to know that the new system, which will be fully operational by the beginning of next week, will allow the Payroll Department to send out paychecks faster.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：and ®!'m here to announce a new system for keepii",
+        "evidence": "参考听力原文：“You'll be glad to know that the new system, which will be fully operational by the beginning of next week, will allow the Payroll Department to send out paychecks faster.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“You'll be glad to know that ®the new system, which”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Demonstrating a procedure）。"
+        "analysis": "正确答案：C（Demonstrating a procedure）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 91,
       "priority": {

@@ -42,15 +42,35 @@
       "asset_key": "official-11-test-1/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "你认为我们的客户对我们的服务有多满意？\nA：我可以给你报销这顿饭。\nB：飞机四点钟降落。\nC：有好几家公司续签了合同。",
-    "content_translation": "本段听力围绕“特殊疑问句”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "How satisfied do you think our clients are with our services?\nA. I can reimburse you for the meal.\nB. The plane lands at 4 o'clock.\nC. Several companies have renewed their contracts.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1c03eed61f529582ecbb21d7bdb17f65bd320e2b68e114dce8f329e7c4ee6499",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "您认为我们的客户对我们的服务满意吗？\nA. 我可以报销您的餐费。\nB. 飞机在四点降落。\nC. 好几家公司续签了合同。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "32754887061d3af03026c392246e4ff9e1d79fe360beedc2c25169e263429262"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "question": "How satisfied do you think our clients are with our services?",
       "choices": [
         "I can reimburse you for the meal.",
-        "The plane lands at four o'clock.",
+        "The plane lands at 4 o'clock.",
         "Several companies have renewed their contracts."
       ],
       "answer": "C",
@@ -61,9 +81,9 @@
       "question_type": "程度疑问句",
       "evidence": "参考原文第 1 段第 1 句：How satisfied do you think our clients are with our services?",
       "choice_translations": [
-        "A：我可以给你报销这顿饭。",
-        "B：飞机四点钟降落。",
-        "C：有好几家公司续签了合同。"
+        "A：我可以报销您的餐费。",
+        "B：飞机在四点降落。",
+        "C：好几家公司续签了合同。"
       ],
       "response_style": "可直接回答，也常用补充信息间接回答",
       "strategy": "先判断为方式 / 状态疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
@@ -74,7 +94,7 @@
         "strategy": "先判断为方式 / 状态疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：询问客户满意程度，答句说 several companies have renewed their contracts。 选择理由：续约是客户满意的行为证据，因此C是合理的间接回答；A和B无关。正确答案：C（Several companies have renewed their contracts.）。"
       },
-      "question_translation": "你认为我们的客户对我们的服务有多满意？",
+      "question_translation": "您认为我们的客户对我们的服务满意吗?",
       "item_id": 28,
       "priority": {
         "level": "P2",

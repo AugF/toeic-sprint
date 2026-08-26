@@ -40,37 +40,59 @@
       "asset_key": "official-4-test-1/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "miu\nThank you for coming to our annual appreciation dinner\nXRZ Game Studio employees! Every year, we recognize\nemployee for hard work and contributions to the developr\nof video gaming. This year, we'd like to recognize Tadayo\nSoto, our lead application designer. when Tadayoshi fir\njoined our company, he surprised us by designing a\nbest-selling game. It took him two days to create it. And\nTadayoshi has become well-known in the field for his\ndesigning abilities. Last month, he gave the opening\nspeech at the Oslo Gaming Conference. Congratulations\nTadayoshi!",
-    "transcript_translation": "中文辅助（离线预处理）：miu\nThank（感谢） you for coming to our annual appreciation dinner\nXRZ Game Studio employees!\nEvery year, we recognize\nemployee（员工） for hard work（工作） and contributions to the developr\nof video gaming.\nThis year, we'd like to recognize Tadayo\nSoto, our lead application designer.\nwhen（何时） Tadayoshi fir\njoined our company（公司）, he surprised us by designing a\nbest-selling game.\nIt took him two days to create it.\nAnd\nTadayoshi has become well-known in the field for his\ndesigning abilities.\nLast month, he gave the opening\nspeech at the Oslo Gaming Conference.\nCongratulations\nTadayoshi!",
-    "content_translation": "中文辅助（离线预处理）：miu\nThank（感谢） you for coming to our annual appreciation dinner\nXRZ Game Studio employees!\nEvery year, we recognize\nemployee（员工） for hard work（工作） and contributions to the developr\nof video gaming.\nThis year, we'd like to recognize Tadayo\nSoto, our lead application designer.\nwhen（何时） Tadayoshi fir\njoined our company（公司）, he surprised us by designing a\nbest-selling game.\nIt took him two days to create it.\nAnd\nTadayoshi has become well-known in the field for his\ndesigning abilities.\nLast month, he gave the opening\nspeech at the Oslo Gaming Conference.\nCongratulations\nTadayoshi!"
+    "transcript": "Thank you for coming to our annual appreciation dinner for XRZ Game Studio employees.\nEvery year we recognize one employee for hard work and contributions to the development of video gaming.\nThis year we'd like to recognize Tata Yoshi Soto, our lead application designer.\nWhen Tata Yoshi first joined our company, he surprised us by designing a best-selling game.\nIt took him two days to create it.\nAnd Tata Yoshi has become well known in the field for his designing abilities.\nLast month he gave the opening speech at the Oslo Gaming Conference.\nCongratulations Tata Yoshi!",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fdb6b41fdfc1d1606f2f426e28403702236fee2f97a345c20bd92f71f1145cc5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 96,
+        "legacy_word_count": 90,
+        "length_ratio": 1.067,
+        "legacy_coverage": 0.911
+      }
+    },
+    "transcript_translation": "感谢您参加我们为 XRZ Game Studio 员工举办的年度感恩晚宴。\n每年我们都会表彰一位在视频游戏开发方面辛勤工作和做出贡献的员工。\n今年，我们想表彰我们的首席应用设计师 Tata Yoshi Soto。\n当 Tata Yoshi 初到我们公司时，他设计了一款畅销游戏，让我们感到惊喜。\n他花了两天时间就完成了它。\n而 Tata Yoshi 因其设计能力在业内声名远播。\n上个月他在奥斯陆游戏大会发表了开幕演讲。\n恭喜您，Tata Yoshi！",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8c1e556a743eacffef0eda97ff6a806f7717504a2a386e624db73420d4c23c3d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Ata client meeting",
+        "At a client meeting",
         "At a computer workshop",
         "At a company banquet",
         "At an employee orientation"
       ],
       "answer": "C",
       "question": "Where is the announcement taking place?",
-      "answer_explain": "原文依据：听力原文中提到“joined our company, he surprised us by designing a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a company banquet）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the announcement taking place?",
+      "answer_explain": "正确答案：C（At a company banquet）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) is the announcement taking place?",
       "choice_translations": [
-        "A：Ata client meeting（会议）",
-        "B：At a computer workshop",
-        "C：At a company（公司） banquet",
-        "D：At an employee（员工） orientation"
+        "A:At a client meeting(会议)",
+        "B:At a computer workshop",
+        "C:At a company(公司) banquet",
+        "D:At an employee(员工) orientation"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：miu",
+      "evidence": "参考听力原文：“When Tata Yoshi first joined our company, he surprised us by designing a best-selling game.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：miu",
+        "evidence": "参考听力原文：“When Tata Yoshi first joined our company, he surprised us by designing a best-selling game.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“joined our company, he surprised us by designing a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a company banquet）。"
+        "analysis": "正确答案：C（At a company banquet）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "D",
       "question": "Why does the speaker say, “It took him two days to create it’?",
-      "answer_explain": "原文依据：听力原文中提到“It took him two days to create it.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To highlight an accomplishment）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, “It took him two days to create it’?",
+      "answer_explain": "正确答案：D（To highlight an accomplishment）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, “It took him two days to create it’?",
       "choice_translations": [
-        "A：To agree with a proposed deadline",
-        "B：To request additional staff",
-        "C：To suggest（表明/建议） changing a process",
-        "D：To highlight an accomplishment"
+        "A:To agree with a proposed deadline",
+        "B:To request additional staff",
+        "C:To suggest(表明/建议) changing a process",
+        "D:To highlight an accomplishment"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 8 段：best-selling game. It took him two days to create it. And",
+      "evidence": "参考听力原文：“It took him two days to create it.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 8 段：best-selling game. It took him two days to create it. And",
+        "evidence": "参考听力原文：“It took him two days to create it.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“It took him two days to create it.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To highlight an accomplishment）。"
+        "analysis": "正确答案：D（To highlight an accomplishment）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, what did Tadayoshi do last month?",
-      "answer_explain": "原文依据：听力原文中提到“speech at the Oslo Gaming Conference.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（He spoke at an industry conference.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） did Tadayoshi do last month?",
+      "answer_explain": "正确答案：B（He spoke at an industry conference.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) did Tadayoshi do last month?",
       "choice_translations": [
-        "A：He consulted with a lawyer.",
-        "B：He spoke at an industry conference.",
-        "C：He extended a contract.",
-        "D：He started a new company（公司） department."
+        "A:He consulted with a lawyer.",
+        "B:He spoke at an industry conference.",
+        "C:He extended a contract.",
+        "D:He started a new company(公司) department."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：Soto, our lead application designer. when Tadayoshi fir",
+      "evidence": "参考听力原文：“Last month he gave the opening speech at the Oslo Gaming Conference.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：Soto, our lead application designer. when Tadayoshi fir",
+        "evidence": "参考听力原文：“Last month he gave the opening speech at the Oslo Gaming Conference.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“speech at the Oslo Gaming Conference.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（He spoke at an industry conference.）。"
+        "analysis": "正确答案：B（He spoke at an industry conference.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

@@ -26,38 +26,58 @@
       "asset_key": "official-1-test-1/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "Ew 你在哪里找到这件漂亮的冬衣？\nA. 谢谢，这是礼物。\nB. 每个一月。\nC. 不，我没找到。",
-    "content_translation": "Ew 你在哪里找到这件漂亮的冬衣？\nA. 谢谢，这是礼物。\nB. 每个一月。\nC. 不，我没找到。"
+    "transcript": "Where'd you find that lovely winter coat?\nA. Thank you. It was a gift.\nB. Every January.\nC. No, I haven't found them.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "69a836f5f1610dc617e12ad4800fa7aacb6b3a9005c4f5ea59c38f9d53cd4e9f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "你在哪里找到那件可爱的冬衣？\nA. 谢谢。这是礼物。\nB. 每年一月。\nC. 不，我没有找到它们。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "d088da62134f4f7e2b142d60d9a52aaa631b338a2c7342f5a60cced62071d165"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Thank you, it was a gift.",
+        "Thank you. It was a gift.",
         "Every January.",
-        "No, | haven’t found them."
+        "No, I haven't found them."
       ],
       "answer": "A",
-      "question": "Ew Where'd you find that lovely winter coat? =",
+      "question": "Where'd you find that lovely winter coat?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Where'd you find that lovely winter coat? =”，自然应答是“Thank you, it was a gift.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Thank you, it was a gift.）。",
+      "answer_explain": "原文依据：问句或陈述是“Where'd you find that lovely winter coat?”，自然应答是“Thank you. It was a gift.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Thank you. It was a gift.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Where'd you find that lovely winter coat? =",
+      "evidence": "参考原文第 1 段：Where'd you find that lovely winter coat?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Where'd you find that lovely winter coat? =",
+        "evidence": "参考原文第 1 段：Where'd you find that lovely winter coat?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Ew Where'd you find that lovely winter coat? =”，自然应答是“Thank you, it was a gift.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Thank you, it was a gift.）。"
+        "analysis": "原文依据：问句或陈述是“Where'd you find that lovely winter coat?”，自然应答是“Thank you. It was a gift.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Thank you. It was a gift.）。"
       },
-      "question_translation": "Ew 你在哪里找到这件漂亮的冬衣？ =",
+      "question_translation": "你在哪里找到那件可爱的冬衣?",
       "choice_translations": [
-        "A：谢谢，这是礼物。",
-        "B：每个一月。",
-        "C：不，我没找到。"
+        "A：谢谢。这是礼物。",
+        "B：每年一月。",
+        "C：不,我没有找到它们。"
       ],
       "item_id": 23,
       "priority": {

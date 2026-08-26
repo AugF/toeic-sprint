@@ -31,8 +31,28 @@
       "asset_key": "official-7-test-1/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. One of the men is buying a ticket.\nB. One of the men is sweeping the floor.\nC. Some people are having a meal.\nD. Some people are seated in a waiting area.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "458dc49e02639f652b57ad8d74a8610b44f66da24bf863a6c0c17ab7e3e08d70",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 45
+      }
+    },
+    "transcript_translation": "A. 其中一名男子正在买票。\nB. 其中一名男子正在扫地。\nC. 有些人正在吃餐。\nD. 有些人坐在等候区。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a28dd5bfe11afd280c2e32f2fd6f58b4709c028d98514f56ba6051cefea1ad18"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some people are seated in a waiting area.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（Some people are seated in a waiting area.）。",
       "choice_translations": [
-        "A：One of the men is buying a ticket.",
-        "B：One of the men is sweeping the floor.",
-        "C：Some people are having a meal.",
-        "D：Some people are seated in a waiting area."
+        "A：其中一名男子正在买票。",
+        "B：其中一名男子正在扫地。",
+        "C：有些人正在吃餐。",
+        "D：有些人坐在等候区。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-1/p1-3/3"
+      "item_key": "official-7-test-1/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

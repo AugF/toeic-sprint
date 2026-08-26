@@ -28,38 +28,58 @@
       "asset_key": "official-5-test-2/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Why（为什么） don't you change the time of the staff meeting（会议）?",
-    "content_translation": "中文辅助（离线预处理）：Why（为什么） don't you change the time of the staff meeting（会议）?"
+    "transcript": "Why didn't you change the time of the staff meeting?\nA. Sure, I have changed for a dollar.\nB. Just my laptop.\nC. I didn't organize that meeting.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2d529893e8a962a9a09c2ceb575f41d8c2b29bc633bbcf1014d38eda0aea447f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "你为什么没有更改员工会议的时间？\nA. 当然，我花了一块钱就改了。\nB. 只是我的笔记本电脑。\nC. 我没有组织那次会议。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0ca3ac650865d1b9ddf1bb07470477d7c2f33640e808e5ad3a2e1b0d6f79ed9f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Sure, I have change for a dollar.",
+        "Sure, I have changed for a dollar.",
         "Just my laptop.",
         "I didn't organize that meeting."
       ],
       "answer": "C",
-      "question": "Why don't you change the time of the staff meeting?",
+      "question": "Why didn't you change the time of the staff meeting?",
       "difficulty": "easy",
       "topic": "原因询问",
       "keywords": "why reason response",
-      "answer_explain": "原文依据：问句或陈述是“Why don't you change the time of the staff meeting?”，自然应答是“I didn't organize that meeting.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I didn't organize that meeting.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） don't you change the time of the staff meeting（会议）?",
+      "answer_explain": "原文依据：问句或陈述是“Why didn't you change the time of the staff meeting?”，自然应答是“I didn't organize that meeting.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I didn't organize that meeting.）。",
+      "question_translation": "你为什么没有更改员工会议的时间?",
       "choice_translations": [
-        "A：Sure, I have change for a dollar.",
-        "B：Just my laptop.",
-        "C：I didn't organize that meeting（会议）."
+        "A：当然,我花了一块钱就改了。",
+        "B：只是我的笔记本电脑。",
+        "C：我没有组织那次会议。"
       ],
       "question_type": "原因疑问句",
-      "evidence": "参考原文第 1 段：Why don't you change the time of the staff meeting?",
+      "evidence": "参考原文第 1 段：Why didn't you change the time of the staff meeting?",
       "strategy": "先识别原因疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "原因疑问句",
-        "evidence": "参考原文第 1 段：Why don't you change the time of the staff meeting?",
+        "evidence": "参考原文第 1 段：Why didn't you change the time of the staff meeting?",
         "strategy": "先识别原因疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Why don't you change the time of the staff meeting?”，自然应答是“I didn't organize that meeting.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I didn't organize that meeting.）。"
+        "analysis": "原文依据：问句或陈述是“Why didn't you change the time of the staff meeting?”，自然应答是“I didn't organize that meeting.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I didn't organize that meeting.）。"
       },
       "item_id": 21,
       "priority": {

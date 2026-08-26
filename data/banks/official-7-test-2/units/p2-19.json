@@ -28,8 +28,28 @@
       "asset_key": "official-7-test-2/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Are you able to stay late tonight to help set up?\n3M",
-    "content_translation": "中文辅助（离线预处理）：Are you able to stay late tonight to help set up?\n3M"
+    "transcript": "Are you able to stay late tonight to help set up?\nA. Yes, for an extra hour or two.\nB. Try that large display in the front.\nC. An expensive rate.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c58a8d1aca45b3afb7d8566a49a62fce422fa95cc5f0ef14e270d746928646c4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "你今晚能留下来帮忙布置一下吗？\nA. 是的，多一个小时或两个小时。\nB. 试试前面那个大型展示品。\nC. 一个昂贵的费率。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "16407e7ebc8eacd0aaedb0833a71051139f8fa864e87815588638d12d5b1ae4c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "An expensive rate."
       ],
       "answer": "A",
-      "question": "Are you able to stay late tonight to help set up? 3M",
+      "question": "Are you able to stay late tonight to help set up?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Are you able to stay late tonight to help set up? 3M”，自然应答是“Yes, for an extra hour or two.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, for an extra hour or two.）。",
-      "question_translation": "中文辅助（离线预处理）：Are you able to stay late tonight to help set up?\n3M",
+      "answer_explain": "原文依据：问句或陈述是“Are you able to stay late tonight to help set up?”，自然应答是“Yes, for an extra hour or two.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, for an extra hour or two.）。",
+      "question_translation": "你今晚能留下来帮忙布置一下吗?",
       "choice_translations": [
-        "A：Yes, for an extra hour or two.",
-        "B：Try that large display in the front.",
-        "C：An expensive rate."
+        "A：是的,多一个小时或两个小时。",
+        "B：试试前面那个大型展示品。",
+        "C：一个昂贵的费率。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Are you able to stay late tonight to help set up? 3M",
+      "evidence": "参考原文第 1 段：Are you able to stay late tonight to help set up?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Are you able to stay late tonight to help set up? 3M",
+        "evidence": "参考原文第 1 段：Are you able to stay late tonight to help set up?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Are you able to stay late tonight to help set up? 3M”，自然应答是“Yes, for an extra hour or two.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, for an extra hour or two.）。"
+        "analysis": "原文依据：问句或陈述是“Are you able to stay late tonight to help set up?”，自然应答是“Yes, for an extra hour or two.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, for an extra hour or two.）。"
       },
       "item_id": 19,
       "priority": {

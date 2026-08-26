@@ -31,8 +31,28 @@
       "asset_key": "official-7-test-2/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. He's removing a coat from a rack.\nB. He's arranging some merchandise in a display.\nC. He's trying on a hat in a store.\nD. He's selecting a pair of gloves from a basket.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1fc6c0dc8f0bd31ebcab4a8e4f7165436c75dd6666fa8995f2a2b81f700c15b9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 46
+      }
+    },
+    "transcript_translation": "A. 他正在从衣架上取一件外套。\nB. 他正在在一个展示柜里摆放一些商品。\nC. 他正在店里试戴一顶帽子。\nD. 他正在一个篮子里挑选一副手套。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "25e4a694a8ba7c7ce792dd7616edef89ac640a17c6a3f3afbd04adbcee1c2102"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“He's trying on a hat in a store.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（He's trying on a hat in a store.）。",
       "choice_translations": [
-        "A：He's removing a coat from a rack.",
-        "B：He's arranging some merchandise in a display.",
-        "C：He's trying on a hat in a store.",
-        "D：He's selecting a pair of gloves from a basket."
+        "A：他正在从衣架上取一件外套。",
+        "B：他正在在一个展示柜里摆放一些商品。",
+        "C：他正在店里试戴一顶帽子。",
+        "D：他正在一个篮子里挑选一副手套。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-2/p1-4/4"
+      "item_key": "official-7-test-2/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

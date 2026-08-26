@@ -46,9 +46,32 @@
       "asset_key": "official-10-test-2/images/part3/q068-070.jpg",
       "exists": true
     },
-    "transcript": "and graph.\nI'm really happy the four new retail outlets our\ncompany opened in the metropolitan area are bringing\nin lots of shoppers.\nHave you seen the quarterly\naverage-customer numbers?\nw Yes, ®the store I went to earlier today is the second\nmost visited. It almost seemed overcrowded!\nWell, that's a good problem to have! The regional\noperations manager should be pleased when we\ntesticn\npresent these numbers.\nKw I agree. ®I'm just a little concerned that the rapid\nexpansion leaves us without enough workers. All\nthose shoppers I saw made me think we could use\nmore staff.\nI•M ®| suggest we advertise some positions.\nAverage Number of Customers\nQuarterly)\nBallston\nBrunswick\nCenter\nDowntown\nT-UZ\nPike\nShopping\nMetro\nPlaza",
-    "transcript_translation": "中文辅助（离线预处理）：and graph.\nI'm really happy the four new retail outlets our\ncompany（公司） opened in the metropolitan area are bringing\nin lots of shoppers.\nHave you seen the quarterly\naverage-customer（顾客） numbers?\nw Yes, ®the store I went to earlier today is the second\nmost visited.\nIt almost seemed overcrowded!\nWell, that's a good problem to have!\nThe regional\noperations manager（经理） should be pleased when（何时） we\ntesticn\npresent these numbers.\nKw I agree.\n®I'm just a little concerned that the rapid\nexpansion leaves us without enough workers.\nAll\nthose shoppers I saw made me think we could use\nmore staff.\nI•M ®| suggest（表明/建议） we advertise some positions.\nAverage Number of Customers\nQuarterly)\nBallston\nBrunswick\nCenter\nDowntown\nT-UZ\nPike\nShopping\nMetro\nPlaza",
-    "content_translation": "中文辅助（离线预处理）：and graph.\nI'm really happy the four new retail outlets our\ncompany（公司） opened in the metropolitan area are bringing\nin lots of shoppers.\nHave you seen the quarterly\naverage-customer（顾客） numbers?\nw Yes, ®the store I went to earlier today is the second\nmost visited.\nIt almost seemed overcrowded!\nWell, that's a good problem to have!\nThe regional\noperations manager（经理） should be pleased when（何时） we\ntesticn\npresent these numbers.\nKw I agree.\n®I'm just a little concerned that the rapid\nexpansion leaves us without enough workers.\nAll\nthose shoppers I saw made me think we could use\nmore staff.\nI•M ®| suggest（表明/建议） we advertise some positions.\nAverage Number of Customers\nQuarterly)\nBallston\nBrunswick\nCenter\nDowntown\nT-UZ\nPike\nShopping\nMetro\nPlaza"
+    "transcript": "I'm really happy the four new retail outlets our company opened in the metropolitan area are bringing in lots of shoppers.\nHave you seen the quarterly average customer numbers?\nYes.\nThe store I went to earlier today is the second most visited.\nIt almost seemed overcrowded.\nWell, that's a good problem to have.\nThe regional operations manager should be pleased when we present these numbers.\nI agree.\nI'm just a little concerned that the rapid expansion leaves us without enough workers.\nAll those shoppers I saw made me think we could use more staff.\nI suggest we advertise some positions.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9f78769a11c27c03d259df7b52eb3fec17c0a13db5c1e3072eb9e10b39bb1ed3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part3/q068-070.mp3",
+      "metrics": {
+        "word_count": 102,
+        "legacy_word_count": 98,
+        "length_ratio": 1.041,
+        "legacy_coverage": 0.98
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "我很高兴我们公司在都会区开设的四个新零售店吸引了大量购物者。\n您看到季度平均顾客人数了吗？\n是的。\n今天早些时候我去的那家店是客流量第二大的。\n简直快要人满为患了。\n嗯，这是一个值得拥有的问题。\n当呈现这些数字时，区域运营经理应该会很高兴的。\n我同意。\n我只是有点担心快速扩张使我们缺乏足够的工人。\n看到那些购物者让我觉得我们可以增加更多员工。\n我建议我们招聘一些职位。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "103e15ce01c2b2553654a58ea7e1754d6f869aaae1e75dcd0f25cd99ae694e2d"
+    }
   },
   "items": [
     {
@@ -60,23 +83,23 @@
       ],
       "answer": "D",
       "question": "Look at the graphic. Which store did the woman visit today?",
-      "answer_explain": "原文依据：听力原文中提到“Metro”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Downtown Metro）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich store did the woman（女士） visit today?",
+      "answer_explain": "正确答案：D（Downtown Metro）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which store did the woman(女士) visit today?",
       "choice_translations": [
-        "A：Ballston",
-        "B：Brunswick Pike",
-        "C：Center Shopping Plaza",
-        "D：Downtown Metro"
+        "A:Ballston",
+        "B:Brunswick Pike",
+        "C:Center Shopping Plaza",
+        "D:Downtown Metro"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：w Yes, ®the store I went to earlier today is the second",
+      "evidence": "参考听力原文：“The store I went to earlier today is the second most visited.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：w Yes, ®the store I went to earlier today is the second",
+        "evidence": "参考听力原文：“The store I went to earlier today is the second most visited.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Metro”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Downtown Metro）。"
+        "analysis": "正确答案：D（Downtown Metro）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 68,
       "priority": {
@@ -114,23 +137,23 @@
       ],
       "answer": "C",
       "question": "Why is the woman concerned?",
-      "answer_explain": "原文依据：听力原文中提到“more staff.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（More staff may be needed.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the woman（女士） concerned?",
+      "answer_explain": "正确答案：C（More staff may be needed.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the woman(女士) concerned?",
       "choice_translations": [
-        "A：A facility failed a test.",
-        "B：A store closed early.",
-        "C：More staff may be needed.",
-        "D：New designs are not approved."
+        "A:A facility failed a test.",
+        "B:A store closed early.",
+        "C:More staff may be needed.",
+        "D:New designs are not approved."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 13 段：Kw I agree. ®I'm just a little concerned that the rapid",
+      "evidence": "参考听力原文：“All those shoppers I saw made me think we could use more staff.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 13 段：Kw I agree. ®I'm just a little concerned that the rapid",
+        "evidence": "参考听力原文：“All those shoppers I saw made me think we could use more staff.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“more staff.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（More staff may be needed.）。"
+        "analysis": "正确答案：C（More staff may be needed.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 69,
       "priority": {
@@ -168,23 +191,23 @@
       ],
       "answer": "B",
       "question": "What does the man suggest?",
-      "answer_explain": "原文依据：听力原文中提到“I•M ®| suggest we advertise some positions.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Creating some advertisements）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） suggest（表明/建议）?",
+      "answer_explain": "正确答案：B（Creating some advertisements）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) suggest(表明/建议)?",
       "choice_translations": [
-        "A：Visiting more stores",
-        "B：Creating some advertisements",
-        "C：Launching an online survey",
-        "D：Purchasing more inventory"
+        "A:Visiting more stores",
+        "B:Creating some advertisements",
+        "C:Launching an online survey",
+        "D:Purchasing more inventory"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 17 段：I•M ®| suggest we advertise some positions.",
+      "evidence": "参考听力原文：“I suggest we advertise some positions.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 17 段：I•M ®| suggest we advertise some positions.",
+        "evidence": "参考听力原文：“I suggest we advertise some positions.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I•M ®| suggest we advertise some positions.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Creating some advertisements）。"
+        "analysis": "正确答案：B（Creating some advertisements）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 70,
       "priority": {

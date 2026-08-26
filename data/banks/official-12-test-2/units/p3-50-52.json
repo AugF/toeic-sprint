@@ -41,9 +41,31 @@
       "asset_key": "official-12-test-2/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "a0\nm Hi, Kelly. ODid you still want to talk about some\nChlc5ld. Kel\nconcerns shoppers have been asking you about?\nYes, especifically customers who order online and pick\nup their items in our store. Certain products aren't\nshowing up as available on our Web site for customers\nto purchase-but when I check the shelves, we do\nhave them in stock.\nam That's not good. DAre there any specific products\nyou're aware of?\nw Um, Gour large bags of topsoil and Kentucky grass\nseed. Oh, and uh, Ored mulch.",
-    "transcript_translation": "中文辅助（离线预处理）：a0\nm Hi, Kelly.\nODid you still want to talk about some\nChlc5ld.\nKel\nconcerns shoppers have been asking you about?\nYes, especifically customers who（谁） order（订单） online and pick\nup their items in our store.\nCertain products aren't\nshowing up as available（可用的） on our Web site for customers\nto purchase（购买）-but when（何时） I check the shelves, we do\nhave them in stock.\nam That's not good.\nDAre there any specific products\nyou're aware of?\nw Um, Gour large bags of topsoil and Kentucky grass\nseed.\nOh, and uh, Ored mulch.",
-    "content_translation": "中文辅助（离线预处理）：a0\nm Hi, Kelly.\nODid you still want to talk about some\nChlc5ld.\nKel\nconcerns shoppers have been asking you about?\nYes, especifically customers who（谁） order（订单） online and pick\nup their items in our store.\nCertain products aren't\nshowing up as available（可用的） on our Web site for customers\nto purchase（购买）-but when（何时） I check the shelves, we do\nhave them in stock.\nam That's not good.\nDAre there any specific products\nyou're aware of?\nw Um, Gour large bags of topsoil and Kentucky grass\nseed.\nOh, and uh, Ored mulch."
+    "transcript": "Hi, Kelly.\nDid you still want to talk about some concerns shoppers have been asking you about?\nYes.\nSpecifically, customers who order online and pick up their items in our store.\nCertain products aren't showing up as available on our website for customers to purchase.\nBut when I check the shelves, we do have them in stock.\nThat's not good.\nAre there any specific products you're aware of?\nOur large bags of topsoil and Kentucky grass seed.\nOh, and red mulch.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "50c9e5b47e24dde059b9e0288d2cac46dab62aae5154569ebc8edd38f48e1b95",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 81,
+        "legacy_word_count": 89,
+        "length_ratio": 0.91,
+        "legacy_coverage": 0.809
+      }
+    },
+    "transcript_translation": "嗨，Kelly。\n你是否还想谈谈顾客向你提出的一些顾虑？\n是的。\n具体来说是那些在线订购并在我们店里取货的客户。\n某些产品在我们的网站上没有显示为可供顾客购买的库存。\n但当我检查货架时，我们确实有现货。\n这不太好。\n你是否知道任何特定的产品？\n我们的大袋顶级土壤和肯塔基草籽。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a3521b8bfb9f25984ceb6ef9a38a70e15b1ae3911ecd519e7d36b18f35ca6ab3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "C",
       "question": "Why does the woman want to speak with the man?",
-      "answer_explain": "原文依据：听力原文中提到“ODid you still want to talk about some”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To share some feedback）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） want to speak with the man（男士）?",
+      "answer_explain": "正确答案：C（To share some feedback）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the woman(女士) want to speak with the man(男士)?",
       "choice_translations": [
-        "A：To change her work（工作） hours",
-        "B：To request a salary increase",
-        "C：To share some feedback",
-        "D：To present a new idea"
+        "A:To change her work(工作) hours",
+        "B:To request a salary increase",
+        "C:To share some feedback",
+        "D:To present a new idea"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a0",
+      "evidence": "参考听力原文：“Did you still want to talk about some concerns shoppers have been asking you about?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a0",
+        "evidence": "参考听力原文：“Did you still want to talk about some concerns shoppers have been asking you about?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“ODid you still want to talk about some”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To share some feedback）。"
+        "analysis": "正确答案：C（To share some feedback）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "A",
       "question": "What does the woman say about a Web site?",
-      "answer_explain": "原文依据：听力原文中提到“showing up as available on our Web site for customers”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It is displaying inventory incorrectly.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say about a Web site?",
+      "answer_explain": "正确答案：A（It is displaying inventory incorrectly.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say about a Web site?",
       "choice_translations": [
-        "A：It is displaying inventory incorrectly.",
-        "B：It is showing the wrong prices.",
-        "C：It has been updated.",
-        "D：It has some broken links."
+        "A:It is displaying inventory incorrectly.",
+        "B:It is showing the wrong prices.",
+        "C:It has been updated.",
+        "D:It has some broken links."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：a0",
+      "evidence": "参考听力原文：“Did you still want to talk about some concerns shoppers have been asking you about?”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：a0",
+        "evidence": "参考听力原文：“Did you still want to talk about some concerns shoppers have been asking you about?”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“showing up as available on our Web site for customers”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It is displaying inventory incorrectly.）。"
+        "analysis": "正确答案：A（It is displaying inventory incorrectly.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "B",
       "question": "Where do the speakers most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“up their items in our store.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（At a garden supply store）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） do the speakers most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：B（At a garden supply store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) do the speakers most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a drug store",
-        "B：At a garden supply store",
-        "C：At a botanical garden",
-        "D：At an equipment manufacturer"
+        "A:At a drug store",
+        "B:At a garden supply store",
+        "C:At a botanical garden",
+        "D:At an equipment manufacturer"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：a0",
+      "evidence": "参考听力原文：“Specifically, customers who order online and pick up their items in our store.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：a0",
+        "evidence": "参考听力原文：“Specifically, customers who order online and pick up their items in our store.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“up their items in our store.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（At a garden supply store）。"
+        "analysis": "正确答案：B（At a garden supply store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

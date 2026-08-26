@@ -27,13 +27,33 @@
       "asset_key": "official-9-test-2/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Could you listen to my sales pitch?",
-    "content_translation": "中文辅助（离线预处理）：Could you listen to my sales pitch?"
+    "transcript": "Could you listen to my sales pitch?\nA. That's on the 10th floor.\nB. I have a few minutes on Monday.\nC. Yes, I bought it on sale.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9f2a5eba9d5b4402ceb82adceda4cdc987fae5c87547b476908bee9fd947d58f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "你能听一下我的销售推介吗？\nA. 在 10 层。\nB. 我周一有空。\nC. 是的，我在打折时买的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b9cb01108a7c64fad572849ffe5ad0491b3dcbb0a086d813d395e574ac1ba6b1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "That's on the tenth floor.",
+        "That's on the 10th floor.",
         "I have a few minutes on Monday.",
         "Yes, I bought it on sale."
       ],
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Could you listen to my sales pitch?”，自然应答是“I have a few minutes on Monday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I have a few minutes on Monday.）。",
-      "question_translation": "中文辅助（离线预处理）：Could you listen to my sales pitch?",
+      "question_translation": "你能听一下我的销售推介吗?",
       "choice_translations": [
-        "A：That's on the tenth floor.",
-        "B：I have a few minutes on Monday.",
-        "C：Yes, I bought it on sale."
+        "A：在 10 层。",
+        "B：我周一有空。",
+        "C：是的,我在打折时买的。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Could you listen to my sales pitch?",

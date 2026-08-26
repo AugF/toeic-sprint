@@ -36,9 +36,31 @@
       "asset_key": "official-3-test-1/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "EG“ Hi, it’s Jeff from Personnel calling. rl be\nconducting the preliminary interviews for the\nmanager position in your division. Is there any\nspecific you want the candidates to be able to\nWell, | know you ask about their education\ncredentials and work experience. But Q| reall\nsomeone who can travel as part of this positic\nYes, | see frequent international and domestic\nin the job requirements. K—| won't invite ar\nfor a second interview who isn’t interested in t\nExactly. Oh, by the way, @don't forget that I'll\nout the week of July sixth on holiday. Please c\nschedule suitable candidates to interview with\nduring that time.",
-    "transcript_translation": "EG“ 您好，我是人事部的杰夫来电。我将为贵部门的经理职位进行初步面试。您是否希望候选人具备任何特定的能力？嗯，我知道您会询问他们的教育背景和工作经验。但我真的需要一个可以出差的候选人，这是这个职位要求的一部分。是的，我看到工作要求中提到了频繁的国际和国内出差。我不会邀请那些对这个职位不感兴趣的人进行第二次面试。完全正确。哦，对了，别忘了我七月六号那一周休假。请在那段时间安排合适的候选人来面试。”",
-    "content_translation": "EG“ 您好，我是人事部的杰夫来电。我将为贵部门的经理职位进行初步面试。您是否希望候选人具备任何特定的能力？嗯，我知道您会询问他们的教育背景和工作经验。但我真的需要一个可以出差的候选人，这是这个职位要求的一部分。是的，我看到工作要求中提到了频繁的国际和国内出差。我不会邀请那些对这个职位不感兴趣的人进行第二次面试。完全正确。哦，对了，别忘了我七月六号那一周休假。请在那段时间安排合适的候选人来面试。”"
+    "transcript": "Hi, it's Jeff from Personnel Calling.\nI'll be conducting the preliminary interviews for the project manager position in your division.\nIs there anything specific you want the candidates to be able to do?\nWell, I know you ask about their education credentials and work experience, but I really need someone who can travel as part of this position.\nYes, I see frequent international and domestic travel in the job requirements.\nOkay, I won't invite anyone for a second interview who isn't interested in that.\nExactly.\nOh, by the way, don't forget that I'll be out the week of July 6th on holiday.\nPlease don't schedule suitable candidates to interview with me during that time.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0b700257fe04570fe71705864e3363de298c9f0b6b3d85f316209c03b6c51b3b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 114,
+        "legacy_word_count": 103,
+        "length_ratio": 1.107,
+        "legacy_coverage": 0.913
+      }
+    },
+    "transcript_translation": "嗨，我是人事部的 Jeff 通讯。\n我将负责你们部门项目经理职位的初步面试。\n有没有什么特定的技能您希望候选人具备？\n嗯，我知道您会问他们的教育资历和工作经验，但我真的需要一个可以出差担任这个职位的人。\n是的，我在职位要求中看到了频繁的国内外差旅。\n好的，我不会邀请任何对这一点不感兴趣的人进行第二次面试。\n没错。\n哦，顺便说一下，别忘了我七月六号那一周休假。\n请不要在那段时间安排合适的候选人来面试我。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "cff9b2e574c1bde2c186af32ddb58fa2a524a4ec5e84400685322f08161d987d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "A",
       "question": "What are the speakers discussing?",
-      "answer_explain": "原文依据：听力原文中提到“in the job requirements.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Interviewing job applicants）。",
-      "question_translation": "说话者们在讨论什么？",
+      "answer_explain": "正确答案：A（Interviewing job applicants）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者们在讨论什么?",
       "choice_translations": [
-        "A：面试求职者",
-        "B：做出晋升决定",
-        "C：为紧急项目做准备",
-        "D：吸引国际客户"
+        "A:面试求职者",
+        "B:做出晋升决定",
+        "C:为紧急项目做准备",
+        "D:吸引国际客户"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EG“ Hi, it’s Jeff from Personnel calling. rl be",
+      "evidence": "参考听力原文：“Yes, I see frequent international and domestic travel in the job requirements.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EG“ Hi, it’s Jeff from Personnel calling. rl be",
+        "evidence": "参考听力原文：“Yes, I see frequent international and domestic travel in the job requirements.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“in the job requirements.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Interviewing job applicants）。"
+        "analysis": "正确答案：A（Interviewing job applicants）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "D",
       "question": "What does the woman say staff should be able to do?",
-      "answer_explain": "原文依据：听力原文中提到“someone who can travel as part of this positic”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Travel frequently）。",
-      "question_translation": "女士说员工应该能够做什么？",
+      "answer_explain": "正确答案：D（Travel frequently）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士说员工应该能够做什么?",
       "choice_translations": [
-        "A：周末工作",
-        "B：处理多个账户",
-        "C：说外语",
-        "D：经常出差"
+        "A:周末工作",
+        "B:处理多个账户",
+        "C:说外语",
+        "D:经常出差"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EG“ Hi, it’s Jeff from Personnel calling. rl be",
+      "evidence": "参考听力原文：“Well, I know you ask about their education credentials and work experience, but I really need someone who can travel as part of this position.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EG“ Hi, it’s Jeff from Personnel calling. rl be",
+        "evidence": "参考听力原文：“Well, I know you ask about their education credentials and work experience, but I really need someone who can travel as part of this position.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“someone who can travel as part of this positic”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Travel frequently）。"
+        "analysis": "正确答案：D（Travel frequently）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -143,28 +165,28 @@
       "choices": [
         "Her letter of recommendation",
         "Her upcoming vacation",
-        "Alimited budget",
-        "Acontract deadline"
+        "A limited budget",
+        "A contract deadline"
       ],
       "answer": "B",
       "question": "What does the woman remind the man about?",
-      "answer_explain": "原文依据：听力原文中提到“specific you want the candidates to be able to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Her upcoming vacation）。",
-      "question_translation": "女士提醒男士什么？",
+      "answer_explain": "正确答案：B（Her upcoming vacation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士提醒男士什么?",
       "choice_translations": [
-        "A：她的推荐信",
-        "B：她即将休的假期",
-        "C：有限的预算",
-        "D：合同截止日期"
+        "A:她的推荐信",
+        "B:她即将休的假期",
+        "C:有限的预算",
+        "D:合同截止日期"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EG“ Hi, it’s Jeff from Personnel calling. rl be",
+      "evidence": "参考听力原文：“Well, I know you ask about their education credentials and work experience, but I really need someone who can travel as part of this position.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EG“ Hi, it’s Jeff from Personnel calling. rl be",
+        "evidence": "参考听力原文：“Well, I know you ask about their education credentials and work experience, but I really need someone who can travel as part of this position.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“specific you want the candidates to be able to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Her upcoming vacation）。"
+        "analysis": "正确答案：B（Her upcoming vacation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

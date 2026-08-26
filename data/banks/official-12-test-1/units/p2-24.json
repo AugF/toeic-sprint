@@ -28,38 +28,58 @@
       "asset_key": "official-12-test-1/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：al Won't the fund-raising committee be meeting（会议） next week?\nnExt.\nYes",
-    "content_translation": "中文辅助（离线预处理）：al Won't the fund-raising committee be meeting（会议） next week?\nnExt.\nYes"
+    "transcript": "Won't the fundraising committee be meeting next week?\nA. Several people will be on vacation then.\nB. The meeting room is upstairs.\nC. Actually, she works in finance.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "072d7ae58afa1e33f3a714ca8601f1716ad2e0f4d84b1d517f7027abddb44a04",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "筹款委员会不打算下周开会吗？\nA. 那时几个人都在度假。\nB. 会议室在楼上。\nC. 实际上，她在财务部门工作。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0db8ce1093aef41b7233f9984756e9f29215e4c0e340496ab1cdeae357ff225e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Several people will be on vacation then.",
         "The meeting room is upstairs.",
-        "Actually, she works in Finance."
+        "Actually, she works in finance."
       ],
       "answer": "A",
-      "question": "al Won't the fund-raising committee be meeting next week? nExt. Yes",
+      "question": "Won't the fundraising committee be meeting next week?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“al Won't the fund-raising committee be meeting next week? nExt. Yes”，自然应答是“Several people will be on vacation then.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Several people will be on vacation then.）。",
-      "question_translation": "中文辅助（离线预处理）：al Won't the fund-raising committee be meeting（会议） next week?\nnExt.\nYes",
+      "answer_explain": "原文依据：问句或陈述是“Won't the fundraising committee be meeting next week?”，自然应答是“Several people will be on vacation then.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Several people will be on vacation then.）。",
+      "question_translation": "筹款委员会不打算下周开会吗?",
       "choice_translations": [
-        "A：Several people will be on vacation then.",
-        "B：The meeting（会议） room is upstairs.",
-        "C：Actually, she works in Finance."
+        "A：那时几个人都在度假。",
+        "B：会议室在楼上。",
+        "C：实际上,她在财务部门工作。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：al Won't the fund-raising committee be meeting next week? nExt. Yes",
+      "evidence": "参考原文第 1 段：Won't the fundraising committee be meeting next week?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：al Won't the fund-raising committee be meeting next week? nExt. Yes",
+        "evidence": "参考原文第 1 段：Won't the fundraising committee be meeting next week?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“al Won't the fund-raising committee be meeting next week? nExt. Yes”，自然应答是“Several people will be on vacation then.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Several people will be on vacation then.）。"
+        "analysis": "原文依据：问句或陈述是“Won't the fundraising committee be meeting next week?”，自然应答是“Several people will be on vacation then.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Several people will be on vacation then.）。"
       },
       "item_id": 24,
       "priority": {

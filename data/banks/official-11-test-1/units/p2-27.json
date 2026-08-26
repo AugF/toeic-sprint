@@ -42,14 +42,34 @@
       "asset_key": "official-11-test-1/audio/part2/q027.mp3",
       "exists": true
     },
-    "transcript_translation": "我听说第五大道上即将开一家新餐厅！\nA：这把钥匙能打开这把锁。\nB：我刚刚在那里吃过午饭。\nC：不，我更喜欢意大利菜。",
-    "content_translation": "本段听力围绕“陈述句应答”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "I heard\nA. new restaurant is opening on Fifth Avenue. A. This key will open the lock.\nB. I just had lunch there.\nC. No, I prefer Italian food.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "072bd336ec895a7739964f63db9b095c4cf0efb4b5dcc4c36f72aa79c1b2c116",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q027.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "我听说\nA. 第五大道要开一家新餐厅。 A. 这个钥匙可以打开锁。\nB. 我刚才在那里吃过午饭。\nC. 不，我更喜欢意大利菜。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "58e3b8d28f8c2715d1d13f4be6e7004e986c098d77490dc6addaccf64bf8b506"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
-      "question": "I heard a new restaurant is opening on Fifth Avenue!",
+      "question": "I heard",
       "choices": [
-        "This key will open the lock.",
+        "new restaurant is opening on Fifth Avenue. A. This key will open the lock.",
         "I just had lunch there.",
         "No, I prefer Italian food."
       ],
@@ -59,22 +79,22 @@
       "keywords": "statement natural response",
       "answer_explain": "原文依据：说第五大道将开新餐厅，答句说 I just had lunch there。 选择理由：B中的 there指该餐厅或地点，直接延续话题；A谈钥匙，C无端否定并谈菜系。正确答案：B（I just had lunch there.）。",
       "question_type": "陈述句应答",
-      "evidence": "参考原文第 1 段第 1 句：I heard a new restaurant is opening on Fifth Avenue!",
+      "evidence": "参考原文第 1 段第 1 句：I heard",
       "choice_translations": [
-        "A：这把钥匙能打开这把锁。",
-        "B：我刚刚在那里吃过午饭。",
-        "C：不，我更喜欢意大利菜。"
+        "A：第五大道要开一家新餐厅。 A. 这个钥匙可以打开锁。",
+        "B：我刚才在那里吃过午饭。",
+        "C：不,我更喜欢意大利菜。"
       ],
       "response_style": "可直接回答，也常用补充信息间接回答",
       "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段第 1 句：I heard a new restaurant is opening on Fifth Avenue!",
+        "evidence": "参考原文第 1 段第 1 句：I heard",
         "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：说第五大道将开新餐厅，答句说 I just had lunch there。 选择理由：B中的 there指该餐厅或地点，直接延续话题；A谈钥匙，C无端否定并谈菜系。正确答案：B（I just had lunch there.）。"
       },
-      "question_translation": "我听说第五大道上即将开一家新餐厅！",
+      "question_translation": "我听说",
       "item_id": 27,
       "priority": {
         "level": "P1",

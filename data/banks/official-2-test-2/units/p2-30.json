@@ -26,38 +26,58 @@
       "asset_key": "official-2-test-2/audio/part2/q030.mp3",
       "exists": true
     },
-    "transcript_translation": "[l™ 标签机什么时候能修好？ fw\nA. 是的，你们应该成对工作。 IER C DIGHL, [ER. EABRBEDSES\nB. 配料表在标签上。 DADDTWELIE, BMVEBA SNUEWT ER\nC. 他们是 BLOAS y 7",
-    "content_translation": "[l™ 标签机什么时候能修好？ fw\nA. 是的，你们应该成对工作。 IER C DIGHL, [ER. EABRBEDSES\nB. 配料表在标签上。 DADDTWELIE, BMVEBA SNUEWT ER\nC. 他们是 BLOAS y 7"
+    "transcript": "When will the labeling machine be repaired?\nA. Yes, you should work in pairs.\nB. The list of ingredients is on the label.\nC. They still don't know what's wrong with it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "cacd91547ec663f42d378197c313a2553099569d18feba98d8266e33de3ba9de",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part2/q030.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "标签机什么时候能修好？\nA. 是的，你应该成对工作。\nB. 配料表在标签上。\nC. 他们还是不知道它哪里出了问题。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "463e0afed6672a29d80751413c7e19a7de0aa1d5e0a599de5c3cd27726445a50"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Yes, you should work in pairs. IER C DIGHL, [ER. EABRBEDSES",
-        "The list of ingredients is on the label. DADDTWELIE, BMVEBA SNUEWT ER",
-        "HEM. They lsBLOAS y 7"
+        "Yes, you should work in pairs.",
+        "The list of ingredients is on the label.",
+        "They still don't know what's wrong with it."
       ],
       "answer": "C",
-      "question": "[l™ When will the labeling machine be repaired? fw",
+      "question": "When will the labeling machine be repaired?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“[l™ When will the labeling machine be repaired? fw”，自然应答是“HEM. They lsBLOAS y 7”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（HEM. They lsBLOAS y 7）。",
-      "question_translation": "[l™ 标签机什么时候能修好？ fw",
+      "answer_explain": "原文依据：问句或陈述是“When will the labeling machine be repaired?”，自然应答是“They still don't know what's wrong with it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（They still don't know what's wrong with it.）。",
+      "question_translation": "标签机什么时候能修好?",
       "choice_translations": [
-        "A：是的，你们应该成对工作。 IER C DIGHL, [ER. EABRBEDSES",
-        "B：配料表在标签上。 DADDTWELIE, BMVEBA SNUEWT ER",
-        "C：他们是 BLOAS y 7"
+        "A：是的,你应该成对工作。",
+        "B：配料表在标签上。",
+        "C：他们还是不知道它哪里出了问题。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：[l™ When will the labeling machine be repaired? fw",
+      "evidence": "参考原文第 1 段：When will the labeling machine be repaired?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：[l™ When will the labeling machine be repaired? fw",
+        "evidence": "参考原文第 1 段：When will the labeling machine be repaired?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“[l™ When will the labeling machine be repaired? fw”，自然应答是“HEM. They lsBLOAS y 7”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（HEM. They lsBLOAS y 7）。"
+        "analysis": "原文依据：问句或陈述是“When will the labeling machine be repaired?”，自然应答是“They still don't know what's wrong with it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（They still don't know what's wrong with it.）。"
       },
       "item_id": 30,
       "priority": {

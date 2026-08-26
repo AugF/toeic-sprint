@@ -40,9 +40,32 @@
       "asset_key": "official-6-test-1/audio/part3/q065-067.mp3",
       "exists": true
     },
-    "transcript": "and map.\nKim Ol'm very glad you've decided to rent an apartment in\nour complex, Ms. Kendall. I'm sure you're going to love\nliving here.\nEw Thank you! I'm excited that the complex has a gym.\nI'll definitely use that!\nm Absolutely. Just don't forget that you'll need a key to\nget in. The gym key's included on the ring with the\nkeys to your new apartment.\nEw OK! Oh... do I have an assigned parking spot?\nI'm glad you asked. ®Let me give you a map of the\ngrounds. Each tenant is assigned one parking\nspot. Yours is in the lot next to the garden, behind the\nbuilding.\nMAP OF GROUNDS\nParking Area 4\nGarden\nBI\nParking\nBuilding\nParking\nArea\nArea\nEntrance\nParking Area 2\nVP2",
-    "transcript_translation": "和地图。\nKim 我很高兴您决定在我们小区租一套公寓，Kendall 女士。我确信您会喜欢住在这里的。\n谢谢！我很兴奋这个小区有健身房。\n我肯定会用上的！\n当然可以。只是别忘了您需要钥匙才能进去。健身房的钥匙包含在您的新公寓钥匙环上。\n好的！哦……我有指定的停车位吗？\n你问得好。我给您一张小区的地图。每位租户都会分配一个停车位。您的车位在花园旁，建筑后面的停车场。\n小区地图\n停车场 4\n花园\nBI\n停车场\n建筑\n停车场\n区域\n区域\n入口\n停车场 2\nVP2",
-    "content_translation": "和地图。\nKim 我很高兴您决定在我们小区租一套公寓，Kendall 女士。我确信您会喜欢住在这里的。\n谢谢！我很兴奋这个小区有健身房。\n我肯定会用上的！\n当然可以。只是别忘了您需要钥匙才能进去。健身房的钥匙包含在您的新公寓钥匙环上。\n好的！哦……我有指定的停车位吗？\n你问得好。我给您一张小区的地图。每位租户都会分配一个停车位。您的车位在花园旁，建筑后面的停车场。\n小区地图\n停车场 4\n花园\nBI\n停车场\n建筑\n停车场\n区域\n区域\n入口\n停车场 2\nVP2"
+    "transcript": "I'm very glad you've decided to rent an apartment in our complex, Ms. Kendall.\nI'm sure you're going to love living here.\nThank you.\nI'm excited that the complex has a gym.\nI'll definitely use that.\nAbsolutely.\nJust don't forget that you'll need a key to get in.\nThe gym key is included on the ring with the keys to your new apartment.\nOkay.\nOh, do I have an assigned parking spot?\nI'm glad you asked.\nLet me give you a map of the grounds.\nEach tenant is assigned one parking spot.\nYours is in the lot next to the garden behind the building.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "98ac88c394b0303a4665745ff685c21e436ee770dd4f4e73a193520bea74c867",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 106,
+        "legacy_word_count": 121,
+        "length_ratio": 0.876,
+        "legacy_coverage": 0.868
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "肯德尔女士，我很高兴您决定在我们小区租一套公寓。\n我相信您会喜欢住在这里的。\n谢谢。\n我很兴奋这个小区有健身房。\n我肯定会用到的。\n当然了。\n只是别忘了您需要一把钥匙才能进去。\n健身房的钥匙包含在您的新公寓的钥匙环上。\n好的。\n哦，我有分配的停车位吗？\n很高兴您问起这个问题。\n让我给您一张小区地图。\n每位租户都会分配一个停车位。\n您的停在建筑后面花园旁边的停车场。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "8214583d052d8218d804ca2bead599753beb11b5b3fbe2cdb8ee698a494c143d"
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "B",
       "question": "What most likely is the man's job?",
-      "answer_explain": "原文依据：听力原文中提到“Kim Ol'm very glad you've decided to rent an apartment in”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Apartment manager）。",
-      "question_translation": "男士最可能是做什么的？",
+      "answer_explain": "正确答案：B（Apartment manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士最可能是做什么的?",
       "choice_translations": [
-        "A：健身教练",
-        "B：公寓经理",
-        "C：酒店前台",
-        "D：室内设计师"
+        "A:健身教练",
+        "B:公寓经理",
+        "C:酒店前台",
+        "D:室内设计师"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：and map.",
+      "evidence": "参考听力原文：“I'm very glad you've decided to rent an apartment in our complex, Ms. Kendall.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：and map.",
+        "evidence": "参考听力原文：“I'm very glad you've decided to rent an apartment in our complex, Ms. Kendall.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Kim Ol'm very glad you've decided to rent an apartment in”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Apartment manager）。"
+        "analysis": "正确答案：B（Apartment manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 65,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "D",
       "question": "What does the woman say she is excited about?",
-      "answer_explain": "原文依据：听力原文中提到“I'm excited that the complex has a gym.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Using a facility）。",
-      "question_translation": "女士说她对什么感到兴奋？",
+      "answer_explain": "正确答案：D（Using a facility）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士说她对什么感到兴奋?",
       "choice_translations": [
-        "A：有更多空间",
-        "B：减少开支",
-        "C：度假",
-        "D：使用设施"
+        "A:有更多空间",
+        "B:减少开支",
+        "C:度假",
+        "D:使用设施"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：Ew Thank you! I'm excited that the complex has a gym.",
+      "evidence": "参考听力原文：“I'm excited that the complex has a gym.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：Ew Thank you! I'm excited that the complex has a gym.",
+        "evidence": "参考听力原文：“I'm excited that the complex has a gym.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“I'm excited that the complex has a gym.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Using a facility）。"
+        "analysis": "正确答案：D（Using a facility）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 66,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "D",
       "question": "Look at the graphic. Where should the woman park her car?",
-      "answer_explain": "原文依据：听力原文中提到“Parking Area 4”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（In Parking Area 4）。",
-      "question_translation": "看看图表。女士应该把车停在哪里？",
+      "answer_explain": "正确答案：D（In Parking Area 4）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "看看图表。女士应该把车停在哪里?",
       "choice_translations": [
-        "A：在停车场 1",
-        "B：在停车场 2",
-        "C：在停车场 3",
-        "D：在停车场 4"
+        "A:在停车场 1",
+        "B:在停车场 2",
+        "C:在停车场 3",
+        "D:在停车场 4"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and map.",
+      "evidence": "参考听力原文：“Each tenant is assigned one parking spot.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and map.",
+        "evidence": "参考听力原文：“Each tenant is assigned one parking spot.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Parking Area 4”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（In Parking Area 4）。"
+        "analysis": "正确答案：D（In Parking Area 4）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 67,
       "priority": {

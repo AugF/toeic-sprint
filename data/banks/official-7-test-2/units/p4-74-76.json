@@ -39,9 +39,31 @@
       "asset_key": "official-7-test-2/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nNow that everyone has arrived, let's start our meeting\nI'm happy to announce that business has increased this\nmonth due to the new line of outdoor clothing we've added\nto our store. However, since we moved things around\nto accommodate the additional jackets, gloves, and hats,\npeople are having trouble finding what they're looking for.\nCustomers were really used to the old layout. So, please\nkeep this in mind and be extra helpful to our customers in\nthe coming weeks.",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nNow that everyone has arrived, let's start our meeting（会议）\nI'm happy to announce that business has increased this\nmonth due to the new line of outdoor clothing we've added\nto our store.\nHowever, since we moved things around\nto accommodate the additional jackets, gloves, and hats,\npeople are having trouble finding what（什么） they're looking for.\nCustomers were really used to the old layout.\nSo, please（请）\nkeep this in mind and be extra helpful to our customers in\nthe coming weeks.",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nNow that everyone has arrived, let's start our meeting（会议）\nI'm happy to announce that business has increased this\nmonth due to the new line of outdoor clothing we've added\nto our store.\nHowever, since we moved things around\nto accommodate the additional jackets, gloves, and hats,\npeople are having trouble finding what（什么） they're looking for.\nCustomers were really used to the old layout.\nSo, please（请）\nkeep this in mind and be extra helpful to our customers in\nthe coming weeks."
+    "transcript": "Now that everyone has arrived, let's start our meeting.\nI'm happy to announce that business has increased this month due to the new line of outdoor clothing we've added to our store.\nHowever, since we moved things around to accommodate the additional jackets, gloves, and hats, people are having trouble finding what they're looking for.\nCustomers were really used to the old layout, so please keep this in mind and be extra helpful to our customers in the coming weeks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "91c5026ce220561f42ffc9f94b00a4d334d6ef8bd3223db12e15871b1970c578",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 80,
+        "legacy_word_count": 82,
+        "length_ratio": 0.976,
+        "legacy_coverage": 0.976
+      }
+    },
+    "transcript_translation": "既然大家都到了，我们开始我们的会议吧。\n我很高兴地宣布，由于我们在店里增加了一系列户外服装的新产品线，本月业务有所增长。\n然而，因为为了容纳额外的夹克、手套和帽子而重新布置了东西，人们在寻找他们想要的东西时遇到了困难。\n顾客们非常习惯以前的布局，所以请记住这一点，并在接下来的几周里对我们的顾客格外有帮助。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7a49af4102e2798e3aedb279e7f28e8992c29fa855c7996cde0957e4d9a42394"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "What kind of store does the speaker most likely manage?",
-      "answer_explain": "原文依据：听力原文中提到“month due to the new line of outdoor clothing we've added”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（A clothing store）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） kind of store does the speaker（说话者） most likely（最可能） manage?",
+      "answer_explain": "正确答案：D（A clothing store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) kind of store does the speaker(说话者) most likely(最可能) manage?",
       "choice_translations": [
-        "A：A stationery store",
-        "B：An electronics store",
-        "C：A grocery store",
-        "D：A clothing store"
+        "A:A stationery store",
+        "B:An electronics store",
+        "C:A grocery store",
+        "D:A clothing store"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 5 段：to our store. However, since we moved things around",
+      "evidence": "参考听力原文：“I'm happy to announce that business has increased this month due to the new line of outdoor clothing we've added to our store.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 5 段：to our store. However, since we moved things around",
+        "evidence": "参考听力原文：“I'm happy to announce that business has increased this month due to the new line of outdoor clothing we've added to our store.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“month due to the new line of outdoor clothing we've added”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（A clothing store）。"
+        "analysis": "正确答案：D（A clothing store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What are customers having difficulty with?",
-      "answer_explain": "原文依据：听力原文中提到“people are having trouble finding what they're looking for.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Finding items）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are customers having difficulty with?",
+      "answer_explain": "正确答案：B（Finding items）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are customers having difficulty with?",
       "choice_translations": [
-        "A：Submitting orders",
-        "B：Finding items",
-        "C：Returning products",
-        "D：Contacting staff"
+        "A:Submitting orders",
+        "B:Finding items",
+        "C:Returning products",
+        "D:Contacting staff"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：people are having trouble finding what they're looking for.",
+      "evidence": "参考听力原文：“However, since we moved things around to accommodate the additional jackets, gloves, and hats, people are having trouble finding what they're looking for.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：people are having trouble finding what they're looking for.",
+        "evidence": "参考听力原文：“However, since we moved things around to accommodate the additional jackets, gloves, and hats, people are having trouble finding what they're looking for.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“people are having trouble finding what they're looking for.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Finding items）。"
+        "analysis": "正确答案：B（Finding items）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "A",
       "question": "According to the speaker, what should the listeners do?",
-      "answer_explain": "原文依据：听力原文中提到“keep this in mind and be extra helpful to our customers in”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Be helpful）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） should the listeners do?",
+      "answer_explain": "正确答案：A（Be helpful）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) should the listeners do?",
       "choice_translations": [
-        "A：Be helpful",
-        "B：Arrive early",
-        "C：Dress neatly",
-        "D：Eat quickly"
+        "A:Be helpful",
+        "B:Arrive early",
+        "C:Dress neatly",
+        "D:Eat quickly"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“Customers were really used to the old layout, so please keep this in mind and be extra helpful to our customers in the coming weeks.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“Customers were really used to the old layout, so please keep this in mind and be extra helpful to our customers in the coming weeks.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“keep this in mind and be extra helpful to our customers in”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Be helpful）。"
+        "analysis": "正确答案：A（Be helpful）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

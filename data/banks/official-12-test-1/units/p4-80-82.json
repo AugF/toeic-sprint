@@ -39,9 +39,31 @@
       "asset_key": "official-12-test-1/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "lđ\nAre you looking for a fun family getaway this summer?\nCome join us at Robinson's Resort, home of the largest\nwater park on the east coast. We just completed renovating\nthe entire park, and there are now six outdoor pools and nine\nnew waterslides to enjoy! After a day full of fun in the sun,\nunwind in the comfort of rooms with a wood-cabin aesthetic\nfeel as though you are far from the city. Call 555-0179 now\nto book a weekend your family will never forget!\nhalita",
-    "transcript_translation": "中文辅助（离线预处理）：lđ\nAre you looking for a fun family getaway this summer?\nCome join us at Robinson's Resort, home of the largest\nwater park on the east coast.\nWe just completed renovating\nthe entire park, and there are now six outdoor pools and nine\nnew waterslides to enjoy!\nAfter a day full of fun in the sun,\nunwind in the comfort of rooms with a wood-cabin aesthetic\nfeel as though you are far from the city.\nCall 555-0179 now\nto book a weekend your family will never forget!\nhalita",
-    "content_translation": "中文辅助（离线预处理）：lđ\nAre you looking for a fun family getaway this summer?\nCome join us at Robinson's Resort, home of the largest\nwater park on the east coast.\nWe just completed renovating\nthe entire park, and there are now six outdoor pools and nine\nnew waterslides to enjoy!\nAfter a day full of fun in the sun,\nunwind in the comfort of rooms with a wood-cabin aesthetic\nfeel as though you are far from the city.\nCall 555-0179 now\nto book a weekend your family will never forget!\nhalita"
+    "transcript": "Are you looking for a fun family getaway this summer?\nCome join us at Robinson's Resort, home of the largest water park on the East Coast.\nWe just completed renovating the entire park, and there are now six outdoor pools and nine new water slides to enjoy.\nAfter a day full of fun in the sun, unwind in the comfort of rooms with a wood cabin aesthetic feel as though you are far from the city.\nCall 555-0179 now to book a weekend your family will never forget.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2e39a52d9086375ffa9051cf6f5dde203b782bd9cb691b13fb662f933e3afa90",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 87,
+        "legacy_word_count": 87,
+        "length_ratio": 1,
+        "legacy_coverage": 0.954
+      }
+    },
+    "transcript_translation": "您正在寻找今年夏天有趣的家庭度假吗？\n来我们 Robinson's Resort，这里拥有东海岸最大的水上乐园。\n我们刚刚完成了整个公园的翻修，现在有六个户外泳池和九个新的水滑梯供您享受。\n在阳光下度过充满乐趣的一天后，放松身心，入住带有木屋美学感觉的房间，仿佛远离城市喧嚣。\n立即致电 555-0179 预订一个您的家人永生难忘的周末。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3e60ae0b0bbb2877474b7c9e139f1acd3e88607d215c57bdd18175cea23dc864"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "B",
       "question": "What is the advertisement mainly about?",
-      "answer_explain": "原文依据：听力原文中提到“water park on the east coast.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A water park resort）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the advertisement mainly about?",
+      "answer_explain": "正确答案：B（A water park resort）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the advertisement mainly about?",
       "choice_translations": [
-        "A：A riverfront cabin",
-        "B：A water park resort",
-        "C：A fitness center",
-        "D：A lakeside campground"
+        "A:A riverfront cabin",
+        "B:A water park resort",
+        "C:A fitness center",
+        "D:A lakeside campground"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：lđ",
+      "evidence": "参考听力原文：“Come join us at Robinson's Resort, home of the largest water park on the East Coast.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：lđ",
+        "evidence": "参考听力原文：“Come join us at Robinson's Resort, home of the largest water park on the East Coast.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“water park on the east coast.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A water park resort）。"
+        "analysis": "正确答案：B（A water park resort）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker say was recently completed?",
-      "answer_explain": "原文依据：听力原文中提到“the entire park, and there are now six outdoor pools and nine”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A renovation project）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say was recently completed?",
+      "answer_explain": "正确答案：B（A renovation project）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say was recently completed?",
       "choice_translations": [
-        "A：A business merger",
-        "B：A renovation project",
-        "C：A sports tournament",
-        "D：A convention event"
+        "A:A business merger",
+        "B:A renovation project",
+        "C:A sports tournament",
+        "D:A convention event"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：water park on the east coast. We just completed renovating",
+      "evidence": "参考听力原文：“We just completed renovating the entire park, and there are now six outdoor pools and nine new water slides to enjoy.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：water park on the east coast. We just completed renovating",
+        "evidence": "参考听力原文：“We just completed renovating the entire park, and there are now six outdoor pools and nine new water slides to enjoy.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the entire park, and there are now six outdoor pools and nine”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A renovation project）。"
+        "analysis": "正确答案：B（A renovation project）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "D",
       "question": "What should the listeners do to make a reservation?",
-      "answer_explain": "原文依据：听力原文中提到“Call 555-0179 now”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Make a phone call）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） should the listeners do to make a reservation?",
+      "answer_explain": "正确答案：D（Make a phone call）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) should the listeners do to make a reservation?",
       "choice_translations": [
-        "A：Contact a travel agent",
-        "B：Visit a Web site",
-        "C：E-mail the manager（经理） TEA.\n00",
-        "D：Make a phone call"
+        "A:Contact a travel agent",
+        "B:Visit a Web site",
+        "C:E-mail the manager(经理) TEA. 00",
+        "D:Make a phone call"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：lđ",
+      "evidence": "参考听力原文：“Call 555-0179 now to book a weekend your family will never forget.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：lđ",
+        "evidence": "参考听力原文：“Call 555-0179 now to book a weekend your family will never forget.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Call 555-0179 now”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Make a phone call）。"
+        "analysis": "正确答案：D（Make a phone call）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

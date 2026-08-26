@@ -40,9 +40,31 @@
       "asset_key": "official-6-test-2/audio/part4/q095-097.mp3",
       "exists": true
     },
-    "transcript": "information and map.\nWelcome to Southridge National Park, everyone! Today's\nhike will take us to Diamond Sand Lake. It isn't the shortest\ntrail in the park, but it is a pretty easy one. I'm glad you all\nbrought your binoculars because it's migration season,\nso we're likely to see lots of interesting birds along the way.\nNow, today's forecast calls for a chance of showers. Olf you\nhave a raincoat, I suggest you put it on. We'll be leaving in\nabout fifteen minutes.\nSouthridge National Park\nSouthridge EVE\nTrail Map\nLookout Point\nDiamond Sand Lake\nDiamond Sand th\nEagles Waterfall\nEagles i*\nGreen Trail\nLog\nGreen ]\nCabin\nBlue Trail\nBlue J\nWhite Trail\nYellow Trail\nWhite -7\nYellow J-7\nYou Are Here",
-    "transcript_translation": "中文辅助（离线预处理）：information（信息） and map.\nWelcome to Southridge National Park, everyone!\nToday's\nhike will take us to Diamond Sand Lake.\nIt isn't the shortest\ntrail in the park, but it is a pretty easy one.\nI'm glad you all\nbrought your binoculars because it's migration season,\nso we're likely（最可能） to see lots of interesting birds along the way.\nNow, today's forecast calls for a chance of showers.\nOlf you\nhave a raincoat, I suggest（表明/建议） you put it on.\nWe'll be leaving in\nabout fifteen minutes.\nSouthridge National Park\nSouthridge EVE\nTrail Map\nLookout Point\nDiamond Sand Lake\nDiamond Sand th\nEagles Waterfall\nEagles i*\nGreen Trail\nLog\nGreen ]\nCabin\nBlue Trail\nBlue J\nWhite Trail\nYellow Trail\nWhite -7\nYellow J-7\nYou Are Here",
-    "content_translation": "中文辅助（离线预处理）：information（信息） and map.\nWelcome to Southridge National Park, everyone!\nToday's\nhike will take us to Diamond Sand Lake.\nIt isn't the shortest\ntrail in the park, but it is a pretty easy one.\nI'm glad you all\nbrought your binoculars because it's migration season,\nso we're likely（最可能） to see lots of interesting birds along the way.\nNow, today's forecast calls for a chance of showers.\nOlf you\nhave a raincoat, I suggest（表明/建议） you put it on.\nWe'll be leaving in\nabout fifteen minutes.\nSouthridge National Park\nSouthridge EVE\nTrail Map\nLookout Point\nDiamond Sand Lake\nDiamond Sand th\nEagles Waterfall\nEagles i*\nGreen Trail\nLog\nGreen ]\nCabin\nBlue Trail\nBlue J\nWhite Trail\nYellow Trail\nWhite -7\nYellow J-7\nYou Are Here"
+    "transcript": "information and map.\nWelcome to Southridge National Park everyone.\nToday's hike will take us to Diamond Sand Lake.\nIt isn't the shortest trail in the park, but it is a pretty easy one.\nI'm glad you all brought your binoculars because it's migration season, so we're likely to see lots of interesting birds along the way.\nNow, today's forecast calls for a chance of showers.\nIf you have a raincoat, I suggest you put it on.\nWe'll be leaving in about 15 minutes.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "16ee9b55bb7e2635c23ad18e7f3ce194134171f5afeb7bb3e6dffd1097990174",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 82,
+        "legacy_word_count": 118,
+        "length_ratio": 0.695,
+        "legacy_coverage": 0.814
+      }
+    },
+    "transcript_translation": "信息和地图。\n欢迎来到 Southridge National Park 各位。\n今天的徒步路线将带我们去 Diamond Sand Lake。\n它不是公园里最短的步道，但却是一条相当轻松的路线。\n我很高兴大家都带来了望远镜，因为现在是迁徙季节，所以沿途很可能会看到很多有趣的鸟类。\n现在，今天的预报说有阵雨的可能性。\n如果您带了雨衣，建议您穿上。\n我们大约在 15 分钟后出发。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "602874d780b585bf314bdf8465d1ab8be9a48331902dc7c0e8346365744f6c33"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. Which trail does the speaker plan on taking?",
-      "answer_explain": "原文依据：听力原文中提到“Green Trail”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Green Trail）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich trail does the speaker（说话者） plan on taking?",
+      "answer_explain": "正确答案：C（Green Trail）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which trail does the speaker(说话者) plan on taking?",
       "choice_translations": [
-        "A：Yellow Trail",
-        "B：Blue Trail",
-        "C：Green Trail",
-        "D：White Trail"
+        "A:Yellow Trail",
+        "B:Blue Trail",
+        "C:Green Trail",
+        "D:White Trail"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：trail in the park, but it is a pretty easy one. I'm glad you all",
+      "evidence": "参考听力原文：“It isn't the shortest trail in the park, but it is a pretty easy one.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：trail in the park, but it is a pretty easy one. I'm glad you all",
+        "evidence": "参考听力原文：“It isn't the shortest trail in the park, but it is a pretty easy one.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Green Trail”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Green Trail）。"
+        "analysis": "正确答案：C（Green Trail）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 95,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker say the listeners are likely to see during the hike?",
-      "answer_explain": "原文依据：听力原文中提到“so we're likely to see lots of interesting birds along the way.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Migrating birds）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say the listeners are likely（最可能） to see during the hike?",
+      "answer_explain": "正确答案：B（Migrating birds）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say the listeners are likely(最可能) to see during the hike?",
       "choice_translations": [
-        "A：Historic ruins",
-        "B：Migrating birds",
-        "C：Camping sites",
-        "D：Wildflowers"
+        "A:Historic ruins",
+        "B:Migrating birds",
+        "C:Camping sites",
+        "D:Wildflowers"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：information and map.",
+      "evidence": "参考听力原文：“I'm glad you all brought your binoculars because it's migration season, so we're likely to see lots of interesting birds along the way.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：information and map.",
+        "evidence": "参考听力原文：“I'm glad you all brought your binoculars because it's migration season, so we're likely to see lots of interesting birds along the way.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“so we're likely to see lots of interesting birds along the way.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Migrating birds）。"
+        "analysis": "正确答案：B（Migrating birds）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 96,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "C",
       "question": "What does the speaker suggest the listeners do?",
-      "answer_explain": "原文依据：听力原文中提到“have a raincoat, I suggest you put it on.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Wear a raincoat）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） suggest（表明/建议） the listeners do?",
+      "answer_explain": "正确答案：C（Wear a raincoat）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) suggest(表明/建议) the listeners do?",
       "choice_translations": [
-        "A：Pose for a photograph",
-        "B：Bring healthy snacks",
-        "C：Wear a raincoat",
-        "D：Sign a visitors' book"
+        "A:Pose for a photograph",
+        "B:Bring healthy snacks",
+        "C:Wear a raincoat",
+        "D:Sign a visitors' book"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 8 段：have a raincoat, I suggest you put it on. We'll be leaving in",
+      "evidence": "参考听力原文：“If you have a raincoat, I suggest you put it on.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 8 段：have a raincoat, I suggest you put it on. We'll be leaving in",
+        "evidence": "参考听力原文：“If you have a raincoat, I suggest you put it on.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“have a raincoat, I suggest you put it on.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Wear a raincoat）。"
+        "analysis": "正确答案：C（Wear a raincoat）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 97,
       "priority": {

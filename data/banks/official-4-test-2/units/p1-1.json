@@ -31,8 +31,28 @@
       "asset_key": "official-4-test-2/images/part1/q001.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. He's working at a computer.\nB. He's opening a window.\nC. He's assembling a desk.\nD. He's watering some plants.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0e4892bd477b81bb601691d64798b8b67dfbd353e6075e097593bf3f029570af",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part1/q001.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "A. 他正在电脑前工作。\nB. 他正在开窗户。\nC. 他正在组装一张桌子。\nD. 他正在给一些植物浇水。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "460f49c1384fc202ed76a1b2f15f14bdcea5eaad1d5c55dc252d2fe4d48a67ba"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“He's working at a computer.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（He's working at a computer.）。",
       "choice_translations": [
-        "A：He's working at a computer.",
-        "B：He's opening a window.",
-        "C：He's assembling a desk.",
-        "D：He's watering some plants."
+        "A：他正在电脑前工作。",
+        "B：他正在开窗户。",
+        "C：他正在组装一张桌子。",
+        "D：他正在给一些植物浇水。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-4-test-2/p1-1/1"
+      "item_key": "official-4-test-2/p1-1/1",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

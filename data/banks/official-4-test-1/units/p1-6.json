@@ -31,27 +31,47 @@
       "asset_key": "official-4-test-1/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. An employee is handing a tray over a counter.\nB. A woman is facing a display case.\nC. A woman is arranging some food on a plate.\nD. A man is stocking some shelves.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4ad53ed5dfe977ee6ff53a0c20cbb58396f79efa685b14897702e7065698afed",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 275
+      }
+    },
+    "transcript_translation": "A. 一名员工将托盘递过柜台。\nB. 一个女人正面对着展示柜。\nC. 一个女人正在在一个盘子上摆放一些食物。\nD. 一个男人正在整理一些货架。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8cfc74ad6e3f5c05043737ed6471cf6ec79c9106a1701e9229f24e3c39ebae0b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "An employee is handing a tray over a counter.",
-        "Awoman is facing a display case.",
-        "Awoman is arranging some food on a plate.",
-        "Aman is stocking some shelves."
+        "A woman is facing a display case.",
+        "A woman is arranging some food on a plate.",
+        "A man is stocking some shelves."
       ],
       "answer": "B",
       "difficulty": "medium",
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
-      "answer_explain": "原文依据：照片中可见信息与描述“Awoman is facing a display case.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（Awoman is facing a display case.）。",
+      "answer_explain": "原文依据：照片中可见信息与描述“A woman is facing a display case.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（A woman is facing a display case.）。",
       "choice_translations": [
-        "A：An employee（员工） is handing a tray over a counter.",
-        "B：Awoman is facing a display case.",
-        "C：Awoman is arranging some food on a plate.",
-        "D：Aman is stocking some shelves."
+        "A：一名员工将托盘递过柜台。",
+        "B：一个女人正面对着展示柜。",
+        "C：一个女人正在在一个盘子上摆放一些食物。",
+        "D：一个男人正在整理一些货架。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -61,7 +81,7 @@
         "question_type": "动作 / 状态辨析题",
         "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
         "strategy": "本题属于动作 / 状态辨析题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：照片中可见信息与描述“Awoman is facing a display case.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（Awoman is facing a display case.）。"
+        "analysis": "原文依据：照片中可见信息与描述“A woman is facing a display case.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（A woman is facing a display case.）。"
       },
       "item_id": 6,
       "priority": {
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-4-test-1/p1-6/6"
+      "item_key": "official-4-test-1/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

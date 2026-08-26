@@ -28,8 +28,28 @@
       "asset_key": "official-10-test-2/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Kw We're using Tanaka Catering, aren't we?\nEW",
-    "content_translation": "中文辅助（离线预处理）：Kw We're using Tanaka Catering, aren't we?\nEW"
+    "transcript": "We're using Tanaka Catering, aren't we?\nA. The engineers revised the process.\nB. Let's discuss it when Martina is back.\nC. I'll schedule an additional workshop.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e6d7fc744ba1cd5296ac93126a6e4545ae92581d913039860eb54264f02ecb5e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "我们用的是田中餐饮公司，对吗？\nA. 工程师们修改了流程。\nB. 等玛蒂娜回来我们再讨论它。\nC. 我会安排额外的研讨会。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "411765b0675cc4f1f7f97b5f150eb39f7f2484f1fb1a39d091a175176cfa34e3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "I'll schedule an additional workshop."
       ],
       "answer": "B",
-      "question": "Kw We're using Tanaka Catering, aren't we? EW",
+      "question": "We're using Tanaka Catering, aren't we?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Kw We're using Tanaka Catering, aren't we? EW”，自然应答是“Let's discuss it when Martina is back.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Let's discuss it when Martina is back.）。",
-      "question_translation": "中文辅助（离线预处理）：Kw We're using Tanaka Catering, aren't we?\nEW",
+      "answer_explain": "原文依据：问句或陈述是“We're using Tanaka Catering, aren't we?”，自然应答是“Let's discuss it when Martina is back.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Let's discuss it when Martina is back.）。",
+      "question_translation": "我们用的是田中餐饮公司,对吗?",
       "choice_translations": [
-        "A：The engineers revised the process.",
-        "B：Let's discuss it when（何时） Martina is back.",
-        "C：I'll schedule（日程） an additional workshop."
+        "A：工程师们修改了流程。",
+        "B：等玛蒂娜回来我们再讨论它。",
+        "C：我会安排额外的研讨会。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Kw We're using Tanaka Catering, aren't we? EW",
+      "evidence": "参考原文第 1 段：We're using Tanaka Catering, aren't we?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Kw We're using Tanaka Catering, aren't we? EW",
+        "evidence": "参考原文第 1 段：We're using Tanaka Catering, aren't we?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Kw We're using Tanaka Catering, aren't we? EW”，自然应答是“Let's discuss it when Martina is back.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Let's discuss it when Martina is back.）。"
+        "analysis": "原文依据：问句或陈述是“We're using Tanaka Catering, aren't we?”，自然应答是“Let's discuss it when Martina is back.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Let's discuss it when Martina is back.）。"
       },
       "item_id": 26,
       "priority": {

@@ -36,9 +36,31 @@
       "asset_key": "official-8-test-2/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nRemember that our annual building inspection will take\nplace this Friday. ®Before you leave on Thursday, please\nmake sure all documents are locked in your desk drawers\nto help protect our client-related information. Speaking of\nclients, several clients have requested that we be on call to\nanswer questions in the evenings. ®We'll be implementing\nthat for select clients next month. Evening work hours will\nbe discussed at next week's meeting.",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nRemember that our annual building inspection will take\nplace this Friday.\n®Before you leave on Thursday, please（请）\nmake sure all documents are locked in your desk drawers\nto help protect our client-related information（信息）.\nSpeaking of\nclients, several clients have requested that we be on call to\nanswer questions in the evenings.\n®We'll be implementing\nthat for select clients next month.\nEvening work（工作） hours will\nbe discussed at next week's meeting（会议）.",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nRemember that our annual building inspection will take\nplace this Friday.\n®Before you leave on Thursday, please（请）\nmake sure all documents are locked in your desk drawers\nto help protect our client-related information（信息）.\nSpeaking of\nclients, several clients have requested that we be on call to\nanswer questions in the evenings.\n®We'll be implementing\nthat for select clients next month.\nEvening work（工作） hours will\nbe discussed at next week's meeting（会议）."
+    "transcript": "Remember that our annual building inspection will take place this Friday.\nBefore you leave on Thursday, please make sure all documents are locked in your desk drawers to help protect our client-related information.\nSpeaking of clients, several clients have requested that we be on call to answer questions in the evenings.\nWe will be implementing that for select clients next month.\nEvening work hours will be discussed at next week's meeting.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "992ce5ad9c8d81eecedb50e01d6bbf681e5b512a8bd392d51de696dceff10af8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 71,
+        "legacy_word_count": 72,
+        "length_ratio": 0.986,
+        "legacy_coverage": 0.972
+      }
+    },
+    "transcript_translation": "请记住我们的年度建筑检查将于本周五举行。\n在周四离开之前，请确保所有文件都锁在您的抽屉里，以帮助保护我们与客户相关的资料。\n说到客户，几位客户要求我们在晚上待命回答问题。\n下个月我们将为特定客户实施这项服务。\n晚间工作时间将在下周的会议上讨论。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "cc7a20802b2be4a8f97136b0722fe455c61410914758127f7dc2b49a06d53201"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "C",
       "question": "What will take place on Friday?",
-      "answer_explain": "原文依据：听力原文中提到“Remember that our annual building inspection will take”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A building inspection）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will take place on Friday?",
+      "answer_explain": "正确答案：C（A building inspection）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will take place on Friday?",
       "choice_translations": [
-        "A：A town meeting（会议）",
-        "B：A product release",
-        "C：A building inspection",
-        "D：A software update"
+        "A:A town meeting(会议)",
+        "B:A product release",
+        "C:A building inspection",
+        "D:A software update"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：place this Friday. ®Before you leave on Thursday, please",
+      "evidence": "参考听力原文：“Remember that our annual building inspection will take place this Friday.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：place this Friday. ®Before you leave on Thursday, please",
+        "evidence": "参考听力原文：“Remember that our annual building inspection will take place this Friday.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Remember that our annual building inspection will take”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A building inspection）。"
+        "analysis": "正确答案：C（A building inspection）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "A",
       "question": "What should the listeners do on Thursday?",
-      "answer_explain": "原文依据：听力原文中提到“make sure all documents are locked in your desk drawers”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Put documents away）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） should the listeners do on Thursday?",
+      "answer_explain": "正确答案：A（Put documents away）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) should the listeners do on Thursday?",
       "choice_translations": [
-        "A：Put documents away",
-        "B：Shut down computers",
-        "C：Meet with a supervisor",
-        "D：Sign up for training"
+        "A:Put documents away",
+        "B:Shut down computers",
+        "C:Meet with a supervisor",
+        "D:Sign up for training"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：place this Friday. ®Before you leave on Thursday, please",
+      "evidence": "参考听力原文：“Before you leave on Thursday, please make sure all documents are locked in your desk drawers to help protect our client-related information.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：place this Friday. ®Before you leave on Thursday, please",
+        "evidence": "参考听力原文：“Before you leave on Thursday, please make sure all documents are locked in your desk drawers to help protect our client-related information.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“make sure all documents are locked in your desk drawers”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Put documents away）。"
+        "analysis": "正确答案：A（Put documents away）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "D",
       "question": "What will be discussed next week?",
-      "answer_explain": "原文依据：听力原文中提到“be discussed at next week's meeting.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Employee schedules）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will be discussed next week?",
+      "answer_explain": "正确答案：D（Employee schedules）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will be discussed next week?",
       "choice_translations": [
-        "A：Volunteer opportunities",
-        "B：Project expenses",
-        "C：Overseas travel arrangements",
-        "D：Employee（员工） schedules"
+        "A:Volunteer opportunities",
+        "B:Project expenses",
+        "C:Overseas travel arrangements",
+        "D:Employee(员工) schedules"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：be discussed at next week's meeting.",
+      "evidence": "参考听力原文：“Evening work hours will be discussed at next week's meeting.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：be discussed at next week's meeting.",
+        "evidence": "参考听力原文：“Evening work hours will be discussed at next week's meeting.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“be discussed at next week's meeting.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Employee schedules）。"
+        "analysis": "正确答案：D（Employee schedules）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

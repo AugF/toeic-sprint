@@ -39,9 +39,31 @@
       "asset_key": "official-4-test-2/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "w\nGood evening, everyone. I is my great pleasure to host t\nEsber Foundation awards ceremony. As you know, each ye\nthe foundation recognizes practical innovations that offer gi\nbenefits to society. I’m pleased to present the first award th\nevening to ®a mechanical engineer, Sonia Johnson. © Son\nhas applied her engineering skills to design a low-cost syst\nfilter drinking water for use in remote areas of the world. °\ndesign is especially notable because it uses materials that ;\nreadily available in the areas where the system is needed.",
-    "transcript_translation": "中文辅助（离线预处理）：w\nGood evening, everyone.\nI is my great pleasure to host t\nEsber Foundation awards ceremony.\nAs you know, each ye\nthe foundation recognizes practical innovations that offer gi\nbenefits to society.\nI’m pleased to present the first award th\nevening to ®a mechanical engineer, Sonia Johnson.\n© Son\nhas applied her engineering skills to design a low-cost syst\nfilter drinking water for use in remote areas of the world.\n°\ndesign is especially notable because it uses materials that ;\nreadily available（可用的） in the areas where（哪里） the system is needed.",
-    "content_translation": "中文辅助（离线预处理）：w\nGood evening, everyone.\nI is my great pleasure to host t\nEsber Foundation awards ceremony.\nAs you know, each ye\nthe foundation recognizes practical innovations that offer gi\nbenefits to society.\nI’m pleased to present the first award th\nevening to ®a mechanical engineer, Sonia Johnson.\n© Son\nhas applied her engineering skills to design a low-cost syst\nfilter drinking water for use in remote areas of the world.\n°\ndesign is especially notable because it uses materials that ;\nreadily available（可用的） in the areas where（哪里） the system is needed."
+    "transcript": "Good evening everyone.\nIt is my great pleasure to host the ESPA Foundation Awards Ceremony.\nAs you know, each year the Foundation recognizes practical innovations that offer great benefits to society.\nI'm pleased to present the first award this evening to a mechanical engineer, Sonia Johnson.\nSonia has applied her engineering skills to design a low-cost system to filter drinking water for use in remote areas of the world.\nThe design is especially notable because it uses materials that are readily available in the areas where the system is needed.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "96dd712b5068f4845bda5df29a5ae7b474648e1252b83a982fe451a1135f7f26",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 90,
+        "legacy_word_count": 87,
+        "length_ratio": 1.034,
+        "legacy_coverage": 0.897
+      }
+    },
+    "transcript_translation": "大家晚上好。\n我很荣幸能主持 ESPA 基金会颁奖典礼。\n如您所知，每年该基金会都会表彰为社会带来巨大益处的实用创新。\n我很高兴地宣布今晚第一个奖项授予机械工程师 Sonia Johnson。\nSonia 将她的工程技能应用于设计一套低成本的系统，用于过滤世界偏远地区的饮用水。\n这项设计尤其值得注意，因为它使用了在需要该系统的地区容易获得的材料。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d45773a9b53e4022840a05979310426fda638482dc4f5aabb5a958470d33a92b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "B",
       "question": "Where is the introduction taking place?",
-      "answer_explain": "原文依据：听力原文中提到“Esber Foundation awards ceremony.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（At an awards ceremony）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the introduction taking place?",
+      "answer_explain": "正确答案：B（At an awards ceremony）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) is the introduction taking place?",
       "choice_translations": [
-        "A：At a department meeting（会议）",
-        "B：At an awards ceremony",
-        "C：At a press conference",
-        "D：At a new hire orientation"
+        "A:At a department meeting(会议)",
+        "B:At an awards ceremony",
+        "C:At a press conference",
+        "D:At a new hire orientation"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：w",
+      "evidence": "参考听力原文：“It is my great pleasure to host the ESPA Foundation Awards Ceremony.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：w",
+        "evidence": "参考听力原文：“It is my great pleasure to host the ESPA Foundation Awards Ceremony.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Esber Foundation awards ceremony.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（At an awards ceremony）。"
+        "analysis": "正确答案：B（At an awards ceremony）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -101,27 +123,27 @@
         "An architect",
         "A fashion designer",
         "An engineer",
-        "Asculptor"
+        "A sculptor"
       ],
       "answer": "C",
       "question": "Who is Sonia Johnson?",
-      "answer_explain": "原文依据：听力原文中提到“evening to ®a mechanical engineer, Sonia Johnson.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An engineer）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） is Sonia Johnson?",
+      "answer_explain": "正确答案：C（An engineer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) is Sonia Johnson?",
       "choice_translations": [
-        "A：An architect",
-        "B：A fashion designer",
-        "C：An engineer",
-        "D：Asculptor"
+        "A:An architect",
+        "B:A fashion designer",
+        "C:An engineer",
+        "D:A sculptor"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：evening to ®a mechanical engineer, Sonia Johnson. © Son",
+      "evidence": "参考听力原文：“I'm pleased to present the first award this evening to a mechanical engineer, Sonia Johnson.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：evening to ®a mechanical engineer, Sonia Johnson. © Son",
+        "evidence": "参考听力原文：“I'm pleased to present the first award this evening to a mechanical engineer, Sonia Johnson.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“evening to ®a mechanical engineer, Sonia Johnson.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An engineer）。"
+        "analysis": "正确答案：C（An engineer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "A",
       "question": "According to the speaker, what is notable about the design?",
-      "answer_explain": "原文依据：听力原文中提到“design is especially notable because it uses materials that ;”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It uses easily accessible materials.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） is notable about the design?",
+      "answer_explain": "正确答案：A（It uses easily accessible materials.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) is notable about the design?",
       "choice_translations": [
-        "A：It uses easily accessible materials.",
-        "B：It provides protection from bad weather.",
-        "C：It will encourage tourism.",
-        "D：It will allow more collaboration among"
+        "A:It uses easily accessible materials.",
+        "B:It provides protection from bad weather.",
+        "C:It will encourage tourism.",
+        "D:It will allow more collaboration among"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 7 段：has applied her engineering skills to design a low-cost syst",
+      "evidence": "参考听力原文：“The design is especially notable because it uses materials that are readily available in the areas where the system is needed.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 7 段：has applied her engineering skills to design a low-cost syst",
+        "evidence": "参考听力原文：“The design is especially notable because it uses materials that are readily available in the areas where the system is needed.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“design is especially notable because it uses materials that ;”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It uses easily accessible materials.）。"
+        "analysis": "正确答案：A（It uses easily accessible materials.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

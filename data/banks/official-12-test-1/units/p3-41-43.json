@@ -37,9 +37,31 @@
       "asset_key": "official-12-test-1/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "R41-43 la\nm Shannon, Ol received notice from Blue Field\nShannon. E\nManagement that we'll have a building inspection in\ntwo weeks. Can you let our company's department\nH3a5\nleads on the fourth, fifth, and sixth floors know an\ninspector is coming so they're ready?\nw Certainly. e Would you like me to include the inspection\nprocedures in the e-mail?\nm Yes. eMake sure that information goes out to the new\nemployees who may be a point of contact. We haven't\ngone through this process in a while.\nEw ol'll send out the message now.",
-    "transcript_translation": "中文辅助（离线预处理）：R41-43 la\nm Shannon, Ol received notice from Blue Field\nShannon.\nE\nManagement that we'll have a building inspection in\ntwo weeks.\nCan you let our company（公司）'s department\nH3a5\nleads on the fourth, fifth, and sixth floors know an\ninspector is coming so they're ready?\nw Certainly.\ne Would you like me to include the inspection\nprocedures in the e-mail?\nm Yes.\neMake sure that information（信息） goes out to the new\nemployees who（谁） may be a point of contact.\nWe haven't\ngone through this process in a while.\nEw ol'll send out the message now.",
-    "content_translation": "中文辅助（离线预处理）：R41-43 la\nm Shannon, Ol received notice from Blue Field\nShannon.\nE\nManagement that we'll have a building inspection in\ntwo weeks.\nCan you let our company（公司）'s department\nH3a5\nleads on the fourth, fifth, and sixth floors know an\ninspector is coming so they're ready?\nw Certainly.\ne Would you like me to include the inspection\nprocedures in the e-mail?\nm Yes.\neMake sure that information（信息） goes out to the new\nemployees who（谁） may be a point of contact.\nWe haven't\ngone through this process in a while.\nEw ol'll send out the message now."
+    "transcript": "Shannon, I received notice from Bluefield Management that we'll have a building inspection in two weeks.\nCan you let our company's department leads on the fourth, fifth, and sixth floors know an inspector is coming so they're ready?\nCertainly.\nWould you like me to include the inspection procedures in the email?\nYes.\nMake sure that information goes out to the new employees who may be a point of contact.\nWe haven't gone through this process in a while.\nI'll send out the message now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "79adb95d9418eae870c1d8abfada0b236199e0b1929a29184e76368c5888d01a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 84,
+        "legacy_word_count": 95,
+        "length_ratio": 0.884,
+        "legacy_coverage": 0.853
+      }
+    },
+    "transcript_translation": "Shannon, 我收到蓝场管理公司通知，说两周后我们要进行一次建筑检查。\n你能让我们公司四、五和六楼的部门负责人知道会有验房员来吗，这样他们就能做好准备？\n当然可以。\n你想让我把检查程序包含在邮件里吗？\n是的。\n确保这些信息发给可能成为联系人的新员工。\n我们有一段时间没进行这个流程了。\n我现在就发送消息。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "bba8237478e93945469d944b9916f4c3774262fc4a966914096138fdd07a9cdf"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "C",
       "question": "What does the man say will happen in two weeks?",
-      "answer_explain": "原文依据：听力原文中提到“Management that we'll have a building inspection in”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A building will beinspected.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） say will happen in two weeks?",
+      "answer_explain": "正确答案：C（A building will beinspected.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) say will happen in two weeks?",
       "choice_translations": [
-        "A：A contract will beupdated.",
-        "B：A shareholder meeting（会议） will take place.",
-        "C：A building will beinspected.",
-        "D：A second round ofinterviews will be"
+        "A:A contract will beupdated.",
+        "B:A shareholder meeting(会议) will take place.",
+        "C:A building will beinspected.",
+        "D:A second round ofinterviews will be"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：two weeks. Can you let our company's department",
+      "evidence": "参考听力原文：“Shannon, I received notice from Bluefield Management that we'll have a building inspection in two weeks.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：two weeks. Can you let our company's department",
+        "evidence": "参考听力原文：“Shannon, I received notice from Bluefield Management that we'll have a building inspection in two weeks.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Management that we'll have a building inspection in”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A building will beinspected.）。"
+        "analysis": "正确答案：C（A building will beinspected.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "B",
       "question": "What will new employees receive?",
-      "answer_explain": "原文依据：听力原文中提到“eMake sure that information goes out to the new”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Procedural information）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will new employees receive?",
+      "answer_explain": "正确答案：B（Procedural information）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will new employees receive?",
       "choice_translations": [
-        "A：Client contacts",
-        "B：Procedural information（信息）",
-        "C：Peer mentoring",
-        "D：Free lunch"
+        "A:Client contacts",
+        "B:Procedural information(信息)",
+        "C:Peer mentoring",
+        "D:Free lunch"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：m Shannon, Ol received notice from Blue Field",
+      "evidence": "参考听力原文：“Make sure that information goes out to the new employees who may be a point of contact.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：m Shannon, Ol received notice from Blue Field",
+        "evidence": "参考听力原文：“Make sure that information goes out to the new employees who may be a point of contact.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“eMake sure that information goes out to the new”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Procedural information）。"
+        "analysis": "正确答案：B（Procedural information）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "B",
       "question": "What will the woman do next?",
-      "answer_explain": "原文依据：听力原文中提到“Ew ol'll send out the message now.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Send an e-mail）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） do next?",
+      "answer_explain": "正确答案：B（Send an e-mail）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) do next?",
       "choice_translations": [
-        "A：Call an employee（员工）",
-        "B：Send an e-mail",
-        "C：Mail a letter",
-        "D：Make copies"
+        "A:Call an employee(员工)",
+        "B:Send an e-mail",
+        "C:Mail a letter",
+        "D:Make copies"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：R41-43 la",
+      "evidence": "参考听力原文：“I'll send out the message now.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：R41-43 la",
+        "evidence": "参考听力原文：“I'll send out the message now.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew ol'll send out the message now.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Send an e-mail）。"
+        "analysis": "正确答案：B（Send an e-mail）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

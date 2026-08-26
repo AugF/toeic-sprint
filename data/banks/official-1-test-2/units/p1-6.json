@@ -32,13 +32,33 @@
       "asset_key": "official-1-test-2/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 切碎的食材正在砧板上被切块。/ 厨具 [HBSS JES\nB. 食物正从柜台上清理。\nC. 碗已堆放在厨房架子上。\nD. 一些炊具留在炉灶上。",
-    "content_translation": "A. 切碎的食材正在砧板上被切块。/ 厨具 [HBSS JES\nB. 食物正从柜台上清理。\nC. 碗已堆放在厨房架子上。\nD. 一些炊具留在炉灶上。"
+    "transcript": "A. Fresh vegetables are being chopped on a cutting board.\nB. Food is being cleared from a counter.\nC. Bowls have been stacked on a kitchen shelf.\nD. Some cookware has been left on a stove.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3befc2074666e5fdffeb1cd4c43a372063fd20150cd24b7341fe0433d856acea",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 274
+      }
+    },
+    "transcript_translation": "A. 在砧板上正在切新鲜蔬菜。\nB. 柜台上的食物正在被清理。\nC. 碗已经堆在厨房架子上。\nD. 一些炊具留在了炉灶上。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "048b1360115da4ebd2e322ba40a1c8abb8334d5636ccdd4c96c9437ceca172a0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "rest Mi cclal are being chopped on a cutting iE## D / ty cookware [HBSS JES",
+        "Fresh vegetables are being chopped on a cutting board.",
         "Food is being cleared from a counter.",
         "Bowls have been stacked on a kitchen shelf.",
         "Some cookware has been left on a stove."
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some cookware has been left on a stove.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（Some cookware has been left on a stove.）。",
       "choice_translations": [
-        "A：切碎的食材正在砧板上被切块。/ 厨具 [HBSS JES",
-        "B：食物正从柜台上清理。",
-        "C：碗已堆放在厨房架子上。",
-        "D：一些炊具留在炉灶上。"
+        "A：在砧板上正在切新鲜蔬菜。",
+        "B：柜台上的食物正在被清理。",
+        "C：碗已经堆在厨房架子上。",
+        "D：一些炊具留在了炉灶上。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p1-6/6"
+      "item_key": "official-1-test-2/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

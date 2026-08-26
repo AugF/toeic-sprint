@@ -27,38 +27,58 @@
       "asset_key": "official-7-test-2/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：aK w Why（为什么）'s the current vacation policy being changed?\n• m",
-    "content_translation": "中文辅助（离线预处理）：aK w Why（为什么）'s the current vacation policy being changed?\n• m"
+    "transcript": "Why is the current vacation policy being changed?\nA. I guess you didn't see Ms. Garcia's email.\nB. Starting next Monday.\nC. Yes, the parking meter accepts change.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "24ed12d785b63772dc76254c1a4038140145375548ef31c62ed597f25afcd9db",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "为什么当前的休假政策要改变？\nA. 我猜你没看到 Garcia 女士的邮件。\nB. 从下周一开始。\nC. 是的，停车计时器接受找零。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f07b3576198f6cb95e0a90a43c28100275692d0427617e5e763d5cc20e87b95a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "I guess you didn't see Ms. Garcia's e-mail.",
+        "I guess you didn't see Ms. Garcia's email.",
         "Starting next Monday.",
         "Yes, the parking meter accepts change."
       ],
       "answer": "A",
-      "question": "aK w Why's the current vacation policy being changed? • m",
+      "question": "Why is the current vacation policy being changed?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“aK w Why's the current vacation policy being changed? • m”，自然应答是“I guess you didn't see Ms. Garcia's e-mail.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I guess you didn't see Ms. Garcia's e-mail.）。",
-      "question_translation": "中文辅助（离线预处理）：aK w Why（为什么）'s the current vacation policy being changed?\n• m",
+      "answer_explain": "原文依据：问句或陈述是“Why is the current vacation policy being changed?”，自然应答是“I guess you didn't see Ms. Garcia's email.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I guess you didn't see Ms. Garcia's email.）。",
+      "question_translation": "为什么当前的休假政策要改变?",
       "choice_translations": [
-        "A：I guess you didn't see Ms.\nGarcia's e-mail.",
-        "B：Starting next Monday.",
-        "C：Yes, the parking meter accepts change."
+        "A：我猜你没看到 Garcia 女士的邮件。",
+        "B：从下周一开始。",
+        "C：是的,停车计时器接受找零。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：aK w Why's the current vacation policy being changed? • m",
+      "evidence": "参考原文第 1 段：Why is the current vacation policy being changed?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：aK w Why's the current vacation policy being changed? • m",
+        "evidence": "参考原文第 1 段：Why is the current vacation policy being changed?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“aK w Why's the current vacation policy being changed? • m”，自然应答是“I guess you didn't see Ms. Garcia's e-mail.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I guess you didn't see Ms. Garcia's e-mail.）。"
+        "analysis": "原文依据：问句或陈述是“Why is the current vacation policy being changed?”，自然应答是“I guess you didn't see Ms. Garcia's email.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I guess you didn't see Ms. Garcia's email.）。"
       },
       "item_id": 28,
       "priority": {

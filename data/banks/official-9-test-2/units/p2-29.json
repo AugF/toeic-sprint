@@ -28,8 +28,28 @@
       "asset_key": "official-9-test-2/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：You can use your credit card to withdraw money from most banks in Germany.",
-    "content_translation": "中文辅助（离线预处理）：You can use your credit card to withdraw money from most banks in Germany."
+    "transcript": "You can use your credit card to withdraw money from most banks in Germany.\nA. The train is convenient.\nB. Please sign the receipt.\nC. Are there any service fees?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0a1a9fe1d9e22aee66613dbec50f74606db63abe081dd5afcfe4078edb20535a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "你可以在德国大多数银行用信用卡取钱。\nA. 这趟火车很方便。\nB. 请签署收据。\nC. 有服务费吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1c4b165326cdc98d675b63d76751796453ceeca9af959ca03fbd9ff694d64288"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“You can use your credit card to withdraw money from most banks in Germany.”，自然应答是“Are there any service fees?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Are there any service fees?）。",
-      "question_translation": "中文辅助（离线预处理）：You can use your credit card to withdraw money from most banks in Germany.",
+      "question_translation": "你可以在德国大多数银行用信用卡取钱。",
       "choice_translations": [
-        "A：The train is convenient.",
-        "B：Please（请） sign the receipt.",
-        "C：Are there any service（服务） fees?"
+        "A：这趟火车很方便。",
+        "B：请签署收据。",
+        "C：有服务费吗?"
       ],
       "question_type": "陈述 / 请求应答题",
       "evidence": "参考原文第 1 段：You can use your credit card to withdraw money from most banks in Germany.",

@@ -42,8 +42,28 @@
       "asset_key": "official-11-test-1/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "我想剧院应该就在左边。\nA：对，我现在看到了。\nB：他写过好几部戏剧。\nC：票是用我的名字预订的。",
-    "content_translation": "本段听力围绕“陈述句应答”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "I think the theater will be on the left.\nA. Yes, I see it now.\nB. He's written several plays.\nC. The tickets are under my name.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b05e50762ab8aa78bfd14da1b9d5a978aa2236adf459e25c7ef93d3f31277ce3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "我想剧院在左边。\nA. 是的，我现在看到了。\nB. 他写过好几部戏剧。\nC. 票是以我的名字下的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "68168efa31593fae1b3a9f47d905e7ce670c56a141d7651143a4d2327a2673ec"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -61,9 +81,9 @@
       "question_type": "陈述句应答",
       "evidence": "参考原文第 1 段第 1 句：I think the theater will be on the left.",
       "choice_translations": [
-        "A：对，我现在看到了。",
+        "A：是的,我现在看到了。",
         "B：他写过好几部戏剧。",
-        "C：票是用我的名字预订的。"
+        "C：票是以我的名字下的。"
       ],
       "response_style": "可直接回答，也常用补充信息间接回答",
       "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
@@ -74,7 +94,7 @@
         "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：对方判断剧院在左边，答句说 Yes, I see it now。 选择理由：A确认已经看到剧院，衔接最自然；B谈剧本，C谈票。正确答案：A（Yes, I see it now.）。"
       },
-      "question_translation": "我想剧院应该就在左边。",
+      "question_translation": "我想剧院在左边。",
       "item_id": 18,
       "priority": {
         "level": "P1",

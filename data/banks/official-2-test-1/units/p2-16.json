@@ -28,8 +28,28 @@
       "asset_key": "official-2-test-1/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "Ew 从这里没有直飞伦敦的航班吗？\nA. 主任会迟到的。\nB. 不了，已经没有了。\nC. 出差。",
-    "content_translation": "Ew 从这里没有直飞伦敦的航班吗？\nA. 主任会迟到的。\nB. 不了，已经没有了。\nC. 出差。"
+    "transcript": "Aren't there any direct flights to London from here?\nA. The director will arrive late.\nB. No, not anymore.\nC. For a business trip.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e58c9012182a5fe62101e0e5523f18f5bd7708b77b8d2dcae01fb9b11e0c7135",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-1/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "这里没有直飞伦敦的航班吗？\nA. 总监会迟到。\nB. 不了，不再有了。\nC. 为了出差。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1c918579f3413352a51a674c2e7a94d12f867bd6ca57ed957d66e2bd2de0ef07"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "For a business trip."
       ],
       "answer": "B",
-      "question": "Ew Aren't there any direct flights to London from here?",
+      "question": "Aren't there any direct flights to London from here?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Aren't there any direct flights to London from here?”，自然应答是“No, not anymore.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, not anymore.）。",
-      "question_translation": "Ew 从这里没有直飞伦敦的航班吗？",
+      "answer_explain": "原文依据：问句或陈述是“Aren't there any direct flights to London from here?”，自然应答是“No, not anymore.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, not anymore.）。",
+      "question_translation": "这里没有直飞伦敦的航班吗?",
       "choice_translations": [
-        "A：主任会迟到的。",
-        "B：不了，已经没有了。",
-        "C：出差。"
+        "A：总监会迟到。",
+        "B：不了,不再有了。",
+        "C：为了出差。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Ew Aren't there any direct flights to London from here?",
+      "evidence": "参考原文第 1 段：Aren't there any direct flights to London from here?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为否定 / 反意疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Ew Aren't there any direct flights to London from here?",
+        "evidence": "参考原文第 1 段：Aren't there any direct flights to London from here?",
         "strategy": "先判断为否定 / 反意疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Ew Aren't there any direct flights to London from here?”，自然应答是“No, not anymore.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, not anymore.）。"
+        "analysis": "原文依据：问句或陈述是“Aren't there any direct flights to London from here?”，自然应答是“No, not anymore.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, not anymore.）。"
       },
       "item_id": 16,
       "priority": {

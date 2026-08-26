@@ -28,38 +28,58 @@
       "asset_key": "official-3-test-2/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Would you like me to bring you another soft drink?\niv",
-    "content_translation": "中文辅助（离线预处理）：Would you like me to bring you another soft drink?\niv"
+    "transcript": "Would you like me to bring you another soft drink?\nA. That's okay, I don't want one.\nB. No, that's the first time I've heard it.\nC. The dinner reservation's at 8.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "04f3b0d126474ac90f49c1b36c373f53a908b3f3c6ecaba09c57edbccc9ecb0f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "你想让我再给你带一瓶软饮料吗？\nA. 没关系，我不需要。\nB. 不，这是我第一次听到。\nC. 晚餐预订是在八点。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e65f636a79f06d9bcb6f2b793a96387cbf4d71be463c177acad696026ed80817"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "That’s OK, | don’t want one.",
+        "That's okay, I don't want one.",
         "No, that's the first time I've heard it.",
-        "The dinner reservation’s at eight."
+        "The dinner reservation's at 8."
       ],
       "answer": "A",
-      "question": "Would you like me to bring you another soft drink? iv",
+      "question": "Would you like me to bring you another soft drink?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Would you like me to bring you another soft drink? iv”，自然应答是“That’s OK, | don’t want one.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（That’s OK, | don’t want one.）。",
-      "question_translation": "中文辅助（离线预处理）：Would you like me to bring you another soft drink?\niv",
+      "answer_explain": "原文依据：问句或陈述是“Would you like me to bring you another soft drink?”，自然应答是“That's okay, I don't want one.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（That's okay, I don't want one.）。",
+      "question_translation": "你想让我再给你带一瓶软饮料吗?",
       "choice_translations": [
-        "A：That’s OK, | don’t want one.",
-        "B：No, that's the first time I've heard it.",
-        "C：The dinner reservation’s at eight."
+        "A：没关系,我不需要。",
+        "B：不,这是我第一次听到。",
+        "C：晚餐预订是在八点。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Would you like me to bring you another soft drink? iv",
+      "evidence": "参考原文第 1 段：Would you like me to bring you another soft drink?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Would you like me to bring you another soft drink? iv",
+        "evidence": "参考原文第 1 段：Would you like me to bring you another soft drink?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Would you like me to bring you another soft drink? iv”，自然应答是“That’s OK, | don’t want one.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（That’s OK, | don’t want one.）。"
+        "analysis": "原文依据：问句或陈述是“Would you like me to bring you another soft drink?”，自然应答是“That's okay, I don't want one.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（That's okay, I don't want one.）。"
       },
       "item_id": 10,
       "priority": {
@@ -86,7 +106,7 @@
           {
             "term": "reservation",
             "meaning": "预订",
-            "source_quote": "The dinner reservation’s at eight.",
+            "source_quote": "The dinner reservation's at 8.",
             "source_field": "choice",
             "why": "酒店、餐饮、会议室与出行场景常见。",
             "confidence": 0.96

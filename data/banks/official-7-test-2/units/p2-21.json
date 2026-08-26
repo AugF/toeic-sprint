@@ -28,38 +28,58 @@
       "asset_key": "official-7-test-2/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Can you give me a ride, or should I wait for the bus?\nEKW",
-    "content_translation": "中文辅助（离线预处理）：Can you give me a ride, or should I wait for the bus?\nEKW"
+    "transcript": "Can you give me\nA. ride or should I wait for the bus? A. A few minutes ago.\nB. I'll be happy to take you.\nC. On the next corner.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6d563e4fb57b83afc7f32e8268be1fac2611dab7c15243c59dae4c2fbb62349a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "你能给我...\nA. 是搭车还是等公交车？ A. 前几分钟。\nB. 我很乐意载你一程。\nC. 在下一个拐角处。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2b4a5f98663c73af5ac04915dcb066b4eb213c877e10c5569d99acbbbab14091"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "A few minutes ago.",
+        "ride or should I wait for the bus? A. A few minutes ago.",
         "I'll be happy to take you.",
         "On the next corner."
       ],
       "answer": "B",
-      "question": "Can you give me a ride, or should I wait for the bus? EKW",
+      "question": "Can you give me",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“Can you give me a ride, or should I wait for the bus? EKW”，自然应答是“I'll be happy to take you.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll be happy to take you.）。",
-      "question_translation": "中文辅助（离线预处理）：Can you give me a ride, or should I wait for the bus?\nEKW",
+      "answer_explain": "原文依据：问句或陈述是“Can you give me”，自然应答是“I'll be happy to take you.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll be happy to take you.）。",
+      "question_translation": "你能给我...",
       "choice_translations": [
-        "A：A few minutes ago.",
-        "B：I'll be happy to take you.",
-        "C：On the next corner."
+        "A：是搭车还是等公交车? A. 前几分钟。",
+        "B：我很乐意载你一程。",
+        "C：在下一个拐角处。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Can you give me a ride, or should I wait for the bus? EKW",
+      "evidence": "参考原文第 1 段：Can you give me",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Can you give me a ride, or should I wait for the bus? EKW",
+        "evidence": "参考原文第 1 段：Can you give me",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Can you give me a ride, or should I wait for the bus? EKW”，自然应答是“I'll be happy to take you.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll be happy to take you.）。"
+        "analysis": "原文依据：问句或陈述是“Can you give me”，自然应答是“I'll be happy to take you.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll be happy to take you.）。"
       },
       "item_id": 21,
       "priority": {

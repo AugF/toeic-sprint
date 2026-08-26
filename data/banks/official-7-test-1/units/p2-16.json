@@ -27,38 +27,58 @@
       "asset_key": "official-7-test-1/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Why（为什么） is the history museum closed today?\n• M",
-    "content_translation": "中文辅助（离线预处理）：Ew Why（为什么） is the history museum closed today?\n• M"
+    "transcript": "Why is the History Museum closed today?\nA. Usually around 6 o'clock.\nB. Because they're hosting a private event.\nC. Oh yes, we really enjoyed it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b55804cd472b43f61d39321f7d8e48b49fc040c27ea936ca3582a8e83703c049",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "历史博物馆今天为什么关门？\nA. 通常在六点左右。\nB. 因为他们正在举办私人活动。\nC. 哦是的，我们真的很享受它。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e1e4471fddbeea9ab8739b4f826eee1d53a30b377126e5a29ae2d129e5db27a3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Usually around six o'clock.",
+        "Usually around 6 o'clock.",
         "Because they're hosting a private event.",
-        "Oh, yes, we really enjoyed it!"
+        "Oh yes, we really enjoyed it."
       ],
       "answer": "B",
-      "question": "Ew Why is the history museum closed today? • M",
+      "question": "Why is the History Museum closed today?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Why is the history museum closed today? • M”，自然应答是“Because they're hosting a private event.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because they're hosting a private event.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Why（为什么） is the history museum closed today?\n• M",
+      "answer_explain": "原文依据：问句或陈述是“Why is the History Museum closed today?”，自然应答是“Because they're hosting a private event.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because they're hosting a private event.）。",
+      "question_translation": "历史博物馆今天为什么关门?",
       "choice_translations": [
-        "A：Usually around six o'clock.",
-        "B：Because they're hosting a private event.",
-        "C：Oh, yes, we really enjoyed it!"
+        "A：通常在六点左右。",
+        "B：因为他们正在举办私人活动。",
+        "C：哦是的,我们真的很享受它。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Why is the history museum closed today? • M",
+      "evidence": "参考原文第 1 段：Why is the History Museum closed today?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Why is the history museum closed today? • M",
+        "evidence": "参考原文第 1 段：Why is the History Museum closed today?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Why is the history museum closed today? • M”，自然应答是“Because they're hosting a private event.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because they're hosting a private event.）。"
+        "analysis": "原文依据：问句或陈述是“Why is the History Museum closed today?”，自然应答是“Because they're hosting a private event.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because they're hosting a private event.）。"
       },
       "item_id": 16,
       "priority": {

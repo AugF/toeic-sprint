@@ -28,38 +28,58 @@
       "asset_key": "official-12-test-2/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Let's come to this restaurant more often.\nTEM aM",
-    "content_translation": "中文辅助（离线预处理）：Let's come to this restaurant more often.\nTEM aM"
+    "transcript": "Let's come to this restaurant more often.\nA. On Springfield Avenue.\nB. Definitely. It's one of my favorite places.\nC. I revised the rest of the report.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "539378d1035699c939db6e8a155f4524ccac9152b78030c717f4ee8c8c3e112b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "我们应该更经常来这家餐厅。\nA. 在Springfield大道上。\nB. 当然。这是我最喜欢的地方之一。\nC. 我修改了剩下的报告。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5a042a3014e3d6916753d1cd08825cb774b21f45eab8e5d8a830301638e4fdb8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "On Springfield Avenue. Mutal. TE",
-        "Definitely-it's one of my favorite places.",
+        "On Springfield Avenue.",
+        "Definitely. It's one of my favorite places.",
         "I revised the rest of the report."
       ],
       "answer": "B",
-      "question": "Let's come to this restaurant more often. TEM aM",
+      "question": "Let's come to this restaurant more often.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Let's come to this restaurant more often. TEM aM”，自然应答是“Definitely-it's one of my favorite places.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Definitely-it's one of my favorite places.）。",
-      "question_translation": "中文辅助（离线预处理）：Let's come to this restaurant more often.\nTEM aM",
+      "answer_explain": "原文依据：问句或陈述是“Let's come to this restaurant more often.”，自然应答是“Definitely. It's one of my favorite places.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Definitely. It's one of my favorite places.）。",
+      "question_translation": "我们应该更经常来这家餐厅。",
       "choice_translations": [
-        "A：On Springfield Avenue.\nMutal.\nTE",
-        "B：Definitely-it's one of my favorite places.",
-        "C：I revised the rest of the report."
+        "A：在Springfield大道上。",
+        "B：当然。这是我最喜欢的地方之一。",
+        "C：我修改了剩下的报告。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Let's come to this restaurant more often. TEM aM",
+      "evidence": "参考原文第 1 段：Let's come to this restaurant more often.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Let's come to this restaurant more often. TEM aM",
+        "evidence": "参考原文第 1 段：Let's come to this restaurant more often.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Let's come to this restaurant more often. TEM aM”，自然应答是“Definitely-it's one of my favorite places.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Definitely-it's one of my favorite places.）。"
+        "analysis": "原文依据：问句或陈述是“Let's come to this restaurant more often.”，自然应答是“Definitely. It's one of my favorite places.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Definitely. It's one of my favorite places.）。"
       },
       "item_id": 23,
       "priority": {

@@ -28,8 +28,28 @@
       "asset_key": "official-6-test-2/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：I'm going to buy this cake.",
-    "content_translation": "中文辅助（离线预处理）：I'm going to buy this cake."
+    "transcript": "I'm going to buy this cake.\nA. Sugar and flour.\nB. Good choice.\nC. A famous chef.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "221fac837422fd4646943aa00d4006a83031e43b0b8754adbae2776e4382edeb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 18
+      }
+    },
+    "transcript_translation": "我要买这个蛋糕。\nA. 面和糖。\nB. 好选择。\nC. 一位著名厨师。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "34098f0f8d2d6607c320ebb89c6b1e0599e9c5b6ef11cea8314aae96f37cbbab"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“I'm going to buy this cake.”，自然应答是“Good choice.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Good choice.）。",
-      "question_translation": "中文辅助（离线预处理）：I'm going to buy this cake.",
+      "question_translation": "我要买这个蛋糕。",
       "choice_translations": [
-        "A：Sugar and flour.",
-        "B：Good choice.",
-        "C：A famous chef."
+        "A：面和糖。",
+        "B：好选择。",
+        "C：一位著名厨师。"
       ],
       "question_type": "陈述 / 请求应答题",
       "evidence": "参考原文第 1 段：I'm going to buy this cake.",

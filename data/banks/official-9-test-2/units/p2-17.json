@@ -26,8 +26,28 @@
       "asset_key": "official-9-test-2/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：I When（何时） will the lights in the parking area be turned on?\nFEW",
-    "content_translation": "中文辅助（离线预处理）：I When（何时） will the lights in the parking area be turned on?\nFEW"
+    "transcript": "When will the lights in the parking area be turned on?\nA. No, I didn't put them off.\nB. They're on an automatic timer.\nC. Yes, that's right.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "da05abfce0772322c03995257e5966a0f8b932ea96f912df7d14cd6a1ac0c137",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "停车场里的灯什么时候会打开？\nA. 不，我没有关掉它们。\nB. 它们是自动定时器控制的。\nC. 是的，没错。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ab9addf3e206f7acf8c61340c37cadf6cea6512e8797b03c92097afacb9cdfad"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "Yes, that's right."
       ],
       "answer": "B",
-      "question": "I When will the lights in the parking area be turned on? FEW",
+      "question": "When will the lights in the parking area be turned on?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“I When will the lights in the parking area be turned on? FEW”，自然应答是“They're on an automatic timer.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（They're on an automatic timer.）。",
-      "question_translation": "中文辅助（离线预处理）：I When（何时） will the lights in the parking area be turned on?\nFEW",
+      "answer_explain": "原文依据：问句或陈述是“When will the lights in the parking area be turned on?”，自然应答是“They're on an automatic timer.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（They're on an automatic timer.）。",
+      "question_translation": "停车场里的灯什么时候会打开?",
       "choice_translations": [
-        "A：No, I didn't put them off.",
-        "B：They're on an automatic timer.",
-        "C：Yes, that's right."
+        "A：不,我没有关掉它们。",
+        "B：它们是自动定时器控制的。",
+        "C：是的,没错。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：I When will the lights in the parking area be turned on? FEW",
+      "evidence": "参考原文第 1 段：When will the lights in the parking area be turned on?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：I When will the lights in the parking area be turned on? FEW",
+        "evidence": "参考原文第 1 段：When will the lights in the parking area be turned on?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“I When will the lights in the parking area be turned on? FEW”，自然应答是“They're on an automatic timer.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（They're on an automatic timer.）。"
+        "analysis": "原文依据：问句或陈述是“When will the lights in the parking area be turned on?”，自然应答是“They're on an automatic timer.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（They're on an automatic timer.）。"
       },
       "item_id": 17,
       "priority": {

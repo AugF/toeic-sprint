@@ -27,14 +27,34 @@
       "asset_key": "official-5-test-1/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Would you like some help training the new interns?",
-    "content_translation": "中文辅助（离线预处理）：Would you like some help training the new interns?"
+    "transcript": "Would you like some help training the new interns?\nA. Yes, that would be great.\nB. The next train arrives at 4 o'clock.\nC. Several new employees.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8e3b72b8fb506afc29734f8a6b858889fd97f782ecd2b16cf091dfc5583fb5a8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "你想帮培训新的实习生吗？\nA. 是的，那会很棒。\nB. 下一班火车在四点到达。\nC. 几个新员工。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1e62a28b8cd0abd533e68483b1fe9cf746422e2dfede4d6dbc5243d9a9987a70"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Yes, that would be great.",
-        "The next train arrives at four o'clock.",
+        "The next train arrives at 4 o'clock.",
         "Several new employees."
       ],
       "answer": "A",
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Would you like some help training the new interns?”，自然应答是“Yes, that would be great.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, that would be great.）。",
-      "question_translation": "中文辅助（离线预处理）：Would you like some help training the new interns?",
+      "question_translation": "你想帮培训新的实习生吗?",
       "choice_translations": [
-        "A：Yes, that would be great.",
-        "B：The next train arrives at four o'clock.",
-        "C：Several new employees."
+        "A：是的,那会很棒。",
+        "B：下一班火车在四点到达。",
+        "C：几个新员工。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Would you like some help training the new interns?",

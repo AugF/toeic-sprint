@@ -40,9 +40,32 @@
       "asset_key": "official-6-test-1/audio/part3/q068-070.mp3",
       "exists": true
     },
-    "transcript": "and menu.\nHi, Marissa. Thanks for coming in to work on your day\noff.\nw Oh, it's no problem. I could use the extra money.\nWell, I really appreciate it. °I completely forgot about\nJon's vacation and didn't schedule enough waitstaff...\nThe restaurant's really busy tonight.\nEw ®Which tables would you like me to cover?\nm Ol'd like you to wait on tables two, three, and four. Oh,\nand don't forget to remind the customers about our\nnew dessert: pumpkin pie. It's on special right now, so\nI've added it to the menu with the special price. We're\nhoping to sell a lot of it.\nDessert Menu\nIce Cream Cones\nCookie Assortment\nper scoop\nper dozen\nF/\nChocolate Cake\nPumpkin Pie\nper slice\nper slice\nFL",
-    "transcript_translation": "和菜单。\n嗨，Marissa。谢谢你今天来帮忙工作。\n哦，没关系。我可以用多余的钱。\n嗯，我真的很感激。我完全忘记了\nJon 的假期，没有安排足够的服务员……这家餐厅今晚非常忙。\n您希望我负责哪些桌子？\n我想让你负责二、三和四桌。哦，别忘了提醒顾客我们的新甜点：南瓜派。它现在特价，所以我把它加到了菜单上，并标明了特价。我们希望卖出很多。甜点菜单\n冰淇淋筒\n饼干组合\n每球\n每打\n巧克力蛋糕\n南瓜派\n每片\n每片",
-    "content_translation": "和菜单。\n嗨，Marissa。谢谢你今天来帮忙工作。\n哦，没关系。我可以用多余的钱。\n嗯，我真的很感激。我完全忘记了\nJon 的假期，没有安排足够的服务员……这家餐厅今晚非常忙。\n您希望我负责哪些桌子？\n我想让你负责二、三和四桌。哦，别忘了提醒顾客我们的新甜点：南瓜派。它现在特价，所以我把它加到了菜单上，并标明了特价。我们希望卖出很多。甜点菜单\n冰淇淋筒\n饼干组合\n每球\n每打\n巧克力蛋糕\n南瓜派\n每片\n每片"
+    "transcript": "Hi, Marissa.\nThanks for coming in to work on your day off.\nOh, it's no problem.\nI could use the extra money.\nWell, I really appreciate it.\nI completely forgot about John's vacation and didn't schedule enough waitstaff.\nThe restaurant's really busy tonight.\nWhich tables would you like me to cover?\nI'd like you to wait on tables 2, 3, and 4.\nOh, and don't forget to remind the customers about our new dessert, pumpkin pie.\nIt's on special right now, so I've added it to the menu with the special price.\nWe're hoping to sell a lot of it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "833eea50b523b2e47810c4a37a4323c03884347a7ec2ec3bf594791b910360e9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part3/q068-070.mp3",
+      "metrics": {
+        "word_count": 99,
+        "legacy_word_count": 121,
+        "length_ratio": 0.818,
+        "legacy_coverage": 0.802
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，Marissa。\n谢谢你能在休息日来上班。\n哦，没关系。\n我需要额外的钱。\n嗯，我非常感激。\n我完全忘记了John的假期，没有安排足够的服务员。\n这家餐厅今晚生意非常好。\n你想让我负责哪些桌子？\n我想让你负责2、3和4号桌。\n哦，别忘了提醒顾客关于我们的新甜点，南瓜派。\n它现在是特价，所以我把它加到了菜单上并标明了特殊价格。\n我们希望卖出很多。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "72f35d2a9c1fd5b64a73941f104cf80adfd0a064bf6652eb4568573c5b6031ae"
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "A",
       "question": "What problem does the man mention?",
-      "answer_explain": "原文依据：听力原文中提到“I've added it to the menu with the special price.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He made a scheduling mistake.）。",
-      "question_translation": "男士提到了什么问题？",
+      "answer_explain": "正确答案：A（He made a scheduling mistake.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士提到了什么问题?",
       "choice_translations": [
-        "A：他犯了排班错误。",
-        "B：他忘记买一些原料。",
-        "C：冰箱出故障了。",
-        "D：物资交货迟了。"
+        "A:他犯了排班错误。",
+        "B:他忘记买一些原料。",
+        "C:冰箱出故障了。",
+        "D:物资交货迟了。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：w Oh, it's no problem. I could use the extra money.",
+      "evidence": "参考听力原文：“Oh, it's no problem.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：w Oh, it's no problem. I could use the extra money.",
+        "evidence": "参考听力原文：“Oh, it's no problem.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“I've added it to the menu with the special price.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He made a scheduling mistake.）。"
+        "analysis": "正确答案：A（He made a scheduling mistake.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 68,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "B",
       "question": "Who most likely is the woman?",
-      "answer_explain": "原文依据：听力原文中提到“I've added it to the menu with the special price.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A waitress）。",
-      "question_translation": "女士最可能是谁？",
+      "answer_explain": "正确答案：B（A waitress）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士最可能是谁?",
       "choice_translations": [
-        "A：厨师",
-        "B：服务员",
-        "C：洗碗工",
-        "D：收银员"
+        "A:厨师",
+        "B:服务员",
+        "C:洗碗工",
+        "D:收银员"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：and menu.",
+      "evidence": "参考听力原文：“Oh, and don't forget to remind the customers about our new dessert, pumpkin pie.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：and menu.",
+        "evidence": "参考听力原文：“Oh, and don't forget to remind the customers about our new dessert, pumpkin pie.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“I've added it to the menu with the special price.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A waitress）。"
+        "analysis": "正确答案：B（A waitress）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 69,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "D",
       "question": "Look at the graphic. How much does the new dessert cost?",
-      "answer_explain": "原文依据：听力原文中提到“new dessert: pumpkin pie.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（$3.50）。",
-      "question_translation": "看看图表。新甜点多少钱？",
+      "answer_explain": "正确答案：D（$3.50）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "看看图表。新甜点多少钱?",
       "choice_translations": [
-        "A：2.50 美元",
-        "B：$4.00 美元",
-        "C：$5.00 美元",
-        "D：$3.50 美元"
+        "A:2.50 美元",
+        "B:$4.00 美元",
+        "C:$5.00 美元",
+        "D:$3.50 美元"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：new dessert: pumpkin pie. It's on special right now, so",
+      "evidence": "参考听力原文：“Oh, and don't forget to remind the customers about our new dessert, pumpkin pie.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：new dessert: pumpkin pie. It's on special right now, so",
+        "evidence": "参考听力原文：“Oh, and don't forget to remind the customers about our new dessert, pumpkin pie.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“new dessert: pumpkin pie.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（$3.50）。"
+        "analysis": "正确答案：D（$3.50）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 70,
       "priority": {

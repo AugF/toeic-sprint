@@ -40,9 +40,31 @@
       "asset_key": "official-10-test-1/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "IM Hello,\nI'm calling because I can't access my company's\ncloud database. ® Would you be able to help me?\ntab'.\nEK w Sure thing. What company are you calling from?\nm Tuckahoe Insurance Group. We store everything\nonline. This is a real problem for me. ®I'm a product\nmanager, and I can't access the files for any of our\nproducts.\nK w I'm sorry to hear that. OK, I'm going to place you on\nhold for a moment. I'm getting a specialist to join us\non the line.",
-    "transcript_translation": "IM 你好，\n我无法访问公司云数据库。\n® 您能帮我吗？\ntab'。\nEK w 没问题。您是从哪家公司打来的电话？\nm Tuckahoe Insurance Group。我们把所有东西都存在线上。这对我是个大问题。 ®我是一名产品经理，我无法访问任何产品的文件。\nK w 很遗憾听到这个消息。好的，我让您稍等片刻。我正在请一位专家加入我们的通话。",
-    "content_translation": "IM 你好，\n我无法访问公司云数据库。\n® 您能帮我吗？\ntab'。\nEK w 没问题。您是从哪家公司打来的电话？\nm Tuckahoe Insurance Group。我们把所有东西都存在线上。这对我是个大问题。 ®我是一名产品经理，我无法访问任何产品的文件。\nK w 很遗憾听到这个消息。好的，我让您稍等片刻。我正在请一位专家加入我们的通话。"
+    "transcript": "Hello, I'm calling because I can't access my company's cloud database.\nWould you be able to help me?\nSure thing.\nWhat company are you calling from?\nTuckahoe Insurance Group.\nWe store everything online.\nThis is a real problem for me.\nI'm a product manager and I can't access the files for any of our products.\nI'm sorry to hear that.\nOkay, I'm going to place you on hold for a moment.\nI'm getting a specialist to join us on the line.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "eb50775beb517dce49be3c4805e60f13bec69368e0b59266207a89a34d752ff0",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 81,
+        "legacy_word_count": 79,
+        "length_ratio": 1.025,
+        "legacy_coverage": 0.937
+      }
+    },
+    "transcript_translation": "你好，我打电话来是因为无法访问我公司的云数据库。\n你能帮我吗？\n没问题。\n你是从哪家公司打来的电话？\nTuckahoe Insurance Group。\n我们把所有东西都存储在网上。\n这对我是个大问题。\n我是一名产品经理，无法访问任何产品的文件。\n听到这个我很遗憾。\n好的，我让您稍等片刻。\n我会请一位专家加入我们的通话。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d69d2e882f71cacb4588201f33c28d1cabf8a6407cdd5594563ae11532eb23e2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "Why is the man calling?",
-      "answer_explain": "原文依据：听力原文中提到“® Would you be able to help me?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He needs help with a technical problem.）。",
-      "question_translation": "男士打电话的原因是什么？",
+      "answer_explain": "正确答案：C（He needs help with a technical problem.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士打电话的原因是什么?",
       "choice_translations": [
-        "A：他想下订单。",
-        "B：他需要设置一个账户。",
-        "C：他需要帮助解决技术问题。",
-        "D：他想预约。"
+        "A:他想下订单。",
+        "B:他需要设置一个账户。",
+        "C:他需要帮助解决技术问题。",
+        "D:他想预约。"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 2 段：I'm calling because I can't access my company's",
+      "evidence": "参考听力原文：“Hello, I'm calling because I can't access my company's cloud database.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 2 段：I'm calling because I can't access my company's",
+        "evidence": "参考听力原文：“Hello, I'm calling because I can't access my company's cloud database.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“® Would you be able to help me?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He needs help with a technical problem.）。"
+        "analysis": "正确答案：C（He needs help with a technical problem.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "D",
       "question": "What is the man's job?",
-      "answer_explain": "原文依据：听力原文中提到“manager, and I can't access the files for any of our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Product manager）。",
-      "question_translation": "男士的职业是什么？",
+      "answer_explain": "正确答案：D（Product manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士的职业是什么?",
       "choice_translations": [
-        "A：市场专员",
-        "B：健身教练",
-        "C：数据科学家",
-        "D：产品经理"
+        "A:市场专员",
+        "B:健身教练",
+        "C:数据科学家",
+        "D:产品经理"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：IM Hello,",
+      "evidence": "参考听力原文：“I'm a product manager and I can't access the files for any of our products.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：IM Hello,",
+        "evidence": "参考听力原文：“I'm a product manager and I can't access the files for any of our products.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“manager, and I can't access the files for any of our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Product manager）。"
+        "analysis": "正确答案：D（Product manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "Who will join the conversation?",
-      "answer_explain": "原文依据：听力原文中提到“I'm getting a specialist to join us”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A specialist）。",
-      "question_translation": "谁将加入对话？",
+      "answer_explain": "正确答案：B（A specialist）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "谁将加入对话?",
       "choice_translations": [
-        "A：一位经理",
-        "B：一位专家",
-        "C：一位销售人员",
-        "D：一位承包商"
+        "A:一位经理",
+        "B:一位专家",
+        "C:一位销售人员",
+        "D:一位承包商"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：IM Hello,",
+      "evidence": "参考听力原文：“I'm getting a specialist to join us on the line.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：IM Hello,",
+        "evidence": "参考听力原文：“I'm getting a specialist to join us on the line.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“I'm getting a specialist to join us”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A specialist）。"
+        "analysis": "正确答案：B（A specialist）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

@@ -31,8 +31,28 @@
       "asset_key": "official-7-test-2/images/part1/q005.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. She's organizing items in a cabinet.\nB. She's reaching for an item on a shelf.\nC. She's turning on a ceiling fan.\nD. She's storing a package beneath a counter.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0b8fc26d7256098b80d909ce3e236bc904594dc46f0253a6f9d39245910e87e1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part1/q005.mp3",
+      "metrics": {
+        "word_count": 42
+      }
+    },
+    "transcript_translation": "A. 她正在整理柜子里的物品。\nB. 她正在伸手拿架子上的物品。\nC. 她正在打开天花板风扇。\nD. 她正在柜台下面存放一个包裹。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d632cb07c886fbb963d5539b6f0ee3d4de1b954bce8d61054c0100d6cafe9e5a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“She's reaching for an item on a shelf.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（She's reaching for an item on a shelf.）。",
       "choice_translations": [
-        "A：She's organizing items in a cabinet.",
-        "B：She's reaching for an item on a shelf.",
-        "C：She's turning on a ceiling fan.",
-        "D：She's storing a package beneath a counter."
+        "A：她正在整理柜子里的物品。",
+        "B：她正在伸手拿架子上的物品。",
+        "C：她正在打开天花板风扇。",
+        "D：她正在柜台下面存放一个包裹。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-2/p1-5/5"
+      "item_key": "official-7-test-2/p1-5/5",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

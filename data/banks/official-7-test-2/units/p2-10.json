@@ -27,8 +27,28 @@
       "asset_key": "official-7-test-2/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Why（为什么） is everyone leaving early today?",
-    "content_translation": "中文辅助（离线预处理）：Ew Why（为什么） is everyone leaving early today?"
+    "transcript": "Why is everyone leaving early today?\nA. Because there's a conference this afternoon.\nB. Make a left turn on the next street.\nC. A little bit later.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0cbf4d01d54f89f7424539155e1b93d29c442a73f7722736e16d9ef6dc8fe4da",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "为什么今天大家都提前离开了？\nA. 因为下午有一个会议。\nB. 在下一个街角左转。\nC. 晚一点点。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0805c31cb04adcf8084a25ff1dd10e179ced30dc3927a59e1d2647087efd9277"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "A little bit later."
       ],
       "answer": "A",
-      "question": "Ew Why is everyone leaving early today?",
+      "question": "Why is everyone leaving early today?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Why is everyone leaving early today?”，自然应答是“Because there's a conference this afternoon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because there's a conference this afternoon.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Why（为什么） is everyone leaving early today?",
+      "answer_explain": "原文依据：问句或陈述是“Why is everyone leaving early today?”，自然应答是“Because there's a conference this afternoon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because there's a conference this afternoon.）。",
+      "question_translation": "为什么今天大家都提前离开了?",
       "choice_translations": [
-        "A：Because there's a conference this afternoon.",
-        "B：Make a left turn on the next street.",
-        "C：A little bit later."
+        "A：因为下午有一个会议。",
+        "B：在下一个街角左转。",
+        "C：晚一点点。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：Ew Why is everyone leaving early today?",
+      "evidence": "参考原文第 1 段：Why is everyone leaving early today?",
       "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：Ew Why is everyone leaving early today?",
+        "evidence": "参考原文第 1 段：Why is everyone leaving early today?",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Why is everyone leaving early today?”，自然应答是“Because there's a conference this afternoon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because there's a conference this afternoon.）。"
+        "analysis": "原文依据：问句或陈述是“Why is everyone leaving early today?”，自然应答是“Because there's a conference this afternoon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because there's a conference this afternoon.）。"
       },
       "item_id": 10,
       "priority": {

@@ -41,9 +41,31 @@
       "asset_key": "official-4-test-2/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "Excuse me, | just got into the office. My car would\nstart this morning. What did | miss at the staff meetir\nIu Oh, sorry to hear about your car trouble. The meetin\nlet’s see... well, @the most interesting point was tha\nthere’s a management position available in the\nproduct-development department.\nER w Really? Hmmm... | might want to apply for that. Did\nsay when the job description would be posted?\nv They mentioned it would be advertised later this wee\nbut %if | were you, ©} would speak to Mei Yang in\nProduct Development now, to let her know you're\ninterested.",
-    "transcript_translation": "中文辅助（离线预处理）：Excuse me, | just got into the office（办公室）.\nMy car would\nstart this morning.\nWhat（什么） did | miss at the staff meetir\nIu Oh, sorry to hear about your car trouble.\nThe meetin\nlet’s see...\nwell, @the most interesting point was tha\nthere’s a management position available（可用的） in the\nproduct-development department.\nER w Really?\nHmmm...\n| might want to apply for that.\nDid\nsay when（何时） the job description would be posted?\nv They mentioned it would be advertised later this wee\nbut %if | were you, ©} would speak to Mei Yang in\nProduct Development now, to let her know you're\ninterested.",
-    "content_translation": "中文辅助（离线预处理）：Excuse me, | just got into the office（办公室）.\nMy car would\nstart this morning.\nWhat（什么） did | miss at the staff meetir\nIu Oh, sorry to hear about your car trouble.\nThe meetin\nlet’s see...\nwell, @the most interesting point was tha\nthere’s a management position available（可用的） in the\nproduct-development department.\nER w Really?\nHmmm...\n| might want to apply for that.\nDid\nsay when（何时） the job description would be posted?\nv They mentioned it would be advertised later this wee\nbut %if | were you, ©} would speak to Mei Yang in\nProduct Development now, to let her know you're\ninterested."
+    "transcript": "Excuse me, I just got into the office.\nMy car wouldn't start this morning.\nWhat did I miss at the staff meeting?\nOh, sorry to hear about your car trouble.\nThe meeting, let's see.\nWell, the most interesting point was that there's a management position available in the product development department.\nReally?\nHmm.\nI might want to apply for that.\nDid they say when the job description would be posted?\nThey mentioned it would be advertised later this week, but if I were you, I would speak to Mei Yang in product development now to let her know you're interested.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "45c51bacdf13ea77acf923dbae941de45c66465c34873ceec6969c61524d4281",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 100,
+        "legacy_word_count": 96,
+        "length_ratio": 1.042,
+        "legacy_coverage": 0.906
+      }
+    },
+    "transcript_translation": "不好意思，我刚到办公室。\n我的车今早发动不了。\n我在员工会议上错过了什么？\n哦，听到你的车出问题我很遗憾。\n会议啊，让我想想。\n嗯，最有趣的点是产品开发部门有一个管理职位空缺。\n真的吗？\n嗯。\n我可能想申请那个。\n他们说什么时候会发布工作描述？\n他们提到这周晚些时候会刊登广告，但如果我是你，我现在最好去和产品开发的梅扬谈谈，让她知道你感兴趣。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "560269c2a120609c3f1b7b8f9a01acefeff225885d83fdb161d9e9bbe90a12ea"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "D",
       "question": "Why did the woman miss the meeting?",
-      "answer_explain": "原文依据：听力原文中提到“Iu Oh, sorry to hear about your car trouble.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（She had trouble with her car.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） did the woman（女士） miss the meeting（会议）?",
+      "answer_explain": "正确答案：D（She had trouble with her car.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) did the woman(女士) miss the meeting(会议)?",
       "choice_translations": [
-        "A：She was not feeling well.",
-        "B：She had to finish a project.",
-        "C：She was away on business.",
-        "D：She had trouble with her car."
+        "A:She was not feeling well.",
+        "B:She had to finish a project.",
+        "C:She was away on business.",
+        "D:She had trouble with her car."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：Excuse me, | just got into the office. My car would",
+      "evidence": "参考听力原文：“Oh, sorry to hear about your car trouble.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：Excuse me, | just got into the office. My car would",
+        "evidence": "参考听力原文：“Oh, sorry to hear about your car trouble.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Iu Oh, sorry to hear about your car trouble.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（She had trouble with her car.）。"
+        "analysis": "正确答案：D（She had trouble with her car.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -102,30 +124,30 @@
     },
     {
       "choices": [
-        "Ajob opening",
+        "A job opening",
         "A product launch",
         "An advertising campaign",
-        "Adepartment merger"
+        "A department merger"
       ],
       "answer": "A",
       "question": "What was announced at the meeting?",
-      "answer_explain": "原文依据：听力原文中提到“well, @the most interesting point was tha”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Ajob opening）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） was announced at the meeting（会议）?",
+      "answer_explain": "正确答案：A（A job opening）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) was announced at the meeting(会议)?",
       "choice_translations": [
-        "A：Ajob opening",
-        "B：A product launch",
-        "C：An advertising campaign",
-        "D：Adepartment merger"
+        "A:A job opening",
+        "B:A product launch",
+        "C:An advertising campaign",
+        "D:A department merger"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Excuse me, | just got into the office. My car would",
+      "evidence": "参考听力原文：“Did they say when the job description would be posted?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Excuse me, | just got into the office. My car would",
+        "evidence": "参考听力原文：“Did they say when the job description would be posted?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“well, @the most interesting point was tha”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Ajob opening）。"
+        "analysis": "正确答案：A（A job opening）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "D",
       "question": "What does the man suggest the woman do?",
-      "answer_explain": "原文依据：听力原文中提到“What did | miss at the staff meetir”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Talk to a staff member）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） suggest（表明/建议） the woman（女士） do?",
+      "answer_explain": "正确答案：D（Talk to a staff member）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) suggest(表明/建议) the woman(女士) do?",
       "choice_translations": [
-        "A：Check a Web site",
-        "B：Read some meeting（会议） minutes",
-        "C：Submit an order（订单）",
-        "D：Talk to a staff member"
+        "A:Check a Web site",
+        "B:Read some meeting(会议) minutes",
+        "C:Submit an order(订单)",
+        "D:Talk to a staff member"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Excuse me, | just got into the office. My car would",
+      "evidence": "参考听力原文：“What did I miss at the staff meeting?”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Excuse me, | just got into the office. My car would",
+        "evidence": "参考听力原文：“What did I miss at the staff meeting?”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“What did | miss at the staff meetir”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Talk to a staff member）。"
+        "analysis": "正确答案：D（Talk to a staff member）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

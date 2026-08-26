@@ -41,9 +41,31 @@
       "asset_key": "official-10-test-2/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "BRE92-9\nThank you for listening to Griflin City News! ®We are the\nleader in local news. One of our top stories today is the\nopening of the modern art museum in the city center. ® This\nevent has attracted many visitors. ® Go to our Web site to\nwatch short discussions with these people and hear all the\nHETS\nwonderful things they have to say about the museum and\nthe city! Up next, we have a live interview with Sung-Hee\nKwon, one of the artists whose work is being exhibited at the\nmuseum. ®We already have callers waiting to ask her some\nquestions. You could be next! ® We'd love to hear your voice\nuitate\non Griflin City News!",
-    "transcript_translation": "中文辅助（离线预处理）：BRE92-9\nThank（感谢） you for listening to Griflin City News!\n®We are the\nleader in local news.\nOne of our top stories today is the\nopening of the modern art museum in the city center.\n® This\nevent has attracted many visitors.\n® Go to our Web site to\nwatch short discussions with these people and hear all the\nHETS\nwonderful things they have to say about the museum and\nthe city!\nUp next, we have a live interview with Sung-Hee\nKwon, one of the artists whose work（工作） is being exhibited at the\nmuseum.\n®We already have callers waiting to ask her some\nquestions.\nYou could be next!\n® We'd love to hear your voice\nuitate\non Griflin City News!",
-    "content_translation": "中文辅助（离线预处理）：BRE92-9\nThank（感谢） you for listening to Griflin City News!\n®We are the\nleader in local news.\nOne of our top stories today is the\nopening of the modern art museum in the city center.\n® This\nevent has attracted many visitors.\n® Go to our Web site to\nwatch short discussions with these people and hear all the\nHETS\nwonderful things they have to say about the museum and\nthe city!\nUp next, we have a live interview with Sung-Hee\nKwon, one of the artists whose work（工作） is being exhibited at the\nmuseum.\n®We already have callers waiting to ask her some\nquestions.\nYou could be next!\n® We'd love to hear your voice\nuitate\non Griflin City News!"
+    "transcript": "Thank you for listening to Grifflin City News.\nWe are the leader in local news.\nOne of our top stories today is the opening of the Modern Art Museum in the City Center.\nThis event has attracted many visitors.\nGo to our website to watch short discussions with these people and hear all the wonderful things they have to say about the museum and the city.\nUp next, we have a live interview with Sung Hee Kwon, one of the artists whose work is being exhibited at the museum.\nWe already have callers waiting to ask her some questions.\nYou could be next.\nWe'd love to hear your voice on Grifflin City News.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e793b9aeb79aed68dd8d9d7ff10aece4ce4b77a4cd9c09154cb887402d06fec3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 113,
+        "legacy_word_count": 116,
+        "length_ratio": 0.974,
+        "legacy_coverage": 0.931
+      }
+    },
+    "transcript_translation": "感谢收听Grifflin City News。\n我们是本地新闻的领导者。\n我们今天的一条头条是市中心现代艺术博物馆的开幕式。\n这个活动吸引了许多游客。\n请访问我们的网站，观看与这些人士的简短讨论，并听他们对博物馆和这座城市所说的所有精彩内容。\n接下来，我们将采访Sung Hee Kwon，她是正在博物馆展出的艺术家之一。\n我们已经有来电者等候向她提问了。\n您可能是下一个。\n我们很期待在Grifflin City News上听到您的声音。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3c09b37a3cfa4d07d1a39ebf68661910ba4d4737991ccc7cd9002d47eb7db087"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "C",
       "question": "What is the topic of the broadcast?",
-      "answer_explain": "原文依据：听力原文中提到“Thank you for listening to Griflin City News!”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Community news）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the topic of the broadcast?",
+      "answer_explain": "正确答案：C（Community news）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the topic of the broadcast?",
       "choice_translations": [
-        "A：International sports",
-        "B：Classical music",
-        "C：Community news",
-        "D：Home-improvement advice"
+        "A:International sports",
+        "B:Classical music",
+        "C:Community news",
+        "D:Home-improvement advice"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：BRE92-9",
+      "evidence": "参考听力原文：“We'd love to hear your voice on Grifflin City News.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：BRE92-9",
+        "evidence": "参考听力原文：“We'd love to hear your voice on Grifflin City News.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Thank you for listening to Griflin City News!”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Community news）。"
+        "analysis": "正确答案：C（Community news）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, what should the listeners do on a Web site?",
-      "answer_explain": "原文依据：听力原文中提到“event has attracted many visitors.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（View interviews with visitors）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） should the listeners do on a Web site?",
+      "answer_explain": "正确答案：B（View interviews with visitors）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) should the listeners do on a Web site?",
       "choice_translations": [
-        "A：Submit reviews",
-        "B：View interviews with visitors",
-        "C：Download information（信息） about the museum",
-        "D：Read about local art classes"
+        "A:Submit reviews",
+        "B:View interviews with visitors",
+        "C:Download information(信息) about the museum",
+        "D:Read about local art classes"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：BRE92-9",
+      "evidence": "参考听力原文：“This event has attracted many visitors.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：BRE92-9",
+        "evidence": "参考听力原文：“This event has attracted many visitors.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“event has attracted many visitors.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（View interviews with visitors）。"
+        "analysis": "正确答案：B（View interviews with visitors）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "B",
       "question": "Why does the speaker say, \"You could be next\"?",
-      "answer_explain": "原文依据：听力原文中提到“wonderful things they have to say about the museum and”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To encourage the listeners to call in）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"You could be next\"?",
+      "answer_explain": "正确答案：B（To encourage the listeners to call in）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"You could be next\"?",
       "choice_translations": [
-        "A：To suggest（表明/建议） that the listeners enter a contest",
-        "B：To encourage the listeners to call in",
-        "C：To recommend a local restaurant",
-        "D：To promote a job fair"
+        "A:To suggest(表明/建议) that the listeners enter a contest",
+        "B:To encourage the listeners to call in",
+        "C:To recommend a local restaurant",
+        "D:To promote a job fair"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：BRE92-9",
+      "evidence": "参考听力原文：“You could be next.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：BRE92-9",
+        "evidence": "参考听力原文：“You could be next.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“wonderful things they have to say about the museum and”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To encourage the listeners to call in）。"
+        "analysis": "正确答案：B（To encourage the listeners to call in）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

@@ -28,38 +28,58 @@
       "asset_key": "official-10-test-1/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "您希望我把鲜花送到 Cho 女士的办公室吗？M\nA. 她今天在家工作。\nB. 一个维护请求。)\nC. 这套公寓相当大。",
-    "content_translation": "您希望我把鲜花送到 Cho 女士的办公室吗？M\nA. 她今天在家工作。\nB. 一个维护请求。)\nC. 这套公寓相当大。"
+    "transcript": "Would you like me to bring the flowers for Ms. Cho to her office?\nA. She's working at home today.\nB. A maintenance request.\nC. The apartment is quite large.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "32e2b28a618e16577ae7b2cb743627346ed6c2b694659d011c04ff44eac8bd9f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "需要我把花带到乔女士的办公室吗？\nA. 她今天在家工作。\nB. 一个维护请求。\nC. 这套公寓相当大。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e4a0968a289dcaf3d78ee7bc6f92e1d28b5157a0c6cad1a8e8db9098cc1b128e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "She's working at home today.",
-        "A maintenance request. ) ti",
+        "A maintenance request.",
         "The apartment is quite large."
       ],
       "answer": "A",
-      "question": "w Would you like me to bring the flowers for Ms. Cho to her office? M",
+      "question": "Would you like me to bring the flowers for Ms. Cho to her office?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“w Would you like me to bring the flowers for Ms. Cho to her office? M”，自然应答是“She's working at home today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（She's working at home today.）。",
-      "question_translation": "您希望我把鲜花送到 Cho 女士的办公室吗？M",
+      "answer_explain": "原文依据：问句或陈述是“Would you like me to bring the flowers for Ms. Cho to her office?”，自然应答是“She's working at home today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（She's working at home today.）。",
+      "question_translation": "需要我把花带到乔女士的办公室吗?",
       "choice_translations": [
         "A：她今天在家工作。",
-        "B：一个维护请求。)",
+        "B：一个维护请求。",
         "C：这套公寓相当大。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：w Would you like me to bring the flowers for Ms. Cho to her office? M",
+      "evidence": "参考原文第 1 段：Would you like me to bring the flowers for Ms. Cho to her office?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：w Would you like me to bring the flowers for Ms. Cho to her office? M",
+        "evidence": "参考原文第 1 段：Would you like me to bring the flowers for Ms. Cho to her office?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“w Would you like me to bring the flowers for Ms. Cho to her office? M”，自然应答是“She's working at home today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（She's working at home today.）。"
+        "analysis": "原文依据：问句或陈述是“Would you like me to bring the flowers for Ms. Cho to her office?”，自然应答是“She's working at home today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（She's working at home today.）。"
       },
       "item_id": 18,
       "priority": {

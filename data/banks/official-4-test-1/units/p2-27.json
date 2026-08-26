@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-1/audio/part2/q027.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：WI” We should offer more international food options.\n‘ a Em A Wie eae.\nae Ew",
-    "content_translation": "中文辅助（离线预处理）：WI” We should offer more international food options.\n‘ a Em A Wie eae.\nae Ew"
+    "transcript": "We should offer more international food options.\nA. That sounds expensive.\nB. No thanks, I just ate.\nC. A flight to Brazil.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e1ebc7c5ae013b103fc8eedce6e0c4a5209e35d5b78581842fadb8355d55d616",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q027.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "我们应该提供更多国际食品选择。\nA. 听起来很贵。\nB. 不用了，我刚吃完。\nC. 去巴西的航班。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "92cf7989be111fa3fb5be2f898465e28dd51b91c85fa7b92bad5b3be652d2ac6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "That sounds expensive. a",
-        "No thanks, | just ate.",
+        "That sounds expensive.",
+        "No thanks, I just ate.",
         "A flight to Brazil."
       ],
       "answer": "A",
-      "question": "WI” We should offer more international food options. ‘ a Em A Wie eae. ae Ew",
+      "question": "We should offer more international food options.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“WI” We should offer more international food options. ‘ a Em A Wie eae. ae Ew”，自然应答是“That sounds expensive. a”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（That sounds expensive. a）。",
-      "question_translation": "中文辅助（离线预处理）：WI” We should offer more international food options.\n‘ a Em A Wie eae.\nae Ew",
+      "answer_explain": "原文依据：问句或陈述是“We should offer more international food options.”，自然应答是“That sounds expensive.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（That sounds expensive.）。",
+      "question_translation": "我们应该提供更多国际食品选择。",
       "choice_translations": [
-        "A：That sounds expensive.\na",
-        "B：No thanks, | just ate.",
-        "C：A flight to Brazil."
+        "A：听起来很贵。",
+        "B：不用了,我刚吃完。",
+        "C：去巴西的航班。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：WI” We should offer more international food options. ‘ a Em A Wie eae. ae Ew",
+      "evidence": "参考原文第 1 段：We should offer more international food options.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：WI” We should offer more international food options. ‘ a Em A Wie eae. ae Ew",
+        "evidence": "参考原文第 1 段：We should offer more international food options.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“WI” We should offer more international food options. ‘ a Em A Wie eae. ae Ew”，自然应答是“That sounds expensive. a”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（That sounds expensive. a）。"
+        "analysis": "原文依据：问句或陈述是“We should offer more international food options.”，自然应答是“That sounds expensive.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（That sounds expensive.）。"
       },
       "item_id": 27,
       "priority": {

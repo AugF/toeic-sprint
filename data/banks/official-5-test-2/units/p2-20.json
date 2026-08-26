@@ -28,8 +28,28 @@
       "asset_key": "official-5-test-2/audio/part2/q020.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：They're repainting the walls tomorrow, aren't they?",
-    "content_translation": "中文辅助（离线预处理）：They're repainting the walls tomorrow, aren't they?"
+    "transcript": "They're repainting the walls tomorrow, aren't they?\nA. No, not until next week.\nB. How many cans of paint?\nC. A maintenance request form.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "03458136f8b48e4941b1aedf5b4c53ae1a31b39bf30b24a034778a5d4477cc6b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q020.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "他们明天要重新刷墙，对吧？\nA. 不，直到下周。\nB. 多少罐油漆？\nC. 一份维护请求表。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5855e043eb25b6f7e526d9492d36323be246d26ba138cc63f9303c7d01855258"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“They're repainting the walls tomorrow, aren't they?”，自然应答是“No, not until next week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, not until next week.）。",
-      "question_translation": "中文辅助（离线预处理）：They're repainting the walls tomorrow, aren't they?",
+      "question_translation": "他们明天要重新刷墙,对吧?",
       "choice_translations": [
-        "A：No, not until next week.",
-        "B：How（如何） many cans of paint?",
-        "C：A maintenance request form."
+        "A：不,直到下周。",
+        "B：多少罐油漆?",
+        "C：一份维护请求表。"
       ],
       "question_type": "否定 / 反意疑问句",
       "evidence": "参考原文第 1 段：They're repainting the walls tomorrow, aren't they?",

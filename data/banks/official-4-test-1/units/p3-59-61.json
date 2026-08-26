@@ -41,37 +41,59 @@
       "asset_key": "official-4-test-1/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "GM Hi, can you help me? I’m looking for drafting pen\nfor an architectural design class I’m taking, but er\nhaving trouble locating the brand that | want— It’s\ncalled “Carow.”\nI'm sorry, but °we don't carry that brand at this\nlocation.\ni“ Do you sell them at any of your other locations?\nThey may have Carow products at our larger shc\nRed Grove. I'll give them a call now and check for:",
-    "transcript_translation": "中文辅助（离线预处理）：GM Hi, can you help me?\nI’m looking for drafting pen\nfor an architectural design class I’m taking, but er\nhaving trouble locating the brand that | want— It’s\ncalled “Carow.”\nI'm sorry, but °we don't carry that brand at this\nlocation.\ni“ Do you sell them at any of your other locations?\nThey may have Carow products at our larger shc\nRed Grove.\nI'll give them a call now and check for:",
-    "content_translation": "中文辅助（离线预处理）：GM Hi, can you help me?\nI’m looking for drafting pen\nfor an architectural design class I’m taking, but er\nhaving trouble locating the brand that | want— It’s\ncalled “Carow.”\nI'm sorry, but °we don't carry that brand at this\nlocation.\ni“ Do you sell them at any of your other locations?\nThey may have Carow products at our larger shc\nRed Grove.\nI'll give them a call now and check for:"
+    "transcript": "Hi, can you help me?\nI'm looking for drafting pencils for an architectural design class I'm taking, but I'm having trouble locating the brand that I want.\nIt's called Caro.\nI'm sorry, but we don't carry that brand at this location.\nDo you sell them at any of your other locations?\nThey may have Caro products at our largest shop in Red Grove.\nI'll give them a call now and check for you.\nThank you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "60830e3589f07594e6762d5e0b0c8043a0a2a9d33a25e2d8f2e298d0ed812c19",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 75,
+        "legacy_word_count": 71,
+        "length_ratio": 1.056,
+        "legacy_coverage": 0.859
+      }
+    },
+    "transcript_translation": "嗨，你能帮我吗？\n我正在找用于建筑设计课程的绘图铅笔，但我很难找到我想要的品牌。\n它叫 Caro。\n对不起，我们在这个地点没有销售该品牌。\n你们在其他任何地点出售吗？\n我们最大的 Red Grove 店可能会有 Caro 产品。\n我现在给他们打电话查一下给你。\n谢谢你。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b9666e438bc532c862a14766d3539482fdf22e0fd31af74b39fc184bf64c0465"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Auniversity professor",
-        "Asales associate",
-        "Aconstruction worker",
+        "A university professor",
+        "A sales associate",
+        "A construction worker",
         "An art museum director"
       ],
       "answer": "B",
       "question": "Who most likely is the woman?",
-      "answer_explain": "原文依据：听力原文中提到“having trouble locating the brand that | want— It’s”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Asales associate）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the woman（女士）?",
+      "answer_explain": "正确答案：B（A sales associate）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is the woman(女士)?",
       "choice_translations": [
-        "A：Auniversity professor",
-        "B：Asales associate",
-        "C：Aconstruction worker",
-        "D：An art museum director"
+        "A:A university professor",
+        "B:A sales associate",
+        "C:A construction worker",
+        "D:An art museum director"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：GM Hi, can you help me? I’m looking for drafting pen",
+      "evidence": "参考听力原文：“I'm looking for drafting pencils for an architectural design class I'm taking, but I'm having trouble locating the brand that I want.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：GM Hi, can you help me? I’m looking for drafting pen",
+        "evidence": "参考听力原文：“I'm looking for drafting pencils for an architectural design class I'm taking, but I'm having trouble locating the brand that I want.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“having trouble locating the brand that | want— It’s”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Asales associate）。"
+        "analysis": "正确答案：B（A sales associate）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 59,
       "priority": {
@@ -102,30 +124,30 @@
     },
     {
       "choices": [
-        "Aspecific product brand",
-        "Amethod of payment",
+        "A specific product brand",
+        "A method of payment",
         "Some updates to a contract",
         "Some room measurements"
       ],
       "answer": "A",
       "question": "What does the man inquire about?",
-      "answer_explain": "原文依据：听力原文中提到“having trouble locating the brand that | want— It’s”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Aspecific product brand）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） inquire about?",
+      "answer_explain": "正确答案：A（A specific product brand）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) inquire about?",
       "choice_translations": [
-        "A：Aspecific product brand",
-        "B：Amethod of payment",
-        "C：Some updates to a contract",
-        "D：Some room measurements"
+        "A:A specific product brand",
+        "B:A method of payment",
+        "C:Some updates to a contract",
+        "D:Some room measurements"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：GM Hi, can you help me? I’m looking for drafting pen",
+      "evidence": "参考听力原文：“I'm looking for drafting pencils for an architectural design class I'm taking, but I'm having trouble locating the brand that I want.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：GM Hi, can you help me? I’m looking for drafting pen",
+        "evidence": "参考听力原文：“I'm looking for drafting pencils for an architectural design class I'm taking, but I'm having trouble locating the brand that I want.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“having trouble locating the brand that | want— It’s”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Aspecific product brand）。"
+        "analysis": "正确答案：A（A specific product brand）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 60,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "A",
       "question": "What does the woman say she will do?",
-      "answer_explain": "原文依据：听力原文中提到“I'll give them a call now and check for:”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Call another store location）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do?",
+      "answer_explain": "正确答案：A（Call another store location）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she will do?",
       "choice_translations": [
-        "A：Call another store location",
-        "B：Speak to a supervisor",
-        "C：E-mail a document",
-        "D：Set up a meeting（会议）"
+        "A:Call another store location",
+        "B:Speak to a supervisor",
+        "C:E-mail a document",
+        "D:Set up a meeting(会议)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：GM Hi, can you help me? I’m looking for drafting pen",
+      "evidence": "参考听力原文：“I'm sorry, but we don't carry that brand at this location.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：GM Hi, can you help me? I’m looking for drafting pen",
+        "evidence": "参考听力原文：“I'm sorry, but we don't carry that brand at this location.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I'll give them a call now and check for:”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Call another store location）。"
+        "analysis": "正确答案：A（Call another store location）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 61,
       "priority": {

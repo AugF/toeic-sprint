@@ -28,15 +28,35 @@
       "asset_key": "official-10-test-2/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：We should review the latest round of resumes.",
-    "content_translation": "中文辅助（离线预处理）：We should review the latest round of resumes."
+    "transcript": "We should review the latest round of resumes.\nA. Not while I was there.\nB. The position has been filled.\nC. It costs 20 pounds per ounce.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "85abb31b1bc98ed26fe8bc5e916beb6da6271e4b2e63ee3a732241a91163fb65",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "我们应该审阅最新一轮的简历。\nA. 当我在那里时没有。\nB. 这个职位已经被填补了。\nC. 它每盎司花费 20 英镑。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9bd2dc3029f742750d31a23754b420c05b8f0dff19f2216c3f6b921dd5edb358"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Not while I was there.",
         "The position has been filled.",
-        "It costs twenty pounds per ounce."
+        "It costs 20 pounds per ounce."
       ],
       "answer": "B",
       "question": "We should review the latest round of resumes.",
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“We should review the latest round of resumes.”，自然应答是“The position has been filled.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The position has been filled.）。",
-      "question_translation": "中文辅助（离线预处理）：We should review the latest round of resumes.",
+      "question_translation": "我们应该审阅最新一轮的简历。",
       "choice_translations": [
-        "A：Not while I was there.",
-        "B：The position has been filled.",
-        "C：It costs twenty pounds per ounce."
+        "A：当我在那里时没有。",
+        "B：这个职位已经被填补了。",
+        "C：它每盎司花费 20 英镑。"
       ],
       "question_type": "陈述 / 请求应答题",
       "evidence": "参考原文第 1 段：We should review the latest round of resumes.",

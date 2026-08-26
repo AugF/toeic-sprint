@@ -39,9 +39,31 @@
       "asset_key": "official-11-test-1/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "Thank you to the Clayton Museum for inviting me to give this\npresentation about my most recent publication. My book\nfocuses on the history of the pottery makers who used to\nthrive here in Clayton. In 1850 only one pottery company\nmade clay bowls and containers. By the next century, over\n50 factories were making tableware, such as plates and\nteacups. Tea sets were very popular at that time. As you\ncan see, there are several antique tea sets on the table here\nnext to the podium. You are welcome to come and take a\ncloser look after I'm finished speaking.",
-    "transcript_translation": "感谢克莱顿博物馆邀请我来介绍我最新出版的著作。我的书主要讲述过去曾在克莱顿蓬勃发展的陶器制造者的历史。1850 年时，只有一家公司生产陶碗和陶制容器。到了下一个世纪，已有五十多家工厂生产盘子、茶杯等餐具。当时，茶具非常受欢迎。大家可以看到，讲台旁边的桌子上摆着几套古董茶具。我的演讲结束后，欢迎各位走近仔细观赏。",
-    "content_translation": "本段听力围绕“博物馆讲座”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Thank you to the Clayton Museum for inviting me to give this presentation about my most recent publication.\nMy book focuses on the history of the pottery makers who used to thrive here in Clayton.\nIn 1850, only one pottery company made clay bowls and containers.\nBy the next century, over 50 factories were making tableware, such as plates and teacups.\nTea sets were very popular at that time.\nAs you can see, there are several antique tea sets on the table here next to the podium.\nYou are welcome to come and take a closer look after I'm finished speaking.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "62f56ae8ff636e5cbd4177d629712940c93db435700a972e4d04ad3367992fea",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 99,
+        "legacy_word_count": 99,
+        "length_ratio": 1,
+        "legacy_coverage": 0.99
+      }
+    },
+    "transcript_translation": "感谢 Clayton Museum 邀请我在这里就我的最新出版物进行这次演讲。\n我的书重点介绍了曾经在克莱顿繁盛的陶器制造商的历史。\n1850年，只有一家陶器公司制作粘土碗和容器。\n到了下一个世纪，超过50家工厂都在生产餐具，比如盘子和茶杯。\n那时茶具非常流行。\n正如您所看到的，讲台旁边桌子上摆着几套古董茶具。\n在我说完之后，欢迎您过来仔细看看。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "bad1f4a52678745271399d273d8616b09099e678370a017cfb4595072c07110d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,24 +75,24 @@
         "A tour guide"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：演讲者介绍自己的publication，主题是 Clayton pottery makers 的 history。 选择理由：研究并出版历史著作的人最可能是historian，对应A。正确答案：A（A historian）。",
+      "answer_explain": "正确答案：A（A historian）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 1 段第 1 句：Thank you to the Clayton Museum for inviting me to give this",
+      "evidence": "参考听力原文：“As you can see, there are several antique tea sets on the table here next to the podium.”",
       "choice_translations": [
-        "A：历史学家",
-        "B：电影制片人",
-        "C：工厂老板",
-        "D：导游"
+        "A:历史学家",
+        "B:电影制片人",
+        "C:工厂老板",
+        "D:导游"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 1 段第 1 句：Thank you to the Clayton Museum for inviting me to give this",
+        "evidence": "参考听力原文：“As you can see, there are several antique tea sets on the table here next to the podium.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：演讲者介绍自己的publication，主题是 Clayton pottery makers 的 history。 选择理由：研究并出版历史著作的人最可能是historian，对应A。正确答案：A（A historian）。"
+        "analysis": "正确答案：A（A historian）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者最可能是什么人？",
+      "question_translation": "说话者最可能是什么人?",
       "item_id": 74,
       "priority": {
         "level": "P2",
@@ -105,24 +127,24 @@
         "Pottery manufacturing"
       ],
       "answer": "D",
-      "answer_explain": "原文依据：讲话讨论 pottery company、clay bowls、tableware 和 tea sets。 选择理由：行业是陶器制造，对应D。正确答案：D（Pottery manufacturing）。",
+      "answer_explain": "正确答案：D（Pottery manufacturing）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Thank you to the Clayton Museum for inviting me to give this",
+      "evidence": "参考听力原文：“My book focuses on the history of the pottery makers who used to thrive here in Clayton.”",
       "choice_translations": [
-        "A：茶叶生产",
-        "B：杂志出版",
-        "C：旅游业",
-        "D：陶器制造业"
+        "A:茶叶生产",
+        "B:杂志出版",
+        "C:旅游业",
+        "D:陶器制造业"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Thank you to the Clayton Museum for inviting me to give this",
+        "evidence": "参考听力原文：“My book focuses on the history of the pottery makers who used to thrive here in Clayton.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：讲话讨论 pottery company、clay bowls、tableware 和 tea sets。 选择理由：行业是陶器制造，对应D。正确答案：D（Pottery manufacturing）。"
+        "analysis": "正确答案：D（Pottery manufacturing）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者讨论的是哪个行业？",
+      "question_translation": "说话者讨论的是哪个行业?",
       "item_id": 75,
       "priority": {
         "level": "P2",
@@ -157,24 +179,24 @@
         "Purchase an item"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：演讲者邀请听众会后 come and take a closer look at antique tea sets。 选择理由：即鼓励观看展品，对应C。正确答案：C（View some objects）。",
+      "answer_explain": "正确答案：C（View some objects）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Thank you to the Clayton Museum for inviting me to give this",
+      "evidence": "参考听力原文：“As you can see, there are several antique tea sets on the table here next to the podium.”",
       "choice_translations": [
-        "A：做笔记",
-        "B：提问",
-        "C：观看一些实物",
-        "D：购买一件商品"
+        "A:做笔记",
+        "B:提问",
+        "C:观看一些实物",
+        "D:购买一件商品"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Thank you to the Clayton Museum for inviting me to give this",
+        "evidence": "参考听力原文：“As you can see, there are several antique tea sets on the table here next to the podium.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：演讲者邀请听众会后 come and take a closer look at antique tea sets。 选择理由：即鼓励观看展品，对应C。正确答案：C（View some objects）。"
+        "analysis": "正确答案：C（View some objects）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者鼓励听众做什么？",
+      "question_translation": "说话者鼓励听众做什么?",
       "item_id": 76,
       "priority": {
         "level": "P2",

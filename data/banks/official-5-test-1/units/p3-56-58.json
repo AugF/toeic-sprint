@@ -40,9 +40,31 @@
       "asset_key": "official-5-test-1/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "So next on our meeting agenda; the open position in\nthe sales department.\nK. Here's the job description I wrote up. | think we\nshould look at internal candidates before advertising\noutside the company.\nThat makes sense. So we need someone who can\nhandle our Chinese clients' accounts... someone who\nspeaks Mandarin.\nEs w Right. Malik Lewis lived in China for ten years...\nThat's true. ® But we need to give everyone an\nopportunity to apply. Can you put an announcement\nabout this job on our staff Web site?",
-    "transcript_translation": "中文辅助（离线预处理）：So next on our meeting（会议） agenda; the open position in\nthe sales department.\nK.\nHere's the job description I wrote up.\n| think we\nshould look at internal candidates before advertising\noutside the company（公司）.\nThat makes sense.\nSo we need someone who（谁） can\nhandle our Chinese clients' accounts...\nsomeone who（谁）\nspeaks Mandarin.\nEs w Right.\nMalik Lewis lived in China for ten years...\nThat's true.\n® But we need to give everyone an\nopportunity to apply.\nCan you put an announcement\nabout this job on our staff Web site?",
-    "content_translation": "中文辅助（离线预处理）：So next on our meeting（会议） agenda; the open position in\nthe sales department.\nK.\nHere's the job description I wrote up.\n| think we\nshould look at internal candidates before advertising\noutside the company（公司）.\nThat makes sense.\nSo we need someone who（谁） can\nhandle our Chinese clients' accounts...\nsomeone who（谁）\nspeaks Mandarin.\nEs w Right.\nMalik Lewis lived in China for ten years...\nThat's true.\n® But we need to give everyone an\nopportunity to apply.\nCan you put an announcement\nabout this job on our staff Web site?"
+    "transcript": "So, next on our meeting agenda, the open position in the sales department.\nOkay.\nHere's the job description I wrote up.\nI think we should look at internal candidates before advertising outside the company.\nThat makes sense.\nSo we need someone who can handle our Chinese clients' accounts.\nSomeone who speaks Mandarin.\nRight.\nMalik Lewis lived in China for ten years.\nThat's true.\nBut we need to give everyone an opportunity to apply.\nCan you put an announcement about this job on our staff website?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "edc791b47625cae881b8e1ba56fb299f2e9a1854862173d9d655417b9387b036",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 85,
+        "legacy_word_count": 85,
+        "length_ratio": 1,
+        "legacy_coverage": 0.953
+      }
+    },
+    "transcript_translation": "那么，接下来是我们的会议议程，销售部门的空缺职位。\n好的。\n这是我写好的工作描述。\n我想我们应该先考虑内部候选人，然后再在公司外部招聘。\n有道理。\n所以我们需要一个能处理我们中国客户账户的人。\n会说普通话的人。\n对。\nMalik Lewis 在中国生活了十年。\n那是真的。\n但我们需要给每个人提供申请的机会。\n你能把这个工作公告发布到我们的员工网站上吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8138eacaa589e9c68bcc8007ac17b4629e48df4f81943c22715cec10c3c64c7c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "What is the conversation mainly about?",
-      "answer_explain": "原文依据：听力原文中提到“Here's the job description I wrote up.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Filling a job opening）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the conversation mainly about?",
+      "answer_explain": "正确答案：C（Filling a job opening）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the conversation mainly about?",
       "choice_translations": [
-        "A：Finalizing a company（公司） merger",
-        "B：Reporting annual sales",
-        "C：Filling a job opening",
-        "D：Analyzing a competitor"
+        "A:Finalizing a company(公司) merger",
+        "B:Reporting annual sales",
+        "C:Filling a job opening",
+        "D:Analyzing a competitor"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：So next on our meeting agenda; the open position in",
+      "evidence": "参考听力原文：“Can you put an announcement about this job on our staff website?”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：So next on our meeting agenda; the open position in",
+        "evidence": "参考听力原文：“Can you put an announcement about this job on our staff website?”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Here's the job description I wrote up.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Filling a job opening）。"
+        "analysis": "正确答案：C（Filling a job opening）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "B",
       "question": "Why does the woman say, \"Malik Lewis lived in China for ten years\"?",
-      "answer_explain": "原文依据：听力原文中提到“Malik Lewis lived in China for ten years...”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To offer a recommendation）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） say, \"Malik Lewis lived in China for ten years\"?",
+      "answer_explain": "正确答案：B（To offer a recommendation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the woman(女士) say, \"Malik Lewis lived in China for ten years\"?",
       "choice_translations": [
-        "A：To express surprise",
-        "B：To offer a recommendation",
-        "C：To correct a mistake",
-        "D：To give a compliment"
+        "A:To express surprise",
+        "B:To offer a recommendation",
+        "C:To correct a mistake",
+        "D:To give a compliment"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：Es w Right. Malik Lewis lived in China for ten years...",
+      "evidence": "参考听力原文：“Malik Lewis lived in China for ten years.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：Es w Right. Malik Lewis lived in China for ten years...",
+        "evidence": "参考听力原文：“Malik Lewis lived in China for ten years.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Malik Lewis lived in China for ten years...”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To offer a recommendation）。"
+        "analysis": "正确答案：B（To offer a recommendation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "What does the man ask the woman to do?",
-      "answer_explain": "原文依据：听力原文中提到“Can you put an announcement”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Post an announcement）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） ask the woman（女士） to do?",
+      "answer_explain": "正确答案：B（Post an announcement）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) ask the woman(女士) to do?",
       "choice_translations": [
-        "A：Call a client",
-        "B：Post an announcement",
-        "C：Go on a business trip",
-        "D：Revise a document"
+        "A:Call a client",
+        "B:Post an announcement",
+        "C:Go on a business trip",
+        "D:Revise a document"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：So next on our meeting agenda; the open position in",
+      "evidence": "参考听力原文：“Can you put an announcement about this job on our staff website?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：So next on our meeting agenda; the open position in",
+        "evidence": "参考听力原文：“Can you put an announcement about this job on our staff website?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Can you put an announcement”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Post an announcement）。"
+        "analysis": "正确答案：B（Post an announcement）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

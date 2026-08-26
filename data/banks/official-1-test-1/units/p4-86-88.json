@@ -39,9 +39,32 @@
       "asset_key": "official-1-test-1/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "Ew\nThis is Marlene Saunders with the local news. 7\nawaited Chiltonville Medical Center opened on Tu\nhospital complex reflects the most advanced think\nmedical care. This includes wellness education se\non nutrition and exercise. @An additional fitness f\nscheduled to open in August, which will serve the\npopulation and include rehabilitation services. Ah\nspokesperson said ©the location is easily access\ntransportation, which visitors said they appreciate\ninformation about Chiltonville Medical Center, visi\nat www.chiltonvillemedicalcenter.com.",
-    "transcript_translation": "Ew\n这是当地新闻的 Marlene Saunders。7\n期待已久的 Chiltonville Medical Center 医院综合体，展示了最先进的医疗护理。这包括健康教育、营养和运动等。@一个额外的健身房计划于八月开放，将为社区提供服务，并包括康复服务。一位发言人说，该地点交通便利，这是访客们表示赞赏的。有关 Chiltonville Medical Center 的信息，请访问 www.chiltonvillemedicalcenter.com。",
-    "content_translation": "Ew\n这是当地新闻的 Marlene Saunders。7\n期待已久的 Chiltonville Medical Center 医院综合体，展示了最先进的医疗护理。这包括健康教育、营养和运动等。@一个额外的健身房计划于八月开放，将为社区提供服务，并包括康复服务。一位发言人说，该地点交通便利，这是访客们表示赞赏的。有关 Chiltonville Medical Center 的信息，请访问 www.chiltonvillemedicalcenter.com。"
+    "transcript": "This is Marlene Saunders with the local news.\nThe long-awaited Chiltonville Medical Center opened on Tuesday.\nThe hospital complex reflects the most advanced thinking about medical care.\nThis includes wellness education sessions on nutrition and exercise.\nAn additional fitness facility is scheduled to open in August, which will serve the local population and include rehabilitation services.\nA hospital spokesperson said the location is easily accessible by public transportation, which visitors said they appreciated.\nFor more information about Chiltonville Medical Center, visit the website at www.chiltonvillemedicalcenter.com.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4c5b7c2f57513e64d5bad7dbeb5be1db381f901ab369264f73456fcf0517e794",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 87,
+        "legacy_word_count": 86,
+        "length_ratio": 1.012,
+        "legacy_coverage": 1
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "我是Marlene Saunders，为您带来本地新闻。\n期待已久的Chiltonville Medical Center周二开业了。\n这个医院综合体体现了关于医疗护理最先进的理念。\n这包括营养和运动方面的健康教育课程。\n此外还有一个健身设施计划在八月开放，将服务当地居民并提供康复服务。\n一位医院发言人说，该地点易于通过公共交通到达，这一点受到了访客们的赞赏。\n有关Chiltonville Medical Center的更多信息，请访问网站www.chiltonvillemedicalcenter.com。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6db37d1107629835056bdd954d7a4bfb152213185c564ce47f3e0d15dbbfafe0"
+    }
   },
   "items": [
     {
@@ -52,24 +75,24 @@
         "To congratulate medical staff"
       ],
       "answer": "B",
-      "question": "What is the main purpose of the broadca",
-      "answer_explain": "原文依据：听力原文中提到“hospital complex reflects the most advanced think”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To announce a hospital opening）。",
+      "question": "What is the main purpose of the broadcast?",
+      "answer_explain": "正确答案：B（To announce a hospital opening）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Ew",
+      "evidence": "参考听力原文：“A hospital spokesperson said the location is easily accessible by public transportation, which visitors said they appreciated.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Ew",
+        "evidence": "参考听力原文：“A hospital spokesperson said the location is easily accessible by public transportation, which visitors said they appreciated.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“hospital complex reflects the most advanced think”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To announce a hospital opening）。"
+        "analysis": "正确答案：B（To announce a hospital opening）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "广播的主要目的是什么？",
+      "question_translation": "广播的主要目的是什么?",
       "choice_translations": [
-        "A：描述会员优惠",
-        "B：宣布医院开业",
-        "C：介绍一些运动课程",
-        "D：祝贺医护人员"
+        "A:描述会员优惠",
+        "B:宣布医院开业",
+        "C:介绍一些运动课程",
+        "D:祝贺医护人员"
       ],
       "item_id": 86,
       "priority": {
@@ -98,30 +121,30 @@
     },
     {
       "choices": [
-        "Achildren’s playroom",
+        "A children’s playroom",
         "A fitness center",
         "Extra office space",
         "Employee lounges"
       ],
       "answer": "B",
       "question": "What addition is planned?",
-      "answer_explain": "原文依据：听力原文中提到“awaited Chiltonville Medical Center opened on Tu”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A fitness center）。",
+      "answer_explain": "正确答案：B（A fitness center）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：on nutrition and exercise. @An additional fitness f",
+      "evidence": "参考听力原文：“An additional fitness facility is scheduled to open in August, which will serve the local population and include rehabilitation services.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：on nutrition and exercise. @An additional fitness f",
+        "evidence": "参考听力原文：“An additional fitness facility is scheduled to open in August, which will serve the local population and include rehabilitation services.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“awaited Chiltonville Medical Center opened on Tu”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A fitness center）。"
+        "analysis": "正确答案：B（A fitness center）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "计划增加的是什么？",
+      "question_translation": "计划增加的是什么?",
       "choice_translations": [
-        "A：儿童游戏室",
-        "B：健身中心",
-        "C：额外的办公空间",
-        "D：员工休息室"
+        "A:儿童游戏室",
+        "B:健身中心",
+        "C:额外的办公空间",
+        "D:员工休息室"
       ],
       "item_id": 87,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "D",
       "question": "According to the spokesperson, what did visitors like?",
-      "answer_explain": "原文依据：听力原文中提到“spokesperson said ©the location is easily access”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（The convenient location）。",
+      "answer_explain": "正确答案：D（The convenient location）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：spokesperson said ©the location is easily access",
+      "evidence": "参考听力原文：“A hospital spokesperson said the location is easily accessible by public transportation, which visitors said they appreciated.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：spokesperson said ©the location is easily access",
+        "evidence": "参考听力原文：“A hospital spokesperson said the location is easily accessible by public transportation, which visitors said they appreciated.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“spokesperson said ©the location is easily access”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（The convenient location）。"
+        "analysis": "正确答案：D（The convenient location）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "根据发言人说，访客们喜欢什么？",
+      "question_translation": "根据发言人说,访客们喜欢什么?",
       "choice_translations": [
-        "A：新的网站",
-        "B：延长的营业时间",
-        "C：信息台",
-        "D：便利的地理位置"
+        "A:新的网站",
+        "B:延长的营业时间",
+        "C:信息台",
+        "D:便利的地理位置"
       ],
       "item_id": 88,
       "priority": {

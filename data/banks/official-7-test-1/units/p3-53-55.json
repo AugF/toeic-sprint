@@ -38,9 +38,31 @@
       "asset_key": "official-7-test-1/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "Ew •This is the Centerville Department of Transportation.\nHow can I help you?\nIM Hello. ®I'm calling about the survey the city is\nconducting, about extending the bus routes? Ol'd love\nto have a bus stop near my apartment, so l've been\ntrying to respond to the survey online. It doesn't\nseem to be working for me, though.\nEw Oh yes, I'm sorry. ®Our survey Web page has been\ndown for several hours. I've been getting a lot of calls\nabout it. We expect it to be back up and running by\neight o'clock this evening.\nm Thanks-I'll try it again later tonight.",
-    "transcript_translation": "中文辅助（离线预处理）：Ew •This is the Centerville Department of Transportation.\nHow（如何） can I help you?\nIM Hello.\n®I'm calling about the survey the city is\nconducting, about extending the bus routes?\nOl'd love\nto have a bus stop near my apartment, so l've been\ntrying to respond to the survey online.\nIt doesn't\nseem to be working for me, though.\nEw Oh yes, I'm sorry.\n®Our survey Web page has been\ndown for several hours.\nI've been getting a lot of calls\nabout it.\nWe expect it to be back up and running by\neight o'clock this evening.\nm Thanks-I'll try it again later tonight.",
-    "content_translation": "中文辅助（离线预处理）：Ew •This is the Centerville Department of Transportation.\nHow（如何） can I help you?\nIM Hello.\n®I'm calling about the survey the city is\nconducting, about extending the bus routes?\nOl'd love\nto have a bus stop near my apartment, so l've been\ntrying to respond to the survey online.\nIt doesn't\nseem to be working for me, though.\nEw Oh yes, I'm sorry.\n®Our survey Web page has been\ndown for several hours.\nI've been getting a lot of calls\nabout it.\nWe expect it to be back up and running by\neight o'clock this evening.\nm Thanks-I'll try it again later tonight."
+    "transcript": "This is the Centerville Department of Transportation.\nHow can I help you?\nHello.\nI'm calling about the survey the City is conducting about extending the bus routes.\nI'd love to have a bus stop near my apartment, so I've been trying to respond to the survey online.\nIt doesn't seem to be working for me, though.\nOh, yes.\nI'm sorry.\nOur survey webpage has been down for several hours.\nI've been getting a lot of calls about it.\nWe expect it to be back up and running by 8 o'clock this evening.\nThanks.\nI'll try it again later tonight.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "047ad02e77e5ff134653ba76b5b81fdb0bdc7619f666c21e4a6baeb1e1594da3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 98,
+        "legacy_word_count": 102,
+        "length_ratio": 0.961,
+        "legacy_coverage": 0.882
+      }
+    },
+    "transcript_translation": "这里是森特维尔交通部。\n请问有什么可以帮您的？\n您好。\n我打电话来是关于城市正在进行的延长公交路线的调查。\n我很希望在我公寓附近有一个公交站，所以我一直在尝试在线回复这份调查。\n不过，它似乎对我来说无法使用。\n哦，是的。\n对不起。\n我们的调查网页已经停用了好几个小时了。\n我接到了很多关于这个的电话。\n我们预计到今晚八点之前会恢复运行。\n谢谢。\n我稍晚些时候再试一次。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "653eed7d958cae08f53ba241534425ee47d4506dcbc9f8cd1594690aeb1eeab9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -52,23 +74,23 @@
       ],
       "answer": "D",
       "question": "Which city department does the woman work for?",
-      "answer_explain": "原文依据：听力原文中提到“Ew •This is the Centerville Department of Transportation.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Transportation）。",
-      "question_translation": "中文辅助（离线预处理）：Which city department does the woman（女士） work（工作） for?",
+      "answer_explain": "正确答案：D（Transportation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Which city department does the woman(女士) work(工作) for?",
       "choice_translations": [
-        "A：Health",
-        "B：Housing",
-        "C：Finance",
-        "D：Transportation"
+        "A:Health",
+        "B:Housing",
+        "C:Finance",
+        "D:Transportation"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ew •This is the Centerville Department of Transportation.",
+      "evidence": "参考听力原文：“This is the Centerville Department of Transportation.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ew •This is the Centerville Department of Transportation.",
+        "evidence": "参考听力原文：“This is the Centerville Department of Transportation.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew •This is the Centerville Department of Transportation.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Transportation）。"
+        "analysis": "正确答案：D（Transportation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -103,23 +125,23 @@
       ],
       "answer": "B",
       "question": "What does the man say he has been trying to do?",
-      "answer_explain": "原文依据：听力原文中提到“trying to respond to the survey online.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Respond to a survey）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） say he has been trying to do?",
+      "answer_explain": "正确答案：B（Respond to a survey）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) say he has been trying to do?",
       "choice_translations": [
-        "A：Renew a lease",
-        "B：Respond to a survey",
-        "C：Buy a monthly pass",
-        "D：Find a map"
+        "A:Renew a lease",
+        "B:Respond to a survey",
+        "C:Buy a monthly pass",
+        "D:Find a map"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：trying to respond to the survey online. It doesn't",
+      "evidence": "参考听力原文：“I'd love to have a bus stop near my apartment, so I've been trying to respond to the survey online.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：trying to respond to the survey online. It doesn't",
+        "evidence": "参考听力原文：“I'd love to have a bus stop near my apartment, so I've been trying to respond to the survey online.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“trying to respond to the survey online.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Respond to a survey）。"
+        "analysis": "正确答案：B（Respond to a survey）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -154,23 +176,23 @@
       ],
       "answer": "C",
       "question": "Why does the woman apologize?",
-      "answer_explain": "原文依据：听力原文中提到“®Our survey Web page has been”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A Web page is not working.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） apologize?",
+      "answer_explain": "正确答案：C（A Web page is not working.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the woman(女士) apologize?",
       "choice_translations": [
-        "A：A payment method has been declined.",
-        "B：A remodeling project must be postponed.",
-        "C：A Web page is not working.",
-        "D：A street has been closed."
+        "A:A payment method has been declined.",
+        "B:A remodeling project must be postponed.",
+        "C:A Web page is not working.",
+        "D:A street has been closed."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：Ew •This is the Centerville Department of Transportation.",
+      "evidence": "参考听力原文：“It doesn't seem to be working for me, though.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：Ew •This is the Centerville Department of Transportation.",
+        "evidence": "参考听力原文：“It doesn't seem to be working for me, though.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®Our survey Web page has been”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A Web page is not working.）。"
+        "analysis": "正确答案：C（A Web page is not working.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

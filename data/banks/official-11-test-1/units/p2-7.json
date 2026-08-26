@@ -42,8 +42,28 @@
       "asset_key": "official-11-test-1/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "你的最终目的地是哪里？\nA：我要去都柏林。\nB：不，是下一站。\nC：从九点到五点。",
-    "content_translation": "本段听力围绕“地点询问”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "What's your final destination?\nA. I'm going to Dublin.\nB. No, it's the next one.\nC. From 9 to 5.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e825ba2afb4d9ac7d9e8ca92618ae5888d884717fc55aaebb4ccbe448f4f3af9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 19
+      }
+    },
+    "transcript_translation": "你的最终目的地是哪里？\nA. 我要去都柏林。\nB. 不，是下一个的。\nC. 从9点到5点。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e50190e312222190b179d482788330a4ebf4a92241cb079a3612e088d1fd5cbb"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -51,7 +71,7 @@
       "choices": [
         "I'm going to Dublin.",
         "No, it's the next one.",
-        "From nine to five."
+        "From 9 to 5."
       ],
       "answer": "A",
       "difficulty": "easy",
@@ -62,8 +82,8 @@
       "evidence": "参考原文第 1 段第 1 句：What's your final destination?",
       "choice_translations": [
         "A：我要去都柏林。",
-        "B：不，是下一站。",
-        "C：从九点到五点。"
+        "B：不,是下一个的。",
+        "C：从9点到5点。"
       ],
       "response_style": "应直接提供疑问词所要求的信息，也要留意自然的间接回答",
       "strategy": "先判断为地点疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
@@ -74,7 +94,7 @@
         "strategy": "先判断为地点疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：问句询问 final destination，答句说 I'm going to Dublin。 选择理由：Dublin是目的地，A直接回答地点；B和C分别回答站点判断和营业时间。正确答案：A（I'm going to Dublin.）。"
       },
-      "question_translation": "你的最终目的地是哪里？",
+      "question_translation": "你的最终目的地是哪里?",
       "item_id": 7,
       "priority": {
         "level": "P3",

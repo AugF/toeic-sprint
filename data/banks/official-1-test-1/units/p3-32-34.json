@@ -39,37 +39,60 @@
       "asset_key": "official-1-test-1/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "Hi Tom. Are you still planning to join us when Owe\ninterview Pim Juntasa on Wednesday? She seems like a\nreally promising candidate.\nYes, you can count on me. I'll be there at two P.M. The\nusual place, right? Meeting Room A?\nNo. Actually, @someone’s already booked Meeting Room\nA. So, instead, we'll be in the small meeting room on the\nfirst floor.\nGood to know, thanks. Oh, and I’ve revised the interview\nquestions. Til pass out photocopies of them to everyone\nbefore Wednesday.",
-    "transcript_translation": "嗨，Tom。你还计划周三来参加我们面试 Pim Juntasa 吗？她看起来是一个非常有潜力的候选人。\n是的，你指望我。我两点到场。还是老地方，对吧？A 会议室？\n不。实际上，@某人已经预订了 A 会议室了。所以，我们将在一楼的小会议室。\n了解了，谢谢。哦，我还修改了面试问题。周三前把复印件发给每个人。",
-    "content_translation": "嗨，Tom。你还计划周三来参加我们面试 Pim Juntasa 吗？她看起来是一个非常有潜力的候选人。\n是的，你指望我。我两点到场。还是老地方，对吧？A 会议室？\n不。实际上，@某人已经预订了 A 会议室了。所以，我们将在一楼的小会议室。\n了解了，谢谢。哦，我还修改了面试问题。周三前把复印件发给每个人。"
+    "transcript": "Hi, Tom.\nAre you still planning to join us when we interview Pim Juntasa on Wednesday?\nShe seems like a really promising candidate.\nYes, you can count on me.\nI'll be there at 2 p.m.\nThe usual place, right?\nMeeting Room A?\nNo, actually, someone's already booked Meeting Room A.\nSo instead, we'll be in the small meeting room on the first floor.\nGood to know, thanks.\nOh, and I've revised the interview questions.\nI'll pass out photocopies of them to everyone before Wednesday.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c5d9ce7e38a98008953444a2f36555004e2ec43942bdf96d26bc3728bb74152f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 84,
+        "legacy_word_count": 82,
+        "length_ratio": 1.024,
+        "legacy_coverage": 0.963
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "嗨，Tom。\n周三我们面试 Pim Juntasa 时，你还计划加入我们吗？\n她看起来是一个非常有潜力的候选人。\n是的，你可以指望我。\n我在下午 2 点到。\n还是老地方，对吧？\nA 会议室？\n不，实际上，有人已经预订了 A 会议室。\n所以我们改在一楼的小会议室。\n好的，知道了，谢谢。\n哦，我还修改了面试问题。\n周三之前我会把它们的复印件发给每个人。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "196d03ec65062c536b0469275a17b68814d539584de0165190a400d839b73c68"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Promoting a product )",
-        "Preparing for an interview ;",
-        "Resolving a complaint (",
-        "Confirming travel plans ("
+        "Promoting a product",
+        "Preparing for an interview",
+        "Resolving a complaint",
+        "Confirming travel plans"
       ],
       "answer": "B",
-      "question": "What is the conversation mainly about? 38.",
-      "answer_explain": "原文依据：听力原文中提到“Oh, and I’ve revised the interview”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Preparing for an interview ;）。",
+      "question": "What is the conversation mainly about?",
+      "answer_explain": "正确答案：B（Preparing for an interview）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Hi Tom. Are you still planning to join us when Owe",
+      "evidence": "参考听力原文：“Are you still planning to join us when we interview Pim Juntasa on Wednesday?”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Hi Tom. Are you still planning to join us when Owe",
+        "evidence": "参考听力原文：“Are you still planning to join us when we interview Pim Juntasa on Wednesday?”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Oh, and I’ve revised the interview”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Preparing for an interview ;）。"
+        "analysis": "正确答案：B（Preparing for an interview）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "这段对话主要讨论什么？ 38.",
+      "question_translation": "这段对话主要讨论什么?",
       "choice_translations": [
-        "A：推广产品",
-        "B：准备一次面试",
-        "C：解决投诉",
-        "D：确认旅行计划"
+        "A:推广产品",
+        "B:准备一次面试",
+        "C:解决投诉",
+        "D:确认旅行计划"
       ],
       "item_id": 32,
       "priority": {
@@ -98,30 +121,30 @@
     },
     {
       "choices": [
-        "It was renovated. 39.",
+        "It was renovated.",
         "It has no projector.",
         "It is not available.",
-        "It is too small. ("
+        "It is too small."
       ],
       "answer": "C",
-      "question": "What does the woman say about Meeting ( Room A?",
-      "answer_explain": "原文依据：听力原文中提到“So, instead, we'll be in the small meeting room on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It is not available.）。",
+      "question": "What does the woman say about Meeting Room A?",
+      "answer_explain": "正确答案：C（It is not available.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：usual place, right? Meeting Room A?",
+      "evidence": "参考听力原文：“So instead, we'll be in the small meeting room on the first floor.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：usual place, right? Meeting Room A?",
+        "evidence": "参考听力原文：“So instead, we'll be in the small meeting room on the first floor.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“So, instead, we'll be in the small meeting room on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It is not available.）。"
+        "analysis": "正确答案：C（It is not available.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女人对 A 会议室说了什么？",
+      "question_translation": "女人对 A 会议室说了什么?",
       "choice_translations": [
-        "A：它经过了翻修。 39。",
-        "B：它没有投影仪。",
-        "C：它不可用。",
-        "D：它太小了。"
+        "A:它经过了翻修。",
+        "B:它没有投影仪。",
+        "C:它不可用。",
+        "D:它太小了。"
       ],
       "item_id": 33,
       "priority": {
@@ -150,30 +173,30 @@
     },
     {
       "choices": [
-        "Present some recent findings (",
-        "Speak with the maintenance crew (",
-        "Assemble a new project team (",
-        "Distribute a handout ("
+        "Present some recent findings",
+        "Speak with the maintenance crew",
+        "Assemble a new project team",
+        "Distribute a handout"
       ],
       "answer": "D",
-      "question": "What does the man say he will do before Wednesday? 40.",
-      "answer_explain": "原文依据：听力原文中提到“So, instead, we'll be in the small meeting room on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Distribute a handout (）。",
+      "question": "What does the man say he will do before Wednesday?",
+      "answer_explain": "正确答案：D（Distribute a handout）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：interview Pim Juntasa on Wednesday? She seems like a",
+      "evidence": "参考听力原文：“I'll pass out photocopies of them to everyone before Wednesday.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：interview Pim Juntasa on Wednesday? She seems like a",
+        "evidence": "参考听力原文：“I'll pass out photocopies of them to everyone before Wednesday.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“So, instead, we'll be in the small meeting room on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Distribute a handout (）。"
+        "analysis": "正确答案：D（Distribute a handout）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男人说他周三前会做什么？ 40.",
+      "question_translation": "男人说他周三前会做什么?",
       "choice_translations": [
-        "A：展示一些最新发现",
-        "B：与维护人员交谈",
-        "C：组建一个新的项目团队",
-        "D：分发一份讲义"
+        "A:展示一些最新发现",
+        "B:与维护人员交谈",
+        "C:组建一个新的项目团队",
+        "D:分发一份讲义"
       ],
       "item_id": 34,
       "priority": {

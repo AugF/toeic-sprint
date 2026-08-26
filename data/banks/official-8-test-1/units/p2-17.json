@@ -27,38 +27,58 @@
       "asset_key": "official-8-test-1/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Blm Can I get fifteen meters of the fabric on display?",
-    "content_translation": "中文辅助（离线预处理）：Blm Can I get fifteen meters of the fabric on display?"
+    "transcript": "Can I get 15 meters of the fabric on display?\nA. The parking meter is paid.\nB. Not too far.\nC. Sure. Do you want the same color?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d4e5b84061ade5f05f96329f725cf397fe6c96dbc8fd9b4dfdb06fcb15c7e06d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "我可以拿到展示的这块布料的十五米吗？\nA. 停车计时器已经付钱了。\nB. 不太远。\nC. 当然。您想要相同的颜色吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4cc5607b67b964293be50dfe804996d2a647ff0b29f9aafd0e10b9635a159dc7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "The parking meter is paid.",
         "Not too far.",
-        "Sure, do you want the same color?"
+        "Sure. Do you want the same color?"
       ],
       "answer": "C",
-      "question": "Blm Can I get fifteen meters of the fabric on display?",
+      "question": "Can I get 15 meters of the fabric on display?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Blm Can I get fifteen meters of the fabric on display?”，自然应答是“Sure, do you want the same color?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sure, do you want the same color?）。",
-      "question_translation": "中文辅助（离线预处理）：Blm Can I get fifteen meters of the fabric on display?",
+      "answer_explain": "原文依据：问句或陈述是“Can I get 15 meters of the fabric on display?”，自然应答是“Sure. Do you want the same color?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sure. Do you want the same color?）。",
+      "question_translation": "我可以拿到展示的这块布料的十五米吗?",
       "choice_translations": [
-        "A：The parking meter is paid.",
-        "B：Not too far.",
-        "C：Sure, do you want the same color?"
+        "A：停车计时器已经付钱了。",
+        "B：不太远。",
+        "C：当然。您想要相同的颜色吗?"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：Blm Can I get fifteen meters of the fabric on display?",
+      "evidence": "参考原文第 1 段：Can I get 15 meters of the fabric on display?",
       "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：Blm Can I get fifteen meters of the fabric on display?",
+        "evidence": "参考原文第 1 段：Can I get 15 meters of the fabric on display?",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Blm Can I get fifteen meters of the fabric on display?”，自然应答是“Sure, do you want the same color?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sure, do you want the same color?）。"
+        "analysis": "原文依据：问句或陈述是“Can I get 15 meters of the fabric on display?”，自然应答是“Sure. Do you want the same color?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sure. Do you want the same color?）。"
       },
       "item_id": 17,
       "priority": {

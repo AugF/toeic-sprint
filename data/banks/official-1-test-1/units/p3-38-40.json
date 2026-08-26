@@ -40,37 +40,59 @@
       "asset_key": "official-1-test-1/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "Steve, ®you mentioned you wanted to see that new Jane\nCarmen film.\nmM Mhm.\nWell, some of us in the department are going to see it ton\nThat sounds great, but ®! probably won't leave work until\naround seven. What time are you going?\nWe were planning on going at six thirty. Sure you can’t co\nto that?\nYeah... 1 haven't finished this month’s sales report yet. /\nthere any later showings?\nWell, there is another one at nine o'clock, but | don’t know\nthe others want to go that late. 9/11 talk to them and let yc\nknow.",
-    "transcript_translation": "Steve，你提到你想看那部新的 Jane Carmen 电影。\n嗯哼。\n嗯，我们部门的一些人打算今晚去看。那听起来很棒，但我可能要到七点左右才能下班。你几点去？\n我们计划六点半去的。你不能一起去吗？\n是啊……我还没完成这个月的销售报告呢。有没有更晚的场次？\n嗯，九点还有一个，但我不知道其他人想这么晚去。你和他们谈谈，然后告诉我一声。",
-    "content_translation": "Steve，你提到你想看那部新的 Jane Carmen 电影。\n嗯哼。\n嗯，我们部门的一些人打算今晚去看。那听起来很棒，但我可能要到七点左右才能下班。你几点去？\n我们计划六点半去的。你不能一起去吗？\n是啊……我还没完成这个月的销售报告呢。有没有更晚的场次？\n嗯，九点还有一个，但我不知道其他人想这么晚去。你和他们谈谈，然后告诉我一声。"
+    "transcript": "Steve, you mentioned you wanted to see that new Janet Carman film.\nHmm.\nWell, some of us in the department are going to see it tonight.\nThat sounds great, but I probably won't leave work until around 7.\nWhat time are you going?\nWe were planning on going at 6.\n30.\nSure you can't come to that?\nYeah, I haven't finished this month's sales report yet.\nAre there any later showings?\nWell, there is another one at 9 o'clock, but I don't know if the others want to go that late.\nI'll talk to them and let you know.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "022f1f3a1cc0ad6ee180e376174ce6399311d464ae596d6651bd2d2a22de12d2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 95,
+        "legacy_word_count": 92,
+        "length_ratio": 1.033,
+        "legacy_coverage": 0.989
+      }
+    },
+    "transcript_translation": "史蒂夫，你提到你想看那部新的珍妮特·卡曼电影。\n嗯。\n我们部门的一些人今晚要去看。\n听起来不错，但我可能得等到大约7点才离开工作。\n你们什么时候去？\n我们计划6点去。\n30。\n你肯定不能来吗？\n是的，我还没完成这个月的销售报告。\n还有其他场次吗？\n嗯，9点钟还有一个，但我不知道其他人是否想去那么晚。\n我会和他们谈谈，然后告诉你。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "8f69a93fe6ea73f54cf329b5246a6a8d4c19f75570eb8f90791d8fc5b4f57f60"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "She will not be available until tomorrow. —",
+        "She will not be available until tomorrow.",
         "She needs the man to do her a favor.",
         "The man is invited to join a group.",
         "A film was highly recommended."
       ],
       "answer": "C",
-      "question": "What does the woman imply when she says, — “some of us in the department are going to nm see it tonight”? =",
-      "answer_explain": "原文依据：听力原文中提到“Well, some of us in the department are going to see it ton”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（The man is invited to join a group.）。",
+      "question": "What does the woman imply when she says, “some of us in the department are going to see it tonight”?",
+      "answer_explain": "正确答案：C（The man is invited to join a group.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "推断题",
-      "evidence": "参考原文第 4 段：Well, some of us in the department are going to see it ton",
+      "evidence": "参考听力原文：“Well, some of us in the department are going to see it tonight.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 4 段：Well, some of us in the department are going to see it ton",
+        "evidence": "参考听力原文：“Well, some of us in the department are going to see it tonight.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Well, some of us in the department are going to see it ton”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（The man is invited to join a group.）。"
+        "analysis": "正确答案：C（The man is invited to join a group.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "当女人说“我们部门的一些人今晚要去看看”时，她暗示了什么？ =",
+      "question_translation": "当女人说“我们部门的一些人今晚要去看看”时,她暗示了什么?",
       "choice_translations": [
-        "A：她要到明天才能有空。",
-        "B：她需要男人帮个忙。",
-        "C：男人被邀请加入一个团体。",
-        "D：一部电影受到了高度推荐。"
+        "A:她要到明天才能有空。",
+        "B:她需要男人帮个忙。",
+        "C:男人被邀请加入一个团体。",
+        "D:一部电影受到了高度推荐。"
       ],
       "item_id": 38,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "C",
       "question": "Why is the man working late tonight?",
-      "answer_explain": "原文依据：听力原文中提到“1 haven't finished this month’s sales report yet.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He needs to complete a report.）。",
+      "answer_explain": "正确答案：C（He needs to complete a report.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Steve, ®you mentioned you wanted to see that new Jane",
+      "evidence": "参考听力原文：“Well, there is another one at 9 o'clock, but I don't know if the others want to go that late.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Steve, ®you mentioned you wanted to see that new Jane",
+        "evidence": "参考听力原文：“Well, there is another one at 9 o'clock, but I don't know if the others want to go that late.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“1 haven't finished this month’s sales report yet.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He needs to complete a report.）。"
+        "analysis": "正确答案：C（He needs to complete a report.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "为什么男人今晚工作到很晚？",
+      "question_translation": "为什么男人今晚工作到很晚?",
       "choice_translations": [
-        "A：他很快就要度假了。",
-        "B：他想避开高峰时段的交通。",
-        "C：他需要完成一份报告。",
-        "D：他正在安装新软件。"
+        "A:他很快就要度假了。",
+        "B:他想避开高峰时段的交通。",
+        "C:他需要完成一份报告。",
+        "D:他正在安装新软件。"
       ],
       "item_id": 39,
       "priority": {
@@ -156,27 +178,27 @@
         "Contact some coworkers",
         "Locate a seating chart",
         "Delay a presentation",
-        "Join a meeting"
+        "Join a meeting."
       ],
       "answer": "A",
       "question": "What does the woman offer to do?",
-      "answer_explain": "原文依据：听力原文中提到“Well, some of us in the department are going to see it ton”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Contact some coworkers）。",
+      "answer_explain": "正确答案：A（Contact some coworkers）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Steve, ®you mentioned you wanted to see that new Jane",
+      "evidence": "参考听力原文：“Well, some of us in the department are going to see it tonight.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Steve, ®you mentioned you wanted to see that new Jane",
+        "evidence": "参考听力原文：“Well, some of us in the department are going to see it tonight.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Well, some of us in the department are going to see it ton”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Contact some coworkers）。"
+        "analysis": "正确答案：A（Contact some coworkers）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女人提议做什么？",
+      "question_translation": "女人提议做什么?",
       "choice_translations": [
-        "A：联系一些同事",
-        "B：找到座位表",
-        "C：推迟一次演示",
-        "D：参加一个会议"
+        "A:联系一些同事",
+        "B:找到座位表",
+        "C:推迟一次演示",
+        "D:参加一个会议"
       ],
       "item_id": 40,
       "priority": {

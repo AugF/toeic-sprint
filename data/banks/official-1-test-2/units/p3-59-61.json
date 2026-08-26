@@ -40,9 +40,31 @@
       "asset_key": "official-1-test-2/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "Hi, Gabriella. ®| wanted to talk to you about\nnew online time reporting system... A lot of 5\nbeen asking about it.\nEE w Yes, well, I’ve been very busy. But | am pl\ntraining session for early next week. That sh\nquite clear to everyone.\nI K. But isn’t there any written documentatio\nWhat do you mean?\nYou know, a guide that staff can follow in the\ndon't think that’s necessary. I'll have evel\nthrough the steps with me in the computer le\nthey'll know exactly what to do. It’s very sim",
-    "transcript_translation": "嗨，Gabriella。我想和您谈谈新的在线考勤系统……很多人都在问这个问题。\n是的，嗯，我一直很忙。但我下周初有一个培训课程。这对每个人来说都很清楚。\n我知道。但没有书面文件说明不行吗？你是什么意思？你知道，一份员工可以遵循的指南。我不认为有必要。我会把步骤在电脑里和我在一起过一遍，他们就会确切知道该做什么了。这非常简单。",
-    "content_translation": "嗨，Gabriella。我想和您谈谈新的在线考勤系统……很多人都在问这个问题。\n是的，嗯，我一直很忙。但我下周初有一个培训课程。这对每个人来说都很清楚。\n我知道。但没有书面文件说明不行吗？你是什么意思？你知道，一份员工可以遵循的指南。我不认为有必要。我会把步骤在电脑里和我在一起过一遍，他们就会确切知道该做什么了。这非常简单。"
+    "transcript": "Hi, Gabriella.\nI wanted to talk to you about using the new online time reporting system.\nA lot of people have been asking about it.\nYes.\nWell, I've been very busy, but I am planning the training session for early next week.\nThat should make it quite clear to everyone.\nOkay, but isn't there any written documentation?\nWhat do you mean?\nYou know, a guide that staff can follow in the meantime.\nI don't think that's necessary.\nI'll have everyone go through the steps with me in the computer lab.\nThen they'll know exactly what to do.\nIt's very simple.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "eca3578c2539740eaa4866ddbfd9a7c6f74c1a9fda01120e64a12e4bdcd63913",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 100,
+        "legacy_word_count": 96,
+        "length_ratio": 1.042,
+        "legacy_coverage": 0.979
+      }
+    },
+    "transcript_translation": "嗨，Gabriella。\n我想和你谈谈使用新的在线时间报告系统的事。\n很多人都在问这个问题。\n是的。\n嗯，我最近非常忙，但我计划在下周初进行培训课程。\n那应该能让每个人都清楚明白。\n好的，但没有书面文件吗？\n你是什么意思？\n你知道的，一份员工可以暂时遵循的指南。\n我不认为有必要。\n我会让大家在电脑实验室和我一起走过这些步骤。\n这样他们就知道该怎么做了。\n这非常简单。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "344d950044a30ee82d2bc8e2061534cea28b2e248e859154119de70235a355da"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "What are the speakers discussing?",
-      "answer_explain": "原文依据：听力原文中提到“new online time reporting system...”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Using a new time reporting system）。",
-      "question_translation": "说话者们讨论什么？",
+      "answer_explain": "正确答案：C（Using a new time reporting system）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者们讨论什么?",
       "choice_translations": [
-        "A：起草合同",
-        "B：加班工作",
-        "C：使用新的考勤系统",
-        "D：修改休假政策"
+        "A:起草合同",
+        "B:加班工作",
+        "C:使用新的考勤系统",
+        "D:修改休假政策"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, Gabriella. ®| wanted to talk to you about",
+      "evidence": "参考听力原文：“I wanted to talk to you about using the new online time reporting system.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, Gabriella. ®| wanted to talk to you about",
+        "evidence": "参考听力原文：“I wanted to talk to you about using the new online time reporting system.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“new online time reporting system...”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Using a new time reporting system）。"
+        "analysis": "正确答案：C（Using a new time reporting system）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 59,
       "priority": {
@@ -103,27 +125,27 @@
         "Staff are confused about a procedure.",
         "People have heard that a workshop is interesting.",
         "Staff are waiting for a new assignment.",
-        "Avacation calendar has not been"
+        "A vacation calendar has not been"
       ],
       "answer": "A",
       "question": "What does the man imply when he says, “A lot of people have been asking about it’?",
-      "answer_explain": "原文依据：听力原文中提到“You know, a guide that staff can follow in the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Staff are confused about a procedure.）。",
-      "question_translation": "当男士说“很多人都在问这个问题”是什么意思？",
+      "answer_explain": "正确答案：A（Staff are confused about a procedure.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "当男士说“很多人都在问这个问题”是什么意思?",
       "choice_translations": [
-        "A：员工对一个程序感到困惑。",
-        "B：人们听说研讨会很有趣。",
-        "C：员工在等待一个新的任务。",
-        "D：假期日历没有更新。"
+        "A:员工对一个程序感到困惑。",
+        "B:人们听说研讨会很有趣。",
+        "C:员工在等待一个新的任务。",
+        "D:假期日历没有更新。"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 3 段：been asking about it.",
+      "evidence": "参考听力原文：“A lot of people have been asking about it.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 3 段：been asking about it.",
+        "evidence": "参考听力原文：“A lot of people have been asking about it.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“You know, a guide that staff can follow in the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Staff are confused about a procedure.）。"
+        "analysis": "正确答案：A（Staff are confused about a procedure.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 60,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "A",
       "question": "What does the woman plan to do?",
-      "answer_explain": "原文依据：听力原文中提到“training session for early next week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Lead some training）。",
-      "question_translation": "女士计划做什么？",
+      "answer_explain": "正确答案：A（Lead some training）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士计划做什么?",
       "choice_translations": [
-        "A：主持一些培训",
-        "B：请求帮助",
-        "C：休一段时间",
-        "D：撰写手册"
+        "A:主持一些培训",
+        "B:请求帮助",
+        "C:休一段时间",
+        "D:撰写手册"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, Gabriella. ®| wanted to talk to you about",
+      "evidence": "参考听力原文：“Well, I've been very busy, but I am planning the training session for early next week.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, Gabriella. ®| wanted to talk to you about",
+        "evidence": "参考听力原文：“Well, I've been very busy, but I am planning the training session for early next week.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“training session for early next week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Lead some training）。"
+        "analysis": "正确答案：A（Lead some training）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 61,
       "priority": {

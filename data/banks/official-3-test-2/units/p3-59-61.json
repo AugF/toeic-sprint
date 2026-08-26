@@ -39,37 +39,60 @@
       "asset_key": "official-3-test-2/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nMs. Benedetti, ®welcome to Humboldt Broadcasting\nCompany. I’m Charles Jones, senior producer of the\nmorning news program.\nThanks. I’m excited about being on the show. Sltll be\ngreat exposure for my new book.\nthink it will be. We typically average two and a half\nmillion viewers per episode... And ®let me introduce\nyou to our production assistant, Alex Tanaka. We'll be\ntalking with you to prepare for your interview on the\nshow tomorrow.\nIt’s nice to meet you, Ms. Benedetti. ©!’m a big fan of\nyour writing.\nThanks. © Before getting started, may | have a cup of\ncoffee?\nCertainly. Just a moment.",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nMs.\nBenedetti, ®welcome to Humboldt Broadcasting\nCompany（公司）.\nI’m Charles Jones, senior producer of the\nmorning news program.\nThanks.\nI’m excited about being on the show.\nSltll be\ngreat exposure for my new book.\nthink it will be.\nWe typically average two and a half\nmillion viewers per episode...\nAnd ®let me introduce\nyou to our production assistant, Alex Tanaka.\nWe'll be\ntalking with you to prepare for your interview on the\nshow tomorrow.\nIt’s nice to meet you, Ms.\nBenedetti.\n©!’m a big fan of\nyour writing.\nThanks.\n© Before getting started, may | have a cup of\ncoffee?\nCertainly.\nJust a moment.",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nMs.\nBenedetti, ®welcome to Humboldt Broadcasting\nCompany（公司）.\nI’m Charles Jones, senior producer of the\nmorning news program.\nThanks.\nI’m excited about being on the show.\nSltll be\ngreat exposure for my new book.\nthink it will be.\nWe typically average two and a half\nmillion viewers per episode...\nAnd ®let me introduce\nyou to our production assistant, Alex Tanaka.\nWe'll be\ntalking with you to prepare for your interview on the\nshow tomorrow.\nIt’s nice to meet you, Ms.\nBenedetti.\n©!’m a big fan of\nyour writing.\nThanks.\n© Before getting started, may | have a cup of\ncoffee?\nCertainly.\nJust a moment."
+    "transcript": "Ms. Benedetti, welcome to Humboldt Broadcasting Company.\nI'm Charles Jones, Senior Producer of the Morning News Program.\nThanks.\nI'm excited about being on the show.\nIt'll be great exposure for my new book.\nI think it will be.\nWe typically average two and a half million viewers per episode.\nAnd let me introduce you to our production assistant, Alex Tanaka.\nWe'll be talking with you to prepare for your interview on the show tomorrow.\nIt's nice to meet you, Ms. Benedetti.\nI'm a big fan of your writing.\nThanks.\nBefore getting started, may I have a cup of coffee?\nCertainly.\nJust a moment.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0ec1e3f9e3f5337d56b74faa53af592e38d109fbc79f6400d7195d253c6dcc74",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 103,
+        "legacy_word_count": 104,
+        "length_ratio": 0.99,
+        "legacy_coverage": 0.942
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "Benedetti女士，欢迎来到Humboldt广播公司。\n我是Charles Jones，晨间新闻节目的高级制作人。\n谢谢。\n我对能登上这个节目感到兴奋。\n这对我的新书来说将是很好的曝光机会。\n我想会的。\n我们通常每集平均有两百五十万的观众。\n让我介绍一下我们的制作助理Alex Tanaka给您认识。\n我们将与您进行一次谈话，为您明天在节目上的采访做准备。\n很高兴见到您，Benedetti女士。\n我是您写作的忠实粉丝。\n谢谢。\n在我们开始之前，我可以喝杯咖啡吗？\n当然可以。\n请稍等。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "664f2d1c3a48ec54c89dc243ec7d11b2320734ea0d9c5b74994c050ab9fc9d66"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "At a convention center",
-        "Ata television station",
+        "At a television station",
         "At a bookstore",
         "At a theater"
       ],
       "answer": "B",
-      "question": "Where most likely do the men work? é",
-      "answer_explain": "原文依据：听力原文中提到“talking with you to prepare for your interview on the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Ata television station）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） most likely（最可能） do the men work（工作）?\né",
+      "question": "Where do the men work?",
+      "answer_explain": "正确答案：B（At a television station）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) most likely(最可能) do the men work(工作)? é",
       "choice_translations": [
-        "A：At a convention center",
-        "B：Ata television station",
-        "C：At a bookstore",
-        "D：At a theater"
+        "A:At a convention center",
+        "B:At a television station",
+        "C:At a bookstore",
+        "D:At a theater"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“I'm Charles Jones, Senior Producer of the Morning News Program.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“I'm Charles Jones, Senior Producer of the Morning News Program.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“talking with you to prepare for your interview on the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Ata television station）。"
+        "analysis": "正确答案：B（At a television station）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 59,
       "priority": {
@@ -99,29 +122,29 @@
     {
       "choices": [
         "A photographer",
-        "Amusician",
+        "A musician",
         "An actress",
         "An author"
       ],
       "answer": "D",
-      "question": "Who is the woman? (",
-      "answer_explain": "原文依据：听力原文中提到“talking with you to prepare for your interview on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An author）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） is the woman（女士）?\n(",
+      "question": "Who is the woman?",
+      "answer_explain": "正确答案：D（An author）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) is the woman(女士)? (",
       "choice_translations": [
-        "A：A photographer",
-        "B：Amusician",
-        "C：An actress",
-        "D：An author"
+        "A:A photographer",
+        "B:A musician",
+        "C:An actress",
+        "D:An author"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“I'm Charles Jones, Senior Producer of the Morning News Program.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“I'm Charles Jones, Senior Producer of the Morning News Program.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“talking with you to prepare for your interview on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An author）。"
+        "analysis": "正确答案：D（An author）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 60,
       "priority": {
@@ -151,29 +174,29 @@
     {
       "choices": [
         "A film ticket",
-        "Abeverage",
-        "Apen",
-        "Aparking pass"
+        "A beverage",
+        "A pen",
+        "A parking pass"
       ],
       "answer": "B",
       "question": "What does the woman request?",
-      "answer_explain": "原文依据：听力原文中提到“talking with you to prepare for your interview on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Abeverage）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） request?",
+      "answer_explain": "正确答案：B（A beverage）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) request?",
       "choice_translations": [
-        "A：A film ticket",
-        "B：Abeverage",
-        "C：Apen",
-        "D：Aparking pass"
+        "A:A film ticket",
+        "B:A beverage",
+        "C:A pen",
+        "D:A parking pass"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“I'm Charles Jones, Senior Producer of the Morning News Program.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“I'm Charles Jones, Senior Producer of the Morning News Program.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“talking with you to prepare for your interview on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Abeverage）。"
+        "analysis": "正确答案：B（A beverage）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 61,
       "priority": {

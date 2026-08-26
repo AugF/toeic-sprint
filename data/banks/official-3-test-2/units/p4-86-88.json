@@ -40,9 +40,31 @@
       "asset_key": "official-3-test-2/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "message.\nERw\nHello, this is Xinyu Wu from the Council for the Arts. Om\ncalling to thank you for your generous donation during our\nrecent fund-raiser. Also, @! wanted to ask if you'd like to\nwrite something about what inspired you to donate. We're\nsending out some promotional material with a schedule\nof our summer programs soon, and we’re including a few\npersonal stories about what art means to our members and\nwhy they think it’s important to support art. %\\ can stop by\nyour office some morning this week to discuss it with you, if\nyou'd like. | have some meetings near your office building\non Tuesday and Wednesday, @so... let me know if that\nwould work.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nERw\nHello, this is Xinyu Wu from the Council for the Arts.\nOm\ncalling to thank（感谢） you for your generous donation during our\nrecent fund-raiser.\nAlso, @!\nwanted to ask if you'd like to\nwrite something about what（什么） inspired you to donate.\nWe're\nsending out some promotional material with a schedule（日程）\nof our summer programs soon, and we’re including a few\npersonal stories about what（什么） art means to our members and\nwhy（为什么） they think it’s important to support art.\n%\\ can stop by\nyour office（办公室） some morning this week to discuss it with you, if\nyou'd like.\n| have some meetings near your office（办公室） building\non Tuesday and Wednesday, @so...\nlet me know if that\nwould work（工作）.",
-    "content_translation": "中文辅助（离线预处理）：message.\nERw\nHello, this is Xinyu Wu from the Council for the Arts.\nOm\ncalling to thank（感谢） you for your generous donation during our\nrecent fund-raiser.\nAlso, @!\nwanted to ask if you'd like to\nwrite something about what（什么） inspired you to donate.\nWe're\nsending out some promotional material with a schedule（日程）\nof our summer programs soon, and we’re including a few\npersonal stories about what（什么） art means to our members and\nwhy（为什么） they think it’s important to support art.\n%\\ can stop by\nyour office（办公室） some morning this week to discuss it with you, if\nyou'd like.\n| have some meetings near your office（办公室） building\non Tuesday and Wednesday, @so...\nlet me know if that\nwould work（工作）."
+    "transcript": "ERw Hello, this is Xinyu Wu from the Council for the Arts.\nI'm calling to thank you for your generous donation during our recent fundraiser.\nAlso, I wanted to ask if you'd like to write something about what inspired you to donate.\nWe're sending out some promotional material with a schedule of our summer program soon, and we're including a few personal stories about what art means to our members.\nERw",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "41d7bfcdc4ad38c6446d09ce7ac23c5bb9eb1b4938d2b193c8d9593fc1ab2dc7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 71,
+        "legacy_word_count": 115,
+        "length_ratio": 0.617,
+        "legacy_coverage": 0.713
+      }
+    },
+    "transcript_translation": "ERw 您好，我是来自 Council for the Arts 的 Xinyu Wu。\n我打电话来感谢您在最近的筹款活动中慷慨捐赠。\n另外，我想问一下您是否愿意写一些关于您捐赠灵感的文字。\n我们很快会发送一些宣传材料，其中包含我们夏季项目的日程安排，并且我们会包括一些关于艺术对我们成员意义的个人故事。\nERw",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "52f2061547bea78e359b99f6e2a845c380793ac027bf7d7e440d228c9de106f7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "What does the speaker thank the listener for?",
-      "answer_explain": "原文依据：听力原文中提到“your office some morning this week to discuss it with you, if”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Donating some money）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） thank（感谢） the listener for?",
+      "answer_explain": "正确答案：C（Donating some money）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) thank(感谢) the listener for?",
       "choice_translations": [
-        "A：Buying her artwork",
-        "B：Introducing her to someone",
-        "C：Donating some money",
-        "D：Sending some brochures"
+        "A:Buying her artwork",
+        "B:Introducing her to someone",
+        "C:Donating some money",
+        "D:Sending some brochures"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：calling to thank you for your generous donation during our",
+      "evidence": "参考听力原文：“We're sending out some promotional material with a schedule of our summer program soon, and we're including a few personal stories about what art means to our members.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：calling to thank you for your generous donation during our",
+        "evidence": "参考听力原文：“We're sending out some promotional material with a schedule of our summer program soon, and we're including a few personal stories about what art means to our members.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“your office some morning this week to discuss it with you, if”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Donating some money）。"
+        "analysis": "正确答案：C（Donating some money）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 86,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker invite the listener to do?",
-      "answer_explain": "原文依据：听力原文中提到“Hello, this is Xinyu Wu from the Council for the Arts.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Share a story）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） invite the listener to do?",
+      "answer_explain": "正确答案：A（Share a story）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) invite the listener to do?",
       "choice_translations": [
-        "A：Share a story",
-        "B：Speak at an event",
-        "C：Attend a debate",
-        "D：Join an organization"
+        "A:Share a story",
+        "B:Speak at an event",
+        "C:Attend a debate",
+        "D:Join an organization"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“We're sending out some promotional material with a schedule of our summer program soon, and we're including a few personal stories about what art means to our members.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“We're sending out some promotional material with a schedule of our summer program soon, and we're including a few personal stories about what art means to our members.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Hello, this is Xinyu Wu from the Council for the Arts.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Share a story）。"
+        "analysis": "正确答案：A（Share a story）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 87,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "Why does the speaker say, “I have some meetings near your office building on Tuesday and Wednesday”?",
-      "answer_explain": "原文依据：听力原文中提到“have some meetings near your office building”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（She is indicating when she is available）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, “I have some meetings near your office（办公室） building on Tuesday and Wednesday”?",
+      "answer_explain": "正确答案：B（She is indicating when she is available）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, “I have some meetings near your office(办公室) building on Tuesday and Wednesday”?",
       "choice_translations": [
-        "A：She is accepting an invitation.",
-        "B：She is indicating when（何时） she is available（可用的）",
-        "C：She is offering to deliver some documents.",
-        "D：She is suggesting a change in location"
+        "A:She is accepting an invitation.",
+        "B:She is indicating when(何时) she is available(可用的)",
+        "C:She is offering to deliver some documents.",
+        "D:She is suggesting a change in location"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 11 段：your office some morning this week to discuss it with you, if",
+      "evidence": "参考听力原文：“We're sending out some promotional material with a schedule of our summer program soon, and we're including a few personal stories about what art means to our members.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 11 段：your office some morning this week to discuss it with you, if",
+        "evidence": "参考听力原文：“We're sending out some promotional material with a schedule of our summer program soon, and we're including a few personal stories about what art means to our members.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“have some meetings near your office building”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（She is indicating when she is available）。"
+        "analysis": "正确答案：B（She is indicating when she is available）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 88,
       "priority": {

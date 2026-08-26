@@ -28,8 +28,28 @@
       "asset_key": "official-8-test-1/audio/part2/q020.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Blm Aren't you afraid the shipment may be delayed at customs?\nElw",
-    "content_translation": "中文辅助（离线预处理）：Blm Aren't you afraid the shipment may be delayed at customs?\nElw"
+    "transcript": "Aren't you afraid the shipment may be delayed at customs?\nA. No, I've done all the paperwork.\nB. Please set it down in the corner.\nC. He has a custom-made guitar.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "936b6b3e36876a506b8020a66599b131082950669755c582810541943d72de36",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q020.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "你不担心货物可能会在海关延误吗？\nA. 不，我已经办了所有手续。\nB. 请把它放在角落里。\nC. 他有一把定制的吉他。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "361257161cf1db54c9c02bed859bf3c2ffa05105c13388a11d118796fcb88033"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "He has a custom-made guitar."
       ],
       "answer": "A",
-      "question": "Blm Aren't you afraid the shipment may be delayed at customs? Elw",
+      "question": "Aren't you afraid the shipment may be delayed at customs?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Blm Aren't you afraid the shipment may be delayed at customs? Elw”，自然应答是“No, I've done all the paperwork.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, I've done all the paperwork.）。",
-      "question_translation": "中文辅助（离线预处理）：Blm Aren't you afraid the shipment may be delayed at customs?\nElw",
+      "answer_explain": "原文依据：问句或陈述是“Aren't you afraid the shipment may be delayed at customs?”，自然应答是“No, I've done all the paperwork.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, I've done all the paperwork.）。",
+      "question_translation": "你不担心货物可能会在海关延误吗?",
       "choice_translations": [
-        "A：No, I've done all the paperwork.",
-        "B：Please（请） set it down in the corner.",
-        "C：He has a custom-made guitar."
+        "A：不,我已经办了所有手续。",
+        "B：请把它放在角落里。",
+        "C：他有一把定制的吉他。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Blm Aren't you afraid the shipment may be delayed at customs? Elw",
+      "evidence": "参考原文第 1 段：Aren't you afraid the shipment may be delayed at customs?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Blm Aren't you afraid the shipment may be delayed at customs? Elw",
+        "evidence": "参考原文第 1 段：Aren't you afraid the shipment may be delayed at customs?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Blm Aren't you afraid the shipment may be delayed at customs? Elw”，自然应答是“No, I've done all the paperwork.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, I've done all the paperwork.）。"
+        "analysis": "原文依据：问句或陈述是“Aren't you afraid the shipment may be delayed at customs?”，自然应答是“No, I've done all the paperwork.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, I've done all the paperwork.）。"
       },
       "item_id": 20,
       "priority": {

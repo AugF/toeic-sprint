@@ -36,9 +36,33 @@
       "asset_key": "official-11-test-1/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "Hi, everyone, and welcome to Baking Matters, the show\nwhere famous cooks share their delicious recipes with us.\nBefore we get started with today's program, don't forget\nto sign up for our newsletter. You can sign up on our Web\nsite, and it will be delivered right to your in-box. And now,\nfor today's show, we have a cake-designing lesson led by\nexpert baker Heather Silva. Heather has placed first in the\nHavenville Baking Competition three years in a row. And,\nJust this month, she published her first book, titled\nHeather's Cake-Designing Tips. Look for it at your local\nbookstore. Now, grab your apron, and let's get baking!",
-    "transcript_translation": "大家好，欢迎收看《烘焙要事》。在这个节目中，著名厨师会和我们分享他们的美味食谱。在今天的节目开始前，别忘了订阅我们的电子简报。您可以在我们的网站上订阅，简报会直接发送到您的收件箱。现在进入今天的节目：烘焙专家希瑟·席尔瓦将带来一堂蛋糕装饰课。希瑟连续三年在海文维尔烘焙大赛中获得第一名，而且就在本月，她出版了自己的第一本书《希瑟的蛋糕装饰技巧》。请到您当地的书店寻找这本书。现在，穿上围裙，让我们开始烘焙吧！",
-    "content_translation": "本段听力围绕“节目预告”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Hi everyone and welcome to Baking Matters, the show where famous cooks share their delicious recipes with us.\nBefore we get started with today's program, don't forget to sign up for our newsletter.\nYou can sign up on our website and it will be delivered right to your inbox.\nAnd now... for today's show, we have a cake designing lesson led by expert baker Heather Silva.\nHeather has placed first in the Havenville Baking Competition three years in a row.\nAnd just this month, she published her first book titled Heather's Cake Designing Tips.\nLook for it at your local bookstore.\nNow grab your apron. and let's get baking.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "7d82590ece25d56a1dcdc76803726286476f5958dd85ad70d76b3ccdc5c3408b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 109,
+        "legacy_word_count": 108,
+        "length_ratio": 1.009,
+        "legacy_coverage": 0.954,
+        "prompted_failure": "audio transcript appears truncated (ratio=0.39, coverage=0.52)"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "大家好，欢迎收看《烘焙事宜》，这是一个著名厨师与我们分享美味食谱的节目。\n在我们开始今天的节目之前，别忘了订阅我们的电子报。\n你可以在我们的网站上订阅，它会直接发送到你的收件箱。\n现在...对于今天的节目，我们有专家烘焙师 Heather Silva 主讲的蛋糕设计课程。\nHeather 三年连续获得了 Havenville 烘焙大赛的第一名。\n而且就在本月，她出版了她的第一本书，书名为《Heather's Cake Designing Tips》。\n请在您当地的书店寻找它。\n现在拿起你的围裙，让我们开始烘焙吧。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "642fa842ce704d3ab18a194ff86c7b1fda16a6e100ac968fad61a53bb85b80d8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,24 +74,24 @@
         "Music"
       ],
       "answer": "B",
-      "answer_explain": "原文依据：节目名 Baking Matters，内容是 cooks、recipes 和 cake-designing lesson。 选择理由：节目主题是烘焙，对应B。正确答案：B（Baking）。",
+      "answer_explain": "正确答案：B（Baking）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Hi, everyone, and welcome to Baking Matters, the show",
+      "evidence": "参考听力原文：“Hi everyone and welcome to Baking Matters, the show where famous cooks share their delicious recipes with us.”",
       "choice_translations": [
-        "A：园艺",
-        "B：烘焙",
-        "C：房屋维修",
-        "D：音乐"
+        "A:园艺",
+        "B:烘焙",
+        "C:房屋维修",
+        "D:音乐"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Hi, everyone, and welcome to Baking Matters, the show",
+        "evidence": "参考听力原文：“Hi everyone and welcome to Baking Matters, the show where famous cooks share their delicious recipes with us.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：节目名 Baking Matters，内容是 cooks、recipes 和 cake-designing lesson。 选择理由：节目主题是烘焙，对应B。正确答案：B（Baking）。"
+        "analysis": "正确答案：B（Baking）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "这个节目主要讲什么？",
+      "question_translation": "这个节目主要讲什么?",
       "item_id": 92,
       "priority": {
         "level": "P3",
@@ -99,24 +123,24 @@
         "Watch a video"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：听众被提醒在 Web site 上 sign up for our newsletter。 选择理由：对应A。正确答案：A（Sign up for a newsletter）。",
+      "answer_explain": "正确答案：A（Sign up for a newsletter）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Hi, everyone, and welcome to Baking Matters, the show",
+      "evidence": "参考听力原文：“Before we get started with today's program, don't forget to sign up for our newsletter.”",
       "choice_translations": [
-        "A：订阅电子简报",
-        "B：下载文件",
-        "C：上传照片",
-        "D：观看视频"
+        "A:订阅电子简报",
+        "B:下载文件",
+        "C:上传照片",
+        "D:观看视频"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Hi, everyone, and welcome to Baking Matters, the show",
+        "evidence": "参考听力原文：“Before we get started with today's program, don't forget to sign up for our newsletter.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：听众被提醒在 Web site 上 sign up for our newsletter。 选择理由：对应A。正确答案：A（Sign up for a newsletter）。"
+        "analysis": "正确答案：A（Sign up for a newsletter）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者让听众在网站上做什么？",
+      "question_translation": "说话者让听众在网站上做什么?",
       "item_id": 93,
       "priority": {
         "level": "P3",
@@ -148,24 +172,24 @@
         "She published a book."
       ],
       "answer": "D",
-      "answer_explain": "原文依据：Heather just this month published her first book。 选择理由：本月她出版了一本书，对应D。正确答案：D（She published a book.）。",
+      "answer_explain": "正确答案：D（She published a book.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段第 1 句：expert baker Heather Silva. Heather has placed first in the",
+      "evidence": "参考听力原文：“And just this month, she published her first book titled Heather's Cake Designing Tips.”",
       "choice_translations": [
-        "A：她搬到了一座新城市。",
-        "B：她进行了巡回活动。",
-        "C：她开办了一家公司。",
-        "D：她出版了一本书。"
+        "A:她搬到了一座新城市。",
+        "B:她进行了巡回活动。",
+        "C:她开办了一家公司。",
+        "D:她出版了一本书。"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段第 1 句：expert baker Heather Silva. Heather has placed first in the",
+        "evidence": "参考听力原文：“And just this month, she published her first book titled Heather's Cake Designing Tips.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：Heather just this month published her first book。 选择理由：本月她出版了一本书，对应D。正确答案：D（She published a book.）。"
+        "analysis": "正确答案：D（She published a book.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "据说话者所说，希瑟·席尔瓦本月做了什么？",
+      "question_translation": "据说话者所说,希瑟·席尔瓦本月做了什么?",
       "item_id": 94,
       "priority": {
         "level": "P3",

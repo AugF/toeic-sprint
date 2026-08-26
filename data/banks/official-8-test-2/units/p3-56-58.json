@@ -41,9 +41,31 @@
       "asset_key": "official-8-test-2/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "I-M Hello. ® You've reached customer service at Aberland\nIrrigation.\nEw Hi. ®I'm calling from Jackson Fields. We purchased an\nirrigation system from you last month, and we're having\na problem.\nm What's the issue?\nEw ®l was just checking our broccoli and onion crops, and\nnoticed no water was coming out of the irrigation tubes.\nWe're in the middle of the growing season for these\ncrops, so I'm concerned.\nTUAT\nm O Have you filled out a service request form online?\nEEw Well, I'm not in my office. I'm calling from my mobile\nphone, out in the field, and I can't access my computer\nright now. Can you send someone here?\nI•m Absolutely. I'll have one of our technicians out there\ntoday.",
-    "transcript_translation": "中文辅助（离线预处理）：I-M Hello.\n® You've reached customer（顾客） service（服务） at Aberland\nIrrigation.\nEw Hi.\n®I'm calling from Jackson Fields.\nWe purchased an\nirrigation system from you last month, and we're having\na problem.\nm What（什么）'s the issue?\nEw ®l was just checking our broccoli and onion crops, and\nnoticed no water was coming out of the irrigation tubes.\nWe're in the middle of the growing season for these\ncrops, so I'm concerned.\nTUAT\nm O Have you filled out a service（服务） request form online?\nEEw Well, I'm not in my office（办公室）.\nI'm calling from my mobile\nphone, out in the field, and I can't access my computer\nright now.\nCan you send someone here?\nI•m Absolutely.\nI'll have one of our technicians out there\ntoday.",
-    "content_translation": "中文辅助（离线预处理）：I-M Hello.\n® You've reached customer（顾客） service（服务） at Aberland\nIrrigation.\nEw Hi.\n®I'm calling from Jackson Fields.\nWe purchased an\nirrigation system from you last month, and we're having\na problem.\nm What（什么）'s the issue?\nEw ®l was just checking our broccoli and onion crops, and\nnoticed no water was coming out of the irrigation tubes.\nWe're in the middle of the growing season for these\ncrops, so I'm concerned.\nTUAT\nm O Have you filled out a service（服务） request form online?\nEEw Well, I'm not in my office（办公室）.\nI'm calling from my mobile\nphone, out in the field, and I can't access my computer\nright now.\nCan you send someone here?\nI•m Absolutely.\nI'll have one of our technicians out there\ntoday."
+    "transcript": "Hello, you've reached customer service at Aberland Irrigation.\nHi, I'm calling from Jackson Fields.\nWe purchased an irrigation system from you last month, and we're having a problem.\nWhat's the issue?\nI was just checking our broccoli and onion crops, and noticed no water was coming out of the irrigation tubes.\nWe're in the middle of the growing season for these crops, so I'm concerned.\nHave you filled out a service request form online?\nWell, I'm not in my office.\nI'm calling from my mobile phone out in the field, and I can't access my computer right now.\nCan you send someone here?\nAbsolutely.\nI'll have one of our technicians out there today.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a3510a30fac951cfd13008573044d3bfdf101669c9bbfe4e583827788e08df15",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 113,
+        "legacy_word_count": 119,
+        "length_ratio": 0.95,
+        "legacy_coverage": 0.891
+      }
+    },
+    "transcript_translation": "您好，您已联系到 Aberland Irrigation 的客户服务中心。\n嗨，我是从 Jackson Fields 打来的。\n我们上个月从你们这里购买了一个灌溉系统，但出了点问题。\n什么问题？\n我刚才检查我们的西兰花和洋葱作物时，注意到灌溉管里没有水流出来。\n我们正处于这些作物的生长期，所以我很担心。\n您是否在线填写了服务请求表？\n嗯，我现在不在办公室。\n我是从田地里的手机打来的，现在无法访问我的电脑。\n你能派人来这里吗？\n当然可以。\n我今天会派我们的技术人员过去。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "57ec723dfc5cbb73a8797f57aa9e5ec810daf9bab8a110a09fe2caab68b8f9b6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "A",
       "question": "Where does the woman most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“phone, out in the field, and I can't access my computer”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At a farm）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the woman（女士） most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：A（At a farm）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the woman(女士) most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a farm",
-        "B：At a supermarket",
-        "C：At a restaurant",
-        "D：At a landscaping company（公司）"
+        "A:At a farm",
+        "B:At a supermarket",
+        "C:At a restaurant",
+        "D:At a landscaping company(公司)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：I-M Hello. ® You've reached customer service at Aberland",
+      "evidence": "参考听力原文：“I was just checking our broccoli and onion crops, and noticed no water was coming out of the irrigation tubes.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：I-M Hello. ® You've reached customer service at Aberland",
+        "evidence": "参考听力原文：“I was just checking our broccoli and onion crops, and noticed no water was coming out of the irrigation tubes.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“phone, out in the field, and I can't access my computer”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At a farm）。"
+        "analysis": "正确答案：A（At a farm）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "C",
       "question": "\"Why is the woman unable to fill out a form?",
-      "answer_explain": "原文依据：听力原文中提到“phone, out in the field, and I can't access my computer”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（She does not have access to a computer.）。",
-      "question_translation": "中文辅助（离线预处理）：\"Why（为什么） is the woman（女士） unable to fill out a form?",
+      "answer_explain": "正确答案：C（She does not have access to a computer.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):\"Why(为什么) is the woman(女士) unable to fill out a form?",
       "choice_translations": [
-        "A：She is busy with some customers.",
-        "B：She has lost a vendor's telephone number.",
-        "C：She does not have access to a computer.",
-        "D：She cannot remember a product ID"
+        "A:She is busy with some customers.",
+        "B:She has lost a vendor's telephone number.",
+        "C:She does not have access to a computer.",
+        "D:She cannot remember a product ID"
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：I-M Hello. ® You've reached customer service at Aberland",
+      "evidence": "参考听力原文：“I'm calling from my mobile phone out in the field, and I can't access my computer right now.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：I-M Hello. ® You've reached customer service at Aberland",
+        "evidence": "参考听力原文：“I'm calling from my mobile phone out in the field, and I can't access my computer right now.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“phone, out in the field, and I can't access my computer”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（She does not have access to a computer.）。"
+        "analysis": "正确答案：C（She does not have access to a computer.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "D",
       "question": "What does the man agree to do?",
-      "answer_explain": "原文依据：听力原文中提到“Can you send someone here?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Send a technician）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） agree to do?",
+      "answer_explain": "正确答案：D（Send a technician）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) agree to do?",
       "choice_translations": [
-        "A：Extend a warranty",
-        "B：Provide an access code",
-        "C：Apply a discount",
-        "D：Send a technician"
+        "A:Extend a warranty",
+        "B:Provide an access code",
+        "C:Apply a discount",
+        "D:Send a technician"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：I-M Hello. ® You've reached customer service at Aberland",
+      "evidence": "参考听力原文：“Can you send someone here?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：I-M Hello. ® You've reached customer service at Aberland",
+        "evidence": "参考听力原文：“Can you send someone here?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Can you send someone here?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Send a technician）。"
+        "analysis": "正确答案：D（Send a technician）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

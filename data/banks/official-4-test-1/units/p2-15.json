@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-1/audio/part2/q015.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：ERw Should we eat at home or go out?\nae A of B2ORT.\nRCOBBLNBOE",
-    "content_translation": "中文辅助（离线预处理）：ERw Should we eat at home or go out?\nae A of B2ORT.\nRCOBBLNBOE"
+    "transcript": "Should we eat at home or go out?\nA. They really liked it.\nB. The recipe on page 3.\nC. What's less expensive?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e4e467ddb04d9d2768637b2563874c6758de03660179a4bf42a1bb9d8b119339",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q015.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "我们是在家吃还是出去吃？\nA. 他们真的很喜欢它。\nB. 第3页上的食谱。\nC. 什么更便宜？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d08f8b6eccf1b9bafe4c3811ffb5424c811bed8fae19f4af4a85c16f79df0b92"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "They really liked it. HSICTNEDEBATUSOICHL,",
-        "The recipe on page three. [ESS AOBAD DDS BUD EMAL CHR",
-        "DEM. expensive [BAODD'S |."
+        "They really liked it.",
+        "The recipe on page 3.",
+        "What's less expensive?"
       ],
       "answer": "C",
-      "question": "ERw Should we eat at home or go out? ae A of B2ORT. RCOBBLNBOE",
+      "question": "Should we eat at home or go out?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“ERw Should we eat at home or go out? ae A of B2ORT. RCOBBLNBOE”，自然应答是“DEM. expensive [BAODD'S |.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（DEM. expensive [BAODD'S |.）。",
-      "question_translation": "中文辅助（离线预处理）：ERw Should we eat at home or go out?\nae A of B2ORT.\nRCOBBLNBOE",
+      "answer_explain": "原文依据：问句或陈述是“Should we eat at home or go out?”，自然应答是“What's less expensive?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（What's less expensive?）。",
+      "question_translation": "我们是在家吃还是出去吃?",
       "choice_translations": [
-        "A：They really liked it.\nHSICTNEDEBATUSOICHL,",
-        "B：The recipe on page three.\n[ESS AOBAD DDS BUD EMAL CHR",
-        "C：DEM.\nexpensive [BAODD'S |."
+        "A：他们真的很喜欢它。",
+        "B：第3页上的食谱。",
+        "C：什么更便宜?"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：ERw Should we eat at home or go out? ae A of B2ORT. RCOBBLNBOE",
+      "evidence": "参考原文第 1 段：Should we eat at home or go out?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：ERw Should we eat at home or go out? ae A of B2ORT. RCOBBLNBOE",
+        "evidence": "参考原文第 1 段：Should we eat at home or go out?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“ERw Should we eat at home or go out? ae A of B2ORT. RCOBBLNBOE”，自然应答是“DEM. expensive [BAODD'S |.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（DEM. expensive [BAODD'S |.）。"
+        "analysis": "原文依据：问句或陈述是“Should we eat at home or go out?”，自然应答是“What's less expensive?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（What's less expensive?）。"
       },
       "item_id": 15,
       "priority": {

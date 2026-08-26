@@ -36,9 +36,31 @@
       "asset_key": "official-8-test-1/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "EM Megumi, ®| wanted to congratulate you on your\nsuccessful presentation to the managers this morning.\nWe think the marketing strategy you presented is well\nsuited to our new video streaming service.\nE3 w Thank you. ®The consultant we hired last month actually\nhelped me quite a bit. ® His market research showed\nexactly which age groups would be most interested in the\nmovies and TV shows that we're going to offer.\nEv °1 was especially interested in the data about\nspending and viewing patterns of consumers in their\nthirties. OWe should make a special effort to target\nthem. That should increase our sales.\npC7.",
-    "transcript_translation": "中文辅助（离线预处理）：EM Megumi, ®| wanted to congratulate you on your\nsuccessful presentation to the managers this morning.\nWe think the marketing strategy you presented is well\nsuited to our new video streaming service（服务）.\nE3 w Thank（感谢） you.\n®The consultant we hired last month actually\nhelped me quite a bit.\n® His market research showed\nexactly which age groups would be most interested in the\nmovies and TV shows that we're going to offer.\nEv °1 was especially interested in the data about\nspending and viewing patterns of consumers in their\nthirties.\nOWe should make a special effort to target\nthem.\nThat should increase our sales.\npC7.",
-    "content_translation": "中文辅助（离线预处理）：EM Megumi, ®| wanted to congratulate you on your\nsuccessful presentation to the managers this morning.\nWe think the marketing strategy you presented is well\nsuited to our new video streaming service（服务）.\nE3 w Thank（感谢） you.\n®The consultant we hired last month actually\nhelped me quite a bit.\n® His market research showed\nexactly which age groups would be most interested in the\nmovies and TV shows that we're going to offer.\nEv °1 was especially interested in the data about\nspending and viewing patterns of consumers in their\nthirties.\nOWe should make a special effort to target\nthem.\nThat should increase our sales.\npC7."
+    "transcript": "Megumi, I wanted to congratulate you on your successful presentation to the managers this morning.\nWe think the marketing strategy you presented is well suited to our new video streaming service.\nThank you.\nThe consultant we hired last month actually helped me quite a bit.\nHis market research showed exactly which age groups would be most interested in the movies and TV shows that we're going to offer.\nI was especially interested in the data about spending and viewing patterns of consumers in their 30s.\nWe should make a special effort to target them.\nThat should increase our sales.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "09c12d77c30917312b589de0c54681980527c06c5e8e132ca7d280b26ce3a532",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 99,
+        "legacy_word_count": 100,
+        "length_ratio": 0.99,
+        "legacy_coverage": 0.94
+      }
+    },
+    "transcript_translation": "Megumi, 我想祝贺你今天早上向经理们做了一个成功的演示。\n我们认为你展示的营销策略非常适合我们的新视频流媒体服务。\n谢谢。\n上个月聘请的顾问实际上帮了我很多。\n他的市场调研准确地显示了哪些年龄组对我们将提供的电影和电视节目最感兴趣。\n我对关于30岁左右消费者消费和观看模式的数据特别感兴趣。\n我们应该努力将目标群体定为他们。\n那应该能增加我们的销量。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9b5da57ce9e543b1fd2e57c81db41c0fdb62d8e4c58cf9afde06e0173f67253d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "C",
       "question": "Why does the man congratulate the woman?",
-      "answer_explain": "原文依据：听力原文中提到“successful presentation to the managers this morning.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（She gave a good presentation.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） congratulate the woman（女士）?",
+      "answer_explain": "正确答案：C（She gave a good presentation.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the man(男士) congratulate the woman(女士)?",
       "choice_translations": [
-        "A：She received a promotion.",
-        "B：She finished a project early.",
-        "C：She gave a good presentation.",
-        "D：Her movie won an award."
+        "A:She received a promotion.",
+        "B:She finished a project early.",
+        "C:She gave a good presentation.",
+        "D:Her movie won an award."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EM Megumi, ®| wanted to congratulate you on your",
+      "evidence": "参考听力原文：“Megumi, I wanted to congratulate you on your successful presentation to the managers this morning.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EM Megumi, ®| wanted to congratulate you on your",
+        "evidence": "参考听力原文：“Megumi, I wanted to congratulate you on your successful presentation to the managers this morning.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“successful presentation to the managers this morning.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（She gave a good presentation.）。"
+        "analysis": "正确答案：C（She gave a good presentation.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "A",
       "question": "Who does the woman say she received help from?",
-      "answer_explain": "原文依据：听力原文中提到“®The consultant we hired last month actually”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An independent consultant）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） does the woman（女士） say she received help from?",
+      "answer_explain": "正确答案：A（An independent consultant）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) does the woman(女士) say she received help from?",
       "choice_translations": [
-        "A：An independent consultant",
-        "B：A department manager（经理）",
-        "C：A sales assistant",
-        "D：A video editor"
+        "A:An independent consultant",
+        "B:A department manager(经理)",
+        "C:A sales assistant",
+        "D:A video editor"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EM Megumi, ®| wanted to congratulate you on your",
+      "evidence": "参考听力原文：“The consultant we hired last month actually helped me quite a bit.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EM Megumi, ®| wanted to congratulate you on your",
+        "evidence": "参考听力原文：“The consultant we hired last month actually helped me quite a bit.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®The consultant we hired last month actually”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An independent consultant）。"
+        "analysis": "正确答案：A（An independent consultant）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "D",
       "question": "What does the man think will increase sales?",
-      "answer_explain": "原文依据：听力原文中提到“We think the marketing strategy you presented is well”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Watering the grass more often）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） think will increase sales?",
+      "answer_explain": "正确答案：D（Watering the grass more often）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) think will increase sales?",
       "choice_translations": [
-        "A：Hiring a famous spokesperson",
-        "B：Increasing the parking capacity",
-        "C：Lowering ticket prices",
-        "D：Watering the grass more often"
+        "A:Hiring a famous spokesperson",
+        "B:Increasing the parking capacity",
+        "C:Lowering ticket prices",
+        "D:Watering the grass more often"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：We think the marketing strategy you presented is well",
+      "evidence": "参考听力原文：“That should increase our sales.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：We think the marketing strategy you presented is well",
+        "evidence": "参考听力原文：“That should increase our sales.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“We think the marketing strategy you presented is well”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Watering the grass more often）。"
+        "analysis": "正确答案：D（Watering the grass more often）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

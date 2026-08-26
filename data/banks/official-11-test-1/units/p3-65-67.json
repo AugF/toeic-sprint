@@ -45,9 +45,32 @@
       "asset_key": "official-11-test-1/images/part3/q065-067.jpg",
       "exists": true
     },
-    "transcript": "Amy, the parks and recreation department called\nabout the public park that just opened\nthe one we\ndesigned last year.\nIt was about the pumps we installed in the pond,\nright? I warned them that there may not be enough\nwater circulation to prevent algae from growing\nRight. They'd like to go with our original suggestion\nand add a fountain to the pond to keep the water\ncirculating.\nWe should contact our usual suppliers and get some\nestimates for materials. Do you know what the park's\nbudget is?",
-    "transcript_translation": "艾米，公园与休闲管理部门来电话了，是关于那座刚开放的公共公园，就是我们去年设计的那一座。\n是关于我们在池塘里安装的水泵，对吧？我提醒过他们，水循环可能不足以防止藻类生长。\n对。他们想采用我们最初的建议，在池塘里加一座喷泉来保持水的循环。\n我们应该联系平常合作的供应商，拿到一些材料报价。你知道这个公园的预算是多少吗？",
-    "content_translation": "本段听力围绕“公园景观维护”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Amy, the Parks and Recreation Department called about the public park that just opened, the one we designed last year.\nIt was about the pumps we installed in the pond, right?\nI warned them that there may not be enough water circulation to prevent algae from growing.\nRight.\nThey'd like to go with our original suggestion and add a fountain to the pond to keep the water circulating.\nWe should contact our usual suppliers and get some estimates for materials.\nDo you know what the park's budget is?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3556146f5d310abfd084b6978cbe175de479cbf86904e3d2ef11097e86dd0800",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 90,
+        "legacy_word_count": 87,
+        "length_ratio": 1.034,
+        "legacy_coverage": 1
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "艾米，公园和娱乐部门打电话来询问关于我们去年设计的那个新开的公共公园的事。\n是关于我们在池塘里安装的水泵，对吗？\n我警告过他们说，可能水循环不够，无法防止藻类生长。\n对。\n他们想采用我们最初的建议，给池塘加一个喷泉来保持水循环。\n我们应该联系我们常用的供应商，获取一些材料的估价。\n你知道公园的预算是多少吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3ea6a967af46f642fbeecdc1da62db0bd35a7640cf6c6d2ae5795f22e59b3963"
+    }
   },
   "items": [
     {
@@ -59,24 +82,24 @@
         "Forest rangers"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：说话人提到 the public park we designed，并讨论池塘和喷泉方案。 选择理由：设计公园景观符合landscape designers，因此A正确。正确答案：A（Landscape designers）。",
+      "answer_explain": "正确答案：A（Landscape designers）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 1 段第 1 句：Amy, the parks and recreation department called",
+      "evidence": "参考听力原文：“Amy, the Parks and Recreation Department called about the public park that just opened, the one we designed last year.”",
       "choice_translations": [
-        "A：景观设计师",
-        "B：维修人员",
-        "C：保安",
-        "D：护林员"
+        "A:景观设计师",
+        "B:维修人员",
+        "C:保安",
+        "D:护林员"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 1 段第 1 句：Amy, the parks and recreation department called",
+        "evidence": "参考听力原文：“Amy, the Parks and Recreation Department called about the public park that just opened, the one we designed last year.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：说话人提到 the public park we designed，并讨论池塘和喷泉方案。 选择理由：设计公园景观符合landscape designers，因此A正确。正确答案：A（Landscape designers）。"
+        "analysis": "正确答案：A（Landscape designers）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者最可能是什么人？",
+      "question_translation": "说话者最可能是什么人?",
       "item_id": 65,
       "priority": {
         "level": "P1",
@@ -112,24 +135,24 @@
         "In location 4"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：对话说在 pond 加 fountain；地图上 Pond 标为 location 3。 选择理由：综合听力和图示可得C location 3。正确答案：C（In location 3）。",
+      "answer_explain": "正确答案：C（In location 3）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Amy, the parks and recreation department called",
+      "evidence": "参考听力原文：“We should contact our usual suppliers and get some estimates for materials.”",
       "choice_translations": [
-        "A：地点 1",
-        "B：地点 2",
-        "C：地点 3",
-        "D：地点 4"
+        "A:地点 1",
+        "B:地点 2",
+        "C:地点 3",
+        "D:地点 4"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Amy, the parks and recreation department called",
+        "evidence": "参考听力原文：“We should contact our usual suppliers and get some estimates for materials.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：对话说在 pond 加 fountain；地图上 Pond 标为 location 3。 选择理由：综合听力和图示可得C location 3。正确答案：C（In location 3）。"
+        "analysis": "正确答案：C（In location 3）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "请看图表。施工会在哪个地点进行？",
+      "question_translation": "请看图表。施工会在哪个地点进行?",
       "item_id": 66,
       "priority": {
         "level": "P1",
@@ -165,24 +188,24 @@
         "Review an environmental study"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：女方说 contact our usual suppliers and get some estimates for materials。 选择理由：下一步是获取费用估算，对应A。正确答案：A（Obtain some cost estimates）。",
+      "answer_explain": "正确答案：A（Obtain some cost estimates）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 1 段第 1 句：Amy, the parks and recreation department called",
+      "evidence": "参考听力原文：“We should contact our usual suppliers and get some estimates for materials.”",
       "choice_translations": [
-        "A：获取一些费用估算",
-        "B：拍一些照片",
-        "C：提交许可证申请",
-        "D：审阅环境研究报告"
+        "A:获取一些费用估算",
+        "B:拍一些照片",
+        "C:提交许可证申请",
+        "D:审阅环境研究报告"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 1 段第 1 句：Amy, the parks and recreation department called",
+        "evidence": "参考听力原文：“We should contact our usual suppliers and get some estimates for materials.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：女方说 contact our usual suppliers and get some estimates for materials。 选择理由：下一步是获取费用估算，对应A。正确答案：A（Obtain some cost estimates）。"
+        "analysis": "正确答案：A（Obtain some cost estimates）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者接下来最可能做什么？",
+      "question_translation": "说话者接下来最可能做什么?",
       "item_id": 67,
       "priority": {
         "level": "P1",

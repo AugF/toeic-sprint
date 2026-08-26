@@ -40,9 +40,31 @@
       "asset_key": "official-1-test-1/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "E& w Hi, Peter, this is Tanya Bryant. You helped me find %\nan apartment last year. © was wondering if your bh\nagency could help me find a new one in the same g\nneighborhood. 3\nmM Oh—hi, Tanya. I’d be happy to help. You’re currently &\nin the Mount Eldon area, aren’t you? M\nEk w Yes, and | really like it. But @l’'ve recently setup my 2\nown business, designing jewelry and selling it online, 2\nso 'd like to find a two-bedroom apartment.|need %\nto have another room to use as an office. P\n9| have several apartments | could show you. How's &\nyour afternoon? dD",
-    "transcript_translation": "嗨，Peter，我是 Tanya Bryant。去年您帮我找了一套公寓。我想知道您的中介公司是否能帮我在同一个街区找到一套新公寓。哦，嗨，Tanya。我很乐意帮忙。你目前还在 Mount Eldon 地区，对吗？是的，我非常喜欢这里。但我最近成立了自己的珠宝设计和在线销售业务，所以我想找一套两居室的公寓。我需要再多一个房间用作办公室。我可以给您看看几套公寓。你下午怎么样？",
-    "content_translation": "嗨，Peter，我是 Tanya Bryant。去年您帮我找了一套公寓。我想知道您的中介公司是否能帮我在同一个街区找到一套新公寓。哦，嗨，Tanya。我很乐意帮忙。你目前还在 Mount Eldon 地区，对吗？是的，我非常喜欢这里。但我最近成立了自己的珠宝设计和在线销售业务，所以我想找一套两居室的公寓。我需要再多一个房间用作办公室。我可以给您看看几套公寓。你下午怎么样？"
+    "transcript": "Hi Peter, this is Tanya Bryant.\nYou helped me find an apartment last year.\nI was wondering if your agency could help me find a new one in the same neighbourhood.\nOh, hi Tanya, I'd be happy to help.\nYou're currently in the Mount Eldon area, aren't you?\nYes, and I really like it.\nBut I recently set up my own business, designing jewellery and selling it online, so I'd like to find a two-bedroom apartment.\nI need to have another room to use as an office.\nI have several apartments I could show you.\nHow's your afternoon?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "63b935f6ce4e63cff52cd753e28af537b09ee64607befa44aee2f743b05eb95a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 98,
+        "legacy_word_count": 92,
+        "length_ratio": 1.065,
+        "legacy_coverage": 0.978
+      }
+    },
+    "transcript_translation": "嗨 Peter，我是 Tanya Bryant。\n你去年帮我找了一套公寓。\n我想知道您的中介公司是否能帮我在同一个社区找到一套新公寓。\n哦，嗨 Tanya，我很乐意帮忙的。\n您目前在 Mount Eldon 地区，对吗？\n是的，我真的很喜欢这里。\n但我最近成立了自己的业务，设计和在线销售珠宝，所以我想找一套两居室的公寓。\n我需要另一个房间用作办公室。\n我有几套可以给您看的公寓。\n你下午怎么样？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9c7a6aef282ce912799ea83dd07796af30991d933fa1027cb48838c939d8b799"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,24 +75,24 @@
         "To share some news"
       ],
       "answer": "B",
-      "question": "Why is the woman calling the man? 62.",
-      "answer_explain": "原文依据：听力原文中提到“agency could help me find a new one in the same g”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To find a new apartment）。",
+      "question": "Why is the woman calling the man?",
+      "answer_explain": "正确答案：B（To find a new apartment）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：E& w Hi, Peter, this is Tanya Bryant. You helped me find %",
+      "evidence": "参考听力原文：“But I recently set up my own business, designing jewellery and selling it online, so I'd like to find a two-bedroom apartment.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：E& w Hi, Peter, this is Tanya Bryant. You helped me find %",
+        "evidence": "参考听力原文：“But I recently set up my own business, designing jewellery and selling it online, so I'd like to find a two-bedroom apartment.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“agency could help me find a new one in the same g”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To find a new apartment）。"
+        "analysis": "正确答案：B（To find a new apartment）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士打电话给男士的原因是？",
+      "question_translation": "女士打电话给男士的原因是?",
       "choice_translations": [
-        "A：订购一些礼物",
-        "B：寻找一套新公寓",
-        "C：借一些工具",
-        "D：分享一些消息"
+        "A:订购一些礼物",
+        "B:寻找一套新公寓",
+        "C:借一些工具",
+        "D:分享一些消息"
       ],
       "item_id": 56,
       "priority": {
@@ -106,24 +128,24 @@
         "Redecorated a room"
       ],
       "answer": "C",
-      "question": "What does the woman say she has done 63. recently?",
-      "answer_explain": "原文依据：听力原文中提到“own business, designing jewelry and selling it online, 2”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Started a business）。",
+      "question": "What does the woman say she has done recently?",
+      "answer_explain": "正确答案：C（Started a business）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：Ek w Yes, and | really like it. But @l’'ve recently setup my 2",
+      "evidence": "参考听力原文：“But I recently set up my own business, designing jewellery and selling it online, so I'd like to find a two-bedroom apartment.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：Ek w Yes, and | really like it. But @l’'ve recently setup my 2",
+        "evidence": "参考听力原文：“But I recently set up my own business, designing jewellery and selling it online, so I'd like to find a two-bedroom apartment.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“own business, designing jewelry and selling it online, 2”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Started a business）。"
+        "analysis": "正确答案：C（Started a business）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士最近做了什么？",
+      "question_translation": "女士最近做了什么?",
       "choice_translations": [
-        "A：照料她的花园",
-        "B：加入一个社区团体",
-        "C：开始了一家企业",
-        "D：重新装饰了一个房间"
+        "A:照料她的花园",
+        "B:加入一个社区团体",
+        "C:开始了一家企业",
+        "D:重新装饰了一个房间"
       ],
       "item_id": 57,
       "priority": {
@@ -156,27 +178,27 @@
         "To ask whether the woman is enjoying herself",
         "To request help completing a project",
         "To explain a vacation policy",
-        "To suggest a meeting time _"
+        "To suggest a meeting time"
       ],
       "answer": "D",
-      "question": "Why does the man say, “How’s your afternoon’? 64.",
-      "answer_explain": "原文依据：听力原文中提到“your afternoon?”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To suggest a meeting time _）。",
+      "question": "Why does the man say, “How’s your afternoon?”?",
+      "answer_explain": "正确答案：D（To suggest a meeting time）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 12 段：your afternoon? dD",
+      "evidence": "参考听力原文：“How's your afternoon?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 12 段：your afternoon? dD",
+        "evidence": "参考听力原文：“How's your afternoon?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“your afternoon?”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To suggest a meeting time _）。"
+        "analysis": "正确答案：D（To suggest a meeting time）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士说“你下午怎么样？”的原因是？",
+      "question_translation": "男士说“你下午怎么样?”的原因是?",
       "choice_translations": [
-        "A：询问女士是否过得愉快",
-        "B：请求帮助完成一个项目",
-        "C：解释一个休假政策",
-        "D：建议一个会面时间"
+        "A:询问女士是否过得愉快",
+        "B:请求帮助完成一个项目",
+        "C:解释一个休假政策",
+        "D:建议一个会面时间"
       ],
       "item_id": 58,
       "priority": {

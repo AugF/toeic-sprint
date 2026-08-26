@@ -27,8 +27,28 @@
       "asset_key": "official-10-test-2/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Has the equipment arrived for tonight's performance?",
-    "content_translation": "中文辅助（离线预处理）：Has the equipment arrived for tonight's performance?"
+    "transcript": "Has the equipment arrived for tonight's performance?\nA. The orchestra was excellent last night.\nB. Has Ms. Gutierrez recorded her performance?\nC. The driver texted that he'll be here soon.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f78d3e46223663561e363049045484b90aac7391ec21279853743fe387463724",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "今晚表演的设备到了吗？\nA. 昨晚管弦乐队表现非常出色。\nB. Gutierrez女士录制她的表演了吗？\nC. 司机发短信说他很快就到。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "887dc729d4982a131b13038e1134a31c8ea1388ee4a3cf7b4cb4d8ad71bdd036"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Has the equipment arrived for tonight's performance?”，自然应答是“The driver texted that he'll be here soon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The driver texted that he'll be here soon.）。",
-      "question_translation": "中文辅助（离线预处理）：Has the equipment arrived for tonight's performance?",
+      "question_translation": "今晚表演的设备到了吗?",
       "choice_translations": [
-        "A：The orchestra was excellent last night.",
-        "B：Has Ms.\nGutierrez recorded her performance?",
-        "C：The driver texted that he'll be here soon."
+        "A：昨晚管弦乐队表现非常出色。",
+        "B：Gutierrez女士录制她的表演了吗?",
+        "C：司机发短信说他很快就到。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Has the equipment arrived for tonight's performance?",

@@ -39,9 +39,31 @@
       "asset_key": "official-4-test-2/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nExcuse me—©we saw in the newspaper that your\ncanned mushrooms are on sale this week in your st\nBut my friend and | can’t seem to find them on the s\nUnfortunately, we just ran out—a lot of people took\nadvantage of the promotion.\nEE w Oh no! We're here to get some extra ingredients for\ndinner party. And we really needed those mushroon\nfor tonight’s dinner.\nWell, we won't be getting a new delivery until tomor\nwhy don’t you check our store over on Oak Stree\nThanks, but we don’t have the time. We'll just hav\nto make something else. We can have chicken and\npeppers instead.\nyYou're right. Let’s do that.",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nExcuse me—©we saw in the newspaper that your\ncanned mushrooms are on sale this week in your st\nBut my friend and | can’t seem to find them on the s\nUnfortunately, we just ran out—a lot of people took\nadvantage of the promotion.\nEE w Oh no!\nWe're here to get some extra ingredients for\ndinner party.\nAnd we really needed those mushroon\nfor tonight’s dinner.\nWell, we won't be getting a new delivery until tomor\nwhy（为什么） don’t you check our store over on Oak Stree\nThanks, but we don’t have the time.\nWe'll just hav\nto make something else.\nWe can have chicken and\npeppers instead.\nyYou're right.\nLet’s do that.",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nExcuse me—©we saw in the newspaper that your\ncanned mushrooms are on sale this week in your st\nBut my friend and | can’t seem to find them on the s\nUnfortunately, we just ran out—a lot of people took\nadvantage of the promotion.\nEE w Oh no!\nWe're here to get some extra ingredients for\ndinner party.\nAnd we really needed those mushroon\nfor tonight’s dinner.\nWell, we won't be getting a new delivery until tomor\nwhy（为什么） don’t you check our store over on Oak Stree\nThanks, but we don’t have the time.\nWe'll just hav\nto make something else.\nWe can have chicken and\npeppers instead.\nyYou're right.\nLet’s do that."
+    "transcript": "Excuse me?\nWe saw in the newspaper that your canned mushrooms are on sale this week in your store, but my friend and I can't seem to find them on the shelf.\nUnfortunately, we just ran out.\nA lot of people took advantage of the promotion.\nOh, no.\nWe're here to get some extra ingredients for our dinner party, and we really needed those mushrooms for tonight's dinner.\nWell, we won't be getting a new delivery until tomorrow.\nWhy don't you check our store over on Oak Street?\nThanks, but we don't have the time.\nWe'll just have to make something else.\nWe can have chicken and peppers instead.\nYou're right.\nLet's do that.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "221846acf347735e3e51d5651bbe2f0f5c712d403c0fe1fd958a8625d9e5c820",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 114,
+        "legacy_word_count": 116,
+        "length_ratio": 0.983,
+        "legacy_coverage": 0.905
+      }
+    },
+    "transcript_translation": "请问？\n我们在报纸上看到你们店本周卖罐装蘑菇打折，但我和我的朋友在货架上找不到它们。\n很抱歉，我们刚用完了。\n很多人都利用了这次促销活动。\n哦，不。\n我们来这里是为了买一些额外的晚餐派对食材，今晚的晚餐急需这些蘑菇。\n嗯，我们直到明天才会收到新的货运。\n你为什么不去奥克街那家店看看？\n谢谢，但我们没时间。\n我们就得做点别的了。\n我们可以用鸡肉和辣椒代替。\n你说得对。\n那就这么办吧。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e77ede98bafafae645901c969c266b5ecb4c6249c4feab95541c021b52b392de"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "C",
       "question": "Where most likely are the speakers?",
-      "answer_explain": "原文依据：听力原文中提到“But my friend and | can’t seem to find them on the s”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（In a supermarket）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） most likely（最可能） are the speakers?",
+      "answer_explain": "正确答案：C（In a supermarket）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) most likely(最可能) are the speakers?",
       "choice_translations": [
-        "A：Ina restaurant kitchen",
-        "B：Ina shipping facility",
-        "C：In a supermarket",
-        "D：Ina factory"
+        "A:Ina restaurant kitchen",
+        "B:Ina shipping facility",
+        "C:In a supermarket",
+        "D:Ina factory"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“We saw in the newspaper that your canned mushrooms are on sale this week in your store, but my friend and I can't seem to find them on the shelf.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“We saw in the newspaper that your canned mushrooms are on sale this week in your store, but my friend and I can't seem to find them on the shelf.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But my friend and | can’t seem to find them on the s”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（In a supermarket）。"
+        "analysis": "正确答案：C（In a supermarket）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "A",
       "question": "What does the man suggest?",
-      "answer_explain": "原文依据：听力原文中提到“But my friend and | can’t seem to find them on the s”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Visiting a different location）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） suggest（表明/建议）?",
+      "answer_explain": "正确答案：A（Visiting a different location）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) suggest(表明/建议)?",
       "choice_translations": [
-        "A：Visiting a different location",
-        "B：Downloading a coupon",
-        "C：Inviting additional guests",
-        "D：Choosing a different brand"
+        "A:Visiting a different location",
+        "B:Downloading a coupon",
+        "C:Inviting additional guests",
+        "D:Choosing a different brand"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“We saw in the newspaper that your canned mushrooms are on sale this week in your store, but my friend and I can't seem to find them on the shelf.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“We saw in the newspaper that your canned mushrooms are on sale this week in your store, but my friend and I can't seem to find them on the shelf.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But my friend and | can’t seem to find them on the s”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Visiting a different location）。"
+        "analysis": "正确答案：A（Visiting a different location）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "B",
       "question": "What do the women decide to do?",
-      "answer_explain": "原文依据：听力原文中提到“But my friend and | can’t seem to find them on the s”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Change a meal）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） do the women decide to do?",
+      "answer_explain": "正确答案：B（Change a meal）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) do the women decide to do?",
       "choice_translations": [
-        "A：Buy a recipe book",
-        "B：Change a meal",
-        "C：Pay an extra fee",
-        "D：Speak to a supervisor"
+        "A:Buy a recipe book",
+        "B:Change a meal",
+        "C:Pay an extra fee",
+        "D:Speak to a supervisor"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“We saw in the newspaper that your canned mushrooms are on sale this week in your store, but my friend and I can't seem to find them on the shelf.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“We saw in the newspaper that your canned mushrooms are on sale this week in your store, but my friend and I can't seem to find them on the shelf.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But my friend and | can’t seem to find them on the s”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Change a meal）。"
+        "analysis": "正确答案：B（Change a meal）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

@@ -37,9 +37,31 @@
       "asset_key": "official-11-test-1/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "Thanks for proofreading that copy of the newsletter\nthat I left on your desk. Do you think it's final? Is\nit OK for me to go ahead and send it to the Spanish\ntranslator?\nI just noticed one small thing. The date of our\ncompany anniversary celebration is wrong. It says\n\"September,\" but the party is actually in October.\nOh, thanks for catching that. I'll correct it later today\nand submit the translation request tomorrow.",
-    "transcript_translation": "谢谢你帮我校对我放在你桌上的那份公司通讯。你觉得可以定稿了吗？我可以接着把它发给西班牙语译员了吗？\n我刚刚注意到一个小问题。公司周年庆祝活动的日期错了。上面写的是“九月”，但聚会其实是在十月。\n哦，谢谢你发现这个错误。我今天晚些时候会改正，明天提交翻译申请。",
-    "content_translation": "本段听力围绕“演示材料准备”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Thanks for proofreading that copy of the newsletter that I left on your desk.\nDo you think it's final?\nIs it okay for me to go ahead and send it to the Spanish translator?\nI just noticed one small thing.\nThe date of our company anniversary celebration is wrong.\nIt says September, but the party is actually in October.\nOh, thanks for catching that.\nI'll correct it later today and submit the translation request tomorrow.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "599778894bdfffb551d1263c20c8adb54601f57bf9140070c82459ec5bce84b6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 75,
+        "legacy_word_count": 72,
+        "length_ratio": 1.042,
+        "legacy_coverage": 0.986
+      }
+    },
+    "transcript_translation": "谢谢你校对我放在你桌上的通讯稿。\n你觉得它已经定稿了吗？\n我可以把它发送给西班牙语翻译吗？\n我刚注意到一点小问题。\n我们公司周年庆典的日期是错的。\n上面写的是九月，但派对实际上是在十月。\n哦，谢谢你发现这个。\n我今天晚些时候会修改它，并明天提交翻译请求。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9c74ad6c8ffb205729e07380114bcc840a4151ea1d89d11b5e9eb62c107e1b9f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,24 +73,24 @@
         "A production schedule"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：两人讨论 proofreading a copy of the newsletter 以及是否可以定稿。 选择理由：正在准备的是newsletter，对应A；不是销售报告、演示文稿或生产计划。正确答案：A（A newsletter）。",
+      "answer_explain": "正确答案：A（A newsletter）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Thanks for proofreading that copy of the newsletter",
+      "evidence": "参考听力原文：“Thanks for proofreading that copy of the newsletter that I left on your desk.”",
       "choice_translations": [
-        "A：一份公司通讯",
-        "B：一份销售报告",
-        "C：一场演讲",
-        "D：一份生产计划"
+        "A:一份公司通讯",
+        "B:一份销售报告",
+        "C:一场演讲",
+        "D:一份生产计划"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Thanks for proofreading that copy of the newsletter",
+        "evidence": "参考听力原文：“Thanks for proofreading that copy of the newsletter that I left on your desk.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：两人讨论 proofreading a copy of the newsletter 以及是否可以定稿。 选择理由：正在准备的是newsletter，对应A；不是销售报告、演示文稿或生产计划。正确答案：A（A newsletter）。"
+        "analysis": "正确答案：A（A newsletter）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者正在准备什么？",
+      "question_translation": "说话者正在准备什么?",
       "item_id": 35,
       "priority": {
         "level": "P2",
@@ -101,24 +123,24 @@
         "The quality of a print job is poor."
       ],
       "answer": "C",
-      "answer_explain": "原文依据：女方指出 anniversary celebration 的月份写成 September，但实际是 October。 选择理由：这是内容细节不准确，对应C a detail is inaccurate。正确答案：C（A detail is inaccurate.）。",
+      "answer_explain": "正确答案：C（A detail is inaccurate.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Thanks for proofreading that copy of the newsletter",
+      "evidence": "参考听力原文：“I'll correct it later today and submit the translation request tomorrow.”",
       "choice_translations": [
-        "A：有些页面缺失了。",
-        "B：草稿迟交了。",
-        "C：有一项细节不准确。",
-        "D：印刷质量很差。"
+        "A:有些页面缺失了。",
+        "B:草稿迟交了。",
+        "C:有一项细节不准确。",
+        "D:印刷质量很差。"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Thanks for proofreading that copy of the newsletter",
+        "evidence": "参考听力原文：“I'll correct it later today and submit the translation request tomorrow.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：女方指出 anniversary celebration 的月份写成 September，但实际是 October。 选择理由：这是内容细节不准确，对应C a detail is inaccurate。正确答案：C（A detail is inaccurate.）。"
+        "analysis": "正确答案：C（A detail is inaccurate.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士提到了什么问题？",
+      "question_translation": "女士提到了什么问题?",
       "item_id": 36,
       "priority": {
         "level": "P2",
@@ -151,24 +173,24 @@
         "Attend a party"
       ],
       "answer": "B",
-      "answer_explain": "原文依据：男方说 submit the translation request tomorrow。 选择理由：提交翻译申请等同于安排翻译，因此B正确。正确答案：B（Order a translation）。",
+      "answer_explain": "正确答案：B（Order a translation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段第 1 句：and submit the translation request tomorrow.",
+      "evidence": "参考听力原文：“I'll correct it later today and submit the translation request tomorrow.”",
       "choice_translations": [
-        "A：发送邀请函",
-        "B：申请翻译",
-        "C：请求延期",
-        "D：参加聚会"
+        "A:发送邀请函",
+        "B:申请翻译",
+        "C:请求延期",
+        "D:参加聚会"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段第 1 句：and submit the translation request tomorrow.",
+        "evidence": "参考听力原文：“I'll correct it later today and submit the translation request tomorrow.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：男方说 submit the translation request tomorrow。 选择理由：提交翻译申请等同于安排翻译，因此B正确。正确答案：B（Order a translation）。"
+        "analysis": "正确答案：B（Order a translation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士说他明天会做什么？",
+      "question_translation": "男士说他明天会做什么?",
       "item_id": 37,
       "priority": {
         "level": "P2",

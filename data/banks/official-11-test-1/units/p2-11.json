@@ -42,8 +42,28 @@
       "asset_key": "official-11-test-1/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "实验室检查不是很快就要开始了吗？\nA：不是，是星期五。\nB：大约三个小时。\nC：谢谢你的帮助。",
-    "content_translation": "本段听力围绕“否定问句与反意问句”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Isn't the lab inspection starting soon?\nA. No, it's on Friday.\nB. About three hours long.\nC. Thanks for your help.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9823a700fd0956ad9732c89351e29f06f5affba50e8c24395da07ae8e488463c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 22
+      }
+    },
+    "transcript_translation": "实验室检查快开始了，对吧？\nA. 不，是周五的。\nB. 大约持续三个小时。\nC. 谢谢你的帮助。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9452c11a43e87de159cc72e182660efe3e98f0ea187c2b22058f3bf4545b1424"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -61,8 +81,8 @@
       "question_type": "否定疑问句",
       "evidence": "参考原文第 1 段第 1 句：Isn't the lab inspection starting soon?",
       "choice_translations": [
-        "A：不是，是星期五。",
-        "B：大约三个小时。",
+        "A：不,是周五的。",
+        "B：大约持续三个小时。",
         "C：谢谢你的帮助。"
       ],
       "response_style": "应直接提供疑问词所要求的信息，也要留意自然的间接回答",
@@ -74,7 +94,7 @@
         "strategy": "先判断为特殊疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：否定问句猜测检查快开始了，答句纠正为 No, it's on Friday。 选择理由：A自然纠正时间信息；B只说时长，C是致谢。正确答案：A（No, it's on Friday.）。"
       },
-      "question_translation": "实验室检查不是很快就要开始了吗？",
+      "question_translation": "实验室检查快开始了,对吧?",
       "item_id": 11,
       "priority": {
         "level": "P1",

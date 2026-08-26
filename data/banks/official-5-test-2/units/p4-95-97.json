@@ -38,9 +38,32 @@
       "asset_key": "official-5-test-2/audio/part4/q095-097.mp3",
       "exists": true
     },
-    "transcript": "poster.\nI hope you're enjoying this workshop for children's book\nauthors. In this next part of the workshop, we'll look at how\nto create characters that are memorable. One way to capture\nchildren's attention is to give a character a special feature.\nHere's a poster for the book series Barb and Friends.\nne of the characters always wears a hat—he wears a\ndifferent hat on every page! ® Even though he's not the main\ncharacter, he's the most popular. There're several children's\nbooks on the table at the back of the room. Please spend\nabout ten minutes looking through the books on display. Try\nto identify the features that make each character unique.\nBARB & FRIENDS\nDom\nBarb\nMarina Liam\nDon\nBarb\nMarina\nLiam",
-    "transcript_translation": "中文辅助（离线预处理）：poster.\nI hope you're enjoying this workshop for children's book\nauthors.\nIn this next part of the workshop, we'll look at how（如何）\nto create characters that are memorable.\nOne way to capture\nchildren's attention is to give a character a special feature.\nHere's a poster for the book series Barb and Friends.\nne of the characters always wears a hat—he wears a\ndifferent hat on every page!\n® Even though he's not the main\ncharacter, he's the most popular.\nThere're several children's\nbooks on the table at the back of the room.\nPlease（请） spend\nabout ten minutes looking through the books on display.\nTry\nto identify the features that make each character unique.\nBARB & FRIENDS\nDom\nBarb\nMarina Liam\nDon\nBarb\nMarina\nLiam",
-    "content_translation": "中文辅助（离线预处理）：poster.\nI hope you're enjoying this workshop for children's book\nauthors.\nIn this next part of the workshop, we'll look at how（如何）\nto create characters that are memorable.\nOne way to capture\nchildren's attention is to give a character a special feature.\nHere's a poster for the book series Barb and Friends.\nne of the characters always wears a hat—he wears a\ndifferent hat on every page!\n® Even though he's not the main\ncharacter, he's the most popular.\nThere're several children's\nbooks on the table at the back of the room.\nPlease（请） spend\nabout ten minutes looking through the books on display.\nTry\nto identify the features that make each character unique.\nBARB & FRIENDS\nDom\nBarb\nMarina Liam\nDon\nBarb\nMarina\nLiam"
+    "transcript": "I hope you're enjoying this workshop for children's book authors.\nIn this next part of the workshop, we'll look at how to create characters that are memorable.\nOne way to capture children's attention is to give a character a special feature.\nHere's a poster for the book series Barb and Friends.\nOne of the characters always wears a hat.\nHe wears a different hat on every page.\nEven though he's not the main character, he's the most popular.\nThere are several children's books on the table at the back of the room.\nPlease spend about 10 minutes looking through the books on display.\nTry to identify the features that make each character unique.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1c1ef03fbcbf071eb1713b3d90d6eac76a10a7a1bde0ab0b76f7d9a596ec2839",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 114,
+        "legacy_word_count": 122,
+        "length_ratio": 0.934,
+        "legacy_coverage": 0.926
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "我希望你喜欢这个儿童书籍作者的研讨会。\n在本次研讨会的下一部分，我们将研究如何创造令人难忘的角色。\n吸引孩子注意力的一个方法是给角色赋予一个特殊的特征。\n这是关于书系列《Barb and Friends》的海报。\n其中一个角色总是戴着帽子。\n他在每一页上都戴着不同的帽子。\n尽管他不是主角，但他是最受欢迎的。\n桌子后面摆放着几本儿童书籍。\n请花大约10分钟浏览展示的书籍。\n试着找出使每个角色独特的特征。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "223e40e8ab8ccb745083e91a361f8a35affa764a0576f75cbd50b9a46fe012e5"
+    }
   },
   "items": [
     {
@@ -52,23 +75,23 @@
       ],
       "answer": "B",
       "question": "What event is taking place?",
-      "answer_explain": "原文依据：听力原文中提到“In this next part of the workshop, we'll look at how”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An author workshop）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） event is taking place?",
+      "answer_explain": "正确答案：B（An author workshop）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) event is taking place?",
       "choice_translations": [
-        "A：A film premiere",
-        "B：An author workshop",
-        "C：A store opening",
-        "D：A book signing"
+        "A:A film premiere",
+        "B:An author workshop",
+        "C:A store opening",
+        "D:A book signing"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：poster.",
+      "evidence": "参考听力原文：“I hope you're enjoying this workshop for children's book authors.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：poster.",
+        "evidence": "参考听力原文：“I hope you're enjoying this workshop for children's book authors.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“In this next part of the workshop, we'll look at how”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An author workshop）。"
+        "analysis": "正确答案：B（An author workshop）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 95,
       "priority": {
@@ -103,23 +126,23 @@
       ],
       "answer": "A",
       "question": "Look at the graphic. Which character does the speaker say is the most popular?",
-      "answer_explain": "原文依据：听力原文中提到“Don”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（Don）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich character does the speaker（说话者） say is the most popular?",
+      "answer_explain": "正确答案：A（Don）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which character does the speaker(说话者) say is the most popular?",
       "choice_translations": [
-        "A：Don",
-        "B：Barb",
-        "C：Marina",
-        "D：Liam"
+        "A:Don",
+        "B:Barb",
+        "C:Marina",
+        "D:Liam"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：to create characters that are memorable. One way to capture",
+      "evidence": "参考听力原文：“Even though he's not the main character, he's the most popular.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：to create characters that are memorable. One way to capture",
+        "evidence": "参考听力原文：“Even though he's not the main character, he's the most popular.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Don”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（Don）。"
+        "analysis": "正确答案：A（Don）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 96,
       "priority": {
@@ -154,23 +177,23 @@
       ],
       "answer": "D",
       "question": "What will the listeners do next?",
-      "answer_explain": "原文依据：听力原文中提到“In this next part of the workshop, we'll look at how”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Look at some books）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the listeners do next?",
+      "answer_explain": "正确答案：D（Look at some books）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the listeners do next?",
       "choice_translations": [
-        "A：Purchase（购买） a ticket",
-        "B：Pose for a photograph",
-        "C：Draw some sketches",
-        "D：Look at some books"
+        "A:Purchase(购买) a ticket",
+        "B:Pose for a photograph",
+        "C:Draw some sketches",
+        "D:Look at some books"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：poster.",
+      "evidence": "参考听力原文：“Please spend about 10 minutes looking through the books on display.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：poster.",
+        "evidence": "参考听力原文：“Please spend about 10 minutes looking through the books on display.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“In this next part of the workshop, we'll look at how”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Look at some books）。"
+        "analysis": "正确答案：D（Look at some books）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 97,
       "priority": {

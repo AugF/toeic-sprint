@@ -26,8 +26,28 @@
       "asset_key": "official-7-test-1/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：M When（何时） did you last update your software?\nEK\"",
-    "content_translation": "中文辅助（离线预处理）：M When（何时） did you last update your software?\nEK\""
+    "transcript": "When did you last update your software?\nA. A new uniform.\nB. Two months ago.\nC. Above the printers.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1b62fbd14c3d04bfe7c217fea57dfeaf5dcc68b38c4513ef82e7e6f22c24131a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 20
+      }
+    },
+    "transcript_translation": "你上次更新软件是什么时候？\nA. 一套新制服。\nB. 两个月前。\nC. 在打印机上方。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d2fd524a37da2532a3886b3e1479fa33c528668420f2aa2351c8c23058d7ecbe"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "Above the printers."
       ],
       "answer": "B",
-      "question": "M When did you last update your software? EK\"",
+      "question": "When did you last update your software?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M When did you last update your software? EK\"”，自然应答是“Two months ago.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Two months ago.）。",
-      "question_translation": "中文辅助（离线预处理）：M When（何时） did you last update your software?\nEK\"",
+      "answer_explain": "原文依据：问句或陈述是“When did you last update your software?”，自然应答是“Two months ago.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Two months ago.）。",
+      "question_translation": "你上次更新软件是什么时候?",
       "choice_translations": [
-        "A：A new uniform.",
-        "B：Two months ago.",
-        "C：Above the printers."
+        "A：一套新制服。",
+        "B：两个月前。",
+        "C：在打印机上方。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M When did you last update your software? EK\"",
+      "evidence": "参考原文第 1 段：When did you last update your software?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M When did you last update your software? EK\"",
+        "evidence": "参考原文第 1 段：When did you last update your software?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“M When did you last update your software? EK\"”，自然应答是“Two months ago.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Two months ago.）。"
+        "analysis": "原文依据：问句或陈述是“When did you last update your software?”，自然应答是“Two months ago.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Two months ago.）。"
       },
       "item_id": 11,
       "priority": {

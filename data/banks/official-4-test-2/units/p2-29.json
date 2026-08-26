@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-2/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：M | have another item to add to the meeting（会议） age w",
-    "content_translation": "中文辅助（离线预处理）：M | have another item to add to the meeting（会议） age w"
+    "transcript": "I have another item to add to the meeting agenda.\nA. It was really relaxing.\nB. It's a 30% discount.\nC. Ben's organizing this meeting.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8a5daf91cfd6e91f3ec6988d3d12fc1af827fda1da3804018522b5f91c5f2426",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "我还有一项内容要添加到会议议程中。\nA. 这真的很放松。\nB. 这是八折优惠。\nC. 本正在组织这次会议。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "54c180c70e69af4b43354f8291c54182bba8bc62720528caa32de802c9653fc6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "It was really relaxing.",
-        "It’s a 30 percent discount.",
-        "Ben’s organizing this meeting."
+        "It's a 30% discount.",
+        "Ben's organizing this meeting."
       ],
       "answer": "C",
-      "question": "M | have another item to add to the meeting age w",
+      "question": "I have another item to add to the meeting agenda.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M | have another item to add to the meeting age w”，自然应答是“Ben’s organizing this meeting.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Ben’s organizing this meeting.）。",
-      "question_translation": "中文辅助（离线预处理）：M | have another item to add to the meeting（会议） age w",
+      "answer_explain": "原文依据：问句或陈述是“I have another item to add to the meeting agenda.”，自然应答是“Ben's organizing this meeting.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Ben's organizing this meeting.）。",
+      "question_translation": "我还有一项内容要添加到会议议程中。",
       "choice_translations": [
-        "A：It was really relaxing.",
-        "B：It’s a 30 percent discount.",
-        "C：Ben’s organizing this meeting（会议）."
+        "A：这真的很放松。",
+        "B：这是八折优惠。",
+        "C：本正在组织这次会议。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M | have another item to add to the meeting age w",
+      "evidence": "参考原文第 1 段：I have another item to add to the meeting agenda.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M | have another item to add to the meeting age w",
+        "evidence": "参考原文第 1 段：I have another item to add to the meeting agenda.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“M | have another item to add to the meeting age w”，自然应答是“Ben’s organizing this meeting.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Ben’s organizing this meeting.）。"
+        "analysis": "原文依据：问句或陈述是“I have another item to add to the meeting agenda.”，自然应答是“Ben's organizing this meeting.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Ben's organizing this meeting.）。"
       },
       "item_id": 29,
       "priority": {

@@ -28,8 +28,28 @@
       "asset_key": "official-8-test-2/audio/part2/q014.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Elw Should we call the contest winner today or tomorrow?\nM",
-    "content_translation": "中文辅助（离线预处理）：Elw Should we call the contest winner today or tomorrow?\nM"
+    "transcript": "Should we call the contest winner today or tomorrow?\nA. Let's call now.\nB. In your inbox.\nC. No, it's the other one.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4b108269b2369f82d3150ffd50af1640c5a3474c42f914a77d1479c37c20e7fc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part2/q014.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "我们今天还是明天打电话给比赛的获胜者？\nA. 现在打吧。\nB. 在你的收件箱里。\nC. 不，是另一个。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4587c5d15c45bbb0701c94c1d0e3443bbc0c0854101593a57894521be2b55349"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "No, it's the other one."
       ],
       "answer": "A",
-      "question": "Elw Should we call the contest winner today or tomorrow? M",
+      "question": "Should we call the contest winner today or tomorrow?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“Elw Should we call the contest winner today or tomorrow? M”，自然应答是“Let's call now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Let's call now.）。",
-      "question_translation": "中文辅助（离线预处理）：Elw Should we call the contest winner today or tomorrow?\nM",
+      "answer_explain": "原文依据：问句或陈述是“Should we call the contest winner today or tomorrow?”，自然应答是“Let's call now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Let's call now.）。",
+      "question_translation": "我们今天还是明天打电话给比赛的获胜者?",
       "choice_translations": [
-        "A：Let's call now.",
-        "B：In your inbox.",
-        "C：No, it's the other one."
+        "A：现在打吧。",
+        "B：在你的收件箱里。",
+        "C：不,是另一个。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Elw Should we call the contest winner today or tomorrow? M",
+      "evidence": "参考原文第 1 段：Should we call the contest winner today or tomorrow?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Elw Should we call the contest winner today or tomorrow? M",
+        "evidence": "参考原文第 1 段：Should we call the contest winner today or tomorrow?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Elw Should we call the contest winner today or tomorrow? M”，自然应答是“Let's call now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Let's call now.）。"
+        "analysis": "原文依据：问句或陈述是“Should we call the contest winner today or tomorrow?”，自然应答是“Let's call now.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Let's call now.）。"
       },
       "item_id": 14,
       "priority": {

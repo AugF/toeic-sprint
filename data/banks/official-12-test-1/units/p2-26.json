@@ -26,38 +26,58 @@
       "asset_key": "official-12-test-1/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：NEw Where（哪里） should I go for lunch?\nTEA • m",
-    "content_translation": "中文辅助（离线预处理）：NEw Where（哪里） should I go for lunch?\nTEA • m"
+    "transcript": "Where should I go for lunch?\nA. Usually around 1 o'clock.\nB. Have you tried the new Vietnamese restaurant?\nC. Because it's Friday.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b3836747c190857ea22f12b365c709ddf390e4d1916427a74201f0d3ab032ce8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "我午饭该去哪里？\nA. 通常在一点左右。\nB. 你试过那家新的越南餐厅了吗？\nC. 因为今天是星期五。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ace6b180adc3d85ada959ceefe040bfaedd37a9081d95809839af523f8ed12eb"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "EATE",
+        "Usually around 1 o'clock.",
         "Have you tried the new Vietnamese restaurant?",
         "Because it's Friday."
       ],
       "answer": "B",
-      "question": "NEw Where should I go for lunch? TEA • m",
+      "question": "Where should I go for lunch?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“NEw Where should I go for lunch? TEA • m”，自然应答是“Have you tried the new Vietnamese restaurant?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Have you tried the new Vietnamese restaurant?）。",
-      "question_translation": "中文辅助（离线预处理）：NEw Where（哪里） should I go for lunch?\nTEA • m",
+      "answer_explain": "原文依据：问句或陈述是“Where should I go for lunch?”，自然应答是“Have you tried the new Vietnamese restaurant?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Have you tried the new Vietnamese restaurant?）。",
+      "question_translation": "我午饭该去哪里?",
       "choice_translations": [
-        "A：EATE",
-        "B：Have you tried the new Vietnamese restaurant?",
-        "C：Because it's Friday."
+        "A：通常在一点左右。",
+        "B：你试过那家新的越南餐厅了吗?",
+        "C：因为今天是星期五。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：NEw Where should I go for lunch? TEA • m",
+      "evidence": "参考原文第 1 段：Where should I go for lunch?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：NEw Where should I go for lunch? TEA • m",
+        "evidence": "参考原文第 1 段：Where should I go for lunch?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“NEw Where should I go for lunch? TEA • m”，自然应答是“Have you tried the new Vietnamese restaurant?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Have you tried the new Vietnamese restaurant?）。"
+        "analysis": "原文依据：问句或陈述是“Where should I go for lunch?”，自然应答是“Have you tried the new Vietnamese restaurant?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Have you tried the new Vietnamese restaurant?）。"
       },
       "item_id": 26,
       "priority": {

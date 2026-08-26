@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-1/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "Ew 今天医生来吗？ , ee = w\nA. 多久一次？ TUSBDIEHL, NOESAT [RK\nB. 不是个好日子。(SLE EMF TLS\nC. DER。",
-    "content_translation": "Ew 今天医生来吗？ , ee = w\nA. 多久一次？ TUSBDIEHL, NOESAT [RK\nB. 不是个好日子。(SLE EMF TLS\nC. DER。"
+    "transcript": "Is the doctor in today?\nA. How often?\nB. That's not a good day.\nC. No, she's not.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f2084ada048fa5a7a9d8daec99a05b208af86c3acf9c8ede692a5062a7edb11e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 19
+      }
+    },
+    "transcript_translation": "医生今天在吗？\nA. 多久一次？\nB. 今天不是个好日子。\nC. 不，她不在的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9b17a477cde1301f99f0342f92bced2ed2d3c73fefaf31525d3514fb796518f1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "How often? TUSBDIEHL, NOESAT [RK",
-        "That’s not a good day. (SLE EMF TLS",
-        "DER."
+        "How often?",
+        "That's not a good day.",
+        "No, she's not."
       ],
       "answer": "C",
-      "question": "Ew Is the doctor in today? , ee = w",
+      "question": "Is the doctor in today?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Is the doctor in today? , ee = w”，自然应答是“DER.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（DER.）。",
+      "answer_explain": "原文依据：问句或陈述是“Is the doctor in today?”，自然应答是“No, she's not.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（No, she's not.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Is the doctor in today? , ee = w",
+      "evidence": "参考原文第 1 段：Is the doctor in today?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Is the doctor in today? , ee = w",
+        "evidence": "参考原文第 1 段：Is the doctor in today?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Ew Is the doctor in today? , ee = w”，自然应答是“DER.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（DER.）。"
+        "analysis": "原文依据：问句或陈述是“Is the doctor in today?”，自然应答是“No, she's not.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（No, she's not.）。"
       },
-      "question_translation": "Ew 今天医生来吗？ , ee = w",
+      "question_translation": "医生今天在吗?",
       "choice_translations": [
-        "A：多久一次？ TUSBDIEHL, NOESAT [RK",
-        "B：不是个好日子。(SLE EMF TLS",
-        "C：DER。"
+        "A：多久一次?",
+        "B：今天不是个好日子。",
+        "C：不,她不在的。"
       ],
       "item_id": 19,
       "priority": {

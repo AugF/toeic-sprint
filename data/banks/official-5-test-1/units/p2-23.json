@@ -26,8 +26,28 @@
       "asset_key": "official-5-test-1/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） can I find Ms.\nRobbins this afternoon?",
-    "content_translation": "中文辅助（离线预处理）：Where（哪里） can I find Ms.\nRobbins this afternoon?"
+    "transcript": "Where can I find Ms. Robbins this afternoon?\nA. It lasted for three hours.\nB. I have to disagree.\nC. Do you have her phone number?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "67950128a4a417b6a9001b1a8d464d505bc9ad0674bb6658938a5dc1c58849c4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "我今天下午在哪里能找到Robbins女士？\nA. 它持续了三个小时。\nB. 我必须不同意。\nC. 你有她的电话号码吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "747327695de7ee28ad9af9e570ef7a8b354e691d280bc1b8075768d5b8fbe56f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -42,11 +62,11 @@
       "topic": "地点询问",
       "keywords": "where location response",
       "answer_explain": "原文依据：问句或陈述是“Where can I find Ms. Robbins this afternoon?”，自然应答是“Do you have her phone number?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Do you have her phone number?）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） can I find Ms.\nRobbins this afternoon?",
+      "question_translation": "我今天下午在哪里能找到Robbins女士?",
       "choice_translations": [
-        "A：It lasted for three hours.",
-        "B：I have to disagree.",
-        "C：Do you have her phone number?"
+        "A：它持续了三个小时。",
+        "B：我必须不同意。",
+        "C：你有她的电话号码吗?"
       ],
       "question_type": "地点疑问句",
       "evidence": "参考原文第 1 段：Where can I find Ms. Robbins this afternoon?",

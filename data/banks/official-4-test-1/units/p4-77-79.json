@@ -41,37 +41,59 @@
       "asset_key": "official-4-test-1/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "Mu\nAnd now, the weather from Radio KMC. @Many of our\nlisteners, I’m sure, have made plans to spend the day\noutside at the Ray Mountain Park and attend the track\nand-field event there this weekend. | don’t know about the\nfolks. Our normally bright skies are giving way to heavy\nstorms this coming Thursday, and the rain may not let up\ntime for the event. Now, ®in case of rain, you won't be let\nwith nothing to do. The summer art fair is taking place at\nthe park’s convention center. The organizing committee\nrecommends checking the Ray Mountain Park’s Web site\nFriday morning to get the latest information.",
-    "transcript_translation": "中文辅助（离线预处理）：Mu\nAnd now, the weather from Radio KMC.\n@Many of our\nlisteners, I’m sure, have made plans to spend the day\noutside at the Ray Mountain Park and attend the track\nand-field event there this weekend.\n| don’t know about the\nfolks.\nOur normally bright skies are giving way to heavy\nstorms this coming Thursday, and the rain may not let up\ntime for the event.\nNow, ®in case of rain, you won't be let\nwith nothing to do.\nThe summer art fair is taking place at\nthe park’s convention center.\nThe organizing committee\nrecommends checking the Ray Mountain Park’s Web site\nFriday morning to get the latest information（信息）.",
-    "content_translation": "中文辅助（离线预处理）：Mu\nAnd now, the weather from Radio KMC.\n@Many of our\nlisteners, I’m sure, have made plans to spend the day\noutside at the Ray Mountain Park and attend the track\nand-field event there this weekend.\n| don’t know about the\nfolks.\nOur normally bright skies are giving way to heavy\nstorms this coming Thursday, and the rain may not let up\ntime for the event.\nNow, ®in case of rain, you won't be let\nwith nothing to do.\nThe summer art fair is taking place at\nthe park’s convention center.\nThe organizing committee\nrecommends checking the Ray Mountain Park’s Web site\nFriday morning to get the latest information（信息）."
+    "transcript": "And now the weather from Radio KMC.\nMany of our listeners I'm sure have made plans to spend the day outside at the Ray Mountain Park and attend the track and field event there this weekend.\nI don't know about that, folks.\nOur normally bright skies are giving way to heavy storms this coming Thursday and the rain may not let up in time for the event.\nNow, in case of rain, you won't be left with nothing to do.\nThe summer art fair is taking place at the Parks Convention Centre.\nThe organising committee recommends checking the Ray Mountain Park's website Friday morning to get the latest information.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5e86d28fd42b8e48113330481f820c2f5feadbb6cf96bab028a21c973317e927",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 109,
+        "legacy_word_count": 108,
+        "length_ratio": 1.009,
+        "legacy_coverage": 0.935
+      }
+    },
+    "transcript_translation": "现在是来自 Radio KMC 的天气预报。\n我确信我们许多听众都计划在这个周末去 Ray Mountain Park 在户外度过一天，并参加那里的田径活动。\n我对这个不太确定，各位。\n我们通常晴朗的天空周四将迎来大风暴，而且雨水可能来不及为活动停止。\n现在，万一下雨，你们不会无所事事。\n夏季艺术展正在 Parks Convention Centre 举行。\n组织委员会建议大家在周五早上查看 Ray Mountain Park 的网站以获取最新信息。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4cfc5f987025d07b423959d6d4b6c1231ab8d42c0bebe7548fae553c4758f394"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Aradio host",
+        "A radio host",
         "A city official",
         "A television actor",
         "A professional artist"
       ],
       "answer": "A",
       "question": "Who most likely is the speaker?",
-      "answer_explain": "原文依据：听力原文中提到“storms this coming Thursday, and the rain may not let up”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Aradio host）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the speaker（说话者）?",
+      "answer_explain": "正确答案：A（A radio host）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is the speaker(说话者)?",
       "choice_translations": [
-        "A：Aradio host",
-        "B：A city official",
-        "C：A television actor",
-        "D：A professional artist"
+        "A:A radio host",
+        "B:A city official",
+        "C:A television actor",
+        "D:A professional artist"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Mu",
+      "evidence": "参考听力原文：“And now the weather from Radio KMC.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Mu",
+        "evidence": "参考听力原文：“And now the weather from Radio KMC.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“storms this coming Thursday, and the rain may not let up”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Aradio host）。"
+        "analysis": "正确答案：A（A radio host）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -108,24 +130,24 @@
         "Additional information is needed."
       ],
       "answer": "C",
-      "question": "What does the speaker mean when he says, “| don’t know about that’?",
-      "answer_explain": "原文依据：听力原文中提到“storms this coming Thursday, and the rain may not let up”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some plans may have to change.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） mean when（何时） he says, “| don’t know about that’?",
+      "question": "What does the speaker mean when he says, “ don’t know about that’?",
+      "answer_explain": "正确答案：C（Some plans may have to change.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) mean when(何时) he says, “ don’t know about that’?",
       "choice_translations": [
-        "A：He is surprised about a schedule（日程）.",
-        "B：He does not like a suggestion.",
-        "C：Some plans may have to change.",
-        "D：Additional information（信息） is needed."
+        "A:He is surprised about a schedule(日程).",
+        "B:He does not like a suggestion.",
+        "C:Some plans may have to change.",
+        "D:Additional information(信息) is needed."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：Mu",
+      "evidence": "参考听力原文：“Many of our listeners I'm sure have made plans to spend the day outside at the Ray Mountain Park and attend the track and field event there this weekend.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：Mu",
+        "evidence": "参考听力原文：“Many of our listeners I'm sure have made plans to spend the day outside at the Ray Mountain Park and attend the track and field event there this weekend.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“storms this coming Thursday, and the rain may not let up”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some plans may have to change.）。"
+        "analysis": "正确答案：C（Some plans may have to change.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, what can the listeners check on a Web site?",
-      "answer_explain": "原文依据：听力原文中提到“time for the event.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Whether an event has been canceled）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） can the listeners check on a Web site?",
+      "answer_explain": "正确答案：B（Whether an event has been canceled）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) can the listeners check on a Web site?",
       "choice_translations": [
-        "A：Whether a venue will change its layout",
-        "B：Whether an event has been canceled",
-        "C：Whether participants have been selected",
-        "D：Whether members receive free"
+        "A:Whether a venue will change its layout",
+        "B:Whether an event has been canceled",
+        "C:Whether participants have been selected",
+        "D:Whether members receive free"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：listeners, I’m sure, have made plans to spend the day",
+      "evidence": "参考听力原文：“Many of our listeners I'm sure have made plans to spend the day outside at the Ray Mountain Park and attend the track and field event there this weekend.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：listeners, I’m sure, have made plans to spend the day",
+        "evidence": "参考听力原文：“Many of our listeners I'm sure have made plans to spend the day outside at the Ray Mountain Park and attend the track and field event there this weekend.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“time for the event.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Whether an event has been canceled）。"
+        "analysis": "正确答案：B（Whether an event has been canceled）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

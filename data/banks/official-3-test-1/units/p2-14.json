@@ -28,38 +28,58 @@
       "asset_key": "official-3-test-1/audio/part2/q014.mp3",
       "exists": true
     },
-    "transcript_translation": "M Does Marta know that we’ve made a lunch reservation for one o’clock? Ew\nA. Yes, | sent her an e-mail about it.\nB. The Town Plaza Café.\nC. It’s served with a side salad.",
-    "content_translation": "M Does Marta know that we’ve made a lunch reservation for one o’clock? Ew\nA. Yes, | sent her an e-mail about it.\nB. The Town Plaza Café.\nC. It’s served with a side salad."
+    "transcript": "Does Marta know that we've made\nA. lunch reservation for 1 o'clock? A. Yes, I sent her an email about it.\nB. The Town Plaza Cafe.\nC. It's served with a side salad.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3c803ae1660e7cd932d7df1a55ce385ed14e088efb611f1a7122cf66597547be",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part2/q014.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "玛尔塔知道我们预订了下午一点的午餐吗？\nA. 咖啡馆的午餐预定？ A. 是的，我给她发了一封邮件。\nB. Town Plaza Cafe。\nC. 它配有沙拉。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c80a5e5ddecdfc694b279d0e65da8365f1954aaf2e50b869efa9deaa2ac40d04"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Yes, | sent her an e-mail about it.",
-        "The Town Plaza Café.",
-        "It’s served with a side salad."
+        "lunch reservation for 1 o'clock? A. Yes, I sent her an email about it.",
+        "The Town Plaza Cafe.",
+        "It's served with a side salad."
       ],
       "answer": "A",
-      "question": "M Does Marta know that we’ve made a lunch reservation for one o’clock? Ew",
+      "question": "Does Marta know that we've made",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M Does Marta know that we’ve made a lunch reservation for one o’clock? Ew”，自然应答是“Yes, | sent her an e-mail about it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, | sent her an e-mail about it.）。",
-      "question_translation": "M Does Marta know that we’ve made a lunch reservation for one o’clock? Ew",
+      "answer_explain": "原文依据：问句或陈述是“Does Marta know that we've made”，自然应答是“lunch reservation for 1 o'clock? A. Yes, I sent her an email about it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（lunch reservation for 1 o'clock? A. Yes, I sent her an email about it.）。",
+      "question_translation": "玛尔塔知道我们预订了下午一点的午餐吗?",
       "choice_translations": [
-        "A：Yes, | sent her an e-mail about it.",
-        "B：The Town Plaza Café.",
-        "C：It’s served with a side salad."
+        "A：咖啡馆的午餐预定? A. 是的,我给她发了一封邮件。",
+        "B：Town Plaza Cafe。",
+        "C：它配有沙拉。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M Does Marta know that we’ve made a lunch reservation for one o’clock? Ew",
+      "evidence": "参考原文第 1 段：Does Marta know that we've made",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M Does Marta know that we’ve made a lunch reservation for one o’clock? Ew",
+        "evidence": "参考原文第 1 段：Does Marta know that we've made",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“M Does Marta know that we’ve made a lunch reservation for one o’clock? Ew”，自然应答是“Yes, | sent her an e-mail about it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, | sent her an e-mail about it.）。"
+        "analysis": "原文依据：问句或陈述是“Does Marta know that we've made”，自然应答是“lunch reservation for 1 o'clock? A. Yes, I sent her an email about it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（lunch reservation for 1 o'clock? A. Yes, I sent her an email about it.）。"
       },
       "item_id": 14,
       "priority": {

@@ -36,9 +36,31 @@
       "asset_key": "official-3-test-1/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "Hi Kenji, °you weren't at the restaurant staff\nmeeting today, so | wanted to let you know the\nthe servers will be getting new uniforms next r\nK, should | go to a specific store to buy one\nthe restaurant supply them?\n1'm going to order black T-shirts with our\nrestaurant logo from a supplier here in town, @\ntake care of the cost. ®| just need to know yot\nso | can complete the order.\nusually wear a medium. Thanks!",
-    "transcript_translation": "嗨，健二，你今天没有参加餐厅员工会议，所以我想告诉你服务员将获得新制服。K，我是否应该去特定的商店购买呢？还是餐厅会供应它们？\n我打算从镇上的一家供应商那里订购带有我们餐厅标志的黑色 T 恤，来承担成本。®我只是需要知道你的尺码，这样我就可以完成订单了。\n通常穿中号。谢谢！",
-    "content_translation": "嗨，健二，你今天没有参加餐厅员工会议，所以我想告诉你服务员将获得新制服。K，我是否应该去特定的商店购买呢？还是餐厅会供应它们？\n我打算从镇上的一家供应商那里订购带有我们餐厅标志的黑色 T 恤，来承担成本。®我只是需要知道你的尺码，这样我就可以完成订单了。\n通常穿中号。谢谢！"
+    "transcript": "Hi Kenji, you weren't at the restaurant staff meeting today, so I wanted to let you know that all the servers will be getting new uniforms next month.\nOkay, should I go to a specific store to buy one or will the restaurant supply them?\nI'm going to order black t-shirts with our restaurant logo from a supplier here in town, and I'll take care of the cost.\nI just need to know your size so I can complete the order.\nI usually wear a medium, thanks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "aa1a240876636188284e9460980dce21145e9efa359b8d126d330b86a47b495b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 87,
+        "legacy_word_count": 75,
+        "length_ratio": 1.16,
+        "legacy_coverage": 0.947
+      }
+    },
+    "transcript_translation": "嗨 Kenji，你今天没有参加餐厅员工会议，所以我想让你知道所有服务员下个月都会拿到新制服。\n好的，我是否需要去特定的商店购买一件，还是餐厅会提供？\n我要从我们镇上的一个供应商那里订购印有我们餐厅标志的黑色 T 恤，我会负责费用。\n我只需要知道你的尺码，这样我就可以完成订单了。\n我通常穿中号，谢谢。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7f02a4854b6648474e653a5015d7efa1f00655b64e62fdb30d380e7328ede699"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -49,24 +71,24 @@
         "At a dry cleaner"
       ],
       "answer": "C",
-      "question": "Where do the speakers work? 3",
-      "answer_explain": "原文依据：听力原文中提到“Hi Kenji, °you weren't at the restaurant staff”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a restaurant）。",
-      "question_translation": "说话者们在哪里工作？",
+      "question": "Where do the speakers work?",
+      "answer_explain": "正确答案：C（At a restaurant）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者们在哪里工作?",
       "choice_translations": [
-        "A：在百货商店",
-        "B：在药店",
-        "C：在一家餐厅",
-        "D：在干洗店"
+        "A:在百货商店",
+        "B:在药店",
+        "C:在一家餐厅",
+        "D:在干洗店"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi Kenji, °you weren't at the restaurant staff",
+      "evidence": "参考听力原文：“Hi Kenji, you weren't at the restaurant staff meeting today, so I wanted to let you know that all the servers will be getting new uniforms next month.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi Kenji, °you weren't at the restaurant staff",
+        "evidence": "参考听力原文：“Hi Kenji, you weren't at the restaurant staff meeting today, so I wanted to let you know that all the servers will be getting new uniforms next month.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Hi Kenji, °you weren't at the restaurant staff”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a restaurant）。"
+        "analysis": "正确答案：C（At a restaurant）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -92,30 +114,30 @@
     },
     {
       "choices": [
-        "Employees will have to wear ID 3 badges.",
+        "Employees will have to wear ID badges.",
         "Credit cards will now be accepted.",
         "Work shifts will be more flexible.",
         "Staff will receive different uniforms."
       ],
       "answer": "D",
       "question": "What change does the woman mention?",
-      "answer_explain": "原文依据：听力原文中提到“the servers will be getting new uniforms next r”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Staff will receive different uniforms.）。",
-      "question_translation": "女士提到了什么变化？",
+      "answer_explain": "正确答案：D（Staff will receive different uniforms.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士提到了什么变化?",
       "choice_translations": [
-        "A：员工将不得不佩戴工牌。",
-        "B：现在接受信用卡支付。",
-        "C：工作轮班会更灵活。",
-        "D：员工将收到不同的制服。"
+        "A:员工将不得不佩戴工牌。",
+        "B:现在接受信用卡支付。",
+        "C:工作轮班会更灵活。",
+        "D:员工将收到不同的制服。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi Kenji, °you weren't at the restaurant staff",
+      "evidence": "参考听力原文：“Hi Kenji, you weren't at the restaurant staff meeting today, so I wanted to let you know that all the servers will be getting new uniforms next month.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi Kenji, °you weren't at the restaurant staff",
+        "evidence": "参考听力原文：“Hi Kenji, you weren't at the restaurant staff meeting today, so I wanted to let you know that all the servers will be getting new uniforms next month.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the servers will be getting new uniforms next r”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Staff will receive different uniforms.）。"
+        "analysis": "正确答案：D（Staff will receive different uniforms.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -147,24 +169,24 @@
         "The color of an item"
       ],
       "answer": "B",
-      "question": "What does the woman need to know? A",
-      "answer_explain": "原文依据：听力原文中提到“meeting today, so | wanted to let you know the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The size of some clothing）。",
-      "question_translation": "女士需要知道什么？",
+      "question": "What does the woman need to know?",
+      "answer_explain": "正确答案：B（The size of some clothing）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士需要知道什么?",
       "choice_translations": [
-        "A：一家银行的名称",
-        "B：一些衣物的尺码",
-        "C：一次送货的日期",
-        "D：一件物品的颜色"
+        "A:一家银行的名称",
+        "B:一些衣物的尺码",
+        "C:一次送货的日期",
+        "D:一件物品的颜色"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi Kenji, °you weren't at the restaurant staff",
+      "evidence": "参考听力原文：“I just need to know your size so I can complete the order.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi Kenji, °you weren't at the restaurant staff",
+        "evidence": "参考听力原文：“I just need to know your size so I can complete the order.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“meeting today, so | wanted to let you know the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The size of some clothing）。"
+        "analysis": "正确答案：B（The size of some clothing）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

@@ -28,38 +28,58 @@
       "asset_key": "official-10-test-2/audio/part2/q014.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Which apartment would you like to rent?\nм",
-    "content_translation": "中文辅助（离线预处理）：Ew Which apartment would you like to rent?\nм"
+    "transcript": "Which apartment would you like to rent?\nA. I spent about 20 euros on it.\nB. I have a few more to look at.\nC. Mr. Yasui started a new job recently.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4a92e95ed69867760d4cf98865b12fabb84ebe55f499871f600b60c8f93d87aa",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q014.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "您想租哪一套公寓？\nA. 我花了大约 20 欧元买的。\nB. 我还有几套可以看看。\nC. 屋水先生最近开始了一份新工作。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e5cb686a8e009cfa95bd72b860f1c90899e3ca32b844f397b37c745f7ea70e4f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "I spent about twenty euros on it.",
+        "I spent about 20 euros on it.",
         "I have a few more to look at.",
         "Mr. Yasui started a new job recently."
       ],
       "answer": "B",
-      "question": "Ew Which apartment would you like to rent? м",
+      "question": "Which apartment would you like to rent?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Which apartment would you like to rent? м”，自然应答是“I have a few more to look at.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I have a few more to look at.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Which apartment would you like to rent?\nм",
+      "answer_explain": "原文依据：问句或陈述是“Which apartment would you like to rent?”，自然应答是“I have a few more to look at.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I have a few more to look at.）。",
+      "question_translation": "您想租哪一套公寓?",
       "choice_translations": [
-        "A：I spent about twenty euros on it.",
-        "B：I have a few more to look at.",
-        "C：Mr.\nYasui started a new job recently."
+        "A：我花了大约 20 欧元买的。",
+        "B：我还有几套可以看看。",
+        "C：屋水先生最近开始了一份新工作。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Ew Which apartment would you like to rent? м",
+      "evidence": "参考原文第 1 段：Which apartment would you like to rent?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Ew Which apartment would you like to rent? м",
+        "evidence": "参考原文第 1 段：Which apartment would you like to rent?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Which apartment would you like to rent? м”，自然应答是“I have a few more to look at.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I have a few more to look at.）。"
+        "analysis": "原文依据：问句或陈述是“Which apartment would you like to rent?”，自然应答是“I have a few more to look at.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I have a few more to look at.）。"
       },
       "item_id": 14,
       "priority": {

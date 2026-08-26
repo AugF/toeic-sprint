@@ -28,8 +28,28 @@
       "asset_key": "official-9-test-2/audio/part2/q020.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Excuse me, we ordered over 30 minutes ago.",
-    "content_translation": "中文辅助（离线预处理）：Excuse me, we ordered over 30 minutes ago."
+    "transcript": "Excuse me, we ordered over 30 minutes ago.\nA. I'll check with the chef.\nB. That's an excellent choice.\nC. A half-hour train ride.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c8258a8eafd0c6a303433d4bbfc9d3af15b53dd5f304d56dc0ce516cdbfa8da1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q020.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "对不起，我们超过30分钟前就点餐了。\nA. 我会和厨师确认一下的。\nB. 这是一个绝佳的选择。\nC. 一段半小时的火车旅程。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2b857ed0b75e5ff8d289836ba6dcd0ea5515d28aa41119d84b48844cb6030f99"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Excuse me, we ordered over 30 minutes ago.”，自然应答是“I'll check with the chef.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I'll check with the chef.）。",
-      "question_translation": "中文辅助（离线预处理）：Excuse me, we ordered over 30 minutes ago.",
+      "question_translation": "对不起,我们超过30分钟前就点餐了。",
       "choice_translations": [
-        "A：I'll check with the chef.",
-        "B：That's an excellent choice.",
-        "C：A half-hour train ride."
+        "A：我会和厨师确认一下的。",
+        "B：这是一个绝佳的选择。",
+        "C：一段半小时的火车旅程。"
       ],
       "question_type": "陈述 / 请求应答题",
       "evidence": "参考原文第 1 段：Excuse me, we ordered over 30 minutes ago.",

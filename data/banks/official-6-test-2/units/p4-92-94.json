@@ -40,9 +40,32 @@
       "asset_key": "official-6-test-2/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "Welcome to Nutrition Talk on WKMN Radio! ® Our guest\ntoday, Alexis Morris, is a nutritionist who recently released\nAlexis Morris do #\na mobile phone app. ® The new app helps you track what\nyou eat and gives you nutritional information about that food.\nToday we'll be talking with Ms. Morris about the importance\nof meal tracking. l've kept records of my meal choices for\nyears now, and l've tried a lot of other applications like this.\nOl can honestly say that this is the best one I've ever used\nWe'll talk with Ms. Morris right after this commercial break.",
-    "transcript_translation": "中文辅助（离线预处理）：Welcome to Nutrition Talk on WKMN Radio!\n® Our guest\ntoday, Alexis Morris, is a nutritionist who（谁） recently released\nAlexis Morris do #\na mobile phone app.\n® The new app helps you track what（什么）\nyou eat and gives you nutritional information（信息） about that food.\nToday we'll be talking with Ms.\nMorris about the importance\nof meal tracking.\nl've kept records of my meal choices for\nyears now, and l've tried a lot of other applications like this.\nOl can honestly say that this is the best one I've ever used\nWe'll talk with Ms.\nMorris right after this commercial break.",
-    "content_translation": "中文辅助（离线预处理）：Welcome to Nutrition Talk on WKMN Radio!\n® Our guest\ntoday, Alexis Morris, is a nutritionist who（谁） recently released\nAlexis Morris do #\na mobile phone app.\n® The new app helps you track what（什么）\nyou eat and gives you nutritional information（信息） about that food.\nToday we'll be talking with Ms.\nMorris about the importance\nof meal tracking.\nl've kept records of my meal choices for\nyears now, and l've tried a lot of other applications like this.\nOl can honestly say that this is the best one I've ever used\nWe'll talk with Ms.\nMorris right after this commercial break."
+    "transcript": "Welcome to Nutrition Talk on WKMN Radio!\nOur guest today, Alexis Morris, is a nutritionist who recently released a mobile phone app.\nThe new app helps you track what you eat and gives you nutritional information about that food.\nToday we'll be talking with Ms. Morris about the importance of meal tracking.\nI've kept records of my meal choices for years now, and l've tried a lot of other applications like this.\nI can honestly say that this is the best one I've ever used.\nWe'll talk with Ms. Morris right after this commercial break.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "5cd6fda9f5cdd453de774af36adabc78a6e33a572a14e74e313860f18ac2f360",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 95,
+        "legacy_word_count": 98,
+        "length_ratio": 0.969,
+        "legacy_coverage": 0.969
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "欢迎收听 WKMN 电台的营养讲座！\n我们今天的嘉宾是 Alexis Morris，她是一位营养师，最近发布了一款手机应用程序。\n这款新应用可以帮助您追踪您的饮食，并提供关于这些食物的营养信息。\n今天我们将和 Morris 女士讨论餐食记录的重要性。\n我已经记录我的膳食选择很多年了，我也尝试过许多类似的应用程序。\n我敢说这是我用过的最好的一个。\n在广告休息之后，我们将与 Morris 女士交谈。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "bfd3ad0aedad48c1fa699a7ba46de951af31d661beae63876f5f8e4f9071d604"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "A",
       "question": "Who is Alexis Morris?",
-      "answer_explain": "原文依据：听力原文中提到“Welcome to Nutrition Talk on WKMN Radio!”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A nutrition expert）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） is Alexis Morris?",
+      "answer_explain": "正确答案：A（A nutrition expert）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) is Alexis Morris?",
       "choice_translations": [
-        "A：A nutrition expert",
-        "B：A gardener",
-        "C：A chef",
-        "D：A supermarket owner"
+        "A:A nutrition expert",
+        "B:A gardener",
+        "C:A chef",
+        "D:A supermarket owner"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：today, Alexis Morris, is a nutritionist who recently released",
+      "evidence": "参考听力原文：“Our guest today, Alexis Morris, is a nutritionist who recently released a mobile phone app.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：today, Alexis Morris, is a nutritionist who recently released",
+        "evidence": "参考听力原文：“Our guest today, Alexis Morris, is a nutritionist who recently released a mobile phone app.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Welcome to Nutrition Talk on WKMN Radio!”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A nutrition expert）。"
+        "analysis": "正确答案：A（A nutrition expert）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "C",
       "question": "What does the speaker imply when he says, \"I've tried a lot of other applications like this\"?",
-      "answer_explain": "原文依据：听力原文中提到“Ol can honestly say that this is the best one I've ever used”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（The listeners can trust his opinion.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） imply when（何时） he says, \"I've tried a lot of other applications like this\"?",
+      "answer_explain": "正确答案：C（The listeners can trust his opinion.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) imply when(何时) he says, \"I've tried a lot of other applications like this\"?",
       "choice_translations": [
-        "A：He wants to try other applications.",
-        "B：He is offering to work（工作） with a colleague.",
-        "C：The listeners can trust his opinion.",
-        "D：The listeners should call the station."
+        "A:He wants to try other applications.",
+        "B:He is offering to work(工作) with a colleague.",
+        "C:The listeners can trust his opinion.",
+        "D:The listeners should call the station."
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 8 段：years now, and l've tried a lot of other applications like this.",
+      "evidence": "参考听力原文：“I've kept records of my meal choices for years now, and l've tried a lot of other applications like this.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 8 段：years now, and l've tried a lot of other applications like this.",
+        "evidence": "参考听力原文：“I've kept records of my meal choices for years now, and l've tried a lot of other applications like this.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ol can honestly say that this is the best one I've ever used”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（The listeners can trust his opinion.）。"
+        "analysis": "正确答案：C（The listeners can trust his opinion.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, what will listeners hear next?",
-      "answer_explain": "原文依据：听力原文中提到“Morris right after this commercial break.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A commercial break）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） will listeners hear next?",
+      "answer_explain": "正确答案：B（A commercial break）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) will listeners hear next?",
       "choice_translations": [
-        "A：A weather report",
-        "B：A commercial break",
-        "C：A traffic update",
-        "D：A news bulletin"
+        "A:A weather report",
+        "B:A commercial break",
+        "C:A traffic update",
+        "D:A news bulletin"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Welcome to Nutrition Talk on WKMN Radio! ® Our guest",
+      "evidence": "参考听力原文：“We'll talk with Ms. Morris right after this commercial break.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Welcome to Nutrition Talk on WKMN Radio! ® Our guest",
+        "evidence": "参考听力原文：“We'll talk with Ms. Morris right after this commercial break.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Morris right after this commercial break.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A commercial break）。"
+        "analysis": "正确答案：B（A commercial break）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

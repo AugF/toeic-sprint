@@ -37,9 +37,31 @@
       "asset_key": "official-8-test-2/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "Thanks for calling Dratson's Musical Instruments.\nGuitars, drums, or clarinets —we have it all!\nEk w Hi, I'm calling on behalf of Spring Tree Learning. We're\nCtulE5ld, Abld Spring Tree Learning ECHELT\na nonprofit educational organization.\nSure, I'm familiar with that name.\nElEw Ol'm calling to see if your business would be interested\nin becoming one of our sponsors for an upcoming\nfund-raising event that we'll be holding.\nm That sounds interesting, but ® the owner's out on a\nfamily vacation. Can I take your number so that he can\nreturn your call?",
-    "transcript_translation": "中文辅助（离线预处理）：Thanks for calling Dratson's Musical Instruments.\nGuitars, drums, or clarinets —we have it all!\nEk w Hi, I'm calling on behalf of Spring Tree Learning.\nWe're\nCtulE5ld, Abld Spring Tree Learning ECHELT\na nonprofit educational organization.\nSure, I'm familiar with that name.\nElEw Ol'm calling to see if your business would be interested\nin becoming one of our sponsors for an upcoming\nfund-raising event that we'll be holding.\nm That sounds interesting, but ® the owner's out on a\nfamily vacation.\nCan I take your number so that he can\nreturn your call?",
-    "content_translation": "中文辅助（离线预处理）：Thanks for calling Dratson's Musical Instruments.\nGuitars, drums, or clarinets —we have it all!\nEk w Hi, I'm calling on behalf of Spring Tree Learning.\nWe're\nCtulE5ld, Abld Spring Tree Learning ECHELT\na nonprofit educational organization.\nSure, I'm familiar with that name.\nElEw Ol'm calling to see if your business would be interested\nin becoming one of our sponsors for an upcoming\nfund-raising event that we'll be holding.\nm That sounds interesting, but ® the owner's out on a\nfamily vacation.\nCan I take your number so that he can\nreturn your call?"
+    "transcript": "Thanks for calling Dratsons Musical Instruments.\nGuitars, drums or clarinets, we have it all.\nHi, I'm calling on behalf of Springtree Learning.\nWe're a non-profit educational organization.\nSure, I'm familiar with that name.\nI'm calling to see if your business would be interested in becoming one of our sponsors for an upcoming fundraising event that we'll be holding.\nThat sounds interesting, but the owner's out on a family vacation.\nCan I take your number so that he can return your call?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bf7dede78ee7397631e8f0577fdbfe1b3e99e69c16365a5e7dbca3446807ce44",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 81,
+        "legacy_word_count": 92,
+        "length_ratio": 0.88,
+        "legacy_coverage": 0.804
+      }
+    },
+    "transcript_translation": "感谢您致电 Dratsons Musical Instruments。\n吉他、鼓或单簧管，我们应有尽有。\n嗨，我代表 Springtree Learning 致电。\n我们是一个非营利教育组织。\n当然，我很熟悉这个名字。\n我打电话来想知道您的企业是否对成为我们即将举办的筹款活动的支持者感兴趣。\n听起来很有趣，但老板正在家庭度假。\n我可以记下您的电话号码，让他回电给您吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "258463754117de1d5e443dc2d3b6cdc293190b10f3d065e1d313925f2aa30694"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "D",
       "question": "Where does the man work?",
-      "answer_explain": "原文依据：听力原文中提到“Thanks for calling Dratson's Musical Instruments.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（At a musical instrument shop）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the man（男士） work（工作）?",
+      "answer_explain": "正确答案：D（At a musical instrument shop）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the man(男士) work(工作)?",
       "choice_translations": [
-        "A：At a theater",
-        "B：At a radio station",
-        "C：At an art gallery",
-        "D：At a musical instrument shop"
+        "A:At a theater",
+        "B:At a radio station",
+        "C:At an art gallery",
+        "D:At a musical instrument shop"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Thanks for calling Dratson's Musical Instruments.",
+      "evidence": "参考听力原文：“Thanks for calling Dratsons Musical Instruments.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Thanks for calling Dratson's Musical Instruments.",
+        "evidence": "参考听力原文：“Thanks for calling Dratsons Musical Instruments.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Thanks for calling Dratson's Musical Instruments.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（At a musical instrument shop）。"
+        "analysis": "正确答案：D（At a musical instrument shop）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "B",
       "question": "What does the woman ask the business to do?",
-      "answer_explain": "原文依据：听力原文中提到“fund-raising event that we'll be holding.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Sponsor an event）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） ask the business to do?",
+      "answer_explain": "正确答案：B（Sponsor an event）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) ask the business to do?",
       "choice_translations": [
-        "A：Post some signs",
-        "B：Sponsor an event",
-        "C：Mentor some students",
-        "D：Change a policy"
+        "A:Post some signs",
+        "B:Sponsor an event",
+        "C:Mentor some students",
+        "D:Change a policy"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：ElEw Ol'm calling to see if your business would be interested",
+      "evidence": "参考听力原文：“I'm calling to see if your business would be interested in becoming one of our sponsors for an upcoming fundraising event that we'll be holding.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：ElEw Ol'm calling to see if your business would be interested",
+        "evidence": "参考听力原文：“I'm calling to see if your business would be interested in becoming one of our sponsors for an upcoming fundraising event that we'll be holding.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“fund-raising event that we'll be holding.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Sponsor an event）。"
+        "analysis": "正确答案：B（Sponsor an event）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "C",
       "question": "Why is the owner currently unavailable?",
-      "answer_explain": "原文依据：听力原文中提到“family vacation.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He is on vacation.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the owner currently unavailable?",
+      "answer_explain": "正确答案：C（He is on vacation.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the owner currently unavailable?",
       "choice_translations": [
-        "A：He is taking a lunch break.",
-        "B：He is conducting an interview.",
-        "C：He is on vacation.",
-        "D：He is visiting a client."
+        "A:He is taking a lunch break.",
+        "B:He is conducting an interview.",
+        "C:He is on vacation.",
+        "D:He is visiting a client."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：m That sounds interesting, but ® the owner's out on a",
+      "evidence": "参考听力原文：“That sounds interesting, but the owner's out on a family vacation.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：m That sounds interesting, but ® the owner's out on a",
+        "evidence": "参考听力原文：“That sounds interesting, but the owner's out on a family vacation.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“family vacation.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He is on vacation.）。"
+        "analysis": "正确答案：C（He is on vacation.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

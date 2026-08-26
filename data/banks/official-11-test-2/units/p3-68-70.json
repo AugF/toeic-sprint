@@ -45,9 +45,32 @@
       "asset_key": "official-11-test-2/images/part3/q068-070.jpg",
       "exists": true
     },
-    "transcript": "and table.\nEK w Hi, Artem. O Have you figured out why the water\nin the hotel pool looks cloudy? Some guests have\ncomplained.\nBlm I tested the water, and the chemicals are OK. The\nproblem is with the filtration system. We need to\nreplace the filter cartridge.\nER w OK. What model do we need?\nElM Olt's the X7.\nEK w OK. I'll call now to make sure the pool supply store\nhas the part in stock. Can you drop by the store la\ntoday to pick it up?\nEm OSure. That way I can install the new filter tomorrov\nmorning.\nFilter Model Price\nJ3\nT5\nX7\nY12",
-    "transcript_translation": "中文辅助（离线预处理）：and table.\nEK w Hi, Artem.\nO Have you figured out why（为什么） the water\nin the hotel pool looks cloudy?\nSome guests have\ncomplained.\nBlm I tested the water, and the chemicals are OK.\nThe\nproblem is with the filtration system.\nWe need to\nreplace the filter cartridge.\nER w OK.\nWhat（什么） model do we need?\nElM Olt's the X7.\nEK w OK.\nI'll call now to make sure the pool supply store\nhas the part in stock.\nCan you drop by the store la\ntoday to pick it up?\nEm OSure.\nThat way I can install the new filter tomorrov\nmorning.\nFilter Model Price\nJ3\nT5\nX7\nY12",
-    "content_translation": "中文辅助（离线预处理）：and table.\nEK w Hi, Artem.\nO Have you figured out why（为什么） the water\nin the hotel pool looks cloudy?\nSome guests have\ncomplained.\nBlm I tested the water, and the chemicals are OK.\nThe\nproblem is with the filtration system.\nWe need to\nreplace the filter cartridge.\nER w OK.\nWhat（什么） model do we need?\nElM Olt's the X7.\nEK w OK.\nI'll call now to make sure the pool supply store\nhas the part in stock.\nCan you drop by the store la\ntoday to pick it up?\nEm OSure.\nThat way I can install the new filter tomorrov\nmorning.\nFilter Model Price\nJ3\nT5\nX7\nY12"
+    "transcript": "Hi, Artem.\nHave you figured out why the water in the hotel pool looks cloudy?\nSome guests have complained.\nI tested the water and the chemicals are okay.\nThe problem is with the filtration system.\nWe need to replace the filter cartridge.\nOkay.\nWhat model do we need?\nIt's the X7.\nOkay.\nI'll call now to make sure the pool supply store has the part in stock.\nCan you drop by the store later today to pick it up?\nSure.\nThat way I can install the new filter tomorrow morning.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7506618b98fdc0b1f1dac4a466c8cabf850814a8510e8549ad2ecdf771262dc8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part3/q068-070.mp3",
+      "metrics": {
+        "word_count": 92,
+        "legacy_word_count": 100,
+        "length_ratio": 0.92,
+        "legacy_coverage": 0.85
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，Artem。\n你弄清楚了酒店泳池里的水为什么看起来浑浊了吗？\n一些客人抱怨过。\n我测试了水，化学品没问题。\n问题出在过滤系统上。\n我们需要更换滤芯。\n好的。\n我们需要什么型号的？\n是X7。\n好的。\n我现在打电话确认一下泳池用品店是否有库存。\n你今天晚点能去店里取一下吗？\n当然。\n这样我明天早上就能安装新的滤芯了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "95b1a363327db2f04c5bae6c71fac263641578562d5d3e76a424a68a1973b396"
+    }
   },
   "items": [
     {
@@ -59,23 +82,23 @@
       ],
       "answer": "A",
       "question": "According to the woman, what is wrong with the water in the pool?",
-      "answer_explain": "原文依据：听力原文与题目“According to the woman, what is wrong with the water in the pool?”对应，官方答案为“It is cloudy.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（It is cloudy.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the woman（女士）, what（什么） is wrong with the water in the pool?",
+      "answer_explain": "正确答案：A（It is cloudy.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the woman(女士), what(什么) is wrong with the water in the pool?",
       "choice_translations": [
-        "A：It is cloudy.",
-        "B：It is too cold.",
-        "C：It has a bad smell.",
-        "D：It contains too many chemicals."
+        "A:It is cloudy.",
+        "B:It is too cold.",
+        "C:It has a bad smell.",
+        "D:It contains too many chemicals."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：EK w Hi, Artem. O Have you figured out why the water",
+      "evidence": "参考听力原文：“Have you figured out why the water in the hotel pool looks cloudy?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：EK w Hi, Artem. O Have you figured out why the water",
+        "evidence": "参考听力原文：“Have you figured out why the water in the hotel pool looks cloudy?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“According to the woman, what is wrong with the water in the pool?”对应，官方答案为“It is cloudy.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（It is cloudy.）。"
+        "analysis": "正确答案：A（It is cloudy.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 68,
       "priority": {
@@ -112,23 +135,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. How much will a replacement part cost?",
-      "answer_explain": "原文依据：听力原文与题目“Look at the graphic. How much will a replacement part cost?”对应，官方答案为“$55”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（$55）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nHow（如何） much will a replacement part cost?",
+      "answer_explain": "正确答案：C（$55）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. How(如何) much will a replacement part cost?",
       "choice_translations": [
-        "A：$26",
-        "B：$32",
-        "C：$55",
-        "D：$70"
+        "A:$26",
+        "B:$32",
+        "C:$55",
+        "D:$70"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and table.",
+      "evidence": "参考听力原文：“I'll call now to make sure the pool supply store has the part in stock.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and table.",
+        "evidence": "参考听力原文：“I'll call now to make sure the pool supply store has the part in stock.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Look at the graphic. How much will a replacement part cost?”对应，官方答案为“$55”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（$55）。"
+        "analysis": "正确答案：C（$55）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 69,
       "priority": {
@@ -165,23 +188,23 @@
       ],
       "answer": "D",
       "question": "What will the man most likely do later today?",
-      "answer_explain": "原文依据：听力原文与题目“What will the man most likely do later today?”对应，官方答案为“Visit a store”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Visit a store）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） most likely（最可能） do later today?",
+      "answer_explain": "正确答案：D（Visit a store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) most likely(最可能) do later today?",
       "choice_translations": [
-        "A：Submit an invoice",
-        "B：Clean some equipment",
-        "C：Post an announcement",
-        "D：Visit a store"
+        "A:Submit an invoice",
+        "B:Clean some equipment",
+        "C:Post an announcement",
+        "D:Visit a store"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 12 段：today to pick it up?",
+      "evidence": "参考听力原文：“Can you drop by the store later today to pick it up?”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 12 段：today to pick it up?",
+        "evidence": "参考听力原文：“Can you drop by the store later today to pick it up?”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What will the man most likely do later today?”对应，官方答案为“Visit a store”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Visit a store）。"
+        "analysis": "正确答案：D（Visit a store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 70,
       "priority": {

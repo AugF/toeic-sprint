@@ -31,14 +31,34 @@
       "asset_key": "official-3-test-2/images/part1/q002.jpg",
       "exists": true
     },
-    "transcript_translation": "A. Aman 正在分发传单。\nB. Aman 正在关门。\nC. 一些人正在互相问好。\nD. 其中一位女士正在笔记本上写字。",
-    "content_translation": "A. Aman 正在分发传单。\nB. Aman 正在关门。\nC. 一些人正在互相问好。\nD. 其中一位女士正在笔记本上写字。"
+    "transcript": "A. A man is distributing handouts.\nB. A man is closing a door.\nC. Some people are greeting one another.\nD. One of the women is writing in a notebook.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d95866b57f8780872dd64f165ba0a0d5eba2c45660fbe4c822e8bb0d90b17e72",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part1/q002.mp3",
+      "metrics": {
+        "word_count": 270
+      }
+    },
+    "transcript_translation": "A. 一个男人正在分发传单。\nB. 一个男人正在关一扇门。\nC. 有些人正在互相问好。\nD. 其中一位女士正在笔记本上写字。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "07cb4b46779fc32a44c4fe0720433038fb2349517e4cd9682f1378b971b4b3e5"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Aman is distributing handouts.",
-        "Aman is closing a door.",
+        "A man is distributing handouts.",
+        "A man is closing a door.",
         "Some people are greeting one another.",
         "One of the women is writing in a notebook."
       ],
@@ -48,9 +68,9 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some people are greeting one another.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Some people are greeting one another.）。",
       "choice_translations": [
-        "A：Aman 正在分发传单。",
-        "B：Aman 正在关门。",
-        "C：一些人正在互相问好。",
+        "A：一个男人正在分发传单。",
+        "B：一个男人正在关一扇门。",
+        "C：有些人正在互相问好。",
         "D：其中一位女士正在笔记本上写字。"
       ],
       "question_type": "动作 / 状态辨析题",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-2/p1-2/2"
+      "item_key": "official-3-test-2/p1-2/2",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

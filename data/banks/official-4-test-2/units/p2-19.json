@@ -28,8 +28,28 @@
       "asset_key": "official-4-test-2/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：=~ | think our new packaging should use less pl: M",
-    "content_translation": "中文辅助（离线预处理）：=~ | think our new packaging should use less pl: M"
+    "transcript": "I think our new packaging should use less plastic.\nA. I'm waiting for a package.\nB. That's a great idea.\nC. Some plastic spoons.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9e382b2d5ded10a1d9846365b15b199fe45f29bab3f7582c63f2a89b6617fc83",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "我认为我们的新包装应该使用更少的塑料。\nA. 我在等一个包裹。\nB. 这是个好主意。\nC. 一些塑料勺子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b8d4d0aac7f3a4b1fecf5c29e28cfba5f8ae3da54a0d8a32ad4c40cd9fafc6d0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Some plastic spoons."
       ],
       "answer": "B",
-      "question": "=~ | think our new packaging should use less pl: M",
+      "question": "I think our new packaging should use less plastic.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“=~ | think our new packaging should use less pl: M”，自然应答是“That's a great idea.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（That's a great idea.）。",
-      "question_translation": "中文辅助（离线预处理）：=~ | think our new packaging should use less pl: M",
+      "answer_explain": "原文依据：问句或陈述是“I think our new packaging should use less plastic.”，自然应答是“That's a great idea.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（That's a great idea.）。",
+      "question_translation": "我认为我们的新包装应该使用更少的塑料。",
       "choice_translations": [
-        "A：I'm waiting for a package.",
-        "B：That's a great idea.",
-        "C：Some plastic spoons."
+        "A：我在等一个包裹。",
+        "B：这是个好主意。",
+        "C：一些塑料勺子。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：=~ | think our new packaging should use less pl: M",
+      "evidence": "参考原文第 1 段：I think our new packaging should use less plastic.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：=~ | think our new packaging should use less pl: M",
+        "evidence": "参考原文第 1 段：I think our new packaging should use less plastic.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“=~ | think our new packaging should use less pl: M”，自然应答是“That's a great idea.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（That's a great idea.）。"
+        "analysis": "原文依据：问句或陈述是“I think our new packaging should use less plastic.”，自然应答是“That's a great idea.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（That's a great idea.）。"
       },
       "item_id": 19,
       "priority": {

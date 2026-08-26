@@ -32,27 +32,47 @@
       "asset_key": "official-1-test-2/images/part1/q005.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 行客 [## J. 出口[~PSwWTH< J,\nB. 一架飞机正在从停机坪起飞。\nC. 一些行李堆在人行道上。 终端 [(@80)9—=+))). BERGE S\nD. 楼梯扶梯已经放置在一个 BOTS 旁边。",
-    "content_translation": "A. 行客 [## J. 出口[~PSwWTH< J,\nB. 一架飞机正在从停机坪起飞。\nC. 一些行李堆在人行道上。 终端 [(@80)9—=+))). BERGE S\nD. 楼梯扶梯已经放置在一个 BOTS 旁边。"
+    "transcript": "A. Passengers are exiting an airport terminal.\nB. An aircraft is taking off from a runway.\nC. Pieces of luggage are lined up on the pavement.\nD. A staircase has been positioned next to an airplane.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d65e4267ee48362b6502409ff9601a417c48248d4bd46d162433a8a68b90f169",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part1/q005.mp3",
+      "metrics": {
+        "word_count": 47
+      }
+    },
+    "transcript_translation": "A. 乘客们正在离开一个机场航站楼。\nB. 一架飞机正从跑道起飞。\nC. 行李箱堆在人行道上。\nD. 一个楼梯扶梯被放置在一架飞机旁边。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a99cc128ee231ebfbce6780b4e684dcaf8e8c542199b7e88b06ef925e39405ea"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "passenger [## J. exit[~PSwWTH< J,",
-        "An aircraft is taking off from a Tunway.",
-        "Pieces of luggage are lined up on the pavement. terminal [(@80)9—=+))). BERGE S",
-        "Astaircase has been positioned next to an BOTS."
+        "Passengers are exiting an airport terminal.",
+        "An aircraft is taking off from a runway.",
+        "Pieces of luggage are lined up on the pavement.",
+        "A staircase has been positioned next to an airplane."
       ],
       "answer": "D",
       "difficulty": "medium",
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
-      "answer_explain": "原文依据：照片中可见信息与描述“Astaircase has been positioned next to an BOTS.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（Astaircase has been positioned next to an BOTS.）。",
+      "answer_explain": "原文依据：照片中可见信息与描述“A staircase has been positioned next to an airplane.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（A staircase has been positioned next to an airplane.）。",
       "choice_translations": [
-        "A：行客 [## J. 出口[~PSwWTH< J,",
-        "B：一架飞机正在从停机坪起飞。",
-        "C：一些行李堆在人行道上。 终端 [(@80)9—=+))). BERGE S",
-        "D：楼梯扶梯已经放置在一个 BOTS 旁边。"
+        "A：乘客们正在离开一个机场航站楼。",
+        "B：一架飞机正从跑道起飞。",
+        "C：行李箱堆在人行道上。",
+        "D：一个楼梯扶梯被放置在一架飞机旁边。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -62,7 +82,7 @@
         "question_type": "动作 / 状态辨析题",
         "evidence": "根据题干结构、选项语义和上下文判断。",
         "strategy": "本题属于动作 / 状态辨析题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：照片中可见信息与描述“Astaircase has been positioned next to an BOTS.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（Astaircase has been positioned next to an BOTS.）。"
+        "analysis": "原文依据：照片中可见信息与描述“A staircase has been positioned next to an airplane.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（A staircase has been positioned next to an airplane.）。"
       },
       "item_id": 5,
       "priority": {
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p1-5/5"
+      "item_key": "official-1-test-2/p1-5/5",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

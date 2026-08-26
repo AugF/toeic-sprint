@@ -27,38 +27,58 @@
       "asset_key": "official-1-test-2/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "Ew 为什么研讨会取消了 ™\nA. 大约二十分钟前。\nB. 在十四号房间。\nC. 因为很多人不能到。",
-    "content_translation": "Ew 为什么研讨会取消了 ™\nA. 大约二十分钟前。\nB. 在十四号房间。\nC. 因为很多人不能到。"
+    "transcript": "Why has the workshop been cancelled?\nA. About 20 minutes ago.\nB. In room 14.\nC. Because many people couldn't attend.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bcc5d61e941f5abe42ea6b0344addfa1d5e03fdd9b2fbe43e14c5958ecc8b241",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 20
+      }
+    },
+    "transcript_translation": "为什么研讨会取消了？\nA. 大约20分钟前。\nB. 在14号房间里。\nC. 因为很多人无法出席。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8d67eea200ac29bff0c9a5bbcfa3d0b27883817bb81a09d1b5916b1242391575"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "About twenty minutes ago.",
-        "In Room Fourteen.",
-        "Because many people couldn’t at"
+        "About 20 minutes ago.",
+        "In room 14.",
+        "Because many people couldn't attend."
       ],
       "answer": "C",
-      "question": "Ew Why has the workshop been cancele ™",
+      "question": "Why has the workshop been cancelled?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Why has the workshop been cancele ™”，自然应答是“Because many people couldn’t at”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Because many people couldn’t at）。",
-      "question_translation": "Ew 为什么研讨会取消了 ™",
+      "answer_explain": "原文依据：问句或陈述是“Why has the workshop been cancelled?”，自然应答是“Because many people couldn't attend.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Because many people couldn't attend.）。",
+      "question_translation": "为什么研讨会取消了?",
       "choice_translations": [
-        "A：大约二十分钟前。",
-        "B：在十四号房间。",
-        "C：因为很多人不能到"
+        "A：大约20分钟前。",
+        "B：在14号房间里。",
+        "C：因为很多人无法出席。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Why has the workshop been cancele ™",
+      "evidence": "参考原文第 1 段：Why has the workshop been cancelled?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Why has the workshop been cancele ™",
+        "evidence": "参考原文第 1 段：Why has the workshop been cancelled?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Ew Why has the workshop been cancele ™”，自然应答是“Because many people couldn’t at”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Because many people couldn’t at）。"
+        "analysis": "原文依据：问句或陈述是“Why has the workshop been cancelled?”，自然应答是“Because many people couldn't attend.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Because many people couldn't attend.）。"
       },
       "item_id": 28,
       "priority": {

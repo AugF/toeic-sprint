@@ -28,8 +28,28 @@
       "asset_key": "official-5-test-1/audio/part2/q022.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Didn't Olaf order（订单） more office（办公室） supplies?",
-    "content_translation": "中文辅助（离线预处理）：Didn't Olaf order（订单） more office（办公室） supplies?"
+    "transcript": "Didn't Olaf order more office supplies?\nA. Check the supply cabinet.\nB. The meeting is in room 22B.\nC. Please turn the water off.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d2fbb45b62766d03f35fc8be659874b933150bd40a449efc54d20cba94e6f64c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q022.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "Olaf没有再订购办公用品吗？\nA. 检查供应柜。\nB. 会议在22B室。\nC. 请关掉水龙头。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "629a30a6a2e3f6638789952be53abedbaad0a45fa1c64fb3bfe95fcda01053b8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Didn't Olaf order more office supplies?”，自然应答是“Check the supply cabinet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Check the supply cabinet.）。",
-      "question_translation": "中文辅助（离线预处理）：Didn't Olaf order（订单） more office（办公室） supplies?",
+      "question_translation": "Olaf没有再订购办公用品吗?",
       "choice_translations": [
-        "A：Check the supply cabinet.",
-        "B：The meeting（会议） is in room 22B.",
-        "C：Please（请） turn the water off."
+        "A：检查供应柜。",
+        "B：会议在22B室。",
+        "C：请关掉水龙头。"
       ],
       "question_type": "否定 / 反意疑问句",
       "evidence": "参考原文第 1 段：Didn't Olaf order more office supplies?",

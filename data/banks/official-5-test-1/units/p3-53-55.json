@@ -39,9 +39,31 @@
       "asset_key": "official-5-test-1/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nTo start today's staff meeting, I'd like to introduce\nnutritionist Katherine Hale. As part of the company's\nwellness initiative, employees can meet with\nKatherine to discuss healthy eating, all free of charge.\nI'll let her tell you more.\nCutatädaLa5.\nAw Thanks for the introduction! I'm Katherine, and I'd like\nto help each of you develop a personalized nutritional\nplan to fit your life. Does anyone have any questions\nbefore we start?\nHow can we make an appointment with you?\nAll appointments can be made online. I'll send you an\ne-mail later that will include a link to the reservation system.",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nTo start today's staff meeting（会议）, I'd like to introduce\nnutritionist Katherine Hale.\nAs part of the company（公司）'s\nwellness initiative, employees can meet with\nKatherine to discuss healthy eating, all free of charge.\nI'll let her tell you more.\nCutatädaLa5.\nAw Thanks for the introduction!\nI'm Katherine, and I'd like\nto help each of you develop a personalized nutritional\nplan to fit your life.\nDoes anyone have any questions\nbefore we start?\nHow（如何） can we make an appointment（预约） with you?\nAll appointments can be made online.\nI'll send you an\ne-mail later that will include a link to the reservation system.",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nTo start today's staff meeting（会议）, I'd like to introduce\nnutritionist Katherine Hale.\nAs part of the company（公司）'s\nwellness initiative, employees can meet with\nKatherine to discuss healthy eating, all free of charge.\nI'll let her tell you more.\nCutatädaLa5.\nAw Thanks for the introduction!\nI'm Katherine, and I'd like\nto help each of you develop a personalized nutritional\nplan to fit your life.\nDoes anyone have any questions\nbefore we start?\nHow（如何） can we make an appointment（预约） with you?\nAll appointments can be made online.\nI'll send you an\ne-mail later that will include a link to the reservation system."
+    "transcript": "To start today's staff meeting, I'd like to introduce nutritionist Catherine Hale.\nAs part of the company's wellness initiative, employees can meet with Catherine to discuss healthy eating, all free of charge.\nI'll let her tell you more.\nThanks for the introduction.\nI'm Catherine, and I'd like to help each of you develop a personalized nutritional plan to fit your life.\nDoes anyone have any questions before we start?\nHow can we make an appointment with you?\nAll appointments can be made online.\nI'll send you an email later that will include a link to the reservation system.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bb7338242c0133aa23dea977765246a752899d525f4467516217416f8d82741c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 98,
+        "legacy_word_count": 104,
+        "length_ratio": 0.942,
+        "legacy_coverage": 0.865
+      }
+    },
+    "transcript_translation": "为了开始今天的员工会议，我想介绍营养师 Catherine Hale。\n作为公司健康计划的一部分，员工可以和 Catherine 会面，讨论健康的饮食，完全免费。\n我让她来告诉你们更多信息。\n谢谢你的介绍。\n我是 Catherine，我想帮助大家制定个性化的营养计划以适应你们的生活。\n在开始之前有人有什么问题吗？\n我们怎样才能预约您呢？\n所有预约都可以在线进行。\n稍后我会给你们发一封电子邮件，其中会包含预订系统的链接。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "585c594125eeae5f4c5cc3a38a09128f20e3223bf0ba88ffe1973e0d72834b8b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "Who is Katherine?",
-      "answer_explain": "原文依据：听力原文中提到“nutritionist Katherine Hale.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A nutritionist）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） is Katherine?",
+      "answer_explain": "正确答案：D（A nutritionist）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) is Katherine?",
       "choice_translations": [
-        "A：A personal chef",
-        "B：A marketing executive",
-        "C：An accountant",
-        "D：A nutritionist"
+        "A:A personal chef",
+        "B:A marketing executive",
+        "C:An accountant",
+        "D:A nutritionist"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：nutritionist Katherine Hale. As part of the company's",
+      "evidence": "参考听力原文：“To start today's staff meeting, I'd like to introduce nutritionist Catherine Hale.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：nutritionist Katherine Hale. As part of the company's",
+        "evidence": "参考听力原文：“To start today's staff meeting, I'd like to introduce nutritionist Catherine Hale.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“nutritionist Katherine Hale.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A nutritionist）。"
+        "analysis": "正确答案：D（A nutritionist）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "A",
       "question": "What does the man ask Katherine about?",
-      "answer_explain": "原文依据：听力原文中提到“How can we make an appointment with you?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Scheduling an appointment）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） ask Katherine about?",
+      "answer_explain": "正确答案：A（Scheduling an appointment）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) ask Katherine about?",
       "choice_translations": [
-        "A：Scheduling an appointment（预约）",
-        "B：Volunteering for a task",
-        "C：Signing up for a membership",
-        "D：Participating in a competition"
+        "A:Scheduling an appointment(预约)",
+        "B:Volunteering for a task",
+        "C:Signing up for a membership",
+        "D:Participating in a competition"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 3 段：nutritionist Katherine Hale. As part of the company's",
+      "evidence": "参考听力原文：“How can we make an appointment with you?”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 3 段：nutritionist Katherine Hale. As part of the company's",
+        "evidence": "参考听力原文：“How can we make an appointment with you?”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“How can we make an appointment with you?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Scheduling an appointment）。"
+        "analysis": "正确答案：A（Scheduling an appointment）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What will employees receive later today?",
-      "answer_explain": "原文依据：听力原文中提到“e-mail later that will include a link to the reservation system.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An e-mail）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will employees receive later today?",
+      "answer_explain": "正确答案：C（An e-mail）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will employees receive later today?",
       "choice_translations": [
-        "A：An identification badge",
-        "B：A cookbook",
-        "C：An e-mail",
-        "D：A laptop"
+        "A:An identification badge",
+        "B:A cookbook",
+        "C:An e-mail",
+        "D:A laptop"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：To start today's staff meeting, I'd like to introduce",
+      "evidence": "参考听力原文：“I'll send you an email later that will include a link to the reservation system.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：To start today's staff meeting, I'd like to introduce",
+        "evidence": "参考听力原文：“I'll send you an email later that will include a link to the reservation system.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“e-mail later that will include a link to the reservation system.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An e-mail）。"
+        "analysis": "正确答案：C（An e-mail）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

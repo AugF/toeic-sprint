@@ -39,9 +39,32 @@
       "asset_key": "official-12-test-2/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "O I'm reporting to you live from the University Science\nMuseum. e They've recently opened up a fantastic new\nexhibit on the first floor. From what I understand, ©the idea\nbehind the exhibit came from Hazam Feras. OMr. Feras\ndevelops exhibits at various institutions around the world.\nCARTEE\nI can see why he's in high demand! © This latest exhibit of\nhis allows patrons to explore outer space. Olt starts with\nthe simulated thrill of rocket ship liftoff and continues as\nyou experience traveling around the planets, watching the\nmysteries of outer space unfold around you.",
-    "transcript_translation": "中文辅助（离线预处理）：O I'm reporting to you live from the University Science\nMuseum.\ne They've recently opened up a fantastic new\nexhibit on the first floor.\nFrom what（什么） I understand, ©the idea\nbehind the exhibit came from Hazam Feras.\nOMr.\nFeras\ndevelops exhibits at various institutions around the world.\nCARTEE\nI can see why（为什么） he's in high demand!\n© This latest exhibit of\nhis allows patrons to explore outer space.\nOlt starts with\nthe simulated thrill of rocket ship liftoff and continues as\nyou experience traveling around the planets, watching the\nmysteries of outer space unfold around you.",
-    "content_translation": "中文辅助（离线预处理）：O I'm reporting to you live from the University Science\nMuseum.\ne They've recently opened up a fantastic new\nexhibit on the first floor.\nFrom what（什么） I understand, ©the idea\nbehind the exhibit came from Hazam Feras.\nOMr.\nFeras\ndevelops exhibits at various institutions around the world.\nCARTEE\nI can see why（为什么） he's in high demand!\n© This latest exhibit of\nhis allows patrons to explore outer space.\nOlt starts with\nthe simulated thrill of rocket ship liftoff and continues as\nyou experience traveling around the planets, watching the\nmysteries of outer space unfold around you."
+    "transcript": "I'm reporting to you live from the University Science Museum.\nThey've recently opened up a fantastic new exhibit on the first floor.\nFrom what I understand, the idea behind the exhibit came from Hassam Farahs.\nMr. Farahs develops exhibits at various institutions around the world.\nI can see why he's in high demand.\nThis latest exhibit of his allows patrons to explore outer space.\nIt starts with the simulated thrill of rocket ship liftoff and continues as you experience traveling around the planets, watching the mysteries of outer space unfold around you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "cbb58baf82c14cfd021cc07803698d9506cf6edb578b76dec77675f6b31cbaa2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 92,
+        "legacy_word_count": 92,
+        "length_ratio": 1,
+        "legacy_coverage": 0.913
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "我正在大学科学博物馆为您进行现场报道。\n他们最近在一楼开了一个非常棒的新展览。\n据我了解，这个展览的灵感来源于 Hassam Farahs。\nFarahs 先生在世界各地的多个机构开发展览。\n我能理解他为何如此抢手。\n他最新的这个展览让参观者可以探索外太空。\n它从模拟火箭发射的刺激感开始，然后随着您体验环绕行星的旅程，观看外太空神秘事物的展开。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "df15ab9e2943dee3d8b60acee760f984d4a33a22eab8ca0e1180865d358817b9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "A",
       "question": "Where is the speaker reporting from?",
-      "answer_explain": "原文依据：听力原文中提到“O I'm reporting to you live from the University Science”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A science museum）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the speaker（说话者） reporting from?",
+      "answer_explain": "正确答案：A（A science museum）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) is the speaker(说话者) reporting from?",
       "choice_translations": [
-        "A：A science museum",
-        "B：A sports stadium",
-        "C：An amusement park",
-        "D：A university library"
+        "A:A science museum",
+        "B:A sports stadium",
+        "C:An amusement park",
+        "D:A university library"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：O I'm reporting to you live from the University Science",
+      "evidence": "参考听力原文：“I'm reporting to you live from the University Science Museum.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：O I'm reporting to you live from the University Science",
+        "evidence": "参考听力原文：“I'm reporting to you live from the University Science Museum.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“O I'm reporting to you live from the University Science”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A science museum）。"
+        "analysis": "正确答案：A（A science museum）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 71,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker say about Hazam Feras?",
-      "answer_explain": "原文依据：听力原文中提到“develops exhibits at various institutions around the world.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（He has designed exhibits internationally.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say about Hazam Feras?",
+      "answer_explain": "正确答案：D（He has designed exhibits internationally.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say about Hazam Feras?",
       "choice_translations": [
-        "A：He is a famous actor.",
-        "B：He was elected mayor.",
-        "C：He has traveled to space.",
-        "D：He has designed exhibits internationally."
+        "A:He is a famous actor.",
+        "B:He was elected mayor.",
+        "C:He has traveled to space.",
+        "D:He has designed exhibits internationally."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 4 段：behind the exhibit came from Hazam Feras. OMr. Feras",
+      "evidence": "参考听力原文：“Mr. Farahs develops exhibits at various institutions around the world.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 4 段：behind the exhibit came from Hazam Feras. OMr. Feras",
+        "evidence": "参考听力原文：“Mr. Farahs develops exhibits at various institutions around the world.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“develops exhibits at various institutions around the world.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（He has designed exhibits internationally.）。"
+        "analysis": "正确答案：D（He has designed exhibits internationally.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 72,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "C",
       "question": "What are the listeners able to experience?",
-      "answer_explain": "原文依据：听力原文中提到“his allows patrons to explore outer space.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Views of outer space）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the listeners able to experience?",
+      "answer_explain": "正确答案：C（Views of outer space）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the listeners able to experience?",
       "choice_translations": [
-        "A：A personalized tour",
-        "B：Interactive games",
-        "C：Views of outer space",
-        "D：Live performances by actors"
+        "A:A personalized tour",
+        "B:Interactive games",
+        "C:Views of outer space",
+        "D:Live performances by actors"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：you experience traveling around the planets, watching the",
+      "evidence": "参考听力原文：“It starts with the simulated thrill of rocket ship liftoff and continues as you experience traveling around the planets, watching the mysteries of outer space unfold around you.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：you experience traveling around the planets, watching the",
+        "evidence": "参考听力原文：“It starts with the simulated thrill of rocket ship liftoff and continues as you experience traveling around the planets, watching the mysteries of outer space unfold around you.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“his allows patrons to explore outer space.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Views of outer space）。"
+        "analysis": "正确答案：C（Views of outer space）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 73,
       "priority": {

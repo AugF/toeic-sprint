@@ -37,9 +37,31 @@
       "asset_key": "official-11-test-2/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "I-m Hi, Sung-Hee. Thanks for meeting with me. Since\nthe state teachers conference is the largest one l've\nplanned so far, I want to make sure I'm not missing\nanything.\nw Well, I looked over the materials you sent me, and\nyou've done a nice job preparing for the conferen\nOl especially liked the idea of including optional gro\nactivities in the city.\nam Yes, I'm still considering which activities to go with.\nEw Why not call the city's tourism office? They'll have\nsome good suggestions. And they can probably\narrange for group rates.\nmoGood idea. I'll do that right now.",
-    "transcript_translation": "中文辅助（离线预处理）：I-m Hi, Sung-Hee.\nThanks for meeting（会议） with me.\nSince\nthe state teachers conference is the largest one l've\nplanned so far, I want to make sure I'm not missing\nanything.\nw Well, I looked over the materials you sent me, and\nyou've done a nice job preparing for the conferen\nOl especially liked the idea of including optional gro\nactivities in the city.\nam Yes, I'm still considering which activities to go with.\nEw Why（为什么） not call the city's tourism office（办公室）?\nThey'll have\nsome good suggestions.\nAnd they can probably（可能）\narrange for group rates.\nmoGood idea.\nI'll do that right now.",
-    "content_translation": "中文辅助（离线预处理）：I-m Hi, Sung-Hee.\nThanks for meeting（会议） with me.\nSince\nthe state teachers conference is the largest one l've\nplanned so far, I want to make sure I'm not missing\nanything.\nw Well, I looked over the materials you sent me, and\nyou've done a nice job preparing for the conferen\nOl especially liked the idea of including optional gro\nactivities in the city.\nam Yes, I'm still considering which activities to go with.\nEw Why（为什么） not call the city's tourism office（办公室）?\nThey'll have\nsome good suggestions.\nAnd they can probably（可能）\narrange for group rates.\nmoGood idea.\nI'll do that right now."
+    "transcript": "Hi, Sung-hee.\nThanks for meeting with me.\nSince the State Teachers Conference is the largest one I've planned so far, I want to make sure I'm not missing anything.\nWell, I looked over the materials you sent me, and you've done a nice job preparing for the conference.\nI especially liked the idea of including optional group activities in the city.\nYes, I'm still considering which activities to go with.\nWhy not call the city's tourism office?\nThey'll have some good suggestions.\nAnd they can probably arrange for group rates.\nGood idea.\nI'll do that right now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e88c68b1df09061971c115f935f8cd6ddaf48e15896b36863373b564946b8045",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 99,
+        "length_ratio": 0.98,
+        "legacy_coverage": 0.879
+      }
+    },
+    "transcript_translation": "嗨，圣熙。\n谢谢你和我见面。\n因为州教师大会是我计划过的最大的一次，我想确保我没有遗漏任何东西。\n嗯，我看了你发给我的资料，你为这次会议做了很好的准备。\n我特别喜欢在城市包含可选小组活动的这个想法。\n是的，我还在考虑选择哪些活动。\n为什么不给市旅游局打个电话？\n他们应该有一些好的建议。\n而且他们可能还能安排团体折扣。\n好主意。\n我现在就去办。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "86fe27fb525e1535fda41bb0b25375e12c32c88cd3a174d24cfa3e4a712a6267"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "D",
       "question": "What is the man organizing?",
-      "answer_explain": "原文依据：听力原文与题目“What is the man organizing?”对应，官方答案为“A professional conference”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（A professional conference）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the man（男士） organizing?",
+      "answer_explain": "正确答案：D（A professional conference）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the man(男士) organizing?",
       "choice_translations": [
-        "A：A fund-raising event",
-        "B：A community festival",
-        "C：A company（公司） retreat",
-        "D：A professional conference"
+        "A:A fund-raising event",
+        "B:A community festival",
+        "C:A company(公司) retreat",
+        "D:A professional conference"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：I-m Hi, Sung-Hee. Thanks for meeting with me. Since",
+      "evidence": "参考听力原文：“Since the State Teachers Conference is the largest one I've planned so far, I want to make sure I'm not missing anything.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：I-m Hi, Sung-Hee. Thanks for meeting with me. Since",
+        "evidence": "参考听力原文：“Since the State Teachers Conference is the largest one I've planned so far, I want to make sure I'm not missing anything.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What is the man organizing?”对应，官方答案为“A professional conference”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（A professional conference）。"
+        "analysis": "正确答案：D（A professional conference）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "C",
       "question": "What idea does the woman say she likes?",
-      "answer_explain": "原文依据：听力原文与题目“What idea does the woman say she likes?”对应，官方答案为“Offering group activities”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（Offering group activities）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） idea does the woman（女士） say she likes?",
+      "answer_explain": "正确答案：C（Offering group activities）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) idea does the woman(女士) say she likes?",
       "choice_translations": [
-        "A：Giving away free samples",
-        "B：Providing a shuttle service（服务）",
-        "C：Offering group activities",
-        "D：Inviting a guest speaker（说话者）"
+        "A:Giving away free samples",
+        "B:Providing a shuttle service(服务)",
+        "C:Offering group activities",
+        "D:Inviting a guest speaker(说话者)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：I-m Hi, Sung-Hee. Thanks for meeting with me. Since",
+      "evidence": "参考听力原文：“I especially liked the idea of including optional group activities in the city.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：I-m Hi, Sung-Hee. Thanks for meeting with me. Since",
+        "evidence": "参考听力原文：“I especially liked the idea of including optional group activities in the city.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What idea does the woman say she likes?”对应，官方答案为“Offering group activities”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（Offering group activities）。"
+        "analysis": "正确答案：C（Offering group activities）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "C",
       "question": "What does the man decide to do next?",
-      "answer_explain": "原文依据：听力原文与题目“What does the man decide to do next?”对应，官方答案为“Call a city office”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（Call a city office）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） decide to do next?",
+      "answer_explain": "正确答案：C（Call a city office）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) decide to do next?",
       "choice_translations": [
-        "A：Plan a menu",
-        "B：Make a payment",
-        "C：Call a city office（办公室）",
-        "D：Hire a cleaning service（服务）"
+        "A:Plan a menu",
+        "B:Make a payment",
+        "C:Call a city office(办公室)",
+        "D:Hire a cleaning service(服务)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：I-m Hi, Sung-Hee. Thanks for meeting with me. Since",
+      "evidence": "参考听力原文：“Why not call the city's tourism office?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：I-m Hi, Sung-Hee. Thanks for meeting with me. Since",
+        "evidence": "参考听力原文：“Why not call the city's tourism office?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What does the man decide to do next?”对应，官方答案为“Call a city office”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（Call a city office）。"
+        "analysis": "正确答案：C（Call a city office）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

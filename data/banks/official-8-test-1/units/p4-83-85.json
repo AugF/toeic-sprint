@@ -37,9 +37,31 @@
       "asset_key": "official-8-test-1/audio/part4/q083-085.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nAs your company president, I'm inspired by your\ncommitment to our team. I'm happy to announce that our\ncomputer company has won the award for Tech Company\nof the Year by our city's leading technology magazine. What\na great accomplishment! ® Management feels it is time\nto expand our product line. As you know, some computer\ncompanies produce mobile phones. Now, I'd like to open the\nfloor to your questions. Would anyone like to go first?",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nAs your company（公司） president, I'm inspired by your\ncommitment to our team.\nI'm happy to announce that our\ncomputer company（公司） has won the award for Tech Company（公司）\nof the Year by our city's leading technology magazine.\nWhat（什么）\na great accomplishment!\n® Management feels it is time\nto expand our product line.\nAs you know, some computer\ncompanies produce mobile phones.\nNow, I'd like to open the\nfloor to your questions.\nWould anyone like to go first?",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nAs your company（公司） president, I'm inspired by your\ncommitment to our team.\nI'm happy to announce that our\ncomputer company（公司） has won the award for Tech Company（公司）\nof the Year by our city's leading technology magazine.\nWhat（什么）\na great accomplishment!\n® Management feels it is time\nto expand our product line.\nAs you know, some computer\ncompanies produce mobile phones.\nNow, I'd like to open the\nfloor to your questions.\nWould anyone like to go first?"
+    "transcript": "As your company president, I'm inspired by your commitment to our team.\nI'm happy to announce that our computer company has won the award for Tech Company of the Year by our city's leading technology magazine.\nWhat a great accomplishment!\nManagement feels it is time to expand our product line.\nAs you know, some computer companies produce mobile phones.\nNow, I'd like to open the floor to your questions.\nWould anyone like to go first?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "6ff1c60d69e1af3b115b8ef425d5e41e13c4e1c0a7d9e597da6b982a8b1414ad",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part4/q083-085.mp3",
+      "metrics": {
+        "word_count": 75,
+        "legacy_word_count": 77,
+        "length_ratio": 0.974,
+        "legacy_coverage": 0.948
+      }
+    },
+    "transcript_translation": "作为贵公司的总裁，我为各位对我们团队的承诺感到振奋。\n我很高兴地宣布，我们的电脑公司获得了本市领先科技杂志评选的年度科技公司奖。\n多么了不起的成就啊！\n管理层认为现在是时候扩大我们的产品线了。\n如你们所知，一些电脑公司会生产手机。\n现在，我将把发言权交给各位提问。\n有没有人想先发言呢？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "77afbc27b371cd828bd4be7b5c9be118a917f2ca34c465d2fa15b30b81914ead"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "B",
       "question": "What is the speaker's job?",
-      "answer_explain": "原文依据：听力原文中提到“computer company has won the award for Tech Company”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Company executive）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the speaker（说话者）'s job?",
+      "answer_explain": "正确答案：B（Company executive）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the speaker(说话者)'s job?",
       "choice_translations": [
-        "A：Computer technician",
-        "B：Company（公司） executive",
-        "C：Financial consultant",
-        "D：Product developer"
+        "A:Computer technician",
+        "B:Company(公司) executive",
+        "C:Financial consultant",
+        "D:Product developer"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“I'm happy to announce that our computer company has won the award for Tech Company of the Year by our city's leading technology magazine.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“I'm happy to announce that our computer company has won the award for Tech Company of the Year by our city's leading technology magazine.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“computer company has won the award for Tech Company”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Company executive）。"
+        "analysis": "正确答案：B（Company executive）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 83,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "C",
       "question": "What has a company recently done?",
-      "answer_explain": "原文依据：听力原文中提到“computer company has won the award for Tech Company”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It won an award.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） has a company（公司） recently done?",
+      "answer_explain": "正确答案：C（It won an award.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) has a company(公司) recently done?",
       "choice_translations": [
-        "A：It moved to another location.",
-        "B：It hired more employees.",
-        "C：It won an award.",
-        "D：It changed its logo."
+        "A:It moved to another location.",
+        "B:It hired more employees.",
+        "C:It won an award.",
+        "D:It changed its logo."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：As your company president, I'm inspired by your",
+      "evidence": "参考听力原文：“I'm happy to announce that our computer company has won the award for Tech Company of the Year by our city's leading technology magazine.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：As your company president, I'm inspired by your",
+        "evidence": "参考听力原文：“I'm happy to announce that our computer company has won the award for Tech Company of the Year by our city's leading technology magazine.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“computer company has won the award for Tech Company”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It won an award.）。"
+        "analysis": "正确答案：C（It won an award.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 84,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "C",
       "question": "Why does the speaker say, \"some computer companies produce mobile phones\"?",
-      "answer_explain": "原文依据：听力原文中提到“companies produce mobile phones.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To indicate an intention）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"some computer companies produce mobile phones\"?",
+      "answer_explain": "正确答案：C（To indicate an intention）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"some computer companies produce mobile phones\"?",
       "choice_translations": [
-        "A：To correct some information（信息）",
-        "B：To make a complaint",
-        "C：To indicate an intention",
-        "D：To provide reassurance"
+        "A:To correct some information(信息)",
+        "B:To make a complaint",
+        "C:To indicate an intention",
+        "D:To provide reassurance"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：computer company has won the award for Tech Company",
+      "evidence": "参考听力原文：“As you know, some computer companies produce mobile phones.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：computer company has won the award for Tech Company",
+        "evidence": "参考听力原文：“As you know, some computer companies produce mobile phones.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“companies produce mobile phones.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To indicate an intention）。"
+        "analysis": "正确答案：C（To indicate an intention）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 85,
       "priority": {

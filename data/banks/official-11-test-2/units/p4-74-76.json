@@ -41,9 +41,31 @@
       "asset_key": "official-11-test-2/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "EKW\nAttention, passengers. O The ten o clock ferry to Backshi\nIsland is delayed one hour because of unexpected\nconstruction at the destination port. We apologize for an\ninconvenience this delay might cause you. Passengers\nwho show their boarding pass to the ticket agent will rec\na complimentary food voucher to be used at any of the\nrestaurants in the food court. And, just a reminder to al\npassengers: please follow all posted safety procedures\non the dock and aboard the boat. Failure to do so will re:\nin a fine.",
-    "transcript_translation": "中文辅助（离线预处理）：EKW\nAttention, passengers.\nO The ten o clock ferry to Backshi\nIsland is delayed one hour because of unexpected\nconstruction at the destination port.\nWe apologize for an\ninconvenience this delay might cause you.\nPassengers\nwho（谁） show their boarding pass to the ticket agent will rec\na complimentary food voucher to be used at any of the\nrestaurants in the food court.\nAnd, just a reminder to al\npassengers: please（请） follow all posted safety procedures\non the dock and aboard the boat.\nFailure to do so will re:\nin a fine.",
-    "content_translation": "中文辅助（离线预处理）：EKW\nAttention, passengers.\nO The ten o clock ferry to Backshi\nIsland is delayed one hour because of unexpected\nconstruction at the destination port.\nWe apologize for an\ninconvenience this delay might cause you.\nPassengers\nwho（谁） show their boarding pass to the ticket agent will rec\na complimentary food voucher to be used at any of the\nrestaurants in the food court.\nAnd, just a reminder to al\npassengers: please（请） follow all posted safety procedures\non the dock and aboard the boat.\nFailure to do so will re:\nin a fine."
+    "transcript": "Attention passengers, the 10 o'clock ferry to Backshare Island is delayed one hour because of unexpected construction at the destination port.\nWe apologize for any inconvenience this delay might cause you.\nPassengers who show their boarding pass to the ticket agent will receive a complimentary food voucher to be used at any of the restaurants in the food court.\nAnd just a reminder to all passengers, please follow all posted safety procedures while on the dock and aboard the boat.\nFailure to do so will result in a fine.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e167c4d3e0e80039ce3362d224a610d0e4890534f7eaa12d0791b0172f416b74",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 88,
+        "legacy_word_count": 90,
+        "length_ratio": 0.978,
+        "legacy_coverage": 0.9
+      }
+    },
+    "transcript_translation": "乘客们请注意，开往 Backshare Island 的十点渡轮因目的地港口意外施工而延误一小时。\n对于此次延误给您带来的不便，我们深表歉意。\n向售票员出示登船证的乘客可以在美食广场任何一家餐厅领取免费食品券。\n另外提醒所有乘客，在码头和船上请遵守所有张贴的安全程序。\n否则将面临罚款。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "35df15dfca3fd7feed48f2f698b7d84ca7f8cb0fde44ed312c312ccd2f09a21c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "A",
       "question": "Where is the announcement most likely taking place?",
-      "answer_explain": "原文依据：听力原文与题目“Where is the announcement most likely taking place?”对应，官方答案为“At a ferry station”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（At a ferry station）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the announcement most likely（最可能） taking place?",
+      "answer_explain": "正确答案：A（At a ferry station）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) is the announcement most likely(最可能) taking place?",
       "choice_translations": [
-        "A：At a ferry station",
-        "B：At an airport",
-        "C：At a train depot",
-        "D：At a taxi stand"
+        "A:At a ferry station",
+        "B:At an airport",
+        "C:At a train depot",
+        "D:At a taxi stand"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：EKW",
+      "evidence": "参考听力原文：“Attention passengers, the 10 o'clock ferry to Backshare Island is delayed one hour because of unexpected construction at the destination port.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：EKW",
+        "evidence": "参考听力原文：“Attention passengers, the 10 o'clock ferry to Backshare Island is delayed one hour because of unexpected construction at the destination port.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Where is the announcement most likely taking place?”对应，官方答案为“At a ferry station”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（At a ferry station）。"
+        "analysis": "正确答案：A（At a ferry station）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "C",
       "question": "What will some of the listeners receive?",
-      "answer_explain": "原文依据：听力原文与题目“What will some of the listeners receive?”对应，官方答案为“A food voucher”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A food voucher）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will some of the listeners receive?",
+      "answer_explain": "正确答案：C（A food voucher）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will some of the listeners receive?",
       "choice_translations": [
-        "A：A schedule（日程）",
-        "B：A refund",
-        "C：A food voucher",
-        "D：An identification badge"
+        "A:A schedule(日程)",
+        "B:A refund",
+        "C:A food voucher",
+        "D:An identification badge"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EKW",
+      "evidence": "参考听力原文：“Passengers who show their boarding pass to the ticket agent will receive a complimentary food voucher to be used at any of the restaurants in the food court.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EKW",
+        "evidence": "参考听力原文：“Passengers who show their boarding pass to the ticket agent will receive a complimentary food voucher to be used at any of the restaurants in the food court.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What will some of the listeners receive?”对应，官方答案为“A food voucher”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A food voucher）。"
+        "analysis": "正确答案：C（A food voucher）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker remind the listeners about?",
-      "answer_explain": "原文依据：听力原文与题目“What does the speaker remind the listeners about?”对应，官方答案为“Safety procedures”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（Safety procedures）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） remind the listeners about?",
+      "answer_explain": "正确答案：B（Safety procedures）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) remind the listeners about?",
       "choice_translations": [
-        "A：Luggage restrictions",
-        "B：Safety procedures",
-        "C：Entertainment options",
-        "D：Building hours"
+        "A:Luggage restrictions",
+        "B:Safety procedures",
+        "C:Entertainment options",
+        "D:Building hours"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 8 段：restaurants in the food court. And, just a reminder to al",
+      "evidence": "参考听力原文：“And just a reminder to all passengers, please follow all posted safety procedures while on the dock and aboard the boat.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 8 段：restaurants in the food court. And, just a reminder to al",
+        "evidence": "参考听力原文：“And just a reminder to all passengers, please follow all posted safety procedures while on the dock and aboard the boat.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What does the speaker remind the listeners about?”对应，官方答案为“Safety procedures”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（Safety procedures）。"
+        "analysis": "正确答案：B（Safety procedures）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

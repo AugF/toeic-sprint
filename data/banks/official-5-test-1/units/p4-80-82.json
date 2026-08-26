@@ -36,9 +36,33 @@
       "asset_key": "official-5-test-1/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "Good evening, ladies and gentlemen. Thank you for\njoining us at the Jamestown Concert Hall. I am pleased to\nintroduce Jin-Ho Shin, who is giving his first piano concert\nhere in Jamestown tonight. Mr. Shin's career is interesting\nbecause he's traveled almost nonstop for the past several\nyears. In the last year alone, he has performed in over 60\ncities in 20 different countries. Before he takes the stage,\nl'd like to remind you to turn off your mobile phones to\nprevent interruptions during the performance.",
-    "transcript_translation": "中文辅助（离线预处理）：Good evening, ladies and gentlemen.\nThank（感谢） you for\njoining us at the Jamestown Concert Hall.\nI am pleased to\nintroduce Jin-Ho Shin, who（谁） is giving his first piano concert\nhere in Jamestown tonight.\nMr.\nShin's career is interesting\nbecause he's traveled almost nonstop for the past several\nyears.\nIn the last year alone, he has performed in over 60\ncities in 20 different countries.\nBefore he takes the stage,\nl'd like to remind you to turn off your mobile phones to\nprevent interruptions during the performance.",
-    "content_translation": "中文辅助（离线预处理）：Good evening, ladies and gentlemen.\nThank（感谢） you for\njoining us at the Jamestown Concert Hall.\nI am pleased to\nintroduce Jin-Ho Shin, who（谁） is giving his first piano concert\nhere in Jamestown tonight.\nMr.\nShin's career is interesting\nbecause he's traveled almost nonstop for the past several\nyears.\nIn the last year alone, he has performed in over 60\ncities in 20 different countries.\nBefore he takes the stage,\nl'd like to remind you to turn off your mobile phones to\nprevent interruptions during the performance."
+    "transcript": "Good evening, ladies and gentlemen.\nThank you for joining us at the Jamestown Concert Hall.\nI am pleased to introduce Jin-ho Shin, who is giving his first piano concert here in Jamestown tonight.\nMr. Shin's career is interesting because he's traveled almost non-stop for the past several years. in the last year alone he has performed in over 60 cities in 20 different countries before he takes the stage I'd like to remind you to turn off your mobile phones to prevent interruptions during the performance",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "4b6d6e895721f9412b63320a38adbfc03b801880e808ea3d65cb5dba5918a70a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 84,
+        "legacy_word_count": 83,
+        "length_ratio": 1.012,
+        "legacy_coverage": 0.976,
+        "prompted_failure": "audio transcript appears truncated (ratio=0.27, coverage=0.33)"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "女士们先生们，大家晚上好。\n感谢您来到詹姆斯敦音乐厅参加我们的活动。\n我很高兴地介绍金浩申（Jin-ho Shin），他今晚在这里首次举办钢琴音乐会。\n申先生的职业生涯很有趣，因为在过去的几年里，他几乎不间断地旅行。仅去年一年，他就曾在 20 个不同国家、超过 60 个城市演出过。在我上台之前，我想提醒大家请关闭手机，以避免影响表演。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "58ebf06400f5fb5df63ecf200db7f8ee4ea5da30f8953e64f37a3727c4f159ff"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +74,23 @@
       ],
       "answer": "C",
       "question": "Where is the introduction taking place?",
-      "answer_explain": "原文依据：听力原文中提到“joining us at the Jamestown Concert Hall.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（In a concert hall）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the introduction taking place?",
+      "answer_explain": "正确答案：C（In a concert hall）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) is the introduction taking place?",
       "choice_translations": [
-        "A：In a museum",
-        "B：In a sports arena",
-        "C：In a concert hall",
-        "D：In a movie theater"
+        "A:In a museum",
+        "B:In a sports arena",
+        "C:In a concert hall",
+        "D:In a movie theater"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Good evening, ladies and gentlemen. Thank you for",
+      "evidence": "参考听力原文：“Thank you for joining us at the Jamestown Concert Hall.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Good evening, ladies and gentlemen. Thank you for",
+        "evidence": "参考听力原文：“Thank you for joining us at the Jamestown Concert Hall.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“joining us at the Jamestown Concert Hall.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（In a concert hall）。"
+        "analysis": "正确答案：C（In a concert hall）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -99,23 +123,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker say is interesting team?",
-      "answer_explain": "原文依据：听力原文中提到“In the last year alone, he has performed in over 60”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Opening a new store）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say is interesting team?",
+      "answer_explain": "正确答案：D（Opening a new store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say is interesting team?",
       "choice_translations": [
-        "A：Purchasing updated equipment",
-        "B：Restructuring a department",
-        "C：Using a new manufacturer",
-        "D：Opening a new store"
+        "A:Purchasing updated equipment",
+        "B:Restructuring a department",
+        "C:Using a new manufacturer",
+        "D:Opening a new store"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：here in Jamestown tonight. Mr. Shin's career is interesting",
+      "evidence": "参考听力原文：“Mr. Shin's career is interesting because he's traveled almost non-stop for the past several years. in the last year alone he has performed in over 60 cities in 20 different countries before he takes the stage I'd like to remind you to turn off your mobile phones to prevent interruptions during the performance”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：here in Jamestown tonight. Mr. Shin's career is interesting",
+        "evidence": "参考听力原文：“Mr. Shin's career is interesting because he's traveled almost non-stop for the past several years. in the last year alone he has performed in over 60 cities in 20 different countries before he takes the stage I'd like to remind you to turn off your mobile phones to prevent interruptions during the performance”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“In the last year alone, he has performed in over 60”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Opening a new store）。"
+        "analysis": "正确答案：D（Opening a new store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -148,23 +172,23 @@
       ],
       "answer": "A",
       "question": "What are the listeners asked to do?",
-      "answer_explain": "原文依据：听力原文中提到“l'd like to remind you to turn off your mobile phones to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Turn off their mobile phones）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the listeners asked to do?",
+      "answer_explain": "正确答案：A（Turn off their mobile phones）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the listeners asked to do?",
       "choice_translations": [
-        "A：Turn off their mobile phones",
-        "B：Fill out a questionnaire",
-        "C：Wait in a lobby",
-        "D：Purchase（购买） tickets in advance"
+        "A:Turn off their mobile phones",
+        "B:Fill out a questionnaire",
+        "C:Wait in a lobby",
+        "D:Purchase(购买) tickets in advance"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Good evening, ladies and gentlemen. Thank you for",
+      "evidence": "参考听力原文：“Mr. Shin's career is interesting because he's traveled almost non-stop for the past several years. in the last year alone he has performed in over 60 cities in 20 different countries before he takes the stage I'd like to remind you to turn off your mobile phones to prevent interruptions during the performance”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Good evening, ladies and gentlemen. Thank you for",
+        "evidence": "参考听力原文：“Mr. Shin's career is interesting because he's traveled almost non-stop for the past several years. in the last year alone he has performed in over 60 cities in 20 different countries before he takes the stage I'd like to remind you to turn off your mobile phones to prevent interruptions during the performance”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“l'd like to remind you to turn off your mobile phones to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Turn off their mobile phones）。"
+        "analysis": "正确答案：A（Turn off their mobile phones）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

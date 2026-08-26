@@ -40,9 +40,31 @@
       "asset_key": "official-4-test-2/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nExcuse me, Chao and Jun, ®! need to talk to you\nabout the final preparations for our presentation this\nafternoon.\nf course. @You said you were going to make copies\nand check on everything in the conference room, righ'\nYes. But I’ve got a call with a new client in ten\nminutes...\nK, | can make the copies instead.\nActually, Jun, ©why don’t we take a look at the\nroom together first? We had a lot of trouble with the\nmicrophones last time, and we should make sure\nthey’re all working. We can make the copies later.\nThat's a good idea, Chao. Let’s go now.\nGreat!",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nExcuse me, Chao and Jun, ®!\nneed to talk to you\nabout the final preparations for our presentation this\nafternoon.\nf course.\n@You said you were going to make copies\nand check on everything in the conference room, righ'\nYes.\nBut I’ve got a call with a new client in ten\nminutes...\nK, | can make the copies instead.\nActually, Jun, ©why（为什么） don’t we take a look at the\nroom together first?\nWe had a lot of trouble with the\nmicrophones last time, and we should make sure\nthey’re all working.\nWe can make the copies later.\nThat's a good idea, Chao.\nLet’s go now.\nGreat!",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nExcuse me, Chao and Jun, ®!\nneed to talk to you\nabout the final preparations for our presentation this\nafternoon.\nf course.\n@You said you were going to make copies\nand check on everything in the conference room, righ'\nYes.\nBut I’ve got a call with a new client in ten\nminutes...\nK, | can make the copies instead.\nActually, Jun, ©why（为什么） don’t we take a look at the\nroom together first?\nWe had a lot of trouble with the\nmicrophones last time, and we should make sure\nthey’re all working.\nWe can make the copies later.\nThat's a good idea, Chao.\nLet’s go now.\nGreat!"
+    "transcript": "Excuse me, Chow and June.\nI need to talk to you about the final preparations for our presentation this afternoon.\nOf course.\nYou said you were going to make copies and check on everything in the conference room, right?\nYes, but I've got a call with a new client in ten minutes.\nOkay, I can make the copies instead.\nActually, June, why don't we take a look at the room together first?\nWe had a lot of trouble with the microphones last time, and we should make sure they're all working.\nWe can make the copies later.\nThat's a good idea, Chow.\nLet's go now.\nGreat.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ff02f3a4fe71a4380f00ca3bf11c80efcf0952c1102597160569685d102a6173",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 106,
+        "legacy_word_count": 106,
+        "length_ratio": 1,
+        "legacy_coverage": 0.915
+      }
+    },
+    "transcript_translation": "请问，周和琼。\n我需要和你们谈谈我们今天下午演示的最后准备工作。\n当然可以。\n你说你要去复印文件并在会议室检查所有东西，对吗？\n是的，但我十分钟后要和一个新客户通话。\n好的，我可以负责复印文件。\n其实，琼，我们为什么不先一起看看房间呢？\n上次我们的麦克风出了很多问题，我们得确保它们都工作正常。\n我们可以稍后再去复印文件。\n这是个好主意，周。\n我们现在就走吧。\n太好了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "64fbc794a2ef91c7ac9234b6956b43f75fbcaadcb6a97f22e5bb917c9d16c1d8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "B",
       "question": "What are the speakers discussing?",
-      "answer_explain": "原文依据：听力原文中提到“about the final preparations for our presentation this”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Preparations for a presentation）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers discussing?",
+      "answer_explain": "正确答案：B（Preparations for a presentation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the speakers discussing?",
       "choice_translations": [
-        "A：Upgrades to their computers",
-        "B：Preparations for a presentation",
-        "C：Candidates for a job interview",
-        "D：Decisions about a business trip"
+        "A:Upgrades to their computers",
+        "B:Preparations for a presentation",
+        "C:Candidates for a job interview",
+        "D:Decisions about a business trip"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“I need to talk to you about the final preparations for our presentation this afternoon.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“I need to talk to you about the final preparations for our presentation this afternoon.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“about the final preparations for our presentation this”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Preparations for a presentation）。"
+        "analysis": "正确答案：B（Preparations for a presentation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "D",
       "question": "Why does the woman say, “But I’ve got a call with a new client in ten minutes”?",
-      "answer_explain": "原文依据：听力原文中提到“But I’ve got a call with a new client in ten”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To request some help）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） say, “But I’ve got a call with a new client in ten minutes”?",
+      "answer_explain": "正确答案：D（To request some help）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the woman(女士) say, “But I’ve got a call with a new client in ten minutes”?",
       "choice_translations": [
-        "A：To share good news",
-        "B：To extend an invitation",
-        "C：To negotiate a meeting（会议） time",
-        "D：To request some help"
+        "A:To share good news",
+        "B:To extend an invitation",
+        "C:To negotiate a meeting(会议) time",
+        "D:To request some help"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：Yes. But I’ve got a call with a new client in ten",
+      "evidence": "参考听力原文：“Yes, but I've got a call with a new client in ten minutes.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：Yes. But I’ve got a call with a new client in ten",
+        "evidence": "参考听力原文：“Yes, but I've got a call with a new client in ten minutes.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But I’ve got a call with a new client in ten”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To request some help）。"
+        "analysis": "正确答案：D（To request some help）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "C",
       "question": "What will the men probably do next?",
-      "answer_explain": "原文依据：听力原文中提到“and check on everything in the conference room, righ'”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Check a conference room）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the men probably（可能） do next?",
+      "answer_explain": "正确答案：C（Check a conference room）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the men probably(可能) do next?",
       "choice_translations": [
-        "A：Review some résumés",
-        "B：Return some telephone calls",
-        "C：Check a conference room",
-        "D：Research some costs"
+        "A:Review some résumés",
+        "B:Return some telephone calls",
+        "C:Check a conference room",
+        "D:Research some costs"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“You said you were going to make copies and check on everything in the conference room, right?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“You said you were going to make copies and check on everything in the conference room, right?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“and check on everything in the conference room, righ'”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Check a conference room）。"
+        "analysis": "正确答案：C（Check a conference room）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

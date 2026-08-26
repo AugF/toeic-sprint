@@ -32,27 +32,47 @@
       "asset_key": "official-4-test-1/images/part1/q002.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. She's inspecting an item.\nB. She's hanging a backpack on the wall.\nC. She's trying on some clothes.\nD. She's packing a suitcase.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "df8f7a3d7755f426ea43f4c0fd94b74088a4aa0e5ec4bf02713f9454106954ee",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part1/q002.mp3",
+      "metrics": {
+        "word_count": 264
+      }
+    },
+    "transcript_translation": "A. 她正在检查一件物品。\nB. 她正在墙上挂背包。\nC. 她正在试衣服。\nD. 她正在打包行李箱。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6580ee74dd5f8be5443501a2a55f36371c9b1f4f736765276e674a2cf17f195a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "She’s inspecting an item.",
-        "She’s hanging a backpack on the wall.",
-        "She’s trying on some clothes.",
-        "She’s packing a suitcase."
+        "She's inspecting an item.",
+        "She's hanging a backpack on the wall.",
+        "She's trying on some clothes.",
+        "She's packing a suitcase."
       ],
       "answer": "A",
       "difficulty": "medium",
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
-      "answer_explain": "原文依据：照片中可见信息与描述“She’s inspecting an item.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（She’s inspecting an item.）。",
+      "answer_explain": "原文依据：照片中可见信息与描述“She's inspecting an item.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（She's inspecting an item.）。",
       "choice_translations": [
-        "A：She’s inspecting an item.",
-        "B：She’s hanging a backpack on the wall.",
-        "C：She’s trying on some clothes.",
-        "D：She’s packing a suitcase."
+        "A：她正在检查一件物品。",
+        "B：她正在墙上挂背包。",
+        "C：她正在试衣服。",
+        "D：她正在打包行李箱。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -62,7 +82,7 @@
         "question_type": "照片细节题",
         "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
         "strategy": "本题属于照片细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：照片中可见信息与描述“She’s inspecting an item.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（She’s inspecting an item.）。"
+        "analysis": "原文依据：照片中可见信息与描述“She's inspecting an item.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（She's inspecting an item.）。"
       },
       "item_id": 2,
       "priority": {
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-4-test-1/p1-2/2"
+      "item_key": "official-4-test-1/p1-2/2",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

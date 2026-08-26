@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-2/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：E=~ This is your bag, isn’t it?\ny 9 ERC BENOMAIC ~, isn't it?\nAIT.\n[I",
-    "content_translation": "中文辅助（离线预处理）：E=~ This is your bag, isn’t it?\ny 9 ERC BENOMAIC ~, isn't it?\nAIT.\n[I"
+    "transcript": "This is your bag, isn't it?\nA. No, they usually don't.\nB. We'll meet in the baggage claim area.\nC. Yes, I must have forgotten it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f63ebf5d989accf69a4742c3f0e8d625e81e0c36ea1ffa4439df5d7f593d8050",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "这是你的包，对吗？\nA. 不，他们通常不会。\nB. 我们在行李提取区见面吧。\nC. 是的，我一定忘记了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4386dc5230ff559fb759ad6848951472594072c668b7fd44a0911a912b2fe910"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "No, they usually don’t. fied [CS HAE DISADBEOMAWT",
-        "We'll meet in the baggage claim area. HSTERMBLTWS. THICML. Yest BE",
-        "Yes, | must have forgotten it. Uy PAIS SAVE BERNICE CITT"
+        "No, they usually don't.",
+        "We'll meet in the baggage claim area.",
+        "Yes, I must have forgotten it."
       ],
       "answer": "C",
-      "question": "E=~ This is your bag, isn’t it? y 9 ERC BENOMAIC ~, isn't it? AIT. [I",
+      "question": "This is your bag, isn't it?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“E=~ This is your bag, isn’t it? y 9 ERC BENOMAIC ~, isn't it? AIT. [I”，自然应答是“Yes, | must have forgotten it. Uy PAIS SAVE BERNICE CITT”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, | must have forgotten it. Uy PAIS SAVE BERNICE CITT）。",
-      "question_translation": "中文辅助（离线预处理）：E=~ This is your bag, isn’t it?\ny 9 ERC BENOMAIC ~, isn't it?\nAIT.\n[I",
+      "answer_explain": "原文依据：问句或陈述是“This is your bag, isn't it?”，自然应答是“Yes, I must have forgotten it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, I must have forgotten it.）。",
+      "question_translation": "这是你的包,对吗?",
       "choice_translations": [
-        "A：No, they usually don’t.\nfied [CS HAE DISADBEOMAWT",
-        "B：We'll meet in the baggage claim area.\nHSTERMBLTWS.\nTHICML.\nYest BE",
-        "C：Yes, | must have forgotten it.\nUy PAIS SAVE BERNICE CITT"
+        "A：不,他们通常不会。",
+        "B：我们在行李提取区见面吧。",
+        "C：是的,我一定忘记了。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：E=~ This is your bag, isn’t it? y 9 ERC BENOMAIC ~, isn't it? AIT. [I",
+      "evidence": "参考原文第 1 段：This is your bag, isn't it?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：E=~ This is your bag, isn’t it? y 9 ERC BENOMAIC ~, isn't it? AIT. [I",
+        "evidence": "参考原文第 1 段：This is your bag, isn't it?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“E=~ This is your bag, isn’t it? y 9 ERC BENOMAIC ~, isn't it? AIT. [I”，自然应答是“Yes, | must have forgotten it. Uy PAIS SAVE BERNICE CITT”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, | must have forgotten it. Uy PAIS SAVE BERNICE CITT）。"
+        "analysis": "原文依据：问句或陈述是“This is your bag, isn't it?”，自然应答是“Yes, I must have forgotten it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, I must have forgotten it.）。"
       },
       "item_id": 13,
       "priority": {

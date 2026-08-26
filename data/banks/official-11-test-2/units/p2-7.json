@@ -26,8 +26,28 @@
       "asset_key": "official-11-test-2/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：When（何时） is Ms.\nPhillips going to pick up her computer?",
-    "content_translation": "中文辅助（离线预处理）：When（何时） is Ms.\nPhillips going to pick up her computer?"
+    "transcript": "When is Ms. Phillips going to pick up her computer?\nA. Yes, I had some.\nB. That's a new clock, isn't it?\nC. Not until next week.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "776c14516addecd2d8bd50a91227eb0d97499f0a04b3412e38f4fa3fccc9386c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "Ms. Phillips 什么时候去取她的电脑？\nA. 是的，我有一些。\nB. 那是块新时钟，对吗？\nC. 不到下周。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "59aeb9618a24adc4ce1ed8b588a151af8082b022cd32e2ec8eaaf7c43f074d39"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -42,11 +62,11 @@
       "topic": "时间询问",
       "keywords": "when time response",
       "answer_explain": "原文依据：问句或陈述为“When is Ms. Phillips going to pick up her computer?”，官方正确应答是“Not until next week.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（Not until next week.）。",
-      "question_translation": "中文辅助（离线预处理）：When（何时） is Ms.\nPhillips going to pick up her computer?",
+      "question_translation": "Ms. Phillips 什么时候去取她的电脑?",
       "choice_translations": [
-        "A：Yes, I had some.",
-        "B：That's a new clock, isn't it?",
-        "C：Not until next week."
+        "A：是的,我有一些。",
+        "B：那是块新时钟,对吗?",
+        "C：不到下周。"
       ],
       "question_type": "时间疑问句",
       "evidence": "参考原文第 1 段：When is Ms. Phillips going to pick up her computer?",

@@ -28,8 +28,28 @@
       "asset_key": "official-7-test-1/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：[IM",
-    "content_translation": "中文辅助（离线预处理）：[IM"
+    "transcript": "How many mobile phones can your factory produce and ship each month?\nA. Usually on the first Friday.\nB. From here they're shipped directly to Milford.\nC. Between 300 and 500.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "34fd455e53e5c63c2bd67cf311a0d9953110f054de0fc9ff3363f99258891bc1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "你的工厂每个月能生产和运送多少部手机？\nA. 通常在第一个星期五。\nB. 从这里它们直接运到米尔福德。\nC. 在300到500之间。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b896d01dbd09932b385fe5ea83631e87e45edcfc81107a01d6070ad0e3db2772"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Between 300 and 500."
       ],
       "answer": "C",
-      "question": "[IM",
+      "question": "How many mobile phones can your factory produce and ship each month?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“[IM”，自然应答是“Between 300 and 500.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Between 300 and 500.）。",
-      "question_translation": "中文辅助（离线预处理）：[IM",
+      "answer_explain": "原文依据：问句或陈述是“How many mobile phones can your factory produce and ship each month?”，自然应答是“Between 300 and 500.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Between 300 and 500.）。",
+      "question_translation": "你的工厂每个月能生产和运送多少部手机?",
       "choice_translations": [
-        "A：Usually on the first Friday.",
-        "B：From here they're shipped directly to Milford.",
-        "C：Between 300 and 500."
+        "A：通常在第一个星期五。",
+        "B：从这里它们直接运到米尔福德。",
+        "C：在300到500之间。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：[IM",
+      "evidence": "参考原文第 1 段：How many mobile phones can your factory produce and ship each month?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：[IM",
+        "evidence": "参考原文第 1 段：How many mobile phones can your factory produce and ship each month?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“[IM”，自然应答是“Between 300 and 500.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Between 300 and 500.）。"
+        "analysis": "原文依据：问句或陈述是“How many mobile phones can your factory produce and ship each month?”，自然应答是“Between 300 and 500.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Between 300 and 500.）。"
       },
       "item_id": 25,
       "priority": {
