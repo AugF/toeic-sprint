@@ -39,9 +39,31 @@
       "asset_key": "official-3-test-1/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "Good morning, Jee-Eun. ® How’s it going with the\nbrochures for the Sports and Medicine Expo in\nJuly? erm really eager to see what the public thinks\nabout our company’s new exercise equipment.\nActually, not well. ®| printed a few yesterday, and\nfor some reason the ink won't dry! | tried different\ntypes of photo paper and tested different printer\nsettings, but no matter what | do... the ink smears\nwhen | touch it.\nStrange. Well, since we're not in a hurry, ®why\ndon’t we just get the brochures printed at a place\nthat specializes in this sort of thing? | want to make\nsure they look great.\nsntanassaanesteannenieteetateesntseinlisiiillaiiiaaiaime",
-    "transcript_translation": "早上好，智恩。七月份的体育和医疗博览会的宣传册进展如何？我非常想看看公众对我们公司的新健身器材有什么看法。\n实际上，不太顺利。我昨天打印了几份，但不知什么原因墨水不干！我试了不同类型的相纸，测试了不同的打印机设置，但无论我怎么做……一碰到它，墨水就晕开了。\n奇怪。嗯，既然我们不着急，为什么不找一家专门做这类印刷品的店来印呢？我想确保它们看起来很棒。",
-    "content_translation": "早上好，智恩。七月份的体育和医疗博览会的宣传册进展如何？我非常想看看公众对我们公司的新健身器材有什么看法。\n实际上，不太顺利。我昨天打印了几份，但不知什么原因墨水不干！我试了不同类型的相纸，测试了不同的打印机设置，但无论我怎么做……一碰到它，墨水就晕开了。\n奇怪。嗯，既然我们不着急，为什么不找一家专门做这类印刷品的店来印呢？我想确保它们看起来很棒。"
+    "transcript": "Good morning, Ji-Yoon.\nHow is it going with the brochures for the Sports and Medicine Expo in July?\nI'm really eager to see what the public thinks about our company's new exercise equipment.\nActually, not well.\nI printed a few yesterday, and for some reason the ink won't dry.\nI tried different types of photo paper and tested different printer settings, but no matter what I do, the ink smears when I touch it.\nStrange.\nWell, since we're not in a hurry, why don't we just get the brochures printed at a place that specializes in this sort of thing?\nI want to make sure they look great.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "26385366a1a2c2c2d9979c050b4e8e63cec3e5510edf9deb526ba83154ac16dc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 108,
+        "legacy_word_count": 103,
+        "length_ratio": 1.049,
+        "legacy_coverage": 0.961
+      }
+    },
+    "transcript_translation": "早上好，智允。\n七月份的体育与医学博览会的宣传册进展如何？\n我非常想看看公众对我们公司的新健身器材有什么看法。\n实际上，不太顺利。\n我昨天打印了几份，但不知何故墨水不会干。\n我试了不同类型的相纸和不同的打印机设置，但无论我怎么做，只要我碰一下，墨水就会晕开。\n奇怪。\n嗯，既然我们不着急，为什么不找一家专门做这类印刷品的店来印呢？\n我想确保它们看起来很棒。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "368fd4d4b67f09a3017ae16b77963f14c753c57f808b39a6ef6de0c23a3ae184"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "B",
       "question": "What is the company planning to do in July?",
-      "answer_explain": "原文依据：听力原文中提到“don’t we just get the brochures printed at a place”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Participate in a product exhibition 6）。",
-      "question_translation": "公司计划在七月份做什么？",
+      "answer_explain": "正确答案：B（Participate in a product exhibition 6）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "公司计划在七月份做什么?",
       "choice_translations": [
-        "A：宣布一位新总裁",
-        "B：参加一个产品展览会",
-        "C：举办一次公司野餐",
-        "D：购买一些印刷设备"
+        "A:宣布一位新总裁",
+        "B:参加一个产品展览会",
+        "C:举办一次公司野餐",
+        "D:购买一些印刷设备"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：about our company’s new exercise equipment.",
+      "evidence": "参考听力原文：“How is it going with the brochures for the Sports and Medicine Expo in July?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：about our company’s new exercise equipment.",
+        "evidence": "参考听力原文：“How is it going with the brochures for the Sports and Medicine Expo in July?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“don’t we just get the brochures printed at a place”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Participate in a product exhibition 6）。"
+        "analysis": "正确答案：B（Participate in a product exhibition 6）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 59,
       "priority": {
@@ -98,30 +120,30 @@
     },
     {
       "choices": [
-        "Adocument is not printing correctly.",
+        "A document is not printing correctly.",
         "Some expenses have not been 7 approved.",
         "Some inventory is not selling well.",
         "An invitation was not received."
       ],
       "answer": "A",
       "question": "What problem does the woman mention?",
-      "answer_explain": "原文依据：听力原文中提到“Well, since we're not in a hurry, ®why”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Adocument is not printing correctly.）。",
-      "question_translation": "女士提到了什么问题？",
+      "answer_explain": "正确答案：A（A document is not printing correctly.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士提到了什么问题?",
       "choice_translations": [
-        "A：一份文件打印不正确。",
-        "B：一些费用没有得到批准。",
-        "C：一些库存卖得不好。",
-        "D：没有收到邀请函。"
+        "A:一份文件打印不正确。",
+        "B:一些费用没有得到批准。",
+        "C:一些库存卖得不好。",
+        "D:没有收到邀请函。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Good morning, Jee-Eun. ® How’s it going with the",
+      "evidence": "参考听力原文：“Well, since we're not in a hurry, why don't we just get the brochures printed at a place that specializes in this sort of thing?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Good morning, Jee-Eun. ® How’s it going with the",
+        "evidence": "参考听力原文：“Well, since we're not in a hurry, why don't we just get the brochures printed at a place that specializes in this sort of thing?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Well, since we're not in a hurry, ®why”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Adocument is not printing correctly.）。"
+        "analysis": "正确答案：A（A document is not printing correctly.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 60,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "D",
       "question": "What does the man suggest?",
-      "answer_explain": "原文依据：听力原文中提到“don’t we just get the brochures printed at a place”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Using a professional service）。",
-      "question_translation": "男士建议什么？",
+      "answer_explain": "正确答案：D（Using a professional service）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士建议什么?",
       "choice_translations": [
-        "A：撰写一些新的产品描述",
-        "B：重新布置一些照片",
-        "C：获取消费者反馈",
-        "D：使用专业服务"
+        "A:撰写一些新的产品描述",
+        "B:重新布置一些照片",
+        "C:获取消费者反馈",
+        "D:使用专业服务"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Good morning, Jee-Eun. ® How’s it going with the",
+      "evidence": "参考听力原文：“Well, since we're not in a hurry, why don't we just get the brochures printed at a place that specializes in this sort of thing?”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Good morning, Jee-Eun. ® How’s it going with the",
+        "evidence": "参考听力原文：“Well, since we're not in a hurry, why don't we just get the brochures printed at a place that specializes in this sort of thing?”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“don’t we just get the brochures printed at a place”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Using a professional service）。"
+        "analysis": "正确答案：D（Using a professional service）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 61,
       "priority": {

@@ -27,38 +27,58 @@
       "asset_key": "official-4-test-2/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Bi” bow!\nas your vacation?\npe aes Hee YONI aee How（如何） long ~?\nTHORS 21aTL) = w",
-    "content_translation": "中文辅助（离线预处理）：Bi” bow!\nas your vacation?\npe aes Hee YONI aee How（如何） long ~?\nTHORS 21aTL) = w"
+    "transcript": "How long was your vacation?\nA. Yes, Ms. Ito's going to be there.\nB. Next summer in August.\nC. A week and a half.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bad6e55af10879e0d6961097737141ea1564a4ef887445b8ddfdc6eb95039667",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "你假期有多久？\nA. 是的，伊藤女士将会在那里。\nB. 下个夏天八月。\nC. 一个半星期。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "dc74803d9a8ec2b86e534771e54a474bc0843106894c1f7bfaa9f5ee2b535f6c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Yes, Ms. Ito’s going to be there. SOIL. [1 IIE RAMI SAT",
-        "Next summer in August. US",
-        "DER."
+        "Yes, Ms. Ito's going to be there.",
+        "Next summer in August.",
+        "A week and a half."
       ],
       "answer": "C",
-      "question": "Bi” bow! as your vacation? pe aes Hee YONI aee How long ~? THORS 21aTL) = w",
+      "question": "How long was your vacation?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Bi” bow! as your vacation? pe aes Hee YONI aee How long ~? THORS 21aTL) = w”，自然应答是“DER.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（DER.）。",
-      "question_translation": "中文辅助（离线预处理）：Bi” bow!\nas your vacation?\npe aes Hee YONI aee How（如何） long ~?\nTHORS 21aTL) = w",
+      "answer_explain": "原文依据：问句或陈述是“How long was your vacation?”，自然应答是“A week and a half.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（A week and a half.）。",
+      "question_translation": "你假期有多久?",
       "choice_translations": [
-        "A：Yes, Ms.\nIto’s going to be there.\nSOIL.\n[1 IIE RAMI SAT",
-        "B：Next summer in August.\nUS",
-        "C：DER."
+        "A：是的,伊藤女士将会在那里。",
+        "B：下个夏天八月。",
+        "C：一个半星期。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Bi” bow! as your vacation? pe aes Hee YONI aee How long ~? THORS 21aTL) = w",
+      "evidence": "参考原文第 1 段：How long was your vacation?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Bi” bow! as your vacation? pe aes Hee YONI aee How long ~? THORS 21aTL) = w",
+        "evidence": "参考原文第 1 段：How long was your vacation?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Bi” bow! as your vacation? pe aes Hee YONI aee How long ~? THORS 21aTL) = w”，自然应答是“DER.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（DER.）。"
+        "analysis": "原文依据：问句或陈述是“How long was your vacation?”，自然应答是“A week and a half.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（A week and a half.）。"
       },
       "item_id": 7,
       "priority": {

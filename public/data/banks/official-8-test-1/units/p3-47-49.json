@@ -39,9 +39,31 @@
       "asset_key": "official-8-test-1/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "Ilm Hello, this is Mustafa Hamam, returning your call.\nMw Thanks for getting back to me, Mustafa. ® You helped me\nwith the legal work to set up my furniture store. ®Now I'd\nlike to hire an accountant to take over the finances for the\nbusiness, but I'm not sure how to select one.\nIlM Oh, ®I'm often asked to make these kinds of\nprofessional connections for my clients. Ol'll prepare a\nlist of names and send it to you later today.\nEw Excellent.\nOne thing though, ®I'II be away at a conference next\nweek. But ®if you should have any questions while I'm\naway, one of the other lawyers can assist you.\nw OK, thanks.",
-    "transcript_translation": "中文辅助（离线预处理）：Ilm Hello, this is Mustafa Hamam, returning your call.\nMw Thanks for getting back to me, Mustafa.\n® You helped me\nwith the legal work（工作） to set up my furniture store.\n®Now I'd\nlike to hire an accountant to take over the finances for the\nbusiness, but I'm not sure how（如何） to select one.\nIlM Oh, ®I'm often asked to make these kinds of\nprofessional connections for my clients.\nOl'll prepare a\nlist of names and send it to you later today.\nEw Excellent.\nOne thing though, ®I'II be away at a conference next\nweek.\nBut ®if you should have any questions while I'm\naway, one of the other lawyers can assist you.\nw OK, thanks.",
-    "content_translation": "中文辅助（离线预处理）：Ilm Hello, this is Mustafa Hamam, returning your call.\nMw Thanks for getting back to me, Mustafa.\n® You helped me\nwith the legal work（工作） to set up my furniture store.\n®Now I'd\nlike to hire an accountant to take over the finances for the\nbusiness, but I'm not sure how（如何） to select one.\nIlM Oh, ®I'm often asked to make these kinds of\nprofessional connections for my clients.\nOl'll prepare a\nlist of names and send it to you later today.\nEw Excellent.\nOne thing though, ®I'II be away at a conference next\nweek.\nBut ®if you should have any questions while I'm\naway, one of the other lawyers can assist you.\nw OK, thanks."
+    "transcript": "Hello, this is Mustafa Hammam returning your call.\nThanks for getting back to me, Mustafa.\nYou helped me with the legal work to set up my furniture store.\nNow I'd like to hire an accountant to take over the finances for the business, but I'm not sure how to select one.\nOh, I'm often asked to make these kinds of professional connections for my clients.\nI'll prepare a list of names and send it to you later today.\nExcellent.\nOne thing, though, I'll be away at a conference next week, but if you should have any questions while I'm away, one of the other lawyers can assist you.\nOkay, thanks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "067324a13ec4c23df5e215256508b46b62d233f551dc10610e3bec87737a997c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 110,
+        "legacy_word_count": 113,
+        "length_ratio": 0.973,
+        "legacy_coverage": 0.903
+      }
+    },
+    "transcript_translation": "您好，我是Mustafa Hammam，回电给您。\n谢谢你回复我，Mustafa。\n你帮我处理了设立家具店的法律事务。\n现在我想聘请一位会计师来接手公司的财务，但我不知道如何选择一位。\n哦，我的客户经常让我建立这类专业的联系。\n我会准备一份名单，并在今天晚些时候发给您。\n太棒了。\n不过有一件事，我下周要去参加一个会议，但如果我不在的时候有任何问题，其他律师可以帮到你。\n好的，谢谢。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2b13e56cab1b411795893abc0cdc704ae1c68d787bca1cff003c54aeed763c28"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "B",
       "question": "Where does the man most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“with the legal work to set up my furniture store.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（At a law firm）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the man（男士） most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：B（At a law firm）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the man(男士) most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a manufacturing company（公司）",
-        "B：At a law firm",
-        "C：At a bank",
-        "D：At a call center"
+        "A:At a manufacturing company(公司)",
+        "B:At a law firm",
+        "C:At a bank",
+        "D:At a call center"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Ilm Hello, this is Mustafa Hamam, returning your call.",
+      "evidence": "参考听力原文：“You helped me with the legal work to set up my furniture store.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Ilm Hello, this is Mustafa Hamam, returning your call.",
+        "evidence": "参考听力原文：“You helped me with the legal work to set up my furniture store.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“with the legal work to set up my furniture store.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（At a law firm）。"
+        "analysis": "正确答案：B（At a law firm）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "A",
       "question": "What does the woman ask the man to do?",
-      "answer_explain": "原文依据：听力原文中提到“like to hire an accountant to take over the finances for the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Provide a referral）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） ask the man（男士） to do?",
+      "answer_explain": "正确答案：A（Provide a referral）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) ask the man(男士) to do?",
       "choice_translations": [
-        "A：Provide a referral",
-        "B：Process a payment",
-        "C：Explain a delay",
-        "D：Review a contract"
+        "A:Provide a referral",
+        "B:Process a payment",
+        "C:Explain a delay",
+        "D:Review a contract"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ilm Hello, this is Mustafa Hamam, returning your call.",
+      "evidence": "参考听力原文：“One thing, though, I'll be away at a conference next week, but if you should have any questions while I'm away, one of the other lawyers can assist you.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ilm Hello, this is Mustafa Hamam, returning your call.",
+        "evidence": "参考听力原文：“One thing, though, I'll be away at a conference next week, but if you should have any questions while I'm away, one of the other lawyers can assist you.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“like to hire an accountant to take over the finances for the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Provide a referral）。"
+        "analysis": "正确答案：A（Provide a referral）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "B",
       "question": "What does the man say he will do next week?",
-      "answer_explain": "原文依据：听力原文中提到“One thing though, ®I'II be away at a conference next”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Attend a conference）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） say he will do next week?",
+      "answer_explain": "正确答案：B（Attend a conference）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) say he will do next week?",
       "choice_translations": [
-        "A：Conduct interviews",
-        "B：Attend a conference",
-        "C：Provide software training",
-        "D：Redecorate an office（办公室）"
+        "A:Conduct interviews",
+        "B:Attend a conference",
+        "C:Provide software training",
+        "D:Redecorate an office(办公室)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ilm Hello, this is Mustafa Hamam, returning your call.",
+      "evidence": "参考听力原文：“One thing, though, I'll be away at a conference next week, but if you should have any questions while I'm away, one of the other lawyers can assist you.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ilm Hello, this is Mustafa Hamam, returning your call.",
+        "evidence": "参考听力原文：“One thing, though, I'll be away at a conference next week, but if you should have any questions while I'm away, one of the other lawyers can assist you.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“One thing though, ®I'II be away at a conference next”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Attend a conference）。"
+        "analysis": "正确答案：B（Attend a conference）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

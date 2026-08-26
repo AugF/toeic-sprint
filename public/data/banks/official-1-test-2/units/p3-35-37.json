@@ -36,37 +36,59 @@
       "asset_key": "official-1-test-2/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "three speakers.\nHi Ken, hi Julio! How did the art gallery of\nweekend? © Was the client happy with the r\nmaterials?\nAlfredo? He was very pleased. He said he\nbrochures we designed were one of the ma\nsuch a great turnout.\nAnd it’s worth checking out the gallery wher\ntime. I’m sure Alfredo would be happy to giv\nu Yes, the place is so bright and modern, with\ncollection of local works of art.\nYou know, ©!'m taking a vacation in that are\nI'll make a point of visiting him.",
-    "transcript_translation": "三位说话者。\n嗨 Ken，嗨 Julio！周末画廊怎么样？客户对我们设计的宣传册满意吗？\nAlfredo？他非常高兴。他说我们设计的宣传册是本次活动最棒的展品之一。\n你真该去看看那家画廊，那里收藏了当地艺术作品。我敢肯定 Alfredo 会很高兴给我介绍一下。\n是的，那个地方非常明亮和现代，收藏了当地的艺术作品。你知道，我在那里度假。\n我会特意去拜访他的。",
-    "content_translation": "三位说话者。\n嗨 Ken，嗨 Julio！周末画廊怎么样？客户对我们设计的宣传册满意吗？\nAlfredo？他非常高兴。他说我们设计的宣传册是本次活动最棒的展品之一。\n你真该去看看那家画廊，那里收藏了当地艺术作品。我敢肯定 Alfredo 会很高兴给我介绍一下。\n是的，那个地方非常明亮和现代，收藏了当地的艺术作品。你知道，我在那里度假。\n我会特意去拜访他的。"
+    "transcript": "Hi, Ken.\nHi, Julio.\nHow did the art gallery opening go last weekend?\nWas the client happy with the marketing materials?\nAlfredo, he was very pleased.\nHe said he thought the brochures we designed were one of the main reasons for such a great turnout.\nAnd it's worth checking out the gallery when you have some time.\nI'm sure Alfredo would be happy to give you a tour.\nYes, the place is so bright and modern, with a fantastic collection of local works of art.\nYou know, I'm taking a vacation in that area in February.\nI'll make a point of visiting him.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "66bac1ac96a406f2306997aa0fd0cb458bd943dc44e7d7ac20167d9f5d23b8be",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 103,
+        "legacy_word_count": 103,
+        "length_ratio": 1,
+        "legacy_coverage": 0.971
+      }
+    },
+    "transcript_translation": "嗨，Ken。\n嗨，Julio。\n上周末艺术画廊开幕式怎么样？\n客户对营销材料满意吗？\nAlfredo说他非常高兴。\n他说他认为我们设计的宣传册是如此盛况空前的主要原因之一。\n你最好找时间去看看那个画廊。\n我确信Alfredo会很高兴给你参观一下。\n是的，那里非常明亮和现代，收藏了大量当地艺术品。\n你知道，二月份我要去那个地区度假。\n我会特地去看他的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9b1ba6fb5a744913610e8bf80274fbb27e65b1efc1647a2686e791da2301a8aa"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Conducting a tour (",
-        "Training new employees (",
-        "Attending a gallery opening (",
-        "Designing a building ("
+        "Conducting a tour",
+        "Training new employees",
+        "Attending a gallery opening",
+        "Designing a building"
       ],
       "answer": "C",
-      "question": "What were the men doing last weekend? 41. V",
-      "answer_explain": "原文依据：听力原文中提到“And it’s worth checking out the gallery wher”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Attending a gallery opening (）。",
-      "question_translation": "男士们上周末在做什么？",
+      "question": "What were the men doing last weekend?",
+      "answer_explain": "正确答案：C（Attending a gallery opening）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士们上周末在做什么?",
       "choice_translations": [
-        "A：进行参观游览",
-        "B：培训新员工",
-        "C：参加画廊开幕式",
-        "D：设计一栋建筑"
+        "A:进行参观游览",
+        "B:培训新员工",
+        "C:参加画廊开幕式",
+        "D:设计一栋建筑"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：weekend? © Was the client happy with the r",
+      "evidence": "参考听力原文：“How did the art gallery opening go last weekend?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：weekend? © Was the client happy with the r",
+        "evidence": "参考听力原文：“How did the art gallery opening go last weekend?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“And it’s worth checking out the gallery wher”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Attending a gallery opening (）。"
+        "analysis": "正确答案：C（Attending a gallery opening）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -92,30 +114,30 @@
     },
     {
       "choices": [
-        "They created marketing materials. (",
-        "They furnished an office space. (",
-        "They revised a workflow procedure. (",
+        "They created marketing materials.",
+        "They furnished an office space.",
+        "They revised a workflow procedure.",
         "They made a financial investment."
       ],
       "answer": "A",
-      "question": "What type of work did the speakers do for 42. V Alfredo? (",
-      "answer_explain": "原文依据：听力原文中提到“materials?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（They created marketing materials. (）。",
-      "question_translation": "说话者们为 Alfredo 做的是什么类型的工作？",
+      "question": "What type of work did the speakers do for Alfredo?",
+      "answer_explain": "正确答案：A（They created marketing materials.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者们为 Alfredo 做的是什么类型的工作?",
       "choice_translations": [
-        "A：他们制作了营销材料。",
-        "B：他们布置了一个办公空间。",
-        "C：他们修改了一个工作流程程序。",
-        "D：他们进行了一项财务投资。"
+        "A:他们制作了营销材料。",
+        "B:他们布置了一个办公空间。",
+        "C:他们修改了一个工作流程程序。",
+        "D:他们进行了一项财务投资。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：three speakers.",
+      "evidence": "参考听力原文：“Was the client happy with the marketing materials?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：three speakers.",
+        "evidence": "参考听力原文：“Was the client happy with the marketing materials?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“materials?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（They created marketing materials. (）。"
+        "analysis": "正确答案：A（They created marketing materials.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -141,30 +163,30 @@
     },
     {
       "choices": [
-        "Hire new staff (",
-        "Relocate to another city (",
-        "Attend a conference (",
+        "Hire new staff",
+        "Relocate to another city",
+        "Attend a conference",
         "Take a vacation"
       ],
       "answer": "D",
-      "question": "What does the woman plan to do c in February? (",
-      "answer_explain": "原文依据：听力原文中提到“You know, ©!'m taking a vacation in that are”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Take a vacation）。",
-      "question_translation": "女士计划在二月份做什么？",
+      "question": "What does the woman plan to do in February?",
+      "answer_explain": "正确答案：D（Take a vacation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士计划在二月份做什么?",
       "choice_translations": [
-        "A：雇佣新员工",
-        "B：搬到另一个城市",
-        "C：参加一个会议",
-        "D：休假"
+        "A:雇佣新员工",
+        "B:搬到另一个城市",
+        "C:参加一个会议",
+        "D:休假"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：three speakers.",
+      "evidence": "参考听力原文：“You know, I'm taking a vacation in that area in February.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：three speakers.",
+        "evidence": "参考听力原文：“You know, I'm taking a vacation in that area in February.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“You know, ©!'m taking a vacation in that are”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Take a vacation）。"
+        "analysis": "正确答案：D（Take a vacation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

@@ -28,38 +28,58 @@
       "asset_key": "official-10-test-2/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Kw",
-    "content_translation": "中文辅助（离线预处理）：Kw"
+    "transcript": "I can't find the latest version of the art layout.\nA. We should see that museum exhibit.\nB. We could use the garden to host the fundraiser.\nC. I have a copy on my desk.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fe3677f2be3f3d406bdd43ff17e48457984c71a100543d04a64bf2be82e24207",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 36
+      }
+    },
+    "transcript_translation": "我找不到最新的艺术布局版本。\nA. 我们应该看看那个博物馆展览。\nB. 我们可以用花园举办筹款活动。\nC. 我在我的桌子上有一份副本。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e10e6beaccfc10199b6d8c8df5462177ecf41febb61608c4955b1e1577859a19"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "We should see that museum exhibit.",
-        "We could use the garden to host the fund-raiser.",
+        "We could use the garden to host the fundraiser.",
         "I have a copy on my desk."
       ],
       "answer": "C",
-      "question": "Kw",
+      "question": "I can't find the latest version of the art layout.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Kw”，自然应答是“I have a copy on my desk.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I have a copy on my desk.）。",
-      "question_translation": "中文辅助（离线预处理）：Kw",
+      "answer_explain": "原文依据：问句或陈述是“I can't find the latest version of the art layout.”，自然应答是“I have a copy on my desk.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I have a copy on my desk.）。",
+      "question_translation": "我找不到最新的艺术布局版本。",
       "choice_translations": [
-        "A：We should see that museum exhibit.",
-        "B：We could use the garden to host the fund-raiser.",
-        "C：I have a copy on my desk."
+        "A：我们应该看看那个博物馆展览。",
+        "B：我们可以用花园举办筹款活动。",
+        "C：我在我的桌子上有一份副本。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Kw",
+      "evidence": "参考原文第 1 段：I can't find the latest version of the art layout.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Kw",
+        "evidence": "参考原文第 1 段：I can't find the latest version of the art layout.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Kw”，自然应答是“I have a copy on my desk.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I have a copy on my desk.）。"
+        "analysis": "原文依据：问句或陈述是“I can't find the latest version of the art layout.”，自然应答是“I have a copy on my desk.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I have a copy on my desk.）。"
       },
       "item_id": 24,
       "priority": {

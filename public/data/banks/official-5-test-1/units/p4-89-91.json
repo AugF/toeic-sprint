@@ -40,9 +40,31 @@
       "asset_key": "official-5-test-1/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "Hello, everyone. • Welcome to your first day at Seaside\nGarments. We're very excited to be working with such a\ntalented group of graphic designers as we create our first\nyoung-adult clothing line. ® Since we're expanding into a\nyounger market, we'd like to use this opportunity to reinvent\nour image. So, Othe first thing we'd like you to do is take a\nlook at the company logo. We've had it for quite a while. You\nwere hired for your creativity and familiarity with the young\nadult market, so please think about how we can appeal to\nthis demographic as you begin your work today.",
-    "transcript_translation": "中文辅助（离线预处理）：Hello, everyone.\n• Welcome to your first day at Seaside\nGarments.\nWe're very excited to be working with such a\ntalented group of graphic designers as we create our first\nyoung-adult clothing line.\n® Since we're expanding into a\nyounger market, we'd like to use this opportunity to reinvent\nour image.\nSo, Othe first thing we'd like you to do is take a\nlook at the company（公司） logo.\nWe've had it for quite a while.\nYou\nwere hired for your creativity and familiarity with the young\nadult market, so please（请） think about how（如何） we can appeal to\nthis demographic as you begin your work（工作） today.",
-    "content_translation": "中文辅助（离线预处理）：Hello, everyone.\n• Welcome to your first day at Seaside\nGarments.\nWe're very excited to be working with such a\ntalented group of graphic designers as we create our first\nyoung-adult clothing line.\n® Since we're expanding into a\nyounger market, we'd like to use this opportunity to reinvent\nour image.\nSo, Othe first thing we'd like you to do is take a\nlook at the company（公司） logo.\nWe've had it for quite a while.\nYou\nwere hired for your creativity and familiarity with the young\nadult market, so please（请） think about how（如何） we can appeal to\nthis demographic as you begin your work（工作） today."
+    "transcript": "Hello, everyone.\nWelcome to your first day at Seaside Garments.\nWe're very excited to be working with such a talented group of graphic designers as we create our first young-adult clothing line.\nSince we're expanding into a younger market, we'd like to use this opportunity to reinvent our image.\nSo, the first thing we'd like you to do is take a look at the company logo.\nWe've had it for quite a while.\nYou were hired for your creativity and familiarity with the young adult market, so please think about how we can appeal to this demographic as you begin your work today.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "0ed310e3e7a129d845a45d7eaa2bf31e4b963f8234078bc72a36a8675271b725",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 103,
+        "legacy_word_count": 103,
+        "length_ratio": 1,
+        "legacy_coverage": 0.99
+      }
+    },
+    "transcript_translation": "大家好。\n欢迎来到 Seaside Garments。\n我们非常兴奋能与如此有才华的平面设计师们一起，创造我们的第一条年轻成人服装系列。\n由于我们正在扩展到更年轻的市场，我们想利用这个机会重塑我们的形象。\n所以，首先我们希望你们做的是看看公司标志。\n我们拥有它已经有一段时间了。\n你们被聘用是因为你们的创造力和对年轻成人市场的熟悉度，所以在今天开始工作时，请思考如何能吸引到这个人群。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2cab794316312cd4165ec6281a74193ff20c9d4cd17484bf64fd83a6897b3878"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "D",
       "question": "Where do the listeners most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“look at the company logo.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a clothing design company）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） do the listeners most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：D（At a clothing design company）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) do the listeners most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a technology company（公司）",
-        "B：At a publishing firm",
-        "C：At a furniture store",
-        "D：At a clothing design company（公司）"
+        "A:At a technology company(公司)",
+        "B:At a publishing firm",
+        "C:At a furniture store",
+        "D:At a clothing design company(公司)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Hello, everyone. • Welcome to your first day at Seaside",
+      "evidence": "参考听力原文：“You were hired for your creativity and familiarity with the young adult market, so please think about how we can appeal to this demographic as you begin your work today.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Hello, everyone. • Welcome to your first day at Seaside",
+        "evidence": "参考听力原文：“You were hired for your creativity and familiarity with the young adult market, so please think about how we can appeal to this demographic as you begin your work today.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“look at the company logo.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a clothing design company）。"
+        "analysis": "正确答案：D（At a clothing design company）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 89,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "A",
       "question": "What did the business recently decide to do?",
-      "answer_explain": "原文依据：听力原文中提到“adult market, so please think about how we can appeal to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Expand into a new market）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） did the business recently decide to do?",
+      "answer_explain": "正确答案：A（Expand into a new market）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) did the business recently decide to do?",
       "choice_translations": [
-        "A：Expand into a new market",
-        "B：Enter into a merger",
-        "C：Open an international office（办公室）",
-        "D：Conduct a survey"
+        "A:Expand into a new market",
+        "B:Enter into a merger",
+        "C:Open an international office(办公室)",
+        "D:Conduct a survey"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hello, everyone. • Welcome to your first day at Seaside",
+      "evidence": "参考听力原文：“Since we're expanding into a younger market, we'd like to use this opportunity to reinvent our image.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hello, everyone. • Welcome to your first day at Seaside",
+        "evidence": "参考听力原文：“Since we're expanding into a younger market, we'd like to use this opportunity to reinvent our image.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“adult market, so please think about how we can appeal to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Expand into a new market）。"
+        "analysis": "正确答案：A（Expand into a new market）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 90,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "D",
       "question": "Why does the speaker say, \"We've had it for quite a while\"?",
-      "answer_explain": "原文依据：听力原文中提到“We've had it for quite a while.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To indicate that an update is needed）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"We've had it for quite a while\"?",
+      "answer_explain": "正确答案：D（To indicate that an update is needed）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"We've had it for quite a while\"?",
       "choice_translations": [
-        "A：To recognize a financial achievement",
-        "B：To reassure a staff supervisor",
-        "C：To recommend a budget increase",
-        "D：To indicate that an update is needed"
+        "A:To recognize a financial achievement",
+        "B:To reassure a staff supervisor",
+        "C:To recommend a budget increase",
+        "D:To indicate that an update is needed"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：look at the company logo. We've had it for quite a while. You",
+      "evidence": "参考听力原文：“We've had it for quite a while.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：look at the company logo. We've had it for quite a while. You",
+        "evidence": "参考听力原文：“We've had it for quite a while.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“We've had it for quite a while.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To indicate that an update is needed）。"
+        "analysis": "正确答案：D（To indicate that an update is needed）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 91,
       "priority": {

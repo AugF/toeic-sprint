@@ -40,9 +40,32 @@
       "asset_key": "official-8-test-2/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "message.\nM\nI'm calling from Dr. Garcia's office to confirm an\nappointment tomorrow for Zeyneb Rashad. ® You're\nscheduled to see the doctor at one P.M. for a tooth cleaning\nand then... I see you've also scheduled a whitening\nprocedure. That'll be conducted by one of our assistants.\nThe whitening process is different for each patient. I hope\nthe rest of your afternoon is free. Oh, and ®| see that we've\nalready received payment for all the work tomorrow, so there\nwon't be any need for you to pay at the end.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nM\nI'm calling from Dr.\nGarcia's office（办公室） to confirm an\nappointment（预约） tomorrow for Zeyneb Rashad.\n® You're\nscheduled to see the doctor at one P.M.\nfor a tooth cleaning\nand then...\nI see you've also scheduled a whitening\nprocedure.\nThat'll be conducted by one of our assistants.\nThe whitening process is different for each patient.\nI hope\nthe rest of your afternoon is free.\nOh, and ®| see that we've\nalready received payment for all the work（工作） tomorrow, so there\nwon't be any need for you to pay at the end.",
-    "content_translation": "中文辅助（离线预处理）：message.\nM\nI'm calling from Dr.\nGarcia's office（办公室） to confirm an\nappointment（预约） tomorrow for Zeyneb Rashad.\n® You're\nscheduled to see the doctor at one P.M.\nfor a tooth cleaning\nand then...\nI see you've also scheduled a whitening\nprocedure.\nThat'll be conducted by one of our assistants.\nThe whitening process is different for each patient.\nI hope\nthe rest of your afternoon is free.\nOh, and ®| see that we've\nalready received payment for all the work（工作） tomorrow, so there\nwon't be any need for you to pay at the end."
+    "transcript": "I'm calling from Dr. Garcia's office to confirm an appointment tomorrow for Zeyneb Rashad.\nYou're scheduled to see the doctor at 1 p.m. for a tooth cleaning and then...\nI see you've also scheduled a whitening procedure.\nThat'll be conducted by one of our assistants.\nThe whitening process is different for each patient.\nI hope the rest of your afternoon is free.\nOh, and I see that we've already received payment for all the work tomorrow, so there won't be any need for you to pay at the end.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "783a91ec055ad7f579476d51fb38c77c0964bb316581417d5c0cdc064bedc417",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 89,
+        "legacy_word_count": 86,
+        "length_ratio": 1.035,
+        "legacy_coverage": 0.988
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "我从 Garcia 医生的诊所打电话来，确认 Zeyneb Rashad 明天的预约。\n您安排在下午 1 点看医生进行牙齿清洁，然后……\n我看到您还安排了美白程序。\n这将由我们的助理之一进行。\n美白过程对每位患者都是不同的。\n希望您下午剩下的时间是空闲的。\n哦，我看到我们已经收到了明天所有项目的付款，所以您不需要在最后支付任何费用。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "209a16f64547a66fe6019f02fcca8ef6db0144124b64370a6dc96cd7452537df"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "C",
       "question": "Where does the speaker most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“already received payment for all the work tomorrow, so there”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a dental clinic）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the speaker（说话者） most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：C（At a dental clinic）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the speaker(说话者) most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a bank",
-        "B：At a pharmacy",
-        "C：At a dental clinic",
-        "D：At an auto repair shop"
+        "A:At a bank",
+        "B:At a pharmacy",
+        "C:At a dental clinic",
+        "D:At an auto repair shop"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Oh, and I see that we've already received payment for all the work tomorrow, so there won't be any need for you to pay at the end.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Oh, and I see that we've already received payment for all the work tomorrow, so there won't be any need for you to pay at the end.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“already received payment for all the work tomorrow, so there”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a dental clinic）。"
+        "analysis": "正确答案：C（At a dental clinic）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 89,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker mean when he says, \"I hope the rest of your afternoon is free\"?",
-      "answer_explain": "原文依据：听力原文中提到“the rest of your afternoon is free.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A procedure might take a long time.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） mean when（何时） he says, \"I hope the rest of your afternoon is free\"?",
+      "answer_explain": "正确答案：D（A procedure might take a long time.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) mean when(何时) he says, \"I hope the rest of your afternoon is free\"?",
       "choice_translations": [
-        "A：He needs some assistance with a project.",
-        "B：His office（办公室） is very busy.",
-        "C：A later appointment（预约） time would be better.",
-        "D：A procedure might take a long time."
+        "A:He needs some assistance with a project.",
+        "B:His office(办公室) is very busy.",
+        "C:A later appointment(预约) time would be better.",
+        "D:A procedure might take a long time."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：the rest of your afternoon is free. Oh, and ®| see that we've",
+      "evidence": "参考听力原文：“I hope the rest of your afternoon is free.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：the rest of your afternoon is free. Oh, and ®| see that we've",
+        "evidence": "参考听力原文：“I hope the rest of your afternoon is free.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the rest of your afternoon is free.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A procedure might take a long time.）。"
+        "analysis": "正确答案：D（A procedure might take a long time.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 90,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker say has happened?",
-      "answer_explain": "原文依据：听力原文中提到“already received payment for all the work tomorrow, so there”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A payment has been submitted.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say has happened?",
+      "answer_explain": "正确答案：A（A payment has been submitted.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say has happened?",
       "choice_translations": [
-        "A：A payment has been submitted.",
-        "B：Paperwork has been signed",
-        "C：Transportation has been scheduled.",
-        "D：Supplies have been ordered."
+        "A:A payment has been submitted.",
+        "B:Paperwork has been signed",
+        "C:Transportation has been scheduled.",
+        "D:Supplies have been ordered."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Oh, and I see that we've already received payment for all the work tomorrow, so there won't be any need for you to pay at the end.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Oh, and I see that we've already received payment for all the work tomorrow, so there won't be any need for you to pay at the end.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“already received payment for all the work tomorrow, so there”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A payment has been submitted.）。"
+        "analysis": "正确答案：A（A payment has been submitted.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 91,
       "priority": {

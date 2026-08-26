@@ -40,37 +40,59 @@
       "asset_key": "official-4-test-1/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "EIS w Hello, Martin. | haven’t seen you since you got\npromoted—congratulations! How’s it been going so\nIv There’s been a lot of paperwork and e-mails to take\ncare of. But next week will be better— @a new st\nmember is joining my team starting on Monday.\nI’m sure that'll be a big help. By the way, ©!’m abou\ntake a representative from Garland Chemistry, our\nclient, out to lunch. @Care to join us?\nv My business plan for next quarter is due in two hou\njust got started on it yesterday.\nGood luck with that!",
-    "transcript_translation": "中文辅助（离线预处理）：EIS w Hello, Martin.\n| haven’t seen you since you got\npromoted—congratulations!\nHow（如何）’s it been going so\nIv There’s been a lot of paperwork and e-mails to take\ncare of.\nBut next week will be better— @a new st\nmember is joining my team starting on Monday.\nI’m sure that'll be a big help.\nBy the way, ©!’m abou\ntake a representative from Garland Chemistry, our\nclient, out to lunch.\n@Care to join us?\nv My business plan for next quarter is due in two hou\njust got started on it yesterday.\nGood luck with that!",
-    "content_translation": "中文辅助（离线预处理）：EIS w Hello, Martin.\n| haven’t seen you since you got\npromoted—congratulations!\nHow（如何）’s it been going so\nIv There’s been a lot of paperwork and e-mails to take\ncare of.\nBut next week will be better— @a new st\nmember is joining my team starting on Monday.\nI’m sure that'll be a big help.\nBy the way, ©!’m abou\ntake a representative from Garland Chemistry, our\nclient, out to lunch.\n@Care to join us?\nv My business plan for next quarter is due in two hou\njust got started on it yesterday.\nGood luck with that!"
+    "transcript": "Hello, Martin.\nI haven't seen you since you got promoted.\nCongratulations.\nHow's it been going so far?\nThere's been a lot of paperwork and emails to take care of, but next week will be better.\nA new staff member is joining my team starting on Monday.\nI'm sure that'll be a big help.\nBy the way, I'm about to take a representative from Garland Chemistry, our new client, out to lunch.\nCare to join us?\nMy business plan for next quarter is due in two hours.\nI just got started on it yesterday.\nGood luck with that.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e2466ff7373e877c74fb846fd9b4769c8fab059a7f0a7b85d69f885acd63f159",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 96,
+        "length_ratio": 1.01,
+        "legacy_coverage": 0.896
+      }
+    },
+    "transcript_translation": "你好，Martin。\n自从你升职后我就没见到你了。\n恭喜你。\n到目前为止进展如何？\n有很多文书工作和电子邮件需要处理，但下周会好一些。\n一位新员工从周一开始加入我的团队。\n我相信这对会有很大的帮助。\n顺便说一句，我正带一位来自 Garland Chemistry 的代表去吃午饭，他们是我们的新客户。\n要不要加入我们？\n我下个季度的商业计划书要在两个小时内交了。\n我昨天才刚开始做。\n祝你好运。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0d117125a971b4c18dcf1e9d1ff8b6b572b8f3836d45ce94374506b0130ccef6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "He will begin working from home.",
         "Some of his customers will be on vacation.",
-        "Asoftware program will be upgraded.",
+        "A software program will be upgraded.",
         "Another employee will be hired."
       ],
       "answer": "D",
       "question": "Why will the man’s work be easier next week?",
-      "answer_explain": "原文依据：听力原文中提到“But next week will be better— @a new st”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Another employee will be hired.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） will the man（男士）’s work（工作） be easier next week?",
+      "answer_explain": "正确答案：D（Another employee will be hired.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) will the man(男士)’s work(工作) be easier next week?",
       "choice_translations": [
-        "A：He will begin working from home.",
-        "B：Some of his customers will be on vacation.",
-        "C：Asoftware program will be upgraded.",
-        "D：Another employee（员工） will be hired."
+        "A:He will begin working from home.",
+        "B:Some of his customers will be on vacation.",
+        "C:A software program will be upgraded.",
+        "D:Another employee(员工) will be hired."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EIS w Hello, Martin. | haven’t seen you since you got",
+      "evidence": "参考听力原文：“There's been a lot of paperwork and emails to take care of, but next week will be better.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EIS w Hello, Martin. | haven’t seen you since you got",
+        "evidence": "参考听力原文：“There's been a lot of paperwork and emails to take care of, but next week will be better.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But next week will be better— @a new st”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Another employee will be hired.）。"
+        "analysis": "正确答案：D（Another employee will be hired.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "A",
       "question": "What does the woman say she will do next?",
-      "answer_explain": "原文依据：听力原文中提到“v My business plan for next quarter is due in two hou”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Attend a business lunch）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do next?",
+      "answer_explain": "正确答案：A（Attend a business lunch）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she will do next?",
       "choice_translations": [
-        "A：Attend a business lunch",
-        "B：Write some reports",
-        "C：Go home for the day",
-        "D：Interview a job applicant"
+        "A:Attend a business lunch",
+        "B:Write some reports",
+        "C:Go home for the day",
+        "D:Interview a job applicant"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EIS w Hello, Martin. | haven’t seen you since you got",
+      "evidence": "参考听力原文：“There's been a lot of paperwork and emails to take care of, but next week will be better.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EIS w Hello, Martin. | haven’t seen you since you got",
+        "evidence": "参考听力原文：“There's been a lot of paperwork and emails to take care of, but next week will be better.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“v My business plan for next quarter is due in two hou”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Attend a business lunch）。"
+        "analysis": "正确答案：A（Attend a business lunch）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "Why does the man say, “My business plan for next quarter is due in two hours”?",
-      "answer_explain": "原文依据：听力原文中提到“v My business plan for next quarter is due in two hou”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To decline an invitation）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） say, “My business plan for next quarter is due in two hours”?",
+      "answer_explain": "正确答案：B（To decline an invitation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the man(男士) say, “My business plan for next quarter is due in two hours”?",
       "choice_translations": [
-        "A：To request a change in work（工作） hours",
-        "B：To decline an invitation",
-        "C：To complain about an employee（员工）",
-        "D：To ask for help with an assignment"
+        "A:To request a change in work(工作) hours",
+        "B:To decline an invitation",
+        "C:To complain about an employee(员工)",
+        "D:To ask for help with an assignment"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 9 段：v My business plan for next quarter is due in two hou",
+      "evidence": "参考听力原文：“My business plan for next quarter is due in two hours.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 9 段：v My business plan for next quarter is due in two hou",
+        "evidence": "参考听力原文：“My business plan for next quarter is due in two hours.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“v My business plan for next quarter is due in two hou”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To decline an invitation）。"
+        "analysis": "正确答案：B（To decline an invitation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

@@ -31,27 +31,47 @@
       "asset_key": "official-4-test-2/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. Some women are trying on hats.\nB. The women are moving a display case.\nC. A vendor is selling some merchandise.\nD. A customer is looking in a mirror.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "227a215319e0e87cb651cfc17bdf29947f59aaf7dcc21e85e908c385d4ad2bc5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 41
+      }
+    },
+    "transcript_translation": "A. 有些女性正在试帽子。\nB. 这些女性正在移动一个展示柜。\nC. 一个摊贩正在出售一些商品。\nD. 一名顾客正在照镜子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "04eea3b9c79619b38ae7deb6eac59fd68c18f1bf65ced8afdc28a04ce75526a9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Some women are trying on hats.",
         "The women are moving a display case.",
-        "Avendor is selling some merchandise.",
+        "A vendor is selling some merchandise.",
         "A customer is looking in a mirror."
       ],
       "answer": "C",
       "difficulty": "medium",
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
-      "answer_explain": "原文依据：照片中可见信息与描述“Avendor is selling some merchandise.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Avendor is selling some merchandise.）。",
+      "answer_explain": "原文依据：照片中可见信息与描述“A vendor is selling some merchandise.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（A vendor is selling some merchandise.）。",
       "choice_translations": [
-        "A：Some women are trying on hats.",
-        "B：The women are moving a display case.",
-        "C：Avendor is selling some merchandise.",
-        "D：A customer（顾客） is looking in a mirror."
+        "A：有些女性正在试帽子。",
+        "B：这些女性正在移动一个展示柜。",
+        "C：一个摊贩正在出售一些商品。",
+        "D：一名顾客正在照镜子。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -61,7 +81,7 @@
         "question_type": "动作 / 状态辨析题",
         "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
         "strategy": "本题属于动作 / 状态辨析题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：照片中可见信息与描述“Avendor is selling some merchandise.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Avendor is selling some merchandise.）。"
+        "analysis": "原文依据：照片中可见信息与描述“A vendor is selling some merchandise.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（A vendor is selling some merchandise.）。"
       },
       "item_id": 3,
       "priority": {
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-4-test-2/p1-3/3"
+      "item_key": "official-4-test-2/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

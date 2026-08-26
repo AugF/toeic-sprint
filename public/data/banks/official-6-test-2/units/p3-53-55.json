@@ -37,9 +37,31 @@
       "asset_key": "official-6-test-2/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "Kw Welcome to the post office.\nHi. I want to send this package to a colleague in\nLondon, and it needs to arrive within four days. Ol\nguess I need to use express mail.\nas w Well, regular mail takes three or four days.\nReally? But with regular mail can I get confirmation\nthat the package arrived?\nEw Well, ®for an extra fee you can have your colleague\nin London sign for the package and you'll get an\ne-mail confirming that it's arrived.\nThanks. I'll do that then.",
-    "transcript_translation": "中文辅助（离线预处理）：Kw Welcome to the post office（办公室）.\nHi.\nI want to send this package to a colleague in\nLondon, and it needs to arrive within four days.\nOl\nguess I need to use express mail.\nas w Well, regular mail takes three or four days.\nReally?\nBut with regular mail can I get confirmation\nthat the package arrived?\nEw Well, ®for an extra fee you can have your colleague\nin London sign for the package and you'll get an\ne-mail confirming that it's arrived.\nThanks.\nI'll do that then.",
-    "content_translation": "中文辅助（离线预处理）：Kw Welcome to the post office（办公室）.\nHi.\nI want to send this package to a colleague in\nLondon, and it needs to arrive within four days.\nOl\nguess I need to use express mail.\nas w Well, regular mail takes three or four days.\nReally?\nBut with regular mail can I get confirmation\nthat the package arrived?\nEw Well, ®for an extra fee you can have your colleague\nin London sign for the package and you'll get an\ne-mail confirming that it's arrived.\nThanks.\nI'll do that then."
+    "transcript": "Welcome to the post office.\nHi, I want to send this package to a colleague in London and it needs to arrive within four days.\nI guess I need to use express mail?\nWell, regular mail takes three or four days.\nReally?\nBut with regular mail, can I get confirmation that the package arrived?\nWell, for an extra fee, you can have your colleague in London sign for the package and you'll get an email confirming that it's arrived.\nThanks.\nI'll do that then.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "903512670c74e125fa93ae54e8a2376624edcfe19e6a0a2204ad9d4fd4936ea4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 84,
+        "legacy_word_count": 85,
+        "length_ratio": 0.988,
+        "legacy_coverage": 0.918
+      }
+    },
+    "transcript_translation": "欢迎光临邮局。\n嗨，我想把这个包裹寄给我在伦敦的一位同事，它需要在四天内到达。\n我猜我需要用快件邮件？\n嗯，普通邮件需要三到四天时间。\n真的吗？\n但用普通邮件，我可以得到确认包裹已到的凭证吗？\n嗯，如果支付额外的费用，您的同事在伦敦可以签收包裹，您会收到一封电子邮件确认它已经到达了。\n谢谢。\n那我这么办。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f047e473b4dd4b153b178e3146276da7986a6c9a91dea1d28421cd1fdff290f0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "A",
       "question": "Why is the man at the post office?",
-      "answer_explain": "原文依据：听力原文中提到“in London sign for the package and you'll get an”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To mail a package）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the man（男士） at the post office（办公室）?",
+      "answer_explain": "正确答案：A（To mail a package）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the man(男士) at the post office(办公室)?",
       "choice_translations": [
-        "A：To mail a package",
-        "B：To buy some stamps",
-        "C：To apply for a job",
-        "D：To pick up some documents"
+        "A:To mail a package",
+        "B:To buy some stamps",
+        "C:To apply for a job",
+        "D:To pick up some documents"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Kw Welcome to the post office.",
+      "evidence": "参考听力原文：“But with regular mail, can I get confirmation that the package arrived?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Kw Welcome to the post office.",
+        "evidence": "参考听力原文：“But with regular mail, can I get confirmation that the package arrived?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“in London sign for the package and you'll get an”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To mail a package）。"
+        "analysis": "正确答案：A（To mail a package）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "D",
       "question": "Why does the woman say, \"regular mail takes three or four days\"?",
-      "answer_explain": "原文依据：听力原文中提到“as w Well, regular mail takes three or four days.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To correct a misunderstanding）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） say, \"regular mail takes three or four days\"?",
+      "answer_explain": "正确答案：D（To correct a misunderstanding）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the woman(女士) say, \"regular mail takes three or four days\"?",
       "choice_translations": [
-        "A：To offer an apology",
-        "B：To express disappointment",
-        "C：To explain a refund policy",
-        "D：To correct a misunderstanding"
+        "A:To offer an apology",
+        "B:To express disappointment",
+        "C:To explain a refund policy",
+        "D:To correct a misunderstanding"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：as w Well, regular mail takes three or four days.",
+      "evidence": "参考听力原文：“Well, regular mail takes three or four days.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：as w Well, regular mail takes three or four days.",
+        "evidence": "参考听力原文：“Well, regular mail takes three or four days.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“as w Well, regular mail takes three or four days.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To correct a misunderstanding）。"
+        "analysis": "正确答案：D（To correct a misunderstanding）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "D",
       "question": "What will the man pay an additional fee for?",
-      "answer_explain": "原文依据：听力原文中提到“But with regular mail can I get confirmation”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A confirmation notice）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） pay an additional fee for?",
+      "answer_explain": "正确答案：D（A confirmation notice）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) pay an additional fee for?",
       "choice_translations": [
-        "A：Packaging materials",
-        "B：Insurance",
-        "C：A passport photo",
-        "D：A confirmation notice"
+        "A:Packaging materials",
+        "B:Insurance",
+        "C:A passport photo",
+        "D:A confirmation notice"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Kw Welcome to the post office.",
+      "evidence": "参考听力原文：“Well, for an extra fee, you can have your colleague in London sign for the package and you'll get an email confirming that it's arrived.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Kw Welcome to the post office.",
+        "evidence": "参考听力原文：“Well, for an extra fee, you can have your colleague in London sign for the package and you'll get an email confirming that it's arrived.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But with regular mail can I get confirmation”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A confirmation notice）。"
+        "analysis": "正确答案：D（A confirmation notice）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

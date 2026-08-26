@@ -40,9 +40,31 @@
       "asset_key": "official-12-test-2/audio/part4/q083-085.mp3",
       "exists": true
     },
-    "transcript": "Olf you're in the market for a new vehicle, look no further\nthan Becker's auto dealerships! You can't find a better locally\nowned dealership than Becker's. © We're special because\nour sales agents are the best in the area-they'll work hard\nbitt cotta\nto match you with the vehicle most suited to your needs.\nAnd, eif you visit next week, you'll also be entered to win\nsignificant prizes with any purchase. Olmagine receiving free\ncar washes for a year! © This is our biggest promotion yet,\nand twenty winners will be selected!",
-    "transcript_translation": "中文辅助（离线预处理）：Olf you're in the market for a new vehicle, look no further\nthan Becker's auto dealerships!\nYou can't find a better locally\nowned dealership than Becker's.\n© We're special because\nour sales agents are the best in the area-they'll work（工作） hard\nbitt cotta\nto match you with the vehicle most suited to your needs.\nAnd, eif you visit next week, you'll also be entered to win\nsignificant prizes with any purchase（购买）.\nOlmagine receiving free\ncar washes for a year!\n© This is our biggest promotion yet,\nand twenty winners will be selected!",
-    "content_translation": "中文辅助（离线预处理）：Olf you're in the market for a new vehicle, look no further\nthan Becker's auto dealerships!\nYou can't find a better locally\nowned dealership than Becker's.\n© We're special because\nour sales agents are the best in the area-they'll work（工作） hard\nbitt cotta\nto match you with the vehicle most suited to your needs.\nAnd, eif you visit next week, you'll also be entered to win\nsignificant prizes with any purchase（购买）.\nOlmagine receiving free\ncar washes for a year!\n© This is our biggest promotion yet,\nand twenty winners will be selected!"
+    "transcript": "If you're in the market for a new vehicle, look no further than Becker's Auto Dealerships.\nYou can't find a better locally owned dealership than Becker's.\nWe're special because our sales agents are the best in the area.\nThey'll work hard to match you with the vehicle most suited to your needs.\nAnd if you visit next week, you'll also be entered to win significant prizes with any purchase.\nImagine receiving free car washes for a year.\nThis is our biggest promotion yet and 20 winners will be selected.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f277e46224cde8fdfeedaf2c88acd2d1610c179a42bbe27c757a9003eadc2eb7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part4/q083-085.mp3",
+      "metrics": {
+        "word_count": 88,
+        "legacy_word_count": 90,
+        "length_ratio": 0.978,
+        "legacy_coverage": 0.922
+      }
+    },
+    "transcript_translation": "如果你正在寻找一辆新车，别去其他地方了，来 Becker's Auto Dealerships。\n你找不到比 Becker's 更好的本地拥有的经销商。\n我们很特别，因为我们的销售代表是该地区最好的。\n他们会努力帮你找到最适合你需求的车辆。\n如果你下周光临，你还可以参与抽奖赢取丰厚的奖品，只要有任何购买。\n想象一下一年免费洗车。\n这是我们迄今为止最大的促销活动，将选出 20 位获奖者。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "203ad2f32c677a35f4318df0b8ce8b602628e7732709a4bd56ac818c8f86179c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "What type of product does the speaker's business sell?",
-      "answer_explain": "原文依据：听力原文中提到“Olf you're in the market for a new vehicle, look no further”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Automobiles）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of product does the speaker（说话者）'s business sell?",
+      "answer_explain": "正确答案：C（Automobiles）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of product does the speaker(说话者)'s business sell?",
       "choice_translations": [
-        "A：Home appliances",
-        "B：Children's clothing",
-        "C：Automobiles",
-        "D：Groceries"
+        "A:Home appliances",
+        "B:Children's clothing",
+        "C:Automobiles",
+        "D:Groceries"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Olf you're in the market for a new vehicle, look no further",
+      "evidence": "参考听力原文：“And if you visit next week, you'll also be entered to win significant prizes with any purchase.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Olf you're in the market for a new vehicle, look no further",
+        "evidence": "参考听力原文：“And if you visit next week, you'll also be entered to win significant prizes with any purchase.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Olf you're in the market for a new vehicle, look no further”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Automobiles）。"
+        "analysis": "正确答案：C（Automobiles）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 83,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "C",
       "question": "According to the speaker, what is special about the business?",
-      "answer_explain": "原文依据：听力原文中提到“Olf you're in the market for a new vehicle, look no further”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It has excellent employees.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） is special about the business?",
+      "answer_explain": "正确答案：C（It has excellent employees.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) is special about the business?",
       "choice_translations": [
-        "A：It offers free delivery.",
-        "B：It offers unique products.",
-        "C：It has excellent employees.",
-        "D：It has positive reviews."
+        "A:It offers free delivery.",
+        "B:It offers unique products.",
+        "C:It has excellent employees.",
+        "D:It has positive reviews."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 3 段：owned dealership than Becker's. © We're special because",
+      "evidence": "参考听力原文：“We're special because our sales agents are the best in the area.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 3 段：owned dealership than Becker's. © We're special because",
+        "evidence": "参考听力原文：“We're special because our sales agents are the best in the area.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Olf you're in the market for a new vehicle, look no further”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It has excellent employees.）。"
+        "analysis": "正确答案：C（It has excellent employees.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 84,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "Why does the speaker say, \"twenty winners will be selected\"?",
-      "answer_explain": "原文依据：听力原文中提到“and twenty winners will be selected!”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To encourage participation）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"twenty winners will be selected\"?",
+      "answer_explain": "正确答案：B（To encourage participation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"twenty winners will be selected\"?",
       "choice_translations": [
-        "A：To correct a misconception",
-        "B：To encourage participation",
-        "C：To reject a criticism",
-        "D：To explain a problem"
+        "A:To correct a misconception",
+        "B:To encourage participation",
+        "C:To reject a criticism",
+        "D:To explain a problem"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：and twenty winners will be selected!",
+      "evidence": "参考听力原文：“This is our biggest promotion yet and 20 winners will be selected.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：and twenty winners will be selected!",
+        "evidence": "参考听力原文：“This is our biggest promotion yet and 20 winners will be selected.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“and twenty winners will be selected!”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To encourage participation）。"
+        "analysis": "正确答案：B（To encourage participation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 85,
       "priority": {

@@ -32,8 +32,28 @@
       "asset_key": "official-10-test-2/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. Handrails have been installed along some steps.\nB. Potted plants have been placed next to an open door.\nC. Some gravel has been poured into a pile.\nD. A walkway is being cleaned by a machine.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9dcd10c538a8421c78d821bd4fc438fa0712d56a2497d26b9fd1379706bdd2fc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 54
+      }
+    },
+    "transcript_translation": "A. 一些扶手已安装在台阶两侧。\nB. 盆栽植物已放置在开门旁边。\nC. 一些碎石已被倒入一堆里。\nD. 一条走道正在被机器清洁。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "562ad638dee7df630809b9f433fa3401b3620d15fe079663ed9b057f9252a5c6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Handrails have been installed along some steps.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（Handrails have been installed along some steps.）。",
       "choice_translations": [
-        "A：Handrails have been installed along some steps.",
-        "B：Potted plants have been placed next to an open door.",
-        "C：Some gravel has been poured into a pile.",
-        "D：A walkway is being cleaned by a machine."
+        "A：一些扶手已安装在台阶两侧。",
+        "B：盆栽植物已放置在开门旁边。",
+        "C：一些碎石已被倒入一堆里。",
+        "D：一条走道正在被机器清洁。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p1-6/6"
+      "item_key": "official-10-test-2/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

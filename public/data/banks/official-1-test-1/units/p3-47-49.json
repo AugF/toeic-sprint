@@ -41,9 +41,31 @@
       "asset_key": "official-1-test-1/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "Are you sure you're going the right way to t\nconference center? It’s taking longer than\nand ®1'm worried we're not going to get the\nthought this was the right way, but now I’m\ndid have driving directions that came with th\nmaterials—® too bad | forgot to bring them \\\nsay ©we'd better stop and find somebody\nhelp us out. | see a store up ahead. Maybe\nthere can tell us which way to go.",
-    "transcript_translation": "您确定这是去 conference center 的正确路了吗？这比预期的要花的时间长，我担心我们不会按时到的。我想这是正确的路，但现在我忘了带的驾驶路线图——真遗憾。你能不能帮我们找个地方？前面好像有家商店。也许他们能告诉我们该往哪个方向走。",
-    "content_translation": "您确定这是去 conference center 的正确路了吗？这比预期的要花的时间长，我担心我们不会按时到的。我想这是正确的路，但现在我忘了带的驾驶路线图——真遗憾。你能不能帮我们找个地方？前面好像有家商店。也许他们能告诉我们该往哪个方向走。"
+    "transcript": "Are you sure you're going the right way to the conference centre?\nIt's taking longer than I expected and I'm worried we're not going to get there on time.\nI thought this was the right way, but now I'm not sure.\nI did have driving directions that came with the conference materials.\nToo bad I forgot to bring them with me.\nI say we'd better stop and find somebody who can help us out.\nI see a store up ahead.\nMaybe someone there can tell us which way to go.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1f0185822bf491f3bd46f2f1e84ad35adf28707a2985f6cb176bb35ce7e31827",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 90,
+        "legacy_word_count": 84,
+        "length_ratio": 1.071,
+        "legacy_coverage": 0.976
+      }
+    },
+    "transcript_translation": "你确定这是去会议中心的正确路吗？\n比我预期的要久，我很担心我们不会按时到达。\n我以为这是正确的路，但现在我不确定了。\n我确实有随会议材料附带的驾驶路线图。\n可惜我忘了带它们来。\n我想我们最好停下来找个能帮到我们的人。\n前面看到一家商店。\n也许那里的某人可以告诉我们该往哪个方向走。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b997ddc72ce431f496c67affba39343683c0d73b5d9cc8c78dcbcac00e2dfe6a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "B",
       "question": "What is the man concerned about?",
-      "answer_explain": "原文依据：听力原文中提到“Are you sure you're going the right way to t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Arriving on time）。",
+      "answer_explain": "正确答案：B（Arriving on time）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Are you sure you're going the right way to t",
+      "evidence": "参考听力原文：“It's taking longer than I expected and I'm worried we're not going to get there on time.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Are you sure you're going the right way to t",
+        "evidence": "参考听力原文：“It's taking longer than I expected and I'm worried we're not going to get there on time.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Are you sure you're going the right way to t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Arriving on time）。"
+        "analysis": "正确答案：B（Arriving on time）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士担心什么？",
+      "question_translation": "男士担心什么?",
       "choice_translations": [
-        "A：找不到停车位",
-        "B：不能按时到达",
-        "C：需要支付额外费用",
-        "D：没有足够的物资"
+        "A:找不到停车位",
+        "B:不能按时到达",
+        "C:需要支付额外费用",
+        "D:没有足够的物资"
       ],
       "item_id": 47,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "D",
       "question": "What did the woman forget to do?",
-      "answer_explain": "原文依据：听力原文中提到“did have driving directions that came with th”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Bring some directions）。",
+      "answer_explain": "正确答案：D（Bring some directions）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Are you sure you're going the right way to t",
+      "evidence": "参考听力原文：“I did have driving directions that came with the conference materials.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Are you sure you're going the right way to t",
+        "evidence": "参考听力原文：“I did have driving directions that came with the conference materials.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“did have driving directions that came with th”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Bring some directions）。"
+        "analysis": "正确答案：D（Bring some directions）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士忘记做什么了？",
+      "question_translation": "女士忘记做什么了?",
       "choice_translations": [
-        "A：安排会议",
-        "B：预定房间",
-        "C：通知一些同事",
-        "D：带上一些路线图"
+        "A:安排会议",
+        "B:预定房间",
+        "C:通知一些同事",
+        "D:带上一些路线图"
       ],
       "item_id": 48,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "C",
       "question": "What does the man suggest?",
-      "answer_explain": "原文依据：听力原文中提到“Are you sure you're going the right way to t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Asking for assistance）。",
+      "answer_explain": "正确答案：C（Asking for assistance）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Are you sure you're going the right way to t",
+      "evidence": "参考听力原文：“It's taking longer than I expected and I'm worried we're not going to get there on time.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Are you sure you're going the right way to t",
+        "evidence": "参考听力原文：“It's taking longer than I expected and I'm worried we're not going to get there on time.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Are you sure you're going the right way to t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Asking for assistance）。"
+        "analysis": "正确答案：C（Asking for assistance）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士建议什么？",
+      "question_translation": "男士建议什么?",
       "choice_translations": [
-        "A：参加一个研讨会",
-        "B：买一张地图",
-        "C：请求帮助",
-        "D：给会议组织者打电话"
+        "A:参加一个研讨会",
+        "B:买一张地图",
+        "C:请求帮助",
+        "D:给会议组织者打电话"
       ],
       "item_id": 49,
       "priority": {

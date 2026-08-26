@@ -39,9 +39,33 @@
       "asset_key": "official-5-test-1/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "Hello. Welcome to Min's Photography Studio.\nhk5d Mins5873015\nThanks. © You must be new to the area. I just noticed\nyour sign outside.\neYes, I opened this shop about a month ago.\nEK w Well, my name's Olivia Sanchez. I'm the president\nk. $02 Olivia Sanchez C9. Clayborne /It*\nof the Clayborne Small Business Association. O\nstopped by to see if you'd be interested in joining our\norganization. We're local business owners who meet\nmonthly to share information and network.\nBm That sounds interesting, but I'm not familiar with your\ngroup. I'd like to know more before making a decision.\nN2 Sure. ® You should check out our Web site at\nClayborneSBA.com. Olt has a calendar that shows all\nof our upcoming events.",
-    "transcript_translation": "中文辅助（离线预处理）：Hello.\nWelcome to Min's Photography Studio.\nhk5d Mins5873015\nThanks.\n© You must be new to the area.\nI just noticed\nyour sign outside.\neYes, I opened this shop about a month ago.\nEK w Well, my name's Olivia Sanchez.\nI'm the president\nk.\n$02 Olivia Sanchez C9.\nClayborne /It*\nof the Clayborne Small Business Association.\nO\nstopped by to see if you'd be interested in joining our\norganization.\nWe're local business owners who（谁） meet\nmonthly to share information（信息） and network.\nBm That sounds interesting, but I'm not familiar with your\ngroup.\nI'd like to know more before making a decision.\nN2 Sure.\n® You should check out our Web site at\nClayborneSBA.com.\nOlt has a calendar that shows all\nof our upcoming events.",
-    "content_translation": "中文辅助（离线预处理）：Hello.\nWelcome to Min's Photography Studio.\nhk5d Mins5873015\nThanks.\n© You must be new to the area.\nI just noticed\nyour sign outside.\neYes, I opened this shop about a month ago.\nEK w Well, my name's Olivia Sanchez.\nI'm the president\nk.\n$02 Olivia Sanchez C9.\nClayborne /It*\nof the Clayborne Small Business Association.\nO\nstopped by to see if you'd be interested in joining our\norganization.\nWe're local business owners who（谁） meet\nmonthly to share information（信息） and network.\nBm That sounds interesting, but I'm not familiar with your\ngroup.\nI'd like to know more before making a decision.\nN2 Sure.\n® You should check out our Web site at\nClayborneSBA.com.\nOlt has a calendar that shows all\nof our upcoming events."
+    "transcript": "Hello, welcome to Men's Photography Studio.\nThanks.\nYou must be new to the area.\nI just noticed your sign outside.\nYes, I opened this shop about a month ago.\nWell, my name's Olivia Sanchez.\nI'm the president of the Claiborne Small Business Association.\nI stopped by to see if you'd be interested in joining our organization.\nWe're local business owners who meet monthly to share information and network.\nThat sounds interesting, but I'm not familiar with your group.\nI'd like to know more before making a decision.\nSure.\nYou should check out our website at claybornsba. com.\nIt has a calendar that shows all of our upcoming events.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "b5e98ec8132ae49df225428c67b63681167434dff72a77ccf7f0b97bf0c00303",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 108,
+        "legacy_word_count": 118,
+        "length_ratio": 0.915,
+        "legacy_coverage": 0.839,
+        "prompted_failure": "missing spoken Questions 50 through 52 introduction"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "您好，欢迎来到 Men's Photography Studio。\n谢谢。\n你一定是这个地区的新手。\n我刚才注意到你店外的招牌。\n是的，我大约一个月前开的这家店。\n嗯，我叫 Olivia Sanchez。\n我是 Claiborne Small Business Association 的总裁。\n我路过这里想看看您是否有兴趣加入我们的组织。\n我们是当地的企业主，每月聚会分享信息和建立人脉网络。\n听起来很有趣，但我对你们的团体不太了解。\n我想在做决定之前了解更多一些。\n当然。\n你应该查看我们在 claybornsba. com 的网站。\n上面有一个日历，显示了我们所有即将举行的活动。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "cb172965e69a5cd2239e7b148b8ea7919636b947d292ad2506bbd2504d86df91"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +77,23 @@
       ],
       "answer": "A",
       "question": "What did the man recently do?",
-      "answer_explain": "原文依据：听力原文中提到“eYes, I opened this shop about a month ago.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He opened a shop.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） did the man（男士） recently do?",
+      "answer_explain": "正确答案：A（He opened a shop.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) did the man(男士) recently do?",
       "choice_translations": [
-        "A：He opened a shop.",
-        "B：He published an article.",
-        "C：He graduated from a university.",
-        "D：He attended a city council meeting（会议）."
+        "A:He opened a shop.",
+        "B:He published an article.",
+        "C:He graduated from a university.",
+        "D:He attended a city council meeting(会议)."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hello. Welcome to Min's Photography Studio.",
+      "evidence": "参考听力原文：“Yes, I opened this shop about a month ago.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hello. Welcome to Min's Photography Studio.",
+        "evidence": "参考听力原文：“Yes, I opened this shop about a month ago.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“eYes, I opened this shop about a month ago.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He opened a shop.）。"
+        "analysis": "正确答案：A（He opened a shop.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -105,23 +129,23 @@
       ],
       "answer": "D",
       "question": "Why did the woman stop by a business?",
-      "answer_explain": "原文依据：听力原文中提到“of the Clayborne Small Business Association.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To invite the man to join an organization）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） did the woman（女士） stop by a business?",
+      "answer_explain": "正确答案：D（To invite the man to join an organization）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) did the woman(女士) stop by a business?",
       "choice_translations": [
-        "A：To conduct an inspection",
-        "B：To explain the terms of a contract",
-        "C：To provide details about a city tour",
-        "D：To invite the man（男士） to join an organization"
+        "A:To conduct an inspection",
+        "B:To explain the terms of a contract",
+        "C:To provide details about a city tour",
+        "D:To invite the man(男士) to join an organization"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 8 段：of the Clayborne Small Business Association. O",
+      "evidence": "参考听力原文：“We're local business owners who meet monthly to share information and network.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 8 段：of the Clayborne Small Business Association. O",
+        "evidence": "参考听力原文：“We're local business owners who meet monthly to share information and network.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“of the Clayborne Small Business Association.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To invite the man to join an organization）。"
+        "analysis": "正确答案：D（To invite the man to join an organization）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -157,23 +181,23 @@
       ],
       "answer": "B",
       "question": "According to the woman, what is available on a Web site?",
-      "answer_explain": "原文依据：听力原文中提到“Olt has a calendar that shows all”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An event calendar）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the woman（女士）, what（什么） is available（可用的） on a Web site?",
+      "answer_explain": "正确答案：B（An event calendar）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the woman(女士), what(什么) is available(可用的) on a Web site?",
       "choice_translations": [
-        "A：A photo gallery",
-        "B：An event calendar",
-        "C：A registration form",
-        "D：A list of fees"
+        "A:A photo gallery",
+        "B:An event calendar",
+        "C:A registration form",
+        "D:A list of fees"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hello. Welcome to Min's Photography Studio.",
+      "evidence": "参考听力原文：“It has a calendar that shows all of our upcoming events.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hello. Welcome to Min's Photography Studio.",
+        "evidence": "参考听力原文：“It has a calendar that shows all of our upcoming events.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Olt has a calendar that shows all”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An event calendar）。"
+        "analysis": "正确答案：B（An event calendar）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

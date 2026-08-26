@@ -39,9 +39,32 @@
       "asset_key": "official-5-test-1/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nMr. Martin, Mr. Clemens-please come in.\nElm Thank you, Ms. Perkins. ® We're excited to show you\nthe advertising campaign that our agency put together\nfor your business.\nl'm looking forward to seeing your proposal. My\nfurniture company is doing well, but I'm sure we\ncould sell even more tables, desks, and chairs if we\nadvertised more widely.\nI agree with you. While I prepare to present our plan for\nthe television commercial, Mr. Clemens, why don't you\nshare our designs for the print ad?\nEl Sure. As you can see, we've come up with several\ndifferent ideas for a newspaper advertisement.\nCan you tell me what you think about this first ad,\nPerkins dho\nMs. Perkins?",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nMr.\nMartin, Mr.\nClemens-please（请） come in.\nElm Thank（感谢） you, Ms.\nPerkins.\n® We're excited to show you\nthe advertising campaign that our agency put together\nfor your business.\nl'm looking forward to seeing your proposal.\nMy\nfurniture company（公司） is doing well, but I'm sure we\ncould sell even more tables, desks, and chairs if we\nadvertised more widely.\nI agree with you.\nWhile I prepare to present our plan for\nthe television commercial, Mr.\nClemens, why（为什么） don't you\nshare our designs for the print ad?\nEl Sure.\nAs you can see, we've come up with several\ndifferent ideas for a newspaper advertisement.\nCan you tell me what（什么） you think about this first ad,\nPerkins dho\nMs.\nPerkins?",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nMr.\nMartin, Mr.\nClemens-please（请） come in.\nElm Thank（感谢） you, Ms.\nPerkins.\n® We're excited to show you\nthe advertising campaign that our agency put together\nfor your business.\nl'm looking forward to seeing your proposal.\nMy\nfurniture company（公司） is doing well, but I'm sure we\ncould sell even more tables, desks, and chairs if we\nadvertised more widely.\nI agree with you.\nWhile I prepare to present our plan for\nthe television commercial, Mr.\nClemens, why（为什么） don't you\nshare our designs for the print ad?\nEl Sure.\nAs you can see, we've come up with several\ndifferent ideas for a newspaper advertisement.\nCan you tell me what（什么） you think about this first ad,\nPerkins dho\nMs.\nPerkins?"
+    "transcript": "Mr. Martin, Mr. Clemens, please come in.\nThank you, Ms. Perkins.\nWe're excited to show you the advertising campaign that our agency put together for your business.\nI'm looking forward to seeing your proposal.\nMy furniture company is doing well, but I'm sure we could sell even more tables, desks, and chairs if we advertise more widely.\nI agree with you.\nWhile I prepare to present our plan for the television commercial, Mr. Clemens, why don't you share our designs for the print ad?\nSure.\nAs you can see, we've come up with several different ideas for a newspaper advertisement.\nCan you tell me what you think about this first ad, Ms. Perkins?\nThe",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f522a7660bff4f7a09ff21b3999c52457a81e4b9ad43b629d20c6715b98ddd5f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 114,
+        "legacy_word_count": 117,
+        "length_ratio": 0.974,
+        "legacy_coverage": 0.923
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "Martin 先生，Clemens 先生，请进。\n谢谢您，Perkins 女士。\n我们很高兴向您展示我们公司为您的业务准备的广告宣传活动。\n我期待看到您的提案。\n我的家具公司经营得很好，但我相信如果我们进行更广泛的广告宣传，还能卖出更多的桌子、书桌和椅子。\n我同意你的看法。\n在我准备介绍电视商业广告方案时，Clemens 先生，您能分享一下我们平面广告的设计吗？\n当然可以。\n正如您所看到的，我们为报纸广告想出了几个不同的创意。\nPerkins 女士，您觉得第一则广告怎么样？\nThe",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a5aa3e44508e08a3a3040f083207984b86d046c3167e99e817adc78c0e29b83a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "C",
       "question": "What are the speakers meeting to discuss?",
-      "answer_explain": "原文依据：听力原文中提到“the advertising campaign that our agency put together”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An advertising campaign）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers meeting（会议） to discuss?",
+      "answer_explain": "正确答案：C（An advertising campaign）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the speakers meeting(会议) to discuss?",
       "choice_translations": [
-        "A：A small-business loan",
-        "B：A new clothing line",
-        "C：An advertising campaign",
-        "D：A building floor plan"
+        "A:A small-business loan",
+        "B:A new clothing line",
+        "C:An advertising campaign",
+        "D:A building floor plan"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“We're excited to show you the advertising campaign that our agency put together for your business.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“We're excited to show you the advertising campaign that our agency put together for your business.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the advertising campaign that our agency put together”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An advertising campaign）。"
+        "analysis": "正确答案：C（An advertising campaign）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 59,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "A",
       "question": "What does the woman's company sell?",
-      "answer_explain": "原文依据：听力原文中提到“furniture company is doing well, but I'm sure we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Furniture）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士）'s company（公司） sell?",
+      "answer_explain": "正确答案：A（Furniture）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士)'s company(公司) sell?",
       "choice_translations": [
-        "A：Furniture",
-        "B：Fabric",
-        "C：Electronics",
-        "D：Luggage"
+        "A:Furniture",
+        "B:Fabric",
+        "C:Electronics",
+        "D:Luggage"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：furniture company is doing well, but I'm sure we",
+      "evidence": "参考听力原文：“My furniture company is doing well, but I'm sure we could sell even more tables, desks, and chairs if we advertise more widely.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：furniture company is doing well, but I'm sure we",
+        "evidence": "参考听力原文：“My furniture company is doing well, but I'm sure we could sell even more tables, desks, and chairs if we advertise more widely.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“furniture company is doing well, but I'm sure we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Furniture）。"
+        "analysis": "正确答案：A（Furniture）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 60,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "C",
       "question": "What will the woman most likely do next?",
-      "answer_explain": "原文依据：听力原文中提到“the advertising campaign that our agency put together”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Review a budget）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） most likely（最可能） do next?",
+      "answer_explain": "正确答案：C（Review a budget）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) most likely(最可能) do next?",
       "choice_translations": [
-        "A：Return an order（订单）",
-        "B：Tour a building",
-        "C：Review a budget",
-        "D：Provide some feedback"
+        "A:Return an order(订单)",
+        "B:Tour a building",
+        "C:Review a budget",
+        "D:Provide some feedback"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“My furniture company is doing well, but I'm sure we could sell even more tables, desks, and chairs if we advertise more widely.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“My furniture company is doing well, but I'm sure we could sell even more tables, desks, and chairs if we advertise more widely.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the advertising campaign that our agency put together”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Review a budget）。"
+        "analysis": "正确答案：C（Review a budget）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 61,
       "priority": {

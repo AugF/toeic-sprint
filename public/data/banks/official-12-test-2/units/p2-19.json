@@ -28,8 +28,28 @@
       "asset_key": "official-12-test-2/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Your presentation will start in ten minutes, right?",
-    "content_translation": "中文辅助（离线预处理）：Your presentation will start in ten minutes, right?"
+    "transcript": "Your presentation will start in 10 minutes, right?\nA. She'll submit her topic tomorrow.\nB. I enjoyed that session too.\nC. Yes, if they can get the projector to work.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "25340aec54460a45886cdff0b53d1d1e5770870a5e34d1fe3cb04bf76a017972",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "你的演讲将在 10 分钟开始，对吗？\nA. 她明天会提交她的主题。\nB. 我也喜欢那个环节。\nC. 是的，如果他们能让投影仪工作的话。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3740ba190a5e87d3ab658c98cb9f88327ced44d185b7aee4965c044ac592b61d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Yes, if they can get the projector to work."
       ],
       "answer": "C",
-      "question": "Your presentation will start in ten minutes, right?",
+      "question": "Your presentation will start in 10 minutes, right?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Your presentation will start in ten minutes, right?”，自然应答是“Yes, if they can get the projector to work.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, if they can get the projector to work.）。",
-      "question_translation": "中文辅助（离线预处理）：Your presentation will start in ten minutes, right?",
+      "answer_explain": "原文依据：问句或陈述是“Your presentation will start in 10 minutes, right?”，自然应答是“Yes, if they can get the projector to work.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, if they can get the projector to work.）。",
+      "question_translation": "你的演讲将在 10 分钟开始,对吗?",
       "choice_translations": [
-        "A：She'll submit her topic tomorrow.",
-        "B：I enjoyed that session too.",
-        "C：Yes, if they can get the projector to work（工作）."
+        "A：她明天会提交她的主题。",
+        "B：我也喜欢那个环节。",
+        "C：是的,如果他们能让投影仪工作的话。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Your presentation will start in ten minutes, right?",
+      "evidence": "参考原文第 1 段：Your presentation will start in 10 minutes, right?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Your presentation will start in ten minutes, right?",
+        "evidence": "参考原文第 1 段：Your presentation will start in 10 minutes, right?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Your presentation will start in ten minutes, right?”，自然应答是“Yes, if they can get the projector to work.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, if they can get the projector to work.）。"
+        "analysis": "原文依据：问句或陈述是“Your presentation will start in 10 minutes, right?”，自然应答是“Yes, if they can get the projector to work.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, if they can get the projector to work.）。"
       },
       "item_id": 19,
       "priority": {

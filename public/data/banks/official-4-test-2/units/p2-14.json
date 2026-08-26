@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-2/audio/part2/q014.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：im Why（为什么） don't we check the weather before we | ER w",
-    "content_translation": "中文辅助（离线预处理）：im Why（为什么） don't we check the weather before we | ER w"
+    "transcript": "Why don't we check the weather before we leave?\nA. Okay, I'll do that.\nB. About seven days.\nC. No, a checking account.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a2bf52d265c253329121b853ed036633a88f8c87fa21a0e698cd726f666e24b4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q014.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "我们离开前为什么不查一下天气呢？\nA. 好的，我会做到的。\nB. 大约七天。\nC. 不，是支票账户。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7fc071768000c249b1bb5e884b4644ac92d50bda113a66b7b1b5e5986f05bb80"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "OK, I'll do that.",
+        "Okay, I'll do that.",
         "About seven days.",
         "No, a checking account."
       ],
       "answer": "A",
-      "question": "im Why don't we check the weather before we | ER w",
+      "question": "Why don't we check the weather before we leave?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“im Why don't we check the weather before we | ER w”，自然应答是“OK, I'll do that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（OK, I'll do that.）。",
-      "question_translation": "中文辅助（离线预处理）：im Why（为什么） don't we check the weather before we | ER w",
+      "answer_explain": "原文依据：问句或陈述是“Why don't we check the weather before we leave?”，自然应答是“Okay, I'll do that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Okay, I'll do that.）。",
+      "question_translation": "我们离开前为什么不查一下天气呢?",
       "choice_translations": [
-        "A：OK, I'll do that.",
-        "B：About seven days.",
-        "C：No, a checking account."
+        "A：好的,我会做到的。",
+        "B：大约七天。",
+        "C：不,是支票账户。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：im Why don't we check the weather before we | ER w",
+      "evidence": "参考原文第 1 段：Why don't we check the weather before we leave?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：im Why don't we check the weather before we | ER w",
+        "evidence": "参考原文第 1 段：Why don't we check the weather before we leave?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“im Why don't we check the weather before we | ER w”，自然应答是“OK, I'll do that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（OK, I'll do that.）。"
+        "analysis": "原文依据：问句或陈述是“Why don't we check the weather before we leave?”，自然应答是“Okay, I'll do that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Okay, I'll do that.）。"
       },
       "item_id": 14,
       "priority": {

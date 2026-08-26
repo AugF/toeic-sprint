@@ -40,37 +40,59 @@
       "asset_key": "official-1-test-2/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "Hello, Oscar—it’s Tanya from the Cardona Museum.\nUnfortunately our budget’s been cut, so we'll have to\ndelay some of the renovations we've asked you to do.\nSv Ah—that's too bad. @Do you know which parts of the\nproject you'd like to put off?\nWell, | know we talked about © adding a library wing on\nthe west side of the building—but that’s very expensive.\nSo, if we don’t make that addition, that’s all we may need\nto cut.\nYou know, that’s not a bad idea. @Let’s see how much\nyou'd save if | take the library out of the renovation\nproposal. |’ll e-mail you a revised estimate this afternoon.",
-    "transcript_translation": "您好，Oscar——我是来自 Cardona Museum 的 Tanya。不幸的是，我们的预算被削减了，所以我们不得不推迟一些我们要求您做的翻修工程。\n啊——那太遗憾了。你知道项目哪些部分可以推迟吗？嗯，我知道我们谈到过在建筑西侧增加一个图书馆翼楼——但那非常昂贵。\n所以，如果我们不增加这个部分，那就是我们可以削减的全部了。你知道，这不是个坏主意。让我们看看如果我把图书馆从翻修提案中去掉能省多少钱。我今天下午会给您发一份修改后的估价单。",
-    "content_translation": "您好，Oscar——我是来自 Cardona Museum 的 Tanya。不幸的是，我们的预算被削减了，所以我们不得不推迟一些我们要求您做的翻修工程。\n啊——那太遗憾了。你知道项目哪些部分可以推迟吗？嗯，我知道我们谈到过在建筑西侧增加一个图书馆翼楼——但那非常昂贵。\n所以，如果我们不增加这个部分，那就是我们可以削减的全部了。你知道，这不是个坏主意。让我们看看如果我把图书馆从翻修提案中去掉能省多少钱。我今天下午会给您发一份修改后的估价单。"
+    "transcript": "Hello, Oscar.\nIt's Tanya from the Cardona Museum.\nUnfortunately, our budget's been cut, so we'll have to delay some of the renovations we've asked you to do.\nAh, that's too bad.\nDo you know which parts of the project you'd like to put off?\nWell, I know we talked about adding a library wing on the west side of the building, but that's very expensive.\nSo if we don't make that addition, that's all we may need to cut.\nYou know, that's not a bad idea.\nLet's see how much you'd save if I take the library out of the renovation proposal.\nI'll email you a revised estimate this afternoon.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5436c4bd0039e56f1d33e1170c94ee186197c372f2f1c53b3f632d50a04eefb9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 110,
+        "legacy_word_count": 108,
+        "length_ratio": 1.019,
+        "legacy_coverage": 0.991
+      }
+    },
+    "transcript_translation": "你好，Oscar。\n我是来自 Cardona 博物馆的 Tanya。\n很遗憾，我们的预算被削减了，所以我们不得不推迟一些您要求做的翻修工程。\n啊，太可惜了。\n你知道项目哪些部分可以延期吗？\n嗯，我知道我们讨论过在建筑西侧增加一个图书馆翼楼，但这非常昂贵。\n那么如果我们不增加这个部分，那就是我们可能需要削减的全部了。\n你知道，这不是个坏主意。\n让我看看如果我把图书馆从翻修提案中移除，您能节省多少费用。\n我今天下午会给您发送一份修改后的估算报告。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0deed054aae186afd064e58554acaeaac842580a389bac368fd38ec4a057d2a3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Adeadline has been moved up.",
+        "A deadline has been moved up.",
         "Some funding has been reduced.",
         "Some materials have not been delivered.",
         "An architect is not available."
       ],
       "answer": "B",
-      "question": "What is the problem? 62.",
-      "answer_explain": "原文依据：听力原文中提到“delay some of the renovations we've asked you to do.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some funding has been reduced.）。",
-      "question_translation": "问题是什么？",
+      "question": "What is the problem?",
+      "answer_explain": "正确答案：B（Some funding has been reduced.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "问题是什么?",
       "choice_translations": [
-        "A：截止日期提前了。",
-        "B：部分资金减少了。",
-        "C：一些材料没有送达。",
-        "D：一位建筑师不可用。"
+        "A:截止日期提前了。",
+        "B:部分资金减少了。",
+        "C:一些材料没有送达。",
+        "D:一位建筑师不可用。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hello, Oscar—it’s Tanya from the Cardona Museum.",
+      "evidence": "参考听力原文：“Unfortunately, our budget's been cut, so we'll have to delay some of the renovations we've asked you to do.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hello, Oscar—it’s Tanya from the Cardona Museum.",
+        "evidence": "参考听力原文：“Unfortunately, our budget's been cut, so we'll have to delay some of the renovations we've asked you to do.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“delay some of the renovations we've asked you to do.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some funding has been reduced.）。"
+        "analysis": "正确答案：B（Some funding has been reduced.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -100,30 +122,30 @@
     },
     {
       "choices": [
-        "Alibrary addition",
+        "A library addition",
         "Some roof repairs",
         "An electrical system upgrade",
         "Some window replacements"
       ],
       "answer": "A",
-      "question": "Which part of the renovations will likely be postponed? 63.",
-      "answer_explain": "原文依据：听力原文中提到“So, if we don’t make that addition, that’s all we may need”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Alibrary addition）。",
-      "question_translation": "哪些翻修部分可能会推迟？",
+      "question": "Which part of the renovations will likely be postponed?",
+      "answer_explain": "正确答案：A（A library addition）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "哪些翻修部分可能会推迟?",
       "choice_translations": [
-        "A：增加图书馆",
-        "B：一些屋顶维修",
-        "C：一个电气系统升级",
-        "D：一些窗户更换"
+        "A:增加图书馆",
+        "B:一些屋顶维修",
+        "C:一个电气系统升级",
+        "D:一些窗户更换"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：delay some of the renovations we've asked you to do.",
+      "evidence": "参考听力原文：“Well, I know we talked about adding a library wing on the west side of the building, but that's very expensive.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：delay some of the renovations we've asked you to do.",
+        "evidence": "参考听力原文：“Well, I know we talked about adding a library wing on the west side of the building, but that's very expensive.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“So, if we don’t make that addition, that’s all we may need”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Alibrary addition）。"
+        "analysis": "正确答案：A（A library addition）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -156,27 +178,27 @@
         "He would like to hear more suggestions.",
         "He prefers the original plan.",
         "He agrees with the proposed solution.",
-        "He has a better idea. _"
+        "He has a better idea."
       ],
       "answer": "C",
-      "question": "What does the man mean when he says, 64. “that’s not a bad idea”?",
-      "answer_explain": "原文依据：听力原文中提到“you'd save if | take the library out of the renovation”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He agrees with the proposed solution.）。",
-      "question_translation": "当男士说“这不是个坏主意”是什么意思？",
+      "question": "What does the man mean when he says, “that’s not a bad idea”?",
+      "answer_explain": "正确答案：C（He agrees with the proposed solution.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "当男士说“这不是个坏主意”是什么意思?",
       "choice_translations": [
-        "A：他想听更多建议。",
-        "B：他更喜欢原来的计划。",
-        "C：他同意提出的解决方案。",
-        "D：他有更好的主意。"
+        "A:他想听更多建议。",
+        "B:他更喜欢原来的计划。",
+        "C:他同意提出的解决方案。",
+        "D:他有更好的主意。"
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：Hello, Oscar—it’s Tanya from the Cardona Museum.",
+      "evidence": "参考听力原文：“You know, that's not a bad idea.”",
       "strategy": "本题属于否定事实题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：Hello, Oscar—it’s Tanya from the Cardona Museum.",
+        "evidence": "参考听力原文：“You know, that's not a bad idea.”",
         "strategy": "本题属于否定事实题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“you'd save if | take the library out of the renovation”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He agrees with the proposed solution.）。"
+        "analysis": "正确答案：C（He agrees with the proposed solution.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

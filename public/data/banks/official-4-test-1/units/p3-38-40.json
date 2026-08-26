@@ -39,37 +39,59 @@
       "asset_key": "official-4-test-1/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "Hi. 9| ordered a set of dishes from your company\nweeks ago, but | haven’t received the order yet. My\norder number is 785.\nI'm really sorry, but ®the dishes you ordered were\nout of stock. But it looks like we'll be getting a new\nshipment tomorrow.\nh no. ®1 really wanted to use them for a dinner pz\nI’m having this weekend.\nWell, today’s only Tuesday. I'll make sure that the\ndishes are sent out as soon as they arrive. They sh\narrive in time for your dinner party.",
-    "transcript_translation": "中文辅助（离线预处理）：Hi.\n9| ordered a set of dishes from your company（公司）\nweeks ago, but | haven’t received the order（订单） yet.\nMy\norder（订单） number is 785.\nI'm really sorry, but ®the dishes you ordered were\nout of stock.\nBut it looks like we'll be getting a new\nshipment tomorrow.\nh no.\n®1 really wanted to use them for a dinner pz\nI’m having this weekend.\nWell, today’s only Tuesday.\nI'll make sure that the\ndishes are sent out as soon as they arrive.\nThey sh\narrive in time for your dinner party.",
-    "content_translation": "中文辅助（离线预处理）：Hi.\n9| ordered a set of dishes from your company（公司）\nweeks ago, but | haven’t received the order（订单） yet.\nMy\norder（订单） number is 785.\nI'm really sorry, but ®the dishes you ordered were\nout of stock.\nBut it looks like we'll be getting a new\nshipment tomorrow.\nh no.\n®1 really wanted to use them for a dinner pz\nI’m having this weekend.\nWell, today’s only Tuesday.\nI'll make sure that the\ndishes are sent out as soon as they arrive.\nThey sh\narrive in time for your dinner party."
+    "transcript": "Hi.\nI ordered a set of dishes from your company weeks ago, but I haven't received the order yet.\nMy order number is 785.\nI'm really sorry, but the dishes you ordered were out of stock, but it looks like we'll be getting a new shipment tomorrow.\nOh, no.\nI really wanted to use them for a dinner party I'm having this weekend.\nWell, today's only Tuesday.\nI'll make sure that the dishes are sent out as soon as they arrive.\nThey should arrive in time for your dinner party.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "dd91ffaa4ad725e55100040e19f2b8f20bb4cb8683d88bdd44f1abf86cab3ae4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 89,
+        "legacy_word_count": 86,
+        "length_ratio": 1.035,
+        "legacy_coverage": 0.93
+      }
+    },
+    "transcript_translation": "嗨。\n几周前我向贵公司订购了一套餐具，但还没有收到货。\n我的订单号是 785。\n非常抱歉，您订的餐具缺货了，但看起来我们明天会到一批新货。\n哦，不。\n我真的很想用它们来举办本周末的一次晚宴。\n嗯，今天才周二。\n我会确保这些餐具一到就会发出。\n它们应该能赶上您的晚宴。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5e3a0345f9e59ff9c253ac1e9e55fd8f702e9db8e286d8f9bee422afcfb1c340"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Adining table",
-        "Akitchen appliance",
-        "Aset of dishes",
-        "Acomputer"
+        "A dining table",
+        "A kitchen appliance",
+        "A set of dishes",
+        "A computer"
       ],
       "answer": "C",
       "question": "What product are the speakers discussing?",
-      "answer_explain": "原文依据：听力原文中提到“dishes are sent out as soon as they arrive.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Aset of dishes）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） product are the speakers discussing?",
+      "answer_explain": "正确答案：C（A set of dishes）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) product are the speakers discussing?",
       "choice_translations": [
-        "A：Adining table",
-        "B：Akitchen appliance",
-        "C：Aset of dishes",
-        "D：Acomputer"
+        "A:A dining table",
+        "B:A kitchen appliance",
+        "C:A set of dishes",
+        "D:A computer"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi. 9| ordered a set of dishes from your company",
+      "evidence": "参考听力原文：“I ordered a set of dishes from your company weeks ago, but I haven't received the order yet.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi. 9| ordered a set of dishes from your company",
+        "evidence": "参考听力原文：“I ordered a set of dishes from your company weeks ago, but I haven't received the order yet.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“dishes are sent out as soon as they arrive.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Aset of dishes）。"
+        "analysis": "正确答案：C（A set of dishes）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -100,28 +122,28 @@
       "choices": [
         "An item is temporarily unavailable.",
         "Some boxes were damaged.",
-        "Acomputer system needs repair.",
-        "Acompany event was rescheduled."
+        "A computer system needs repair.",
+        "A company event was rescheduled."
       ],
       "answer": "A",
       "question": "What does the woman inform the man about?",
-      "answer_explain": "原文依据：听力原文中提到“weeks ago, but | haven’t received the order yet.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An item is temporarily unavailable.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） inform the man（男士） about?",
+      "answer_explain": "正确答案：A（An item is temporarily unavailable.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) inform the man(男士) about?",
       "choice_translations": [
-        "A：An item is temporarily unavailable.",
-        "B：Some boxes were damaged.",
-        "C：Acomputer system needs repair.",
-        "D：Acompany event was rescheduled."
+        "A:An item is temporarily unavailable.",
+        "B:Some boxes were damaged.",
+        "C:A computer system needs repair.",
+        "D:A company event was rescheduled."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Hi. 9| ordered a set of dishes from your company",
+      "evidence": "参考听力原文：“I'm really sorry, but the dishes you ordered were out of stock, but it looks like we'll be getting a new shipment tomorrow.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Hi. 9| ordered a set of dishes from your company",
+        "evidence": "参考听力原文：“I'm really sorry, but the dishes you ordered were out of stock, but it looks like we'll be getting a new shipment tomorrow.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“weeks ago, but | haven’t received the order yet.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An item is temporarily unavailable.）。"
+        "analysis": "正确答案：A（An item is temporarily unavailable.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What will the man do this weekend?",
-      "answer_explain": "原文依据：听力原文中提到“arrive in time for your dinner party.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Host a dinner party）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） do this weekend?",
+      "answer_explain": "正确答案：C（Host a dinner party）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) do this weekend?",
       "choice_translations": [
-        "A：Check his bank account",
-        "B：Pick up a package",
-        "C：Host a dinner party",
-        "D：Set up a display"
+        "A:Check his bank account",
+        "B:Pick up a package",
+        "C:Host a dinner party",
+        "D:Set up a display"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：I’m having this weekend.",
+      "evidence": "参考听力原文：“I really wanted to use them for a dinner party I'm having this weekend.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：I’m having this weekend.",
+        "evidence": "参考听力原文：“I really wanted to use them for a dinner party I'm having this weekend.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“arrive in time for your dinner party.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Host a dinner party）。"
+        "analysis": "正确答案：C（Host a dinner party）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

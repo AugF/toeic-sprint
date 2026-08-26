@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-2/audio/part2/q030.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：W Would you like to try the chicken or the beef curry?\n[Iu",
-    "content_translation": "中文辅助（离线预处理）：W Would you like to try the chicken or the beef curry?\n[Iu"
+    "transcript": "Would you like to try the chicken or the beef curry?\nA. I'll pay with a credit card.\nB. It's too heavy to carry.\nC. Is there a vegetarian option?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "efb6506105d4e673b17d3424a6e67cd5dd3e4e939dbbb9751859a5222c4e4d48",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q030.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "您想尝尝鸡肉咖喱还是牛肉咖喱？\nA. 我用信用卡支付。\nB. 它太重了，搬不动。\nC. 有素食选择吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e5b3399c50026043008b4451ca810c5d2ac43adb19f8a363865d9e8dea8824af"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "I'll pay with a credit card.",
-        "It’s too heavy to carry.",
+        "It's too heavy to carry.",
         "Is there a vegetarian option?"
       ],
       "answer": "C",
-      "question": "W Would you like to try the chicken or the beef curry? [Iu",
+      "question": "Would you like to try the chicken or the beef curry?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“W Would you like to try the chicken or the beef curry? [Iu”，自然应答是“Is there a vegetarian option?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Is there a vegetarian option?）。",
-      "question_translation": "中文辅助（离线预处理）：W Would you like to try the chicken or the beef curry?\n[Iu",
+      "answer_explain": "原文依据：问句或陈述是“Would you like to try the chicken or the beef curry?”，自然应答是“Is there a vegetarian option?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Is there a vegetarian option?）。",
+      "question_translation": "您想尝尝鸡肉咖喱还是牛肉咖喱?",
       "choice_translations": [
-        "A：I'll pay with a credit card.",
-        "B：It’s too heavy to carry.",
-        "C：Is there a vegetarian option?"
+        "A：我用信用卡支付。",
+        "B：它太重了,搬不动。",
+        "C：有素食选择吗?"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：W Would you like to try the chicken or the beef curry? [Iu",
+      "evidence": "参考原文第 1 段：Would you like to try the chicken or the beef curry?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：W Would you like to try the chicken or the beef curry? [Iu",
+        "evidence": "参考原文第 1 段：Would you like to try the chicken or the beef curry?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“W Would you like to try the chicken or the beef curry? [Iu”，自然应答是“Is there a vegetarian option?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Is there a vegetarian option?）。"
+        "analysis": "原文依据：问句或陈述是“Would you like to try the chicken or the beef curry?”，自然应答是“Is there a vegetarian option?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Is there a vegetarian option?）。"
       },
       "item_id": 30,
       "priority": {

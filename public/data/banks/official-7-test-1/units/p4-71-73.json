@@ -41,9 +41,33 @@
       "asset_key": "official-7-test-1/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "Do you work in downtown Vancouver? ® Do you want to\nlive close to where you work? Then Bora Park Tower is the\nplace for you! ® This ultramodern apartment building is in the\ncenter of Vancouver with spacious rental units and excellent\nfacilities. ®But what you'll appreciate the most is the fact that\nwe're just a short walk away from a train station, a hospital,\nand a shopping district. Still not convinced? Then ° check\nout the videos on our Web site, and listen to what our current\nresidents are saying about Bora Park Tower!",
-    "transcript_translation": "中文辅助（离线预处理）：Do you work（工作） in downtown Vancouver?\n® Do you want to\nlive close to where（哪里） you work（工作）?\nThen Bora Park Tower is the\nplace for you!\n® This ultramodern apartment building is in the\ncenter of Vancouver with spacious rental units and excellent\nfacilities.\n®But what（什么） you'll appreciate the most is the fact that\nwe're just a short walk away from a train station, a hospital,\nand a shopping district.\nStill not convinced?\nThen ° check\nout the videos on our Web site, and listen to what（什么） our current\nresidents are saying about Bora Park Tower!",
-    "content_translation": "中文辅助（离线预处理）：Do you work（工作） in downtown Vancouver?\n® Do you want to\nlive close to where（哪里） you work（工作）?\nThen Bora Park Tower is the\nplace for you!\n® This ultramodern apartment building is in the\ncenter of Vancouver with spacious rental units and excellent\nfacilities.\n®But what（什么） you'll appreciate the most is the fact that\nwe're just a short walk away from a train station, a hospital,\nand a shopping district.\nStill not convinced?\nThen ° check\nout the videos on our Web site, and listen to what（什么） our current\nresidents are saying about Bora Park Tower!"
+    "transcript": "Do you work in downtown Vancouver?\nDo you want to live close to where you work?\nThen Bora Park Tower is the place for you.\nThis ultra-modern apartment building is in the center of Vancouver with spacious rental units and excellent facilities.\nBut what you'll appreciate the most... is the fact that we're just a short walk away from a train station, a hospital, and a shopping district.\nStill not convinced?\nThen check out the videos on our website and listen to what our current residents are saying about Bora Park Tower.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "fafe3403c8c994639e6e066525876e61eed5326cf9f66182f1fca547f8afcd4d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 92,
+        "legacy_word_count": 93,
+        "length_ratio": 0.989,
+        "legacy_coverage": 0.968,
+        "prompted_failure": "audio transcript appears truncated (ratio=0.26, coverage=0.39)"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "您是在市中心温哥华工作的吗？\n您想住在离工作地点近的地方吗？\n那么 Bora Park Tower 就是适合您的地方。\n这座超现代的公寓楼位于温哥华中心，拥有宽敞的租赁单元和出色的设施。\n但您最欣赏的是……我们距离火车站、医院和购物区只有步行几分钟的路程。\n仍然没有说服力？\n那么请查看我们的网站上的视频，听听我们现在的居民们对 Bora Park Tower 的评价。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9db1f62e026fd812bf8c2c6b1edc11fefca2423537cbd8fa1e25c879af447875"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +79,23 @@
       ],
       "answer": "C",
       "question": "What is being advertised?",
-      "answer_explain": "原文依据：听力原文中提到“® This ultramodern apartment building is in the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An apartment building）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is being advertised?",
+      "answer_explain": "正确答案：C（An apartment building）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is being advertised?",
       "choice_translations": [
-        "A：A convention center",
-        "B：A shopping mall",
-        "C：An apartment building",
-        "D：An amusement park"
+        "A:A convention center",
+        "B:A shopping mall",
+        "C:An apartment building",
+        "D:An amusement park"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Do you work in downtown Vancouver? ® Do you want to",
+      "evidence": "参考听力原文：“This ultra-modern apartment building is in the center of Vancouver with spacious rental units and excellent facilities.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Do you work in downtown Vancouver? ® Do you want to",
+        "evidence": "参考听力原文：“This ultra-modern apartment building is in the center of Vancouver with spacious rental units and excellent facilities.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® This ultramodern apartment building is in the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An apartment building）。"
+        "analysis": "正确答案：C（An apartment building）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 71,
       "priority": {
@@ -109,23 +133,23 @@
       ],
       "answer": "A",
       "question": "What will the listeners appreciate the most about Bora Park Tower?",
-      "answer_explain": "原文依据：听力原文中提到“Then Bora Park Tower is the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（The convenient location）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the listeners appreciate the most about Bora Park Tower?",
+      "answer_explain": "正确答案：A（The convenient location）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the listeners appreciate the most about Bora Park Tower?",
       "choice_translations": [
-        "A：The convenient location",
-        "B：The low prices",
-        "C：The free parking",
-        "D：The fast Internet access"
+        "A:The convenient location",
+        "B:The low prices",
+        "C:The free parking",
+        "D:The fast Internet access"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 2 段：live close to where you work? Then Bora Park Tower is the",
+      "evidence": "参考听力原文：“Then check out the videos on our website and listen to what our current residents are saying about Bora Park Tower.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 2 段：live close to where you work? Then Bora Park Tower is the",
+        "evidence": "参考听力原文：“Then check out the videos on our website and listen to what our current residents are saying about Bora Park Tower.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Then Bora Park Tower is the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（The convenient location）。"
+        "analysis": "正确答案：A（The convenient location）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 72,
       "priority": {
@@ -163,23 +187,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker suggest the listeners do online?",
-      "answer_explain": "原文依据：听力原文中提到“out the videos on our Web site, and listen to what our current”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Watch some videos）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） suggest（表明/建议） the listeners do online?",
+      "answer_explain": "正确答案：B（Watch some videos）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) suggest(表明/建议) the listeners do online?",
       "choice_translations": [
-        "A：Download discount coupons",
-        "B：Watch some videos",
-        "C：Apply for a job",
-        "D：Schedule（日程） a visit"
+        "A:Download discount coupons",
+        "B:Watch some videos",
+        "C:Apply for a job",
+        "D:Schedule(日程) a visit"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Do you work in downtown Vancouver? ® Do you want to",
+      "evidence": "参考听力原文：“Then check out the videos on our website and listen to what our current residents are saying about Bora Park Tower.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Do you work in downtown Vancouver? ® Do you want to",
+        "evidence": "参考听力原文：“Then check out the videos on our website and listen to what our current residents are saying about Bora Park Tower.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“out the videos on our Web site, and listen to what our current”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Watch some videos）。"
+        "analysis": "正确答案：B（Watch some videos）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 73,
       "priority": {

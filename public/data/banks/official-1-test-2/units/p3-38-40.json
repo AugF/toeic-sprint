@@ -37,9 +37,32 @@
       "asset_key": "official-1-test-2/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "Hi, I’m Petra Barlow. ®1 have an interview for a position ii\nthe accounting department here at Houseman Incorporat\nlv Hello, Ms. Barlow. Let me check in the computer. While\nthat, @would you put on this visitor's badge so it’s easy tc\nsee?\nYes, of course. I’m supposed to meet with Helen Wade in\nMeeting Room 2B. Is that right?\nFlv Actually, ®it looks like there was a last-minute change. Y\nbe meeting in Room 12A instead. It’s down that hallway a\nto your left.\nThanks a lot!",
-    "transcript_translation": "您好，我是 Petra Barlow。我在这里 Houseman Incorporated 申请一个会计部门的职位面试。\n您好，Barlow 小姐。让我查一下电脑。同时，您能戴上这个访客徽章方便我们看到吗？\n是的，当然。我应该和 Helen Wade 在 2B 会议室会面。对吗？\n实际上，看起来临时有变动了。您应该在 12A 房间会面。它在那条走廊的左边。\n太感谢了！",
-    "content_translation": "您好，我是 Petra Barlow。我在这里 Houseman Incorporated 申请一个会计部门的职位面试。\n您好，Barlow 小姐。让我查一下电脑。同时，您能戴上这个访客徽章方便我们看到吗？\n是的，当然。我应该和 Helen Wade 在 2B 会议室会面。对吗？\n实际上，看起来临时有变动了。您应该在 12A 房间会面。它在那条走廊的左边。\n太感谢了！"
+    "transcript": "Hi, I'm Petra Barlow.\nI have an interview for a position in the accounting department here at Houseman Incorporated.\nHello, Ms. Barlow.\nLet me check in the computer.\nWhile I do that, would you put on this visitor's badge so it's easy to see?\nYes, of course.\nI'm supposed to meet with Helen Wade in meeting room 2B.\nIs that right?\nActually, it looks like there was a last-minute change.\nYou'll be meeting in room 12A instead.\nIt's down that hallway and to your left.\nThanks a lot.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "918596618ab4a1ac40983ad6c5abb0cad39a007f08e074014704161a0edddd66",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 88,
+        "legacy_word_count": 86,
+        "length_ratio": 1.023,
+        "legacy_coverage": 0.977
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "嗨，我是 Petra Barlow。\n我在这里的 Houseman Incorporated 参加一个会计部门的职位面试。\n您好，Barlow 女士。\n让我查一下电脑。\n在我这么做的时候，您能戴上这个访客徽章方便识别吗？\n是的，当然可以。\n我应该和 Helen Wade 在 2B 会议室会面。\n是这样吗？\n实际上，看起来有一个临时变动。\n您将改在 12A 房间会面。\n它在那条走廊的尽头，在您的左手边。\n非常感谢您。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7800060aae4b7ea67923f6d792134d24068b4759507f72d0cfb617c227771717"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +74,23 @@
       ],
       "answer": "D",
       "question": "Why is the woman at Houseman Incorporated?",
-      "answer_explain": "原文依据：听力原文中提到“®1 have an interview for a position ii”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To attend an interview）。",
-      "question_translation": "这位女士到 Houseman Incorporated 是做什么的？",
+      "answer_explain": "正确答案：D（To attend an interview）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "这位女士到 Houseman Incorporated 是做什么的?",
       "choice_translations": [
-        "A：注册参加课程",
-        "B：进行商务午餐",
-        "C：主持研讨会",
-        "D：参加面试"
+        "A:注册参加课程",
+        "B:进行商务午餐",
+        "C:主持研讨会",
+        "D:参加面试"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：the accounting department here at Houseman Incorporat",
+      "evidence": "参考听力原文：“I have an interview for a position in the accounting department here at Houseman Incorporated.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：the accounting department here at Houseman Incorporat",
+        "evidence": "参考听力原文：“I have an interview for a position in the accounting department here at Houseman Incorporated.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“®1 have an interview for a position ii”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To attend an interview）。"
+        "analysis": "正确答案：D（To attend an interview）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -94,30 +117,30 @@
     },
     {
       "choices": [
-        "Wait in the lobby =",
+        "Wait in the lobby",
         "Update an application o",
         "Wear a badge a",
         "Provide photo identification ad"
       ],
       "answer": "C",
       "question": "What does the man ask the woman to do?",
-      "answer_explain": "原文依据：听力原文中提到“that, @would you put on this visitor's badge so it’s easy tc”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Wear a badge a）。",
-      "question_translation": "男士让女士做什么？",
+      "answer_explain": "正确答案：C（Wear a badge a）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士让女士做什么?",
       "choice_translations": [
-        "A：在大厅等候",
-        "B：更新一份申请表",
-        "C：佩戴一个徽章",
-        "D：提供带照片的身份证明"
+        "A:在大厅等候",
+        "B:更新一份申请表",
+        "C:佩戴一个徽章",
+        "D:提供带照片的身份证明"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, I’m Petra Barlow. ®1 have an interview for a position ii",
+      "evidence": "参考听力原文：“While I do that, would you put on this visitor's badge so it's easy to see?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, I’m Petra Barlow. ®1 have an interview for a position ii",
+        "evidence": "参考听力原文：“While I do that, would you put on this visitor's badge so it's easy to see?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“that, @would you put on this visitor's badge so it’s easy tc”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Wear a badge a）。"
+        "analysis": "正确答案：C（Wear a badge a）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -151,23 +174,23 @@
       ],
       "answer": "A",
       "question": "What does the man say has changed?",
-      "answer_explain": "原文依据：听力原文中提到“the accounting department here at Houseman Incorporat”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（The location of a meeting）。",
-      "question_translation": "男士说什么变了？",
+      "answer_explain": "正确答案：A（The location of a meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士说什么变了?",
       "choice_translations": [
-        "A：会议地点",
-        "B：活动日期",
-        "C：会议时长",
-        "D：参与人数"
+        "A:会议地点",
+        "B:活动日期",
+        "C:会议时长",
+        "D:参与人数"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, I’m Petra Barlow. ®1 have an interview for a position ii",
+      "evidence": "参考听力原文：“I'm supposed to meet with Helen Wade in meeting room 2B.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, I’m Petra Barlow. ®1 have an interview for a position ii",
+        "evidence": "参考听力原文：“I'm supposed to meet with Helen Wade in meeting room 2B.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the accounting department here at Houseman Incorporat”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（The location of a meeting）。"
+        "analysis": "正确答案：A（The location of a meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

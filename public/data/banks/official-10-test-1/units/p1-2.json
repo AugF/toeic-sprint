@@ -31,8 +31,28 @@
       "asset_key": "official-10-test-1/images/part1/q002.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 女士正在用电脑键盘打字。\nB. 男士正在拿着电话听筒。\nC. 他们正在互相握手。\nD. 他们正在整理一些文件。",
-    "content_translation": "A. 女士正在用电脑键盘打字。\nB. 男士正在拿着电话听筒。\nC. 他们正在互相握手。\nD. 他们正在整理一些文件。"
+    "transcript": "A. The woman is typing on a computer keyboard.\nB. The man is holding a telephone handset.\nC. They're shaking hands with each other.\nD. They're putting away some files.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8ed0cc8885f7620842b4f51f726819ba949d32804a24e808db8bd9be2305310b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part1/q002.mp3",
+      "metrics": {
+        "word_count": 269
+      }
+    },
+    "transcript_translation": "A. 女士正在用电脑键盘打字。\nB. 男士正在拿着电话听筒。\nC. 他们正在互相握手。\nD. 他们正在收纳一些文件。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d52c11123eea21a8eb5f36f91c05ca1964922e79f992972592f28477e7199bb0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -51,7 +71,7 @@
         "A：女士正在用电脑键盘打字。",
         "B：男士正在拿着电话听筒。",
         "C：他们正在互相握手。",
-        "D：他们正在整理一些文件。"
+        "D：他们正在收纳一些文件。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p1-2/2"
+      "item_key": "official-10-test-1/p1-2/2",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

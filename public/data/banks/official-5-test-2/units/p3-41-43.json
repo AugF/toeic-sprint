@@ -40,9 +40,31 @@
       "asset_key": "official-5-test-2/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nK. Let's discuss how we're going to train the new\nWeb developers who'll join our team next month. They\nlive in several different countries, so they'll be working\nfrom home. Any ideas?\nHmm... We could set up a conference call for the\ntraining. But some of the new employees live in a different\ntime zone. It may be difficult to schedule the call.\nWhy don't we make a video? That way the new\nemployees can watch the training video whenever it's\nmost convenient for them.\nThat's a good idea. Carla-is that something you\ncould make?\nAbsolutely! But Ol'd better get started right away-it\nwill take at least a couple of weeks to complete.\nTEST 2 PART 3",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nK.\nLet's discuss how（如何） we're going to train the new\nWeb developers who（谁）'ll join our team next month.\nThey\nlive in several different countries, so they'll be working\nfrom home.\nAny ideas?\nHmm...\nWe could set up a conference call for the\ntraining.\nBut some of the new employees live in a different\ntime zone.\nIt may be difficult to schedule（日程） the call.\nWhy（为什么） don't we make a video?\nThat way the new\nemployees can watch the training video whenever it's\nmost convenient for them.\nThat's a good idea.\nCarla-is that something you\ncould make?\nAbsolutely!\nBut Ol'd better get started right away-it\nwill take at least a couple of weeks to complete.\nTEST 2 PART 3",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nK.\nLet's discuss how（如何） we're going to train the new\nWeb developers who（谁）'ll join our team next month.\nThey\nlive in several different countries, so they'll be working\nfrom home.\nAny ideas?\nHmm...\nWe could set up a conference call for the\ntraining.\nBut some of the new employees live in a different\ntime zone.\nIt may be difficult to schedule（日程） the call.\nWhy（为什么） don't we make a video?\nThat way the new\nemployees can watch the training video whenever it's\nmost convenient for them.\nThat's a good idea.\nCarla-is that something you\ncould make?\nAbsolutely!\nBut Ol'd better get started right away-it\nwill take at least a couple of weeks to complete.\nTEST 2 PART 3"
+    "transcript": "Okay, let's discuss how we're going to train the new web developers who join our team next month.\nThey live in several different countries, so they'll be working from home.\nAny ideas?\nHmm.\nWe could set up a conference call for the training, but some of the new employees live in a different time zone.\nIt may be difficult to schedule the call.\nWhy don't we make a video?\nThat way the new employees can watch the training video whenever it's most convenient for them.\nThat's a good idea.\nCarla, is that something you could make?\nAbsolutely, but I'd better get started right away.\nIt will take at least a couple of weeks to complete.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8085ef9bb1064c9868c72158fb2cb39fc383fde9d2f503628089963f50459c3a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 115,
+        "legacy_word_count": 117,
+        "length_ratio": 0.983,
+        "legacy_coverage": 0.923
+      }
+    },
+    "transcript_translation": "好的，我们来讨论一下如何培训下个月加入我们团队的新网页开发人员。\n他们居住在几个不同的国家，所以他们将远程工作。\n有什么想法吗？\n嗯。\n我们可以为培训设置一个电话会议，但一些新员工生活在不同的时区。\n安排通话可能会很困难。\n我们为什么不制作一个视频呢？\n这样新的员工就可以在对他们最方便的时候观看培训视频了。\n这是个好主意。\nCarla，你能做这个吗？\n当然可以，但我最好马上开始。\n这至少需要几周时间才能完成。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "423c0cf7e0af959bb60cab5b08cce8a5d8bc3871ca29d41c4b42af37652733f6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "manual/audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,7 +76,7 @@
       ],
       "answer": "A",
       "question": "What are the speakers discussing?",
-      "answer_explain": "原文依据：听力原文中提到“But some of the new employees live in a different”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He picked up some supplies.）。",
+      "answer_explain": "正确答案：A（He picked up some supplies.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers discussing?",
       "choice_translations": [
         "A：He picked up some supplies.",
@@ -63,14 +85,14 @@
         "D：He wrote a reference letter."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“We could set up a conference call for the training, but some of the new employees live in a different time zone.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“We could set up a conference call for the training, but some of the new employees live in a different time zone.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But some of the new employees live in a different”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He picked up some supplies.）。"
+        "analysis": "正确答案：A（He picked up some supplies.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -106,9 +128,9 @@
         "A retirement dinner"
       ],
       "answer": "C",
-      "question": "Why does the man recommend using a",
-      "answer_explain": "原文依据：听力原文中提到“But some of the new employees live in a different”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A book signing）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） recommend using a",
+      "question": "Why does the man recommend using a video?",
+      "answer_explain": "正确答案：C（A book signing）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士为什么建议使用视频？",
       "choice_translations": [
         "A：A cooking class",
         "B：A sports competition",
@@ -116,14 +138,14 @@
         "D：A retirement dinner"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“That way the new employees can watch the training video whenever it's most convenient for them.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“That way the new employees can watch the training video whenever it's most convenient for them.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But some of the new employees live in a different”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A book signing）。"
+        "analysis": "正确答案：C（A book signing）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -160,7 +182,7 @@
       ],
       "answer": "B",
       "question": "What does Carla say about the project?",
-      "answer_explain": "原文依据：听力原文中提到“But Ol'd better get started right away-it”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（It must be started soon）。",
+      "answer_explain": "正确答案：B（It must be started soon）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_translation": "中文辅助（离线预处理）：What（什么） does Carla say about the project?",
       "choice_translations": [
         "A：It will require additional materials.",
@@ -169,14 +191,14 @@
         "D：It needs a manager（经理）'s approval."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 12 段：That's a good idea. Carla-is that something you",
+      "evidence": "参考听力原文：“Absolutely, but I'd better get started right away.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 12 段：That's a good idea. Carla-is that something you",
+        "evidence": "参考听力原文：“Absolutely, but I'd better get started right away.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But Ol'd better get started right away-it”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（It must be started soon）。"
+        "analysis": "正确答案：B（It must be started soon）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

@@ -28,38 +28,58 @@
       "asset_key": "official-6-test-2/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：The printer's broken again.",
-    "content_translation": "中文辅助（离线预处理）：The printer's broken again."
+    "transcript": "The print is broken again.\nA. Printed on both sides.\nB. Should we call a technician?\nC. I've already decided.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7fb99ae9397a36845ed21cecd511b99e3c18523358988b9f803ac87ea01d0a49",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 21
+      }
+    },
+    "transcript_translation": "打印机又坏了。\nA. 双面打印的。\nB. 我们该不叫个技术人员吗？\nC. 我已经决定了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "398bb06da15b4fde482c7f963db5899c33cb76abaa3aede25d691bf45cfb2041"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Print it on both sides.",
+        "Printed on both sides.",
         "Should we call a technician?",
         "I've already decided."
       ],
       "answer": "B",
-      "question": "The printer's broken again.",
+      "question": "The print is broken again.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“The printer's broken again.”，自然应答是“Should we call a technician?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Should we call a technician?）。",
-      "question_translation": "中文辅助（离线预处理）：The printer's broken again.",
+      "answer_explain": "原文依据：问句或陈述是“The print is broken again.”，自然应答是“Should we call a technician?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Should we call a technician?）。",
+      "question_translation": "打印机又坏了。",
       "choice_translations": [
-        "A：Print it on both sides.",
-        "B：Should we call a technician?",
-        "C：I've already decided."
+        "A：双面打印的。",
+        "B：我们该不叫个技术人员吗?",
+        "C：我已经决定了。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：The printer's broken again.",
+      "evidence": "参考原文第 1 段：The print is broken again.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：The printer's broken again.",
+        "evidence": "参考原文第 1 段：The print is broken again.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“The printer's broken again.”，自然应答是“Should we call a technician?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Should we call a technician?）。"
+        "analysis": "原文依据：问句或陈述是“The print is broken again.”，自然应答是“Should we call a technician?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Should we call a technician?）。"
       },
       "item_id": 16,
       "priority": {

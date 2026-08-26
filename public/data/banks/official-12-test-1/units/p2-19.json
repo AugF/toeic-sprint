@@ -28,38 +28,58 @@
       "asset_key": "official-12-test-1/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ms.\nRamirez will be submitting the payroll LEAR request today, right?\nw",
-    "content_translation": "中文辅助（离线预处理）：Ms.\nRamirez will be submitting the payroll LEAR request today, right?\nw"
+    "transcript": "Ms. Ramirez will be submitting the payroll request today, right?\nA. Not until tomorrow, I think.\nB. Two doors down on the left.\nC. No, Malik paid for yesterday's lunch.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "444462e9fc33af4b7579970471920771d9332268809c9fffbe25f7927cce67ab",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "拉米雷斯女士今天会提交工资单申请，对吗？\nA. 我想不是到明天才。\nB. 左边数第二个门。\nC. 不，Malik付了昨天的午餐费。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4d2af5f9b8c1e6b230b0e62d291accc8080c3df3e4360f3181c39dea077c6fbd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Not until tomorrow, I think.",
-        "Two doors down on the left. not until to",
+        "Two doors down on the left.",
         "No, Malik paid for yesterday's lunch."
       ],
       "answer": "A",
-      "question": "Ms. Ramirez will be submitting the payroll LEAR request today, right? w",
+      "question": "Ms. Ramirez will be submitting the payroll request today, right?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ms. Ramirez will be submitting the payroll LEAR request today, right? w”，自然应答是“Not until tomorrow, I think.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Not until tomorrow, I think.）。",
-      "question_translation": "中文辅助（离线预处理）：Ms.\nRamirez will be submitting the payroll LEAR request today, right?\nw",
+      "answer_explain": "原文依据：问句或陈述是“Ms. Ramirez will be submitting the payroll request today, right?”，自然应答是“Not until tomorrow, I think.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Not until tomorrow, I think.）。",
+      "question_translation": "拉米雷斯女士今天会提交工资单申请,对吗?",
       "choice_translations": [
-        "A：Not until tomorrow, I think.",
-        "B：Two doors down on the left.\nnot until to",
-        "C：No, Malik paid for yesterday's lunch."
+        "A：我想不是到明天才。",
+        "B：左边数第二个门。",
+        "C：不,Malik付了昨天的午餐费。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Ms. Ramirez will be submitting the payroll LEAR request today, right? w",
+      "evidence": "参考原文第 1 段：Ms. Ramirez will be submitting the payroll request today, right?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Ms. Ramirez will be submitting the payroll LEAR request today, right? w",
+        "evidence": "参考原文第 1 段：Ms. Ramirez will be submitting the payroll request today, right?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ms. Ramirez will be submitting the payroll LEAR request today, right? w”，自然应答是“Not until tomorrow, I think.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Not until tomorrow, I think.）。"
+        "analysis": "原文依据：问句或陈述是“Ms. Ramirez will be submitting the payroll request today, right?”，自然应答是“Not until tomorrow, I think.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Not until tomorrow, I think.）。"
       },
       "item_id": 19,
       "priority": {

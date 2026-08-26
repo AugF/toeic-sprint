@@ -26,8 +26,28 @@
       "asset_key": "official-12-test-1/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） can I hang up my jacket?",
-    "content_translation": "中文辅助（离线预处理）：Where（哪里） can I hang up my jacket?"
+    "transcript": "Where can I hang up my jacket?\nA. No, in the left pocket.\nB. In the closet down the hall.\nC. A different size.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1b27982ee9bb7b0b7c6face4ae4079c46303d2c49e2afcd44f7d4af2e85c7828",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "我可以在哪里挂外套？\nA. 不，在左口袋里。\nB. 在走廊尽头的衣柜里。\nC. 不同的尺寸。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8f4e77de46a1b12ec75e4c3ffbc84958d4365317e05db136ea934e24e204833b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -42,11 +62,11 @@
       "topic": "地点询问",
       "keywords": "where location response",
       "answer_explain": "原文依据：问句或陈述是“Where can I hang up my jacket?”，自然应答是“In the closet down the hall.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（In the closet down the hall.）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） can I hang up my jacket?",
+      "question_translation": "我可以在哪里挂外套?",
       "choice_translations": [
-        "A：No, in the left pocket.",
-        "B：In the closet down the hall.",
-        "C：A different size."
+        "A：不,在左口袋里。",
+        "B：在走廊尽头的衣柜里。",
+        "C：不同的尺寸。"
       ],
       "question_type": "地点疑问句",
       "evidence": "参考原文第 1 段：Where can I hang up my jacket?",

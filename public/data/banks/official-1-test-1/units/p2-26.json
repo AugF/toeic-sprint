@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-1/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "游戏主席。\nA. 最晚明天早上。呃，我\nB. 请坐。\nC. 我相信是 Peterson 先生。",
-    "content_translation": "游戏主席。\nA. 最晚明天早上。呃，我\nB. 请坐。\nC. 我相信是 Peterson 先生。"
+    "transcript": "I haven't heard who the board chose as\nA. chairperson. A. Tomorrow morning at the latest.\nB. Please take a seat.\nC. I believe it was Mr. Peterson.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a3385b755ca77091fd2307f1597d104f5295becbb972234d919f8e6945a9187f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "我没有听到董事会选了谁作为\nA. 董事长。 A. 最迟明天早上。\nB. 请坐。\nC. 我认为是彼得森先生。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "9698c5461fb319a6131d587b5a9beaa267c0af69aa2a337d9aaf9b335cdec1fa"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Tomorrow morning at the latest. Eg w",
+        "chairperson. A. Tomorrow morning at the latest.",
         "Please take a seat.",
-        "believe it was Mr. Peterson."
+        "I believe it was Mr. Peterson."
       ],
       "answer": "C",
-      "question": "Gam chairperson.",
+      "question": "I haven't heard who the board chose as",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Gam chairperson.”，自然应答是“believe it was Mr. Peterson.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（believe it was Mr. Peterson.）。",
+      "answer_explain": "原文依据：问句或陈述是“I haven't heard who the board chose as”，自然应答是“I believe it was Mr. Peterson.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I believe it was Mr. Peterson.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Gam chairperson.",
+      "evidence": "参考原文第 1 段：I haven't heard who the board chose as",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Gam chairperson.",
+        "evidence": "参考原文第 1 段：I haven't heard who the board chose as",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Gam chairperson.”，自然应答是“believe it was Mr. Peterson.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（believe it was Mr. Peterson.）。"
+        "analysis": "原文依据：问句或陈述是“I haven't heard who the board chose as”，自然应答是“I believe it was Mr. Peterson.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I believe it was Mr. Peterson.）。"
       },
-      "question_translation": "游戏主席。",
+      "question_translation": "我没有听到董事会选了谁作为",
       "choice_translations": [
-        "A：最晚明天早上。呃，我",
+        "A：董事长。 A. 最迟明天早上。",
         "B：请坐。",
-        "C：我相信是 Peterson 先生。"
+        "C：我认为是彼得森先生。"
       ],
       "item_id": 26,
       "priority": {

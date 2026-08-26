@@ -26,34 +26,54 @@
       "asset_key": "official-1-test-1/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "I“ 这些眼镜是谁的？ = w\nA. 一门历史课。\nB. 不是我的。\nC. 更强的处方。",
-    "content_translation": "I“ 这些眼镜是谁的？ = w\nA. 一门历史课。\nB. 不是我的。\nC. 更强的处方。"
+    "transcript": "Whose glasses are these?\nA. A history class.\nB. They're not mine.\nC. A stronger prescription.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "dfaf3c65c97aed19c08bfbdc3035b3d23cea746ea35c933a5539f2aad62bba9a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 17
+      }
+    },
+    "transcript_translation": "这是谁的眼镜？\nA. 一门历史课。\nB. 不是我的。\nC. 更强的处方。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3bf6d795fb497ea60acc118564864f9c21793b6467c2b53f35f31ab5d00f8876"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Ahistory class.",
-        "They’re not mine.",
+        "A history class.",
+        "They're not mine.",
         "A stronger prescription."
       ],
       "answer": "B",
-      "question": "I“ Whose glasses are these? = w",
+      "question": "Whose glasses are these?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“I“ Whose glasses are these? = w”，自然应答是“They’re not mine.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（They’re not mine.）。",
+      "answer_explain": "原文依据：问句或陈述是“Whose glasses are these?”，自然应答是“They're not mine.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（They're not mine.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：I“ Whose glasses are these? = w",
+      "evidence": "参考原文第 1 段：Whose glasses are these?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：I“ Whose glasses are these? = w",
+        "evidence": "参考原文第 1 段：Whose glasses are these?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“I“ Whose glasses are these? = w”，自然应答是“They’re not mine.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（They’re not mine.）。"
+        "analysis": "原文依据：问句或陈述是“Whose glasses are these?”，自然应答是“They're not mine.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（They're not mine.）。"
       },
-      "question_translation": "I“ 这些眼镜是谁的？ = w",
+      "question_translation": "这是谁的眼镜?",
       "choice_translations": [
         "A：一门历史课。",
         "B：不是我的。",

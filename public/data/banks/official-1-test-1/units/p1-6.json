@@ -32,8 +32,28 @@
       "asset_key": "official-1-test-1/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 一把吉他靠在一排书架上。\nB. 一叠叠的纸放在桌子上。\nC. 几个箱子正平衡在一个凳子上。\nD. 一个灯悬挂在工作区域上方。",
-    "content_translation": "A. 一把吉他靠在一排书架上。\nB. 一叠叠的纸放在桌子上。\nC. 几个箱子正平衡在一个凳子上。\nD. 一个灯悬挂在工作区域上方。"
+    "transcript": "A. A guitar is leaning against a bookshelf.\nB. Stacks of paper have been left on a desk.\nC. Some boxes are balancing on a stool.\nD. A lamp is suspended over a work area.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6e3b85d40d666af52d70769e808216f29fb3c6ec6d2b8dbbb9f337f9a86cfa6d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 275
+      }
+    },
+    "transcript_translation": "A. 一把吉他靠在一本书架上。\nB. 一叠纸留在桌子上。\nC. 几个箱子平衡在一个凳子上。\nD. 一个灯悬挂在工作区域上方。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "485b046b85875e266f1ab8f4ccf6fb766b349714039567f5ce7bad427a8838e5"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -41,7 +61,7 @@
         "A guitar is leaning against a bookshelf.",
         "Stacks of paper have been left on a desk.",
         "Some boxes are balancing on a stool.",
-        "Alamp is suspended over a work area."
+        "A lamp is suspended over a work area."
       ],
       "answer": "B",
       "difficulty": "medium",
@@ -49,9 +69,9 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Stacks of paper have been left on a desk.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（Stacks of paper have been left on a desk.）。",
       "choice_translations": [
-        "A：一把吉他靠在一排书架上。",
-        "B：一叠叠的纸放在桌子上。",
-        "C：几个箱子正平衡在一个凳子上。",
+        "A：一把吉他靠在一本书架上。",
+        "B：一叠纸留在桌子上。",
+        "C：几个箱子平衡在一个凳子上。",
         "D：一个灯悬挂在工作区域上方。"
       ],
       "question_type": "动作 / 状态辨析题",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p1-6/6"
+      "item_key": "official-1-test-1/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -26,38 +26,58 @@
       "asset_key": "official-3-test-1/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "Ei When will our Internet service be working again? : , ; iE B When ~?C14Y9—2y bela = w\nA. No, | don't use it often. SME Ba TUSOICNL EFS\nB. NEB. work PHBET\nC. Over by the copier. B, (HTS). fix (FRARE)FBETS. ~&",
-    "content_translation": "Ei When will our Internet service be working again? : , ; iE B When ~?C14Y9—2y bela = w\nA. No, | don't use it often. SME Ba TUSOICNL EFS\nB. NEB. work PHBET\nC. Over by the copier. B, (HTS). fix (FRARE)FBETS. ~&"
+    "transcript": "When will our Internet service be working again?\nA. No, I don't use it often.\nB. It should be fixed by noon.\nC. Over by the copier.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "959807dda23c2e67ab2d3007660983af04f63e87ff94e8843fb5b938e08ba5ad",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "我们的网络服务什么时候能恢复正常？\nA. 不，我用得不多。\nB. 到中午应该修好了。\nC. 在复印机旁边。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e747eee3025a9d2500a5c083fb9dcc6dbda5c4a32edc31b348a19657519cbf3f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "No, | don't use it often. SME Ba TUSOICNL EFS",
-        "NEB. work PHBET",
-        "Over by the copier. B, (HTS). fix (FRARE)FBETS. ~&"
+        "No, I don't use it often.",
+        "It should be fixed by noon.",
+        "Over by the copier."
       ],
       "answer": "B",
-      "question": "Ei When will our Internet service be working again? : , ; iE B When ~?C14Y9—2y bela = w",
+      "question": "When will our Internet service be working again?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ei When will our Internet service be working again? : , ; iE B When ~?C14Y9—2y bela = w”，自然应答是“NEB. work PHBET”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（NEB. work PHBET）。",
-      "question_translation": "Ei When will our Internet service be working again? : , ; iE B When ~?C14Y9—2y bela = w",
+      "answer_explain": "原文依据：问句或陈述是“When will our Internet service be working again?”，自然应答是“It should be fixed by noon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It should be fixed by noon.）。",
+      "question_translation": "我们的网络服务什么时候能恢复正常?",
       "choice_translations": [
-        "A：No, | don't use it often. SME Ba TUSOICNL EFS",
-        "B：NEB. work PHBET",
-        "C：Over by the copier. B, (HTS). fix (FRARE)FBETS. ~&"
+        "A：不,我用得不多。",
+        "B：到中午应该修好了。",
+        "C：在复印机旁边。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ei When will our Internet service be working again? : , ; iE B When ~?C14Y9—2y bela = w",
+      "evidence": "参考原文第 1 段：When will our Internet service be working again?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ei When will our Internet service be working again? : , ; iE B When ~?C14Y9—2y bela = w",
+        "evidence": "参考原文第 1 段：When will our Internet service be working again?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Ei When will our Internet service be working again? : , ; iE B When ~?C14Y9—2y bela = w”，自然应答是“NEB. work PHBET”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（NEB. work PHBET）。"
+        "analysis": "原文依据：问句或陈述是“When will our Internet service be working again?”，自然应答是“It should be fixed by noon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It should be fixed by noon.）。"
       },
       "item_id": 17,
       "priority": {

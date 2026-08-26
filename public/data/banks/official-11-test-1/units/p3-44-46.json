@@ -36,9 +36,31 @@
       "asset_key": "official-11-test-1/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "Hi, Melissa. I just spoke with Alberto on the phone.\nHe doesn't feel well, so he won't be able to work the\nHassoun Motor Company event tonight. I need you to\ncover for him.\nOh. But I've never photographed a corporate event.\nI'm usually here in the studio for individual or family\nportraits. It would be a new challenge for me, but I\ncould use the experience.\nWell, you have a keen eye. I know you'll do great. The\nevent starts at seven in the banquet hall of the Norris\nHotel. Remember, there's a formal dress code. You\nshould probably wear a suit.\nOf course. I'll go home to get ready now.",
-    "transcript_translation": "你好，梅利莎。我刚刚和阿尔贝托通过电话。他身体不舒服，所以今晚无法去负责哈桑汽车公司的活动。我需要你替他去。\n啊？可是我从来没有拍摄过企业活动。我通常都在摄影棚里拍摄个人照或全家福。这对我来说会是一项新挑战，不过我也确实可以积累这方面的经验。\n你的观察力很敏锐，我知道你会做得很棒。活动七点在诺里斯酒店宴会厅开始。记住，那里要求正式着装，你最好穿一套西装。\n当然。我现在就回家准备。",
-    "content_translation": "本段听力围绕“活动服务”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Hi Melissa.\nI just spoke with Alberto on the phone.\nHe doesn't feel well so he won't be able to work the Hassoon Motor Company event tonight.\nI need you to cover for him.\nOh, but I've never photographed a corporate event.\nI'm usually here in the studio for individual or family portraits.\nIt would be a new challenge for me but I could use the experience.\nWell, you have a keen eye.\nI know you'll do great.\nThe event starts at 7 in the banquet hall of the Norris Hotel.\nRemember, there's a formal dress code.\nYou should probably wear a suit.\nOf course.\nI'll go home to get ready now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6d731b2d4213f2c8774f1383b13d49526c89800eb0a35c3bcaa1d293157a2d9e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 111,
+        "legacy_word_count": 108,
+        "length_ratio": 1.028,
+        "legacy_coverage": 0.954
+      }
+    },
+    "transcript_translation": "嗨，Melissa。\n我刚和Alberto通了电话。\n他感觉不舒服，所以今晚不能参加Hassoon Motor Company的活动。\n我需要你帮他顶一下。\n哦，但我从未拍摄过企业活动。\n我通常是在工作室为个人或家庭肖像拍照。\n这对我会是一个新的挑战，但我可以用这次经验。\n嗯，你的眼光很敏锐。\n我知道你会做得很好的。\n活动在诺里斯酒店的宴会厅晚上7点开始。\n记住，有正式着装要求。\n你可能应该穿一套西装。\n当然了。\n我现在回家准备一下。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "63d334d73e7c6fc3ebadde6003ce6d5949eb046dcfa115531dd77418d328d411"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,24 +72,24 @@
         "He is on vacation."
       ],
       "answer": "C",
-      "answer_explain": "原文依据：Alberto doesn't feel well, so he won't be able to work。 选择理由：unavailable的原因是生病，对应C。正确答案：C（He is sick.）。",
+      "answer_explain": "正确答案：C（He is sick.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Hi, Melissa. I just spoke with Alberto on the phone.",
+      "evidence": "参考听力原文：“I just spoke with Alberto on the phone.”",
       "choice_translations": [
-        "A：他已离开公司。",
-        "B：他正在会见客户。",
-        "C：他生病了。",
-        "D：他正在休假。"
+        "A:他已离开公司。",
+        "B:他正在会见客户。",
+        "C:他生病了。",
+        "D:他正在休假。"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Hi, Melissa. I just spoke with Alberto on the phone.",
+        "evidence": "参考听力原文：“I just spoke with Alberto on the phone.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：Alberto doesn't feel well, so he won't be able to work。 选择理由：unavailable的原因是生病，对应C。正确答案：C（He is sick.）。"
+        "analysis": "正确答案：C（He is sick.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "据男士所说，阿尔贝托为什么不能到场？",
+      "question_translation": "据男士所说,阿尔贝托为什么不能到场?",
       "item_id": 44,
       "priority": {
         "level": "P3",
@@ -99,24 +121,24 @@
         "Photographer"
       ],
       "answer": "D",
-      "answer_explain": "原文依据：女方说自己从未 photographed a corporate event，平时在 studio 拍 portraits。 选择理由：这些信息直接表明她是摄影师，对应D。正确答案：D（Photographer）。",
+      "answer_explain": "正确答案：D（Photographer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Hi, Melissa. I just spoke with Alberto on the phone.",
+      "evidence": "参考听力原文：“He doesn't feel well so he won't be able to work the Hassoon Motor Company event tonight.”",
       "choice_translations": [
-        "A：音乐家",
-        "B：宴席承办人",
-        "C：活动策划师",
-        "D：摄影师"
+        "A:音乐家",
+        "B:宴席承办人",
+        "C:活动策划师",
+        "D:摄影师"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Hi, Melissa. I just spoke with Alberto on the phone.",
+        "evidence": "参考听力原文：“He doesn't feel well so he won't be able to work the Hassoon Motor Company event tonight.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：女方说自己从未 photographed a corporate event，平时在 studio 拍 portraits。 选择理由：这些信息直接表明她是摄影师，对应D。正确答案：D（Photographer）。"
+        "analysis": "正确答案：D（Photographer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士的职业是什么？",
+      "question_translation": "女士的职业是什么?",
       "item_id": 45,
       "priority": {
         "level": "P3",
@@ -148,24 +170,24 @@
         "Keep some receipts"
       ],
       "answer": "B",
-      "answer_explain": "原文依据：男方提醒 there's a formal dress code，并建议 wear a suit。 选择理由：这等同于提醒穿正式服装，因此B正确。正确答案：B（Wear formal clothes）。",
+      "answer_explain": "正确答案：B（Wear formal clothes）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Hi, Melissa. I just spoke with Alberto on the phone.",
+      "evidence": "参考听力原文：“Remember, there's a formal dress code.”",
       "choice_translations": [
-        "A：领取一些用品",
-        "B：穿正式服装",
-        "C：完成一张检查清单",
-        "D：保留一些收据"
+        "A:领取一些用品",
+        "B:穿正式服装",
+        "C:完成一张检查清单",
+        "D:保留一些收据"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Hi, Melissa. I just spoke with Alberto on the phone.",
+        "evidence": "参考听力原文：“Remember, there's a formal dress code.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：男方提醒 there's a formal dress code，并建议 wear a suit。 选择理由：这等同于提醒穿正式服装，因此B正确。正确答案：B（Wear formal clothes）。"
+        "analysis": "正确答案：B（Wear formal clothes）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士提醒女士做什么？",
+      "question_translation": "男士提醒女士做什么?",
       "item_id": 46,
       "priority": {
         "level": "P3",

@@ -39,9 +39,31 @@
       "asset_key": "official-8-test-2/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "Ew Akira, ®| just checked which booth we'll have at the\njob fair this weekend. ®it looks like all the software\ncompanies will be located near the entrance.\nGreat. ®| hope we'll find some experienced software\nengineers there.\nEw So do I. The doors open at eight, so we should leave\nhere by five thirty A.M.\nOK. °| already reserved a company car. ®Let's meet\nin the parking area at five twenty.\nEE w Good idea. We'll need a little extra time to load the\nboxes with the promotional materials we'll be handing\nout to the job applicants.",
-    "transcript_translation": "中文辅助（离线预处理）：Ew Akira, ®| just checked which booth we'll have at the\njob fair this weekend.\n®it looks like all the software\ncompanies will be located near the entrance.\nGreat.\n®| hope we'll find some experienced software\nengineers there.\nEw So do I.\nThe doors open at eight, so we should leave\nhere by five thirty A.M.\nOK.\n°| already reserved a company（公司） car.\n®Let's meet\nin the parking area at five twenty.\nEE w Good idea.\nWe'll need a little extra time to load the\nboxes with the promotional materials we'll be handing\nout to the job applicants.",
-    "content_translation": "中文辅助（离线预处理）：Ew Akira, ®| just checked which booth we'll have at the\njob fair this weekend.\n®it looks like all the software\ncompanies will be located near the entrance.\nGreat.\n®| hope we'll find some experienced software\nengineers there.\nEw So do I.\nThe doors open at eight, so we should leave\nhere by five thirty A.M.\nOK.\n°| already reserved a company（公司） car.\n®Let's meet\nin the parking area at five twenty.\nEE w Good idea.\nWe'll need a little extra time to load the\nboxes with the promotional materials we'll be handing\nout to the job applicants."
+    "transcript": "Akira, I just checked which booth we'll have at the job fair this weekend.\nIt looks like all the software companies will be located near the entrance.\nGreat.\nI hope we'll find some experienced software engineers there.\nSo do I.\nThe doors open at 8, so we should leave here by 5.\n30am.\nOkay.\nI already reserved a company car.\nLet's meet in the parking area at 5.\n20.\nGood idea.\nWe'll need a little extra time to load the boxes with the promotional materials we'll be handing out to the job applicants.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d2c5387cfc9f0e7856dfe0c9aa59cdbe1e27f95bc9795fdb8f41732ebae7c484",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 89,
+        "legacy_word_count": 91,
+        "length_ratio": 0.978,
+        "legacy_coverage": 0.912
+      }
+    },
+    "transcript_translation": "Akira，我刚查了我们这个周末在招聘会展位的位置。\n看起来所有的软件公司都会设在靠近入口的地方。\n太好了。\n希望我们在那里能找到一些经验丰富的软件工程师。\n我也是。\n大门早上8点开，所以我们应该在5点前离开这里。\n30分钟。\n好的。\n我已经预订了一辆公司车。\n我们在停车场5点见面吧。\n20号。\n好主意。\n我们需要额外一点时间来装载那些我们准备发给求职者的宣传材料箱子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a40ceacb872d31c5e61381972628467cc06f40b875d37fc5b6156986ee2769a6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "What field do the speakers most likely work in?",
-      "answer_explain": "原文依据：听力原文中提到“®it looks like all the software”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Software development）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） field do the speakers most likely（最可能） work（工作） in?",
+      "answer_explain": "正确答案：D（Software development）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) field do the speakers most likely(最可能) work(工作) in?",
       "choice_translations": [
-        "A：Hospitality",
-        "B：Advertising",
-        "C：Interior design",
-        "D：Software development"
+        "A:Hospitality",
+        "B:Advertising",
+        "C:Interior design",
+        "D:Software development"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Ew Akira, ®| just checked which booth we'll have at the",
+      "evidence": "参考听力原文：“It looks like all the software companies will be located near the entrance.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Ew Akira, ®| just checked which booth we'll have at the",
+        "evidence": "参考听力原文：“It looks like all the software companies will be located near the entrance.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®it looks like all the software”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Software development）。"
+        "analysis": "正确答案：D（Software development）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "A",
       "question": "What does the man say he did?",
-      "answer_explain": "原文依据：听力原文中提到“°| already reserved a company car.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He reserved a car.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） say he did?",
+      "answer_explain": "正确答案：A（He reserved a car.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) say he did?",
       "choice_translations": [
-        "A：He reserved a car.",
-        "B：He updated a schedule（日程）.\nN",
-        "C：He created a new logo.",
-        "D：He paid a registration fee."
+        "A:He reserved a car.",
+        "B:He updated a schedule(日程). N",
+        "C:He created a new logo.",
+        "D:He paid a registration fee."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ew Akira, ®| just checked which booth we'll have at the",
+      "evidence": "参考听力原文：“I already reserved a company car.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ew Akira, ®| just checked which booth we'll have at the",
+        "evidence": "参考听力原文：“I already reserved a company car.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“°| already reserved a company car.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He reserved a car.）。"
+        "analysis": "正确答案：A（He reserved a car.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "Why will the speakers need extra time?",
-      "answer_explain": "原文依据：听力原文中提到“We'll need a little extra time to load the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To load some boxes）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） will the speakers need extra time?",
+      "answer_explain": "正确答案：C（To load some boxes）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) will the speakers need extra time?",
       "choice_translations": [
-        "A：To stop for some food",
-        "B：To check in at a hotel",
-        "C：To load some boxes",
-        "D：To read some directions"
+        "A:To stop for some food",
+        "B:To check in at a hotel",
+        "C:To load some boxes",
+        "D:To read some directions"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：EE w Good idea. We'll need a little extra time to load the",
+      "evidence": "参考听力原文：“We'll need a little extra time to load the boxes with the promotional materials we'll be handing out to the job applicants.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：EE w Good idea. We'll need a little extra time to load the",
+        "evidence": "参考听力原文：“We'll need a little extra time to load the boxes with the promotional materials we'll be handing out to the job applicants.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“We'll need a little extra time to load the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To load some boxes）。"
+        "analysis": "正确答案：C（To load some boxes）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

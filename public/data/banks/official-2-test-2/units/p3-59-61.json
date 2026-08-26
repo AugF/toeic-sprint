@@ -39,37 +39,60 @@
       "asset_key": "official-2-test-2/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "Mr. Garcia, ©! see from your résumé that you're\ninterested in a law internship here at Sahota &\nPartners.\nll Yes—t'd like to learn all that | can about working in\nlegal services. Plus, I’m looking forward to putting the\nknowledge I’ve gained at university to practical use.\nWell, if you're selected, @ you'll work alongside a\nmentor on several large cases. Most interns find the\nwork challenging but very rewarding.\nu That sounds great—I’ve always admired the work of\nSahota & Partners. In fact, Org really like to geta\nfull-time position here someday. Are interns often\nhired after completing their internships?",
-    "transcript_translation": "Garcia先生，从您的简历上看，您对在Sahota & Partners做法律实习感兴趣。\n是的——我想了解我在法律服务领域能学到的一切。另外，我期待能将大学学到的知识付诸实践。\n嗯，如果您被选中，您将与一位导师一起处理几个大案子。大多数实习生觉得这份工作很有挑战性但非常有价值。\n那听起来很棒——我一直很钦佩Sahota & Partners的工作。事实上，我真希望有一天能在这里获得全职职位。实习生在完成实习后经常被录用吗？",
-    "content_translation": "Garcia先生，从您的简历上看，您对在Sahota & Partners做法律实习感兴趣。\n是的——我想了解我在法律服务领域能学到的一切。另外，我期待能将大学学到的知识付诸实践。\n嗯，如果您被选中，您将与一位导师一起处理几个大案子。大多数实习生觉得这份工作很有挑战性但非常有价值。\n那听起来很棒——我一直很钦佩Sahota & Partners的工作。事实上，我真希望有一天能在这里获得全职职位。实习生在完成实习后经常被录用吗？"
+    "transcript": "Mr. Garcia, I see from your resume that you're interested in a law internship here at Sohota and Partners.\nYes, I'd like to learn all that I can about working in legal services.\nPlus, I'm looking forward to putting the knowledge I've gained at university to practical use.\nWell, if you're selected, you'll work alongside a mentor on several large cases.\nMost interns find the work challenging but very rewarding.\nThat sounds great.\nI've always admired the work of Sohota and Partners.\nIn fact, I'd really like to get a full-time position here someday.\nAre interns often hired after completing their internships?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b95e5c1ec1181368d313d32f652cee799c6c167b380ab10cdddda3631ca4e2de",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 102,
+        "legacy_word_count": 100,
+        "length_ratio": 1.02,
+        "legacy_coverage": 0.88
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "Garcia 先生，我看到您的简历显示您对在 Sohota and Partners 实习法律服务很感兴趣。\n是的，我想了解所有关于从事法律服务工作的一切知识。\n此外，我也期待将我在大学学到的知识投入实际应用。\n嗯，如果您被选中，您将在一位导师的指导下参与几个大型案件。\n大多数实习生觉得这份工作很有挑战性但非常有意义。\n听起来很棒。\n我一直钦佩 Sohota and Partners 的工作。\n事实上，我将来真的很希望能在贵公司获得一份全职职位。\n实习生在完成实习后经常被聘用吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "600d2fcb9768b093881782d4dc882bfb15bc6152a189127fe134f4d7daa7669d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "An internship opportunity",
-        "Auniversity course",
+        "A university course",
         "A project deadline",
-        "Anews article"
+        "A news article"
       ],
       "answer": "A",
-      "question": "What are the speakers mainly discussing? 6",
-      "answer_explain": "原文依据：听力原文中提到“interested in a law internship here at Sahota &”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An internship opportunity）。",
-      "question_translation": "说话者们主要讨论什么？",
+      "question": "What are the speakers mainly discussing?",
+      "answer_explain": "正确答案：A（An internship opportunity）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者们主要讨论什么?",
       "choice_translations": [
-        "A：一个实习机会",
-        "B：一门大学课程",
-        "C：一个项目截止日期",
-        "D：一篇新闻文章"
+        "A:一个实习机会",
+        "B:一门大学课程",
+        "C:一个项目截止日期",
+        "D:一篇新闻文章"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Mr. Garcia, ©! see from your résumé that you're",
+      "evidence": "参考听力原文：“Mr. Garcia, I see from your resume that you're interested in a law internship here at Sohota and Partners.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Mr. Garcia, ©! see from your résumé that you're",
+        "evidence": "参考听力原文：“Mr. Garcia, I see from your resume that you're interested in a law internship here at Sohota and Partners.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“interested in a law internship here at Sahota &”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An internship opportunity）。"
+        "analysis": "正确答案：A（An internship opportunity）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 59,
       "priority": {
@@ -98,30 +121,30 @@
     },
     {
       "choices": [
-        "Amedical clinic",
+        "A medical clinic",
         "An employment agency",
-        "Aconstruction company",
+        "A construction company",
         "A law firm"
       ],
       "answer": "D",
-      "question": "What type of business is Sahota & Partners? 6",
-      "answer_explain": "原文依据：听力原文中提到“interested in a law internship here at Sahota &”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A law firm）。",
-      "question_translation": "Sahota & Partners是什么类型的企业？",
+      "question": "What type of business is Sahota & Partners?",
+      "answer_explain": "正确答案：D（A law firm）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "Sahota & Partners是什么类型的企业?",
       "choice_translations": [
-        "A：医疗诊所",
-        "B：就业机构",
-        "C：建筑公司",
-        "D：律师事务所"
+        "A:医疗诊所",
+        "B:就业机构",
+        "C:建筑公司",
+        "D:律师事务所"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：interested in a law internship here at Sahota &",
+      "evidence": "参考听力原文：“Mr. Garcia, I see from your resume that you're interested in a law internship here at Sohota and Partners.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：interested in a law internship here at Sahota &",
+        "evidence": "参考听力原文：“Mr. Garcia, I see from your resume that you're interested in a law internship here at Sohota and Partners.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“interested in a law internship here at Sahota &”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A law firm）。"
+        "analysis": "正确答案：D（A law firm）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 60,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "C",
       "question": "What does the man ask about?",
-      "answer_explain": "原文依据：听力原文中提到“u That sounds great—I’ve always admired the work of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The likelihood of full-time employment）。",
-      "question_translation": "男士询问什么？",
+      "answer_explain": "正确答案：C（The likelihood of full-time employment）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士询问什么?",
       "choice_translations": [
-        "A：一项研究的结果",
-        "B：客户的满意度水平",
-        "C：获得全职工作的可能性",
-        "D：聘请专家的成本"
+        "A:一项研究的结果",
+        "B:客户的满意度水平",
+        "C:获得全职工作的可能性",
+        "D:聘请专家的成本"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Mr. Garcia, ©! see from your résumé that you're",
+      "evidence": "参考听力原文：“Yes, I'd like to learn all that I can about working in legal services.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Mr. Garcia, ©! see from your résumé that you're",
+        "evidence": "参考听力原文：“Yes, I'd like to learn all that I can about working in legal services.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“u That sounds great—I’ve always admired the work of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The likelihood of full-time employment）。"
+        "analysis": "正确答案：C（The likelihood of full-time employment）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 61,
       "priority": {

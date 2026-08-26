@@ -28,38 +28,58 @@
       "asset_key": "official-8-test-2/audio/part2/q031.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：The wood-cutting machine is being fixed today, isn't it?",
-    "content_translation": "中文辅助（离线预处理）：The wood-cutting machine is being fixed today, isn't it?"
+    "transcript": "The wood-cutting machine's being fixed today, isn't it?\nA. I just saw a service technician leave.\nB. The Human Resources Department.\nC. Yes, it comes in several colors.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "32c716e0e74e54e3f7e2e19ceb9940850baaff6b7e9f4523d2448753c5169e68",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part2/q031.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "木材切割机今天正在修理，对吗？\nA. 我刚看到一位服务技术人员离开。\nB. 人力资源部。\nC. 是的，它有几种颜色可供选择。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "244f0fffde499490992fcf343574da5b2635a529814d98be34adf2d13ea3b458"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "I just saw a service technician leave.",
-        "The human resources department.",
+        "The Human Resources Department.",
         "Yes, it comes in several colors."
       ],
       "answer": "A",
-      "question": "The wood-cutting machine is being fixed today, isn't it?",
+      "question": "The wood-cutting machine's being fixed today, isn't it?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“The wood-cutting machine is being fixed today, isn't it?”，自然应答是“I just saw a service technician leave.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I just saw a service technician leave.）。",
-      "question_translation": "中文辅助（离线预处理）：The wood-cutting machine is being fixed today, isn't it?",
+      "answer_explain": "原文依据：问句或陈述是“The wood-cutting machine's being fixed today, isn't it?”，自然应答是“I just saw a service technician leave.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I just saw a service technician leave.）。",
+      "question_translation": "木材切割机今天正在修理,对吗?",
       "choice_translations": [
-        "A：I just saw a service（服务） technician leave.",
-        "B：The human resources department.",
-        "C：Yes, it comes in several colors."
+        "A：我刚看到一位服务技术人员离开。",
+        "B：人力资源部。",
+        "C：是的,它有几种颜色可供选择。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：The wood-cutting machine is being fixed today, isn't it?",
+      "evidence": "参考原文第 1 段：The wood-cutting machine's being fixed today, isn't it?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：The wood-cutting machine is being fixed today, isn't it?",
+        "evidence": "参考原文第 1 段：The wood-cutting machine's being fixed today, isn't it?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“The wood-cutting machine is being fixed today, isn't it?”，自然应答是“I just saw a service technician leave.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I just saw a service technician leave.）。"
+        "analysis": "原文依据：问句或陈述是“The wood-cutting machine's being fixed today, isn't it?”，自然应答是“I just saw a service technician leave.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I just saw a service technician leave.）。"
       },
       "item_id": 31,
       "priority": {

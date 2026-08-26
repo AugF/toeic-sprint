@@ -27,8 +27,28 @@
       "asset_key": "official-6-test-2/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Would you like to see the apartment that's available（可用的）?",
-    "content_translation": "中文辅助（离线预处理）：Would you like to see the apartment that's available（可用的）?"
+    "transcript": "Would you like to see the apartment that's available?\nA. Sure, I'm free all weekend.\nB. He's the head of that department.\nC. Close to public transportation.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0fec071502b322e2f7ec877f7888a03ed848bff6fab26008153205f161b0df1b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "您想看看可租的公寓吗？\nA. 当然，我整个周末都有空。\nB. 他是那个部门的主管。\nC. 靠近公共交通。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "cdc9d0009b5c771dc4c8a78e1d9e3cb2343f874d865121195204a9888de64636"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Would you like to see the apartment that's available?”，自然应答是“Sure, I'm free all weekend.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Sure, I'm free all weekend.）。",
-      "question_translation": "中文辅助（离线预处理）：Would you like to see the apartment that's available（可用的）?",
+      "question_translation": "您想看看可租的公寓吗?",
       "choice_translations": [
-        "A：Sure, I'm free all weekend.",
-        "B：He's the head of that department.",
-        "C：Close to public transportation."
+        "A：当然,我整个周末都有空。",
+        "B：他是那个部门的主管。",
+        "C：靠近公共交通。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Would you like to see the apartment that's available?",

@@ -40,9 +40,32 @@
       "asset_key": "official-6-test-1/audio/part4/q098-100.mp3",
       "exists": true
     },
-    "transcript": "a meeting and assignment list.\nC$.\nTime to start planning the city's annual film festival. Here's\na list of tasks I've assigned to everyone. I'll get in touch\nwith vendors about concessions like food and souvenirs\nJeff couldn't be here today, but I'll let him know what he'll\nbe doing. Ol'm also happy to say that the Reynold Movie\nTheater just finished its building renovations. This is\nexciting because it now has more seats-which means we\ncan have many more festival attendees this year. So, ®this\nyear the first 200 attendees will get a free poster of one of\nthe movies we'll be showing.\nTo do:\nAnnual Film Festival\nHire technicians-Jeff\nContact vendors-Sam\nGet permits-Alex\nPrint out ads-Charles\nDED-Charles",
-    "transcript_translation": "一次会议和任务清单。\nC$.\n是时候开始规划一年一度的电影节了。这是我分配给每个人的任务列表。我将就食品和纪念品等小吃与供应商联系\nJeff今天来不了，但我会告诉他他要做什么。我也很高兴地宣布，Reynold Movie\nTheater刚刚完成了建筑翻修。这很令人兴奋，因为它现在有更多的座位——这意味着我们今年可以接待更多电影节参与者。所以，®今年前200名参与者将获得一张免费的海报，海报上印有我们即将放映的电影之一。\n待办事项：\n一年一度电影节\n聘请技术人员-Jeff\n联系供应商-Sam\n获取许可证-Alex\n打印广告-Charles\nDED-Charles",
-    "content_translation": "一次会议和任务清单。\nC$.\n是时候开始规划一年一度的电影节了。这是我分配给每个人的任务列表。我将就食品和纪念品等小吃与供应商联系\nJeff今天来不了，但我会告诉他他要做什么。我也很高兴地宣布，Reynold Movie\nTheater刚刚完成了建筑翻修。这很令人兴奋，因为它现在有更多的座位——这意味着我们今年可以接待更多电影节参与者。所以，®今年前200名参与者将获得一张免费的海报，海报上印有我们即将放映的电影之一。\n待办事项：\n一年一度电影节\n聘请技术人员-Jeff\n联系供应商-Sam\n获取许可证-Alex\n打印广告-Charles\nDED-Charles"
+    "transcript": "Time to start planning the city's annual film festival.\nHere's a list of tasks I've assigned to everyone.\nI'll get in touch with vendors about concessions like food and souvenirs.\nJeff couldn't be here today, but I'll let him know what he'll be doing.\nI'm also happy to say that the Reynold Movie Theater just finished its building renovations.\nThis is exciting because it now has more seats-which means we can have a seat-in-the-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back- We'll have many more festival attendees this year.\nSo, this year the first 200 attendees will get a free poster of one of the movies we'll be showing.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "46bcad9767cc859e0d1a671bdcc66b8b40893125e4f6d2dd831fc0ae2167a5c0",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 104,
+        "legacy_word_count": 117,
+        "length_ratio": 0.889,
+        "legacy_coverage": 0.872
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "是时候开始规划城市一年一度的电影节了。\n这是我分配给每个人的任务列表。\n我会联系供应商，了解关于食物和纪念品等配套设施的情况。\nJeff 今天来不了，但我会告诉他他要做什么。\n我也很高兴地宣布，Reynold 电影院刚刚完成了其建筑翻修。\n这令人兴奋，因为它现在有更多的座位——这意味着我们今年会有更多影展参与者。\n所以，今年前 200 名参与者将获得一张免费的、关于我们将要放映的电影的海报。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "c26abb5a2d02a22fda0dec9403e7929d29552de10c05220859b009a25d9899bc"
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "B",
       "question": "Look at the graphic. Who most likely is the speaker?",
-      "answer_explain": "原文依据：听力原文中提到“year the first 200 attendees will get a free poster of one of”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Sam）。",
-      "question_translation": "看看图表。说话人最可能是谁？",
+      "answer_explain": "正确答案：B（Sam）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "看看图表。说话人最可能是谁?",
       "choice_translations": [
-        "A：Jeff",
-        "B：Sam",
-        "C：Alex",
-        "D：Charles"
+        "A:Jeff",
+        "B:Sam",
+        "C:Alex",
+        "D:Charles"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：a meeting and assignment list.",
+      "evidence": "参考听力原文：“This is exciting because it now has more seats-which means we can have a seat-in-the-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back- We'll have many more festival attendees this year.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：a meeting and assignment list.",
+        "evidence": "参考听力原文：“This is exciting because it now has more seats-which means we can have a seat-in-the-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back- We'll have many more festival attendees this year.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“year the first 200 attendees will get a free poster of one of”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Sam）。"
+        "analysis": "正确答案：B（Sam）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 98,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "D",
       "question": "Why is the speaker pleased?",
-      "answer_explain": "原文依据：听力原文中提到“exciting because it now has more seats-which means we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A building has been renovated.）。",
-      "question_translation": "说话人为什么很高兴？",
+      "answer_explain": "正确答案：D（A building has been renovated.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话人为什么很高兴?",
       "choice_translations": [
-        "A：评论很积极。",
-        "B：网站完成了。",
-        "C：促销活动很成功。",
-        "D：一栋建筑经过了翻修。"
+        "A:评论很积极。",
+        "B:网站完成了。",
+        "C:促销活动很成功。",
+        "D:一栋建筑经过了翻修。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting and assignment list.",
+      "evidence": "参考听力原文：“This is exciting because it now has more seats-which means we can have a seat-in-the-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back- We'll have many more festival attendees this year.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting and assignment list.",
+        "evidence": "参考听力原文：“This is exciting because it now has more seats-which means we can have a seat-in-the-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back-back- We'll have many more festival attendees this year.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“exciting because it now has more seats-which means we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A building has been renovated.）。"
+        "analysis": "正确答案：D（A building has been renovated.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 99,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "B",
       "question": "What will some festival attendees receive?",
-      "answer_explain": "原文依据：听力原文中提到“year the first 200 attendees will get a free poster of one of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A poster）。",
-      "question_translation": "一些电影节参与者会收到什么？",
+      "answer_explain": "正确答案：B（A poster）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "一些电影节参与者会收到什么?",
       "choice_translations": [
-        "A：一件T恤",
-        "B：一张海报",
-        "C：一个钥匙扣",
-        "D：一本书"
+        "A:一件T恤",
+        "B:一张海报",
+        "C:一个钥匙扣",
+        "D:一本书"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：Time to start planning the city's annual film festival. Here's",
+      "evidence": "参考听力原文：“So, this year the first 200 attendees will get a free poster of one of the movies we'll be showing.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：Time to start planning the city's annual film festival. Here's",
+        "evidence": "参考听力原文：“So, this year the first 200 attendees will get a free poster of one of the movies we'll be showing.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“year the first 200 attendees will get a free poster of one of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A poster）。"
+        "analysis": "正确答案：B（A poster）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 100,
       "priority": {

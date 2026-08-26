@@ -47,8 +47,28 @@
       "asset_key": "official-11-test-1/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 盆栽植物正在被浇水。\nB. 一些灯具正在被安装。\nC. 盆栽植物陈列在商店门前。\nD. 商店的门已经打开了。",
-    "content_translation": "本段听力围绕“商店门口”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "A. Potted plants are being watered.\nB. Some light fixtures are being installed.\nC. Potted plants are displayed in front of a store.\nD. The doors of a store have been opened.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "11bd4ac75e53f7498c27d2f6381dd867d6988bbdeb8eabbf442ee6de68aeada5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 272
+      }
+    },
+    "transcript_translation": "A. 盆栽植物正在被浇水。\nB. 一些灯具正在被安装。\nC. 盆栽植物展示在一家商店前面。\nD. 一家商店的门已经被打开了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a394998834d41af42333c6c289cc229d6656eefa1d7091822c8801e3afcbbf45"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -66,10 +86,10 @@
       "question_type": "细节题",
       "evidence": "根据题干的语法结构、固定搭配及上下文判断。",
       "choice_translations": [
-        "A：Potted plants are being watered.",
-        "B：Some light fixtures are being installed.",
-        "C：Potted plants are displayed in front of a store.",
-        "D：The doors of a store have been opened."
+        "A：盆栽植物正在被浇水。",
+        "B：一些灯具正在被安装。",
+        "C：盆栽植物展示在一家商店前面。",
+        "D：一家商店的门已经被打开了。"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
@@ -107,7 +127,9 @@
         "unit_id": "part1-6",
         "model": "toeic_priority_v1"
       },
-      "item_key": "official-11-test-1/p1-6/6"
+      "item_key": "official-11-test-1/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

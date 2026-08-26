@@ -32,8 +32,28 @@
       "asset_key": "official-9-test-2/images/part1/q001.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. The woman is assembling some chairs.\nB. The woman is sweeping the floor.\nC. The woman is working in a seating area.\nD. The woman is leaning over a tray of food.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9520e59fb87dea4b5729d8cfcd835bbe7e5a6bc34c73c1d246d1bc305794f97a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part1/q001.mp3",
+      "metrics": {
+        "word_count": 44
+      }
+    },
+    "transcript_translation": "A. 这名女士正在组装一些椅子。\nB. 这名女士正在扫地。\nC. 这名女士在一个座位区工作。\nD. 这名女士正俯身查看一托盘食物。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4cc77ab0339965eddc0af504cd92b3902ae0896786a3a3eae01c782f675ba945"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“The woman is working in a seating area.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（The woman is working in a seating area.）。",
       "choice_translations": [
-        "A：The woman（女士） is assembling some chairs.",
-        "B：The woman（女士） is sweeping the floor.",
-        "C：The woman（女士） is working in a seating area.",
-        "D：The woman（女士） is leaning over a tray of food."
+        "A：这名女士正在组装一些椅子。",
+        "B：这名女士正在扫地。",
+        "C：这名女士在一个座位区工作。",
+        "D：这名女士正俯身查看一托盘食物。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-2/p1-1/1"
+      "item_key": "official-9-test-2/p1-1/1",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

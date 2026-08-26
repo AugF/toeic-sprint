@@ -31,8 +31,28 @@
       "asset_key": "official-9-test-2/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. One of the women is filling a container.\nB. One of the women is walking through a doorway.\nC. One of the women is rolling a suitcase down a hall.\nD. One of the women is arranging boxes beside a wall.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bfba4eeff5cc19fb2f5e5d50db09a379fadbd0d5ff4872e56332f57f9807257c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 260
+      }
+    },
+    "transcript_translation": "A. 其中一位女士正在装填一个容器。\nB. 其中一位女士正走过一个门道。\nC. 其中一位女士正沿着一条走廊拖着一个手提箱。\nD. 其中一位女士正在墙边摆放盒子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c4ed4187175df54807e624ad77e95b51d061f7f81f55cdb126b110e395394810"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“One of the women is arranging boxes beside a wall.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（One of the women is arranging boxes beside a wall.）。",
       "choice_translations": [
-        "A：One of the women is filling a container.",
-        "B：One of the women is walking through a doorway.",
-        "C：One of the women is rolling a suitcase down a hall.",
-        "D：One of the women is arranging boxes beside a wall."
+        "A：其中一位女士正在装填一个容器。",
+        "B：其中一位女士正走过一个门道。",
+        "C：其中一位女士正沿着一条走廊拖着一个手提箱。",
+        "D：其中一位女士正在墙边摆放盒子。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-2/p1-6/6"
+      "item_key": "official-9-test-2/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

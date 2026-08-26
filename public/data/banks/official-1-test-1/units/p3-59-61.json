@@ -37,9 +37,31 @@
       "asset_key": "official-1-test-1/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "Flu Hello, Amanda. © Do you have a few minute\nthe feedback | received on the training sem\npresented to the new engineers last week?\nSure! | heard that the comments were gene\npositive. The new hires said your explana\nvery clear.\nYes. However, they did mention that it was <\ninformation to absorb in a short time. | was\nthe next time | do this, I’d give them a break\nthrough the seminar. What do you think?\nEE w That's a good idea. And maybe © you could\naside a half hour at the end so you'll have n\nanswer all of the trainees’ questions.",
-    "transcript_translation": "您好，Amanda。您有没有几分钟时间回顾一下上周提交给新工程师的培训研讨会的反馈？当然！我听说评论总体是积极的。新员工说您的解释非常清楚。是的。但是，他们提到在短时间内吸收的信息量有点大。下次如果再做这样的研讨会，我建议给他们留点喘息时间。你觉得呢？那是个好主意。也许您可以在最后留出半小时，这样您就可以回答所有受训者的问题了。",
-    "content_translation": "您好，Amanda。您有没有几分钟时间回顾一下上周提交给新工程师的培训研讨会的反馈？当然！我听说评论总体是积极的。新员工说您的解释非常清楚。是的。但是，他们提到在短时间内吸收的信息量有点大。下次如果再做这样的研讨会，我建议给他们留点喘息时间。你觉得呢？那是个好主意。也许您可以在最后留出半小时，这样您就可以回答所有受训者的问题了。"
+    "transcript": "Hello, Amanda.\nDo you have a few minutes to discuss the feedback I received on the training seminar I presented to the new engineers last week?\nSure.\nI heard that the comments were generally very positive.\nThe new hires said your explanations were very clear.\nYes.\nHowever, they did mention that it was a lot of information to absorb in a short time.\nI was thinking that the next time I do this, I'd give them a break halfway through the seminar.\nWhat do you think?\nThat's a good idea.\nAnd maybe you could also set aside a half hour at the end so you'll have more time to answer all of the trainees' questions.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8629add3845752d36ba86ec55eb9c4039167d14c4991137962728838b80885af",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 115,
+        "legacy_word_count": 110,
+        "length_ratio": 1.045,
+        "legacy_coverage": 0.991
+      }
+    },
+    "transcript_translation": "你好，Amanda。\n你有没有几分钟时间讨论一下我上周向新工程师们展示的培训研讨会收到的反馈？\n当然可以。\n我听说评论总体上是非常积极的。\n新员工说你的解释非常清楚。\n是的。\n但是，他们提到吸收这么多信息在短时间内有点困难。\n我在想下次我做这个的时候，应该在中途给他们一个休息时间。\n你觉得呢？\n这是个好主意。\n而且也许你可以在最后留出半小时，这样你就有更多的时间回答所有受训者的问题。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c16835c5e5347df1f40cb35e126227eac10cf906c06727f8ca9b19017f8b53ef"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "C",
       "question": "What has the man recently done?",
-      "answer_explain": "原文依据：听力原文中提到“presented to the new engineers last week?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Given a presentation to new employees）。",
+      "answer_explain": "正确答案：C（Given a presentation to new employees）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Flu Hello, Amanda. © Do you have a few minute",
+      "evidence": "参考听力原文：“Do you have a few minutes to discuss the feedback I received on the training seminar I presented to the new engineers last week?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Flu Hello, Amanda. © Do you have a few minute",
+        "evidence": "参考听力原文：“Do you have a few minutes to discuss the feedback I received on the training seminar I presented to the new engineers last week?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“presented to the new engineers last week?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Given a presentation to new employees）。"
+        "analysis": "正确答案：C（Given a presentation to new employees）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士最近做了什么？",
+      "question_translation": "男士最近做了什么?",
       "choice_translations": [
-        "A：开发了一款新产品",
-        "B：写了一本培训手册",
-        "C：为新员工做了一次演示",
-        "D：调到了一个国际分部"
+        "A:开发了一款新产品",
+        "B:写了一本培训手册",
+        "C:为新员工做了一次演示",
+        "D:调到了一个国际分部"
       ],
       "item_id": 59,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "B",
       "question": "What positive feedback does the woman mention?",
-      "answer_explain": "原文依据：听力原文中提到“heard that the comments were gene”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Explanations were clear.）。",
+      "answer_explain": "正确答案：B（Explanations were clear.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：the feedback | received on the training sem",
+      "evidence": "参考听力原文：“The new hires said your explanations were very clear.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：the feedback | received on the training sem",
+        "evidence": "参考听力原文：“The new hires said your explanations were very clear.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“heard that the comments were gene”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Explanations were clear.）。"
+        "analysis": "正确答案：B（Explanations were clear.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士提到的积极反馈是什么？",
+      "question_translation": "女士提到的积极反馈是什么?",
       "choice_translations": [
-        "A：销售目标超额完成。",
-        "B：解释很清楚。",
-        "C：产量增加了。",
-        "D：客户服务得到了改善。"
+        "A:销售目标超额完成。",
+        "B:解释很清楚。",
+        "C:产量增加了。",
+        "D:客户服务得到了改善。"
       ],
       "item_id": 60,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "A",
       "question": "What change does the woman recommend?",
-      "answer_explain": "原文依据：听力原文中提到“the next time | do this, I’d give them a break”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Allowing more time for questions）。",
+      "answer_explain": "正确答案：A（Allowing more time for questions）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Flu Hello, Amanda. © Do you have a few minute",
+      "evidence": "参考听力原文：“And maybe you could also set aside a half hour at the end so you'll have more time to answer all of the trainees' questions.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Flu Hello, Amanda. © Do you have a few minute",
+        "evidence": "参考听力原文：“And maybe you could also set aside a half hour at the end so you'll have more time to answer all of the trainees' questions.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the next time | do this, I’d give them a break”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Allowing more time for questions）。"
+        "analysis": "正确答案：A（Allowing more time for questions）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士建议做出什么改变？",
+      "question_translation": "女士建议做出什么改变?",
       "choice_translations": [
-        "A：留出更多时间提问",
-        "B：更早开始一个流程",
-        "C：预定一个更大的房间",
-        "D：修改公司政策"
+        "A:留出更多时间提问",
+        "B:更早开始一个流程",
+        "C:预定一个更大的房间",
+        "D:修改公司政策"
       ],
       "item_id": 61,
       "priority": {

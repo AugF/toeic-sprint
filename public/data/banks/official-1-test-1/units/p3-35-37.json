@@ -39,37 +39,59 @@
       "asset_key": "official-1-test-1/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "Excuse me. 9| tried to pay for parking at th\nbut it doesn’t seem to be working. It won't a\nor my credit card.\nEE w Oh, I’m sorry. The machine is currently ot\nThere was supposed to be a sign posted at\nBut you can pay me here at the booth.\nBl» K, ©! entered the parking garage forty-fiv\nago, so how much do | owe?\nEAR w If you've been here under an hour, parking\nstill need to validate your parking ticket\nexit.",
-    "transcript_translation": "不好意思。我试着在停车场付钱，但好像没用。它收不进我的信用卡。\n呃，对不起。机器目前停用了。\n本该在入口处贴有标志的。\n但你可以在这里的柜台支付。\nBl» K, ©! 刚进入停车场快四十五分钟前，我欠多少钱？\nEAR w 如果你在这里不到一小时，停车费还需要在出口验证你的停车票。",
-    "content_translation": "不好意思。我试着在停车场付钱，但好像没用。它收不进我的信用卡。\n呃，对不起。机器目前停用了。\n本该在入口处贴有标志的。\n但你可以在这里的柜台支付。\nBl» K, ©! 刚进入停车场快四十五分钟前，我欠多少钱？\nEAR w 如果你在这里不到一小时，停车费还需要在出口验证你的停车票。"
+    "transcript": "Excuse me, I tried to pay for parking at the machine, but it doesn't seem to be working.\nIt won't accept cash or my credit card.\nOh, I'm sorry.\nThe machine is currently out of order.\nThere was supposed to be a sign posted about that, but you can pay me here at the booth.\nOkay.\nI entered the parking garage 45 minutes ago, so how much do I owe?\nIf you've been here under an hour, parking is free, but I still need to validate your parking ticket so you can exit.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7733122ecd6ed79f8ec4a75750c3dfb126ed187d446a8838108db7df5e718d71",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 92,
+        "legacy_word_count": 88,
+        "length_ratio": 1.045,
+        "legacy_coverage": 0.989
+      }
+    },
+    "transcript_translation": "不好意思，我试着用机器支付停车费，但它似乎没在工作。\n它不接受现金或我的信用卡。\n哦，对不起。\n这台机器目前无法使用。\n本该贴有告示的，但你可以在这里的柜台付钱给我。\n好的。\n我是在 45 分钟前进入停车场的，那我欠多少钱？\n如果你在这里不到一小时，停车是免费的，但我仍然需要验证你的停车票才能让你离开。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1db13f8ea78b901813d58fc99a5dc5e012c4c455a02bcd57b52f93bdd5ba520b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Amachine is not working. (",
-        "Acredit card is damaged. (",
-        "Aschedule is incorrect. (",
-        "Aroadway is blocked. ("
+        "A machine is not working.",
+        "A credit card is damaged.",
+        "A schedule is incorrect.",
+        "A roadway is blocked."
       ],
       "answer": "A",
-      "question": "What is the problem? 41. \\",
-      "answer_explain": "原文依据：听力原文中提到“but it doesn’t seem to be working.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Amachine is not working. (）。",
+      "question": "What is the problem?",
+      "answer_explain": "正确答案：A（A machine is not working.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Excuse me. 9| tried to pay for parking at th",
+      "evidence": "参考听力原文：“Excuse me, I tried to pay for parking at the machine, but it doesn't seem to be working.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Excuse me. 9| tried to pay for parking at th",
+        "evidence": "参考听力原文：“Excuse me, I tried to pay for parking at the machine, but it doesn't seem to be working.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“but it doesn’t seem to be working.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Amachine is not working. (）。"
+        "analysis": "正确答案：A（A machine is not working.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "问题是什么？ 41. \\",
+      "question_translation": "问题是什么?",
       "choice_translations": [
-        "A：机器没有工作。",
-        "B：信用卡损坏了。",
-        "C：日程不正确。",
-        "D：车道被堵住了。"
+        "A:机器没有工作。",
+        "B:信用卡损坏了。",
+        "C:日程不正确。",
+        "D:车道被堵住了。"
       ],
       "item_id": 35,
       "priority": {
@@ -98,30 +120,30 @@
     },
     {
       "choices": [
-        "At a bank (",
-        "Ata bus stop (",
-        "At a parking garage (",
-        "At a department store ("
+        "At a bank",
+        "At a bus stop",
+        "At a parking garage",
+        "At a department store"
       ],
       "answer": "C",
-      "question": "Where is the conversation most likely 42. |\\ taking place? .",
-      "answer_explain": "原文依据：听力原文中提到“entered the parking garage forty-fiv”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a parking garage (）。",
+      "question": "Where is the conversation most likely taking place?",
+      "answer_explain": "正确答案：C（At a parking garage）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Excuse me. 9| tried to pay for parking at th",
+      "evidence": "参考听力原文：“If you've been here under an hour, parking is free, but I still need to validate your parking ticket so you can exit.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Excuse me. 9| tried to pay for parking at th",
+        "evidence": "参考听力原文：“If you've been here under an hour, parking is free, but I still need to validate your parking ticket so you can exit.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“entered the parking garage forty-fiv”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a parking garage (）。"
+        "analysis": "正确答案：C（At a parking garage）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "这段对话最有可能在哪里发生？ 。",
+      "question_translation": "这段对话最有可能在哪里发生? 。",
       "choice_translations": [
-        "A：在银行",
-        "B：在一个公交车站",
-        "C：在一个停车场",
-        "D：在一个百货商店"
+        "A:在银行",
+        "B:在一个公交车站",
+        "C:在一个停车场",
+        "D:在一个百货商店"
       ],
       "item_id": 36,
       "priority": {
@@ -150,30 +172,30 @@
     },
     {
       "choices": [
-        "Close a facility early (",
-        "Verify an address (",
-        "Get a supervisor’s signature (",
-        "Validate a ticket ("
+        "Close a facility early",
+        "Verify an address",
+        "Get a supervisor’s signature",
+        "Validate a ticket"
       ],
       "answer": "D",
-      "question": "What does the woman say she must do? 43. \\",
-      "answer_explain": "原文依据：听力原文中提到“still need to validate your parking ticket”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Validate a ticket (）。",
+      "question": "What does the woman say she must do?",
+      "answer_explain": "正确答案：D（Validate a ticket）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Excuse me. 9| tried to pay for parking at th",
+      "evidence": "参考听力原文：“If you've been here under an hour, parking is free, but I still need to validate your parking ticket so you can exit.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Excuse me. 9| tried to pay for parking at th",
+        "evidence": "参考听力原文：“If you've been here under an hour, parking is free, but I still need to validate your parking ticket so you can exit.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“still need to validate your parking ticket”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Validate a ticket (）。"
+        "analysis": "正确答案：D（Validate a ticket）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女人说她必须做什么？ 43. \\",
+      "question_translation": "女人说她必须做什么?",
       "choice_translations": [
-        "A：提前关闭一个设施",
-        "B：核实一个地址",
-        "C：获取主管的签名",
-        "D：验证一张票"
+        "A:提前关闭一个设施",
+        "B:核实一个地址",
+        "C:获取主管的签名",
+        "D:验证一张票"
       ],
       "item_id": 37,
       "priority": {

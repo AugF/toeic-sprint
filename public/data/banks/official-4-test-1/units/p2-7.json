@@ -26,38 +26,58 @@
       "asset_key": "official-4-test-1/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：(&%™ Whowill print the financial statements?\ni ; ERA Who（谁） ~?\nCh4#saaRe ENS SAM Ew",
-    "content_translation": "中文辅助（离线预处理）：(&%™ Whowill print the financial statements?\ni ; ERA Who（谁） ~?\nCh4#saaRe ENS SAM Ew"
+    "transcript": "Who will print the financial statements?\nA. Anthony will.\nB. Five pages long.\nC. A quarterly budget report.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b4a8d63d50af044c43ff551184098e043900095aebc41f6ac31389da4c266988",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 19
+      }
+    },
+    "transcript_translation": "谁来打印财务报表？\nA. 安东尼会。\nB. 五页长。\nC. 一份季度预算报告。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "54182f480096b248c86fee8296b2acab4e27617cc53c5a2b6e6145436d25ca1a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "MIE. printl~ EMMIS S J.",
-        "Five pages long. @BATS",
-        "A quarterly budget report. financial statements [B4#aaZ21."
+        "Anthony will.",
+        "Five pages long.",
+        "A quarterly budget report."
       ],
       "answer": "A",
-      "question": "(&%™ Whowill print the financial statements? i ; ERA Who ~? Ch4#saaRe ENS SAM Ew",
+      "question": "Who will print the financial statements?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“(&%™ Whowill print the financial statements? i ; ERA Who ~? Ch4#saaRe ENS SAM Ew”，自然应答是“MIE. printl~ EMMIS S J.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（MIE. printl~ EMMIS S J.）。",
-      "question_translation": "中文辅助（离线预处理）：(&%™ Whowill print the financial statements?\ni ; ERA Who（谁） ~?\nCh4#saaRe ENS SAM Ew",
+      "answer_explain": "原文依据：问句或陈述是“Who will print the financial statements?”，自然应答是“Anthony will.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Anthony will.）。",
+      "question_translation": "谁来打印财务报表?",
       "choice_translations": [
-        "A：MIE.\nprintl~ EMMIS S J.",
-        "B：Five pages long.\n@BATS",
-        "C：A quarterly budget report.\nfinancial statements [B4#aaZ21."
+        "A：安东尼会。",
+        "B：五页长。",
+        "C：一份季度预算报告。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：(&%™ Whowill print the financial statements? i ; ERA Who ~? Ch4#saaRe ENS SAM Ew",
+      "evidence": "参考原文第 1 段：Who will print the financial statements?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：(&%™ Whowill print the financial statements? i ; ERA Who ~? Ch4#saaRe ENS SAM Ew",
+        "evidence": "参考原文第 1 段：Who will print the financial statements?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“(&%™ Whowill print the financial statements? i ; ERA Who ~? Ch4#saaRe ENS SAM Ew”，自然应答是“MIE. printl~ EMMIS S J.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（MIE. printl~ EMMIS S J.）。"
+        "analysis": "原文依据：问句或陈述是“Who will print the financial statements?”，自然应答是“Anthony will.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Anthony will.）。"
       },
       "item_id": 7,
       "priority": {

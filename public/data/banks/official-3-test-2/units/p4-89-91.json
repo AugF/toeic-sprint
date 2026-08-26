@@ -39,9 +39,31 @@
       "asset_key": "official-3-test-2/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nM\nGood afternoon, team. ®| just met with the budget\nand got some disappointing news. They turned c\nour request to add three more staff to our departm\nwe'll be able to hire only one person ®to help us w\nthe new series of advertisements for Strike athletic\nUnfortunately, this means that the entire team will\nin some overtime hours for the next few weeks. Hc\ndid get an extension on the deadlines for our other\nThey're now due on May fifteenth, which gives us «\nmonth to work on them once we finish the Strike cé",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nM\nGood afternoon, team.\n®| just met with the budget\nand got some disappointing news.\nThey turned c\nour request to add three more staff to our departm\nwe'll be able to hire only one person ®to help us w\nthe new series of advertisements for Strike athletic\nUnfortunately, this means that the entire team will\nin some overtime hours for the next few weeks.\nHc\ndid get an extension on the deadlines for our other\nThey're now due on May fifteenth, which gives us «\nmonth to work（工作） on them once we finish the Strike cé",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nM\nGood afternoon, team.\n®| just met with the budget\nand got some disappointing news.\nThey turned c\nour request to add three more staff to our departm\nwe'll be able to hire only one person ®to help us w\nthe new series of advertisements for Strike athletic\nUnfortunately, this means that the entire team will\nin some overtime hours for the next few weeks.\nHc\ndid get an extension on the deadlines for our other\nThey're now due on May fifteenth, which gives us «\nmonth to work（工作） on them once we finish the Strike cé"
+    "transcript": "Good afternoon, team.\nI just met with the budget committee and got some disappointing news.\nThey turned down our request to add three more staff to our department.\nWe'll be able to hire only one person to help us work on the new series of advertisements for Strike Athletic Shoes.\nUnfortunately, this means that the entire team will have to put in some overtime hours for the next few weeks.\nHowever, we did get an extension on the deadlines for the next few weeks.\nThey're now due on May fifteenth, which gives us an extra month to work on them once we finish the Strike campaign.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "e75cc78877100d68fd5d33bf6f3b0794af933b90fdee2fde24da87fa1c48aca8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 106,
+        "legacy_word_count": 96,
+        "length_ratio": 1.104,
+        "legacy_coverage": 0.917
+      }
+    },
+    "transcript_translation": "下午好，团队。\n我刚和预算委员会开完会，得到了一些令人失望的消息。\n他们否决了我们增加三个部门员工的请求。\n我们只能招聘一个人来帮助我们在为 Strike 运动鞋的新系列广告工作。\n不幸的是，这意味着整个团队在接下来的几周里都必须加班。\n不过，我们确实获得了延期，下几周的截止日期延长了。\n它们现在是五月十五日到期，这给了我们一个额外的月份来完成它们，一旦我们完成了 Strike 运动鞋的宣传活动。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b7c38bbfffad4bd88c6041d2b1e8d1dfc27dab7e15441db41c7c3a92756e1fc7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -49,27 +71,27 @@
         "An online network is down.",
         "A file is missing.",
         "A budget request has been denied.",
-        "Ascheduling error has been found."
+        "A scheduling error has been found."
       ],
       "answer": "C",
       "question": "What problem does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“®| just met with the budget”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A budget request has been denied.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） problem does the speaker（说话者） mention?",
+      "answer_explain": "正确答案：C（A budget request has been denied.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) problem does the speaker(说话者) mention?",
       "choice_translations": [
-        "A：An online network is down.",
-        "B：A file is missing.",
-        "C：A budget request has been denied.",
-        "D：Ascheduling error has been found."
+        "A:An online network is down.",
+        "B:A file is missing.",
+        "C:A budget request has been denied.",
+        "D:A scheduling error has been found."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“They turned down our request to add three more staff to our department.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“They turned down our request to add three more staff to our department.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®| just met with the budget”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A budget request has been denied.）。"
+        "analysis": "正确答案：C（A budget request has been denied.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 89,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What department does the speaker most likely work in?",
-      "answer_explain": "原文依据：听力原文中提到“month to work on them once we finish the Strike cé”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Advertising）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） department does the speaker（说话者） most likely（最可能） work（工作） in?",
+      "answer_explain": "正确答案：B（Advertising）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) department does the speaker(说话者) most likely(最可能) work(工作) in?",
       "choice_translations": [
-        "A：Human Resources",
-        "B：Advertising",
-        "C：Accounting",
-        "D：Customer（顾客） Service（服务）"
+        "A:Human Resources",
+        "B:Advertising",
+        "C:Accounting",
+        "D:Customer(顾客) Service(服务)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“We'll be able to hire only one person to help us work on the new series of advertisements for Strike Athletic Shoes.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“We'll be able to hire only one person to help us work on the new series of advertisements for Strike Athletic Shoes.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“month to work on them once we finish the Strike cé”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Advertising）。"
+        "analysis": "正确答案：B（Advertising）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 90,
       "priority": {
@@ -150,30 +172,30 @@
     },
     {
       "choices": [
-        "Adeadline will be extended.",
+        "A deadline will be extended.",
         "Several people will join a team.",
         "The scope of a project will be reduced.",
         "Additional computers will be available."
       ],
       "answer": "A",
       "question": "What solution has been offered?",
-      "answer_explain": "原文依据：听力原文中提到“we'll be able to hire only one person ®to help us w”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Adeadline will be extended.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） solution has been offered?",
+      "answer_explain": "正确答案：A（A deadline will be extended.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) solution has been offered?",
       "choice_translations": [
-        "A：Adeadline will be extended.",
-        "B：Several people will join a team.",
-        "C：The scope of a project will be reduced.",
-        "D：Additional computers will be available（可用的）."
+        "A:A deadline will be extended.",
+        "B:Several people will join a team.",
+        "C:The scope of a project will be reduced.",
+        "D:Additional computers will be available(可用的)."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“Unfortunately, this means that the entire team will have to put in some overtime hours for the next few weeks.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“Unfortunately, this means that the entire team will have to put in some overtime hours for the next few weeks.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“we'll be able to hire only one person ®to help us w”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Adeadline will be extended.）。"
+        "analysis": "正确答案：A（A deadline will be extended.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 91,
       "priority": {

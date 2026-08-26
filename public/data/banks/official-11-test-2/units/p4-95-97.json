@@ -45,9 +45,32 @@
       "asset_key": "official-11-test-2/images/part4/q095-097.jpg",
       "exists": true
     },
-    "transcript": "Thanks for joining our city tour. My name is Hector Flore\nand I take great pride in all that Clearview has to offer.\nOver the coming hour, we'll be discussing the city's\nfounding and historical development. Please feel free to\nme questions as we go. By the way, Oyour tickets will ge\nyou a discount to be used at any of the eateries at Seafr\nPark. ® That's where we'll be ending our tour. Don't worr\nyou'll have plenty of time to enjoy your meal before you'r\ndue to get back on your cruise ship at eight P.M.\nFood Market\nKlein St.\nI City Hall\nMain St.\nCobb\nMuseum\nst St.\nSeafront Park\nGrand St.",
-    "transcript_translation": "中文辅助（离线预处理）：Thanks for joining our city tour.\nMy name is Hector Flore\nand I take great pride in all that Clearview has to offer.\nOver the coming hour, we'll be discussing the city's\nfounding and historical development.\nPlease（请） feel free to\nme questions as we go.\nBy the way, Oyour tickets will ge\nyou a discount to be used at any of the eateries at Seafr\nPark.\n® That's where（哪里） we'll be ending our tour.\nDon't worr\nyou'll have plenty of time to enjoy your meal before you'r\ndue to get back on your cruise ship at eight P.M.\nFood Market\nKlein St.\nI City Hall\nMain St.\nCobb\nMuseum\nst St.\nSeafront Park\nGrand St.",
-    "content_translation": "中文辅助（离线预处理）：Thanks for joining our city tour.\nMy name is Hector Flore\nand I take great pride in all that Clearview has to offer.\nOver the coming hour, we'll be discussing the city's\nfounding and historical development.\nPlease（请） feel free to\nme questions as we go.\nBy the way, Oyour tickets will ge\nyou a discount to be used at any of the eateries at Seafr\nPark.\n® That's where（哪里） we'll be ending our tour.\nDon't worr\nyou'll have plenty of time to enjoy your meal before you'r\ndue to get back on your cruise ship at eight P.M.\nFood Market\nKlein St.\nI City Hall\nMain St.\nCobb\nMuseum\nst St.\nSeafront Park\nGrand St."
+    "transcript": "Thanks for joining our city tour.\nMy name is Hector Flore and I take great pride in all that Clearview has to offer.\nOver the coming hour, we'll be discussing the city's founding and historical development.\nPlease feel free to ask me questions as we go.\nBy the way, Oyour tickets will get you a discount to be used at any of the eateries at Seafront Park.\nThat's where we'll be ending our tour.\nDon't worry, you'll have plenty of time to enjoy your meal before you're due to get back on your cruise ship at 8 p.m.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "a51f090bad4e2831b67255ec97110beaa2c6ed34c56668f44ca8b1ffaec6e3f2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 100,
+        "legacy_word_count": 111,
+        "length_ratio": 0.901,
+        "legacy_coverage": 0.838
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "感谢参加我们的城市观光游。\n我叫 Hector Flore，我为 Clearview 所提供的所有内容感到非常自豪。\n在接下来的一个小时里，我们将讨论这座城市的创立和历史发展。\n请随时提问。\n顺便说一句，您的票可以在海滨公园的任何餐馆享受折扣优惠。\n我们将在那里结束我们的游览。\n别担心，您有充足的时间在返回邮轮（时间是晚上 8 点）之前享用您的餐点。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "a8aece377a33b448d4995a77a73af876bac2c348bd1c866f4eff4bdaac01f3b5"
+    }
   },
   "items": [
     {
@@ -59,23 +82,23 @@
       ],
       "answer": "B",
       "question": "What aspect of the city will the listeners learn about on the tour?",
-      "answer_explain": "原文依据：听力原文与题目“What aspect of the city will the listeners learn about on the tour?”对应，官方答案为“Its history”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（Its history）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） aspect of the city will the listeners learn about on the tour?",
+      "answer_explain": "正确答案：B（Its history）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) aspect of the city will the listeners learn about on the tour?",
       "choice_translations": [
-        "A：Its industries",
-        "B：Its history",
-        "C：Its art",
-        "D：Its parks"
+        "A:Its industries",
+        "B:Its history",
+        "C:Its art",
+        "D:Its parks"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Thanks for joining our city tour. My name is Hector Flore",
+      "evidence": "参考听力原文：“Thanks for joining our city tour.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Thanks for joining our city tour. My name is Hector Flore",
+        "evidence": "参考听力原文：“Thanks for joining our city tour.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What aspect of the city will the listeners learn about on the tour?”对应，官方答案为“Its history”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（Its history）。"
+        "analysis": "正确答案：B（Its history）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 95,
       "priority": {
@@ -112,23 +135,23 @@
       ],
       "answer": "A",
       "question": "According to the speaker, what is included in the tickets?",
-      "answer_explain": "原文依据：听力原文与题目“According to the speaker, what is included in the tickets?”对应，官方答案为“Meal discounts”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Meal discounts）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） is included in the tickets?",
+      "answer_explain": "正确答案：A（Meal discounts）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) is included in the tickets?",
       "choice_translations": [
-        "A：Meal discounts",
-        "B：Free parking",
-        "C：Complimentary photographs",
-        "D：Museum admission"
+        "A:Meal discounts",
+        "B:Free parking",
+        "C:Complimentary photographs",
+        "D:Museum admission"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：me questions as we go. By the way, Oyour tickets will ge",
+      "evidence": "参考听力原文：“Don't worry, you'll have plenty of time to enjoy your meal before you're due to get back on your cruise ship at 8 p.m.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：me questions as we go. By the way, Oyour tickets will ge",
+        "evidence": "参考听力原文：“Don't worry, you'll have plenty of time to enjoy your meal before you're due to get back on your cruise ship at 8 p.m.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“According to the speaker, what is included in the tickets?”对应，官方答案为“Meal discounts”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Meal discounts）。"
+        "analysis": "正确答案：A（Meal discounts）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 96,
       "priority": {
@@ -165,23 +188,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. Where will the tour end?",
-      "answer_explain": "原文依据：听力原文与题目“Look at the graphic. Where will the tour end?”对应，官方答案为“At 1066 Grand St.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（At 1066 Grand St.）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhere（哪里） will the tour end?",
+      "answer_explain": "正确答案：C（At 1066 Grand St.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Where(哪里) will the tour end?",
       "choice_translations": [
-        "A：At 212 Klein St.",
-        "B：At 1 Main St.",
-        "C：At 1066 Grand St.",
-        "D：At 555 1st St."
+        "A:At 212 Klein St.",
+        "B:At 1 Main St.",
+        "C:At 1066 Grand St.",
+        "D:At 555 1st St."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Thanks for joining our city tour. My name is Hector Flore",
+      "evidence": "参考听力原文：“By the way, Oyour tickets will get you a discount to be used at any of the eateries at Seafront Park.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Thanks for joining our city tour. My name is Hector Flore",
+        "evidence": "参考听力原文：“By the way, Oyour tickets will get you a discount to be used at any of the eateries at Seafront Park.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Look at the graphic. Where will the tour end?”对应，官方答案为“At 1066 Grand St.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（At 1066 Grand St.）。"
+        "analysis": "正确答案：C（At 1066 Grand St.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 97,
       "priority": {

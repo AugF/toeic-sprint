@@ -39,9 +39,31 @@
       "asset_key": "official-3-test-2/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "message.\nEw\nHello. This is Michiko Sato from Ento Industries. %\nWe have a new type of tire you might be interested a\nin carrying at your truck dealership. It’s called the Dd\nEndurePlus. The tires are made from a special type of (c\nrubber that’s guaranteed to withstand heavy use. They’re 5\nsignificantly more durable than our other tires, so they'd af\nbe great for the industrial vehicles you sell. Since you buy 4\ntires from us regularly, we can give you 100 EndurePlus G\ntires at half price, and Oif they don’t sell, you can return L\nthem to our factory. But I’m sure you'll end up ordering fas\nmore. Give me a call when you have the chance. te",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nEw\nHello.\nThis is Michiko Sato from Ento Industries.\n%\nWe have a new type of tire you might be interested a\nin carrying at your truck dealership.\nIt’s called the Dd\nEndurePlus.\nThe tires are made from a special type of (c\nrubber that’s guaranteed to withstand heavy use.\nThey’re 5\nsignificantly more durable than our other tires, so they'd af\nbe great for the industrial vehicles you sell.\nSince you buy 4\ntires from us regularly, we can give you 100 EndurePlus G\ntires at half price, and Oif they don’t sell, you can return L\nthem to our factory.\nBut I’m sure you'll end up ordering fas\nmore.\nGive me a call when（何时） you have the chance.\nte",
-    "content_translation": "中文辅助（离线预处理）：message.\nEw\nHello.\nThis is Michiko Sato from Ento Industries.\n%\nWe have a new type of tire you might be interested a\nin carrying at your truck dealership.\nIt’s called the Dd\nEndurePlus.\nThe tires are made from a special type of (c\nrubber that’s guaranteed to withstand heavy use.\nThey’re 5\nsignificantly more durable than our other tires, so they'd af\nbe great for the industrial vehicles you sell.\nSince you buy 4\ntires from us regularly, we can give you 100 EndurePlus G\ntires at half price, and Oif they don’t sell, you can return L\nthem to our factory.\nBut I’m sure you'll end up ordering fas\nmore.\nGive me a call when（何时） you have the chance.\nte"
+    "transcript": "Hello.\nThis is Michiko Sato from Ento Industries.\nWe have a new type of tire you might be interested in carrying at your truck dealership.\nIt's called the EndurePlus.\nThe tires are made from a special type of rubber that's guaranteed to withstand heavy use.\nThey're significantly more durable than our other tires, so they'd be great for the industrial vehicles you sell.\nSince you buy tires from us regularly, we can give you 100 EndurePlus tires at half price, and if they don't sell, you can return them to our factory.\nBut I'm sure you'll end up ordering more.\nGive me a call when you have the chance.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "56cfd4f8bfaef467842693ce63d8920a56f46b31834d1594899226f5e6170e70",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 108,
+        "legacy_word_count": 116,
+        "length_ratio": 0.931,
+        "legacy_coverage": 0.922
+      }
+    },
+    "transcript_translation": "你好。\n我是来自 Ento Industries 的 Michiko Sato。\n我们有一种新型轮胎，您可能对在您的卡车经销商处销售感兴趣。\n它叫做 EndurePlus。\n这些轮胎由一种特殊的橡胶制成，保证能承受重度使用。\n它们比我们的其他轮胎耐用得多，所以非常适合您出售的工业车辆。\n由于您定期从我们这里购买轮胎，我们可以以半价提供 100 个 EndurePlus 轮胎，如果卖不掉，您可以退回我们的工厂。\n但我相信您最终会订购更多。\n有空给我打电话。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "eb4f070ad4a26065ec98556a23795738c11e09ecfb5d0aecea5ce3ea4374ea1a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "C",
       "question": "What does Ento Industries produce?",
-      "answer_explain": "原文依据：听力原文中提到“tires at half price, and Oif they don’t sell, you can return L”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Truck tires）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does Ento Industries produce?",
+      "answer_explain": "正确答案：C（Truck tires）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does Ento Industries produce?",
       "choice_translations": [
-        "A：Assembly-line equipment",
-        "B：Vehicle engines",
-        "C：Truck tires",
-        "D：Rubber gloves"
+        "A:Assembly-line equipment",
+        "B:Vehicle engines",
+        "C:Truck tires",
+        "D:Rubber gloves"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：Hello. This is Michiko Sato from Ento Industries. %",
+      "evidence": "参考听力原文：“Since you buy tires from us regularly, we can give you 100 EndurePlus tires at half price, and if they don't sell, you can return them to our factory.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：Hello. This is Michiko Sato from Ento Industries. %",
+        "evidence": "参考听力原文：“Since you buy tires from us regularly, we can give you 100 EndurePlus tires at half price, and if they don't sell, you can return them to our factory.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“tires at half price, and Oif they don’t sell, you can return L”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Truck tires）。"
+        "analysis": "正确答案：C（Truck tires）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker emphasize about the product?",
-      "answer_explain": "原文依据：听力原文中提到“The tires are made from a special type of (c”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Its durability 82）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） emphasize about the product?",
+      "answer_explain": "正确答案：D（Its durability 82）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) emphasize about the product?",
       "choice_translations": [
-        "A：Its warranty",
-        "B：Its appearance",
-        "C：Its size",
-        "D：Its durability 82"
+        "A:Its warranty",
+        "B:Its appearance",
+        "C:Its size",
+        "D:Its durability 82"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Since you buy tires from us regularly, we can give you 100 EndurePlus tires at half price, and if they don't sell, you can return them to our factory.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Since you buy tires from us regularly, we can give you 100 EndurePlus tires at half price, and if they don't sell, you can return them to our factory.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“The tires are made from a special type of (c”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Its durability 82）。"
+        "analysis": "正确答案：D（Its durability 82）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -151,29 +173,29 @@
     {
       "choices": [
         "Return merchandise to the manufacturer",
-        "Recycle used materials _",
+        "Recycle used materials",
         "Have an item custom-made",
         "Request access to some study results"
       ],
       "answer": "A",
       "question": "What does the speaker say the listener can do?",
-      "answer_explain": "原文依据：听力原文中提到“tires at half price, and Oif they don’t sell, you can return L”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Return merchandise to the manufacturer）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say the listener can do?",
+      "answer_explain": "正确答案：A（Return merchandise to the manufacturer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say the listener can do?",
       "choice_translations": [
-        "A：Return merchandise to the manufacturer",
-        "B：Recycle used materials _",
-        "C：Have an item custom-made",
-        "D：Request access to some study results"
+        "A:Return merchandise to the manufacturer",
+        "B:Recycle used materials",
+        "C:Have an item custom-made",
+        "D:Request access to some study results"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Since you buy tires from us regularly, we can give you 100 EndurePlus tires at half price, and if they don't sell, you can return them to our factory.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Since you buy tires from us regularly, we can give you 100 EndurePlus tires at half price, and if they don't sell, you can return them to our factory.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“tires at half price, and Oif they don’t sell, you can return L”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Return merchandise to the manufacturer）。"
+        "analysis": "正确答案：A（Return merchandise to the manufacturer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

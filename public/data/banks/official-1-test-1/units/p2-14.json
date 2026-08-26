@@ -26,8 +26,28 @@
       "asset_key": "official-1-test-1/audio/part2/q014.mp3",
       "exists": true
     },
-    "transcript_translation": "Gi 去酒店入口怎么走？ [elm\nA. 我们已经预订了房间。\nB. 你提供折扣吗？\nC. 右拐弯角处。",
-    "content_translation": "Gi 去酒店入口怎么走？ [elm\nA. 我们已经预订了房间。\nB. 你提供折扣吗？\nC. 右拐弯角处。"
+    "transcript": "Where's the entrance to the hotel?\nA. We've already booked the room.\nB. Do you offer a discount?\nC. Around the corner to the right.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ceac4aa6c85e234ca65468e8b32717bbd819518bd1c0143fda2611bbe8e76543",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q014.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "酒店入口在哪里？\nA. 我们已经预订了房间。\nB. 你提供折扣吗？\nC. 右拐角处。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2390fae73010009d2e7093b0604edaea486192bd85044ea7b137c393fdc86a20"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "Around the corner to the right."
       ],
       "answer": "C",
-      "question": "Gi Where's the entrance to the hotel? [elm",
+      "question": "Where's the entrance to the hotel?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Gi Where's the entrance to the hotel? [elm”，自然应答是“Around the corner to the right.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Around the corner to the right.）。",
+      "answer_explain": "原文依据：问句或陈述是“Where's the entrance to the hotel?”，自然应答是“Around the corner to the right.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Around the corner to the right.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Gi Where's the entrance to the hotel? [elm",
+      "evidence": "参考原文第 1 段：Where's the entrance to the hotel?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Gi Where's the entrance to the hotel? [elm",
+        "evidence": "参考原文第 1 段：Where's the entrance to the hotel?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Gi Where's the entrance to the hotel? [elm”，自然应答是“Around the corner to the right.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Around the corner to the right.）。"
+        "analysis": "原文依据：问句或陈述是“Where's the entrance to the hotel?”，自然应答是“Around the corner to the right.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Around the corner to the right.）。"
       },
-      "question_translation": "Gi 去酒店入口怎么走？ [elm",
+      "question_translation": "酒店入口在哪里?",
       "choice_translations": [
         "A：我们已经预订了房间。",
-        "B：你提供折扣吗？",
-        "C：右拐弯角处。"
+        "B：你提供折扣吗?",
+        "C：右拐角处。"
       ],
       "item_id": 14,
       "priority": {

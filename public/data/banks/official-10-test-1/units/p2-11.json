@@ -28,38 +28,58 @@
       "asset_key": "official-10-test-1/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "你想参加那个额外的培训课程吗？* M\nA. 是的，我可以用更多的练习。\nB. 我更喜欢绿色的。\nC. 我大概三年前在那里待过。",
-    "content_translation": "你想参加那个额外的培训课程吗？* M\nA. 是的，我可以用更多的练习。\nB. 我更喜欢绿色的。\nC. 我大概三年前在那里待过。"
+    "transcript": "Do you want to attend that extra training session?\nA. Yes, I could use some more practice.\nB. I like the green ones better.\nC. I stayed there about three years ago.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8d8f7342e4ada44c2ef2f813725b0569d8872a8ca8adf68d1fd05c1bdb552b6d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "你想参加那个额外的培训课程吗？\nA. 是的，我需要更多的练习。\nB. 我更喜欢绿色的。\nC. 我大概三年前待在那里了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b66f16af63d66a7dd148f7e72e1f2e12d7b98a491a8b68e4d004a81608814c49"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Yes, I could use some more practice. aLlo",
+        "Yes, I could use some more practice.",
         "I like the green ones better.",
         "I stayed there about three years ago."
       ],
       "answer": "A",
-      "question": "Do you want to attend that extra training session? * M",
+      "question": "Do you want to attend that extra training session?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Do you want to attend that extra training session? * M”，自然应答是“Yes, I could use some more practice. aLlo”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, I could use some more practice. aLlo）。",
-      "question_translation": "你想参加那个额外的培训课程吗？ * M",
+      "answer_explain": "原文依据：问句或陈述是“Do you want to attend that extra training session?”，自然应答是“Yes, I could use some more practice.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, I could use some more practice.）。",
+      "question_translation": "你想参加那个额外的培训课程吗?",
       "choice_translations": [
-        "A：是的，我可以用更多的练习。aLlo",
+        "A：是的,我需要更多的练习。",
         "B：我更喜欢绿色的。",
-        "C：我大概三年前在那里待过。"
+        "C：我大概三年前待在那里了。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Do you want to attend that extra training session? * M",
+      "evidence": "参考原文第 1 段：Do you want to attend that extra training session?",
       "response_style": "既可能直接回答，也常以原因、安排或补充信息间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Do you want to attend that extra training session? * M",
+        "evidence": "参考原文第 1 段：Do you want to attend that extra training session?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Do you want to attend that extra training session? * M”，自然应答是“Yes, I could use some more practice. aLlo”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, I could use some more practice. aLlo）。"
+        "analysis": "原文依据：问句或陈述是“Do you want to attend that extra training session?”，自然应答是“Yes, I could use some more practice.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, I could use some more practice.）。"
       },
       "item_id": 11,
       "priority": {

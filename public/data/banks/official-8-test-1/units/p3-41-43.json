@@ -36,9 +36,31 @@
       "asset_key": "official-8-test-1/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nw Maria and Jerome, ° could you give me an update on\nhow our new video game is coming along?\nEl w Sure. ®I'm done updating all of the digital graphics.\nElm And ®I'm working on writing the instructions for how\nto play the game. OThey're rather complicated, but l'Il\nfinish by the end of the week.\nw Excellent. Olt sounds like we're almost ready to\nfield-test the game. ® We'll need to get feedback from\nthe gaming community.\nCha5.",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nw Maria and Jerome, ° could you give me an update on\nhow（如何） our new video game is coming along?\nEl w Sure.\n®I'm done updating all of the digital graphics.\nElm And ®I'm working on writing the instructions for how（如何）\nto play the game.\nOThey're rather complicated, but l'Il\nfinish by the end of the week.\nw Excellent.\nOlt sounds like we're almost ready to\nfield-test the game.\n® We'll need to get feedback from\nthe gaming community.\nCha5.",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nw Maria and Jerome, ° could you give me an update on\nhow（如何） our new video game is coming along?\nEl w Sure.\n®I'm done updating all of the digital graphics.\nElm And ®I'm working on writing the instructions for how（如何）\nto play the game.\nOThey're rather complicated, but l'Il\nfinish by the end of the week.\nw Excellent.\nOlt sounds like we're almost ready to\nfield-test the game.\n® We'll need to get feedback from\nthe gaming community.\nCha5."
+    "transcript": "Maria and Jerome, could you give me an update on how our new video game is coming along?\nSure.\nI'm done updating all of the digital graphics.\nAnd I'm working on writing the instructions for how to play the game.\nThey're rather complicated, but I'll finish by the end of the week.\nExcellent.\nIt sounds like we're almost ready to field test the game.\nWe'll need to get feedback from the gaming community.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e9ebbb0d99404dce72f91cb37316976a786a169ef5799287409c572ad72a4b25",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 73,
+        "legacy_word_count": 81,
+        "length_ratio": 0.901,
+        "legacy_coverage": 0.815
+      }
+    },
+    "transcript_translation": "Maria和Jerome，你能告诉我关于我们的新电子游戏进展如何吗？\n当然。\n我已经完成了所有数字图形的更新。\n我正在编写说明书，指导玩家如何玩这款游戏。\n它们相当复杂，但我会在本周末完成。\n太棒了。\n听起来我们快可以进行实地测试游戏了。\n我们需要从游戏社区获取反馈。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b77b0035fab46f9e225c26c63a0b972eff0d79857f1e24e2b4acfacef7a3549f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "A",
       "question": "What does the company make?",
-      "answer_explain": "原文依据：听力原文中提到“how our new video game is coming along?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Video games）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the company（公司） make?",
+      "answer_explain": "正确答案：A（Video games）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the company(公司) make?",
       "choice_translations": [
-        "A：Video games",
-        "B：Mobile phones",
-        "C：Sports equipment",
-        "D：Art supplies"
+        "A:Video games",
+        "B:Mobile phones",
+        "C:Sports equipment",
+        "D:Art supplies"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Maria and Jerome, could you give me an update on how our new video game is coming along?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Maria and Jerome, could you give me an update on how our new video game is coming along?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“how our new video game is coming along?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Video games）。"
+        "analysis": "正确答案：A（Video games）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "C",
       "question": "What part of a project does the man say is complicated?",
-      "answer_explain": "原文依据：听力原文中提到“Elm And ®I'm working on writing the instructions for how”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Writing some directions）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） part of a project does the man（男士） say is complicated?",
+      "answer_explain": "正确答案：C（Writing some directions）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) part of a project does the man(男士) say is complicated?",
       "choice_translations": [
-        "A：Creating a design",
-        "B：Finding investors",
-        "C：Writing some directions",
-        "D：Contacting social media sites"
+        "A:Creating a design",
+        "B:Finding investors",
+        "C:Writing some directions",
+        "D:Contacting social media sites"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：to play the game. OThey're rather complicated, but l'Il",
+      "evidence": "参考听力原文：“They're rather complicated, but I'll finish by the end of the week.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：to play the game. OThey're rather complicated, but l'Il",
+        "evidence": "参考听力原文：“They're rather complicated, but I'll finish by the end of the week.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Elm And ®I'm working on writing the instructions for how”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Writing some directions）。"
+        "analysis": "正确答案：C（Writing some directions）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "A",
       "question": "What is the next step in a project?",
-      "answer_explain": "原文依据：听力原文中提到“Elm And ®I'm working on writing the instructions for how”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A product will be tested.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the next step in a project?",
+      "answer_explain": "正确答案：A（A product will be tested.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the next step in a project?",
       "choice_translations": [
-        "A：A product will be tested.",
-        "B：A competition will take place.",
-        "C：A sales promotion will begin.",
-        "D：An advertisement will be filmed."
+        "A:A product will be tested.",
+        "B:A competition will take place.",
+        "C:A sales promotion will begin.",
+        "D:An advertisement will be filmed."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Maria and Jerome, could you give me an update on how our new video game is coming along?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Maria and Jerome, could you give me an update on how our new video game is coming along?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Elm And ®I'm working on writing the instructions for how”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A product will be tested.）。"
+        "analysis": "正确答案：A（A product will be tested.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

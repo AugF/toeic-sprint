@@ -37,9 +37,31 @@
       "asset_key": "official-1-test-2/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "mM\nHello Alborada Apartments residents. Thank you for letting mr\nspeak at tonight’s tenant meeting. My name is Jay, and I’m the\nnew maintenance manager for the complex. In my first few da)\nas maintenance manager, @!'ve realized that many of you are\nhaving problems with the air conditioning in your apartments.\nSo my crew and | will be coming around to each apartment ove\nthe next three weeks to inspect all the air conditioning units an\ndecide which ones need to be replaced. The good news is, the\npool will be opening for the summer next week. © Don't forget\ncollect your pool passes from the main office on Monday.",
-    "transcript_translation": "各位 Alborada 公寓的居民。感谢您让我在今晚的租户会议上发言。我叫 Jay，是这个小区新的物业经理。作为物业经理，在最初的几天里，我意识到你们很多人都在空调方面遇到了问题。所以我的团队和我将在接下来的三周内挨个拜访每个公寓，检查所有的空调设备，并决定哪些需要更换。好消息是，游泳池下周将为夏季开放。别忘了周一到主办公室领取您的泳池通行证。",
-    "content_translation": "各位 Alborada 公寓的居民。感谢您让我在今晚的租户会议上发言。我叫 Jay，是这个小区新的物业经理。作为物业经理，在最初的几天里，我意识到你们很多人都在空调方面遇到了问题。所以我的团队和我将在接下来的三周内挨个拜访每个公寓，检查所有的空调设备，并决定哪些需要更换。好消息是，游泳池下周将为夏季开放。别忘了周一到主办公室领取您的泳池通行证。"
+    "transcript": "Hello, Alborado Apartments residents.\nThank you for letting me speak at tonight's tenant meeting.\nMy name is Jay and I'm the new maintenance manager for the complex.\nIn my first few days as maintenance manager, I've realised that many of you are having problems with the air conditioning in your apartments.\nSo my crew and I will be coming around to each apartment over the next three weeks to inspect all the air conditioning units and decide which ones need to be replaced.\nThe good news is the pool will be opening for the summer next week.\nDon't forget to collect your pool passes from the main office on Monday.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7b03e7eaef8562b520a37fbf78181119b9e087185828fab3636b7104d0e36aca",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 110,
+        "legacy_word_count": 109,
+        "length_ratio": 1.009,
+        "legacy_coverage": 0.982
+      }
+    },
+    "transcript_translation": "各位 Alborado Apartments 的居民们。\n感谢您让我发言参加今晚的租户会议。\n我叫 Jay，是这个小区新的维护经理。\n在我作为维护经理的前几天里，我意识到你们很多人在公寓里的空调系统出了问题。\n所以我和我的团队将在接下来的三周内到每个公寓巡视一次，检查所有空调机组，并决定哪些需要更换。\n好消息是，游泳池下周将为夏季开放。\n别忘了在周一从主办公室领取您的泳池通行证。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a5e6dc9f317a98f21f078c8f12ad3adff04562eb40657ac13b9b62dd81c37b48"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "C",
       "question": "Who is the audience for the talk?",
-      "answer_explain": "原文依据：听力原文中提到“So my crew and | will be coming around to each apartment ove”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Apartment residents）。",
-      "question_translation": "演讲的听众是谁？",
+      "answer_explain": "正确答案：C（Apartment residents）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲的听众是谁?",
       "choice_translations": [
-        "A：酒店客房宾客",
-        "B：维护人员",
-        "C：公寓居民",
-        "D：花园俱乐部成员"
+        "A:酒店客房宾客",
+        "B:维护人员",
+        "C:公寓居民",
+        "D:花园俱乐部成员"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：mM",
+      "evidence": "参考听力原文：“So my crew and I will be coming around to each apartment over the next three weeks to inspect all the air conditioning units and decide which ones need to be replaced.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：mM",
+        "evidence": "参考听力原文：“So my crew and I will be coming around to each apartment over the next three weeks to inspect all the air conditioning units and decide which ones need to be replaced.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“So my crew and | will be coming around to each apartment ove”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Apartment residents）。"
+        "analysis": "正确答案：C（Apartment residents）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -95,29 +117,29 @@
     {
       "choices": [
         "The pool needs to be painted.",
-        "Areservation has been lost. mn",
-        "Some air conditioners are not working. 7)",
-        "The hotel restaurant is closed. i"
+        "A reservation has been lost. mn",
+        "Some air conditioners are not working.",
+        "The hotel restaurant is closed."
       ],
       "answer": "C",
       "question": "What problem does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“the next three weeks to inspect all the air conditioning units an”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some air conditioners are not working. 7)）。",
-      "question_translation": "说话者提到的问题是什么？",
+      "answer_explain": "正确答案：C（Some air conditioners are not working.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者提到的问题是什么?",
       "choice_translations": [
-        "A：游泳池需要重新粉刷。",
-        "B：丢失了一个预订。",
-        "C：一些空调不工作。",
-        "D：酒店餐厅关闭了。"
+        "A:游泳池需要重新粉刷。",
+        "B:丢失了一个预订。",
+        "C:一些空调不工作。",
+        "D:酒店餐厅关闭了。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：having problems with the air conditioning in your apartments.",
+      "evidence": "参考听力原文：“So my crew and I will be coming around to each apartment over the next three weeks to inspect all the air conditioning units and decide which ones need to be replaced.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：having problems with the air conditioning in your apartments.",
+        "evidence": "参考听力原文：“So my crew and I will be coming around to each apartment over the next three weeks to inspect all the air conditioning units and decide which ones need to be replaced.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the next three weeks to inspect all the air conditioning units an”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some air conditioners are not working. 7)）。"
+        "analysis": "正确答案：C（Some air conditioners are not working.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker remind listeners to do on Monday?",
-      "answer_explain": "原文依据：听力原文中提到“collect your pool passes from the main office on Monday.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Pick up passes）。",
-      "question_translation": "说话者提醒听众周一做什么？",
+      "answer_explain": "正确答案：D（Pick up passes）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者提醒听众周一做什么?",
       "choice_translations": [
-        "A：按时退房",
-        "B：签署新租约",
-        "C：进行小修补",
-        "D：领取通行证"
+        "A:按时退房",
+        "B:签署新租约",
+        "C:进行小修补",
+        "D:领取通行证"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：collect your pool passes from the main office on Monday.",
+      "evidence": "参考听力原文：“Don't forget to collect your pool passes from the main office on Monday.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：collect your pool passes from the main office on Monday.",
+        "evidence": "参考听力原文：“Don't forget to collect your pool passes from the main office on Monday.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“collect your pool passes from the main office on Monday.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Pick up passes）。"
+        "analysis": "正确答案：D（Pick up passes）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

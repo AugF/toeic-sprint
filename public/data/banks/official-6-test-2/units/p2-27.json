@@ -28,8 +28,28 @@
       "asset_key": "official-6-test-2/audio/part2/q027.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Does the conference call with our Japanese clients start at two or three?",
-    "content_translation": "中文辅助（离线预处理）：Does the conference call with our Japanese clients start at two or three?"
+    "transcript": "Does the conference call with our Japanese clients start at 2 or 3?\nA. A professional conference.\nB. Next year's automobile designs.\nC. They asked us to reschedule it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e704be256c4aad833ea95931dc18ee4a81dc503420d0e805654813fee7e945f5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q027.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "和我们日本客户的电话会议是定在 2 点还是 3 点？\nA. 一个专业的会议。\nB. 明年的汽车设计。\nC. 他们要求我们重新安排时间。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "48fa4cbbf023b45b2a5f9dc7e110a4b73ec95775b473f83d1f2f8e24aec3692d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "They asked us to reschedule it."
       ],
       "answer": "C",
-      "question": "Does the conference call with our Japanese clients start at two or three?",
+      "question": "Does the conference call with our Japanese clients start at 2 or 3?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“Does the conference call with our Japanese clients start at two or three?”，自然应答是“They asked us to reschedule it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（They asked us to reschedule it.）。",
-      "question_translation": "中文辅助（离线预处理）：Does the conference call with our Japanese clients start at two or three?",
+      "answer_explain": "原文依据：问句或陈述是“Does the conference call with our Japanese clients start at 2 or 3?”，自然应答是“They asked us to reschedule it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（They asked us to reschedule it.）。",
+      "question_translation": "和我们日本客户的电话会议是定在 2 点还是 3 点?",
       "choice_translations": [
-        "A：A professional conference.",
-        "B：Next year's automobile designs.",
-        "C：They asked us to reschedule it."
+        "A：一个专业的会议。",
+        "B：明年的汽车设计。",
+        "C：他们要求我们重新安排时间。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Does the conference call with our Japanese clients start at two or three?",
+      "evidence": "参考原文第 1 段：Does the conference call with our Japanese clients start at 2 or 3?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Does the conference call with our Japanese clients start at two or three?",
+        "evidence": "参考原文第 1 段：Does the conference call with our Japanese clients start at 2 or 3?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Does the conference call with our Japanese clients start at two or three?”，自然应答是“They asked us to reschedule it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（They asked us to reschedule it.）。"
+        "analysis": "原文依据：问句或陈述是“Does the conference call with our Japanese clients start at 2 or 3?”，自然应答是“They asked us to reschedule it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（They asked us to reschedule it.）。"
       },
       "item_id": 27,
       "priority": {

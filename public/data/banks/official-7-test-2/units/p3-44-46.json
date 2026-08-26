@@ -38,9 +38,31 @@
       "asset_key": "official-7-test-2/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "Lena, ® I wanted to talk to you about the script you\nsubmitted for our upcoming radio commercial, the one\nadvertising our electric stoves.\nEw Oh, yes. ®I wasn't sure about including the\nslogan — the one that goes, \"You can count on\nPlymouth Appliances. We'll make your kitchen our\npriority.\"\nYou're right. ®I think we'll have to take that out. We\nonly have 30 seconds of audio, so we'll have to shorten\nthe script.\nKw Well, Ol'm worried about our deadline. The script has\nto be ready by the end of the week. We've already\nreserved time in the recording studio.",
-    "transcript_translation": "中文辅助（离线预处理）：Lena, ® I wanted to talk to you about the script you\nsubmitted for our upcoming radio commercial, the one\nadvertising our electric stoves.\nEw Oh, yes.\n®I wasn't sure about including the\nslogan — the one that goes, \"You can count on\nPlymouth Appliances.\nWe'll make your kitchen our\npriority.\"\nYou're right.\n®I think we'll have to take that out.\nWe\nonly have 30 seconds of audio, so we'll have to shorten\nthe script.\nKw Well, Ol'm worried about our deadline.\nThe script has\nto be ready by the end of the week.\nWe've already\nreserved time in the recording studio.",
-    "content_translation": "中文辅助（离线预处理）：Lena, ® I wanted to talk to you about the script you\nsubmitted for our upcoming radio commercial, the one\nadvertising our electric stoves.\nEw Oh, yes.\n®I wasn't sure about including the\nslogan — the one that goes, \"You can count on\nPlymouth Appliances.\nWe'll make your kitchen our\npriority.\"\nYou're right.\n®I think we'll have to take that out.\nWe\nonly have 30 seconds of audio, so we'll have to shorten\nthe script.\nKw Well, Ol'm worried about our deadline.\nThe script has\nto be ready by the end of the week.\nWe've already\nreserved time in the recording studio."
+    "transcript": "Lina, I wanted to talk to you about the script you submitted for our upcoming radio commercial, the one advertising our electric stoves.\nOh, yes.\nI wasn't sure about including the slogan, the one that goes, you can count on Plymouth appliances, will make your kitchen our priority.\nYou're right.\nI think we'll have to take that out.\nWe only have 30 seconds of audio, so we'll have to shorten the script.\nWell, I'm worried about our deadline.\nThe script has to be ready by the end of the week.\nWe've already reserved time in the recording studio.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2e75a7f9a1bacd02ae43714c6e04c77200dfac245a8d7aa46a75b82c8f0c0a92",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 96,
+        "length_ratio": 1.01,
+        "legacy_coverage": 0.958
+      }
+    },
+    "transcript_translation": "Lina，我想和你谈谈你提交的关于我们即将播出的电炉广告的剧本。\n哦，是的。\n我不确定是否应该包含口号，就是说 'you can count on Plymouth appliances, will make your kitchen our priority'（你可以信赖普利茅斯电器，让你的厨房成为我们的优先事项）。\n你说得对。\n我想我们必须去掉它。\n我们只有 30 秒的音频时间，所以我们必须缩短剧本。\n嗯，我担心我们的截止日期。\n剧本必须在本周末前准备好。\n我们已经预订了录音室的时间。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "727e63cb17ae2c5126718a728da61ce150f1e44866f8fd92e846ab982c7dfed8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -52,23 +74,23 @@
       ],
       "answer": "D",
       "question": "What products does the company sell?",
-      "answer_explain": "原文依据：听力原文中提到“Plymouth Appliances.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Appliances）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） products does the company（公司） sell?",
+      "answer_explain": "正确答案：D（Appliances）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) products does the company(公司) sell?",
       "choice_translations": [
-        "A：Furniture",
-        "B：Electronics",
-        "C：Automobiles",
-        "D：Appliances"
+        "A:Furniture",
+        "B:Electronics",
+        "C:Automobiles",
+        "D:Appliances"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Lena, ® I wanted to talk to you about the script you",
+      "evidence": "参考听力原文：“I wasn't sure about including the slogan, the one that goes, you can count on Plymouth appliances, will make your kitchen our priority.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Lena, ® I wanted to talk to you about the script you",
+        "evidence": "参考听力原文：“I wasn't sure about including the slogan, the one that goes, you can count on Plymouth appliances, will make your kitchen our priority.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Plymouth Appliances.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Appliances）。"
+        "analysis": "正确答案：D（Appliances）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -103,23 +125,23 @@
       ],
       "answer": "A",
       "question": "What does the man want to change?",
-      "answer_explain": "原文依据：听力原文中提到“Lena, ® I wanted to talk to you about the script you”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A script）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） want to change?",
+      "answer_explain": "正确答案：A（A script）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) want to change?",
       "choice_translations": [
-        "A：A script",
-        "B：A contract",
-        "C：A product name",
-        "D：A company（公司） logo"
+        "A:A script",
+        "B:A contract",
+        "C:A product name",
+        "D:A company(公司) logo"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Lena, ® I wanted to talk to you about the script you",
+      "evidence": "参考听力原文：“Lina, I wanted to talk to you about the script you submitted for our upcoming radio commercial, the one advertising our electric stoves.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Lena, ® I wanted to talk to you about the script you",
+        "evidence": "参考听力原文：“Lina, I wanted to talk to you about the script you submitted for our upcoming radio commercial, the one advertising our electric stoves.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Lena, ® I wanted to talk to you about the script you”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A script）。"
+        "analysis": "正确答案：A（A script）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -154,23 +176,23 @@
       ],
       "answer": "B",
       "question": "What concern does the woman have?",
-      "answer_explain": "原文依据：听力原文中提到“Kw Well, Ol'm worried about our deadline.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A deadline is approaching.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） concern does the woman（女士） have?",
+      "answer_explain": "正确答案：B（A deadline is approaching.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) concern does the woman(女士) have?",
       "choice_translations": [
-        "A：A budget is too small.",
-        "B：A deadline is approaching.",
-        "C：Some actors are not available（可用的）.",
-        "D：Some equipment is not working."
+        "A:A budget is too small.",
+        "B:A deadline is approaching.",
+        "C:Some actors are not available(可用的).",
+        "D:Some equipment is not working."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：Lena, ® I wanted to talk to you about the script you",
+      "evidence": "参考听力原文：“We only have 30 seconds of audio, so we'll have to shorten the script.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：Lena, ® I wanted to talk to you about the script you",
+        "evidence": "参考听力原文：“We only have 30 seconds of audio, so we'll have to shorten the script.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Kw Well, Ol'm worried about our deadline.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A deadline is approaching.）。"
+        "analysis": "正确答案：B（A deadline is approaching.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

@@ -39,37 +39,60 @@
       "asset_key": "official-4-test-2/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "I™ Good morning, Ms. Hamasaki. ®@!’m Charles, one\nof the nurses in the office. @1 just have a couple of\nquestions before the doctor comes in.\nK...\nMy notes say you're here for your annual checkup.\nBut, according to our records, you had a checkup s'\nmonths ago. Is that correct?\nNo, it’s not.\nI Oh? Well, 8we've recently started using a new\nrecord-keeping system and some information didn’t\ntransfer correctly.\nJust to let you know, | did visit the office earlier this\nyear to have a prescription refilled, but | didn’t have\nexam at that time.\nJ 9/'ll update your information, then. The doctor will t\nright in.",
-    "transcript_translation": "中文辅助（离线预处理）：I™ Good morning, Ms.\nHamasaki.\n®@!’m Charles, one\nof the nurses in the office（办公室）.\n@1 just have a couple of\nquestions before the doctor comes in.\nK...\nMy notes say you're here for your annual checkup.\nBut, according（根据） to our records, you had a checkup s'\nmonths ago.\nIs that correct?\nNo, it’s not.\nI Oh?\nWell, 8we've recently started using a new\nrecord-keeping system and some information（信息） didn’t\ntransfer correctly.\nJust to let you know, | did visit the office（办公室） earlier this\nyear to have a prescription refilled, but | didn’t have\nexam at that time.\nJ 9/'ll update your information（信息）, then.\nThe doctor will t\nright in.",
-    "content_translation": "中文辅助（离线预处理）：I™ Good morning, Ms.\nHamasaki.\n®@!’m Charles, one\nof the nurses in the office（办公室）.\n@1 just have a couple of\nquestions before the doctor comes in.\nK...\nMy notes say you're here for your annual checkup.\nBut, according（根据） to our records, you had a checkup s'\nmonths ago.\nIs that correct?\nNo, it’s not.\nI Oh?\nWell, 8we've recently started using a new\nrecord-keeping system and some information（信息） didn’t\ntransfer correctly.\nJust to let you know, | did visit the office（办公室） earlier this\nyear to have a prescription refilled, but | didn’t have\nexam at that time.\nJ 9/'ll update your information（信息）, then.\nThe doctor will t\nright in."
+    "transcript": "Good morning, Ms. Hamasaki.\nI'm Charles, one of the nurses in the office.\nI just have a couple of questions before the doctor comes in.\nOkay.\nMy notes say you're here for your annual checkup, but according to our records, you had a checkup six months ago.\nIs that correct?\nNo, it's not.\nOh.\nWell, we've recently started using a new record-keeping system, and some information didn't transfer correctly.\nJust to let you know, I did visit the office earlier this year to have a prescription refilled, but I didn't have an exam at that time.\nI'll update your information, then.\nThe doctor will be right in.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fa874e1e2b12b0a84bcc377a7da57a989fbab7ef31d8d760fdbc01e6c7316249",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 107,
+        "legacy_word_count": 103,
+        "length_ratio": 1.039,
+        "legacy_coverage": 0.951
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "早上好，滨崎女士。\n我是查尔斯，诊所的护士之一。\n在医生进来之前，我有些问题想问您。\n好的。\n我的记录显示您是来做年度体检的，但根据我们的记录，您六个月前已经做过体检了。\n对吗？\n不，不对。\n哦。\n嗯，我们最近开始使用一个新的病历系统，有些信息没有正确转移。\n只是告诉您一声，我今年早些时候来诊所续配处方药的，但当时并没有进行检查。\n那我更新您的信息吧。\n医生马上就来了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4a6a7aafed821c759f6f501f8f505d29648b997d3337d9da451d7479834fa886"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Ata doctor’s office",
-        "Ata fitness center",
-        "Ata pharmacy",
-        "Ata car repair shop"
+        "At a doctor’s office",
+        "At a fitness center",
+        "At a pharmacy",
+        "At a car repair shop"
       ],
       "answer": "A",
       "question": "Where is the conversation taking place?",
-      "answer_explain": "原文依据：听力原文中提到“Just to let you know, | did visit the office earlier this”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Ata doctor’s office）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the conversation taking place?",
+      "answer_explain": "正确答案：A（At a doctor’s office）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) is the conversation taking place?",
       "choice_translations": [
-        "A：Ata doctor’s office（办公室）",
-        "B：Ata fitness center",
-        "C：Ata pharmacy",
-        "D：Ata car repair shop"
+        "A:At a doctor’s office(办公室)",
+        "B:At a fitness center",
+        "C:At a pharmacy",
+        "D:At a car repair shop"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：I™ Good morning, Ms. Hamasaki. ®@!’m Charles, one",
+      "evidence": "参考听力原文：“Just to let you know, I did visit the office earlier this year to have a prescription refilled, but I didn't have an exam at that time.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：I™ Good morning, Ms. Hamasaki. ®@!’m Charles, one",
+        "evidence": "参考听力原文：“Just to let you know, I did visit the office earlier this year to have a prescription refilled, but I didn't have an exam at that time.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Just to let you know, | did visit the office earlier this”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Ata doctor’s office）。"
+        "analysis": "正确答案：A（At a doctor’s office）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -99,29 +122,29 @@
     {
       "choices": [
         "Business hours were extended.",
-        "Arewards program was started.",
-        "Amobile application became available.",
-        "Anew records system was introduced."
+        "A rewards program was started.",
+        "A mobile application became available.",
+        "A new records system was introduced."
       ],
       "answer": "D",
       "question": "According to the man, what change was recently made?",
-      "answer_explain": "原文依据：听力原文中提到“But, according to our records, you had a checkup s'”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Anew records system was introduced.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the man（男士）, what（什么） change was recently made?",
+      "answer_explain": "正确答案：D（A new records system was introduced.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the man(男士), what(什么) change was recently made?",
       "choice_translations": [
-        "A：Business hours were extended.",
-        "B：Arewards program was started.",
-        "C：Amobile application became available（可用的）.",
-        "D：Anew records system was introduced."
+        "A:Business hours were extended.",
+        "B:A rewards program was started.",
+        "C:Amobile application became available(可用的).",
+        "D:A new records system was introduced."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：But, according to our records, you had a checkup s'",
+      "evidence": "参考听力原文：“Well, we've recently started using a new record-keeping system, and some information didn't transfer correctly.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：But, according to our records, you had a checkup s'",
+        "evidence": "参考听力原文：“Well, we've recently started using a new record-keeping system, and some information didn't transfer correctly.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But, according to our records, you had a checkup s'”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Anew records system was introduced.）。"
+        "analysis": "正确答案：D（A new records system was introduced.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "C",
       "question": "What will the man most likely do next?",
-      "answer_explain": "原文依据：听力原文中提到“J 9/'ll update your information, then.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Update some information）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） most likely（最可能） do next?",
+      "answer_explain": "正确答案：C（Update some information）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) most likely(最可能) do next?",
       "choice_translations": [
-        "A：Close an account",
-        "B：Schedule（日程） an appointment（预约）",
-        "C：Update some information（信息）",
-        "D：Renew a prescription"
+        "A:Close an account",
+        "B:Schedule(日程) an appointment(预约)",
+        "C:Update some information(信息)",
+        "D:Renew a prescription"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：I™ Good morning, Ms. Hamasaki. ®@!’m Charles, one",
+      "evidence": "参考听力原文：“Well, we've recently started using a new record-keeping system, and some information didn't transfer correctly.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：I™ Good morning, Ms. Hamasaki. ®@!’m Charles, one",
+        "evidence": "参考听力原文：“Well, we've recently started using a new record-keeping system, and some information didn't transfer correctly.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“J 9/'ll update your information, then.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Update some information）。"
+        "analysis": "正确答案：C（Update some information）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

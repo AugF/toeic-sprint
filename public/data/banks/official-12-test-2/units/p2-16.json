@@ -28,8 +28,28 @@
       "asset_key": "official-12-test-2/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：aW There aren't any more trains to Centerville DEBA today, are there?\n=",
-    "content_translation": "中文辅助（离线预处理）：aW There aren't any more trains to Centerville DEBA today, are there?\n="
+    "transcript": "There aren't any more trains to Centerville today, are there?\nA. A monthly commuter pass.\nB. Thanks, but I can walk.\nC. Sorry, the last one just left.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2f32c0ce1d1add5f3ee54f3f1003e6b37bf3a40854da839d1b7608d7b92b61bd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "今天去 Centerville 的火车没有了，是吗？\nA. 一张月票。\nB. 谢谢，但我可以走路。\nC. 对不起，最后一班车刚开了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8d4d00423af671133bae70c81ed06769d30c068e165a67d1cce4c648a6142b8a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Sorry, the last one just left."
       ],
       "answer": "C",
-      "question": "aW There aren't any more trains to Centerville DEBA today, are there? =",
+      "question": "There aren't any more trains to Centerville today, are there?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“aW There aren't any more trains to Centerville DEBA today, are there? =”，自然应答是“Sorry, the last one just left.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sorry, the last one just left.）。",
-      "question_translation": "中文辅助（离线预处理）：aW There aren't any more trains to Centerville DEBA today, are there?\n=",
+      "answer_explain": "原文依据：问句或陈述是“There aren't any more trains to Centerville today, are there?”，自然应答是“Sorry, the last one just left.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sorry, the last one just left.）。",
+      "question_translation": "今天去 Centerville 的火车没有了,是吗?",
       "choice_translations": [
-        "A：A monthly commuter pass.",
-        "B：Thanks, but I can walk.",
-        "C：Sorry, the last one just left."
+        "A：一张月票。",
+        "B：谢谢,但我可以走路。",
+        "C：对不起,最后一班车刚开了。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：aW There aren't any more trains to Centerville DEBA today, are there? =",
+      "evidence": "参考原文第 1 段：There aren't any more trains to Centerville today, are there?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：aW There aren't any more trains to Centerville DEBA today, are there? =",
+        "evidence": "参考原文第 1 段：There aren't any more trains to Centerville today, are there?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“aW There aren't any more trains to Centerville DEBA today, are there? =”，自然应答是“Sorry, the last one just left.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sorry, the last one just left.）。"
+        "analysis": "原文依据：问句或陈述是“There aren't any more trains to Centerville today, are there?”，自然应答是“Sorry, the last one just left.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sorry, the last one just left.）。"
       },
       "item_id": 16,
       "priority": {

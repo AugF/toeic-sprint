@@ -28,14 +28,34 @@
       "asset_key": "official-6-test-1/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "你今晚想去逛街还是去看电影？\nA. 你有收据吗？\nB. 我要工作到八点。\nC. 一批新鞋的货。",
-    "content_translation": "你今晚想去逛街还是去看电影？\nA. 你有收据吗？\nB. 我要工作到八点。\nC. 一批新鞋的货。"
+    "transcript": "Would you rather go shopping or go to the movies tonight?\nA. Do you have the receipt?\nB. I have to work until 8.\nC. A shipment of new shoes.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3ff90e3da252832a6e55e4c4c7a45f5353e226eb5871bd43a44494a435b50b73",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "今晚你想去逛街还是去看电影？\nA. 你有收据吗？\nB. 我要工作到8点。\nC. 一批新鞋的货件。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1bec8d1eaab6638c05d93bad062371d6bc3e9888c0cf3ae532be17a275bf72cd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Do you have the receipt?",
-        "I have to work until eight.",
+        "I have to work until 8.",
         "A shipment of new shoes."
       ],
       "answer": "B",
@@ -43,12 +63,12 @@
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“Would you rather go shopping or go to the movies tonight?”，自然应答是“I have to work until eight.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I have to work until eight.）。",
-      "question_translation": "你今晚想去逛街还是去看电影？",
+      "answer_explain": "原文依据：问句或陈述是“Would you rather go shopping or go to the movies tonight?”，自然应答是“I have to work until 8.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I have to work until 8.）。",
+      "question_translation": "今晚你想去逛街还是去看电影?",
       "choice_translations": [
-        "A：你有收据吗？",
-        "B：我要工作到八点。",
-        "C：一批新鞋的货。"
+        "A：你有收据吗?",
+        "B：我要工作到8点。",
+        "C：一批新鞋的货件。"
       ],
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段：Would you rather go shopping or go to the movies tonight?",
@@ -59,7 +79,7 @@
         "question_type": "选择疑问句",
         "evidence": "参考原文第 1 段：Would you rather go shopping or go to the movies tonight?",
         "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Would you rather go shopping or go to the movies tonight?”，自然应答是“I have to work until eight.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I have to work until eight.）。"
+        "analysis": "原文依据：问句或陈述是“Would you rather go shopping or go to the movies tonight?”，自然应答是“I have to work until 8.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I have to work until 8.）。"
       },
       "item_id": 25,
       "priority": {

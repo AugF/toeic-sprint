@@ -27,38 +27,58 @@
       "asset_key": "official-12-test-1/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Why（为什么） did you decide to hire that candidate?\nTEM",
-    "content_translation": "中文辅助（离线预处理）：Ew Why（为什么） did you decide to hire that candidate?\nTEM"
+    "transcript": "Why did you decide to hire that candidate?\nA. Because she was highly recommended.\nB. Yes, he said he would be there.\nC. The week before last.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ae236d5791aecdf80a04bb54d18abe8b9c4d9d8adecbd6412250d991ece93610",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "你决定雇佣那位候选人是因为什么？\nA. 因为她得到了高度推荐。\nB. 是的，他说他会到那里的。\nC. 上上周。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a83760577bd8637f7e8896a99ffb2dee599d7b8256eb0ba3efc1f04d9a33791a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Because she was highly recommended. Because",
+        "Because she was highly recommended.",
         "Yes, he said he would be there.",
         "The week before last."
       ],
       "answer": "A",
-      "question": "Ew Why did you decide to hire that candidate? TEM",
+      "question": "Why did you decide to hire that candidate?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Why did you decide to hire that candidate? TEM”，自然应答是“Because she was highly recommended. Because”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because she was highly recommended. Because）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Why（为什么） did you decide to hire that candidate?\nTEM",
+      "answer_explain": "原文依据：问句或陈述是“Why did you decide to hire that candidate?”，自然应答是“Because she was highly recommended.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because she was highly recommended.）。",
+      "question_translation": "你决定雇佣那位候选人是因为什么?",
       "choice_translations": [
-        "A：Because she was highly recommended.\nBecause",
-        "B：Yes, he said he would be there.",
-        "C：The week before last."
+        "A：因为她得到了高度推荐。",
+        "B：是的,他说他会到那里的。",
+        "C：上上周。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Why did you decide to hire that candidate? TEM",
+      "evidence": "参考原文第 1 段：Why did you decide to hire that candidate?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Why did you decide to hire that candidate? TEM",
+        "evidence": "参考原文第 1 段：Why did you decide to hire that candidate?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Why did you decide to hire that candidate? TEM”，自然应答是“Because she was highly recommended. Because”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because she was highly recommended. Because）。"
+        "analysis": "原文依据：问句或陈述是“Why did you decide to hire that candidate?”，自然应答是“Because she was highly recommended.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because she was highly recommended.）。"
       },
       "item_id": 17,
       "priority": {

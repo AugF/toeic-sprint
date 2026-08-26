@@ -41,9 +41,31 @@
       "asset_key": "official-11-test-2/audio/part4/q083-085.mp3",
       "exists": true
     },
-    "transcript": "message.\nHi, Pauline. Ol'm calling to let you know that we finished\nworking on the walkway at your new place. There are no\nmore broken stones, and we replaced the filler between a\nthe stones. Ol know you wanted your backyard deck done\nthe end of the week before you move in, but we have seve\nnew crew members on the project. Ol think you'll be very\npleased with how everything looks so far, though. Ol'll ser\nyou some photographs this afternoon so you can see for\nyourself.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nHi, Pauline.\nOl'm calling to let you know that we finished\nworking on the walkway at your new place.\nThere are no\nmore broken stones, and we replaced the filler between a\nthe stones.\nOl know you wanted your backyard deck done\nthe end of the week before you move in, but we have seve\nnew crew members on the project.\nOl think you'll be very\npleased with how（如何） everything looks so far, though.\nOl'll ser\nyou some photographs this afternoon so you can see for\nyourself.",
-    "content_translation": "中文辅助（离线预处理）：message.\nHi, Pauline.\nOl'm calling to let you know that we finished\nworking on the walkway at your new place.\nThere are no\nmore broken stones, and we replaced the filler between a\nthe stones.\nOl know you wanted your backyard deck done\nthe end of the week before you move in, but we have seve\nnew crew members on the project.\nOl think you'll be very\npleased with how（如何） everything looks so far, though.\nOl'll ser\nyou some photographs this afternoon so you can see for\nyourself."
+    "transcript": "Hi Pauline.\nI'm calling to let you know that we finished working on the walkway at your new place.\nThere are no more broken stones and we replaced the filler between all the stones.\nI know you wanted your backyard deck done by the end of the week before you move in, but we have several new crew members on the project.\nI think you'll be very pleased with how everything looks so far though.\nI'll send you some photographs this afternoon so you can see for yourself.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f7c75bb656b66abb4fa8eced6335627c977ad656468d548e1abe20805f50b070",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part4/q083-085.mp3",
+      "metrics": {
+        "word_count": 88,
+        "legacy_word_count": 88,
+        "length_ratio": 1,
+        "legacy_coverage": 0.909
+      }
+    },
+    "transcript_translation": "嗨，Pauline。\n我打电话来是想通知您，我们在您新住处的步道施工已经完成了。\n没有更多的碎石了，我们已经重新填补了所有石头之间的空隙。\n我知道您希望在搬进来前一周结束时完成后院露台，但我们的项目有几位新的工人。\n不过，我想您会非常满意目前的一切外观的。\n我今天下午会给您发送一些照片，这样您可以亲眼看看。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2b689f3848b586b96b24fb9fc91f9dc683659f7c966da67577ce0452b438efae"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "D",
       "question": "What is the speaker calling about?",
-      "answer_explain": "原文依据：听力原文与题目“What is the speaker calling about?”对应，官方答案为“Home repairs”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Home repairs）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the speaker（说话者） calling about?",
+      "answer_explain": "正确答案：D（Home repairs）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the speaker(说话者) calling about?",
       "choice_translations": [
-        "A：Car maintenance",
-        "B：Boat renovations",
-        "C：Park development",
-        "D：Home repairs"
+        "A:Car maintenance",
+        "B:Boat renovations",
+        "C:Park development",
+        "D:Home repairs"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 2 段：Hi, Pauline. Ol'm calling to let you know that we finished",
+      "evidence": "参考听力原文：“I'm calling to let you know that we finished working on the walkway at your new place.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 2 段：Hi, Pauline. Ol'm calling to let you know that we finished",
+        "evidence": "参考听力原文：“I'm calling to let you know that we finished working on the walkway at your new place.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What is the speaker calling about?”对应，官方答案为“Home repairs”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Home repairs）。"
+        "analysis": "正确答案：D（Home repairs）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 83,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "C",
       "question": "What does the speaker imply when he says, \"we have several new crew members on the project\"?",
-      "answer_explain": "原文依据：听力原文与题目“What does the speaker imply when he says, \"we have several new crew members on the project\"?”对应，官方答案为“A requested due date cannot be met.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A requested due date cannot be met.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） imply when（何时） he says, \"we have several new crew members on the project\"?",
+      "answer_explain": "正确答案：C（A requested due date cannot be met.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) imply when(何时) he says, \"we have several new crew members on the project\"?",
       "choice_translations": [
-        "A：The payroll needs to be updated",
-        "B：The crew's work（工作） is impressive.",
-        "C：A requested due date cannot be met.",
-        "D：Some colleagues will need driving directions."
+        "A:The payroll needs to be updated",
+        "B:The crew's work(工作) is impressive.",
+        "C:A requested due date cannot be met.",
+        "D:Some colleagues will need driving directions."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 7 段：new crew members on the project. Ol think you'll be very",
+      "evidence": "参考听力原文：“I know you wanted your backyard deck done by the end of the week before you move in, but we have several new crew members on the project.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 7 段：new crew members on the project. Ol think you'll be very",
+        "evidence": "参考听力原文：“I know you wanted your backyard deck done by the end of the week before you move in, but we have several new crew members on the project.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What does the speaker imply when he says, \"we have several new crew members on the project\"?”对应，官方答案为“A requested due date cannot be met.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A requested due date cannot be met.）。"
+        "analysis": "正确答案：C（A requested due date cannot be met.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 84,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "B",
       "question": "What will the listener receive this afternoon?",
-      "answer_explain": "原文依据：听力原文与题目“What will the listener receive this afternoon?”对应，官方答案为“Some photographs”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（Some photographs）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the listener receive this afternoon?",
+      "answer_explain": "正确答案：B（Some photographs）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the listener receive this afternoon?",
       "choice_translations": [
-        "A：An inspection report",
-        "B：Some photographs",
-        "C：An invoice",
-        "D：A delivery"
+        "A:An inspection report",
+        "B:Some photographs",
+        "C:An invoice",
+        "D:A delivery"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：you some photographs this afternoon so you can see for",
+      "evidence": "参考听力原文：“I'll send you some photographs this afternoon so you can see for yourself.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：you some photographs this afternoon so you can see for",
+        "evidence": "参考听力原文：“I'll send you some photographs this afternoon so you can see for yourself.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What will the listener receive this afternoon?”对应，官方答案为“Some photographs”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（Some photographs）。"
+        "analysis": "正确答案：B（Some photographs）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 85,
       "priority": {

@@ -45,9 +45,32 @@
       "asset_key": "official-11-test-1/images/part4/q095-097.jpg",
       "exists": true
     },
-    "transcript": "As you know, in March, our marketing agency won the\nindustry award for \"Most Innovative Television Commercial.\"\nAfter years of hard work, we're now an established name,\nand business is thriving. One of the individuals who has\ncontributed significantly throughout our path to success\nis Scott Williams. So it's with some reluctance that\nI'm announcing that Scott has decided to embark on his\nretirement. It's certainly a loss for us, and we will miss\nhis valuable insights. In light of this change, we'll need to\nmodify a project team. Lauren is already successfully\nheading the marketing campaign for the Greyrock Financial\naccount. So we're going to add her expertise to the Stelco\nTechnologies account also.",
-    "transcript_translation": "大家都知道，今年三月，我们的营销代理公司获得了行业“最具创新力电视广告”奖。经过多年的努力，我们如今已经声名稳固，业务蒸蒸日上。在我们走向成功的历程中，斯科特·威廉姆斯是作出重大贡献的人之一。因此，我有些不舍地宣布，斯科特已经决定退休。这对我们来说无疑是一项损失，我们也会怀念他的宝贵见解。鉴于这一变化，我们需要调整一个项目团队。劳伦目前已经成功负责格雷罗克金融客户的营销活动，所以我们还会把她的专业能力加入斯特尔科科技客户项目。",
-    "content_translation": "本段听力围绕“公司内部会议”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "As you know, in March, our marketing agency won the industry award for most innovative television commercial.\nAfter years of hard work, we're now an established name and business is thriving.\nOne of the individuals who has contributed significantly throughout our path to success is Scott Williams.\nSo, it's with some reluctance that I'm announcing that Scott has decided to embark on his retirement.\nIt's certainly a loss for us, and we will miss his valuable insights.\nIn light of this change, we'll need to modify a project team.\nLauren is already successfully heading the marketing campaign for the Greyrock Financial Account, so we're going to add her expertise to the Stelco Technologies Account also.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b046e63e4e13c59d58f09615c1a05e98816d78075b89fdca06c2e71b78daa69f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 117,
+        "legacy_word_count": 115,
+        "length_ratio": 1.017,
+        "legacy_coverage": 0.991
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "正如你所知，三月份我们的营销机构赢得了最具创新性的电视广告行业奖项。\n经过多年的辛勤工作，我们现在已成为一个知名的品牌，并且业务蓬勃发展。\n在我们走向成功的过程中，有一个人做出了重要贡献，他就是斯科特·威廉姆斯。\n因此，我怀着些许犹豫宣布斯科特决定退休。\n对我们来说这无疑是一个损失，我们会想念他的宝贵见解。\n鉴于这一变化，我们需要调整一个项目团队。\n劳伦已经成功地负责了Greyrock金融账户的营销活动，所以我们打算将她的专业知识也应用于Stelco技术公司账户。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "ddbbfef5287fa7025eabd46d251d2710227ffbfb6e6151ce9657f04b5a39e7c9"
+    }
   },
   "items": [
     {
@@ -59,24 +82,24 @@
         "A new policy was implemented."
       ],
       "answer": "B",
-      "answer_explain": "原文依据：讲话说 in March, our marketing agency won the industry award。 选择理由：三月发生的是机构获奖，对应B。正确答案：B（An agency won an award.）。",
+      "answer_explain": "正确答案：B（An agency won an award.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：As you know, in March, our marketing agency won the",
+      "evidence": "参考听力原文：“As you know, in March, our marketing agency won the industry award for most innovative television commercial.”",
       "choice_translations": [
-        "A：进行了一次财务审计。",
-        "B：一家代理公司获得了奖项。",
-        "C：一家公司搬迁了总部。",
-        "D：实施了一项新政策。"
+        "A:进行了一次财务审计。",
+        "B:一家代理公司获得了奖项。",
+        "C:一家公司搬迁了总部。",
+        "D:实施了一项新政策。"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：As you know, in March, our marketing agency won the",
+        "evidence": "参考听力原文：“As you know, in March, our marketing agency won the industry award for most innovative television commercial.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：讲话说 in March, our marketing agency won the industry award。 选择理由：三月发生的是机构获奖，对应B。正确答案：B（An agency won an award.）。"
+        "analysis": "正确答案：B（An agency won an award.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "据说话者所说，三月份发生了什么？",
+      "question_translation": "据说话者所说,三月份发生了什么?",
       "item_id": 95,
       "priority": {
         "level": "P1",
@@ -112,24 +135,24 @@
         "He will speak at a marketing conference."
       ],
       "answer": "C",
-      "answer_explain": "原文依据：Scott has decided to embark on his retirement。 选择理由：退休意味着将离开公司，对应C。正确答案：C（He will be leaving the company.）。",
+      "answer_explain": "正确答案：C（He will be leaving the company.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 6 段第 1 句：is Scott Williams. So it's with some reluctance that",
+      "evidence": "参考听力原文：“One of the individuals who has contributed significantly throughout our path to success is Scott Williams.”",
       "choice_translations": [
-        "A：他将指导一名新员工。",
-        "B：他已晋升到另一个职位。",
-        "C：他将离开公司。",
-        "D：他将在一场营销大会上发言。"
+        "A:他将指导一名新员工。",
+        "B:他已晋升到另一个职位。",
+        "C:他将离开公司。",
+        "D:他将在一场营销大会上发言。"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 6 段第 1 句：is Scott Williams. So it's with some reluctance that",
+        "evidence": "参考听力原文：“One of the individuals who has contributed significantly throughout our path to success is Scott Williams.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：Scott has decided to embark on his retirement。 选择理由：退休意味着将离开公司，对应C。正确答案：C（He will be leaving the company.）。"
+        "analysis": "正确答案：C（He will be leaving the company.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者宣布了关于斯科特·威廉姆斯的什么消息？",
+      "question_translation": "说话者宣布了关于斯科特·威廉姆斯的什么消息?",
       "item_id": 96,
       "priority": {
         "level": "P1",
@@ -165,24 +188,24 @@
         "Project Team 4"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：Lauren负责 Greyrock Financial，又将加入 Stelco Technologies；图中 Stelco 属于 Project Team 1。 选择理由：综合讲话与图表得A。正确答案：A（Project Team 1）。",
+      "answer_explain": "正确答案：A（Project Team 1）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段第 1 句：modify a project team. Lauren is already successfully",
+      "evidence": "参考听力原文：“In light of this change, we'll need to modify a project team.”",
       "choice_translations": [
-        "A：项目团队 1",
-        "B：项目团队 2",
-        "C：项目团队 3",
-        "D：项目团队 4"
+        "A:项目团队 1",
+        "B:项目团队 2",
+        "C:项目团队 3",
+        "D:项目团队 4"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段第 1 句：modify a project team. Lauren is already successfully",
+        "evidence": "参考听力原文：“In light of this change, we'll need to modify a project team.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：Lauren负责 Greyrock Financial，又将加入 Stelco Technologies；图中 Stelco 属于 Project Team 1。 选择理由：综合讲话与图表得A。正确答案：A（Project Team 1）。"
+        "analysis": "正确答案：A（Project Team 1）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "请看图表。劳伦还会被分派到哪个团队？",
+      "question_translation": "请看图表。劳伦还会被分派到哪个团队?",
       "item_id": 97,
       "priority": {
         "level": "P1",

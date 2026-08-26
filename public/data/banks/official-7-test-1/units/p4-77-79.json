@@ -40,9 +40,33 @@
       "asset_key": "official-7-test-1/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "Now that you've seen the studio where Fernando Ortiz\nworked on designs for some of the most iconic, celebrated\nbuildings in Spain, let's move on to the extensive gardens,\nwhere Ortiz found inspiration for his designs in nature. But\nfirst, let's take a break. ®Feel free to purchase some\nfood and drinks from our café. ®We do have a dining\narea indoors, but there are tables and chairs on the patio\noverlooking the rose garden, and as you can see, the sun is\nshining. Let's meet by the fountain in the garden in twenty\nvT -n05.\nminutes to continue our tour.",
-    "transcript_translation": "中文辅助（离线预处理）：Now that you've seen the studio where（哪里） Fernando Ortiz\nworked on designs for some of the most iconic, celebrated\nbuildings in Spain, let's move on to the extensive gardens,\nwhere（哪里） Ortiz found inspiration for his designs in nature.\nBut\nfirst, let's take a break.\n®Feel free to purchase（购买） some\nfood and drinks from our café.\n®We do have a dining\narea indoors, but there are tables and chairs on the patio\noverlooking the rose garden, and as you can see, the sun is\nshining.\nLet's meet by the fountain in the garden in twenty\nvT -n05.\nminutes to continue our tour.",
-    "content_translation": "中文辅助（离线预处理）：Now that you've seen the studio where（哪里） Fernando Ortiz\nworked on designs for some of the most iconic, celebrated\nbuildings in Spain, let's move on to the extensive gardens,\nwhere（哪里） Ortiz found inspiration for his designs in nature.\nBut\nfirst, let's take a break.\n®Feel free to purchase（购买） some\nfood and drinks from our café.\n®We do have a dining\narea indoors, but there are tables and chairs on the patio\noverlooking the rose garden, and as you can see, the sun is\nshining.\nLet's meet by the fountain in the garden in twenty\nvT -n05.\nminutes to continue our tour."
+    "transcript": "information.\nNow that you've seen the studio where Fernando Ortiz worked on designs for some of the most iconic celebrated buildings in Spain, let's move on to the extensive gardens where Ortiz found inspiration for his designs in nature.\nBut first, let's take a break.\nFeel free to purchase some food and drinks. from our cafe.\nWe do have a dining area indoors, but there are tables and chairs on the patio overlooking the Rose Garden.\nAnd as you can see, the sun is shining.\nLet's meet by the fountain in the garden in 20 minutes to continue our tour.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "b8d27eb876895dea0b7e3268ee82321675674b99ae639a6a2b023a450c1f3426",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 99,
+        "legacy_word_count": 101,
+        "length_ratio": 0.98,
+        "legacy_coverage": 0.96,
+        "prompted_failure": "missing spoken Questions 77 through 79 introduction"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "信息。\n既然您已经看到了费尔南多·奥尔蒂斯（Fernando Ortiz）设计了西班牙一些最具标志性的建筑的工作室，我们接下来就来到奥尔蒂斯在自然中寻找灵感的广阔花园。\n但首先，让我们休息一下。\n欢迎到我们的咖啡馆购买一些食物和饮料。\n我们在室内有一个用餐区，但在俯瞰玫瑰园的花台上也有桌子和椅子。\n正如您所看到的，阳光明媚。\n请在花园的喷泉处等我20分钟，我们继续参观。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "15b7dc283d90a1b9d2047855e060fdad05607067e1d1eb106c1a340eb1d6e099"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +78,23 @@
       ],
       "answer": "D",
       "question": "Who most likely is Fernando Ortiz?",
-      "answer_explain": "原文依据：听力原文中提到“Now that you've seen the studio where Fernando Ortiz”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（An architect）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is Fernando Ortiz?",
+      "answer_explain": "正确答案：D（An architect）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is Fernando Ortiz?",
       "choice_translations": [
-        "A：An actor",
-        "B：A chef",
-        "C：A gardener",
-        "D：An architect"
+        "A:An actor",
+        "B:A chef",
+        "C:A gardener",
+        "D:An architect"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Now that you've seen the studio where Fernando Ortiz",
+      "evidence": "参考听力原文：“Now that you've seen the studio where Fernando Ortiz worked on designs for some of the most iconic celebrated buildings in Spain, let's move on to the extensive gardens where Ortiz found inspiration for his designs in nature.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Now that you've seen the studio where Fernando Ortiz",
+        "evidence": "参考听力原文：“Now that you've seen the studio where Fernando Ortiz worked on designs for some of the most iconic celebrated buildings in Spain, let's move on to the extensive gardens where Ortiz found inspiration for his designs in nature.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Now that you've seen the studio where Fernando Ortiz”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（An architect）。"
+        "analysis": "正确答案：D（An architect）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -107,23 +131,23 @@
       ],
       "answer": "C",
       "question": "According to the speaker, what can the listeners purchase during the break?",
-      "answer_explain": "原文依据：听力原文中提到“overlooking the rose garden, and as you can see, the sun is”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Refreshments）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） can the listeners purchase（购买） during the break?",
+      "answer_explain": "正确答案：C（Refreshments）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) can the listeners purchase(购买) during the break?",
       "choice_translations": [
-        "A：Maps",
-        "B：Souvenirs",
-        "C：Refreshments",
-        "D：Transportation passes"
+        "A:Maps",
+        "B:Souvenirs",
+        "C:Refreshments",
+        "D:Transportation passes"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：first, let's take a break. ®Feel free to purchase some",
+      "evidence": "参考听力原文：“Feel free to purchase some food and drinks. from our cafe.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：first, let's take a break. ®Feel free to purchase some",
+        "evidence": "参考听力原文：“Feel free to purchase some food and drinks. from our cafe.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“overlooking the rose garden, and as you can see, the sun is”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Refreshments）。"
+        "analysis": "正确答案：C（Refreshments）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -160,23 +184,23 @@
       ],
       "answer": "A",
       "question": "Why does the speaker say, \"the sun is shining\"?",
-      "answer_explain": "原文依据：听力原文中提到“overlooking the rose garden, and as you can see, the sun is”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To make a recommendation）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"the sun is shining\"?",
+      "answer_explain": "正确答案：A（To make a recommendation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"the sun is shining\"?",
       "choice_translations": [
-        "A：To make a recommendation",
-        "B：To disagree with a weather report",
-        "C：To ask for assistance",
-        "D：To explain why（为什么） an itinerary has changed"
+        "A:To make a recommendation",
+        "B:To disagree with a weather report",
+        "C:To ask for assistance",
+        "D:To explain why(为什么) an itinerary has changed"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：shining. Let's meet by the fountain in the garden in twenty",
+      "evidence": "参考听力原文：“And as you can see, the sun is shining.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：shining. Let's meet by the fountain in the garden in twenty",
+        "evidence": "参考听力原文：“And as you can see, the sun is shining.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“overlooking the rose garden, and as you can see, the sun is”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To make a recommendation）。"
+        "analysis": "正确答案：A（To make a recommendation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

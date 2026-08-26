@@ -31,8 +31,28 @@
       "asset_key": "official-7-test-2/images/part1/q002.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. He's standing in front of a sink.\nB. He's putting some dishes in a cupboard.\nC. He's installing a faucet in the kitchen.\nD. He's pouring water into a bottle.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "476e9aab172ae621ac3106bdc6e62eea9ccdb5e2401d7cf2b0f29c3c396efce7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part1/q002.mp3",
+      "metrics": {
+        "word_count": 197
+      }
+    },
+    "transcript_translation": "A. 他正站在水槽前。\nB. 他正在把一些盘子放进橱柜里。\nC. 他正在厨房安装一个水龙头。\nD. 他正在往瓶子里倒水。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a6bf29197a557f68a2e08c7bf07ea22de437daf136c99ce0fdc7552853d78fef"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“He's standing in front of a sink.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（He's standing in front of a sink.）。",
       "choice_translations": [
-        "A：He's standing in front of a sink.",
-        "B：He's putting some dishes in a cupboard.",
-        "C：He's installing a faucet in the kitchen.",
-        "D：He's pouring water into a bottle."
+        "A：他正站在水槽前。",
+        "B：他正在把一些盘子放进橱柜里。",
+        "C：他正在厨房安装一个水龙头。",
+        "D：他正在往瓶子里倒水。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-2/p1-2/2"
+      "item_key": "official-7-test-2/p1-2/2",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

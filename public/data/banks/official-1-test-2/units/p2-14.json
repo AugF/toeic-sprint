@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-2/audio/part2/q014.mp3",
       "exists": true
     },
-    "transcript_translation": "[l™ 你打算接受管理职位吗？ Are you going to ~? C, @uBmv7z51 postions AB SBREBR TS. Nich = w\nA. 其他人。\nB. 他们在财务部。\nC. 提交。]",
-    "content_translation": "[l™ 你打算接受管理职位吗？ Are you going to ~? C, @uBmv7z51 postions AB SBREBR TS. Nich = w\nA. 其他人。\nB. 他们在财务部。\nC. 提交。]"
+    "transcript": "Are you going to accept the management position?\nA. Everyone else.\nB. They're in finance.\nC. Yes, I start June 1st.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d8af51846fd8cb0dc5c392f38f2b973a5d05ab05566f05c6fe53ef45648f41f5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part2/q014.mp3",
+      "metrics": {
+        "word_count": 22
+      }
+    },
+    "transcript_translation": "您打算接受管理职位吗？\nA. 其他所有人都。\nB. 他们在金融部门。\nC. 是的，我6月1日开始。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b1986e03641a5318b2fafe3db69e5e27d2acec9bcce3afa4b12793ffa29f7fee"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Everyone else. L, YestS2, SRBSCLCMEMO SHEE",
-        "They're in finance. ATWS",
-        "MIEM. acceptl~Z5le ZFS]."
+        "Everyone else.",
+        "They're in finance.",
+        "Yes, I start June 1st."
       ],
       "answer": "C",
-      "question": "[l™ Are you going to accept the management ae Are you going to ~? C, @uBmv7z51 postions AB SBREBR TS. Nich = w",
+      "question": "Are you going to accept the management position?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“[l™ Are you going to accept the management ae Are you going to ~? C, @uBmv7z51 postions AB SBREBR TS. Nich = w”，自然应答是“MIEM. acceptl~Z5le ZFS].”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（MIEM. acceptl~Z5le ZFS].）。",
-      "question_translation": "[l™ 你打算接受管理职位吗？ Are you going to ~? C, @uBmv7z51 postions AB SBREBR TS. Nich = w",
+      "answer_explain": "原文依据：问句或陈述是“Are you going to accept the management position?”，自然应答是“Yes, I start June 1st.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, I start June 1st.）。",
+      "question_translation": "您打算接受管理职位吗?",
       "choice_translations": [
-        "A：其他人。",
-        "B：他们在财务部。",
-        "C：提交。"
+        "A：其他所有人都。",
+        "B：他们在金融部门。",
+        "C：是的,我6月1日开始。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：[l™ Are you going to accept the management ae Are you going to ~? C, @uBmv7z51 postions AB SBREBR TS. Nich = w",
+      "evidence": "参考原文第 1 段：Are you going to accept the management position?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：[l™ Are you going to accept the management ae Are you going to ~? C, @uBmv7z51 postions AB SBREBR TS. Nich = w",
+        "evidence": "参考原文第 1 段：Are you going to accept the management position?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“[l™ Are you going to accept the management ae Are you going to ~? C, @uBmv7z51 postions AB SBREBR TS. Nich = w”，自然应答是“MIEM. acceptl~Z5le ZFS].”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（MIEM. acceptl~Z5le ZFS].）。"
+        "analysis": "原文依据：问句或陈述是“Are you going to accept the management position?”，自然应答是“Yes, I start June 1st.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, I start June 1st.）。"
       },
       "item_id": 14,
       "priority": {

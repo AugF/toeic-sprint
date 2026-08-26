@@ -39,9 +39,31 @@
       "asset_key": "official-11-test-1/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "Thanks for coming in, Vivek. As we discussed on\nthe phone, I'm looking for an assistant to help my\nmanager, Jessica, run the farm. She'll be participating\nin the interview.\nHello. Nice to meet you, Jessica.\nSame here. I was happy to see on your application\nthat you have quite a bit of experience growing\nvegetables.\nYes. When I was in school, I worked on a vegetable\nfarm during the summer. I know that for this job, I'd\nbe expected to help create the planting and harvesting\nschedules, though. I haven't done much of that.\nNo problem - Jessica will train you to do that.\nI'll show you the spreadsheets that we use.",
-    "transcript_translation": "谢谢你来参加面试，维韦克。正如我们在电话里谈过的，我要招聘一名助理来协助我的经理杰茜卡经营农场。她也会参加这次面试。\n你好，很高兴见到你，杰茜卡。\n我也很高兴见到你。看到你在申请表中写着自己有相当丰富的蔬菜种植经验，我很高兴。\n是的。我上学时，暑假曾在一家蔬菜农场工作。不过我知道这份工作还需要协助制订种植和收获计划，这方面我没怎么做过。\n没关系，杰茜卡会培训你。\n我会给你看我们使用的电子表格。",
-    "content_translation": "本段听力围绕“招聘与培训”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Thanks for coming in, Vivek.\nAs we discussed on the phone, I'm looking for an assistant to help my manager, Jessica, run the farm.\nShe'll be participating in the interview.\nHello.\nNice to meet you, Jessica.\nSame here.\nI was happy to see on your application that you have quite a bit of experience growing vegetables.\nYes.\nWhen I was in school, I worked on a vegetable farm during the summer.\nI know that for this job, I'd be expected to help create the planting and harvesting schedules, though.\nI haven't done much of that.\nNo problem.\nJessica will train you to do that.\nI'll show you the spreadsheets that we use.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e32e881d8e8ebb3e655b536e5da28087e1d54595603ad8f848efd5f4cb9ca2ca",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 112,
+        "legacy_word_count": 107,
+        "length_ratio": 1.047,
+        "legacy_coverage": 0.972
+      }
+    },
+    "transcript_translation": "谢谢你来，Vivek。\n正如我们在电话里讨论的，我正在找一个助理来帮我的经理Jessica运营农场。\n她将参加面试。\n你好。\n很高兴认识你，Jessica。\n我也是。\n看到你的申请表上说你有相当多的种植蔬菜的经验，我很开心。\n是的。\n我在学校的时候，夏天曾在一家蔬菜农场工作过。\n我知道对于这份工作，我预计需要帮助制定种植和收获时间表。\n我没有做过太多这种事情。\n没关系。\nJessica会培训你做到这一点。\n我会给你看看我们使用的电子表格。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "796fd4faa43c471c3e811580a44c0e26e55ab1bafbe16b8df1ebcc9610005784"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,24 +75,24 @@
         "At a farm"
       ],
       "answer": "D",
-      "answer_explain": "原文依据：女方说 run the farm，职位涉及 planting and harvesting schedules。 选择理由：工作地点是农场，对应D。正确答案：D（At a farm）。",
+      "answer_explain": "正确答案：D（At a farm）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 1 段第 1 句：Thanks for coming in, Vivek. As we discussed on",
+      "evidence": "参考听力原文：“As we discussed on the phone, I'm looking for an assistant to help my manager, Jessica, run the farm.”",
       "choice_translations": [
-        "A：在营销公司",
-        "B：在医院",
-        "C：在杂货店",
-        "D：在农场"
+        "A:在营销公司",
+        "B:在医院",
+        "C:在杂货店",
+        "D:在农场"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 1 段第 1 句：Thanks for coming in, Vivek. As we discussed on",
+        "evidence": "参考听力原文：“As we discussed on the phone, I'm looking for an assistant to help my manager, Jessica, run the farm.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：女方说 run the farm，职位涉及 planting and harvesting schedules。 选择理由：工作地点是农场，对应D。正确答案：D（At a farm）。"
+        "analysis": "正确答案：D（At a farm）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "两位女士最可能在哪里工作？",
+      "question_translation": "两位女士最可能在哪里工作?",
       "item_id": 56,
       "priority": {
         "level": "P3",
@@ -105,24 +127,24 @@
         "His writing ability"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：应聘者说在校期间 worked on a vegetable farm during the summer。 选择理由：提到的是相关工作经验，对应A。正确答案：A（His work experience）。",
+      "answer_explain": "正确答案：A（His work experience）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Thanks for coming in, Vivek. As we discussed on",
+      "evidence": "参考听力原文：“I was happy to see on your application that you have quite a bit of experience growing vegetables.”",
       "choice_translations": [
-        "A：他的工作经验",
-        "B：他的大学学位",
-        "C：他的社区服务经历",
-        "D：他的写作能力"
+        "A:他的工作经验",
+        "B:他的大学学位",
+        "C:他的社区服务经历",
+        "D:他的写作能力"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Thanks for coming in, Vivek. As we discussed on",
+        "evidence": "参考听力原文：“I was happy to see on your application that you have quite a bit of experience growing vegetables.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：应聘者说在校期间 worked on a vegetable farm during the summer。 选择理由：提到的是相关工作经验，对应A。正确答案：A（His work experience）。"
+        "analysis": "正确答案：A（His work experience）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "对话提到了男士的哪项资历？",
+      "question_translation": "对话提到了男士的哪项资历?",
       "item_id": 57,
       "priority": {
         "level": "P3",
@@ -157,24 +179,24 @@
         "Lead a team project"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：女方说 Jessica will train you，并要展示 spreadsheets。 选择理由：Jessica接下来会提供培训，对应A。正确答案：A（Provide training）。",
+      "answer_explain": "正确答案：A（Provide training）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段第 1 句：manager, Jessica, run the farm. She'll be participating",
+      "evidence": "参考听力原文：“Jessica will train you to do that.”",
       "choice_translations": [
-        "A：提供培训",
-        "B：安排交通",
-        "C：订购设备",
-        "D：领导团队项目"
+        "A:提供培训",
+        "B:安排交通",
+        "C:订购设备",
+        "D:领导团队项目"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段第 1 句：manager, Jessica, run the farm. She'll be participating",
+        "evidence": "参考听力原文：“Jessica will train you to do that.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：女方说 Jessica will train you，并要展示 spreadsheets。 选择理由：Jessica接下来会提供培训，对应A。正确答案：A（Provide training）。"
+        "analysis": "正确答案：A（Provide training）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "杰茜卡会做什么？",
+      "question_translation": "杰茜卡会做什么?",
       "item_id": 58,
       "priority": {
         "level": "P3",

@@ -26,8 +26,28 @@
       "asset_key": "official-5-test-1/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） should we go out for lunch today?",
-    "content_translation": "中文辅助（离线预处理）：Where（哪里） should we go out for lunch today?"
+    "transcript": "Where should we go out for lunch today?\nA. Oh, I brought food from home.\nB. I'm not familiar with that restaurant.\nC. No, he ordered some last week.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7199fb5c60f589d62e595cfe1271dc80a5b917ace0ebd8ccf41b5894867bbd3c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "今天午饭我们应该去哪里？\nA. 哦，我带了家里的食物。\nB. 我不熟悉那家餐厅。\nC. 不，他上周点了一些。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4682e731bbe2af3892af8f5b41c5281e1f5a858c4367230f1beb5505e120f9a0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -42,11 +62,11 @@
       "topic": "地点询问",
       "keywords": "where location response",
       "answer_explain": "原文依据：问句或陈述是“Where should we go out for lunch today?”，自然应答是“Oh, I brought food from home.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Oh, I brought food from home.）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） should we go out for lunch today?",
+      "question_translation": "今天午饭我们应该去哪里?",
       "choice_translations": [
-        "A：Oh, I brought food from home.",
-        "B：I'm not familiar with that restaurant.",
-        "C：No, he ordered some last week."
+        "A：哦,我带了家里的食物。",
+        "B：我不熟悉那家餐厅。",
+        "C：不,他上周点了一些。"
       ],
       "question_type": "地点疑问句",
       "evidence": "参考原文第 1 段：Where should we go out for lunch today?",

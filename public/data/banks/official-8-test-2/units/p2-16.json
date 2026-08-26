@@ -27,38 +27,58 @@
       "asset_key": "official-8-test-2/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：How（如何） can we stay in budget for these repairs?\n/",
-    "content_translation": "中文辅助（离线预处理）：How（如何） can we stay in budget for these repairs?\n/"
+    "transcript": "How can we stay in budget for these repairs?\nA. Around 500 euros.\nB. Sure, I can buy light bulbs tonight.\nC. We can get estimates from several companies.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "85492f4746bbeebb9fabbf81a91fc071a7aadf583522aef14bf6c02072fb31fd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "我们怎样才能在预算内完成这些维修？\nA. 大约 500 欧元。\nB. 当然，我今晚可以买灯泡。\nC. 我们可以向几家公司获取估价。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1a1486f3d91c2103ec7aa5d529d9c127c02dbaafd8bc4894953a5fe1f97c41bc"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Around 500 euros.",
-        "Sure, I can buy lightbulbs tonight.",
+        "Sure, I can buy light bulbs tonight.",
         "We can get estimates from several companies."
       ],
       "answer": "C",
-      "question": "How can we stay in budget for these repairs? /",
+      "question": "How can we stay in budget for these repairs?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“How can we stay in budget for these repairs? /”，自然应答是“We can get estimates from several companies.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（We can get estimates from several companies.）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） can we stay in budget for these repairs?\n/",
+      "answer_explain": "原文依据：问句或陈述是“How can we stay in budget for these repairs?”，自然应答是“We can get estimates from several companies.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（We can get estimates from several companies.）。",
+      "question_translation": "我们怎样才能在预算内完成这些维修?",
       "choice_translations": [
-        "A：Around 500 euros.",
-        "B：Sure, I can buy lightbulbs tonight.",
-        "C：We can get estimates from several companies."
+        "A：大约 500 欧元。",
+        "B：当然,我今晚可以买灯泡。",
+        "C：我们可以向几家公司获取估价。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：How can we stay in budget for these repairs? /",
+      "evidence": "参考原文第 1 段：How can we stay in budget for these repairs?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：How can we stay in budget for these repairs? /",
+        "evidence": "参考原文第 1 段：How can we stay in budget for these repairs?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“How can we stay in budget for these repairs? /”，自然应答是“We can get estimates from several companies.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（We can get estimates from several companies.）。"
+        "analysis": "原文依据：问句或陈述是“How can we stay in budget for these repairs?”，自然应答是“We can get estimates from several companies.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（We can get estimates from several companies.）。"
       },
       "item_id": 16,
       "priority": {

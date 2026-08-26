@@ -26,38 +26,58 @@
       "asset_key": "official-8-test-1/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Elw Who（谁） needs to sign the budget approval form?\n•IM",
-    "content_translation": "中文辅助（离线预处理）：Elw Who（谁） needs to sign the budget approval form?\n•IM"
+    "transcript": "Who needs to sign the budget approval form?\nA. Let's hang the sign here.\nB. I just sent it to Norico.\nC. 30,000 euros.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9282795562ed5540c58388b3c97cff1a82fb38a88a46ef9da6b25ebfa9066da6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "谁需要签署预算批准表？\nA. 我们把牌挂在这里。\nB. 我刚把它发给 Norico。\nC. 30,000 欧元。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a088bb731bac0e7cd3a1ed9c1700cf28b23f42512a7bfaaff13f79215ea46d19"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Let's hang the sign here.",
-        "I just sent it to Noriko.",
-        "Thirty thousand euros."
+        "I just sent it to Norico.",
+        "30,000 euros."
       ],
       "answer": "B",
-      "question": "Elw Who needs to sign the budget approval form? •IM",
+      "question": "Who needs to sign the budget approval form?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Elw Who needs to sign the budget approval form? •IM”，自然应答是“I just sent it to Noriko.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I just sent it to Noriko.）。",
-      "question_translation": "中文辅助（离线预处理）：Elw Who（谁） needs to sign the budget approval form?\n•IM",
+      "answer_explain": "原文依据：问句或陈述是“Who needs to sign the budget approval form?”，自然应答是“I just sent it to Norico.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I just sent it to Norico.）。",
+      "question_translation": "谁需要签署预算批准表?",
       "choice_translations": [
-        "A：Let's hang the sign here.",
-        "B：I just sent it to Noriko.",
-        "C：Thirty thousand euros."
+        "A：我们把牌挂在这里。",
+        "B：我刚把它发给 Norico。",
+        "C：30,000 欧元。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Elw Who needs to sign the budget approval form? •IM",
+      "evidence": "参考原文第 1 段：Who needs to sign the budget approval form?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Elw Who needs to sign the budget approval form? •IM",
+        "evidence": "参考原文第 1 段：Who needs to sign the budget approval form?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Elw Who needs to sign the budget approval form? •IM”，自然应答是“I just sent it to Noriko.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I just sent it to Noriko.）。"
+        "analysis": "原文依据：问句或陈述是“Who needs to sign the budget approval form?”，自然应答是“I just sent it to Norico.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I just sent it to Norico.）。"
       },
       "item_id": 18,
       "priority": {

@@ -32,8 +32,28 @@
       "asset_key": "official-11-test-2/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. Some workers are stocking the shelves of a storage closet.\nB. Some customers are pushing shopping carts.\nC. Some customers are standing in front of a checkout counter.\nD. Some workers are hanging up some shopping bags. D. Some workers are hanging up some shopping bags.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f3e6794d848f0d4ec05837a1979f29c3611f5ebc48f1c0526b6f19f06ed11991",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 64
+      }
+    },
+    "transcript_translation": "A. 一些工人正在给一个储物柜上架货物。\nB. 有些顾客正在推购物推车。\nC. 有些顾客正站在结账柜台前。\nD. 有些工人正在挂一些购物袋。 D. 有些工人正在挂一些购物袋。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b27432b3e20c2d2c6da8af5aa050282a5e68b9c7dd3d7351d314a62e313b8a2c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -41,7 +61,7 @@
         "Some workers are stocking the shelves of a storage closet.",
         "Some customers are pushing shopping carts.",
         "Some customers are standing in front of a checkout counter.",
-        "Some workers are hanging up some shopping"
+        "Some workers are hanging up some shopping bags. D. Some workers are hanging up some shopping bags."
       ],
       "answer": "A",
       "difficulty": "medium",
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：官方详解给出的照片描述正确项是 A（Some workers are stocking the shelves of a storage closet.）。选择理由：该陈述与照片中可见的人物、物体、动作或状态一致，其他选项包含画面中没有出现的细节。正确答案：A（Some workers are stocking the shelves of a storage closet.）。",
       "choice_translations": [
-        "A：Some workers are stocking the shelves of a storage closet.",
-        "B：Some customers are pushing shopping carts.",
-        "C：Some customers are standing in front of a checkout counter.",
-        "D：Some workers are hanging up some shopping"
+        "A：一些工人正在给一个储物柜上架货物。",
+        "B：有些顾客正在推购物推车。",
+        "C：有些顾客正站在结账柜台前。",
+        "D：有些工人正在挂一些购物袋。 D. 有些工人正在挂一些购物袋。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-11-test-2/p1-6/6"
+      "item_key": "official-11-test-2/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

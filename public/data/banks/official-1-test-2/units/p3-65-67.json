@@ -42,9 +42,32 @@
       "asset_key": "official-1-test-2/images/part3/q065-067.jpg",
       "exists": true
     },
-    "transcript": "price list.\nHi, I'd like to have this dress cleaned. ©!’m\nconference at the end of this week, and I'd\nwith me. Oh, and ... can you tell me how mt\nFl» Let me take a look ... @ it’s going to be twel\nh, that much? Your sign out front says dre\ncleaned from seven dollars and up.\nWell yes, but it’s the material the dress is m\nhave to use special cleaning products to me\ndon’t damage the fabric.\nK.\nI » ©| can rush the service and have it to you b\nevening. Does that work?\nSparkle Dry Cleaning\nFabric | Price _\nwot | 88\nMixed synthetics\n+)| Bia 58 Sm 5g\naz BOE cb 2\ning conversation and —PRRH65-67 IAROREBCWSRICNT SHOTS.\n'm going to a TAICSIS, TDIVE-REIUV—-LYILTSSUME\nind I'd like to take it CIM, SMRICBMINTS PET. TNE CTE\nhow much it'll cost? DCS. BH. ENDS, UK SPDSPBATHSAKTD.\ne twelve dollars. BKDERBETCUAL, 12 KILICMOET.\nays dresses can be BS, EABICRUOTIO. ADOMICHTHSBMRlcls,\nDYE-AlbT NLD SIV—-=Y I CHSEBUTHOST.\nss is made of. We RA ESSOCSD., SMETVE—AMESN TSF\ns to make sure we MIEDCS. BRIERE CHMEBOBUASIC. HEH\nAIAPDIINIEESEUOTT\nESTID.\nyou by Wednesday = FRE MALIT. AKHBAOSHE TICHSEICHRLTERT.\nENTUDDTLE SD.\ning Sparkle k5-4 9U-=Y 95\nBRAGA 10 RIL",
-    "transcript_translation": "价目表。\n你好，我想把这件裙子拿来干洗。我这周末有个会议，需要带上。哦，还有……你能告诉我它多少钱吗？\n让我看看……嗯，是十二块钱？您店前面的招牌写的是七美元起洗的。\n嗯，是的，但是这件裙子的材质需要使用特殊的清洁产品才能不损坏面料。\n好的。\n我可以加急服务，让您在傍晚拿到。可以吗？\nSparkle Dry Cleaning\n面料 | 价格 _\n羊毛 | 88\n混纺合成纤维\n丝绸 | 58\n涤纶 | 32\n棉花 | 15",
-    "content_translation": "价目表。\n你好，我想把这件裙子拿来干洗。我这周末有个会议，需要带上。哦，还有……你能告诉我它多少钱吗？\n让我看看……嗯，是十二块钱？您店前面的招牌写的是七美元起洗的。\n嗯，是的，但是这件裙子的材质需要使用特殊的清洁产品才能不损坏面料。\n好的。\n我可以加急服务，让您在傍晚拿到。可以吗？\nSparkle Dry Cleaning\n面料 | 价格 _\n羊毛 | 88\n混纺合成纤维\n丝绸 | 58\n涤纶 | 32\n棉花 | 15"
+    "transcript": "Hi, I'd like to have this dress cleaned.\nI'm going to a conference at the end of this week, and I'd like to take it with me.\nOh, and can you tell me how much it'll cost?\nLet me take a look.\nIt's going to be $12.\nOh, that much?\nYour sign out front says dresses can be cleaned from $7 and up.\nWell, yes, but it's the material the dress is made of.\nWe have to use special cleaning products to make sure we don't damage the fabric.\nOkay.\nI can rush the service and have it to you by Wednesday evening.\nDoes that work?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3c85df2b3ace98afb8f58df8fa78ae3267fba2c3468ca65b5e0102d53fbd95a5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 107,
+        "legacy_word_count": 106,
+        "length_ratio": 1.009,
+        "legacy_coverage": 0.972
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，我想清洗这条裙子。\n我这周末要去参加一个会议，想带它一起去。\n哦，你能告诉我费用是多少吗？\n让我看看。\n是 12 美元。\n哦，有这么贵？\n您前面招牌上写着连衣裙的清洁服务从 7 美元起。\n嗯，是的，但这取决于裙子的材质。\n我们必须使用特殊的清洁产品，以确保不会损坏面料。\n好的。\n我可以加急服务，周三晚上给您。\n可以吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "683f9df8a993abe13c85bf8072bf82af72808acf5254c368a254815149fab9f2"
+    }
   },
   "items": [
     {
@@ -56,23 +79,23 @@
       ],
       "answer": "B",
       "question": "What does the woman say she will do la this week?",
-      "answer_explain": "原文依据：听力原文中提到“conference at the end of this week, and I'd”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Go to a conference）。",
-      "question_translation": "女士说她这周要做什么？",
+      "answer_explain": "正确答案：B（Go to a conference）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士说她这周要做什么?",
       "choice_translations": [
-        "A：参加晚宴",
-        "B：去参加会议",
-        "C：举办庆祝活动",
-        "D：探望家人"
+        "A:参加晚宴",
+        "B:去参加会议",
+        "C:举办庆祝活动",
+        "D:探望家人"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 1 段：price list.",
+      "evidence": "参考听力原文：“I'm going to a conference at the end of this week, and I'd like to take it with me.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 1 段：price list.",
+        "evidence": "参考听力原文：“I'm going to a conference at the end of this week, and I'd like to take it with me.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“conference at the end of this week, and I'd”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Go to a conference）。"
+        "analysis": "正确答案：B（Go to a conference）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 65,
       "priority": {
@@ -106,23 +129,23 @@
       ],
       "answer": "D",
       "question": "Look at the graphic. What is the dress made of?",
-      "answer_explain": "原文依据：听力原文中提到“Well yes, but it’s the material the dress is m”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Silk）。",
-      "question_translation": "看看图表。这件裙子是什么材质的？",
+      "answer_explain": "正确答案：D（Silk）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "看看图表。这件裙子是什么材质的?",
       "choice_translations": [
-        "A：棉花",
-        "B：羊毛",
-        "C：混纺合成纤维",
-        "D：丝绸"
+        "A:棉花",
+        "B:羊毛",
+        "C:混纺合成纤维",
+        "D:丝绸"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 2 段：Hi, I'd like to have this dress cleaned. ©!’m",
+      "evidence": "参考听力原文：“Well, yes, but it's the material the dress is made of.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 2 段：Hi, I'd like to have this dress cleaned. ©!’m",
+        "evidence": "参考听力原文：“Well, yes, but it's the material the dress is made of.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Well yes, but it’s the material the dress is m”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Silk）。"
+        "analysis": "正确答案：D（Silk）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 66,
       "priority": {
@@ -156,23 +179,23 @@
       ],
       "answer": "B",
       "question": "What does the man say he will do?",
-      "answer_explain": "原文依据：听力原文中提到“I » ©| can rush the service and have it to you b”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Expedite a service）。",
-      "question_translation": "男士说他要做什么？",
+      "answer_explain": "正确答案：B（Expedite a service）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士说他要做什么?",
       "choice_translations": [
-        "A：打印收据",
-        "B：加急服务",
-        "C：发送确认函",
-        "D：安排预约"
+        "A:打印收据",
+        "B:加急服务",
+        "C:发送确认函",
+        "D:安排预约"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 1 段：price list.",
+      "evidence": "参考听力原文：“I can rush the service and have it to you by Wednesday evening.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 1 段：price list.",
+        "evidence": "参考听力原文：“I can rush the service and have it to you by Wednesday evening.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“I » ©| can rush the service and have it to you b”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Expedite a service）。"
+        "analysis": "正确答案：B（Expedite a service）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 67,
       "priority": {

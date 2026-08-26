@@ -26,8 +26,28 @@
       "asset_key": "official-8-test-1/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Where（哪里） are the cleaning supplies kept?\nw",
-    "content_translation": "中文辅助（离线预处理）：Ew Where（哪里） are the cleaning supplies kept?\nw"
+    "transcript": "Where are the cleaning supplies kept?\nA. A mop and a broom.\nB. I'll be happy to show you.\nC. Every two weeks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "335961a2cd11f28ca52d71e848da2df93c8e3fec827e4f7d02142c850bdb3a83",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "清洁用品放在哪里？\nA. 一个拖把和一把扫帚。\nB. 我很乐意带您看看。\nC. 每两周一次。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "eb04e58b9a87779a0023da302af37115bc52dce1624aec6281eebbf63213d9fc"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "Every two weeks."
       ],
       "answer": "B",
-      "question": "Ew Where are the cleaning supplies kept? w",
+      "question": "Where are the cleaning supplies kept?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Where are the cleaning supplies kept? w”，自然应答是“I'll be happy to show you.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll be happy to show you.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Where（哪里） are the cleaning supplies kept?\nw",
+      "answer_explain": "原文依据：问句或陈述是“Where are the cleaning supplies kept?”，自然应答是“I'll be happy to show you.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll be happy to show you.）。",
+      "question_translation": "清洁用品放在哪里?",
       "choice_translations": [
-        "A：A mop and a broom.",
-        "B：I'll be happy to show you.",
-        "C：Every two weeks."
+        "A：一个拖把和一把扫帚。",
+        "B：我很乐意带您看看。",
+        "C：每两周一次。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Where are the cleaning supplies kept? w",
+      "evidence": "参考原文第 1 段：Where are the cleaning supplies kept?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Where are the cleaning supplies kept? w",
+        "evidence": "参考原文第 1 段：Where are the cleaning supplies kept?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Where are the cleaning supplies kept? w”，自然应答是“I'll be happy to show you.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll be happy to show you.）。"
+        "analysis": "原文依据：问句或陈述是“Where are the cleaning supplies kept?”，自然应答是“I'll be happy to show you.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll be happy to show you.）。"
       },
       "item_id": 19,
       "priority": {

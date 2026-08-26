@@ -26,38 +26,58 @@
       "asset_key": "official-9-test-2/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） can I get new lightbulbs for the office（办公室）?\nHEW",
-    "content_translation": "中文辅助（离线预处理）：Where（哪里） can I get new lightbulbs for the office（办公室）?\nHEW"
+    "transcript": "Where can I get new light bulbs for the office?\nA. Open weekdays until 6 p. m.\nB. That'll be $11.\nC. Check with someone in maintenance.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a0f3f1a2df1485a7f2435fa6fc89539b8abf88e0136a33ebc2e5368056436d4c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "我在办公室哪里可以买到新的灯泡？\nA. 周一至周五营业到下午 6 点。\nB. 那是 11 美元。\nC. 和维护部门的人确认一下。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8c712a66a7ce26461f2fee91bf529544b99ed95de40789ec4ebad8bf40a84780"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Open weekdays until six P.M.",
-        "That'll be eleven dollars.",
+        "Open weekdays until 6 p. m.",
+        "That'll be $11.",
         "Check with someone in maintenance."
       ],
       "answer": "C",
-      "question": "Where can I get new lightbulbs for the office? HEW",
+      "question": "Where can I get new light bulbs for the office?",
       "difficulty": "easy",
       "topic": "地点询问",
       "keywords": "where location response",
-      "answer_explain": "原文依据：问句或陈述是“Where can I get new lightbulbs for the office? HEW”，自然应答是“Check with someone in maintenance.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Check with someone in maintenance.）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） can I get new lightbulbs for the office（办公室）?\nHEW",
+      "answer_explain": "原文依据：问句或陈述是“Where can I get new light bulbs for the office?”，自然应答是“Check with someone in maintenance.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Check with someone in maintenance.）。",
+      "question_translation": "我在办公室哪里可以买到新的灯泡?",
       "choice_translations": [
-        "A：Open weekdays until six P.M.",
-        "B：That'll be eleven dollars.",
-        "C：Check with someone in maintenance."
+        "A：周一至周五营业到下午 6 点。",
+        "B：那是 11 美元。",
+        "C：和维护部门的人确认一下。"
       ],
       "question_type": "地点疑问句",
-      "evidence": "参考原文第 1 段：Where can I get new lightbulbs for the office? HEW",
+      "evidence": "参考原文第 1 段：Where can I get new light bulbs for the office?",
       "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "地点疑问句",
-        "evidence": "参考原文第 1 段：Where can I get new lightbulbs for the office? HEW",
+        "evidence": "参考原文第 1 段：Where can I get new light bulbs for the office?",
         "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Where can I get new lightbulbs for the office? HEW”，自然应答是“Check with someone in maintenance.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Check with someone in maintenance.）。"
+        "analysis": "原文依据：问句或陈述是“Where can I get new light bulbs for the office?”，自然应答是“Check with someone in maintenance.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Check with someone in maintenance.）。"
       },
       "item_id": 12,
       "priority": {

@@ -27,14 +27,34 @@
       "asset_key": "official-5-test-1/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Can you edit the script for the television commercial?",
-    "content_translation": "中文辅助（离线预处理）：Can you edit the script for the television commercial?"
+    "transcript": "Can you edit the script for the television commercial?\nA. A new digital camera.\nB. Okay, do you have a copy?\nC. She's a famous performer.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f82f4be937d7b0ab35c772f37fc37c852f6b0327f5911b33660369d92f263daf",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "你能修改电视广告的脚本吗？\nA. 一台新型数码相机。\nB. 好的，你有副本吗？\nC. 她是一位著名的表演者。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c4c0dda65c7f237e808d45935d1052a2302dbe7cad6682fe672751de1b257fd4"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "A new digital camera.",
-        "OK —do you have a copy?",
+        "Okay, do you have a copy?",
         "She's a famous performer."
       ],
       "answer": "B",
@@ -42,12 +62,12 @@
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Can you edit the script for the television commercial?”，自然应答是“OK —do you have a copy?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（OK —do you have a copy?）。",
-      "question_translation": "中文辅助（离线预处理）：Can you edit the script for the television commercial?",
+      "answer_explain": "原文依据：问句或陈述是“Can you edit the script for the television commercial?”，自然应答是“Okay, do you have a copy?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Okay, do you have a copy?）。",
+      "question_translation": "你能修改电视广告的脚本吗?",
       "choice_translations": [
-        "A：A new digital camera.",
-        "B：OK —do you have a copy?",
-        "C：She's a famous performer."
+        "A：一台新型数码相机。",
+        "B：好的,你有副本吗?",
+        "C：她是一位著名的表演者。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Can you edit the script for the television commercial?",
@@ -58,7 +78,7 @@
         "question_type": "一般疑问句",
         "evidence": "参考原文第 1 段：Can you edit the script for the television commercial?",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Can you edit the script for the television commercial?”，自然应答是“OK —do you have a copy?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（OK —do you have a copy?）。"
+        "analysis": "原文依据：问句或陈述是“Can you edit the script for the television commercial?”，自然应答是“Okay, do you have a copy?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Okay, do you have a copy?）。"
       },
       "item_id": 10,
       "priority": {

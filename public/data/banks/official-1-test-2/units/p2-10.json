@@ -28,14 +28,34 @@
       "asset_key": "official-1-test-2/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "你宁愿开车去比赛还是坐火车？\nA. 我们开车吧。\nB. 我相信是周四。\nC. 请随身带上它。",
-    "content_translation": "你宁愿开车去比赛还是坐火车？\nA. 我们开车吧。\nB. 我相信是周四。\nC. 请随身带上它。"
+    "transcript": "Would you rather drive to the game or take the train?\nA. Let's drive.\nB. On Thursday, I believe.\nC. Please take it with you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "11451d1a7835b5cff29e593d326f86252ad8ec3b0dd302e58694f3c2d7b82b70",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你宁愿开车去比赛还是坐火车？\nA. 我们开车吧。\nB. 我相信是周四。\nC. 请把它带走。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d780b6104340f5ccf3d6d6fda688e443fe055ce79820b4a1e5b01bb5e9925e3b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Let’s drive.",
-        "On Thursday, | believe.",
+        "Let's drive.",
+        "On Thursday, I believe.",
         "Please take it with you."
       ],
       "answer": "A",
@@ -43,12 +63,12 @@
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“Would you rather drive to the game or take the train?”，自然应答是“Let’s drive.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Let’s drive.）。",
-      "question_translation": "你宁愿开车去比赛还是坐火车？",
+      "answer_explain": "原文依据：问句或陈述是“Would you rather drive to the game or take the train?”，自然应答是“Let's drive.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Let's drive.）。",
+      "question_translation": "你宁愿开车去比赛还是坐火车?",
       "choice_translations": [
         "A：我们开车吧。",
         "B：我相信是周四。",
-        "C：请随身带上它。"
+        "C：请把它带走。"
       ],
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段：Would you rather drive to the game or take the train?",
@@ -59,7 +79,7 @@
         "question_type": "选择疑问句",
         "evidence": "参考原文第 1 段：Would you rather drive to the game or take the train?",
         "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Would you rather drive to the game or take the train?”，自然应答是“Let’s drive.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Let’s drive.）。"
+        "analysis": "原文依据：问句或陈述是“Would you rather drive to the game or take the train?”，自然应答是“Let's drive.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Let's drive.）。"
       },
       "item_id": 10,
       "priority": {

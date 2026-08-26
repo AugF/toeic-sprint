@@ -37,9 +37,32 @@
       "asset_key": "official-12-test-2/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "X8 lđ\nDr. Lee, Ol've sent out an e-mail notifying our\nLee *4.18\npatients that online scheduling of appointments will be\nunavailable through Wednesday.\nw Great. © We should also add a statement to our clinic's\nhome page, apologizing for the inconvenience as we\nupdate our patient portal. Patients who didn't read your\nao statio\nmessage will see it there.\nOK. Ol'll go ask Sakura Williams to do that now-since\nshe handles the home page messaging. She should\nstill be in her office.",
-    "transcript_translation": "中文辅助（离线预处理）：X8 lđ\nDr.\nLee, Ol've sent out an e-mail notifying our\nLee *4.18\npatients that online scheduling of appointments will be\nunavailable through Wednesday.\nw Great.\n© We should also add a statement to our clinic's\nhome page, apologizing for the inconvenience as we\nupdate our patient portal.\nPatients who（谁） didn't read your\nao statio\nmessage will see it there.\nOK.\nOl'll go ask Sakura Williams to do that now-since\nshe handles the home page messaging.\nShe should\nstill be in her office（办公室）.",
-    "content_translation": "中文辅助（离线预处理）：X8 lđ\nDr.\nLee, Ol've sent out an e-mail notifying our\nLee *4.18\npatients that online scheduling of appointments will be\nunavailable through Wednesday.\nw Great.\n© We should also add a statement to our clinic's\nhome page, apologizing for the inconvenience as we\nupdate our patient portal.\nPatients who（谁） didn't read your\nao statio\nmessage will see it there.\nOK.\nOl'll go ask Sakura Williams to do that now-since\nshe handles the home page messaging.\nShe should\nstill be in her office（办公室）."
+    "transcript": "Dr. Lee, I've sent out an email notifying our patients that online scheduling of appointments will be unavailable through Wednesday.\nGreat.\nWe should also add a statement to our clinic's homepage, apologizing for the inconvenience as we update our patient portal.\nPatients who didn't read your message will see it there.\nOkay, I'll go ask Sakura Williams to do that now, since she handles the homepage messaging.\nShe should still be in her office.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bb6eece8cbf0989b4eaf276e410e2339bb671dd5f68895813ff9df13263f6ea9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 74,
+        "legacy_word_count": 80,
+        "length_ratio": 0.925,
+        "legacy_coverage": 0.838
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "李医生，我发了一封电子邮件通知我们的患者，从今天到周三期间将无法在线预约。\n好的。\n我们还应该在诊所的首页增加一条声明，为更新我们的患者门户网站给带来的不便表示歉意。\n没有阅读您消息的患者会在那里看到它。\n好的，我现在去请樱花·威廉姆斯做这件事，因为她负责首页信息发布。\n她应该还在她的办公室里。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e42d912101511b393d35f1f0249bd65b363c6dcd82bc7c6705601fff7de0ece2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +74,23 @@
       ],
       "answer": "C",
       "question": "What task did the man complete?",
-      "answer_explain": "原文依据：听力原文中提到“patients that online scheduling of appointments will be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He provided patients with some information.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） task did the man（男士） complete?",
+      "answer_explain": "正确答案：C（He provided patients with some information.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) task did the man(男士) complete?",
       "choice_translations": [
-        "A：He wrote some prescriptions.",
-        "B：He rescheduled some appointments.",
-        "C：He provided patients with some information（信息）.",
-        "D：He responded to some online reviews."
+        "A:He wrote some prescriptions.",
+        "B:He rescheduled some appointments.",
+        "C:He provided patients with some information(信息).",
+        "D:He responded to some online reviews."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：X8 lđ",
+      "evidence": "参考听力原文：“Dr. Lee, I've sent out an email notifying our patients that online scheduling of appointments will be unavailable through Wednesday.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：X8 lđ",
+        "evidence": "参考听力原文：“Dr. Lee, I've sent out an email notifying our patients that online scheduling of appointments will be unavailable through Wednesday.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“patients that online scheduling of appointments will be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He provided patients with some information.）。"
+        "analysis": "正确答案：C（He provided patients with some information.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -101,23 +124,23 @@
       ],
       "answer": "A",
       "question": "What does the woman say should be on a clinic's home page?",
-      "answer_explain": "原文依据：听力原文中提到“© We should also add a statement to our clinic's”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An apology statement）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say should be on a clinic's home page?",
+      "answer_explain": "正确答案：A（An apology statement）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say should be on a clinic's home page?",
       "choice_translations": [
-        "A：An apology statement",
-        "B：Business hours",
-        "C：A doctor's biography",
-        "D：Updated office（办公室） policies"
+        "A:An apology statement",
+        "B:Business hours",
+        "C:A doctor's biography",
+        "D:Updated office(办公室) policies"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：w Great. © We should also add a statement to our clinic's",
+      "evidence": "参考听力原文：“We should also add a statement to our clinic's homepage, apologizing for the inconvenience as we update our patient portal.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：w Great. © We should also add a statement to our clinic's",
+        "evidence": "参考听力原文：“We should also add a statement to our clinic's homepage, apologizing for the inconvenience as we update our patient portal.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“© We should also add a statement to our clinic's”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An apology statement）。"
+        "analysis": "正确答案：A（An apology statement）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -151,23 +174,23 @@
       ],
       "answer": "D",
       "question": "What will the man do next?",
-      "answer_explain": "原文依据：听力原文中提到“home page, apologizing for the inconvenience as we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Speak with a colleague）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） do next?",
+      "answer_explain": "正确答案：D（Speak with a colleague）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) do next?",
       "choice_translations": [
-        "A：Update patient files",
-        "B：Contact a pharmacy",
-        "C：Submit an order（订单） form",
-        "D：Speak with a colleague"
+        "A:Update patient files",
+        "B:Contact a pharmacy",
+        "C:Submit an order(订单) form",
+        "D:Speak with a colleague"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：X8 lđ",
+      "evidence": "参考听力原文：“Dr. Lee, I've sent out an email notifying our patients that online scheduling of appointments will be unavailable through Wednesday.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：X8 lđ",
+        "evidence": "参考听力原文：“Dr. Lee, I've sent out an email notifying our patients that online scheduling of appointments will be unavailable through Wednesday.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“home page, apologizing for the inconvenience as we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Speak with a colleague）。"
+        "analysis": "正确答案：D（Speak with a colleague）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

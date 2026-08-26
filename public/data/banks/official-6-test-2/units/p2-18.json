@@ -27,8 +27,28 @@
       "asset_key": "official-6-test-2/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：How（如何） did you like the movie last night?",
-    "content_translation": "中文辅助（离线预处理）：How（如何） did you like the movie last night?"
+    "transcript": "How did you like the movie last night?\nA. Did you find the instructions online?\nB. Jim moved some over to his desk.\nC. I actually had to work late.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2ad4fc9becc5a6a19851db7a5d6ad8e7b9f4b89879806aa37a7307c45ee904bb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "你昨晚看电影感觉怎么样？\nA. 你是在网上找到说明书的吗？\nB. Jim 把一些移到他的桌子上了。\nC. 我实际上不得不加班。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "fc98ccbb0dd8aa53e6423f7159dcb80e222072ccbe690e69d3c528a21595672f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“How did you like the movie last night?”，自然应答是“I actually had to work late.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I actually had to work late.）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） did you like the movie last night?",
+      "question_translation": "你昨晚看电影感觉怎么样?",
       "choice_translations": [
-        "A：Did you find the instructions online?",
-        "B：Jim moved some over to his desk.",
-        "C：I actually had to work（工作） late."
+        "A：你是在网上找到说明书的吗?",
+        "B：Jim 把一些移到他的桌子上了。",
+        "C：我实际上不得不加班。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：How did you like the movie last night?",

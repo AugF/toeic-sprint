@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-1/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "= 餐厅几点关门？ 回答\nA. 十一点。 \nB. 它离图书馆很近。\nC. 不，没有。",
-    "content_translation": "= 餐厅几点关门？ 回答\nA. 十一点。 \nB. 它离图书馆很近。\nC. 不，没有。"
+    "transcript": "What time does the restaurant close?\nA. At 11 o'clock.\nB. It's close to the library.\nC. No, it doesn't.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1a80e87afc45ff96c3bd98b41564a816871e9748015b8d28da519b45d944d2bb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 20
+      }
+    },
+    "transcript_translation": "餐厅几点关门？\nA. 11点整。\nB. 它靠近图书馆。\nC. 不，它不关门。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "dd76995bb5407fe60913d1d50acbdf8ef5d92347b0f4be8fd632e5dfe8d39809"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "At eleven o'clock.",
-        "It’s close to the library.",
+        "At 11 o'clock.",
+        "It's close to the library.",
         "No, it doesn't."
       ],
       "answer": "A",
-      "question": "= whattime does the restaurant close? ER w",
+      "question": "What time does the restaurant close?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“= whattime does the restaurant close? ER w”，自然应答是“At eleven o'clock.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（At eleven o'clock.）。",
+      "answer_explain": "原文依据：问句或陈述是“What time does the restaurant close?”，自然应答是“At 11 o'clock.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（At 11 o'clock.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：= whattime does the restaurant close? ER w",
+      "evidence": "参考原文第 1 段：What time does the restaurant close?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：= whattime does the restaurant close? ER w",
+        "evidence": "参考原文第 1 段：What time does the restaurant close?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“= whattime does the restaurant close? ER w”，自然应答是“At eleven o'clock.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（At eleven o'clock.）。"
+        "analysis": "原文依据：问句或陈述是“What time does the restaurant close?”，自然应答是“At 11 o'clock.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（At 11 o'clock.）。"
       },
-      "question_translation": "= 餐厅几点关门？ 回答",
+      "question_translation": "餐厅几点关门?",
       "choice_translations": [
-        "A：十一点。",
-        "B：它离图书馆很近。",
-        "C：不，没有。"
+        "A：11点整。",
+        "B：它靠近图书馆。",
+        "C：不,它不关门。"
       ],
       "item_id": 7,
       "priority": {

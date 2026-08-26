@@ -46,9 +46,31 @@
       "asset_key": "official-12-test-2/images/part3/q068-070.jpg",
       "exists": true
     },
-    "transcript": "and schedule.\nAK w Hi, Pablo. Ol was looking at the technology conference\nChula 5ld. Pab\nschedule and it looks like you'll be arriving a day early.\nCheck-in isn't until Friday, but your flight is Thursday.\nm Oh, I didn't realize. Can we change my flight? Ol'm\nreally only interested in the events on Sunday anyway.\nEk w Let me see. The travel service that books trips for us is\nusually good with making these types of changes, so it\nshould be fine. I'll let you know.\nSo Statalit\nI OK, thank you. Could you please print my tickets\nlater, after you've spoken with the travel service? Ol\nalways like having paper copies with me, just in case.\nDay\nEvent\nFriday\nCheck-in\nFriday\nDinner\nSaturday\nKeynote speech\nINE\nSaturday\nWorkshops\nINB\nSunday\nDemonstrations\nB#B\nMonday\nCheckout",
-    "transcript_translation": "中文辅助（离线预处理）：and schedule（日程）.\nAK w Hi, Pablo.\nOl was looking at the technology conference\nChula 5ld.\nPab\nschedule（日程） and it looks like you'll be arriving a day early.\nCheck-in isn't until Friday, but your flight is Thursday.\nm Oh, I didn't realize.\nCan we change my flight?\nOl'm\nreally only interested in the events on Sunday anyway.\nEk w Let me see.\nThe travel service（服务） that books trips for us is\nusually good with making these types of changes, so it\nshould be fine.\nI'll let you know.\nSo Statalit\nI OK, thank（感谢） you.\nCould you please（请） print my tickets\nlater, after you've spoken with the travel service（服务）?\nOl\nalways like having paper copies with me, just in case.\nDay\nEvent\nFriday\nCheck-in\nFriday\nDinner\nSaturday\nKeynote speech\nINE\nSaturday\nWorkshops\nINB\nSunday\nDemonstrations\nB#B\nMonday\nCheckout",
-    "content_translation": "中文辅助（离线预处理）：and schedule（日程）.\nAK w Hi, Pablo.\nOl was looking at the technology conference\nChula 5ld.\nPab\nschedule（日程） and it looks like you'll be arriving a day early.\nCheck-in isn't until Friday, but your flight is Thursday.\nm Oh, I didn't realize.\nCan we change my flight?\nOl'm\nreally only interested in the events on Sunday anyway.\nEk w Let me see.\nThe travel service（服务） that books trips for us is\nusually good with making these types of changes, so it\nshould be fine.\nI'll let you know.\nSo Statalit\nI OK, thank（感谢） you.\nCould you please（请） print my tickets\nlater, after you've spoken with the travel service（服务）?\nOl\nalways like having paper copies with me, just in case.\nDay\nEvent\nFriday\nCheck-in\nFriday\nDinner\nSaturday\nKeynote speech\nINE\nSaturday\nWorkshops\nINB\nSunday\nDemonstrations\nB#B\nMonday\nCheckout"
+    "transcript": "Hi, Pablo.\nI was looking at the technology conference schedule, and it looks like you'll be arriving a day early.\nCheck-in isn't until Friday, but your flight is Thursday.\nOh, I didn't realize.\nCan we change my flight?\nI'm really only interested in the events on Sunday anyway.\nLet me see.\nThe travel service that bookstrips for us is usually good with making these types of changes, so it should be fine.\nI'll let you know.\nOkay, thank you.\nCould you please print my tickets later after you've spoken with the travel service?\nI always like having paper copies with me just in case.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e04b2d6b5d29ec708ee612f640eebc99929b945709535f363585c45193be2e04",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part3/q068-070.mp3",
+      "metrics": {
+        "word_count": 104,
+        "legacy_word_count": 131,
+        "length_ratio": 0.794,
+        "legacy_coverage": 0.802
+      }
+    },
+    "transcript_translation": "嗨，Pablo。\n我看了技术会议日程表，看起来你会提前一天到达。\n办理入住不是到周五，但你的航班是周四。\n哦，我没意识到。\n我们可以更改我的航班吗？\n反正我对周日的活动最感兴趣。\n让我看看。\n为我们预订旅行服务的公司通常擅长处理这类变更，所以应该没问题。\n我会通知你的。\n好的，谢谢你。\n你能在我与旅行服务部门谈完之后再打印我的票吗？\n我总是喜欢随身带着纸质副本以防万一。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "61676bb8aa30ba47a0e462cd2240a43516010638a52453512de9f0133900af87"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -60,23 +82,23 @@
       ],
       "answer": "C",
       "question": "What does the woman point out about the man's trip?",
-      "answer_explain": "原文依据：听力原文中提到“schedule and it looks like you'll be arriving a day early.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He will arrive early.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） point out about the man（男士）'s trip?",
+      "answer_explain": "正确答案：C（He will arrive early.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) point out about the man(男士)'s trip?",
       "choice_translations": [
-        "A：He will use a local airline.",
-        "B：He will have a layover.",
-        "C：He will arrive early.",
-        "D：He will stay at a new hotel."
+        "A:He will use a local airline.",
+        "B:He will have a layover.",
+        "C:He will arrive early.",
+        "D:He will stay at a new hotel."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：and schedule.",
+      "evidence": "参考听力原文：“I was looking at the technology conference schedule, and it looks like you'll be arriving a day early.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：and schedule.",
+        "evidence": "参考听力原文：“I was looking at the technology conference schedule, and it looks like you'll be arriving a day early.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“schedule and it looks like you'll be arriving a day early.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He will arrive early.）。"
+        "analysis": "正确答案：C（He will arrive early.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 68,
       "priority": {
@@ -114,23 +136,23 @@
       ],
       "answer": "D",
       "question": "Look at the graphic. Which event is the man's priority?",
-      "answer_explain": "原文依据：听力原文中提到“Demonstrations”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Demonstrations）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich event is the man（男士）'s priority?",
+      "answer_explain": "正确答案：D（Demonstrations）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which event is the man(男士)'s priority?",
       "choice_translations": [
-        "A：Dinner",
-        "B：Keynote speech",
-        "C：Workshops",
-        "D：Demonstrations"
+        "A:Dinner",
+        "B:Keynote speech",
+        "C:Workshops",
+        "D:Demonstrations"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：really only interested in the events on Sunday anyway.",
+      "evidence": "参考听力原文：“I was looking at the technology conference schedule, and it looks like you'll be arriving a day early.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：really only interested in the events on Sunday anyway.",
+        "evidence": "参考听力原文：“I was looking at the technology conference schedule, and it looks like you'll be arriving a day early.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Demonstrations”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Demonstrations）。"
+        "analysis": "正确答案：D（Demonstrations）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 69,
       "priority": {
@@ -168,23 +190,23 @@
       ],
       "answer": "B",
       "question": "What will the woman most likely prepare for the man later?",
-      "answer_explain": "原文依据：听力原文中提到“Could you please print my tickets”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Some printed tickets）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） most likely（最可能） prepare for the man（男士） later?",
+      "answer_explain": "正确答案：B（Some printed tickets）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) most likely(最可能) prepare for the man(男士) later?",
       "choice_translations": [
-        "A：A revised shipping label",
-        "B：Some printed tickets",
-        "C：A hotel voucher",
-        "D：Some tourist brochures"
+        "A:A revised shipping label",
+        "B:Some printed tickets",
+        "C:A hotel voucher",
+        "D:Some tourist brochures"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 13 段：later, after you've spoken with the travel service? Ol",
+      "evidence": "参考听力原文：“Could you please print my tickets later after you've spoken with the travel service?”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 13 段：later, after you've spoken with the travel service? Ol",
+        "evidence": "参考听力原文：“Could you please print my tickets later after you've spoken with the travel service?”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Could you please print my tickets”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Some printed tickets）。"
+        "analysis": "正确答案：B（Some printed tickets）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 70,
       "priority": {

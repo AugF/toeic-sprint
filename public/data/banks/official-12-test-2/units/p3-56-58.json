@@ -40,9 +40,31 @@
       "asset_key": "official-12-test-2/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "as w ol'm directing a new play for a local theater group, and\nI'd like to make twenty copies of the script for this play\nwe'll be performing.\neDo you have the author's permission to reproduce it?\naw I actually wrote it myself. © See? Here's my ID.\nOK. It'll be ten cents per page. Now, how about the\nbinding? We can do staples at no extra charge, or we\nhave some upgraded options.\naw What about spiral binding?\nm OSure. If you use the coupon in our mobile application,\nit's only two dollars extra per script.\naw ol have the app right here on my smartphone.",
-    "transcript_translation": "中文辅助（离线预处理）：as w ol'm directing a new play for a local theater group, and\nI'd like to make twenty copies of the script for this play\nwe'll be performing.\neDo you have the author's permission to reproduce it?\naw I actually wrote it myself.\n© See?\nHere's my ID.\nOK.\nIt'll be ten cents per page.\nNow, how（如何） about the\nbinding?\nWe can do staples at no extra charge, or we\nhave some upgraded options.\naw What（什么） about spiral binding?\nm OSure.\nIf you use the coupon in our mobile application,\nit's only two dollars extra per script.\naw ol have the app right here on my smartphone.",
-    "content_translation": "中文辅助（离线预处理）：as w ol'm directing a new play for a local theater group, and\nI'd like to make twenty copies of the script for this play\nwe'll be performing.\neDo you have the author's permission to reproduce it?\naw I actually wrote it myself.\n© See?\nHere's my ID.\nOK.\nIt'll be ten cents per page.\nNow, how（如何） about the\nbinding?\nWe can do staples at no extra charge, or we\nhave some upgraded options.\naw What（什么） about spiral binding?\nm OSure.\nIf you use the coupon in our mobile application,\nit's only two dollars extra per script.\naw ol have the app right here on my smartphone."
+    "transcript": "I'm directing a new play for a local theater group, and I'd like to make 20 copies of the script this play will be performing.\nDo you have the author's permission to reproduce it?\nI actually wrote it myself.\nSee?\nHere's my ID.\nOkay.\nIt'll be 10 cents per page.\nNow, how about the binding?\nWe can do staples at no extra charge, or we have some upgraded options.\nWhat about spiral binding?\nSure.\nIf you use the coupon in our mobile application, it's only $2 extra per script.\nI have the app right here on my smartphone.\nNumber 15.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "464caddcb57f4d2f1e151ab137d4a9d1919dfc9866e0b028d9c86ef7e325b09d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 96,
+        "legacy_word_count": 103,
+        "length_ratio": 0.932,
+        "legacy_coverage": 0.845
+      }
+    },
+    "transcript_translation": "我正在为一个当地剧团指导一部新戏，我想制作20份这部戏将要演出的剧本副本。\n你是否有作者的许可来复制它？\n我其实自己写的。\n看？\n这是我的证件。\n好的。\n每页是10美分。\n那装订呢？\n我们可以免费用订书钉，或者我们有一些升级的选项。\n螺旋装订怎么样？\n当然可以。\n如果你使用我们手机应用中的优惠券，每份剧本只需要多付2美元。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7c360bd38302dfdf57e5dd8f1176e43521d76a9d5352c18cd3333e11e50d73c3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "D",
       "question": "Who most likely is the woman?",
-      "answer_explain": "原文依据：听力原文中提到“as w ol'm directing a new play for a local theater group, and”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（A theater director）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the woman（女士）?",
+      "answer_explain": "正确答案：D（A theater director）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is the woman(女士)?",
       "choice_translations": [
-        "A：A musician",
-        "B：A publisher",
-        "C：A store manager（经理）",
-        "D：A theater director"
+        "A:A musician",
+        "B:A publisher",
+        "C:A store manager(经理)",
+        "D:A theater director"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：as w ol'm directing a new play for a local theater group, and",
+      "evidence": "参考听力原文：“I'm directing a new play for a local theater group, and I'd like to make 20 copies of the script this play will be performing.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：as w ol'm directing a new play for a local theater group, and",
+        "evidence": "参考听力原文：“I'm directing a new play for a local theater group, and I'd like to make 20 copies of the script this play will be performing.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“as w ol'm directing a new play for a local theater group, and”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（A theater director）。"
+        "analysis": "正确答案：D（A theater director）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "B",
       "question": "Why does the woman say, \"I actually wrote it myself \"?",
-      "answer_explain": "原文依据：听力原文中提到“aw I actually wrote it myself.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To address a concern）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） say, \"I actually wrote it myself \"?",
+      "answer_explain": "正确答案：B（To address a concern）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the woman(女士) say, \"I actually wrote it myself \"?",
       "choice_translations": [
-        "A：To promote her work（工作）",
-        "B：To address a concern",
-        "C：To make a comparison",
-        "D：To request a review"
+        "A:To promote her work(工作)",
+        "B:To address a concern",
+        "C:To make a comparison",
+        "D:To request a review"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：aw I actually wrote it myself. © See? Here's my ID.",
+      "evidence": "参考听力原文：“I actually wrote it myself.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：aw I actually wrote it myself. © See? Here's my ID.",
+        "evidence": "参考听力原文：“I actually wrote it myself.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“aw I actually wrote it myself.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To address a concern）。"
+        "analysis": "正确答案：B（To address a concern）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "A",
       "question": "What will the woman most likely do next?",
-      "answer_explain": "原文依据：听力原文中提到“If you use the coupon in our mobile application,”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Make use of a coupon）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） most likely（最可能） do next?",
+      "answer_explain": "正确答案：A（Make use of a coupon）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) most likely(最可能) do next?",
       "choice_translations": [
-        "A：Make use of a coupon",
-        "B：Ask the man（男士） to make more copies",
-        "C：Select a different color binding",
-        "D：Delete a mobile application"
+        "A:Make use of a coupon",
+        "B:Ask the man(男士) to make more copies",
+        "C:Select a different color binding",
+        "D:Delete a mobile application"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：as w ol'm directing a new play for a local theater group, and",
+      "evidence": "参考听力原文：“I'm directing a new play for a local theater group, and I'd like to make 20 copies of the script this play will be performing.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：as w ol'm directing a new play for a local theater group, and",
+        "evidence": "参考听力原文：“I'm directing a new play for a local theater group, and I'd like to make 20 copies of the script this play will be performing.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“If you use the coupon in our mobile application,”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Make use of a coupon）。"
+        "analysis": "正确答案：A（Make use of a coupon）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

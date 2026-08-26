@@ -36,37 +36,60 @@
       "asset_key": "official-2-test-2/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nlu Hi. °We're both here for the accounting train\nlooking for room 304. Are we in the right plac\nYes, you are. What are your names so | can «\nyou're on the list?\nll I'm Frank Meyers. | registered last month.\nAnd I’m Jack Krugman. ®| just found out abo\ntraining this morning. I’m worried it might be t\nsign up.\nNo, that’s fine, Mr. Krugman, but | don’t have\ninformation packets. Do you two mind sharing\nll Sure. And, | was wondering...°are any refres\nprovided?\nYou'll find coffee, tea, and snacks at the ba\nroom. We'll be starting the session in about te",
-    "transcript_translation": "有三位说话者。\n您好。我们俩都是来参加会计培训的，找304房间。我们是在对的地方吗？\n是的，您在对的地方。你们叫什么名字，我能把你们登记一下？\n我是Frank Meyers。我上个月注册的。\n我是Jack Krugman。我今天早上才知道有这个培训。我担心可能没时间参加。\n不，Krugman先生，没关系，但我没有信息资料包。你们俩介意分享一些吗？\n当然可以。另外，我想知道……是否提供茶点？\n您可以在后面的休息室找到咖啡、茶和零食。我们将在大约十分钟后开始课程。",
-    "content_translation": "有三位说话者。\n您好。我们俩都是来参加会计培训的，找304房间。我们是在对的地方吗？\n是的，您在对的地方。你们叫什么名字，我能把你们登记一下？\n我是Frank Meyers。我上个月注册的。\n我是Jack Krugman。我今天早上才知道有这个培训。我担心可能没时间参加。\n不，Krugman先生，没关系，但我没有信息资料包。你们俩介意分享一些吗？\n当然可以。另外，我想知道……是否提供茶点？\n您可以在后面的休息室找到咖啡、茶和零食。我们将在大约十分钟后开始课程。"
+    "transcript": "Hi, we're both here for the accounting training.\nWe're looking for room 304.\nAre we in the right place?\nYes, you are.\nWhat are your names so I can check if you're on the list?\nI'm Frank Myers.\nI registered last month.\nAnd I'm Jack Krugman.\nI just found out about the training this morning.\nI'm worried it might be too late to sign up.\nNo, that's fine, Mr. Krugman.\nBut I don't have any extra information packets.\nDo you too mind sharing one?\nSure.\nAnd I was wondering, are any refreshments provided?\nYou'll find coffee, tea and snacks at the back of the room.\nWe'll be starting the session in about 10 minutes.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "96a97f32dca75977b3d5947e2535f632b9b9e2aa83db65264c4e3632671de4fc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 112,
+        "legacy_word_count": 102,
+        "length_ratio": 1.098,
+        "legacy_coverage": 0.824
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "嗨，我们俩都是来参加会计培训的。\n我们在找 304 室。\n这是对的吗？\n是的，就是。你叫什么名字，我好查一下名单？\n我是 Frank Myers。\n我上个月注册的。\n我是 Jack Krugman。\n我今天早上才知道有这个培训。\n我很担心现在报名可能太晚了。\n不，Krugman 先生，没关系。\n但我没有额外的资料包。\n你也介意分享一个吗？\n好的。\n我还想知道，有没有提供茶点？\n咖啡、茶和零食在房间的后面可以找到。\n我们大约十分钟后就要开始课程了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7bad72df75d0bae7cc30d78ca5f04957799a70c12e16f3f0fc992be5433709a8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Apress release",
+        "A press release",
         "A training session",
-        "Ajob interview",
-        "Aclient dinner"
+        "A job interview",
+        "A client dinner"
       ],
       "answer": "B",
       "question": "What type of event is being held?",
-      "answer_explain": "原文依据：听力原文中提到“We'll be starting the session in about te”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A training session）。",
-      "question_translation": "正在举行什么类型的活动？",
+      "answer_explain": "正确答案：B（A training session）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "正在举行什么类型的活动?",
       "choice_translations": [
-        "A：新闻发布会",
-        "B：培训课程",
-        "C：工作面试",
-        "D：客户晚宴"
+        "A:新闻发布会",
+        "B:培训课程",
+        "C:工作面试",
+        "D:客户晚宴"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“I just found out about the training this morning.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“I just found out about the training this morning.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“We'll be starting the session in about te”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A training session）。"
+        "analysis": "正确答案：B（A training session）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -99,23 +122,23 @@
       ],
       "answer": "C",
       "question": "Why is Jack Krugman concerned?",
-      "answer_explain": "原文依据：听力原文中提到“And I’m Jack Krugman.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He did not register in advance.）。",
-      "question_translation": "Jack Krugman担心什么？",
+      "answer_explain": "正确答案：C（He did not register in advance.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "Jack Krugman担心什么?",
       "choice_translations": [
-        "A：他忘记了身份证明。",
-        "B：他有时间冲突。",
-        "C：他没有提前注册。",
-        "D：他没有要求笔记本电脑。"
+        "A:他忘记了身份证明。",
+        "B:他有时间冲突。",
+        "C:他没有提前注册。",
+        "D:他没有要求笔记本电脑。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：And I’m Jack Krugman. ®| just found out abo",
+      "evidence": "参考听力原文：“And I'm Jack Krugman.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：And I’m Jack Krugman. ®| just found out abo",
+        "evidence": "参考听力原文：“And I'm Jack Krugman.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“And I’m Jack Krugman.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He did not register in advance.）。"
+        "analysis": "正确答案：C（He did not register in advance.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -144,27 +167,27 @@
         "A variety of refreshments",
         "Some audio visual equipment",
         "Some training manuals",
-        "Aprogram for the event"
+        "A program for the event"
       ],
       "answer": "A",
       "question": "What does the woman say is at the back of the room?",
-      "answer_explain": "原文依据：听力原文中提到“You'll find coffee, tea, and snacks at the ba”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A variety of refreshments）。",
-      "question_translation": "女士说房间后面有什么？",
+      "answer_explain": "正确答案：A（A variety of refreshments）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士说房间后面有什么?",
       "choice_translations": [
-        "A：各种茶点",
-        "B：一些视听设备",
-        "C：一些培训手册",
-        "D：活动节目单"
+        "A:各种茶点",
+        "B:一些视听设备",
+        "C:一些培训手册",
+        "D:活动节目单"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“You'll find coffee, tea and snacks at the back of the room.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“You'll find coffee, tea and snacks at the back of the room.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“You'll find coffee, tea, and snacks at the ba”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A variety of refreshments）。"
+        "analysis": "正确答案：A（A variety of refreshments）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

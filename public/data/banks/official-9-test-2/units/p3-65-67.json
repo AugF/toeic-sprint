@@ -38,9 +38,31 @@
       "asset_key": "official-9-test-2/audio/part3/q065-067.mp3",
       "exists": true
     },
-    "transcript": "and product samples.\nWelcome to Yamada Décor and Building Supplies.\nCan I help you with anything?\nw Yeah, °I own Maria's Café. ®I'm adding a new\ndining room to the restaurant, and I'd like to see some\nwallpaper options.\nalm Of course.\nThere's one wallpaper brand I recommend.\nIt's easier to clean than most other brands.\nEw Perfect. I'm sure we'll need to clean up food stains\nfrom time to time.\nHere are some samples. The sunflower pattern is very\npopular.\nEw Actually,\nlike this one with the city buildings. The\nprice may be a bit high for my budget though.\nti.\nPrice Per Square Meter\nCOACHE\nFJ\nFIV\nFl\nOX*O",
-    "transcript_translation": "中文辅助（离线预处理）：and product samples.\nWelcome to Yamada Décor and Building Supplies.\nCan I help you with anything?\nw Yeah, °I own Maria's Café.\n®I'm adding a new\ndining room to the restaurant, and I'd like to see some\nwallpaper options.\nalm Of course.\nThere's one wallpaper brand I recommend.\nIt's easier to clean than most other brands.\nEw Perfect.\nI'm sure we'll need to clean up food stains\nfrom time to time.\nHere are some samples.\nThe sunflower pattern is very\npopular.\nEw Actually,\nlike this one with the city buildings.\nThe\nprice may be a bit high for my budget though.\nti.\nPrice Per Square Meter\nCOACHE\nFJ\nFIV\nFl\nOX*O",
-    "content_translation": "中文辅助（离线预处理）：and product samples.\nWelcome to Yamada Décor and Building Supplies.\nCan I help you with anything?\nw Yeah, °I own Maria's Café.\n®I'm adding a new\ndining room to the restaurant, and I'd like to see some\nwallpaper options.\nalm Of course.\nThere's one wallpaper brand I recommend.\nIt's easier to clean than most other brands.\nEw Perfect.\nI'm sure we'll need to clean up food stains\nfrom time to time.\nHere are some samples.\nThe sunflower pattern is very\npopular.\nEw Actually,\nlike this one with the city buildings.\nThe\nprice may be a bit high for my budget though.\nti.\nPrice Per Square Meter\nCOACHE\nFJ\nFIV\nFl\nOX*O"
+    "transcript": "and product samples.\nWelcome to Yamada Decor and Building Supplies.\nCan I help you with anything?\nYeah, I own Maria's Cafe.\nI'm adding a new dining room to the restaurant and I'd like to see some wallpaper options.\nOf course.\nThere's one wallpaper brand I recommend.\nIt's easier to clean than most other brands.\nPerfect.\nI'm sure we'll need to clean up food stains from time to time.\nHere are some samples.\nThe sunflower pattern is very popular.\nActually, I like this one with the city buildings.\nThe price may be a bit high for my budget, though.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "64ebbd56da1569b490bf28ee52c9c15a30fff4d940dc60ba58279a3869eaf49b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 98,
+        "legacy_word_count": 106,
+        "length_ratio": 0.925,
+        "legacy_coverage": 0.849
+      }
+    },
+    "transcript_translation": "和产品样品。\n欢迎来到 Yamada Decor and Building Supplies。\n有什么可以帮您的吗？\n是的，我拥有 Maria's Cafe。\n我正在给餐厅增加一个新餐厅，我想看看一些墙纸的选择。\n当然可以。\n我推荐一个墙纸品牌。\n它比大多数其他品牌更容易清洁。\n完美。\n我相信我们时不时都需要清理食物污渍。\n这里有一些样品。\n向日葵图案非常受欢迎。\n实际上，我喜欢这个带有城市建筑的款式。\n不过，这价格可能超出了我的预算。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7d4242fb6ec90a4fd3b0b91c7ec0f0f951b3d84b87b6d6cda9c26b1f42d12857"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -52,23 +74,23 @@
       ],
       "answer": "B",
       "question": "Who is the woman?",
-      "answer_explain": "原文依据：听力原文中提到“dining room to the restaurant, and I'd like to see some”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A restaurant owner）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） is the woman（女士）?",
+      "answer_explain": "正确答案：B（A restaurant owner）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) is the woman(女士)?",
       "choice_translations": [
-        "A：A painter",
-        "B：A restaurant owner",
-        "C：An interior designer",
-        "D：A real estate agent"
+        "A:A painter",
+        "B:A restaurant owner",
+        "C:An interior designer",
+        "D:A real estate agent"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and product samples.",
+      "evidence": "参考听力原文：“I'm adding a new dining room to the restaurant and I'd like to see some wallpaper options.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and product samples.",
+        "evidence": "参考听力原文：“I'm adding a new dining room to the restaurant and I'd like to see some wallpaper options.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“dining room to the restaurant, and I'd like to see some”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A restaurant owner）。"
+        "analysis": "正确答案：B（A restaurant owner）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 65,
       "priority": {
@@ -103,23 +125,23 @@
       ],
       "answer": "D",
       "question": "Why does the man recommend a product brand?",
-      "answer_explain": "原文依据：听力原文中提到“I'm sure we'll need to clean up food stains”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（It is easy to clean.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） recommend a product brand?",
+      "answer_explain": "正确答案：D（It is easy to clean.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the man(男士) recommend a product brand?",
       "choice_translations": [
-        "A：It is discounted.",
-        "B：It has bright colors.",
-        "C：It is made from recycled materials.",
-        "D：It is easy to clean."
+        "A:It is discounted.",
+        "B:It has bright colors.",
+        "C:It is made from recycled materials.",
+        "D:It is easy to clean."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and product samples.",
+      "evidence": "参考听力原文：“There's one wallpaper brand I recommend.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and product samples.",
+        "evidence": "参考听力原文：“There's one wallpaper brand I recommend.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I'm sure we'll need to clean up food stains”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（It is easy to clean.）。"
+        "analysis": "正确答案：D（It is easy to clean.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 66,
       "priority": {
@@ -154,23 +176,23 @@
       ],
       "answer": "B",
       "question": "Look at the graphic. What is the price of the pattern the woman prefers?",
-      "answer_explain": "原文依据：听力原文中提到“The sunflower pattern is very”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（$36）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhat（什么） is the price of the pattern the woman（女士） prefers?",
+      "answer_explain": "正确答案：B（$36）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. What(什么) is the price of the pattern the woman(女士) prefers?",
       "choice_translations": [
-        "A：$43",
-        "B：$36",
-        "C：$25",
-        "D：$17"
+        "A:$43",
+        "B:$36",
+        "C:$25",
+        "D:$17"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 12 段：Here are some samples. The sunflower pattern is very",
+      "evidence": "参考听力原文：“The price may be a bit high for my budget, though.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 12 段：Here are some samples. The sunflower pattern is very",
+        "evidence": "参考听力原文：“The price may be a bit high for my budget, though.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“The sunflower pattern is very”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（$36）。"
+        "analysis": "正确答案：B（$36）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 67,
       "priority": {

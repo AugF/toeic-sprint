@@ -40,37 +40,59 @@
       "asset_key": "official-4-test-1/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "lw Councilwoman Zhang—® about tonight’s city counc\nmeeting... I’ve collected some feedback from reside\nabout the proposed construction of a new shopping\nin Millstone. Since @that’ll be discussed at tonight's\nmeeting, would you like me to summarize it in one r\nYes, that’d be helpful. Does there seem to be a comm\nissue that residents are concerned about?\nIu Well, ©most of the residents don't like that this new\nshopping center will cause an increase in traffic,\nespecially near the entrance to Millstone Communit\nPark.\nThat's understandable. Please make copies of\nthe report for all council members. I’ll be leading the\ndiscussion about the project.",
-    "transcript_translation": "中文辅助（离线预处理）：lw Councilwoman Zhang—® about tonight’s city counc\nmeeting（会议）...\nI’ve collected some feedback from reside\nabout the proposed construction of a new shopping\nin Millstone.\nSince @that’ll be discussed at tonight's\nmeeting（会议）, would you like me to summarize it in one r\nYes, that’d be helpful.\nDoes there seem to be a comm\nissue that residents are concerned about?\nIu Well, ©most of the residents don't like that this new\nshopping center will cause an increase in traffic,\nespecially near the entrance to Millstone Communit\nPark.\nThat's understandable.\nPlease（请） make copies of\nthe report for all council members.\nI’ll be leading the\ndiscussion about the project.",
-    "content_translation": "中文辅助（离线预处理）：lw Councilwoman Zhang—® about tonight’s city counc\nmeeting（会议）...\nI’ve collected some feedback from reside\nabout the proposed construction of a new shopping\nin Millstone.\nSince @that’ll be discussed at tonight's\nmeeting（会议）, would you like me to summarize it in one r\nYes, that’d be helpful.\nDoes there seem to be a comm\nissue that residents are concerned about?\nIu Well, ©most of the residents don't like that this new\nshopping center will cause an increase in traffic,\nespecially near the entrance to Millstone Communit\nPark.\nThat's understandable.\nPlease（请） make copies of\nthe report for all council members.\nI’ll be leading the\ndiscussion about the project."
+    "transcript": "Councilwoman Zhang, about tonight's city council meeting, I've collected some feedback from residents about the proposed construction of a new shopping center in Millstone.\nSince that'll be discussed at tonight's meeting, would you like me to summarize it in one report?\nYes, that'd be helpful.\nDoes there seem to be a common issue that residents are concerned about?\nWell, most of the residents don't like that this new shopping center will cause an increase in traffic, especially near the entrance to Millstone Community Park.\nThat's understandable.\nPlease make copies of the report for all council members.\nI'll be leading the discussion about the project.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fdf69f881b80f1d0b1062676ec8aca73ffbb74652d3f7ef363c98f66a0e5cd79",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 104,
+        "legacy_word_count": 105,
+        "length_ratio": 0.99,
+        "legacy_coverage": 0.914
+      }
+    },
+    "transcript_translation": "张议员，关于今晚的市议会会议，我收集了一些居民对在 Millstone 建造新购物中心的反馈。\n由于这将在今晚的会议上讨论，您是否希望我将这些内容总结成一份报告？\n是的，那会有帮助。\n居民们有没有一个共同关注的问题？\n嗯，大多数居民不喜欢这个新的购物中心会造成交通增加，尤其是在 Millstone Community Park 的入口附近。\n这是可以理解的。\n请为所有议员准备这份报告的副本。\n我将负责引导关于该项目的讨论。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "325aff178064242a2ab881e2dca01b4a03da32977f077168a8e28186492d03f7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Acity budget",
-        "Aconstruction project",
+        "A city budget",
+        "A construction project",
         "A public park design",
-        "Alocal tax increase"
+        "A local tax increase"
       ],
       "answer": "B",
       "question": "What is the topic of tonight’s meeting?",
-      "answer_explain": "原文依据：听力原文中提到“discussion about the project.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Aconstruction project）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the topic of tonight’s meeting（会议）?",
+      "answer_explain": "正确答案：B（A construction project）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the topic of tonight’s meeting(会议)?",
       "choice_translations": [
-        "A：Acity budget",
-        "B：Aconstruction project",
-        "C：A public park design",
-        "D：Alocal tax increase"
+        "A:A city budget",
+        "B:A construction project",
+        "C:A public park design",
+        "D:A local tax increase"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：lw Councilwoman Zhang—® about tonight’s city counc",
+      "evidence": "参考听力原文：“Councilwoman Zhang, about tonight's city council meeting, I've collected some feedback from residents about the proposed construction of a new shopping center in Millstone.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：lw Councilwoman Zhang—® about tonight’s city counc",
+        "evidence": "参考听力原文：“Councilwoman Zhang, about tonight's city council meeting, I've collected some feedback from residents about the proposed construction of a new shopping center in Millstone.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“discussion about the project.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Aconstruction project）。"
+        "analysis": "正确答案：B（A construction project）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "A",
       "question": "What are some residents concerned about?",
-      "answer_explain": "原文依据：听力原文中提到“shopping center will cause an increase in traffic,”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Traffic congestion）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are some residents concerned about?",
+      "answer_explain": "正确答案：A（Traffic congestion）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are some residents concerned about?",
       "choice_translations": [
-        "A：Traffic congestion",
-        "B：Increased noise",
-        "C：The lack of green spaces",
-        "D：The length of a program"
+        "A:Traffic congestion",
+        "B:Increased noise",
+        "C:The lack of green spaces",
+        "D:The length of a program"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 7 段：issue that residents are concerned about?",
+      "evidence": "参考听力原文：“Councilwoman Zhang, about tonight's city council meeting, I've collected some feedback from residents about the proposed construction of a new shopping center in Millstone.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 7 段：issue that residents are concerned about?",
+        "evidence": "参考听力原文：“Councilwoman Zhang, about tonight's city council meeting, I've collected some feedback from residents about the proposed construction of a new shopping center in Millstone.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“shopping center will cause an increase in traffic,”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Traffic congestion）。"
+        "analysis": "正确答案：A（Traffic congestion）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "C",
       "question": "What does the woman ask the man to do?",
-      "answer_explain": "原文依据：听力原文中提到“Please make copies of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Make copies of a document）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） ask the man（男士） to do?",
+      "answer_explain": "正确答案：C（Make copies of a document）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) ask the man(男士) to do?",
       "choice_translations": [
-        "A：Introduce a city official",
-        "B：Set up audio equipment",
-        "C：Make copies of a document",
-        "D：Conduct a survey"
+        "A:Introduce a city official",
+        "B:Set up audio equipment",
+        "C:Make copies of a document",
+        "D:Conduct a survey"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：lw Councilwoman Zhang—® about tonight’s city counc",
+      "evidence": "参考听力原文：“Please make copies of the report for all council members.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：lw Councilwoman Zhang—® about tonight’s city counc",
+        "evidence": "参考听力原文：“Please make copies of the report for all council members.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Please make copies of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Make copies of a document）。"
+        "analysis": "正确答案：C（Make copies of a document）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

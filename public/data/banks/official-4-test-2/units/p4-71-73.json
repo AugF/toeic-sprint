@@ -36,9 +36,33 @@
       "asset_key": "official-4-test-2/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "meeting.\nER w\nve invited Lisa Markoff, the head of Human Resources\ncome to our next meeting. She'll be answering your qué\nabout the recent changes that her department's made to\nour performance review procedures. She'll also give us\ninstructions for filling out the new performance review for!\nHuman Resources. And finally, before we break up for toc\nwant to remind you that it’s the end of the month, so y\nsales reports are due tomorrow.",
-    "transcript_translation": "中文辅助（离线预处理）：meeting（会议）.\nER w\nve invited Lisa Markoff, the head of Human Resources\ncome to our next meeting（会议）.\nShe'll be answering your qué\nabout the recent changes that her department's made to\nour performance review procedures.\nShe'll also give us\ninstructions for filling out the new performance review for!\nHuman Resources.\nAnd finally, before we break up for toc\nwant to remind you that it’s the end of the month, so y\nsales reports are due tomorrow.",
-    "content_translation": "中文辅助（离线预处理）：meeting（会议）.\nER w\nve invited Lisa Markoff, the head of Human Resources\ncome to our next meeting（会议）.\nShe'll be answering your qué\nabout the recent changes that her department's made to\nour performance review procedures.\nShe'll also give us\ninstructions for filling out the new performance review for!\nHuman Resources.\nAnd finally, before we break up for toc\nwant to remind you that it’s the end of the month, so y\nsales reports are due tomorrow."
+    "transcript": "I've invited Lisa Markoff, the head of human resources, to come to our next meeting.\nShe'll be answering your questions about the recent changes that her departments made to our performance review procedures.\nShe'll also give us instructions for filling out the new performance review forms. for human resources.\nAnd finally, before we break up for today, I want to remind you that it's the end of the month, so your sales reports are due tomorrow.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "d4028cb636375c78209442802c052ba83235577eabbb86f9cbe87846e0ea3fc4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 76,
+        "legacy_word_count": 75,
+        "length_ratio": 1.013,
+        "legacy_coverage": 0.92,
+        "prompted_failure": "implausible Part 4 transcript length 13"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "我邀请了人力资源部的负责人丽莎·马科夫参加我们下次会议。\n她将回答您关于其部门对我们的绩效评估流程所做近期更改的问题。\n她还将指导我们填写新的绩效评估表格。对于人力资源部。\n最后，在今天结束之前，我想提醒大家今天是月底，所以你们的销售报告明天到期了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "903ff3b6fe98984bbe82089d4dc98f948cae4e53c2af5d5298abbcfef8c6357c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +74,23 @@
       ],
       "answer": "D",
       "question": "Which department does Lisa Markoff work in?",
-      "answer_explain": "原文依据：听力原文中提到“ve invited Lisa Markoff, the head of Human Resources”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Human Resources）。",
-      "question_translation": "中文辅助（离线预处理）：Which department does Lisa Markoff work（工作） in?",
+      "answer_explain": "正确答案：D（Human Resources）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Which department does Lisa Markoff work(工作) in?",
       "choice_translations": [
-        "A：Communications",
-        "B：Accounting",
-        "C：Marketing",
-        "D：Human Resources"
+        "A:Communications",
+        "B:Accounting",
+        "C:Marketing",
+        "D:Human Resources"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：ve invited Lisa Markoff, the head of Human Resources",
+      "evidence": "参考听力原文：“I've invited Lisa Markoff, the head of human resources, to come to our next meeting.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：ve invited Lisa Markoff, the head of Human Resources",
+        "evidence": "参考听力原文：“I've invited Lisa Markoff, the head of human resources, to come to our next meeting.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“ve invited Lisa Markoff, the head of Human Resources”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Human Resources）。"
+        "analysis": "正确答案：D（Human Resources）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 71,
       "priority": {
@@ -99,23 +123,23 @@
       ],
       "answer": "C",
       "question": "What will be the topic of the next meeting?",
-      "answer_explain": "原文依据：听力原文中提到“instructions for filling out the new performance review for!”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Performance reviews）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will be the topic of the next meeting（会议）?",
+      "answer_explain": "正确答案：C（Performance reviews）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will be the topic of the next meeting(会议)?",
       "choice_translations": [
-        "A：Time management",
-        "B：Social media",
-        "C：Performance reviews",
-        "D：Budget requests"
+        "A:Time management",
+        "B:Social media",
+        "C:Performance reviews",
+        "D:Budget requests"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：meeting.",
+      "evidence": "参考听力原文：“I've invited Lisa Markoff, the head of human resources, to come to our next meeting.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：meeting.",
+        "evidence": "参考听力原文：“I've invited Lisa Markoff, the head of human resources, to come to our next meeting.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“instructions for filling out the new performance review for!”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Performance reviews）。"
+        "analysis": "正确答案：C（Performance reviews）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 72,
       "priority": {
@@ -148,23 +172,23 @@
       ],
       "answer": "B",
       "question": "What are the listeners reminded to do tomorrow?",
-      "answer_explain": "原文依据：听力原文中提到“sales reports are due tomorrow.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Submit sales reports）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the listeners reminded to do tomorrow?",
+      "answer_explain": "正确答案：B（Submit sales reports）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the listeners reminded to do tomorrow?",
       "choice_translations": [
-        "A：Revise their résumés",
-        "B：Submit sales reports",
-        "C：Pick up a company（公司） manual",
-        "D：Sign up for extra shifts"
+        "A:Revise their résumés",
+        "B:Submit sales reports",
+        "C:Pick up a company(公司) manual",
+        "D:Sign up for extra shifts"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：sales reports are due tomorrow.",
+      "evidence": "参考听力原文：“And finally, before we break up for today, I want to remind you that it's the end of the month, so your sales reports are due tomorrow.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：sales reports are due tomorrow.",
+        "evidence": "参考听力原文：“And finally, before we break up for today, I want to remind you that it's the end of the month, so your sales reports are due tomorrow.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“sales reports are due tomorrow.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Submit sales reports）。"
+        "analysis": "正确答案：B（Submit sales reports）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 73,
       "priority": {

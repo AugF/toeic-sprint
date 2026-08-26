@@ -40,9 +40,33 @@
       "asset_key": "official-6-test-2/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "AK W\nCome visit the new Regent Teahouse in Harden Mall. Get\nyour favorite teas from all corners of the world. OWe stock\nblack tea, white tea, green tea, and every kind of fruit tea you\ncan imagine. ® To celebrate our grand opening, we're giving\nall customers a free teapot, which can be used to brew our\ndelicious teas. And Odon't forget to enroll in our customer\nloyalty program—you'll start earning benefits with your first\npurchase. Registration takes five minutes and ®can be\ncompleted at the customer service desk.",
-    "transcript_translation": "中文辅助（离线预处理）：AK W\nCome visit the new Regent Teahouse in Harden Mall.\nGet\nyour favorite teas from all corners of the world.\nOWe stock\nblack tea, white tea, green tea, and every kind of fruit tea you\ncan imagine.\n® To celebrate our grand opening, we're giving\nall customers a free teapot, which can be used to brew our\ndelicious teas.\nAnd Odon't forget to enroll in our customer（顾客）\nloyalty program—you'll start earning benefits with your first\npurchase（购买）.\nRegistration takes five minutes and ®can be\ncompleted at the customer（顾客） service（服务） desk.",
-    "content_translation": "中文辅助（离线预处理）：AK W\nCome visit the new Regent Teahouse in Harden Mall.\nGet\nyour favorite teas from all corners of the world.\nOWe stock\nblack tea, white tea, green tea, and every kind of fruit tea you\ncan imagine.\n® To celebrate our grand opening, we're giving\nall customers a free teapot, which can be used to brew our\ndelicious teas.\nAnd Odon't forget to enroll in our customer（顾客）\nloyalty program—you'll start earning benefits with your first\npurchase（购买）.\nRegistration takes five minutes and ®can be\ncompleted at the customer（顾客） service（服务） desk."
+    "transcript": "Come visit the new Regent Tea House in Hardin Mall.\nGet your favorite teas from all corners of the world.\nWe stock black tea, white tea, green tea, and every kind of fruit tea you can imagine.\nTo celebrate our grand opening, we're giving all customers a free teapot, which can be used to brew our delicious tea. a free teapot which can be used to brew our delicious teas.\nAnd don't forget to enroll in our customer loyalty program.\nYou'll start earning benefits with your first purchase.\nRegistration takes five minutes and can be completed at the customer service desk.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "8102d6acc549f33b981e06e66daefe3698bc12a9265a224ad7b30c6da189c25a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 101,
+        "legacy_word_count": 88,
+        "length_ratio": 1.148,
+        "legacy_coverage": 0.955,
+        "prompted_failure": "audio transcript appears truncated (ratio=0.26, coverage=0.09)"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "来 Regent Tea House 新店参观一下 Hardin Mall。\n从世界各个角落获取您最喜欢的茶。\n我们备有红茶、白茶、绿茶，以及你能想象到的所有种类的水果茶。\n为庆祝盛大开业，我们赠送所有顾客一个免费的茶壶，可用于冲泡我们美味的茶。一个可用于冲泡我们美味的茶的免费茶壶。\n别忘了注册我们的客户忠诚度计划。\n您首次购买即可开始赚取福利。\n注册只需五分钟，可在客服台完成。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "54b48eb1d8ca689c743f56e5bfa0d16bf34dcaab7f51a6ccf8883b2b1b18a9a0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +78,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker emphasize about the company's products?",
-      "answer_explain": "原文依据：听力原文中提到“your favorite teas from all corners of the world.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A wide selection is available.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） emphasize about the company（公司）'s products?",
+      "answer_explain": "正确答案：D（A wide selection is available.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) emphasize about the company(公司)'s products?",
       "choice_translations": [
-        "A：They are high quality.",
-        "B：They are locally produced.",
-        "C：Gift sets can be purchased online.",
-        "D：A wide selection is available（可用的）."
+        "A:They are high quality.",
+        "B:They are locally produced.",
+        "C:Gift sets can be purchased online.",
+        "D:A wide selection is available(可用的)."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：AK W",
+      "evidence": "参考听力原文：“To celebrate our grand opening, we're giving all customers a free teapot, which can be used to brew our delicious tea. a free teapot which can be used to brew our delicious teas.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：AK W",
+        "evidence": "参考听力原文：“To celebrate our grand opening, we're giving all customers a free teapot, which can be used to brew our delicious tea. a free teapot which can be used to brew our delicious teas.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“your favorite teas from all corners of the world.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A wide selection is available.）。"
+        "analysis": "正确答案：D（A wide selection is available.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -107,23 +131,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker say all customers will receive?",
-      "answer_explain": "原文依据：听力原文中提到“all customers a free teapot, which can be used to brew our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A teapot）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say all customers will receive?",
+      "answer_explain": "正确答案：B（A teapot）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say all customers will receive?",
       "choice_translations": [
-        "A：A gift card",
-        "B：A teapot",
-        "C：Product samples",
-        "D：Overnight delivery"
+        "A:A gift card",
+        "B:A teapot",
+        "C:Product samples",
+        "D:Overnight delivery"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：all customers a free teapot, which can be used to brew our",
+      "evidence": "参考听力原文：“To celebrate our grand opening, we're giving all customers a free teapot, which can be used to brew our delicious tea. a free teapot which can be used to brew our delicious teas.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：all customers a free teapot, which can be used to brew our",
+        "evidence": "参考听力原文：“To celebrate our grand opening, we're giving all customers a free teapot, which can be used to brew our delicious tea. a free teapot which can be used to brew our delicious teas.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“all customers a free teapot, which can be used to brew our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A teapot）。"
+        "analysis": "正确答案：B（A teapot）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -160,23 +184,23 @@
       ],
       "answer": "A",
       "question": "Why does the speaker say, \"Registration takes five minutes\"?",
-      "answer_explain": "原文依据：听力原文中提到“loyalty program—you'll start earning benefits with your first”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To encourage participation in a program）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"Registration takes five minutes\"?",
+      "answer_explain": "正确答案：A（To encourage participation in a program）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"Registration takes five minutes\"?",
       "choice_translations": [
-        "A：To encourage participation in a program",
-        "B：To apologize for a delay",
-        "C：To volunteer to assist customers",
-        "D：To invite customers to take a break"
+        "A:To encourage participation in a program",
+        "B:To apologize for a delay",
+        "C:To volunteer to assist customers",
+        "D:To invite customers to take a break"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：purchase. Registration takes five minutes and ®can be",
+      "evidence": "参考听力原文：“Registration takes five minutes and can be completed at the customer service desk.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：purchase. Registration takes five minutes and ®can be",
+        "evidence": "参考听力原文：“Registration takes five minutes and can be completed at the customer service desk.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“loyalty program—you'll start earning benefits with your first”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To encourage participation in a program）。"
+        "analysis": "正确答案：A（To encourage participation in a program）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

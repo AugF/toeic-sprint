@@ -31,8 +31,28 @@
       "asset_key": "official-2-test-2/images/part1/q003.jpg",
       "exists": true
     },
+    "transcript": "A. One woman is pointing at a screen.\nB. One woman is greeting a customer.\nC. The women are placing a computer on a desk.\nD. The women are adjusting a monitor.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e71bea0182d94aaa1aeff15eaa786a00c4736fc6a61bf8440a14a295aa5d8287",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 43
+      }
+    },
     "transcript_translation": "A. 一名女士指着一个屏幕。\nB. 一名女士在向顾客问好。\nC. 这些女士们正在桌子上放一台电脑。\nD. 这些女士们正在调整一个显示器。",
-    "content_translation": "A. 一名女士指着一个屏幕。\nB. 一名女士在向顾客问好。\nC. 这些女士们正在桌子上放一台电脑。\nD. 这些女士们正在调整一个显示器。"
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7c8fc1f5de0a6a67681558aab03bf2cb98ae8e546b2d5a352787171ef9827aea"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p1-3/3"
+      "item_key": "official-2-test-2/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

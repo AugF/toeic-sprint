@@ -39,9 +39,31 @@
       "asset_key": "official-4-test-2/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "lv Hello, this is Martin from AKT Signs calling. My\nrecords show your electronics company has ordet\nsome event banners from us before, and I'd like tc\ntell you about a special discount for our customers.\nER w Hmm... what type of discounts are you offering?\nWe're taking 20 percent off of all orders over $200.\nWell, we do have a technology trade show coming u\nBut | don’t actually make the purchasing decisions.\nsupervisor, Jocelyn, does.\nI v | see. Can you transfer me to her?\nER w Yes, but she’s out of the office at the moment. ®1’l\ntransfer you to her voicemail, and you can leave a\nmessage.",
-    "transcript_translation": "中文辅助（离线预处理）：lv Hello, this is Martin from AKT Signs calling.\nMy\nrecords show your electronics company（公司） has ordet\nsome event banners from us before, and I'd like tc\ntell you about a special discount for our customers.\nER w Hmm...\nwhat（什么） type of discounts are you offering?\nWe're taking 20 percent off of all orders over $200.\nWell, we do have a technology trade show coming u\nBut | don’t actually make the purchasing decisions.\nsupervisor, Jocelyn, does.\nI v | see.\nCan you transfer me to her?\nER w Yes, but she’s out of the office（办公室） at the moment.\n®1’l\ntransfer you to her voicemail, and you can leave a\nmessage.",
-    "content_translation": "中文辅助（离线预处理）：lv Hello, this is Martin from AKT Signs calling.\nMy\nrecords show your electronics company（公司） has ordet\nsome event banners from us before, and I'd like tc\ntell you about a special discount for our customers.\nER w Hmm...\nwhat（什么） type of discounts are you offering?\nWe're taking 20 percent off of all orders over $200.\nWell, we do have a technology trade show coming u\nBut | don’t actually make the purchasing decisions.\nsupervisor, Jocelyn, does.\nI v | see.\nCan you transfer me to her?\nER w Yes, but she’s out of the office（办公室） at the moment.\n®1’l\ntransfer you to her voicemail, and you can leave a\nmessage."
+    "transcript": "Hello, this is Martin from AKT Science Calling.\nMy records show your electronics company has ordered some event banners from us before, and I'd like to tell you about a special discount for our customers.\nHmm.\nWhat type of discounts are you offering?\nWe're taking 20% off of all orders over $200.\nWell, we do have a technology trade show coming up, but I don't actually make the purchasing decisions.\nMy supervisor Jocelyn does.\nI see.\nCan you transfer me to her?\nYes, but she's out of the office at the moment.\nI'll transfer you to her voicemail, and you can leave a message.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "510d1a008bcee8004207e04ca4f8114d4458c65c75e89ac8c9a07df21c19358c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 102,
+        "legacy_word_count": 104,
+        "length_ratio": 0.981,
+        "legacy_coverage": 0.894
+      }
+    },
+    "transcript_translation": "您好，我是 AKT Science Calling 的 Martin。\n我的记录显示你们的电子公司之前从我们这里订购过一些活动横幅，我想告诉您一个针对我们客户的特别折扣。\n嗯。\n你们提供什么类型的折扣？\n所有超过 200 美元的订单都享受八折优惠。\n嗯，我们确实有一个科技贸易展即将到来，但我实际上不是做采购决策的人。\n我的主管 Jocelyn 是。\n我明白了。\n你能把我转接给她吗？\n可以，但她目前不在办公室。\n我会把您转到她的语音信箱，您可以留言。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "80090484c5b9b3b3ab64d8ee9e8a1e4773a54b0bdda982125a126994ba091f39"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "C",
       "question": "Why is the man calling the woman’s company?",
-      "answer_explain": "原文依据：听力原文中提到“tell you about a special discount for our customers.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To offer a discount）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the man（男士） calling the woman（女士）’s company（公司）?",
+      "answer_explain": "正确答案：C（To offer a discount）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the man(男士) calling the woman(女士)’s company(公司)?",
       "choice_translations": [
-        "A：To book an event space",
-        "B：To conduct a survey",
-        "C：To offer a discount",
-        "D：To confirm a design"
+        "A:To book an event space",
+        "B:To conduct a survey",
+        "C:To offer a discount",
+        "D:To confirm a design"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：lv Hello, this is Martin from AKT Signs calling. My",
+      "evidence": "参考听力原文：“My records show your electronics company has ordered some event banners from us before, and I'd like to tell you about a special discount for our customers.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：lv Hello, this is Martin from AKT Signs calling. My",
+        "evidence": "参考听力原文：“My records show your electronics company has ordered some event banners from us before, and I'd like to tell you about a special discount for our customers.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“tell you about a special discount for our customers.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To offer a discount）。"
+        "analysis": "正确答案：C（To offer a discount）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "D",
       "question": "What does the woman imply when she says, “we do have a technology trade show coming up”?",
-      "answer_explain": "原文依据：听力原文中提到“ER w Yes, but she’s out of the office at the moment.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（She thinks some supplies may be）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） imply when（何时） she says, “we do have a technology trade show coming up”?",
+      "answer_explain": "正确答案：D（She thinks some supplies may be）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) imply when(何时) she says, “we do have a technology trade show coming up”?",
       "choice_translations": [
-        "A：She is too busy to talk.",
-        "B：She wants to hire an employee（员工） quickly.",
-        "C：She does not want the man（男士） to worry.",
-        "D：She thinks some supplies may be"
+        "A:She is too busy to talk.",
+        "B:She wants to hire an employee(员工) quickly.",
+        "C:She does not want the man(男士) to worry.",
+        "D:She thinks some supplies may be"
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 7 段：Well, we do have a technology trade show coming u",
+      "evidence": "参考听力原文：“Well, we do have a technology trade show coming up, but I don't actually make the purchasing decisions.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 7 段：Well, we do have a technology trade show coming u",
+        "evidence": "参考听力原文：“Well, we do have a technology trade show coming up, but I don't actually make the purchasing decisions.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“ER w Yes, but she’s out of the office at the moment.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（She thinks some supplies may be）。"
+        "analysis": "正确答案：D（She thinks some supplies may be）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "B",
       "question": "What does the woman instruct the man to do?",
-      "answer_explain": "原文依据：听力原文中提到“transfer you to her voicemail, and you can leave a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Leave a voice message）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） instruct the man（男士） to do?",
+      "answer_explain": "正确答案：B（Leave a voice message）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) instruct the man(男士) to do?",
       "choice_translations": [
-        "A：Call again later",
-        "B：Leave a voice message",
-        "C：Read an online notification",
-        "D：Consult a directory"
+        "A:Call again later",
+        "B:Leave a voice message",
+        "C:Read an online notification",
+        "D:Consult a directory"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：lv Hello, this is Martin from AKT Signs calling. My",
+      "evidence": "参考听力原文：“I'll transfer you to her voicemail, and you can leave a message.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：lv Hello, this is Martin from AKT Signs calling. My",
+        "evidence": "参考听力原文：“I'll transfer you to her voicemail, and you can leave a message.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“transfer you to her voicemail, and you can leave a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Leave a voice message）。"
+        "analysis": "正确答案：B（Leave a voice message）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

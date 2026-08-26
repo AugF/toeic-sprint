@@ -39,9 +39,31 @@
       "asset_key": "official-11-test-2/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "m Lola, Ocould you inventory and restock the bevera\naisle? Ol want to make sure our full range of\nbeverages is on display.\nw Sure, but el can tell you offhand that I checked\nthe stockroom yesterday, and we're out of Refresh\nLimited's flavored ice teas.\nm I saw the truck leave about an hour ago.\nEw ooh-OK. By the way, Oany word on my request\ntime off?\nEM oDid you put in a request?\nw OYeah. I e-mailed you yesterday.",
-    "transcript_translation": "中文辅助（离线预处理）：m Lola, Ocould you inventory and restock the bevera\naisle?\nOl want to make sure our full range of\nbeverages is on display.\nw Sure, but el can tell you offhand that I checked\nthe stockroom yesterday, and we're out of Refresh\nLimited's flavored ice teas.\nm I saw the truck leave about an hour ago.\nEw ooh-OK.\nBy the way, Oany word on my request\ntime off?\nEM oDid you put in a request?\nw OYeah.\nI e-mailed you yesterday.",
-    "content_translation": "中文辅助（离线预处理）：m Lola, Ocould you inventory and restock the bevera\naisle?\nOl want to make sure our full range of\nbeverages is on display.\nw Sure, but el can tell you offhand that I checked\nthe stockroom yesterday, and we're out of Refresh\nLimited's flavored ice teas.\nm I saw the truck leave about an hour ago.\nEw ooh-OK.\nBy the way, Oany word on my request\ntime off?\nEM oDid you put in a request?\nw OYeah.\nI e-mailed you yesterday."
+    "transcript": "Lola, could you inventory and restock the beverage aisle?\nI want to make sure our full range of beverages is on display.\nSure, but I can tell you offhand that I checked the stockroom yesterday, and we're out of Refresh Limited's flavored iced teas.\nI saw the truck leave about an hour ago.\nOh, okay.\nBy the way, any word on my request for time off?\nDid you put in a request?\nYeah, I emailed you yesterday.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "db4ea81bc483dc2ab2e2ef7440cf80758393cf6acf2e7eb4d7474f4cc106b6ce",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 77,
+        "legacy_word_count": 77,
+        "length_ratio": 1,
+        "legacy_coverage": 0.805
+      }
+    },
+    "transcript_translation": "洛拉，你能清点并补货一下饮料区吗？\n我想确保我们全系列的饮品都能展示出来。\n当然可以，但我可以告诉你，我昨天检查了储藏室，我们没有Refresh Limited的调味冰茶了。\n我看到卡车大约一个小时前离开了。\n哦，好的。\n顺便问一下我的休假申请怎么样了？\n你提交了吗？\n是的，我昨天给你发邮件了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8b6e3d4f76d8aa11b4c673b62c0914d4a33e219eb54db02317e0d4f062890794"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "B",
       "question": "Where is the conversation most likely taking place?",
-      "answer_explain": "原文依据：听力原文与题目“Where is the conversation most likely taking place?”对应，官方答案为“A truck driver left without the woman.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（A truck driver left without the woman.）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the conversation most likely（最可能） taking place?",
+      "answer_explain": "正确答案：B（A truck driver left without the woman.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) is the conversation most likely(最可能) taking place?",
       "choice_translations": [
-        "A：A delivery was not made.",
-        "B：A truck driver left without the woman（女士）.",
-        "C：A product should now be available（可用的）.",
-        "D：A supplier filled an order（订单） incorrectly."
+        "A:A delivery was not made.",
+        "B:A truck driver left without the woman(女士).",
+        "C:A product should now be available(可用的).",
+        "D:A supplier filled an order(订单) incorrectly."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：m Lola, Ocould you inventory and restock the bevera",
+      "evidence": "参考听力原文：“I saw the truck leave about an hour ago.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：m Lola, Ocould you inventory and restock the bevera",
+        "evidence": "参考听力原文：“I saw the truck leave about an hour ago.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Where is the conversation most likely taking place?”对应，官方答案为“A truck driver left without the woman.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（A truck driver left without the woman.）。"
+        "analysis": "正确答案：B（A truck driver left without the woman.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -104,24 +126,24 @@
         "A supplier filled an order incorrectly."
       ],
       "answer": "C",
-      "question": "What does the man mean when he says, \"I saw the truck leave about an hour ago™?",
-      "answer_explain": "原文依据：听力原文与题目“What does the man mean when he says, \"I saw the truck leave about an hour ago™?”对应，官方答案为“A product should now be available.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A product should now be available.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） mean when（何时） he says, \"I saw the truck leave about an hour ago™?",
+      "question": "What does the man mean when he says, \"I saw the truck leave about an hour agoTM?",
+      "answer_explain": "正确答案：C（A product should now be available.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) mean when(何时) he says, \"I saw the truck leave about an hour agoTM?",
       "choice_translations": [
-        "A：A delivery was not made.",
-        "B：A truck driver left without the woman（女士）.",
-        "C：A product should now be available（可用的）.",
-        "D：A supplier filled an order（订单） incorrectly."
+        "A:A delivery was not made.",
+        "B:A truck driver left without the woman(女士).",
+        "C:A product should now be available(可用的).",
+        "D:A supplier filled an order(订单) incorrectly."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 7 段：m I saw the truck leave about an hour ago.",
+      "evidence": "参考听力原文：“I saw the truck leave about an hour ago.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 7 段：m I saw the truck leave about an hour ago.",
+        "evidence": "参考听力原文：“I saw the truck leave about an hour ago.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What does the man mean when he says, \"I saw the truck leave about an hour ago™?”对应，官方答案为“A product should now be available.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A product should now be available.）。"
+        "analysis": "正确答案：C（A product should now be available.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "Why did the woman e-mail the man yesterday?",
-      "answer_explain": "原文依据：听力原文与题目“Why did the woman e-mail the man yesterday?”对应，官方答案为“To ask for vacation time”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（To ask for vacation time）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） did the woman（女士） e-mail the man（男士） yesterday?",
+      "answer_explain": "正确答案：C（To ask for vacation time）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) did the woman(女士) e-mail the man(男士) yesterday?",
       "choice_translations": [
-        "A：To invite him to a training event",
-        "B：To apply for a new position",
-        "C：To ask for vacation time",
-        "D：To make a complaint"
+        "A:To invite him to a training event",
+        "B:To apply for a new position",
+        "C:To ask for vacation time",
+        "D:To make a complaint"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：the stockroom yesterday, and we're out of Refresh",
+      "evidence": "参考听力原文：“Sure, but I can tell you offhand that I checked the stockroom yesterday, and we're out of Refresh Limited's flavored iced teas.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：the stockroom yesterday, and we're out of Refresh",
+        "evidence": "参考听力原文：“Sure, but I can tell you offhand that I checked the stockroom yesterday, and we're out of Refresh Limited's flavored iced teas.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Why did the woman e-mail the man yesterday?”对应，官方答案为“To ask for vacation time”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（To ask for vacation time）。"
+        "analysis": "正确答案：C（To ask for vacation time）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

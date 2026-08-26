@@ -41,9 +41,31 @@
       "asset_key": "official-3-test-2/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "Fl Hi, ©! was transferred to you by the bank’s customer\nservice desk. @1’m interested in getting a loan to do\nsome repair work on my home. Is that possible?\nCertainly! © Our bank offers different types of\nfinancing for home improvement work. Do you own\nthe property?\nI ™ Yes, | do.\nK. Then the first thing I’ll need you to do is fill out a\nloan application, so that we can check your financial\nhistory.\nAll right, can | find that form online?\nActually, no. But, 9}\"| send one to you right away.\nPlease fill it out and send it back to me. Can | have\nyour home address?",
-    "transcript_translation": "中文辅助（离线预处理）：Fl Hi, ©!\nwas transferred to you by the bank’s customer（顾客）\nservice（服务） desk.\n@1’m interested in getting a loan to do\nsome repair work（工作） on my home.\nIs that possible?\nCertainly!\n© Our bank offers different types of\nfinancing for home improvement work（工作）.\nDo you own\nthe property?\nI ™ Yes, | do.\nK.\nThen the first thing I’ll need you to do is fill out a\nloan application, so that we can check your financial\nhistory.\nAll right, can | find that form online?\nActually, no.\nBut, 9}\"| send one to you right away.\nPlease（请） fill it out and send it back to me.\nCan | have\nyour home address?",
-    "content_translation": "中文辅助（离线预处理）：Fl Hi, ©!\nwas transferred to you by the bank’s customer（顾客）\nservice（服务） desk.\n@1’m interested in getting a loan to do\nsome repair work（工作） on my home.\nIs that possible?\nCertainly!\n© Our bank offers different types of\nfinancing for home improvement work（工作）.\nDo you own\nthe property?\nI ™ Yes, | do.\nK.\nThen the first thing I’ll need you to do is fill out a\nloan application, so that we can check your financial\nhistory.\nAll right, can | find that form online?\nActually, no.\nBut, 9}\"| send one to you right away.\nPlease（请） fill it out and send it back to me.\nCan | have\nyour home address?"
+    "transcript": "Hi, I was transferred to you by the bank's customer service desk.\nI'm interested in getting a loan to do some repair work on my home.\nIs that possible?\nCertainly.\nOur bank offers different types of financing for home improvement work.\nDo you own the property?\nYes, I do.\nOkay.\nThen the first thing I'll need you to do is fill out a loan application so that we can check your financial history.\nAll right.\nCan I find that form online?\nActually, no, but I'll send one to you right away.\nPlease fill it out and send it back to me.\nCan I have your home address?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "40e44b742c699e876828308b0a72f92b5bfa2529ae2d331d58fafec955c960a2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 107,
+        "legacy_word_count": 102,
+        "length_ratio": 1.049,
+        "legacy_coverage": 0.971
+      }
+    },
+    "transcript_translation": "您好，我是银行客服转来的。\n我对获得一笔贷款来在我家做一些维修工作感兴趣。\n这可行吗？\n当然可以。\n我们银行为家居装修工作提供不同类型的融资服务。\n您拥有这处房产吗？\n是的，我拥有。\n好的。\n那么首先需要您做的是填写一份贷款申请表，这样我们才能查阅您的财务记录。\n没问题。\n我可以在线找到这个表格吗？\n实际上不能，但我会马上给您发送一份。\n请填写好并交还给我。\n我可以知道您的家庭地址吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3e15071a907c41e718970bb3756b06212fc30142a7591ab93c194c547d3f8b0e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "C",
       "question": "Why is the man calling?",
-      "answer_explain": "原文依据：听力原文中提到“loan application, so that we can check your financial”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To ask about a loan）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the man（男士） calling?",
+      "answer_explain": "正确答案：C（To ask about a loan）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the man(男士) calling?",
       "choice_translations": [
-        "A：To open a bank account",
-        "B：To complain about repair work（工作）",
-        "C：To ask about a loan",
-        "D：To interview for a job"
+        "A:To open a bank account",
+        "B:To complain about repair work(工作)",
+        "C:To ask about a loan",
+        "D:To interview for a job"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Fl Hi, ©! was transferred to you by the bank’s customer",
+      "evidence": "参考听力原文：“Then the first thing I'll need you to do is fill out a loan application so that we can check your financial history.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Fl Hi, ©! was transferred to you by the bank’s customer",
+        "evidence": "参考听力原文：“Then the first thing I'll need you to do is fill out a loan application so that we can check your financial history.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“loan application, so that we can check your financial”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To ask about a loan）。"
+        "analysis": "正确答案：C（To ask about a loan）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -103,29 +125,29 @@
     {
       "choices": [
         "A building inspector",
-        "Acity official",
+        "A city official",
         "An interior designer",
         "A bank employee"
       ],
       "answer": "D",
       "question": "Who most likely is the woman?",
-      "answer_explain": "原文依据：听力原文中提到“was transferred to you by the bank’s customer”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（A bank employee）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the woman（女士）?",
+      "answer_explain": "正确答案：D（A bank employee）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is the woman(女士)?",
       "choice_translations": [
-        "A：A building inspector",
-        "B：Acity official",
-        "C：An interior designer",
-        "D：A bank employee（员工）"
+        "A:A building inspector",
+        "B:A city official",
+        "C:An interior designer",
+        "D:A bank employee(员工)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Fl Hi, ©! was transferred to you by the bank’s customer",
+      "evidence": "参考听力原文：“Our bank offers different types of financing for home improvement work.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Fl Hi, ©! was transferred to you by the bank’s customer",
+        "evidence": "参考听力原文：“Our bank offers different types of financing for home improvement work.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“was transferred to you by the bank’s customer”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（A bank employee）。"
+        "analysis": "正确答案：D（A bank employee）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "D",
       "question": "What will the woman do after the phone call?",
-      "answer_explain": "原文依据：听力原文中提到“All right, can | find that form online?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Mail a form）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） do after the phone call?",
+      "answer_explain": "正确答案：D（Mail a form）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) do after the phone call?",
       "choice_translations": [
-        "A：Sign a contract",
-        "B：Speak to a manager（经理）",
-        "C：Meet with a customer（顾客）",
-        "D：Mail a form"
+        "A:Sign a contract",
+        "B:Speak to a manager(经理)",
+        "C:Meet with a customer(顾客)",
+        "D:Mail a form"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Fl Hi, ©! was transferred to you by the bank’s customer",
+      "evidence": "参考听力原文：“Can I find that form online?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Fl Hi, ©! was transferred to you by the bank’s customer",
+        "evidence": "参考听力原文：“Can I find that form online?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“All right, can | find that form online?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Mail a form）。"
+        "analysis": "正确答案：D（Mail a form）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

@@ -26,8 +26,28 @@
       "asset_key": "official-9-test-1/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Who（谁） is supervising the front desk?",
-    "content_translation": "中文辅助（离线预处理）：Who（谁） is supervising the front desk?"
+    "transcript": "Who is supervising the front desk?\nA. The key for the back door.\nB. Susan is, I think.\nC. No, but I'll pay later.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "85c3259cd7c8c27f2ba40d362877a0f73337652117c020c69ebb497d154b5cef",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "谁在负责前台？\nA. 后门的钥匙。\nB. 我想是苏珊。\nC. 不，但我稍后付款。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e10d74e844c9d4bab5a1c12ff547334f83adcb7068cd98ac43271864f6385388"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -42,11 +62,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Who is supervising the front desk?”，自然应答是“Susan is, I think.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Susan is, I think.）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） is supervising the front desk?",
+      "question_translation": "谁在负责前台?",
       "choice_translations": [
-        "A：The key for the back door.",
-        "B：Susan is, I think.",
-        "C：No, but I'll pay later."
+        "A：后门的钥匙。",
+        "B：我想是苏珊。",
+        "C：不,但我稍后付款。"
       ],
       "question_type": "人物疑问句",
       "evidence": "参考原文第 1 段：Who is supervising the front desk?",

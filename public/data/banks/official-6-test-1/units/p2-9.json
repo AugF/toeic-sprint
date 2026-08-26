@@ -27,13 +27,33 @@
       "asset_key": "official-6-test-1/audio/part2/q009.mp3",
       "exists": true
     },
-    "transcript_translation": "小组面试有多少人？\nA. 将有六名申请者。\nB. 他在我组里。\nC. 目前没有。",
-    "content_translation": "小组面试有多少人？\nA. 将有六名申请者。\nB. 他在我组里。\nC. 目前没有。"
+    "transcript": "How many people will be in the group interview?\nA. There will be 6 applicants.\nB. He's in my group.\nC. Not at the moment.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d17a4551cc9fd0ca4325d1ec0ad5a1f22547607ce68a79c1353ace9966c95990",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q009.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "小组面试会有多少人？\nA. 将有 6 名申请者。\nB. 他在我的小组里。\nC. 目前没有。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0f2c0916ef34da6bfa3f8997bfb0f3aee0186a6d95b37ea04072708976faac66"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "There will be six applicants.",
+        "There will be 6 applicants.",
         "He's in my group.",
         "Not at the moment."
       ],
@@ -42,11 +62,11 @@
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“How many people will be in the group interview?”，自然应答是“There will be six applicants.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（There will be six applicants.）。",
-      "question_translation": "小组面试有多少人？",
+      "answer_explain": "原文依据：问句或陈述是“How many people will be in the group interview?”，自然应答是“There will be 6 applicants.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（There will be 6 applicants.）。",
+      "question_translation": "小组面试会有多少人?",
       "choice_translations": [
-        "A：将有六名申请者。",
-        "B：他在我组里。",
+        "A：将有 6 名申请者。",
+        "B：他在我的小组里。",
         "C：目前没有。"
       ],
       "question_type": "方式 / 程度疑问句",
@@ -58,7 +78,7 @@
         "question_type": "方式 / 程度疑问句",
         "evidence": "参考原文第 1 段：How many people will be in the group interview?",
         "strategy": "先判断为方式 / 程度疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“How many people will be in the group interview?”，自然应答是“There will be six applicants.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（There will be six applicants.）。"
+        "analysis": "原文依据：问句或陈述是“How many people will be in the group interview?”，自然应答是“There will be 6 applicants.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（There will be 6 applicants.）。"
       },
       "item_id": 9,
       "priority": {

@@ -31,14 +31,34 @@
       "asset_key": "official-2-test-1/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 一名男士正进入汽车。\nB. 一名男士正离开一栋建筑。\nC. 叶子覆盖了汽车的后窗。\nD. 有些车被困在交通中。",
-    "content_translation": "A. 一名男士正进入汽车。\nB. 一名男士正离开一栋建筑。\nC. 叶子覆盖了汽车的后窗。\nD. 有些车被困在交通中。"
+    "transcript": "A. A man's getting into a car.\nB. A man's leaving a building.\nC. Leaves are covering a car's rear window.\nD. Some cars are stuck in traffic.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "75fcce7d3e7521193ca61412517b705d6e88bb76377572f9cef6afdbb215609e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-1/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 39
+      }
+    },
+    "transcript_translation": "A. 一个男人正进入一辆车。\nB. 一个男人正在离开一座建筑。\nC. 叶子正在覆盖一辆车的后窗。\nD. 有些车被困在交通中。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "edfa6a9269b265eb245292fcc651166b22bf573e9b61e9fa27176c86a4ba77b5"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "A man’s getting into a car.",
-        "Aman’s leaving a building.",
+        "A man's getting into a car.",
+        "A man's leaving a building.",
         "Leaves are covering a car's rear window.",
         "Some cars are stuck in traffic."
       ],
@@ -48,9 +68,9 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Leaves are covering a car's rear window.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Leaves are covering a car's rear window.）。",
       "choice_translations": [
-        "A：一名男士正进入汽车。",
-        "B：一名男士正离开一栋建筑。",
-        "C：叶子覆盖了汽车的后窗。",
+        "A：一个男人正进入一辆车。",
+        "B：一个男人正在离开一座建筑。",
+        "C：叶子正在覆盖一辆车的后窗。",
         "D：有些车被困在交通中。"
       ],
       "question_type": "动作 / 状态辨析题",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-1/p1-3/3"
+      "item_key": "official-2-test-1/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -28,8 +28,28 @@
       "asset_key": "official-10-test-1/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "w 我们不坐火车进城怎么样？ * m\nA. 我们很喜欢博物馆。\nB. 公交车快到了。\nC. 靠近乡村。",
-    "content_translation": "w 我们不坐火车进城怎么样？ * m\nA. 我们很喜欢博物馆。\nB. 公交车快到了。\nC. 靠近乡村。"
+    "transcript": "Why don't we take the train into the city instead?\nA. We enjoyed the museum.\nB. The bus is almost here.\nC. Near the countryside.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "42ab389a7903217d23ab1da7c60d9d24713158404cdd3438b30d182f107131ee",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "我们改坐火车进城怎么样？\nA. 我们很喜欢博物馆。\nB. 公交车快到了。\nC. 靠近乡村。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "cc8b01d1e702250be37ad346b2540871921d6b1bddccaf8004afaeefefd55a60"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Near the countryside."
       ],
       "answer": "B",
-      "question": "w Why don't we take the train into the city instead? * m",
+      "question": "Why don't we take the train into the city instead?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“w Why don't we take the train into the city instead? * m”，自然应答是“The bus is almost here.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The bus is almost here.）。",
-      "question_translation": "w 我们不坐火车进城怎么样？ * m",
+      "answer_explain": "原文依据：问句或陈述是“Why don't we take the train into the city instead?”，自然应答是“The bus is almost here.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The bus is almost here.）。",
+      "question_translation": "我们改坐火车进城怎么样?",
       "choice_translations": [
         "A：我们很喜欢博物馆。",
         "B：公交车快到了。",
         "C：靠近乡村。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：w Why don't we take the train into the city instead? * m",
+      "evidence": "参考原文第 1 段：Why don't we take the train into the city instead?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：w Why don't we take the train into the city instead? * m",
+        "evidence": "参考原文第 1 段：Why don't we take the train into the city instead?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“w Why don't we take the train into the city instead? * m”，自然应答是“The bus is almost here.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The bus is almost here.）。"
+        "analysis": "原文依据：问句或陈述是“Why don't we take the train into the city instead?”，自然应答是“The bus is almost here.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The bus is almost here.）。"
       },
       "item_id": 28,
       "priority": {

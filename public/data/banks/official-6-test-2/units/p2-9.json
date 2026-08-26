@@ -26,8 +26,28 @@
       "asset_key": "official-6-test-2/audio/part2/q009.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：When（何时） did the air conditioner arrive?",
-    "content_translation": "中文辅助（离线预处理）：When（何时） did the air conditioner arrive?"
+    "transcript": "When did the air conditioner arrive?\nA. Thanks for sharing.\nB. It came yesterday.\nC. Yes, it's more efficient.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "94497977930ec73eecebc55070f670e4f3cf5a524658633dad152e46b83671e9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q009.mp3",
+      "metrics": {
+        "word_count": 20
+      }
+    },
+    "transcript_translation": "空调是什么时候到的？\nA. 谢谢你的分享。\nB. 它昨天到了。\nC. 是的，它更高效。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "005733eb8a220a9b632a66b6b3afd1b6bf72027a2e9139524044471d516975f4"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -42,11 +62,11 @@
       "topic": "时间询问",
       "keywords": "when time response",
       "answer_explain": "原文依据：问句或陈述是“When did the air conditioner arrive?”，自然应答是“It came yesterday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It came yesterday.）。",
-      "question_translation": "中文辅助（离线预处理）：When（何时） did the air conditioner arrive?",
+      "question_translation": "空调是什么时候到的?",
       "choice_translations": [
-        "A：Thanks for sharing.",
-        "B：It came yesterday.",
-        "C：Yes, it's more efficient."
+        "A：谢谢你的分享。",
+        "B：它昨天到了。",
+        "C：是的,它更高效。"
       ],
       "question_type": "时间疑问句",
       "evidence": "参考原文第 1 段：When did the air conditioner arrive?",

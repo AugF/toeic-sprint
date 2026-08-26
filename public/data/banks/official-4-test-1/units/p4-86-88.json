@@ -40,9 +40,33 @@
       "asset_key": "official-4-test-1/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nev\nWelcome, managers. Thank you all for coming to our\ncorporate headquarters for today’s training on the new lin\nof products your stores will be carrying. We'll soon be\nreplacing our current stock of appliances with more\neco-friendly versions. Today we'll discuss how to get\nyour store and sales staff ready for this change. © There's\na lot of preparation to do, like planning store promotions,\nmerchandising, and gaining product knowledge. We have\nthree weeks. All right, let’s get started.",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nev\nWelcome, managers.\nThank（感谢） you all for coming to our\ncorporate headquarters for today’s training on the new lin\nof products your stores will be carrying.\nWe'll soon be\nreplacing our current stock of appliances with more\neco-friendly versions.\nToday we'll discuss how（如何） to get\nyour store and sales staff ready for this change.\n© There's\na lot of preparation to do, like planning store promotions,\nmerchandising, and gaining product knowledge.\nWe have\nthree weeks.\nAll right, let’s get started.",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nev\nWelcome, managers.\nThank（感谢） you all for coming to our\ncorporate headquarters for today’s training on the new lin\nof products your stores will be carrying.\nWe'll soon be\nreplacing our current stock of appliances with more\neco-friendly versions.\nToday we'll discuss how（如何） to get\nyour store and sales staff ready for this change.\n© There's\na lot of preparation to do, like planning store promotions,\nmerchandising, and gaining product knowledge.\nWe have\nthree weeks.\nAll right, let’s get started."
+    "transcript": "Welcome, managers.\nThank you all for coming to our corporate headquarters for today's training on the new line of products your stores will be carrying.\nWe'll soon be replacing our current stock of appliances with more eco-friendly versions.\nToday, we'll discuss how to get your store and sales staff ready for the... us how to get your store and sales staff ready for this change.\nThere's a lot of preparation to do, like planning store promotions, merchandising, and gaining product knowledge.\nWe have three weeks.\nAll right, let's get started.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "16764b4e0efe81e5dd12fc945df39f79596224130a113863758e1cc0a9fea13f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 90,
+        "legacy_word_count": 81,
+        "length_ratio": 1.111,
+        "legacy_coverage": 0.963,
+        "prompted_failure": "implausible Part 4 transcript length 9"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "欢迎，各位经理们。\n感谢大家来到我们的公司总部参加今天关于您的门店将携带的新系列产品的培训。\n我们很快就要用更环保的版本替换我们目前库存的电器了。\n今天，我们将讨论如何让您的门店和销售人员为... 我们如何让您的门店和销售人员为这次变化做好准备。\n需要做很多准备工作，比如规划门店促销、商品陈列以及了解产品知识。\n我们有三周时间。\n好的，我们开始吧。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a777725b5c4259d55d3156b4ad2a36c5f114add041e256c42334fb3d380235a9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +78,23 @@
       ],
       "answer": "B",
       "question": "Who most likely are the listeners?",
-      "answer_explain": "原文依据：听力原文中提到“a lot of preparation to do, like planning store promotions,”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Store managers）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） are the listeners?",
+      "answer_explain": "正确答案：B（Store managers）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) are the listeners?",
       "choice_translations": [
-        "A：Software developers",
-        "B：Store managers",
-        "C：Product designers",
-        "D：Accounting professionals"
+        "A:Software developers",
+        "B:Store managers",
+        "C:Product designers",
+        "D:Accounting professionals"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“Today, we'll discuss how to get your store and sales staff ready for the... us how to get your store and sales staff ready for this change.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“Today, we'll discuss how to get your store and sales staff ready for the... us how to get your store and sales staff ready for this change.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“a lot of preparation to do, like planning store promotions,”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Store managers）。"
+        "analysis": "正确答案：B（Store managers）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 86,
       "priority": {
@@ -107,23 +131,23 @@
       ],
       "answer": "A",
       "question": "What is the speaker mainly discussing?",
-      "answer_explain": "原文依据：听力原文中提到“your store and sales staff ready for this change.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Preparing for an inventory change）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the speaker（说话者） mainly discussing?",
+      "answer_explain": "正确答案：A（Preparing for an inventory change）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the speaker(说话者) mainly discussing?",
       "choice_translations": [
-        "A：Preparing for an inventory change",
-        "B：Hiring some new employees",
-        "C：Opening a training center",
-        "D：Expanding international locations"
+        "A:Preparing for an inventory change",
+        "B:Hiring some new employees",
+        "C:Opening a training center",
+        "D:Expanding international locations"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“Today, we'll discuss how to get your store and sales staff ready for the... us how to get your store and sales staff ready for this change.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“Today, we'll discuss how to get your store and sales staff ready for the... us how to get your store and sales staff ready for this change.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“your store and sales staff ready for this change.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Preparing for an inventory change）。"
+        "analysis": "正确答案：A（Preparing for an inventory change）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 87,
       "priority": {
@@ -160,23 +184,23 @@
       ],
       "answer": "C",
       "question": "Why does the speaker say, “We have 9 three weeks”?",
-      "answer_explain": "原文依据：听力原文中提到“three weeks.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To indicate urgency）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, “We have 9 three weeks”?",
+      "answer_explain": "正确答案：C（To indicate urgency）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, “We have 9 three weeks”?",
       "choice_translations": [
-        "A：To criticize a suggestion",
-        "B：To correct a misunderstanding",
-        "C：To indicate urgency",
-        "D：To express relief"
+        "A:To criticize a suggestion",
+        "B:To correct a misunderstanding",
+        "C:To indicate urgency",
+        "D:To express relief"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 11 段：three weeks. All right, let’s get started.",
+      "evidence": "参考听力原文：“We have three weeks.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 11 段：three weeks. All right, let’s get started.",
+        "evidence": "参考听力原文：“We have three weeks.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“three weeks.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To indicate urgency）。"
+        "analysis": "正确答案：C（To indicate urgency）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 88,
       "priority": {

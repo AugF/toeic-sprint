@@ -27,8 +27,28 @@
       "asset_key": "official-1-test-2/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "iu 我该如何存放这些照片？ =w\nA. Mateo 负责这个。\nB. 来自公司野餐会。\nC. 是的，工作人员很有帮助。",
-    "content_translation": "iu 我该如何存放这些照片？ =w\nA. Mateo 负责这个。\nB. 来自公司野餐会。\nC. 是的，工作人员很有帮助。"
+    "transcript": "How should I store these photographs?\nA. Mateo is responsible for that.\nB. From the company picnic.\nC. Yes, the staff is very helpful.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9347548441024d543cd868b574489b28fb0038e59b718b7de1d49e7456c067c3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "我该如何存放这些照片？\nA. Mateo负责那个。\nB. 来自公司野餐会。\nC. 是的，员工们非常乐于助人。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6b86ce9a88378f34b14a0a6063156c45ec2650bceb5bab7eb14fc0b91553f7f3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "Yes, the staff is very helpful."
       ],
       "answer": "A",
-      "question": "iu How should | store these photographs? =w",
+      "question": "How should I store these photographs?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“iu How should | store these photographs? =w”，自然应答是“Mateo is responsible for that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Mateo is responsible for that.）。",
-      "question_translation": "iu 我该如何存放这些照片？ =w",
+      "answer_explain": "原文依据：问句或陈述是“How should I store these photographs?”，自然应答是“Mateo is responsible for that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Mateo is responsible for that.）。",
+      "question_translation": "我该如何存放这些照片?",
       "choice_translations": [
-        "A：Mateo 负责这个。",
+        "A：Mateo负责那个。",
         "B：来自公司野餐会。",
-        "C：是的，工作人员很有帮助。"
+        "C：是的,员工们非常乐于助人。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：iu How should | store these photographs? =w",
+      "evidence": "参考原文第 1 段：How should I store these photographs?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：iu How should | store these photographs? =w",
+        "evidence": "参考原文第 1 段：How should I store these photographs?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“iu How should | store these photographs? =w”，自然应答是“Mateo is responsible for that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Mateo is responsible for that.）。"
+        "analysis": "原文依据：问句或陈述是“How should I store these photographs?”，自然应答是“Mateo is responsible for that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Mateo is responsible for that.）。"
       },
       "item_id": 24,
       "priority": {

@@ -27,38 +27,58 @@
       "asset_key": "official-2-test-2/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "[lw 承包商明天要来吗？\nA. 我以为你让他来的。 Eig w\nB. 你必须在每页上签到。\nC. 至少三周。",
-    "content_translation": "[lw 承包商明天要来吗？\nA. 我以为你让他来的。 Eig w\nB. 你必须在每页上签到。\nC. 至少三周。"
+    "transcript": "Why is the contractor coming in tomorrow?\nA. I thought you asked him to come.\nB. You have to initial every page.\nC. At least three weeks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "51ce961737cd17e7d04007b0f87e9eff773318af626dbd1c8b95a80ffd4d04e2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "承包商明天来做什么？\nA. 我以为你让他来的。\nB. 你必须在每页上签到。\nC. 至少三周。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "992ba2c2c6bb1d66527ed792fe908a815b4bea9ab904fd8a6f094950eb8141ae"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "thought you asked him to come. Eig w",
+        "I thought you asked him to come.",
         "You have to initial every page.",
         "At least three weeks."
       ],
       "answer": "A",
-      "question": "[lw Why is the contractor coming in tomorrow?",
+      "question": "Why is the contractor coming in tomorrow?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“[lw Why is the contractor coming in tomorrow?”，自然应答是“thought you asked him to come. Eig w”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（thought you asked him to come. Eig w）。",
-      "question_translation": "[lw 承包商明天要来吗？",
+      "answer_explain": "原文依据：问句或陈述是“Why is the contractor coming in tomorrow?”，自然应答是“I thought you asked him to come.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I thought you asked him to come.）。",
+      "question_translation": "承包商明天来做什么?",
       "choice_translations": [
-        "A：我以为你让他来的。 Eig w",
+        "A：我以为你让他来的。",
         "B：你必须在每页上签到。",
         "C：至少三周。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：[lw Why is the contractor coming in tomorrow?",
+      "evidence": "参考原文第 1 段：Why is the contractor coming in tomorrow?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为一般疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：[lw Why is the contractor coming in tomorrow?",
+        "evidence": "参考原文第 1 段：Why is the contractor coming in tomorrow?",
         "strategy": "先判断为一般疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“[lw Why is the contractor coming in tomorrow?”，自然应答是“thought you asked him to come. Eig w”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（thought you asked him to come. Eig w）。"
+        "analysis": "原文依据：问句或陈述是“Why is the contractor coming in tomorrow?”，自然应答是“I thought you asked him to come.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I thought you asked him to come.）。"
       },
       "item_id": 26,
       "priority": {

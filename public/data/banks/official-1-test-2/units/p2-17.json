@@ -26,38 +26,58 @@
       "asset_key": "official-1-test-2/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "= w 你知道这件夹克是谁的吗？ m\nA. 是的，非常贵。\nB. 不，你是在哪里找到的？\nC. 不太久就弄好了。",
-    "content_translation": "= w 你知道这件夹克是谁的吗？ m\nA. 是的，非常贵。\nB. 不，你是在哪里找到的？\nC. 不太久就弄好了。"
+    "transcript": "Do you know who this jacket belongs to?\nA. Yes, very expensive.\nB. No, where did you find it?\nC. It won't take too long.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ba970bc7583a955177c718dcfef88e112d96ab1301bf0f5c7afc5cd406bfdd9d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你知道这件夹克属于谁吗？\nA. 是的，非常贵。\nB. 不，你是在哪里找到它的？\nC. 它不会花太长时间。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3d474d14cb471c9d0e5955af7277b43ef5cd2358a4f8e78c39bba137f1844400"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Yes, very expensive.",
         "No, where did you find it?",
-        "It won’t take too long."
+        "It won't take too long."
       ],
       "answer": "B",
-      "question": "= w Do you know who this jacket belongs to? m",
+      "question": "Do you know who this jacket belongs to?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“= w Do you know who this jacket belongs to? m”，自然应答是“No, where did you find it?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, where did you find it?）。",
-      "question_translation": "= w 你知道这件夹克是谁的吗？ m",
+      "answer_explain": "原文依据：问句或陈述是“Do you know who this jacket belongs to?”，自然应答是“No, where did you find it?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, where did you find it?）。",
+      "question_translation": "你知道这件夹克属于谁吗?",
       "choice_translations": [
-        "A：是的，非常贵。",
-        "B：不，你是在哪里找到的？",
-        "C：不太久就弄好了。"
+        "A：是的,非常贵。",
+        "B：不,你是在哪里找到它的?",
+        "C：它不会花太长时间。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：= w Do you know who this jacket belongs to? m",
+      "evidence": "参考原文第 1 段：Do you know who this jacket belongs to?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：= w Do you know who this jacket belongs to? m",
+        "evidence": "参考原文第 1 段：Do you know who this jacket belongs to?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“= w Do you know who this jacket belongs to? m”，自然应答是“No, where did you find it?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, where did you find it?）。"
+        "analysis": "原文依据：问句或陈述是“Do you know who this jacket belongs to?”，自然应答是“No, where did you find it?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, where did you find it?）。"
       },
       "item_id": 17,
       "priority": {

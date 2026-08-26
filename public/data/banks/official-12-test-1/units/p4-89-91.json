@@ -36,9 +36,31 @@
       "asset_key": "official-12-test-1/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "Andersonville Office Superstore is happy to announce a\nAndersonville 7\nnew service! More people have begun working from home\nrecently, so we're now offering free home delivery to our\ncorporate clients. © Your employees can expect to receive\nthe same high-quality supplies and fast, dependable service\nthat they've always had, but onow at the convenience of\ntheir own doorstep. How's that for an improvement? © To\nCo Cha\nregister for this new service, contact a sales representative.\nThey'll guarantee that any corporate discount is applied to\nall orders.\ntebag.",
-    "transcript_translation": "中文辅助（离线预处理）：Andersonville Office（办公室） Superstore is happy to announce a\nAndersonville 7\nnew service（服务）!\nMore people have begun working from home\nrecently, so we're now offering free home delivery to our\ncorporate clients.\n© Your employees can expect to receive\nthe same high-quality supplies and fast, dependable service（服务）\nthat they've always had, but onow at the convenience of\ntheir own doorstep.\nHow（如何）'s that for an improvement?\n© To\nCo Cha\nregister for this new service（服务）, contact a sales representative.\nThey'll guarantee that any corporate discount is applied to\nall orders.\ntebag.",
-    "content_translation": "中文辅助（离线预处理）：Andersonville Office（办公室） Superstore is happy to announce a\nAndersonville 7\nnew service（服务）!\nMore people have begun working from home\nrecently, so we're now offering free home delivery to our\ncorporate clients.\n© Your employees can expect to receive\nthe same high-quality supplies and fast, dependable service（服务）\nthat they've always had, but onow at the convenience of\ntheir own doorstep.\nHow（如何）'s that for an improvement?\n© To\nCo Cha\nregister for this new service（服务）, contact a sales representative.\nThey'll guarantee that any corporate discount is applied to\nall orders.\ntebag."
+    "transcript": "Andersonville Office Superstore is happy to announce a new service.\nMore people have begun working from home recently, so we're now offering free home delivery to our corporate clients.\nYour employees can expect to receive the same high-quality supplies and fast-dependable service that they've always had, but now at the convenience of their own doorstep.\nHow's that for an improvement?\nTo register for this new service, contact a sales representative.\nThey'll guarantee that any corporate discount is applied to all orders.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2d47ca27312fe48ef9f0369f87007d51e9ff4319963ed99e2238a6c8dbc9ffff",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 81,
+        "legacy_word_count": 86,
+        "length_ratio": 0.942,
+        "legacy_coverage": 0.93
+      }
+    },
+    "transcript_translation": "Andersonville Office Superstore 很高兴宣布一项新服务。\n最近有更多人开始在家工作，因此我们现在为我们的企业客户提供免费送货上门服务。\n您的员工可以期待收到与以往一样高质量的用品和快速可靠的服务，但现在可以在他们自己家门口享受了。\n这算不算一次改进呢？\n要注册这项新服务，请联系销售代表。\n他们保证任何企业折扣都会应用于所有订单。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b7d77ac361a6b72308f1889cc6b249eb33c138694a6740b22cf85ae91a01a9a4"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -46,27 +68,27 @@
         "An office supply store",
         "A moving company",
         "An engineering firm",
-        "A transportationcompany"
+        "A transportation company"
       ],
       "answer": "A",
       "question": "What type of business is being advertised?",
-      "answer_explain": "原文依据：听力原文中提到“Andersonville Office Superstore is happy to announce a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An office supply store）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of business is being advertised?",
+      "answer_explain": "正确答案：A（An office supply store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of business is being advertised?",
       "choice_translations": [
-        "A：An office（办公室） supply store",
-        "B：A moving company（公司）",
-        "C：An engineering firm",
-        "D：A transportationcompany"
+        "A:An office(办公室) supply store",
+        "B:A moving company(公司)",
+        "C:An engineering firm",
+        "D:A transportation company"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Andersonville Office Superstore is happy to announce a",
+      "evidence": "参考听力原文：“Andersonville Office Superstore is happy to announce a new service.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Andersonville Office Superstore is happy to announce a",
+        "evidence": "参考听力原文：“Andersonville Office Superstore is happy to announce a new service.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Andersonville Office Superstore is happy to announce a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An office supply store）。"
+        "analysis": "正确答案：A（An office supply store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 89,
       "priority": {
@@ -92,30 +114,30 @@
     },
     {
       "choices": [
-        "Some items will be madeof higher-quality material.",
-        "Some vehicles will bebetter for the environment.",
-        "A service will help clientssave money.",
-        "A service will becomemore convenient."
+        "Some items will be made of higher-quality material.",
+        "Some vehicles will be better for the environment.",
+        "A service will help clients save money.",
+        "A service will become more convenient."
       ],
       "answer": "D",
       "question": "What improvement does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“the same high-quality supplies and fast, dependable service”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A service will becomemore convenient.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） improvement does the speaker（说话者） mention?",
+      "answer_explain": "正确答案：D（A service will become more convenient.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) improvement does the speaker(说话者) mention?",
       "choice_translations": [
-        "A：Some items will be madeof higher-quality material.",
-        "B：Some vehicles will bebetter for the environment.",
-        "C：A service（服务） will help clientssave money.",
-        "D：A service（服务） will becomemore convenient."
+        "A:Some items will be made of higher-quality material.",
+        "B:Some vehicles will be better for the environment.",
+        "C:A service(服务) will help clientssave money.",
+        "D:A service(服务) will becomemore convenient."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：their own doorstep. How's that for an improvement? © To",
+      "evidence": "参考听力原文：“Your employees can expect to receive the same high-quality supplies and fast-dependable service that they've always had, but now at the convenience of their own doorstep.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：their own doorstep. How's that for an improvement? © To",
+        "evidence": "参考听力原文：“Your employees can expect to receive the same high-quality supplies and fast-dependable service that they've always had, but now at the convenience of their own doorstep.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the same high-quality supplies and fast, dependable service”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A service will becomemore convenient.）。"
+        "analysis": "正确答案：D（A service will become more convenient.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 90,
       "priority": {
@@ -147,24 +169,24 @@
         "Demonstrate a product"
       ],
       "answer": "B",
-      "question": "According to the speaker, what will a sales TEM representative do?",
-      "answer_explain": "原文依据：听力原文中提到“register for this new service, contact a sales representative.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Apply some discounts）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） will a sales TEM representative do?",
+      "question": "According to the speaker, what will a sales representative do?",
+      "answer_explain": "正确答案：B（Apply some discounts）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) will a sales TEM representative do?",
       "choice_translations": [
-        "A：Send an e-mail",
-        "B：Apply some discounts",
-        "C：Schedule（日程） a delivery",
-        "D：Demonstrate a product"
+        "A:Send an e-mail",
+        "B:Apply some discounts",
+        "C:Schedule(日程) a delivery",
+        "D:Demonstrate a product"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：register for this new service, contact a sales representative.",
+      "evidence": "参考听力原文：“To register for this new service, contact a sales representative.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：register for this new service, contact a sales representative.",
+        "evidence": "参考听力原文：“To register for this new service, contact a sales representative.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“register for this new service, contact a sales representative.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Apply some discounts）。"
+        "analysis": "正确答案：B（Apply some discounts）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 91,
       "priority": {

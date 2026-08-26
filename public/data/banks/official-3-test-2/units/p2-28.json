@@ -28,38 +28,58 @@
       "asset_key": "official-3-test-2/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：£2 Isn't the gym open twenty-four hours?\nm",
-    "content_translation": "中文辅助（离线预处理）：£2 Isn't the gym open twenty-four hours?\nm"
+    "transcript": "Isn't the gym open 24 hours?\nA. Only on the weekend.\nB. Yes, she's really helpful.\nC. That's when it's due.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7715d437706da9822c859c777f44666bc37f6b183905f6218914f4e336767f3e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 21
+      }
+    },
+    "transcript_translation": "健身房不是二十四小时营业吗？\nA. 只有周末。\nB. 是的，她真的很帮得上忙。\nC. 那是截止日期。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7ff39a0a318998f5ad086f559205faa8c7397d46fd51440055d9d48507e21449"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Only on the weekend.",
-        "Yes, she’s really helpful.",
-        "That’s when it’s due."
+        "Yes, she's really helpful.",
+        "That's when it's due."
       ],
       "answer": "A",
-      "question": "£2 Isn't the gym open twenty-four hours? m",
+      "question": "Isn't the gym open 24 hours?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“£2 Isn't the gym open twenty-four hours? m”，自然应答是“Only on the weekend.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Only on the weekend.）。",
-      "question_translation": "中文辅助（离线预处理）：£2 Isn't the gym open twenty-four hours?\nm",
+      "answer_explain": "原文依据：问句或陈述是“Isn't the gym open 24 hours?”，自然应答是“Only on the weekend.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Only on the weekend.）。",
+      "question_translation": "健身房不是二十四小时营业吗?",
       "choice_translations": [
-        "A：Only on the weekend.",
-        "B：Yes, she’s really helpful.",
-        "C：That’s when（何时） it’s due."
+        "A：只有周末。",
+        "B：是的,她真的很帮得上忙。",
+        "C：那是截止日期。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：£2 Isn't the gym open twenty-four hours? m",
+      "evidence": "参考原文第 1 段：Isn't the gym open 24 hours?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：£2 Isn't the gym open twenty-four hours? m",
+        "evidence": "参考原文第 1 段：Isn't the gym open 24 hours?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“£2 Isn't the gym open twenty-four hours? m”，自然应答是“Only on the weekend.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Only on the weekend.）。"
+        "analysis": "原文依据：问句或陈述是“Isn't the gym open 24 hours?”，自然应答是“Only on the weekend.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Only on the weekend.）。"
       },
       "item_id": 28,
       "priority": {

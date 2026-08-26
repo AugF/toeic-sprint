@@ -28,8 +28,28 @@
       "asset_key": "official-8-test-2/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Hasn't the redesigned Web site been launched already?\n• M",
-    "content_translation": "中文辅助（离线预处理）：Ew Hasn't the redesigned Web site been launched already?\n• M"
+    "transcript": "Hasn't the redesigned website been launched already?\nA. That historical site overlooks the mountains.\nB. The client wanted another change.\nC. Maybe some online reviews.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "58fd4edb3c9d53aa5172f21248d70c964f1c73a38f9f6dd26712f2c616b7f75f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "重新设计的网站不是已经发布了吗？\nA. 那个历史遗址俯瞰着群山。\nB. 客户想要另一个修改。\nC. 也许是一些在线评论。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e588fd3dc016eb862d4ad168ee60bcc8b69640c317dd283b593103571fdc2822"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Maybe some online reviews."
       ],
       "answer": "B",
-      "question": "Ew Hasn't the redesigned Web site been launched already? • M",
+      "question": "Hasn't the redesigned website been launched already?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Hasn't the redesigned Web site been launched already? • M”，自然应答是“The client wanted another change.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The client wanted another change.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Hasn't the redesigned Web site been launched already?\n• M",
+      "answer_explain": "原文依据：问句或陈述是“Hasn't the redesigned website been launched already?”，自然应答是“The client wanted another change.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The client wanted another change.）。",
+      "question_translation": "重新设计的网站不是已经发布了吗?",
       "choice_translations": [
-        "A：That historical site overlooks the mountains.",
-        "B：The client wanted another change.",
-        "C：Maybe some online reviews."
+        "A：那个历史遗址俯瞰着群山。",
+        "B：客户想要另一个修改。",
+        "C：也许是一些在线评论。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Ew Hasn't the redesigned Web site been launched already? • M",
+      "evidence": "参考原文第 1 段：Hasn't the redesigned website been launched already?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Ew Hasn't the redesigned Web site been launched already? • M",
+        "evidence": "参考原文第 1 段：Hasn't the redesigned website been launched already?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Hasn't the redesigned Web site been launched already? • M”，自然应答是“The client wanted another change.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The client wanted another change.）。"
+        "analysis": "原文依据：问句或陈述是“Hasn't the redesigned website been launched already?”，自然应答是“The client wanted another change.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The client wanted another change.）。"
       },
       "item_id": 26,
       "priority": {

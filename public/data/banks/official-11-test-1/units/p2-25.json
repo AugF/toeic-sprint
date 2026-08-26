@@ -42,8 +42,28 @@
       "asset_key": "official-11-test-1/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "建筑检查员什么时候来施工现场？\nA：是的，在总邮局。\nB：修订后的建筑图纸。\nC：日程由阿卜杜勒安排。",
-    "content_translation": "本段听力围绕“时间询问”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "When's the building inspector coming to the construction site?\nA. Yes, at the main post office.\nB. The revised building plans.\nC. Abdel does the scheduling.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "02a6ee7ce042c8ce6d4b7a787cb9f8420cfa96967a1333aef0d5812912d74a79",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "建筑检查员什么时候来施工现场？\nA. 是的，在主邮局。\nB. 修订后的建筑图纸。\nC. Abdel负责安排时间。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "eab0a8dedfff54d2c14b87f9e5f4c902afd2f3764fbffda1134924a15b84bd08"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -61,9 +81,9 @@
       "question_type": "时间疑问句",
       "evidence": "参考原文第 1 段第 1 句：When's the building inspector coming to the construction site?",
       "choice_translations": [
-        "A：是的，在总邮局。",
+        "A：是的,在主邮局。",
         "B：修订后的建筑图纸。",
-        "C：日程由阿卜杜勒安排。"
+        "C：Abdel负责安排时间。"
       ],
       "response_style": "应直接提供疑问词所要求的信息，也要留意自然的间接回答",
       "strategy": "先判断为时间疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
@@ -74,7 +94,7 @@
         "strategy": "先判断为时间疑问句，锁定问句真正索取的信息；应直接提供疑问词所要求的信息，也要留意自然的间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：When问检查员何时来工地，答句说 Abdel does the scheduling。 选择理由：C指出负责排期的人，间接告知应向谁确认时间；A和B不回答时间问题。正确答案：C（Abdel does the scheduling.）。"
       },
-      "question_translation": "建筑检查员什么时候来施工现场？",
+      "question_translation": "建筑检查员什么时候来施工现场?",
       "item_id": 25,
       "priority": {
         "level": "P3",

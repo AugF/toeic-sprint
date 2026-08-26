@@ -27,8 +27,28 @@
       "asset_key": "official-10-test-2/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Why（为什么） did you cancel your trip?\n•M",
-    "content_translation": "中文辅助（离线预处理）：Ew Why（为什么） did you cancel your trip?\n•M"
+    "transcript": "Why did you cancel your trip?\nA. Not until we get approval.\nB. Because the seminar got postponed.\nC. We notified them yesterday.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d590b66ed6511ba384ea869f6cf0e2d493be0e620d0ca2d37f4c36bc37058a17",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "你为什么取消了你的旅行？\nA. 直到我们获得批准。\nB. 因为研讨会推迟了。\nC. 我们昨天通知他们了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "32dbd4325d852ef12d4fe090cfdb91a72a63f7e95d43d13f91411f81c3462fde"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "We notified them yesterday."
       ],
       "answer": "B",
-      "question": "Ew Why did you cancel your trip? •M",
+      "question": "Why did you cancel your trip?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Why did you cancel your trip? •M”，自然应答是“Because the seminar got postponed.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because the seminar got postponed.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Why（为什么） did you cancel your trip?\n•M",
+      "answer_explain": "原文依据：问句或陈述是“Why did you cancel your trip?”，自然应答是“Because the seminar got postponed.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because the seminar got postponed.）。",
+      "question_translation": "你为什么取消了你的旅行?",
       "choice_translations": [
-        "A：Not until we get approval.",
-        "B：Because the seminar got postponed.",
-        "C：We notified them yesterday."
+        "A：直到我们获得批准。",
+        "B：因为研讨会推迟了。",
+        "C：我们昨天通知他们了。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Why did you cancel your trip? •M",
+      "evidence": "参考原文第 1 段：Why did you cancel your trip?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Why did you cancel your trip? •M",
+        "evidence": "参考原文第 1 段：Why did you cancel your trip?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Why did you cancel your trip? •M”，自然应答是“Because the seminar got postponed.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because the seminar got postponed.）。"
+        "analysis": "原文依据：问句或陈述是“Why did you cancel your trip?”，自然应答是“Because the seminar got postponed.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because the seminar got postponed.）。"
       },
       "item_id": 10,
       "priority": {

@@ -27,8 +27,28 @@
       "asset_key": "official-6-test-1/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "新的包装机完全可以运行了吗？\nA. 一个或两个箱子。\nB. 我很高兴听到这个消息。\nC. 还没有，但很快就会了。",
-    "content_translation": "新的包装机完全可以运行了吗？\nA. 一个或两个箱子。\nB. 我很高兴听到这个消息。\nC. 还没有，但很快就会了。"
+    "transcript": "Are the new packaging machines fully operational?\nA. A box or two.\nB. I'm glad to hear that.\nC. Not yet, but they will be soon.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0b9e200d157ce0a19bdbe94e8b9dd22842d2a56a420769799e94ddb1edcf14ec",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "新的包装机器已经完全投入使用了吗？\nA. 一个或两个箱子。\nB. 我很高兴听到这个消息。\nC. 还没有，但很快就会了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "155add523ba232b43c006df8851b53e3389e642250516a3bfa170c4731ed8d9d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Are the new packaging machines fully operational?”，自然应答是“Not yet, but they will be soon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Not yet, but they will be soon.）。",
-      "question_translation": "新的包装机完全可以运行了吗？",
+      "question_translation": "新的包装机器已经完全投入使用了吗?",
       "choice_translations": [
         "A：一个或两个箱子。",
         "B：我很高兴听到这个消息。",
-        "C：还没有，但很快就会了。"
+        "C：还没有,但很快就会了。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Are the new packaging machines fully operational?",

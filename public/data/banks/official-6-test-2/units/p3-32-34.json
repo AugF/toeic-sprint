@@ -41,9 +41,32 @@
       "asset_key": "official-6-test-2/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "m •Are you all set to pay, Ms. Rodriguez? Your new\nhaircut looks really nice, by the way.\nek w Thanks. As usual Marla did a really good job. Hmm...\nwas wondering if I could apply this coupon to\ntoday's haircut... ®it says it expired yesterday, but l\njust wanted to see if you'd accept it.\nEM Sure, we can take that. By the way, we're also\noffering 50 percent off on all hair products until the end\nof next month.\nEk w Oh, that's good to know, since I've run out of shampoo.\nI'll take a look at what you have and see if there's\nsomething I'd like to buy.",
-    "transcript_translation": "中文辅助（离线预处理）：m •Are you all set to pay, Ms.\nRodriguez?\nYour new\nhaircut looks really nice, by the way.\nek w Thanks.\nAs usual Marla did a really good job.\nHmm...\nwas wondering if I could apply this coupon to\ntoday's haircut...\n®it says it expired yesterday, but l\njust wanted to see if you'd accept it.\nEM Sure, we can take that.\nBy the way, we're also\noffering 50 percent off on all hair products until the end\nof next month.\nEk w Oh, that's good to know, since I've run out of shampoo.\nI'll take a look at what（什么） you have and see if there's\nsomething I'd like to buy.",
-    "content_translation": "中文辅助（离线预处理）：m •Are you all set to pay, Ms.\nRodriguez?\nYour new\nhaircut looks really nice, by the way.\nek w Thanks.\nAs usual Marla did a really good job.\nHmm...\nwas wondering if I could apply this coupon to\ntoday's haircut...\n®it says it expired yesterday, but l\njust wanted to see if you'd accept it.\nEM Sure, we can take that.\nBy the way, we're also\noffering 50 percent off on all hair products until the end\nof next month.\nEk w Oh, that's good to know, since I've run out of shampoo.\nI'll take a look at what（什么） you have and see if there's\nsomething I'd like to buy."
+    "transcript": "Are you all set to pay, Ms. Rodriguez?\nYour new haircut looks really nice, by the way.\nThanks.\nAs usual, Marla did a really good job.\nHmm.\nI was wondering if I could apply this coupon to today's haircut.\nIt says it expired yesterday, but I just wanted to see if you'd accept it.\nSure, we can take that.\nBy the way, we're also offering 50% off on all hair products until the end of next month.\nOh, that's good to know, since I've run out of shampoo.\nI'll take a look at what you have and see if there's something I'd like to buy.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d16a73c971123b822cb2fbc9cca897b514e7c67b2b651ff4bf426619f5869543",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 104,
+        "legacy_word_count": 108,
+        "length_ratio": 0.963,
+        "legacy_coverage": 0.907
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "罗德里格斯女士，您准备好付款了吗？\n顺便说一句，您的新发型看起来真的很漂亮。\n谢谢。\n一如既往地，Marla 干得非常好。\n嗯。\n我想知道是否可以将这张优惠券用于今天的理发服务。\n上面写着它昨天就过期了，但我只是想看看您是否接受。\n当然可以，我们可以接受。\n顺便说一句，直到下个月底，我们还在所有护发产品上提供五折优惠。\n哦，知道这个很好，因为我的洗发水用完了。\n我看看您有什么，然后决定是否购买一些。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3a0538b46facf7c95b8415c99b479acd7a7430726568f3bfa12d174ae266c20b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +78,23 @@
       ],
       "answer": "D",
       "question": "Where does the conversation most likely take place?",
-      "answer_explain": "原文依据：听力原文中提到“offering 50 percent off on all hair products until the end”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a hair salon）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the conversation most likely（最可能） take place?",
+      "answer_explain": "正确答案：D（At a hair salon）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the conversation most likely(最可能) take place?",
       "choice_translations": [
-        "A：At a department store",
-        "B：At a photography studio",
-        "C：At a health clinic",
-        "D：At a hair salon"
+        "A:At a department store",
+        "B:At a photography studio",
+        "C:At a health clinic",
+        "D:At a hair salon"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：m •Are you all set to pay, Ms. Rodriguez? Your new",
+      "evidence": "参考听力原文：“By the way, we're also offering 50% off on all hair products until the end of next month.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：m •Are you all set to pay, Ms. Rodriguez? Your new",
+        "evidence": "参考听力原文：“By the way, we're also offering 50% off on all hair products until the end of next month.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“offering 50 percent off on all hair products until the end”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a hair salon）。"
+        "analysis": "正确答案：D（At a hair salon）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -109,23 +132,23 @@
       ],
       "answer": "B",
       "question": "What does the woman ask about?",
-      "answer_explain": "原文依据：听力原文中提到“was wondering if I could apply this coupon to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Using a coupon）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） ask about?",
+      "answer_explain": "正确答案：B（Using a coupon）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) ask about?",
       "choice_translations": [
-        "A：Receiving e-mail notifications",
-        "B：Using a coupon",
-        "C：Setting up an account",
-        "D：Changing an appointment（预约） time"
+        "A:Receiving e-mail notifications",
+        "B:Using a coupon",
+        "C:Setting up an account",
+        "D:Changing an appointment(预约) time"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：m •Are you all set to pay, Ms. Rodriguez? Your new",
+      "evidence": "参考听力原文：“I was wondering if I could apply this coupon to today's haircut.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：m •Are you all set to pay, Ms. Rodriguez? Your new",
+        "evidence": "参考听力原文：“I was wondering if I could apply this coupon to today's haircut.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“was wondering if I could apply this coupon to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Using a coupon）。"
+        "analysis": "正确答案：B（Using a coupon）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -163,23 +186,23 @@
       ],
       "answer": "A",
       "question": "What does the woman say she will do?",
-      "answer_explain": "原文依据：听力原文中提到“offering 50 percent off on all hair products until the end”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Look at some products）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do?",
+      "answer_explain": "正确答案：A（Look at some products）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she will do?",
       "choice_translations": [
-        "A：Look at some products",
-        "B：Complete some paperwork",
-        "C：Write a review",
-        "D：Come back another day"
+        "A:Look at some products",
+        "B:Complete some paperwork",
+        "C:Write a review",
+        "D:Come back another day"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m •Are you all set to pay, Ms. Rodriguez? Your new",
+      "evidence": "参考听力原文：“By the way, we're also offering 50% off on all hair products until the end of next month.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m •Are you all set to pay, Ms. Rodriguez? Your new",
+        "evidence": "参考听力原文：“By the way, we're also offering 50% off on all hair products until the end of next month.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“offering 50 percent off on all hair products until the end”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Look at some products）。"
+        "analysis": "正确答案：A（Look at some products）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

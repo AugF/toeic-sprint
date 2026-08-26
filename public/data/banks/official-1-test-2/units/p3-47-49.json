@@ -37,9 +37,32 @@
       "asset_key": "official-1-test-2/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "K, Ms. Torres, | have your price estimate.\nthe whole exterior of your house painted, in\nfence, will cost you five thousand dollars.\nThat's quite a bit more than we expected.\nColgate Painting said they would do it for fo\ndollars...\nWell, the cost of paint and supplies is incl\nprice | quoted you, so we really offer a very\nThat's a bit of a relief. If there are no othe\nwe'll probably be able to stay within our bud",
-    "transcript_translation": "K，Torres 小姐，我这里有您关于把您房子外墙全部刷漆的报价。总共需要五千美元。\n这比我们预期的要贵很多。Colgate Painting 说他们可以做成四千美元……\n嗯，油漆和材料的成本已经包含在报价里了，所以我们提供的价格非常优惠。\n那真是让人松了一口气。如果没有任何其他费用的话，我们可能还能控制在预算内。",
-    "content_translation": "K，Torres 小姐，我这里有您关于把您房子外墙全部刷漆的报价。总共需要五千美元。\n这比我们预期的要贵很多。Colgate Painting 说他们可以做成四千美元……\n嗯，油漆和材料的成本已经包含在报价里了，所以我们提供的价格非常优惠。\n那真是让人松了一口气。如果没有任何其他费用的话，我们可能还能控制在预算内。"
+    "transcript": "Okay, Ms. Torres, I have your price estimate.\nTo have the whole exterior of your house painted, including the fence, will cost you $5,000.\nThat's quite a bit more than we expected.\nAnd actually, Colgate Painting said they would do it for $4,000.\nWell, the cost of paint and supplies is included in the price I quoted you, so we really offer a very good deal.\nThat's a bit of a relief.\nIf there are no other charges, we'll probably be able to stay within our budget.\nThank you.\nThank you.\nThank you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "21e4e43cb2b7cc288e99425dd8d85e7a85339d5103a8726f0f84ba925bfc5862",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 91,
+        "legacy_word_count": 89,
+        "length_ratio": 1.022,
+        "legacy_coverage": 1
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "好的，Torres 女士，这是您的价格估算。\n要将您房屋的整个外部包括围栏都涂成油漆，费用是 5,000 美元。\n这比我们预期的要多很多。\n实际上，Colgate Painting 说他们可以做成 4,000 美元。\n嗯，我给您的价格里包含了油漆和材料的成本，所以我们提供的真的是一个非常好的交易。\n这让人稍微放心了。\n如果没有任何其他费用，我们可能就能控制在预算之内了。\n谢谢您。\n谢谢您。\n谢谢您。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8969db966b549cc207aa614d45cadb366c8f6b5f1ff7d3bd6ee3d9ecdfb889bc"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -47,27 +70,27 @@
         "An appliance warranty",
         "Blueprints from a designer",
         "A building permit",
-        "Ahome improvement project"
+        "A home improvement project"
       ],
       "answer": "D",
       "question": "What are the speakers discussing?",
-      "answer_explain": "原文依据：听力原文中提到“Well, the cost of paint and supplies is incl”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Ahome improvement project）。",
-      "question_translation": "说话者们讨论什么？",
+      "answer_explain": "正确答案：D（A home improvement project）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者们讨论什么?",
       "choice_translations": [
-        "A：一个电器保修期",
-        "B：设计师的蓝图",
-        "C：建筑许可证",
-        "D：一个家居装修项目"
+        "A:一个电器保修期",
+        "B:设计师的蓝图",
+        "C:建筑许可证",
+        "D:一个家居装修项目"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：K, Ms. Torres, | have your price estimate.",
+      "evidence": "参考听力原文：“Well, the cost of paint and supplies is included in the price I quoted you, so we really offer a very good deal.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：K, Ms. Torres, | have your price estimate.",
+        "evidence": "参考听力原文：“Well, the cost of paint and supplies is included in the price I quoted you, so we really offer a very good deal.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Well, the cost of paint and supplies is incl”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Ahome improvement project）。"
+        "analysis": "正确答案：D（A home improvement project）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -100,24 +123,24 @@
         "To recommend a service"
       ],
       "answer": "B",
-      "question": "Why does the woman say, “And actually Colgate Painting said they would do it fo four thousand dollars”?",
-      "answer_explain": "原文依据：听力原文中提到“price | quoted you, so we really offer a very”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To negotiate a price）。",
-      "question_translation": "女士说“而且实际上 Colgate Painting 说他们可以做成四千美元”是什么意思？",
+      "question": "Why does the woman say, “And actually Colgate Painting said they would do it for four thousand dollars”?",
+      "answer_explain": "正确答案：B（To negotiate a price）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士说“而且实际上 Colgate Painting 说他们可以做成四千美元”是什么意思?",
       "choice_translations": [
-        "A：澄清一个请求",
-        "B：协商一个价格",
-        "C：提供一些帮助",
-        "D：推荐一项服务"
+        "A:澄清一个请求",
+        "B:协商一个价格",
+        "C:提供一些帮助",
+        "D:推荐一项服务"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：fence, will cost you five thousand dollars.",
+      "evidence": "参考听力原文：“And actually, Colgate Painting said they would do it for $4,000.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：fence, will cost you five thousand dollars.",
+        "evidence": "参考听力原文：“And actually, Colgate Painting said they would do it for $4,000.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“price | quoted you, so we really offer a very”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To negotiate a price）。"
+        "analysis": "正确答案：B（To negotiate a price）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -144,30 +167,30 @@
     },
     {
       "choices": [
-        "Some work will be completed on tim",
-        "Acost estimate includes supplies.",
-        "Aselected item is in stock.",
+        "Some work will be completed on time",
+        "A cost estimate includes supplies.",
+        "A selected item is in stock.",
         "Experienced workers will be on-site."
       ],
       "answer": "B",
       "question": "Why is the woman relieved?",
-      "answer_explain": "原文依据：听力原文中提到“Well, the cost of paint and supplies is incl”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Acost estimate includes supplies.）。",
-      "question_translation": "女士为什么松了一口气？",
+      "answer_explain": "正确答案：B（A cost estimate includes supplies.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士为什么松了一口气?",
       "choice_translations": [
-        "A：有些工作能按时完成",
-        "B：成本估算包括了材料。",
-        "C：选定的物品有库存。",
-        "D：经验丰富的工人会在现场。"
+        "A:有些工作能按时完成",
+        "B:成本估算包括了材料。",
+        "C:选定的物品有库存。",
+        "D:经验丰富的工人会在现场。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：K, Ms. Torres, | have your price estimate.",
+      "evidence": "参考听力原文：“Well, the cost of paint and supplies is included in the price I quoted you, so we really offer a very good deal.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：K, Ms. Torres, | have your price estimate.",
+        "evidence": "参考听力原文：“Well, the cost of paint and supplies is included in the price I quoted you, so we really offer a very good deal.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Well, the cost of paint and supplies is incl”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Acost estimate includes supplies.）。"
+        "analysis": "正确答案：B（A cost estimate includes supplies.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

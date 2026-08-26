@@ -41,9 +41,31 @@
       "asset_key": "official-7-test-2/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "D M\nOl'm grateful and deeply honored to be inducted into the\nNational Music Hall of Fame. It's great that a new generation\nof artists recognize their predecessors. ®| remember when\nmy first album was released. The success was beyond\nmy wildest dreams. And the fans, wow! ®| couldn't go out\nin public without people noticing me and trying to take my\npicture. Ol've been retired for a long time though, and life\nhas changed. I can go to a restaurant now. Retirement's not\nso bad. Anyway, there are a lot of people to thank, but\nl should begin by thanking my manager, Manuel Garcia.\nWithout him, my career could never have gotten started.",
-    "transcript_translation": "中文辅助（离线预处理）：D M\nOl'm grateful and deeply honored to be inducted into the\nNational Music Hall of Fame.\nIt's great that a new generation\nof artists recognize their predecessors.\n®| remember when（何时）\nmy first album was released.\nThe success was beyond\nmy wildest dreams.\nAnd the fans, wow!\n®| couldn't go out\nin public without people noticing me and trying to take my\npicture.\nOl've been retired for a long time though, and life\nhas changed.\nI can go to a restaurant now.\nRetirement's not\nso bad.\nAnyway, there are a lot of people to thank（感谢）, but\nl should begin by thanking my manager（经理）, Manuel Garcia.\nWithout him, my career could never have gotten started.",
-    "content_translation": "中文辅助（离线预处理）：D M\nOl'm grateful and deeply honored to be inducted into the\nNational Music Hall of Fame.\nIt's great that a new generation\nof artists recognize their predecessors.\n®| remember when（何时）\nmy first album was released.\nThe success was beyond\nmy wildest dreams.\nAnd the fans, wow!\n®| couldn't go out\nin public without people noticing me and trying to take my\npicture.\nOl've been retired for a long time though, and life\nhas changed.\nI can go to a restaurant now.\nRetirement's not\nso bad.\nAnyway, there are a lot of people to thank（感谢）, but\nl should begin by thanking my manager（经理）, Manuel Garcia.\nWithout him, my career could never have gotten started."
+    "transcript": "I'm grateful and deeply honored to be inducted into the National Music Hall of Fame.\nIt's great that a new generation of artists recognize their predecessors.\nI remember when my first album was released.\nThe success was beyond my wildest dreams.\nAnd the fans, wow!\nI couldn't go out in public without people noticing me and trying to take my picture.\nI've been retired for a long time, though, and life has changed.\nI can go to a restaurant now.\nRetirement's not so bad.\nAnyway, there are a lot of people to thank, but I should begin by thanking my manager, Manuel Garcia.\nWithout him, my career could never have gotten started.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "578bef5c5627bded1aced83e01c8588df7fb56b199a8fff34f38db6404a33691",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 112,
+        "legacy_word_count": 109,
+        "length_ratio": 1.028,
+        "legacy_coverage": 0.972
+      }
+    },
+    "transcript_translation": "能被选入国家音乐名人堂，我感到非常荣幸和感激。\n很高兴新一代的艺术家能够认可他们的前辈们。\n我记得我的第一张专辑发行的时候。\n成功超出了我最疯狂的梦想。\n还有粉丝们，哇！\n我不能在公共场合出现而不被人注意到并试图拍照。\n不过我已经退休很久了，生活也变了。\n我现在可以去餐馆了。\n退休也没那么糟。\n无论如何，有很多值得感谢的人，但我应该从感谢我的经理Manuel Garcia开始。\n没有他，我的事业就永远无法开始的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "06a26d55c0fa35c0ae4c2393a7d142b5577d1d248225408878167ee1dcee5e56"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "A",
       "question": "Who most likely is the speaker?",
-      "answer_explain": "原文依据：听力原文中提到“Ol'm grateful and deeply honored to be inducted into the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（A musician）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the speaker（说话者）?",
+      "answer_explain": "正确答案：A（A musician）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is the speaker(说话者)?",
       "choice_translations": [
-        "A：A musician",
-        "B：A painter",
-        "C：An athlete",
-        "D：A photographer"
+        "A:A musician",
+        "B:A painter",
+        "C:An athlete",
+        "D:A photographer"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：D M",
+      "evidence": "参考听力原文：“Anyway, there are a lot of people to thank, but I should begin by thanking my manager, Manuel Garcia.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：D M",
+        "evidence": "参考听力原文：“Anyway, there are a lot of people to thank, but I should begin by thanking my manager, Manuel Garcia.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ol'm grateful and deeply honored to be inducted into the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（A musician）。"
+        "analysis": "正确答案：A（A musician）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker imply when he says, \"I can go to a restaurant now\"?",
-      "answer_explain": "原文依据：听力原文中提到“And the fans, wow!”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（He is not recognized by fans.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） imply when（何时） he says, \"I can go to a restaurant now\"?",
+      "answer_explain": "正确答案：B（He is not recognized by fans.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) imply when(何时) he says, \"I can go to a restaurant now\"?",
       "choice_translations": [
-        "A：He is not available（可用的） for an interview.",
-        "B：He is not recognized by fans.",
-        "C：He is ready to start a project",
-        "D：He is receiving payments."
+        "A:He is not available(可用的) for an interview.",
+        "B:He is not recognized by fans.",
+        "C:He is ready to start a project",
+        "D:He is receiving payments."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 9 段：has changed. I can go to a restaurant now. Retirement's not",
+      "evidence": "参考听力原文：“I can go to a restaurant now.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 9 段：has changed. I can go to a restaurant now. Retirement's not",
+        "evidence": "参考听力原文：“I can go to a restaurant now.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“And the fans, wow!”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（He is not recognized by fans.）。"
+        "analysis": "正确答案：B（He is not recognized by fans.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "B",
       "question": "Who does the speaker thank?",
-      "answer_explain": "原文依据：听力原文中提到“l should begin by thanking my manager, Manuel Garcia.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（His manager）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） does the speaker（说话者） thank（感谢）?",
+      "answer_explain": "正确答案：B（His manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) does the speaker(说话者) thank(感谢)?",
       "choice_translations": [
-        "A：His family",
-        "B：His manager（经理）",
-        "C：A reporter",
-        "D：A competitor"
+        "A:His family",
+        "B:His manager(经理)",
+        "C:A reporter",
+        "D:A competitor"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：so bad. Anyway, there are a lot of people to thank, but",
+      "evidence": "参考听力原文：“Anyway, there are a lot of people to thank, but I should begin by thanking my manager, Manuel Garcia.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：so bad. Anyway, there are a lot of people to thank, but",
+        "evidence": "参考听力原文：“Anyway, there are a lot of people to thank, but I should begin by thanking my manager, Manuel Garcia.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“l should begin by thanking my manager, Manuel Garcia.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（His manager）。"
+        "analysis": "正确答案：B（His manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

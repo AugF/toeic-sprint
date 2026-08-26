@@ -36,37 +36,59 @@
       "asset_key": "official-2-test-1/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "Jessica, welcome to Charcroft Publishers. My name’s\nGeorge Watanabe and ®ve been assigned as your\nbook publicist.\nThank you, George. You know I’ve never worked with\na publicist before. Could you tell me how we'll be\nworking together?\nWell, we want to make sure each book we publish\nsells well, so a publicist is assigned to promote it.\nwith your book, we'll start by building interest\nthrough social media, and then follow up with a book\ntour.\nThe social media part is fine—I already have a Web\nsite and a blog. But ®/'m not sure about a book\ntour—I’m not really comfortable speaking in front of\nstrangers.",
-    "transcript_translation": "Jessica，欢迎来到 Charcroft Publishers。我叫 George Watanabe，被指派为您做图书公关。谢谢你，George。你知道我以前从没跟过公关人员合作过。你能告诉我我们将如何合作吗？嗯，我们想确保出版的每一本书都能畅销，所以会指派一位公关人员来推广它。对于你的书，我们将首先通过社交媒体建立兴趣，然后跟进一次图书巡回活动。社交媒体的部分没问题——我已经有了一个网站和一个博客了。但是关于图书巡回活动我不太确定——我不太习惯在陌生人面前讲话。",
-    "content_translation": "Jessica，欢迎来到 Charcroft Publishers。我叫 George Watanabe，被指派为您做图书公关。谢谢你，George。你知道我以前从没跟过公关人员合作过。你能告诉我我们将如何合作吗？嗯，我们想确保出版的每一本书都能畅销，所以会指派一位公关人员来推广它。对于你的书，我们将首先通过社交媒体建立兴趣，然后跟进一次图书巡回活动。社交媒体的部分没问题——我已经有了一个网站和一个博客了。但是关于图书巡回活动我不太确定——我不太习惯在陌生人面前讲话。"
+    "transcript": "Jessica, welcome to Charcroft Publishers.\nMy name's George Watanabe, and I've been assigned as your book publicist.\nThank you, George.\nYou know I've never worked with a publicist before.\nCould you tell me how we'll be working together?\nWell, we want to make sure each book we publish sells well, so a publicist is assigned to promote it.\nWith your book, we'll start by building interest through social media, and then follow up with a book tour.\nThe social media part is fine.\nI already have a website and a blog, but I'm not sure about a book tour.\nI'm not really comfortable speaking in front of strangers.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b97d16beb11d31c5ec52dbbcdda1bdf12ea1868555edf1ba87bbc46db3c67da0",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-1/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 108,
+        "legacy_word_count": 108,
+        "length_ratio": 1,
+        "legacy_coverage": 0.944
+      }
+    },
+    "transcript_translation": "杰西卡，欢迎来到查克罗夫特出版社。\n我叫乔治·渡边，被指派给你做图书公关。\n谢谢你，乔治。\n你知道我以前从未和过公关人员合作。\n你能告诉我我们如何一起工作的吗？\n嗯，我们想确保出版的每一本书都能畅销，所以会指派一位公关人员来推广它。\n对于你的书，我们将从通过社交媒体建立兴趣开始，然后进行图书巡回宣传。\n社交媒体的部分没问题。\n我已经有了一个网站和一个博客，但我不确定图书巡回宣传。\n我不太习惯在陌生人面前讲话。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f47d415839725ef7b95a146dc36e750692eb8ab351ee4de04be3c2f7e0ce9ab6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "A book author",
-        "Anewspaper reporter",
-        "Agraphic designer",
+        "A newspaper reporter",
+        "A graphic designer",
         "A bookstore employee"
       ],
       "answer": "A",
       "question": "Who is the woman?",
-      "answer_explain": "原文依据：听力原文中提到“Well, we want to make sure each book we publish”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A book author）。",
-      "question_translation": "女士是谁？",
+      "answer_explain": "正确答案：A（A book author）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士是谁?",
       "choice_translations": [
-        "A：一位图书作家",
-        "B：一位报纸记者",
-        "C：一位平面设计师",
-        "D：一位书店员工"
+        "A:一位图书作家",
+        "B:一位报纸记者",
+        "C:一位平面设计师",
+        "D:一位书店员工"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Jessica, welcome to Charcroft Publishers. My name’s",
+      "evidence": "参考听力原文：“With your book, we'll start by building interest through social media, and then follow up with a book tour.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Jessica, welcome to Charcroft Publishers. My name’s",
+        "evidence": "参考听力原文：“With your book, we'll start by building interest through social media, and then follow up with a book tour.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Well, we want to make sure each book we publish”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A book author）。"
+        "analysis": "正确答案：A（A book author）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -92,30 +114,30 @@
     },
     {
       "choices": [
-        "Astore policy",
-        "Aprinting process",
+        "A store policy",
+        "A printing process",
         "A publicity plan",
-        "Acover design"
+        "A cover design"
       ],
       "answer": "C",
       "question": "What does the man explain?",
-      "answer_explain": "原文依据：听力原文中提到“The social media part is fine—I already have a Web”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A publicity plan）。",
-      "question_translation": "男士解释了什么？",
+      "answer_explain": "正确答案：C（A publicity plan）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士解释了什么?",
       "choice_translations": [
-        "A：一个商店政策",
-        "B：一个印刷流程",
-        "C：一个宣传计划",
-        "D：一个封面设计"
+        "A:一个商店政策",
+        "B:一个印刷流程",
+        "C:一个宣传计划",
+        "D:一个封面设计"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Jessica, welcome to Charcroft Publishers. My name’s",
+      "evidence": "参考听力原文：“With your book, we'll start by building interest through social media, and then follow up with a book tour.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Jessica, welcome to Charcroft Publishers. My name’s",
+        "evidence": "参考听力原文：“With your book, we'll start by building interest through social media, and then follow up with a book tour.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“The social media part is fine—I already have a Web”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A publicity plan）。"
+        "analysis": "正确答案：C（A publicity plan）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "B",
       "question": "What is the woman reluctant to do?",
-      "answer_explain": "原文依据：听力原文中提到“tour—I’m not really comfortable speaking in front of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Go ona tour）。",
-      "question_translation": "女士不情愿做的是什么？",
+      "answer_explain": "正确答案：B（Go ona tour）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士不情愿做的是什么?",
       "choice_translations": [
-        "A：开始一份新工作",
-        "B：去巡回活动",
-        "C：为博客写作",
-        "D：评论杂志文章"
+        "A:开始一份新工作",
+        "B:去巡回活动",
+        "C:为博客写作",
+        "D:评论杂志文章"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Jessica, welcome to Charcroft Publishers. My name’s",
+      "evidence": "参考听力原文：“With your book, we'll start by building interest through social media, and then follow up with a book tour.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Jessica, welcome to Charcroft Publishers. My name’s",
+        "evidence": "参考听力原文：“With your book, we'll start by building interest through social media, and then follow up with a book tour.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“tour—I’m not really comfortable speaking in front of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Go ona tour）。"
+        "analysis": "正确答案：B（Go ona tour）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

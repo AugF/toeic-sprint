@@ -27,14 +27,34 @@
       "asset_key": "official-6-test-2/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：How（如何） do I log on to this computer?",
-    "content_translation": "中文辅助（离线预处理）：How（如何） do I log on to this computer?"
+    "transcript": "How do I log on to this computer?\nA. Building\nB. B. Yes, I know everyone here.\nC. I can help you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ca7bbbb527782bcfaa819cd008befbe9592e20cd12ec5745c0237dcb47829966",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "我如何登录这台电脑？\nA. 建筑。\nB. 是的，我知道这里每个人。\nC. 我可以帮你。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1a928e5a330daf06837de469e6d446cd8cadf4d9cf6413a360e8c8bd0a35c545"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Building B.",
-        "Yes, I know everyone here.",
+        "Building",
+        "B. Yes, I know everyone here.",
         "I can help you."
       ],
       "answer": "C",
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“How do I log on to this computer?”，自然应答是“I can help you.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I can help you.）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） do I log on to this computer?",
+      "question_translation": "我如何登录这台电脑?",
       "choice_translations": [
-        "A：Building B.",
-        "B：Yes, I know everyone here.",
-        "C：I can help you."
+        "A：建筑。",
+        "B：是的,我知道这里每个人。",
+        "C：我可以帮你。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：How do I log on to this computer?",

@@ -36,9 +36,31 @@
       "asset_key": "official-8-test-2/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "Good morning. ® As you know, we pledge timely delivery to\nall our customers. ® Since you deliver packages by bike in\nthe city every day, we want your feedback on a new cargo\nbike. ®it has a storage unit attached that will allow you\nto carry many more packages than usual. We're currently\nborrowing a few from the manufacturer to test out before\nwe purchase them. So today you'll be using them on your\nregular routes. ® Just a reminder: please lock up the bikes\nSamueeRt. t 1A0a8C24 1258\nwhile making a stop to keep them safe. ® There's a lock and\nDED BEMEREMTORDERUCBUESNE\nkey attached to each one.",
-    "transcript_translation": "中文辅助（离线预处理）：Good morning.\n® As you know, we pledge timely delivery to\nall our customers.\n® Since you deliver packages by bike in\nthe city every day, we want your feedback on a new cargo\nbike.\n®it has a storage unit attached that will allow you\nto carry many more packages than usual.\nWe're currently\nborrowing a few from the manufacturer to test out before\nwe purchase（购买） them.\nSo today you'll be using them on your\nregular routes.\n® Just a reminder: please（请） lock up the bikes\nSamueeRt.\nt 1A0a8C24 1258\nwhile making a stop to keep them safe.\n® There's a lock and\nDED BEMEREMTORDERUCBUESNE\nkey attached to each one.",
-    "content_translation": "中文辅助（离线预处理）：Good morning.\n® As you know, we pledge timely delivery to\nall our customers.\n® Since you deliver packages by bike in\nthe city every day, we want your feedback on a new cargo\nbike.\n®it has a storage unit attached that will allow you\nto carry many more packages than usual.\nWe're currently\nborrowing a few from the manufacturer to test out before\nwe purchase（购买） them.\nSo today you'll be using them on your\nregular routes.\n® Just a reminder: please（请） lock up the bikes\nSamueeRt.\nt 1A0a8C24 1258\nwhile making a stop to keep them safe.\n® There's a lock and\nDED BEMEREMTORDERUCBUESNE\nkey attached to each one."
+    "transcript": "Good morning.\nAs you know, we pledge timely delivery to all our customers.\nSince you deliver packages by bike in the city every day, we want your feedback on a new cargo bike.\nIt has a storage unit attached that will allow you to carry many more packages than usual.\nWe're currently borrowing a few from the manufacturer to test out before we purchase them.\nSo, today you'll be using them on your regular routes.\nJust a reminder, please lock up the bikes while making a stop to keep them safe.\nThere's a lock and key attached to each one.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3cee20d333d72664a9ecf34de02f9de6e029cef74b76f785d921560cd9e6bfe9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 100,
+        "legacy_word_count": 107,
+        "length_ratio": 0.935,
+        "legacy_coverage": 0.953
+      }
+    },
+    "transcript_translation": "早上好。\n如您所知，我们承诺向所有客户提供及时的交付。\n由于您每天都在市区用自行车运送包裹，我们想就一辆新的货运自行车征求您的反馈意见。\n它带有一个存储单元，可以让您携带比平时更多的包裹。\n目前我们从制造商那里借了几辆来测试，然后再购买。\n所以，今天您将使用它们进行日常路线的运输。\n提醒一下，在停下来时请锁好自行车以保持安全。\n每辆车都附带了锁和钥匙。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d2d7b05d9dc3dd37d96aa5fa230f7550a13f5ee15fb538f94d696eae08e2f691"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "A",
       "question": "Who are the listeners?",
-      "answer_explain": "原文依据：听力原文中提到“® As you know, we pledge timely delivery to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Delivery workers）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） are the listeners?",
+      "answer_explain": "正确答案：A（Delivery workers）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) are the listeners?",
       "choice_translations": [
-        "A：Delivery workers",
-        "B：Automotive mechanics",
-        "C：Professional cyclists",
-        "D：Factory workers"
+        "A:Delivery workers",
+        "B:Automotive mechanics",
+        "C:Professional cyclists",
+        "D:Factory workers"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Good morning. ® As you know, we pledge timely delivery to",
+      "evidence": "参考听力原文：“As you know, we pledge timely delivery to all our customers.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Good morning. ® As you know, we pledge timely delivery to",
+        "evidence": "参考听力原文：“As you know, we pledge timely delivery to all our customers.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® As you know, we pledge timely delivery to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Delivery workers）。"
+        "analysis": "正确答案：A（Delivery workers）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "C",
       "question": "What advantage does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“®it has a storage unit attached that will allow you”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Additional storage capacity）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） advantage does the speaker（说话者） mention?",
+      "answer_explain": "正确答案：C（Additional storage capacity）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) advantage does the speaker(说话者) mention?",
       "choice_translations": [
-        "A：Faster product assembly",
-        "B：Improved workplace safety",
-        "C：Additional storage capacity",
-        "D：Efficient payment processing"
+        "A:Faster product assembly",
+        "B:Improved workplace safety",
+        "C:Additional storage capacity",
+        "D:Efficient payment processing"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Good morning. ® As you know, we pledge timely delivery to",
+      "evidence": "参考听力原文：“It has a storage unit attached that will allow you to carry many more packages than usual.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Good morning. ® As you know, we pledge timely delivery to",
+        "evidence": "参考听力原文：“It has a storage unit attached that will allow you to carry many more packages than usual.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®it has a storage unit attached that will allow you”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Additional storage capacity）。"
+        "analysis": "正确答案：C（Additional storage capacity）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker remind the listeners to do?",
-      "answer_explain": "原文依据：听力原文中提到“® Just a reminder: please lock up the bikes”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Use a lock）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） remind the listeners to do?",
+      "answer_explain": "正确答案：D（Use a lock）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) remind the listeners to do?",
       "choice_translations": [
-        "A：Wear their helmets",
-        "B：Submit their time sheets",
-        "C：Collect customer（顾客） feedback",
-        "D：Use a lock"
+        "A:Wear their helmets",
+        "B:Submit their time sheets",
+        "C:Collect customer(顾客) feedback",
+        "D:Use a lock"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：regular routes. ® Just a reminder: please lock up the bikes",
+      "evidence": "参考听力原文：“Just a reminder, please lock up the bikes while making a stop to keep them safe.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：regular routes. ® Just a reminder: please lock up the bikes",
+        "evidence": "参考听力原文：“Just a reminder, please lock up the bikes while making a stop to keep them safe.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® Just a reminder: please lock up the bikes”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Use a lock）。"
+        "analysis": "正确答案：D（Use a lock）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

@@ -28,8 +28,28 @@
       "asset_key": "official-8-test-1/audio/part2/q030.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：] m Would you like to sit outside on the patio or inside?\nW",
-    "content_translation": "中文辅助（离线预处理）：] m Would you like to sit outside on the patio or inside?\nW"
+    "transcript": "Would you like to sit outside on the patio or inside?\nA. No, tomorrow at noon.\nB. It's quite windy this morning.\nC. Two glasses of water, please.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "726b9cd92201ca32a8cb9e5046f89eff56b770062310781e1a62f28a85cf4503",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q030.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "您想在露台上坐外面，还是在里面？\nA. 不，明天中午。\nB. 今天早上风有点大。\nC. 两杯水，谢谢。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "596ad8695bbab7c8dea740c8057643bb7f290fe840de4f5c4c86d2853762da79"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Two glasses of water, please."
       ],
       "answer": "B",
-      "question": "] m Would you like to sit outside on the patio or inside? W",
+      "question": "Would you like to sit outside on the patio or inside?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“] m Would you like to sit outside on the patio or inside? W”，自然应答是“It's quite windy this morning.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It's quite windy this morning.）。",
-      "question_translation": "中文辅助（离线预处理）：] m Would you like to sit outside on the patio or inside?\nW",
+      "answer_explain": "原文依据：问句或陈述是“Would you like to sit outside on the patio or inside?”，自然应答是“It's quite windy this morning.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It's quite windy this morning.）。",
+      "question_translation": "您想在露台上坐外面,还是在里面?",
       "choice_translations": [
-        "A：No, tomorrow at noon.",
-        "B：It's quite windy this morning.",
-        "C：Two glasses of water, please（请）."
+        "A：不,明天中午。",
+        "B：今天早上风有点大。",
+        "C：两杯水,谢谢。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：] m Would you like to sit outside on the patio or inside? W",
+      "evidence": "参考原文第 1 段：Would you like to sit outside on the patio or inside?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：] m Would you like to sit outside on the patio or inside? W",
+        "evidence": "参考原文第 1 段：Would you like to sit outside on the patio or inside?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“] m Would you like to sit outside on the patio or inside? W”，自然应答是“It's quite windy this morning.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It's quite windy this morning.）。"
+        "analysis": "原文依据：问句或陈述是“Would you like to sit outside on the patio or inside?”，自然应答是“It's quite windy this morning.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It's quite windy this morning.）。"
       },
       "item_id": 30,
       "priority": {

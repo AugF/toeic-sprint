@@ -28,8 +28,28 @@
       "asset_key": "official-9-test-1/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：aw Is there soundproof insulation between the office（办公室） spaces?\n•EM",
-    "content_translation": "中文辅助（离线预处理）：aw Is there soundproof insulation between the office（办公室） spaces?\n•EM"
+    "transcript": "Is there soundproof insulation between the office spaces?\nA. I've never heard any noise through these walls.\nB. My desk chair is very comfortable, thanks.\nC. Isn't the view from the south window better?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "cee650841733025f84eb1f4a54fea0943690257c26a91b9e3c1e8fd31bee592f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 35
+      }
+    },
+    "transcript_translation": "办公室之间有隔音材料吗？\nA. 我从未听到这些墙壁传来的任何噪音。\nB. 我的办公椅非常舒服，谢谢。\nC. 南窗户的景色不更好吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6a69a5ab38c9caf5f7084b160aff65c1ad1961deeffc49b7bf8dca2017caa0ec"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Isn't the view from the south window better?"
       ],
       "answer": "A",
-      "question": "aw Is there soundproof insulation between the office spaces? •EM",
+      "question": "Is there soundproof insulation between the office spaces?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“aw Is there soundproof insulation between the office spaces? •EM”，自然应答是“I've never heard any noise through these walls.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I've never heard any noise through these walls.）。",
-      "question_translation": "中文辅助（离线预处理）：aw Is there soundproof insulation between the office（办公室） spaces?\n•EM",
+      "answer_explain": "原文依据：问句或陈述是“Is there soundproof insulation between the office spaces?”，自然应答是“I've never heard any noise through these walls.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I've never heard any noise through these walls.）。",
+      "question_translation": "办公室之间有隔音材料吗?",
       "choice_translations": [
-        "A：I've never heard any noise through these walls.",
-        "B：My desk chair is very comfortable, thanks.",
-        "C：Isn't the view from the south window better?"
+        "A：我从未听到这些墙壁传来的任何噪音。",
+        "B：我的办公椅非常舒服,谢谢。",
+        "C：南窗户的景色不更好吗?"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：aw Is there soundproof insulation between the office spaces? •EM",
+      "evidence": "参考原文第 1 段：Is there soundproof insulation between the office spaces?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：aw Is there soundproof insulation between the office spaces? •EM",
+        "evidence": "参考原文第 1 段：Is there soundproof insulation between the office spaces?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“aw Is there soundproof insulation between the office spaces? •EM”，自然应答是“I've never heard any noise through these walls.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I've never heard any noise through these walls.）。"
+        "analysis": "原文依据：问句或陈述是“Is there soundproof insulation between the office spaces?”，自然应答是“I've never heard any noise through these walls.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I've never heard any noise through these walls.）。"
       },
       "item_id": 26,
       "priority": {

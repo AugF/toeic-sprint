@@ -40,9 +40,31 @@
       "asset_key": "official-8-test-1/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "message.\nHello, this is Robert from Shanghai Food Tours.\nI'm\nreturning your call regarding one of our popular tasting\ntours. Ahh... ®you requested additional information about\nthe evening dim sum tour. That tour visits several downtown\neateries. And Oat the tour's final stop, you'll learn how to\nmake dumplings from a renowned local chef. So... i'll need\na credit card number in order to complete your reservation.\nI can hold a spot for you for a day or two, but this is one of\nour best sellers.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nHello, this is Robert from Shanghai Food Tours.\nI'm\nreturning your call regarding one of our popular tasting\ntours.\nAhh...\n®you requested additional information（信息） about\nthe evening dim sum tour.\nThat tour visits several downtown\neateries.\nAnd Oat the tour's final stop, you'll learn how（如何） to\nmake dumplings from a renowned local chef.\nSo...\ni'll need\na credit card number in order（订单） to complete your reservation.\nI can hold a spot for you for a day or two, but this is one of\nour best sellers.",
-    "content_translation": "中文辅助（离线预处理）：message.\nHello, this is Robert from Shanghai Food Tours.\nI'm\nreturning your call regarding one of our popular tasting\ntours.\nAhh...\n®you requested additional information（信息） about\nthe evening dim sum tour.\nThat tour visits several downtown\neateries.\nAnd Oat the tour's final stop, you'll learn how（如何） to\nmake dumplings from a renowned local chef.\nSo...\ni'll need\na credit card number in order（订单） to complete your reservation.\nI can hold a spot for you for a day or two, but this is one of\nour best sellers."
+    "transcript": "Hello, this is Robert from Shanghai Food Tours.\nI'm returning your call regarding one of our popular tasting tours.\nUh, you requested additional information about the evening dim sum tour.\nThat tour visits several downtown eateries, and at the tour's final stop, you'll learn how to make dumplings from a renowned local chef.\nSo, I'll need a credit card number in order to complete your reservation.\nI can hold a spot for you for a day or two, but this is one of our best sellers.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "87a6a97e8d2bf443bb66271ecad0eaf7e302fa77d1b4129de9f347a24e5507c6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 86,
+        "legacy_word_count": 86,
+        "length_ratio": 1,
+        "legacy_coverage": 0.953
+      }
+    },
+    "transcript_translation": "您好，我是来自 Shanghai Food Tours 的 Robert。\n我回电给您，是关于我们非常受欢迎的品尝之旅。\n呃，您咨询了有关晚间点心之旅的更多信息。\n该行程会参观几个市中心的餐馆，在旅程的最后停靠点，您将向一位著名的本地厨师学习制作饺子。\n因此，我需要一张信用卡号才能完成您的预订。\n我可以为您保留一两天名额，但这可是我们最畅销的项目之一。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "92982ac8c7692ae31f804c43a78c6126a81dfdca89b3f11e959aa1888d3875d9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "Why is the speaker leaving a message?",
-      "answer_explain": "原文依据：听力原文中提到“the evening dim sum tour.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To provide tour information）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the speaker（说话者） leaving a message?",
+      "answer_explain": "正确答案：C（To provide tour information）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the speaker(说话者) leaving a message?",
       "choice_translations": [
-        "A：To congratulate the listener",
-        "B：To complain about a problem",
-        "C：To provide tour information（信息）",
-        "D：To schedule（日程） a delivery"
+        "A:To congratulate the listener",
+        "B:To complain about a problem",
+        "C:To provide tour information(信息)",
+        "D:To schedule(日程) a delivery"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Uh, you requested additional information about the evening dim sum tour.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Uh, you requested additional information about the evening dim sum tour.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the evening dim sum tour.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To provide tour information）。"
+        "analysis": "正确答案：C（To provide tour information）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 86,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "B",
       "question": "What opportunity does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“Hello, this is Robert from Shanghai Food Tours.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Learning to make some food）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） opportunity does the speaker（说话者） mention?",
+      "answer_explain": "正确答案：B（Learning to make some food）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) opportunity does the speaker(说话者) mention?",
       "choice_translations": [
-        "A：Starting a new business",
-        "B：Learning to make some food",
-        "C：Traveling to a new city",
-        "D：Writing a book"
+        "A:Starting a new business",
+        "B:Learning to make some food",
+        "C:Traveling to a new city",
+        "D:Writing a book"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“That tour visits several downtown eateries, and at the tour's final stop, you'll learn how to make dumplings from a renowned local chef.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“That tour visits several downtown eateries, and at the tour's final stop, you'll learn how to make dumplings from a renowned local chef.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Hello, this is Robert from Shanghai Food Tours.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Learning to make some food）。"
+        "analysis": "正确答案：B（Learning to make some food）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 87,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "Why does the speaker say, \"but this is one of our best sellers\"?",
-      "answer_explain": "原文依据：听力原文中提到“our best sellers.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To encourage a quick response）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"but this is one of our best sellers\"?",
+      "answer_explain": "正确答案：B（To encourage a quick response）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"but this is one of our best sellers\"?",
       "choice_translations": [
-        "A：To express surprise",
-        "B：To encourage a quick response",
-        "C：To justify a choice",
-        "D：To ask for some assistance"
+        "A:To express surprise",
+        "B:To encourage a quick response",
+        "C:To justify a choice",
+        "D:To ask for some assistance"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：our best sellers.",
+      "evidence": "参考听力原文：“I can hold a spot for you for a day or two, but this is one of our best sellers.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：our best sellers.",
+        "evidence": "参考听力原文：“I can hold a spot for you for a day or two, but this is one of our best sellers.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“our best sellers.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To encourage a quick response）。"
+        "analysis": "正确答案：B（To encourage a quick response）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 88,
       "priority": {

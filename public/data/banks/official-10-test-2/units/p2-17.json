@@ -28,8 +28,28 @@
       "asset_key": "official-10-test-2/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Which conference room is available（可用的）?",
-    "content_translation": "中文辅助（离线预处理）：Which conference room is available（可用的）?"
+    "transcript": "Which conference room is available?\nA. The one near the lobby is free.\nB. Please order five for me.\nC. Your package has been sent.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "eef23b705118a24bd88274f7393b52cfd7a3a1ccd07bf7c8792a306970fdb5c7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "哪个会议室有空？\nA. 靠近大堂的那个是空的。\nB. 请为我订五个。\nC. 您的包裹已经寄出。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "cb82841e7b4f9d9ca2b29856ac6cee49b67cd4e2567c531dc30a8acc032216d9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Which conference room is available?”，自然应答是“The one near the lobby is free.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The one near the lobby is free.）。",
-      "question_translation": "中文辅助（离线预处理）：Which conference room is available（可用的）?",
+      "question_translation": "哪个会议室有空?",
       "choice_translations": [
-        "A：The one near the lobby is free.",
-        "B：Please（请） order（订单） five for me.",
-        "C：Your package has been sent."
+        "A：靠近大堂的那个是空的。",
+        "B：请为我订五个。",
+        "C：您的包裹已经寄出。"
       ],
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段：Which conference room is available?",

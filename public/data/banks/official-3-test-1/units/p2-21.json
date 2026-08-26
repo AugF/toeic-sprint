@@ -27,38 +27,58 @@
       "asset_key": "official-3-test-1/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "=w What time should we expect the keynote speake to arrive? Ew\nA. She'll be here by nine.\nB. Yes, | was invited.\nC. In the lobby.",
-    "content_translation": "=w What time should we expect the keynote speake to arrive? Ew\nA. She'll be here by nine.\nB. Yes, | was invited.\nC. In the lobby."
+    "transcript": "What time should we expect the keynote speaker to arrive?\nA. She'll be here by 9.\nB. Yes, I was invited.\nC. In the lobby.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ed76397b34b04c780e766febe66f20e6e21a506464b63caed2390b1872fe0b78",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "我们预计主旨演讲嘉宾什么时候到？\nA. 她九点前会到的。\nB. 是的，我受邀了。\nC. 在大堂里。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1e9668fc9a4d7ab24dbf5e75d6ed82ceba755e39814196efc67c8c13441b32a2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "She'll be here by nine.",
-        "Yes, | was invited.",
+        "She'll be here by 9.",
+        "Yes, I was invited.",
         "In the lobby."
       ],
       "answer": "A",
-      "question": "=w What time should we expect the keynote speake to arrive? Ew",
+      "question": "What time should we expect the keynote speaker to arrive?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“=w What time should we expect the keynote speake to arrive? Ew”，自然应答是“She'll be here by nine.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（She'll be here by nine.）。",
-      "question_translation": "=w What time should we expect the keynote speake to arrive? Ew",
+      "answer_explain": "原文依据：问句或陈述是“What time should we expect the keynote speaker to arrive?”，自然应答是“She'll be here by 9.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（She'll be here by 9.）。",
+      "question_translation": "我们预计主旨演讲嘉宾什么时候到?",
       "choice_translations": [
-        "A：She'll be here by nine.",
-        "B：Yes, | was invited.",
-        "C：In the lobby."
+        "A：她九点前会到的。",
+        "B：是的,我受邀了。",
+        "C：在大堂里。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：=w What time should we expect the keynote speake to arrive? Ew",
+      "evidence": "参考原文第 1 段：What time should we expect the keynote speaker to arrive?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：=w What time should we expect the keynote speake to arrive? Ew",
+        "evidence": "参考原文第 1 段：What time should we expect the keynote speaker to arrive?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“=w What time should we expect the keynote speake to arrive? Ew”，自然应答是“She'll be here by nine.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（She'll be here by nine.）。"
+        "analysis": "原文依据：问句或陈述是“What time should we expect the keynote speaker to arrive?”，自然应答是“She'll be here by 9.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（She'll be here by 9.）。"
       },
       "item_id": 21,
       "priority": {

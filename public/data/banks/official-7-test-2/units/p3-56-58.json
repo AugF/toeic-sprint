@@ -40,9 +40,32 @@
       "asset_key": "official-7-test-2/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "Ew Hey, William. Have you heard from Dolores at the\nSaint Petersburg factory yet? ® We need feedback on\nthe new electroplating machines. Our goal this month\nis 1,000 trumpets, which isn't going to happen if those\nmachines aren't working well.\nI haven't heard from her this morning, so I'm planning\nto call her right after lunch.\nw OK. ®Speaking of lunch, a couple of us are headed to\nthe noodle shop downstairs. Do you want to come?\nEm I'm working on a financial report.\nw I understand. Well, ®let me know what Dolores says.\nThose machines were a major investment for us\nand I'm worried that they won't be efficient enough to\nwarrant the expense.",
-    "transcript_translation": "中文辅助（离线预处理）：Ew Hey, William.\nHave you heard from Dolores at the\nSaint Petersburg factory yet?\n® We need feedback on\nthe new electroplating machines.\nOur goal this month\nis 1,000 trumpets, which isn't going to happen if those\nmachines aren't working well.\nI haven't heard from her this morning, so I'm planning\nto call her right after lunch.\nw OK.\n®Speaking of lunch, a couple of us are headed to\nthe noodle shop downstairs.\nDo you want to come?\nEm I'm working on a financial report.\nw I understand.\nWell, ®let me know what（什么） Dolores says.\nThose machines were a major investment for us\nand I'm worried that they won't be efficient enough to\nwarrant the expense.",
-    "content_translation": "中文辅助（离线预处理）：Ew Hey, William.\nHave you heard from Dolores at the\nSaint Petersburg factory yet?\n® We need feedback on\nthe new electroplating machines.\nOur goal this month\nis 1,000 trumpets, which isn't going to happen if those\nmachines aren't working well.\nI haven't heard from her this morning, so I'm planning\nto call her right after lunch.\nw OK.\n®Speaking of lunch, a couple of us are headed to\nthe noodle shop downstairs.\nDo you want to come?\nEm I'm working on a financial report.\nw I understand.\nWell, ®let me know what（什么） Dolores says.\nThose machines were a major investment for us\nand I'm worried that they won't be efficient enough to\nwarrant the expense."
+    "transcript": "Hey, William.\nHave you heard from Dolores at the St. Petersburg factory yet?\nWe need feedback on the new electroplating machines.\nOur goal this month is 1,000 trumpets, which isn't going to happen if those machines aren't working well.\nI haven't heard from her this morning, so I'm planning to call her right after lunch.\nOkay.\nSpeaking of lunch, a couple of us are headed to the noodle shop downstairs.\nDo you want to come?\nI'm working on a financial report.\nI understand.\nWell, let me know what Dolores says.\nThose machines were a major investment for us, and I'm worried that they won't be efficient enough to warrant the expense.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a9a3e5cd2245cb3a7e2821da82eba5bd697b88fa955bae04212718daf32f5f35",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 110,
+        "legacy_word_count": 111,
+        "length_ratio": 0.991,
+        "legacy_coverage": 0.928
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "嘿，William。\n你有没有收到 Dolores 在圣彼得堡工厂的消息？\n我们需要对新的电镀机进行反馈。\n我们这个月的目标是生产 1,000 个小号喇叭，如果这些机器不能正常工作，这是不可能实现的。\n我今天早上没有收到她的消息，所以计划午饭后给她打电话。\n好的。\n说到午餐，我们有几个打算去楼下的面馆。\n你想一起来吗？\n我在处理一份财务报告。\n我明白了。\n那让我看看 Dolores 说什么。\n这些机器对我们来说是一项重大投资，我很担心它们是否足够高效来证明这笔开支是值得的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0d2fdd30719a6f6dcaad05a3b186ce802643f91ca8363648b853ed85b873cc0d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "B",
       "question": "What type of business do the speakers probably work for?",
-      "answer_explain": "原文依据：听力原文中提到“Those machines were a major investment for us”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A manufacturing company）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of business do the speakers probably（可能） work（工作） for?",
+      "answer_explain": "正确答案：B（A manufacturing company）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of business do the speakers probably(可能) work(工作) for?",
       "choice_translations": [
-        "A：A music school",
-        "B：A manufacturing company（公司）",
-        "C：A construction firm",
-        "D：A travel agency"
+        "A:A music school",
+        "B:A manufacturing company(公司)",
+        "C:A construction firm",
+        "D:A travel agency"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ew Hey, William. Have you heard from Dolores at the",
+      "evidence": "参考听力原文：“Our goal this month is 1,000 trumpets, which isn't going to happen if those machines aren't working well.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ew Hey, William. Have you heard from Dolores at the",
+        "evidence": "参考听力原文：“Our goal this month is 1,000 trumpets, which isn't going to happen if those machines aren't working well.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Those machines were a major investment for us”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A manufacturing company）。"
+        "analysis": "正确答案：B（A manufacturing company）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "C",
       "question": "Why does the man say, \"I'm working on a financial report\"?",
-      "answer_explain": "原文依据：听力原文中提到“Em I'm working on a financial report.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To decline an invitation）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） say, \"I'm working on a financial report\"?",
+      "answer_explain": "正确答案：C（To decline an invitation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the man(男士) say, \"I'm working on a financial report\"?",
       "choice_translations": [
-        "A：To offer help",
-        "B：To share an accomplishment",
-        "C：To decline an invitation",
-        "D：To make a request"
+        "A:To offer help",
+        "B:To share an accomplishment",
+        "C:To decline an invitation",
+        "D:To make a request"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：machines aren't working well.",
+      "evidence": "参考听力原文：“I'm working on a financial report.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：machines aren't working well.",
+        "evidence": "参考听力原文：“I'm working on a financial report.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Em I'm working on a financial report.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To decline an invitation）。"
+        "analysis": "正确答案：C（To decline an invitation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "A",
       "question": "What is the woman worried about?",
-      "answer_explain": "原文依据：听力原文中提到“Have you heard from Dolores at the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Whether an investment is worth the cost）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the woman（女士） worried about?",
+      "answer_explain": "正确答案：A（Whether an investment is worth the cost）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the woman(女士) worried about?",
       "choice_translations": [
-        "A：Whether an investment is worth the cost",
-        "B：Whether a job applicant is qualified",
-        "C：Whether a flight will arrive on time",
-        "D：Whether a customer（顾客） will complain"
+        "A:Whether an investment is worth the cost",
+        "B:Whether a job applicant is qualified",
+        "C:Whether a flight will arrive on time",
+        "D:Whether a customer(顾客) will complain"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 13 段：and I'm worried that they won't be efficient enough to",
+      "evidence": "参考听力原文：“Those machines were a major investment for us, and I'm worried that they won't be efficient enough to warrant the expense.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 13 段：and I'm worried that they won't be efficient enough to",
+        "evidence": "参考听力原文：“Those machines were a major investment for us, and I'm worried that they won't be efficient enough to warrant the expense.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Have you heard from Dolores at the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Whether an investment is worth the cost）。"
+        "analysis": "正确答案：A（Whether an investment is worth the cost）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

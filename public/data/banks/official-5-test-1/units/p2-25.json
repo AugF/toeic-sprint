@@ -28,13 +28,33 @@
       "asset_key": "official-5-test-1/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：I'm pleased so many employees are coming to the budgeting seminar.",
-    "content_translation": "中文辅助（离线预处理）：I'm pleased so many employees are coming to the budgeting seminar."
+    "transcript": "I'm pleased so many employees are coming to the budgeting seminar.\nA. Right. Many people signed up.\nB. The bank on the corner.\nC. Pleased to meet you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d2b637523875d1d2e868cd4f18120eb8ca8651d5b0b426141d270ab4223cdf76",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "很高兴有这么多人参加预算研讨会。\nA. 对。很多人报名了。\nB. 角落的银行。\nC. 很高兴见到你。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7e95c5d8862b4390f09b955ef515d64f2bfaaf5007b7fcf38a10a9d0e6602983"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Right-many people signed up.",
+        "Right. Many people signed up.",
         "The bank on the corner.",
         "Pleased to meet you."
       ],
@@ -43,12 +63,12 @@
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“I'm pleased so many employees are coming to the budgeting seminar.”，自然应答是“Right-many people signed up.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Right-many people signed up.）。",
-      "question_translation": "中文辅助（离线预处理）：I'm pleased so many employees are coming to the budgeting seminar.",
+      "answer_explain": "原文依据：问句或陈述是“I'm pleased so many employees are coming to the budgeting seminar.”，自然应答是“Right. Many people signed up.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Right. Many people signed up.）。",
+      "question_translation": "很高兴有这么多人参加预算研讨会。",
       "choice_translations": [
-        "A：Right-many people signed up.",
-        "B：The bank on the corner.",
-        "C：Pleased to meet you."
+        "A：对。很多人报名了。",
+        "B：角落的银行。",
+        "C：很高兴见到你。"
       ],
       "question_type": "陈述 / 请求应答题",
       "evidence": "参考原文第 1 段：I'm pleased so many employees are coming to the budgeting seminar.",
@@ -59,7 +79,7 @@
         "question_type": "陈述 / 请求应答题",
         "evidence": "参考原文第 1 段：I'm pleased so many employees are coming to the budgeting seminar.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“I'm pleased so many employees are coming to the budgeting seminar.”，自然应答是“Right-many people signed up.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Right-many people signed up.）。"
+        "analysis": "原文依据：问句或陈述是“I'm pleased so many employees are coming to the budgeting seminar.”，自然应答是“Right. Many people signed up.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Right. Many people signed up.）。"
       },
       "item_id": 25,
       "priority": {

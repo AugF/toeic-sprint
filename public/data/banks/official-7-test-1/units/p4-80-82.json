@@ -39,9 +39,33 @@
       "asset_key": "official-7-test-1/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nStarting next month, we'll be implementing a new security\nmeasure at our facility. ® To protect the items people store\nin here, we'll be installing scanners at the main gate. All\ncustomers will have to swipe an access card at the gate in\norder to get to their storage units. ® This system has the\nadded benefit of keeping a record of everyone who comes\nand goes through the main gate. In fact, we'll all need to obtain\naccess cards in order to enter and leave. As employees, your\ncards will have your photos on them. Please see Hao Nan to\nget your picture taken.",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nStarting next month, we'll be implementing a new security\nmeasure at our facility.\n® To protect the items people store\nin here, we'll be installing scanners at the main gate.\nAll\ncustomers will have to swipe an access card at the gate in\norder（订单） to get to their storage units.\n® This system has the\nadded benefit of keeping a record of everyone who（谁） comes\nand goes through the main gate.\nIn fact, we'll all need to obtain\naccess cards in order（订单） to enter and leave.\nAs employees, your\ncards will have your photos on them.\nPlease（请） see Hao Nan to\nget your picture taken.",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nStarting next month, we'll be implementing a new security\nmeasure at our facility.\n® To protect the items people store\nin here, we'll be installing scanners at the main gate.\nAll\ncustomers will have to swipe an access card at the gate in\norder（订单） to get to their storage units.\n® This system has the\nadded benefit of keeping a record of everyone who（谁） comes\nand goes through the main gate.\nIn fact, we'll all need to obtain\naccess cards in order（订单） to enter and leave.\nAs employees, your\ncards will have your photos on them.\nPlease（请） see Hao Nan to\nget your picture taken."
+    "transcript": "Starting next month, we'll be implementing a new security measure at our facility.\nTo protect the items people store in here, we'll be installing scanners at the main gate.\nAll customers will have to swipe an access card at the gate in order to get to their storage units.\nThis system has the added benefit of keeping a record of... everyone who comes and goes through the main gate.\nIn fact, we'll all need to obtain access cards in order to enter and leave.\nAs employees, your cards will have your photos on them.\nPlease see HowNan to get your picture taken.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "5d327ab365d86bed3cfcd59b43cc990d62af0ef1a917159175d9969be676a329",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 102,
+        "legacy_word_count": 105,
+        "length_ratio": 0.971,
+        "legacy_coverage": 0.971,
+        "prompted_failure": "implausible Part 4 transcript length 2"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "从下个月开始，我们的设施将实施一项新的安全措施。\n为了保护人们存放在这里的物品，我们将在主门安装扫描仪。\n所有客户都必须在闸机处刷访问卡才能进入他们的存储单元。\n这个系统还有一个额外的好处，可以记录...进出主门的每个人的记录。\n事实上，我们都需要获取访问卡才能进出。\n作为员工，您的卡上会有您的照片。\n请到HowNan查看拍照。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9cbc480f1fbca58271574f897ba17f039727ff819392113ac1130ded771ca3cf"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +77,23 @@
       ],
       "answer": "B",
       "question": "Where does the talk most likely take place?",
-      "answer_explain": "原文依据：听力原文中提到“order to get to their storage units.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（At a storage facility）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the talk most likely（最可能） take place?",
+      "answer_explain": "正确答案：B（At a storage facility）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the talk most likely(最可能) take place?",
       "choice_translations": [
-        "A：At a bank",
-        "B：At a storage facility",
-        "C：At a hardware store",
-        "D：At a real estate office（办公室）"
+        "A:At a bank",
+        "B:At a storage facility",
+        "C:At a hardware store",
+        "D:At a real estate office(办公室)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“All customers will have to swipe an access card at the gate in order to get to their storage units.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“All customers will have to swipe an access card at the gate in order to get to their storage units.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“order to get to their storage units.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（At a storage facility）。"
+        "analysis": "正确答案：B（At a storage facility）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -105,23 +129,23 @@
       ],
       "answer": "A",
       "question": "What added benefit of a system does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“In fact, we'll all need to obtain”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It records all visitors.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） added benefit of a system does the speaker（说话者） mention?",
+      "answer_explain": "正确答案：A（It records all visitors.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) added benefit of a system does the speaker(说话者) mention?",
       "choice_translations": [
-        "A：It records all visitors.",
-        "B：It turns off automatically.",
-        "C：It is easy to upgrade.",
-        "D：It is portable."
+        "A:It records all visitors.",
+        "B:It turns off automatically.",
+        "C:It is easy to upgrade.",
+        "D:It is portable."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：order to get to their storage units. ® This system has the",
+      "evidence": "参考听力原文：“This system has the added benefit of keeping a record of... everyone who comes and goes through the main gate.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：order to get to their storage units. ® This system has the",
+        "evidence": "参考听力原文：“This system has the added benefit of keeping a record of... everyone who comes and goes through the main gate.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“In fact, we'll all need to obtain”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It records all visitors.）。"
+        "analysis": "正确答案：A（It records all visitors.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -157,23 +181,23 @@
       ],
       "answer": "D",
       "question": "Why are employees asked to see Hao Nan?",
-      "answer_explain": "原文依据：听力原文中提到“get your picture taken.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To have a photograph taken）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） are employees asked to see Hao Nan?",
+      "answer_explain": "正确答案：D（To have a photograph taken）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) are employees asked to see Hao Nan?",
       "choice_translations": [
-        "A：To get a parking pass",
-        "B：To sign up for training",
-        "C：To update payroll information（信息）",
-        "D：To have a photograph taken"
+        "A:To get a parking pass",
+        "B:To sign up for training",
+        "C:To update payroll information(信息)",
+        "D:To have a photograph taken"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：access cards in order to enter and leave. As employees, your",
+      "evidence": "参考听力原文：“As employees, your cards will have your photos on them.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：access cards in order to enter and leave. As employees, your",
+        "evidence": "参考听力原文：“As employees, your cards will have your photos on them.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“get your picture taken.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To have a photograph taken）。"
+        "analysis": "正确答案：D（To have a photograph taken）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

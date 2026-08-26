@@ -36,9 +36,31 @@
       "asset_key": "official-6-test-1/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "On behalf of the Transportation Department of Alton City,\nthank you for joining us at today's press conference.\nOI'm sorry for the last-minute location change. ® The\nweather reports are predicting heavy rain this afternoon, so\nwe decided to move the conference indoors. Now, °1\ncalled this press conference to announce that we will be\ntemporarily closing the Green Line from July first to July\ntenth. ® The closing will allow us to make necessary repairs\nto the train tracks. We understand that this may cause an\ninconvenience for some riders, but there are many alternate\nroutes available.",
-    "transcript_translation": "谨代表Alton市交通部，感谢您参加今天的记者招待会。\n很抱歉临时更改了地点。®天气预报说今天下午会下大雨，所以我们决定将会议移到室内举行。现在，我召集这次新闻发布会的目的是宣布，我们将从7月1日到7月10日暂时关闭Green Line。®此次关闭将使我们能够对铁轨进行必要的维修。我们理解这可能给一些乘客带来不便，但有许多替代路线可用。",
-    "content_translation": "谨代表Alton市交通部，感谢您参加今天的记者招待会。\n很抱歉临时更改了地点。®天气预报说今天下午会下大雨，所以我们决定将会议移到室内举行。现在，我召集这次新闻发布会的目的是宣布，我们将从7月1日到7月10日暂时关闭Green Line。®此次关闭将使我们能够对铁轨进行必要的维修。我们理解这可能给一些乘客带来不便，但有许多替代路线可用。"
+    "transcript": "On behalf of the Transportation Department of Alton City, thank you for joining us at today's press conference.\nI'm sorry for the last-minute location change.\nThe weather reports are predicting heavy rain this afternoon, so we decided to move the conference indoors.\nNow, I called this press conference to announce that we will be temporarily closing the Green Line from July first to July tenth.\nThe closing will allow us to make necessary repairs to the train tracks.\nWe understand that this may cause an inconvenience for some riders, but there are many alternate routes available.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "950c3b5a0539b199897187651d5d5cc7b64478362e149fb8c8801f78198c2e28",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 96,
+        "legacy_word_count": 95,
+        "length_ratio": 1.011,
+        "legacy_coverage": 0.989
+      }
+    },
+    "transcript_translation": "我代表 Alton 市交通部，感谢您参加今天的记者招待会。\n很抱歉临时更改了地点。\n天气预报预测今天下午会有大雨，所以我们决定将会议移到室内举行。\n现在，我召开这次记者招待会的目的是宣布，我们将从七月一日到七月十日暂时关闭 Green Line。\n此次关闭将使我们能够对铁轨进行必要的维修。\n我们理解这可能给一些乘客带来不便，但有许多替代路线可用。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3667692a8e7d50cedd3268822a9fddf1fbccc7e25b17fe68c99937fe48d99fcc"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "C",
       "question": "Where is the announcement taking place?",
-      "answer_explain": "原文依据：听力原文中提到“called this press conference to announce that we will be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a press conference）。",
-      "question_translation": "公告在哪里举行？",
+      "answer_explain": "正确答案：C（At a press conference）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "公告在哪里举行?",
       "choice_translations": [
-        "A：在贸易展览会上",
-        "B：在盛大开幕式上",
-        "C：在记者招待会上",
-        "D：在退休晚宴上"
+        "A:在贸易展览会上",
+        "B:在盛大开幕式上",
+        "C:在记者招待会上",
+        "D:在退休晚宴上"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：On behalf of the Transportation Department of Alton City,",
+      "evidence": "参考听力原文：“Now, I called this press conference to announce that we will be temporarily closing the Green Line from July first to July tenth.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：On behalf of the Transportation Department of Alton City,",
+        "evidence": "参考听力原文：“Now, I called this press conference to announce that we will be temporarily closing the Green Line from July first to July tenth.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“called this press conference to announce that we will be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a press conference）。"
+        "analysis": "正确答案：C（At a press conference）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "A",
       "question": "What has caused the event to be relocated?",
-      "answer_explain": "原文依据：听力原文中提到“weather reports are predicting heavy rain this afternoon, so”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Bad weather）。",
-      "question_translation": "什么导致了活动的搬迁？",
+      "answer_explain": "正确答案：A（Bad weather）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "什么导致了活动的搬迁?",
       "choice_translations": [
-        "A：恶劣天气",
-        "B：技术困难",
-        "C：持续的施工工作",
-        "D：大量参与者"
+        "A:恶劣天气",
+        "B:技术困难",
+        "C:持续的施工工作",
+        "D:大量参与者"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：On behalf of the Transportation Department of Alton City,",
+      "evidence": "参考听力原文：“The weather reports are predicting heavy rain this afternoon, so we decided to move the conference indoors.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：On behalf of the Transportation Department of Alton City,",
+        "evidence": "参考听力原文：“The weather reports are predicting heavy rain this afternoon, so we decided to move the conference indoors.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“weather reports are predicting heavy rain this afternoon, so”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Bad weather）。"
+        "analysis": "正确答案：A（Bad weather）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, what will happen in July?",
-      "answer_explain": "原文依据：听力原文中提到“temporarily closing the Green Line from July first to July”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A train line will be repaired.）。",
-      "question_translation": "根据说话者所说，七月会发生什么？",
+      "answer_explain": "正确答案：B（A train line will be repaired.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "根据说话者所说,七月会发生什么?",
       "choice_translations": [
-        "A：将举行一个节日庆祝活动。",
-        "B：一条火车线路将被维修。",
-        "C：将增加季节性员工。",
-        "D：将运送额外的设备。"
+        "A:将举行一个节日庆祝活动。",
+        "B:一条火车线路将被维修。",
+        "C:将增加季节性员工。",
+        "D:将运送额外的设备。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：On behalf of the Transportation Department of Alton City,",
+      "evidence": "参考听力原文：“Now, I called this press conference to announce that we will be temporarily closing the Green Line from July first to July tenth.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：On behalf of the Transportation Department of Alton City,",
+        "evidence": "参考听力原文：“Now, I called this press conference to announce that we will be temporarily closing the Green Line from July first to July tenth.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“temporarily closing the Green Line from July first to July”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A train line will be repaired.）。"
+        "analysis": "正确答案：B（A train line will be repaired.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

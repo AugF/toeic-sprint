@@ -39,37 +39,59 @@
       "asset_key": "official-3-test-2/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "Hi, this is Margaret from Templeton Corporation. 3\n'm calling about our catering order for this Friday.\nknow we agreed on a menu last week, but is it rc\ntoo late to change one of our selections? fe\nWell, ’'m glad you called. ©! was just about to 3\nget in touch with my vendor to order the supplies (\nwe'll need for your event. What would you like to :\nchange?\nI'd like to switch the meat lasagna to the vegetarian\nlasagna. Some of my colleagues don’t eat meat, 1\nand | forgot about that when | was placing the order.\nNo problem. I'll revise the order and e-mail you a :\nnew invoice to confirm the changes we’re making. (\nsciipiimeiiinasanimantasnaanannsenanenmnniniiinitsiisiiti",
-    "transcript_translation": "中文辅助（离线预处理）：Hi, this is Margaret from Templeton Corporation.\n3\n'm calling about our catering order（订单） for this Friday.\nknow we agreed on a menu last week, but is it rc\ntoo late to change one of our selections?\nfe\nWell, ’'m glad you called.\n©!\nwas just about to 3\nget in touch with my vendor to order（订单） the supplies (\nwe'll need for your event.\nWhat（什么） would you like to :\nchange?\nI'd like to switch the meat lasagna to the vegetarian\nlasagna.\nSome of my colleagues don’t eat meat, 1\nand | forgot about that when（何时） | was placing the order（订单）.\nNo problem.\nI'll revise the order（订单） and e-mail you a :\nnew invoice to confirm the changes we’re making.\n(\nsciipiimeiiinasanimantasnaanannsenanenmnniniiinitsiisiiti",
-    "content_translation": "中文辅助（离线预处理）：Hi, this is Margaret from Templeton Corporation.\n3\n'm calling about our catering order（订单） for this Friday.\nknow we agreed on a menu last week, but is it rc\ntoo late to change one of our selections?\nfe\nWell, ’'m glad you called.\n©!\nwas just about to 3\nget in touch with my vendor to order（订单） the supplies (\nwe'll need for your event.\nWhat（什么） would you like to :\nchange?\nI'd like to switch the meat lasagna to the vegetarian\nlasagna.\nSome of my colleagues don’t eat meat, 1\nand | forgot about that when（何时） | was placing the order（订单）.\nNo problem.\nI'll revise the order（订单） and e-mail you a :\nnew invoice to confirm the changes we’re making.\n(\nsciipiimeiiinasanimantasnaanannsenanenmnniniiinitsiisiiti"
+    "transcript": "Hi, this is Margaret from Templeton Corporation.\nI'm calling about our catering order for this Friday.\nI know we agreed on a menu last week, but is it too late to change one of our selections?\nWell, I'm glad you called.\nI was just about to get in touch with my vendor to order the supplies we'll need for your event.\nWhat would you like to change?\nI'd like to switch the meat lasagna to the vegetarian lasagna.\nSome of my colleagues don't eat meat, and I forgot about that when I was placing the order.\nNo problem.\nI'll revise the order and e-mail you a new invoice to confirm the changes we're making.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "7c128aa5d29ba05b4e3f3949d6ea5d06e08cfd4480da587b9353dbb3c327a052",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 114,
+        "legacy_word_count": 113,
+        "length_ratio": 1.009,
+        "legacy_coverage": 0.938
+      }
+    },
+    "transcript_translation": "嗨，我是 Templeton Corporation 的 Margaret。\n我打电话来是关于我们周五的餐饮订单。\n我知道我们上周确定了菜单，但现在改选品是否太晚了？\n嗯，很高兴你打电话来。\n我正准备联系我的供应商，订购你们活动所需的用品。\n您想更改什么？\n我想把肉千层面换成素食千层面。\n我的一些同事不吃肉，我在下订单时忘记了这一点。\n没问题。\n我会修改订单，并给您发送一封新的发票来确认我们所做的更改。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "94d524d4afac0224829335e01572f1453a5b68bbd20df6f673b63f4d1b0a5b10"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "At an office-supply company",
-        "Ata catering company",
+        "At a catering company",
         "At a warehouse",
         "At a kitchen appliance store"
       ],
       "answer": "B",
       "question": "Where does the man most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“'m calling about our catering order for this Friday.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Ata catering company）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the man（男士） most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：B（At a catering company）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the man(男士) most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At an office（办公室）-supply company（公司）",
-        "B：Ata catering company（公司）",
-        "C：At a warehouse",
-        "D：At a kitchen appliance store"
+        "A:At an office(办公室)-supply company(公司)",
+        "B:At a catering company(公司)",
+        "C:At a warehouse",
+        "D:At a kitchen appliance store"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Hi, this is Margaret from Templeton Corporation. 3",
+      "evidence": "参考听力原文：“I'm calling about our catering order for this Friday.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Hi, this is Margaret from Templeton Corporation. 3",
+        "evidence": "参考听力原文：“I'm calling about our catering order for this Friday.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“'m calling about our catering order for this Friday.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Ata catering company）。"
+        "analysis": "正确答案：B（At a catering company）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "C",
       "question": "Why does the woman call the man?",
-      "answer_explain": "原文依据：听力原文中提到“get in touch with my vendor to order the supplies (”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To change an order）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） call the man（男士）?",
+      "answer_explain": "正确答案：C（To change an order）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the woman(女士) call the man(男士)?",
       "choice_translations": [
-        "A：To report a shipping mistake",
-        "B：To make an appointment（预约）",
-        "C：To change an order（订单）",
-        "D：To negotiate a price"
+        "A:To report a shipping mistake",
+        "B:To make an appointment(预约)",
+        "C:To change an order(订单)",
+        "D:To negotiate a price"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, this is Margaret from Templeton Corporation. 3",
+      "evidence": "参考听力原文：“I know we agreed on a menu last week, but is it too late to change one of our selections?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, this is Margaret from Templeton Corporation. 3",
+        "evidence": "参考听力原文：“I know we agreed on a menu last week, but is it too late to change one of our selections?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“get in touch with my vendor to order the supplies (”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To change an order）。"
+        "analysis": "正确答案：C（To change an order）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -150,30 +172,30 @@
     },
     {
       "choices": [
-        "Alist of vendors",
-        "Alunch menu",
-        "Adelivery address",
-        "Aconfirmation e-mail"
+        "A list of vendors",
+        "A lunch menu",
+        "A delivery address",
+        "A confirmation e-mail"
       ],
       "answer": "D",
       "question": "What does the man promise to send?",
-      "answer_explain": "原文依据：听力原文中提到“I'll revise the order and e-mail you a :”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Aconfirmation e-mail）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） promise to send?",
+      "answer_explain": "正确答案：D（A confirmation e-mail）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) promise to send?",
       "choice_translations": [
-        "A：Alist of vendors",
-        "B：Alunch menu",
-        "C：Adelivery address",
-        "D：Aconfirmation e-mail"
+        "A:A list of vendors",
+        "B:A lunch menu",
+        "C:A delivery address",
+        "D:A confirmation e-mail"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, this is Margaret from Templeton Corporation. 3",
+      "evidence": "参考听力原文：“I'll revise the order and e-mail you a new invoice to confirm the changes we're making.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, this is Margaret from Templeton Corporation. 3",
+        "evidence": "参考听力原文：“I'll revise the order and e-mail you a new invoice to confirm the changes we're making.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I'll revise the order and e-mail you a :”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Aconfirmation e-mail）。"
+        "analysis": "正确答案：D（A confirmation e-mail）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

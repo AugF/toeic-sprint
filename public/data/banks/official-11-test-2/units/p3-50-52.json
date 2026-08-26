@@ -41,9 +41,31 @@
       "asset_key": "official-11-test-2/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nw Malik and Roberto, I have bad news - Larson\nIncorporated decided not to sponsor our music fest\nthis year.\nm Oh no- Owe were really counting on their contribut\nEw l've already started asking other local businesses t\nconsider sponsoring the event. Ol stopped by Roge\nBookstore this morning, and they donated $500!\nm That's good news. You know, we could also ask the\nnew pharmacy on First Street. Roberto, would yo\nmind giving them a call today?\nm oSure -and actually, my brother's one of the\npharmacists there, so maybe he can help us out.",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nw Malik and Roberto, I have bad news - Larson\nIncorporated decided not to sponsor our music fest\nthis year.\nm Oh no- Owe were really counting on their contribut\nEw l've already started asking other local businesses t\nconsider sponsoring the event.\nOl stopped by Roge\nBookstore this morning, and they donated $500!\nm That's good news.\nYou know, we could also ask the\nnew pharmacy on First Street.\nRoberto, would yo\nmind giving them a call today?\nm oSure -and actually, my brother's one of the\npharmacists there, so maybe he can help us out.",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nw Malik and Roberto, I have bad news - Larson\nIncorporated decided not to sponsor our music fest\nthis year.\nm Oh no- Owe were really counting on their contribut\nEw l've already started asking other local businesses t\nconsider sponsoring the event.\nOl stopped by Roge\nBookstore this morning, and they donated $500!\nm That's good news.\nYou know, we could also ask the\nnew pharmacy on First Street.\nRoberto, would yo\nmind giving them a call today?\nm oSure -and actually, my brother's one of the\npharmacists there, so maybe he can help us out."
+    "transcript": "Malik and Roberto, I have bad news.\nLarson Incorporated decided not to sponsor our music festival this year.\nOh no, we were really counting on their contribution.\nI've already started asking other local businesses to consider sponsoring the event.\nI stopped by Rogers Bookstore this morning and they donated $500.\nThat's good news.\nYou know, we could also ask the new pharmacy on First Street.\nRoberto, would you mind giving them a call today?\nSure.\nAnd actually, my brother's one of the pharmacists there.\nSo maybe he can help us out.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "409fe0d615f8a9e50e28eeddb202bb2afd20811e4f160b701964375e675fcdf5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 90,
+        "legacy_word_count": 97,
+        "length_ratio": 0.928,
+        "legacy_coverage": 0.825
+      }
+    },
+    "transcript_translation": "Malik和Roberto，我有个坏消息。\nLarson Incorporated决定今年不赞助我们的音乐节了。\n哦不，我们非常指望他们的贡献。\n我已经开始向其他本地企业询问是否考虑赞助活动了。\n我今天早上去了Rogers Bookstore，他们捐了500美元。\n这是个好消息。\n你知道，我们也可以问一下第一街新开的药店。\nRoberto，你今天能给他们打个电话吗？\n好的。\n实际上，我哥哥就是那里的药剂师之一。\n所以也许他能帮到我们。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "202d1ef87cf59c51893fcf4d39745a5796b2b2a9d6e697b4684936d6ad4f04de"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "A",
       "question": "What problem does the woman mention?",
-      "answer_explain": "原文依据：听力原文与题目“What problem does the woman mention?”对应，官方答案为“A source of funding has been lost.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（A source of funding has been lost.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） problem does the woman（女士） mention?",
+      "answer_explain": "正确答案：A（A source of funding has been lost.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) problem does the woman(女士) mention?",
       "choice_translations": [
-        "A：A source of funding has been lost.",
-        "B：An entertainer is not available（可用的）.",
-        "C：Bad weather is predicted.",
-        "D：A permit has not been approved."
+        "A:A source of funding has been lost.",
+        "B:An entertainer is not available(可用的).",
+        "C:Bad weather is predicted.",
+        "D:A permit has not been approved."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“I've already started asking other local businesses to consider sponsoring the event.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“I've already started asking other local businesses to consider sponsoring the event.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What problem does the woman mention?”对应，官方答案为“A source of funding has been lost.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（A source of funding has been lost.）。"
+        "analysis": "正确答案：A（A source of funding has been lost.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "D",
       "question": "Where did the woman go this morning?",
-      "answer_explain": "原文依据：听力原文与题目“Where did the woman go this morning?”对应，官方答案为“To a bookstore”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（To a bookstore）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） did the woman（女士） go this morning?",
+      "answer_explain": "正确答案：D（To a bookstore）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) did the woman(女士) go this morning?",
       "choice_translations": [
-        "A：To a community center",
-        "B：To a bank",
-        "C：To a music shop",
-        "D：To a bookstore"
+        "A:To a community center",
+        "B:To a bank",
+        "C:To a music shop",
+        "D:To a bookstore"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：Bookstore this morning, and they donated $500!",
+      "evidence": "参考听力原文：“I stopped by Rogers Bookstore this morning and they donated $500.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：Bookstore this morning, and they donated $500!",
+        "evidence": "参考听力原文：“I stopped by Rogers Bookstore this morning and they donated $500.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Where did the woman go this morning?”对应，官方答案为“To a bookstore”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（To a bookstore）。"
+        "analysis": "正确答案：D（To a bookstore）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "A",
       "question": "What will Roberto most likely do after the meeting?",
-      "answer_explain": "原文依据：听力原文与题目“What will Roberto most likely do after the meeting?”对应，官方答案为“Call his brother”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Call his brother）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will Roberto most likely（最可能） do after the meeting（会议）?",
+      "answer_explain": "正确答案：A（Call his brother）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will Roberto most likely(最可能) do after the meeting(会议)?",
       "choice_translations": [
-        "A：Call his brother",
-        "B：Check his e-mail",
-        "C：Visit a Web site",
-        "D：Adjust a budget"
+        "A:Call his brother",
+        "B:Check his e-mail",
+        "C:Visit a Web site",
+        "D:Adjust a budget"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 2 段：w Malik and Roberto, I have bad news - Larson",
+      "evidence": "参考听力原文：“Roberto, would you mind giving them a call today?”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 2 段：w Malik and Roberto, I have bad news - Larson",
+        "evidence": "参考听力原文：“Roberto, would you mind giving them a call today?”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What will Roberto most likely do after the meeting?”对应，官方答案为“Call his brother”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Call his brother）。"
+        "analysis": "正确答案：A（Call his brother）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

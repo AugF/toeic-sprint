@@ -40,9 +40,32 @@
       "asset_key": "official-3-test-1/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "message.\nEw\nHi, my name is Tomoko. ®! saw an advertisement f\nyour motorcycle, and I’m interested in purchasing it.\nhave a concern about the price. it's a little high\nconsidering it’s a few years old. Could you lower t\nprice by 200 dollars? | also read in the ad that you’d\nwilling to drop the motorcycle off at the buyer’s hous\nlive an hour away so | don’t want to make you driv\nfar. my friend and | can come pick it up on Saturd:\nyou accept my offer. Give me a call back tonight at !\nThanks.",
-    "transcript_translation": "信息。\n\n嗨，我叫友子。我在您的摩托车广告上看到了，我对购买它感兴趣。我对价格有点担心，考虑到它已经有几年了，有点太高了。您能把价格降200美元吗？另外，我在广告里看到您愿意把摩托车送到买家住处，离我家开车一个小时的路程，所以我不想让您开太远。我的朋友可以周六来取。如果您接受我的提议，请今晚给我回电话。谢谢。",
-    "content_translation": "信息。\n\n嗨，我叫友子。我在您的摩托车广告上看到了，我对购买它感兴趣。我对价格有点担心，考虑到它已经有几年了，有点太高了。您能把价格降200美元吗？另外，我在广告里看到您愿意把摩托车送到买家住处，离我家开车一个小时的路程，所以我不想让您开太远。我的朋友可以周六来取。如果您接受我的提议，请今晚给我回电话。谢谢。"
+    "transcript": "Hi, my name is Tomoko.\nI saw an advertisement for your motorcycle, and I'm interested in purchasing it, but I have a concern about the price. it's a little high considering it's a few years old.\nCould you lower the price by 200 dollars?\nI also read in the ad that you'd be willing to drop the motorcycle off at the buyer's house, but I live an hour away, so I don't want to make you drive too far.\nMy friend and I can come pick it up on Saturday if you accept my offer.\nGive me a call back tonight at 555-0108.\nThanks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "26872c29ef6d579aa1cf92f3465acca1d8ffc3d52616a2d7204e5022e3448337",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 102,
+        "legacy_word_count": 93,
+        "length_ratio": 1.097,
+        "legacy_coverage": 0.914
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "嗨，我叫 Tomoko。\n我看到了您摩托车的广告，我对购买它感兴趣，但关于价格我有点担心。考虑到它已经有几年了，价格有点高。\n你能把价格降低 200 美元吗？\n我还从广告上看到您愿意将摩托车送到买家家里，但我离这里一个小时路程，所以我不希望让您开太远。\n如果我提出我的报价，我和我的朋友周六可以来取。\n今晚给我回电话，555-0108。\n谢谢。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2cb4eee84f0780bffe7fc3c44b919855165aa8d6e0579d3d12b831a97aa4e06f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,24 +76,24 @@
         "To give driving directions"
       ],
       "answer": "B",
-      "question": "Why is the speaker calling? =",
-      "answer_explain": "原文依据：听力原文中提到“saw an advertisement f”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To inquire about an advertisement ie）。",
-      "question_translation": "说话者打电话的原因是？",
+      "question": "Why is the speaker calling?",
+      "answer_explain": "正确答案：B（To inquire about an advertisement ie）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者打电话的原因是?",
       "choice_translations": [
-        "A：报告一起事故",
-        "B：询问一个广告",
-        "C：指出一个错误",
-        "D：提供驾驶路线"
+        "A:报告一起事故",
+        "B:询问一个广告",
+        "C:指出一个错误",
+        "D:提供驾驶路线"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“I saw an advertisement for your motorcycle, and I'm interested in purchasing it, but I have a concern about the price. it's a little high considering it's a few years old.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“I saw an advertisement for your motorcycle, and I'm interested in purchasing it, but I have a concern about the price. it's a little high considering it's a few years old.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“saw an advertisement f”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To inquire about an advertisement ie）。"
+        "analysis": "正确答案：B（To inquire about an advertisement ie）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -100,30 +123,30 @@
     },
     {
       "choices": [
-        "Aselling price",
+        "A selling price",
         "The cost of a delivery",
         "An application requirement",
         "The time of an event"
       ],
       "answer": "A",
       "question": "What does the speaker say she is concerned about?",
-      "answer_explain": "原文依据：听力原文中提到“have a concern about the price.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Aselling price）。",
-      "question_translation": "说话者担心什么？",
+      "answer_explain": "正确答案：A（A selling price）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者担心什么?",
       "choice_translations": [
-        "A：销售价格",
-        "B：送货成本",
-        "C：申请要求",
-        "D：活动时间"
+        "A:销售价格",
+        "B:送货成本",
+        "C:申请要求",
+        "D:活动时间"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“I saw an advertisement for your motorcycle, and I'm interested in purchasing it, but I have a concern about the price. it's a little high considering it's a few years old.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“I saw an advertisement for your motorcycle, and I'm interested in purchasing it, but I have a concern about the price. it's a little high considering it's a few years old.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“have a concern about the price.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Aselling price）。"
+        "analysis": "正确答案：A（A selling price）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "C",
       "question": "What does the speaker offer to do?",
-      "answer_explain": "原文依据：听力原文中提到“my friend and | can come pick it up on Saturd:”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Pick up an item）。",
-      "question_translation": "说话者提议做什么？",
+      "answer_explain": "正确答案：C（Pick up an item）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者提议做什么?",
       "choice_translations": [
-        "A：试用产品",
-        "B：发送合同邮件",
-        "C：取走物品",
-        "D：提供照片"
+        "A:试用产品",
+        "B:发送合同邮件",
+        "C:取走物品",
+        "D:提供照片"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：you accept my offer. Give me a call back tonight at !",
+      "evidence": "参考听力原文：“My friend and I can come pick it up on Saturday if you accept my offer.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：you accept my offer. Give me a call back tonight at !",
+        "evidence": "参考听力原文：“My friend and I can come pick it up on Saturday if you accept my offer.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“my friend and | can come pick it up on Saturd:”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Pick up an item）。"
+        "analysis": "正确答案：C（Pick up an item）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

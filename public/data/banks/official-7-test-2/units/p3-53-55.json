@@ -41,9 +41,32 @@
       "asset_key": "official-7-test-2/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "m Thanks for listening to Weekend Science! I'm your\nhost, Paul Farooq. ®My guest today is Dr. Helen Yu.\nShe's part of a team working on the 29 telescope,\nwhich is used to look at distant stars. Dr. Yu, can you\ntell us more about the project?\nKw Sure. ® The Z9 telescope is located in one of the driest\ndeserts on Earth. We chose that spot so there'd be\nvery little interference from rain or clouds... so you get\na very clear image.\nm And has your team made any interesting\ndiscoveries?\nEKw Olt has! Tomorrow I'll be presenting our findings at a\nresearch conference in Sydney. And I can share some\nof the highlights with you now.",
-    "transcript_translation": "中文辅助（离线预处理）：m Thanks for listening to Weekend Science!\nI'm your\nhost, Paul Farooq.\n®My guest today is Dr.\nHelen Yu.\nShe's part of a team working on the 29 telescope,\nwhich is used to look at distant stars.\nDr.\nYu, can you\ntell us more about the project?\nKw Sure.\n® The Z9 telescope is located in one of the driest\ndeserts on Earth.\nWe chose that spot so there'd be\nvery little interference from rain or clouds...\nso you get\na very clear image.\nm And has your team made any interesting\ndiscoveries?\nEKw Olt has!\nTomorrow I'll be presenting our findings at a\nresearch conference in Sydney.\nAnd I can share some\nof the highlights with you now.",
-    "content_translation": "中文辅助（离线预处理）：m Thanks for listening to Weekend Science!\nI'm your\nhost, Paul Farooq.\n®My guest today is Dr.\nHelen Yu.\nShe's part of a team working on the 29 telescope,\nwhich is used to look at distant stars.\nDr.\nYu, can you\ntell us more about the project?\nKw Sure.\n® The Z9 telescope is located in one of the driest\ndeserts on Earth.\nWe chose that spot so there'd be\nvery little interference from rain or clouds...\nso you get\na very clear image.\nm And has your team made any interesting\ndiscoveries?\nEKw Olt has!\nTomorrow I'll be presenting our findings at a\nresearch conference in Sydney.\nAnd I can share some\nof the highlights with you now."
+    "transcript": "Thanks for listening to Weekend Science.\nI'm your host, Paul Farouk.\nMy guest today is Dr. Helen Yu.\nShe's part of a team working on the Z9 telescope, which is used to look at distant stars.\nDr. Yu, can you tell us more about the project?\nSure.\nThe Z9 telescope is located in one of the driest deserts on Earth.\nWe chose that spot so there'd be very little interference from rain or clouds, so you get a very clear image.\nAnd has your team made any interesting discoveries?\nIt has.\nTomorrow I'll be presenting our findings at a research conference in Sydney, and I can share some of the highlights with you now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "047f58188a4b511ab4ae5f79f68175a8eb5cb2daebd7f4dd2252969abbb2b900",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 114,
+        "legacy_word_count": 116,
+        "length_ratio": 0.983,
+        "legacy_coverage": 0.931
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "感谢收听《周末科学》。\n我是主持人 Paul Farouk。\n我今天的嘉宾是 Helen Yu 博士。\n她是一个致力于 Z9 望远镜项目的团队成员，该望远镜用于观测遥远的恒星。\nYu 博士，您能告诉我们更多关于这个项目吗？\n当然可以。\nZ9 望远镜位于地球上最干燥的沙漠之一。\n我们选择那个地点是为了最大限度地减少雨水或云层造成的干扰，这样才能获得非常清晰的图像。\n您的团队有没有做出任何有趣的发现？\n有。\n明天我将在悉尼的一个研究会议上展示我们的研究结果，我现在可以和您分享一些亮点。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c10044205118787c698faf855b5b29310caffd5800a622e3ae07979bd1092bad"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +78,23 @@
       ],
       "answer": "C",
       "question": "What most likely is the woman's occupation?",
-      "answer_explain": "原文依据：听力原文中提到“® The Z9 telescope is located in one of the driest”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Scientist）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） most likely（最可能） is the woman（女士）'s occupation?",
+      "answer_explain": "正确答案：C（Scientist）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) most likely(最可能) is the woman(女士)'s occupation?",
       "choice_translations": [
-        "A：Weather forecaster",
-        "B：Computer programmer",
-        "C：Scientist",
-        "D：Photographer"
+        "A:Weather forecaster",
+        "B:Computer programmer",
+        "C:Scientist",
+        "D:Photographer"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：m Thanks for listening to Weekend Science! I'm your",
+      "evidence": "参考听力原文：“Tomorrow I'll be presenting our findings at a research conference in Sydney, and I can share some of the highlights with you now.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：m Thanks for listening to Weekend Science! I'm your",
+        "evidence": "参考听力原文：“Tomorrow I'll be presenting our findings at a research conference in Sydney, and I can share some of the highlights with you now.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® The Z9 telescope is located in one of the driest”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Scientist）。"
+        "analysis": "正确答案：C（Scientist）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -109,23 +132,23 @@
       ],
       "answer": "B",
       "question": "What does the woman say is beneficial about a location?",
-      "answer_explain": "原文依据：听力原文中提到“m And has your team made any interesting”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（It has a dry climate.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say is beneficial about a location?",
+      "answer_explain": "正确答案：B（It has a dry climate.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say is beneficial about a location?",
       "choice_translations": [
-        "A：It is near the ocean.",
-        "B：It has a dry climate.",
-        "C：It is accessible using public transportation.",
-        "D：It has a renewable energy source."
+        "A:It is near the ocean.",
+        "B:It has a dry climate.",
+        "C:It is accessible using public transportation.",
+        "D:It has a renewable energy source."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：m Thanks for listening to Weekend Science! I'm your",
+      "evidence": "参考听力原文：“And has your team made any interesting discoveries?”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：m Thanks for listening to Weekend Science! I'm your",
+        "evidence": "参考听力原文：“And has your team made any interesting discoveries?”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“m And has your team made any interesting”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（It has a dry climate.）。"
+        "analysis": "正确答案：B（It has a dry climate.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -163,23 +186,23 @@
       ],
       "answer": "C",
       "question": "What will the woman do tomorrow?",
-      "answer_explain": "原文依据：听力原文中提到“research conference in Sydney.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Present at a conference）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） do tomorrow?",
+      "answer_explain": "正确答案：C（Present at a conference）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) do tomorrow?",
       "choice_translations": [
-        "A：Edit some images",
-        "B：Start a new project",
-        "C：Present at a conference",
-        "D：Install some software"
+        "A:Edit some images",
+        "B:Start a new project",
+        "C:Present at a conference",
+        "D:Install some software"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 12 段：EKw Olt has! Tomorrow I'll be presenting our findings at a",
+      "evidence": "参考听力原文：“Tomorrow I'll be presenting our findings at a research conference in Sydney, and I can share some of the highlights with you now.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 12 段：EKw Olt has! Tomorrow I'll be presenting our findings at a",
+        "evidence": "参考听力原文：“Tomorrow I'll be presenting our findings at a research conference in Sydney, and I can share some of the highlights with you now.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“research conference in Sydney.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Present at a conference）。"
+        "analysis": "正确答案：C（Present at a conference）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

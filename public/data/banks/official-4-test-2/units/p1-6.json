@@ -32,13 +32,33 @@
       "asset_key": "official-4-test-2/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. A road is being paved by a construction crew.\nB. A vehicle has been parked in a garage.\nC. Some men are repairing a building.\nD. Some trees have been planted along a walkway.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e01ae4c88e1e7e6bf9d78fcce8141018618e688a3d397b23eec039d3faa4c6e3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 275
+      }
+    },
+    "transcript_translation": "A. 一个施工队正在铺设一条路。\nB. 一辆车停在一个车库里。\nC. 有些男子正在修理一栋建筑。\nD. 沿着人行道种了一些树。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "bd663064f2ea507c5161ae92ecf27571358fdef7966d9a07c1eecac8c817fa3d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Aroad is being paved by a construction crew.",
+        "A road is being paved by a construction crew.",
         "A vehicle has been parked in a garage.",
         "Some men are repairing a building.",
         "Some trees have been planted along a walkway."
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some trees have been planted along a walkway.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（Some trees have been planted along a walkway.）。",
       "choice_translations": [
-        "A：Aroad is being paved by a construction crew.",
-        "B：A vehicle has been parked in a garage.",
-        "C：Some men are repairing a building.",
-        "D：Some trees have been planted along a walkway."
+        "A：一个施工队正在铺设一条路。",
+        "B：一辆车停在一个车库里。",
+        "C：有些男子正在修理一栋建筑。",
+        "D：沿着人行道种了一些树。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-4-test-2/p1-6/6"
+      "item_key": "official-4-test-2/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -32,15 +32,35 @@
       "asset_key": "official-1-test-1/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 一位女士正走上一些楼梯。\nB. 一个遮阳篷延伸过一个商店入口。\nC. 一群人正在离开一栋建筑。\nD. 一个砖砌庭院正在被扫。",
-    "content_translation": "A. 一位女士正走上一些楼梯。\nB. 一个遮阳篷延伸过一个商店入口。\nC. 一群人正在离开一栋建筑。\nD. 一个砖砌庭院正在被扫。"
+    "transcript": "A. A woman's walking up some stairs.\nB. An awning extends over a shop entrance.\nC. A group of people is leaving a building.\nD. A brick patio is being swept.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2199114a8412360b0d0c54763cc79eed8cc3c8e3251faf2724eed7806e0c157c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 42
+      }
+    },
+    "transcript_translation": "A. 一名女士正走上一些楼梯。\nB. 一个遮阳篷延伸过一家商店的入口。\nC. 一群人正在离开一栋建筑。\nD. 一个砖砌庭院正在被扫地。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "067443813fbe01f35b191f4373cbbb21eefe55f7008cf6e59f79b9a72613942f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Awoman’s walking up some stairs.",
+        "A woman's walking up some stairs.",
         "An awning extends over a shop entrance.",
-        "Agroup of people is leaving a building.",
+        "A group of people is leaving a building.",
         "A brick patio is being swept."
       ],
       "answer": "B",
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“An awning extends over a shop entrance.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（An awning extends over a shop entrance.）。",
       "choice_translations": [
-        "A：一位女士正走上一些楼梯。",
-        "B：一个遮阳篷延伸过一个商店入口。",
+        "A：一名女士正走上一些楼梯。",
+        "B：一个遮阳篷延伸过一家商店的入口。",
         "C：一群人正在离开一栋建筑。",
-        "D：一个砖砌庭院正在被扫。"
+        "D：一个砖砌庭院正在被扫地。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p1-4/4"
+      "item_key": "official-1-test-1/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

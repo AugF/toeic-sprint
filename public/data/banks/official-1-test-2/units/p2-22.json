@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-2/audio/part2/q022.mp3",
       "exists": true
     },
-    "transcript_translation": "M 你不想看看公寓吗？ = w\nA. 主街以西。\nB. 我们不得不订购一个零件。\nC. 我已经找到地方了。",
-    "content_translation": "M 你不想看看公寓吗？ = w\nA. 主街以西。\nB. 我们不得不订购一个零件。\nC. 我已经找到地方了。"
+    "transcript": "Don't you want to see the apartment?\nA. West of Main Street.\nB. We had to order a part.\nC. I found a place already.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fc5b00c6ae7255cc987e438e6f4692dbc12fc19764286d228f38802cce48419e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part2/q022.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你不想看看这套公寓吗？\nA. 在主街的西边。\nB. 我们不得不订购一个零件。\nC. 我已经找到地方了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2a7e96399d146d83b5e6768e57fe9de677bb3146f1a5fb864a98b52e0493cdf6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "West of Main Street.",
         "We had to order a part.",
-        "I’ve found a place already."
+        "I found a place already."
       ],
       "answer": "C",
-      "question": "M Don’t you want to see the apartment? = w",
+      "question": "Don't you want to see the apartment?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M Don’t you want to see the apartment? = w”，自然应答是“I’ve found a place already.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I’ve found a place already.）。",
-      "question_translation": "M 你不想看看公寓吗？ = w",
+      "answer_explain": "原文依据：问句或陈述是“Don't you want to see the apartment?”，自然应答是“I found a place already.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I found a place already.）。",
+      "question_translation": "你不想看看这套公寓吗?",
       "choice_translations": [
-        "A：主街以西。",
+        "A：在主街的西边。",
         "B：我们不得不订购一个零件。",
         "C：我已经找到地方了。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M Don’t you want to see the apartment? = w",
+      "evidence": "参考原文第 1 段：Don't you want to see the apartment?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M Don’t you want to see the apartment? = w",
+        "evidence": "参考原文第 1 段：Don't you want to see the apartment?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“M Don’t you want to see the apartment? = w”，自然应答是“I’ve found a place already.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I’ve found a place already.）。"
+        "analysis": "原文依据：问句或陈述是“Don't you want to see the apartment?”，自然应答是“I found a place already.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I found a place already.）。"
       },
       "item_id": 22,
       "priority": {

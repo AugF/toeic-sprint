@@ -26,38 +26,58 @@
       "asset_key": "official-2-test-2/audio/part2/q014.mp3",
       "exists": true
     },
-    "transcript_translation": "你知道谁在策划 Jane 的告别派对吗？\nA. 我觉得是 Tom Shields。\nB. 是二十三号。\nC. 不，他不能去。",
-    "content_translation": "你知道谁在策划 Jane 的告别派对吗？\nA. 我觉得是 Tom Shields。\nB. 是二十三号。\nC. 不，他不能去。"
+    "transcript": "Do you know who's planning Jane's going away party?\nA. I think it's Tom Shields.\nB. It's on the 23rd.\nC. No, he can't go.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bf558b98c49b6d2c29e44722640b1dae76ab0219caabac59b3fded41e7bec59e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part2/q014.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你知道谁在策划简的告别派对吗？\nA. 我想是汤姆·希尔兹。\nB. 是在23号。\nC. 不，他不能去。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "25a6c6afaffbed78cc302d34fb7feec8bce0a9f4834a0ed441e240b7ee98130d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "think it's Tom Shields.",
-        "It's on the twenty-third.",
-        "No, he can’t go."
+        "I think it's Tom Shields.",
+        "It's on the 23rd.",
+        "No, he can't go."
       ],
       "answer": "A",
-      "question": "Do you know who's planning Jane’s going-away party?",
+      "question": "Do you know who's planning Jane's going away party?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Do you know who's planning Jane’s going-away party?”，自然应答是“think it's Tom Shields.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（think it's Tom Shields.）。",
-      "question_translation": "你知道谁在策划 Jane 的告别派对吗？",
+      "answer_explain": "原文依据：问句或陈述是“Do you know who's planning Jane's going away party?”，自然应答是“I think it's Tom Shields.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I think it's Tom Shields.）。",
+      "question_translation": "你知道谁在策划简的告别派对吗?",
       "choice_translations": [
-        "A：我觉得是 Tom Shields。",
-        "B：是二十三号。",
-        "C：不，他不能去。"
+        "A：我想是汤姆·希尔兹。",
+        "B：是在23号。",
+        "C：不,他不能去。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：Do you know who's planning Jane’s going-away party?",
+      "evidence": "参考原文第 1 段：Do you know who's planning Jane's going away party?",
       "response_style": "既可能直接回答，也常以原因、安排或补充信息间接回应",
       "strategy": "先判断为一般疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：Do you know who's planning Jane’s going-away party?",
+        "evidence": "参考原文第 1 段：Do you know who's planning Jane's going away party?",
         "strategy": "先判断为一般疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Do you know who's planning Jane’s going-away party?”，自然应答是“think it's Tom Shields.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（think it's Tom Shields.）。"
+        "analysis": "原文依据：问句或陈述是“Do you know who's planning Jane's going away party?”，自然应答是“I think it's Tom Shields.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I think it's Tom Shields.）。"
       },
       "item_id": 14,
       "priority": {

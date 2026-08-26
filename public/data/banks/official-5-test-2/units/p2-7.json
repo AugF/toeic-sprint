@@ -26,14 +26,34 @@
       "asset_key": "official-5-test-2/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Who（谁）'s leading the presentation next week?",
-    "content_translation": "中文辅助（离线预处理）：Who（谁）'s leading the presentation next week?"
+    "transcript": "Who's leading the presentation next week?\nA. A week of preparation.\nB. Ji-Yun is doing it.\nC. It was very informative.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b1f1ec52e7a207d7dd8af33900146dc0064c651552cb950eb171b3b06752ef52",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 22
+      }
+    },
+    "transcript_translation": "谁下周做演示？\nA. 一周的准备。\nB. Ji-Yun 在做。\nC. 非常有信息量。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0e576999e4dc8d123d304ee6adb8d00c2b1bdce5daa9c9e2df50a15700fba2a0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "A week of preparation.",
-        "Ji-Eun is doing it.",
+        "Ji-Yun is doing it.",
         "It was very informative."
       ],
       "answer": "B",
@@ -41,12 +61,12 @@
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Who's leading the presentation next week?”，自然应答是“Ji-Eun is doing it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Ji-Eun is doing it.）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁）'s leading the presentation next week?",
+      "answer_explain": "原文依据：问句或陈述是“Who's leading the presentation next week?”，自然应答是“Ji-Yun is doing it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Ji-Yun is doing it.）。",
+      "question_translation": "谁下周做演示?",
       "choice_translations": [
-        "A：A week of preparation.",
-        "B：Ji-Eun is doing it.",
-        "C：It was very informative."
+        "A：一周的准备。",
+        "B：Ji-Yun 在做。",
+        "C：非常有信息量。"
       ],
       "question_type": "人物疑问句",
       "evidence": "参考原文第 1 段：Who's leading the presentation next week?",
@@ -57,7 +77,7 @@
         "question_type": "人物疑问句",
         "evidence": "参考原文第 1 段：Who's leading the presentation next week?",
         "strategy": "先识别人物疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Who's leading the presentation next week?”，自然应答是“Ji-Eun is doing it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Ji-Eun is doing it.）。"
+        "analysis": "原文依据：问句或陈述是“Who's leading the presentation next week?”，自然应答是“Ji-Yun is doing it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Ji-Yun is doing it.）。"
       },
       "item_id": 7,
       "priority": {

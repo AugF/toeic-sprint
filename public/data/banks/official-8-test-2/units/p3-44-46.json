@@ -39,9 +39,31 @@
       "asset_key": "official-8-test-2/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "w Hi, Bernard. ® How are you doing on developing the\nmarketing strategies for our new line of energy drinks?\nm I'm just finishing the presentation slides. ®| was asked\nto have them ready for the marketing meeting at the\nend of the month, right?\ngw ®Right. To stay on schedule for a summertime launch.\nm O| was planning to send you the slides to review\ntomorrow.\nw Great. ® After I see them, we have to decide who\nshould speak about which slides. I was thinking Salma\ncould handle anything related to social media, but you\nmay have other ideas.",
-    "transcript_translation": "中文辅助（离线预处理）：w Hi, Bernard.\n® How（如何） are you doing on developing the\nmarketing strategies for our new line of energy drinks?\nm I'm just finishing the presentation slides.\n®| was asked\nto have them ready for the marketing meeting（会议） at the\nend of the month, right?\ngw ®Right.\nTo stay on schedule（日程） for a summertime launch.\nm O| was planning to send you the slides to review\ntomorrow.\nw Great.\n® After I see them, we have to decide who（谁）\nshould speak about which slides.\nI was thinking Salma\ncould handle anything related to social media, but you\nmay have other ideas.",
-    "content_translation": "中文辅助（离线预处理）：w Hi, Bernard.\n® How（如何） are you doing on developing the\nmarketing strategies for our new line of energy drinks?\nm I'm just finishing the presentation slides.\n®| was asked\nto have them ready for the marketing meeting（会议） at the\nend of the month, right?\ngw ®Right.\nTo stay on schedule（日程） for a summertime launch.\nm O| was planning to send you the slides to review\ntomorrow.\nw Great.\n® After I see them, we have to decide who（谁）\nshould speak about which slides.\nI was thinking Salma\ncould handle anything related to social media, but you\nmay have other ideas."
+    "transcript": "Hi Bernard, how are you doing on developing the marketing strategies for our new line of energy drinks?\nI'm just finishing the presentation slides.\nI was asked to have them ready for the marketing meeting at the end of the month, right?\nRight, to stay on schedule for a summertime launch.\nI was planning to send you the slides to review tomorrow.\nGreat.\nAfter I see them, we have to decide who should speak about which slides.\nI was thinking Salma could handle anything related to social media, but you may have other ideas.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "346b1bbc5c7fd94dc5ff5a1c22ee6bbd58dbca3c535f8c45d00bfb8bc75fb4e4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 94,
+        "legacy_word_count": 95,
+        "length_ratio": 0.989,
+        "legacy_coverage": 0.937
+      }
+    },
+    "transcript_translation": "嗨，Bernard，你为我们新系列能量饮料的营销策略开发进展如何？\n我正在完成演示文稿幻灯片。\n我被要求在月底的营销会议前准备好它们，对吗？\n是的，为了按时进行夏季发布。\n我计划明天把幻灯片发给你审阅。\n太好了。\n在我看了之后，我们必须决定谁要负责演讲哪些幻灯片内容。\n我在想Salma可以处理所有与社交媒体相关的内容，但你可能有其他想法。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f831d5bf39ff0e684a30c8c8e938bfc849ca7b0724882fdd303c7f67843cd686"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "What does the woman ask for?",
-      "answer_explain": "原文依据：听力原文中提到“to have them ready for the marketing meeting at the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An update on an assignment）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） ask for?",
+      "answer_explain": "正确答案：D（An update on an assignment）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) ask for?",
       "choice_translations": [
-        "A：An explanation of a policy",
-        "B：A suggestion for a new product",
-        "C：A recommendation for an employee（员工）",
-        "D：An update on an assignment"
+        "A:An explanation of a policy",
+        "B:A suggestion for a new product",
+        "C:A recommendation for an employee(员工)",
+        "D:An update on an assignment"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：w Hi, Bernard. ® How are you doing on developing the",
+      "evidence": "参考听力原文：“I was thinking Salma could handle anything related to social media, but you may have other ideas.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：w Hi, Bernard. ® How are you doing on developing the",
+        "evidence": "参考听力原文：“I was thinking Salma could handle anything related to social media, but you may have other ideas.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“to have them ready for the marketing meeting at the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An update on an assignment）。"
+        "analysis": "正确答案：D（An update on an assignment）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What will take place at the end of the month?",
-      "answer_explain": "原文依据：听力原文中提到“to have them ready for the marketing meeting at the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A marketing meeting）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will take place at the end of the month?",
+      "answer_explain": "正确答案：B（A marketing meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will take place at the end of the month?",
       "choice_translations": [
-        "A：A client visit",
-        "B：A marketing meeting（会议）",
-        "C：A social media event",
-        "D：A new hire orientation"
+        "A:A client visit",
+        "B:A marketing meeting(会议)",
+        "C:A social media event",
+        "D:A new hire orientation"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：end of the month, right?",
+      "evidence": "参考听力原文：“I was asked to have them ready for the marketing meeting at the end of the month, right?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：end of the month, right?",
+        "evidence": "参考听力原文：“I was asked to have them ready for the marketing meeting at the end of the month, right?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“to have them ready for the marketing meeting at the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A marketing meeting）。"
+        "analysis": "正确答案：B（A marketing meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "A",
       "question": "What does the woman want to discuss later?",
-      "answer_explain": "原文依据：听力原文中提到“to have them ready for the marketing meeting at the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Speakers for a presentation）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） want to discuss later?",
+      "answer_explain": "正确答案：A（Speakers for a presentation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) want to discuss later?",
       "choice_translations": [
-        "A：Speakers for a presentation",
-        "B：Locations for a workshop",
-        "C：Upgrades for equipment",
-        "D：Estimates for a budget"
+        "A:Speakers for a presentation",
+        "B:Locations for a workshop",
+        "C:Upgrades for equipment",
+        "D:Estimates for a budget"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：w Hi, Bernard. ® How are you doing on developing the",
+      "evidence": "参考听力原文：“I'm just finishing the presentation slides.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：w Hi, Bernard. ® How are you doing on developing the",
+        "evidence": "参考听力原文：“I'm just finishing the presentation slides.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“to have them ready for the marketing meeting at the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Speakers for a presentation）。"
+        "analysis": "正确答案：A（Speakers for a presentation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

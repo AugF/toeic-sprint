@@ -39,9 +39,31 @@
       "asset_key": "official-12-test-2/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "aw Tariq, Ocan you help me with this week's tile-cutting\nworkshop?\nz79b\nm Sure. What materials do you need?\nh79 4\naw Well, this is the third workshop of the series, and we'll\nbe working on complicated cuts. You know, dealing\nwith corners, where plumbing would be placed, and\nsuch.\nm Oh. o That's an advanced workshop. ©How can I\nhelp?\neW oln the storage room, there are boxes of old tiles we\ncan use for attendees to practice with. Would you\nmind getting them?\nm Ol can definitely do that.\naw Great. Thanks!",
-    "transcript_translation": "中文辅助（离线预处理）：aw Tariq, Ocan you help me with this week's tile-cutting\nworkshop?\nz79b\nm Sure.\nWhat（什么） materials do you need?\nh79 4\naw Well, this is the third workshop of the series, and we'll\nbe working on complicated cuts.\nYou know, dealing\nwith corners, where（哪里） plumbing would be placed, and\nsuch.\nm Oh.\no That's an advanced workshop.\n©How（如何） can I\nhelp?\neW oln the storage room, there are boxes of old tiles we\ncan use for attendees to practice with.\nWould you\nmind getting them?\nm Ol can definitely do that.\naw Great.\nThanks!",
-    "content_translation": "中文辅助（离线预处理）：aw Tariq, Ocan you help me with this week's tile-cutting\nworkshop?\nz79b\nm Sure.\nWhat（什么） materials do you need?\nh79 4\naw Well, this is the third workshop of the series, and we'll\nbe working on complicated cuts.\nYou know, dealing\nwith corners, where（哪里） plumbing would be placed, and\nsuch.\nm Oh.\no That's an advanced workshop.\n©How（如何） can I\nhelp?\neW oln the storage room, there are boxes of old tiles we\ncan use for attendees to practice with.\nWould you\nmind getting them?\nm Ol can definitely do that.\naw Great.\nThanks!"
+    "transcript": "Tariq, can you help me with this week's tile cutting workshop?\nSure.\nWhat materials do you need?\nWell, this is the third workshop of the series and we'll be working on complicated cuts.\nYou know, dealing with corners where plumbing would be placed and such.\nOh, that's an advanced workshop.\nHow can I help?\nIn the storage room, there are boxes of old tiles we can use for attendees to practice with.\nWould you mind getting them?\nI can definitely do that.\nGreat.\nThanks.\nNumber three.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2aec2ee4ffa396e6cef6f166c3c03b4cdb9be8a096a893b44d3ea276af207859",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 86,
+        "legacy_word_count": 93,
+        "length_ratio": 0.925,
+        "legacy_coverage": 0.839
+      }
+    },
+    "transcript_translation": "Tariq，你能帮我处理本周的瓷砖切割工坊吗？\n当然可以。\n你需要什么材料？\n嗯，这是系列中的第三个工坊，我们会进行复杂的切割。\n你知道，涉及到管道安装等角落的处理。\n哦，这是一个高级工坊啊。\n我能怎么帮您？\n在储藏室里有一些旧瓷砖箱子，供参与者练习使用。\n您介意去拿一下吗？\n我肯定可以做到。\n太好了。\n谢谢。\n第三题。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f378302c6a973a4adc4ad99f51060ca2e1c0ac60accfb4e8c08da5056dcafa11"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "A",
       "question": "What will the woman demonstrate during the workshop?",
-      "answer_explain": "原文依据：听力原文中提到“aw Well, this is the third workshop of the series, and we'll”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Cutting tile）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） demonstrate during the workshop?",
+      "answer_explain": "正确答案：A（Cutting tile）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) demonstrate during the workshop?",
       "choice_translations": [
-        "A：Cutting tile",
-        "B：Painting cabinets",
-        "C：Replacing door locks",
-        "D：Fixing plumbing leaks"
+        "A:Cutting tile",
+        "B:Painting cabinets",
+        "C:Replacing door locks",
+        "D:Fixing plumbing leaks"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：workshop?",
+      "evidence": "参考听力原文：“Tariq, can you help me with this week's tile cutting workshop?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：workshop?",
+        "evidence": "参考听力原文：“Tariq, can you help me with this week's tile cutting workshop?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“aw Well, this is the third workshop of the series, and we'll”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Cutting tile）。"
+        "analysis": "正确答案：A（Cutting tile）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "C",
       "question": "What does the man say about the workshop?",
-      "answer_explain": "原文依据：听力原文中提到“o That's an advanced workshop.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It addresses advanced skills.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） say about the workshop?",
+      "answer_explain": "正确答案：C（It addresses advanced skills.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) say about the workshop?",
       "choice_translations": [
-        "A：It needs to be rescheduled.",
-        "B：It will have a lot of attendees.",
-        "C：It addresses advanced skills.",
-        "D：It is the first one he has helped with."
+        "A:It needs to be rescheduled.",
+        "B:It will have a lot of attendees.",
+        "C:It addresses advanced skills.",
+        "D:It is the first one he has helped with."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 2 段：workshop?",
+      "evidence": "参考听力原文：“Oh, that's an advanced workshop.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 2 段：workshop?",
+        "evidence": "参考听力原文：“Oh, that's an advanced workshop.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“o That's an advanced workshop.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It addresses advanced skills.）。"
+        "analysis": "正确答案：C（It addresses advanced skills.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "B",
       "question": "Where will the man go next?",
-      "answer_explain": "原文依据：听力原文中提到“eW oln the storage room, there are boxes of old tiles we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To a storage area）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） will the man（男士） go next?",
+      "answer_explain": "正确答案：B（To a storage area）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) will the man(男士) go next?",
       "choice_translations": [
-        "A：To a hardware shop",
-        "B：To a storage area",
-        "C：To a supervisor's office（办公室）",
-        "D：To a customer（顾客）'s home"
+        "A:To a hardware shop",
+        "B:To a storage area",
+        "C:To a supervisor's office(办公室)",
+        "D:To a customer(顾客)'s home"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：aw Tariq, Ocan you help me with this week's tile-cutting",
+      "evidence": "参考听力原文：“In the storage room, there are boxes of old tiles we can use for attendees to practice with.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：aw Tariq, Ocan you help me with this week's tile-cutting",
+        "evidence": "参考听力原文：“In the storage room, there are boxes of old tiles we can use for attendees to practice with.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“eW oln the storage room, there are boxes of old tiles we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To a storage area）。"
+        "analysis": "正确答案：B（To a storage area）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

@@ -39,9 +39,32 @@
       "asset_key": "official-9-test-1/audio/part4/q095-097.mp3",
       "exists": true
     },
-    "transcript": "information and ticket.\nGood morning, everyone. Ol'm sorry our tour's getting off to\nt #p-0800\na late start. ®We have some tour group members staying\nat hotels on the other side of town, and they'll be arriving\nat any moment. To help speed everything along,\nplease\nstart lining up single file so we can board the bus as soon as\nnd. 57,\neveryone arrives. Oh, and someone asked what the group\nnumber on the tickets means. ® You can disregard that-it's\npart of an old system of ours.\nStreki Tours\nPalermo City Tour\nThursday, 23 November\nB AB\nTour #: 1092\nS: 1092\nBus #: 252\nX7m:252\nGroup #: 4\nEm (0\nSA",
-    "transcript_translation": "中文辅助（离线预处理）：information（信息） and ticket.\nGood morning, everyone.\nOl'm sorry our tour's getting off to\nt #p-0800\na late start.\n®We have some tour group members staying\nat hotels on the other side of town, and they'll be arriving\nat any moment.\nTo help speed everything along,\nplease（请）\nstart lining up single file so we can board the bus as soon as\nnd.\n57,\neveryone arrives.\nOh, and someone asked what（什么） the group\nnumber on the tickets means.\n® You can disregard that-it's\npart of an old system of ours.\nStreki Tours\nPalermo City Tour\nThursday, 23 November\nB AB\nTour #: 1092\nS: 1092\nBus #: 252\nX7m:252\nGroup #: 4\nEm (0\nSA",
-    "content_translation": "中文辅助（离线预处理）：information（信息） and ticket.\nGood morning, everyone.\nOl'm sorry our tour's getting off to\nt #p-0800\na late start.\n®We have some tour group members staying\nat hotels on the other side of town, and they'll be arriving\nat any moment.\nTo help speed everything along,\nplease（请）\nstart lining up single file so we can board the bus as soon as\nnd.\n57,\neveryone arrives.\nOh, and someone asked what（什么） the group\nnumber on the tickets means.\n® You can disregard that-it's\npart of an old system of ours.\nStreki Tours\nPalermo City Tour\nThursday, 23 November\nB AB\nTour #: 1092\nS: 1092\nBus #: 252\nX7m:252\nGroup #: 4\nEm (0\nSA"
+    "transcript": "Good morning, everyone.\nI'm sorry our tour is getting off to a late start.\nWe have some tour group members staying at hotels on the other side of town, and they'll be arriving at any moment.\nTo help speed everything along, please start lining up single file so we can board the bus as soon as everyone arrives.\nOh, and someone asked what the group number on the tickets means.\nYou can disregard that.\nIt's part of an old system of ours.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7eec09e9b303abd6de5e52e280a2189ed857b5244b6ef528c7639c3a83e22740",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 85,
+        "legacy_word_count": 99,
+        "length_ratio": 0.859,
+        "legacy_coverage": 0.848
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "manual/audio_context",
+      "items": 3
+    },
+    "transcript_translation": "大家早上好。\n很抱歉我们的游览开始得有点晚。\n我们有一些旅游团成员住在镇子的另一边酒店，他们随时都会到达。\n为了加快一切进程，请排成单列等待，这样等所有人到齐后我们就可以上巴士了。\n哦，有人问票上的组号是什么意思。\n您可以忽略这一点。\n这是我们一个旧系统的一部分。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "73b3555ed0c3e9c69f7a01cffc8ce9a13c50100f0bbbd07a75a22e24464844b1"
+    }
   },
   "items": [
     {
@@ -53,7 +76,7 @@
       ],
       "answer": "C",
       "question": "Why has a tour been delayed?",
-      "answer_explain": "原文依据：听力原文中提到“®We have some tour group members staying”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some members of the group are late.）。",
+      "answer_explain": "正确答案：C（Some members of the group are late.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_translation": "中文辅助（离线预处理）：Why（为什么） has a tour been delayed?",
       "choice_translations": [
         "A：A ticket reader is not working.",
@@ -62,14 +85,14 @@
         "D：Some bad weather is passing through."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：information and ticket.",
+      "evidence": "参考听力原文：“We have some tour group members staying at hotels on the other side of town, and they'll be arriving at any moment.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：information and ticket.",
+        "evidence": "参考听力原文：“We have some tour group members staying at hotels on the other side of town, and they'll be arriving at any moment.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®We have some tour group members staying”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some members of the group are late.）。"
+        "analysis": "正确答案：C（Some members of the group are late.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 95,
       "priority": {
@@ -105,7 +128,7 @@
       ],
       "answer": "B",
       "question": "What are the listeners asked to do?",
-      "answer_explain": "原文依据：听力原文中提到“Oh, and someone asked what the group”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Form a line）。",
+      "answer_explain": "正确答案：B（Form a line）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_translation": "中文辅助（离线预处理）：What（什么） are the listeners asked to do?",
       "choice_translations": [
         "A：Show a confirmation e-mail",
@@ -114,14 +137,14 @@
         "D：Choose a meal"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：everyone arrives. Oh, and someone asked what the group",
+      "evidence": "参考听力原文：“Oh, and someone asked what the group number on the tickets means.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：everyone arrives. Oh, and someone asked what the group",
+        "evidence": "参考听力原文：“Oh, and someone asked what the group number on the tickets means.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Oh, and someone asked what the group”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Form a line）。"
+        "analysis": "正确答案：B（Form a line）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 96,
       "priority": {
@@ -150,30 +173,30 @@
     },
     {
       "choices": [
-        "23 ОПК",
+        "23",
         "1092",
         "252",
         "4"
       ],
       "answer": "D",
-      "question": "Look at the graphic. Which number does 2931,01 the speaker refer to?",
-      "answer_explain": "原文依据：听力原文中提到“number on the tickets means.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（4）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich number does 2931,01 the speaker（说话者） refer to?",
+      "question": "Look at the graphic. Which number does the speaker refer to?",
+      "answer_explain": "正确答案：D（4）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "请看图表。说话者指的是哪个号码？",
       "choice_translations": [
-        "A：23 ОПК",
+        "A：23",
         "B：1092",
         "C：252",
         "D：4"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：number on the tickets means. ® You can disregard that-it's",
+      "evidence": "参考听力原文：“Oh, and someone asked what the group number on the tickets means.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：number on the tickets means. ® You can disregard that-it's",
+        "evidence": "参考听力原文：“Oh, and someone asked what the group number on the tickets means.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“number on the tickets means.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（4）。"
+        "analysis": "正确答案：D（4）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 97,
       "priority": {

@@ -27,14 +27,34 @@
       "asset_key": "official-12-test-1/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：What（什么） was the editor's feedback on our first draft?",
-    "content_translation": "中文辅助（离线预处理）：What（什么） was the editor's feedback on our first draft?"
+    "transcript": "What was the editor's feedback on our first draft?\nA. She's out of the office this week.\nB. I prefer a larger desk.\nC. The September issue.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a29bf10f80b8232ec11a9fe91e0b849299cd3f6a8d8f03384e942be22df3eab5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "编辑对我们的初稿有什么反馈？\nA. 她这周不在办公室。\nB. 我更喜欢一张更大的桌子。\nC. 九月份的刊物。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "442e5368e79d90f14c6fcdf95632baf5f4b2099231484bafb902ab32043a275e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "She's out of the office this week.",
-        "I'd prefer a larger desk.",
+        "I prefer a larger desk.",
         "The September issue."
       ],
       "answer": "A",
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“What was the editor's feedback on our first draft?”，自然应答是“She's out of the office this week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（She's out of the office this week.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） was the editor's feedback on our first draft?",
+      "question_translation": "编辑对我们的初稿有什么反馈?",
       "choice_translations": [
-        "A：She's out of the office（办公室） this week.",
-        "B：I'd prefer a larger desk.",
-        "C：The September issue."
+        "A：她这周不在办公室。",
+        "B：我更喜欢一张更大的桌子。",
+        "C：九月份的刊物。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：What was the editor's feedback on our first draft?",

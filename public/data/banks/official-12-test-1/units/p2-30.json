@@ -28,14 +28,34 @@
       "asset_key": "official-12-test-1/audio/part2/q030.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：The gym is supposed to be open today, isn't it?",
-    "content_translation": "中文辅助（离线预处理）：The gym is supposed to be open today, isn't it?"
+    "transcript": "The gym is supposed to be open today, isn't it?\nA. I would take a different route.\nB. Okay, I'll see you then.\nC. It looks kind of empty.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a6b1d1caef64e02f775b7c80e3f23f8d7526922e9ee44539bc3570355ab652d1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q030.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "健身房今天应该开，对吧？\nA. 我会走不同的路线。\nB. 好的，那我待会儿见。\nC. 它看起来有点空。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "069016712d6712bec711c164204fded29785ace3b2fe3bbf32b3ae7f7eecdc9d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "I would take a different route.",
-        "OK, I'll see you then.",
+        "Okay, I'll see you then.",
         "It looks kind of empty."
       ],
       "answer": "C",
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“The gym is supposed to be open today, isn't it?”，自然应答是“It looks kind of empty.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（It looks kind of empty.）。",
-      "question_translation": "中文辅助（离线预处理）：The gym is supposed to be open today, isn't it?",
+      "question_translation": "健身房今天应该开,对吧?",
       "choice_translations": [
-        "A：I would take a different route.",
-        "B：OK, I'll see you then.",
-        "C：It looks kind of empty."
+        "A：我会走不同的路线。",
+        "B：好的,那我待会儿见。",
+        "C：它看起来有点空。"
       ],
       "question_type": "否定 / 反意疑问句",
       "evidence": "参考原文第 1 段：The gym is supposed to be open today, isn't it?",

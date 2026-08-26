@@ -28,8 +28,28 @@
       "asset_key": "official-8-test-1/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：EK",
-    "content_translation": "中文辅助（离线预处理）：EK"
+    "transcript": "Where should we advertise for more volunteers?\nA. Because I used to work there.\nB. Every Thursday at noon.\nC. The positions have all been filled.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8b7a3e4d20579953aaf56084447e546945f127a3939ed6ee7b87fdf688f8aaec",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "我们应该在哪里宣传以招募更多志愿者？\nA. 因为我以前在那里工作过。\nB. 每周四中午。\nC. 这些职位都已填满。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7434161629d644215cc11138ea3b1583d081b433ac4ec13cb9b6d224d25b6135"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "The positions have all been filled."
       ],
       "answer": "C",
-      "question": "EK",
+      "question": "Where should we advertise for more volunteers?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“EK”，自然应答是“The positions have all been filled.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The positions have all been filled.）。",
-      "question_translation": "中文辅助（离线预处理）：EK",
+      "answer_explain": "原文依据：问句或陈述是“Where should we advertise for more volunteers?”，自然应答是“The positions have all been filled.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The positions have all been filled.）。",
+      "question_translation": "我们应该在哪里宣传以招募更多志愿者?",
       "choice_translations": [
-        "A：Because I used to work（工作） there.",
-        "B：Every Thursday at noon.",
-        "C：The positions have all been filled."
+        "A：因为我以前在那里工作过。",
+        "B：每周四中午。",
+        "C：这些职位都已填满。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：EK",
+      "evidence": "参考原文第 1 段：Where should we advertise for more volunteers?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：EK",
+        "evidence": "参考原文第 1 段：Where should we advertise for more volunteers?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“EK”，自然应答是“The positions have all been filled.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The positions have all been filled.）。"
+        "analysis": "原文依据：问句或陈述是“Where should we advertise for more volunteers?”，自然应答是“The positions have all been filled.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The positions have all been filled.）。"
       },
       "item_id": 26,
       "priority": {

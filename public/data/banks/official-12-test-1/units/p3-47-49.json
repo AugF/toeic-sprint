@@ -40,9 +40,31 @@
       "asset_key": "official-12-test-1/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "lđ\nBм Sushma, Ol'm working on a marketing project now. I'm\nSushma. #4\ncreating an e-mail about the upcoming seasonal sale\non our laptops, tablet computers, and smartphones for\nour existing customers.\nEw And you'd like feedback on the e-mail?\nNo. But el've run into a different problem. Ol can't\naccess the customer database from my computer.\nEw You know, Narumi had a similar problem yesterday.\nNarun\nm Hmm-ol'll see if she's around.\nw Oh, oa few minutes ago she asked me if I wanted to\njoin her for lunch in the break room. ® She may be there.\nGim Great. © Thanks for letting me know.",
-    "transcript_translation": "中文辅助（离线预处理）：lđ\nBм Sushma, Ol'm working on a marketing project now.\nI'm\nSushma.\n#4\ncreating an e-mail about the upcoming seasonal sale\non our laptops, tablet computers, and smartphones for\nour existing customers.\nEw And you'd like feedback on the e-mail?\nNo.\nBut el've run into a different problem.\nOl can't\naccess the customer（顾客） database from my computer.\nEw You know, Narumi had a similar problem yesterday.\nNarun\nm Hmm-ol'll see if she's around.\nw Oh, oa few minutes ago she asked me if I wanted to\njoin her for lunch in the break room.\n® She may be there.\nGim Great.\n© Thanks for letting me know.",
-    "content_translation": "中文辅助（离线预处理）：lđ\nBм Sushma, Ol'm working on a marketing project now.\nI'm\nSushma.\n#4\ncreating an e-mail about the upcoming seasonal sale\non our laptops, tablet computers, and smartphones for\nour existing customers.\nEw And you'd like feedback on the e-mail?\nNo.\nBut el've run into a different problem.\nOl can't\naccess the customer（顾客） database from my computer.\nEw You know, Narumi had a similar problem yesterday.\nNarun\nm Hmm-ol'll see if she's around.\nw Oh, oa few minutes ago she asked me if I wanted to\njoin her for lunch in the break room.\n® She may be there.\nGim Great.\n© Thanks for letting me know."
+    "transcript": "Sushma, I'm working on a marketing project now.\nI'm creating an email about the upcoming seasonal sale on our laptops, tablet computers, and smartphones for our existing customers.\nAnd you'd like feedback on the email?\nNo, but I've run into a different problem.\nI can't access the customer database from my computer.\nYou know, Nagumi had a similar problem yesterday.\nHmm.\nI'll see if she's around.\nOh, a few minutes ago she asked me if I wanted to join her for lunch in the break room.\nShe may be there.\nGreat.\nThanks for letting me know.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6cbbdec00734583ea99d831b37c1a55081171dbd96a738d967960b082daf59d2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 96,
+        "legacy_word_count": 102,
+        "length_ratio": 0.941,
+        "legacy_coverage": 0.843
+      }
+    },
+    "transcript_translation": "Sushma，我现在正在做一个营销项目。\n我正在为我们现有的客户撰写一封关于笔记本电脑、平板电脑和智能手机即将到来的季节性促销活动的电子邮件。\n你想要对这封邮件提供反馈吗？\n不，但我遇到了一个不同的问题。\n我无法从我的电脑上访问客户数据库。\n你知道，Nagumi昨天也遇到过类似的问题。\n嗯。\n我看看她是否在附近。\n哦，几分钟前她问我想不想和她一起去休息室吃午饭。\n她可能在那里。\n太好了。\n谢谢你告诉我。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "286af6735c628f3be3c584ac06283b54abcf08a2ab6fc2373a49a44a0ff9667c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/qwen3-vl:4b+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,24 +75,24 @@
         "A commercial script"
       ],
       "answer": "A",
-      "question": "What does the man say he is working",
-      "answer_explain": "原文依据：听力原文中提到“Bм Sushma, Ol'm working on a marketing project now.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A marketing project）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） say he is working",
+      "question": "What does the man say he is working on?",
+      "answer_explain": "正确答案：A（A marketing project）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) say he is working",
       "choice_translations": [
-        "A：A marketing project",
-        "B：A customer（顾客） refund",
-        "C：A software update",
-        "D：A commercial script"
+        "A:A marketing project",
+        "B:A customer(顾客) refund",
+        "C:A software update",
+        "D:A commercial script"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：Bм Sushma, Ol'm working on a marketing project now. I'm",
+      "evidence": "参考听力原文：“Sushma, I'm working on a marketing project now.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：Bм Sushma, Ol'm working on a marketing project now. I'm",
+        "evidence": "参考听力原文：“Sushma, I'm working on a marketing project now.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Bм Sushma, Ol'm working on a marketing project now.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A marketing project）。"
+        "analysis": "正确答案：A（A marketing project）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -100,30 +122,30 @@
     },
     {
       "choices": [
-        "Narumi needs additional training.",
-        "Narumi can assist theman.",
-        "An Internet providershould be replaced.",
+        "Nagumi needs additional training.",
+        "Nagumi can assist the man.",
+        "An Internet provider should be replaced.",
         "A work report is incorrect."
       ],
       "answer": "B",
-      "question": "What does the woman imply when she says, \"Narumi had a similar problem yesterday\"?",
-      "answer_explain": "原文依据：听力原文中提到“Ew You know, Narumi had a similar problem yesterday.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Narumi can assist theman.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） imply when（何时） she says, \"Narumi had a similar problem yesterday\"?",
+      "question": "What does the woman imply when she says, \"Nagumi had a similar problem yesterday\"?",
+      "answer_explain": "正确答案：B（Nagumi can assist the man.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) imply when(何时) she says, \"Narumi had a similar problem yesterday\"?",
       "choice_translations": [
-        "A：Narumi needs additional training.",
-        "B：Narumi can assist theman.",
-        "C：An Internet providershould be replaced.",
-        "D：A work（工作） report is incorrect."
+        "A:Nagumi needs additional training.",
+        "B:Nagumi can assist the man.",
+        "C:An Internet provider should be replaced.",
+        "D:A work(工作) report is incorrect."
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 8 段：No. But el've run into a different problem. Ol can't",
+      "evidence": "参考听力原文：“You know, Nagumi had a similar problem yesterday.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 8 段：No. But el've run into a different problem. Ol can't",
+        "evidence": "参考听力原文：“You know, Nagumi had a similar problem yesterday.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew You know, Narumi had a similar problem yesterday.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Narumi can assist theman.）。"
+        "analysis": "正确答案：B（Nagumi can assist the man.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "C",
       "question": "Where will the man most likely go next?",
-      "answer_explain": "原文依据：听力原文中提到“join her for lunch in the break room.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To the break room）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） will the man（男士） most likely（最可能） go next?",
+      "answer_explain": "正确答案：C（To the break room）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) will the man(男士) most likely(最可能) go next?",
       "choice_translations": [
-        "A：To a storage area",
-        "B：To a supervisor's office（办公室）",
-        "C：To the break room",
-        "D：To the cafeteria"
+        "A:To a storage area",
+        "B:To a supervisor's office(办公室)",
+        "C:To the break room",
+        "D:To the cafeteria"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：lđ",
+      "evidence": "参考听力原文：“Oh, a few minutes ago she asked me if I wanted to join her for lunch in the break room.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：lđ",
+        "evidence": "参考听力原文：“Oh, a few minutes ago she asked me if I wanted to join her for lunch in the break room.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“join her for lunch in the break room.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To the break room）。"
+        "analysis": "正确答案：C（To the break room）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

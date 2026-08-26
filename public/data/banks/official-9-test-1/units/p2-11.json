@@ -26,14 +26,34 @@
       "asset_key": "official-9-test-1/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：When（何时） will the new chairs be delivered?",
-    "content_translation": "中文辅助（离线预处理）：When（何时） will the new chairs be delivered?"
+    "transcript": "When will the new chairs be delivered?\nA. The arms are adjustable.\nB. By 3 o'clock on Friday.\nC. The desks are very large.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fd0487bb58d5f8867cbdb337340e466d014c4b7b7c4a257301268685387efbc9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "新椅子什么时候送达？\nA. 扶手是可调节的。\nB. 周五下午三点前。\nC. 桌子非常大。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b9a69ec785f6fa0037066a2d72d1cabe8423ce51d59fe95dc4f9effb78c8e9f4"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "The arms are adjustable.",
-        "By three o'clock on Friday.",
+        "By 3 o'clock on Friday.",
         "The desks are very large."
       ],
       "answer": "B",
@@ -41,12 +61,12 @@
       "difficulty": "easy",
       "topic": "时间询问",
       "keywords": "when time response",
-      "answer_explain": "原文依据：问句或陈述是“When will the new chairs be delivered?”，自然应答是“By three o'clock on Friday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（By three o'clock on Friday.）。",
-      "question_translation": "中文辅助（离线预处理）：When（何时） will the new chairs be delivered?",
+      "answer_explain": "原文依据：问句或陈述是“When will the new chairs be delivered?”，自然应答是“By 3 o'clock on Friday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（By 3 o'clock on Friday.）。",
+      "question_translation": "新椅子什么时候送达?",
       "choice_translations": [
-        "A：The arms are adjustable.",
-        "B：By three o'clock on Friday.",
-        "C：The desks are very large."
+        "A：扶手是可调节的。",
+        "B：周五下午三点前。",
+        "C：桌子非常大。"
       ],
       "question_type": "时间疑问句",
       "evidence": "参考原文第 1 段：When will the new chairs be delivered?",
@@ -57,7 +77,7 @@
         "question_type": "时间疑问句",
         "evidence": "参考原文第 1 段：When will the new chairs be delivered?",
         "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“When will the new chairs be delivered?”，自然应答是“By three o'clock on Friday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（By three o'clock on Friday.）。"
+        "analysis": "原文依据：问句或陈述是“When will the new chairs be delivered?”，自然应答是“By 3 o'clock on Friday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（By 3 o'clock on Friday.）。"
       },
       "item_id": 11,
       "priority": {

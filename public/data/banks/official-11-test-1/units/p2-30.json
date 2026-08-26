@@ -42,8 +42,28 @@
       "asset_key": "official-11-test-1/audio/part2/q030.mp3",
       "exists": true
     },
-    "transcript_translation": "你会在今天还是明天参加必修培训课？\nA：他往往会同意我的看法。\nB：我今天要陪一位客户。\nC：拟议议程的副本。",
-    "content_translation": "本段听力围绕“选择问句”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Will you be attending the mandatory training session today or tomorrow?\nA. He tends to agree with me.\nB. I'm spending today with a client.\nC. Copies of the proposed agenda.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ef88140bf0a478abc07f17593ebb653a1ba5e1fbaa97d011c86815cdc54354f9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q030.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "你今天还是明天会参加强制性培训课程？\nA. 他倾向于同意我。\nB. 我今天和一位客户在一起。\nC. 拟议议程的副本。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4451ade2a1c6f0811efa7bfc519d07f56807de842551197722a4fd65f08e2201"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -61,8 +81,8 @@
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段第 1 句：Will you be attending the mandatory training session today or tomorrow?",
       "choice_translations": [
-        "A：他往往会同意我的看法。",
-        "B：我今天要陪一位客户。",
+        "A：他倾向于同意我。",
+        "B：我今天和一位客户在一起。",
         "C：拟议议程的副本。"
       ],
       "response_style": "可直接回答，也常用补充信息间接回答",
@@ -74,7 +94,7 @@
         "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：选择问今天还是明天参加培训，答句说今天要陪客户。 选择理由：B排除了 today，间接表明会选 tomorrow；A和C没有回应日期选择。正确答案：B（I'm spending today with a client.）。"
       },
-      "question_translation": "你会在今天还是明天参加必修培训课？",
+      "question_translation": "你今天还是明天会参加强制性培训课程?",
       "item_id": 30,
       "priority": {
         "level": "P2",

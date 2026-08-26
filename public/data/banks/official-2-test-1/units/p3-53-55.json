@@ -40,9 +40,31 @@
       "asset_key": "official-2-test-1/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "Excuse me, do you work here? ''m interestec\nthe cameras on display behind the counter—it’\nright.\nll « Oh, you mean this one—the Balani X13?\nYes, that's it.\nI v Just so you know, @ the battery that's included\nlast very long—® you might want to buy an ext\nyou're planning to use the camera a lot. A rech:\nbattery only costs about fifteen dollars.\nThanks, but I’m on a tight budget, so I'll just us\nthat’s included.",
-    "transcript_translation": "打扰一下，您在这里工作吗？我对柜台后面展示的相机很感兴趣——对吗。\n哦，您指的是这款——Balani X13 吗？是的，就是它。\n只是提醒您，附带的电池续航时间很长——如果您打算经常使用这台相机，您可能想买一个额外的电池。只花大约十五美元。\n谢谢，但我预算有限，我就用自带的这个吧。",
-    "content_translation": "打扰一下，您在这里工作吗？我对柜台后面展示的相机很感兴趣——对吗。\n哦，您指的是这款——Balani X13 吗？是的，就是它。\n只是提醒您，附带的电池续航时间很长——如果您打算经常使用这台相机，您可能想买一个额外的电池。只花大约十五美元。\n谢谢，但我预算有限，我就用自带的这个吧。"
+    "transcript": "Excuse me, do you work here?\nI'm interested in one of the cameras on display behind the counter.\nIt's on your right.\nOh, you mean this one?\nThe Balani X13?\nYes, that's it.\nJust so you know, the battery that's included doesn't last very long.\nYou might want to buy an extra one if you're planning to use the camera a lot.\nA rechargeable battery only costs about $15.\nThanks, but I'm on a tight budget, so I'll just use the one that's included.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "967fc019d42d2c0fa4543891edd86776bd5b56f84a5e6e1d6da1cc09500cd9c9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-1/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 83,
+        "legacy_word_count": 76,
+        "length_ratio": 1.092,
+        "legacy_coverage": 0.855
+      }
+    },
+    "transcript_translation": "Excuse me, do you work here?\n我能问一下，您在这里工作吗？\nI'm interested in one of the cameras on display behind the counter.\n我对柜台后面展示的一台相机感兴趣。\nIt's on your right.\n它在您的右边。\nOh, you mean this one?\n哦，您指的是这台吗？\nThe Balani X13?\nBalani X13？\nYes, that's it.\n是的，就是它。\nJust so you know, the battery that's included doesn't last very long.\n只是提醒您，附带的电池续航时间不太长。\nYou might want to buy an extra one if you're planning to use the camera a lot.\n如果您计划经常使用这台相机，您可能需要购买额外的电池。\nA rechargeable battery only costs about $15.\n一个可充电电池只花大约15美元。\nThanks, but I'm on a tight budget, so I'll just use the one that's included.",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c756651f3384e7907aebf51e28287f48e46e5416de26ae611e4e890ad3576c3c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "B",
       "question": "What does the woman mean when she says, sing? “Excuse me, do you work here”?",
-      "answer_explain": "原文依据：听力原文中提到“ll « Oh, you mean this one—the Balani X13?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（She wants to get the man’s assistance.）。",
-      "question_translation": "女士说“打扰一下，您在这里工作吗？”是什么意思？",
+      "answer_explain": "正确答案：B（She wants to get the man’s assistance.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士说“打扰一下,您在这里工作吗?”是什么意思?",
       "choice_translations": [
-        "A：她希望男士离开。",
-        "B：她需要男士的帮助。",
-        "C：她请求提前离开。",
-        "D：她想确认男士的身份。"
+        "A:她希望男士离开。",
+        "B:她需要男士的帮助。",
+        "C:她请求提前离开。",
+        "D:她想确认男士的身份。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Excuse me, do you work here? ''m interestec",
+      "evidence": "参考听力原文：“Excuse me, do you work here?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Excuse me, do you work here? ''m interestec",
+        "evidence": "参考听力原文：“Excuse me, do you work here?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“ll « Oh, you mean this one—the Balani X13?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（She wants to get the man’s assistance.）。"
+        "analysis": "正确答案：B（She wants to get the man’s assistance.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -100,30 +122,30 @@
     },
     {
       "choices": [
-        "Astore clerk",
-        "Amagazine journalist",
-        "Amuseum director",
-        "Aprofessional photographer"
+        "A store clerk",
+        "A magazine journalist",
+        "A museum director",
+        "A professional photographer"
       ],
       "answer": "A",
       "question": "Who most likely is the man?",
-      "answer_explain": "原文依据：听力原文中提到“I v Just so you know, @ the battery that's included”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Astore clerk）。",
-      "question_translation": "男士最可能是谁？",
+      "answer_explain": "正确答案：A（A store clerk）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士最可能是谁?",
       "choice_translations": [
-        "A：店员",
-        "B：杂志记者",
-        "C：博物馆馆长",
-        "D：专业摄影师"
+        "A:店员",
+        "B:杂志记者",
+        "C:博物馆馆长",
+        "D:专业摄影师"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Excuse me, do you work here? ''m interestec",
+      "evidence": "参考听力原文：“You might want to buy an extra one if you're planning to use the camera a lot.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Excuse me, do you work here? ''m interestec",
+        "evidence": "参考听力原文：“You might want to buy an extra one if you're planning to use the camera a lot.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“I v Just so you know, @ the battery that's included”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Astore clerk）。"
+        "analysis": "正确答案：A（A store clerk）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "D",
       "question": "What does the man say about the camera?",
-      "answer_explain": "原文依据：听力原文中提到“I v Just so you know, @ the battery that's included”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Its battery has a short life span.）。",
-      "question_translation": "男士对相机说了什么？",
+      "answer_explain": "正确答案：D（Its battery has a short life span.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士对相机说了什么?",
       "choice_translations": [
-        "A：操作很复杂。",
-        "B：它带有一个保护套。",
-        "C：它能拍出高质量的照片。",
-        "D：它的电池续航时间短。"
+        "A:操作很复杂。",
+        "B:它带有一个保护套。",
+        "C:它能拍出高质量的照片。",
+        "D:它的电池续航时间短。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：the cameras on display behind the counter—it’",
+      "evidence": "参考听力原文：“A rechargeable battery only costs about $15.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：the cameras on display behind the counter—it’",
+        "evidence": "参考听力原文：“A rechargeable battery only costs about $15.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“I v Just so you know, @ the battery that's included”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Its battery has a short life span.）。"
+        "analysis": "正确答案：D（Its battery has a short life span.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

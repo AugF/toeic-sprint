@@ -27,8 +27,28 @@
       "asset_key": "official-6-test-1/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "你看到当代艺术展了吗？\nA. 听到这个我很遗憾。\nB. Jane 是临时员工。\nC. 这家博物馆离我家挺远的。",
-    "content_translation": "你看到当代艺术展了吗？\nA. 听到这个我很遗憾。\nB. Jane 是临时员工。\nC. 这家博物馆离我家挺远的。"
+    "transcript": "Have you seen the contemporary art exhibit?\nA. I'm sorry to hear that.\nB. Jane's a temporary employee.\nC. The museum is pretty far from my house.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d4d848a6b45b72d4dca37022cb7948d662e74f62da251b95c55ebf138800a1c2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "你看到当代艺术展了吗？\nA. 很遗憾听到这个消息。\nB. 简是临时员工。\nC. 这家博物馆离我家挺远的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e0ad216dd0baf04c1880447bdab0e1eb8cc38060ce127f29d880565d914f6743"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,10 +63,10 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Have you seen the contemporary art exhibit?”，自然应答是“The museum is pretty far from my house.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The museum is pretty far from my house.）。",
-      "question_translation": "你看到当代艺术展了吗？",
+      "question_translation": "你看到当代艺术展了吗?",
       "choice_translations": [
-        "A：听到这个我很遗憾。",
-        "B：Jane 是临时员工。",
+        "A：很遗憾听到这个消息。",
+        "B：简是临时员工。",
         "C：这家博物馆离我家挺远的。"
       ],
       "question_type": "一般疑问句",

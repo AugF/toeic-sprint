@@ -31,8 +31,28 @@
       "asset_key": "official-6-test-1/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 这位男士正在调整他的眼镜。\nB. 这位男士正在穿跑鞋。\nC. 这位男士正在使用一台健身器材。\nD. 这位男士正在打开一台电视机。",
-    "content_translation": "A. 这位男士正在调整他的眼镜。\nB. 这位男士正在穿跑鞋。\nC. 这位男士正在使用一台健身器材。\nD. 这位男士正在打开一台电视机。"
+    "transcript": "A. The man's adjusting his glasses.\nB. The man's putting on running shoes.\nC. The man's using an exercise machine.\nD. The man's turning on a television.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3bcfdf86a90e93c6d5ae5bd7f60f20b5c9ad77c7b9647c4bc5699d61366ccb41",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 38
+      }
+    },
+    "transcript_translation": "A. 这名男士正在调整他的眼镜。\nB. 这名男士正在穿跑鞋。\nC. 这名男士正在使用健身器材。\nD. 这名男士正在打开电视机。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e7055a776e00a5993c2acd1a0c9a530e50e52c26f5fa93eafdd7412874d585cf"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“The man's using an exercise machine.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（The man's using an exercise machine.）。",
       "choice_translations": [
-        "A：这位男士正在调整他的眼镜。",
-        "B：这位男士正在穿跑鞋。",
-        "C：这位男士正在使用一台健身器材。",
-        "D：这位男士正在打开一台电视机。"
+        "A：这名男士正在调整他的眼镜。",
+        "B：这名男士正在穿跑鞋。",
+        "C：这名男士正在使用健身器材。",
+        "D：这名男士正在打开电视机。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-1/p1-4/4"
+      "item_key": "official-6-test-1/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

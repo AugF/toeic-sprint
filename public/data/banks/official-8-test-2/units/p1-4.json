@@ -32,8 +32,28 @@
       "asset_key": "official-8-test-2/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. Promotional posters are being attached to the wall.\nB. One of the shoppers is holding a freezer door open.\nC. Some groceries are being pushed in shopping carts.\nD. The shoppers are walking toward each other.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "126088b230ec5836697f4047343e1dade3d99ca6026d476af31fb4035bc73ce7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 48
+      }
+    },
+    "transcript_translation": "A. 宣传海报正贴在墙上。\nB. 一位购物者正扶着一个冰柜门打开。\nC. 一些杂货正在被推入购物车。\nD. 购物者们正走向彼此。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b90c800bf13f4f02f8401eaa5df000adc96b90a29cd0c77dfcc4cd331cfd36b4"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some groceries are being pushed in shopping carts.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Some groceries are being pushed in shopping carts.）。",
       "choice_translations": [
-        "A：Promotional posters are being attached to the wall.",
-        "B：One of the shoppers is holding a freezer door open.",
-        "C：Some groceries are being pushed in shopping carts.",
-        "D：The shoppers are walking toward each other."
+        "A：宣传海报正贴在墙上。",
+        "B：一位购物者正扶着一个冰柜门打开。",
+        "C：一些杂货正在被推入购物车。",
+        "D：购物者们正走向彼此。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-8-test-2/p1-4/4"
+      "item_key": "official-8-test-2/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -40,9 +40,32 @@
       "asset_key": "official-12-test-2/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "Hello and good morning. Olt's great to see so many people\nhere at the Overlook Community Center for our weekly\nhealth and wellness program. We have a treat for you today!\nOur special guest presenter is Susana Adachi, a yoga and\nmeditation expert. © You may not be familiar with her work,\nbut she has won multiple awards! OMs. Adachi is excited to\nb3 Susana\nshare with you her knowledge and insights about how yoga\ncan improve your life. •Now, as we prepare to begin the\nAdachi@hla\nprogram, please roll out your yoga mats in front of you.\nCORL!\nT. 20",
-    "transcript_translation": "中文辅助（离线预处理）：Hello and good morning.\nOlt's great to see so many people\nhere at the Overlook Community Center for our weekly\nhealth and wellness program.\nWe have a treat for you today!\nOur special guest presenter is Susana Adachi, a yoga and\nmeditation expert.\n© You may not be familiar with her work（工作）,\nbut she has won multiple awards!\nOMs.\nAdachi is excited to\nb3 Susana\nshare with you her knowledge and insights about how（如何） yoga\ncan improve your life.\n•Now, as we prepare to begin the\nAdachi@hla\nprogram, please（请） roll out your yoga mats in front of you.\nCORL!\nT.\n20",
-    "content_translation": "中文辅助（离线预处理）：Hello and good morning.\nOlt's great to see so many people\nhere at the Overlook Community Center for our weekly\nhealth and wellness program.\nWe have a treat for you today!\nOur special guest presenter is Susana Adachi, a yoga and\nmeditation expert.\n© You may not be familiar with her work（工作）,\nbut she has won multiple awards!\nOMs.\nAdachi is excited to\nb3 Susana\nshare with you her knowledge and insights about how（如何） yoga\ncan improve your life.\n•Now, as we prepare to begin the\nAdachi@hla\nprogram, please（请） roll out your yoga mats in front of you.\nCORL!\nT.\n20"
+    "transcript": "Hello and good morning.\nIt's great to see so many people here at the Overlook Community Center for our weekly health and wellness program.\nWe have a treat for you today.\nOur special guest presenter is Susanna Adachi, a yoga and meditation expert.\nYou may not be familiar with her work, but she has won multiple awards.\nMs. Adachi is excited to share with you her knowledge and insights about how yoga can improve your life.\nNow, as we prepare to begin the program, please roll out your yoga mats in front of you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0f02e8b9fa3a5cf476592323905979485f289729ced0b0716248793a53591b4a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 94,
+        "legacy_word_count": 99,
+        "length_ratio": 0.949,
+        "legacy_coverage": 0.929
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "早上好，大家早上好。\n很高兴看到这么多人在 Overlook Community Center 参加我们每周的健康与养生项目。\n今天我们为大家准备了特别环节。\n我们的特邀演讲嘉宾是 Susanna Adachi，一位瑜伽和冥想专家。\n您可能不熟悉她的工作，但她获得了多个奖项。\nAdachi 女士很高兴能分享她关于瑜伽如何改善生活的知识和见解与大家。\n现在，在我们开始项目之前，请将您的瑜伽垫铺在面前。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1c83eb8ac8b4b740a06394526c3813143015be06eacdccbb2e65c38a612ce8d2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "A",
       "question": "Where is the announcement being made?",
-      "answer_explain": "原文依据：听力原文中提到“here at the Overlook Community Center for our weekly”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（At a community center）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the announcement being made?",
+      "answer_explain": "正确答案：A（At a community center）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) is the announcement being made?",
       "choice_translations": [
-        "A：At a community center",
-        "B：At a doctor's office（办公室）",
-        "C：At a government building",
-        "D：At a health food company（公司）"
+        "A:At a community center",
+        "B:At a doctor's office(办公室)",
+        "C:At a government building",
+        "D:At a health food company(公司)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hello and good morning. Olt's great to see so many people",
+      "evidence": "参考听力原文：“It's great to see so many people here at the Overlook Community Center for our weekly health and wellness program.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hello and good morning. Olt's great to see so many people",
+        "evidence": "参考听力原文：“It's great to see so many people here at the Overlook Community Center for our weekly health and wellness program.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“here at the Overlook Community Center for our weekly”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（At a community center）。"
+        "analysis": "正确答案：A（At a community center）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "C",
       "question": "Why does the speaker say, \"she has won multiple awards\"?",
-      "answer_explain": "原文依据：听力原文中提到“here at the Overlook Community Center for our weekly”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To reassure the listeners）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"she has won multiple awards\"?",
+      "answer_explain": "正确答案：C（To reassure the listeners）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"she has won multiple awards\"?",
       "choice_translations": [
-        "A：To correct a mistake",
-        "B：To request confirmation",
-        "C：To reassure the listeners",
-        "D：To make a suggestion"
+        "A:To correct a mistake",
+        "B:To request confirmation",
+        "C:To reassure the listeners",
+        "D:To make a suggestion"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 6 段：but she has won multiple awards! OMs. Adachi is excited to",
+      "evidence": "参考听力原文：“You may not be familiar with her work, but she has won multiple awards.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 6 段：but she has won multiple awards! OMs. Adachi is excited to",
+        "evidence": "参考听力原文：“You may not be familiar with her work, but she has won multiple awards.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“here at the Overlook Community Center for our weekly”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To reassure the listeners）。"
+        "analysis": "正确答案：C（To reassure the listeners）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, what will the listeners do next?",
-      "answer_explain": "原文依据：听力原文中提到“program, please roll out your yoga mats in front of you.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Participate in a program）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） will the listeners do next?",
+      "answer_explain": "正确答案：B（Participate in a program）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) will the listeners do next?",
       "choice_translations": [
-        "A：Answer some questions",
-        "B：Participate in a program",
-        "C：Watch a sporting event",
-        "D：Shop for clothes"
+        "A:Answer some questions",
+        "B:Participate in a program",
+        "C:Watch a sporting event",
+        "D:Shop for clothes"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hello and good morning. Olt's great to see so many people",
+      "evidence": "参考听力原文：“It's great to see so many people here at the Overlook Community Center for our weekly health and wellness program.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hello and good morning. Olt's great to see so many people",
+        "evidence": "参考听力原文：“It's great to see so many people here at the Overlook Community Center for our weekly health and wellness program.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“program, please roll out your yoga mats in front of you.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Participate in a program）。"
+        "analysis": "正确答案：B（Participate in a program）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

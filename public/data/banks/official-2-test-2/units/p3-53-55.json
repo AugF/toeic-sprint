@@ -39,37 +39,59 @@
       "asset_key": "official-2-test-2/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "ll Hi, this is Kenneth Cook from the city tourism office. 0)\nphotos were recommended to me by a colleague. I’ve t\nlooking at your Web site, and I'd like to purchase your a\nphoto of the city. We'd like to use it in a tourist brochure\nGreat! | have a few different shots. @Can you tell me th\nnumber next to the photograph?\nll Sure, it's 8912.\nK. Um... you can go ahead and make a payment thro\nmy Web site, and then I'll send you the file with the\nhigh-resolution version of the picture.",
-    "transcript_translation": "您好，我是来自市旅游局的Kenneth Cook。我的一位同事向我推荐了您的照片。我在浏览您的网站，我想购买一张城市的照片。我们想把它用在旅游宣传册里。\n太好了！我有几张不同的照片。能告诉我照片旁边的编号吗？\n当然可以，是8912号。\n嗯……您可以直接通过我的网站付款，然后我会把高分辨率版本的图片文件发给您。",
-    "content_translation": "您好，我是来自市旅游局的Kenneth Cook。我的一位同事向我推荐了您的照片。我在浏览您的网站，我想购买一张城市的照片。我们想把它用在旅游宣传册里。\n太好了！我有几张不同的照片。能告诉我照片旁边的编号吗？\n当然可以，是8912号。\n嗯……您可以直接通过我的网站付款，然后我会把高分辨率版本的图片文件发给您。"
+    "transcript": "Hi, this is Kenneth Cook from the City Tourism Office.\nYour photos were recommended to me by a colleague.\nI've been looking at your website, and I'd like to purchase your aerial photo of the city.\nWe'd like to use it in a tourist brochure.\nGreat.\nI have a few different shots.\nCan you tell me the ID number next to the photograph?\nSure.\nIt's 8912.\nTrue.\nOkay.\nYou can go ahead and make a payment through my website, and then I'll send you the file with a high-resolution version of the picture.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8f40788ddaf9ce97ec865e1d05433b22889a23b6fe18fe381e6d02be8b43ed04",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 92,
+        "legacy_word_count": 92,
+        "length_ratio": 1,
+        "legacy_coverage": 0.859
+      }
+    },
+    "transcript_translation": "Hi, this is Kenneth Cook from the City Tourism Office.\n您好，我是来自City Tourism Office的Kenneth Cook。\nYour photos were recommended to me by a colleague.\n一位同事向我推荐了您的照片。\nI've been looking at your website, and I'd like to purchase your aerial photo of the city.\n我一直在看您的网站，我想购买您拍摄的城市航拍照片。\nWe'd like to use it in a tourist brochure.\n我们想把它用在旅游宣传册里。\nGreat.\n好的。\nI have a few different shots.\n我有几个不同角度的照片。\nCan you tell me the ID number next to the photograph?\n您能告诉我照片旁边的ID号码吗？\nSure.\n当然可以。\nIt's 8912.\n是8912。\nTrue.\n好的。\nOkay.\n您可以通过我的网站付款，然后我会给您发送一张高分辨率版本的图片文件。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "fe69c08a4a8014b5fcc6667a342cf64092c939a41c4fa87e68f342c4db05d405"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "A photographer",
-        "Acity official",
+        "A city official",
         "An airline representative",
         "A travel writer"
       ],
       "answer": "A",
       "question": "Who most likely is the woman?",
-      "answer_explain": "原文依据：听力原文中提到“my Web site, and then I'll send you the file with the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（A photographer）。",
-      "question_translation": "女士最可能是谁？",
+      "answer_explain": "正确答案：A（A photographer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士最可能是谁?",
       "choice_translations": [
-        "A：摄影师",
-        "B：市官员",
-        "C：航空公司代表",
-        "D：旅行作家"
+        "A:摄影师",
+        "B:市官员",
+        "C:航空公司代表",
+        "D:旅行作家"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：ll Hi, this is Kenneth Cook from the city tourism office. 0)",
+      "evidence": "参考听力原文：“You can go ahead and make a payment through my website, and then I'll send you the file with a high-resolution version of the picture.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：ll Hi, this is Kenneth Cook from the city tourism office. 0)",
+        "evidence": "参考听力原文：“You can go ahead and make a payment through my website, and then I'll send you the file with a high-resolution version of the picture.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“my Web site, and then I'll send you the file with the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（A photographer）。"
+        "analysis": "正确答案：A（A photographer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What information does the woman request?",
-      "answer_explain": "原文依据：听力原文中提到“number next to the photograph?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An identification number）。",
-      "question_translation": "女士要求什么信息？",
+      "answer_explain": "正确答案：B（An identification number）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士要求什么信息?",
       "choice_translations": [
-        "A：预算估算",
-        "B：识别号码",
-        "C：电子邮件地址",
-        "D：旅游行程表"
+        "A:预算估算",
+        "B:识别号码",
+        "C:电子邮件地址",
+        "D:旅游行程表"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：ll Hi, this is Kenneth Cook from the city tourism office. 0)",
+      "evidence": "参考听力原文：“Can you tell me the ID number next to the photograph?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：ll Hi, this is Kenneth Cook from the city tourism office. 0)",
+        "evidence": "参考听力原文：“Can you tell me the ID number next to the photograph?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“number next to the photograph?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An identification number）。"
+        "analysis": "正确答案：B（An identification number）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "B",
       "question": "What does the woman say she will do?",
-      "answer_explain": "原文依据：听力原文中提到“We'd like to use it in a tourist brochure”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Review a brochure）。",
-      "question_translation": "女士说她会做什么？",
+      "answer_explain": "正确答案：B（Review a brochure）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士说她会做什么?",
       "choice_translations": [
-        "A：更新发票",
-        "B：审阅宣传册",
-        "C：预订",
-        "D：发送文件"
+        "A:更新发票",
+        "B:审阅宣传册",
+        "C:预订",
+        "D:发送文件"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：ll Hi, this is Kenneth Cook from the city tourism office. 0)",
+      "evidence": "参考听力原文：“We'd like to use it in a tourist brochure.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：ll Hi, this is Kenneth Cook from the city tourism office. 0)",
+        "evidence": "参考听力原文：“We'd like to use it in a tourist brochure.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“We'd like to use it in a tourist brochure”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Review a brochure）。"
+        "analysis": "正确答案：B（Review a brochure）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

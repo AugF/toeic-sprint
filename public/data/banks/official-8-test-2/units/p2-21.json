@@ -28,14 +28,34 @@
       "asset_key": "official-8-test-2/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：I'd like to schedule（日程） my next appointment（预约）, please（请）.",
-    "content_translation": "中文辅助（离线预处理）：I'd like to schedule（日程） my next appointment（预约）, please（请）."
+    "transcript": "I'd like to schedule my next appointment, please.\nA. No, thank you. I can wait.\nB. Okay, does Monday work for you?\nC. It's next to the calendar.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9960ec0fcc385673ad972aeb4a408697177f0a916090c212a652b4302562640c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "我想安排我的下次预约，请。\nA. 不，谢谢。我可以等。\nB. 好的，周一对你方便吗？\nC. 它在日历旁边。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "545564c4226391724e33d7750c131a9c73b800c46a58c03a7805f2fc261f8a18"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "No, thank you, I can wait.",
-        "OK, does Monday work for you?",
+        "No, thank you. I can wait.",
+        "Okay, does Monday work for you?",
         "It's next to the calendar."
       ],
       "answer": "B",
@@ -43,12 +63,12 @@
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“I'd like to schedule my next appointment, please.”，自然应答是“OK, does Monday work for you?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（OK, does Monday work for you?）。",
-      "question_translation": "中文辅助（离线预处理）：I'd like to schedule（日程） my next appointment（预约）, please（请）.",
+      "answer_explain": "原文依据：问句或陈述是“I'd like to schedule my next appointment, please.”，自然应答是“Okay, does Monday work for you?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Okay, does Monday work for you?）。",
+      "question_translation": "我想安排我的下次预约,请。",
       "choice_translations": [
-        "A：No, thank（感谢） you, I can wait.",
-        "B：OK, does Monday work（工作） for you?",
-        "C：It's next to the calendar."
+        "A：不,谢谢。我可以等。",
+        "B：好的,周一对你方便吗?",
+        "C：它在日历旁边。"
       ],
       "question_type": "陈述 / 请求应答题",
       "evidence": "参考原文第 1 段：I'd like to schedule my next appointment, please.",
@@ -59,7 +79,7 @@
         "question_type": "陈述 / 请求应答题",
         "evidence": "参考原文第 1 段：I'd like to schedule my next appointment, please.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“I'd like to schedule my next appointment, please.”，自然应答是“OK, does Monday work for you?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（OK, does Monday work for you?）。"
+        "analysis": "原文依据：问句或陈述是“I'd like to schedule my next appointment, please.”，自然应答是“Okay, does Monday work for you?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Okay, does Monday work for you?）。"
       },
       "item_id": 21,
       "priority": {

@@ -40,9 +40,31 @@
       "asset_key": "official-5-test-2/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nM\nNext on the agenda for today's all-staff meeting is one\nof our new products, the Cut Pro Food Blender. ® This is a\nquick and innovative blender in terms of blade shape and\nnoise reduction. So our in-house design team deserves\na big thank-you for designing this product. Without a doubt,\nthey exceeded my expectations. I know that some of you\nare wondering how this product will do in stores. Although\nwe haven't sold a lot of units, keep in mind we released the\nmodel last week. So, I'll definitely keep you posted!",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nM\nNext on the agenda for today's all-staff meeting（会议） is one\nof our new products, the Cut Pro Food Blender.\n® This is a\nquick and innovative blender in terms of blade shape and\nnoise reduction.\nSo our in-house design team deserves\na big thank（感谢）-you for designing this product.\nWithout a doubt,\nthey exceeded my expectations.\nI know that some of you\nare wondering how（如何） this product will do in stores.\nAlthough\nwe haven't sold a lot of units, keep in mind we released the\nmodel last week.\nSo, I'll definitely keep you posted!",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nM\nNext on the agenda for today's all-staff meeting（会议） is one\nof our new products, the Cut Pro Food Blender.\n® This is a\nquick and innovative blender in terms of blade shape and\nnoise reduction.\nSo our in-house design team deserves\na big thank（感谢）-you for designing this product.\nWithout a doubt,\nthey exceeded my expectations.\nI know that some of you\nare wondering how（如何） this product will do in stores.\nAlthough\nwe haven't sold a lot of units, keep in mind we released the\nmodel last week.\nSo, I'll definitely keep you posted!"
+    "transcript": "Next on the agenda for today's all-staff meeting is one of our new products, the Cut Pro Food Blender.\nThis is a quick and innovative blender in terms of blade shape and noise reduction.\nSo our in-house design team deserves a big thank-you for designing this product.\nWithout a doubt, they exceeded my expectations.\nI know that some of you are wondering how this product will do in stores.\nAlthough we haven't sold a lot of units, keep in mind we released the model last week.\nSo I'll definitely keep you posted.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "8dd9a7b9486b8b8a32355bfe9be275af48cbbe1f597ea4e6ed71722ae1085c49",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 92,
+        "legacy_word_count": 93,
+        "length_ratio": 0.989,
+        "legacy_coverage": 0.989
+      }
+    },
+    "transcript_translation": "今天全员大会的下一个议程是我们的一款新产品——Cut Pro 食品搅拌机。\n这款搅拌机在刀片形状和降噪方面都是快速且创新的。\n所以我们内部设计团队为设计出这款产品值得一个大大的感谢。\n毫无疑问，他们超出了我的期望。\n我知道一些人正在想这个产品在商店里会表现如何。\n虽然我们没有卖出很多单位，但请记住，我们上周才发布了这款型号。\n所以我一定会随时向大家更新进展的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6887d0970d8be67380b309bf529460493162eb9b56956950f8cecde48a55cb55"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "D",
       "question": "What type of product is the speaker discussing?",
-      "answer_explain": "原文依据：听力原文中提到“of our new products, the Cut Pro Food Blender.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A blender）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of product is the speaker（说话者） discussing?",
+      "answer_explain": "正确答案：D（A blender）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of product is the speaker(说话者) discussing?",
       "choice_translations": [
-        "A：A coffee maker",
-        "B：A rice cooker",
-        "C：A microwave",
-        "D：A blender"
+        "A:A coffee maker",
+        "B:A rice cooker",
+        "C:A microwave",
+        "D:A blender"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：of our new products, the Cut Pro Food Blender. ® This is a",
+      "evidence": "参考听力原文：“Next on the agenda for today's all-staff meeting is one of our new products, the Cut Pro Food Blender.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：of our new products, the Cut Pro Food Blender. ® This is a",
+        "evidence": "参考听力原文：“Next on the agenda for today's all-staff meeting is one of our new products, the Cut Pro Food Blender.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“of our new products, the Cut Pro Food Blender.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A blender）。"
+        "analysis": "正确答案：D（A blender）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "C",
       "question": "Why does the speaker mention the design team?",
-      "answer_explain": "原文依据：听力原文中提到“quick and innovative blender in terms of blade shape and”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（They created an innovative product.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） mention the design team?",
+      "answer_explain": "正确答案：C（They created an innovative product.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) mention the design team?",
       "choice_translations": [
-        "A：They helped reduce costs.",
-        "B：They worked additional hours.",
-        "C：They created an innovative product.",
-        "D：They conducted a successful training"
+        "A:They helped reduce costs.",
+        "B:They worked additional hours.",
+        "C:They created an innovative product.",
+        "D:They conducted a successful training"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：noise reduction. So our in-house design team deserves",
+      "evidence": "参考听力原文：“So our in-house design team deserves a big thank-you for designing this product.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：noise reduction. So our in-house design team deserves",
+        "evidence": "参考听力原文：“So our in-house design team deserves a big thank-you for designing this product.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“quick and innovative blender in terms of blade shape and”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（They created an innovative product.）。"
+        "analysis": "正确答案：C（They created an innovative product.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker imply when he says, \"we released the model last week\"?",
-      "answer_explain": "原文依据：听力原文中提到“model last week.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（He anticipates that sales will improve.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） imply when（何时） he says, \"we released the model last week\"?",
+      "answer_explain": "正确答案：D（He anticipates that sales will improve.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) imply when(何时) he says, \"we released the model last week\"?",
       "choice_translations": [
-        "A：A product launch fell behind schedule（日程）.",
-        "B：A project will need additional staff.",
-        "C：He disagrees with a decision that was made.",
-        "D：He anticipates that sales will improve."
+        "A:A product launch fell behind schedule(日程).",
+        "B:A project will need additional staff.",
+        "C:He disagrees with a decision that was made.",
+        "D:He anticipates that sales will improve."
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 10 段：we haven't sold a lot of units, keep in mind we released the",
+      "evidence": "参考听力原文：“Although we haven't sold a lot of units, keep in mind we released the model last week.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 10 段：we haven't sold a lot of units, keep in mind we released the",
+        "evidence": "参考听力原文：“Although we haven't sold a lot of units, keep in mind we released the model last week.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“model last week.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（He anticipates that sales will improve.）。"
+        "analysis": "正确答案：D（He anticipates that sales will improve.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

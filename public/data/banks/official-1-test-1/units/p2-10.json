@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-1/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "&™ 你昨晚的舞蹈表演喜欢吗？ aE 你 ~2@, [IY ROWER [2I™\nA. 来自阿根廷的芭蕾舞团。 AED JEBATUSOICHL, Yesé\nB. DERF。\nC. 再待几个晚上。",
-    "content_translation": "&™ 你昨晚的舞蹈表演喜欢吗？ aE 你 ~2@, [IY ROWER [2I™\nA. 来自阿根廷的芭蕾舞团。 AED JEBATUSOICHL, Yesé\nB. DERF。\nC. 再待几个晚上。"
+    "transcript": "Did you enjoy the dance performance last night?\nA. A ballet company from Argentina.\nB. Yes, it was even better than I expected.\nC. A few more nights.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1280cef077918bac03c3378049bd917e14de497809cb779a231c4d5c331d8a19",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "你昨晚的舞蹈表演愉快吗？\nA. 一支来自阿根廷的芭蕾舞团。\nB. 是的，比我预期的还好。\nC. 再过几个晚上。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b17250c00118a0851a8fdc3f51f77af6d476ef139c8e2912e02115f3e9daa3b6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Aballet company from Argentina. AED JEBATUSOICHL, Yesé",
-        "DERF.",
-        "A few more nights. TLS"
+        "A ballet company from Argentina.",
+        "Yes, it was even better than I expected.",
+        "A few more nights."
       ],
       "answer": "B",
-      "question": "&™ Did you enjoy the dance penermanite last night? aE Did you ~2@, [IY ROWER [2I™",
+      "question": "Did you enjoy the dance performance last night?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“&™ Did you enjoy the dance penermanite last night? aE Did you ~2@, [IY ROWER [2I™”，自然应答是“DERF.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（DERF.）。",
+      "answer_explain": "原文依据：问句或陈述是“Did you enjoy the dance performance last night?”，自然应答是“Yes, it was even better than I expected.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, it was even better than I expected.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：&™ Did you enjoy the dance penermanite last night? aE Did you ~2@, [IY ROWER [2I™",
+      "evidence": "参考原文第 1 段：Did you enjoy the dance performance last night?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：&™ Did you enjoy the dance penermanite last night? aE Did you ~2@, [IY ROWER [2I™",
+        "evidence": "参考原文第 1 段：Did you enjoy the dance performance last night?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“&™ Did you enjoy the dance penermanite last night? aE Did you ~2@, [IY ROWER [2I™”，自然应答是“DERF.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（DERF.）。"
+        "analysis": "原文依据：问句或陈述是“Did you enjoy the dance performance last night?”，自然应答是“Yes, it was even better than I expected.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, it was even better than I expected.）。"
       },
-      "question_translation": "&™ 你昨晚的舞蹈表演喜欢吗？ aE 你 ~2@, [IY ROWER [2I™",
+      "question_translation": "你昨晚的舞蹈表演愉快吗?",
       "choice_translations": [
-        "A：来自阿根廷的芭蕾舞团。 AED JEBATUSOICHL, Yesé",
-        "B：DERF。",
-        "C：再待几个晚上。"
+        "A：一支来自阿根廷的芭蕾舞团。",
+        "B：是的,比我预期的还好。",
+        "C：再过几个晚上。"
       ],
       "item_id": 10,
       "priority": {

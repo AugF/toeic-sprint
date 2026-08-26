@@ -37,9 +37,31 @@
       "asset_key": "official-8-test-2/audio/part4/q095-097.mp3",
       "exists": true
     },
-    "transcript": "and airport departure board.\nAttention passengers taking flight JB2508 to San\nFrancisco. Passengers are now permitted to board.\nPlease note that once you're seated on the plane, there\nwill be a slight departure delay. ® The baggage handlers for\nthis flight need some extra time to finish loading luggage onto\nthe plane. Olf you need any assistance during your flight, I\nencourage you to approach the flight attendants. ® They'l be\nWET. ASLE\nhappy to assist you. Have a great flight.\nAirport Departure Board\nFlight\nDestination\nGate\nRO\nDA3049\nSacramento\nDA3049\nAA1637\nPhiladelphia\nAA1637\nJB2508\nSan Francisco\nJB2508\nSW6421\nWashington, D.C.\nSW6421\nC.",
-    "transcript_translation": "中文辅助（离线预处理）：and airport departure board.\nAttention passengers taking flight JB2508 to San\nFrancisco.\nPassengers are now permitted to board.\nPlease（请） note that once you're seated on the plane, there\nwill be a slight departure delay.\n® The baggage handlers for\nthis flight need some extra time to finish loading luggage onto\nthe plane.\nOlf you need any assistance during your flight, I\nencourage you to approach the flight attendants.\n® They'l be\nWET.\nASLE\nhappy to assist you.\nHave a great flight.\nAirport Departure Board\nFlight\nDestination\nGate\nRO\nDA3049\nSacramento\nDA3049\nAA1637\nPhiladelphia\nAA1637\nJB2508\nSan Francisco\nJB2508\nSW6421\nWashington, D.C.\nSW6421\nC.",
-    "content_translation": "中文辅助（离线预处理）：and airport departure board.\nAttention passengers taking flight JB2508 to San\nFrancisco.\nPassengers are now permitted to board.\nPlease（请） note that once you're seated on the plane, there\nwill be a slight departure delay.\n® The baggage handlers for\nthis flight need some extra time to finish loading luggage onto\nthe plane.\nOlf you need any assistance during your flight, I\nencourage you to approach the flight attendants.\n® They'l be\nWET.\nASLE\nhappy to assist you.\nHave a great flight.\nAirport Departure Board\nFlight\nDestination\nGate\nRO\nDA3049\nSacramento\nDA3049\nAA1637\nPhiladelphia\nAA1637\nJB2508\nSan Francisco\nJB2508\nSW6421\nWashington, D.C.\nSW6421\nC."
+    "transcript": "and airport departure board.\nAttention passengers taking flight JB2508 to San Francisco.\nPassengers are now permitted to board.\nPlease note that once you're seated on the plane, there will be a slight departure delay.\nThe baggage handlers for this flight need some extra time to finish loading luggage onto the plane.\nIf you need any assistance during your flight, I encourage you to approach the flight attendants.\nThey'll be happy to assist you.\nHave a great flight.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f8f3133a4581b1fce05fe18b9e5ab0355cfc0685ff263e3b992a71303873632f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 77,
+        "legacy_word_count": 97,
+        "length_ratio": 0.794,
+        "legacy_coverage": 0.845
+      }
+    },
+    "transcript_translation": "和机场出发大屏幕。\n请注意，乘坐飞往旧金山的 JB2508 航班的乘客。\n乘客现在可以登机了。\n请注意，一旦您坐在飞机上，将会出现轻微的延误。\n本次航班的行李处理人员需要额外时间才能将行李装到飞机上。\n如果您在飞行过程中需要任何帮助，我鼓励您接近空乘人员。\n他们会很乐意为您提供帮助。\n祝您旅途愉快。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "32cebb965efaa7e61452e3cda9d6ced20a516b97c0e887e0b051fb094cd081d6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. Which gate are the listeners waiting at?",
-      "answer_explain": "原文依据：听力原文中提到“Gate”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Gate 3）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich gate are the listeners waiting at?",
+      "answer_explain": "正确答案：C（Gate 3）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which gate are the listeners waiting at?",
       "choice_translations": [
-        "A：Gate 1",
-        "B：Gate 2",
-        "C：Gate 3",
-        "D：Gate 4"
+        "A:Gate 1",
+        "B:Gate 2",
+        "C:Gate 3",
+        "D:Gate 4"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and airport departure board.",
+      "evidence": "参考听力原文：“The baggage handlers for this flight need some extra time to finish loading luggage onto the plane.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and airport departure board.",
+        "evidence": "参考听力原文：“The baggage handlers for this flight need some extra time to finish loading luggage onto the plane.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Gate”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Gate 3）。"
+        "analysis": "正确答案：C（Gate 3）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 95,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "B",
       "question": "What is the reason for a delay?",
-      "answer_explain": "原文依据：听力原文中提到“this flight need some extra time to finish loading luggage onto”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Luggage is still being loaded.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the reason for a delay?",
+      "answer_explain": "正确答案：B（Luggage is still being loaded.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the reason for a delay?",
       "choice_translations": [
-        "A：The weather is too windy for takeoff.",
-        "B：Luggage is still being loaded.",
-        "C：The ground crew is fueling the plane.",
-        "D：Repairs are being made."
+        "A:The weather is too windy for takeoff.",
+        "B:Luggage is still being loaded.",
+        "C:The ground crew is fueling the plane.",
+        "D:Repairs are being made."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：will be a slight departure delay. ® The baggage handlers for",
+      "evidence": "参考听力原文：“The baggage handlers for this flight need some extra time to finish loading luggage onto the plane.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：will be a slight departure delay. ® The baggage handlers for",
+        "evidence": "参考听力原文：“The baggage handlers for this flight need some extra time to finish loading luggage onto the plane.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“this flight need some extra time to finish loading luggage onto”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Luggage is still being loaded.）。"
+        "analysis": "正确答案：B（Luggage is still being loaded.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 96,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker encourage the listeners to do?",
-      "answer_explain": "原文依据：听力原文中提到“® The baggage handlers for”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Ask staff for assistance）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） encourage the listeners to do?",
+      "answer_explain": "正确答案：D（Ask staff for assistance）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) encourage the listeners to do?",
       "choice_translations": [
-        "A：Fasten seat belts",
-        "B：Look at a snack menu",
-        "C：Watch in-flight movies",
-        "D：Ask staff for assistance"
+        "A:Fasten seat belts",
+        "B:Look at a snack menu",
+        "C:Watch in-flight movies",
+        "D:Ask staff for assistance"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：encourage you to approach the flight attendants. ® They'l be",
+      "evidence": "参考听力原文：“If you need any assistance during your flight, I encourage you to approach the flight attendants.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：encourage you to approach the flight attendants. ® They'l be",
+        "evidence": "参考听力原文：“If you need any assistance during your flight, I encourage you to approach the flight attendants.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® The baggage handlers for”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Ask staff for assistance）。"
+        "analysis": "正确答案：D（Ask staff for assistance）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 97,
       "priority": {

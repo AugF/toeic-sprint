@@ -28,8 +28,28 @@
       "asset_key": "official-6-test-1/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "你更喜欢三楼的办公室，对吗？\nA. 不，我更喜欢二楼。\nB. 按右边的电梯去。\nC. 那是关于合同的讨论。",
-    "content_translation": "你更喜欢三楼的办公室，对吗？\nA. 不，我更喜欢二楼。\nB. 按右边的电梯去。\nC. 那是关于合同的讨论。"
+    "transcript": "You'd prefer an office on the third floor, right?\nA. No, I like the second floor better.\nB. Take the elevator on the right.\nC. It was a discussion about contracts.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3892c453729e7e2009228329ecda348476a26be7f0fe54be49b9cf81890ea357",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "你更喜欢三楼的办公室，对吗？\nA. 不，我更喜欢二楼。\nB. 走右边的电梯。\nC. 这是一次关于合同的讨论。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "cef66000ebd4162f6f1f75830247759636a2b943ed4ab71b6f8b7816a0145436"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“You'd prefer an office on the third floor, right?”，自然应答是“No, I like the second floor better.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（No, I like the second floor better.）。",
-      "question_translation": "你更喜欢三楼的办公室，对吗？",
+      "question_translation": "你更喜欢三楼的办公室,对吗?",
       "choice_translations": [
-        "A：不，我更喜欢二楼。",
-        "B：按右边的电梯去。",
-        "C：那是关于合同的讨论。"
+        "A：不,我更喜欢二楼。",
+        "B：走右边的电梯。",
+        "C：这是一次关于合同的讨论。"
       ],
       "question_type": "否定 / 反意疑问句",
       "evidence": "参考原文第 1 段：You'd prefer an office on the third floor, right?",

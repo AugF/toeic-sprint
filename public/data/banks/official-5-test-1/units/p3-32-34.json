@@ -39,9 +39,32 @@
       "asset_key": "official-5-test-1/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "Riverview Dental Clinic. May I help you?\nHi-this is Enrico Morales. ®| just received a bill in the\nmail from my last dentist visit, and I was overcharged\nUtE.\nI'd be happy to look into that, Mr. Morales. K, I'm\nlooking at your bill... you were charged for a routine\ncleaning and some X-rays of your teeth.\nThat's the problem. I'm quite sure I didn't have any\nX-rays taken that day.\nI see. I'II need to talk to Dr. Tanaka to confirm that\nbefore adjusting your bill. Please hold for a moment.",
-    "transcript_translation": "中文辅助（离线预处理）：Riverview Dental Clinic.\nMay I help you?\nHi-this is Enrico Morales.\n®| just received a bill in the\nmail from my last dentist visit, and I was overcharged\nUtE.\nI'd be happy to look into that, Mr.\nMorales.\nK, I'm\nlooking at your bill...\nyou were charged for a routine\ncleaning and some X-rays of your teeth.\nThat's the problem.\nI'm quite sure I didn't have any\nX-rays taken that day.\nI see.\nI'II need to talk to Dr.\nTanaka to confirm that\nbefore adjusting your bill.\nPlease（请） hold for a moment.",
-    "content_translation": "中文辅助（离线预处理）：Riverview Dental Clinic.\nMay I help you?\nHi-this is Enrico Morales.\n®| just received a bill in the\nmail from my last dentist visit, and I was overcharged\nUtE.\nI'd be happy to look into that, Mr.\nMorales.\nK, I'm\nlooking at your bill...\nyou were charged for a routine\ncleaning and some X-rays of your teeth.\nThat's the problem.\nI'm quite sure I didn't have any\nX-rays taken that day.\nI see.\nI'II need to talk to Dr.\nTanaka to confirm that\nbefore adjusting your bill.\nPlease（请） hold for a moment."
+    "transcript": "Riverview Dental Clinic.\nMay I help you?\nHi-this is Enrico Morales.\nI just received a bill in the mail from my last dentist visit, and I was overcharged.\nI'd be happy to look into that, Mr. Morales.\nOkay, I'm looking at your bill.\nYou were charged for a routine cleaning and some x-rays of your teeth.\nThat's the problem.\nI'm quite sure I didn't have any x-rays taken that day.\nI see.\nI'll need to talk to Dr. Tanaka to confirm that before adjusting your bill.\nPlease hold for a moment.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "dd0d3efd5d22665c1abe29915c29536d11a0fb8b560d94bed9b69179ad2da214",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 91,
+        "legacy_word_count": 85,
+        "length_ratio": 1.071,
+        "legacy_coverage": 0.929
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "Riverview Dental Clinic。（河景牙科诊所。）\n请问有什么可以帮您？\n嗨，我是 Enrico Morales。（恩里科·莫拉莱斯。）\n我刚收到一张来自上次看牙医的账单，但我觉得我被多收费了。\n我很乐意调查一下，Morales 先生。\n好的，我在看您的账单。\n您支付的是一次常规清洁和一些牙齿X光片费用。\n那就是问题所在。\n我很确定那天没有做任何X光片检查。\n我明白了。\n在调整您的账单之前，我需要和 Tanaka 医生谈一下以确认这一点。\n请稍等片刻。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f420a86eced0e0ac23da87baf834022cc9e6ec135b0240b66976b4bc07f05301"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/qwen3-vl:4b+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "C",
       "question": "Where does the woman work?",
-      "answer_explain": "原文依据：听力原文中提到“®| just received a bill in the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a dentist's office）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the woman（女士） work（工作）?",
+      "answer_explain": "正确答案：C（At a dentist's office）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the woman(女士) work(工作)?",
       "choice_translations": [
-        "A：At a restaurant",
-        "B：At a dry cleaning shop",
-        "C：At a dentist's office（办公室）",
-        "D：At a delivery service（服务）"
+        "A:At a restaurant",
+        "B:At a dry cleaning shop",
+        "C:At a dentist's office(办公室)",
+        "D:At a delivery service(服务)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Riverview Dental Clinic. May I help you?",
+      "evidence": "参考听力原文：“I'm quite sure I didn't have any x-rays taken that day.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Riverview Dental Clinic. May I help you?",
+        "evidence": "参考听力原文：“I'm quite sure I didn't have any x-rays taken that day.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®| just received a bill in the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a dentist's office）。"
+        "analysis": "正确答案：C（At a dentist's office）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -104,24 +127,24 @@
         "An order form was misplaced."
       ],
       "answer": "A",
-      "question": "According to the man, what is the problem? 39. According to the woman, what recently",
-      "answer_explain": "原文依据：听力原文中提到“®| just received a bill in the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A bill is incorrect.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the man（男士）, what（什么） is the problem?\n39.\nAccording（根据） to the woman（女士）, what（什么） recently",
+      "question": "According to the man, what is the problem?",
+      "answer_explain": "正确答案：A（A bill is incorrect.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the man(男士), what(什么) is the problem? According(根据) to the woman(女士), what(什么) recently",
       "choice_translations": [
-        "A：A bill is incorrect.",
-        "B：An item is broken.",
-        "C：A consultation was canceled.",
-        "D：An order（订单） form was misplaced."
+        "A:A bill is incorrect.",
+        "B:An item is broken.",
+        "C:A consultation was canceled.",
+        "D:An order(订单) form was misplaced."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：That's the problem. I'm quite sure I didn't have any",
+      "evidence": "参考听力原文：“I'll need to talk to Dr. Tanaka to confirm that before adjusting your bill.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：That's the problem. I'm quite sure I didn't have any",
+        "evidence": "参考听力原文：“I'll need to talk to Dr. Tanaka to confirm that before adjusting your bill.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®| just received a bill in the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A bill is incorrect.）。"
+        "analysis": "正确答案：A（A bill is incorrect.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "B",
       "question": "What will the woman most likely do next?",
-      "answer_explain": "原文依据：听力原文中提到“cleaning and some X-rays of your teeth.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Confirm some information）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） most likely（最可能） do next?",
+      "answer_explain": "正确答案：B（Confirm some information）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) most likely(最可能) do next?",
       "choice_translations": [
-        "A：Post a job announcement",
-        "B：Confirm some information（信息）",
-        "C：Take a lunch break",
-        "D：Check some inventory"
+        "A:Post a job announcement",
+        "B:Confirm some information(信息)",
+        "C:Take a lunch break",
+        "D:Check some inventory"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Riverview Dental Clinic. May I help you?",
+      "evidence": "参考听力原文：“I'll need to talk to Dr. Tanaka to confirm that before adjusting your bill.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Riverview Dental Clinic. May I help you?",
+        "evidence": "参考听力原文：“I'll need to talk to Dr. Tanaka to confirm that before adjusting your bill.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“cleaning and some X-rays of your teeth.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Confirm some information）。"
+        "analysis": "正确答案：B（Confirm some information）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

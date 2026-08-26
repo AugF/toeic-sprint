@@ -28,38 +28,58 @@
       "asset_key": "official-7-test-2/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Did you travel to England for business, or was it a vacation?\n•M",
-    "content_translation": "中文辅助（离线预处理）：Did you travel to England for business, or was it a vacation?\n•M"
+    "transcript": "Did you travel to England for business or was it\nA. vacation? A. I reserved a table for two.\nB. We went on a family holiday.\nC. A direct flight, please.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "496b10abff39ff69ebda1693ad4b0425cfe180e2b3d151b6f77bf902a535aecb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "你是为了出差去英格兰，还是...\nA. 假期？ A. 我预订了两个人的桌子。\nB. 我们去度了一个家庭假。\nC. 请安排直飞航班。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7e7a76b954070da0e7a6b29d122c3068f4c642832633d6e8fe63f35e6e541b15"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "I reserved a table for two.",
+        "vacation? A. I reserved a table for two.",
         "We went on a family holiday.",
         "A direct flight, please."
       ],
       "answer": "B",
-      "question": "Did you travel to England for business, or was it a vacation? •M",
+      "question": "Did you travel to England for business or was it",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“Did you travel to England for business, or was it a vacation? •M”，自然应答是“We went on a family holiday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（We went on a family holiday.）。",
-      "question_translation": "中文辅助（离线预处理）：Did you travel to England for business, or was it a vacation?\n•M",
+      "answer_explain": "原文依据：问句或陈述是“Did you travel to England for business or was it”，自然应答是“We went on a family holiday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（We went on a family holiday.）。",
+      "question_translation": "你是为了出差去英格兰,还是...",
       "choice_translations": [
-        "A：I reserved a table for two.",
-        "B：We went on a family holiday.",
-        "C：A direct flight, please（请）."
+        "A：假期? A. 我预订了两个人的桌子。",
+        "B：我们去度了一个家庭假。",
+        "C：请安排直飞航班。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Did you travel to England for business, or was it a vacation? •M",
+      "evidence": "参考原文第 1 段：Did you travel to England for business or was it",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Did you travel to England for business, or was it a vacation? •M",
+        "evidence": "参考原文第 1 段：Did you travel to England for business or was it",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Did you travel to England for business, or was it a vacation? •M”，自然应答是“We went on a family holiday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（We went on a family holiday.）。"
+        "analysis": "原文依据：问句或陈述是“Did you travel to England for business or was it”，自然应答是“We went on a family holiday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（We went on a family holiday.）。"
       },
       "item_id": 25,
       "priority": {

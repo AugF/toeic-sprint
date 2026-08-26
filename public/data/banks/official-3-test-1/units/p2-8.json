@@ -26,38 +26,58 @@
       "asset_key": "official-3-test-1/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "M When is the next performance of the Cit Troupe? Ew\nA. This Saturday at eight pw.\nB. It was better than the last one.\nC. It hasn't yet.",
-    "content_translation": "M When is the next performance of the Cit Troupe? Ew\nA. This Saturday at eight pw.\nB. It was better than the last one.\nC. It hasn't yet."
+    "transcript": "When is the next performance of the city dance troupe?\nA. This Saturday at 8 p. m.\nB. It was better than the last one.\nC. It hasn't yet.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5888c338fe054856131f2f151402e8104fe2a296816d795eb841e38fa6894333",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "城市舞蹈团的下一次表演是什么时候？\nA. 这个周六晚上 8 点。\nB. 它比上次的好。\nC. 还没有。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9590221cd72ef283b4b372f8c5908cf6afb6b3830f5222155504ea88841a22a8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "This Saturday at eight pw.",
+        "This Saturday at 8 p. m.",
         "It was better than the last one.",
         "It hasn't yet."
       ],
       "answer": "A",
-      "question": "M When is the next performance of the Cit Troupe? Ew",
+      "question": "When is the next performance of the city dance troupe?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M When is the next performance of the Cit Troupe? Ew”，自然应答是“This Saturday at eight pw.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（This Saturday at eight pw.）。",
-      "question_translation": "M When is the next performance of the Cit Troupe? Ew",
+      "answer_explain": "原文依据：问句或陈述是“When is the next performance of the city dance troupe?”，自然应答是“This Saturday at 8 p. m.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（This Saturday at 8 p. m.）。",
+      "question_translation": "城市舞蹈团的下一次表演是什么时候?",
       "choice_translations": [
-        "A：This Saturday at eight pw.",
-        "B：It was better than the last one.",
-        "C：It hasn't yet."
+        "A：这个周六晚上 8 点。",
+        "B：它比上次的好。",
+        "C：还没有。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M When is the next performance of the Cit Troupe? Ew",
+      "evidence": "参考原文第 1 段：When is the next performance of the city dance troupe?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M When is the next performance of the Cit Troupe? Ew",
+        "evidence": "参考原文第 1 段：When is the next performance of the city dance troupe?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“M When is the next performance of the Cit Troupe? Ew”，自然应答是“This Saturday at eight pw.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（This Saturday at eight pw.）。"
+        "analysis": "原文依据：问句或陈述是“When is the next performance of the city dance troupe?”，自然应答是“This Saturday at 8 p. m.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（This Saturday at 8 p. m.）。"
       },
       "item_id": 8,
       "priority": {

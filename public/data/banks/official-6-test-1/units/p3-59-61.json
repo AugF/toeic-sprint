@@ -39,9 +39,32 @@
       "asset_key": "official-6-test-1/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nEw Ol'm here to pick up my rental car. My name's Janet\nChen. Here's my confirmation number.\nw One moment... ®OK, I found your reservation,\nMs. Chen—a midsize sedan. The total for your rental\nwill be 226 dollars.\nEw ®| read online that your company offers a discount to\nteachers?\nw Hmm, not that I'm aware of. Let me ask my supervisor.\nHey, Ernesto? Do we give a discount to teachers?\nEl Yeah, teachers get ten percent off if they show their\nemployee identification card.",
-    "transcript_translation": "有三位说话者。\nEw，我来取我的租车。我叫 Janet Chen。这是我的确认号码。\n稍等一下……好的，我找到了您的预订，\nChen 女士——一辆中型轿车。您这次租车的总费用是 226 美元。\nEw 我在网上看到贵公司为教师提供折扣吗？\n嗯，我不太清楚。让我问一下我的主管。\n嘿，Ernesto？我们给老师打折吗？\n是的，如果他们出示了员工身份证，老师可以享受九折优惠。",
-    "content_translation": "有三位说话者。\nEw，我来取我的租车。我叫 Janet Chen。这是我的确认号码。\n稍等一下……好的，我找到了您的预订，\nChen 女士——一辆中型轿车。您这次租车的总费用是 226 美元。\nEw 我在网上看到贵公司为教师提供折扣吗？\n嗯，我不太清楚。让我问一下我的主管。\n嘿，Ernesto？我们给老师打折吗？\n是的，如果他们出示了员工身份证，老师可以享受九折优惠。"
+    "transcript": "I'm here to pick up my rental car.\nMy name's Janet Chen.\nHere's my confirmation number.\nOne moment.\nOkay, I found your reservation, Ms. Chen.\nA mid-sized sedan.\nThe total for your rental will be $226.\nI read online that your company offers a discount to teachers.\nHmm.\nNot that I'm aware of.\nLet me ask my supervisor.\nHey, Ernesto, do we give a discount to teachers?\nYeah, teachers get 10% off if they show their employee identification card.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "53c7a138d563f5a686cd76394de9374d20a255dc9c60a21961e13c5b57126984",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 77,
+        "legacy_word_count": 85,
+        "length_ratio": 0.906,
+        "legacy_coverage": 0.835
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "我来取我的租车。\n我叫Janet Chen。\n这是我的确认号码。\n请稍等一下。\n好的，找到了您的预订，Chen女士。\n一辆中型轿车。\n您这次租车的总费用是226美元。\n我在网上看到贵公司为老师提供折扣。\n嗯。\n据我所知没有。\n让我问一下我的主管。\n嘿，Ernesto，我们给老师打折吗？\n是的，如果他们出示员工身份卡，可以享受九折优惠。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e07ab26ab41bd9081a68d581ef7e0ff3e8219b4c671d74dde0bbd67cae32e0ca"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "C",
       "question": "Where does the conversation most likely take place?",
-      "answer_explain": "原文依据：听力原文中提到“Ew Ol'm here to pick up my rental car.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a rental car agency）。",
-      "question_translation": "这段对话最可能发生在什么地方？",
+      "answer_explain": "正确答案：C（At a rental car agency）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "这段对话最可能发生在什么地方?",
       "choice_translations": [
-        "A：大学校园",
-        "B：货运公司",
-        "C：租车行",
-        "D：搬家公司"
+        "A:大学校园",
+        "B:货运公司",
+        "C:租车行",
+        "D:搬家公司"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“I'm here to pick up my rental car.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“I'm here to pick up my rental car.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Ew Ol'm here to pick up my rental car.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a rental car agency）。"
+        "analysis": "正确答案：C（At a rental car agency）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 59,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "A",
       "question": "What does Janet Chen inquire about?",
-      "answer_explain": "原文依据：听力原文中提到“Ew ®| read online that your company offers a discount to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A discount）。",
-      "question_translation": "Janet Chen 询问的是什么？",
+      "answer_explain": "正确答案：A（A discount）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "Janet Chen 询问的是什么?",
       "choice_translations": [
-        "A：折扣",
-        "B：网站",
-        "C：日程更改",
-        "D：新产品"
+        "A:折扣",
+        "B:网站",
+        "C:日程更改",
+        "D:新产品"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：Ew Ol'm here to pick up my rental car. My name's Janet",
+      "evidence": "参考听力原文：“My name's Janet Chen.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：Ew Ol'm here to pick up my rental car. My name's Janet",
+        "evidence": "参考听力原文：“My name's Janet Chen.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Ew ®| read online that your company offers a discount to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A discount）。"
+        "analysis": "正确答案：A（A discount）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 60,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "B",
       "question": "What does the man say is required?",
-      "answer_explain": "原文依据：听力原文中提到“employee identification card.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An employee ID）。",
-      "question_translation": "男士说需要什么？",
+      "answer_explain": "正确答案：B（An employee ID）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士说需要什么?",
       "choice_translations": [
-        "A：密码",
-        "B：员工证件号",
-        "C：安全检查",
-        "D：预约"
+        "A:密码",
+        "B:员工证件号",
+        "C:安全检查",
+        "D:预约"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Yeah, teachers get 10% off if they show their employee identification card.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Yeah, teachers get 10% off if they show their employee identification card.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“employee identification card.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An employee ID）。"
+        "analysis": "正确答案：B（An employee ID）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 61,
       "priority": {

@@ -26,8 +26,28 @@
       "asset_key": "official-6-test-2/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：When（何时）'s the deadline to sign the contract for maintenance service（服务）?",
-    "content_translation": "中文辅助（离线预处理）：When（何时）'s the deadline to sign the contract for maintenance service（服务）?"
+    "transcript": "When's the deadline to sign the contract for maintenance service?\nA. With someone from my department.\nB. Noon on Wednesday.\nC. Yes, I'd like one.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a1d188fcd57728ad5112c320b5e2228118dd9e71ad786b281970d8028af60ceb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "维护服务合同的截止日期是什么时候？\nA. 和我部门的某人。\nB. 周三中午。\nC. 是的，我想要一个。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1841caefb550bc10b8ac910eb0a74761d10ab8f31975e4d202b927efdfce7dd2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -42,11 +62,11 @@
       "topic": "时间询问",
       "keywords": "when time response",
       "answer_explain": "原文依据：问句或陈述是“When's the deadline to sign the contract for maintenance service?”，自然应答是“Noon on Wednesday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Noon on Wednesday.）。",
-      "question_translation": "中文辅助（离线预处理）：When（何时）'s the deadline to sign the contract for maintenance service（服务）?",
+      "question_translation": "维护服务合同的截止日期是什么时候?",
       "choice_translations": [
-        "A：With someone from my department.",
-        "B：Noon on Wednesday.",
-        "C：Yes, I'd like one."
+        "A：和我部门的某人。",
+        "B：周三中午。",
+        "C：是的,我想要一个。"
       ],
       "question_type": "时间疑问句",
       "evidence": "参考原文第 1 段：When's the deadline to sign the contract for maintenance service?",

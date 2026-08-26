@@ -40,9 +40,31 @@
       "asset_key": "official-11-test-1/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "Excuse me. I recently moved into a new apartment,\nand it doesn't have many windows. Do you have any\nhouseplants that grow well in low light?\nWe have some ferns and peace lilies over in the next\naisle. I'd recommend a fern. It's the easiest one to take\ncare of. Right, Kavi?\nI think so. Although if you buy one, you should probably\nreplant it in a larger pot soon.\nOK. A friend of mine has some large flowerpots. I\ncould ask her for one.\nOh, and we're holding a workshop here on Saturday\non how best to care for indoor plants.\nThat sounds interesting, and I'm free on Saturday.",
-    "transcript_translation": "打扰一下。我最近刚搬进一套新公寓，那里没有多少窗户。你们有没有在光照较弱的环境里也能长得很好的室内植物？\n隔壁过道有一些蕨类植物和白鹤芋。我推荐蕨类，它最容易照料。对吧，卡维？\n我也这么认为。不过如果你买一盆，可能很快就该把它移栽到更大的花盆里。\n好的。我有个朋友有一些大花盆，可以问她要一个。\n哦，对了，我们星期六会在这里举办一场关于如何妥善照料室内植物的工作坊。\n听起来很有意思，而且我星期六有空。",
-    "content_translation": "本段听力围绕“园艺与课程”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Excuse me.\nI recently moved into a new apartment and it doesn't have many windows.\nDo you have any houseplants that grow well in low light?\nWe have some ferns and peace lilies over in the next aisle.\nI'd recommend a fern.\nIt's the easiest one to take care of.\nRight, Kavi?\nI think so.\nAlthough if you buy one, you should probably replant it in a larger pot soon.\nOkay.\nA friend of mine has some large flower pots.\nI could ask her for one.\nOh, and we're holding a workshop here on Saturday on how best to care for indoor plants.\nThat sounds interesting.\nAnd I'm free on Saturday.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ca36d6516d23fcfd4e29949c4963dac31558414b2c4024f3cc1f111b3ad24e30",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 111,
+        "legacy_word_count": 105,
+        "length_ratio": 1.057,
+        "legacy_coverage": 0.971
+      }
+    },
+    "transcript_translation": "不好意思。\n我最近搬进了一套新公寓，但它没有很多窗户。\n你们有没有一些在低光环境下也能很好生长的室内植物？\n我们在隔壁过道有一些蕨类和白掌。\n我推荐一个蕨类。\n它是最容易照顾的。\n对吧，Kavi？\n我想是这样。\n不过如果你买了一盆，你可能很快应该把它重新种在一个更大的花盆里。\n好的。\n我的一个朋友有一些大型的花盆。\n我可以让她帮我要一个。\n哦，我们周六在这里会举办一个关于如何最好地照顾室内植物的讲习班。\n听起来很有趣。\n而且我周六有空。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d3f0ad2464ea1c1ec111ac6b3a741a5ea3dffbca97a42a6c02e5ae70fa086369"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,24 +76,24 @@
         "She took a vacation."
       ],
       "answer": "A",
-      "answer_explain": "原文依据：女方开头说 I recently moved into a new apartment。 选择理由：直接对应A moved to a new home。正确答案：A（She moved to a new home.）。",
+      "answer_explain": "正确答案：A（She moved to a new home.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Excuse me. I recently moved into a new apartment,",
+      "evidence": "参考听力原文：“I recently moved into a new apartment and it doesn't have many windows.”",
       "choice_translations": [
-        "A：她搬到了新住处。",
-        "B：她开了一家商店。",
-        "C：她种了一座花园。",
-        "D：她去度假了。"
+        "A:她搬到了新住处。",
+        "B:她开了一家商店。",
+        "C:她种了一座花园。",
+        "D:她去度假了。"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Excuse me. I recently moved into a new apartment,",
+        "evidence": "参考听力原文：“I recently moved into a new apartment and it doesn't have many windows.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：女方开头说 I recently moved into a new apartment。 选择理由：直接对应A moved to a new home。正确答案：A（She moved to a new home.）。"
+        "analysis": "正确答案：A（She moved to a new home.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士说她最近做了什么？",
+      "question_translation": "女士说她最近做了什么?",
       "item_id": 50,
       "priority": {
         "level": "P2",
@@ -107,24 +129,24 @@
         "A watering can"
       ],
       "answer": "B",
-      "answer_explain": "原文依据：女方说 A friend of mine has some large flowerpots，并会向朋友询问。 选择理由：她要向朋友借或要的是flowerpot，对应B。正确答案：B（A flowerpot）。",
+      "answer_explain": "正确答案：B（A flowerpot）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段第 1 句：OK. A friend of mine has some large flowerpots. I",
+      "evidence": "参考听力原文：“I could ask her for one.”",
       "choice_translations": [
-        "A：一本关于植物的书",
-        "B：一个花盆",
-        "C：一副手套",
-        "D：一个浇水壶"
+        "A:一本关于植物的书",
+        "B:一个花盆",
+        "C:一副手套",
+        "D:一个浇水壶"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段第 1 句：OK. A friend of mine has some large flowerpots. I",
+        "evidence": "参考听力原文：“I could ask her for one.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：女方说 A friend of mine has some large flowerpots，并会向朋友询问。 选择理由：她要向朋友借或要的是flowerpot，对应B。正确答案：B（A flowerpot）。"
+        "analysis": "正确答案：B（A flowerpot）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士会向朋友要什么？",
+      "question_translation": "女士会向朋友要什么?",
       "item_id": 51,
       "priority": {
         "level": "P2",
@@ -160,24 +182,24 @@
         "Watch a video"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：店员说 Saturday 有 indoor plants workshop，女方说有空且感兴趣。 选择理由：可推断她周六会参加workshop，对应C。正确答案：C（Attend a workshop）。",
+      "answer_explain": "正确答案：C（Attend a workshop）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 11 段第 1 句：Oh, and we're holding a workshop here on Saturday",
+      "evidence": "参考听力原文：“Oh, and we're holding a workshop here on Saturday on how best to care for indoor plants.”",
       "choice_translations": [
-        "A：游览公园",
-        "B：去图书馆",
-        "C：参加工作坊",
-        "D：观看视频"
+        "A:游览公园",
+        "B:去图书馆",
+        "C:参加工作坊",
+        "D:观看视频"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 11 段第 1 句：Oh, and we're holding a workshop here on Saturday",
+        "evidence": "参考听力原文：“Oh, and we're holding a workshop here on Saturday on how best to care for indoor plants.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：店员说 Saturday 有 indoor plants workshop，女方说有空且感兴趣。 选择理由：可推断她周六会参加workshop，对应C。正确答案：C（Attend a workshop）。"
+        "analysis": "正确答案：C（Attend a workshop）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士星期六最可能做什么？",
+      "question_translation": "女士星期六最可能做什么?",
       "item_id": 52,
       "priority": {
         "level": "P2",

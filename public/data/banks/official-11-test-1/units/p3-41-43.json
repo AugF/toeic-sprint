@@ -39,9 +39,31 @@
       "asset_key": "official-11-test-1/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "Murat, thanks for meeting with me. I was hoping to\nget your feedback on the new packaging for our tea\nbiscuits.\nHi, Ayaka. I really like the look of the new box. But\nI have one concern. Will it keep the biscuits fresh\nlonger?\nYes. Our product testing team will send me their report\nsoon. We expect the new packaging will improve\nproduct shelf life by at least five days.\nGreat! Hopefully you'll receive it before our meeting\nwith investors next week. They'll want to have that\ninformation before committing to continuing their\nsupport.",
-    "transcript_translation": "穆拉特，谢谢你来和我见面。我想听听你对我们茶点饼干新包装的意见。\n你好，绫香。我很喜欢新盒子的外观，但有一点担心：它能让饼干保鲜更久吗？\n能。我们的产品测试团队很快会把报告发给我。我们预计新包装至少能把产品的保质期延长五天。\n太好了！希望你能在我们下周与投资者开会前收到报告。他们在决定是否继续提供支持之前，会希望先了解这些信息。",
-    "content_translation": "本段听力围绕“食品包装”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Murat, thanks for meeting with me.\nI was hoping to get your feedback on the new packaging for our tea biscuits.\nHi, Ayaka.\nI really like the look of the new box, but I have one concern.\nWill it keep the biscuits fresh longer?\nYes.\nOur product testing team will send me their report soon.\nWe expect the new packaging will improve product shelf life by at least five days.\nGreat.\nHopefully you'll receive it before our meeting with investors next week.\nThey'll want to have that information before committing to continuing their support.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e92af018f73d0f705a00496e9cd9e7cc30a3ac536c40acbe6af3cb47244b0479",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 94,
+        "legacy_word_count": 91,
+        "length_ratio": 1.033,
+        "legacy_coverage": 1
+      }
+    },
+    "transcript_translation": "Murat，谢谢你和我见面。\n我希望听听你对我们茶饼新包装的反馈。\n嗨，Ayaka。\n我真的很喜欢新盒子的外观，但有一个顾虑。\n它能让饼干保持新鲜更长时间吗？\n是的。\n我们的产品测试团队很快会把报告发给我。\n我们预计新的包装可以将产品的保质期提高至少五天。\n太好了。\n希望你能在下周和投资者开会前收到它。\n他们想在承诺继续支持之前了解这些信息。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "de8c2af112361632ec692090853194ef767fd6dc31e31bcd639598f450b750b7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,24 +75,24 @@
         "Breakfast cereals"
       ],
       "answer": "B",
-      "answer_explain": "原文依据：对话明确提到 new packaging for our tea biscuits。 选择理由：公司生产的是biscuits，对应B。正确答案：B（Biscuits）。",
+      "answer_explain": "正确答案：B（Biscuits）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Murat, thanks for meeting with me. I was hoping to",
+      "evidence": "参考听力原文：“I was hoping to get your feedback on the new packaging for our tea biscuits.”",
       "choice_translations": [
-        "A：冷冻蔬菜",
-        "B：饼干",
-        "C：果汁",
-        "D：早餐麦片"
+        "A:冷冻蔬菜",
+        "B:饼干",
+        "C:果汁",
+        "D:早餐麦片"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Murat, thanks for meeting with me. I was hoping to",
+        "evidence": "参考听力原文：“I was hoping to get your feedback on the new packaging for our tea biscuits.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：对话明确提到 new packaging for our tea biscuits。 选择理由：公司生产的是biscuits，对应B。正确答案：B（Biscuits）。"
+        "analysis": "正确答案：B（Biscuits）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者所在的公司生产什么？",
+      "question_translation": "说话者所在的公司生产什么?",
       "item_id": 41,
       "priority": {
         "level": "P3",
@@ -105,24 +127,24 @@
         "Staying within a budget"
       ],
       "answer": "B",
-      "answer_explain": "原文依据：男方问包装是否 will keep the biscuits fresh longer。 选择理由：他担心的是产品保鲜，对应B。正确答案：B（Keeping a product fresh）。",
+      "answer_explain": "正确答案：B（Keeping a product fresh）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 1 段第 1 句：Murat, thanks for meeting with me. I was hoping to",
+      "evidence": "参考听力原文：“We expect the new packaging will improve product shelf life by at least five days.”",
       "choice_translations": [
-        "A：吸引新客户",
-        "B：让产品保持新鲜",
-        "C：减少对环境的影响",
-        "D：控制在预算以内"
+        "A:吸引新客户",
+        "B:让产品保持新鲜",
+        "C:减少对环境的影响",
+        "D:控制在预算以内"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 1 段第 1 句：Murat, thanks for meeting with me. I was hoping to",
+        "evidence": "参考听力原文：“We expect the new packaging will improve product shelf life by at least five days.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：男方问包装是否 will keep the biscuits fresh longer。 选择理由：他担心的是产品保鲜，对应B。正确答案：B（Keeping a product fresh）。"
+        "analysis": "正确答案：B（Keeping a product fresh）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士担心什么？",
+      "question_translation": "男士担心什么?",
       "item_id": 42,
       "priority": {
         "level": "P3",
@@ -157,24 +179,24 @@
         "Some store owners"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：女方提到 our meeting with investors next week。 选择理由：下周要见的是investors，因此C正确。正确答案：C（Some investors）。",
+      "answer_explain": "正确答案：C（Some investors）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Murat, thanks for meeting with me. I was hoping to",
+      "evidence": "参考听力原文：“Hopefully you'll receive it before our meeting with investors next week.”",
       "choice_translations": [
-        "A：一名销售总监",
-        "B：一个营销团队",
-        "C：一些投资者",
-        "D：一些商店店主"
+        "A:一名销售总监",
+        "B:一个营销团队",
+        "C:一些投资者",
+        "D:一些商店店主"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Murat, thanks for meeting with me. I was hoping to",
+        "evidence": "参考听力原文：“Hopefully you'll receive it before our meeting with investors next week.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：女方提到 our meeting with investors next week。 选择理由：下周要见的是investors，因此C正确。正确答案：C（Some investors）。"
+        "analysis": "正确答案：C（Some investors）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者下周将与谁见面？",
+      "question_translation": "说话者下周将与谁见面?",
       "item_id": 43,
       "priority": {
         "level": "P3",

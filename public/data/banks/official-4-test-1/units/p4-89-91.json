@@ -39,9 +39,31 @@
       "asset_key": "official-4-test-1/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "advertisement.\nw\nWant to dispose of that old laptop computer or tablet but\ndon’t know how to do it safely? Well, just @stop by Jay's\nElectronic Solutions and one of our sales staff members\nwill accept your outdated or broken items. And best of\nall, @there’s absolutely no cost to you! We'll take your\nold electronic devices and safely ship them to one of\nour recycling centers, where they’ll be dismantled and\nproperly recycled. And as a thank you for helping the\nenvironment, ®we’ll give you a coupon for fifteen percent\noff your next purchase at Jay’s Electronic Solutions.",
-    "transcript_translation": "中文辅助（离线预处理）：advertisement.\nw\nWant to dispose of that old laptop computer or tablet but\ndon’t know how（如何） to do it safely?\nWell, just @stop by Jay's\nElectronic Solutions and one of our sales staff members\nwill accept your outdated or broken items.\nAnd best of\nall, @there’s absolutely no cost to you!\nWe'll take your\nold electronic devices and safely ship them to one of\nour recycling centers, where（哪里） they’ll be dismantled and\nproperly recycled.\nAnd as a thank（感谢） you for helping the\nenvironment, ®we’ll give you a coupon for fifteen percent\noff your next purchase（购买） at Jay’s Electronic Solutions.",
-    "content_translation": "中文辅助（离线预处理）：advertisement.\nw\nWant to dispose of that old laptop computer or tablet but\ndon’t know how（如何） to do it safely?\nWell, just @stop by Jay's\nElectronic Solutions and one of our sales staff members\nwill accept your outdated or broken items.\nAnd best of\nall, @there’s absolutely no cost to you!\nWe'll take your\nold electronic devices and safely ship them to one of\nour recycling centers, where（哪里） they’ll be dismantled and\nproperly recycled.\nAnd as a thank（感谢） you for helping the\nenvironment, ®we’ll give you a coupon for fifteen percent\noff your next purchase（购买） at Jay’s Electronic Solutions."
+    "transcript": "Want to dispose of that old laptop computer or tablet but don't know how to do it safely?\nWell, just stop by Jay's Electronic Solutions and one of our sales staff members will accept your outdated or broken items.\nAnd best of all, there's absolutely no cost to you.\nWe'll take your old electronic devices and safely ship them to one of our recycling centers where they'll be dismantled and properly recycled.\nAnd as a thank you for helping the environment, we'll give you a coupon for 15% off your next purchase at Jay's Electronic Solutions.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "28204c773cde98a8b86f5bb2b60ebb811a6d1073163fd82ce784bc012f269f66",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 95,
+        "legacy_word_count": 99,
+        "length_ratio": 0.96,
+        "legacy_coverage": 0.96
+      }
+    },
+    "transcript_translation": "想处理掉那台旧笔记本电脑或平板，但不知道如何安全地处理？\n嗯，只要来到 Jay's Electronic Solutions 就行了，我们的销售人员会接收您过时或损坏的物品。\n最棒的是，这对您来说是完全免费的。\n我们会收走您的旧电子设备，并将其安全运送到我们的回收中心，在那里它们将被拆解和妥善回收。\n为了感谢您帮助环境，我们将为您提供一张在 Jay's Electronic Solutions 购物可享受八五折优惠的优惠券。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "120fa2788bfa917a30d72814bcd14a4d76e2b81fa734f6028bad3b95b5be2e6e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "A",
       "question": "What type of service is being advertised?",
-      "answer_explain": "原文依据：听力原文中提到“our recycling centers, where they’ll be dismantled and”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Electronics recycling）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of service（服务） is being advertised?",
+      "answer_explain": "正确答案：A（Electronics recycling）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of service(服务) is being advertised?",
       "choice_translations": [
-        "A：Electronics recycling",
-        "B：Home repair",
-        "C：Overnight mail delivery",
-        "D：Internet access"
+        "A:Electronics recycling",
+        "B:Home repair",
+        "C:Overnight mail delivery",
+        "D:Internet access"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：advertisement.",
+      "evidence": "参考听力原文：“We'll take your old electronic devices and safely ship them to one of our recycling centers where they'll be dismantled and properly recycled.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：advertisement.",
+        "evidence": "参考听力原文：“We'll take your old electronic devices and safely ship them to one of our recycling centers where they'll be dismantled and properly recycled.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“our recycling centers, where they’ll be dismantled and”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Electronics recycling）。"
+        "analysis": "正确答案：A（Electronics recycling）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 89,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker say about the service?",
-      "answer_explain": "原文依据：听力原文中提到“And as a thank you for helping the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Itis free of charge.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say about the service（服务）?",
+      "answer_explain": "正确答案：B（Itis free of charge.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say about the service(服务)?",
       "choice_translations": [
-        "A：It is highly recommended.",
-        "B：Itis free of charge.",
-        "C：It is available（可用的） in a wide area.",
-        "D：It operates 24 hours a day."
+        "A:It is highly recommended.",
+        "B:Itis free of charge.",
+        "C:It is available(可用的) in a wide area.",
+        "D:It operates 24 hours a day."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：advertisement.",
+      "evidence": "参考听力原文：“Well, just stop by Jay's Electronic Solutions and one of our sales staff members will accept your outdated or broken items.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：advertisement.",
+        "evidence": "参考听力原文：“Well, just stop by Jay's Electronic Solutions and one of our sales staff members will accept your outdated or broken items.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“And as a thank you for helping the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Itis free of charge.）。"
+        "analysis": "正确答案：B（Itis free of charge.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 90,
       "priority": {
@@ -153,27 +175,27 @@
         "A personalized tutorial",
         "An online membership",
         "A free trial period",
-        "Adiscount on a future purchase"
+        "A discount on a future purchase"
       ],
       "answer": "D",
       "question": "What can the listeners receive?",
-      "answer_explain": "原文依据：听力原文中提到“off your next purchase at Jay’s Electronic Solutions.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Adiscount on a future purchase）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） can the listeners receive?",
+      "answer_explain": "正确答案：D（A discount on a future purchase）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) can the listeners receive?",
       "choice_translations": [
-        "A：A personalized tutorial",
-        "B：An online membership",
-        "C：A free trial period",
-        "D：Adiscount on a future purchase（购买）"
+        "A:A personalized tutorial",
+        "B:An online membership",
+        "C:A free trial period",
+        "D:A discount on a future purchase(购买)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：advertisement.",
+      "evidence": "参考听力原文：“And as a thank you for helping the environment, we'll give you a coupon for 15% off your next purchase at Jay's Electronic Solutions.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：advertisement.",
+        "evidence": "参考听力原文：“And as a thank you for helping the environment, we'll give you a coupon for 15% off your next purchase at Jay's Electronic Solutions.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“off your next purchase at Jay’s Electronic Solutions.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Adiscount on a future purchase）。"
+        "analysis": "正确答案：D（A discount on a future purchase）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 91,
       "priority": {

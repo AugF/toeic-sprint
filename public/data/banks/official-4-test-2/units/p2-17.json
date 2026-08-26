@@ -26,38 +26,58 @@
       "asset_key": "official-4-test-2/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Where（哪里） did Naomi save the files for our presentation?\niu",
-    "content_translation": "中文辅助（离线预处理）：Ew Where（哪里） did Naomi save the files for our presentation?\niu"
+    "transcript": "Where did Naomi save the files for our presentation?\nA. Maybe today or tomorrow.\nB. How can you tell?\nC. She sent us an email about that.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fdec90595d01330a70ca9bd5235ec51ddc994774d22beb9b770e8ee6df9e8ab8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "娜奥米把我们演示文稿的文件保存在哪里了？\nA. 也许今天或明天。\nB. 你怎么知道的？\nC. 她给我们发了一封关于那个的电子邮件。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4d86d55e371602a59ae5851a4c2ee5a3d761ce7ebe1681ac266b32c789e696b8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Maybe today or tomorrow.",
         "How can you tell?",
-        "She sent us an e-mail about that."
+        "She sent us an email about that."
       ],
       "answer": "C",
-      "question": "Ew Where did Naomi save the files for our presentation? iu",
+      "question": "Where did Naomi save the files for our presentation?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Where did Naomi save the files for our presentation? iu”，自然应答是“She sent us an e-mail about that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（She sent us an e-mail about that.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Where（哪里） did Naomi save the files for our presentation?\niu",
+      "answer_explain": "原文依据：问句或陈述是“Where did Naomi save the files for our presentation?”，自然应答是“She sent us an email about that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（She sent us an email about that.）。",
+      "question_translation": "娜奥米把我们演示文稿的文件保存在哪里了?",
       "choice_translations": [
-        "A：Maybe today or tomorrow.",
-        "B：How（如何） can you tell?",
-        "C：She sent us an e-mail about that."
+        "A：也许今天或明天。",
+        "B：你怎么知道的?",
+        "C：她给我们发了一封关于那个的电子邮件。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Where did Naomi save the files for our presentation? iu",
+      "evidence": "参考原文第 1 段：Where did Naomi save the files for our presentation?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Where did Naomi save the files for our presentation? iu",
+        "evidence": "参考原文第 1 段：Where did Naomi save the files for our presentation?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Where did Naomi save the files for our presentation? iu”，自然应答是“She sent us an e-mail about that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（She sent us an e-mail about that.）。"
+        "analysis": "原文依据：问句或陈述是“Where did Naomi save the files for our presentation?”，自然应答是“She sent us an email about that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（She sent us an email about that.）。"
       },
       "item_id": 17,
       "priority": {

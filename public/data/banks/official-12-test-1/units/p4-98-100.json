@@ -42,9 +42,32 @@
       "asset_key": "official-12-test-1/images/part4/q098-100.jpg",
       "exists": true
     },
-    "transcript": "a meeting and list.\nEveryone, Oas we get closer to the sales department's\nannual awards ceremony, I've assigned tasks for the awards\ncommittee to work on. As the sales director, I'll personally\ncreate the awards and decide which members of the team\nwill be recognized. e The task of purchasing prizes has\nalways been difficult, so let me know if you need additional\nadvice. Also, Oas part of receiving approval to hold this\nevent, our department was allocated some supplemental\nfunding. We'll use this funding to purchase catering for the\nevent and buy the prizes.\nTask\nAssigned To\nCreate awards\nSusana\nPurchase prizes\nPablo\nSchedule event\nCarmen\nCoordinate social media Hector",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议） and list.\nEveryone, Oas we get closer to the sales department's\nannual awards ceremony, I've assigned tasks for the awards\ncommittee to work（工作） on.\nAs the sales director, I'll personally\ncreate the awards and decide which members of the team\nwill be recognized.\ne The task of purchasing prizes has\nalways been difficult, so let me know if you need additional\nadvice.\nAlso, Oas part of receiving approval to hold this\nevent, our department was allocated some supplemental\nfunding.\nWe'll use this funding to purchase（购买） catering for the\nevent and buy the prizes.\nTask\nAssigned To\nCreate awards\nSusana\nPurchase（购买） prizes\nPablo\nSchedule（日程） event\nCarmen\nCoordinate social media Hector",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议） and list.\nEveryone, Oas we get closer to the sales department's\nannual awards ceremony, I've assigned tasks for the awards\ncommittee to work（工作） on.\nAs the sales director, I'll personally\ncreate the awards and decide which members of the team\nwill be recognized.\ne The task of purchasing prizes has\nalways been difficult, so let me know if you need additional\nadvice.\nAlso, Oas part of receiving approval to hold this\nevent, our department was allocated some supplemental\nfunding.\nWe'll use this funding to purchase（购买） catering for the\nevent and buy the prizes.\nTask\nAssigned To\nCreate awards\nSusana\nPurchase（购买） prizes\nPablo\nSchedule（日程） event\nCarmen\nCoordinate social media Hector"
+    "transcript": "Everyone, as we get closer to the sales department's annual awards ceremony, I've assigned tasks for the awards committee to work on.\nAs the sales director, I'll personally create the awards and decide which members of the team will be recognized.\nThe task of purchasing prizes has always been difficult, so let me know if you need additional advice.\nAlso, as part of receiving approval to hold this event, our department was allocated some supplemental funding.\nWe'll use this funding to purchase catering for the event and buy the prizes.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9fe3945c6cd90d747f924b03e42b896017195fca687ca86b9f799dfc065e645e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 92,
+        "legacy_word_count": 111,
+        "length_ratio": 0.829,
+        "legacy_coverage": 0.865
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "各位，随着我们临近销售部门的年度颁奖典礼，我为奖项委员会分配了一些任务。\n作为销售总监，我将亲自创建奖项并决定哪些团队成员将被表彰。\n购买奖品这项任务一直很困难，所以如果你们需要额外的建议，请告诉我。\n此外，为了获得举办此次活动的批准，我们的部门获得了一些补充资金。\n我们将利用这笔资金为活动购买餐饮和购买奖品。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "823bd09bfc0ff5fc67a5e58fe1b02cf5c3b92cc489b32c33e55974f78ed112d1"
+    }
   },
   "items": [
     {
@@ -56,23 +79,23 @@
       ],
       "answer": "C",
       "question": "What is the speaker's role in the company?",
-      "answer_explain": "原文依据：听力原文中提到“As the sales director, I'll personally”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Sales director）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the speaker（说话者）'s role in the company（公司）?",
+      "answer_explain": "正确答案：C（Sales director）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the speaker(说话者)'s role in the company(公司)?",
       "choice_translations": [
-        "A：Marketing specialist",
-        "B：Product developer",
-        "C：Sales director",
-        "D：Shipping manager（经理）"
+        "A:Marketing specialist",
+        "B:Product developer",
+        "C:Sales director",
+        "D:Shipping manager(经理)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting and list.",
+      "evidence": "参考听力原文：“As the sales director, I'll personally create the awards and decide which members of the team will be recognized.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting and list.",
+        "evidence": "参考听力原文：“As the sales director, I'll personally create the awards and decide which members of the team will be recognized.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“As the sales director, I'll personally”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Sales director）。"
+        "analysis": "正确答案：C（Sales director）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 98,
       "priority": {
@@ -106,23 +129,23 @@
       ],
       "answer": "B",
       "question": "Look at the graphic.Who will complete a difficult task?",
-      "answer_explain": "原文依据：听力原文中提到“Pablo”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Pablo）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.Who（谁） will complete a difficult task?",
+      "answer_explain": "正确答案：B（Pablo）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic.Who(谁) will complete a difficult task?",
       "choice_translations": [
-        "A：Susana",
-        "B：Pablo",
-        "C：Carmen",
-        "D：Hector"
+        "A:Susana",
+        "B:Pablo",
+        "C:Carmen",
+        "D:Hector"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：always been difficult, so let me know if you need additional",
+      "evidence": "参考听力原文：“The task of purchasing prizes has always been difficult, so let me know if you need additional advice.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：always been difficult, so let me know if you need additional",
+        "evidence": "参考听力原文：“The task of purchasing prizes has always been difficult, so let me know if you need additional advice.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Pablo”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Pablo）。"
+        "analysis": "正确答案：B（Pablo）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 99,
       "priority": {
@@ -156,23 +179,23 @@
       ],
       "answer": "D",
       "question": "According to the speaker,what did the department recently receive?",
-      "answer_explain": "原文依据：听力原文中提到“We'll use this funding to purchase catering for the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Additional funding）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）,what（什么） did the department recently receive?",
+      "answer_explain": "正确答案：D（Additional funding）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者),what(什么) did the department recently receive?",
       "choice_translations": [
-        "A：Positive customer（顾客） feedback",
-        "B：Requests for a product demonstration",
-        "C：New computer equipment",
-        "D：Additional funding"
+        "A:Positive customer(顾客) feedback",
+        "B:Requests for a product demonstration",
+        "C:New computer equipment",
+        "D:Additional funding"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：Everyone, Oas we get closer to the sales department's",
+      "evidence": "参考听力原文：“Also, as part of receiving approval to hold this event, our department was allocated some supplemental funding.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：Everyone, Oas we get closer to the sales department's",
+        "evidence": "参考听力原文：“Also, as part of receiving approval to hold this event, our department was allocated some supplemental funding.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“We'll use this funding to purchase catering for the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Additional funding）。"
+        "analysis": "正确答案：D（Additional funding）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 100,
       "priority": {

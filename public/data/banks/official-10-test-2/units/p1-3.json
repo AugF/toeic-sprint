@@ -31,8 +31,28 @@
       "asset_key": "official-10-test-2/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. They're looking at a road sign.\nB. They're trying to stop a taxi.\nC. They're standing near a busy street.\nD. They're opening a car door.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f56781ca759d0434b7d6b78849397eaa04452566bae12ba7ae8dec14c11d4057",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 38
+      }
+    },
+    "transcript_translation": "A. 他们正在看路标。\nB. 他们正试图拦出租车。\nC. 他们站在一条繁忙的街道附近。\nD. 他们正在打开一扇汽车门。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "36efe7c34bcf50f96a43640842a5bf71758ef3d7aaf68a81a544db76feac63aa"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“They're standing near a busy street.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（They're standing near a busy street.）。",
       "choice_translations": [
-        "A：They're looking at a road sign.",
-        "B：They're trying to stop a taxi.",
-        "C：They're standing near a busy street.",
-        "D：They're opening a car door."
+        "A：他们正在看路标。",
+        "B：他们正试图拦出租车。",
+        "C：他们站在一条繁忙的街道附近。",
+        "D：他们正在打开一扇汽车门。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p1-3/3"
+      "item_key": "official-10-test-2/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

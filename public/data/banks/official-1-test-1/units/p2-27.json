@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-1/audio/part2/q027.mp3",
       "exists": true
     },
-    "transcript_translation": "我们应该关注印刷媒体还是在线广告？\nA. 他们在排队。ERODEBRTVSOICML, [F—\nB. 是的，看起来很棒。LDESERASPRRBLELESIEBRLTW\nC. DGY). 专注于 ~[~ ICR ARERSI,",
-    "content_translation": "我们应该关注印刷媒体还是在线广告？\nA. 他们在排队。ERODEBRTVSOICML, [F—\nB. 是的，看起来很棒。LDESERASPRRBLELESIEBRLTW\nC. DGY). 专注于 ~[~ ICR ARERSI,"
+    "transcript": "Will we focus on advertising in print media or online?\nA. They're waiting in line.\nB. Yes, it looks great.\nC. Let's see what the team thinks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "61774260ef4f10fc81a07102a7e2149d826b2b1b667c8e955b5ead1f8f7b25f1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q027.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "我们会专注于印刷媒体还是在线广告呢？\nA. 他们在排队。\nB. 是的，看起来很棒。\nC. 我们看看团队的想法。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "c628d0aa687a1a3b0ba78d075c22f9a02d7ed7c7db2d7b93ac5a305bf4d82929"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "They're waiting in line. ERODEBRTVSOICML, [F—",
-        "Yes, it looks great. LDESERASPRRBLELESIEBRLTW",
-        "DGY). focus on ~[~ ICR ARERSI,"
+        "They're waiting in line.",
+        "Yes, it looks great.",
+        "Let's see what the team thinks."
       ],
       "answer": "C",
-      "question": "Sw Will we focus on advertising in print media or online? 13 ipl ea | ; ean ER C Wena es Bi",
+      "question": "Will we focus on advertising in print media or online?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“Sw Will we focus on advertising in print media or online? 13 ipl ea | ; ean ER C Wena es Bi”，自然应答是“DGY). focus on ~[~ ICR ARERSI,”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（DGY). focus on ~[~ ICR ARERSI,）。",
+      "answer_explain": "原文依据：问句或陈述是“Will we focus on advertising in print media or online?”，自然应答是“Let's see what the team thinks.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Let's see what the team thinks.）。",
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Sw Will we focus on advertising in print media or online? 13 ipl ea | ; ean ER C Wena es Bi",
+      "evidence": "参考原文第 1 段：Will we focus on advertising in print media or online?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Sw Will we focus on advertising in print media or online? 13 ipl ea | ; ean ER C Wena es Bi",
+        "evidence": "参考原文第 1 段：Will we focus on advertising in print media or online?",
         "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Sw Will we focus on advertising in print media or online? 13 ipl ea | ; ean ER C Wena es Bi”，自然应答是“DGY). focus on ~[~ ICR ARERSI,”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（DGY). focus on ~[~ ICR ARERSI,）。"
+        "analysis": "原文依据：问句或陈述是“Will we focus on advertising in print media or online?”，自然应答是“Let's see what the team thinks.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Let's see what the team thinks.）。"
       },
-      "question_translation": "我们应该关注印刷媒体还是在线广告？",
+      "question_translation": "我们会专注于印刷媒体还是在线广告呢?",
       "choice_translations": [
-        "A：他们在排队。ERODEBRTVSOICML, [F—",
-        "B：是的，看起来很棒。LDESERASPRRBLELESIEBRLTW",
-        "C：DGY). 专注于 ~[~ ICR ARERSI,"
+        "A：他们在排队。",
+        "B：是的,看起来很棒。",
+        "C：我们看看团队的想法。"
       ],
       "item_id": 27,
       "priority": {

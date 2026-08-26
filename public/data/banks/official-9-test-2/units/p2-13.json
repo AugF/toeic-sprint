@@ -27,13 +27,33 @@
       "asset_key": "official-9-test-2/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Why（为什么） did our team switch project managers?",
-    "content_translation": "中文辅助（离线预处理）：Why（为什么） did our team switch project managers?"
+    "transcript": "Why did our team switch project managers?\nA. July 15th, I think.\nB. Because Dolores has more experience.\nC. I'll make a note of that.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1a8a0aa425ff619504073523e2952df5db9c948fb524f2efcc1bca9b00269bf0",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "我们团队为什么更换了项目经理？\nA. 我想是 7 月 15 号。\nB. 因为 Dolores 有更多经验。\nC. 我会记下这个的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7b9487b48e83334cb6bafa025025b5fab29852a02f04118a75986a6016f7654d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "July fifteenth, I think.",
+        "July 15th, I think.",
         "Because Dolores has more experience.",
         "I'll make a note of that."
       ],
@@ -43,11 +63,11 @@
       "topic": "原因询问",
       "keywords": "why reason response",
       "answer_explain": "原文依据：问句或陈述是“Why did our team switch project managers?”，自然应答是“Because Dolores has more experience.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because Dolores has more experience.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） did our team switch project managers?",
+      "question_translation": "我们团队为什么更换了项目经理?",
       "choice_translations": [
-        "A：July fifteenth, I think.",
-        "B：Because Dolores has more experience.",
-        "C：I'll make a note of that."
+        "A：我想是 7 月 15 号。",
+        "B：因为 Dolores 有更多经验。",
+        "C：我会记下这个的。"
       ],
       "question_type": "原因疑问句",
       "evidence": "参考原文第 1 段：Why did our team switch project managers?",

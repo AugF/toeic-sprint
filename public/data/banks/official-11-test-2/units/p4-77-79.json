@@ -40,9 +40,31 @@
       "asset_key": "official-11-test-2/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "message.\nHi, Sahng-Hwan. It's Gabriela. Ol saw you sent the draft\nof your article for next month's magazine issue, and I had\nplanned to give you my comments by this afternoon. Well,\nthere's an error message when I try to download the files.\nWe're scheduled to talk tomorrow afternoon, so let's assu\nthe technical glitch will be fixed by then. Oh, and @when v\ntalk, I'd like to get an update about your research for your\nnext article scheduled for the winter publication.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nHi, Sahng-Hwan.\nIt's Gabriela.\nOl saw you sent the draft\nof your article for next month's magazine issue, and I had\nplanned to give you my comments by this afternoon.\nWell,\nthere's an error message when（何时） I try to download the files.\nWe're scheduled to talk tomorrow afternoon, so let's assu\nthe technical glitch will be fixed by then.\nOh, and @when（何时） v\ntalk, I'd like to get an update about your research for your\nnext article scheduled for the winter publication.",
-    "content_translation": "中文辅助（离线预处理）：message.\nHi, Sahng-Hwan.\nIt's Gabriela.\nOl saw you sent the draft\nof your article for next month's magazine issue, and I had\nplanned to give you my comments by this afternoon.\nWell,\nthere's an error message when（何时） I try to download the files.\nWe're scheduled to talk tomorrow afternoon, so let's assu\nthe technical glitch will be fixed by then.\nOh, and @when（何时） v\ntalk, I'd like to get an update about your research for your\nnext article scheduled for the winter publication."
+    "transcript": "Hi, Sanghuan.\nIt's Gabriela.\nI saw you sent the draft of your article for next month's magazine issue, and I had planned to give you my comments by this afternoon.\nWell, there's an error message when I try to download the files.\nWe're scheduled to talk tomorrow afternoon, so let's assume the technical glitch will be fixed by then.\nOh, and when we talk, I'd like to get an update about your research for your next article scheduled for the winter publication.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "49e902775f7e2af2fe0fc7628830d103e57f72200887fcad804e61c58d2f4c45",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 82,
+        "legacy_word_count": 81,
+        "length_ratio": 1.012,
+        "legacy_coverage": 0.938
+      }
+    },
+    "transcript_translation": "嗨，Sanghuan。\n我是 Gabriela。\n我看到你发送了下个月杂志刊期的文章草稿，原计划今天下午给你评论。\n嗯，当我尝试下载文件时出现了一个错误信息。\n我们定于明天下午谈话，所以我们假设到那时技术故障会得到修复。\n哦，另外，当我们谈的时候，我想了解一下你为冬季出版物准备的下一篇文章的研究进展。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4b9efbcd045948fdc9fa976a9a28048c29bb212ae3b30640489492f4c729b7e3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "Where does the speaker most likely work?",
-      "answer_explain": "原文依据：听力原文与题目“Where does the speaker most likely work?”对应，官方答案为“At a magazine publisher”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（At a magazine publisher）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the speaker（说话者） most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：C（At a magazine publisher）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the speaker(说话者) most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a university",
-        "B：At a technology firm",
-        "C：At a magazine publisher",
-        "D：At a public library"
+        "A:At a university",
+        "B:At a technology firm",
+        "C:At a magazine publisher",
+        "D:At a public library"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“I saw you sent the draft of your article for next month's magazine issue, and I had planned to give you my comments by this afternoon.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“I saw you sent the draft of your article for next month's magazine issue, and I had planned to give you my comments by this afternoon.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Where does the speaker most likely work?”对应，官方答案为“At a magazine publisher”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（At a magazine publisher）。"
+        "analysis": "正确答案：C（At a magazine publisher）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "A",
       "question": "Why does the speaker say, \"there's an error message when I try to download the files\"?",
-      "answer_explain": "原文依据：听力原文与题目“Why does the speaker say, \"there's an error message when I try to download the files\"?”对应，官方答案为“To give an excuse”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（To give an excuse）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"there's an error message when（何时） I try to download the files\"?",
+      "answer_explain": "正确答案：A（To give an excuse）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"there's an error message when(何时) I try to download the files\"?",
       "choice_translations": [
-        "A：To give an excuse",
-        "B：To request assistance",
-        "C：To express caution",
-        "D：To correct a misunderstanding N"
+        "A:To give an excuse",
+        "B:To request assistance",
+        "C:To express caution",
+        "D:To correct a misunderstanding N"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Well, there's an error message when I try to download the files.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Well, there's an error message when I try to download the files.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Why does the speaker say, \"there's an error message when I try to download the files\"?”对应，官方答案为“To give an excuse”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（To give an excuse）。"
+        "analysis": "正确答案：A（To give an excuse）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker tell the listener to do?",
-      "answer_explain": "原文依据：听力原文与题目“What does the speaker tell the listener to do?”对应，官方答案为“Prepare for a discussion”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Prepare for a discussion）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） tell the listener to do?",
+      "answer_explain": "正确答案：A（Prepare for a discussion）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) tell the listener to do?",
       "choice_translations": [
-        "A：Prepare for a discussion",
-        "B：Contact a computer store",
-        "C：Reprint some articles",
-        "D：Stop some research"
+        "A:Prepare for a discussion",
+        "B:Contact a computer store",
+        "C:Reprint some articles",
+        "D:Stop some research"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“I saw you sent the draft of your article for next month's magazine issue, and I had planned to give you my comments by this afternoon.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“I saw you sent the draft of your article for next month's magazine issue, and I had planned to give you my comments by this afternoon.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What does the speaker tell the listener to do?”对应，官方答案为“Prepare for a discussion”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Prepare for a discussion）。"
+        "analysis": "正确答案：A（Prepare for a discussion）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

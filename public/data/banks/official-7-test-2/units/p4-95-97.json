@@ -40,9 +40,31 @@
       "asset_key": "official-7-test-2/audio/part4/q095-097.mp3",
       "exists": true
     },
-    "transcript": "message and shirt options.\nDES.\nHi, I'm Alexi Solokov. ®I own a small business, and I'm\ninterested in ordering some shirts from your company. See,\nall of my employees are going to a trade show next month,\nand I want them to wear shirts embroidered with our logo.\nI looked at your design options, and I prefer the design\nwith the logo on the sleeve of the shirt. But before I place\nthe order, I want to confirm that they'll be here in time for the\ntrade show. Please call me at 555-0134 and let me know\nwhen the shirts would be delivered. Thanks.\nModel 011\nModel 023\nE51L011\nE51023\nLogo\nLogo\nModel 056\nModel 098\nLogo\nLogo",
-    "transcript_translation": "中文辅助（离线预处理）：message and shirt options.\nDES.\nHi, I'm Alexi Solokov.\n®I own a small business, and I'm\ninterested in ordering some shirts from your company（公司）.\nSee,\nall of my employees are going to a trade show next month,\nand I want them to wear shirts embroidered with our logo.\nI looked at your design options, and I prefer the design\nwith the logo on the sleeve of the shirt.\nBut before I place\nthe order（订单）, I want to confirm that they'll be here in time for the\ntrade show.\nPlease（请） call me at 555-0134 and let me know\nwhen（何时） the shirts would be delivered.\nThanks.\nModel 011\nModel 023\nE51L011\nE51023\nLogo\nLogo\nModel 056\nModel 098\nLogo\nLogo",
-    "content_translation": "中文辅助（离线预处理）：message and shirt options.\nDES.\nHi, I'm Alexi Solokov.\n®I own a small business, and I'm\ninterested in ordering some shirts from your company（公司）.\nSee,\nall of my employees are going to a trade show next month,\nand I want them to wear shirts embroidered with our logo.\nI looked at your design options, and I prefer the design\nwith the logo on the sleeve of the shirt.\nBut before I place\nthe order（订单）, I want to confirm that they'll be here in time for the\ntrade show.\nPlease（请） call me at 555-0134 and let me know\nwhen（何时） the shirts would be delivered.\nThanks.\nModel 011\nModel 023\nE51L011\nE51023\nLogo\nLogo\nModel 056\nModel 098\nLogo\nLogo"
+    "transcript": "and shirt options.\nHi, I'm Alexey Solikov.\nI own a small business and I'm interested in ordering some shirts from your company.\nSee, all of my employees are going to a trade show next month and I want them to wear shirts embroidered with our logo.\nI looked at your design options and I prefer the design with the logo on the sleeve of the shirt.\nBut before I place the order, I want to confirm that they'll be here in time for the trade show.\nPlease call me at 555-0134 and let me know when the shirts would be delivered.\nThanks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3fb697f5c199f095b5188759f8f086b96c146ff3db05e1d2f706565dfd54c320",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 101,
+        "legacy_word_count": 108,
+        "length_ratio": 0.935,
+        "legacy_coverage": 0.88
+      }
+    },
+    "transcript_translation": "和衬衫选项。\n嗨，我是Alexey Solikov。\n我经营一家小公司，有兴趣向贵公司订购一些衬衫。\n你看，我的所有员工下个月要去一个贸易展览会，我想让他们穿着绣有我们标志的衬衫。\n我看过你们的设计选项，我更喜欢袖子上印有标志的设计。\n但在我下单之前，我想确认一下它们是否能在展会前到达。\n请给我打电话：555-0134，并告诉我什么时候可以送达衬衫。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "665476f0a4cba0a1ff6d7b867e23fec35c07988eb81bf990e47aa9663135deb4"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "What will the speaker's employees do next month?",
-      "answer_explain": "原文依据：听力原文中提到“all of my employees are going to a trade show next month,”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Attend a trade show）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the speaker（说话者）'s employees do next month?",
+      "answer_explain": "正确答案：C（Attend a trade show）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the speaker(说话者)'s employees do next month?",
       "choice_translations": [
-        "A：Receive annual bonuses",
-        "B：Act in a commercial",
-        "C：Attend a trade show",
-        "D：Celebrate an anniversary"
+        "A:Receive annual bonuses",
+        "B:Act in a commercial",
+        "C:Attend a trade show",
+        "D:Celebrate an anniversary"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：all of my employees are going to a trade show next month,",
+      "evidence": "参考听力原文：“See, all of my employees are going to a trade show next month and I want them to wear shirts embroidered with our logo.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：all of my employees are going to a trade show next month,",
+        "evidence": "参考听力原文：“See, all of my employees are going to a trade show next month and I want them to wear shirts embroidered with our logo.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“all of my employees are going to a trade show next month,”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Attend a trade show）。"
+        "analysis": "正确答案：C（Attend a trade show）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 95,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "D",
       "question": "Look at the graphic. Which shirt design does the speaker prefer?",
-      "answer_explain": "原文依据：听力原文中提到“Model 011”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Model 056）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich shirt design does the speaker（说话者） prefer?",
+      "answer_explain": "正确答案：D（Model 056）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which shirt design does the speaker(说话者) prefer?",
       "choice_translations": [
-        "A：Model 011",
-        "B：Model 023",
-        "C：Model 098",
-        "D：Model 056"
+        "A:Model 011",
+        "B:Model 023",
+        "C:Model 098",
+        "D:Model 056"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message and shirt options.",
+      "evidence": "参考听力原文：“I looked at your design options and I prefer the design with the logo on the sleeve of the shirt.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message and shirt options.",
+        "evidence": "参考听力原文：“I looked at your design options and I prefer the design with the logo on the sleeve of the shirt.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Model 011”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Model 056）。"
+        "analysis": "正确答案：D（Model 056）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 96,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker ask about?",
-      "answer_explain": "原文依据：听力原文中提到“the order, I want to confirm that they'll be here in time for the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A delivery date）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） ask about?",
+      "answer_explain": "正确答案：A（A delivery date）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) ask about?",
       "choice_translations": [
-        "A：A delivery date",
-        "B：A payment method",
-        "C：Color options",
-        "D：Shirt sizes"
+        "A:A delivery date",
+        "B:A payment method",
+        "C:Color options",
+        "D:Shirt sizes"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：message and shirt options.",
+      "evidence": "参考听力原文：“See, all of my employees are going to a trade show next month and I want them to wear shirts embroidered with our logo.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：message and shirt options.",
+        "evidence": "参考听力原文：“See, all of my employees are going to a trade show next month and I want them to wear shirts embroidered with our logo.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the order, I want to confirm that they'll be here in time for the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A delivery date）。"
+        "analysis": "正确答案：A（A delivery date）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 97,
       "priority": {

@@ -32,8 +32,28 @@
       "asset_key": "official-12-test-1/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. Some people are watching a bicycle race.\nB. A bicycle has been parked near a tree.\nC. A gardener is planting flowers along a path.\nD. Some people are laying a picnic blanket on the grass.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bbf194f60078574f0eb3757a684bb6fb06b9fe71a70e8e4aacbad2dcb69e087e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 50
+      }
+    },
+    "transcript_translation": "A. 有些人正在观看一场自行车比赛。\nB. 一辆自行车停在一棵树附近。\nC. 一位园丁沿着小路种植花朵。\nD. 有些人在草地上铺着野餐毯。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "71b4db356b0b4f4ab71b6adfd0a274353a0de4a1af6909e3856bb79b89798de5"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -41,7 +61,7 @@
         "Some people are watching a bicycle race.",
         "A bicycle has been parked near a tree.",
         "A gardener is planting flowers along a path.",
-        "Some people are laying a picnic blanket on the ground."
+        "Some people are laying a picnic blanket on the grass."
       ],
       "answer": "B",
       "difficulty": "medium",
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“A bicycle has been parked near a tree.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（A bicycle has been parked near a tree.）。",
       "choice_translations": [
-        "A：Some people are watching a bicycle race.",
-        "B：A bicycle has been parked near a tree.",
-        "C：A gardener is planting flowers along a path.",
-        "D：Some people are laying a picnic blanket on the ground."
+        "A：有些人正在观看一场自行车比赛。",
+        "B：一辆自行车停在一棵树附近。",
+        "C：一位园丁沿着小路种植花朵。",
+        "D：有些人在草地上铺着野餐毯。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-12-test-1/p1-4/4"
+      "item_key": "official-12-test-1/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

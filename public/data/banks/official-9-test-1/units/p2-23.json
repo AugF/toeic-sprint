@@ -26,8 +26,28 @@
       "asset_key": "official-9-test-1/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：When（何时） should we leave for the airport?",
-    "content_translation": "中文辅助（离线预处理）：When（何时） should we leave for the airport?"
+    "transcript": "When should we leave for the airport?\nA. Port Clearview has beautiful scenery.\nB. Traffic is quite heavy at the moment.\nC. My ticket was reasonably priced.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bef2cbb20784c9d4f3a0514a22d16aeec73f8ee1ee84a0b0d8580c4e98e660e3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "我们什么时候离开去机场？\nA. Port Clearview 的风景很美。\nB. 现在交通相当拥堵。\nC. 我的票价是合理的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9e21833131ee135928a3ab59e2bd4ea7fe00b99805b23cd77bb90a3c7947ff1d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -42,11 +62,11 @@
       "topic": "时间询问",
       "keywords": "when time response",
       "answer_explain": "原文依据：问句或陈述是“When should we leave for the airport?”，自然应答是“Traffic is quite heavy at the moment.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Traffic is quite heavy at the moment.）。",
-      "question_translation": "中文辅助（离线预处理）：When（何时） should we leave for the airport?",
+      "question_translation": "我们什么时候离开去机场?",
       "choice_translations": [
-        "A：Port Clearview has beautiful scenery.",
-        "B：Traffic is quite heavy at the moment.",
-        "C：My ticket was reasonably priced."
+        "A：Port Clearview 的风景很美。",
+        "B：现在交通相当拥堵。",
+        "C：我的票价是合理的。"
       ],
       "question_type": "时间疑问句",
       "evidence": "参考原文第 1 段：When should we leave for the airport?",

@@ -36,37 +36,60 @@
       "asset_key": "official-1-test-2/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "w\nHi, everyone. Today we have some urgent busine:\nto. | just received word that Moon-Hee Lee will t\na visit to our store tomorrow. For those of you whc\nknow, Ms. Lee is our regional manager, who ove\nstores in the area including this one. Now, ®it’s ve\nthat we give her a good impression, so I’m reques\neveryone stay a bit late today to help get the store\norganized. And, @since you'll be working extra ho\nyou can each select a morning to take off next wee\nlet me know which day you choose to come in late\nupdate the schedule.",
-    "transcript_translation": "大家好。今天我们有一些紧急的商业消息。我刚接到消息，Moon-Hee Lee 明天将访问我们的店。对于知道的人来说，Lee 女士是我们区域经理，负责包括本店在内的该地区多家门店。现在，重要的是我们要给她留下好印象，所以我要求大家今天待晚一点，帮忙把店整理一下。另外，既然你们要加班，下周每个人可以选一个早休的日子，让我知道你选择哪天来上班，我会更新日程表。",
-    "content_translation": "大家好。今天我们有一些紧急的商业消息。我刚接到消息，Moon-Hee Lee 明天将访问我们的店。对于知道的人来说，Lee 女士是我们区域经理，负责包括本店在内的该地区多家门店。现在，重要的是我们要给她留下好印象，所以我要求大家今天待晚一点，帮忙把店整理一下。另外，既然你们要加班，下周每个人可以选一个早休的日子，让我知道你选择哪天来上班，我会更新日程表。"
+    "transcript": "Hi, everyone.\nToday we have some urgent business to attend to.\nI just received word that Moon-Hee Lee will be making a visit to our store tomorrow.\nFor those of you who don't know, Ms. Lee is our regional manager who oversees five stores in the area including this one.\nNow, it's very important that we give her a good impression, so I'm requesting that everyone can see the store.\nIt's interesting that everyone stay a bit late today to help get the store cleaned and organized.\nAnd, since you'll be working extra hours today, you can each select a morning to take off next week.\nJust let me know which day you choose to come in later, so I can update the schedule.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "96078850e12304c3fd06b2d8139068f324260ca26bc61c3d8e60f7c483bcd583",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 124,
+        "legacy_word_count": 102,
+        "length_ratio": 1.216,
+        "legacy_coverage": 0.902
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "大家好。\n今天我们有一些紧急事务需要处理。\n我刚接到消息说 Moon-Hee Lee 明天会来我们店视察。\n对于不知道的人，Lee 女士是我们负责该地区五个门店的区域经理。\n现在，非常重要的是我们要给她留下一个好印象，所以我要求大家都能看到店铺。\n很高兴大家今天能多待一会儿，帮忙把店面打扫和整理一下。\n而且，由于你们今天会加班，下周每个人都可以选择一天休假。\n只要告诉我你选择哪天来晚点上班，我就可以更新日程表了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f1f03859512ba2e99f9e2bc27e4e1cffa2056c615074079bdd1f8b0a05d247a8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Aregional manager",
-        "Anew employee",
-        "Ahealth inspector",
-        "A prospective client"
+        "a regional manager",
+        "anew employee",
+        "a health inspector",
+        "a prospective client"
       ],
       "answer": "A",
       "question": "Who is Moon-Hee Lee?",
-      "answer_explain": "原文依据：听力原文中提到“Lee is our regional manager, who ove”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Aregional manager）。",
-      "question_translation": "Moon-Hee Lee 是谁？",
+      "answer_explain": "正确答案：A（a regional manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "Moon-Hee Lee 是谁?",
       "choice_translations": [
-        "A：区域经理",
-        "B：新员工",
-        "C：健康检查员",
-        "D：潜在客户"
+        "A:区域经理",
+        "B:新员工",
+        "C:健康检查员",
+        "D:潜在客户"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：w",
+      "evidence": "参考听力原文：“For those of you who don't know, Ms. Lee is our regional manager who oversees five stores in the area including this one.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：w",
+        "evidence": "参考听力原文：“For those of you who don't know, Ms. Lee is our regional manager who oversees five stores in the area including this one.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Lee is our regional manager, who ove”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Aregional manager）。"
+        "analysis": "正确答案：A（a regional manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -94,28 +117,28 @@
       "choices": [
         "To process a large order",
         "To wait for a shipment to arrive",
-        "To attend a workshop (",
+        "To attend a workshop",
         "To prepare the store for a visit"
       ],
       "answer": "D",
       "question": "Why does the speaker ask listeners to stay late?",
-      "answer_explain": "原文依据：听力原文中提到“everyone stay a bit late today to help get the store”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To prepare the store for a visit）。",
-      "question_translation": "说话者要求听众待晚的原因是什么？",
+      "answer_explain": "正确答案：D（To prepare the store for a visit）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者要求听众待晚的原因是什么?",
       "choice_translations": [
-        "A：处理一个大订单",
-        "B：等待一批货物到达",
-        "C：参加一个研讨会（",
-        "D：为一次访问准备商店"
+        "A:处理一个大订单",
+        "B:等待一批货物到达",
+        "C:参加一个研讨会",
+        "D:为一次访问准备商店"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：w",
+      "evidence": "参考听力原文：“It's interesting that everyone stay a bit late today to help get the store cleaned and organized.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：w",
+        "evidence": "参考听力原文：“It's interesting that everyone stay a bit late today to help get the store cleaned and organized.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“everyone stay a bit late today to help get the store”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To prepare the store for a visit）。"
+        "analysis": "正确答案：D（To prepare the store for a visit）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -141,30 +164,30 @@
     },
     {
       "choices": [
-        "Acompany dinner",
-        "Acash bonus",
-        "Some time off",
-        "Some merchandise"
+        "a company dinner",
+        "a cash bonus",
+        "some time off",
+        "some merchandise"
       ],
       "answer": "C",
       "question": "What does the speaker offer the listeners?",
-      "answer_explain": "原文依据：听力原文中提到“you can each select a morning to take off next wee”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some time off）。",
-      "question_translation": "说话者向听众提供了什么？",
+      "answer_explain": "正确答案：C（some time off）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者向听众提供了什么?",
       "choice_translations": [
-        "A：公司晚餐",
-        "B：现金奖金",
-        "C：一些时间休息",
-        "D：一些商品"
+        "A:公司晚餐",
+        "B:现金奖金",
+        "C:一些时间休息",
+        "D:一些商品"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：w",
+      "evidence": "参考听力原文：“And, since you'll be working extra hours today, you can each select a morning to take off next week.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：w",
+        "evidence": "参考听力原文：“And, since you'll be working extra hours today, you can each select a morning to take off next week.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“you can each select a morning to take off next wee”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some time off）。"
+        "analysis": "正确答案：C（some time off）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

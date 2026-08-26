@@ -28,38 +28,58 @@
       "asset_key": "official-9-test-1/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：м Ms.\nPark sent a purchase（购买） order（订单）, right?\nSH",
-    "content_translation": "中文辅助（离线预处理）：м Ms.\nPark sent a purchase（购买） order（订单）, right?\nSH"
+    "transcript": "Ms. Park sent\nA. purchase order, right? A. Sure, I can be there.\nB. I'll forward you the email.\nC. Actually, they're not very expensive.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e66f926f5e1ae00a707e1e942d8ea325a925800bd9e4a9a7f4790b7c880db411",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "朴女士发送了\nA. 采购订单，对吗？ A. 当然，我可以到那里。\nB. 我会把邮件转发给你。\nC. 实际上，它们不太贵。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f9b0062cec08964be3c501ed9c46c09f14f8ae833da86216c06d3b8fef8bb500"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Sure, I can be there.",
-        "Ill forward you the e-mail.",
+        "purchase order, right? A. Sure, I can be there.",
+        "I'll forward you the email.",
         "Actually, they're not very expensive."
       ],
       "answer": "B",
-      "question": "м Ms. Park sent a purchase order, right? SH",
+      "question": "Ms. Park sent",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“м Ms. Park sent a purchase order, right? SH”，自然应答是“Ill forward you the e-mail.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Ill forward you the e-mail.）。",
-      "question_translation": "中文辅助（离线预处理）：м Ms.\nPark sent a purchase（购买） order（订单）, right?\nSH",
+      "answer_explain": "原文依据：问句或陈述是“Ms. Park sent”，自然应答是“I'll forward you the email.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll forward you the email.）。",
+      "question_translation": "朴女士发送了",
       "choice_translations": [
-        "A：Sure, I can be there.",
-        "B：Ill forward you the e-mail.",
-        "C：Actually, they're not very expensive."
+        "A：采购订单,对吗? A. 当然,我可以到那里。",
+        "B：我会把邮件转发给你。",
+        "C：实际上,它们不太贵。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：м Ms. Park sent a purchase order, right? SH",
+      "evidence": "参考原文第 1 段：Ms. Park sent",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：м Ms. Park sent a purchase order, right? SH",
+        "evidence": "参考原文第 1 段：Ms. Park sent",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“м Ms. Park sent a purchase order, right? SH”，自然应答是“Ill forward you the e-mail.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Ill forward you the e-mail.）。"
+        "analysis": "原文依据：问句或陈述是“Ms. Park sent”，自然应答是“I'll forward you the email.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'll forward you the email.）。"
       },
       "item_id": 16,
       "priority": {

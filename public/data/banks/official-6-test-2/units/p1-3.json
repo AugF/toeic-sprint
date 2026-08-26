@@ -31,8 +31,28 @@
       "asset_key": "official-6-test-2/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 一名女士正在封信。\nB. 一名女士正在把文件放入文件夹。\nC. 一名女士正在打电话。\nD. 一名女士正在桌子上摆放物品。",
-    "content_translation": "A. 一名女士正在封信。\nB. 一名女士正在把文件放入文件夹。\nC. 一名女士正在打电话。\nD. 一名女士正在桌子上摆放物品。"
+    "transcript": "A. A woman is sealing an envelope.\nB. A woman is putting papers into a folder.\nC. A woman is talking on the telephone.\nD. A woman is arranging objects on a desk.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7f1ffaebe6873f7f0f91880ed5f8051c4aa43afefe524528d7cdbf5e22e6f98a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 44
+      }
+    },
+    "transcript_translation": "A. 一名女士正在封信。\nB. 一名女士正在把文件放入文件夹。\nC. 一名女士正在打电话。\nD. 一名女士正在整理桌上的物品。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "511800c0954354378319ebbccdde9e91ed8db35a8be16d44c00692b10ce9355e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -51,7 +71,7 @@
         "A：一名女士正在封信。",
         "B：一名女士正在把文件放入文件夹。",
         "C：一名女士正在打电话。",
-        "D：一名女士正在桌子上摆放物品。"
+        "D：一名女士正在整理桌上的物品。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-2/p1-3/3"
+      "item_key": "official-6-test-2/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

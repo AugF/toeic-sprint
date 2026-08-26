@@ -26,8 +26,28 @@
       "asset_key": "official-6-test-1/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "谁为你们餐厅供应蔬菜的？\nA. 在冰箱里。\nB. 一些当地的农民。\nC. 一个装货区。",
-    "content_translation": "谁为你们餐厅供应蔬菜的？\nA. 在冰箱里。\nB. 一些当地的农民。\nC. 一个装货区。"
+    "transcript": "Who supplies the vegetables for your restaurant?\nA. In the refrigerator.\nB. Some local farmers.\nC. A loading dock.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1c4789f10e73415f2809afac4241f3d073ef443defffb285a97408f50c8ea4bd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 20
+      }
+    },
+    "transcript_translation": "谁为你的餐厅供应蔬菜？\nA. 在冰箱里。\nB. 一些当地农民。\nC. 一个装货区。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5603b2310b87503da1e47f9e275301be842391e2ffa058476f84fceec45d2187"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -42,10 +62,10 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Who supplies the vegetables for your restaurant?”，自然应答是“Some local farmers.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Some local farmers.）。",
-      "question_translation": "谁为你们餐厅供应蔬菜的？",
+      "question_translation": "谁为你的餐厅供应蔬菜?",
       "choice_translations": [
         "A：在冰箱里。",
-        "B：一些当地的农民。",
+        "B：一些当地农民。",
         "C：一个装货区。"
       ],
       "question_type": "人物疑问句",

@@ -38,9 +38,32 @@
       "asset_key": "official-5-test-1/audio/part3/q062-064.mp3",
       "exists": true
     },
-    "transcript": "and store layout.\nKenta, ®| was just in the frozen-food aisle stocking the\nfreezers and noticed several burned-out lightbulbs. In\nfact, there are a lot of burned-out lightbulbs throughout\nthe whole store.\nI saw that. But ®we don't have enough bulbs to\nreplace them all right away. ® The fruits and vegetables\nsection is really dark. Let's have the maintenance staff\nreplace those lightbulbs now. It's right in the middle of\nthe store, so that will brighten other areas too.\nGood idea. I'll ask Mr. Franklin from maintenance to\nmeet us there now.\nStore Layout\nSection 1:\nSection 2:\nX:\nX:\nFrozen Items\nRefrigerated Items\nAiRE\nMistoo\nSection 3:\nX:\nFresh Fruits and Vegetables\nFR\nSection 4:\nX:\nCanned Goods\nEntrance",
-    "transcript_translation": "中文辅助（离线预处理）：and store layout.\nKenta, ®| was just in the frozen-food aisle stocking the\nfreezers and noticed several burned-out lightbulbs.\nIn\nfact, there are a lot of burned-out lightbulbs throughout\nthe whole store.\nI saw that.\nBut ®we don't have enough bulbs to\nreplace them all right away.\n® The fruits and vegetables\nsection is really dark.\nLet's have the maintenance staff\nreplace those lightbulbs now.\nIt's right in the middle of\nthe store, so that will brighten other areas too.\nGood idea.\nI'll ask Mr.\nFranklin from maintenance to\nmeet us there now.\nStore Layout\nSection 1:\nSection 2:\nX:\nX:\nFrozen Items\nRefrigerated Items\nAiRE\nMistoo\nSection 3:\nX:\nFresh Fruits and Vegetables\nFR\nSection 4:\nX:\nCanned Goods\nEntrance",
-    "content_translation": "中文辅助（离线预处理）：and store layout.\nKenta, ®| was just in the frozen-food aisle stocking the\nfreezers and noticed several burned-out lightbulbs.\nIn\nfact, there are a lot of burned-out lightbulbs throughout\nthe whole store.\nI saw that.\nBut ®we don't have enough bulbs to\nreplace them all right away.\n® The fruits and vegetables\nsection is really dark.\nLet's have the maintenance staff\nreplace those lightbulbs now.\nIt's right in the middle of\nthe store, so that will brighten other areas too.\nGood idea.\nI'll ask Mr.\nFranklin from maintenance to\nmeet us there now.\nStore Layout\nSection 1:\nSection 2:\nX:\nX:\nFrozen Items\nRefrigerated Items\nAiRE\nMistoo\nSection 3:\nX:\nFresh Fruits and Vegetables\nFR\nSection 4:\nX:\nCanned Goods\nEntrance"
+    "transcript": "Kenta, I was just in the frozen food aisle stocking the freezers and noticed several burned-out light bulbs.\nIn fact, there are a lot of burned-out light bulbs throughout the whole store.\nI saw that, but we don't have enough bulbs to replace them all right away.\nThe fruits and vegetables section is really dark.\nLet's have the maintenance staff replace those light bulbs now.\nWell, it's right in the middle of the store, so that will brighten other areas too.\nGood idea.\nI'll ask Mr. Franklin for maintenance to meet us there now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "20e762dafb5657442ffc0a45f17cdca4e9d27d2bcdaadebdb1529dc6fd061dcf",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part3/q062-064.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 109,
+        "length_ratio": 0.89,
+        "legacy_coverage": 0.862
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "manual/audio_context",
+      "items": 3
+    },
+    "transcript_translation": "Kenta，我刚才在冷冻食品区整理冰柜时，注意到有几个灯泡烧坏了。\n事实上，整个商店到处都有很多烧坏的灯泡。\n我看到了，但我们现在没有足够的灯泡来全部更换。\n水果和蔬菜区非常暗。\n让维护人员现在去更换这些灯泡吧。\n嗯，它就在店中央，这样也能照亮其他区域。\n好主意。\n我会叫 Franklin 先生安排维护人员现在到那里与我们汇合。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "56bbe1d310c498b442aeb5fcbdfca30c12f58d3e0bf83ffa137fc33aeff7e24d"
+    }
   },
   "items": [
     {
@@ -52,7 +75,7 @@
       ],
       "answer": "A",
       "question": "What problem does the woman mention?",
-      "answer_explain": "原文依据：听力原文中提到“Kenta, ®| was just in the frozen-food aisle stocking the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Call a client）。",
+      "answer_explain": "正确答案：A（Call a client）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_translation": "中文辅助（离线预处理）：What（什么） problem does the woman（女士） mention?",
       "choice_translations": [
         "A：Call a client",
@@ -61,14 +84,14 @@
         "D：Revise a document"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and store layout.",
+      "evidence": "参考听力原文：“Kenta, I was just in the frozen food aisle stocking the freezers and noticed several burned-out light bulbs.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and store layout.",
+        "evidence": "参考听力原文：“Kenta, I was just in the frozen food aisle stocking the freezers and noticed several burned-out light bulbs.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Kenta, ®| was just in the frozen-food aisle stocking the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Call a client）。"
+        "analysis": "正确答案：A（Call a client）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 62,
       "priority": {
@@ -102,9 +125,9 @@
         "A building floor plan"
       ],
       "answer": "C",
-      "question": "Look at the graphic. Which section will the",
-      "answer_explain": "原文依据：听力原文中提到“Kenta, ®| was just in the frozen-food aisle stocking the”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（An advertising campaign）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich section will the",
+      "question": "Look at the graphic. Which section will the maintenance staff visit?",
+      "answer_explain": "正确答案：C（An advertising campaign）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "请看图表。维护人员将前往哪个区域？",
       "choice_translations": [
         "A：A small-business loan",
         "B：A new clothing line",
@@ -112,14 +135,14 @@
         "D：A building floor plan"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：section is really dark. Let's have the maintenance staff",
+      "evidence": "参考听力原文：“Let's have the maintenance staff replace those light bulbs now.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：section is really dark. Let's have the maintenance staff",
+        "evidence": "参考听力原文：“Let's have the maintenance staff replace those light bulbs now.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Kenta, ®| was just in the frozen-food aisle stocking the”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（An advertising campaign）。"
+        "analysis": "正确答案：C（An advertising campaign）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 63,
       "priority": {
@@ -150,27 +173,27 @@
         "Search for a ladder",
         "Contact a maintenance worker",
         "Purchase some lightbulbs",
-        "Install a sugestion box"
+        "Install a suggestion box"
       ],
       "answer": "B",
       "question": "What does the woman say she will do?",
-      "answer_explain": "原文依据：听力原文中提到“Let's have the maintenance staff”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Contact a maintenance worker）。",
+      "answer_explain": "正确答案：B（Contact a maintenance worker）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do?",
       "choice_translations": [
         "A：Search for a ladder",
         "B：Contact a maintenance worker",
         "C：Purchase（购买） some lightbulbs",
-        "D：Install a sugestion box"
+        "D：安装意见箱"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and store layout.",
+      "evidence": "参考听力原文：“Well, it's right in the middle of the store, so that will brighten other areas too.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and store layout.",
+        "evidence": "参考听力原文：“Well, it's right in the middle of the store, so that will brighten other areas too.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Let's have the maintenance staff”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Contact a maintenance worker）。"
+        "analysis": "正确答案：B（Contact a maintenance worker）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 64,
       "priority": {

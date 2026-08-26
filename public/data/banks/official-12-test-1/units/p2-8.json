@@ -28,8 +28,28 @@
       "asset_key": "official-12-test-1/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Do you want to drive back to our office（办公室） together?\nw",
-    "content_translation": "中文辅助（离线预处理）：Do you want to drive back to our office（办公室） together?\nw"
+    "transcript": "Do you want to drive back to our office together?\nA. That store is closed today.\nB. Sure, let's do that.\nC. A two-hour train ride.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "42c91a6b00d37a23a00502f68c7d987d5fd9327d711940282a4af1f1397a8cc7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "你想一起开车回我们的办公室吗？\nA. 那家店今天关门了。\nB. 当然，我们这么做吧。\nC. 一个两个小时的火车旅程。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b5060247ad34087c128b713e4f43556dd75698756cc6831c09448437f9b68e9c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "A two-hour train ride."
       ],
       "answer": "B",
-      "question": "Do you want to drive back to our office together? w",
+      "question": "Do you want to drive back to our office together?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Do you want to drive back to our office together? w”，自然应答是“Sure, let's do that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Sure, let's do that.）。",
-      "question_translation": "中文辅助（离线预处理）：Do you want to drive back to our office（办公室） together?\nw",
+      "answer_explain": "原文依据：问句或陈述是“Do you want to drive back to our office together?”，自然应答是“Sure, let's do that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Sure, let's do that.）。",
+      "question_translation": "你想一起开车回我们的办公室吗?",
       "choice_translations": [
-        "A：That store is closed today.",
-        "B：Sure, let's do that.",
-        "C：A two-hour train ride."
+        "A：那家店今天关门了。",
+        "B：当然,我们这么做吧。",
+        "C：一个两个小时的火车旅程。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Do you want to drive back to our office together? w",
+      "evidence": "参考原文第 1 段：Do you want to drive back to our office together?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Do you want to drive back to our office together? w",
+        "evidence": "参考原文第 1 段：Do you want to drive back to our office together?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Do you want to drive back to our office together? w”，自然应答是“Sure, let's do that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Sure, let's do that.）。"
+        "analysis": "原文依据：问句或陈述是“Do you want to drive back to our office together?”，自然应答是“Sure, let's do that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Sure, let's do that.）。"
       },
       "item_id": 8,
       "priority": {

@@ -28,38 +28,58 @@
       "asset_key": "official-9-test-1/audio/part2/q031.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：5M Can you update the Web site with today's dinner specials?\nal",
-    "content_translation": "中文辅助（离线预处理）：5M Can you update the Web site with today's dinner specials?\nal"
+    "transcript": "Can you update the website with today's dinner specials?\nA. The cafe on Main Street.\nB. Did you get a list from Chef Makoto?\nC. It was a delicious dinner.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9adf77224d69b0d9ce2387ad4c499d413aceea0a1d30b3918ad0ac406cd4c391",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q031.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "你能用今天的晚餐特价更新一下网站吗？\nA. 主街的咖啡馆。\nB. 你从真琴厨师那里拿到一份清单了吗？\nC. 这顿饭很美味。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9b8868ecbcdcd3cdc42400b09be0abeee07ec76e4b9a3f6553b565e0b93497ef"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "The café on Main Street.",
+        "The cafe on Main Street.",
         "Did you get a list from Chef Makoto?",
         "It was a delicious dinner."
       ],
       "answer": "B",
-      "question": "5M Can you update the Web site with today's dinner specials? al",
+      "question": "Can you update the website with today's dinner specials?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“5M Can you update the Web site with today's dinner specials? al”，自然应答是“Did you get a list from Chef Makoto?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Did you get a list from Chef Makoto?）。",
-      "question_translation": "中文辅助（离线预处理）：5M Can you update the Web site with today's dinner specials?\nal",
+      "answer_explain": "原文依据：问句或陈述是“Can you update the website with today's dinner specials?”，自然应答是“Did you get a list from Chef Makoto?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Did you get a list from Chef Makoto?）。",
+      "question_translation": "你能用今天的晚餐特价更新一下网站吗?",
       "choice_translations": [
-        "A：The café on Main Street.",
-        "B：Did you get a list from Chef Makoto?",
-        "C：It was a delicious dinner."
+        "A：主街的咖啡馆。",
+        "B：你从真琴厨师那里拿到一份清单了吗?",
+        "C：这顿饭很美味。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：5M Can you update the Web site with today's dinner specials? al",
+      "evidence": "参考原文第 1 段：Can you update the website with today's dinner specials?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：5M Can you update the Web site with today's dinner specials? al",
+        "evidence": "参考原文第 1 段：Can you update the website with today's dinner specials?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“5M Can you update the Web site with today's dinner specials? al”，自然应答是“Did you get a list from Chef Makoto?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Did you get a list from Chef Makoto?）。"
+        "analysis": "原文依据：问句或陈述是“Can you update the website with today's dinner specials?”，自然应答是“Did you get a list from Chef Makoto?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Did you get a list from Chef Makoto?）。"
       },
       "item_id": 31,
       "priority": {

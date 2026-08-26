@@ -39,9 +39,31 @@
       "asset_key": "official-12-test-2/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "B85 32-34 L2701\nLIM OThank you for shopping with us today. eBefore you\nleave, if you're not a member of the grocery store's\nac. —Z—/—\nloyalty program, would you like to become one?\nw No, I'm not a member, but I'd consider it. eWhat are\nHdzCld\nthe benefits of joining?\nm Well, Oyou can get discounts and access to\nlimited-time sales promotions if you sign up. OThere's\nHEE-ILO:\nmore information on our Web site.\nek w Hmm. Glil think about it. Ol'il look into it more when I\nC·\nget home later on.",
-    "transcript_translation": "中文辅助（离线预处理）：B85 32-34 L2701\nLIM OThank you for shopping with us today.\neBefore you\nleave, if you're not a member of the grocery store's\nac.\n—Z—/—\nloyalty program, would you like to become one?\nw No, I'm not a member, but I'd consider it.\neWhat are\nHdzCld\nthe benefits of joining?\nm Well, Oyou can get discounts and access to\nlimited-time sales promotions if you sign up.\nOThere's\nHEE-ILO:\nmore information（信息） on our Web site.\nek w Hmm.\nGlil think about it.\nOl'il look into it more when（何时） I\nC·\nget home later on.",
-    "content_translation": "中文辅助（离线预处理）：B85 32-34 L2701\nLIM OThank you for shopping with us today.\neBefore you\nleave, if you're not a member of the grocery store's\nac.\n—Z—/—\nloyalty program, would you like to become one?\nw No, I'm not a member, but I'd consider it.\neWhat are\nHdzCld\nthe benefits of joining?\nm Well, Oyou can get discounts and access to\nlimited-time sales promotions if you sign up.\nOThere's\nHEE-ILO:\nmore information（信息） on our Web site.\nek w Hmm.\nGlil think about it.\nOl'il look into it more when（何时） I\nC·\nget home later on."
+    "transcript": "Thank you for shopping with us today.\nBefore you leave, if you're not a member of the grocery store's loyalty program, would you like to become one?\nNo, I'm not a member, but I'd consider it.\nWhat are the benefits of joining?\nWell, you can get discounts and access to limited-time sales promotions if you sign up.\nThere's more information on our website.\nHmm, I'll think about it.\nYes, I'll look into it more when I get home later on.\nNumber 32.\nWho most likely is the woman?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "370367cafd79913d55568fd4984d1c935e7724cbcbfcb5d893ad39c8e750ef4d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 87,
+        "legacy_word_count": 89,
+        "length_ratio": 0.978,
+        "legacy_coverage": 0.764
+      }
+    },
+    "transcript_translation": "感谢您今天光临。\n在您离开之前，如果您不是这家杂货店的会员，是否想成为一个呢？\n不，我不是会员，但我会考虑一下。\n加入有什么好处吗？\n嗯，如果您注册的话，可以获得折扣和参与限时促销活动。\n更多信息可以在我们的网站上找到。\n嗯，我会考虑的。\n是的，等我到家后会再了解一下的。\n第 32 题。\n这位女士最可能是谁？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "cb4ae15fc6bde39a377aefba6f16df4f639af08b96f17bf02b6df82d69707d97"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "Who most likely is the woman?",
-      "answer_explain": "原文依据：听力原文中提到“leave, if you're not a member of the grocery store's”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（A customer）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the woman（女士）?",
+      "answer_explain": "正确答案：D（A customer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is the woman(女士)?",
       "choice_translations": [
-        "A：A building inspector",
-        "B：A maintenance worker",
-        "C：A supplier",
-        "D：A customer（顾客）"
+        "A:A building inspector",
+        "B:A maintenance worker",
+        "C:A supplier",
+        "D:A customer(顾客)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：B85 32-34 L2701",
+      "evidence": "参考听力原文：“Before you leave, if you're not a member of the grocery store's loyalty program, would you like to become one?”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：B85 32-34 L2701",
+        "evidence": "参考听力原文：“Before you leave, if you're not a member of the grocery store's loyalty program, would you like to become one?”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“leave, if you're not a member of the grocery store's”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（A customer）。"
+        "analysis": "正确答案：D（A customer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "A",
       "question": "What type of benefit does the man mention?",
-      "answer_explain": "原文依据：听力原文中提到“m Well, Oyou can get discounts and access to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Store discounts）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of benefit does the man（男士） mention?",
+      "answer_explain": "正确答案：A（Store discounts）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of benefit does the man(男士) mention?",
       "choice_translations": [
-        "A：Store discounts",
-        "B：Home delivery",
-        "C：Expedited shipping",
-        "D：Free parking"
+        "A:Store discounts",
+        "B:Home delivery",
+        "C:Expedited shipping",
+        "D:Free parking"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：the benefits of joining?",
+      "evidence": "参考听力原文：“Well, you can get discounts and access to limited-time sales promotions if you sign up.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：the benefits of joining?",
+        "evidence": "参考听力原文：“Well, you can get discounts and access to limited-time sales promotions if you sign up.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“m Well, Oyou can get discounts and access to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Store discounts）。"
+        "analysis": "正确答案：A（Store discounts）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "D",
       "question": "What will the woman most likely do later?",
-      "answer_explain": "原文依据：听力原文中提到“more information on our Web site.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Visit a Web site）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） most likely（最可能） do later?",
+      "answer_explain": "正确答案：D（Visit a Web site）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) most likely(最可能) do later?",
       "choice_translations": [
-        "A：Order（订单） some ingredients",
-        "B：Buy a parking pass",
-        "C：Apply for a job",
-        "D：Visit a Web site"
+        "A:Order(订单) some ingredients",
+        "B:Buy a parking pass",
+        "C:Apply for a job",
+        "D:Visit a Web site"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 15 段：get home later on.",
+      "evidence": "参考听力原文：“Yes, I'll look into it more when I get home later on.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 15 段：get home later on.",
+        "evidence": "参考听力原文：“Yes, I'll look into it more when I get home later on.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“more information on our Web site.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Visit a Web site）。"
+        "analysis": "正确答案：D（Visit a Web site）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

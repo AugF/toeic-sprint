@@ -36,9 +36,32 @@
       "asset_key": "official-5-test-1/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "message.\nEKW\nHello. This is Tonya Peterson. ® Your landscaping company\nTonya Peterson 09 BE Z\ntook care of my garden last year—your crew did such a\nbeautiful job. *Are you available to help out again this\nyear? ®1 was hoping to maintain the garden myself, but I'm\nscheduled to go on several business trips and won't have\ntime for gardening after all. ° Could you please e-mail me\na cost estimate as soon as possible? I remember what you\ncharged for your services last year, but I'd like to know what\nyour current rates are. Thanks.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nEKW\nHello.\nThis is Tonya Peterson.\n® Your landscaping company（公司）\nTonya Peterson 09 BE Z\ntook care of my garden last year—your crew did such a\nbeautiful job.\n*Are you available（可用的） to help out again this\nyear?\n®1 was hoping to maintain the garden myself, but I'm\nscheduled to go on several business trips and won't have\ntime for gardening after all.\n° Could you please（请） e-mail me\na cost estimate as soon as possible?\nI remember what（什么） you\ncharged for your services last year, but I'd like to know what（什么）\nyour current rates are.\nThanks.",
-    "content_translation": "中文辅助（离线预处理）：message.\nEKW\nHello.\nThis is Tonya Peterson.\n® Your landscaping company（公司）\nTonya Peterson 09 BE Z\ntook care of my garden last year—your crew did such a\nbeautiful job.\n*Are you available（可用的） to help out again this\nyear?\n®1 was hoping to maintain the garden myself, but I'm\nscheduled to go on several business trips and won't have\ntime for gardening after all.\n° Could you please（请） e-mail me\na cost estimate as soon as possible?\nI remember what（什么） you\ncharged for your services last year, but I'd like to know what（什么）\nyour current rates are.\nThanks."
+    "transcript": "but I'm scheduled to go on several business trips and won't have time for gardening after all.\nCould you please email me a cost estimate as soon as possible?\nI remember what you charged for your services last year but I'd like to know what your current rates are.\nThanks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "fdb077dc495e672dc3e1e0b2b5bc6e6fc6786db1b3b3ae78a49a43728a56281f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 50,
+        "legacy_word_count": 91,
+        "length_ratio": 0.549,
+        "legacy_coverage": 0.615,
+        "prompted_failure": "missing spoken Questions 86 through 88 introduction"
+      }
+    },
+    "transcript_translation": "但我安排了多次出差，所以根本没有时间做园艺了。\n您能否尽快通过电子邮件给我发送一份成本估算？\n我记得您去年提供的服务费用，但我想知道您目前的费率是多少。\n谢谢。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0f5044d4028bea56448f01578d424b9237d7870a3356f1c7cfdf4c1bd94b7c95"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +73,23 @@
       ],
       "answer": "C",
       "question": "What type of business does the listener own?",
-      "answer_explain": "原文依据：听力原文中提到“® Your landscaping company”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A landscaping company）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of business does the listener own?",
+      "answer_explain": "正确答案：C（A landscaping company）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of business does the listener own?",
       "choice_translations": [
-        "A：A flower shop",
-        "B：A travel agency",
-        "C：A landscaping company（公司）",
-        "D：A construction firm"
+        "A:A flower shop",
+        "B:A travel agency",
+        "C:A landscaping company(公司)",
+        "D:A construction firm"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：scheduled to go on several business trips and won't have",
+      "evidence": "参考听力原文：“but I'm scheduled to go on several business trips and won't have time for gardening after all.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：scheduled to go on several business trips and won't have",
+        "evidence": "参考听力原文：“but I'm scheduled to go on several business trips and won't have time for gardening after all.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® Your landscaping company”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A landscaping company）。"
+        "analysis": "正确答案：C（A landscaping company）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 86,
       "priority": {
@@ -99,23 +122,23 @@
       ],
       "answer": "A",
       "question": "Why will the speaker be busy?",
-      "answer_explain": "原文依据：听力原文中提到“charged for your services last year, but I'd like to know what”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（She will be traveling for business.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） will the speaker（说话者） be busy?",
+      "answer_explain": "正确答案：A（She will be traveling for business.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) will the speaker(说话者) be busy?",
       "choice_translations": [
-        "A：She will be traveling for business.",
-        "B：She will be selling her home.",
-        "C：She will be taking a class.",
-        "D：She will be hosting a party."
+        "A:She will be traveling for business.",
+        "B:She will be selling her home.",
+        "C:She will be taking a class.",
+        "D:She will be hosting a party."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“but I'm scheduled to go on several business trips and won't have time for gardening after all.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“but I'm scheduled to go on several business trips and won't have time for gardening after all.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“charged for your services last year, but I'd like to know what”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（She will be traveling for business.）。"
+        "analysis": "正确答案：A（She will be traveling for business.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 87,
       "priority": {
@@ -148,23 +171,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker ask the listener to send?",
-      "answer_explain": "原文依据：听力原文中提到“a cost estimate as soon as possible?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A price estimate）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） ask the listener to send?",
+      "answer_explain": "正确答案：B（A price estimate）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) ask the listener to send?",
       "choice_translations": [
-        "A：An itinerary",
-        "B：A price estimate",
-        "C：Some references",
-        "D：Some photographs"
+        "A:An itinerary",
+        "B:A price estimate",
+        "C:Some references",
+        "D:Some photographs"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Could you please email me a cost estimate as soon as possible?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Could you please email me a cost estimate as soon as possible?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“a cost estimate as soon as possible?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A price estimate）。"
+        "analysis": "正确答案：B（A price estimate）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 88,
       "priority": {

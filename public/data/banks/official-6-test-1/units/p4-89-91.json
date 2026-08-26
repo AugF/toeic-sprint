@@ -39,9 +39,32 @@
       "asset_key": "official-6-test-1/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "EKW\nWhy buy a new mobile device when you can repair your\ncurrent one? ® Cranfield Electronics Repair can replace\nZ0l? Cranfield BE HER HEL\nbatteries, fix broken screens, and repair water damage. ®We\nare the only store in the area that will come to your home so\nyou don't need to come to our store. And most repairs can\nbe finished in less than an hour. To read reviews from our\nmany satisfied customers, just go to cranfieldrepair.com.",
-    "transcript_translation": "信息。\n为什么买一个新的移动设备，当您可以修理您现有的设备呢？®Cranfield Electronics Repair可以更换电池、修复破碎的屏幕和维修水损。®我们是该地区唯一一家能上门服务的商店，这样您就不需要来我们的店了。而且大多数维修可以在一小时内完成。要阅读我们许多满意的顾客的评论，只需访问cranfieldrepair.com即可。",
-    "content_translation": "信息。\n为什么买一个新的移动设备，当您可以修理您现有的设备呢？®Cranfield Electronics Repair可以更换电池、修复破碎的屏幕和维修水损。®我们是该地区唯一一家能上门服务的商店，这样您就不需要来我们的店了。而且大多数维修可以在一小时内完成。要阅读我们许多满意的顾客的评论，只需访问cranfieldrepair.com即可。"
+    "transcript": "Why buy a new mobile device when you can repair your current one?\nCranfield Electronics Repair can replace batteries, fix broken screens, and repair water damage.\nWe are the only store in the area that will come to your home so you don't need to come to our store.\nAnd most repairs can be finished in less than an hour.\nTo read reviews from our many satisfied customers, just go to cranfieldrepair. com.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "ccf3401d48bb2933cef8ffc3dc56fbf195afb797381450a63622dcb0b0ad258c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 73,
+        "legacy_word_count": 79,
+        "length_ratio": 0.924,
+        "legacy_coverage": 0.937
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "为什么要买一个新的移动设备，当您可以修理您现有的呢？\nCranfield Electronics Repair 可以更换电池、修复破碎的屏幕和修补水损。\n我们是该地区唯一一家可以到您家进行维修的店，这样您就不用来我们的店了。\n而且大多数维修可以在一小时内完成。\n要阅读我们许多满意客户的评论，只需访问 cranfieldrepair.com。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b838ecc259b07d80429dfecf5f04c56980a509eddfcd0c9087e5216e80e420b7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "C",
       "question": "What type of service is being advertised?",
-      "answer_explain": "原文依据：听力原文中提到“® Cranfield Electronics Repair can replace”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Electronics repairs）。",
-      "question_translation": "正在宣传什么类型的服务？",
+      "answer_explain": "正确答案：C（Electronics repairs）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "正在宣传什么类型的服务?",
       "choice_translations": [
-        "A：瓶装水配送",
-        "B：企业餐饮服务",
-        "C：电子产品维修",
-        "D：汽车维护"
+        "A:瓶装水配送",
+        "B:企业餐饮服务",
+        "C:电子产品维修",
+        "D:汽车维护"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EKW",
+      "evidence": "参考听力原文：“Cranfield Electronics Repair can replace batteries, fix broken screens, and repair water damage.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EKW",
+        "evidence": "参考听力原文：“Cranfield Electronics Repair can replace batteries, fix broken screens, and repair water damage.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“® Cranfield Electronics Repair can replace”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Electronics repairs）。"
+        "analysis": "正确答案：C（Electronics repairs）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 89,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "A",
       "question": "What is unique about the business?",
-      "answer_explain": "原文依据：听力原文中提到“are the only store in the area that will come to your home so”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It provides home visits.）。",
-      "question_translation": "这家企业有什么独特之处？",
+      "answer_explain": "正确答案：A（It provides home visits.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "这家企业有什么独特之处?",
       "choice_translations": [
-        "A：提供上门服务。",
-        "B：雇佣行业专家。",
-        "C：全天候可用。",
-        "D：在世界各地设有分店。"
+        "A:提供上门服务。",
+        "B:雇佣行业专家。",
+        "C:全天候可用。",
+        "D:在世界各地设有分店。"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：EKW",
+      "evidence": "参考听力原文：“We are the only store in the area that will come to your home so you don't need to come to our store.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：EKW",
+        "evidence": "参考听力原文：“We are the only store in the area that will come to your home so you don't need to come to our store.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“are the only store in the area that will come to your home so”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It provides home visits.）。"
+        "analysis": "正确答案：A（It provides home visits.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 90,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, what can the listeners do on a Web site?",
-      "answer_explain": "原文依据：听力原文中提到“To read reviews from our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Read some reviews）。",
-      "question_translation": "根据说话者所说，听众可以在网站上做什么？",
+      "answer_explain": "正确答案：B（Read some reviews）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "根据说话者所说,听众可以在网站上做什么?",
       "choice_translations": [
-        "A：预约",
-        "B：阅读一些评论",
-        "C：观看信息视频",
-        "D：付款"
+        "A:预约",
+        "B:阅读一些评论",
+        "C:观看信息视频",
+        "D:付款"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：EKW",
+      "evidence": "参考听力原文：“To read reviews from our many satisfied customers, just go to cranfieldrepair. com.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：EKW",
+        "evidence": "参考听力原文：“To read reviews from our many satisfied customers, just go to cranfieldrepair. com.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“To read reviews from our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Read some reviews）。"
+        "analysis": "正确答案：B（Read some reviews）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 91,
       "priority": {

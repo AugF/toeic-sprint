@@ -28,38 +28,58 @@
       "asset_key": "official-9-test-2/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Did you send Mr.\nYang his contract?\n• M",
-    "content_translation": "中文辅助（离线预处理）：Ew Did you send Mr.\nYang his contract?\n• M"
+    "transcript": "Did you send Mr. Yang his contract?\nA. Please form a line here.\nB. No, not yet.\nC. A new email contact.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1e8ddc4f41fc5039c00b1d766a6ce39c9a23086a384fca82cb2f0e45a235993c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "你把杨先生的合同寄出去了吗？\nA. 请在这里排队。\nB. 没有，还没有。\nC. 一个新的电子邮件联系方式。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9788fccaf8987ceaf75975b0fccb4c11b43fa2d9c0109461c35f6960dc086c35"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Please form a line here.",
         "No, not yet.",
-        "A new e-mail contact."
+        "A new email contact."
       ],
       "answer": "B",
-      "question": "Ew Did you send Mr. Yang his contract? • M",
+      "question": "Did you send Mr. Yang his contract?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Did you send Mr. Yang his contract? • M”，自然应答是“No, not yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, not yet.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Did you send Mr.\nYang his contract?\n• M",
+      "answer_explain": "原文依据：问句或陈述是“Did you send Mr. Yang his contract?”，自然应答是“No, not yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, not yet.）。",
+      "question_translation": "你把杨先生的合同寄出去了吗?",
       "choice_translations": [
-        "A：Please（请） form a line here.",
-        "B：No, not yet.",
-        "C：A new e-mail contact."
+        "A：请在这里排队。",
+        "B：没有,还没有。",
+        "C：一个新的电子邮件联系方式。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Did you send Mr. Yang his contract? • M",
+      "evidence": "参考原文第 1 段：Did you send Mr. Yang his contract?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Did you send Mr. Yang his contract? • M",
+        "evidence": "参考原文第 1 段：Did you send Mr. Yang his contract?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Did you send Mr. Yang his contract? • M”，自然应答是“No, not yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, not yet.）。"
+        "analysis": "原文依据：问句或陈述是“Did you send Mr. Yang his contract?”，自然应答是“No, not yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（No, not yet.）。"
       },
       "item_id": 11,
       "priority": {

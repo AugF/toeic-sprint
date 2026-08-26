@@ -28,38 +28,58 @@
       "asset_key": "official-3-test-2/audio/part2/q027.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：&&w The CEO's presentation is in Conference Room C.\niu",
-    "content_translation": "中文辅助（离线预处理）：&&w The CEO's presentation is in Conference Room C.\niu"
+    "transcript": "The CEO's presentation is in conference room C.\nA. This book makes a great present.\nB. Oh, I was headed the wrong way.\nC. On the last page.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "59f28af33a3113ff71b14139d7835087c0d2742bf16a42a4118020f55ce8a76a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part2/q027.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "首席执行官的演示在 C 会议室。\nA. 这本书是个很棒的礼物。\nB. 哦，我往错了方向了。\nC. 在最后一页。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2ea6671c217569c8f0c8afe05ebb321ed0c9000bfaa0b268952b36abacc6b2eb"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "This book makes a great present.",
-        "Oh—I was headed the wrong way.",
+        "Oh, I was headed the wrong way.",
         "On the last page."
       ],
       "answer": "B",
-      "question": "&&w The CEO's presentation is in Conference Room C. iu",
+      "question": "The CEO's presentation is in conference room C.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“&&w The CEO's presentation is in Conference Room C. iu”，自然应答是“Oh—I was headed the wrong way.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Oh—I was headed the wrong way.）。",
-      "question_translation": "中文辅助（离线预处理）：&&w The CEO's presentation is in Conference Room C.\niu",
+      "answer_explain": "原文依据：问句或陈述是“The CEO's presentation is in conference room C.”，自然应答是“Oh, I was headed the wrong way.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Oh, I was headed the wrong way.）。",
+      "question_translation": "首席执行官的演示在 C 会议室。",
       "choice_translations": [
-        "A：This book makes a great present.",
-        "B：Oh—I was headed the wrong way.",
-        "C：On the last page."
+        "A：这本书是个很棒的礼物。",
+        "B：哦,我往错了方向了。",
+        "C：在最后一页。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：&&w The CEO's presentation is in Conference Room C. iu",
+      "evidence": "参考原文第 1 段：The CEO's presentation is in conference room C.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：&&w The CEO's presentation is in Conference Room C. iu",
+        "evidence": "参考原文第 1 段：The CEO's presentation is in conference room C.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“&&w The CEO's presentation is in Conference Room C. iu”，自然应答是“Oh—I was headed the wrong way.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Oh—I was headed the wrong way.）。"
+        "analysis": "原文依据：问句或陈述是“The CEO's presentation is in conference room C.”，自然应答是“Oh, I was headed the wrong way.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Oh, I was headed the wrong way.）。"
       },
       "item_id": 27,
       "priority": {

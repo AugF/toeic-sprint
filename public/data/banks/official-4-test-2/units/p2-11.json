@@ -27,8 +27,28 @@
       "asset_key": "official-4-test-2/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Why（为什么） has the company（公司）'s annual profit decreased?",
-    "content_translation": "中文辅助（离线预处理）：Why（为什么） has the company（公司）'s annual profit decreased?"
+    "transcript": "Why has the company's annual profit decreased?\nA. Because sales have fallen.\nB. A detailed graph.\nC. The company calendar is finished.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0881c6727fee854a2f779a1627ff4b11780edf00c2387c531ddceaeeffa2925a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "公司年度利润为什么下降了？\nA. 因为销售额下降了。\nB. 一张详细的图表。\nC. 公司日历完成了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d90571a905deaa0eba30efb55fbb2d174f80c2037f284a6ef8cdfbd6d87d4c2f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "原因询问",
       "keywords": "why reason response",
       "answer_explain": "原文依据：问句或陈述是“Why has the company's annual profit decreased?”，自然应答是“Because sales have fallen.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Because sales have fallen.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） has the company（公司）'s annual profit decreased?",
+      "question_translation": "公司年度利润为什么下降了?",
       "choice_translations": [
-        "A：Because sales have fallen.",
-        "B：A detailed graph.",
-        "C：The company（公司） calendar is finished."
+        "A：因为销售额下降了。",
+        "B：一张详细的图表。",
+        "C：公司日历完成了。"
       ],
       "question_type": "原因疑问句",
       "evidence": "参考原文第 1 段：Why has the company's annual profit decreased?",

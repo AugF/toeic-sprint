@@ -32,8 +32,28 @@
       "asset_key": "official-11-test-2/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：EEW",
-    "content_translation": "中文辅助（离线预处理）：EEW"
+    "transcript": "A. Some bookshelves are being assembled.\nB. There are some light fixtures on the ceiling.\nC. A carpet is being vacuumed.\nD. Some books have been stacked on a chair.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1d6189ef7907f36848e313c3c584f70ae1faa64a92d1ca916282623607e3e27d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 41
+      }
+    },
+    "transcript_translation": "A. 一些书架正在组装中。\nB. 天花板上有一些灯具。\nC. 地毯正在吸尘。\nD. 有些书堆在一张椅子上。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "158d76b69e0ccbb3797e01f96821060e5652a9f80093ecaf1320a7129166b1a1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,12 +69,12 @@
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：官方详解给出的照片描述正确项是 B（There are some light fixtures on the ceiling.）。选择理由：该陈述与照片中可见的人物、物体、动作或状态一致，其他选项包含画面中没有出现的细节。正确答案：B（There are some light fixtures on the ceiling.）。",
-      "question_translation": "中文辅助（离线预处理）：EEW",
+      "question_translation": "请看图片。",
       "choice_translations": [
-        "A：Some bookshelves are being assembled.",
-        "B：There are some light fixtures on the ceiling.",
-        "C：A carpet is being vacuumed.",
-        "D：Some books have been stacked on a chair."
+        "A：一些书架正在组装中。",
+        "B：天花板上有一些灯具。",
+        "C：地毯正在吸尘。",
+        "D：有些书堆在一张椅子上。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "参考原文第 1 段：EEW",

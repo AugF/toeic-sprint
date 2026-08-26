@@ -28,8 +28,28 @@
       "asset_key": "official-5-test-1/audio/part2/q027.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Would you like to go shopping in the afternoon or the evening?",
-    "content_translation": "中文辅助（离线预处理）：Would you like to go shopping in the afternoon or the evening?"
+    "transcript": "Would you like to go shopping in the afternoon or the evening?\nA. A new line of shoes.\nB. I work the evening shift.\nC. I haven't met her yet.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d979aa8d968f2a94466cfcf2ca2e2e0b281143a57337059f3221f01ef26a3948",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q027.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "下午还是晚上想去逛街？\nA. 一系列新鞋款。\nB. 我上晚班。\nC. 我还没见过她。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "164e4170d7e877e44a3fb68807833b413883332dbe6323342ab9e4ab746808e9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "选择问句",
       "keywords": "choice indirect response",
       "answer_explain": "原文依据：问句或陈述是“Would you like to go shopping in the afternoon or the evening?”，自然应答是“I work the evening shift.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I work the evening shift.）。",
-      "question_translation": "中文辅助（离线预处理）：Would you like to go shopping in the afternoon or the evening?",
+      "question_translation": "下午还是晚上想去逛街?",
       "choice_translations": [
-        "A：A new line of shoes.",
-        "B：I work（工作） the evening shift.",
-        "C：I haven't met her yet."
+        "A：一系列新鞋款。",
+        "B：我上晚班。",
+        "C：我还没见过她。"
       ],
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段：Would you like to go shopping in the afternoon or the evening?",

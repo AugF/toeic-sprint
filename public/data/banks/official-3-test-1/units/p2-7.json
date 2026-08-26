@@ -27,38 +27,58 @@
       "asset_key": "official-3-test-1/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "ay NO ER A What time ~? CHBBOPERWE BATUSOICHML, [9 BE TIC CBF BEATS\nA. PIER. <expecttAt+to do> [(AQD'~ SF SERIAD). keynote speaker [254 Bee.\nB. BYIEBASNTWSOT. Yes. NoClséBar 75L). invite[~@BTS1.\nC. BPMlsBaSNT VAL). lobbyfOL—J.",
-    "content_translation": "ay NO ER A What time ~? CHBBOPERWE BATUSOICHML, [9 BE TIC CBF BEATS\nA. PIER. <expecttAt+to do> [(AQD'~ SF SERIAD). keynote speaker [254 Bee.\nB. BYIEBASNTWSOT. Yes. NoClséBar 75L). invite[~@BTS1.\nC. BPMlsBaSNT VAL). lobbyfOL—J."
+    "transcript": "Where can I find the most recent sales data?\nA. The store is having a sale.\nB. It's on my computer.\nC. No, not recently.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e28c2487158c65496f6ee40ad52c17d74ecb13597fdd0e38c5e684cbe1eb1a8f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "我在哪里能找到最新的销售数据？\nA. 这家店正在进行促销活动。\nB. 在我的电脑上。\nC. 不，不是最近的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "59df768a9fa940e9c2160c0fbab216c3821dd0d901df3850ba0ba65290fb224e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "PIER. <expecttAt+to do> [(AQD'~ SF SERIAD). keynote speaker [254 Bee.",
-        "BYIEBASNTWSOT. Yes. NoClséBar 75L). invite[~@BTS1.",
-        "BPMlsBaSNT VAL). lobbyfOL—J."
+        "The store is having a sale.",
+        "It's on my computer.",
+        "No, not recently."
       ],
       "answer": "B",
-      "question": "ay NO ER A What time ~? CHBBOPERWE BATUSOICHML, [9 BE TIC CBF BEATS",
+      "question": "Where can I find the most recent sales data?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“ay NO ER A What time ~? CHBBOPERWE BATUSOICHML, [9 BE TIC CBF BEATS”，自然应答是“BYIEBASNTWSOT. Yes. NoClséBar 75L). invite[~@BTS1.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（BYIEBASNTWSOT. Yes. NoClséBar 75L). invite[~@BTS1.）。",
-      "question_translation": "ay NO ER A What time ~? CHBBOPERWE BATUSOICHML, [9 BE TIC CBF BEATS",
+      "answer_explain": "原文依据：问句或陈述是“Where can I find the most recent sales data?”，自然应答是“It's on my computer.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It's on my computer.）。",
+      "question_translation": "我在哪里能找到最新的销售数据?",
       "choice_translations": [
-        "A：PIER. <expecttAt+to do> [(AQD'~ SF SERIAD). keynote speaker [254 Bee.",
-        "B：BYIEBASNTWSOT. Yes. NoClséBar 75L). invite[~@BTS1.",
-        "C：BPMlsBaSNT VAL). lobbyfOL—J."
+        "A：这家店正在进行促销活动。",
+        "B：在我的电脑上。",
+        "C：不,不是最近的。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：ay NO ER A What time ~? CHBBOPERWE BATUSOICHML, [9 BE TIC CBF BEATS",
+      "evidence": "参考原文第 1 段：Where can I find the most recent sales data?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：ay NO ER A What time ~? CHBBOPERWE BATUSOICHML, [9 BE TIC CBF BEATS",
+        "evidence": "参考原文第 1 段：Where can I find the most recent sales data?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“ay NO ER A What time ~? CHBBOPERWE BATUSOICHML, [9 BE TIC CBF BEATS”，自然应答是“BYIEBASNTWSOT. Yes. NoClséBar 75L). invite[~@BTS1.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（BYIEBASNTWSOT. Yes. NoClséBar 75L). invite[~@BTS1.）。"
+        "analysis": "原文依据：问句或陈述是“Where can I find the most recent sales data?”，自然应答是“It's on my computer.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It's on my computer.）。"
       },
       "item_id": 7,
       "priority": {

@@ -37,37 +37,59 @@
       "asset_key": "official-3-test-2/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "Luca, ® our client from Seattle just informed t\nthat instead of next weekend, he’s coming to\ntomorrow. | know you're in charge of organizi\nsome activities after work for him...\nfv Oh, that’s a problem. I’d planned to take him:\nconcert, but that’s next week.\nER w Hmmm, @there’s a big baseball game at City\nStadium this Thursday. What about taking hin\nthat?\nGi“ Great idea! But ©1'lI have to ask our account\nmanager right away if | can spend more than\nplanned to. Those tickets are going to be exp¢\nEX w I'm sure it'll be K. After all, we couldn't have\npredicted this.",
-    "transcript_translation": "中文辅助（离线预处理）：Luca, ® our client from Seattle just informed t\nthat instead of next weekend, he’s coming to\ntomorrow.\n| know you're in charge of organizi\nsome activities after work（工作） for him...\nfv Oh, that’s a problem.\nI’d planned to take him:\nconcert, but that’s next week.\nER w Hmmm, @there’s a big baseball game at City\nStadium this Thursday.\nWhat（什么） about taking hin\nthat?\nGi“ Great idea!\nBut ©1'lI have to ask our account\nmanager（经理） right away if | can spend more than\nplanned to.\nThose tickets are going to be exp¢\nEX w I'm sure it'll be K.\nAfter all, we couldn't have\npredicted this.",
-    "content_translation": "中文辅助（离线预处理）：Luca, ® our client from Seattle just informed t\nthat instead of next weekend, he’s coming to\ntomorrow.\n| know you're in charge of organizi\nsome activities after work（工作） for him...\nfv Oh, that’s a problem.\nI’d planned to take him:\nconcert, but that’s next week.\nER w Hmmm, @there’s a big baseball game at City\nStadium this Thursday.\nWhat（什么） about taking hin\nthat?\nGi“ Great idea!\nBut ©1'lI have to ask our account\nmanager（经理） right away if | can spend more than\nplanned to.\nThose tickets are going to be exp¢\nEX w I'm sure it'll be K.\nAfter all, we couldn't have\npredicted this."
+    "transcript": "Luca, our client from Seattle just informed us that instead of next weekend, he's coming to town tomorrow.\nI know you're in charge of organizing some activities after work for him.\nOh, that's a problem.\nI'd planned to take him to a concert, but that's next week.\nHmm.\nThere's a big baseball game at City Stadium this Thursday.\nWhat about taking him to that?\nGreat idea.\nBut I'll have to ask our account manager right away if I can spend more than we'd planned to.\nThose tickets are going to be expensive.\nI'm sure it'll be okay.\nAfter all, we couldn't have predicted this.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "37a844d69c8150edd21305270593ce5d24b740a691a2e328c048e07060342dd7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 104,
+        "legacy_word_count": 100,
+        "length_ratio": 1.04,
+        "legacy_coverage": 0.88
+      }
+    },
+    "transcript_translation": "Luca，我们来自西雅图的客户刚通知我们，他不是下周末来城，而是明天就到城了。\n我知道你负责为他组织一些工作后的活动。\n哦，那可麻烦了。\n我本来计划带他去看一场音乐会的，但那是下周的。\n嗯。\n这个周四在City Stadium有场大型棒球比赛。\n带他去那里怎么样？\n好主意。\n但我得马上问一下我们的客户经理，看我是否能花超过我们计划的预算。\n那些票会很贵的。\n我相信没问题的。\n毕竟，这是我们无法预料到的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f269b181428f9164c072ca4d55a79167c3f5d4070953e7ed1556d6d32d2da5ba"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "Some merchandise has sold out.",
-        "Aclient has rescheduled a visit.",
-        "Adirector has reduced a budget.",
-        "Adocument has been lost."
+        "A client has rescheduled a visit.",
+        "A director has reduced a budget.",
+        "A document has been lost."
       ],
       "answer": "B",
       "question": "According to the woman, what has happened?",
-      "answer_explain": "原文依据：听力原文中提到“ER w Hmmm, @there’s a big baseball game at City”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Aclient has rescheduled a visit.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the woman（女士）, what（什么） has happened?",
+      "answer_explain": "正确答案：B（A client has rescheduled a visit.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the woman(女士), what(什么) has happened?",
       "choice_translations": [
-        "A：Some merchandise has sold out.",
-        "B：Aclient has rescheduled a visit.",
-        "C：Adirector has reduced a budget.",
-        "D：Adocument has been lost."
+        "A:Some merchandise has sold out.",
+        "B:A client has rescheduled a visit.",
+        "C:A director has reduced a budget.",
+        "D:A document has been lost."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Luca, ® our client from Seattle just informed t",
+      "evidence": "参考听力原文：“Luca, our client from Seattle just informed us that instead of next weekend, he's coming to town tomorrow.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Luca, ® our client from Seattle just informed t",
+        "evidence": "参考听力原文：“Luca, our client from Seattle just informed us that instead of next weekend, he's coming to town tomorrow.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“ER w Hmmm, @there’s a big baseball game at City”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Aclient has rescheduled a visit.）。"
+        "analysis": "正确答案：B（A client has rescheduled a visit.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -97,27 +119,27 @@
         "Going to a sporting event",
         "Searching a Web site",
         "Inviting a company president",
-        "Using a corporate credit card"
+        "Using a corporate credit card?"
       ],
       "answer": "A",
       "question": "What does the woman recommend doing?",
-      "answer_explain": "原文依据：听力原文中提到“Those tickets are going to be exp¢”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Going to a sporting event）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） recommend doing?",
+      "answer_explain": "正确答案：A（Going to a sporting event）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) recommend doing?",
       "choice_translations": [
-        "A：Going to a sporting event",
-        "B：Searching a Web site",
-        "C：Inviting a company（公司） president",
-        "D：Using a corporate credit card"
+        "A:Going to a sporting event",
+        "B:Searching a Web site",
+        "C:Inviting a company(公司) president",
+        "D:Using a corporate credit card?"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Luca, ® our client from Seattle just informed t",
+      "evidence": "参考听力原文：“Those tickets are going to be expensive.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Luca, ® our client from Seattle just informed t",
+        "evidence": "参考听力原文：“Those tickets are going to be expensive.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Those tickets are going to be exp¢”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Going to a sporting event）。"
+        "analysis": "正确答案：A（Going to a sporting event）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -150,24 +172,24 @@
         "Update an online account"
       ],
       "answer": "C",
-      "question": "What will the man do next? é",
-      "answer_explain": "原文依据：听力原文中提到“that instead of next weekend, he’s coming to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Talk to a colleague）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） do next?\né",
+      "question": "What will the man do next?",
+      "answer_explain": "正确答案：C（Talk to a colleague）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) do next? é",
       "choice_translations": [
-        "A：Pick up a rental car",
-        "B：Check a calendar",
-        "C：Talk to a colleague",
-        "D：Update an online account"
+        "A:Pick up a rental car",
+        "B:Check a calendar",
+        "C:Talk to a colleague",
+        "D:Update an online account"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Luca, ® our client from Seattle just informed t",
+      "evidence": "参考听力原文：“Luca, our client from Seattle just informed us that instead of next weekend, he's coming to town tomorrow.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Luca, ® our client from Seattle just informed t",
+        "evidence": "参考听力原文：“Luca, our client from Seattle just informed us that instead of next weekend, he's coming to town tomorrow.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“that instead of next weekend, he’s coming to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Talk to a colleague）。"
+        "analysis": "正确答案：C（Talk to a colleague）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

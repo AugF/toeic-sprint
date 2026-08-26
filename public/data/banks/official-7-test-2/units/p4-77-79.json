@@ -39,9 +39,32 @@
       "asset_key": "official-7-test-2/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "message.\nHi, Amal. This is Jang-Ho Choi. ®I'm calling to welcome\nLBL. Amal Jang-Ho ChoiCt. 5tat Sunrise\nyou to the staff of the Sunrise Times Newspaper. •We're\nalways glad to get skilled writers such as yourself on our\nteam. Now, ®| know that sometimes new employees have\na lot of questions, because we often hire people fresh out of\njournalism school... but.... you have a lot of experience.\nWe'll chat in person next week. I'm leaving for vacation\ntomorrow for three days, and I'll see you when I return.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nHi, Amal.\nThis is Jang-Ho Choi.\n®I'm calling to welcome\nLBL.\nAmal Jang-Ho ChoiCt.\n5tat Sunrise\nyou to the staff of the Sunrise Times Newspaper.\n•We're\nalways glad to get skilled writers such as yourself on our\nteam.\nNow, ®| know that sometimes new employees have\na lot of questions, because we often hire people fresh out of\njournalism school...\nbut....\nyou have a lot of experience.\nWe'll chat in person next week.\nI'm leaving for vacation\ntomorrow for three days, and I'll see you when（何时） I return.",
-    "content_translation": "中文辅助（离线预处理）：message.\nHi, Amal.\nThis is Jang-Ho Choi.\n®I'm calling to welcome\nLBL.\nAmal Jang-Ho ChoiCt.\n5tat Sunrise\nyou to the staff of the Sunrise Times Newspaper.\n•We're\nalways glad to get skilled writers such as yourself on our\nteam.\nNow, ®| know that sometimes new employees have\na lot of questions, because we often hire people fresh out of\njournalism school...\nbut....\nyou have a lot of experience.\nWe'll chat in person next week.\nI'm leaving for vacation\ntomorrow for three days, and I'll see you when（何时） I return."
+    "transcript": "Hi, Amal.\nThis is Jang-Ho Choi.\nI'm calling to welcome you to the staff of the Sunrise Times Newspaper.\nWe're always glad to get skilled writers such as yourself on our team.\nNow, I know that sometimes new employees have a lot of questions, because we often hire people fresh out of journalism school.\nBut you have a lot of experience. you will chat in person next week.\nI'm leaving for vacation tomorrow for three days, and I'll see you when I return.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "4e24492d2def1b0bcae47688baa49531fdc1ef90bc6382731448de875e15a0dc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 83,
+        "legacy_word_count": 87,
+        "length_ratio": 0.954,
+        "legacy_coverage": 0.908
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "嗨，Amal。\n我是Jang-Ho Choi。\n我打电话来欢迎您加入《Sunrise Times Newspaper》的员工团队。\n我们总是很高兴能有像您这样有才华的作家加入我们的团队。\n我知道有时新员工会有很多问题，因为我们经常招聘刚从新闻学院毕业的人。\n但您有很多经验。我们下周会当面聊聊。\n我明天要休假三天，等我回来再见您。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c3bacc44fe42993b56a23fc43dec12a87a4461b83abd4f042d9686b819242f5d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "A",
       "question": "Where does the speaker work?",
-      "answer_explain": "原文依据：听力原文中提到“you to the staff of the Sunrise Times Newspaper.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（At a newspaper）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the speaker（说话者） work（工作）?",
+      "answer_explain": "正确答案：A（At a newspaper）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the speaker(说话者) work(工作)?",
       "choice_translations": [
-        "A：At a newspaper",
-        "B：At a travel agency",
-        "C：At a hotel",
-        "D：At a technology company（公司）"
+        "A:At a newspaper",
+        "B:At a travel agency",
+        "C:At a hotel",
+        "D:At a technology company(公司)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“I'm calling to welcome you to the staff of the Sunrise Times Newspaper.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“I'm calling to welcome you to the staff of the Sunrise Times Newspaper.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“you to the staff of the Sunrise Times Newspaper.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（At a newspaper）。"
+        "analysis": "正确答案：A（At a newspaper）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker mean when he says, \"you have a lot of experience\"?",
-      "answer_explain": "原文依据：听力原文中提到“you to the staff of the Sunrise Times Newspaper.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The listener will not need any assistance.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） mean when（何时） he says, \"you have a lot of experience\"?",
+      "answer_explain": "正确答案：B（The listener will not need any assistance.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) mean when(何时) he says, \"you have a lot of experience\"?",
       "choice_translations": [
-        "A：The listener should take over a project.",
-        "B：The listener will not need any assistance.",
-        "C：The listener deserves a pay raise.",
-        "D：The listener should teach an upcoming"
+        "A:The listener should take over a project.",
+        "B:The listener will not need any assistance.",
+        "C:The listener deserves a pay raise.",
+        "D:The listener should teach an upcoming"
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 8 段：journalism school... but.... you have a lot of experience.",
+      "evidence": "参考听力原文：“But you have a lot of experience. you will chat in person next week.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 8 段：journalism school... but.... you have a lot of experience.",
+        "evidence": "参考听力原文：“But you have a lot of experience. you will chat in person next week.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“you to the staff of the Sunrise Times Newspaper.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The listener will not need any assistance.）。"
+        "analysis": "正确答案：B（The listener will not need any assistance.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "C",
       "question": "What does the speaker say he is doing tomorrow?",
-      "answer_explain": "原文依据：听力原文中提到“I'm leaving for vacation”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Going on vacation）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say he is doing tomorrow?",
+      "answer_explain": "正确答案：C（Going on vacation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say he is doing tomorrow?",
       "choice_translations": [
-        "A：Attending a meeting（会议）",
-        "B：Organizing a party",
-        "C：Going on vacation",
-        "D：Visiting a school"
+        "A:Attending a meeting(会议)",
+        "B:Organizing a party",
+        "C:Going on vacation",
+        "D:Visiting a school"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：tomorrow for three days, and I'll see you when I return.",
+      "evidence": "参考听力原文：“I'm leaving for vacation tomorrow for three days, and I'll see you when I return.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：tomorrow for three days, and I'll see you when I return.",
+        "evidence": "参考听力原文：“I'm leaving for vacation tomorrow for three days, and I'll see you when I return.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I'm leaving for vacation”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Going on vacation）。"
+        "analysis": "正确答案：C（Going on vacation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

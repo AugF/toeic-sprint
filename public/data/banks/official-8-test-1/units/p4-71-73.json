@@ -36,9 +36,32 @@
       "asset_key": "official-8-test-1/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "Good evening. ®I apologize for the delay. ®We were having\nsome problems with the microphone. ®It's my pleasure\nto present this year's Community Excellence Award to\nMary Kebede. ®Ms. Kebede's tireless fund-raising made it\npossible to purchase 5,000 trees to plant throughout our city.\nTrees are essential because they improve air quality and cool\nthe environment. But most importantly, studies have shown\nthat they reduce the symptoms of stress in city residents. So,\non behalf of the community, thank you, Ms. Kebede.\nKebede dh.",
-    "transcript_translation": "中文辅助（离线预处理）：Good evening.\n®I apologize for the delay.\n®We were having\nsome problems with the microphone.\n®It's my pleasure\nto present this year's Community Excellence Award to\nMary Kebede.\n®Ms.\nKebede's tireless fund-raising made it\npossible to purchase（购买） 5,000 trees to plant throughout our city.\nTrees are essential because they improve air quality and cool\nthe environment.\nBut most importantly, studies have shown\nthat they reduce the symptoms of stress in city residents.\nSo,\non behalf of the community, thank（感谢） you, Ms.\nKebede.\nKebede dh.",
-    "content_translation": "中文辅助（离线预处理）：Good evening.\n®I apologize for the delay.\n®We were having\nsome problems with the microphone.\n®It's my pleasure\nto present this year's Community Excellence Award to\nMary Kebede.\n®Ms.\nKebede's tireless fund-raising made it\npossible to purchase（购买） 5,000 trees to plant throughout our city.\nTrees are essential because they improve air quality and cool\nthe environment.\nBut most importantly, studies have shown\nthat they reduce the symptoms of stress in city residents.\nSo,\non behalf of the community, thank（感谢） you, Ms.\nKebede.\nKebede dh."
+    "transcript": "Good evening.\nI apologize for the delay.\nWe were having some problems with the microphone.\nIt's my pleasure to present this year's Community Excellence Award to Mary Kebede.\nMs. Kebede's tireless fund-raising made it possible to purchase 5,000 trees to plant throughout our city.\nTrees are essential because they improve air quality and cool the environment.\nBut most importantly, studies have shown that they reduce the symptoms of stress in city residents.\nSo, on behalf of the community, thank you, Ms. Kebede.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "96df963254b6a27a7a5e60c98b8ccbe4689d04fc5c0c377f5dcac77324757cd9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 81,
+        "legacy_word_count": 82,
+        "length_ratio": 0.988,
+        "legacy_coverage": 0.988
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "晚上好。\n我为延误表示歉意。\n我们麦克风出了点问题。\n我很荣幸地向 Mary Kebede 颁发今年的社区卓越奖。\nKebede 女士不懈的筹款工作使得购买 5,000 棵树并在我们城市各地种植成为可能。\n树木是必不可少的，因为它们能改善空气质量和冷却环境。\n但最重要的是，研究表明它们可以减轻城市居民的压力症状。\n所以，我代表整个社区，感谢您，Kebede 女士。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f9770f01ca357b7103a99239d01efa4dfc9f50fa22d8edc529635bb1f8e13a1f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +73,23 @@
       ],
       "answer": "A",
       "question": "What caused a delay?",
-      "answer_explain": "原文依据：听力原文中提到“®I apologize for the delay.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Technical difficulties）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） caused a delay?",
+      "answer_explain": "正确答案：A（Technical difficulties）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) caused a delay?",
       "choice_translations": [
-        "A：Technical difficulties",
-        "B：Poor weather conditions",
-        "C：Absent staff members",
-        "D：Lost paperwork"
+        "A:Technical difficulties",
+        "B:Poor weather conditions",
+        "C:Absent staff members",
+        "D:Lost paperwork"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Good evening. ®I apologize for the delay. ®We were having",
+      "evidence": "参考听力原文：“I apologize for the delay.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Good evening. ®I apologize for the delay. ®We were having",
+        "evidence": "参考听力原文：“I apologize for the delay.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®I apologize for the delay.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Technical difficulties）。"
+        "analysis": "正确答案：A（Technical difficulties）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 71,
       "priority": {
@@ -99,23 +122,23 @@
       ],
       "answer": "B",
       "question": "Why is Ms. Kebede receiving an award?",
-      "answer_explain": "原文依据：听力原文中提到“Kebede's tireless fund-raising made it”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（She led a fund-raising campaign.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is Ms.\nKebede receiving an award?",
+      "answer_explain": "正确答案：B（She led a fund-raising campaign.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is Ms. Kebede receiving an award?",
       "choice_translations": [
-        "A：She published a book.",
-        "B：She led a fund-raising campaign.",
-        "C：She served on the city council.",
-        "D：She developed a useful device."
+        "A:She published a book.",
+        "B:She led a fund-raising campaign.",
+        "C:She served on the city council.",
+        "D:She developed a useful device."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：to present this year's Community Excellence Award to",
+      "evidence": "参考听力原文：“It's my pleasure to present this year's Community Excellence Award to Mary Kebede.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：to present this year's Community Excellence Award to",
+        "evidence": "参考听力原文：“It's my pleasure to present this year's Community Excellence Award to Mary Kebede.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Kebede's tireless fund-raising made it”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（She led a fund-raising campaign.）。"
+        "analysis": "正确答案：B（She led a fund-raising campaign.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 72,
       "priority": {
@@ -148,23 +171,23 @@
       ],
       "answer": "C",
       "question": "According to the speaker, what is the most important benefit of trees?",
-      "answer_explain": "原文依据：听力原文中提到“that they reduce the symptoms of stress in city residents.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（They reduce stress.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） is the most important benefit of trees?",
+      "answer_explain": "正确答案：C（They reduce stress.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) is the most important benefit of trees?",
       "choice_translations": [
-        "A：They are used in construction.",
-        "B：They provide shade.",
-        "C：They reduce stress.",
-        "D：They protect the soil."
+        "A:They are used in construction.",
+        "B:They provide shade.",
+        "C:They reduce stress.",
+        "D:They protect the soil."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：possible to purchase 5,000 trees to plant throughout our city.",
+      "evidence": "参考听力原文：“But most importantly, studies have shown that they reduce the symptoms of stress in city residents.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：possible to purchase 5,000 trees to plant throughout our city.",
+        "evidence": "参考听力原文：“But most importantly, studies have shown that they reduce the symptoms of stress in city residents.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“that they reduce the symptoms of stress in city residents.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（They reduce stress.）。"
+        "analysis": "正确答案：C（They reduce stress.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 73,
       "priority": {

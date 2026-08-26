@@ -39,9 +39,31 @@
       "asset_key": "official-11-test-1/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "So-Jin, I saw that you're volunteering for the financial\neducation event at the community center. I signed up\ntoo, but I don't know what to expect. Do you know what\nit'll be like?\nYes, I participate every year. Financial planners from\naround town sign up for four hours of work. We have\nshort meetings with members of the community to talk\nwith them about investments, money management,\nthings like that.\nOh, that sounds great. I have a commitment in the\nafternoon, but I signed up for a morning session. I bet\nmore people come before lunch anyway.",
-    "transcript_translation": "素珍，我看到你报名为社区中心的金融教育活动做志愿者了。我也报名了，不过不知道活动具体是什么样。你知道吗？\n知道，我每年都参加。城里的理财规划师会报名提供四小时的志愿服务。我们会和社区居民进行简短会谈，跟他们讨论投资、资金管理之类的话题。\n哦，听起来很棒。我下午有事，不过报名参加了上午的场次。我想午饭前来的人应该也会更多。",
-    "content_translation": "本段听力围绕“社区志愿活动”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Sojin, I saw that you're volunteering for the financial education event at the Community Center.\nI signed up too, but I don't know what to expect.\nDo you know what it'll be like?\nYes, I participate every year.\nFinancial planners from around town sign up for four hours of work.\nWe have short meetings with members of the community to talk with them about investments, money management, things like that.\nOh, that sounds great.\nI have a commitment in the afternoon, but I signed up for a morning session.\nI bet more people come before lunch anyway.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5f8e924329aacf5834c51e5630cb302506a1b5927440f3eac4816ce494b15e52",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 90,
+        "length_ratio": 1.078,
+        "legacy_coverage": 0.989
+      }
+    },
+    "transcript_translation": "Sojin，我看到你正在为社区中心的金融教育活动做志愿者。\n我也报名了，但不知道会是什么样的体验。\n你知道它会是怎样的吗？\n是的，我每年都参加。\n来自镇上各处的理财规划师都会来工作四个小时。\n我们会和社区成员进行简短的会议，和他们谈论投资、金钱管理之类的东西。\n哦，听起来很棒。\n下午我有安排，但我报名了上午的时段。\n反正我敢打赌午饭前会有更多人来。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "437639ad5fd1f2f44021ad491e6f4ccc206df8cfe83a54af85585cd68dc31ba8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,24 +75,24 @@
         "Fitness"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：对话提到 financial planners、investments 和 money management。 选择理由：这些词表明从事金融行业，对应C。正确答案：C（Finance）。",
+      "answer_explain": "正确答案：C（Finance）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 1 段第 1 句：So-Jin, I saw that you're volunteering for the financial",
+      "evidence": "参考听力原文：“Financial planners from around town sign up for four hours of work.”",
       "choice_translations": [
-        "A：出版业",
-        "B：娱乐业",
-        "C：金融业",
-        "D：健身业"
+        "A:出版业",
+        "B:娱乐业",
+        "C:金融业",
+        "D:健身业"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 1 段第 1 句：So-Jin, I saw that you're volunteering for the financial",
+        "evidence": "参考听力原文：“Financial planners from around town sign up for four hours of work.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：对话提到 financial planners、investments 和 money management。 选择理由：这些词表明从事金融行业，对应C。正确答案：C（Finance）。"
+        "analysis": "正确答案：C（Finance）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者最可能在哪个行业工作？",
+      "question_translation": "说话者最可能在哪个行业工作?",
       "item_id": 53,
       "priority": {
         "level": "P3",
@@ -105,24 +127,24 @@
         "Advise community members"
       ],
       "answer": "D",
-      "answer_explain": "原文依据：志愿者与社区成员短会，谈 investments 和 money management。 选择理由：其工作本质是向社区成员提供建议，对应D。正确答案：D（Advise community members）。",
+      "answer_explain": "正确答案：D（Advise community members）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：So-Jin, I saw that you're volunteering for the financial",
+      "evidence": "参考听力原文：“We have short meetings with members of the community to talk with them about investments, money management, things like that.”",
       "choice_translations": [
-        "A：分发一些书籍",
-        "B：在当地一所学校演讲",
-        "C：清理社区公园",
-        "D：为社区居民提供建议"
+        "A:分发一些书籍",
+        "B:在当地一所学校演讲",
+        "C:清理社区公园",
+        "D:为社区居民提供建议"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：So-Jin, I saw that you're volunteering for the financial",
+        "evidence": "参考听力原文：“We have short meetings with members of the community to talk with them about investments, money management, things like that.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：志愿者与社区成员短会，谈 investments 和 money management。 选择理由：其工作本质是向社区成员提供建议，对应D。正确答案：D（Advise community members）。"
+        "analysis": "正确答案：D（Advise community members）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者自愿去做什么？",
+      "question_translation": "说话者自愿去做什么?",
       "item_id": 54,
       "priority": {
         "level": "P3",
@@ -157,24 +179,24 @@
         "In the evening"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：男方明确说 I signed up for a morning session。 选择理由：志愿时间是上午，对应A。正确答案：A（In the morning）。",
+      "answer_explain": "正确答案：A（In the morning）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：So-Jin, I saw that you're volunteering for the financial",
+      "evidence": "参考听力原文：“I have a commitment in the afternoon, but I signed up for a morning session.”",
       "choice_translations": [
-        "A：上午",
-        "B：午餐时间",
-        "C：下午",
-        "D：晚上"
+        "A:上午",
+        "B:午餐时间",
+        "C:下午",
+        "D:晚上"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：So-Jin, I saw that you're volunteering for the financial",
+        "evidence": "参考听力原文：“I have a commitment in the afternoon, but I signed up for a morning session.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：男方明确说 I signed up for a morning session。 选择理由：志愿时间是上午，对应A。正确答案：A（In the morning）。"
+        "analysis": "正确答案：A（In the morning）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士什么时候做志愿服务？",
+      "question_translation": "男士什么时候做志愿服务?",
       "item_id": 55,
       "priority": {
         "level": "P3",

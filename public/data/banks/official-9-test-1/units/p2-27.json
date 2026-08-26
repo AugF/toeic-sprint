@@ -27,8 +27,28 @@
       "asset_key": "official-9-test-1/audio/part2/q027.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：How（如何） many air-conditioning units has your team assembled?",
-    "content_translation": "中文辅助（离线预处理）：How（如何） many air-conditioning units has your team assembled?"
+    "transcript": "How many air conditioning units has your team assembled?\nA. We're still waiting for some parts.\nB. No, turn the heater on.\nC. You can get those glasses online.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "af9b501779155913be2c8f1fd427bed90d61a67e8acbef76a7c815e9a9e97f0d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q027.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "你的团队组装了多少个空调机组？\nA. 我们还在等一些零件。\nB. 不，把暖气打开。\nC. 你可以在网上买到那些眼镜。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0d64f9e5b4b9fdcc02a1641f74681544d69e5c5837b3442e9ba830cc63726788"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "You can get those glasses online."
       ],
       "answer": "A",
-      "question": "How many air-conditioning units has your team assembled?",
+      "question": "How many air conditioning units has your team assembled?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“How many air-conditioning units has your team assembled?”，自然应答是“We're still waiting for some parts.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We're still waiting for some parts.）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） many air-conditioning units has your team assembled?",
+      "answer_explain": "原文依据：问句或陈述是“How many air conditioning units has your team assembled?”，自然应答是“We're still waiting for some parts.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We're still waiting for some parts.）。",
+      "question_translation": "你的团队组装了多少个空调机组?",
       "choice_translations": [
-        "A：We're still waiting for some parts.",
-        "B：No, turn the heater on.",
-        "C：You can get those glasses online."
+        "A：我们还在等一些零件。",
+        "B：不,把暖气打开。",
+        "C：你可以在网上买到那些眼镜。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：How many air-conditioning units has your team assembled?",
+      "evidence": "参考原文第 1 段：How many air conditioning units has your team assembled?",
       "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：How many air-conditioning units has your team assembled?",
+        "evidence": "参考原文第 1 段：How many air conditioning units has your team assembled?",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“How many air-conditioning units has your team assembled?”，自然应答是“We're still waiting for some parts.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We're still waiting for some parts.）。"
+        "analysis": "原文依据：问句或陈述是“How many air conditioning units has your team assembled?”，自然应答是“We're still waiting for some parts.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We're still waiting for some parts.）。"
       },
       "item_id": 27,
       "priority": {

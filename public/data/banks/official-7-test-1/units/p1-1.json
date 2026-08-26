@@ -32,8 +32,28 @@
       "asset_key": "official-7-test-1/images/part1/q001.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. She's changing her shoes.\nB. She's reaching into her bag.\nC. She's adjusting her chair.\nD. She's typing on a keyboard.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "620761f51ab3524507adbacc94fd547cbbfd4a1719dc44a005dfb8a099fc84f7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part1/q001.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "A. 她正在换鞋。\nB. 她正把手伸进她的包里。\nC. 她正在调整她的椅子。\nD. 她正在键盘上打字。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "cd757af6860d2c6cab11e336dafd73163539b699375388af389ccba31c057c0f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“She's reaching into her bag.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（She's reaching into her bag.）。",
       "choice_translations": [
-        "A：She's changing her shoes.",
-        "B：She's reaching into her bag.",
-        "C：She's adjusting her chair.",
-        "D：She's typing on a keyboard."
+        "A：她正在换鞋。",
+        "B：她正把手伸进她的包里。",
+        "C：她正在调整她的椅子。",
+        "D：她正在键盘上打字。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-1/p1-1/1"
+      "item_key": "official-7-test-1/p1-1/1",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

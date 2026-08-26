@@ -41,9 +41,32 @@
       "asset_key": "official-8-test-1/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "message.\nHi, Julie. ® Preparations are going well for the museum's\nspecial exhibit starting next week. ®| just got an e-mail from\nthe Covingdale Gallery about the painting they're loaning\nus-delivery has been scheduled for three P.M. today. ®As\nfor the second project, we continue to take inventory of our\ncollection using the new software. | know the inventory\nwas scheduled to be completed this month, but as we've\ndiscussed before, the software's very complex. I'll keep you\ninformed on progress as we go on.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nHi, Julie.\n® Preparations are going well for the museum's\nspecial exhibit starting next week.\n®| just got an e-mail from\nthe Covingdale Gallery about the painting they're loaning\nus-delivery has been scheduled for three P.M.\ntoday.\n®As\nfor the second project, we continue to take inventory of our\ncollection using the new software.\n| know the inventory\nwas scheduled to be completed this month, but as we've\ndiscussed before, the software's very complex.\nI'll keep you\ninformed on progress as we go on.",
-    "content_translation": "中文辅助（离线预处理）：message.\nHi, Julie.\n® Preparations are going well for the museum's\nspecial exhibit starting next week.\n®| just got an e-mail from\nthe Covingdale Gallery about the painting they're loaning\nus-delivery has been scheduled for three P.M.\ntoday.\n®As\nfor the second project, we continue to take inventory of our\ncollection using the new software.\n| know the inventory\nwas scheduled to be completed this month, but as we've\ndiscussed before, the software's very complex.\nI'll keep you\ninformed on progress as we go on."
+    "transcript": "Hi, Julie.\nPreparations are going well for the museum's special exhibit starting next week.\nI just got an e-mail from the Covingdale Gallery about the painting they're loaning us-delivery has been scheduled for 3 p.m. today.\nAs for the second project, we continue to take inventory of our collection using the new software.\nI know the inventory was scheduled to be completed this month, but we're going to take inventory of our collection using the new software.\nI know the inventory was scheduled to be completed this month, but as we've discussed before, the software's very complex.\nI'll keep you informed on progress as we go on.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "90479a07dc2f27fde4e6c504c531976132838965e97d6e1272e477844743a387",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 107,
+        "legacy_word_count": 81,
+        "length_ratio": 1.321,
+        "legacy_coverage": 0.963
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "嗨，Julie。\n博物馆下周开始的特别展览准备工作进展顺利。\n我刚收到 Covingdale Gallery 关于他们借给我们的画作的电子邮件——交货定于今天下午 3 点。\n至于第二个项目，我们继续使用新软件清点我们的收藏品库存。\n我知道库存原计划本月完成，但我们将使用新软件来清点我们的收藏品。\n我知道库存原计划本月完成，但正如我们之前讨论的，这个软件非常复杂。\n我会随时向您汇报进展。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "050178745e8516a506eb33329ef00ff5dd3b9359bf3e38598b8c2cae168001a3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +78,23 @@
       ],
       "answer": "A",
       "question": "What special event is the speaker preparing for?",
-      "answer_explain": "原文依据：听力原文中提到“for the second project, we continue to take inventory of our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An exhibition opening）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） special event is the speaker（说话者） preparing for?",
+      "answer_explain": "正确答案：A（An exhibition opening）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) special event is the speaker(说话者) preparing for?",
       "choice_translations": [
-        "A：An exhibition opening",
-        "B：A tund-raising banquet",
-        "C：A volunteer orientation",
-        "D：An art auction"
+        "A:An exhibition opening",
+        "B:A tund-raising banquet",
+        "C:A volunteer orientation",
+        "D:An art auction"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：special exhibit starting next week. ®| just got an e-mail from",
+      "evidence": "参考听力原文：“Preparations are going well for the museum's special exhibit starting next week.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：special exhibit starting next week. ®| just got an e-mail from",
+        "evidence": "参考听力原文：“Preparations are going well for the museum's special exhibit starting next week.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“for the second project, we continue to take inventory of our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An exhibition opening）。"
+        "analysis": "正确答案：A（An exhibition opening）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -109,23 +132,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker say about some artwork?",
-      "answer_explain": "原文依据：听力原文中提到“us-delivery has been scheduled for three P.M.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Its delivery has been scheduled.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say about some artwork?",
+      "answer_explain": "正确答案：D（Its delivery has been scheduled.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say about some artwork?",
       "choice_translations": [
-        "A：It is covered by insurance.",
-        "B：It will be packaged in two containers.",
-        "C：It will be the focus of the event.",
-        "D：Its delivery has been scheduled."
+        "A:It is covered by insurance.",
+        "B:It will be packaged in two containers.",
+        "C:It will be the focus of the event.",
+        "D:Its delivery has been scheduled."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“I just got an e-mail from the Covingdale Gallery about the painting they're loaning us-delivery has been scheduled for 3 p.m. today.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“I just got an e-mail from the Covingdale Gallery about the painting they're loaning us-delivery has been scheduled for 3 p.m. today.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“us-delivery has been scheduled for three P.M.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Its delivery has been scheduled.）。"
+        "analysis": "正确答案：D（Its delivery has been scheduled.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -163,23 +186,23 @@
       ],
       "answer": "D",
       "question": "Why does the speaker say, \"the software's very complex\"?",
-      "answer_explain": "原文依据：听力原文中提到“discussed before, the software's very complex.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To explain a delay）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"the software's very complex\"?",
+      "answer_explain": "正确答案：D（To explain a delay）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"the software's very complex\"?",
       "choice_translations": [
-        "A：To recommend training",
-        "B：To request assistance",
-        "C：To suggest（表明/建议） a replacement",
-        "D：To explain a delay"
+        "A:To recommend training",
+        "B:To request assistance",
+        "C:To suggest(表明/建议) a replacement",
+        "D:To explain a delay"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 7 段：collection using the new software. | know the inventory",
+      "evidence": "参考听力原文：“I know the inventory was scheduled to be completed this month, but as we've discussed before, the software's very complex.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 7 段：collection using the new software. | know the inventory",
+        "evidence": "参考听力原文：“I know the inventory was scheduled to be completed this month, but as we've discussed before, the software's very complex.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“discussed before, the software's very complex.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To explain a delay）。"
+        "analysis": "正确答案：D（To explain a delay）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

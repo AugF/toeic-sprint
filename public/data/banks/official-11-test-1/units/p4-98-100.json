@@ -44,9 +44,32 @@
       "asset_key": "official-11-test-1/images/part4/q098-100.jpg",
       "exists": true
     },
-    "transcript": "Welcome to Weston Sports Stadium! We are very pleased\nthat you're joining us here for this special event. Tonight\nis the first time our hometown baseball team is playing in\nthe regional championship! To celebrate, we'll be giving\naway prizes throughout the night. Our first prize goes to\nattendees who are in seats 23 through 30. They will each win\na free ticket to a game next season! We'll announce more\ngiveaways as tonight's game progresses. And don't forget\nto stay after the game. There will be a fireworks display.",
-    "transcript_translation": "欢迎来到韦斯顿体育场！我们非常高兴各位前来参加这场特别活动。今晚是我们本地棒球队首次参加地区冠军赛！为此，我们整晚都会送出奖品。第一份奖品将送给座位号在 23 到 30 之间的观众，他们每人都会赢得一张下赛季比赛的免费门票！随着今晚比赛的进行，我们还会公布更多赠奖活动。别忘了赛后留下来，届时会有烟花表演。",
-    "content_translation": "本段听力围绕“体育赛事通知”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Welcome to Weston Sports Stadium.\nWe are very pleased that you're joining us here for this special event.\nTonight is the first time our hometown baseball team is playing in the regional championship.\nTo celebrate, we'll be giving away prizes throughout the night.\nOur first prize goes to attendees who are in seats 23 through 30.\nThey will each win a free ticket to a game next season.\nWe'll announce more giveaways as tonight's game progresses.\nAnd don't forget to stay after the game.\nThere will be a fireworks display.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "2790994e9097070985386173546dbac7949738c1859e794885553355f15bea5e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 91,
+        "legacy_word_count": 88,
+        "length_ratio": 1.034,
+        "legacy_coverage": 1
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "欢迎来到韦斯顿体育场。\n我们很高兴您参加本次特别活动。\n今晚是我们家乡棒球队首次参加区域冠军赛。\n为了庆祝，我们将整晚派发奖品。\n我们的第一个奖品颁给坐在23到30座的与会者。\n他们每个人都将赢得下赛季的一张免费门票。\n随着今晚比赛的进行，我们将宣布更多赠品。\n别忘了在比赛结束后留下。\n届时将有烟花表演所在。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c840344378273ad7d75b074828fb175c6a6640c1de75e13ac74e64e1e021b1ba"
+    }
   },
   "items": [
     {
@@ -58,24 +81,24 @@
         "It will be televised internationally."
       ],
       "answer": "A",
-      "answer_explain": "原文依据：Tonight is the first time our hometown baseball team is playing in the regional championship。 选择理由：特别之处是本地队参加冠军赛，对应A。正确答案：A（A local team is playing in a championship game.）。",
+      "answer_explain": "正确答案：A（A local team is playing in a championship game.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段第 1 句：that you're joining us here for this special event. Tonight",
+      "evidence": "参考听力原文：“Tonight is the first time our hometown baseball team is playing in the regional championship.”",
       "choice_translations": [
-        "A：本地球队正在参加冠军赛。",
-        "B：到场人数创下纪录。",
-        "C：这是新体育场举办的第一场比赛。",
-        "D：比赛将在全球电视转播。"
+        "A:本地球队正在参加冠军赛。",
+        "B:到场人数创下纪录。",
+        "C:这是新体育场举办的第一场比赛。",
+        "D:比赛将在全球电视转播。"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段第 1 句：that you're joining us here for this special event. Tonight",
+        "evidence": "参考听力原文：“Tonight is the first time our hometown baseball team is playing in the regional championship.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：Tonight is the first time our hometown baseball team is playing in the regional championship。 选择理由：特别之处是本地队参加冠军赛，对应A。正确答案：A（A local team is playing in a championship game.）。"
+        "analysis": "正确答案：A（A local team is playing in a championship game.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者为什么说这场活动很特别？",
+      "question_translation": "说话者为什么说这场活动很特别?",
       "item_id": 98,
       "priority": {
         "level": "P1",
@@ -110,24 +133,24 @@
         "Section D"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：一等奖给 seats 23 through 30；座位图显示这些座位在 Section C。 选择理由：综合讲话与座位图得C。正确答案：C（Section C）。",
+      "answer_explain": "正确答案：C（Section C）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段第 1 句：is the first time our hometown baseball team is playing in",
+      "evidence": "参考听力原文：“Our first prize goes to attendees who are in seats 23 through 30.”",
       "choice_translations": [
-        "A：A 区",
-        "B：B 区",
-        "C：C 区",
-        "D：D 区"
+        "A:A 区",
+        "B:B 区",
+        "C:C 区",
+        "D:D 区"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段第 1 句：is the first time our hometown baseball team is playing in",
+        "evidence": "参考听力原文：“Our first prize goes to attendees who are in seats 23 through 30.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：一等奖给 seats 23 through 30；座位图显示这些座位在 Section C。 选择理由：综合讲话与座位图得C。正确答案：C（Section C）。"
+        "analysis": "正确答案：C（Section C）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "请看图表。第一份奖品的获奖者坐在哪个区域？",
+      "question_translation": "请看图表。第一份奖品的获奖者坐在哪个区域?",
       "item_id": 99,
       "priority": {
         "level": "P1",
@@ -162,24 +185,24 @@
         "To watch some fireworks"
       ],
       "answer": "D",
-      "answer_explain": "原文依据：讲话明确建议 stay after the game，因为 there will be a fireworks display。 选择理由：留下是为了看烟花，对应D。正确答案：D（To watch some fireworks）。",
+      "answer_explain": "正确答案：D（To watch some fireworks）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段第 1 句：to stay after the game. There will be a fireworks display.",
+      "evidence": "参考听力原文：“And don't forget to stay after the game.”",
       "choice_translations": [
-        "A：参观场馆",
-        "B：与球队队员见面",
-        "C：购买纪念品",
-        "D：观看烟花表演"
+        "A:参观场馆",
+        "B:与球队队员见面",
+        "C:购买纪念品",
+        "D:观看烟花表演"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段第 1 句：to stay after the game. There will be a fireworks display.",
+        "evidence": "参考听力原文：“And don't forget to stay after the game.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：讲话明确建议 stay after the game，因为 there will be a fireworks display。 选择理由：留下是为了看烟花，对应D。正确答案：D（To watch some fireworks）。"
+        "analysis": "正确答案：D（To watch some fireworks）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者为什么建议观众在赛后留下？",
+      "question_translation": "说话者为什么建议观众在赛后留下?",
       "item_id": 100,
       "priority": {
         "level": "P1",

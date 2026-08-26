@@ -27,38 +27,58 @@
       "asset_key": "official-10-test-2/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：* M Did you order（订单） new business cards?",
-    "content_translation": "中文辅助（离线预处理）：* M Did you order（订单） new business cards?"
+    "transcript": "Did you order new business cards?\nA. We're taking a bus.\nB. Has Thomas seen the grant application?\nC. Yes, I included the company logo this time.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "27027ba4411ad8741371235fc9a5394ca4f2758486872aaa524d5d240b1d12c9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "你订新的名片了吗？\nA. 我们坐公交车。\nB. Thomas 看过资助申请了吗？\nC. 是的，这次我包含了公司标志。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1628b66bf38315ca60b5c1304bc2436859c9e4710a255bfae0e288054556e0c0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "We're taking a bus.",
-        "Has Thomas seen the grant application? re",
+        "Has Thomas seen the grant application?",
         "Yes, I included the company logo this time."
       ],
       "answer": "C",
-      "question": "* M Did you order new business cards?",
+      "question": "Did you order new business cards?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“* M Did you order new business cards?”，自然应答是“Yes, I included the company logo this time.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, I included the company logo this time.）。",
-      "question_translation": "中文辅助（离线预处理）：* M Did you order（订单） new business cards?",
+      "answer_explain": "原文依据：问句或陈述是“Did you order new business cards?”，自然应答是“Yes, I included the company logo this time.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, I included the company logo this time.）。",
+      "question_translation": "你订新的名片了吗?",
       "choice_translations": [
-        "A：We're taking a bus.",
-        "B：Has Thomas seen the grant application?\nre",
-        "C：Yes, I included the company（公司） logo this time."
+        "A：我们坐公交车。",
+        "B：Thomas 看过资助申请了吗?",
+        "C：是的,这次我包含了公司标志。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：* M Did you order new business cards?",
+      "evidence": "参考原文第 1 段：Did you order new business cards?",
       "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：* M Did you order new business cards?",
+        "evidence": "参考原文第 1 段：Did you order new business cards?",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“* M Did you order new business cards?”，自然应答是“Yes, I included the company logo this time.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, I included the company logo this time.）。"
+        "analysis": "原文依据：问句或陈述是“Did you order new business cards?”，自然应答是“Yes, I included the company logo this time.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Yes, I included the company logo this time.）。"
       },
       "item_id": 19,
       "priority": {

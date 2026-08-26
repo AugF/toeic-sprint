@@ -27,38 +27,58 @@
       "asset_key": "official-3-test-2/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ev What（什么）'s the name of the new intern in the design department?\nEw",
-    "content_translation": "中文辅助（离线预处理）：Ev What（什么）'s the name of the new intern in the design department?\nEw"
+    "transcript": "What's the name of the new intern in the design department?\nA. I think it's Sammy, but I'm not sure.\nB. We sent in the blueprint.\nC. Yes, I enjoyed the internship.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "01611c027a3a7be32e7e9d6b0f2152792ac6439b11f866e6153c5ec9be089bf6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "设计部门的新实习生叫什么名字？\nA. 我想是萨米，但不确定。\nB. 我们提交了蓝图。\nC. 是的，我喜欢这次实习。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "10adc100974d112822834389798e4213e2d411a5e422f9391d82d4f93c1b0336"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "think it's Sammy, but I’m not sure.",
+        "I think it's Sammy, but I'm not sure.",
         "We sent in the blueprint.",
-        "Yes, | enjoyed the internship."
+        "Yes, I enjoyed the internship."
       ],
       "answer": "A",
-      "question": "Ev What's the name of the new intern in the design department? Ew",
+      "question": "What's the name of the new intern in the design department?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ev What's the name of the new intern in the design department? Ew”，自然应答是“think it's Sammy, but I’m not sure.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（think it's Sammy, but I’m not sure.）。",
-      "question_translation": "中文辅助（离线预处理）：Ev What（什么）'s the name of the new intern in the design department?\nEw",
+      "answer_explain": "原文依据：问句或陈述是“What's the name of the new intern in the design department?”，自然应答是“I think it's Sammy, but I'm not sure.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I think it's Sammy, but I'm not sure.）。",
+      "question_translation": "设计部门的新实习生叫什么名字?",
       "choice_translations": [
-        "A：think it's Sammy, but I’m not sure.",
-        "B：We sent in the blueprint.",
-        "C：Yes, | enjoyed the internship."
+        "A：我想是萨米,但不确定。",
+        "B：我们提交了蓝图。",
+        "C：是的,我喜欢这次实习。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ev What's the name of the new intern in the design department? Ew",
+      "evidence": "参考原文第 1 段：What's the name of the new intern in the design department?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ev What's the name of the new intern in the design department? Ew",
+        "evidence": "参考原文第 1 段：What's the name of the new intern in the design department?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ev What's the name of the new intern in the design department? Ew”，自然应答是“think it's Sammy, but I’m not sure.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（think it's Sammy, but I’m not sure.）。"
+        "analysis": "原文依据：问句或陈述是“What's the name of the new intern in the design department?”，自然应答是“I think it's Sammy, but I'm not sure.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I think it's Sammy, but I'm not sure.）。"
       },
       "item_id": 12,
       "priority": {

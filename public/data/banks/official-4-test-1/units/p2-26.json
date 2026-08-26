@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-1/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：ES ere ls our managers new office（办公室） aan int nose eore Hw",
-    "content_translation": "中文辅助（离线预处理）：ES ere ls our managers new office（办公室） aan int nose eore Hw"
+    "transcript": "Where is our manager's new office?\nA. No, just the main entrance.\nB. It hasn't been assigned yet.\nC. We didn't expect you to.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c558fd41081adeea770b27149f22360a5154667b323a1b2fdf1428de4fa2e484",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "我们的经理的新办公室在哪里？\nA. 不，就在主入口。\nB. 它还没有分配。\nC. 我们没想到你会来。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f5764ab7c437eb33797d3148afc21fac70be43e5301d8ac6518edbd30646633d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "No, just the main entrance. “ MEBATUSOCHWL, PRR BIOY",
-        "d‘IERF. Itlsé#flCHS our manager's new",
-        "We didn’t expect you to."
+        "No, just the main entrance.",
+        "It hasn't been assigned yet.",
+        "We didn't expect you to."
       ],
       "answer": "B",
-      "question": "ES ere ls our managers new office aan int nose eore Hw",
+      "question": "Where is our manager's new office?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“ES ere ls our managers new office aan int nose eore Hw”，自然应答是“d‘IERF. Itlsé#flCHS our manager's new”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（d‘IERF. Itlsé#flCHS our manager's new）。",
-      "question_translation": "中文辅助（离线预处理）：ES ere ls our managers new office（办公室） aan int nose eore Hw",
+      "answer_explain": "原文依据：问句或陈述是“Where is our manager's new office?”，自然应答是“It hasn't been assigned yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It hasn't been assigned yet.）。",
+      "question_translation": "我们的经理的新办公室在哪里?",
       "choice_translations": [
-        "A：No, just the main entrance.\n“ MEBATUSOCHWL, PRR BIOY",
-        "B：d‘IERF.\nItlsé#flCHS our manager（经理）'s new",
-        "C：We didn’t expect you to."
+        "A：不,就在主入口。",
+        "B：它还没有分配。",
+        "C：我们没想到你会来。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：ES ere ls our managers new office aan int nose eore Hw",
+      "evidence": "参考原文第 1 段：Where is our manager's new office?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：ES ere ls our managers new office aan int nose eore Hw",
+        "evidence": "参考原文第 1 段：Where is our manager's new office?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“ES ere ls our managers new office aan int nose eore Hw”，自然应答是“d‘IERF. Itlsé#flCHS our manager's new”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（d‘IERF. Itlsé#flCHS our manager's new）。"
+        "analysis": "原文依据：问句或陈述是“Where is our manager's new office?”，自然应答是“It hasn't been assigned yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（It hasn't been assigned yet.）。"
       },
       "item_id": 26,
       "priority": {

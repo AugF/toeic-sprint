@@ -28,38 +28,58 @@
       "asset_key": "official-11-test-2/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Doesn't this train go all the way to Springda w",
-    "content_translation": "中文辅助（离线预处理）：Doesn't this train go all the way to Springda w"
+    "transcript": "Doesn't this train go all the way to Springdale?\nA. No, we have to transfer at the next stop.\nB. I'm going to the cafeteria too.\nC. The ticket counter on the left.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7966e3772a101c922344fad9c92ea175d5b38cf16cd3b3aebe4e10a28675ed64",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 34
+      }
+    },
+    "transcript_translation": "这趟火车不是一直开到 Springdale 吗？\nA. 不，我们得在下一站换乘。\nB. 我也要去食堂。\nC. 左边的售票处。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "798ab41c3d316ee1ad386009d2f25351f81c007e849354e7c187b36ad3a34a1d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "No, we have to transfer at the next stop",
+        "No, we have to transfer at the next stop.",
         "I'm going to the cafeteria too.",
         "The ticket counter on the left."
       ],
       "answer": "A",
-      "question": "Doesn't this train go all the way to Springda w",
+      "question": "Doesn't this train go all the way to Springdale?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述为“Doesn't this train go all the way to Springda w”，官方正确应答是“No, we have to transfer at the next stop”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（No, we have to transfer at the next stop）。",
-      "question_translation": "中文辅助（离线预处理）：Doesn't this train go all the way to Springda w",
+      "answer_explain": "原文依据：问句或陈述为“Doesn't this train go all the way to Springdale?”，官方正确应答是“No, we have to transfer at the next stop.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（No, we have to transfer at the next stop.）。",
+      "question_translation": "这趟火车不是一直开到 Springdale 吗?",
       "choice_translations": [
-        "A：No, we have to transfer at the next stop",
-        "B：I'm going to the cafeteria too.",
-        "C：The ticket counter on the left."
+        "A：不,我们得在下一站换乘。",
+        "B：我也要去食堂。",
+        "C：左边的售票处。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Doesn't this train go all the way to Springda w",
+      "evidence": "参考原文第 1 段：Doesn't this train go all the way to Springdale?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Doesn't this train go all the way to Springda w",
+        "evidence": "参考原文第 1 段：Doesn't this train go all the way to Springdale?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“Doesn't this train go all the way to Springda w”，官方正确应答是“No, we have to transfer at the next stop”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（No, we have to transfer at the next stop）。"
+        "analysis": "原文依据：问句或陈述为“Doesn't this train go all the way to Springdale?”，官方正确应答是“No, we have to transfer at the next stop.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（No, we have to transfer at the next stop.）。"
       },
       "item_id": 23,
       "priority": {

@@ -28,13 +28,33 @@
       "asset_key": "official-6-test-2/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：The accounting staff works on this floor, right?",
-    "content_translation": "中文辅助（离线预处理）：The accounting staff works on this floor, right?"
+    "transcript": "The accounting staff works on this floor, right?\nA. Yes, there are offices down the hall.\nB. That's not my invoice.\nC. A lot of renovation work.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ae634a6cb8a47fe9d733dcd220d8593c0408ddd25eebabf4ede0b86e57ef947a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "会计部门就在这一层，对吗？\nA. 是的，走廊尽头有办公室。\nB. 这不是我的发票。\nC. 很多翻修工作。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3b698b70db8089f49481e68c70ccd27e204ac4b6a5850b83e0eee822dbc3d1ab"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Yes, their office is down the hall.",
+        "Yes, there are offices down the hall.",
         "That's not my invoice.",
         "A lot of renovation work."
       ],
@@ -43,12 +63,12 @@
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“The accounting staff works on this floor, right?”，自然应答是“Yes, their office is down the hall.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, their office is down the hall.）。",
-      "question_translation": "中文辅助（离线预处理）：The accounting staff works on this floor, right?",
+      "answer_explain": "原文依据：问句或陈述是“The accounting staff works on this floor, right?”，自然应答是“Yes, there are offices down the hall.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, there are offices down the hall.）。",
+      "question_translation": "会计部门就在这一层,对吗?",
       "choice_translations": [
-        "A：Yes, their office（办公室） is down the hall.",
-        "B：That's not my invoice.",
-        "C：A lot of renovation work（工作）."
+        "A：是的,走廊尽头有办公室。",
+        "B：这不是我的发票。",
+        "C：很多翻修工作。"
       ],
       "question_type": "否定 / 反意疑问句",
       "evidence": "参考原文第 1 段：The accounting staff works on this floor, right?",
@@ -59,7 +79,7 @@
         "question_type": "否定 / 反意疑问句",
         "evidence": "参考原文第 1 段：The accounting staff works on this floor, right?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“The accounting staff works on this floor, right?”，自然应答是“Yes, their office is down the hall.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, their office is down the hall.）。"
+        "analysis": "原文依据：问句或陈述是“The accounting staff works on this floor, right?”，自然应答是“Yes, there are offices down the hall.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, there are offices down the hall.）。"
       },
       "item_id": 7,
       "priority": {

@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-2/audio/part2/q022.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：= w Didn't you want to view the new office（办公室） space this afternoon?\ni",
-    "content_translation": "中文辅助（离线预处理）：= w Didn't you want to view the new office（办公室） space this afternoon?\ni"
+    "transcript": "Didn't you want to view the new office space this afternoon?\nA. With views of the river.\nB. Yes, but I have another appointment.\nC. Two large conference rooms.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "58150dadf42e35bad1c32ec32f365cb9db2d6c4d77fc2dcd94d0f684b7a276c1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q022.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "你不是想今天下午看看新的办公室空间吗？\nA. 可以看到河流的景色。\nB. 是的，但我有另一个预约。\nC. 两个大型会议室。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c85cc982ea889c54bc39997c32c1aeea168a15e7912d2afd561b2b78933289d3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "With views of the river.",
-        "Yes, but | have another appointment.",
+        "Yes, but I have another appointment.",
         "Two large conference rooms."
       ],
       "answer": "B",
-      "question": "= w Didn't you want to view the new office space this afternoon? i",
+      "question": "Didn't you want to view the new office space this afternoon?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“= w Didn't you want to view the new office space this afternoon? i”，自然应答是“Yes, but | have another appointment.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, but | have another appointment.）。",
-      "question_translation": "中文辅助（离线预处理）：= w Didn't you want to view the new office（办公室） space this afternoon?\ni",
+      "answer_explain": "原文依据：问句或陈述是“Didn't you want to view the new office space this afternoon?”，自然应答是“Yes, but I have another appointment.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, but I have another appointment.）。",
+      "question_translation": "你不是想今天下午看看新的办公室空间吗?",
       "choice_translations": [
-        "A：With views of the river.",
-        "B：Yes, but | have another appointment（预约）.",
-        "C：Two large conference rooms."
+        "A：可以看到河流的景色。",
+        "B：是的,但我有另一个预约。",
+        "C：两个大型会议室。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：= w Didn't you want to view the new office space this afternoon? i",
+      "evidence": "参考原文第 1 段：Didn't you want to view the new office space this afternoon?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：= w Didn't you want to view the new office space this afternoon? i",
+        "evidence": "参考原文第 1 段：Didn't you want to view the new office space this afternoon?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“= w Didn't you want to view the new office space this afternoon? i”，自然应答是“Yes, but | have another appointment.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, but | have another appointment.）。"
+        "analysis": "原文依据：问句或陈述是“Didn't you want to view the new office space this afternoon?”，自然应答是“Yes, but I have another appointment.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, but I have another appointment.）。"
       },
       "item_id": 22,
       "priority": {

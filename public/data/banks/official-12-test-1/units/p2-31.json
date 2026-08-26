@@ -27,14 +27,34 @@
       "asset_key": "official-12-test-1/audio/part2/q031.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：How（如何） many positive reviews has our restaurant received online?",
-    "content_translation": "中文辅助（离线预处理）：How（如何） many positive reviews has our restaurant received online?"
+    "transcript": "How many positive reviews has our restaurant received online?\nA. By making a reservation.\nB. I'm having trouble connecting to the internet.\nC. No, I'm not hungry.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f215981acfc333181266ba7c04ebf7d9330d7b8d4d01b49cfccc7a134016265e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q031.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "我们的餐厅在线收到了多少好评？\nA. 通过预订。\nB. 我连接互联网时遇到麻烦了。\nC. 不，我不饿。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "357d3bf7b8510427707cb99bae1473389166df90c2dcc09792dd0ad5c54ca08c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "By making a reservation.",
-        "I'm having trouble connecting to the Internet.",
+        "I'm having trouble connecting to the internet.",
         "No, I'm not hungry."
       ],
       "answer": "B",
@@ -42,12 +62,12 @@
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“How many positive reviews has our restaurant received online?”，自然应答是“I'm having trouble connecting to the Internet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'm having trouble connecting to the Internet.）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） many positive reviews has our restaurant received online?",
+      "answer_explain": "原文依据：问句或陈述是“How many positive reviews has our restaurant received online?”，自然应答是“I'm having trouble connecting to the internet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'm having trouble connecting to the internet.）。",
+      "question_translation": "我们的餐厅在线收到了多少好评?",
       "choice_translations": [
-        "A：By making a reservation.",
-        "B：I'm having trouble connecting to the Internet.",
-        "C：No, I'm not hungry."
+        "A：通过预订。",
+        "B：我连接互联网时遇到麻烦了。",
+        "C：不,我不饿。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：How many positive reviews has our restaurant received online?",
@@ -58,7 +78,7 @@
         "question_type": "一般疑问句",
         "evidence": "参考原文第 1 段：How many positive reviews has our restaurant received online?",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“How many positive reviews has our restaurant received online?”，自然应答是“I'm having trouble connecting to the Internet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'm having trouble connecting to the Internet.）。"
+        "analysis": "原文依据：问句或陈述是“How many positive reviews has our restaurant received online?”，自然应答是“I'm having trouble connecting to the internet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I'm having trouble connecting to the internet.）。"
       },
       "item_id": 31,
       "priority": {

@@ -26,38 +26,58 @@
       "asset_key": "official-11-test-2/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Where（哪里） is the history museum that Sandrine recommended?\n• M",
-    "content_translation": "中文辅助（离线预处理）：Ew Where（哪里） is the history museum that Sandrine recommended?\n• M"
+    "transcript": "Where is the history museum that Sandrine recommended?\nA. In the storage closet.\nB. Let's check online.\nC. Yes, at 11.30.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a308acd46097a5238fb1a4ff62a3939613932276764399ccce7d6c81c419b514",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 21
+      }
+    },
+    "transcript_translation": "桑德琳推荐的历史博物馆在哪里？\nA. 在储物柜里。\nB. 我们在线查一下吧。\nC. 是的，在 11:30。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d5f12520b7290372b3f102bd4d79f379157fcc0f8b8b6e066e03a0bd6f5315a6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "In the storage closet.",
         "Let's check online.",
-        "Yes, at eleven thirty."
+        "Yes, at 11.30."
       ],
       "answer": "B",
-      "question": "Ew Where is the history museum that Sandrine recommended? • M",
+      "question": "Where is the history museum that Sandrine recommended?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述为“Ew Where is the history museum that Sandrine recommended? • M”，官方正确应答是“Let's check online.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（Let's check online.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Where（哪里） is the history museum that Sandrine recommended?\n• M",
+      "answer_explain": "原文依据：问句或陈述为“Where is the history museum that Sandrine recommended?”，官方正确应答是“Let's check online.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（Let's check online.）。",
+      "question_translation": "桑德琳推荐的历史博物馆在哪里?",
       "choice_translations": [
-        "A：In the storage closet.",
-        "B：Let's check online.",
-        "C：Yes, at eleven thirty."
+        "A：在储物柜里。",
+        "B：我们在线查一下吧。",
+        "C：是的,在 11:30。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Where is the history museum that Sandrine recommended? • M",
+      "evidence": "参考原文第 1 段：Where is the history museum that Sandrine recommended?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Where is the history museum that Sandrine recommended? • M",
+        "evidence": "参考原文第 1 段：Where is the history museum that Sandrine recommended?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“Ew Where is the history museum that Sandrine recommended? • M”，官方正确应答是“Let's check online.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（Let's check online.）。"
+        "analysis": "原文依据：问句或陈述为“Where is the history museum that Sandrine recommended?”，官方正确应答是“Let's check online.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（Let's check online.）。"
       },
       "item_id": 19,
       "priority": {

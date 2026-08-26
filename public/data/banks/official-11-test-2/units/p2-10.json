@@ -28,8 +28,28 @@
       "asset_key": "official-11-test-2/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：I•M",
-    "content_translation": "中文辅助（离线预处理）：I•M"
+    "transcript": "Where will the sales staff be waiting for you?\nA. That's my favorite shop.\nB. I'll make the dinner reservations.\nC. In the lobby.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "05a4767687adf9a706282f744ba04999836b422e1f30b9b3be5a04d5a1202d14",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "销售人员会在哪里等您？\nA. 这是我最喜欢的商店。\nB. 我来预订晚餐。\nC. 在大堂里。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9ae8d873dce79e4249ab94959cc9b3cd1103ae84195a495f3ac718149b00fc10"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "In the lobby."
       ],
       "answer": "C",
-      "question": "I•M",
+      "question": "Where will the sales staff be waiting for you?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述为“I•M”，官方正确应答是“In the lobby.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（In the lobby.）。",
-      "question_translation": "中文辅助（离线预处理）：I•M",
+      "answer_explain": "原文依据：问句或陈述为“Where will the sales staff be waiting for you?”，官方正确应答是“In the lobby.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（In the lobby.）。",
+      "question_translation": "销售人员会在哪里等您?",
       "choice_translations": [
-        "A：That's my favorite shop.",
-        "B：I'll make the dinner reservations.",
-        "C：In the lobby."
+        "A：这是我最喜欢的商店。",
+        "B：我来预订晚餐。",
+        "C：在大堂里。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：I•M",
+      "evidence": "参考原文第 1 段：Where will the sales staff be waiting for you?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：I•M",
+        "evidence": "参考原文第 1 段：Where will the sales staff be waiting for you?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“I•M”，官方正确应答是“In the lobby.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（In the lobby.）。"
+        "analysis": "原文依据：问句或陈述为“Where will the sales staff be waiting for you?”，官方正确应答是“In the lobby.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（In the lobby.）。"
       },
       "item_id": 10,
       "priority": {

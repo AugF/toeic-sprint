@@ -26,38 +26,58 @@
       "asset_key": "official-11-test-2/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：When（何时） is your daughter leaving for university?\n฿M",
-    "content_translation": "中文辅助（离线预处理）：When（何时） is your daughter leaving for university?\n฿M"
+    "transcript": "When is your daughter leaving for university?\nA. No, but thank you for offering.\nB. The engineering department.\nC. I'm driving her there on Friday.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "660acb23b32892767f5b67497703b3ab3a6ddef6007febf68df70c04c42d28c6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你女儿什么时候去大学？\nA. 不，但感谢你的提议。\nB. 工程系。\nC. 我周五开车送她去那里。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0f5ad6045dd80f24b1a9c3da9e160d6205a6d720e6ae0c8e4eeae27c82e2ea7e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "No, but thank you for offering",
-        "The Engineering Department.",
+        "No, but thank you for offering.",
+        "The engineering department.",
         "I'm driving her there on Friday."
       ],
       "answer": "C",
-      "question": "When is your daughter leaving for university? ฿M",
+      "question": "When is your daughter leaving for university?",
       "difficulty": "easy",
       "topic": "时间询问",
       "keywords": "when time response",
-      "answer_explain": "原文依据：问句或陈述为“When is your daughter leaving for university? ฿M”，官方正确应答是“I'm driving her there on Friday.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（I'm driving her there on Friday.）。",
-      "question_translation": "中文辅助（离线预处理）：When（何时） is your daughter leaving for university?\n฿M",
+      "answer_explain": "原文依据：问句或陈述为“When is your daughter leaving for university?”，官方正确应答是“I'm driving her there on Friday.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（I'm driving her there on Friday.）。",
+      "question_translation": "你女儿什么时候去大学?",
       "choice_translations": [
-        "A：No, but thank（感谢） you for offering",
-        "B：The Engineering Department.",
-        "C：I'm driving her there on Friday."
+        "A：不,但感谢你的提议。",
+        "B：工程系。",
+        "C：我周五开车送她去那里。"
       ],
       "question_type": "时间疑问句",
-      "evidence": "参考原文第 1 段：When is your daughter leaving for university? ฿M",
+      "evidence": "参考原文第 1 段：When is your daughter leaving for university?",
       "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "时间疑问句",
-        "evidence": "参考原文第 1 段：When is your daughter leaving for university? ฿M",
+        "evidence": "参考原文第 1 段：When is your daughter leaving for university?",
         "strategy": "先识别时间疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“When is your daughter leaving for university? ฿M”，官方正确应答是“I'm driving her there on Friday.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（I'm driving her there on Friday.）。"
+        "analysis": "原文依据：问句或陈述为“When is your daughter leaving for university?”，官方正确应答是“I'm driving her there on Friday.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（I'm driving her there on Friday.）。"
       },
       "item_id": 17,
       "priority": {

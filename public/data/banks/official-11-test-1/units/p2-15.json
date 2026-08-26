@@ -42,8 +42,28 @@
       "asset_key": "official-11-test-1/audio/part2/q015.mp3",
       "exists": true
     },
-    "transcript_translation": "我要去哪里办理退款？\nA：我去看看经理是否有空。\nB：我听说它很贵。\nC：是的，我们去过那里。",
-    "content_translation": "本段听力围绕“地点询问”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Where do I have to go to get my refund?\nA. I'll see if the manager is available.\nB. I heard it's very expensive.\nC. Yes, we've been there.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4654726bd4d227b06d4e9f8e5ca0e6abba0b672efb2a62cb2384ebae754eaadc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q015.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "我要去哪里才能拿到退款？\nA. 我看看经理是否方便。\nB. 我听说它非常贵。\nC. 是的，我们去过那里。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1a219febc564b4dbad1afec97354c1be20ccb5694693f27735831efff93963c9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -61,9 +81,9 @@
       "question_type": "地点疑问句",
       "evidence": "参考原文第 1 段第 1 句：Where do I have to go to get my refund?",
       "choice_translations": [
-        "A：我去看看经理是否有空。",
-        "B：我听说它很贵。",
-        "C：是的，我们去过那里。"
+        "A：我看看经理是否方便。",
+        "B：我听说它非常贵。",
+        "C：是的,我们去过那里。"
       ],
       "response_style": "可直接回答，也常用补充信息间接回答",
       "strategy": "先判断为地点疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
@@ -74,7 +94,7 @@
         "strategy": "先判断为地点疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：Where问到哪里办理退款，答句表示先确认经理是否有空。 选择理由：A给出实际办理退款的下一步，是自然的间接应答；B和C不解决退款问题。正确答案：A（I'll see if the manager is available.）。"
       },
-      "question_translation": "我要去哪里办理退款？",
+      "question_translation": "我要去哪里才能拿到退款?",
       "item_id": 15,
       "priority": {
         "level": "P3",

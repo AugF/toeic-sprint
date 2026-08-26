@@ -31,13 +31,33 @@
       "asset_key": "official-10-test-1/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 他正在修理一块窗玻璃。\nB. 他正在柜台前等待。\nC. 他正在建筑物大厅摆放地毯。\nD. 他正在阅读一个路标。",
-    "content_translation": "A. 他正在修理一块窗玻璃。\nB. 他正在柜台前等待。\nC. 他正在建筑物大厅摆放地毯。\nD. 他正在阅读一个路标。"
+    "transcript": "A. He's repairing a window pane.\nB. He's waiting at a counter.\nC. He's arranging rugs in a building lobby.\nD. He's reading a street sign.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b6b7b461a6c29d4052b2d784d38d72dda79ce199d95d22ea9ebe90d9d5f888a3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 37
+      }
+    },
+    "transcript_translation": "A. 他正在修理一块窗玻璃。\nB. 他在一个柜台前等待。\nC. 他在一个建筑大厅里摆放地毯。\nD. 他在看一个街牌。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "08c115e6bab1b1571398458d0bcbb46dca806d8f29568b15a6e1895e9e669365"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "He's repairing a windowpane.",
+        "He's repairing a window pane.",
         "He's waiting at a counter.",
         "He's arranging rugs in a building lobby.",
         "He's reading a street sign."
@@ -49,9 +69,9 @@
       "answer_explain": "原文依据：照片中可见信息与描述“He's waiting at a counter.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（He's waiting at a counter.）。",
       "choice_translations": [
         "A：他正在修理一块窗玻璃。",
-        "B：他正在柜台前等待。",
-        "C：他正在建筑物大厅摆放地毯。",
-        "D：他正在阅读一个路标。"
+        "B：他在一个柜台前等待。",
+        "C：他在一个建筑大厅里摆放地毯。",
+        "D：他在看一个街牌。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p1-4/4"
+      "item_key": "official-10-test-1/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

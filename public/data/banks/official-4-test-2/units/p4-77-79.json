@@ -40,37 +40,59 @@
       "asset_key": "official-4-test-2/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "Mm\nWelcome, new editors, to this training session! Sat\nPaper Lantern Books, we use very specific editorial\nstandards for our publications. This session has been\ndesigned to familiarize you with them. First, we'll go ove\nthis handbook of our company’s style and rules. It has all\nthe information you need for your daily work, plus\nexamples for us to discuss as a group. Then, I'll talk\nabout how to work with our authors; remember, our job is\nabout bringing the author’s ideas to the page. We have\na lot to cover, and the management team has this room\nat one o’clock.",
-    "transcript_translation": "中文辅助（离线预处理）：Mm\nWelcome, new editors, to this training session!\nSat\nPaper Lantern Books, we use very specific editorial\nstandards for our publications.\nThis session has been\ndesigned to familiarize you with them.\nFirst, we'll go ove\nthis handbook of our company（公司）’s style and rules.\nIt has all\nthe information（信息） you need for your daily work（工作）, plus\nexamples for us to discuss as a group.\nThen, I'll talk\nabout how（如何） to work（工作） with our authors; remember, our job is\nabout bringing the author’s ideas to the page.\nWe have\na lot to cover, and the management team has this room\nat one o’clock.",
-    "content_translation": "中文辅助（离线预处理）：Mm\nWelcome, new editors, to this training session!\nSat\nPaper Lantern Books, we use very specific editorial\nstandards for our publications.\nThis session has been\ndesigned to familiarize you with them.\nFirst, we'll go ove\nthis handbook of our company（公司）’s style and rules.\nIt has all\nthe information（信息） you need for your daily work（工作）, plus\nexamples for us to discuss as a group.\nThen, I'll talk\nabout how（如何） to work（工作） with our authors; remember, our job is\nabout bringing the author’s ideas to the page.\nWe have\na lot to cover, and the management team has this room\nat one o’clock."
+    "transcript": "Welcome, new editors, to this training session.\nAt Paper Lantern Books, we use very specific editorial standards for our publications.\nThis session has been designed to familiarize you with them.\nFirst, we'll go ove this handbook of our company's style and rules.\nIt has all the information you need for your daily work, plus examples for us to discuss as a group.\nThen, I'll talk about how to work with our authors.\nRemember, our job is about bringing the authors' ideas to the page.\nWe have a lot to cover, and the management team has this room at one o'clock.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "14cb0d86677c56dafed5949db6db3f4e970443556cff70d08d3f528be71789de",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 100,
+        "legacy_word_count": 101,
+        "length_ratio": 0.99,
+        "legacy_coverage": 0.96
+      }
+    },
+    "transcript_translation": "欢迎新编辑们参加本次培训课程。\n在 Paper Lantern Books，我们为出版物使用非常具体的编辑标准。\n本次课程旨在让您熟悉这些标准。\n首先，我们将回顾公司风格和规则手册。\n它包含了您日常工作所需的所有信息，以及供我们小组讨论的示例。\n然后，我将谈论如何与我们的作者合作。\n请记住，我们的工作是把作者的想法呈现在纸上。\n我们有很多内容要涵盖，管理团队已经预定了一点的这个房间。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b95a58e57cfc80c97b0b78970614a7a2d40e5e54b826d0676f5dddbcb48f6fda"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Ata law office",
-        "Ata publishing firm",
-        "Ata design studio",
-        "Ata university library"
+        "At a law office",
+        "At a publishing firm",
+        "At a design studio",
+        "At a university library"
       ],
       "answer": "B",
       "question": "Where does the speaker most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“the information you need for your daily work, plus”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Ata publishing firm）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the speaker（说话者） most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：B（At a publishing firm）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the speaker(说话者) most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：Ata law office（办公室）",
-        "B：Ata publishing firm",
-        "C：Ata design studio",
-        "D：Ata university library"
+        "A:At a law office(办公室)",
+        "B:At a publishing firm",
+        "C:At a design studio",
+        "D:At a university library"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Mm",
+      "evidence": "参考听力原文：“It has all the information you need for your daily work, plus examples for us to discuss as a group.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Mm",
+        "evidence": "参考听力原文：“It has all the information you need for your daily work, plus examples for us to discuss as a group.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the information you need for your daily work, plus”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Ata publishing firm）。"
+        "analysis": "正确答案：B（At a publishing firm）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "C",
       "question": "What will the listeners do first?",
-      "answer_explain": "原文依据：听力原文中提到“this handbook of our company’s style and rules.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Go through a handbook）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the listeners do first?",
+      "answer_explain": "正确答案：C（Go through a handbook）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the listeners do first?",
       "choice_translations": [
-        "A：Watch a training video",
-        "B：Read an online article",
-        "C：Go through a handbook",
-        "D：Meet with a manager（经理）"
+        "A:Watch a training video",
+        "B:Read an online article",
+        "C:Go through a handbook",
+        "D:Meet with a manager(经理)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：designed to familiarize you with them. First, we'll go ove",
+      "evidence": "参考听力原文：“First, we'll go ove this handbook of our company's style and rules.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：designed to familiarize you with them. First, we'll go ove",
+        "evidence": "参考听力原文：“First, we'll go ove this handbook of our company's style and rules.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“this handbook of our company’s style and rules.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Go through a handbook）。"
+        "analysis": "正确答案：C（Go through a handbook）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "A",
       "question": "Why does the speaker say, “the management team has this room at one o'clock”?",
-      "answer_explain": "原文依据：听力原文中提到“a lot to cover, and the management team has this room”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To emphasize a time limit）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, “the management team has this room at one o'clock”?",
+      "answer_explain": "正确答案：A（To emphasize a time limit）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, “the management team has this room at one o'clock”?",
       "choice_translations": [
-        "A：To emphasize a time limit",
-        "B：To explain a scheduling error",
-        "C：To confirm that projects will be reassigned",
-        "D：To suggest（表明/建议） relocating to a different area"
+        "A:To emphasize a time limit",
+        "B:To explain a scheduling error",
+        "C:To confirm that projects will be reassigned",
+        "D:To suggest(表明/建议) relocating to a different area"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 11 段：a lot to cover, and the management team has this room",
+      "evidence": "参考听力原文：“We have a lot to cover, and the management team has this room at one o'clock.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 11 段：a lot to cover, and the management team has this room",
+        "evidence": "参考听力原文：“We have a lot to cover, and the management team has this room at one o'clock.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“a lot to cover, and the management team has this room”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To emphasize a time limit）。"
+        "analysis": "正确答案：A（To emphasize a time limit）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

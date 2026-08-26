@@ -41,9 +41,31 @@
       "asset_key": "official-12-test-2/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nEw Hello, Owe wanted to confirm the gate for flight 1226 to\nNew York. Ols it still boarding at gate 27? I don't see it\non the departure board.\nm ©Let me check. Yes, it's at gate 27. There are several\nflights from this gate before yours, so some aren't\ndisplayed on the screen yet.\naKw OK, thank you. I have another question. My coworker\nand I both paid for a priority boarding upgrade, but that\nisn't printed on her boarding pass, only mine.\nEw Yes, Geven though I paid an additional fee, my\nboarding pass doesn't indicate it was upgraded.\nm ©That's a known issue with our boarding software\nLet me look up your account to confirm your ticket.",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nEw Hello, Owe wanted to confirm the gate for flight 1226 to\nNew York.\nOls it still boarding at gate 27?\nI don't see it\non the departure board.\nm ©Let me check.\nYes, it's at gate 27.\nThere are several\nflights from this gate before yours, so some aren't\ndisplayed on the screen yet.\naKw OK, thank（感谢） you.\nI have another question.\nMy coworker\nand I both paid for a priority boarding upgrade, but that\nisn't printed on her boarding pass, only mine.\nEw Yes, Geven though I paid an additional fee, my\nboarding pass doesn't indicate it was upgraded.\nm ©That's a known issue with our boarding software\nLet me look up your account to confirm your ticket.",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nEw Hello, Owe wanted to confirm the gate for flight 1226 to\nNew York.\nOls it still boarding at gate 27?\nI don't see it\non the departure board.\nm ©Let me check.\nYes, it's at gate 27.\nThere are several\nflights from this gate before yours, so some aren't\ndisplayed on the screen yet.\naKw OK, thank（感谢） you.\nI have another question.\nMy coworker\nand I both paid for a priority boarding upgrade, but that\nisn't printed on her boarding pass, only mine.\nEw Yes, Geven though I paid an additional fee, my\nboarding pass doesn't indicate it was upgraded.\nm ©That's a known issue with our boarding software\nLet me look up your account to confirm your ticket."
+    "transcript": "Hello, we wanted to confirm the gate for flight 1226 to New York.\nIs it still boarding at gate 27?\nI don't see it on the departure board.\nLet me check.\nYes, it's at gate 27.\nThere are several flights from this gate before yours, so some aren't displayed on the screen yet.\nOkay, thank you.\nI have another question.\nMy co-worker and I both paid for a priority boarding upgrade, but that isn't printed on her boarding pass, only mine.\nYes, even though I paid an additional fee, my boarding pass doesn't indicate it was upgraded.\nThat's a known issue with our boarding software.\nLet me look up your account to confirm your ticket.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "374e79fb5c8d95dd050b2a65b0d0d1d1915bd5c11b6508d8a072a3780525513c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 112,
+        "legacy_word_count": 115,
+        "length_ratio": 0.974,
+        "legacy_coverage": 0.904
+      }
+    },
+    "transcript_translation": "您好，我们想确认飞往纽约的 1226 航班的登机口。\n它还在 27 号登机口登机吗？\n我没有在出发大屏幕上看到。\n让我查一下。\n是的，在 27 号登机口。\n从这个登机口还有好几班飞机比您之前飞的，所以有些还没有显示在屏幕上。\n好的，谢谢您。\n我还有一个问题。\n我和我的同事都支付了优先登机升级费，但她的登机牌上没有打印出来，只有我的。\n是的，即使我支付了额外的费用，我的登机牌也没有显示升级过。\n这是我们登机软件的一个已知问题。\n让我查一下您的账户以确认您的票。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d2091d083cb2ac028325d3202815b313728146586100ef0d257f8b141c69c437"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "C",
       "question": "Who most likely is the man?",
-      "answer_explain": "原文依据：听力原文中提到“Ew Hello, Owe wanted to confirm the gate for flight 1226 to”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（An airline employee）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the man（男士）?",
+      "answer_explain": "正确答案：C（An airline employee）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is the man(男士)?",
       "choice_translations": [
-        "A：A travel agent",
-        "B：A taxi driver",
-        "C：An airline employee（员工）",
-        "D：A security guard"
+        "A:A travel agent",
+        "B:A taxi driver",
+        "C:An airline employee(员工)",
+        "D:A security guard"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“My co-worker and I both paid for a priority boarding upgrade, but that isn't printed on her boarding pass, only mine.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“My co-worker and I both paid for a priority boarding upgrade, but that isn't printed on her boarding pass, only mine.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew Hello, Owe wanted to confirm the gate for flight 1226 to”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（An airline employee）。"
+        "analysis": "正确答案：C（An airline employee）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "D",
       "question": "What problem do the women describe?",
-      "answer_explain": "原文依据：听力原文中提到“and I both paid for a priority boarding upgrade, but that”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An upgrade has not been added.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） problem do the women describe?",
+      "answer_explain": "正确答案：D（An upgrade has not been added.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) problem do the women describe?",
       "choice_translations": [
-        "A：A pipe is leaking.",
-        "B：A bag was misplaced.",
-        "C：A connection was canceled.",
-        "D：An upgrade has not been added."
+        "A:A pipe is leaking.",
+        "B:A bag was misplaced.",
+        "C:A connection was canceled.",
+        "D:An upgrade has not been added."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“My co-worker and I both paid for a priority boarding upgrade, but that isn't printed on her boarding pass, only mine.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“My co-worker and I both paid for a priority boarding upgrade, but that isn't printed on her boarding pass, only mine.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“and I both paid for a priority boarding upgrade, but that”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An upgrade has not been added.）。"
+        "analysis": "正确答案：D（An upgrade has not been added.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "A",
       "question": "What will the man do next?",
-      "answer_explain": "原文依据：听力原文中提到“Let me look up your account to confirm your ticket.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Look up an account）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） do next?",
+      "answer_explain": "正确答案：A（Look up an account）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) do next?",
       "choice_translations": [
-        "A：Look up an account",
-        "B：Call for assistance",
-        "C：Check a report",
-        "D：Order（订单） replacement items"
+        "A:Look up an account",
+        "B:Call for assistance",
+        "C:Check a report",
+        "D:Order(订单) replacement items"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Let me look up your account to confirm your ticket.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Let me look up your account to confirm your ticket.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Let me look up your account to confirm your ticket.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Look up an account）。"
+        "analysis": "正确答案：A（Look up an account）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

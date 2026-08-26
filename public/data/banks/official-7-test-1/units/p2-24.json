@@ -26,8 +26,28 @@
       "asset_key": "official-7-test-1/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Can you ask the legal team when（何时） they'll have the contract ready?\nEw",
-    "content_translation": "中文辅助（离线预处理）：Ew Can you ask the legal team when（何时） they'll have the contract ready?\nEw"
+    "transcript": "Can you ask the legal team when they'll have the contract ready?\nA. Yes, I'll give them a call this afternoon.\nB. Try the storage closet down the hall.\nC. My favorite sports team won this weekend.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "dc87323be7c332d1e31724726c2834a59161de9c24267aec0286f4580ba59767",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 38
+      }
+    },
+    "transcript_translation": "你能问一下法务团队他们什么时候能准备好合同吗？\nA. 是的，我今天下午给他们打个电话。\nB. 试试走廊尽头的储物柜。\nC. 我最喜欢的运动队这周末赢了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f035387007772d0bf83f07aa210567835c3126317b0bd3d69dbd24000d0d93fd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "My favorite sports team won this weekend."
       ],
       "answer": "A",
-      "question": "Ew Can you ask the legal team when they'll have the contract ready? Ew",
+      "question": "Can you ask the legal team when they'll have the contract ready?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Can you ask the legal team when they'll have the contract ready? Ew”，自然应答是“Yes, I'll give them a call this afternoon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, I'll give them a call this afternoon.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Can you ask the legal team when（何时） they'll have the contract ready?\nEw",
+      "answer_explain": "原文依据：问句或陈述是“Can you ask the legal team when they'll have the contract ready?”，自然应答是“Yes, I'll give them a call this afternoon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, I'll give them a call this afternoon.）。",
+      "question_translation": "你能问一下法务团队他们什么时候能准备好合同吗?",
       "choice_translations": [
-        "A：Yes, I'll give them a call this afternoon.",
-        "B：Try the storage closet down the hall.",
-        "C：My favorite sports team won this weekend."
+        "A：是的,我今天下午给他们打个电话。",
+        "B：试试走廊尽头的储物柜。",
+        "C：我最喜欢的运动队这周末赢了。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Can you ask the legal team when they'll have the contract ready? Ew",
+      "evidence": "参考原文第 1 段：Can you ask the legal team when they'll have the contract ready?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Can you ask the legal team when they'll have the contract ready? Ew",
+        "evidence": "参考原文第 1 段：Can you ask the legal team when they'll have the contract ready?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Can you ask the legal team when they'll have the contract ready? Ew”，自然应答是“Yes, I'll give them a call this afternoon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, I'll give them a call this afternoon.）。"
+        "analysis": "原文依据：问句或陈述是“Can you ask the legal team when they'll have the contract ready?”，自然应答是“Yes, I'll give them a call this afternoon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, I'll give them a call this afternoon.）。"
       },
       "item_id": 24,
       "priority": {

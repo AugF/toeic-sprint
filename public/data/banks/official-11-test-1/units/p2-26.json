@@ -42,14 +42,34 @@
       "asset_key": "official-11-test-1/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "律师会提供协议的纸质副本，还是通过电子邮件发送？\nA：我们本季度的销售业绩更好了。\nB：你比较喜欢哪一种？\nC：是的，我也看到了。",
-    "content_translation": "本段听力围绕“选择问句”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Will the lawyer provide\nA. paper copy of the agreement or send it by email? A. We've had better sales results this quarter.\nB. Do you have a preference?\nC. Yes, I saw that too.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e9cebfa1102b76bfa3f2401e57eaf00863287fd76256875844fcc5c2f55c8dcf",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 36
+      }
+    },
+    "transcript_translation": "律师会提供\nA. 是提供协议的纸质副本还是通过电子邮件发送？ A. 我们这个季度销售结果更好。\nB. 你有偏好吗？\nC. 是的，我也看到了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "16264d85b5c09e5e2908999b685f5d9c0c86c7a7b5eaef72a0092df27faecdf0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
-      "question": "Will the lawyer provide a paper copy of the agreement or send it by e-mail?",
+      "question": "Will the lawyer provide",
       "choices": [
-        "We've had better sales results this quarter.",
+        "paper copy of the agreement or send it by email? A. We've had better sales results this quarter.",
         "Do you have a preference?",
         "Yes, I saw that too."
       ],
@@ -59,22 +79,22 @@
       "keywords": "or choice preference response",
       "answer_explain": "原文依据：选择问句询问纸质版还是电子邮件，答句问 Do you have a preference? 选择理由：B承接两个备选方式并询问偏好；A和C与发送方式无关。正确答案：B（Do you have a preference?）。",
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段第 1 句：Will the lawyer provide a paper copy of the agreement or send it by e-mail?",
+      "evidence": "参考原文第 1 段第 1 句：Will the lawyer provide",
       "choice_translations": [
-        "A：我们本季度的销售业绩更好了。",
-        "B：你比较喜欢哪一种？",
-        "C：是的，我也看到了。"
+        "A：是提供协议的纸质副本还是通过电子邮件发送? A. 我们这个季度销售结果更好。",
+        "B：你有偏好吗?",
+        "C：是的,我也看到了。"
       ],
       "response_style": "可直接回答，也常用补充信息间接回答",
       "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段第 1 句：Will the lawyer provide a paper copy of the agreement or send it by e-mail?",
+        "evidence": "参考原文第 1 段第 1 句：Will the lawyer provide",
         "strategy": "先判断为一般疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：选择问句询问纸质版还是电子邮件，答句问 Do you have a preference? 选择理由：B承接两个备选方式并询问偏好；A和C与发送方式无关。正确答案：B（Do you have a preference?）。"
       },
-      "question_translation": "律师会提供协议的纸质副本，还是通过电子邮件发送？",
+      "question_translation": "律师会提供",
       "item_id": 26,
       "priority": {
         "level": "P2",

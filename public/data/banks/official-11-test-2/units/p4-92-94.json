@@ -40,9 +40,31 @@
       "asset_key": "official-11-test-2/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "On behalf of the Woodlands Historical Foundation, I want\nto welcome you all to our fund-raiser. As you know, Owe're\nraising money to restore our archives building. In addition\nto holding priceless materials, it is one of the city's most\nbeautiful structures. OWe had a string quartet flying in\nfrom Chicago to perform for us tonight, but I just heard that\nthere is fog at the airport. o So, we'll begin by presenting\nour proposal for the restoration. Please enjoy some\nrefreshments, which were graciously donated by the owner:\nof Olson's Restaurant.",
-    "transcript_translation": "中文辅助（离线预处理）：On behalf of the Woodlands Historical Foundation, I want\nto welcome you all to our fund-raiser.\nAs you know, Owe're\nraising money to restore our archives building.\nIn addition\nto holding priceless materials, it is one of the city's most\nbeautiful structures.\nOWe had a string quartet flying in\nfrom Chicago to perform for us tonight, but I just heard that\nthere is fog at the airport.\no So, we'll begin by presenting\nour proposal for the restoration.\nPlease（请） enjoy some\nrefreshments, which were graciously donated by the owner:\nof Olson's Restaurant.",
-    "content_translation": "中文辅助（离线预处理）：On behalf of the Woodlands Historical Foundation, I want\nto welcome you all to our fund-raiser.\nAs you know, Owe're\nraising money to restore our archives building.\nIn addition\nto holding priceless materials, it is one of the city's most\nbeautiful structures.\nOWe had a string quartet flying in\nfrom Chicago to perform for us tonight, but I just heard that\nthere is fog at the airport.\no So, we'll begin by presenting\nour proposal for the restoration.\nPlease（请） enjoy some\nrefreshments, which were graciously donated by the owner:\nof Olson's Restaurant."
+    "transcript": "On behalf of the Woodlands Historical Foundation, I want to welcome you all to our fund-raiser.\nAs you know, Owe're raising money to restore our archives building.\nIn addition to holding priceless materials, it is one of the city's most beautiful structures.\nWe had a string quartet flying in from Chicago to perform for us tonight, but Owe just heard that there is fog at the airport.\nOwe'll begin by presenting our proposal for the restoration.\nPlease enjoy some refreshments, which were graciously donated by the owners of Olson's Restaurant.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "cae4789191256210a45d7d8c8b181f2e03bf3fc930d707f93b6bfd3e181dccc2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 90,
+        "legacy_word_count": 90,
+        "length_ratio": 1,
+        "legacy_coverage": 0.956
+      }
+    },
+    "transcript_translation": "我代表Woodlands Historical Foundation，欢迎大家参加我们的筹款活动。\n如您所知，我们正在为修复我们的档案建筑筹集资金。\n除了保存无价的材料外，它也是这座城市最美丽的结构之一。\n我们原本请了一支来自芝加哥的弦乐四重奏来为我们表演今晚，但我们刚刚听说机场有雾。\n我们将从介绍我们的修复提案开始。\n请享用一些茶点，这些是Olson's Restaurant的老板们慷慨捐赠的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "371a8241c0e398aa3c7234a642f07d4e52fae8792ee1d50e523939d105ef5b72"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "B",
       "question": "Where does the speaker work?",
-      "answer_explain": "原文依据：听力原文与题目“Where does the speaker work?”对应，官方答案为“At a historical foundation”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（At a historical foundation）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the speaker（说话者） work（工作）?",
+      "answer_explain": "正确答案：B（At a historical foundation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the speaker(说话者) work(工作)?",
       "choice_translations": [
-        "A：At an architectural firm",
-        "B：At a historical foundation",
-        "C：At a construction company（公司）",
-        "D：At a concert hall"
+        "A:At an architectural firm",
+        "B:At a historical foundation",
+        "C:At a construction company(公司)",
+        "D:At a concert hall"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：On behalf of the Woodlands Historical Foundation, I want",
+      "evidence": "参考听力原文：“On behalf of the Woodlands Historical Foundation, I want to welcome you all to our fund-raiser.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：On behalf of the Woodlands Historical Foundation, I want",
+        "evidence": "参考听力原文：“On behalf of the Woodlands Historical Foundation, I want to welcome you all to our fund-raiser.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Where does the speaker work?”对应，官方答案为“At a historical foundation”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（At a historical foundation）。"
+        "analysis": "正确答案：B（At a historical foundation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "C",
       "question": "Why does the speaker say, \"I just heard that there is fog at the airport\"?",
-      "answer_explain": "原文依据：听力原文与题目“Why does the speaker say, \"I just heard that there is fog at the airport\"?”对应，官方答案为“To explain a schedule change”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（To explain a schedule change）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"I just heard that there is fog at the airport\"?",
+      "answer_explain": "正确答案：C（To explain a schedule change）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"I just heard that there is fog at the airport\"?",
       "choice_translations": [
-        "A：To suggest（表明/建议） using alternate transportation",
-        "B：To request help from the audience",
-        "C：To explain a schedule（日程） change",
-        "D：To complain about poor communication"
+        "A:To suggest(表明/建议) using alternate transportation",
+        "B:To request help from the audience",
+        "C:To explain a schedule(日程) change",
+        "D:To complain about poor communication"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 6 段：from Chicago to perform for us tonight, but I just heard that",
+      "evidence": "参考听力原文：“We had a string quartet flying in from Chicago to perform for us tonight, but Owe just heard that there is fog at the airport.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 6 段：from Chicago to perform for us tonight, but I just heard that",
+        "evidence": "参考听力原文：“We had a string quartet flying in from Chicago to perform for us tonight, but Owe just heard that there is fog at the airport.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Why does the speaker say, \"I just heard that there is fog at the airport\"?”对应，官方答案为“To explain a schedule change”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（To explain a schedule change）。"
+        "analysis": "正确答案：C（To explain a schedule change）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "D",
       "question": "Who does the speaker thank at the end of the speech?",
-      "answer_explain": "原文依据：听力原文与题目“Who does the speaker thank at the end of the speech?”对应，官方答案为“Some restaurant owners”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Some restaurant owners）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） does the speaker（说话者） thank（感谢） at the end of the speech?",
+      "answer_explain": "正确答案：D（Some restaurant owners）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) does the speaker(说话者) thank(感谢) at the end of the speech?",
       "choice_translations": [
-        "A：An archivist",
-        "B：An event planner",
-        "C：Some public officials",
-        "D：Some restaurant owners"
+        "A:An archivist",
+        "B:An event planner",
+        "C:Some public officials",
+        "D:Some restaurant owners"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：On behalf of the Woodlands Historical Foundation, I want",
+      "evidence": "参考听力原文：“Please enjoy some refreshments, which were graciously donated by the owners of Olson's Restaurant.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：On behalf of the Woodlands Historical Foundation, I want",
+        "evidence": "参考听力原文：“Please enjoy some refreshments, which were graciously donated by the owners of Olson's Restaurant.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Who does the speaker thank at the end of the speech?”对应，官方答案为“Some restaurant owners”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Some restaurant owners）。"
+        "analysis": "正确答案：D（Some restaurant owners）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

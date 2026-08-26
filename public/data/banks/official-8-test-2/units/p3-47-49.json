@@ -39,9 +39,31 @@
       "asset_key": "official-8-test-2/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "El\" Hi, Insook. ®| have a great story for our Town Hall\nsegment on tonight's program.\nElaw What is it?\n\" Well, ®I think we should open with a report on the\nrenovated Harbor Bridge. You know, the one the Port\nAuthority's been rebuilding?\nHE w Excellent. ® That bridge is being renovated to allow\nlarger container ships to easily access the port, right?\nElM ®Yes, the construction will be completed next week.\nHE w So it's the perfect time to discuss it. ®Do we have any\nvideos of the construction on file?\nO|'m sure I can find one. I've been covering this story\nsince the project started",
-    "transcript_translation": "中文辅助（离线预处理）：El\" Hi, Insook.\n®| have a great story for our Town Hall\nsegment on tonight's program.\nElaw What（什么） is it?\n\" Well, ®I think we should open with a report on the\nrenovated Harbor Bridge.\nYou know, the one the Port\nAuthority's been rebuilding?\nHE w Excellent.\n® That bridge is being renovated to allow\nlarger container ships to easily access the port, right?\nElM ®Yes, the construction will be completed next week.\nHE w So it's the perfect time to discuss it.\n®Do we have any\nvideos of the construction on file?\nO|'m sure I can find one.\nI've been covering this story\nsince the project started",
-    "content_translation": "中文辅助（离线预处理）：El\" Hi, Insook.\n®| have a great story for our Town Hall\nsegment on tonight's program.\nElaw What（什么） is it?\n\" Well, ®I think we should open with a report on the\nrenovated Harbor Bridge.\nYou know, the one the Port\nAuthority's been rebuilding?\nHE w Excellent.\n® That bridge is being renovated to allow\nlarger container ships to easily access the port, right?\nElM ®Yes, the construction will be completed next week.\nHE w So it's the perfect time to discuss it.\n®Do we have any\nvideos of the construction on file?\nO|'m sure I can find one.\nI've been covering this story\nsince the project started"
+    "transcript": "Hi Insook.\nI have a great story for our town hall segment on tonight's program.\nWhat is it?\nWell, I think we should open with a report on the renovated harbor bridge.\nYou know, the one the port authorities been rebuilding.\nExcellent.\nThat bridge is being renovated to allow larger container ships to easily access the port, right?\nYes.\nThe construction will be completed next week.\nSo it's the perfect time to discuss it.\nDo we have any videos of the construction on file?\nI'm sure I can find one.\nI've been covering this story since the project started.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "034e1a3707602ced1f0895d83c4817ddb21354fcc1effa405c661bb0de682b74",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 99,
+        "legacy_word_count": 101,
+        "length_ratio": 0.98,
+        "legacy_coverage": 0.921
+      }
+    },
+    "transcript_translation": "嗨，Insook。\n我有一个关于今晚节目镇议会的精彩故事。\n是什么？\n嗯，我想我们应该以一份关于翻修的港口大桥的报道开头。\n你知道的，就是港务局一直在重建的那座。\n太棒了。\n这座桥正在翻修，以便大型集装箱船可以轻松进入港口，对吗？\n是的。\n施工将在下周完成。\n所以现在讨论它是完美的时间。\n我们有没有关于施工的视频存档？\n我肯定能找到一个。\n自从项目开始以来我就一直在报道这个故事。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e421b45e4a1121272208a7d3f7dabaa43caae269e721b36a61915d2e56ee045a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "What are the speakers most likely preparing for?",
-      "answer_explain": "原文依据：听力原文中提到“\" Well, ®I think we should open with a report on the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（A news broadcast）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers most likely（最可能） preparing for?",
+      "answer_explain": "正确答案：D（A news broadcast）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the speakers most likely(最可能) preparing for?",
       "choice_translations": [
-        "A：A press conference",
-        "B：An industry convention",
-        "C：A team dinner",
-        "D：A news broadcast"
+        "A:A press conference",
+        "B:An industry convention",
+        "C:A team dinner",
+        "D:A news broadcast"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：El\" Hi, Insook. ®| have a great story for our Town Hall",
+      "evidence": "参考听力原文：“That bridge is being renovated to allow larger container ships to easily access the port, right?”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：El\" Hi, Insook. ®| have a great story for our Town Hall",
+        "evidence": "参考听力原文：“That bridge is being renovated to allow larger container ships to easily access the port, right?”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“\" Well, ®I think we should open with a report on the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（A news broadcast）。"
+        "analysis": "正确答案：D（A news broadcast）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "C",
       "question": "According to the speakers, why was a project undertaken?",
-      "answer_explain": "原文依据：听力原文中提到“larger container ships to easily access the port, right?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To improve access to a port）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speakers, why（为什么） was a project undertaken?",
+      "answer_explain": "正确答案：C（To improve access to a port）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speakers, why(为什么) was a project undertaken?",
       "choice_translations": [
-        "A：To increase safety",
-        "B：To reduce costs",
-        "C：To improve access to a port",
-        "D：To repair damage to a highway"
+        "A:To increase safety",
+        "B:To reduce costs",
+        "C:To improve access to a port",
+        "D:To repair damage to a highway"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 13 段：since the project started",
+      "evidence": "参考听力原文：“That bridge is being renovated to allow larger container ships to easily access the port, right?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 13 段：since the project started",
+        "evidence": "参考听力原文：“That bridge is being renovated to allow larger container ships to easily access the port, right?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“larger container ships to easily access the port, right?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To improve access to a port）。"
+        "analysis": "正确答案：C（To improve access to a port）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "A",
       "question": "What will the man probably do soon?",
-      "answer_explain": "原文依据：听力原文中提到“\" Well, ®I think we should open with a report on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Locate a video）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） probably（可能） do soon?",
+      "answer_explain": "正确答案：A（Locate a video）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) probably(可能) do soon?",
       "choice_translations": [
-        "A：Locate a video",
-        "B：Give a talk",
-        "C：Set up some equipment",
-        "D：Pick up a guest speaker（说话者）"
+        "A:Locate a video",
+        "B:Give a talk",
+        "C:Set up some equipment",
+        "D:Pick up a guest speaker(说话者)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：El\" Hi, Insook. ®| have a great story for our Town Hall",
+      "evidence": "参考听力原文：“The construction will be completed next week.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：El\" Hi, Insook. ®| have a great story for our Town Hall",
+        "evidence": "参考听力原文：“The construction will be completed next week.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“\" Well, ®I think we should open with a report on the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Locate a video）。"
+        "analysis": "正确答案：A（Locate a video）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

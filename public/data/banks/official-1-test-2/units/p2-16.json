@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-2/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "你宁愿在会议室开会吗？\nA. 通常不这样。\nB. 三点的会议。\nC. 会更安静。",
-    "content_translation": "你宁愿在会议室开会吗？\nA. 通常不这样。\nB. 三点的会议。\nC. 会更安静。"
+    "transcript": "Wouldn't you rather meet in\nA. conference room? A. It usually doesn't.\nB. A 3 o'clock meeting.\nC. It would be quieter.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7f63e7834ee848d3a0b3c9bff4c88acaf62e584ce9a230688a35fab99b13be92",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 22
+      }
+    },
+    "transcript_translation": "您不宁愿在\nA. 会议室？ A. 通常不会。\nB. 在下午三点的会议。\nC. 那里会更安静。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4bfb6572370bad270ece62b1368699c6068e8277c157fc45c1bf194a79917607"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "It usually doesn’t. Eg w",
-        "A three o’clock meeting.",
+        "conference room? A. It usually doesn't.",
+        "A 3 o'clock meeting.",
         "It would be quieter."
       ],
       "answer": "C",
-      "question": "Wouldn't you rather meet in a conference room?",
+      "question": "Wouldn't you rather meet in",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Wouldn't you rather meet in a conference room?”，自然应答是“It would be quieter.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（It would be quieter.）。",
-      "question_translation": "你宁愿在会议室开会吗？",
+      "answer_explain": "原文依据：问句或陈述是“Wouldn't you rather meet in”，自然应答是“It would be quieter.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（It would be quieter.）。",
+      "question_translation": "您不宁愿在",
       "choice_translations": [
-        "A：通常不这样。",
-        "B：三点的会议。",
-        "C：会更安静。"
+        "A：会议室? A. 通常不会。",
+        "B：在下午三点的会议。",
+        "C：那里会更安静。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：Wouldn't you rather meet in a conference room?",
+      "evidence": "参考原文第 1 段：Wouldn't you rather meet in",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为一般疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：Wouldn't you rather meet in a conference room?",
+        "evidence": "参考原文第 1 段：Wouldn't you rather meet in",
         "strategy": "先判断为一般疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Wouldn't you rather meet in a conference room?”，自然应答是“It would be quieter.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（It would be quieter.）。"
+        "analysis": "原文依据：问句或陈述是“Wouldn't you rather meet in”，自然应答是“It would be quieter.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（It would be quieter.）。"
       },
       "item_id": 16,
       "priority": {

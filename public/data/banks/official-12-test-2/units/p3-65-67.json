@@ -45,9 +45,32 @@
       "asset_key": "official-12-test-2/images/part3/q065-067.jpg",
       "exists": true
     },
-    "transcript": "and pie chart.\nm So-Jin, Ol'm concerned about sales of our latest sports\ndrink. © The beverage just hasn't become as popular\nc9Z0*đ\nas we'd hoped.\nw I agree. We need to do something to address the\nissue. Let's look at where we're currently spending our\nadvertising money.\nm eWe've been focusing heavily on newspapers and\nmagazines. Perhaps we should decrease that and\nput more ad dollars in television?\nwe You make a good point. With television, we could\nreach more potential customers. GI'll call the rest of\nthe team together to brainstorm some different ways to\ncreate effective TV commercials.\nAdvertising Spending\nOther\nWeb Sites\nMagazines\nand\nSocial Media\nNewspapers\nTelevision",
-    "transcript_translation": "中文辅助（离线预处理）：and pie chart.\nm So-Jin, Ol'm concerned about sales of our latest sports\ndrink.\n© The beverage just hasn't become as popular\nc9Z0*đ\nas we'd hoped.\nw I agree.\nWe need to do something to address the\nissue.\nLet's look at where（哪里） we're currently spending our\nadvertising money.\nm eWe've been focusing heavily on newspapers and\nmagazines.\nPerhaps we should decrease that and\nput more ad dollars in television?\nwe You make a good point.\nWith television, we could\nreach more potential customers.\nGI'll call the rest of\nthe team together to brainstorm some different ways to\ncreate effective TV commercials.\nAdvertising Spending\nOther\nWeb Sites\nMagazines\nand\nSocial Media\nNewspapers\nTelevision",
-    "content_translation": "中文辅助（离线预处理）：and pie chart.\nm So-Jin, Ol'm concerned about sales of our latest sports\ndrink.\n© The beverage just hasn't become as popular\nc9Z0*đ\nas we'd hoped.\nw I agree.\nWe need to do something to address the\nissue.\nLet's look at where（哪里） we're currently spending our\nadvertising money.\nm eWe've been focusing heavily on newspapers and\nmagazines.\nPerhaps we should decrease that and\nput more ad dollars in television?\nwe You make a good point.\nWith television, we could\nreach more potential customers.\nGI'll call the rest of\nthe team together to brainstorm some different ways to\ncreate effective TV commercials.\nAdvertising Spending\nOther\nWeb Sites\nMagazines\nand\nSocial Media\nNewspapers\nTelevision"
+    "transcript": "So, Jim, I'm concerned about sales of our latest sports drink.\nThe beverage just hasn't become as popular as we'd hoped.\nI agree.\nWe need to do something to address the issue.\nLet's look at where we're currently spending our advertising money.\nWe've been focusing heavily on newspapers and magazines.\nPerhaps we should decrease that and put more ad dollars in television.\nYou make a good point.\nWith television, we could reach more potential customers.\nI'll call the rest of the team together to brainstorm some different ways to create effective TV commercials.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b25be5562b9b5a6254c8f3e88e719c08559a2edc41d2f4dc86e761f0312b87d5",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 96,
+        "legacy_word_count": 110,
+        "length_ratio": 0.873,
+        "legacy_coverage": 0.873
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "所以，吉姆，我担心我们最新运动饮料的销量。\n这种饮料并没有像我们希望的那样受欢迎。\n我同意。\n我们需要做点什么来解决这个问题。\n让我们看看我们目前把广告钱花在哪里了。\n我们一直重点投入在报纸和杂志上。\n也许我们应该减少那部分，把更多的广告费投到电视上。\n你说得有道理。\n用电视，我们可以接触到更多潜在客户。\n我召集剩下的团队一起集思广益，想出一些创建有效电视广告的不同方法。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f6289dd643aedecaa3cc1b301cd7d5c25633fb3ce3ae5dfb437cc3658c2c62fe"
+    }
   },
   "items": [
     {
@@ -59,23 +82,23 @@
       ],
       "answer": "C",
       "question": "Where do the speakers most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“© The beverage just hasn't become as popular”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a beverage manufacturer）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） do the speakers most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：C（At a beverage manufacturer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) do the speakers most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a publishing company（公司）",
-        "B：At a farmers market",
-        "C：At a beverage manufacturer",
-        "D：At an athletic clothing company（公司）"
+        "A:At a publishing company(公司)",
+        "B:At a farmers market",
+        "C:At a beverage manufacturer",
+        "D:At an athletic clothing company(公司)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：and pie chart.",
+      "evidence": "参考听力原文：“The beverage just hasn't become as popular as we'd hoped.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：and pie chart.",
+        "evidence": "参考听力原文：“The beverage just hasn't become as popular as we'd hoped.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“© The beverage just hasn't become as popular”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a beverage manufacturer）。"
+        "analysis": "正确答案：C（At a beverage manufacturer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 65,
       "priority": {
@@ -112,23 +135,23 @@
       ],
       "answer": "A",
       "question": "Look at the graphic. Which percentage will be decreased?",
-      "answer_explain": "原文依据：听力原文中提到“the team together to brainstorm some different ways to”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（40）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich percentage will be decreased?",
+      "answer_explain": "正确答案：A（40）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which percentage will be decreased?",
       "choice_translations": [
-        "A：40",
-        "B：20",
-        "C：25",
-        "D：15"
+        "A:40",
+        "B:20",
+        "C:25",
+        "D:15"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and pie chart.",
+      "evidence": "参考听力原文：“I'll call the rest of the team together to brainstorm some different ways to create effective TV commercials.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and pie chart.",
+        "evidence": "参考听力原文：“I'll call the rest of the team together to brainstorm some different ways to create effective TV commercials.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the team together to brainstorm some different ways to”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（40）。"
+        "analysis": "正确答案：A（40）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 66,
       "priority": {
@@ -165,23 +188,23 @@
       ],
       "answer": "D",
       "question": "What does the woman say she will do?",
-      "answer_explain": "原文依据：听力原文中提到“the team together to brainstorm some different ways to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Organize a team meeting）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do?",
+      "answer_explain": "正确答案：D（Organize a team meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she will do?",
       "choice_translations": [
-        "A：Create a new account",
-        "B：Speak to the CEO",
-        "C：Order（订单） some new products",
-        "D：Organize a team meeting（会议）"
+        "A:Create a new account",
+        "B:Speak to the CEO",
+        "C:Order(订单) some new products",
+        "D:Organize a team meeting(会议)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and pie chart.",
+      "evidence": "参考听力原文：“I'll call the rest of the team together to brainstorm some different ways to create effective TV commercials.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and pie chart.",
+        "evidence": "参考听力原文：“I'll call the rest of the team together to brainstorm some different ways to create effective TV commercials.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the team together to brainstorm some different ways to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Organize a team meeting）。"
+        "analysis": "正确答案：D（Organize a team meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 67,
       "priority": {

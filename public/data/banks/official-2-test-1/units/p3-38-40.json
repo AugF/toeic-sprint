@@ -36,9 +36,31 @@
       "asset_key": "official-2-test-1/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nlu Hi, Jee Soo. We'd like to move up the press deadlin\nfor the spring catalog to the fourteenth. Do you think\nyou'll have the pages about our Ralton furniture line\nready by then?\nThat shouldn't be a problem. I’ve completed most of tl\ndesign work, but ®we still need the product prices.\nSasha, @have you received the final product price list\nfrom Marketing yet?\nNo, not yet. It was due on Friday but | still haven't\nheard from anyone in Marketing.\nlv Hmm. @Marlene’s the head of Marketing—let me cal\nand ask her to get the listings to you so you can finist\nup the pages. The catalog is our top priority.",
-    "transcript_translation": "有三位发言者。\n嗨，Jee Soo。我们想把春季目录的稿件截止日期提前到十四号。你觉得关于我们 Ralton 家具系列的页面能在那之前准备好吗？\n那不应该是个问题。我大部分的设计工作都完成了，但我们还需要产品价格。\nSasha，你收到市场部最终的产品价目表了吗？\n还没有。原定周五交的，但我还没听到市场部的任何人消息。\n嗯。Marlene 是市场部主管——我打电话给她，让她把资料给你，这样你就能完成这些页面了。目录是我们的重中之重。",
-    "content_translation": "有三位发言者。\n嗨，Jee Soo。我们想把春季目录的稿件截止日期提前到十四号。你觉得关于我们 Ralton 家具系列的页面能在那之前准备好吗？\n那不应该是个问题。我大部分的设计工作都完成了，但我们还需要产品价格。\nSasha，你收到市场部最终的产品价目表了吗？\n还没有。原定周五交的，但我还没听到市场部的任何人消息。\n嗯。Marlene 是市场部主管——我打电话给她，让她把资料给你，这样你就能完成这些页面了。目录是我们的重中之重。"
+    "transcript": "Hi, Jisoo.\nWe'd like to move up the press deadline for the spring catalog to the 14th.\nDo you think you'll have the pages about our Ralton furniture line ready by then?\nThat shouldn't be a problem.\nI've completed most of the design work, but we still need the product prices.\nSasha, have you received the final product price list from marketing yet?\nNo, not yet.\nIt was due on Friday, but I still haven't heard from anyone in marketing.\nMarlene's the head of marketing.\nLet me call and ask her to get the listings to you so you can finish up the pages.\nThe catalog is our top priority.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ac14dcef5c3932d16191b65c7d9ea3004ab2355f065a5c9d52be6504f9dd1fe8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-1/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 110,
+        "legacy_word_count": 116,
+        "length_ratio": 0.948,
+        "legacy_coverage": 0.879
+      }
+    },
+    "transcript_translation": "嗨，Jisoo。\n我们想把春季目录的媒体截止日期提前到14号。\n你觉得关于我们的Ralton家具系列的页面能在那之前准备好吗？\n这不应该是个问题。\n我已经完成了大部分设计工作，但我们还需要产品价格。\nSasha，你收到市场部最终的产品价目表了吗？\n没有，还没有。\n它周五就该交了，但我还是没听到市场部的任何人消息。\nMarlene是市场部主管。\n我打电话给她，让她把目录发给你，这样你就能完成页面了。\n这个目录是我们的重中之重。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6ec97d159e44a7fdd55606284f0776949c3c521ee9388ac0e100dae580317ba8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -49,24 +71,24 @@
         "Creating a catalog"
       ],
       "answer": "D",
-      "question": "What are the speakers working on? =",
-      "answer_explain": "原文依据：听力原文中提到“for the spring catalog to the fourteenth.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Creating a catalog）。",
-      "question_translation": "发言者们在做什么？",
+      "question": "What are the speakers working on?",
+      "answer_explain": "正确答案：D（Creating a catalog）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "发言者们在做什么?",
       "choice_translations": [
-        "A：培训同事",
-        "B：搬迁办公室",
-        "C：计划预算",
-        "D：制作目录"
+        "A:培训同事",
+        "B:搬迁办公室",
+        "C:计划预算",
+        "D:制作目录"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“We'd like to move up the press deadline for the spring catalog to the 14th.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“We'd like to move up the press deadline for the spring catalog to the 14th.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“for the spring catalog to the fourteenth.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Creating a catalog）。"
+        "analysis": "正确答案：D（Creating a catalog）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "B",
       "question": "What are the women waiting for?",
-      "answer_explain": "原文依据：听力原文中提到“Sasha, @have you received the final product price list”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some price information）。",
-      "question_translation": "女士们在等什么？",
+      "answer_explain": "正确答案：B（Some price information）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士们在等什么?",
       "choice_translations": [
-        "A：一份项目提案",
-        "B：一些价格信息",
-        "C：一个官方签名",
-        "D：一些样品产品"
+        "A:一份项目提案",
+        "B:一些价格信息",
+        "C:一个官方签名",
+        "D:一些样品产品"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Sasha, have you received the final product price list from marketing yet?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Sasha, have you received the final product price list from marketing yet?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Sasha, @have you received the final product price list”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some price information）。"
+        "analysis": "正确答案：B（Some price information）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "A",
       "question": "What does the man say he will do?",
-      "answer_explain": "原文依据：听力原文中提到“and ask her to get the listings to you so you can finist”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Call a department manager）。",
-      "question_translation": "男士说他会做什么？",
+      "answer_explain": "正确答案：A（Call a department manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士说他会做什么?",
       "choice_translations": [
-        "A：给部门经理打电话",
-        "B：雇助理",
-        "C：发表公告",
-        "D：更新日历"
+        "A:给部门经理打电话",
+        "B:雇助理",
+        "C:发表公告",
+        "D:更新日历"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Let me call and ask her to get the listings to you so you can finish up the pages.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Let me call and ask her to get the listings to you so you can finish up the pages.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“and ask her to get the listings to you so you can finist”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Call a department manager）。"
+        "analysis": "正确答案：A（Call a department manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

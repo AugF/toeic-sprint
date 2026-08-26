@@ -26,38 +26,58 @@
       "asset_key": "official-4-test-2/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：@i™ Where（哪里）'s the client directory you borrowed?\n=a cea BTA) Where（哪里） ~2 tHe ARDDSEmeS Eis W",
-    "content_translation": "中文辅助（离线预处理）：@i™ Where（哪里）'s the client directory you borrowed?\n=a cea BTA) Where（哪里） ~2 tHe ARDDSEmeS Eis W"
+    "transcript": "Where's the client directory you borrowed?\nA. A wonderful film director.\nB. I put it back in the drawer.\nC. No, she didn't need it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "507e6f22b815125cdca0a894cf1f9bd4a73be072d0b9545c2e5a8f8366402b94",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你借的客户目录在哪里？\nA. 一位出色的电影导演。\nB. 我把它放回抽屉里了。\nC. 不，她不需要它。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9a8395fc2716542b63d1287d975d071977ee650c208265677e35e2045408c7d3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "A wonderful film director. ATUSOICHL, FSIEHULOBITRL",
-        "OER. itleEsRg",
-        "No, she didn’t need it. (cS the client directory HES. directory [A"
+        "A wonderful film director.",
+        "I put it back in the drawer.",
+        "No, she didn't need it."
       ],
       "answer": "B",
-      "question": "@i™ Where's the client directory you borrowed? =a cea BTA) Where ~2 tHe ARDDSEmeS Eis W",
+      "question": "Where's the client directory you borrowed?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“@i™ Where's the client directory you borrowed? =a cea BTA) Where ~2 tHe ARDDSEmeS Eis W”，自然应答是“OER. itleEsRg”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（OER. itleEsRg）。",
-      "question_translation": "中文辅助（离线预处理）：@i™ Where（哪里）'s the client directory you borrowed?\n=a cea BTA) Where（哪里） ~2 tHe ARDDSEmeS Eis W",
+      "answer_explain": "原文依据：问句或陈述是“Where's the client directory you borrowed?”，自然应答是“I put it back in the drawer.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I put it back in the drawer.）。",
+      "question_translation": "你借的客户目录在哪里?",
       "choice_translations": [
-        "A：A wonderful film director.\nATUSOICHL, FSIEHULOBITRL",
-        "B：OER.\nitleEsRg",
-        "C：No, she didn’t need it.\n(cS the client directory HES.\ndirectory [A"
+        "A：一位出色的电影导演。",
+        "B：我把它放回抽屉里了。",
+        "C：不,她不需要它。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：@i™ Where's the client directory you borrowed? =a cea BTA) Where ~2 tHe ARDDSEmeS Eis W",
+      "evidence": "参考原文第 1 段：Where's the client directory you borrowed?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：@i™ Where's the client directory you borrowed? =a cea BTA) Where ~2 tHe ARDDSEmeS Eis W",
+        "evidence": "参考原文第 1 段：Where's the client directory you borrowed?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“@i™ Where's the client directory you borrowed? =a cea BTA) Where ~2 tHe ARDDSEmeS Eis W”，自然应答是“OER. itleEsRg”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（OER. itleEsRg）。"
+        "analysis": "原文依据：问句或陈述是“Where's the client directory you borrowed?”，自然应答是“I put it back in the drawer.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I put it back in the drawer.）。"
       },
       "item_id": 12,
       "priority": {

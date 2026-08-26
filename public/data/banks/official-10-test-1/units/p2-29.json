@@ -28,38 +28,58 @@
       "asset_key": "official-10-test-1/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "需要我给我们的律师预约吗？ Ew\nA. 那家美发沙龙总是订满了。\nB. 她周六开门吗？\nC. 四街的建筑。",
-    "content_translation": "需要我给我们的律师预约吗？ Ew\nA. 那家美发沙龙总是订满了。\nB. 她周六开门吗？\nC. 四街的建筑。"
+    "transcript": "Do you want me to make an appointment with our lawyer?\nA. That hair salon is always booked.\nB. Is her office open on Saturdays?\nC. The building on 4th Street.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3c6820e9c0f631811a1e0f7b4a31ac20f223f902be4ed8e9a7a217d70d953ee1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 32
+      }
+    },
+    "transcript_translation": "需要我给我们的律师预约吗？\nA. 那家发廊总是订满了。\nB. 她周六的办公室开门吗？\nC. 第四街的建筑。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1b9bc394f1e3c1e209ba362f270d8619dc90a02989cdd94b3768eeb772c06891"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "That hair salon is always booked.",
         "Is her office open on Saturdays?",
-        "The building on Fourth Street."
+        "The building on 4th Street."
       ],
       "answer": "B",
-      "question": "Do you want me to make an appointment with our lawyer? Ew",
+      "question": "Do you want me to make an appointment with our lawyer?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Do you want me to make an appointment with our lawyer? Ew”，自然应答是“Is her office open on Saturdays?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Is her office open on Saturdays?）。",
-      "question_translation": "需要我给我们的律师预约吗？ Ew",
+      "answer_explain": "原文依据：问句或陈述是“Do you want me to make an appointment with our lawyer?”，自然应答是“Is her office open on Saturdays?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Is her office open on Saturdays?）。",
+      "question_translation": "需要我给我们的律师预约吗?",
       "choice_translations": [
-        "A：那家美发沙龙总是订满了。",
-        "B：她周六开门吗？",
-        "C：四街的建筑。"
+        "A：那家发廊总是订满了。",
+        "B：她周六的办公室开门吗?",
+        "C：第四街的建筑。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Do you want me to make an appointment with our lawyer? Ew",
+      "evidence": "参考原文第 1 段：Do you want me to make an appointment with our lawyer?",
       "response_style": "既可能直接回答，也常以原因、安排或补充信息间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Do you want me to make an appointment with our lawyer? Ew",
+        "evidence": "参考原文第 1 段：Do you want me to make an appointment with our lawyer?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Do you want me to make an appointment with our lawyer? Ew”，自然应答是“Is her office open on Saturdays?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Is her office open on Saturdays?）。"
+        "analysis": "原文依据：问句或陈述是“Do you want me to make an appointment with our lawyer?”，自然应答是“Is her office open on Saturdays?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Is her office open on Saturdays?）。"
       },
       "item_id": 29,
       "priority": {

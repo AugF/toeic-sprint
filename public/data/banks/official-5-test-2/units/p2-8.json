@@ -26,15 +26,35 @@
       "asset_key": "official-5-test-2/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） will the anniversary celebration be held?",
-    "content_translation": "中文辅助（离线预处理）：Where（哪里） will the anniversary celebration be held?"
+    "transcript": "Where will the anniversary celebration be held?\nA. At a local banquet hall.\nB. Around 100 people.\nC. Yesterday at 6.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a0eec8ac4d88c989819f42bbd2159eb901cbbd27170bda33c43e103b670cc50d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 20
+      }
+    },
+    "transcript_translation": "周年庆典将在哪里举行？\nA. 在当地宴会厅。\nB. 约一百人。\nC. 昨天六点。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a4be5f3f2881cddf6c1c42e3c2bbf79ce445e03c231dd799095c7ce20affebce"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "At a local banquet hall.",
         "Around 100 people.",
-        "Yesterday at six."
+        "Yesterday at 6."
       ],
       "answer": "A",
       "question": "Where will the anniversary celebration be held?",
@@ -42,11 +62,11 @@
       "topic": "地点询问",
       "keywords": "where location response",
       "answer_explain": "原文依据：问句或陈述是“Where will the anniversary celebration be held?”，自然应答是“At a local banquet hall.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（At a local banquet hall.）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） will the anniversary celebration be held?",
+      "question_translation": "周年庆典将在哪里举行?",
       "choice_translations": [
-        "A：At a local banquet hall.",
-        "B：Around 100 people.",
-        "C：Yesterday at six."
+        "A：在当地宴会厅。",
+        "B：约一百人。",
+        "C：昨天六点。"
       ],
       "question_type": "地点疑问句",
       "evidence": "参考原文第 1 段：Where will the anniversary celebration be held?",

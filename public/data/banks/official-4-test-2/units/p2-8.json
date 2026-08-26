@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-2/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Yoshi, did you buy your plane ticket yet?\nTH B AEG eae E1™",
-    "content_translation": "中文辅助（离线预处理）：Yoshi, did you buy your plane ticket yet?\nTH B AEG eae E1™"
+    "transcript": "Yoshi, did you buy your plane ticket yet?\nA. Is it still raining?\nB. Yes, I bought it yesterday.\nC. It's my favorite brand.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f184f2a2336cae207cf3acb71a1c800df4d50ca560c784bf8c58771b4cf2db7e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "Yoshi，你买机票了吗？\nA. 还在下雨吗？\nB. 是的，我昨天买了。\nC. 这是我最喜欢的牌子。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7d094a8a89e59ef83f075ae0ba10570d4c020daef9555dfff8bfe225e0c13934"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Isit still raining? Ly Yese Se, [HAENEB I]",
-        "DER. itlsBlcHS plane",
-        "It's my favorite brand. ticket @#8S."
+        "Is it still raining?",
+        "Yes, I bought it yesterday.",
+        "It's my favorite brand."
       ],
       "answer": "B",
-      "question": "Yoshi, did you buy your plane ticket yet? TH B AEG eae E1™",
+      "question": "Yoshi, did you buy your plane ticket yet?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Yoshi, did you buy your plane ticket yet? TH B AEG eae E1™”，自然应答是“DER. itlsBlcHS plane”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（DER. itlsBlcHS plane）。",
-      "question_translation": "中文辅助（离线预处理）：Yoshi, did you buy your plane ticket yet?\nTH B AEG eae E1™",
+      "answer_explain": "原文依据：问句或陈述是“Yoshi, did you buy your plane ticket yet?”，自然应答是“Yes, I bought it yesterday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, I bought it yesterday.）。",
+      "question_translation": "Yoshi,你买机票了吗?",
       "choice_translations": [
-        "A：Isit still raining?\nLy Yese Se, [HAENEB I]",
-        "B：DER.\nitlsBlcHS plane",
-        "C：It's my favorite brand.\nticket @#8S."
+        "A：还在下雨吗?",
+        "B：是的,我昨天买了。",
+        "C：这是我最喜欢的牌子。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Yoshi, did you buy your plane ticket yet? TH B AEG eae E1™",
+      "evidence": "参考原文第 1 段：Yoshi, did you buy your plane ticket yet?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Yoshi, did you buy your plane ticket yet? TH B AEG eae E1™",
+        "evidence": "参考原文第 1 段：Yoshi, did you buy your plane ticket yet?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Yoshi, did you buy your plane ticket yet? TH B AEG eae E1™”，自然应答是“DER. itlsBlcHS plane”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（DER. itlsBlcHS plane）。"
+        "analysis": "原文依据：问句或陈述是“Yoshi, did you buy your plane ticket yet?”，自然应答是“Yes, I bought it yesterday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, I bought it yesterday.）。"
       },
       "item_id": 8,
       "priority": {

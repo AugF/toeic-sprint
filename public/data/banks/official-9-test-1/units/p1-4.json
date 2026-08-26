@@ -31,27 +31,47 @@
       "asset_key": "official-9-test-1/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. The man is climbing up a flight of stairs.\nB. The man is examining a door frame.\nC. The man is picking up some wood planks.\nD. The man is wiping a window pane.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c700fbed60d605667b3f2b5425178272c2df2b810baae9a7bd50a64c7cb6b26c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 46
+      }
+    },
+    "transcript_translation": "A. 这名男子正爬楼梯。\nB. 这名男子正在检查一个门框。\nC. 这名男子正在捡一些木板。\nD. 这名男子正在擦拭一块窗玻璃。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5f71285d328eb4ba3088385b4bb90dcc81d4c5339a93bee7b71bb998517df039"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "The man is climbing up a flight of stairs.",
-        "The man is examining a doorframe.",
+        "The man is examining a door frame.",
         "The man is picking up some wood planks.",
-        "The man is wiping a windowpane."
+        "The man is wiping a window pane."
       ],
       "answer": "D",
       "difficulty": "medium",
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
-      "answer_explain": "原文依据：照片中可见信息与描述“The man is wiping a windowpane.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（The man is wiping a windowpane.）。",
+      "answer_explain": "原文依据：照片中可见信息与描述“The man is wiping a window pane.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（The man is wiping a window pane.）。",
       "choice_translations": [
-        "A：The man（男士） is climbing up a flight of stairs.",
-        "B：The man（男士） is examining a doorframe.",
-        "C：The man（男士） is picking up some wood planks.",
-        "D：The man（男士） is wiping a windowpane."
+        "A：这名男子正爬楼梯。",
+        "B：这名男子正在检查一个门框。",
+        "C：这名男子正在捡一些木板。",
+        "D：这名男子正在擦拭一块窗玻璃。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -61,7 +81,7 @@
         "question_type": "动作 / 状态辨析题",
         "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
         "strategy": "本题属于动作 / 状态辨析题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：照片中可见信息与描述“The man is wiping a windowpane.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（The man is wiping a windowpane.）。"
+        "analysis": "原文依据：照片中可见信息与描述“The man is wiping a window pane.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（The man is wiping a window pane.）。"
       },
       "item_id": 4,
       "priority": {
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-1/p1-4/4"
+      "item_key": "official-9-test-1/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

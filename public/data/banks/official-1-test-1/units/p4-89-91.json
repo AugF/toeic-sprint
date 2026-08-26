@@ -41,9 +41,31 @@
       "asset_key": "official-1-test-1/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "meeting.\nw\nHi, everyone, @let’s begin the weekly call-center staff meeting.\nFirst of all, | wanted to let you know that @!'ve just hired two\nadditional customer service representatives to help out on the\nphones. Yes, | know that’s not enough. But there isn’t much\ncan do with our budget. Anyway, their first day is next Monday,\nbut @before they start, it's important that we revise our training\nmanual. I’m going to assign a section to each one of you.\nPlease go through your section, and if you see anything that\nhas to be corrected, please send me an e-mail with the page\nnumber and your comments. I'll review all your suggestions anc\nmake a final draft.",
-    "transcript_translation": "会议。\n嗨，各位，@让我们开始每周呼叫中心员工会议。\n首先，我想告诉大家，我刚雇用了两名额外的客户服务代表来协助接听电话。是的，我知道这还不够。但根据我们的预算，我们能做的不多了。无论如何，他们的第一天是下周一，但在他们开始之前，重要的是我们修改一下培训手册。我将把一部分分配给你们每一个人。\n请大家浏览各自的部分，如果发现任何需要更正的地方，请用包含页码和您评论的电子邮件发给我。我会审阅所有建议并制作最终草稿。",
-    "content_translation": "会议。\n嗨，各位，@让我们开始每周呼叫中心员工会议。\n首先，我想告诉大家，我刚雇用了两名额外的客户服务代表来协助接听电话。是的，我知道这还不够。但根据我们的预算，我们能做的不多了。无论如何，他们的第一天是下周一，但在他们开始之前，重要的是我们修改一下培训手册。我将把一部分分配给你们每一个人。\n请大家浏览各自的部分，如果发现任何需要更正的地方，请用包含页码和您评论的电子邮件发给我。我会审阅所有建议并制作最终草稿。"
+    "transcript": "I'm going to assign a section to each one of you.\nPlease go through your section and if you see anything that has to be corrected, please send me an email with the page number and your comments.\nI'll review all your suggestions and make a final draft.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d424c4946831df648a8951c98a000e8d275ec3a78d4e8e9306bc83f883f59053",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 48,
+        "legacy_word_count": 48,
+        "length_ratio": 1,
+        "legacy_coverage": 0.958
+      }
+    },
+    "transcript_translation": "我将给你们每人分配一个部分。\n请浏览一下你的部分，如果看到任何需要修改的地方，请给我发送一封包含页码和评论的电子邮件。\n我会审阅所有建议并完成最终草稿。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "10e5e91760f3703f5307dfe4a026176968934d2c4b99dd318a42db957d892c10"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "A",
       "question": "Who most likely are the listeners?",
-      "answer_explain": "原文依据：听力原文中提到“additional customer service representatives to help out on the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Customer service representatives）。",
+      "answer_explain": "正确答案：A（Customer service representatives）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：meeting.",
+      "evidence": "参考听力原文：“Please go through your section and if you see anything that has to be corrected, please send me an email with the page number and your comments.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：meeting.",
+        "evidence": "参考听力原文：“Please go through your section and if you see anything that has to be corrected, please send me an email with the page number and your comments.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“additional customer service representatives to help out on the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Customer service representatives）。"
+        "analysis": "正确答案：A（Customer service representatives）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "听众最可能是谁？",
+      "question_translation": "听众最可能是谁?",
       "choice_translations": [
-        "A：客户服务代表",
-        "B：软件开发人员",
-        "C：公司律师",
-        "D：财务顾问"
+        "A:客户服务代表",
+        "B:软件开发人员",
+        "C:公司律师",
+        "D:财务顾问"
       ],
       "item_id": 89,
       "priority": {
@@ -108,24 +130,24 @@
         "She recognizes the listeners’ concerns."
       ],
       "answer": "D",
-      "question": "What does the speaker mean when she says, “Yes, | know that’s not enough”?",
-      "answer_explain": "原文依据：听力原文中提到“has to be corrected, please send me an e-mail with the page”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（She recognizes the listeners’ concerns.）。",
+      "question": "What does the speaker mean when she says, “Yes, I know that’s not enough”?",
+      "answer_explain": "正确答案：D（She recognizes the listeners’ concerns.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "否定事实题",
-      "evidence": "参考原文第 6 段：phones. Yes, | know that’s not enough. But there isn’t much",
+      "evidence": "参考听力原文：“Please go through your section and if you see anything that has to be corrected, please send me an email with the page number and your comments.”",
       "strategy": "本题属于否定事实题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 6 段：phones. Yes, | know that’s not enough. But there isn’t much",
+        "evidence": "参考听力原文：“Please go through your section and if you see anything that has to be corrected, please send me an email with the page number and your comments.”",
         "strategy": "本题属于否定事实题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“has to be corrected, please send me an e-mail with the page”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（She recognizes the listeners’ concerns.）。"
+        "analysis": "正确答案：D（She recognizes the listeners’ concerns.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "当说话者说“是的，我知道这还不够”时，她的意思是？",
+      "question_translation": "当说话者说“是的,我知道这还不够”时,她的意思是?",
       "choice_translations": [
-        "A：她承认了自己的错误。",
-        "B：她担心截止日期。",
-        "C：她希望听众做志愿者。",
-        "D：她注意到了听众的担忧。"
+        "A:她承认了自己的错误。",
+        "B:她担心截止日期。",
+        "C:她希望听众做志愿者。",
+        "D:她注意到了听众的担忧。"
       ],
       "item_id": 90,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "B",
       "question": "What task does the speaker assign to the listeners?",
-      "answer_explain": "原文依据：听力原文中提到“but @before they start, it's important that we revise our training”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Revising training materials）。",
+      "answer_explain": "正确答案：B（Revising training materials）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：manual. I’m going to assign a section to each one of you.",
+      "evidence": "参考听力原文：“I'm going to assign a section to each one of you.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：manual. I’m going to assign a section to each one of you.",
+        "evidence": "参考听力原文：“I'm going to assign a section to each one of you.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“but @before they start, it's important that we revise our training”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Revising training materials）。"
+        "analysis": "正确答案：B（Revising training materials）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者布置给听众的任务是什么？",
+      "question_translation": "说话者布置给听众的任务是什么?",
       "choice_translations": [
-        "A：更新邮件列表",
-        "B：修改培训材料",
-        "C：指导新员工",
-        "D：学习使用软件程序"
+        "A:更新邮件列表",
+        "B:修改培训材料",
+        "C:指导新员工",
+        "D:学习使用软件程序"
       ],
       "item_id": 91,
       "priority": {

@@ -41,9 +41,32 @@
       "asset_key": "official-12-test-1/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "Greetings, Ms. Flores. It's great to meet you. 0 Have\nchule5d. Flor\nyou ever been treated by a physical therapist, or is this\nyour first time?\naw It's my first time. e You were highly recommended by\none of my friends who was having some back pain.\nm Wonderful! © Many of my patients are referrals.\nU! 740\nAnyhow, Ofirst I'd like to begin by learning more about\nyour symptoms and what you've done to manage them\ncnacatatabil\nso far. Then we'll do some light stretching and range\nof-motion exercises.",
-    "transcript_translation": "中文辅助（离线预处理）：Greetings, Ms.\nFlores.\nIt's great to meet you.\n0 Have\nchule5d.\nFlor\nyou ever been treated by a physical therapist, or is this\nyour first time?\naw It's my first time.\ne You were highly recommended by\none of my friends who（谁） was having some back pain.\nm Wonderful!\n© Many of my patients are referrals.\nU!\n740\nAnyhow, Ofirst I'd like to begin by learning more about\nyour symptoms and what（什么） you've done to manage them\ncnacatatabil\nso far.\nThen we'll do some light stretching and range\nof-motion exercises.",
-    "content_translation": "中文辅助（离线预处理）：Greetings, Ms.\nFlores.\nIt's great to meet you.\n0 Have\nchule5d.\nFlor\nyou ever been treated by a physical therapist, or is this\nyour first time?\naw It's my first time.\ne You were highly recommended by\none of my friends who（谁） was having some back pain.\nm Wonderful!\n© Many of my patients are referrals.\nU!\n740\nAnyhow, Ofirst I'd like to begin by learning more about\nyour symptoms and what（什么） you've done to manage them\ncnacatatabil\nso far.\nThen we'll do some light stretching and range\nof-motion exercises."
+    "transcript": "Greetings, Ms. Flores.\nIt's great to meet you.\nHave you ever been treated by a physical therapist, or is this your first time?\nIt's my first time.\nYou are highly recommended by one of my friends who is having some back pain.\nWonderful.\nMany of my patients are referrals.\nAnyhow, first I'd like to begin by learning more about your symptoms and what you've done to manage them so far.\nThen we'll do some light stretching and range-of-motion exercises.\nNumber 44.\nWhere does the...",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "17f2f313eb3c2bb86f4ed4ab58510479118bac1d6bc07b7681cfa11f8016ba4b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 83,
+        "legacy_word_count": 87,
+        "length_ratio": 0.954,
+        "legacy_coverage": 0.851
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "Flores女士，您好。\n很高兴见到你。\n你以前看过物理治疗师吗？还是这是你第一次？\n是第一次。\n我的一位朋友极力推荐你，他有背痛问题。\n太好了。\n我的很多病人都是转介来的。\n无论如何，首先我想了解更多关于你的症状以及到目前为止你采取了哪些措施来管理它们。\n然后我们会做一些轻度的拉伸和活动范围运动练习。\n编号44。\n哪里有...",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7a9de74791346eaa80ef461d2c721cc4e70e8ededd9b957fb5f57a6393a0865e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +78,23 @@
       ],
       "answer": "C",
       "question": "Where does the conversation most likely take place?",
-      "answer_explain": "原文依据：听力原文中提到“you ever been treated by a physical therapist, or is this”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（In a medical office）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the conversation most likely（最可能） take place?",
+      "answer_explain": "正确答案：C（In a medical office）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the conversation most likely(最可能) take place?",
       "choice_translations": [
-        "A：In a convenience store",
-        "B：In a bookstore",
-        "C：In a medical office（办公室）",
-        "D：In a law office（办公室）"
+        "A:In a convenience store",
+        "B:In a bookstore",
+        "C:In a medical office(办公室)",
+        "D:In a law office(办公室)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Greetings, Ms. Flores. It's great to meet you. 0 Have",
+      "evidence": "参考听力原文：“Anyhow, first I'd like to begin by learning more about your symptoms and what you've done to manage them so far.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Greetings, Ms. Flores. It's great to meet you. 0 Have",
+        "evidence": "参考听力原文：“Anyhow, first I'd like to begin by learning more about your symptoms and what you've done to manage them so far.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“you ever been treated by a physical therapist, or is this”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（In a medical office）。"
+        "analysis": "正确答案：C（In a medical office）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -109,23 +132,23 @@
       ],
       "answer": "B",
       "question": "How did the woman learn about the man's business?",
-      "answer_explain": "原文依据：听力原文中提到“you ever been treated by a physical therapist, or is this”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Through a friend）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） did the woman（女士） learn about the man（男士）'s business?",
+      "answer_explain": "正确答案：B（Through a friend）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):How(如何) did the woman(女士) learn about the man(男士)'s business?",
       "choice_translations": [
-        "A：Through a client",
-        "B：Through a friend",
-        "C：Through an advertisement",
-        "D：Through some onlinereviews"
+        "A:Through a client",
+        "B:Through a friend",
+        "C:Through an advertisement",
+        "D:Through some onlinereviews"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 9 段：Anyhow, Ofirst I'd like to begin by learning more about",
+      "evidence": "参考听力原文：“Anyhow, first I'd like to begin by learning more about your symptoms and what you've done to manage them so far.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 9 段：Anyhow, Ofirst I'd like to begin by learning more about",
+        "evidence": "参考听力原文：“Anyhow, first I'd like to begin by learning more about your symptoms and what you've done to manage them so far.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“you ever been treated by a physical therapist, or is this”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Through a friend）。"
+        "analysis": "正确答案：B（Through a friend）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -163,23 +186,23 @@
       ],
       "answer": "A",
       "question": "What will the man probably do next?",
-      "answer_explain": "原文依据：听力原文中提到“one of my friends who was having some back pain.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Ask some questions）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） probably（可能） do next?",
+      "answer_explain": "正确答案：A（Ask some questions）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) probably(可能) do next?",
       "choice_translations": [
-        "A：Ask some questions",
-        "B：Make a telephone call",
-        "C：Speak with a manager（经理）",
-        "D：Look at a Web site"
+        "A:Ask some questions",
+        "B:Make a telephone call",
+        "C:Speak with a manager(经理)",
+        "D:Look at a Web site"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Greetings, Ms. Flores. It's great to meet you. 0 Have",
+      "evidence": "参考听力原文：“You are highly recommended by one of my friends who is having some back pain.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Greetings, Ms. Flores. It's great to meet you. 0 Have",
+        "evidence": "参考听力原文：“You are highly recommended by one of my friends who is having some back pain.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“one of my friends who was having some back pain.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Ask some questions）。"
+        "analysis": "正确答案：A（Ask some questions）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

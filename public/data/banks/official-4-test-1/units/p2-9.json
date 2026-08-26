@@ -26,38 +26,58 @@
       "asset_key": "official-4-test-1/audio/part2/q009.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：EKw Where（哪里） did you leave your bicycle?\npati Gi",
-    "content_translation": "中文辅助（离线预处理）：EKw Where（哪里） did you leave your bicycle?\npati Gi"
+    "transcript": "Where did you leave your bicycle?\nA. For a few hours.\nB. Yes, it's brand new.\nC. Next to the bridge.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3facd8e48c7f58d4b54ccd10fb131b178bd325a3bc691e0b574ade5150984a66",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q009.mp3",
+      "metrics": {
+        "word_count": 22
+      }
+    },
+    "transcript_translation": "你把自行车放在哪里了？\nA. 几个小时前。\nB. 是的，它是全新的。\nC. 在桥旁边。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b73502bd1fa62bb99516c2d79231cd32d34f479dc5ddea642b8aa4c65214bfab"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "For a few hours. EDEBRTUSOICHL, Stair",
-        "Yes, it’s brand-new. PREBA TS",
-        "DIEM. next to ~[~OT<"
+        "For a few hours.",
+        "Yes, it's brand new.",
+        "Next to the bridge."
       ],
       "answer": "C",
-      "question": "EKw Where did you leave your bicycle? pati Gi",
+      "question": "Where did you leave your bicycle?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“EKw Where did you leave your bicycle? pati Gi”，自然应答是“DIEM. next to ~[~OT<”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（DIEM. next to ~[~OT<）。",
-      "question_translation": "中文辅助（离线预处理）：EKw Where（哪里） did you leave your bicycle?\npati Gi",
+      "answer_explain": "原文依据：问句或陈述是“Where did you leave your bicycle?”，自然应答是“Next to the bridge.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Next to the bridge.）。",
+      "question_translation": "你把自行车放在哪里了?",
       "choice_translations": [
-        "A：For a few hours.\nEDEBRTUSOICHL, Stair",
-        "B：Yes, it’s brand-new.\nPREBA TS",
-        "C：DIEM.\nnext to ~[~OT<"
+        "A：几个小时前。",
+        "B：是的,它是全新的。",
+        "C：在桥旁边。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：EKw Where did you leave your bicycle? pati Gi",
+      "evidence": "参考原文第 1 段：Where did you leave your bicycle?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：EKw Where did you leave your bicycle? pati Gi",
+        "evidence": "参考原文第 1 段：Where did you leave your bicycle?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“EKw Where did you leave your bicycle? pati Gi”，自然应答是“DIEM. next to ~[~OT<”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（DIEM. next to ~[~OT<）。"
+        "analysis": "原文依据：问句或陈述是“Where did you leave your bicycle?”，自然应答是“Next to the bridge.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Next to the bridge.）。"
       },
       "item_id": 9,
       "priority": {

@@ -27,8 +27,28 @@
       "asset_key": "official-9-test-2/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：What（什么） decisions were made at the board meeting（会议） yesterday?",
-    "content_translation": "中文辅助（离线预处理）：What（什么） decisions were made at the board meeting（会议） yesterday?"
+    "transcript": "What decisions were made at the board meeting yesterday?\nA. I had to leave at noon.\nB. Does he prefer meat or fish?\nC. Yes, I have some charts.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ecf77781ea131257c253a3816a929d388edf78d3d5c477517d1669b91d6ec005",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "昨天董事会会议上做出了什么决定？\nA. 我中午不得不离开。\nB. 他更喜欢吃肉还是鱼？\nC. 是的，我有一些图表。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7ec18cd6bb30819b7ec586375ea85dab7eebf28e18e5f2d35db373c83f99d95c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“What decisions were made at the board meeting yesterday?”，自然应答是“I had to leave at noon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I had to leave at noon.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） decisions were made at the board meeting（会议） yesterday?",
+      "question_translation": "昨天董事会会议上做出了什么决定?",
       "choice_translations": [
-        "A：I had to leave at noon.",
-        "B：Does he prefer meat or fish?",
-        "C：Yes, I have some charts."
+        "A：我中午不得不离开。",
+        "B：他更喜欢吃肉还是鱼?",
+        "C：是的,我有一些图表。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：What decisions were made at the board meeting yesterday?",

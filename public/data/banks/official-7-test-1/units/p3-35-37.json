@@ -39,9 +39,31 @@
       "asset_key": "official-7-test-1/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "Kw Hi, I dropped my car off this morning. Have you\nchecked my tires yet?\nm Yes. Our mechanic checked the tires on your car.\nUnfortunately, the front tires do need to be replaced.\nThe mechanic noticed that they're wearing out.\nEK w Oh, I didn't realize they were that worn out. Can I still\nget my car back this afternoon?\nI'm sorry, Owe won't have the tires available until\ntomorrow.\nEw But, ®I have a client meeting tomorrow, and I'll have\nno way to get there.\nOh, Owe can offer you a loaner car. You can use it\nuntil your car is ready.",
-    "transcript_translation": "中文辅助（离线预处理）：Kw Hi, I dropped my car off this morning.\nHave you\nchecked my tires yet?\nm Yes.\nOur mechanic checked the tires on your car.\nUnfortunately, the front tires do need to be replaced.\nThe mechanic noticed that they're wearing out.\nEK w Oh, I didn't realize they were that worn out.\nCan I still\nget my car back this afternoon?\nI'm sorry, Owe won't have the tires available（可用的） until\ntomorrow.\nEw But, ®I have a client meeting（会议） tomorrow, and I'll have\nno way to get there.\nOh, Owe can offer you a loaner car.\nYou can use it\nuntil your car is ready.",
-    "content_translation": "中文辅助（离线预处理）：Kw Hi, I dropped my car off this morning.\nHave you\nchecked my tires yet?\nm Yes.\nOur mechanic checked the tires on your car.\nUnfortunately, the front tires do need to be replaced.\nThe mechanic noticed that they're wearing out.\nEK w Oh, I didn't realize they were that worn out.\nCan I still\nget my car back this afternoon?\nI'm sorry, Owe won't have the tires available（可用的） until\ntomorrow.\nEw But, ®I have a client meeting（会议） tomorrow, and I'll have\nno way to get there.\nOh, Owe can offer you a loaner car.\nYou can use it\nuntil your car is ready."
+    "transcript": "Hi, I dropped my car off this morning.\nHave you checked my tyres yet?\nYes, our mechanic checked the tyres on your car.\nUnfortunately, the front tyres do need to be replaced.\nThe mechanic noticed that they're wearing out.\nOh, I didn't realise they were that worn out.\nCan I still get my car back this afternoon?\nI'm sorry, we won't have the tyres available until tomorrow.\nBut I have a client meeting tomorrow and I'll have no way to get there.\nOh, we can offer you a loaner car.\nYou can use it until your car is ready.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "95d9a3ce0d01ab86c2cfdbf3f0f62e7f78c432bd2679444142e15a57149cb321",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 99,
+        "legacy_word_count": 99,
+        "length_ratio": 1,
+        "legacy_coverage": 0.869
+      }
+    },
+    "transcript_translation": "嗨，我今天早上把车停在这里了。\n你们检查我的轮胎了吗？\n是的，我们的机械师已经检查了您车的轮胎。\n不幸的是，前轮的轮胎需要更换。\n机械师注意到它们磨损了。\n哦，我没意识到它们磨损得这么厉害。\n我现在下午还能取回车吗？\n对不起，我们直到明天才有轮胎。\n但我明天有个客户会议，没有办法去那里。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "23895773e00508dfd9cbc1f1a5890298cc0a1f787f350ce253c2035e952e06d4"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "A",
       "question": "Where does the man most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“I'm sorry, Owe won't have the tires available until”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At an auto repair shop）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the man（男士） most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：A（At an auto repair shop）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the man(男士) most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At an auto repair shop",
-        "B：At a construction site",
-        "C：At a factory",
-        "D：At an airport"
+        "A:At an auto repair shop",
+        "B:At a construction site",
+        "C:At a factory",
+        "D:At an airport"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Kw Hi, I dropped my car off this morning. Have you",
+      "evidence": "参考听力原文：“But I have a client meeting tomorrow and I'll have no way to get there.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Kw Hi, I dropped my car off this morning. Have you",
+        "evidence": "参考听力原文：“But I have a client meeting tomorrow and I'll have no way to get there.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I'm sorry, Owe won't have the tires available until”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At an auto repair shop）。"
+        "analysis": "正确答案：A（At an auto repair shop）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What does the woman say she needs to do tomorrow?",
-      "answer_explain": "原文依据：听力原文中提到“Ew But, ®I have a client meeting tomorrow, and I'll have”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Meet a client）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she needs to do tomorrow?",
+      "answer_explain": "正确答案：B（Meet a client）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she needs to do tomorrow?",
       "choice_translations": [
-        "A：Conduct an inspection",
-        "B：Meet a client",
-        "C：Reserve a parking space",
-        "D：Make a payment"
+        "A:Conduct an inspection",
+        "B:Meet a client",
+        "C:Reserve a parking space",
+        "D:Make a payment"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：tomorrow.",
+      "evidence": "参考听力原文：“But I have a client meeting tomorrow and I'll have no way to get there.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：tomorrow.",
+        "evidence": "参考听力原文：“But I have a client meeting tomorrow and I'll have no way to get there.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew But, ®I have a client meeting tomorrow, and I'll have”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Meet a client）。"
+        "analysis": "正确答案：B（Meet a client）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What does the man offer the woman?",
-      "answer_explain": "原文依据：听力原文中提到“I'm sorry, Owe won't have the tires available until”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Another vehicle）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） offer the woman（女士）?",
+      "answer_explain": "正确答案：C（Another vehicle）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) offer the woman(女士)?",
       "choice_translations": [
-        "A：Some safety glasses",
-        "B：Express delivery",
-        "C：Another vehicle",
-        "D：An alternate date"
+        "A:Some safety glasses",
+        "B:Express delivery",
+        "C:Another vehicle",
+        "D:An alternate date"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 12 段：Oh, Owe can offer you a loaner car. You can use it",
+      "evidence": "参考听力原文：“Oh, we can offer you a loaner car.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 12 段：Oh, Owe can offer you a loaner car. You can use it",
+        "evidence": "参考听力原文：“Oh, we can offer you a loaner car.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I'm sorry, Owe won't have the tires available until”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Another vehicle）。"
+        "analysis": "正确答案：C（Another vehicle）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

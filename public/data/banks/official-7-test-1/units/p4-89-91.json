@@ -36,9 +36,32 @@
       "asset_key": "official-7-test-1/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nGood morning, everyone. ®l've analyzed the results from\nour latest sales report, and it's obvious we need a change\nin strategy. Sales of our smart speakers in the European\nmarkets have fallen in the last quarter. This may be because\nof the way we advertise there. Research has shown online\nadvertisements in Europe are more effective than television\nads. So, we've decided to stop our television ad campaign\nthere... which could also save us money, as TV ads are\nexpensive to produce.\nWe'll use the extra money to hire\nmore people with expertise in social media advertising. Job\nopenings will be posted soon.",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nGood morning, everyone.\n®l've analyzed the results from\nour latest sales report, and it's obvious we need a change\nin strategy.\nSales of our smart speakers in the European\nmarkets have fallen in the last quarter.\nThis may be because\nof the way we advertise there.\nResearch has shown online\nadvertisements in Europe are more effective than television\nads.\nSo, we've decided to stop our television ad campaign\nthere...\nwhich could also save us money, as TV ads are\nexpensive to produce.\nWe'll use the extra money to hire\nmore people with expertise in social media advertising.\nJob\nopenings will be posted soon.",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nGood morning, everyone.\n®l've analyzed the results from\nour latest sales report, and it's obvious we need a change\nin strategy.\nSales of our smart speakers in the European\nmarkets have fallen in the last quarter.\nThis may be because\nof the way we advertise there.\nResearch has shown online\nadvertisements in Europe are more effective than television\nads.\nSo, we've decided to stop our television ad campaign\nthere...\nwhich could also save us money, as TV ads are\nexpensive to produce.\nWe'll use the extra money to hire\nmore people with expertise in social media advertising.\nJob\nopenings will be posted soon."
+    "transcript": "of the way we advertise there research has shown online advertisements in europe are more effective than television ads so we've decided to stop our television ad campaign there which could also save us money as tv ads are expensive to produce we'll use the extra money to hire more people with expertise in social media advertising job openings will be posted soon",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "e442e0097d9c5dc2cabb84c695a2b6d2a990dd97e3f3e22a1fc74021e34a6b75",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 63,
+        "legacy_word_count": 104,
+        "length_ratio": 0.606,
+        "legacy_coverage": 0.702,
+        "prompted_failure": "implausible Part 4 transcript length 2"
+      }
+    },
+    "transcript_translation": "除了我们宣传外，研究表明在欧洲的线上广告比电视广告更有效，所以我们决定停止我们的电视广告活动，这也能帮我们省钱，因为制作电视广告成本很高，我们将用这些额外的资金雇佣更多具有社交媒体广告专业知识的人。职位空缺很快就会发布。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e822b1cf3d69cb4374d80877879d60f6f3696aa7edc9746775bcc766c00039a7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +73,23 @@
       ],
       "answer": "A",
       "question": "According to the speaker, why is a change in strategy needed?",
-      "answer_explain": "原文依据：听力原文中提到“our latest sales report, and it's obvious we need a change”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Sales results have been disappointing.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, why（为什么） is a change in strategy needed?",
+      "answer_explain": "正确答案：A（Sales results have been disappointing.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), why(为什么) is a change in strategy needed?",
       "choice_translations": [
-        "A：Sales results have been disappointing.",
-        "B：Competition in the technology field has increased.",
-        "C：An overseas office（办公室） has recently opened.",
-        "D：A manufacturing process has changed."
+        "A:Sales results have been disappointing.",
+        "B:Competition in the technology field has increased.",
+        "C:An overseas office(办公室) has recently opened.",
+        "D:A manufacturing process has changed."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：our latest sales report, and it's obvious we need a change",
+      "evidence": "参考听力原文：“of the way we advertise there research has shown online advertisements in europe are more effective than television ads so we've decided to stop our television ad campaign there which could also save us money as tv ads are expensive to produce we'll use the extra money to hire more people with expertise in social media advertising job openings will be posted soon”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：our latest sales report, and it's obvious we need a change",
+        "evidence": "参考听力原文：“of the way we advertise there research has shown online advertisements in europe are more effective than television ads so we've decided to stop our television ad campaign there which could also save us money as tv ads are expensive to produce we'll use the extra money to hire more people with expertise in social media advertising job openings will be posted soon”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“our latest sales report, and it's obvious we need a change”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Sales results have been disappointing.）。"
+        "analysis": "正确答案：A（Sales results have been disappointing.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 89,
       "priority": {
@@ -99,23 +122,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, what has research indicated?",
-      "answer_explain": "原文依据：听力原文中提到“Research has shown online”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Online advertising is successful.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） has research indicated?",
+      "answer_explain": "正确答案：B（Online advertising is successful.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) has research indicated?",
       "choice_translations": [
-        "A：Television sets are decreasing in price.",
-        "B：Online advertising is successful.",
-        "C：Customers prefer to pay with credit cards.",
-        "D：Most consumers own several mobile"
+        "A:Television sets are decreasing in price.",
+        "B:Online advertising is successful.",
+        "C:Customers prefer to pay with credit cards.",
+        "D:Most consumers own several mobile"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：in strategy. Sales of our smart speakers in the European",
+      "evidence": "参考听力原文：“of the way we advertise there research has shown online advertisements in europe are more effective than television ads so we've decided to stop our television ad campaign there which could also save us money as tv ads are expensive to produce we'll use the extra money to hire more people with expertise in social media advertising job openings will be posted soon”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：in strategy. Sales of our smart speakers in the European",
+        "evidence": "参考听力原文：“of the way we advertise there research has shown online advertisements in europe are more effective than television ads so we've decided to stop our television ad campaign there which could also save us money as tv ads are expensive to produce we'll use the extra money to hire more people with expertise in social media advertising job openings will be posted soon”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Research has shown online”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Online advertising is successful.）。"
+        "analysis": "正确答案：B（Online advertising is successful.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 90,
       "priority": {
@@ -148,23 +171,23 @@
       ],
       "answer": "D",
       "question": "What is the company planning to do?",
-      "answer_explain": "原文依据：听力原文中提到“We'll use the extra money to hire”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Hire specialized employees）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the company（公司） planning to do?",
+      "answer_explain": "正确答案：D（Hire specialized employees）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the company(公司) planning to do?",
       "choice_translations": [
-        "A：Upgrade its computer system",
-        "B：Merge with another company（公司）",
-        "C：Conduct a customer（顾客） survey",
-        "D：Hire specialized employees"
+        "A:Upgrade its computer system",
+        "B:Merge with another company(公司)",
+        "C:Conduct a customer(顾客) survey",
+        "D:Hire specialized employees"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“of the way we advertise there research has shown online advertisements in europe are more effective than television ads so we've decided to stop our television ad campaign there which could also save us money as tv ads are expensive to produce we'll use the extra money to hire more people with expertise in social media advertising job openings will be posted soon”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“of the way we advertise there research has shown online advertisements in europe are more effective than television ads so we've decided to stop our television ad campaign there which could also save us money as tv ads are expensive to produce we'll use the extra money to hire more people with expertise in social media advertising job openings will be posted soon”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“We'll use the extra money to hire”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Hire specialized employees）。"
+        "analysis": "正确答案：D（Hire specialized employees）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 91,
       "priority": {

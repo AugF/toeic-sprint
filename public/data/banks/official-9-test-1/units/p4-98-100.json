@@ -40,9 +40,32 @@
       "asset_key": "official-9-test-1/audio/part4/q098-100.mp3",
       "exists": true
     },
-    "transcript": "I'm excited to give this presentation on behalf of Nexflight\nLabs. Ol enjoy attending this conference every year, and\nthis year, I get to lead a session! Today, Ill be sharing the\nresearch on flying vehicles that Nexflight has done.\nteam ensures that the vehicles our company designs are\nas light as possible. ® This is important because vehicles\nthat weigh less require less energy to operate. Over the\npast decade, our company has developed four prototypes.\nOf these, Nexfight is most proud of the model that can\naccommodate six passengers.\nGranted, 25 kilometers\nisn't a long flight range, but it is a great start.\nModel\nNumber of\nFlight Range\nPassengers\nAT-01\nkilometers\nAT-01\nAT-02\nkilometers\nAT-02\nHL\nZF-12\nkilometers\nZF-12\nk\nPR-34\nkilometers\nPR-34\nES (A)",
-    "transcript_translation": "中文辅助（离线预处理）：I'm excited to give this presentation on behalf of Nexflight\nLabs.\nOl enjoy attending this conference every year, and\nthis year, I get to lead a session!\nToday, Ill be sharing the\nresearch on flying vehicles that Nexflight has done.\nteam ensures that the vehicles our company（公司） designs are\nas light as possible.\n® This is important because vehicles\nthat weigh less require less energy to operate.\nOver the\npast decade, our company（公司） has developed four prototypes.\nOf these, Nexfight is most proud of the model that can\naccommodate six passengers.\nGranted, 25 kilometers\nisn't a long flight range, but it is a great start.\nModel\nNumber of\nFlight Range\nPassengers\nAT-01\nkilometers\nAT-01\nAT-02\nkilometers\nAT-02\nHL\nZF-12\nkilometers\nZF-12\nk\nPR-34\nkilometers\nPR-34\nES (A)",
-    "content_translation": "中文辅助（离线预处理）：I'm excited to give this presentation on behalf of Nexflight\nLabs.\nOl enjoy attending this conference every year, and\nthis year, I get to lead a session!\nToday, Ill be sharing the\nresearch on flying vehicles that Nexflight has done.\nteam ensures that the vehicles our company（公司） designs are\nas light as possible.\n® This is important because vehicles\nthat weigh less require less energy to operate.\nOver the\npast decade, our company（公司） has developed four prototypes.\nOf these, Nexfight is most proud of the model that can\naccommodate six passengers.\nGranted, 25 kilometers\nisn't a long flight range, but it is a great start.\nModel\nNumber of\nFlight Range\nPassengers\nAT-01\nkilometers\nAT-01\nAT-02\nkilometers\nAT-02\nHL\nZF-12\nkilometers\nZF-12\nk\nPR-34\nkilometers\nPR-34\nES (A)"
+    "transcript": "I'm excited to give this presentation on behalf of Nexflight Labs.\nI enjoy attending this conference every year, and this year, I get to lead a session.\nToday, Ill be sharing the research on flying vehicles that Nexflight has done.\nMy team ensures that the vehicles our company designs are as light as possible.\nThis is important because vehicles that weigh less require less energy to operate.\nOver the past decade, our company has developed four prototypes.\nOf these, Nexflight is most proud of the model that can accommodate six passengers.\nGranted, 25 kilometers isn't a long flight range, but it is a great start.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "b1a821560ed6be52a80aea405218e3a2ae0ebd27143d1061ea497ec9104b3dcc",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 106,
+        "legacy_word_count": 113,
+        "length_ratio": 0.938,
+        "legacy_coverage": 0.956
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "我很高兴能代表 Nexflight Labs 进行这次演示。\n我每年都喜欢参加这个会议，今年我有机会主持一个环节。\n今天，我将分享 Nexflight 在飞行器方面的研究成果。\n我的团队确保我们公司设计的飞行器尽可能轻。\n这一点很重要，因为重量越轻的飞行器运行所需的能量就越少。\n在过去十年里，我们的公司开发了四个原型机。\n其中，Nexflight 最为自豪的是可以容纳六名乘客的模型。\n诚然，25 公里的航程不算长，但这是一个很好的开始。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "dc1dd974c9ec0d43514338d3fa6c89458b73f5a36903785ee121638b85427a38"
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "D",
       "question": "Who most likely are the listeners?",
-      "answer_explain": "原文依据：听力原文中提到“Ol enjoy attending this conference every year, and”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Attendees at an industry conference）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） are the listeners?",
+      "answer_explain": "正确答案：D（Attendees at an industry conference）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) are the listeners?",
       "choice_translations": [
-        "A：New employees at Nexflight Labs",
-        "B：Board members for Nexflight Labs",
-        "C：City council members at a public TEST 1 meeting（会议）",
-        "D：Attendees at an industry conference"
+        "A:New employees at Nexflight Labs",
+        "B:Board members for Nexflight Labs",
+        "C:City council members at a public TEST 1 meeting(会议)",
+        "D:Attendees at an industry conference"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：I'm excited to give this presentation on behalf of Nexflight",
+      "evidence": "参考听力原文：“I enjoy attending this conference every year, and this year, I get to lead a session.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：I'm excited to give this presentation on behalf of Nexflight",
+        "evidence": "参考听力原文：“I enjoy attending this conference every year, and this year, I get to lead a session.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ol enjoy attending this conference every year, and”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Attendees at an industry conference）。"
+        "analysis": "正确答案：D（Attendees at an industry conference）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 98,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "A",
       "question": "What has the speaker's team been tasked with?",
-      "answer_explain": "原文依据：听力原文中提到“team ensures that the vehicles our company designs are”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Making a more lightweight vehicle）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） has the speaker（说话者）'s team been tasked with?",
+      "answer_explain": "正确答案：A（Making a more lightweight vehicle）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) has the speaker(说话者)'s team been tasked with?",
       "choice_translations": [
-        "A：Making a more lightweight vehicle",
-        "B：Making a more comfortable vehicle",
-        "C：Making a faster vehicle",
-        "D：Making a quieter vehicle"
+        "A:Making a more lightweight vehicle",
+        "B:Making a more comfortable vehicle",
+        "C:Making a faster vehicle",
+        "D:Making a quieter vehicle"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：I'm excited to give this presentation on behalf of Nexflight",
+      "evidence": "参考听力原文：“Today, Ill be sharing the research on flying vehicles that Nexflight has done.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：I'm excited to give this presentation on behalf of Nexflight",
+        "evidence": "参考听力原文：“Today, Ill be sharing the research on flying vehicles that Nexflight has done.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“team ensures that the vehicles our company designs are”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Making a more lightweight vehicle）。"
+        "analysis": "正确答案：A（Making a more lightweight vehicle）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 99,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. According to the speaker, which model is Nexflight Labs most proud of?",
-      "answer_explain": "原文依据：听力原文中提到“ZF-12”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（ZF-12）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nAccording（根据） to the speaker（说话者）, which model is Nexflight Labs most proud of?",
+      "answer_explain": "正确答案：C（ZF-12）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. According(根据) to the speaker(说话者), which model is Nexflight Labs most proud of?",
       "choice_translations": [
-        "A：AT-01",
-        "B：AT-02",
-        "C：ZF-12",
-        "D：PR-34"
+        "A:AT-01",
+        "B:AT-02",
+        "C:ZF-12",
+        "D:PR-34"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：I'm excited to give this presentation on behalf of Nexflight",
+      "evidence": "参考听力原文：“Of these, Nexflight is most proud of the model that can accommodate six passengers.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：I'm excited to give this presentation on behalf of Nexflight",
+        "evidence": "参考听力原文：“Of these, Nexflight is most proud of the model that can accommodate six passengers.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“ZF-12”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（ZF-12）。"
+        "analysis": "正确答案：C（ZF-12）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 100,
       "priority": {

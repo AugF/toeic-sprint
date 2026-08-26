@@ -36,9 +36,31 @@
       "asset_key": "official-11-test-2/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nThank you for coming to today's all-staff meeting. OAs\nthe chief production officer, I recently led an audit of our\nproduction strategy to ensure that our company stays\ncompetitive. After looking at the results, we are going t\ncutting back on the manufacturing of our small electronic\nthat we can focus on more high-demand goods, like lapt\nThis is going to cause a change in our factory operatio\nAsako here is going to tell you what your job tasks and\nresponsibilities will be going forward",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nThank（感谢） you for coming to today's all-staff meeting（会议）.\nOAs\nthe chief production officer, I recently led an audit of our\nproduction strategy to ensure that our company（公司） stays\ncompetitive.\nAfter looking at the results, we are going t\ncutting back on the manufacturing of our small electronic\nthat we can focus on more high-demand goods, like lapt\nThis is going to cause a change in our factory operatio\nAsako here is going to tell you what（什么） your job tasks and\nresponsibilities will be going forward",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nThank（感谢） you for coming to today's all-staff meeting（会议）.\nOAs\nthe chief production officer, I recently led an audit of our\nproduction strategy to ensure that our company（公司） stays\ncompetitive.\nAfter looking at the results, we are going t\ncutting back on the manufacturing of our small electronic\nthat we can focus on more high-demand goods, like lapt\nThis is going to cause a change in our factory operatio\nAsako here is going to tell you what（什么） your job tasks and\nresponsibilities will be going forward"
+    "transcript": "Thank you for coming to today's all-staff meeting.\nAs the chief production officer, I recently led an audit of our production strategy to ensure that our company stays competitive.\nAfter looking at the results, we are going to be cutting back on the manufacturing of our small electronics so that we can focus on more high-demand goods, like laptops.\nThis is going to cause a change in our factory operations.\nAsako here is going to tell you what your job tasks and responsibilities will be going forward.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "f6da6cc1bfbd1fe01332c7a681eec41d2b3ef2d33579927c02a770dd3d2c89cd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 87,
+        "legacy_word_count": 86,
+        "length_ratio": 1.012,
+        "legacy_coverage": 0.942
+      }
+    },
+    "transcript_translation": "感谢大家参加今天的全体员工会议。\n作为首席生产官，我最近领导了一次对我们生产战略的审计，以确保公司保持竞争力。\n在查看了结果后，我们将减少小型电子产品的制造，以便专注于更多需求量大的商品，比如笔记本电脑。\n这将导致我们的工厂运营发生变化。\nAsako 将告诉大家今后你们的工作任务和职责是什么。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "94942e05e6c073118451cd96b74d916dd7869d3b5d193fbd1f7a00d9853e86bb"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "C",
       "question": "Who is the speaker?",
-      "answer_explain": "原文依据：听力原文与题目“Who is the speaker?”对应，官方答案为“A company executive”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A company executive）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） is the speaker（说话者）?",
+      "answer_explain": "正确答案：C（A company executive）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) is the speaker(说话者)?",
       "choice_translations": [
-        "A：A sales representative",
-        "B：A store manager（经理）",
-        "C：A company（公司） executive",
-        "D：A news reporter"
+        "A:A sales representative",
+        "B:A store manager(经理)",
+        "C:A company(公司) executive",
+        "D:A news reporter"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“As the chief production officer, I recently led an audit of our production strategy to ensure that our company stays competitive.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“As the chief production officer, I recently led an audit of our production strategy to ensure that our company stays competitive.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Who is the speaker?”对应，官方答案为“A company executive”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（A company executive）。"
+        "analysis": "正确答案：C（A company executive）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "D",
       "question": "What type of product does the company make?",
-      "answer_explain": "原文依据：听力原文与题目“What type of product does the company make?”对应，官方答案为“Electronics”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Electronics）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of product does the company（公司） make?",
+      "answer_explain": "正确答案：D（Electronics）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of product does the company(公司) make?",
       "choice_translations": [
-        "A：Vehicles",
-        "B：Furniture",
-        "C：Dishware",
-        "D：Electronics"
+        "A:Vehicles",
+        "B:Furniture",
+        "C:Dishware",
+        "D:Electronics"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：the chief production officer, I recently led an audit of our",
+      "evidence": "参考听力原文：“After looking at the results, we are going to be cutting back on the manufacturing of our small electronics so that we can focus on more high-demand goods, like laptops.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：the chief production officer, I recently led an audit of our",
+        "evidence": "参考听力原文：“After looking at the results, we are going to be cutting back on the manufacturing of our small electronics so that we can focus on more high-demand goods, like laptops.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What type of product does the company make?”对应，官方答案为“Electronics”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Electronics）。"
+        "analysis": "正确答案：D（Electronics）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "A",
       "question": "What will happen next?",
-      "answer_explain": "原文依据：听力原文与题目“What will happen next?”对应，官方答案为“Some instructions will be given.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Some instructions will be given.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will happen next?",
+      "answer_explain": "正确答案：A（Some instructions will be given.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will happen next?",
       "choice_translations": [
-        "A：Some instructions will be given.",
-        "B：Some uniforms will be distributed.",
-        "C：Some questions will be collected.",
-        "D：Some materials will be unpacked."
+        "A:Some instructions will be given.",
+        "B:Some uniforms will be distributed.",
+        "C:Some questions will be collected.",
+        "D:Some materials will be unpacked."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting.",
+      "evidence": "参考听力原文：“Asako here is going to tell you what your job tasks and responsibilities will be going forward.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting.",
+        "evidence": "参考听力原文：“Asako here is going to tell you what your job tasks and responsibilities will be going forward.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What will happen next?”对应，官方答案为“Some instructions will be given.”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：A（Some instructions will be given.）。"
+        "analysis": "正确答案：A（Some instructions will be given.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

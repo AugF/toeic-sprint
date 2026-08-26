@@ -32,8 +32,28 @@
       "asset_key": "official-6-test-1/images/part1/q005.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 一些纸张被留在窗台上。\nB. 一个沙发正被推上坡道。\nC. 一位女士正在给钢琴除尘。\nD. 一位女士正在演奏乐器。",
-    "content_translation": "A. 一些纸张被留在窗台上。\nB. 一个沙发正被推上坡道。\nC. 一位女士正在给钢琴除尘。\nD. 一位女士正在演奏乐器。"
+    "transcript": "A. Some papers have been left on a windowsill.\nB. A sofa is being pushed up a ramp.\nC. A woman is dusting a piano.\nD. A woman is playing an instrument.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "91bae72f3546daa5add6a5d1f9fd819c78b0deaccf741c93e341f80e3126d491",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part1/q005.mp3",
+      "metrics": {
+        "word_count": 43
+      }
+    },
+    "transcript_translation": "A. 有些纸张被留在窗台上。\nB. 一张沙发正被推上坡道。\nC. 一位女士正在掸钢琴灰尘。\nD. 一位女士正在演奏乐器。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0021c4e03bd19b8b82382065ae9c41ee5af95b8d21beb20ae31751dba1263761"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,9 +69,9 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“A woman is playing an instrument.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（A woman is playing an instrument.）。",
       "choice_translations": [
-        "A：一些纸张被留在窗台上。",
-        "B：一个沙发正被推上坡道。",
-        "C：一位女士正在给钢琴除尘。",
+        "A：有些纸张被留在窗台上。",
+        "B：一张沙发正被推上坡道。",
+        "C：一位女士正在掸钢琴灰尘。",
         "D：一位女士正在演奏乐器。"
       ],
       "question_type": "动作 / 状态辨析题",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-1/p1-5/5"
+      "item_key": "official-6-test-1/p1-5/5",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -31,8 +31,28 @@
       "asset_key": "official-5-test-1/images/part1/q001.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. She's filling a water bottle.\nB. She's reaching into a handbag.\nC. She's washing some clothing.\nD. She's looking at some reading material.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8a67f708a79f2ede814fd45f9b60282b605177b4e8bd9b3c69f0b580c05d85ad",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part1/q001.mp3",
+      "metrics": {
+        "word_count": 35
+      }
+    },
+    "transcript_translation": "A. 她正在装水瓶。\nB. 她正从手提包里拿东西。\nC. 她正在洗一些衣服。\nD. 她正在看一些阅读材料。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f88449c110e7f6b88896a1da679d31c2c5da49ec0db817aef577f85e57166ada"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“She's looking at some reading material.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（She's looking at some reading material.）。",
       "choice_translations": [
-        "A：She's filling a water bottle.",
-        "B：She's reaching into a handbag.",
-        "C：She's washing some clothing.",
-        "D：She's looking at some reading material."
+        "A：她正在装水瓶。",
+        "B：她正从手提包里拿东西。",
+        "C：她正在洗一些衣服。",
+        "D：她正在看一些阅读材料。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-5-test-1/p1-1/1"
+      "item_key": "official-5-test-1/p1-1/1",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

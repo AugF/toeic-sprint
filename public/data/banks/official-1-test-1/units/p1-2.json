@@ -31,27 +31,47 @@
       "asset_key": "official-1-test-1/images/part1/q002.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 码头 [(RAD'SIAI IC) <I. pier (E58)。\nB. 圆圈（HEEIS SJ，水边 [2k, KDHSE\nC. 一个人在海滩上坐着。TR MaSRICHI TLS。\nD. 一些孩子正在沙子里挖东西。",
-    "content_translation": "A. 码头 [(RAD'SIAI IC) <I. pier (E58)。\nB. 圆圈（HEEIS SJ，水边 [2k, KDHSE\nC. 一个人在海滩上坐着。TR MaSRICHI TLS。\nD. 一些孩子正在沙子里挖东西。"
+    "transcript": "A. A boat is docking at a pier.\nB. Some birds are circling above the water.\nC. A person is sitting on a beach.\nD. Some children are digging in the sand.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4cc456d86ac65f584a16d3962ba9a9ad4f499e4d4dc279ad617f46e441f50c88",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part1/q002.mp3",
+      "metrics": {
+        "word_count": 272
+      }
+    },
+    "transcript_translation": "A. 一艘船正在码头停靠。\nB. 有些鸟在水面上盘旋。\nC. 一个人在沙滩上坐着。\nD. 有些孩子正在沙子里挖洞。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1ee0926b78346fc8015713995afdbbba16fd3065ee2cee78c605e65ce5660d0d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "dock [(RAD'SIAI IC) <I. pier (E58).",
-        "circle (HEEIS SJ, the water [2k, KDHSE",
-        "A person is sitting on a beach. TR MaSRICHI TLS.",
+        "A boat is docking at a pier.",
+        "Some birds are circling above the water.",
+        "A person is sitting on a beach.",
         "Some children are digging in the sand."
       ],
       "answer": "C",
       "difficulty": "medium",
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
-      "answer_explain": "原文依据：照片中可见信息与描述“A person is sitting on a beach. TR MaSRICHI TLS.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（A person is sitting on a beach. TR MaSRICHI TLS.）。",
+      "answer_explain": "原文依据：照片中可见信息与描述“A person is sitting on a beach.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（A person is sitting on a beach.）。",
       "choice_translations": [
-        "A：码头 [(RAD'SIAI IC) <I. pier (E58)。",
-        "B：圆圈（HEEIS SJ，水边 [2k, KDHSE",
-        "C：一个人在海滩上坐着。TR MaSRICHI TLS。",
-        "D：一些孩子正在沙子里挖东西。"
+        "A：一艘船正在码头停靠。",
+        "B：有些鸟在水面上盘旋。",
+        "C：一个人在沙滩上坐着。",
+        "D：有些孩子正在沙子里挖洞。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -61,7 +81,7 @@
         "question_type": "动作 / 状态辨析题",
         "evidence": "根据题干结构、选项语义和上下文判断。",
         "strategy": "本题属于动作 / 状态辨析题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：照片中可见信息与描述“A person is sitting on a beach. TR MaSRICHI TLS.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（A person is sitting on a beach. TR MaSRICHI TLS.）。"
+        "analysis": "原文依据：照片中可见信息与描述“A person is sitting on a beach.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（A person is sitting on a beach.）。"
       },
       "item_id": 2,
       "priority": {
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p1-2/2"
+      "item_key": "official-1-test-1/p1-2/2",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

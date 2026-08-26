@@ -40,9 +40,32 @@
       "asset_key": "official-9-test-1/audio/part3/q062-064.mp3",
       "exists": true
     },
-    "transcript": "and price list.\nw I'm calling to follow up on the vegetables you ordered\nfrom my farm.\nHow many kilograms of onions have\nyou cooked with in the restaurant so far this week?\nEl We're about halfway through the twenty-kilogram\nbag. I don't think we'll need as many next week.\nABLO AWESOURT\nw OK, ®| can update your order to a twelve-kilogram\nbag. I'll bring it on Wednesday morning.\nOPerfect. Do you have any spinach available?\nw I have mixed greens, if you like.\nm No, thanks. ®| need spinach for a special menu item\nI'm creating.\nEw ® Let me check how much I have. ®I'll call you back.\nOnion Prices\nkilograms\nkilograms\nFIb\nkilograms\nFJ\nkilograms\nHL 20 10354\nSIRSE",
-    "transcript_translation": "中文辅助（离线预处理）：and price list.\nw I'm calling to follow up on the vegetables you ordered\nfrom my farm.\nHow（如何） many kilograms of onions have\nyou cooked with in the restaurant so far this week?\nEl We're about halfway through the twenty-kilogram\nbag.\nI don't think we'll need as many next week.\nABLO AWESOURT\nw OK, ®| can update your order（订单） to a twelve-kilogram\nbag.\nI'll bring it on Wednesday morning.\nOPerfect.\nDo you have any spinach available（可用的）?\nw I have mixed greens, if you like.\nm No, thanks.\n®| need spinach for a special menu item\nI'm creating.\nEw ® Let me check how（如何） much I have.\n®I'll call you back.\nOnion Prices\nkilograms\nkilograms\nFIb\nkilograms\nFJ\nkilograms\nHL 20 10354\nSIRSE",
-    "content_translation": "中文辅助（离线预处理）：and price list.\nw I'm calling to follow up on the vegetables you ordered\nfrom my farm.\nHow（如何） many kilograms of onions have\nyou cooked with in the restaurant so far this week?\nEl We're about halfway through the twenty-kilogram\nbag.\nI don't think we'll need as many next week.\nABLO AWESOURT\nw OK, ®| can update your order（订单） to a twelve-kilogram\nbag.\nI'll bring it on Wednesday morning.\nOPerfect.\nDo you have any spinach available（可用的）?\nw I have mixed greens, if you like.\nm No, thanks.\n®| need spinach for a special menu item\nI'm creating.\nEw ® Let me check how（如何） much I have.\n®I'll call you back.\nOnion Prices\nkilograms\nkilograms\nFIb\nkilograms\nFJ\nkilograms\nHL 20 10354\nSIRSE"
+    "transcript": "I'm calling to follow up on the vegetables you ordered from my farm.\nHow many kilograms of onions have you cooked with in the restaurant so far this week?\nWe're about halfway through the 20-kilogram bag.\nI don't think we'll need as many next week.\nOkay, I can update your order to a 12-kilogram bag.\nI'll bring it on Wednesday morning.\nPerfect.\nDo you have any spinach available?\nI have mixed greens, if you like.\nNo, thanks.\nI need spinach for a special menu item I'm creating.\nLet me check how much I have.\nI'll call you back.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9833f0b6cf2fbdd7bbdf48a2531053d7af9c62156a776a741f2a498b19e2caad",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part3/q062-064.mp3",
+      "metrics": {
+        "word_count": 101,
+        "legacy_word_count": 111,
+        "length_ratio": 0.91,
+        "legacy_coverage": 0.829
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "我打电话来跟进您从我的农场订购的蔬菜。\n这周到目前为止，餐厅用了多少公斤洋葱？\n我们已经用掉了 20 公斤袋子的一半左右。\n我想下周不需要那么多。\n好的，我可以把您的订单更新成一个 12 公斤的袋子。\n我周三早上带过去。\n太完美了。\n您有菠菜吗？\n如果您喜欢的话，我有混合绿叶蔬菜。\n不用了，谢谢。\n我需要菠菜来制作一个特别菜单上的菜品。\n让我查一下我还有多少。\n我给您回电话。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "0f0807d994c77b2cb461fc2495077bbe1094f89d6f0b90f146a5c150859511ff"
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "B",
       "question": "Who most likely is the man?",
-      "answer_explain": "原文依据：听力原文中提到“w I'm calling to follow up on the vegetables you ordered”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A chef）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the man（男士）?",
+      "answer_explain": "正确答案：B（A chef）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is the man(男士)?",
       "choice_translations": [
-        "A：A food critic",
-        "B：A chef",
-        "C：A nutritionist",
-        "D：An event planner"
+        "A:A food critic",
+        "B:A chef",
+        "C:A nutritionist",
+        "D:An event planner"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：and price list.",
+      "evidence": "参考听力原文：“How many kilograms of onions have you cooked with in the restaurant so far this week?”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：and price list.",
+        "evidence": "参考听力原文：“How many kilograms of onions have you cooked with in the restaurant so far this week?”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“w I'm calling to follow up on the vegetables you ordered”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A chef）。"
+        "analysis": "正确答案：B（A chef）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 62,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. How much will the man pay on Wednesday?",
-      "answer_explain": "原文依据：听力原文中提到“Ew ® Let me check how much I have.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（$15）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nHow（如何） much will the man（男士） pay on Wednesday?",
+      "answer_explain": "正确答案：C（$15）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. How(如何) much will the man(男士) pay on Wednesday?",
       "choice_translations": [
-        "A：$6",
-        "B：$10",
-        "C：$15",
-        "D：$25"
+        "A:$6",
+        "B:$10",
+        "C:$15",
+        "D:$25"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：bag. I'll bring it on Wednesday morning.",
+      "evidence": "参考听力原文：“I'll bring it on Wednesday morning.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：bag. I'll bring it on Wednesday morning.",
+        "evidence": "参考听力原文：“I'll bring it on Wednesday morning.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew ® Let me check how much I have.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（$15）。"
+        "analysis": "正确答案：C（$15）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 63,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "C",
       "question": "What will the woman do before calling back?",
-      "answer_explain": "原文依据：听力原文中提到“Ew ® Let me check how much I have.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Check a quantity）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） do before calling back?",
+      "answer_explain": "正确答案：C（Check a quantity）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) do before calling back?",
       "choice_translations": [
-        "A：Write a review",
-        "B：Advertise a job",
-        "C：Check a quantity",
-        "D：Reserve some rooms"
+        "A:Write a review",
+        "B:Advertise a job",
+        "C:Check a quantity",
+        "D:Reserve some rooms"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：w I'm calling to follow up on the vegetables you ordered",
+      "evidence": "参考听力原文：“I'm calling to follow up on the vegetables you ordered from my farm.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：w I'm calling to follow up on the vegetables you ordered",
+        "evidence": "参考听力原文：“I'm calling to follow up on the vegetables you ordered from my farm.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew ® Let me check how much I have.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Check a quantity）。"
+        "analysis": "正确答案：C（Check a quantity）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 64,
       "priority": {

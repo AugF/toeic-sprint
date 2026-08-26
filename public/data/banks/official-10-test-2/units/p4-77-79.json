@@ -37,9 +37,31 @@
       "asset_key": "official-10-test-2/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "M\nGood morning, visitors! ® Thank you for joining me on a\nguided tour of the Fallburg City Museum. ®This building\nholds countless treasures from the city's past and is\nespecially well-known for its collection of eighteenth-century\nartifacts. We will concentrate on those galleries. Before\nzn5\nwe get started, ®| recommend that you conclude your\nvisit by enjoying a short film that covers the history of this\nmagnificent building, which is itself a work of art. For now,\nOlet's open our guidebooks and get started on the tour.",
-    "transcript_translation": "中文辅助（离线预处理）：M\nGood morning, visitors!\n® Thank（感谢） you for joining me on a\nguided tour of the Fallburg City Museum.\n®This building\nholds countless treasures from the city's past and is\nespecially well-known for its collection of eighteenth-century\nartifacts.\nWe will concentrate on those galleries.\nBefore\nzn5\nwe get started, ®| recommend that you conclude your\nvisit by enjoying a short film that covers the history of this\nmagnificent building, which is itself a work（工作） of art.\nFor now,\nOlet's open our guidebooks and get started on the tour.",
-    "content_translation": "中文辅助（离线预处理）：M\nGood morning, visitors!\n® Thank（感谢） you for joining me on a\nguided tour of the Fallburg City Museum.\n®This building\nholds countless treasures from the city's past and is\nespecially well-known for its collection of eighteenth-century\nartifacts.\nWe will concentrate on those galleries.\nBefore\nzn5\nwe get started, ®| recommend that you conclude your\nvisit by enjoying a short film that covers the history of this\nmagnificent building, which is itself a work（工作） of art.\nFor now,\nOlet's open our guidebooks and get started on the tour."
+    "transcript": "Good morning, visitors.\nThank you for joining me on a guided tour of the Falberg City Museum.\nThis building holds countless treasures from the city's past and is especially well known for its collection of 18th-century artifacts.\nWe will concentrate on those galleries.\nBefore we get started, I recommend that you conclude your visit by enjoying a short film that covers the history of this magnificent building, which is itself a work of art.\nFor now, let's open our guidebooks and get started on the tour.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9ea423149a4e73eaefa904d50e8c37f05a0ddf10ed63e6ae09fd3ed00f9764d1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 86,
+        "legacy_word_count": 85,
+        "length_ratio": 1.012,
+        "legacy_coverage": 0.941
+      }
+    },
+    "transcript_translation": "早上好，各位游客。\n感谢大家参加我在 Falberg City Museum 的导览游。\n这座建筑收藏了城市过去无数的珍宝，尤其以其 18 世纪文物收藏而闻名。\n我们将重点参观那些展厅。\n在我们开始之前，我建议您通过观看一部涵盖这座宏伟建筑历史的短片来结束您的参观，这部短片本身就是一件艺术品。\n现在，让我们打开我们的导览手册，开始这次游览吧。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "734f09a682628ee6d0b4d222e5bab5118ec4210970fd65b57eb3f321e3d4117a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "D",
       "question": "Where does the speaker work?",
-      "answer_explain": "原文依据：听力原文中提到“guided tour of the Fallburg City Museum.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（At a museum）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the speaker（说话者） work（工作）?",
+      "answer_explain": "正确答案：D（At a museum）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the speaker(说话者) work(工作)?",
       "choice_translations": [
-        "A：At a restaurant",
-        "B：At a shopping mall",
-        "C：At a concert hall",
-        "D：At a museum"
+        "A:At a restaurant",
+        "B:At a shopping mall",
+        "C:At a concert hall",
+        "D:At a museum"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：M",
+      "evidence": "参考听力原文：“Before we get started, I recommend that you conclude your visit by enjoying a short film that covers the history of this magnificent building, which is itself a work of art.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：M",
+        "evidence": "参考听力原文：“Before we get started, I recommend that you conclude your visit by enjoying a short film that covers the history of this magnificent building, which is itself a work of art.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“guided tour of the Fallburg City Museum.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（At a museum）。"
+        "analysis": "正确答案：D（At a museum）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "C",
       "question": "What does the speaker recommend?",
-      "answer_explain": "原文依据：听力原文中提到“visit by enjoying a short film that covers the history of this”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Watching a film）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） recommend?",
+      "answer_explain": "正确答案：C（Watching a film）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) recommend?",
       "choice_translations": [
-        "A：Reading a biography",
-        "B：Taking a break",
-        "C：Watching a film",
-        "D：Purchasing souvenirs"
+        "A:Reading a biography",
+        "B:Taking a break",
+        "C:Watching a film",
+        "D:Purchasing souvenirs"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：we get started, ®| recommend that you conclude your",
+      "evidence": "参考听力原文：“Before we get started, I recommend that you conclude your visit by enjoying a short film that covers the history of this magnificent building, which is itself a work of art.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：we get started, ®| recommend that you conclude your",
+        "evidence": "参考听力原文：“Before we get started, I recommend that you conclude your visit by enjoying a short film that covers the history of this magnificent building, which is itself a work of art.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“visit by enjoying a short film that covers the history of this”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Watching a film）。"
+        "analysis": "正确答案：C（Watching a film）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker tell the listeners to do?",
-      "answer_explain": "原文依据：听力原文中提到“Olet's open our guidebooks and get started on the tour.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Open some books）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） tell the listeners to do?",
+      "answer_explain": "正确答案：D（Open some books）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) tell the listeners to do?",
       "choice_translations": [
-        "A：Remain silent",
-        "B：Take some notes",
-        "C：Scan their tickets",
-        "D：Open some books"
+        "A:Remain silent",
+        "B:Take some notes",
+        "C:Scan their tickets",
+        "D:Open some books"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：M",
+      "evidence": "参考听力原文：“For now, let's open our guidebooks and get started on the tour.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：M",
+        "evidence": "参考听力原文：“For now, let's open our guidebooks and get started on the tour.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Olet's open our guidebooks and get started on the tour.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Open some books）。"
+        "analysis": "正确答案：D（Open some books）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

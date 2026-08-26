@@ -32,8 +32,28 @@
       "asset_key": "official-10-test-2/images/part1/q002.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. Some people are trying on shoes.\nB. Some people are entering a market.\nC. Clothes are displayed on racks.\nD. A floor is being polished.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "de8c14943fab23d798fda0bb06a837e5c834eefc08528fc5b05b1d765abe124c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part1/q002.mp3",
+      "metrics": {
+        "word_count": 266
+      }
+    },
+    "transcript_translation": "A. 有些人正在试鞋。\nB. 有些人正在进入市场。\nC. 衣服挂在架子上展示。\nD. 地板正在被擦亮。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "624dbf31c8e2b3eb73d4413154afa2fa1fd8049e7c9c35d25c6d88c6fe624655"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Clothes are displayed on racks.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Clothes are displayed on racks.）。",
       "choice_translations": [
-        "A：Some people are trying on shoes.",
-        "B：Some people are entering a market.",
-        "C：Clothes are displayed on racks.",
-        "D：A floor is being polished."
+        "A：有些人正在试鞋。",
+        "B：有些人正在进入市场。",
+        "C：衣服挂在架子上展示。",
+        "D：地板正在被擦亮。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p1-2/2"
+      "item_key": "official-10-test-2/p1-2/2",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

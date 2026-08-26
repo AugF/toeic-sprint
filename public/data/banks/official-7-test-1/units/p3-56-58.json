@@ -40,9 +40,31 @@
       "asset_key": "official-7-test-1/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "Em ® Did you hear about the Fontana Theater? A real\nestate developer just bought it.\nEw That place has been for sale for quite a while.\nEin Well, ®the exterior of the building has to be preserved\nbecause it's a historic landmark. That's probably why it\ntook so long to sell.\nEw ® Yeah, most developers don't like to deal with the\nTUTONER ERDER CHA\nregulations protecting historic buildings.\nB I heard they're going to renovate the theater and build\na high-rise hotel on top of it. ® There are even plans for\na rooftop terrace that'll be open to the public.\nEK w ®1 bet it would have fantastic views of the city! That's\nsomething I'd look forward to seeing.",
-    "transcript_translation": "中文辅助（离线预处理）：Em ® Did you hear about the Fontana Theater?\nA real\nestate developer just bought it.\nEw That place has been for sale for quite a while.\nEin Well, ®the exterior of the building has to be preserved\nbecause it's a historic landmark.\nThat's probably（可能） why（为什么） it\ntook so long to sell.\nEw ® Yeah, most developers don't like to deal with the\nTUTONER ERDER CHA\nregulations protecting historic buildings.\nB I heard they're going to renovate the theater and build\na high-rise hotel on top of it.\n® There are even plans for\na rooftop terrace that'll be open to the public.\nEK w ®1 bet it would have fantastic views of the city!\nThat's\nsomething I'd look forward to seeing.",
-    "content_translation": "中文辅助（离线预处理）：Em ® Did you hear about the Fontana Theater?\nA real\nestate developer just bought it.\nEw That place has been for sale for quite a while.\nEin Well, ®the exterior of the building has to be preserved\nbecause it's a historic landmark.\nThat's probably（可能） why（为什么） it\ntook so long to sell.\nEw ® Yeah, most developers don't like to deal with the\nTUTONER ERDER CHA\nregulations protecting historic buildings.\nB I heard they're going to renovate the theater and build\na high-rise hotel on top of it.\n® There are even plans for\na rooftop terrace that'll be open to the public.\nEK w ®1 bet it would have fantastic views of the city!\nThat's\nsomething I'd look forward to seeing."
+    "transcript": "Did you hear about the Fontana Theatre?\nA real estate developer just bought it.\nThat place has been for sale for quite a while.\nWell, the exterior of the building has to be preserved because it's a historic landmark.\nThat's probably why it took so long to sell.\nYeah.\nMost developers don't like to deal with the regulations protecting historic buildings.\nI heard they're going to renovate the theatre and build a high-rise hotel on top of it.\nThere are even plans for a rooftop terrace that'll be open to the public.\nI bet it would have fantastic views of the city.\nThat's something I'd look forward to seeing.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b131a817bc316d4f3b40c1548f333275988255640742112760f8835b1fb8cbec",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 109,
+        "legacy_word_count": 114,
+        "length_ratio": 0.956,
+        "legacy_coverage": 0.904
+      }
+    },
+    "transcript_translation": "你听说关于Fontana剧院的事了吗？\n一位房地产开发商刚刚买下了它。\n那个地方已经挂牌出售很久了。\n嗯，因为它是历史地标，所以建筑的外观必须得到保留。\n那可能就是它卖得这么久的原因吧。\n是啊。\n大多数开发商都不喜欢处理保护历史建筑的规定。\n我听说他们打算翻修剧院并在上面建一座高层酒店。\n甚至还有计划建造一个对公众开放的屋顶露台。\n我敢打赌它会有令人惊叹的城市景观。\n那是我想期待看到的东西。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3074e9efaea80e5afb2f73f4683edd39788047a2f0dabdfbe7dc9892eefcd7d9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "Why does the woman say, \"That place has been for sale for quite a while\"?",
-      "answer_explain": "原文依据：听力原文中提到“Ew That place has been for sale for quite a while.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（She is surprised at some news.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） say, \"That place has been for sale for quite a while\"?",
+      "answer_explain": "正确答案：C（She is surprised at some news.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the woman(女士) say, \"That place has been for sale for quite a while\"?",
       "choice_translations": [
-        "A：She is disappointed by a decision.",
-        "B：She will visit a location soon.",
-        "C：She is surprised at some news.",
-        "D：She plans to make an offer."
+        "A:She is disappointed by a decision.",
+        "B:She will visit a location soon.",
+        "C:She is surprised at some news.",
+        "D:She plans to make an offer."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：Ew That place has been for sale for quite a while.",
+      "evidence": "参考听力原文：“That place has been for sale for quite a while.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：Ew That place has been for sale for quite a while.",
+        "evidence": "参考听力原文：“That place has been for sale for quite a while.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew That place has been for sale for quite a while.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（She is surprised at some news.）。"
+        "analysis": "正确答案：C（She is surprised at some news.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "B",
       "question": "What is special about the Fontana Theater?",
-      "answer_explain": "原文依据：听力原文中提到“because it's a historic landmark.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（It is a historic landmark.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is special about the Fontana Theater?",
+      "answer_explain": "正确答案：B（It is a historic landmark.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is special about the Fontana Theater?",
       "choice_translations": [
-        "A：It is close to the city center.",
-        "B：It is a historic landmark.",
-        "C：It is near public transportation.",
-        "D：It is owned by a celebrity."
+        "A:It is close to the city center.",
+        "B:It is a historic landmark.",
+        "C:It is near public transportation.",
+        "D:It is owned by a celebrity."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Em ® Did you hear about the Fontana Theater? A real",
+      "evidence": "参考听力原文：“Well, the exterior of the building has to be preserved because it's a historic landmark.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Em ® Did you hear about the Fontana Theater? A real",
+        "evidence": "参考听力原文：“Well, the exterior of the building has to be preserved because it's a historic landmark.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“because it's a historic landmark.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（It is a historic landmark.）。"
+        "analysis": "正确答案：B（It is a historic landmark.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "D",
       "question": "What does the woman say she would look forward to seeing?",
-      "answer_explain": "原文依据：听力原文中提到“a rooftop terrace that'll be open to the public.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（The view from a rooftop）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she would look forward to seeing?",
+      "answer_explain": "正确答案：D（The view from a rooftop）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she would look forward to seeing?",
       "choice_translations": [
-        "A：A historic tour of the city",
-        "B：The draft of a contract",
-        "C：A theater production",
-        "D：The view from a rooftop"
+        "A:A historic tour of the city",
+        "B:The draft of a contract",
+        "C:A theater production",
+        "D:The view from a rooftop"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 14 段：something I'd look forward to seeing.",
+      "evidence": "参考听力原文：“That's something I'd look forward to seeing.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 14 段：something I'd look forward to seeing.",
+        "evidence": "参考听力原文：“That's something I'd look forward to seeing.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“a rooftop terrace that'll be open to the public.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（The view from a rooftop）。"
+        "analysis": "正确答案：D（The view from a rooftop）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

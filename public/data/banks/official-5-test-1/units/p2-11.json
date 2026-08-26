@@ -27,27 +27,47 @@
       "asset_key": "official-5-test-1/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：What（什么）'s the name of the coffee shop on Oak Street?",
-    "content_translation": "中文辅助（离线预处理）：What（什么）'s the name of the coffee shop on Oak Street?"
+    "transcript": "What's the name of the coffee shop on Oak Street?\nA. Thanks, but I already have some.\nB. His name is Mike Simmons.\nC. I'm not sure. I don't know that area.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "54da002f88e57d200d1fd9c8aba3122a8b37dbd9eb78e607d77044ac157b3c42",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "奥克街上的咖啡店叫什么名字？\nA. 谢谢，但我已经有了一些了。\nB. 他叫迈克·西蒙斯。\nC. 我不确定。我不了解那个区域。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9962da99bb30ab16d7f214cf8e01941463877404070d726c8ff81085fe6f3272"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Thanks, but I already have some.",
         "His name is Mike Simmons.",
-        "I'm not sure —I don't know that area."
+        "I'm not sure. I don't know that area."
       ],
       "answer": "C",
       "question": "What's the name of the coffee shop on Oak Street?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“What's the name of the coffee shop on Oak Street?”，自然应答是“I'm not sure —I don't know that area.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'm not sure —I don't know that area.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么）'s the name of the coffee shop on Oak Street?",
+      "answer_explain": "原文依据：问句或陈述是“What's the name of the coffee shop on Oak Street?”，自然应答是“I'm not sure. I don't know that area.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'm not sure. I don't know that area.）。",
+      "question_translation": "奥克街上的咖啡店叫什么名字?",
       "choice_translations": [
-        "A：Thanks, but I already have some.",
-        "B：His name is Mike Simmons.",
-        "C：I'm not sure —I don't know that area."
+        "A：谢谢,但我已经有了一些了。",
+        "B：他叫迈克·西蒙斯。",
+        "C：我不确定。我不了解那个区域。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：What's the name of the coffee shop on Oak Street?",
@@ -58,7 +78,7 @@
         "question_type": "一般疑问句",
         "evidence": "参考原文第 1 段：What's the name of the coffee shop on Oak Street?",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“What's the name of the coffee shop on Oak Street?”，自然应答是“I'm not sure —I don't know that area.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'm not sure —I don't know that area.）。"
+        "analysis": "原文依据：问句或陈述是“What's the name of the coffee shop on Oak Street?”，自然应答是“I'm not sure. I don't know that area.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I'm not sure. I don't know that area.）。"
       },
       "item_id": 11,
       "priority": {

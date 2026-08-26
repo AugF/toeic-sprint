@@ -27,38 +27,58 @@
       "asset_key": "official-5-test-2/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Would you like to go with us to a music concert tonight?",
-    "content_translation": "中文辅助（离线预处理）：Would you like to go with us to a music concert tonight?"
+    "transcript": "Would you like to go with us to\nA. music concert tonight? A. That shop sells pianos.\nB. My project deadline's tomorrow.\nC. I bought some lights.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "71b01b7464110e3e947b72514e1790cb81e49fdd89763051cc74a550d0f3d038",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "你想和我们一起去\nA. 今晚看音乐会吗？ A. 那家店卖钢琴。\nB. 我的项目截止日期是明天。\nC. 我买了一些灯。」",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "fbe24fb41a162eeb7d02efe93a9d26ba68202b83f91be31e1969d004281ff62b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "That shop sells pianos.",
+        "music concert tonight? A. That shop sells pianos.",
         "My project deadline's tomorrow.",
         "I bought some lights."
       ],
       "answer": "B",
-      "question": "Would you like to go with us to a music concert tonight?",
+      "question": "Would you like to go with us to",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Would you like to go with us to a music concert tonight?”，自然应答是“My project deadline's tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（My project deadline's tomorrow.）。",
-      "question_translation": "中文辅助（离线预处理）：Would you like to go with us to a music concert tonight?",
+      "answer_explain": "原文依据：问句或陈述是“Would you like to go with us to”，自然应答是“My project deadline's tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（My project deadline's tomorrow.）。",
+      "question_translation": "你想和我们一起去",
       "choice_translations": [
-        "A：That shop sells pianos.",
-        "B：My project deadline's tomorrow.",
-        "C：I bought some lights."
+        "A：今晚看音乐会吗? A. 那家店卖钢琴。",
+        "B：我的项目截止日期是明天。",
+        "C：我买了一些灯。」"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：Would you like to go with us to a music concert tonight?",
+      "evidence": "参考原文第 1 段：Would you like to go with us to",
       "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：Would you like to go with us to a music concert tonight?",
+        "evidence": "参考原文第 1 段：Would you like to go with us to",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Would you like to go with us to a music concert tonight?”，自然应答是“My project deadline's tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（My project deadline's tomorrow.）。"
+        "analysis": "原文依据：问句或陈述是“Would you like to go with us to”，自然应答是“My project deadline's tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（My project deadline's tomorrow.）。"
       },
       "item_id": 13,
       "priority": {

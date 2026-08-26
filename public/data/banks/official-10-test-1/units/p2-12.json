@@ -26,38 +26,58 @@
       "asset_key": "official-10-test-1/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "谁来取午餐订单？TEAR M\nA. 停车位很充足。\nB. 是的，我告诉服务员了。\nC. 前台的 Marcela。",
-    "content_translation": "谁来取午餐订单？TEAR M\nA. 停车位很充足。\nB. 是的，我告诉服务员了。\nC. 前台的 Marcela。"
+    "transcript": "Who's picking up the lunch order?\nA. There is plenty of parking.\nB. Yes, I told the waiter.\nC. Marcella from the front desk.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "899ace3765041fe523714ca18ea4b71ae8831ef88610d31df82568471147bf34",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "谁来取午餐订单？\nA. 停车位很多。\nB. 是的，我告诉服务员了。\nC. 前台的 Marcella。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "94d0c00d1ccaa4989d28c88b6bf1078ca3fc7ecc22dc5aca8f2fe3e0ac04e0d1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "There is plenty of parking.",
         "Yes, I told the waiter.",
-        "Marcela from the front desk."
+        "Marcella from the front desk."
       ],
       "answer": "C",
-      "question": "Who's picking up the lunch order? TEAR M",
+      "question": "Who's picking up the lunch order?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Who's picking up the lunch order? TEAR M”，自然应答是“Marcela from the front desk.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Marcela from the front desk.）。",
-      "question_translation": "谁来取午餐订单？ TEAR M",
+      "answer_explain": "原文依据：问句或陈述是“Who's picking up the lunch order?”，自然应答是“Marcella from the front desk.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Marcella from the front desk.）。",
+      "question_translation": "谁来取午餐订单?",
       "choice_translations": [
-        "A：停车位很充足。",
-        "B：是的，我告诉服务员了。",
-        "C：前台的 Marcela。"
+        "A：停车位很多。",
+        "B：是的,我告诉服务员了。",
+        "C：前台的 Marcella。"
       ],
       "question_type": "人物疑问句",
-      "evidence": "参考原文第 1 段：Who's picking up the lunch order? TEAR M",
+      "evidence": "参考原文第 1 段：Who's picking up the lunch order?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为人物疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "人物疑问句",
-        "evidence": "参考原文第 1 段：Who's picking up the lunch order? TEAR M",
+        "evidence": "参考原文第 1 段：Who's picking up the lunch order?",
         "strategy": "先判断为人物疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Who's picking up the lunch order? TEAR M”，自然应答是“Marcela from the front desk.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Marcela from the front desk.）。"
+        "analysis": "原文依据：问句或陈述是“Who's picking up the lunch order?”，自然应答是“Marcella from the front desk.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Marcella from the front desk.）。"
       },
       "item_id": 12,
       "priority": {

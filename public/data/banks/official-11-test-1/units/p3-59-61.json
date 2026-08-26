@@ -38,9 +38,31 @@
       "asset_key": "official-11-test-1/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "Oliver, thank you for volunteering to organize our\nquarterly managers' meeting. I appreciate you taking\ntime out of your regular work schedule to do this.\nSpeaking of which, any updates on the lunch plans?\nWell, I just heard from the restaurant we went to last\nquarter. Unfortunately, they're fully booked that day.\nToo bad. I was hoping they'd be available. Well, an\nItalian restaurant just opened nearby.\nI'll look into it. Also, I just received an e-mail from\nthe print shop. They're waiting for the presentation\nschedule to add to the program. I'll send them an\nupdated version shortly.",
-    "transcript_translation": "奥利弗，谢谢你自愿负责组织我们的季度经理会议。很感谢你从日常工作安排中抽出时间来做这件事。说到这里，午餐安排有什么新进展吗？\n嗯，我刚收到我们上季度去过的那家餐厅的消息。很遗憾，他们那天已经订满了。\n真可惜，我本来希望他们有空位。不过附近刚开了一家意大利餐厅。\n我去了解一下。另外，我刚收到印刷店的一封电子邮件。他们还在等演讲日程，以便把它加进会议手册。我很快会给他们发一份更新后的版本。",
-    "content_translation": "本段听力围绕“活动宣传”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Olivier, thank you for volunteering to organize our quarterly managers meeting.\nI appreciate you taking time out of your regular work schedule to do this.\nSpeaking of which, any updates on the lunch plans?\nWell, I just heard from the restaurant we went to last quarter.\nUnfortunately, they're fully booked that day.\nToo bad.\nI was hoping they'd be available.\nWell, an Italian restaurant just opened nearby.\nI'll look into it.\nAlso, I just received an email from the print shop.\nThey're waiting for the presentation schedule to add to the program.\nI'll send them an updated version shortly.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6e0376a137214760536c975b21a0442a3770b2b22a132b7e6b15f269e40ed99c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 99,
+        "legacy_word_count": 95,
+        "length_ratio": 1.042,
+        "legacy_coverage": 0.958
+      }
+    },
+    "transcript_translation": "Olivier，感谢你自愿组织我们的季度经理会议。\n我很感激你抽出宝贵时间来做这件事。\n说起这个，午餐计划有什么更新吗？\n嗯，我刚从我们上个季度去的餐厅那里听到消息。\n不幸的是，那天他们已经订满了。\n太可惜了。\n我本来希望他们能有空。\n嗯，附近新开了一家意大利餐厅。\n我会去了解一下的。\n另外，我刚刚收到印刷店的一封邮件。\n他们在等演示日程表来添加到节目册上。\n我很快会给他们发送一个更新的版本。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "fcbe93450568f04a38e8008ff7236b1b8d7d0053213c319890f24e016deacb30"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -52,24 +74,24 @@
         "Cooking a meal"
       ],
       "answer": "B",
-      "answer_explain": "原文依据：女方感谢 Oliver volunteering to organize our quarterly managers' meeting。 选择理由：感谢的是组织活动，对应B。正确答案：B（Organizing an event）。",
+      "answer_explain": "正确答案：B（Organizing an event）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Oliver, thank you for volunteering to organize our",
+      "evidence": "参考听力原文：“Olivier, thank you for volunteering to organize our quarterly managers meeting.”",
       "choice_translations": [
-        "A：张贴海报",
-        "B：组织活动",
-        "C：修理机器",
-        "D：做饭"
+        "A:张贴海报",
+        "B:组织活动",
+        "C:修理机器",
+        "D:做饭"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Oliver, thank you for volunteering to organize our",
+        "evidence": "参考听力原文：“Olivier, thank you for volunteering to organize our quarterly managers meeting.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：女方感谢 Oliver volunteering to organize our quarterly managers' meeting。 选择理由：感谢的是组织活动，对应B。正确答案：B（Organizing an event）。"
+        "analysis": "正确答案：B（Organizing an event）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士为什么事情向男士表示感谢？",
+      "question_translation": "女士为什么事情向男士表示感谢?",
       "item_id": 59,
       "priority": {
         "level": "P1",
@@ -103,24 +125,24 @@
         "To make a suggestion"
       ],
       "answer": "D",
-      "answer_explain": "原文依据：原餐厅订满后，女方说 an Italian restaurant just opened nearby。 选择理由：此话是在提出替代餐厅建议，对应D。正确答案：D（To make a suggestion）。",
+      "answer_explain": "正确答案：D（To make a suggestion）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段第 1 句：Well, I just heard from the restaurant we went to last",
+      "evidence": "参考听力原文：“Well, an Italian restaurant just opened nearby.”",
       "choice_translations": [
-        "A：为了抱怨交通",
-        "B：为了指出一个工作机会",
-        "C：为了发出邀请",
-        "D：为了提出建议"
+        "A:为了抱怨交通",
+        "B:为了指出一个工作机会",
+        "C:为了发出邀请",
+        "D:为了提出建议"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段第 1 句：Well, I just heard from the restaurant we went to last",
+        "evidence": "参考听力原文：“Well, an Italian restaurant just opened nearby.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：原餐厅订满后，女方说 an Italian restaurant just opened nearby。 选择理由：此话是在提出替代餐厅建议，对应D。正确答案：D（To make a suggestion）。"
+        "analysis": "正确答案：D（To make a suggestion）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女士为什么说“附近刚开了一家意大利餐厅”？",
+      "question_translation": "女士为什么说“附近刚开了一家意大利餐厅”?",
       "item_id": 60,
       "priority": {
         "level": "P1",
@@ -154,24 +176,24 @@
         "A list of sponsors"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：男方说 print shop 正等 presentation schedule，并会发送 updated version。 选择理由：发送给印刷店的是日程表，对应A。正确答案：A（A schedule）。",
+      "answer_explain": "正确答案：A（A schedule）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段第 1 句：the print shop. They're waiting for the presentation",
+      "evidence": "参考听力原文：“Also, I just received an email from the print shop.”",
       "choice_translations": [
-        "A：一份日程表",
-        "B：一张地图",
-        "C：一个公司标志",
-        "D：一份赞助商名单"
+        "A:一份日程表",
+        "B:一张地图",
+        "C:一个公司标志",
+        "D:一份赞助商名单"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段第 1 句：the print shop. They're waiting for the presentation",
+        "evidence": "参考听力原文：“Also, I just received an email from the print shop.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：男方说 print shop 正等 presentation schedule，并会发送 updated version。 选择理由：发送给印刷店的是日程表，对应A。正确答案：A（A schedule）。"
+        "analysis": "正确答案：A（A schedule）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士会把什么发给印刷店？",
+      "question_translation": "男士会把什么发给印刷店?",
       "item_id": 61,
       "priority": {
         "level": "P1",

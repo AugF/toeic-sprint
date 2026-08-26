@@ -39,9 +39,31 @@
       "asset_key": "official-7-test-2/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "Emily, Odid you hear that a new pharmacy's opening\nEmily D\non West Avenue?\nEw No, but that's great news. ®I usually go to Paxton's\nDrug Store on Main Street. It has a very friendly staff,\nO but the parking downtown is so inconvenient. There's\nnever anywhere to park there!\nI agree! Plus the article I read about the pharmacy\non West Avenue said it's supposed to have wellness\nclasses every week. it'll be great to learn more about\nthem.",
-    "transcript_translation": "中文辅助（离线预处理）：Emily, Odid you hear that a new pharmacy's opening\nEmily D\non West Avenue?\nEw No, but that's great news.\n®I usually go to Paxton's\nDrug Store on Main Street.\nIt has a very friendly staff,\nO but the parking downtown is so inconvenient.\nThere's\nnever anywhere to park there!\nI agree!\nPlus the article I read about the pharmacy\non West Avenue said it's supposed to have wellness\nclasses every week.\nit'll be great to learn more about\nthem.",
-    "content_translation": "中文辅助（离线预处理）：Emily, Odid you hear that a new pharmacy's opening\nEmily D\non West Avenue?\nEw No, but that's great news.\n®I usually go to Paxton's\nDrug Store on Main Street.\nIt has a very friendly staff,\nO but the parking downtown is so inconvenient.\nThere's\nnever anywhere to park there!\nI agree!\nPlus the article I read about the pharmacy\non West Avenue said it's supposed to have wellness\nclasses every week.\nit'll be great to learn more about\nthem."
+    "transcript": "Emily, did you hear that a new pharmacy is opening on West Avenue?\nNo, but that's great news.\nI usually go to Paxton's Drugstore on Main Street.\nIt has a very friendly staff, but the parking downtown is so inconvenient.\nThere's never anywhere to park there.\nI agree.\nPlus, the article I read about the pharmacy on West Avenue said it's supposed to have wellness classes every week.\nIt'll be great to learn more about them.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fe6d32b06351a9bd62ad0ebbb5922271508901e7620e8e63e9e16d1bd204822d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 76,
+        "legacy_word_count": 75,
+        "length_ratio": 1.013,
+        "legacy_coverage": 0.933
+      }
+    },
+    "transcript_translation": "Emily，你听说西大道开了一家新药店了吗？\n没有，但这真是个好消息。\n我通常去主街的 Paxton's Drugstore。\n那里的员工非常友好，但市中心的停车太不方便了。\n那里从来没有地方可以停车。\n我同意。\n此外，我读到的关于西大道药店的文章说它据说每周都有健康课程。\n了解更多这些信息会很棒。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "bb8c15d2c7c14f74a841a1420040fd881ed4144bc9388dd1faa009bd36120753"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "What news does the man share?",
-      "answer_explain": "原文依据：听力原文中提到“Emily, Odid you hear that a new pharmacy's opening”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A new business will open.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） news does the man（男士） share?",
+      "answer_explain": "正确答案：D（A new business will open.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) news does the man(男士) share?",
       "choice_translations": [
-        "A：A delivery will be delayed.",
-        "B：A store has extended its hours.",
-        "C：A parking garage is being built",
-        "D：A new business will open."
+        "A:A delivery will be delayed.",
+        "B:A store has extended its hours.",
+        "C:A parking garage is being built",
+        "D:A new business will open."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Emily, Odid you hear that a new pharmacy's opening",
+      "evidence": "参考听力原文：“Emily, did you hear that a new pharmacy is opening on West Avenue?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Emily, Odid you hear that a new pharmacy's opening",
+        "evidence": "参考听力原文：“Emily, did you hear that a new pharmacy is opening on West Avenue?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Emily, Odid you hear that a new pharmacy's opening”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A new business will open.）。"
+        "analysis": "正确答案：D（A new business will open.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "Why does the woman dislike shopping at Paxton's Drug Store?",
-      "answer_explain": "原文依据：听力原文中提到“O but the parking downtown is so inconvenient.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（It is difficult to find parking.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） dislike shopping at Paxton's Drug Store?",
+      "answer_explain": "正确答案：B（It is difficult to find parking.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the woman(女士) dislike shopping at Paxton's Drug Store?",
       "choice_translations": [
-        "A：Its prices are high.",
-        "B：It is difficult to find parking.",
-        "C：It has poor customer（顾客） service（服务）.",
-        "D：It has a small selection of products."
+        "A:Its prices are high.",
+        "B:It is difficult to find parking.",
+        "C:It has poor customer(顾客) service(服务).",
+        "D:It has a small selection of products."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：Ew No, but that's great news. ®I usually go to Paxton's",
+      "evidence": "参考听力原文：“It has a very friendly staff, but the parking downtown is so inconvenient.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：Ew No, but that's great news. ®I usually go to Paxton's",
+        "evidence": "参考听力原文：“It has a very friendly staff, but the parking downtown is so inconvenient.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“O but the parking downtown is so inconvenient.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（It is difficult to find parking.）。"
+        "analysis": "正确答案：B（It is difficult to find parking.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What does the man want to learn more about?",
-      "answer_explain": "原文依据：听力原文中提到“classes every week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some classes）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） want to learn more about?",
+      "answer_explain": "正确答案：C（Some classes）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) want to learn more about?",
       "choice_translations": [
-        "A：Some journalists",
-        "B：A bus schedule（日程）",
-        "C：Some classes",
-        "D：A medication"
+        "A:Some journalists",
+        "B:A bus schedule(日程)",
+        "C:Some classes",
+        "D:A medication"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 10 段：classes every week. it'll be great to learn more about",
+      "evidence": "参考听力原文：“It'll be great to learn more about them.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 10 段：classes every week. it'll be great to learn more about",
+        "evidence": "参考听力原文：“It'll be great to learn more about them.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“classes every week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some classes）。"
+        "analysis": "正确答案：C（Some classes）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

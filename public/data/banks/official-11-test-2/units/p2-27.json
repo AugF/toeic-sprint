@@ -28,38 +28,58 @@
       "asset_key": "official-11-test-2/audio/part2/q027.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew We should hire another salesperson.",
-    "content_translation": "中文辅助（离线预处理）：Ew We should hire another salesperson."
+    "transcript": "We should hire another salesperson.\nA. Several applications.\nB. The store has had a lot of customers lately.\nC. Yes, I'd like some coffee.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "417bf9b3d9e31f81d307029950939e3d1ec7ed5416f93d33b0b40f78a59faee3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q027.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "我们应该雇一名销售人员。\nA. 好几份申请表。\nB. 这家店最近有很多顾客。\nC. 是的，我想要一些咖啡。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5b6212e08f9ef35d11c5e1e3fe3b21b572382b5ce1439acf3df0c65da85e22bc"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Several applications.",
-        "The store has had a lot of customers late",
+        "The store has had a lot of customers lately.",
         "Yes, I'd like some coffee."
       ],
       "answer": "B",
-      "question": "Ew We should hire another salesperson.",
+      "question": "We should hire another salesperson.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述为“Ew We should hire another salesperson.”，官方正确应答是“The store has had a lot of customers late”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（The store has had a lot of customers late）。",
-      "question_translation": "中文辅助（离线预处理）：Ew We should hire another salesperson.",
+      "answer_explain": "原文依据：问句或陈述为“We should hire another salesperson.”，官方正确应答是“The store has had a lot of customers lately.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（The store has had a lot of customers lately.）。",
+      "question_translation": "我们应该雇一名销售人员。",
       "choice_translations": [
-        "A：Several applications.",
-        "B：The store has had a lot of customers late",
-        "C：Yes, I'd like some coffee."
+        "A：好几份申请表。",
+        "B：这家店最近有很多顾客。",
+        "C：是的,我想要一些咖啡。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew We should hire another salesperson.",
+      "evidence": "参考原文第 1 段：We should hire another salesperson.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew We should hire another salesperson.",
+        "evidence": "参考原文第 1 段：We should hire another salesperson.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“Ew We should hire another salesperson.”，官方正确应答是“The store has had a lot of customers late”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（The store has had a lot of customers late）。"
+        "analysis": "原文依据：问句或陈述为“We should hire another salesperson.”，官方正确应答是“The store has had a lot of customers lately.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（The store has had a lot of customers lately.）。"
       },
       "item_id": 27,
       "priority": {

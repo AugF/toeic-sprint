@@ -32,8 +32,28 @@
       "asset_key": "official-11-test-2/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. The building is covered with snow.\nB. There are trees in front of the building.\nC. The walking path is lined with rocks.\nD. There are flags flying from a post.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "81d93bd0dcb0ec07c23116b2696ed8bc29d56f2be77cea24822a2ec12591768f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 43
+      }
+    },
+    "transcript_translation": "A. 这栋建筑被雪覆盖了。\nB. 建筑前面有树木。\nC. 人行道两侧排列着岩石。\nD. 有旗帜从杆子上飘下来。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "688c9eb0ce96b5a7cd7f4b9e804c935b305a27085f8923ee6878e7a231b6c385"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：官方详解给出的照片描述正确项是 B（There are trees in front of the building.）。选择理由：该陈述与照片中可见的人物、物体、动作或状态一致，其他选项包含画面中没有出现的细节。正确答案：B（There are trees in front of the building.）。",
       "choice_translations": [
-        "A：The building is covered with snow.",
-        "B：There are trees in front of the building.",
-        "C：The walking path is lined with rocks.",
-        "D：There are flags flying from a post."
+        "A：这栋建筑被雪覆盖了。",
+        "B：建筑前面有树木。",
+        "C：人行道两侧排列着岩石。",
+        "D：有旗帜从杆子上飘下来。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-11-test-2/p1-3/3"
+      "item_key": "official-11-test-2/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

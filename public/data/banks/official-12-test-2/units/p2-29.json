@@ -28,38 +28,58 @@
       "asset_key": "official-12-test-2/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：EW Are you leading the presentation, or will Ms.\nHaddad do it?\nDEBA »Kw",
-    "content_translation": "中文辅助（离线预处理）：EW Are you leading the presentation, or will Ms.\nHaddad do it?\nDEBA »Kw"
+    "transcript": "Are you leading the presentation or will Ms. Haddad do it?\nA. The company's largest fundraiser.\nB. It was a nice present.\nC. She has more experience.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a92229b9f1d67a37021646c72525f5c85cbb125b6c76cdc0f7af5f24eb0aa709",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "你是负责做演示，还是哈达德女士来做？\nA. 公司最大的筹款活动。\nB. 这是一个不错的礼物。\nC. 她更有经验。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3a48d98d8c4c4f86e3ad4124cfacd9b3cbd8fd0478dfbf333bde024cb1eade9c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "The company's largest fund-raiser.",
+        "The company's largest fundraiser.",
         "It was a nice present.",
         "She has more experience."
       ],
       "answer": "C",
-      "question": "EW Are you leading the presentation, or will Ms. Haddad do it? DEBA »Kw",
+      "question": "Are you leading the presentation or will Ms. Haddad do it?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“EW Are you leading the presentation, or will Ms. Haddad do it? DEBA »Kw”，自然应答是“She has more experience.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（She has more experience.）。",
-      "question_translation": "中文辅助（离线预处理）：EW Are you leading the presentation, or will Ms.\nHaddad do it?\nDEBA »Kw",
+      "answer_explain": "原文依据：问句或陈述是“Are you leading the presentation or will Ms. Haddad do it?”，自然应答是“She has more experience.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（She has more experience.）。",
+      "question_translation": "你是负责做演示,还是哈达德女士来做?",
       "choice_translations": [
-        "A：The company（公司）'s largest fund-raiser.",
-        "B：It was a nice present.",
-        "C：She has more experience."
+        "A：公司最大的筹款活动。",
+        "B：这是一个不错的礼物。",
+        "C：她更有经验。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：EW Are you leading the presentation, or will Ms. Haddad do it? DEBA »Kw",
+      "evidence": "参考原文第 1 段：Are you leading the presentation or will Ms. Haddad do it?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：EW Are you leading the presentation, or will Ms. Haddad do it? DEBA »Kw",
+        "evidence": "参考原文第 1 段：Are you leading the presentation or will Ms. Haddad do it?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“EW Are you leading the presentation, or will Ms. Haddad do it? DEBA »Kw”，自然应答是“She has more experience.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（She has more experience.）。"
+        "analysis": "原文依据：问句或陈述是“Are you leading the presentation or will Ms. Haddad do it?”，自然应答是“She has more experience.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（She has more experience.）。"
       },
       "item_id": 29,
       "priority": {

@@ -36,9 +36,31 @@
       "asset_key": "official-12-test-1/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nm Welcome to the Zenith Company. How can I help you?\nZenithind\nak w oMy name's Melissa Ross. el have a reservation for a\nMelissa Ros\ncompact-size car. Here's my ID card.\nOl'm sorry, but it looks like we don't have any compact\nvehicles available at this time. How about upgrading\nto standard size?\nbalast\nan w Sure-but will I have to pay extra for that?\nhut.\nm I don't think so. Let me just check with my supervisor.\no Samantha, can we process this upgrade at no\nSamantha.\nadditional charge?\na w That'll be fine. © Just enter code one-zero-three when\nthe computer system prompts you for a reason.",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nm Welcome to the Zenith Company（公司）.\nHow（如何） can I help you?\nZenithind\nak w oMy name's Melissa Ross.\nel have a reservation for a\nMelissa Ros\ncompact-size car.\nHere's my ID card.\nOl'm sorry, but it looks like we don't have any compact\nvehicles available（可用的） at this time.\nHow（如何） about upgrading\nto standard size?\nbalast\nan w Sure-but will I have to pay extra for that?\nhut.\nm I don't think so.\nLet me just check with my supervisor.\no Samantha, can we process this upgrade at no\nSamantha.\nadditional charge?\na w That'll be fine.\n© Just enter code one-zero-three when（何时）\nthe computer system prompts you for a reason.",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nm Welcome to the Zenith Company（公司）.\nHow（如何） can I help you?\nZenithind\nak w oMy name's Melissa Ross.\nel have a reservation for a\nMelissa Ros\ncompact-size car.\nHere's my ID card.\nOl'm sorry, but it looks like we don't have any compact\nvehicles available（可用的） at this time.\nHow（如何） about upgrading\nto standard size?\nbalast\nan w Sure-but will I have to pay extra for that?\nhut.\nm I don't think so.\nLet me just check with my supervisor.\no Samantha, can we process this upgrade at no\nSamantha.\nadditional charge?\na w That'll be fine.\n© Just enter code one-zero-three when（何时）\nthe computer system prompts you for a reason."
+    "transcript": "Welcome to the Zenith Company.\nHow can I help you?\nMy name's Melissa Ross.\nI have a reservation for a compact-sized car.\nHere's my ID card.\nI'm sorry, but it looks like we don't have any compact vehicles available at this time.\nHow about upgrading to standard size?\nSure, but will I have to pay extra for that?\nI don't think so.\nLet me just check with my supervisor.\nSamantha, can we process this upgrade at no additional charge?\nThat'll be fine.\nJust enter code 103 when the computer system prompts you for a reason.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c5afeae05451f16da4614d2b650ab66cb97131dd24d0905d9814d3f806732573",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 94,
+        "legacy_word_count": 108,
+        "length_ratio": 0.87,
+        "legacy_coverage": 0.815
+      }
+    },
+    "transcript_translation": "欢迎光临 Zenith 公司。\n请问有什么可以帮您的？\n我叫 Melissa Ross。\n我预订了一辆紧凑型轿车。\n这是我的身份证件。\n对不起，但目前我们没有可用的紧凑型车辆。\n您考虑升级到标准尺寸如何？\n可以，但我需要为此额外付费吗？\n我想不用。\n让我和我的主管确认一下。\nSamantha，我们能免费办理这次升级吗？\n没问题的。\n当电脑系统提示您填写原因时，只需输入代码 103。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8d4738d23de793780552fe0a4a6c270abf50e2cdd855a9f973179d8330381416"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "A",
       "question": "Why is Melissa Ross speaking with the man?",
-      "answer_explain": "原文依据：听力原文中提到“compact-size car.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To pick up a rental car）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is Melissa Ross speaking with the man（男士）?",
+      "answer_explain": "正确答案：A（To pick up a rental car）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is Melissa Ross speaking with the man(男士)?",
       "choice_translations": [
-        "A：To pick up a rental car",
-        "B：To get driving directions",
-        "C：To cancel a roomreservation",
-        "D：To discuss a recent trip"
+        "A:To pick up a rental car",
+        "B:To get driving directions",
+        "C:To cancel a roomreservation",
+        "D:To discuss a recent trip"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：ak w oMy name's Melissa Ross. el have a reservation for a",
+      "evidence": "参考听力原文：“My name's Melissa Ross.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：ak w oMy name's Melissa Ross. el have a reservation for a",
+        "evidence": "参考听力原文：“My name's Melissa Ross.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“compact-size car.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To pick up a rental car）。"
+        "analysis": "正确答案：A（To pick up a rental car）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 59,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "C",
       "question": "What does the man ask Melissa Rossto do?",
-      "answer_explain": "原文依据：听力原文中提到“o Samantha, can we process this upgrade at no”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Consider an upgrade）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） ask Melissa Rossto do?",
+      "answer_explain": "正确答案：C（Consider an upgrade）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) ask Melissa Rossto do?",
       "choice_translations": [
-        "A：Provide her credit cardinformation",
-        "B：Confirm her address",
-        "C：Consider an upgrade",
-        "D：Fill out a form"
+        "A:Provide her credit cardinformation",
+        "B:Confirm her address",
+        "C:Consider an upgrade",
+        "D:Fill out a form"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：ak w oMy name's Melissa Ross. el have a reservation for a",
+      "evidence": "参考听力原文：“Samantha, can we process this upgrade at no additional charge?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：ak w oMy name's Melissa Ross. el have a reservation for a",
+        "evidence": "参考听力原文：“Samantha, can we process this upgrade at no additional charge?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“o Samantha, can we process this upgrade at no”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Consider an upgrade）。"
+        "analysis": "正确答案：C（Consider an upgrade）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 60,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "D",
       "question": "What does Samantha say the man should do?",
-      "answer_explain": "原文依据：听力原文中提到“© Just enter code one-zero-three when”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Enter a code）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does Samantha say the man（男士） should do?",
+      "answer_explain": "正确答案：D（Enter a code）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does Samantha say the man(男士) should do?",
       "choice_translations": [
-        "A：Use a different computer",
-        "B：Check a Web site",
-        "C：Provide a refund",
-        "D：Enter a code"
+        "A:Use a different computer",
+        "B:Check a Web site",
+        "C:Provide a refund",
+        "D:Enter a code"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 14 段：o Samantha, can we process this upgrade at no",
+      "evidence": "参考听力原文：“Just enter code 103 when the computer system prompts you for a reason.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 14 段：o Samantha, can we process this upgrade at no",
+        "evidence": "参考听力原文：“Just enter code 103 when the computer system prompts you for a reason.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“© Just enter code one-zero-three when”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Enter a code）。"
+        "analysis": "正确答案：D（Enter a code）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 61,
       "priority": {

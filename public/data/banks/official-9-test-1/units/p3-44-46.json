@@ -39,9 +39,31 @@
       "asset_key": "official-9-test-1/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nm Has the shipment of circuit boards been delivered\nyet? ®We can't produce the laptop computers we need\nwithout those parts. We need them today.\nw That shipment should've arrived yesterday. Elise, have\nyou contacted the parts supplier?\nw I did. ®Our supplier is having some problems with\nhiring enough drivers. ® They're behind on all their\norders this month.\nElm OWe need a new supplier, then, and fast. Wait,\nOlet\nme find the phone number of our old supplier.\nWhat does the factory produce?\nA) Cars\nEN D\nB) Airplanes\nC) Appliances\nD) Computers\nB) airplane IRFU.\nC)\nRENE\nWhy has a shipment been delayed?\nA) Some roads are under construction.\nTEN D\nB) The weather has been poor.\nC) A computer system is undergoing maintenance.\nD) A company needs more drivers.\nsystem 254. ndero\nWhat will the man most likely do next?\nA) Rent a truck\nER C\nB) Pay an express delivery fee\nC) Contact a supplier\nD) Ask to extend a deadline\nB) express delivery fee S\nask to do 30 extend 15\ndeadline T\nshipment\nproduce\nRiza\nE0873\ncircuit bo\nhave a problem with ~\npart 808\norder ax",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nm Has the shipment of circuit boards been delivered\nyet?\n®We can't produce the laptop computers we need\nwithout those parts.\nWe need them today.\nw That shipment should've arrived yesterday.\nElise, have\nyou contacted the parts supplier?\nw I did.\n®Our supplier is having some problems with\nhiring enough drivers.\n® They're behind on all their\norders this month.\nElm OWe need a new supplier, then, and fast.\nWait,\nOlet\nme find the phone number of our old supplier.\nWhat（什么） does the factory produce?\nA) Cars\nEN D\nB) Airplanes\nC) Appliances\nD) Computers\nB) airplane IRFU.\nC)\nRENE\nWhy（为什么） has a shipment been delayed?\nA) Some roads are under construction.\nTEN D\nB) The weather has been poor.\nC) A computer system is undergoing maintenance.\nD) A company（公司） needs more drivers.\nsystem 254.\nndero\nWhat（什么） will the man（男士） most likely（最可能） do next?\nA) Rent a truck\nER C\nB) Pay an express delivery fee\nC) Contact a supplier\nD) Ask to extend a deadline\nB) express delivery fee S\nask to do 30 extend 15\ndeadline T\nshipment\nproduce\nRiza\nE0873\ncircuit bo\nhave a problem with ~\npart 808\norder（订单） ax",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nm Has the shipment of circuit boards been delivered\nyet?\n®We can't produce the laptop computers we need\nwithout those parts.\nWe need them today.\nw That shipment should've arrived yesterday.\nElise, have\nyou contacted the parts supplier?\nw I did.\n®Our supplier is having some problems with\nhiring enough drivers.\n® They're behind on all their\norders this month.\nElm OWe need a new supplier, then, and fast.\nWait,\nOlet\nme find the phone number of our old supplier.\nWhat（什么） does the factory produce?\nA) Cars\nEN D\nB) Airplanes\nC) Appliances\nD) Computers\nB) airplane IRFU.\nC)\nRENE\nWhy（为什么） has a shipment been delayed?\nA) Some roads are under construction.\nTEN D\nB) The weather has been poor.\nC) A computer system is undergoing maintenance.\nD) A company（公司） needs more drivers.\nsystem 254.\nndero\nWhat（什么） will the man（男士） most likely（最可能） do next?\nA) Rent a truck\nER C\nB) Pay an express delivery fee\nC) Contact a supplier\nD) Ask to extend a deadline\nB) express delivery fee S\nask to do 30 extend 15\ndeadline T\nshipment\nproduce\nRiza\nE0873\ncircuit bo\nhave a problem with ~\npart 808\norder（订单） ax"
+    "transcript": "Has the shipment of circuit boards been delivered yet?\nWe can't produce the laptop computers we need without those parts.\nWe need them today.\nThat shipment should have arrived yesterday.\nElise, have you contacted the part supplier?\nI did.\nOur supplier is having some problems with hiring enough drivers.\nThey're behind on all their orders this month.\nWe need a new supplier then, and fast.\nWait, let me find the phone number of our old supplier.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ab015049878a9617af2802b71b16cb86d5d19bf9319c694f1bb5dcab9932fd5d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 76,
+        "legacy_word_count": 166,
+        "length_ratio": 0.458,
+        "legacy_coverage": 0.584
+      }
+    },
+    "transcript_translation": "电路板的货物送到了吗？\n没有这些零件，我们就无法生产所需的笔记本电脑。\n我们需要它们今天。\n那批货昨天应该已经到了。\n艾莉斯，你联系过零件供应商了吗？\n我联系了。\n我们的供应商在招聘足够的司机方面遇到了一些问题。\n他们这个月所有的订单都落后了。\n那我们就需要一个新的供应商，而且要快。\n等等，让我找到我们以前的供应商的电话号码。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "84b4a70b915dcab018b465925a31cb59766802f6d93c961e06954356effc476c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "What does the factory produce?",
-      "answer_explain": "原文依据：听力原文中提到“®We can't produce the laptop computers we need”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Computers）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the factory produce?",
+      "answer_explain": "正确答案：D（Computers）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the factory produce?",
       "choice_translations": [
-        "A：Cars",
-        "B：Airplanes",
-        "C：Appliances",
-        "D：Computers"
+        "A:Cars",
+        "B:Airplanes",
+        "C:Appliances",
+        "D:Computers"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：yet? ®We can't produce the laptop computers we need",
+      "evidence": "参考听力原文：“We can't produce the laptop computers we need without those parts.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：yet? ®We can't produce the laptop computers we need",
+        "evidence": "参考听力原文：“We can't produce the laptop computers we need without those parts.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®We can't produce the laptop computers we need”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Computers）。"
+        "analysis": "正确答案：D（Computers）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "D",
       "question": "Why has a shipment been delayed?",
-      "answer_explain": "原文依据：听力原文中提到“D) A company needs more drivers.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A company needs more drivers.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） has a shipment been delayed?",
+      "answer_explain": "正确答案：D（A company needs more drivers.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) has a shipment been delayed?",
       "choice_translations": [
-        "A：Some roads are under construction.",
-        "B：The weather has been poor.",
-        "C：A computer system is undergoing maintenance.",
-        "D：A company（公司） needs more drivers."
+        "A:Some roads are under construction.",
+        "B:The weather has been poor.",
+        "C:A computer system is undergoing maintenance.",
+        "D:A company(公司) needs more drivers."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：m Has the shipment of circuit boards been delivered",
+      "evidence": "参考听力原文：“Has the shipment of circuit boards been delivered yet?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：m Has the shipment of circuit boards been delivered",
+        "evidence": "参考听力原文：“Has the shipment of circuit boards been delivered yet?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“D) A company needs more drivers.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A company needs more drivers.）。"
+        "analysis": "正确答案：D（A company needs more drivers.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What will the man most likely do next?",
-      "answer_explain": "原文依据：听力原文中提到“C) Contact a supplier”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Contact a supplier）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） most likely（最可能） do next?",
+      "answer_explain": "正确答案：C（Contact a supplier）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) most likely(最可能) do next?",
       "choice_translations": [
-        "A：Rent a truck",
-        "B：Pay an express delivery fee",
-        "C：Contact a supplier",
-        "D：Ask to extend a deadline"
+        "A:Rent a truck",
+        "B:Pay an express delivery fee",
+        "C:Contact a supplier",
+        "D:Ask to extend a deadline"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Our supplier is having some problems with hiring enough drivers.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Our supplier is having some problems with hiring enough drivers.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“C) Contact a supplier”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Contact a supplier）。"
+        "analysis": "正确答案：C（Contact a supplier）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

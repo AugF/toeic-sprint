@@ -41,9 +41,31 @@
       "asset_key": "official-12-test-1/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "Hi, Yuping. It's Brian at the construction site for the\nbut Yuping\nBecker home. o Do you have an update from the\nlumber supplier?\nak w Yes. e Our order won't be there for another week.\nHmm. eWe can't continue construction until the\nAbic\nlumber's here. O This puts us behind schedule by quite\nCOLETITES\na bit.\nw Well, they're not planning to move in until early next\nzheutes. E\nyear.\nBaM OOh, OK. Well, Owe have several workers here today\nwith nothing to do. Ol'm going to call some other\nproject managers to see what other sites need help\ntoday.",
-    "transcript_translation": "中文辅助（离线预处理）：Hi, Yuping.\nIt's Brian at the construction site for the\nbut Yuping\nBecker home.\no Do you have an update from the\nlumber supplier?\nak w Yes.\ne Our order（订单） won't be there for another week.\nHmm.\neWe can't continue construction until the\nAbic\nlumber's here.\nO This puts us behind schedule（日程） by quite\nCOLETITES\na bit.\nw Well, they're not planning to move in until early next\nzheutes.\nE\nyear.\nBaM OOh, OK.\nWell, Owe have several workers here today\nwith nothing to do.\nOl'm going to call some other\nproject managers to see what（什么） other sites need help\ntoday.",
-    "content_translation": "中文辅助（离线预处理）：Hi, Yuping.\nIt's Brian at the construction site for the\nbut Yuping\nBecker home.\no Do you have an update from the\nlumber supplier?\nak w Yes.\ne Our order（订单） won't be there for another week.\nHmm.\neWe can't continue construction until the\nAbic\nlumber's here.\nO This puts us behind schedule（日程） by quite\nCOLETITES\na bit.\nw Well, they're not planning to move in until early next\nzheutes.\nE\nyear.\nBaM OOh, OK.\nWell, Owe have several workers here today\nwith nothing to do.\nOl'm going to call some other\nproject managers to see what（什么） other sites need help\ntoday."
+    "transcript": "Hi, Youping.\nIt's Brian at the construction site for the Becker Home.\nDo you have an update from the lumber supplier?\nYes.\nOur order won't be there for another week.\nHmm.\nWe can't continue construction until the lumber's here.\nThis puts us behind schedule by quite a bit.\nWell, they're not planning to move in until early next year.\nOh, okay.\nWell, we have several workers here today with nothing to do.\nI'm going to call some other project managers to see what other sites need help today.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9402a9adef02e368a10647ad8e3b69a67fc6597097d82b4f13620474f2dce2a2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 88,
+        "legacy_word_count": 98,
+        "length_ratio": 0.898,
+        "legacy_coverage": 0.837
+      }
+    },
+    "transcript_translation": "嗨，Youping。\n我是在Becker家建筑工地的Brian。\n你从木材供应商那里有更新吗？\n是的。\n我们的订单要过一周才能到。\n嗯。\n没有木材我们无法继续施工。\n这让我们落后了相当长的时间。\n哦，好吧。他们计划要到明年年初才搬进去。\n哦，好的。\n嗯，今天这里有几个工人没事干。\n我要给一些其他项目经理打电话，看看其他工地今天是否需要帮助。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "536f1aad3c5bf82dbe5cf2e613c59c4c41382793e83556beb8d9279e5beed370"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "D",
       "question": "What does the man ask the woman for?",
-      "answer_explain": "原文依据：听力原文中提到“e Our order won't be there for another week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An update on an order）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） ask the woman（女士） for?",
+      "answer_explain": "正确答案：D（An update on an order）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) ask the woman(女士) for?",
       "choice_translations": [
-        "A：A product number",
-        "B：An employee（员工）'s schedule（日程）",
-        "C：A client's contactinformation",
-        "D：An update on an order（订单）"
+        "A:A product number",
+        "B:An employee(员工)'s schedule(日程)",
+        "C:A client's contactinformation",
+        "D:An update on an order(订单)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, Yuping. It's Brian at the construction site for the",
+      "evidence": "参考听力原文：“Our order won't be there for another week.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, Yuping. It's Brian at the construction site for the",
+        "evidence": "参考听力原文：“Our order won't be there for another week.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“e Our order won't be there for another week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An update on an order）。"
+        "analysis": "正确答案：D（An update on an order）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "A",
       "question": "Why does the woman say, \"they're not planning to move in until early next year\"?",
-      "answer_explain": "原文依据：听力原文中提到“w Well, they're not planning to move in until early next”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To reassure the man）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the woman（女士） say, \"they're not planning to move in until early next year\"?",
+      "answer_explain": "正确答案：A（To reassure the man）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the woman(女士) say, \"they're not planning to move in until early next year\"?",
       "choice_translations": [
-        "A：To reassure the man（男士）",
-        "B：To ask for the man（男士）'sopinion",
-        "C：To describe the locationof a business",
-        "D：To reject a change inplans"
+        "A:To reassure the man(男士)",
+        "B:To ask for the man(男士)'sopinion",
+        "C:To describe the locationof a business",
+        "D:To reject a change inplans"
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 6 段：Hmm. eWe can't continue construction until the",
+      "evidence": "参考听力原文：“Well, they're not planning to move in until early next year.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 6 段：Hmm. eWe can't continue construction until the",
+        "evidence": "参考听力原文：“Well, they're not planning to move in until early next year.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“w Well, they're not planning to move in until early next”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To reassure the man）。"
+        "analysis": "正确答案：A（To reassure the man）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "C",
       "question": "Why will the man make some phone calls?",
-      "answer_explain": "原文依据：听力原文中提到“o Do you have an update from the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To find new tasks foremployees）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） will the man（男士） make some phone calls?",
+      "answer_explain": "正确答案：C（To find new tasks foremployees）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) will the man(男士) make some phone calls?",
       "choice_translations": [
-        "A：To check on the status ofsome items",
-        "B：To request an extensionon a project",
-        "C：To find new tasks foremployees",
-        "D：To ask questions aboutan assignment"
+        "A:To check on the status ofsome items",
+        "B:To request an extensionon a project",
+        "C:To find new tasks foremployees",
+        "D:To ask questions aboutan assignment"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Hi, Yuping. It's Brian at the construction site for the",
+      "evidence": "参考听力原文：“I'm going to call some other project managers to see what other sites need help today.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Hi, Yuping. It's Brian at the construction site for the",
+        "evidence": "参考听力原文：“I'm going to call some other project managers to see what other sites need help today.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“o Do you have an update from the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To find new tasks foremployees）。"
+        "analysis": "正确答案：C（To find new tasks foremployees）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

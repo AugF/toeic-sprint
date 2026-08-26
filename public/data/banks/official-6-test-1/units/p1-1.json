@@ -31,8 +31,28 @@
       "asset_key": "official-6-test-1/images/part1/q001.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 一些盘子在水槽里。\nB. 一些食物在一个盘子上。\nC. 一个厨师戴着手套。\nD. 一个服务员站在门口。",
-    "content_translation": "A. 一些盘子在水槽里。\nB. 一些食物在一个盘子上。\nC. 一个厨师戴着手套。\nD. 一个服务员站在门口。"
+    "transcript": "A. Some dishes are in a sink.\nB. Some food is on a plate.\nC. A cook is wearing gloves.\nD. A waiter is standing in a doorway.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "365234f5cda1e943dec4be9fb63ecb89d89b1637760927a3720be7d8b2f1d2a4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part1/q001.mp3",
+      "metrics": {
+        "word_count": 39
+      }
+    },
+    "transcript_translation": "A. 有些盘子在水槽里。\nB. 一些食物在一个盘子上。\nC. 一个厨师戴着手套。\nD. 一个服务员站在门口。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3c95862344c00dab23b97bb6e318c233d988628a85223c10bf6b36ed812004d7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,7 +68,7 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some food is on a plate.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（Some food is on a plate.）。",
       "choice_translations": [
-        "A：一些盘子在水槽里。",
+        "A：有些盘子在水槽里。",
         "B：一些食物在一个盘子上。",
         "C：一个厨师戴着手套。",
         "D：一个服务员站在门口。"
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-1/p1-1/1"
+      "item_key": "official-6-test-1/p1-1/1",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -26,8 +26,28 @@
       "asset_key": "official-8-test-2/audio/part2/q009.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：When（何时） will my library book be due?",
-    "content_translation": "中文辅助（离线预处理）：When（何时） will my library book be due?"
+    "transcript": "When will my library book be due?\nA. Yes, I do.\nB. In three weeks.\nC. The reference section.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9f1f1bc6b32b6d16da3dc47cd00ad07c9183752dc8e78f26e9b5eaf495a810ef",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part2/q009.mp3",
+      "metrics": {
+        "word_count": 20
+      }
+    },
+    "transcript_translation": "我的图书馆书什么时候到期？\nA. 是的，我确实如此。\nB. 三周后。\nC. 参考区。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e9d6392e0913be027f574233c7285af93264cdb1d0cca36c1b75e77d0434ccff"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -42,11 +62,11 @@
       "topic": "时间询问",
       "keywords": "when time response",
       "answer_explain": "原文依据：问句或陈述是“When will my library book be due?”，自然应答是“In three weeks.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（In three weeks.）。",
-      "question_translation": "中文辅助（离线预处理）：When（何时） will my library book be due?",
+      "question_translation": "我的图书馆书什么时候到期?",
       "choice_translations": [
-        "A：Yes, I do.",
-        "B：In three weeks.",
-        "C：The reference section."
+        "A：是的,我确实如此。",
+        "B：三周后。",
+        "C：参考区。"
       ],
       "question_type": "时间疑问句",
       "evidence": "参考原文第 1 段：When will my library book be due?",

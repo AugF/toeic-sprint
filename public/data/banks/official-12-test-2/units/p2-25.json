@@ -27,8 +27,28 @@
       "asset_key": "official-12-test-2/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：aw What（什么） are the dates of the job fair?\nLEAF • m",
-    "content_translation": "中文辅助（离线预处理）：aw What（什么） are the dates of the job fair?\nLEAF • m"
+    "transcript": "What are the days of the job fair?\nA. Wasn't it the second weekend of November?\nB. No, I'm not interested.\nC. I'll help you put it away.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a798b3812fc5086c7bb99853ad947a235446e7cc8af60b2ff9180714c374e01a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "招聘会是什么日子？\nA. 不是十一月的第二个周末吗？\nB. 不，我对这个不感兴趣。\nC. 我帮你收起来。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3ed3302b85d2e7477e3c3d6fae70b102d18829ff1061f8d205495471a8799863"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "I'll help you put it away."
       ],
       "answer": "A",
-      "question": "aw What are the dates of the job fair? LEAF • m",
+      "question": "What are the days of the job fair?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“aw What are the dates of the job fair? LEAF • m”，自然应答是“Wasn't it the second weekend of November?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Wasn't it the second weekend of November?）。",
-      "question_translation": "中文辅助（离线预处理）：aw What（什么） are the dates of the job fair?\nLEAF • m",
+      "answer_explain": "原文依据：问句或陈述是“What are the days of the job fair?”，自然应答是“Wasn't it the second weekend of November?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Wasn't it the second weekend of November?）。",
+      "question_translation": "招聘会是什么日子?",
       "choice_translations": [
-        "A：Wasn't it the second weekend of November?",
-        "B：No, I'm not interested.",
-        "C：I'll help you put it away."
+        "A：不是十一月的第二个周末吗?",
+        "B：不,我对这个不感兴趣。",
+        "C：我帮你收起来。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：aw What are the dates of the job fair? LEAF • m",
+      "evidence": "参考原文第 1 段：What are the days of the job fair?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：aw What are the dates of the job fair? LEAF • m",
+        "evidence": "参考原文第 1 段：What are the days of the job fair?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“aw What are the dates of the job fair? LEAF • m”，自然应答是“Wasn't it the second weekend of November?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Wasn't it the second weekend of November?）。"
+        "analysis": "原文依据：问句或陈述是“What are the days of the job fair?”，自然应答是“Wasn't it the second weekend of November?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Wasn't it the second weekend of November?）。"
       },
       "item_id": 25,
       "priority": {

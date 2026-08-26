@@ -38,9 +38,31 @@
       "asset_key": "official-11-test-1/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "Today I'll be presenting the work of Moritz Hoffman.\nMoritz spent the last two years designing and renovating\nthe city hall building, saving a truly historic building —one\nof the oldest in Madison. A project of this scale requires\na great deal of careful planning and attention to detail. And\nMoritz spent a great deal of time on preparation. The whole\nprocess was documented with photographs. Now, let's look\nat some slides of the city hall before and after renovations.",
-    "transcript_translation": "今天我将介绍莫里茨·霍夫曼的工作。莫里茨花了过去两年时间设计并翻新市政厅大楼，挽救了一栋真正具有历史意义的建筑——它是麦迪逊最古老的建筑之一。如此规模的项目需要大量周密规划和对细节的关注，莫里茨也确实花了大量时间做准备。整个过程都用照片记录了下来。现在，让我们看一些展示市政厅翻新前后面貌的幻灯片。",
-    "content_translation": "本段听力围绕“建筑项目介绍”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Today I'll be presenting the work of Moritz Hoffman.\nMoritz spent the last two years designing and renovating the City Hall building, saving a truly historic building, one of the oldest in Madison.\nA project of this scale requires a great deal of careful planning and attention to detail, and Moritz spent a great deal of time on preparation.\nThe whole process was documented with photographs.\nNow let's look at some slides of the City Hall before and after renovations.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "faacb00f3d98d045be9f5b2cb25714e3bbf5ec0449ddf6e84ac89cec51e5e302",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part4/q089-091.mp3",
+      "metrics": {
+        "word_count": 80,
+        "legacy_word_count": 79,
+        "length_ratio": 1.013,
+        "legacy_coverage": 0.987
+      }
+    },
+    "transcript_translation": "今天我将介绍 Moritz Hoffman 的工作。\nMoritz 在过去两年里设计和翻修了市政厅大楼，拯救了一座真正历史悠久的建筑，这是麦迪逊最古老的建筑之一。\n这样一个规模的项目需要大量的仔细规划和对细节的关注，Moritz 花费了大量时间进行准备。\n整个过程都用照片记录了下来。\n现在让我们看看市政厅翻修前后的几张幻灯片。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c7b0f9b2e92c8a154758828db57b262cd6b3d816c03fdaf6c222c6bc78f1c25a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -52,24 +74,24 @@
         "A photographer"
       ],
       "answer": "B",
-      "answer_explain": "原文依据：Moritz spent two years designing and renovating the city hall building。 选择理由：设计和翻修建筑表明他是architect，对应B。正确答案：B（An architect）。",
+      "answer_explain": "正确答案：B（An architect）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Today I'll be presenting the work of Moritz Hoffman.",
+      "evidence": "参考听力原文：“Today I'll be presenting the work of Moritz Hoffman.”",
       "choice_translations": [
-        "A：广告公司高管",
-        "B：建筑师",
-        "C：市政府官员",
-        "D：摄影师"
+        "A:广告公司高管",
+        "B:建筑师",
+        "C:市政府官员",
+        "D:摄影师"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Today I'll be presenting the work of Moritz Hoffman.",
+        "evidence": "参考听力原文：“Today I'll be presenting the work of Moritz Hoffman.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：Moritz spent two years designing and renovating the city hall building。 选择理由：设计和翻修建筑表明他是architect，对应B。正确答案：B（An architect）。"
+        "analysis": "正确答案：B（An architect）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "莫里茨·霍夫曼是谁？",
+      "question_translation": "莫里茨·霍夫曼是谁?",
       "item_id": 89,
       "priority": {
         "level": "P1",
@@ -103,24 +125,24 @@
         "To suggest a change in work procedures"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：讲话强调 great deal of careful planning，并重复 spent a great deal of time on preparation。 选择理由：这是肯定其投入和敬业，因此A正确。正确答案：A（To recognize Moritz for his dedication）。",
+      "answer_explain": "正确答案：A（To recognize Moritz for his dedication）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Today I'll be presenting the work of Moritz Hoffman.",
+      "evidence": "参考听力原文：“A project of this scale requires a great deal of careful planning and attention to detail, and Moritz spent a great deal of time on preparation.”",
       "choice_translations": [
-        "A：为了肯定莫里茨的投入",
-        "B：为了解释莫里茨为何获得晋升",
-        "C：为了就项目延期道歉",
-        "D：为了建议改变工作流程"
+        "A:为了肯定莫里茨的投入",
+        "B:为了解释莫里茨为何获得晋升",
+        "C:为了就项目延期道歉",
+        "D:为了建议改变工作流程"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Today I'll be presenting the work of Moritz Hoffman.",
+        "evidence": "参考听力原文：“A project of this scale requires a great deal of careful planning and attention to detail, and Moritz spent a great deal of time on preparation.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：讲话强调 great deal of careful planning，并重复 spent a great deal of time on preparation。 选择理由：这是肯定其投入和敬业，因此A正确。正确答案：A（To recognize Moritz for his dedication）。"
+        "analysis": "正确答案：A（To recognize Moritz for his dedication）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者为什么说“莫里茨花了大量时间做准备”？",
+      "question_translation": "说话者为什么说“莫里茨花了大量时间做准备”?",
       "item_id": 90,
       "priority": {
         "level": "P1",
@@ -154,24 +176,24 @@
         "Watch a slideshow"
       ],
       "answer": "D",
-      "answer_explain": "原文依据：结尾说 let's look at some slides of the city hall before and after renovations。 选择理由：下一步是观看幻灯片，对应D。正确答案：D（Watch a slideshow）。",
+      "answer_explain": "正确答案：D（Watch a slideshow）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Today I'll be presenting the work of Moritz Hoffman.",
+      "evidence": "参考听力原文：“Moritz spent the last two years designing and renovating the City Hall building, saving a truly historic building, one of the oldest in Madison.”",
       "choice_translations": [
-        "A：订阅电子简报",
-        "B：享用茶点",
-        "C：参观工地",
-        "D：观看幻灯片"
+        "A:订阅电子简报",
+        "B:享用茶点",
+        "C:参观工地",
+        "D:观看幻灯片"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Today I'll be presenting the work of Moritz Hoffman.",
+        "evidence": "参考听力原文：“Moritz spent the last two years designing and renovating the City Hall building, saving a truly historic building, one of the oldest in Madison.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：结尾说 let's look at some slides of the city hall before and after renovations。 选择理由：下一步是观看幻灯片，对应D。正确答案：D（Watch a slideshow）。"
+        "analysis": "正确答案：D（Watch a slideshow）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "听众接下来会做什么？",
+      "question_translation": "听众接下来会做什么?",
       "item_id": 91,
       "priority": {
         "level": "P1",

@@ -32,16 +32,36 @@
       "asset_key": "official-3-test-1/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 一名服务员正在设置一把伞。\nB. 一个标志正被横穿走道搬运。\nC. 汽车停在了阴凉处。\nD. 顾客们坐在咖啡馆里。",
-    "content_translation": "A. 一名服务员正在设置一把伞。\nB. 一个标志正被横穿走道搬运。\nC. 汽车停在了阴凉处。\nD. 顾客们坐在咖啡馆里。"
+    "transcript": "A. A server is setting up an umbrella.\nB. A sign is being carried across a walkway.\nC. Cars have been parked in the shade.\nD. Customers are seated at a cafe.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "700f67ccb1a06c687015788f4ffa74d551a80122a4bfa84ddefbf59aba13032d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 43
+      }
+    },
+    "transcript_translation": "A. 一名服务员正在设置一把伞。\nB. 一个标牌正被搬过一条走道。\nC. 汽车已停在阴凉处。\nD. 顾客们坐在咖啡馆里。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6d6f978e9b939c996fe8011d1a0262d01a4a62b6f87a990441c4faec95051875"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "A server is setting up an umbrella.",
-        "Asign is being carried across a walkway.",
+        "A sign is being carried across a walkway.",
         "Cars have been parked in the shade.",
-        "Customers are seated at a café."
+        "Customers are seated at a cafe."
       ],
       "answer": "C",
       "difficulty": "medium",
@@ -50,8 +70,8 @@
       "answer_explain": "原文依据：照片中可见信息与描述“Cars have been parked in the shade.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Cars have been parked in the shade.）。",
       "choice_translations": [
         "A：一名服务员正在设置一把伞。",
-        "B：一个标志正被横穿走道搬运。",
-        "C：汽车停在了阴凉处。",
+        "B：一个标牌正被搬过一条走道。",
+        "C：汽车已停在阴凉处。",
         "D：顾客们坐在咖啡馆里。"
       ],
       "question_type": "动作 / 状态辨析题",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-1/p1-4/4"
+      "item_key": "official-3-test-1/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

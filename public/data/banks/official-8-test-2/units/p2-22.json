@@ -28,8 +28,28 @@
       "asset_key": "official-8-test-2/audio/part2/q022.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Im I lost my bus pass.",
-    "content_translation": "中文辅助（离线预处理）：Im I lost my bus pass."
+    "transcript": "I lost my bus pass.\nA. Did you buy tickets to the game?\nB. Well, the ticket machine is right there.\nC. Sure, tomorrow sounds perfect.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b64bf8e93f62b82cb49d6d6d9b8b5ce2163ac294b137f83ff5eb7c16e50986f3",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part2/q022.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "我把我的公交卡弄丢了。\nA. 你买游戏票了吗？\nB. 嗯，售票机就在那里。\nC. 当然，明天听起来很完美。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c768e291d171de59caa16a40a38faab97b3ca6c60abd44043f7a95fc753deea1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Sure, tomorrow sounds perfect."
       ],
       "answer": "B",
-      "question": "Im I lost my bus pass.",
+      "question": "I lost my bus pass.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Im I lost my bus pass.”，自然应答是“Well, the ticket machine is right there.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Well, the ticket machine is right there.）。",
-      "question_translation": "中文辅助（离线预处理）：Im I lost my bus pass.",
+      "answer_explain": "原文依据：问句或陈述是“I lost my bus pass.”，自然应答是“Well, the ticket machine is right there.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Well, the ticket machine is right there.）。",
+      "question_translation": "我把我的公交卡弄丢了。",
       "choice_translations": [
-        "A：Did you buy tickets to the game?",
-        "B：Well, the ticket machine is right there.",
-        "C：Sure, tomorrow sounds perfect."
+        "A：你买游戏票了吗?",
+        "B：嗯,售票机就在那里。",
+        "C：当然,明天听起来很完美。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Im I lost my bus pass.",
+      "evidence": "参考原文第 1 段：I lost my bus pass.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Im I lost my bus pass.",
+        "evidence": "参考原文第 1 段：I lost my bus pass.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Im I lost my bus pass.”，自然应答是“Well, the ticket machine is right there.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Well, the ticket machine is right there.）。"
+        "analysis": "原文依据：问句或陈述是“I lost my bus pass.”，自然应答是“Well, the ticket machine is right there.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Well, the ticket machine is right there.）。"
       },
       "item_id": 22,
       "priority": {

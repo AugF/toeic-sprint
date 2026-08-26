@@ -39,37 +39,59 @@
       "asset_key": "official-4-test-1/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "Ew\nHi, this is Sara Laster from Apartment 4-E. This messag\nfor the apartment manager. @1’m calling because | have v\nleaking from the ceiling in my kitchen. I’m hoping you can\nsomeone to fix it as soon as possible. ®|’m working from\ntoday, and | have an important conference call at three o’c\nSo, if you could send someone to repair the problem right\naway, that'd be great. Please call me at 555-0155 once yc\nscheduled the repair. Thank you.",
-    "transcript_translation": "中文辅助（离线预处理）：Ew\nHi, this is Sara Laster from Apartment 4-E.\nThis messag\nfor the apartment manager（经理）.\n@1’m calling because | have v\nleaking from the ceiling in my kitchen.\nI’m hoping you can\nsomeone to fix it as soon as possible.\n®|’m working from\ntoday, and | have an important conference call at three o’c\nSo, if you could send someone to repair the problem right\naway, that'd be great.\nPlease（请） call me at 555-0155 once yc\nscheduled the repair.\nThank（感谢） you.",
-    "content_translation": "中文辅助（离线预处理）：Ew\nHi, this is Sara Laster from Apartment 4-E.\nThis messag\nfor the apartment manager（经理）.\n@1’m calling because | have v\nleaking from the ceiling in my kitchen.\nI’m hoping you can\nsomeone to fix it as soon as possible.\n®|’m working from\ntoday, and | have an important conference call at three o’c\nSo, if you could send someone to repair the problem right\naway, that'd be great.\nPlease（请） call me at 555-0155 once yc\nscheduled the repair.\nThank（感谢） you."
+    "transcript": "Hi, this is Sarah Laster from Apartment 4E.\nThis message is for the apartment manager.\nI'm calling because I have water leaking from the ceiling in my kitchen.\nI'm hoping you can get someone to fix it as soon as possible.\nI'm working from home today, and I have an important conference call at 3 o'clock.\nSo if you could send someone to repair the problem right away, that'd be great.\nPlease call me at 555-0155 once you've scheduled the repair.\nThank you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b5752352aaa76a0fa8c4aa2b53b132dbb1721a61dcb27e5b45362974067d6942",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 81,
+        "legacy_word_count": 77,
+        "length_ratio": 1.052,
+        "legacy_coverage": 0.87
+      }
+    },
+    "transcript_translation": "嗨，我是住在 4E 公寓的 Sarah Laster。\n这条信息是给公寓经理的。\n我打电话来是因为我的厨房天花板漏水了。\n我希望您能尽快派人来修理一下。\n我今天在家工作，下午三点有一个重要的视频会议。\n所以如果您能马上安排人来修这个问题就太好了。\n请在您安排好维修后给我回电话 555-0155。\n谢谢您。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0f2200ea16fbb21d5cf756eb64018a8d90343d900c873ac34f159b361f56bf68"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Acustomer service agent",
-        "Ahotel security guard",
+        "A customer service agent",
+        "A hotel security guard",
         "A building manager",
         "A safety inspector"
       ],
       "answer": "C",
       "question": "Who is the speaker most likely calling?",
-      "answer_explain": "原文依据：听力原文中提到“for the apartment manager.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A building manager）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） is the speaker（说话者） most likely（最可能） calling?",
+      "answer_explain": "正确答案：C（A building manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) is the speaker(说话者) most likely(最可能) calling?",
       "choice_translations": [
-        "A：Acustomer service（服务） agent",
-        "B：Ahotel security guard",
-        "C：A building manager（经理）",
-        "D：A safety inspector"
+        "A:Acustomer service(服务) agent",
+        "B:A hotel security guard",
+        "C:A building manager(经理)",
+        "D:A safety inspector"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 3 段：for the apartment manager. @1’m calling because | have v",
+      "evidence": "参考听力原文：“I'm calling because I have water leaking from the ceiling in my kitchen.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 3 段：for the apartment manager. @1’m calling because | have v",
+        "evidence": "参考听力原文：“I'm calling because I have water leaking from the ceiling in my kitchen.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“for the apartment manager.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（A building manager）。"
+        "analysis": "正确答案：C（A building manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 71,
       "priority": {
@@ -101,27 +123,27 @@
         "A window was broken.",
         "The elevator is stuck.",
         "The power went out.",
-        "Aceiling is leaking."
+        "A ceiling is leaking."
       ],
       "answer": "D",
       "question": "What problem is the speaker reporting?",
-      "answer_explain": "原文依据：听力原文中提到“leaking from the ceiling in my kitchen.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Aceiling is leaking.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） problem is the speaker（说话者） reporting?",
+      "answer_explain": "正确答案：D（A ceiling is leaking.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) problem is the speaker(说话者) reporting?",
       "choice_translations": [
-        "A：A window was broken.",
-        "B：The elevator is stuck.",
-        "C：The power went out.",
-        "D：Aceiling is leaking."
+        "A:A window was broken.",
+        "B:The elevator is stuck.",
+        "C:The power went out.",
+        "D:A ceiling is leaking."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：So, if you could send someone to repair the problem right",
+      "evidence": "参考听力原文：“I'm calling because I have water leaking from the ceiling in my kitchen.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：So, if you could send someone to repair the problem right",
+        "evidence": "参考听力原文：“I'm calling because I have water leaking from the ceiling in my kitchen.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“leaking from the ceiling in my kitchen.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Aceiling is leaking.）。"
+        "analysis": "正确答案：D（A ceiling is leaking.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 72,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "A",
       "question": "What will the speaker be doing at three o’clock?",
-      "answer_explain": "原文依据：听力原文中提到“today, and | have an important conference call at three o’c”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Taking part in a conference call）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the speaker（说话者） be doing at three o’clock?",
+      "answer_explain": "正确答案：A（Taking part in a conference call）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the speaker(说话者) be doing at three o’clock?",
       "choice_translations": [
-        "A：Taking part in a conference call",
-        "B：Contacting a supervisor",
-        "C：Leaving for an appointment（预约）",
-        "D：Signing a rental agreement"
+        "A:Taking part in a conference call",
+        "B:Contacting a supervisor",
+        "C:Leaving for an appointment(预约)",
+        "D:Signing a rental agreement"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：today, and | have an important conference call at three o’c",
+      "evidence": "参考听力原文：“I'm working from home today, and I have an important conference call at 3 o'clock.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：today, and | have an important conference call at three o’c",
+        "evidence": "参考听力原文：“I'm working from home today, and I have an important conference call at 3 o'clock.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“today, and | have an important conference call at three o’c”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Taking part in a conference call）。"
+        "analysis": "正确答案：A（Taking part in a conference call）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 73,
       "priority": {

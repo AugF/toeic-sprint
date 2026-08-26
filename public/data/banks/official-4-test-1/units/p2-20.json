@@ -26,38 +26,58 @@
       "asset_key": "official-4-test-1/audio/part2/q020.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：= When（何时） will the designs for the new airport be eae 2 P SEM) When（何时） ~?chEtEDSMICENS ty BES THSOINML, PREOU w",
-    "content_translation": "中文辅助（离线预处理）：= When（何时） will the designs for the new airport be eae 2 P SEM) When（何时） ~?chEtEDSMICENS ty BES THSOINML, PREOU w"
+    "transcript": "When will the designs for the new airport be revealed?\nA. Turn right at the sign.\nB. There were no flight cancellations.\nC. Sometime next spring.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9a41779271699f502bd8ffdbf3a8da8a117280060824a5caeb4882c52581377f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q020.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "新的机场设计图什么时候会公布？\nA. 在标志处右转。\nB. 没有航班取消。\nC. 明年春天某个时候。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d3e24a944a86e9fa739ca8e0cbdcf40164a61838027b778df8532e9404a23e86"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Turn right at the sign. DPVIEBHKEOHMESA TS",
-        "There were no flight cancellations. design (a8. M3). reveal[~@MA Sp ict 3].",
-        "MER."
+        "Turn right at the sign.",
+        "There were no flight cancellations.",
+        "Sometime next spring."
       ],
       "answer": "C",
-      "question": "= When will the designs for the new airport be eae 2 P SEM) When ~?chEtEDSMICENS ty BES THSOINML, PREOU w",
+      "question": "When will the designs for the new airport be revealed?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“= When will the designs for the new airport be eae 2 P SEM) When ~?chEtEDSMICENS ty BES THSOINML, PREOU w”，自然应答是“MER.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（MER.）。",
-      "question_translation": "中文辅助（离线预处理）：= When（何时） will the designs for the new airport be eae 2 P SEM) When（何时） ~?chEtEDSMICENS ty BES THSOINML, PREOU w",
+      "answer_explain": "原文依据：问句或陈述是“When will the designs for the new airport be revealed?”，自然应答是“Sometime next spring.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sometime next spring.）。",
+      "question_translation": "新的机场设计图什么时候会公布?",
       "choice_translations": [
-        "A：Turn right at the sign.\nDPVIEBHKEOHMESA TS",
-        "B：There were no flight cancellations.\ndesign (a8.\nM3).\nreveal[~@MA Sp ict 3].",
-        "C：MER."
+        "A：在标志处右转。",
+        "B：没有航班取消。",
+        "C：明年春天某个时候。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：= When will the designs for the new airport be eae 2 P SEM) When ~?chEtEDSMICENS ty BES THSOINML, PREOU w",
+      "evidence": "参考原文第 1 段：When will the designs for the new airport be revealed?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：= When will the designs for the new airport be eae 2 P SEM) When ~?chEtEDSMICENS ty BES THSOINML, PREOU w",
+        "evidence": "参考原文第 1 段：When will the designs for the new airport be revealed?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“= When will the designs for the new airport be eae 2 P SEM) When ~?chEtEDSMICENS ty BES THSOINML, PREOU w”，自然应答是“MER.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（MER.）。"
+        "analysis": "原文依据：问句或陈述是“When will the designs for the new airport be revealed?”，自然应答是“Sometime next spring.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sometime next spring.）。"
       },
       "item_id": 20,
       "priority": {

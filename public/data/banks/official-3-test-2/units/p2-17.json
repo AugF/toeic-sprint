@@ -28,38 +28,58 @@
       "asset_key": "official-3-test-2/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Didn't the clients say they'd prefer to tour the factory today?",
-    "content_translation": "中文辅助（离线预处理）：Didn't the clients say they'd prefer to tour the factory today?"
+    "transcript": "How often do you buy new glasses?\nA. About 3 to 5 days per order.\nB. The store on Robbins Street.\nC. I actually switched to contact lenses.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8925739a4b9f5bf3da02942e3c8e9ece6149b79e4a62e59b3c6f7a8a57537d97",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "你多久买一次新眼镜？\nA. 每次订单大约三到五天。\nB. Robbins街的店。\nC. 我实际上换成了隐形眼镜。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "01ff1f14f5126aa7c3f650d988c924cb8f9302aa1e0600544d2e57bb20a52938"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "A job application.",
-        "Their schedule is already full.",
-        "It's a new building."
+        "About 3 to 5 days per order.",
+        "The store on Robbins Street.",
+        "I actually switched to contact lenses."
       ],
       "answer": "C",
-      "question": "Didn't the clients say they'd prefer to tour the factory today?",
+      "question": "How often do you buy new glasses?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Didn't the clients say they'd prefer to tour the factory today?”，自然应答是“It's a new building.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（It's a new building.）。",
-      "question_translation": "中文辅助（离线预处理）：Didn't the clients say they'd prefer to tour the factory today?",
+      "answer_explain": "原文依据：问句或陈述是“How often do you buy new glasses?”，自然应答是“I actually switched to contact lenses.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I actually switched to contact lenses.）。",
+      "question_translation": "你多久买一次新眼镜?",
       "choice_translations": [
-        "A：A job application.",
-        "B：Their schedule（日程） is already full.",
-        "C：It's a new building."
+        "A：每次订单大约三到五天。",
+        "B：Robbins街的店。",
+        "C：我实际上换成了隐形眼镜。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Didn't the clients say they'd prefer to tour the factory today?",
+      "evidence": "参考原文第 1 段：How often do you buy new glasses?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Didn't the clients say they'd prefer to tour the factory today?",
+        "evidence": "参考原文第 1 段：How often do you buy new glasses?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Didn't the clients say they'd prefer to tour the factory today?”，自然应答是“It's a new building.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（It's a new building.）。"
+        "analysis": "原文依据：问句或陈述是“How often do you buy new glasses?”，自然应答是“I actually switched to contact lenses.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I actually switched to contact lenses.）。"
       },
       "item_id": 17,
       "priority": {

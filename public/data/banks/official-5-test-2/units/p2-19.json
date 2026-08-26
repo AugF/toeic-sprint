@@ -27,13 +27,33 @@
       "asset_key": "official-5-test-2/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Have you booked the train tickets to London yet?",
-    "content_translation": "中文辅助（离线预处理）：Have you booked the train tickets to London yet?"
+    "transcript": "Have you booked the train tickets to London yet?\nA. Oh, I've read that book.\nB. Less than five hours.\nC. I just sent you the confirmation.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b3e7a6a28be84f99b80a1bd46cb5ea249f3ad4157158a23902bf96aa5c3d01be",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "你预订伦敦的火车票了吗？\nA. 哦，我读过那本书了。\nB. 少于五个小时。\nC. 我刚把确认信发给你。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "344d4065b0d128e563db710ca604b075ffd0b0db61e2afe5a15f6dddbbd43cf5"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Oh, I've read that book!",
+        "Oh, I've read that book.",
         "Less than five hours.",
         "I just sent you the confirmation."
       ],
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Have you booked the train tickets to London yet?”，自然应答是“I just sent you the confirmation.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I just sent you the confirmation.）。",
-      "question_translation": "中文辅助（离线预处理）：Have you booked the train tickets to London yet?",
+      "question_translation": "你预订伦敦的火车票了吗?",
       "choice_translations": [
-        "A：Oh, I've read that book!",
-        "B：Less than five hours.",
-        "C：I just sent you the confirmation."
+        "A：哦,我读过那本书了。",
+        "B：少于五个小时。",
+        "C：我刚把确认信发给你。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Have you booked the train tickets to London yet?",

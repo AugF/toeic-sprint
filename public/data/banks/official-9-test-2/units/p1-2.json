@@ -32,8 +32,28 @@
       "asset_key": "official-9-test-2/images/part1/q002.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. A bus is pulling into a garage.\nB. A bus is passing by a building.\nC. A bus is parked on a bridge.\nD. A bus is driving through a tunnel.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d9e5b22a01605aca40f54802e7b50fd43f8163bf2ed6e1cc50b3d836fc553964",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part1/q002.mp3",
+      "metrics": {
+        "word_count": 53
+      }
+    },
+    "transcript_translation": "A. 一辆巴士正在驶入一个车库。\nB. 一辆巴士正在经过一座建筑。\nC. 一辆巴士停在一个桥上。\nD. 一辆巴士正在穿过一个隧道。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "81fb845f3afc25e254814a40712cd6dc7c74a4250f722bcacb7d71ac9d42b048"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“A bus is passing by a building.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（A bus is passing by a building.）。",
       "choice_translations": [
-        "A：A bus is pulling into a garage.",
-        "B：A bus is passing by a building.",
-        "C：A bus is parked on a bridge.",
-        "D：A bus is driving through a tunnel."
+        "A：一辆巴士正在驶入一个车库。",
+        "B：一辆巴士正在经过一座建筑。",
+        "C：一辆巴士停在一个桥上。",
+        "D：一辆巴士正在穿过一个隧道。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-2/p1-2/2"
+      "item_key": "official-9-test-2/p1-2/2",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

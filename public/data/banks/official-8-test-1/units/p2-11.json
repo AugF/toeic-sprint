@@ -27,8 +27,28 @@
       "asset_key": "official-8-test-1/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：6м What（什么） do you think of using this cover photo on our Web site?\nEW",
-    "content_translation": "中文辅助（离线预处理）：6м What（什么） do you think of using this cover photo on our Web site?\nEW"
+    "transcript": "What do you think of using this cover photo on our website?\nA. I can cover your shift.\nB. In the file folder.\nC. Sure, that looks great.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3af8975b765c9fca1f47fc8054fd11e6fee1f0c6ada6701619f2685f771209aa",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "你觉得用这张封面照片放在我们的网站上怎么样？\nA. 我可以替你值班。\nB. 在文件夹里。\nC. 当然，看起来很棒。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "284a7a8537881210a1bd67e7170b7514342885b46d19612f1066ad7df75703eb"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "Sure, that looks great."
       ],
       "answer": "C",
-      "question": "6м What do you think of using this cover photo on our Web site? EW",
+      "question": "What do you think of using this cover photo on our website?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“6м What do you think of using this cover photo on our Web site? EW”，自然应答是“Sure, that looks great.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sure, that looks great.）。",
-      "question_translation": "中文辅助（离线预处理）：6м What（什么） do you think of using this cover photo on our Web site?\nEW",
+      "answer_explain": "原文依据：问句或陈述是“What do you think of using this cover photo on our website?”，自然应答是“Sure, that looks great.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sure, that looks great.）。",
+      "question_translation": "你觉得用这张封面照片放在我们的网站上怎么样?",
       "choice_translations": [
-        "A：I can cover your shift.",
-        "B：In the file folder.",
-        "C：Sure, that looks great."
+        "A：我可以替你值班。",
+        "B：在文件夹里。",
+        "C：当然,看起来很棒。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：6м What do you think of using this cover photo on our Web site? EW",
+      "evidence": "参考原文第 1 段：What do you think of using this cover photo on our website?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：6м What do you think of using this cover photo on our Web site? EW",
+        "evidence": "参考原文第 1 段：What do you think of using this cover photo on our website?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“6м What do you think of using this cover photo on our Web site? EW”，自然应答是“Sure, that looks great.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sure, that looks great.）。"
+        "analysis": "原文依据：问句或陈述是“What do you think of using this cover photo on our website?”，自然应答是“Sure, that looks great.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Sure, that looks great.）。"
       },
       "item_id": 11,
       "priority": {

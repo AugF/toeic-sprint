@@ -36,9 +36,31 @@
       "asset_key": "official-8-test-1/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "Welcome to this instructional video. Many subscribers\nto my channel have asked about installing ceiling fans,\nso I thought I'd help. ® Your first steps are to shut off the\nelectricity in the room, put on protective eye covering, and\nmake sure you have a sturdy ladder. ° These are essential\nfor your safety. Once the electricity is off, hold the base of\nthe fan to the ceiling and draw a circle around it with a pencil.\nThen, ®cut along the circle with a drywall saw. ® The saw\nwill shake quite strongly so I suggest asking a friend to hold\nLEEZATESSELEBHOURT.\nthe ladder while you do it.",
-    "transcript_translation": "中文辅助（离线预处理）：Welcome to this instructional video.\nMany subscribers\nto my channel have asked about installing ceiling fans,\nso I thought I'd help.\n® Your first steps are to shut off the\nelectricity in the room, put on protective eye covering, and\nmake sure you have a sturdy ladder.\n° These are essential\nfor your safety.\nOnce the electricity is off, hold the base of\nthe fan to the ceiling and draw a circle around it with a pencil.\nThen, ®cut along the circle with a drywall saw.\n® The saw\nwill shake quite strongly so I suggest（表明/建议） asking a friend to hold\nLEEZATESSELEBHOURT.\nthe ladder while you do it.",
-    "content_translation": "中文辅助（离线预处理）：Welcome to this instructional video.\nMany subscribers\nto my channel have asked about installing ceiling fans,\nso I thought I'd help.\n® Your first steps are to shut off the\nelectricity in the room, put on protective eye covering, and\nmake sure you have a sturdy ladder.\n° These are essential\nfor your safety.\nOnce the electricity is off, hold the base of\nthe fan to the ceiling and draw a circle around it with a pencil.\nThen, ®cut along the circle with a drywall saw.\n® The saw\nwill shake quite strongly so I suggest（表明/建议） asking a friend to hold\nLEEZATESSELEBHOURT.\nthe ladder while you do it."
+    "transcript": "Welcome to this instructional video.\nMany subscribers to my channel have asked about installing ceiling fans, so I thought I'd help.\nYour first steps are to shut off the electricity in the room, put on protective eye covering, and make sure you have a sturdy ladder.\nThese are essential for your safety.\nOnce the electricity is off, hold the base of the fan to the ceiling and draw a circle around it with a pencil.\nThen, cut along the circle with a drywall saw.\nThe saw will shake quite strongly, so I suggest asking a friend to hold the ladder while you do it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "e4562b3ca0672b27d6d88b78a296ef0911427fc1a3a14495d83a3315dfe7cc70",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 104,
+        "legacy_word_count": 103,
+        "length_ratio": 1.01,
+        "legacy_coverage": 0.981
+      }
+    },
+    "transcript_translation": "欢迎观看本教学视频。\n我的频道有很多订阅者询问关于安装吊扇的问题，所以我决定来帮助大家。\n第一步是关闭房间的电源，戴上防护眼罩，并确保您有一把结实的梯子。\n这些对您的安全至关重要。\n一旦电源关闭，将风扇底座固定在天花板上，然后用铅笔画一个圆圈。\n接着，沿着这个圆圈用石膏板锯切割。\n这台锯会震动得相当厉害，所以我建议让朋友帮忙扶着梯子您进行操作。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5f8b5568784890236d1ff33ed4f74d1891a470e52c0ff85262502b2c1974902e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "D",
       "question": "What is the speaker explaining?",
-      "answer_explain": "原文依据：听力原文中提到“the fan to the ceiling and draw a circle around it with a pencil.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（How to install a fan）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the speaker（说话者） explaining?",
+      "answer_explain": "正确答案：D（How to install a fan）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the speaker(说话者) explaining?",
       "choice_translations": [
-        "A：How（如何） to edit a video",
-        "B：How（如何） to reduce electricity costs",
-        "C：How（如何） to repair a lamp",
-        "D：How（如何） to install a fan"
+        "A:How(如何) to edit a video",
+        "B:How(如何) to reduce electricity costs",
+        "C:How(如何) to repair a lamp",
+        "D:How(如何) to install a fan"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Welcome to this instructional video. Many subscribers",
+      "evidence": "参考听力原文：“Once the electricity is off, hold the base of the fan to the ceiling and draw a circle around it with a pencil.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Welcome to this instructional video. Many subscribers",
+        "evidence": "参考听力原文：“Once the electricity is off, hold the base of the fan to the ceiling and draw a circle around it with a pencil.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the fan to the ceiling and draw a circle around it with a pencil.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（How to install a fan）。"
+        "analysis": "正确答案：D（How to install a fan）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "A",
       "question": "According to the speaker, why are the first steps important?",
-      "answer_explain": "原文依据：听力原文中提到“for your safety.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（For safety）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, why（为什么） are the first steps important?",
+      "answer_explain": "正确答案：A（For safety）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), why(为什么) are the first steps important?",
       "choice_translations": [
-        "A：For safety",
-        "B：For efficiency",
-        "C：For cleanliness",
-        "D：For appearance"
+        "A:For safety",
+        "B:For efficiency",
+        "C:For cleanliness",
+        "D:For appearance"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：so I thought I'd help. ® Your first steps are to shut off the",
+      "evidence": "参考听力原文：“Your first steps are to shut off the electricity in the room, put on protective eye covering, and make sure you have a sturdy ladder.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：so I thought I'd help. ® Your first steps are to shut off the",
+        "evidence": "参考听力原文：“Your first steps are to shut off the electricity in the room, put on protective eye covering, and make sure you have a sturdy ladder.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“for your safety.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（For safety）。"
+        "analysis": "正确答案：A（For safety）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "C",
       "question": "According to the speaker, how can a friend be helpful with a task?",
-      "answer_explain": "原文依据：听力原文中提到“the ladder while you do it.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（By holding a ladder）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, how（如何） can a friend be helpful with a task?",
+      "answer_explain": "正确答案：C（By holding a ladder）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), how(如何) can a friend be helpful with a task?",
       "choice_translations": [
-        "A：By reading a manual",
-        "B：By reviewing some work（工作）",
-        "C：By holding a ladder",
-        "D：By turning the lights off"
+        "A:By reading a manual",
+        "B:By reviewing some work(工作)",
+        "C:By holding a ladder",
+        "D:By turning the lights off"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：will shake quite strongly so I suggest asking a friend to hold",
+      "evidence": "参考听力原文：“The saw will shake quite strongly, so I suggest asking a friend to hold the ladder while you do it.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：will shake quite strongly so I suggest asking a friend to hold",
+        "evidence": "参考听力原文：“The saw will shake quite strongly, so I suggest asking a friend to hold the ladder while you do it.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the ladder while you do it.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（By holding a ladder）。"
+        "analysis": "正确答案：C（By holding a ladder）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

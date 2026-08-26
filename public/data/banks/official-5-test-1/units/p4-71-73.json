@@ -36,9 +36,31 @@
       "asset_key": "official-5-test-1/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "Whatever the occasion, when you want a fantastic restaurant\nexperience, look no further than Ferrera's Fine Dining.\nSample unique dishes from our menu designed by Chef\nGilberto Ferre\nGilberto Ferrera, the well-known host of the television\ncooking show The Silver Spoon. If you reserve a table\nin the courtyard, you'll have a perfect view of the live\nperformances while dining outdoors. The musical lineup\nchanges every night! And to receive a complimentary\nbeverage for everyone in your party, just tell your server that\nyou want to use promo code FERRERA.",
-    "transcript_translation": "中文辅助（离线预处理）：Whatever the occasion, when（何时） you want a fantastic restaurant\nexperience, look no further than Ferrera's Fine Dining.\nSample unique dishes from our menu designed by Chef\nGilberto Ferre\nGilberto Ferrera, the well-known host of the television\ncooking show The Silver Spoon.\nIf you reserve a table\nin the courtyard, you'll have a perfect view of the live\nperformances while dining outdoors.\nThe musical lineup\nchanges every night!\nAnd to receive a complimentary\nbeverage for everyone in your party, just tell your server that\nyou want to use promo code FERRERA.",
-    "content_translation": "中文辅助（离线预处理）：Whatever the occasion, when（何时） you want a fantastic restaurant\nexperience, look no further than Ferrera's Fine Dining.\nSample unique dishes from our menu designed by Chef\nGilberto Ferre\nGilberto Ferrera, the well-known host of the television\ncooking show The Silver Spoon.\nIf you reserve a table\nin the courtyard, you'll have a perfect view of the live\nperformances while dining outdoors.\nThe musical lineup\nchanges every night!\nAnd to receive a complimentary\nbeverage for everyone in your party, just tell your server that\nyou want to use promo code FERRERA."
+    "transcript": "Whatever the occasion, when you want a fantastic restaurant experience, look no further than Ferreira's Fine Dining.\nSample unique dishes from our menu designed by Chef Gilberto Ferreira, the well-known host of the television cooking show The Silver Spoon.\nIf you reserve a table in the courtyard, you'll have a perfect view of the live performances while dining outdoors.\nThe musical line-up changes every night, and to receive a complimentary beverage for everyone in your party, just tell your server that you want to use promo code Ferreira.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "53cf4f3505489e78a8c05b5198ea74bb1931b9fc0207bbcc2ab932b963bcd200",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 88,
+        "legacy_word_count": 90,
+        "length_ratio": 0.978,
+        "legacy_coverage": 0.944
+      }
+    },
+    "transcript_translation": "无论什么场合，当你想要一次绝佳的餐厅体验时，请看看 Ferreira's Fine Dining。\n品尝由 Chef Gilberto Ferreira 设计的菜单上的独特菜肴，他是著名电视烹饪节目 The Silver Spoon 的主持人。\n如果你预定庭院的餐桌，在户外用餐时可以完美地欣赏现场表演。\n音乐阵容每晚都会更换，只需告诉服务员你想使用促销代码 Ferreira，即可为你们小组成员提供免费饮品。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "eb62709eb7392f15cc5b22d4121ffe18a2edb3c328807167d367f1f7bf902015"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, why is the chef well-known?",
-      "answer_explain": "原文依据：听力原文中提到“Gilberto Ferrera, the well-known host of the television”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（He hosts a television show.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, why（为什么） is the chef well-known?",
+      "answer_explain": "正确答案：B（He hosts a television show.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), why(为什么) is the chef well-known?",
       "choice_translations": [
-        "A：He owns many restaurants.",
-        "B：He hosts a television show.",
-        "C：He won a competition.",
-        "D：He wrote a cookbook."
+        "A:He owns many restaurants.",
+        "B:He hosts a television show.",
+        "C:He won a competition.",
+        "D:He wrote a cookbook."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：Gilberto Ferrera, the well-known host of the television",
+      "evidence": "参考听力原文：“Sample unique dishes from our menu designed by Chef Gilberto Ferreira, the well-known host of the television cooking show The Silver Spoon.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：Gilberto Ferrera, the well-known host of the television",
+        "evidence": "参考听力原文：“Sample unique dishes from our menu designed by Chef Gilberto Ferreira, the well-known host of the television cooking show The Silver Spoon.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Gilberto Ferrera, the well-known host of the television”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（He hosts a television show.）。"
+        "analysis": "正确答案：B（He hosts a television show.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 71,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "C",
       "question": "What can the listeners see in the courtyard?",
-      "answer_explain": "原文依据：听力原文中提到“The musical lineup”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A musical performance）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） can the listeners see in the courtyard?",
+      "answer_explain": "正确答案：C（A musical performance）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) can the listeners see in the courtyard?",
       "choice_translations": [
-        "A：A mural by a famous artist",
-        "B：A flower garden",
-        "C：A musical performance",
-        "D：A view of the city"
+        "A:A mural by a famous artist",
+        "B:A flower garden",
+        "C:A musical performance",
+        "D:A view of the city"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：in the courtyard, you'll have a perfect view of the live",
+      "evidence": "参考听力原文：“The musical line-up changes every night, and to receive a complimentary beverage for everyone in your party, just tell your server that you want to use promo code Ferreira.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：in the courtyard, you'll have a perfect view of the live",
+        "evidence": "参考听力原文：“The musical line-up changes every night, and to receive a complimentary beverage for everyone in your party, just tell your server that you want to use promo code Ferreira.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“The musical lineup”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A musical performance）。"
+        "analysis": "正确答案：C（A musical performance）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 72,
       "priority": {
@@ -147,24 +169,24 @@
         "By booking a private event"
       ],
       "answer": "A",
-      "question": "How can the listeners get a complimentary 79. What qualification does the speaker beverage?",
-      "answer_explain": "原文依据：听力原文中提到“you want to use promo code FERRERA.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（By using a promotional code）。",
-      "question_translation": "中文辅助（离线预处理）：How（如何） can the listeners get a complimentary 79.\nWhat（什么） qualification does the speaker（说话者） beverage?",
+      "question": "How can the listeners get a complimentary beverage?",
+      "answer_explain": "正确答案：A（By using a promotional code）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):How(如何) can the listeners get a complimentary What(什么) qualification does the speaker(说话者) beverage?",
       "choice_translations": [
-        "A：By using a promotional code",
-        "B：By leaving a business card",
-        "C：By filling out a survey",
-        "D：By booking a private event"
+        "A:By using a promotional code",
+        "B:By leaving a business card",
+        "C:By filling out a survey",
+        "D:By booking a private event"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：changes every night! And to receive a complimentary",
+      "evidence": "参考听力原文：“The musical line-up changes every night, and to receive a complimentary beverage for everyone in your party, just tell your server that you want to use promo code Ferreira.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：changes every night! And to receive a complimentary",
+        "evidence": "参考听力原文：“The musical line-up changes every night, and to receive a complimentary beverage for everyone in your party, just tell your server that you want to use promo code Ferreira.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“you want to use promo code FERRERA.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（By using a promotional code）。"
+        "analysis": "正确答案：A（By using a promotional code）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 73,
       "priority": {

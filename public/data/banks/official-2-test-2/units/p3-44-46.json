@@ -36,9 +36,31 @@
       "asset_key": "official-2-test-2/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "Hi, Katie. it's great that you can come in ea\nFriday mornings. We need someone to be\nrestaurant to receive the food delivery on tho:\nEIR w I’m glad | can help! From what | understand,\nis to inspect the food when it arrives and mak\nmatches our order. Is that right?\nThat's right. °See that folder near the loadin\nThat's where we keep the printouts of what\nordered from each supplier. You should chec!\nitem on the order form as it’s unloaded.",
-    "transcript_translation": "嗨，Katie。很高兴你周五早上能来。我们需要有人在餐厅接收送到的食物，并在卸货时检查收到的食物是否与我们的订单相符。\nEIR w 我很高兴能帮忙！据我了解，需要检查到货的食物并与我们的订单核对。是这样吗？\n是的。看靠近装卸区那个文件夹。那是我们存放从每个供应商那里订购物品打印单的地方。您应该在货物卸下时检查一下订单表上的项目。",
-    "content_translation": "嗨，Katie。很高兴你周五早上能来。我们需要有人在餐厅接收送到的食物，并在卸货时检查收到的食物是否与我们的订单相符。\nEIR w 我很高兴能帮忙！据我了解，需要检查到货的食物并与我们的订单核对。是这样吗？\n是的。看靠近装卸区那个文件夹。那是我们存放从每个供应商那里订购物品打印单的地方。您应该在货物卸下时检查一下订单表上的项目。"
+    "transcript": "Hi Katie, it's great that you can come in early on Friday mornings.\nWe need someone to be here at the restaurant to receive the food delivery on those days.\nI'm glad I can help.\nFrom what I understand, my job is to inspect the food when it arrives and make sure it matches our order.\nIs that right?\nThat's right.\nSee that folder near the loading dock?\nThat's where we keep the printouts of what food was ordered from each supplier.\nYou should check off each item on the order form as it's unloaded.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ba1e85a643397611ab73564b12689255b2fe79024b477ed2baabffcdb2757d7d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 95,
+        "legacy_word_count": 81,
+        "length_ratio": 1.173,
+        "legacy_coverage": 0.901
+      }
+    },
+    "transcript_translation": "嗨，Katie，很高兴你周五早上能早点来。\n那天我们需要有人在餐厅接收食品配送。\n我很高兴能帮上忙。\n据我了解，我的工作是在食物到达时检查它并确保它与我们的订单相符。\n是这样吗？\n是的。\n看到装货区附近的那个文件夹了吗？\n我们在那里存放着从每个供应商处订购的食品打印件。\n你应该在卸货时勾选订单表上的每一项。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2a0d053eb321d4d5ee64d1c21a91ebf714772a944ae01ea8d41e034c5e99f407"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "A",
       "question": "What happens at the restaurant on Friday mornings?",
-      "answer_explain": "原文依据：听力原文中提到“restaurant to receive the food delivery on tho:”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Supplies are delivered.）。",
-      "question_translation": "周五早上餐厅发生什么事？",
+      "answer_explain": "正确答案：A（Supplies are delivered.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "周五早上餐厅发生什么事?",
       "choice_translations": [
-        "A：运送物资。",
-        "B：更新菜单。",
-        "C：举行员工培训。",
-        "D：分配工作班次。"
+        "A:运送物资。",
+        "B:更新菜单。",
+        "C:举行员工培训。",
+        "D:分配工作班次。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：Friday mornings. We need someone to be",
+      "evidence": "参考听力原文：“Hi Katie, it's great that you can come in early on Friday mornings.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：Friday mornings. We need someone to be",
+        "evidence": "参考听力原文：“Hi Katie, it's great that you can come in early on Friday mornings.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“restaurant to receive the food delivery on tho:”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Supplies are delivered.）。"
+        "analysis": "正确答案：A（Supplies are delivered.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -93,29 +115,29 @@
     {
       "choices": [
         "Her work hours",
-        "Her job duties :",
+        "Her job duties",
         "Her salary",
         "Her uniform"
       ],
       "answer": "B",
       "question": "What does the woman ask about?",
-      "answer_explain": "原文依据：听力原文中提到“is to inspect the food when it arrives and mak”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Her job duties :）。",
-      "question_translation": "女士询问关于什么？",
+      "answer_explain": "正确答案：B（Her job duties）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士询问关于什么?",
       "choice_translations": [
-        "A：她的工时",
-        "B：她的工作职责",
-        "C：她的薪水",
-        "D：她的制服"
+        "A:她的工时",
+        "B:她的工作职责",
+        "C:她的薪水",
+        "D:她的制服"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hi, Katie. it's great that you can come in ea",
+      "evidence": "参考听力原文：“From what I understand, my job is to inspect the food when it arrives and make sure it matches our order.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hi, Katie. it's great that you can come in ea",
+        "evidence": "参考听力原文：“From what I understand, my job is to inspect the food when it arrives and make sure it matches our order.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“is to inspect the food when it arrives and mak”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Her job duties :）。"
+        "analysis": "正确答案：B（Her job duties）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -147,24 +169,24 @@
         "Order forms"
       ],
       "answer": "D",
-      "question": "According to the man, what can be found i a folder?",
-      "answer_explain": "原文依据：听力原文中提到“item on the order form as it’s unloaded.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Order forms）。",
-      "question_translation": "根据男士的说法，文件夹里有什么？",
+      "question": "According to the man, what can be found in a folder?",
+      "answer_explain": "正确答案：D（Order forms）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "根据男士的说法,文件夹里有什么?",
       "choice_translations": [
-        "A：客户调查问卷",
-        "B：员工排班表",
-        "C：培训材料",
-        "D：订单表格"
+        "A:客户调查问卷",
+        "B:员工排班表",
+        "C:培训材料",
+        "D:订单表格"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：That's right. °See that folder near the loadin",
+      "evidence": "参考听力原文：“From what I understand, my job is to inspect the food when it arrives and make sure it matches our order.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：That's right. °See that folder near the loadin",
+        "evidence": "参考听力原文：“From what I understand, my job is to inspect the food when it arrives and make sure it matches our order.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“item on the order form as it’s unloaded.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Order forms）。"
+        "analysis": "正确答案：D（Order forms）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

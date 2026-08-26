@@ -31,8 +31,28 @@
       "asset_key": "official-1-test-1/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 这名男士正低头看他的键盘。\nB. 这名男士正在整理一些文件。\nC. 这位女士正把电话递给这名男士。\nD. 这位女士正在使用电脑鼠标。",
-    "content_translation": "A. 这名男士正低头看他的键盘。\nB. 这名男士正在整理一些文件。\nC. 这位女士正把电话递给这名男士。\nD. 这位女士正在使用电脑鼠标。"
+    "transcript": "A. The man is looking down at his keyboard.\nB. The man is filing some documents.\nC. The woman is handing a telephone to the man.\nD. The woman is using a computer mouse.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c7f771ba4f015c77dcbd9889cfb62b8a7e6bfbf4bb4ad307b2066dc34256212b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 45
+      }
+    },
+    "transcript_translation": "A. 这位男士正低头看他的键盘。\nB. 这位男士正在归档一些文件。\nC. 这位女士正在把电话递给这位男士。\nD. 这位女士正在使用电脑鼠标。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "53b5ddeb536f997f1e11678f92af6dc49133b88577e5b81089a718c9ccaa0229"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,9 +68,9 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“The woman is using a computer mouse.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（The woman is using a computer mouse.）。",
       "choice_translations": [
-        "A：这名男士正低头看他的键盘。",
-        "B：这名男士正在整理一些文件。",
-        "C：这位女士正把电话递给这名男士。",
+        "A：这位男士正低头看他的键盘。",
+        "B：这位男士正在归档一些文件。",
+        "C：这位女士正在把电话递给这位男士。",
         "D：这位女士正在使用电脑鼠标。"
       ],
       "question_type": "动作 / 状态辨析题",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p1-3/3"
+      "item_key": "official-1-test-1/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

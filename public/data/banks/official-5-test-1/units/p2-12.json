@@ -26,15 +26,35 @@
       "asset_key": "official-5-test-1/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：When（何时） is the digital marketing conference?",
-    "content_translation": "中文辅助（离线预处理）：When（何时） is the digital marketing conference?"
+    "transcript": "When is the digital marketing conference?\nA. It's Thursday afternoon.\nB. Yes, I plan on going.\nC. A social media website.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1c17898abf8a7665cbe197e6ddb08fb48a4ae7d02b2d27a11efe4fb88a5f91c7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 22
+      }
+    },
+    "transcript_translation": "数字营销会议是什么时候？\nA. 是周四下午。\nB. 是的，我打算去。\nC. 一个社交媒体网站。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e1f210ec48dd3c3ef7c4545d2300d84ac10d522bc5c79e7cac96ccfb51381c83"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "It's Thursday afternoon.",
         "Yes, I plan on going.",
-        "A social media Web site."
+        "A social media website."
       ],
       "answer": "A",
       "question": "When is the digital marketing conference?",
@@ -42,11 +62,11 @@
       "topic": "时间询问",
       "keywords": "when time response",
       "answer_explain": "原文依据：问句或陈述是“When is the digital marketing conference?”，自然应答是“It's Thursday afternoon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（It's Thursday afternoon.）。",
-      "question_translation": "中文辅助（离线预处理）：When（何时） is the digital marketing conference?",
+      "question_translation": "数字营销会议是什么时候?",
       "choice_translations": [
-        "A：It's Thursday afternoon.",
-        "B：Yes, I plan on going.",
-        "C：A social media Web site."
+        "A：是周四下午。",
+        "B：是的,我打算去。",
+        "C：一个社交媒体网站。"
       ],
       "question_type": "时间疑问句",
       "evidence": "参考原文第 1 段：When is the digital marketing conference?",

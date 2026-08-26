@@ -31,15 +31,35 @@
       "asset_key": "official-2-test-2/images/part1/q002.jpg",
       "exists": true
     },
-    "transcript_translation": "A. Aman 正在湖里游泳。\nB. 一名女士正站在水边。\nC. Aman 正在过一座桥。\nD. 有一些人正在乘船游玩。",
-    "content_translation": "A. Aman 正在湖里游泳。\nB. 一名女士正站在水边。\nC. Aman 正在过一座桥。\nD. 有一些人正在乘船游玩。"
+    "transcript": "A. A man is swimming in a lake.\nB. A woman is standing by the water.\nC. A man is crossing a bridge.\nD. Some people are taking a boat ride.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ae1bbb20b4b34e4b57f14a0e0bdd601c4f342e264925c45fef46c4a7b2a16253",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part1/q002.mp3",
+      "metrics": {
+        "word_count": 271
+      }
+    },
+    "transcript_translation": "A. 一个男人正在湖里游泳。\nB. 一个女人正站在水边。\nC. 一个男人正在过一座桥。\nD. 有些人正在乘坐小船游玩。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5ec989f15d158a3ee6a98b114d07a5375b579dab7b17688813fe447eacb35044"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Aman is swimming in a lake.",
-        "Awoman is standing by the water.",
-        "Aman is crossing a bridge.",
+        "A man is swimming in a lake.",
+        "A woman is standing by the water.",
+        "A man is crossing a bridge.",
         "Some people are taking a boat ride."
       ],
       "answer": "D",
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some people are taking a boat ride.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（Some people are taking a boat ride.）。",
       "choice_translations": [
-        "A：Aman 正在湖里游泳。",
-        "B：一名女士正站在水边。",
-        "C：Aman 正在过一座桥。",
-        "D：一些人正在乘船游玩。"
+        "A：一个男人正在湖里游泳。",
+        "B：一个女人正站在水边。",
+        "C：一个男人正在过一座桥。",
+        "D：有些人正在乘坐小船游玩。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p1-2/2"
+      "item_key": "official-2-test-2/p1-2/2",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

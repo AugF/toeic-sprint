@@ -40,9 +40,32 @@
       "asset_key": "official-8-test-1/audio/part4/q098-100.mp3",
       "exists": true
     },
-    "transcript": "message and menu.\nHi, Ernesto. It's Leslie calling from the restaurant with a\ncouple of updates. First, ®we have a problem with food\ndeliveries. ® Our supplier for seafood has delayed the\nshipment of fish until next week, so we'll have to offer\nsomething else instead of the fish sandwich. ® Let me know\nwhat you'd like to substitute, and I'll change the menu for that\nday. Also, ®I was thinking about the outdoor dining area we\nplan to open next month; I have some sketches to show you\nfor the table arrangements out there.\nDaily Specials\nMonday\nTuesday\nARE\nChef's Salad\nFish Sandwich\nWednesday\nThursday\nWE\nVegetarian\nGrilled Cheese\nTacos\nSandwich",
-    "transcript_translation": "中文辅助（离线预处理）：message and menu.\nHi, Ernesto.\nIt's Leslie calling from the restaurant with a\ncouple of updates.\nFirst, ®we have a problem with food\ndeliveries.\n® Our supplier for seafood has delayed the\nshipment of fish until next week, so we'll have to offer\nsomething else instead of the fish sandwich.\n® Let me know\nwhat（什么） you'd like to substitute, and I'll change the menu for that\nday.\nAlso, ®I was thinking about the outdoor dining area we\nplan to open next month; I have some sketches to show you\nfor the table arrangements out there.\nDaily Specials\nMonday\nTuesday\nARE\nChef's Salad\nFish Sandwich\nWednesday\nThursday\nWE\nVegetarian\nGrilled Cheese\nTacos\nSandwich",
-    "content_translation": "中文辅助（离线预处理）：message and menu.\nHi, Ernesto.\nIt's Leslie calling from the restaurant with a\ncouple of updates.\nFirst, ®we have a problem with food\ndeliveries.\n® Our supplier for seafood has delayed the\nshipment of fish until next week, so we'll have to offer\nsomething else instead of the fish sandwich.\n® Let me know\nwhat（什么） you'd like to substitute, and I'll change the menu for that\nday.\nAlso, ®I was thinking about the outdoor dining area we\nplan to open next month; I have some sketches to show you\nfor the table arrangements out there.\nDaily Specials\nMonday\nTuesday\nARE\nChef's Salad\nFish Sandwich\nWednesday\nThursday\nWE\nVegetarian\nGrilled Cheese\nTacos\nSandwich"
+    "transcript": "Hi Ernesto, it's Leslie calling from the restaurant with a couple of updates.\nFirst, we have a problem with food deliveries.\nOur supplier for seafood has delayed the shipment of fish until next week, so we'll have to offer something else instead of the fish sandwich.\nLet me know what you'd like to substitute and I'll change the menu for that day.\nAlso, I was thinking about the outdoor dining area we plan to open next month.\nI have some sketches to show you for the table arrangements out there.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7e85e59b9ca583417b27536ea356387007956d22ca84c124d7f2acc9a263b9eb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 92,
+        "legacy_word_count": 107,
+        "length_ratio": 0.86,
+        "legacy_coverage": 0.86
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨Ernesto，我是Leslie，从餐厅打电话来给您一些更新。\n首先，我们在食品配送方面遇到了问题。\n我们的海鲜供应商将鱼的货运推迟到下周，所以我们不得不提供其他东西来代替鱼三明治。\n请告诉我您想用什么替代品，我会把当天的菜单改掉。\n另外，我在考虑我们计划下个月开的户外用餐区。\n我有一些草图可以给您看看外面的桌子布置。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "157d502df38001b9d7c616d0640b7b16018a91718752f8a402509947653274d8"
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "C",
       "question": "What problem is the speaker calling about?",
-      "answer_explain": "原文依据：听力原文中提到“® Our supplier for seafood has delayed the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A shipment has been delayed.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） problem is the speaker（说话者） calling about?",
+      "answer_explain": "正确答案：C（A shipment has been delayed.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) problem is the speaker(说话者) calling about?",
       "choice_translations": [
-        "A：Some equipment is broken.",
-        "B：Some food has spoiled.",
-        "C：A shipment has been delayed.",
-        "D：An employee（员工） is not available（可用的）."
+        "A:Some equipment is broken.",
+        "B:Some food has spoiled.",
+        "C:A shipment has been delayed.",
+        "D:An employee(员工) is not available(可用的)."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 2 段：Hi, Ernesto. It's Leslie calling from the restaurant with a",
+      "evidence": "参考听力原文：“Our supplier for seafood has delayed the shipment of fish until next week, so we'll have to offer something else instead of the fish sandwich.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 2 段：Hi, Ernesto. It's Leslie calling from the restaurant with a",
+        "evidence": "参考听力原文：“Our supplier for seafood has delayed the shipment of fish until next week, so we'll have to offer something else instead of the fish sandwich.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® Our supplier for seafood has delayed the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A shipment has been delayed.）。"
+        "analysis": "正确答案：C（A shipment has been delayed.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 98,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "B",
       "question": "Look at the graphic. For which day will the menu be changed?",
-      "answer_explain": "原文依据：听力原文中提到“Tuesday”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Tuesday）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nFor which day will the menu be changed?",
+      "answer_explain": "正确答案：B（Tuesday）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. For which day will the menu be changed?",
       "choice_translations": [
-        "A：Monday",
-        "B：Tuesday",
-        "C：Wednesday",
-        "D：Thursday"
+        "A:Monday",
+        "B:Tuesday",
+        "C:Wednesday",
+        "D:Thursday"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message and menu.",
+      "evidence": "参考听力原文：“Let me know what you'd like to substitute and I'll change the menu for that day.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message and menu.",
+        "evidence": "参考听力原文：“Let me know what you'd like to substitute and I'll change the menu for that day.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Tuesday”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：B（Tuesday）。"
+        "analysis": "正确答案：B（Tuesday）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 99,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "D",
       "question": "According to the speaker, what does the restaurant plan to do next month?",
-      "answer_explain": "原文依据：听力原文中提到“Also, ®I was thinking about the outdoor dining area we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Open an outdoor dining area）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） does the restaurant plan to do next month?",
+      "answer_explain": "正确答案：D（Open an outdoor dining area）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) does the restaurant plan to do next month?",
       "choice_translations": [
-        "A：Expand its dessert menu",
-        "B：Offer a delivery service（服务）",
-        "C：Hire another chef",
-        "D：Open an outdoor dining area"
+        "A:Expand its dessert menu",
+        "B:Offer a delivery service(服务)",
+        "C:Hire another chef",
+        "D:Open an outdoor dining area"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：Hi, Ernesto. It's Leslie calling from the restaurant with a",
+      "evidence": "参考听力原文：“Also, I was thinking about the outdoor dining area we plan to open next month.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：Hi, Ernesto. It's Leslie calling from the restaurant with a",
+        "evidence": "参考听力原文：“Also, I was thinking about the outdoor dining area we plan to open next month.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Also, ®I was thinking about the outdoor dining area we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Open an outdoor dining area）。"
+        "analysis": "正确答案：D（Open an outdoor dining area）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 100,
       "priority": {

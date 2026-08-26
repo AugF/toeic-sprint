@@ -36,37 +36,60 @@
       "asset_key": "official-1-test-1/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "i\nAnd now for the Radio 10 Community Bulletin Board. ®@The\nRiverdale Garden Club has announced that club members will\nbe hosting the annual garden tour on Saturday and Sunday,\nMay seventh and eighth. @The event features tours of several\nlocal gardens, which have been designed and planted by club\nmembers. Tickets are available for ten dollars each on the\nclub's Web site, www.RiverdaleGardenClub.com. @Money\nraised from the sale of tickets will be used to repair the fountain\nin Riverdale Park.",
-    "transcript_translation": "现在是 Radio 10 社区公告栏。Riverdale Garden Club 宣布，俱乐部会员将于五月七日和八日（周六和周日）举办年度花园之旅。活动特色是参观几座由俱乐部会员设计和种植的当地花园。门票在俱乐部的网站 www.RiverdaleGardenClub.com 上每张十美元出售。通过售票筹集的资金将用于修复 Riverdale 公园里的喷泉。",
-    "content_translation": "现在是 Radio 10 社区公告栏。Riverdale Garden Club 宣布，俱乐部会员将于五月七日和八日（周六和周日）举办年度花园之旅。活动特色是参观几座由俱乐部会员设计和种植的当地花园。门票在俱乐部的网站 www.RiverdaleGardenClub.com 上每张十美元出售。通过售票筹集的资金将用于修复 Riverdale 公园里的喷泉。"
+    "transcript": "And now for the Radio 10 Community Bulletin Board.\nThe Riverdale Garden Club has announced that club members will be hosting the annual garden tour on Saturday and Sunday, May 7th and 8th.\nThe event features tours of several local gardens which have been designed and planted by club members.\nTickets are available for $10 each on the club's website, www.riverdalegardenclub.com.\nMoney raised from the sale of tickets will be used to repair the fountain in Riverdale Park.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6e1e89e2e102f5ec3f0eb3672f9c623f45c0c162695891663e1c6e4f9e0c7587",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 78,
+        "legacy_word_count": 78,
+        "length_ratio": 1,
+        "legacy_coverage": 1
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "现在是Radio 10社区公告板时间。\nRiverdale Garden Club宣布，俱乐部成员将于5月7日和8日举办一年一度的园艺之旅。\n活动包括参观几座由俱乐部成员设计和种植的当地花园。\n门票可在俱乐部的网站www.riverdalegardenclub.com购买，每张10美元。\n出售门票所筹集的资金将用于修复Riverdale公园里的喷泉。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "63d3b27af8d1385e9b4561cc19900976c11e520e4d24358e9229bca248fcd945"
+    }
   },
   "items": [
     {
       "choices": [
-        "A tour of local gardens py",
-        "Avisit to a famous park 4",
-        "Areception for club members aa",
-        "Asale of home decorations"
+        "A tour of local gardens",
+        "A visit to a famous park",
+        "A reception for club members",
+        "A sale of home decorations"
       ],
       "answer": "A",
-      "question": "What type of event is being announced? =",
-      "answer_explain": "原文依据：听力原文中提到“local gardens, which have been designed and planted by club”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A tour of local gardens py）。",
+      "question": "What type of event is being announced?",
+      "answer_explain": "正确答案：A（A tour of local gardens）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：Riverdale Garden Club has announced that club members will",
+      "evidence": "参考听力原文：“The event features tours of several local gardens which have been designed and planted by club members.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：Riverdale Garden Club has announced that club members will",
+        "evidence": "参考听力原文：“The event features tours of several local gardens which have been designed and planted by club members.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“local gardens, which have been designed and planted by club”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A tour of local gardens py）。"
+        "analysis": "正确答案：A（A tour of local gardens）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "宣布的是什么类型的活动？",
+      "question_translation": "宣布的是什么类型的活动?",
       "choice_translations": [
-        "A：参观当地花园",
-        "B：参观著名公园",
-        "C：为俱乐部会员举办招待会",
-        "D：销售家居装饰品"
+        "A:参观当地花园",
+        "B:参观著名公园",
+        "C:为俱乐部会员举办招待会",
+        "D:销售家居装饰品"
       ],
       "item_id": 77,
       "priority": {
@@ -98,24 +121,24 @@
         "To join an organization"
       ],
       "answer": "C",
-      "question": "Why should listeners visit a Web site?",
-      "answer_explain": "原文依据：听力原文中提到“club's Web site, www.RiverdaleGardenClub.com.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To purchase a ticket）。",
+      "question": "Why should listeners visit a website?",
+      "answer_explain": "正确答案：C（To purchase a ticket）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：i",
+      "evidence": "参考听力原文：“Tickets are available for $10 each on the club's website, www.riverdalegardenclub.com.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：i",
+        "evidence": "参考听力原文：“Tickets are available for $10 each on the club's website, www.riverdalegardenclub.com.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“club's Web site, www.RiverdaleGardenClub.com.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To purchase a ticket）。"
+        "analysis": "正确答案：C（To purchase a ticket）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "听者应该访问网站做什么？",
+      "question_translation": "听者应该访问网站做什么?",
       "choice_translations": [
-        "A：查看一些照片",
-        "B：下载宣传册",
-        "C：购买门票",
-        "D：加入一个组织"
+        "A:查看一些照片",
+        "B:下载宣传册",
+        "C:购买门票",
+        "D:加入一个组织"
       ],
       "item_id": 78,
       "priority": {
@@ -148,23 +171,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, why is money being raised?",
-      "answer_explain": "原文依据：听力原文中提到“raised from the sale of tickets will be used to repair the fountain”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To repair a fountain）。",
+      "answer_explain": "正确答案：B（To repair a fountain）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：club's Web site, www.RiverdaleGardenClub.com. @Money",
+      "evidence": "参考听力原文：“Money raised from the sale of tickets will be used to repair the fountain in Riverdale Park.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：club's Web site, www.RiverdaleGardenClub.com. @Money",
+        "evidence": "参考听力原文：“Money raised from the sale of tickets will be used to repair the fountain in Riverdale Park.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“raised from the sale of tickets will be used to repair the fountain”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To repair a fountain）。"
+        "analysis": "正确答案：B（To repair a fountain）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "根据说话者的说法，筹款的目的是什么？",
+      "question_translation": "根据说话者的说法,筹款的目的是什么?",
       "choice_translations": [
-        "A：保护历史房屋",
-        "B：修复喷泉",
-        "C：创建新公园",
-        "D：建造一座桥"
+        "A:保护历史房屋",
+        "B:修复喷泉",
+        "C:创建新公园",
+        "D:建造一座桥"
       ],
       "item_id": 79,
       "priority": {

@@ -28,38 +28,58 @@
       "asset_key": "official-7-test-1/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Bi Wasn't the sales report due yesterday?\nSW",
-    "content_translation": "中文辅助（离线预处理）：Bi Wasn't the sales report due yesterday?\nSW"
+    "transcript": "Wasn't the sales report due yesterday?\nA. Bernard doesn't have all the numbers yet.\nB. Let's take the A train.\nC. Only 20% off.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "62c1d6230734a1198d0a3a010f50031cbe4ad67e0081a7a5b418acbeb4e44ab8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "销售报告不是昨天到期的吗？\nA. Bernard 还没有所有数字。\nB. 我们坐 A 线吧。\nC. 只打八折。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "06337dc1677fd78c17bac7b8a8c08d24a58f61f79e217c506f8f8a5aa4e25fbd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Bernard doesn't have all the numbers yet.",
         "Let's take the A train.",
-        "Only twenty percent off."
+        "Only 20% off."
       ],
       "answer": "A",
-      "question": "Bi Wasn't the sales report due yesterday? SW",
+      "question": "Wasn't the sales report due yesterday?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Bi Wasn't the sales report due yesterday? SW”，自然应答是“Bernard doesn't have all the numbers yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Bernard doesn't have all the numbers yet.）。",
-      "question_translation": "中文辅助（离线预处理）：Bi Wasn't the sales report due yesterday?\nSW",
+      "answer_explain": "原文依据：问句或陈述是“Wasn't the sales report due yesterday?”，自然应答是“Bernard doesn't have all the numbers yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Bernard doesn't have all the numbers yet.）。",
+      "question_translation": "销售报告不是昨天到期的吗?",
       "choice_translations": [
-        "A：Bernard doesn't have all the numbers yet.",
-        "B：Let's take the A train.",
-        "C：Only twenty percent off."
+        "A：Bernard 还没有所有数字。",
+        "B：我们坐 A 线吧。",
+        "C：只打八折。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Bi Wasn't the sales report due yesterday? SW",
+      "evidence": "参考原文第 1 段：Wasn't the sales report due yesterday?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Bi Wasn't the sales report due yesterday? SW",
+        "evidence": "参考原文第 1 段：Wasn't the sales report due yesterday?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Bi Wasn't the sales report due yesterday? SW”，自然应答是“Bernard doesn't have all the numbers yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Bernard doesn't have all the numbers yet.）。"
+        "analysis": "原文依据：问句或陈述是“Wasn't the sales report due yesterday?”，自然应答是“Bernard doesn't have all the numbers yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Bernard doesn't have all the numbers yet.）。"
       },
       "item_id": 26,
       "priority": {

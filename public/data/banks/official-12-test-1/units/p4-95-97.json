@@ -43,9 +43,32 @@
       "asset_key": "official-12-test-1/images/part4/q095-097.jpg",
       "exists": true
     },
-    "transcript": "meeting and schedule.\nol called this meeting to update you on the timeline to\ndeliver the Auto-Check software we've been developing\nfor our client Super Speed Automotive. e Next week, a\nrepresentative from Super Speed will visit our office to see\nSuper Speed *1\na preview and ask questions. Super Speed wants to ensure\nthe software includes all the requested functionalities.\nBy the middle of June, a select number of Super Speed\nemployees will begin using a beta version, and they will\nreport their experience by the end of July. Finally, Owe will\nl. #Lt=5ld8A\nwork on software repairs to address any issues that the client\nencountered throughout August and roll out the final product\nat the end of August.\nDevelopment Schedule\nPreview\nMay 18\nTesting\nJune 12\nFeedback\nJuly 29\nLaunch\nAugust 30",
-    "transcript_translation": "中文辅助（离线预处理）：meeting（会议） and schedule（日程）.\nol called this meeting（会议） to update you on the timeline to\ndeliver the Auto-Check software we've been developing\nfor our client Super Speed Automotive.\ne Next week, a\nrepresentative from Super Speed will visit our office（办公室） to see\nSuper Speed *1\na preview and ask questions.\nSuper Speed wants to ensure\nthe software includes all the requested functionalities.\nBy the middle of June, a select number of Super Speed\nemployees will begin using a beta version, and they will\nreport their experience by the end of July.\nFinally, Owe will\nl.\n#Lt=5ld8A\nwork（工作） on software repairs to address any issues that the client\nencountered throughout August and roll out the final product\nat the end of August.\nDevelopment Schedule（日程）\nPreview\nMay 18\nTesting\nJune 12\nFeedback\nJuly 29\nLaunch\nAugust 30",
-    "content_translation": "中文辅助（离线预处理）：meeting（会议） and schedule（日程）.\nol called this meeting（会议） to update you on the timeline to\ndeliver the Auto-Check software we've been developing\nfor our client Super Speed Automotive.\ne Next week, a\nrepresentative from Super Speed will visit our office（办公室） to see\nSuper Speed *1\na preview and ask questions.\nSuper Speed wants to ensure\nthe software includes all the requested functionalities.\nBy the middle of June, a select number of Super Speed\nemployees will begin using a beta version, and they will\nreport their experience by the end of July.\nFinally, Owe will\nl.\n#Lt=5ld8A\nwork（工作） on software repairs to address any issues that the client\nencountered throughout August and roll out the final product\nat the end of August.\nDevelopment Schedule（日程）\nPreview\nMay 18\nTesting\nJune 12\nFeedback\nJuly 29\nLaunch\nAugust 30"
+    "transcript": "I called this meeting to update you on the timeline to deliver the auto-check software we've been developing for our client SuperSpeed Automotive.\nNext week, a representative from SuperSpeed will visit our office to see a preview and ask questions.\nSuperSpeed wants to ensure the software includes all the requested functionalities.\nBy the middle of June, a select number of SuperSpeed employees will begin using a beta version and they will report their experience by the end of July.\nFinally, we will work on software repairs to address any issues that the client encountered throughout August and roll out the final product at the end of August.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1ee6685a2fa228d104d169ad95b06d8c26381b531221c0a4a3a7d626577f890c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part4/q095-097.mp3",
+      "metrics": {
+        "word_count": 109,
+        "legacy_word_count": 131,
+        "length_ratio": 0.832,
+        "legacy_coverage": 0.84
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "我召集这次会议是为了向大家更新我们正在为客户 SuperSpeed Automotive 开发的自动检查软件的时间表。\n下周，SuperSpeed 的一位代表将访问我们的办公室进行预览并提出问题。\nSuperSpeed 希望确保该软件包含所有要求的功能。\n到六月中旬，一定数量的 SuperSpeed 员工将开始使用测试版，并在七月底前报告他们的体验。\n最后，我们将在八月期间修复软件以解决客户遇到的任何问题，并在八月底推出最终产品。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e49aed75c5c49f02bdbaa450f06fbf0cc98a621ff2587bf6e172ffe9d4d691a8"
+    }
   },
   "items": [
     {
@@ -57,23 +80,23 @@
       ],
       "answer": "D",
       "question": "Why did the speaker set up the meeting?",
-      "answer_explain": "原文依据：听力原文中提到“ol called this meeting to update you on the timeline to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To provide an update）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） did the speaker（说话者） set up the meeting（会议）?",
+      "answer_explain": "正确答案：D（To provide an update）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) did the speaker(说话者) set up the meeting(会议)?",
       "choice_translations": [
-        "A：To negotiate a schedule（日程）",
-        "B：To demonstrate a prototype",
-        "C：To introduce new employees",
-        "D：To provide an update"
+        "A:To negotiate a schedule(日程)",
+        "B:To demonstrate a prototype",
+        "C:To introduce new employees",
+        "D:To provide an update"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：meeting and schedule.",
+      "evidence": "参考听力原文：“I called this meeting to update you on the timeline to deliver the auto-check software we've been developing for our client SuperSpeed Automotive.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：meeting and schedule.",
+        "evidence": "参考听力原文：“I called this meeting to update you on the timeline to deliver the auto-check software we've been developing for our client SuperSpeed Automotive.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“ol called this meeting to update you on the timeline to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To provide an update）。"
+        "analysis": "正确答案：D（To provide an update）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 95,
       "priority": {
@@ -108,23 +131,23 @@
       ],
       "answer": "A",
       "question": "Look at the graphic.According to the speaker, on which date will the client visit the office?",
-      "answer_explain": "原文依据：听力原文中提到“May 18”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（May 18）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.According（根据） to the speaker（说话者）, on which date will the client visit the office（办公室）?",
+      "answer_explain": "正确答案：A（May 18）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic.According(根据) to the speaker(说话者), on which date will the client visit the office(办公室)?",
       "choice_translations": [
-        "A：May 18",
-        "B：June 12",
-        "C：July 29",
-        "D：August 30"
+        "A:May 18",
+        "B:June 12",
+        "C:July 29",
+        "D:August 30"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：for our client Super Speed Automotive. e Next week, a",
+      "evidence": "参考听力原文：“Next week, a representative from SuperSpeed will visit our office to see a preview and ask questions.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：for our client Super Speed Automotive. e Next week, a",
+        "evidence": "参考听力原文：“Next week, a representative from SuperSpeed will visit our office to see a preview and ask questions.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“May 18”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（May 18）。"
+        "analysis": "正确答案：A（May 18）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 96,
       "priority": {
@@ -159,23 +182,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker, what will the listeners do during the month of August?",
-      "answer_explain": "原文依据：听力原文中提到“encountered throughout August and roll out the final product”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Repair problems）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） will the listeners do during the month of August?",
+      "answer_explain": "正确答案：B（Repair problems）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) will the listeners do during the month of August?",
       "choice_translations": [
-        "A：Add functions",
-        "B：Repair problems",
-        "C：Generate ideas",
-        "D：Fulfill orders"
+        "A:Add functions",
+        "B:Repair problems",
+        "C:Generate ideas",
+        "D:Fulfill orders"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 14 段：encountered throughout August and roll out the final product",
+      "evidence": "参考听力原文：“Finally, we will work on software repairs to address any issues that the client encountered throughout August and roll out the final product at the end of August.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 14 段：encountered throughout August and roll out the final product",
+        "evidence": "参考听力原文：“Finally, we will work on software repairs to address any issues that the client encountered throughout August and roll out the final product at the end of August.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“encountered throughout August and roll out the final product”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Repair problems）。"
+        "analysis": "正确答案：B（Repair problems）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 97,
       "priority": {

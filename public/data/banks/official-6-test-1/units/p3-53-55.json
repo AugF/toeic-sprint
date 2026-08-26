@@ -36,9 +36,31 @@
       "asset_key": "official-6-test-1/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "ONW OK,\nthis is the last commercial property I'll be\nshowing you today. What do you think? ® This kitchen\nwill work for your business, won't it?\nm Yes! ©| can definitely bake a lot of bread here. Plus, I\nlike that the building's on a main street-that'll be good\nfor attracting customers to my new business.\nKw And, Othere isn't much competition in the area. There are\nsome restaurants, but no bakeries for a couple of miles.\nEm Interesting. And ® what about the rent? Does it fall\nwithin my budget?\nFEw Well, the price is a little higher than you wanted, but we\ncan negotiate with the landlord.",
-    "transcript_translation": "女：好的，这是我今天给您看的最后一个商业房产了。您觉得怎么样？这个厨房适合您的生意，对吧？\n男：是的！我绝对可以在这里烤很多面包。而且，我喜欢这栋楼在主街上——这对吸引顾客到我的新店会有好处。\n女：而且，该区域竞争不大。有一些餐馆，但几英里内没有面包店。\n男：有意思。那租金怎么样？是否在我预算之内？\n女：嗯，价格比您预期的要高一点，但我们可以和房东协商一下。",
-    "content_translation": "女：好的，这是我今天给您看的最后一个商业房产了。您觉得怎么样？这个厨房适合您的生意，对吧？\n男：是的！我绝对可以在这里烤很多面包。而且，我喜欢这栋楼在主街上——这对吸引顾客到我的新店会有好处。\n女：而且，该区域竞争不大。有一些餐馆，但几英里内没有面包店。\n男：有意思。那租金怎么样？是否在我预算之内？\n女：嗯，价格比您预期的要高一点，但我们可以和房东协商一下。"
+    "transcript": "Okay, this is the last commercial property I'll be showing you today.\nWhat do you think?\nThis kitchen will work for your business, won't it?\nYes.\nI can definitely bake a lot of bread here.\nPlus, I like that the building's on a main street.\nThat'll be good for attracting customers to my new business.\nAnd there isn't much competition in the area.\nThere are some restaurants, but no bakeries for a couple of miles.\nInteresting.\nAnd what about the rent?\nDoes it fall within my budget?\nWell, the price is a little higher than you wanted, but we can negotiate with the landlord.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e0d27a0edc9a6067c9c158f00bc1a1fe051d1cc5f41a72dc6111c12161dc2b72",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 104,
+        "legacy_word_count": 105,
+        "length_ratio": 0.99,
+        "legacy_coverage": 0.924
+      }
+    },
+    "transcript_translation": "好的，这是我今天将要给您看的最后一个商业房产。\n您觉得怎么样？\n这个厨房适合您的生意，对吧？\n是的。\n我可以在这里烤很多面包。\n此外，我喜欢这栋楼位于主街上。\n这对吸引顾客到我的新店会有帮助的。\n而且该区域没有太多竞争。\n有一些餐馆，但几英里内没有面包房。\n有意思。\n那租金呢？\n是否在我的预算范围内？\n嗯，价格比您想要的要高一点，但我们可以和房东协商一下。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9447041d108b975201acec2ec78add9392c10ad6058a417cf32036f3eb447f94"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "B",
       "question": "What are the speakers doing?",
-      "answer_explain": "原文依据：听力原文中提到“this is the last commercial property I'll be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Visiting a property）。",
-      "question_translation": "说话者们在做什么？",
+      "answer_explain": "正确答案：B（Visiting a property）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者们在做什么?",
       "choice_translations": [
-        "A：进行工作面试",
-        "B：参观房产",
-        "C：订购一些用品",
-        "D：申请贷款"
+        "A:进行工作面试",
+        "B:参观房产",
+        "C:订购一些用品",
+        "D:申请贷款"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：ONW OK,",
+      "evidence": "参考听力原文：“Okay, this is the last commercial property I'll be showing you today.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：ONW OK,",
+        "evidence": "参考听力原文：“Okay, this is the last commercial property I'll be showing you today.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“this is the last commercial property I'll be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Visiting a property）。"
+        "analysis": "正确答案：B（Visiting a property）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "A",
       "question": "What type of business is the man opening?",
-      "answer_explain": "原文依据：听力原文中提到“FEw Well, the price is a little higher than you wanted, but we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A bakery）。",
-      "question_translation": "男士开的是什么类型的生意？",
+      "answer_explain": "正确答案：A（A bakery）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士开的是什么类型的生意?",
       "choice_translations": [
-        "A：一家面包店",
-        "B：一家餐馆",
-        "C：一家五金店",
-        "D：一家家具店"
+        "A:一家面包店",
+        "B:一家餐馆",
+        "C:一家五金店",
+        "D:一家家具店"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：will work for your business, won't it?",
+      "evidence": "参考听力原文：“This kitchen will work for your business, won't it?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：will work for your business, won't it?",
+        "evidence": "参考听力原文：“This kitchen will work for your business, won't it?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“FEw Well, the price is a little higher than you wanted, but we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A bakery）。"
+        "analysis": "正确答案：A（A bakery）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "B",
       "question": "What does the man ask the woman about?",
-      "answer_explain": "原文依据：听力原文中提到“FEw Well, the price is a little higher than you wanted, but we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A price）。",
-      "question_translation": "男士问女士关于什么？",
+      "answer_explain": "正确答案：B（A price）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士问女士关于什么?",
       "choice_translations": [
-        "A：一个截止日期",
-        "B：一个价格",
-        "C：一个名字",
-        "D：一个流程"
+        "A:一个截止日期",
+        "B:一个价格",
+        "C:一个名字",
+        "D:一个流程"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：ONW OK,",
+      "evidence": "参考听力原文：“Well, the price is a little higher than you wanted, but we can negotiate with the landlord.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：ONW OK,",
+        "evidence": "参考听力原文：“Well, the price is a little higher than you wanted, but we can negotiate with the landlord.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“FEw Well, the price is a little higher than you wanted, but we”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A price）。"
+        "analysis": "正确答案：B（A price）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

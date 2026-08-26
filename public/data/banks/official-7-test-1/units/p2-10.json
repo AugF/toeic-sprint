@@ -28,8 +28,28 @@
       "asset_key": "official-7-test-1/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Bu Are you going to eat that sandwich?\n•M",
-    "content_translation": "中文辅助（离线预处理）：Bu Are you going to eat that sandwich?\n•M"
+    "transcript": "Are you going to eat that sandwich?\nA. You can have it.\nB. No, it doesn't.\nC. Mexican food.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c4922016c6422470a55ffb4dd0c4da2b72c2028c69d99b41241ce8ee0e8daf66",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 20
+      }
+    },
+    "transcript_translation": "你要吃那个三明治吗？\nA. 你可以拿走。\nB. 不，它没有。\nC. 墨西哥食物。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f8cf2c5901d31ef1b732281b8eaf4af3f46d1f353b5c4c4c0e2bd491a27a4c8b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Mexican food."
       ],
       "answer": "A",
-      "question": "Bu Are you going to eat that sandwich? •M",
+      "question": "Are you going to eat that sandwich?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Bu Are you going to eat that sandwich? •M”，自然应答是“You can have it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（You can have it.）。",
-      "question_translation": "中文辅助（离线预处理）：Bu Are you going to eat that sandwich?\n•M",
+      "answer_explain": "原文依据：问句或陈述是“Are you going to eat that sandwich?”，自然应答是“You can have it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（You can have it.）。",
+      "question_translation": "你要吃那个三明治吗?",
       "choice_translations": [
-        "A：You can have it.",
-        "B：No, it doesn't.",
-        "C：Mexican food."
+        "A：你可以拿走。",
+        "B：不,它没有。",
+        "C：墨西哥食物。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Bu Are you going to eat that sandwich? •M",
+      "evidence": "参考原文第 1 段：Are you going to eat that sandwich?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Bu Are you going to eat that sandwich? •M",
+        "evidence": "参考原文第 1 段：Are you going to eat that sandwich?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Bu Are you going to eat that sandwich? •M”，自然应答是“You can have it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（You can have it.）。"
+        "analysis": "原文依据：问句或陈述是“Are you going to eat that sandwich?”，自然应答是“You can have it.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（You can have it.）。"
       },
       "item_id": 10,
       "priority": {

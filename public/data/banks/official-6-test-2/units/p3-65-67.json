@@ -40,9 +40,32 @@
       "asset_key": "official-6-test-2/audio/part3/q065-067.mp3",
       "exists": true
     },
-    "transcript": "and map.\nHi, Kate. Would you be interested in helping me\nstaff our table at the craft festival next Saturday? Our\nstore sponsors the event, so ®we get a booth in the\nsponsor's section to distribute promotional materials.\nEw Of course! *What do I need to do?\nm OWe've been assigned to booth number three. Here\nit's on this map. I'll be there at nine o'clock to set up.\nEw Thanks. ®I can meet you there at nine o'clock.\nm Sounds good. ®Be sure to pick up your ID badge at\nthe entrance before you come to our booth.\nLake\nit\nSports field\nRestaurant\nGarden\nEntrance",
-    "transcript_translation": "中文辅助（离线预处理）：and map.\nHi, Kate.\nWould you be interested in helping me\nstaff our table at the craft festival next Saturday?\nOur\nstore sponsors the event, so ®we get a booth in the\nsponsor's section to distribute promotional materials.\nEw Of course!\n*What（什么） do I need to do?\nm OWe've been assigned to booth number three.\nHere\nit's on this map.\nI'll be there at nine o'clock to set up.\nEw Thanks.\n®I can meet you there at nine o'clock.\nm Sounds good.\n®Be sure to pick up your ID badge at\nthe entrance before you come to our booth.\nLake\nit\nSports field\nRestaurant\nGarden\nEntrance",
-    "content_translation": "中文辅助（离线预处理）：and map.\nHi, Kate.\nWould you be interested in helping me\nstaff our table at the craft festival next Saturday?\nOur\nstore sponsors the event, so ®we get a booth in the\nsponsor's section to distribute promotional materials.\nEw Of course!\n*What（什么） do I need to do?\nm OWe've been assigned to booth number three.\nHere\nit's on this map.\nI'll be there at nine o'clock to set up.\nEw Thanks.\n®I can meet you there at nine o'clock.\nm Sounds good.\n®Be sure to pick up your ID badge at\nthe entrance before you come to our booth.\nLake\nit\nSports field\nRestaurant\nGarden\nEntrance"
+    "transcript": "Hi Kate, would you be interested in helping me staff our table at the craft festival next Saturday?\nOur store sponsors the events, so we get a booth in the sponsor section to distribute promotional materials.\nOf course, what do I need to do?\nWe've been assigned to booth number three.\nHere, it's on this map.\nI'll be there at nine o'clock to set up.\nThanks, I can meet you there at nine o'clock.\nSounds good.\nBe sure to pick up your ID badge at the entrance before you come to our booth.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8c40cd5c3d8a7abf3c912fc03ca83b882eeeacbd34c7471ad65aee2e1424c015",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 95,
+        "legacy_word_count": 103,
+        "length_ratio": 0.922,
+        "legacy_coverage": 0.864
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，凯特，下周六你有没有兴趣帮我在工艺品节帮忙看摊？\n我们店赞助这个活动，所以我们在赞助商区域会设一个展位分发宣传材料。\n当然可以，我需要做什么呢？\n我们被分配到三号展位。\n看，就在这张地图上。\n我九点到那里布置摊位。\n谢谢，我九点在那里见你。\n听起来不错。\n记得在来我们展位之前，先去入口领取你的工牌。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "ee8368bf6e324ce71bd65af89da11bf343b70c11bb4dbc88fa2e2fd454134361"
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "D",
       "question": "What are the speakers mainly discussing?",
-      "answer_explain": "原文依据：听力原文中提到“staff our table at the craft festival next Saturday?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Helping at a local festival）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers mainly discussing?",
+      "answer_explain": "正确答案：D（Helping at a local festival）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the speakers mainly discussing?",
       "choice_translations": [
-        "A：Competing in a sports competition",
-        "B：Planning a grand opening",
-        "C：Attending an award ceremony",
-        "D：Helping at a local festival"
+        "A:Competing in a sports competition",
+        "B:Planning a grand opening",
+        "C:Attending an award ceremony",
+        "D:Helping at a local festival"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：and map.",
+      "evidence": "参考听力原文：“Hi Kate, would you be interested in helping me staff our table at the craft festival next Saturday?”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：and map.",
+        "evidence": "参考听力原文：“Hi Kate, would you be interested in helping me staff our table at the craft festival next Saturday?”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“staff our table at the craft festival next Saturday?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Helping at a local festival）。"
+        "analysis": "正确答案：D（Helping at a local festival）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 65,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. Where will the woman meet her coworker?",
-      "answer_explain": "原文依据：听力原文中提到“store sponsors the event, so ®we get a booth in the”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（By the garden）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhere（哪里） will the woman（女士） meet her coworker?",
+      "answer_explain": "正确答案：C（By the garden）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Where(哪里) will the woman(女士) meet her coworker?",
       "choice_translations": [
-        "A：By the lake",
-        "B：By the sports field",
-        "C：By the garden",
-        "D：By the restaurant"
+        "A:By the lake",
+        "B:By the sports field",
+        "C:By the garden",
+        "D:By the restaurant"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and map.",
+      "evidence": "参考听力原文：“Thanks, I can meet you there at nine o'clock.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and map.",
+        "evidence": "参考听力原文：“Thanks, I can meet you there at nine o'clock.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“store sponsors the event, so ®we get a booth in the”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（By the garden）。"
+        "analysis": "正确答案：C（By the garden）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 66,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "C",
       "question": "According to the man, what should the woman pick up?",
-      "answer_explain": "原文依据：听力原文中提到“®Be sure to pick up your ID badge at”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An identification badge）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the man（男士）, what（什么） should the woman（女士） pick up?",
+      "answer_explain": "正确答案：C（An identification badge）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the man(男士), what(什么) should the woman(女士) pick up?",
       "choice_translations": [
-        "A：Some brochures",
-        "B：A training manual",
-        "C：An identification badge",
-        "D：Some refreshments"
+        "A:Some brochures",
+        "B:A training manual",
+        "C:An identification badge",
+        "D:Some refreshments"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and map.",
+      "evidence": "参考听力原文：“Be sure to pick up your ID badge at the entrance before you come to our booth.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and map.",
+        "evidence": "参考听力原文：“Be sure to pick up your ID badge at the entrance before you come to our booth.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®Be sure to pick up your ID badge at”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An identification badge）。"
+        "analysis": "正确答案：C（An identification badge）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 67,
       "priority": {

@@ -39,9 +39,32 @@
       "asset_key": "official-8-test-2/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nI-M Thanks for meeting with us, Ms. Ortiz. ® Our clothing\nstore has been doing really well, so we'd like to expand\nnext year. ®In order to do that, we need to apply for a\nbank loan.\nall m Yes, so first we need a financial audit completed by a\ncertified public accountant.\nEw Well, ®I'm glad to help. I do these all the time.\nm Great! So what's the process?\nEw Well, ®I'll need to review your store's financial data.\nDid you bring those documents with you?\nYes, I have the printouts right here.",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nI-M Thanks for meeting（会议） with us, Ms.\nOrtiz.\n® Our clothing\nstore has been doing really well, so we'd like to expand\nnext year.\n®In order（订单） to do that, we need to apply for a\nbank loan.\nall m Yes, so first we need a financial audit completed by a\ncertified public accountant.\nEw Well, ®I'm glad to help.\nI do these all the time.\nm Great!\nSo what（什么）'s the process?\nEw Well, ®I'll need to review your store's financial data.\nDid you bring those documents with you?\nYes, I have the printouts right here.",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nI-M Thanks for meeting（会议） with us, Ms.\nOrtiz.\n® Our clothing\nstore has been doing really well, so we'd like to expand\nnext year.\n®In order（订单） to do that, we need to apply for a\nbank loan.\nall m Yes, so first we need a financial audit completed by a\ncertified public accountant.\nEw Well, ®I'm glad to help.\nI do these all the time.\nm Great!\nSo what（什么）'s the process?\nEw Well, ®I'll need to review your store's financial data.\nDid you bring those documents with you?\nYes, I have the printouts right here."
+    "transcript": "Thanks for meeting with us, Ms. Ortiz.\nOur clothing store has been doing really well, so we'd like to expand next year.\nIn order to do that, we need to apply for a bank loan.\nYes, so first we need a financial audit completed by a certified public accountant.\nWell, I'm glad to help.\nI do these all the time.\nGreat.\nSo what's the process?\nWell, I'll need to review your store's financial data.\nDid you bring those documents with you?\nYes.\nI have the printouts right here.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "84564a2ec0f7f2683feff68041f139ca2de8e4dbdd10768dedb870ae43aa478b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 88,
+        "legacy_word_count": 94,
+        "length_ratio": 0.936,
+        "legacy_coverage": 0.915
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "感谢您和我们见面，奥尔蒂斯女士。\n我们的服装店经营得非常好，所以我们希望明年扩大规模。\n为此，我们需要申请银行贷款。\n是的，所以首先我们需要由注册会计师完成财务审计。\n嗯，我很乐意帮忙。\n我经常做这些。\n太好了。\n那么流程是什么？\n嗯，我需要审核您商店的财务数据。\n您带上那些文件了吗？\n是的。\n打印件就在这里。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d205aea6f69087307fa4338bb98a72c249b02b86f8212ca871fbf2c2b056ea99"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "A",
       "question": "What do the men want to do next year?",
-      "answer_explain": "原文依据：听力原文中提到“store has been doing really well, so we'd like to expand”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Expand a business）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） do the men want to do next year?",
+      "answer_explain": "正确答案：A（Expand a business）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) do the men want to do next year?",
       "choice_translations": [
-        "A：Expand a business",
-        "B：Host a charity gala",
-        "C：Start an internship program",
-        "D：Attend a trade show"
+        "A:Expand a business",
+        "B:Host a charity gala",
+        "C:Start an internship program",
+        "D:Attend a trade show"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Our clothing store has been doing really well, so we'd like to expand next year.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Our clothing store has been doing really well, so we'd like to expand next year.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“store has been doing really well, so we'd like to expand”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Expand a business）。"
+        "analysis": "正确答案：A（Expand a business）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "C",
       "question": "What most likely is the woman's job?",
-      "answer_explain": "原文依据：听力原文中提到“certified public accountant.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Accountant）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） most likely（最可能） is the woman（女士）'s job?",
+      "answer_explain": "正确答案：C（Accountant）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) most likely(最可能) is the woman(女士)'s job?",
       "choice_translations": [
-        "A：Lawyer",
-        "B：Travel agent",
-        "C：Accountant",
-        "D：Computer technician"
+        "A:Lawyer",
+        "B:Travel agent",
+        "C:Accountant",
+        "D:Computer technician"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Yes, so first we need a financial audit completed by a certified public accountant.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Yes, so first we need a financial audit completed by a certified public accountant.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“certified public accountant.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Accountant）。"
+        "analysis": "正确答案：C（Accountant）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "C",
       "question": "What does the woman need to see?",
-      "answer_explain": "原文依据：听力原文中提到“Ew Well, ®I'll need to review your store's financial data.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some data）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） need to see?",
+      "answer_explain": "正确答案：C（Some data）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) need to see?",
       "choice_translations": [
-        "A：Some schedules",
-        "B：Product samples",
-        "C：Some data",
-        "D：Security badges"
+        "A:Some schedules",
+        "B:Product samples",
+        "C:Some data",
+        "D:Security badges"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Well, I'll need to review your store's financial data.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Well, I'll need to review your store's financial data.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew Well, ®I'll need to review your store's financial data.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some data）。"
+        "analysis": "正确答案：C（Some data）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

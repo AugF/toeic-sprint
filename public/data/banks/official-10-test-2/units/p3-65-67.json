@@ -45,9 +45,32 @@
       "asset_key": "official-10-test-2/images/part3/q065-067.jpg",
       "exists": true
     },
-    "transcript": "and building directory.\nEw Hi, I'm here to visit Maria Gaines. ®Her office is in\nChlE\nthe newsroom. I believe I need to check in here at the\nfront desk.\nYes, I'll call up to the newsroom and let Maria know she\nIđc)\nhas a visitor. ®| have to warn you, there's a large tour\ntELA\ngroup in the building. It's very crowded and noisy.\nDiL<\nw Oh, l've heard that the building is of historical interest\nto architecture enthusiasts. If it's OK, I'll take a look\nFLIC\naround after my appointment!\nb\nNo problem. ®While I'm ringing Maria, please fill out\nthis form so I can create your temporary ID.\nw Sure thing.\nDirectory\nDepartment\nFloor\nAccounting\nPrinting\nNewsroom\nEditorial Services",
-    "transcript_translation": "中文辅助（离线预处理）：and building directory.\nEw Hi, I'm here to visit Maria Gaines.\n®Her office（办公室） is in\nChlE\nthe newsroom.\nI believe I need to check in here at the\nfront desk.\nYes, I'll call up to the newsroom and let Maria know she\nIđc)\nhas a visitor.\n®| have to warn you, there's a large tour\ntELA\ngroup in the building.\nIt's very crowded and noisy.\nDiL<\nw Oh, l've heard that the building is of historical interest\nto architecture enthusiasts.\nIf it's OK, I'll take a look\nFLIC\naround after my appointment（预约）!\nb\nNo problem.\n®While I'm ringing Maria, please（请） fill out\nthis form so I can create your temporary ID.\nw Sure thing.\nDirectory\nDepartment\nFloor\nAccounting\nPrinting\nNewsroom\nEditorial Services",
-    "content_translation": "中文辅助（离线预处理）：and building directory.\nEw Hi, I'm here to visit Maria Gaines.\n®Her office（办公室） is in\nChlE\nthe newsroom.\nI believe I need to check in here at the\nfront desk.\nYes, I'll call up to the newsroom and let Maria know she\nIđc)\nhas a visitor.\n®| have to warn you, there's a large tour\ntELA\ngroup in the building.\nIt's very crowded and noisy.\nDiL<\nw Oh, l've heard that the building is of historical interest\nto architecture enthusiasts.\nIf it's OK, I'll take a look\nFLIC\naround after my appointment（预约）!\nb\nNo problem.\n®While I'm ringing Maria, please（请） fill out\nthis form so I can create your temporary ID.\nw Sure thing.\nDirectory\nDepartment\nFloor\nAccounting\nPrinting\nNewsroom\nEditorial Services"
+    "transcript": "Hi, I'm here to visit Maria Gaines.\nHer office is in the newsroom.\nI believe I need to check in here at the front desk.\nYes, I'll call up to the newsroom and let Maria know she has a visitor.\nI have to warn you, there's a large tour group in the building.\nIt's very crowded and noisy.\nOh, I've heard that the building is of historical interest to architecture enthusiasts.\nIf it's okay, I'll take a look around after my appointment.\nNo problem.\nWhile I'm ringing Maria, please fill out this form so I can create your temporary ID.\nSure thing.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "00e7d162dbda02dec8ef47402cac16e688f28d4c24f48aa39ff2cf6b94ba3316",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 105,
+        "legacy_word_count": 100,
+        "length_ratio": 1.05,
+        "legacy_coverage": 0.95
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，我来拜访玛丽亚·盖恩斯。\n她的办公室在新闻部。\n我想我得在这里前台办理登记手续。\n是的，我会打电话到新闻部通知玛丽亚有访客。\n我得提醒你，大楼里有个大型旅游团。\n这里非常拥挤又吵闹。\n哦，我听说这座建筑对建筑爱好者具有历史意义。\n如果可以的话，我在预约之后逛逛四周。\n没问题。\n在我给玛丽亚打电话的时候，请填写这份表格，这样我可以为你创建临时身份识别卡。\n好的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ae855b16768220bed598079696f7fadbe0e3f0459c6b0b20ac16dba0a7623d1d"
+    }
   },
   "items": [
     {
@@ -59,23 +82,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. Where is the woman's appointment?",
-      "answer_explain": "原文依据：听力原文中提到“Floor”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（On floor 4）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhere（哪里） is the woman（女士）'s appointment（预约）?",
+      "answer_explain": "正确答案：C（On floor 4）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Where(哪里) is the woman(女士)'s appointment(预约)?",
       "choice_translations": [
-        "A：On floor 2",
-        "B：On floor 3",
-        "C：On floor 4",
-        "D：On floor 5"
+        "A:On floor 2",
+        "B:On floor 3",
+        "C:On floor 4",
+        "D:On floor 5"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 15 段：around after my appointment!",
+      "evidence": "参考听力原文：“If it's okay, I'll take a look around after my appointment.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 15 段：around after my appointment!",
+        "evidence": "参考听力原文：“If it's okay, I'll take a look around after my appointment.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Floor”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（On floor 4）。"
+        "analysis": "正确答案：C（On floor 4）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 65,
       "priority": {
@@ -112,23 +135,23 @@
       ],
       "answer": "D",
       "question": "What does the man warn the woman about?",
-      "answer_explain": "原文依据：听力原文中提到“w Oh, l've heard that the building is of historical interest”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Crowds in the building）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） warn the woman（女士） about?",
+      "answer_explain": "正确答案：D（Crowds in the building）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) warn the woman(女士) about?",
       "choice_translations": [
-        "A：A broken air conditioner",
-        "B：A canceled delivery",
-        "C：Employee（员工） absences",
-        "D：Crowds in the building"
+        "A:A broken air conditioner",
+        "B:A canceled delivery",
+        "C:Employee(员工) absences",
+        "D:Crowds in the building"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：and building directory.",
+      "evidence": "参考听力原文：“I have to warn you, there's a large tour group in the building.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：and building directory.",
+        "evidence": "参考听力原文：“I have to warn you, there's a large tour group in the building.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“w Oh, l've heard that the building is of historical interest”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Crowds in the building）。"
+        "analysis": "正确答案：D（Crowds in the building）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 66,
       "priority": {
@@ -165,23 +188,23 @@
       ],
       "answer": "B",
       "question": "What does the man ask the woman to do?",
-      "answer_explain": "原文依据：听力原文中提到“®While I'm ringing Maria, please fill out”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Fill out a form）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） ask the woman（女士） to do?",
+      "answer_explain": "正确答案：B（Fill out a form）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) ask the woman(女士) to do?",
       "choice_translations": [
-        "A：Submit a payment",
-        "B：Fill out a form",
-        "C：Book an appointment（预约）",
-        "D：Call a coworker"
+        "A:Submit a payment",
+        "B:Fill out a form",
+        "C:Book an appointment(预约)",
+        "D:Call a coworker"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and building directory.",
+      "evidence": "参考听力原文：“While I'm ringing Maria, please fill out this form so I can create your temporary ID.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and building directory.",
+        "evidence": "参考听力原文：“While I'm ringing Maria, please fill out this form so I can create your temporary ID.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®While I'm ringing Maria, please fill out”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Fill out a form）。"
+        "analysis": "正确答案：B（Fill out a form）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 67,
       "priority": {

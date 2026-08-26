@@ -27,38 +27,58 @@
       "asset_key": "official-4-test-1/audio/part2/q014.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：iv Why（为什么） was the office（办公室） move postponed?\n= ot Faas) Why（为什么） ~?\nCRBMBRORMORHE =",
-    "content_translation": "中文辅助（离线预处理）：iv Why（为什么） was the office（办公室） move postponed?\n= ot Faas) Why（为什么） ~?\nCRBMBRORMORHE ="
+    "transcript": "Why was the office move postponed?\nA. I'll have it finished by then.\nB. I hadn't heard about that.\nC. Try the Smithtown Post Office.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c6b22f979cb1c8e9e8bddb746ec42136bf4babc80344f8e78f281c249ed0e554",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q014.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "为什么办公室搬迁推迟了？\nA. 我到那时会完成的。\nB. 我没听说过那个。\nC. 试试史密斯敦邮局。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f9faa6d866b48ad0b562fb19729b20517890afaae3ac15b5842f4c08c983ca04"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "I'll have it finished by then. BaATUSOCHL, [ENCOUN TH",
-        "DEF. move [#4], postpone! ~",
-        "Try the Smithtown post office. ATS"
+        "I'll have it finished by then.",
+        "I hadn't heard about that.",
+        "Try the Smithtown Post Office."
       ],
       "answer": "B",
-      "question": "iv Why was the office move postponed? = ot Faas) Why ~? CRBMBRORMORHE =",
+      "question": "Why was the office move postponed?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“iv Why was the office move postponed? = ot Faas) Why ~? CRBMBRORMORHE =”，自然应答是“DEF. move [#4], postpone! ~”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（DEF. move [#4], postpone! ~）。",
-      "question_translation": "中文辅助（离线预处理）：iv Why（为什么） was the office（办公室） move postponed?\n= ot Faas) Why（为什么） ~?\nCRBMBRORMORHE =",
+      "answer_explain": "原文依据：问句或陈述是“Why was the office move postponed?”，自然应答是“I hadn't heard about that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I hadn't heard about that.）。",
+      "question_translation": "为什么办公室搬迁推迟了?",
       "choice_translations": [
-        "A：I'll have it finished by then.\nBaATUSOCHL, [ENCOUN TH",
-        "B：DEF.\nmove [#4], postpone!\n~",
-        "C：Try the Smithtown post office（办公室）.\nATS"
+        "A：我到那时会完成的。",
+        "B：我没听说过那个。",
+        "C：试试史密斯敦邮局。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：iv Why was the office move postponed? = ot Faas) Why ~? CRBMBRORMORHE =",
+      "evidence": "参考原文第 1 段：Why was the office move postponed?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：iv Why was the office move postponed? = ot Faas) Why ~? CRBMBRORMORHE =",
+        "evidence": "参考原文第 1 段：Why was the office move postponed?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“iv Why was the office move postponed? = ot Faas) Why ~? CRBMBRORMORHE =”，自然应答是“DEF. move [#4], postpone! ~”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（DEF. move [#4], postpone! ~）。"
+        "analysis": "原文依据：问句或陈述是“Why was the office move postponed?”，自然应答是“I hadn't heard about that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I hadn't heard about that.）。"
       },
       "item_id": 14,
       "priority": {

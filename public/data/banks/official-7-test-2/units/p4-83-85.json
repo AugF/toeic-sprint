@@ -40,9 +40,31 @@
       "asset_key": "official-7-test-2/audio/part4/q083-085.mp3",
       "exists": true
     },
-    "transcript": "message.\nli, Diego. This is Julie calling from E&F to let you know\nhat your 3-D prototypes are ready for pickup. OWe printed\nthem using steel instead of plastic as you requested last\nweek, but now they are really heavy, well over 40 pounds\ntotal. I'm letting you know so you can plan how you're\ngoing to carry them. Oh- ®you mentioned you're interested\nin working for us? As it turns out, our junior designer has just\nleft. Anyway, we're open until six, so feel free to come any\ntime before then. Thanks!",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nli, Diego.\nThis is Julie calling from E&F to let you know\nhat your 3-D prototypes are ready for pickup.\nOWe printed\nthem using steel instead of plastic as you requested last\nweek, but now they are really heavy, well over 40 pounds\ntotal.\nI'm letting you know so you can plan how（如何） you're\ngoing to carry them.\nOh- ®you mentioned you're interested\nin working for us?\nAs it turns out, our junior designer has just\nleft.\nAnyway, we're open until six, so feel free to come any\ntime before then.\nThanks!",
-    "content_translation": "中文辅助（离线预处理）：message.\nli, Diego.\nThis is Julie calling from E&F to let you know\nhat your 3-D prototypes are ready for pickup.\nOWe printed\nthem using steel instead of plastic as you requested last\nweek, but now they are really heavy, well over 40 pounds\ntotal.\nI'm letting you know so you can plan how（如何） you're\ngoing to carry them.\nOh- ®you mentioned you're interested\nin working for us?\nAs it turns out, our junior designer has just\nleft.\nAnyway, we're open until six, so feel free to come any\ntime before then.\nThanks!"
+    "transcript": "Hi Diego, this is Julie calling from ENF to let you know that your 3D prototypes are ready for pickup.\nWe printed them using steel instead of plastic as you requested last week, but now they are really heavy, well over 40 pounds total.\nI'm letting you know so you can plan how you're going to carry them.\nOh, you mentioned you're interested in working for us?\nAs it turns out, our junior designer has just left.\nAnyway, we're open until six, so feel free to come any time before then.\nThanks!",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "8cccc871ef2a65ded91ec8ea62314c10c57388f4243846afd370ae6dab20d714",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part4/q083-085.mp3",
+      "metrics": {
+        "word_count": 91,
+        "legacy_word_count": 90,
+        "length_ratio": 1.011,
+        "legacy_coverage": 0.944
+      }
+    },
+    "transcript_translation": "嗨，Diego，我是Julie从ENF打来的电话，想通知你你的3D原型已经可以取了。\n我们用钢材而不是塑料打印它们，就像你上周要求的，但现在它们真的非常重，总共超过40磅。\n我让你知道是为了让你能计划怎么携带它们。\n哦，你提到对在我们公司工作感兴趣？\n结果是，我们的初级设计师刚离职了。\n无论如何，我们营业到六点，所以在此之前任何时间都可以来。\n谢谢！",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a9332e4bc680349cdfbfc641e0618349c64a586c430e32072638d5c61ba2c401"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "A",
       "question": "Where does the speaker most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“Anyway, we're open until six, so feel free to come any”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At a printing business）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the speaker（说话者） most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：A（At a printing business）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the speaker(说话者) most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a printing business",
-        "B：At a video game company（公司）",
-        "C：At a plastics manufacturer",
-        "D：At an employment agency"
+        "A:At a printing business",
+        "B:At a video game company(公司)",
+        "C:At a plastics manufacturer",
+        "D:At an employment agency"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“We printed them using steel instead of plastic as you requested last week, but now they are really heavy, well over 40 pounds total.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“We printed them using steel instead of plastic as you requested last week, but now they are really heavy, well over 40 pounds total.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Anyway, we're open until six, so feel free to come any”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（At a printing business）。"
+        "analysis": "正确答案：A（At a printing business）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 83,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "B",
       "question": "What is the speaker concerned about?",
-      "answer_explain": "原文依据：听力原文中提到“week, but now they are really heavy, well over 40 pounds”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some prototypes are very heavy.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the speaker（说话者） concerned about?",
+      "answer_explain": "正确答案：B（Some prototypes are very heavy.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the speaker(说话者) concerned about?",
       "choice_translations": [
-        "A：A timeline may need to be revised.",
-        "B：Some prototypes are very heavy.",
-        "C：Some specifications are incorrect.",
-        "D：A material is currently unavailable."
+        "A:A timeline may need to be revised.",
+        "B:Some prototypes are very heavy.",
+        "C:Some specifications are incorrect.",
+        "D:A material is currently unavailable."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“We printed them using steel instead of plastic as you requested last week, but now they are really heavy, well over 40 pounds total.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“We printed them using steel instead of plastic as you requested last week, but now they are really heavy, well over 40 pounds total.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“week, but now they are really heavy, well over 40 pounds”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some prototypes are very heavy.）。"
+        "analysis": "正确答案：B（Some prototypes are very heavy.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 84,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "D",
       "question": "Why does the speaker say, \"our junior designer has just left\"?",
-      "answer_explain": "原文依据：听力原文中提到“As it turns out, our junior designer has just”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To suggest that the listener apply）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"our junior designer has just left\"?",
+      "answer_explain": "正确答案：D（To suggest that the listener apply）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"our junior designer has just left\"?",
       "choice_translations": [
-        "A：To explain why（为什么） she is busy",
-        "B：To complain about a delay",
-        "C：To request that the listener return the next day",
-        "D：To suggest（表明/建议） that the listener apply"
+        "A:To explain why(为什么) she is busy",
+        "B:To complain about a delay",
+        "C:To request that the listener return the next day",
+        "D:To suggest(表明/建议) that the listener apply"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 8 段：in working for us? As it turns out, our junior designer has just",
+      "evidence": "参考听力原文：“As it turns out, our junior designer has just left.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 8 段：in working for us? As it turns out, our junior designer has just",
+        "evidence": "参考听力原文：“As it turns out, our junior designer has just left.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“As it turns out, our junior designer has just”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（To suggest that the listener apply）。"
+        "analysis": "正确答案：D（To suggest that the listener apply）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 85,
       "priority": {

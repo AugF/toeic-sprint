@@ -39,9 +39,31 @@
       "asset_key": "official-11-test-1/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "Hi. I'm Amina Haddad. I have an appointment for an\noil change. But I was wondering if you could also look\nat my car's brakes. I think the brake pads may need to\nbe replaced soon.\nOur brake specialists have a lot of work today, but\nif you don't mind waiting a bit, someone should be able\nto look at them in about an hour.\nSure. I actually brought some work with me that I could\ndo. Do you have a wireless Internet network for\nvisitors?\nWe do. The password is posted on the wall by the\ncoffee machine.",
-    "transcript_translation": "你好，我是阿米娜·哈达德。我预约了换机油，不过我想问问你们能不能也检查一下我汽车的刹车。我想刹车片可能很快需要更换了。\n我们的刹车技师今天工作很多，不过如果你不介意稍等一会儿，大约一小时后应该会有人来检查。\n可以。我其实带了一些工作过来，可以趁这段时间处理。你们有供访客使用的无线网络吗？\n有。密码贴在咖啡机旁边的墙上。",
-    "content_translation": "本段听力围绕“汽车维修”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Hi, I'm Amina Haddad.\nI have an appointment for an oil change, but I was wondering if you could also look at my car's brakes.\nI think the brake pads may need to be replaced soon.\nOur brake specialists have a lot of work today, but if you don't mind waiting a bit, someone should be able to look at them in about an hour.\nSure.\nI actually brought some work with me that I could do.\nDo you have a wireless internet network for visitors?\nWe do.\nThe password is posted on the wall by the coffee machine.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d8dc65722c88a1fa2a4294b390c5ee568bea8a28dc545a7363d51562c2829929",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 99,
+        "legacy_word_count": 94,
+        "length_ratio": 1.053,
+        "legacy_coverage": 0.989
+      }
+    },
+    "transcript_translation": "嗨，我是阿米娜·哈达德。\n我预约了换油，但我想知道您是否也能检查一下我的汽车刹车。\n我想制动片可能需要尽快更换了。\n我们的刹车专家今天工作量很大，但如果您不介意等一会儿，大概一个小时内应该能帮您看看。\n好的。\n我其实带了一些工作来。\n你们有为访客提供的无线网络吗？\n我们有。\n密码贴在咖啡机旁边的墙上。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ddabe39e35f1474b3cfc3610ef3e53854475c3517a57529abc12fb58d37a1647"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,24 +75,24 @@
         "At a coffee shop"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：女方预约 oil change，并请人检查 brakes；男方提到 brake specialists。 选择理由：这些服务说明地点是汽车维修店，对应C。正确答案：C（At an auto repair shop）。",
+      "answer_explain": "正确答案：C（At an auto repair shop）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段第 1 句：Hi. I'm Amina Haddad. I have an appointment for an",
+      "evidence": "参考听力原文：“Our brake specialists have a lot of work today, but if you don't mind waiting a bit, someone should be able to look at them in about an hour.”",
       "choice_translations": [
-        "A：在电子产品商店",
-        "B：在停车场",
-        "C：在汽车修理店",
-        "D：在咖啡店"
+        "A:在电子产品商店",
+        "B:在停车场",
+        "C:在汽车修理店",
+        "D:在咖啡店"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段第 1 句：Hi. I'm Amina Haddad. I have an appointment for an",
+        "evidence": "参考听力原文：“Our brake specialists have a lot of work today, but if you don't mind waiting a bit, someone should be able to look at them in about an hour.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：女方预约 oil change，并请人检查 brakes；男方提到 brake specialists。 选择理由：这些服务说明地点是汽车维修店，对应C。正确答案：C（At an auto repair shop）。"
+        "analysis": "正确答案：C（At an auto repair shop）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者在哪里？",
+      "question_translation": "说话者在哪里?",
       "item_id": 38,
       "priority": {
         "level": "P3",
@@ -105,24 +127,24 @@
         "They are busy."
       ],
       "answer": "D",
-      "answer_explain": "原文依据：男方说 brake specialists have a lot of work today。 选择理由：have a lot of work同义表示员工很忙，因此D正确。正确答案：D（They are busy.）。",
+      "answer_explain": "正确答案：D（They are busy.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 7 段第 1 句：to look at them in about an hour.",
+      "evidence": "参考听力原文：“Our brake specialists have a lot of work today, but if you don't mind waiting a bit, someone should be able to look at them in about an hour.”",
       "choice_translations": [
-        "A：他们正在接受培训。",
-        "B：他们今天会提前下班。",
-        "C：他们两人一组工作。",
-        "D：他们很忙。"
+        "A:他们正在接受培训。",
+        "B:他们今天会提前下班。",
+        "C:他们两人一组工作。",
+        "D:他们很忙。"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 7 段第 1 句：to look at them in about an hour.",
+        "evidence": "参考听力原文：“Our brake specialists have a lot of work today, but if you don't mind waiting a bit, someone should be able to look at them in about an hour.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：男方说 brake specialists have a lot of work today。 选择理由：have a lot of work同义表示员工很忙，因此D正确。正确答案：D（They are busy.）。"
+        "analysis": "正确答案：D（They are busy.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男士如何描述他的员工？",
+      "question_translation": "男士如何描述他的员工?",
       "item_id": 39,
       "priority": {
         "level": "P3",
@@ -157,24 +179,24 @@
         "A service agreement"
       ],
       "answer": "A",
-      "answer_explain": "原文依据：男方说 The password is posted on the wall by the coffee machine。 选择理由：墙上张贴的是无线网络密码，因此A正确。正确答案：A（A password）。",
+      "answer_explain": "正确答案：A（A password）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段第 1 句：We do. The password is posted on the wall by the",
+      "evidence": "参考听力原文：“The password is posted on the wall by the coffee machine.”",
       "choice_translations": [
-        "A：密码",
-        "B：价格表",
-        "C：退款政策",
-        "D：服务协议"
+        "A:密码",
+        "B:价格表",
+        "C:退款政策",
+        "D:服务协议"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段第 1 句：We do. The password is posted on the wall by the",
+        "evidence": "参考听力原文：“The password is posted on the wall by the coffee machine.”",
         "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：男方说 The password is posted on the wall by the coffee machine。 选择理由：墙上张贴的是无线网络密码，因此A正确。正确答案：A（A password）。"
+        "analysis": "正确答案：A（A password）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "墙上贴着什么？",
+      "question_translation": "墙上贴着什么?",
       "item_id": 40,
       "priority": {
         "level": "P3",

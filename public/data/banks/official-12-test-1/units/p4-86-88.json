@@ -36,37 +36,61 @@
       "asset_key": "official-12-test-1/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "B41586-88(đ)\nAttention Central Station customers and MTS riders!\nThis is a reminder that all next week we'll be operating\nunder a special schedule. This will include extra trains and\nbus routes to accommodate increased passenger traffic.\nWe anticipate thousands of people will be visiting the city\nto celebrate 100 years since Plattville was founded. Trains\nmay be especially busy in the area around the city center\nand the historic district. To ensure that your commute will\nnot be disrupted, visit our Web site for the most up-to-date\nschedule and traffic information. Thank you and enjoy the ride!",
-    "transcript_translation": "中文辅助（离线预处理）：B41586-88(đ)\nAttention Central Station customers and MTS riders!\nThis is a reminder that all next week we'll be operating\nunder a special schedule（日程）.\nThis will include extra trains and\nbus routes to accommodate increased passenger traffic.\nWe anticipate thousands of people will be visiting the city\nto celebrate 100 years since Plattville was founded.\nTrains\nmay be especially busy in the area around the city center\nand the historic district.\nTo ensure that your commute will\nnot be disrupted, visit our Web site for the most up-to-date\nschedule（日程） and traffic information（信息）.\nThank（感谢） you and enjoy the ride!",
-    "content_translation": "中文辅助（离线预处理）：B41586-88(đ)\nAttention Central Station customers and MTS riders!\nThis is a reminder that all next week we'll be operating\nunder a special schedule（日程）.\nThis will include extra trains and\nbus routes to accommodate increased passenger traffic.\nWe anticipate thousands of people will be visiting the city\nto celebrate 100 years since Plattville was founded.\nTrains\nmay be especially busy in the area around the city center\nand the historic district.\nTo ensure that your commute will\nnot be disrupted, visit our Web site for the most up-to-date\nschedule（日程） and traffic information（信息）.\nThank（感谢） you and enjoy the ride!"
+    "transcript": "Attention Central Station customers and MTS riders.\nThis is a reminder that all next week we'll be operating under a special schedule.\nThis will include extra trains and bus routes to accommodate increased passenger traffic.\nWe anticipate thousands of people will be visiting the city to... celebrate 100 years since Platteville was founded.\nTrains may be especially busy in the area around the city center and the historic district.\nTo ensure that your commute will not be disrupted, visit our website for the most up-to-date schedule and traffic information.\nThank you and enjoy the ride.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "fe041cc8df5de9402eff0bf543e73a4130b2daff4f4bc69a2a896400aa6e66de",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 94,
+        "legacy_word_count": 96,
+        "length_ratio": 0.979,
+        "legacy_coverage": 0.958,
+        "prompted_failure": "missing spoken Questions 86 through 88 introduction"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "注意中央车站的顾客和MTS乘客们。\n这是一个提醒，下周我们将按照特殊的时刻表运营。\n这将包括额外的列车和公交路线，以适应增加的客流量。\n我们预计将有成千上万的人访问这座城市，庆祝普拉特维尔成立100周年。\n在市中心和历史街区附近，火车可能会特别繁忙。\n为确保您的通勤不会受到干扰，请访问我们的网站获取最新时刻表和交通信息。\n谢谢，祝您旅途愉快。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e23723ac473c3e579a44566f0d19bd21b0e60ea0238777d56beba59360c0fbe8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "At a transportation center",
         "At a convention center",
-        "At a parade venue CulatED.",
+        "At a parade venue",
         "At a government office"
       ],
       "answer": "A",
-      "question": "Where is the announcement taking place? TER A",
-      "answer_explain": "原文依据：听力原文中提到“may be especially busy in the area around the city center”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（At a transportation center）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the announcement taking place?\nTER A",
+      "question": "Where is the announcement taking place?",
+      "answer_explain": "正确答案：A（At a transportation center）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) is the announcement taking place? TER A",
       "choice_translations": [
-        "A：At a transportation center",
-        "B：At a convention center",
-        "C：At a parade venue CulatED.",
-        "D：At a government office（办公室）"
+        "A:At a transportation center",
+        "B:At a convention center",
+        "C:At a parade venue",
+        "D:At a government office(办公室)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：B41586-88(đ)",
+      "evidence": "参考听力原文：“Trains may be especially busy in the area around the city center and the historic district.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：B41586-88(đ)",
+        "evidence": "参考听力原文：“Trains may be especially busy in the area around the city center and the historic district.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“may be especially busy in the area around the city center”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（At a transportation center）。"
+        "analysis": "正确答案：A（At a transportation center）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 86,
       "priority": {
@@ -99,23 +123,23 @@
       ],
       "answer": "C",
       "question": "What type of event does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“may be especially busy in the area around the city center”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A city celebration）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of event does the speaker（说话者） mention?",
+      "answer_explain": "正确答案：C（A city celebration）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of event does the speaker(说话者) mention?",
       "choice_translations": [
-        "A：A musical concert",
-        "B：A sporting contest",
-        "C：A city celebration",
-        "D：A special election"
+        "A:A musical concert",
+        "B:A sporting contest",
+        "C:A city celebration",
+        "D:A special election"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：B41586-88(đ)",
+      "evidence": "参考听力原文：“We anticipate thousands of people will be visiting the city to... celebrate 100 years since Platteville was founded.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：B41586-88(đ)",
+        "evidence": "参考听力原文：“We anticipate thousands of people will be visiting the city to... celebrate 100 years since Platteville was founded.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“may be especially busy in the area around the city center”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A city celebration）。"
+        "analysis": "正确答案：C（A city celebration）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 87,
       "priority": {
@@ -147,24 +171,24 @@
         "A map of the area"
       ],
       "answer": "B",
-      "question": "According to the speaker, what is available on a Web ПЕЛ% site?",
-      "answer_explain": "原文依据：听力原文中提到“schedule and traffic information.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Scheduling information）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） is available（可用的） on a Web ПЕЛ% site?",
+      "question": "According to the speaker, what is available on a website?",
+      "answer_explain": "正确答案：B（Scheduling information）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "根据说话者所说，网站上提供了什么？",
       "choice_translations": [
-        "A：Customer（顾客） reviews",
-        "B：Scheduling information（信息）",
-        "C：The history of a building",
-        "D：A map of the area"
+        "A:Customer(顾客) reviews",
+        "B:Scheduling information(信息)",
+        "C:The history of a building",
+        "D:A map of the area"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：B41586-88(đ)",
+      "evidence": "参考听力原文：“To ensure that your commute will not be disrupted, visit our website for the most up-to-date schedule and traffic information.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：B41586-88(đ)",
+        "evidence": "参考听力原文：“To ensure that your commute will not be disrupted, visit our website for the most up-to-date schedule and traffic information.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“schedule and traffic information.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Scheduling information）。"
+        "analysis": "正确答案：B（Scheduling information）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 88,
       "priority": {

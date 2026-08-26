@@ -39,9 +39,31 @@
       "asset_key": "official-5-test-2/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nExcuse me, Odo you work here?\nI eYes, I'm one of the librarians.\nh, great. I'm looking for a book club meeting. I saw\nan announcement online, and it said they meet here.\nYes, Othey meet in our smaller meeting room upstairs.\nIt starts in about ten minutes. Here's Tony. He's a\nvolunteer here and can show you to the room.\nThank you. ® You're a volunteer here at the library?\nI'm new to the area, and I've been looking for volunteer\nopportunities.\nI-M Yes, 1 am. If you're interested, ®| can get you an\napplication right now, before the meeting.\nYes, that'd be great. Thanks, Tony.",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nExcuse me, Odo you work（工作） here?\nI eYes, I'm one of the librarians.\nh, great.\nI'm looking for a book club meeting（会议）.\nI saw\nan announcement online, and it said they meet here.\nYes, Othey meet in our smaller meeting（会议） room upstairs.\nIt starts in about ten minutes.\nHere's Tony.\nHe's a\nvolunteer here and can show you to the room.\nThank（感谢） you.\n® You're a volunteer here at the library?\nI'm new to the area, and I've been looking for volunteer\nopportunities.\nI-M Yes, 1 am.\nIf you're interested, ®| can get you an\napplication right now, before the meeting（会议）.\nYes, that'd be great.\nThanks, Tony.",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nExcuse me, Odo you work（工作） here?\nI eYes, I'm one of the librarians.\nh, great.\nI'm looking for a book club meeting（会议）.\nI saw\nan announcement online, and it said they meet here.\nYes, Othey meet in our smaller meeting（会议） room upstairs.\nIt starts in about ten minutes.\nHere's Tony.\nHe's a\nvolunteer here and can show you to the room.\nThank（感谢） you.\n® You're a volunteer here at the library?\nI'm new to the area, and I've been looking for volunteer\nopportunities.\nI-M Yes, 1 am.\nIf you're interested, ®| can get you an\napplication right now, before the meeting（会议）.\nYes, that'd be great.\nThanks, Tony."
+    "transcript": "Excuse me, do you work here?\nYes, I'm one of the librarians.\nOh, great.\nI'm looking for a book club meeting.\nI saw an announcement online and it said they meet here.\nYes, they meet in our smaller meeting room upstairs.\nIt starts in about 10 minutes.\nHere's Tony.\nHe's a volunteer here and can show you to the room.\nThank you.\nYou're a volunteer here at the library.\nI'm new to the area and I've been looking for volunteer opportunities.\nYes, I am.\nIf you're interested, I can get you an application right now before the meeting.\nYes, that'd be great.\nThanks, Tony.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "eeedd59889d0940c3f79b6a0ba0e4f2ec554e8c004682ad725fc8395087ad5e8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 103,
+        "legacy_word_count": 104,
+        "length_ratio": 0.99,
+        "legacy_coverage": 0.885
+      }
+    },
+    "transcript_translation": "Excuse me, do you work here?\n对不起，您在这里工作吗？\nYes, I'm one of the librarians.\n是的，我是一名图书管理员。\nOh, great.\n哦，太好了。\nI'm looking for a book club meeting.\n我在找一个读书俱乐部会议。\nI saw an announcement online and it said they meet here.\n我在网上看到通知说他们在这里开会。\nYes, they meet in our smaller meeting room upstairs.\n是的，他们在楼上的小会议室开会。\nIt starts in about 10 minutes.\n大约十分钟后开始。\nHere's Tony.\n这是托尼。\nHe's a volunteer here and can show you to the room.\n他是这里的志愿者，可以带您去房间。\nThank you.\n谢谢你。\nYou're a volunteer here at the library.\n你是图书馆的志愿者。\nI'm new to the area and I've been looking for volunteer opportunities.\n我刚到这个地区，一直在寻找志愿服务机会。\nYes, I am.\n是的，我是。\nIf you're interested, I can get you an application right now before the meeting.\n如果您有兴趣，我现在可以在会议前给您一张申请表。\nYes, that'd be great.\n是的，那太好了。\nThanks, Tony.",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a3643b7f06450bd3a82d2cfa13116eb4b5985201393ad3a42252e60d268abc1d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "D",
       "question": "Where most likely are the speakers?",
-      "answer_explain": "原文依据：听力原文中提到“® You're a volunteer here at the library?”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a public library）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） most likely（最可能） are the speakers?",
+      "answer_explain": "正确答案：D（At a public library）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) most likely(最可能) are the speakers?",
       "choice_translations": [
-        "A：At a real estate agency",
-        "B：At a convention center",
-        "C：At a retail store",
-        "D：At a public library"
+        "A:At a real estate agency",
+        "B:At a convention center",
+        "C:At a retail store",
+        "D:At a public library"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“You're a volunteer here at the library.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“You're a volunteer here at the library.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® You're a volunteer here at the library?”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（At a public library）。"
+        "analysis": "正确答案：D（At a public library）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "What does the woman need help with?",
-      "answer_explain": "原文依据：听力原文中提到“volunteer here and can show you to the room.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Locating a room）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） need help with?",
+      "answer_explain": "正确答案：B（Locating a room）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) need help with?",
       "choice_translations": [
-        "A：Finding a book",
-        "B：Locating a room",
-        "C：Creating a schedule（日程）",
-        "D：Arranging transportation"
+        "A:Finding a book",
+        "B:Locating a room",
+        "C:Creating a schedule(日程)",
+        "D:Arranging transportation"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Yes, they meet in our smaller meeting room upstairs.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Yes, they meet in our smaller meeting room upstairs.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“volunteer here and can show you to the room.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Locating a room）。"
+        "analysis": "正确答案：B（Locating a room）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "A",
       "question": "What will Tony give the woman?",
-      "answer_explain": "原文依据：听力原文中提到“application right now, before the meeting.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An application）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will Tony give the woman（女士）?",
+      "answer_explain": "正确答案：A（An application）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will Tony give the woman(女士)?",
       "choice_translations": [
-        "A：An application",
-        "B：A security badge",
-        "C：A receipt",
-        "D：A map"
+        "A:An application",
+        "B:A security badge",
+        "C:A receipt",
+        "D:A map"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“If you're interested, I can get you an application right now before the meeting.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“If you're interested, I can get you an application right now before the meeting.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“application right now, before the meeting.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（An application）。"
+        "analysis": "正确答案：A（An application）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

@@ -37,9 +37,31 @@
       "asset_key": "official-1-test-1/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "lv Excuse me. °My mobile phone’s been very slow and\nsometimes loses calls, so I’m interested in a new one.\nI'd be happy to help you find a new phone. Have you\nseen the latest smartphones we have on display? We\nhave a few models at excellent prices.\nlu | saw those, but @! read on your company Web site that\nyou have some phones for sale at half price.\nWe do have several select phones available at half price.\nHowever, they’re very basic phones. ®smartphones\nlike these, on the other hand, have features like Web\nbrowsing and road navigation that you wouldn't get from\na basic mobile phone. Here, let me show you how they\nwork,",
-    "transcript_translation": "抱歉。我的手机一直很慢，有时候还会掉通话，所以我对一部新手机感兴趣。\n我很乐意帮你找到一部新手机。你看到我们展出的最新款智能手机了吗？我们有几个型号价格很优惠。\n我看到了，但我在贵公司的网站上看到你们有一些半价出售的手机。\n我们确实有几款精选手机是半价的。但是，它们是非常基础的手机。另一方面，像这些智能手机具有网页浏览和路线导航等功能，而这些功能在基础手机上是没有的。这里让我向你展示一下它们是如何工作的，",
-    "content_translation": "抱歉。我的手机一直很慢，有时候还会掉通话，所以我对一部新手机感兴趣。\n我很乐意帮你找到一部新手机。你看到我们展出的最新款智能手机了吗？我们有几个型号价格很优惠。\n我看到了，但我在贵公司的网站上看到你们有一些半价出售的手机。\n我们确实有几款精选手机是半价的。但是，它们是非常基础的手机。另一方面，像这些智能手机具有网页浏览和路线导航等功能，而这些功能在基础手机上是没有的。这里让我向你展示一下它们是如何工作的，"
+    "transcript": "Excuse me, my mobile phone's been very slow and sometimes loses calls, so I'm interested in a new one.\nI'd be happy to help you find a new phone.\nHave you seen the latest smartphones we have on display?\nWe have a few models at excellent prices.\nI saw those, but I read on your company website that you have some phones for sale at half price.\nWe do have several select phones available at half price.\nHowever, they're very basic phones.\nSmartphones like these, on the other hand, have features like web browsing and road navigation that you wouldn't get from a basic mobile phone.\nHere, let me show you how they work.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "cc6d894f9ef1416a488ec7a8c6c5837846be8cf63067b4c0437598a8959ca0ac",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 114,
+        "legacy_word_count": 112,
+        "length_ratio": 1.018,
+        "legacy_coverage": 0.982
+      }
+    },
+    "transcript_translation": "不好意思，我的手机很慢，有时还会掉线，所以我对一部新手机感兴趣。\n我很乐意帮助您找到一部新手机。\n您看过我们展出的最新款智能手机吗？\n我们有几个价格极好的型号。\n我看到了，但我记得贵公司的网站上说你们有一些手机半价出售。\n确实有几款精选的手机是半价的。\n但是，它们是非常基础的手机。\n另一方面，像这样的智能手机具有网页浏览和路线导航等功能，而这些功能无法从基础手机获得。\n这里，让我给您看看它们是如何工作的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "24c92a2e24b4641b41a2e75af979e68c55a515cffb834fc903354ba9a61cb0f6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "A",
       "question": "What problem does the man mention?",
-      "answer_explain": "原文依据：听力原文中提到“I'd be happy to help you find a new phone.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（His phone is not working properly.）。",
+      "answer_explain": "正确答案：A（His phone is not working properly.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：lv Excuse me. °My mobile phone’s been very slow and",
+      "evidence": "参考听力原文：“Smartphones like these, on the other hand, have features like web browsing and road navigation that you wouldn't get from a basic mobile phone.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：lv Excuse me. °My mobile phone’s been very slow and",
+        "evidence": "参考听力原文：“Smartphones like these, on the other hand, have features like web browsing and road navigation that you wouldn't get from a basic mobile phone.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“I'd be happy to help you find a new phone.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（His phone is not working properly.）。"
+        "analysis": "正确答案：A（His phone is not working properly.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男人提到了什么问题？",
+      "question_translation": "男人提到了什么问题?",
       "choice_translations": [
-        "A：他的手机不能正常工作。",
-        "B：他收到了错误的账单。",
-        "C：他无法转接一些重要的电话",
-        "D：他的电池充电器丢失了。"
+        "A:他的手机不能正常工作。",
+        "B:他收到了错误的账单。",
+        "C:他无法转接一些重要的电话",
+        "D:他的电池充电器丢失了。"
       ],
       "item_id": 44,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "A",
       "question": "What did the man read online?",
-      "answer_explain": "原文依据：听力原文中提到“We do have several select phones available at half price.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Some phones are available at a discount.）。",
+      "answer_explain": "正确答案：A（Some phones are available at a discount.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：lv Excuse me. °My mobile phone’s been very slow and",
+      "evidence": "参考听力原文：“I saw those, but I read on your company website that you have some phones for sale at half price.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：lv Excuse me. °My mobile phone’s been very slow and",
+        "evidence": "参考听力原文：“I saw those, but I read on your company website that you have some phones for sale at half price.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“We do have several select phones available at half price.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Some phones are available at a discount.）。"
+        "analysis": "正确答案：A（Some phones are available at a discount.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "男人在网上看到了什么？",
+      "question_translation": "男人在网上看到了什么?",
       "choice_translations": [
-        "A：有些手机有折扣出售。",
-        "B：服务区域已经扩大了。",
-        "C：旧手机可以回收。",
-        "D：维修是在现场进行的。"
+        "A:有些手机有折扣出售。",
+        "B:服务区域已经扩大了。",
+        "C:旧手机可以回收。",
+        "D:维修是在现场进行的。"
       ],
       "item_id": 45,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "C",
       "question": "What will the woman do next?",
-      "answer_explain": "原文依据：听力原文中提到“I'd be happy to help you find a new phone.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Demonstrate advanced phone featur）。",
+      "answer_explain": "正确答案：C（Demonstrate advanced phone featur）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：lv Excuse me. °My mobile phone’s been very slow and",
+      "evidence": "参考听力原文：“Smartphones like these, on the other hand, have features like web browsing and road navigation that you wouldn't get from a basic mobile phone.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：lv Excuse me. °My mobile phone’s been very slow and",
+        "evidence": "参考听力原文：“Smartphones like these, on the other hand, have features like web browsing and road navigation that you wouldn't get from a basic mobile phone.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“I'd be happy to help you find a new phone.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Demonstrate advanced phone featur）。"
+        "analysis": "正确答案：C（Demonstrate advanced phone featur）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "女人接下来会做什么？",
+      "question_translation": "女人接下来会做什么?",
       "choice_translations": [
-        "A：备份一些文件",
-        "B：就一次翻修与经理商议",
-        "C：演示高级手机功能",
-        "D：描述一些保修计划"
+        "A:备份一些文件",
+        "B:就一次翻修与经理商议",
+        "C:演示高级手机功能",
+        "D:描述一些保修计划"
       ],
       "item_id": 46,
       "priority": {

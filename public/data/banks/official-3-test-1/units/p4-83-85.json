@@ -36,37 +36,60 @@
       "asset_key": "official-3-test-1/audio/part4/q083-085.mp3",
       "exists": true
     },
-    "transcript": "Ew\nThanks for listening to KQSP Radio. Remember ti\ntune in next Saturday evening for our tenth annivers\ncelebration. We'll be playing the top ten songs of {\npast decade, selected by you, the listeners. There\nstill time to vote for your favorite song. You can do tl\nby sending a text message to 5143. The songs with\nmost votes will be played during our show next Sate\nevening. And coming up after a short break, @we've\nlive in-studio interview with pop singer Ezra Ortiz. 9\nbe telling us about his upcoming world tour.",
-    "transcript_translation": "呃\n感谢收听 KQSP 电台。请记住，下周六晚上收听我们的十周年庆典。我们将播放过去十年由您听众选出的前十大歌曲。您仍然有时间为最喜欢的歌曲投票。您可以通过向 5143 发送文本信息来投票。票数最多的歌曲将在我们下周六晚的节目中播放。稍后，在短暂休息之后，@我们邀请了流行歌手埃兹拉·奥尔蒂斯进行现场演播室采访。他将告诉我们关于他即将到来的世界巡演的消息。",
-    "content_translation": "呃\n感谢收听 KQSP 电台。请记住，下周六晚上收听我们的十周年庆典。我们将播放过去十年由您听众选出的前十大歌曲。您仍然有时间为最喜欢的歌曲投票。您可以通过向 5143 发送文本信息来投票。票数最多的歌曲将在我们下周六晚的节目中播放。稍后，在短暂休息之后，@我们邀请了流行歌手埃兹拉·奥尔蒂斯进行现场演播室采访。他将告诉我们关于他即将到来的世界巡演的消息。"
+    "transcript": "If you want to vote for your favorite song, you can do that by sending a text message to 5143.\nThe songs with the most votes will be played during our show next Saturday evening.\nAnd coming up after a short break, we've got a live in-studio interview with pop singer Ezra Ortiz.\nHe'll be telling us about his upcoming world tour.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "d4f8f99f9553750076dc8035275a8b31aa80cd9f8284bdba819900b6e3fcb1bb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part4/q083-085.mp3",
+      "metrics": {
+        "word_count": 61,
+        "legacy_word_count": 91,
+        "length_ratio": 0.67,
+        "legacy_coverage": 0.714,
+        "prompted_failure": "implausible Part 4 transcript length 5"
+      }
+    },
+    "transcript_translation": "如果您想投票选出您最喜欢的歌曲，可以给 5143 发一条短信。\n票数最多的歌曲将在我们下周六晚的节目中播放。\n稍作休息后，接下来我们将进行一场与流行歌手 Ezra Ortiz 的现场录音室采访。\n他将向我们介绍他的即将到来的世界巡演。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1edf7dda05d9fc6954dec7e456965cf2206edc0451fe7325cbbbb8ceb80c81b2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Arecording session",
+        "A recording session",
         "A fund-raising dinner",
-        "Agrand opening",
+        "A grand opening",
         "An anniversary celebration"
       ],
       "answer": "D",
       "question": "According to the speaker, what will happen next Saturday?",
-      "answer_explain": "原文依据：听力原文中提到“celebration.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An anniversary celebration）。",
-      "question_translation": "根据演讲者所说，下周六会发生什么？",
+      "answer_explain": "正确答案：D（An anniversary celebration）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "根据演讲者所说,下周六会发生什么?",
       "choice_translations": [
-        "A：录音环节",
-        "B：筹款晚宴",
-        "C：盛大开幕式",
-        "D：周年庆典"
+        "A:录音环节",
+        "B:筹款晚宴",
+        "C:盛大开幕式",
+        "D:周年庆典"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：tune in next Saturday evening for our tenth annivers",
+      "evidence": "参考听力原文：“The songs with the most votes will be played during our show next Saturday evening.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：tune in next Saturday evening for our tenth annivers",
+        "evidence": "参考听力原文：“The songs with the most votes will be played during our show next Saturday evening.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“celebration.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An anniversary celebration）。"
+        "analysis": "正确答案：D（An anniversary celebration）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 83,
       "priority": {
@@ -99,23 +122,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker tell the listeners they can do?",
-      "answer_explain": "原文依据：听力原文中提到“still time to vote for your favorite song.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Vote for their favorite songs）。",
-      "question_translation": "演讲者告诉听众他们可以做什么？",
+      "answer_explain": "正确答案：A（Vote for their favorite songs）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者告诉听众他们可以做什么?",
       "choice_translations": [
-        "A：为最喜欢的歌曲投票",
-        "B：参加测验",
-        "C：发布问题",
-        "D：向电台捐款"
+        "A:为最喜欢的歌曲投票",
+        "B:参加测验",
+        "C:发布问题",
+        "D:向电台捐款"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：past decade, selected by you, the listeners. There",
+      "evidence": "参考听力原文：“If you want to vote for your favorite song, you can do that by sending a text message to 5143.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：past decade, selected by you, the listeners. There",
+        "evidence": "参考听力原文：“If you want to vote for your favorite song, you can do that by sending a text message to 5143.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“still time to vote for your favorite song.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Vote for their favorite songs）。"
+        "analysis": "正确答案：A（Vote for their favorite songs）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 84,
       "priority": {
@@ -148,23 +171,23 @@
       ],
       "answer": "C",
       "question": "What will Ezra Ortiz be discussing next?",
-      "answer_explain": "原文依据：听力原文中提到“be telling us about his upcoming world tour.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An upcoming tour）。",
-      "question_translation": "埃兹拉·奥尔蒂斯接下来将讨论什么？",
+      "answer_explain": "正确答案：C（An upcoming tour）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "埃兹拉·奥尔蒂斯接下来将讨论什么?",
       "choice_translations": [
-        "A：他的歌曲创作过程",
-        "B：新歌的发行",
-        "C：即将到来的巡演",
-        "D：学校的音乐项目"
+        "A:他的歌曲创作过程",
+        "B:新歌的发行",
+        "C:即将到来的巡演",
+        "D:学校的音乐项目"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：live in-studio interview with pop singer Ezra Ortiz. 9",
+      "evidence": "参考听力原文：“And coming up after a short break, we've got a live in-studio interview with pop singer Ezra Ortiz.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：live in-studio interview with pop singer Ezra Ortiz. 9",
+        "evidence": "参考听力原文：“And coming up after a short break, we've got a live in-studio interview with pop singer Ezra Ortiz.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“be telling us about his upcoming world tour.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An upcoming tour）。"
+        "analysis": "正确答案：C（An upcoming tour）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 85,
       "priority": {

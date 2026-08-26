@@ -27,38 +27,58 @@
       "asset_key": "official-12-test-2/audio/part2/q009.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：M How（如何） many invitations did we send for the TE#F company（公司） picnic?\nM T125 in ta",
-    "content_translation": "中文辅助（离线预处理）：M How（如何） many invitations did we send for the TE#F company（公司） picnic?\nM T125 in ta"
+    "transcript": "How many invitations did we send for the company picnic?\nA. 125.\nB. Thanks, I've already eaten.\nC. A new office building.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0edf36db8db88ecf73edbd3176d61e5248e8834477443b47c2c3c0151bfd5e4c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q009.mp3",
+      "metrics": {
+        "word_count": 22
+      }
+    },
+    "transcript_translation": "我们为公司野餐发了多少请柬？\nA. 125张。\nB. 谢谢，我已经吃过了。\nC. 一栋新办公室大楼。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6b093b54f72ebb549ad337980d088fde25f1c8a40147ea139f3d11f1f3a0ad40"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "A hundred and twenty-five. invitation",
-        "Thanks-I've already eaten.",
+        "125.",
+        "Thanks, I've already eaten.",
         "A new office building."
       ],
       "answer": "A",
-      "question": "M How many invitations did we send for the TE#F company picnic? M T125 in ta",
+      "question": "How many invitations did we send for the company picnic?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M How many invitations did we send for the TE#F company picnic? M T125 in ta”，自然应答是“A hundred and twenty-five. invitation”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（A hundred and twenty-five. invitation）。",
-      "question_translation": "中文辅助（离线预处理）：M How（如何） many invitations did we send for the TE#F company（公司） picnic?\nM T125 in ta",
+      "answer_explain": "原文依据：问句或陈述是“How many invitations did we send for the company picnic?”，自然应答是“125.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（125.）。",
+      "question_translation": "我们为公司野餐发了多少请柬?",
       "choice_translations": [
-        "A：A hundred and twenty-five.\ninvitation",
-        "B：Thanks-I've already eaten.",
-        "C：A new office（办公室） building."
+        "A：125张。",
+        "B：谢谢,我已经吃过了。",
+        "C：一栋新办公室大楼。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M How many invitations did we send for the TE#F company picnic? M T125 in ta",
+      "evidence": "参考原文第 1 段：How many invitations did we send for the company picnic?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M How many invitations did we send for the TE#F company picnic? M T125 in ta",
+        "evidence": "参考原文第 1 段：How many invitations did we send for the company picnic?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“M How many invitations did we send for the TE#F company picnic? M T125 in ta”，自然应答是“A hundred and twenty-five. invitation”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（A hundred and twenty-five. invitation）。"
+        "analysis": "原文依据：问句或陈述是“How many invitations did we send for the company picnic?”，自然应答是“125.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（125.）。"
       },
       "item_id": 9,
       "priority": {

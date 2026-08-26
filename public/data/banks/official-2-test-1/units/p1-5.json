@@ -32,15 +32,35 @@
       "asset_key": "official-2-test-1/images/part1/q005.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 文件夹正被送到一个办公室。\nB. 一个文件夹正从抽屉里被挑选出来。\nC. 一名女士正在锁文件柜。\nD. 一位女士正伸手去拿一个钟表。",
-    "content_translation": "A. 文件夹正被送到一个办公室。\nB. 一个文件夹正从抽屉里被挑选出来。\nC. 一名女士正在锁文件柜。\nD. 一位女士正伸手去拿一个钟表。"
+    "transcript": "A. Folders are being delivered to an office.\nB. A folder is being selected from a drawer.\nC. A woman is locking a file cabinet.\nD. A woman is reaching for a clock.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "aa02637895b348f81992894465ddd19d5cf189b23ec9be45755d17886984f100",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-1/audio/part1/q005.mp3",
+      "metrics": {
+        "word_count": 44
+      }
+    },
+    "transcript_translation": "A. 文件夹正被送到一间办公室。\nB. 一个文件夹正从抽屉里被挑选出来。\nC. 一位女士正在锁一个文件柜。\nD. 一位女士正伸手去拿一个时钟。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "34b96289de75feb1bc8e2af09e6101487b5a6801644951039bacebd2e63c7a6d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Folders are being delivered to an office.",
         "A folder is being selected from a drawer.",
-        "Awoman is locking a file cabinet.",
+        "A woman is locking a file cabinet.",
         "A woman is reaching for a clock."
       ],
       "answer": "B",
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“A folder is being selected from a drawer.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（A folder is being selected from a drawer.）。",
       "choice_translations": [
-        "A：文件夹正被送到一个办公室。",
+        "A：文件夹正被送到一间办公室。",
         "B：一个文件夹正从抽屉里被挑选出来。",
-        "C：一名女士正在锁文件柜。",
-        "D：一位女士正伸手去拿一个钟表。"
+        "C：一位女士正在锁一个文件柜。",
+        "D：一位女士正伸手去拿一个时钟。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-1/p1-5/5"
+      "item_key": "official-2-test-1/p1-5/5",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -37,9 +37,31 @@
       "asset_key": "official-12-test-1/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "aK w Robertson Appliances. How can I help you?\nRobertson 5\nm Hi. My name's Bradley Mitchell. Ol'm calling because\nhave a phone interview for the sales manager position.\nKw Thank you for calling. You are right on time. eWhy\ndon't you start by telling me about yourself?\nm Well, I have some relevant experience. I spent two\nyears in sales for a power tool manufacturer.\nEs w That's great! © Next month, we'll be launching a line\nof kitchen appliances. Do you have any experience\npromoting new products?\nm Yes! Oln fact, I received a bonus for selling over 50\npower drills in the first two weeks they were available.\nI was expected to sell only 30.",
-    "transcript_translation": "中文辅助（离线预处理）：aK w Robertson Appliances.\nHow（如何） can I help you?\nRobertson 5\nm Hi.\nMy name's Bradley Mitchell.\nOl'm calling because\nhave a phone interview for the sales manager（经理） position.\nKw Thank（感谢） you for calling.\nYou are right on time.\neWhy\ndon't you start by telling me about yourself?\nm Well, I have some relevant experience.\nI spent two\nyears in sales for a power tool manufacturer.\nEs w That's great!\n© Next month, we'll be launching a line\nof kitchen appliances.\nDo you have any experience\npromoting new products?\nm Yes!\nOln fact, I received a bonus for selling over 50\npower drills in the first two weeks they were available（可用的）.\nI was expected to sell only 30.",
-    "content_translation": "中文辅助（离线预处理）：aK w Robertson Appliances.\nHow（如何） can I help you?\nRobertson 5\nm Hi.\nMy name's Bradley Mitchell.\nOl'm calling because\nhave a phone interview for the sales manager（经理） position.\nKw Thank（感谢） you for calling.\nYou are right on time.\neWhy\ndon't you start by telling me about yourself?\nm Well, I have some relevant experience.\nI spent two\nyears in sales for a power tool manufacturer.\nEs w That's great!\n© Next month, we'll be launching a line\nof kitchen appliances.\nDo you have any experience\npromoting new products?\nm Yes!\nOln fact, I received a bonus for selling over 50\npower drills in the first two weeks they were available（可用的）.\nI was expected to sell only 30."
+    "transcript": "Robertson Appliances, how can I help you?\nHi, my name's Bradley Mitchell.\nI'm calling because I have a phone interview for the sales manager position.\nThank you for calling.\nYou are right on time.\nWhy don't you start by telling me about yourself?\nWell, I have some relevant experience.\nI spent two years in sales for a power tool manufacturer.\nThank you.\nThat's great.\nNext month, we'll be launching a line of kitchen appliances.\nDo you have any experience promoting new products?\nYes.\nIn fact, I received a bonus for selling over 50 power drills in the first two weeks they were available.\nI was expected to sell only 30.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f239da6fed1c81f0fa485d3093526c7a642c62cd6463822dfb6ef43a790ed307",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 108,
+        "legacy_word_count": 109,
+        "length_ratio": 0.991,
+        "legacy_coverage": 0.899
+      }
+    },
+    "transcript_translation": "Robertson Appliances，有什么可以帮您？\n嗨，我叫Bradley Mitchell。\n我打电话是因为我有一个销售经理职位的电话面试。\n感谢您的来电。\n您来得非常准时。\n不如您先从自我介绍开始吧？\n嗯，我有一些相关的经验。\n我在一家电动工具制造商那里做了两年的销售工作。\n谢谢。\n那太棒了。\n下个月，我们将推出一系列厨房电器。\n您有推广新产品的经验吗？\n是的。\n事实上，在它们上市的前两周内，我卖出了超过50台电动钻，因此获得了奖金。\n我们预计只卖30台。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0649f9c004cc6afce0f7c0ded0cb171feabda66d7d932b36dce7182e1140806b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "D",
       "question": "Why is the man calling the woman's company?",
-      "answer_explain": "原文依据：听力原文中提到“have a phone interview for the sales manager position.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To interview for a job）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the man（男士） calling the woman（女士）'s company（公司）?",
+      "answer_explain": "正确答案：D（To interview for a job）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the man(男士) calling the woman(女士)'s company(公司)?",
       "choice_translations": [
-        "A：To make an appointment（预约）",
-        "B：To discuss a problem",
-        "C：To place an order（订单）",
-        "D：To interview for a job"
+        "A:To make an appointment(预约)",
+        "B:To discuss a problem",
+        "C:To place an order(订单)",
+        "D:To interview for a job"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：m Hi. My name's Bradley Mitchell. Ol'm calling because",
+      "evidence": "参考听力原文：“I'm calling because I have a phone interview for the sales manager position.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：m Hi. My name's Bradley Mitchell. Ol'm calling because",
+        "evidence": "参考听力原文：“I'm calling because I have a phone interview for the sales manager position.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“have a phone interview for the sales manager position.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To interview for a job）。"
+        "analysis": "正确答案：D（To interview for a job）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "A",
       "question": "What will the woman's company do next month?",
-      "answer_explain": "原文依据：听力原文中提到“promoting new products?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Introduce a new line of products）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士）'s company（公司） do next month?",
+      "answer_explain": "正确答案：A（Introduce a new line of products）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士)'s company(公司) do next month?",
       "choice_translations": [
-        "A：Introduce a new line of products",
-        "B：Offer a discount",
-        "C：Celebrate an anniversary",
-        "D：Open a new location"
+        "A:Introduce a new line of products",
+        "B:Offer a discount",
+        "C:Celebrate an anniversary",
+        "D:Open a new location"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 9 段：Es w That's great! © Next month, we'll be launching a line",
+      "evidence": "参考听力原文：“Next month, we'll be launching a line of kitchen appliances.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 9 段：Es w That's great! © Next month, we'll be launching a line",
+        "evidence": "参考听力原文：“Next month, we'll be launching a line of kitchen appliances.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“promoting new products?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Introduce a new line of products）。"
+        "analysis": "正确答案：A（Introduce a new line of products）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "B",
       "question": "Why did the man receive a bonus?",
-      "answer_explain": "原文依据：听力原文中提到“Oln fact, I received a bonus for selling over 50”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（For exceeding a salesgoal）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） did the man（男士） receive a bonus?",
+      "answer_explain": "正确答案：B（For exceeding a salesgoal）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) did the man(男士) receive a bonus?",
       "choice_translations": [
-        "A：For completing a projectearly",
-        "B：For exceeding a salesgoal",
-        "C：For making a customer（顾客） referral",
-        "D：For promoting safety"
+        "A:For completing a projectearly",
+        "B:For exceeding a salesgoal",
+        "C:For making a customer(顾客) referral",
+        "D:For promoting safety"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 12 段：m Yes! Oln fact, I received a bonus for selling over 50",
+      "evidence": "参考听力原文：“In fact, I received a bonus for selling over 50 power drills in the first two weeks they were available.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 12 段：m Yes! Oln fact, I received a bonus for selling over 50",
+        "evidence": "参考听力原文：“In fact, I received a bonus for selling over 50 power drills in the first two weeks they were available.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Oln fact, I received a bonus for selling over 50”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（For exceeding a salesgoal）。"
+        "analysis": "正确答案：B（For exceeding a salesgoal）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

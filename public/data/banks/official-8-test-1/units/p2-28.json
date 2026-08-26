@@ -27,8 +27,28 @@
       "asset_key": "official-8-test-1/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Could you make some changes to the building plans?",
-    "content_translation": "中文辅助（离线预处理）：Could you make some changes to the building plans?"
+    "transcript": "Could you make some changes to the building plans?\nA. No, I didn't go there.\nB. All right, but I need to log on to my computer first.\nC. I bought a new car.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e4187accaa2c20c3912d420f22b48ab65c249164018c01f1b823358e82ad5c3c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-1/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 35
+      }
+    },
+    "transcript_translation": "你能对建筑图纸做一些修改吗？\nA. 不，我没去过那里。\nB. 好的，但我需要先登录我的电脑。\nC. 我买了一辆新车。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "eeb4c8677468a2fd2ad0e4867dcb6011b4d5d13aba38392de171569d4cdf720e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Could you make some changes to the building plans?”，自然应答是“All right, but I need to log on to my computer first.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（All right, but I need to log on to my computer first.）。",
-      "question_translation": "中文辅助（离线预处理）：Could you make some changes to the building plans?",
+      "question_translation": "你能对建筑图纸做一些修改吗?",
       "choice_translations": [
-        "A：No, I didn't go there.",
-        "B：All right, but I need to log on to my computer first.",
-        "C：I bought a new car."
+        "A：不,我没去过那里。",
+        "B：好的,但我需要先登录我的电脑。",
+        "C：我买了一辆新车。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：Could you make some changes to the building plans?",

@@ -31,8 +31,28 @@
       "asset_key": "official-2-test-2/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 其中一位男士正在修理一辆手推车上的轮子。\nB. 两名男士正在建造一道围栏。\nC. 其中一位男士正跪在地上。\nD. 两名男士正在铺设人行道。",
-    "content_translation": "A. 其中一位男士正在修理一辆手推车上的轮子。\nB. 两名男士正在建造一道围栏。\nC. 其中一位男士正跪在地上。\nD. 两名男士正在铺设人行道。"
+    "transcript": "A. One of the men is repairing a wheel on a cart.\nB. Two men are building a fence.\nC. One of the men is kneeling on the ground.\nD. Two men are paving a walkway.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "50efc2258b2843dfcb7e3fbe9939e2e0103c7002ced04c4a4ffe8ee1583bc937",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 276
+      }
+    },
+    "transcript_translation": "A. 其中一位男士正在修理一辆手推车上的轮子。\nB. 两名男士正在建造一道围栏。\nC. 其中一位男士正跪在地上。\nD. 两名男士正在铺设一条人行道。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8288d148f54b6124f483ccec2366cb007ad4bcd7024cb19bec79f276b450d9c3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -51,7 +71,7 @@
         "A：其中一位男士正在修理一辆手推车上的轮子。",
         "B：两名男士正在建造一道围栏。",
         "C：其中一位男士正跪在地上。",
-        "D：两名男士正在铺设人行道。"
+        "D：两名男士正在铺设一条人行道。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p1-6/6"
+      "item_key": "official-2-test-2/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

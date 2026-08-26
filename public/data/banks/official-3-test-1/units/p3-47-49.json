@@ -37,9 +37,31 @@
       "asset_key": "official-3-test-1/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "Flv Hi, ®! need some help with this mobile phone that\nbought at your shop. Whenever | make a call,\ncan hear the person on the other end, but that\nperson can’t hear me.\nHmm. It sounds like there might be something\nwrong with the microphone. Have you dropped\nthe phone recently?\nNo, | haven't. In fact, | just bought it yesterday!\nSometimes there’s a manufacturing defect. Let me\ntake a look at your phone to see if that’s the case.\nif it is, then we can give you a brand-new one at\nno cost.",
-    "transcript_translation": "Flv 您好，我需要您帮我处理一部在您的店买的手机。每当我打电话时，我能听到对方的声音，但对方听不到我的声音。嗯。听起来麦克风可能有问题。你最近掉过手机吗？没有。事实上，我昨天刚买的！有时候是制造缺陷。让我看看你的手机，看看是不是这样。如果是的话，我们可以免费给你一台全新的。",
-    "content_translation": "Flv 您好，我需要您帮我处理一部在您的店买的手机。每当我打电话时，我能听到对方的声音，但对方听不到我的声音。嗯。听起来麦克风可能有问题。你最近掉过手机吗？没有。事实上，我昨天刚买的！有时候是制造缺陷。让我看看你的手机，看看是不是这样。如果是的话，我们可以免费给你一台全新的。"
+    "transcript": "Hi, I need some help with this mobile phone that I bought at your shop.\nWhenever I make a call, I can hear the person on the other end, but that person can't hear me.\nHmm, it sounds like there might be something wrong with the microphone.\nHave you dropped the phone recently?\nNo, I haven't.\nIn fact, I just bought it yesterday.\nSometimes there's a manufacturing defect.\nLet me take a look at your phone to see if that's the case.\nIf it is, then we can give you a brand new one at no cost.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b06580a5217bf9804ec5ccf021b3f51f30768bb810092e7a99efb6219b1e4697",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 97,
+        "legacy_word_count": 91,
+        "length_ratio": 1.066,
+        "legacy_coverage": 0.978
+      }
+    },
+    "transcript_translation": "嗨，我需要帮我看看这部我在你们店买的手机。\n每当我打电话时，我能听到对方的声音，但对方听不到我的声音。\n嗯，听起来像是麦克风可能有问题。\n你最近掉过手机吗？\n没有，没有。\n事实上，我昨天刚买的。\n有时候会有制造缺陷。\n让我看看你的手机，确认一下是否是这样。\n如果是的话，我们可以免费给你一台全新的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f7617e68de96b006f12d4e4b16be98e22d91e85607a6c4053575808f63f4dc13"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "D",
       "question": "What is the man’s problem?",
-      "answer_explain": "原文依据：听力原文中提到“take a look at your phone to see if that’s the case.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（His phone is not working properly.）。",
-      "question_translation": "男人的问题是什么？",
+      "answer_explain": "正确答案：D（His phone is not working properly.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男人的问题是什么?",
       "choice_translations": [
-        "A：他找不到一个文件。",
-        "B：他迟到了约会。",
-        "C：他的工作场所非常吵闹。",
-        "D：他的手机没有正常工作。"
+        "A:他找不到一个文件。",
+        "B:他迟到了约会。",
+        "C:他的工作场所非常吵闹。",
+        "D:他的手机没有正常工作。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Flv Hi, ®! need some help with this mobile phone that",
+      "evidence": "参考听力原文：“Hi, I need some help with this mobile phone that I bought at your shop.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Flv Hi, ®! need some help with this mobile phone that",
+        "evidence": "参考听力原文：“Hi, I need some help with this mobile phone that I bought at your shop.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“take a look at your phone to see if that’s the case.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（His phone is not working properly.）。"
+        "analysis": "正确答案：D（His phone is not working properly.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "C",
       "question": "What does the woman ask the man about?",
-      "answer_explain": "原文依据：听力原文中提到“take a look at your phone to see if that’s the case.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Whether he damaged a device）。",
-      "question_translation": "女士问男士什么？",
+      "answer_explain": "正确答案：C（Whether he damaged a device）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士问男士什么?",
       "choice_translations": [
-        "A：他试图联系谁",
-        "B：他何时购买的",
-        "C：他是否损坏了设备",
-        "D：物品的型号是什么"
+        "A:他试图联系谁",
+        "B:他何时购买的",
+        "C:他是否损坏了设备",
+        "D:物品的型号是什么"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Flv Hi, ®! need some help with this mobile phone that",
+      "evidence": "参考听力原文：“Whenever I make a call, I can hear the person on the other end, but that person can't hear me.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Flv Hi, ®! need some help with this mobile phone that",
+        "evidence": "参考听力原文：“Whenever I make a call, I can hear the person on the other end, but that person can't hear me.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“take a look at your phone to see if that’s the case.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Whether he damaged a device）。"
+        "analysis": "正确答案：C（Whether he damaged a device）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "A",
       "question": "What does the woman offer to do?",
-      "answer_explain": "原文依据：听力原文中提到“take a look at your phone to see if that’s the case.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Provide a replacement）。",
-      "question_translation": "女士提出做什么？",
+      "answer_explain": "正确答案：A（Provide a replacement）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士提出做什么?",
       "choice_translations": [
-        "A：提供一个替代品",
-        "B：给予折扣",
-        "C：叫主管",
-        "D：检查储藏室"
+        "A:提供一个替代品",
+        "B:给予折扣",
+        "C:叫主管",
+        "D:检查储藏室"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Flv Hi, ®! need some help with this mobile phone that",
+      "evidence": "参考听力原文：“Whenever I make a call, I can hear the person on the other end, but that person can't hear me.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Flv Hi, ®! need some help with this mobile phone that",
+        "evidence": "参考听力原文：“Whenever I make a call, I can hear the person on the other end, but that person can't hear me.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“take a look at your phone to see if that’s the case.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Provide a replacement）。"
+        "analysis": "正确答案：A（Provide a replacement）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

@@ -27,38 +27,58 @@
       "asset_key": "official-9-test-1/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Im Why（为什么） is the computer network down?",
-    "content_translation": "中文辅助（离线预处理）：Im Why（为什么） is the computer network down?"
+    "transcript": "Why is the computer network down?\nA. The networking event was fun.\nB. Because of the storm.\nC. I'm not sure which model I'll buy.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b856ef404edfa4e36ff3469fc4f926e4cdf48c6ad6374a3ffb57eea6dbf01f4e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "为什么电脑网络瘫痪了？\nA. 网络活动很有趣。\nB. 因为暴风雨。\nC. 我不确定我会买哪个型号的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "30afdc5020971f80d6ba1d65fbc0b55286aac26048c2b55e3c0828347287d6ec"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "The networking event was fun.",
         "Because of the storm.",
-        "I'm not sure which model l'll buy."
+        "I'm not sure which model I'll buy."
       ],
       "answer": "B",
-      "question": "Im Why is the computer network down?",
+      "question": "Why is the computer network down?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Im Why is the computer network down?”，自然应答是“Because of the storm.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because of the storm.）。",
-      "question_translation": "中文辅助（离线预处理）：Im Why（为什么） is the computer network down?",
+      "answer_explain": "原文依据：问句或陈述是“Why is the computer network down?”，自然应答是“Because of the storm.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because of the storm.）。",
+      "question_translation": "为什么电脑网络瘫痪了?",
       "choice_translations": [
-        "A：The networking event was fun.",
-        "B：Because of the storm.",
-        "C：I'm not sure which model l'll buy."
+        "A：网络活动很有趣。",
+        "B：因为暴风雨。",
+        "C：我不确定我会买哪个型号的。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：Im Why is the computer network down?",
+      "evidence": "参考原文第 1 段：Why is the computer network down?",
       "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：Im Why is the computer network down?",
+        "evidence": "参考原文第 1 段：Why is the computer network down?",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Im Why is the computer network down?”，自然应答是“Because of the storm.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because of the storm.）。"
+        "analysis": "原文依据：问句或陈述是“Why is the computer network down?”，自然应答是“Because of the storm.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Because of the storm.）。"
       },
       "item_id": 8,
       "priority": {

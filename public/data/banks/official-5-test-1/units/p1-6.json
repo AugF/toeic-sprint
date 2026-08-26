@@ -32,13 +32,33 @@
       "asset_key": "official-5-test-1/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. Umbrellaes are being carried through a park.\nB. Employees are repairing a doorway.\nC. Furniture is arranged in an outdoor area.\nD. Servers are delivering food to customers.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8444be585a60aa653fbb67bea53dd0805379517de7d02d6289d0d4c58f0fe9cb",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 269
+      }
+    },
+    "transcript_translation": "A. 雨伞们正穿过一个公园被携带。\nB. 员工们正在修理一个门道。\nC. 家具被布置在一个户外区域里。\nD. 服务员们正在给顾客送餐。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1dcf7a68266e1e01a84bff38a851204443a2104e45f5d170290fc0ca16881dbd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Umbrellas are being carried through a park.",
+        "Umbrellaes are being carried through a park.",
         "Employees are repairing a doorway.",
         "Furniture is arranged in an outdoor area.",
         "Servers are delivering food to customers."
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Furniture is arranged in an outdoor area.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（Furniture is arranged in an outdoor area.）。",
       "choice_translations": [
-        "A：Umbrellas are being carried through a park.",
-        "B：Employees are repairing a doorway.",
-        "C：Furniture is arranged in an outdoor area.",
-        "D：Servers are delivering food to customers."
+        "A：雨伞们正穿过一个公园被携带。",
+        "B：员工们正在修理一个门道。",
+        "C：家具被布置在一个户外区域里。",
+        "D：服务员们正在给顾客送餐。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-5-test-1/p1-6/6"
+      "item_key": "official-5-test-1/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

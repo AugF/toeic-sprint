@@ -31,8 +31,28 @@
       "asset_key": "official-12-test-2/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. A worker is directing customers to the checkout counter.\nB. A worker is loading merchandise into a vehicle.\nC. One of the customers is stacking some crates.\nD. One of the customers is inspecting a vegetable.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fb02a74ba683c25a4832f2fd73c264b60ed60214703329d9fe7aa31aa564b289",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 48
+      }
+    },
+    "transcript_translation": "A. 一名工人正在指引顾客前往收银台。\nB. 一名工人正在把商品装载到车里。\nC. 其中一位顾客正在堆一些箱子。\nD. 其中一位顾客正在检查蔬菜。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "90e6a42cdcbcd9d6b2d28c44c9f412df6b8b0ad621b0433875368f54d507e440"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“One of the customers is inspecting a vegetable.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（One of the customers is inspecting a vegetable.）。",
       "choice_translations": [
-        "A：A worker is directing customers to the checkout counter.",
-        "B：A worker is loading merchandise into a vehicle.",
-        "C：One of the customers is stacking some crates.",
-        "D：One of the customers is inspecting a vegetable."
+        "A：一名工人正在指引顾客前往收银台。",
+        "B：一名工人正在把商品装载到车里。",
+        "C：其中一位顾客正在堆一些箱子。",
+        "D：其中一位顾客正在检查蔬菜。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-12-test-2/p1-6/6"
+      "item_key": "official-12-test-2/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

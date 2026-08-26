@@ -40,9 +40,33 @@
       "asset_key": "official-11-test-1/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "Welcome to our twenty-fifth annual software development\nconference. We have an exciting agenda prepared for you,\nincluding three keynote speeches. Our first speaker,\nRodrigo Flores, is the creator of the mobile phone application\nPocket Me, which currently has over a million users. And it\nwas launched six months ago! You can find where he'll be\ngiving his speech in our online program. Remember that\nfor the first time, this year the conference is paper-free-use\nany of the QR codes available to access the schedule.",
-    "transcript_translation": "欢迎参加我们的第二十五届年度软件开发大会。我们为大家准备了精彩的议程，其中包括三场主题演讲。第一位演讲者罗德里戈·弗洛雷斯是手机应用 Pocket Me 的开发者，该应用目前已有一百多万名用户。而它仅在六个月前才发布！大家可以在我们的在线议程中查到他的演讲地点。请记住，今年大会首次实行无纸化，请使用现场提供的任意二维码查看日程。",
-    "content_translation": "本段听力围绕“科技会议”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "Welcome to our 25th Annual Software Development Conference.\nWe have an exciting agenda prepared for you, including three keynote speeches.\nOur first speaker, Rodrigo Flores, is the creator of the mobile phone application PocketMe, which currently has over a million users, and... it was launched six months ago.\nYou can find where he'll be giving his speech in our online program.\nRemember that for the first time, this year the conference is paper-free.\nUse any of the QR codes available to access the schedule.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "aaf8da6117144b58eba583da2932d69950b169b77c8afef4210b480dd605cd4e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 84,
+        "legacy_word_count": 83,
+        "length_ratio": 1.012,
+        "legacy_coverage": 0.952,
+        "prompted_failure": "missing spoken Questions 77 through 79 introduction"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "欢迎参加我们第25届年度软件开发大会。\n我们为您准备了激动人心的议程，包括三个主题演讲。\n我们的第一位演讲者 Rodrigo Flores 是移动电话应用程序 PocketMe 的创建者，该应用目前拥有超过一百万用户，并且……它是在六个月前推出的。\n您可以在我们的在线节目中找到他发表演讲的地点。\n请记住，今年首次，本次大会是无纸化的。\n使用任何可用的二维码来查阅日程。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4893aed88d836a55cdd9c6d51a08d3a98cec537f818fbd3d7c675536710c3be2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,24 +78,24 @@
         "Hospitality"
       ],
       "answer": "C",
-      "answer_explain": "原文依据：开场明确说 annual software development conference。 选择理由：听众最可能来自technology行业，对应C。正确答案：C（Technology）。",
+      "answer_explain": "正确答案：C（Technology）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 1 段第 1 句：Welcome to our twenty-fifth annual software development",
+      "evidence": "参考听力原文：“Our first speaker, Rodrigo Flores, is the creator of the mobile phone application PocketMe, which currently has over a million users, and... it was launched six months ago.”",
       "choice_translations": [
-        "A：娱乐业",
-        "B：制造业",
-        "C：科技业",
-        "D：酒店服务业"
+        "A:娱乐业",
+        "B:制造业",
+        "C:科技业",
+        "D:酒店服务业"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 1 段第 1 句：Welcome to our twenty-fifth annual software development",
+        "evidence": "参考听力原文：“Our first speaker, Rodrigo Flores, is the creator of the mobile phone application PocketMe, which currently has over a million users, and... it was launched six months ago.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：开场明确说 annual software development conference。 选择理由：听众最可能来自technology行业，对应C。正确答案：C（Technology）。"
+        "analysis": "正确答案：C（Technology）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "听众最可能在哪个行业工作？",
+      "question_translation": "听众最可能在哪个行业工作?",
       "item_id": 77,
       "priority": {
         "level": "P1",
@@ -107,24 +131,24 @@
         "A product is not well-known."
       ],
       "answer": "B",
-      "answer_explain": "原文依据：Pocket Me launched six months ago，却 already has over a million users。 选择理由：短期内达到百万用户说明迅速成功，对应B。正确答案：B（A product became successful rapidly）。",
+      "answer_explain": "正确答案：B（A product became successful rapidly）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "推断题",
-      "evidence": "参考原文第 3 段第 1 句：including three keynote speeches. Our first speaker,",
+      "evidence": "参考听力原文：“Our first speaker, Rodrigo Flores, is the creator of the mobile phone application PocketMe, which currently has over a million users, and... it was launched six months ago.”",
       "choice_translations": [
-        "A：一款产品将停止销售。",
-        "B：一款产品迅速取得了成功。",
-        "C：一款产品延期发布了。",
-        "D：一款产品知名度不高。"
+        "A:一款产品将停止销售。",
+        "B:一款产品迅速取得了成功。",
+        "C:一款产品延期发布了。",
+        "D:一款产品知名度不高。"
       ],
       "strategy": "本题属于推断题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 3 段第 1 句：including three keynote speeches. Our first speaker,",
+        "evidence": "参考听力原文：“Our first speaker, Rodrigo Flores, is the creator of the mobile phone application PocketMe, which currently has over a million users, and... it was launched six months ago.”",
         "strategy": "本题属于推断题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：Pocket Me launched six months ago，却 already has over a million users。 选择理由：短期内达到百万用户说明迅速成功，对应B。正确答案：B（A product became successful rapidly）。"
+        "analysis": "正确答案：B（A product became successful rapidly）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者说“它仅在六个月前才发布”暗示了什么？",
+      "question_translation": "说话者说“它仅在六个月前才发布”暗示了什么?",
       "item_id": 78,
       "priority": {
         "level": "P1",
@@ -160,24 +184,24 @@
         "It is not providing printed materials."
       ],
       "answer": "D",
-      "answer_explain": "原文依据：今年 for the first time, the conference is paper-free。 选择理由：新变化是没有纸质材料，对应D。正确答案：D（It is not providing printed materials.）。",
+      "answer_explain": "正确答案：D（It is not providing printed materials.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "主旨 / 场景题",
-      "evidence": "参考原文第 2 段第 1 句：conference. We have an exciting agenda prepared for you,",
+      "evidence": "参考听力原文：“Welcome to our 25th Annual Software Development Conference.”",
       "choice_translations": [
-        "A：活动将持续三天。",
-        "B：活动包括一项参会者竞赛。",
-        "C：活动将不设现场交流环节。",
-        "D：活动不提供印刷材料。"
+        "A:活动将持续三天。",
+        "B:活动包括一项参会者竞赛。",
+        "C:活动将不设现场交流环节。",
+        "D:活动不提供印刷材料。"
       ],
       "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 场景题",
-        "evidence": "参考原文第 2 段第 1 句：conference. We have an exciting agenda prepared for you,",
+        "evidence": "参考听力原文：“Welcome to our 25th Annual Software Development Conference.”",
         "strategy": "本题属于主旨 / 场景题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
-        "analysis": "原文依据：今年 for the first time, the conference is paper-free。 选择理由：新变化是没有纸质材料，对应D。正确答案：D（It is not providing printed materials.）。"
+        "analysis": "正确答案：D（It is not providing printed materials.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "今年的大会有什么新变化？",
+      "question_translation": "今年的大会有什么新变化?",
       "item_id": 79,
       "priority": {
         "level": "P1",

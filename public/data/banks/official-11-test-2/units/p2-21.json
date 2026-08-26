@@ -28,38 +28,58 @@
       "asset_key": "official-11-test-2/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Im Is the lumber delivery arriving at the warehou today?\nEW",
-    "content_translation": "中文辅助（离线预处理）：Im Is the lumber delivery arriving at the warehou today?\nEW"
+    "transcript": "Is the lumber delivery arriving at the warehouse today?\nA. Smith's Marketing and Sales.\nB. The driver is out sick today.\nC. A multi-year contract.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "146a9deeb5f650ab8fe031ba0b3d1a8d14133377008254725deaef115eedf431",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "木材的运送今天会到达仓库吗？\nA. Smith's Marketing and Sales。\nB. 司机今天病假。\nC. 一份多年合同。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "fdedbc8528ece90e045b0d9f626f3974789670698983743414e3ccaebf20dda7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Smith's Marketing and Sales.",
         "The driver is out sick today.",
-        "A multiyear contract."
+        "A multi-year contract."
       ],
       "answer": "B",
-      "question": "Im Is the lumber delivery arriving at the warehou today? EW",
+      "question": "Is the lumber delivery arriving at the warehouse today?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述为“Im Is the lumber delivery arriving at the warehou today? EW”，官方正确应答是“The driver is out sick today.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（The driver is out sick today.）。",
-      "question_translation": "中文辅助（离线预处理）：Im Is the lumber delivery arriving at the warehou today?\nEW",
+      "answer_explain": "原文依据：问句或陈述为“Is the lumber delivery arriving at the warehouse today?”，官方正确应答是“The driver is out sick today.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（The driver is out sick today.）。",
+      "question_translation": "木材的运送今天会到达仓库吗?",
       "choice_translations": [
-        "A：Smith's Marketing and Sales.",
-        "B：The driver is out sick today.",
-        "C：A multiyear contract."
+        "A：Smith's Marketing and Sales。",
+        "B：司机今天病假。",
+        "C：一份多年合同。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Im Is the lumber delivery arriving at the warehou today? EW",
+      "evidence": "参考原文第 1 段：Is the lumber delivery arriving at the warehouse today?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Im Is the lumber delivery arriving at the warehou today? EW",
+        "evidence": "参考原文第 1 段：Is the lumber delivery arriving at the warehouse today?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“Im Is the lumber delivery arriving at the warehou today? EW”，官方正确应答是“The driver is out sick today.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（The driver is out sick today.）。"
+        "analysis": "原文依据：问句或陈述为“Is the lumber delivery arriving at the warehouse today?”，官方正确应答是“The driver is out sick today.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：B（The driver is out sick today.）。"
       },
       "item_id": 21,
       "priority": {

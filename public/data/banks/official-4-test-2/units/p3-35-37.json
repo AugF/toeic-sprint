@@ -41,9 +41,32 @@
       "asset_key": "official-4-test-2/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "elu This is Mr. Yu from Caster Bank. | received a\nmessage that your news program wants to do a rep\nabout @the seventy-fifth anniversary of our bank.\nYes, thanks for returning my call. We're excited to\nfeature Caster Bank because © you're the oldest be\nin the region. Our viewers will be interested in your\nbank’s history.\nIw Then you should interview the bank president.\nShe’s been with the bank for many years and is ver\nknowledgeable.\nER w Great... could | bring a cameraman so we can get\nsome footage of the bank for the segment?\nu Sure. But S you'll need a special press pass for taki\nvideo. I'll contact the security department and have\none ready for you.",
-    "transcript_translation": "中文辅助（离线预处理）：elu This is Mr.\nYu from Caster Bank.\n| received a\nmessage that your news program wants to do a rep\nabout @the seventy-fifth anniversary of our bank.\nYes, thanks for returning my call.\nWe're excited to\nfeature Caster Bank because © you're the oldest be\nin the region.\nOur viewers will be interested in your\nbank’s history.\nIw Then you should interview the bank president.\nShe’s been with the bank for many years and is ver\nknowledgeable.\nER w Great...\ncould | bring a cameraman so we can get\nsome footage of the bank for the segment?\nu Sure.\nBut S you'll need a special press pass for taki\nvideo.\nI'll contact the security department and have\none ready for you.",
-    "content_translation": "中文辅助（离线预处理）：elu This is Mr.\nYu from Caster Bank.\n| received a\nmessage that your news program wants to do a rep\nabout @the seventy-fifth anniversary of our bank.\nYes, thanks for returning my call.\nWe're excited to\nfeature Caster Bank because © you're the oldest be\nin the region.\nOur viewers will be interested in your\nbank’s history.\nIw Then you should interview the bank president.\nShe’s been with the bank for many years and is ver\nknowledgeable.\nER w Great...\ncould | bring a cameraman so we can get\nsome footage of the bank for the segment?\nu Sure.\nBut S you'll need a special press pass for taki\nvideo.\nI'll contact the security department and have\none ready for you."
+    "transcript": "This is Mr. Yu from Castor Bank.\nI received a message that your news program wants to do a report about the 75th anniversary of our bank.\nYes, thanks for returning my call.\nWe're excited to feature Castor Bank because you're the oldest bank in the region.\nOur viewers will be interested in your bank's history.\nThen you should interview the bank president.\nShe's been with the bank for many years and is very knowledgeable.\nGreat.\nCould I bring a cameraman so we can get some footage of the bank for the segment?\nSure, but you'll need a special press pass for taking video.\nI'll contact the security department and have one ready for you.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "75eecaf83baf3da34d5cdd66ce9e6e4f62c4fa15fb6def7f8a9f568122ac4e60",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 115,
+        "legacy_word_count": 117,
+        "length_ratio": 0.983,
+        "legacy_coverage": 0.906
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "我是来自 Castor Bank 的 Yu 先生。\n我收到消息说您的新闻节目想做一份关于我们银行成立 75 周年纪念的报道。\n是的，谢谢您回电给我。\n我们很高兴能介绍 Castor Bank，因为它是该地区最古老的银行。\n我们的观众会对贵行的历史感兴趣。\n那么您应该采访一下银行总裁。\n她已经在银行工作了很多年了，知识非常渊博。\n太好了。\n我可以带一名摄影师来吗？这样我们可以为节目拍摄一些银行的素材。\n当然可以，但您需要一个特殊的媒体通行证才能进行视频拍摄。\n我会联系安保部门，让您准备好一份。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0943354ab0c4a135ae48943f50614fe36a99e8bf022f9107a2ef5cb8911458c7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +78,23 @@
       ],
       "answer": "B",
       "question": "What is mentioned about Caster Bank?",
-      "answer_explain": "原文依据：听力原文中提到“feature Caster Bank because © you're the oldest be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（They have been in business a long time.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is mentioned about Caster Bank?",
+      "answer_explain": "正确答案：B（They have been in business a long time.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is mentioned about Caster Bank?",
       "choice_translations": [
-        "A：They are expanding overseas.",
-        "B：They have been in business a long time.",
-        "C：They contribute to many regional charities.",
-        "D：They finance local businesses."
+        "A:They are expanding overseas.",
+        "B:They have been in business a long time.",
+        "C:They contribute to many regional charities.",
+        "D:They finance local businesses."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：elu This is Mr. Yu from Caster Bank. | received a",
+      "evidence": "参考听力原文：“I received a message that your news program wants to do a report about the 75th anniversary of our bank.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：elu This is Mr. Yu from Caster Bank. | received a",
+        "evidence": "参考听力原文：“I received a message that your news program wants to do a report about the 75th anniversary of our bank.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“feature Caster Bank because © you're the oldest be”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（They have been in business a long time.）。"
+        "analysis": "正确答案：B（They have been in business a long time.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -109,23 +132,23 @@
       ],
       "answer": "C",
       "question": "What does the man suggest the woman do?",
-      "answer_explain": "原文依据：听力原文中提到“Iw Then you should interview the bank president.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Interview a bank president）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） suggest（表明/建议） the woman（女士） do?",
+      "answer_explain": "正确答案：C（Interview a bank president）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) suggest(表明/建议) the woman(女士) do?",
       "choice_translations": [
-        "A：Apply for a job",
-        "B：Open an account",
-        "C：Interview a bank president",
-        "D：Tour a bank building"
+        "A:Apply for a job",
+        "B:Open an account",
+        "C:Interview a bank president",
+        "D:Tour a bank building"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：elu This is Mr. Yu from Caster Bank. | received a",
+      "evidence": "参考听力原文：“Then you should interview the bank president.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：elu This is Mr. Yu from Caster Bank. | received a",
+        "evidence": "参考听力原文：“Then you should interview the bank president.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Iw Then you should interview the bank president.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Interview a bank president）。"
+        "analysis": "正确答案：C（Interview a bank president）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -163,23 +186,23 @@
       ],
       "answer": "D",
       "question": "What will the man probably do next?",
-      "answer_explain": "原文依据：听力原文中提到“But S you'll need a special press pass for taki”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Arrange for a press pass）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） probably（可能） do next?",
+      "answer_explain": "正确答案：D（Arrange for a press pass）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) probably(可能) do next?",
       "choice_translations": [
-        "A：Photocopy an article",
-        "B：Request an interview time",
-        "C：Set up a camera",
-        "D：Arrange for a press pass"
+        "A:Photocopy an article",
+        "B:Request an interview time",
+        "C:Set up a camera",
+        "D:Arrange for a press pass"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：elu This is Mr. Yu from Caster Bank. | received a",
+      "evidence": "参考听力原文：“Sure, but you'll need a special press pass for taking video.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：elu This is Mr. Yu from Caster Bank. | received a",
+        "evidence": "参考听力原文：“Sure, but you'll need a special press pass for taking video.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But S you'll need a special press pass for taki”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Arrange for a press pass）。"
+        "analysis": "正确答案：D（Arrange for a press pass）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

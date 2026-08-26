@@ -40,9 +40,32 @@
       "asset_key": "official-6-test-2/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "In local news, the town council announced that they're\nconsidering increasing the fee to drive across the Ashington\nBridge. ® The additional funds would be used to repair\nroads in the area. ® The council indicated that these repairs\nare necessary before the town hosts the statewide bicycle\nrace next May. ® Residents will be given the opportunity to\nexpress their opinions about the proposed bridge fee during\nnext month's town hall meeting.",
-    "transcript_translation": "中文辅助（离线预处理）：In local news, the town council announced that they're\nconsidering increasing the fee to drive across the Ashington\nBridge.\n® The additional funds would be used to repair\nroads in the area.\n® The council indicated that these repairs\nare necessary before the town hosts the statewide bicycle\nrace next May.\n® Residents will be given the opportunity to\nexpress their opinions about the proposed bridge fee during\nnext month's town hall meeting（会议）.",
-    "content_translation": "中文辅助（离线预处理）：In local news, the town council announced that they're\nconsidering increasing the fee to drive across the Ashington\nBridge.\n® The additional funds would be used to repair\nroads in the area.\n® The council indicated that these repairs\nare necessary before the town hosts the statewide bicycle\nrace next May.\n® Residents will be given the opportunity to\nexpress their opinions about the proposed bridge fee during\nnext month's town hall meeting（会议）."
+    "transcript": "In local news, the Town Council announced that they are considering increasing the fee to drive across the Ashington Bridge.\nThe additional funds would be used to repair roads in the area.\nThe Council indicated that these repairs are necessary before the Town hosts the statewide bicycle race next May.\nResidents will be given the opportunity to express their opinions about the proposed bridge fee during next month's town hall meeting.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "41cd34947e29659b0e2af209ab82399cff78cf2629705232213d7e77f6175c0d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part4/q086-088.mp3",
+      "metrics": {
+        "word_count": 71,
+        "legacy_word_count": 70,
+        "length_ratio": 1.014,
+        "legacy_coverage": 0.986,
+        "prompted_failure": "Part 4 contains navigation, OCR characters or repetition"
+      }
+    },
+    "transcript_translation": "在当地新闻中，镇议会宣布他们正在考虑提高过阿辛顿桥（Ashington Bridge）的通行费。\n额外的资金将用于修复该地区的道路。\n议会指出，这些维修工作是在本年五月镇举办全州自行车比赛之前必要的。\n居民将在下个月的市政厅会议上获得表达对拟议桥梁费用看法的机会。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "fa1dd5f0107543501f564aeefbc93db87d91527a05a29f56d60f25aff96ecd67"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +77,23 @@
       ],
       "answer": "D",
       "question": "What is the broadcast mainly about?",
-      "answer_explain": "原文依据：听力原文中提到“express their opinions about the proposed bridge fee during”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A proposal for a fee increase）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the broadcast mainly about?",
+      "answer_explain": "正确答案：D（A proposal for a fee increase）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the broadcast mainly about?",
       "choice_translations": [
-        "A：An update about a building renovation project",
-        "B：A plan to encourage recycling",
-        "C：A request for community volunteers",
-        "D：A proposal for a fee increase"
+        "A:An update about a building renovation project",
+        "B:A plan to encourage recycling",
+        "C:A request for community volunteers",
+        "D:A proposal for a fee increase"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：In local news, the town council announced that they're",
+      "evidence": "参考听力原文：“Residents will be given the opportunity to express their opinions about the proposed bridge fee during next month's town hall meeting.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：In local news, the town council announced that they're",
+        "evidence": "参考听力原文：“Residents will be given the opportunity to express their opinions about the proposed bridge fee during next month's town hall meeting.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“express their opinions about the proposed bridge fee during”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A proposal for a fee increase）。"
+        "analysis": "正确答案：D（A proposal for a fee increase）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 86,
       "priority": {
@@ -107,23 +130,23 @@
       ],
       "answer": "C",
       "question": "According to the broadcast, what will take place in May?",
-      "answer_explain": "原文依据：听力原文中提到“® The additional funds would be used to repair”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A sporting event）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the broadcast, what（什么） will take place in May?",
+      "answer_explain": "正确答案：C（A sporting event）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the broadcast, what(什么) will take place in May?",
       "choice_translations": [
-        "A：A local election",
-        "B：A park expansion",
-        "C：A sporting event",
-        "D：A town festival"
+        "A:A local election",
+        "B:A park expansion",
+        "C:A sporting event",
+        "D:A town festival"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：In local news, the town council announced that they're",
+      "evidence": "参考听力原文：“Residents will be given the opportunity to express their opinions about the proposed bridge fee during next month's town hall meeting.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：In local news, the town council announced that they're",
+        "evidence": "参考听力原文：“Residents will be given the opportunity to express their opinions about the proposed bridge fee during next month's town hall meeting.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® The additional funds would be used to repair”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A sporting event）。"
+        "analysis": "正确答案：C（A sporting event）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 87,
       "priority": {
@@ -160,23 +183,23 @@
       ],
       "answer": "B",
       "question": "What will the listeners have an opportunity to do next month?",
-      "answer_explain": "原文依据：听力原文中提到“® Residents will be given the opportunity to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Provide some feedback）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the listeners have an opportunity to do next month?",
+      "answer_explain": "正确答案：B（Provide some feedback）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the listeners have an opportunity to do next month?",
       "choice_translations": [
-        "A：Join a committee",
-        "B：Provide some feedback",
-        "C：Review a floor plan",
-        "D：Purchase（购买） advance tickets"
+        "A:Join a committee",
+        "B:Provide some feedback",
+        "C:Review a floor plan",
+        "D:Purchase(购买) advance tickets"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：race next May. ® Residents will be given the opportunity to",
+      "evidence": "参考听力原文：“Residents will be given the opportunity to express their opinions about the proposed bridge fee during next month's town hall meeting.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：race next May. ® Residents will be given the opportunity to",
+        "evidence": "参考听力原文：“Residents will be given the opportunity to express their opinions about the proposed bridge fee during next month's town hall meeting.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® Residents will be given the opportunity to”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Provide some feedback）。"
+        "analysis": "正确答案：B（Provide some feedback）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 88,
       "priority": {

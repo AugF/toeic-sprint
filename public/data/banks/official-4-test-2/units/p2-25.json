@@ -26,8 +26,28 @@
       "asset_key": "official-4-test-2/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：M When（何时） will the next financial report be coming Hw",
-    "content_translation": "中文辅助（离线预处理）：M When（何时） will the next financial report be coming Hw"
+    "transcript": "When will the next financial report be coming out?\nA. Yes, they did.\nB. In the financial district.\nC. Kevin would know that.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "96d07ee35767868062c9d15e0c03b84901a5558a57e4194139232cf328fa5569",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "下一次财务报告什么时候出来？\nA. 是的，他们做了。\nB. 在金融区。\nC. Kevin 会知道的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7bbcf8189365b47cff9cfd5bd91e2d0751b5c6bafcc4018154ac91c723786563"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "Kevin would know that."
       ],
       "answer": "C",
-      "question": "M When will the next financial report be coming Hw",
+      "question": "When will the next financial report be coming out?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M When will the next financial report be coming Hw”，自然应答是“Kevin would know that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Kevin would know that.）。",
-      "question_translation": "中文辅助（离线预处理）：M When（何时） will the next financial report be coming Hw",
+      "answer_explain": "原文依据：问句或陈述是“When will the next financial report be coming out?”，自然应答是“Kevin would know that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Kevin would know that.）。",
+      "question_translation": "下一次财务报告什么时候出来?",
       "choice_translations": [
-        "A：Yes, they did.",
-        "B：In the financial district.",
-        "C：Kevin would know that."
+        "A：是的,他们做了。",
+        "B：在金融区。",
+        "C：Kevin 会知道的。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M When will the next financial report be coming Hw",
+      "evidence": "参考原文第 1 段：When will the next financial report be coming out?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M When will the next financial report be coming Hw",
+        "evidence": "参考原文第 1 段：When will the next financial report be coming out?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“M When will the next financial report be coming Hw”，自然应答是“Kevin would know that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Kevin would know that.）。"
+        "analysis": "原文依据：问句或陈述是“When will the next financial report be coming out?”，自然应答是“Kevin would know that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Kevin would know that.）。"
       },
       "item_id": 25,
       "priority": {

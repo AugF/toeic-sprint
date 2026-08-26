@@ -26,8 +26,28 @@
       "asset_key": "official-5-test-1/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） is the keynote speaker（说话者） staying?",
-    "content_translation": "中文辅助（离线预处理）：Where（哪里） is the keynote speaker（说话者） staying?"
+    "transcript": "Where is the keynote speaker sting?\nA. Let me test the microphone.\nB. Something about medical research.\nC. At the Linden Hotel.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d2e337735c922641adf4fc15ff79fd2a46e64788e471837bcf4a2d4a5c7e5d18",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "关键演讲者麦克风在哪里？\nA. 让我测试一下麦克风。\nB. 有关医学研究的事情。\nC. 在林登酒店。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "e6b88269cc6846e89680cd6ba6e73d2bf3a246a98165681bf9453e56a5d60f6c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "At the Linden Hotel."
       ],
       "answer": "C",
-      "question": "Where is the keynote speaker staying?",
+      "question": "Where is the keynote speaker sting?",
       "difficulty": "easy",
       "topic": "地点询问",
       "keywords": "where location response",
-      "answer_explain": "原文依据：问句或陈述是“Where is the keynote speaker staying?”，自然应答是“At the Linden Hotel.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（At the Linden Hotel.）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the keynote speaker（说话者） staying?",
+      "answer_explain": "原文依据：问句或陈述是“Where is the keynote speaker sting?”，自然应答是“At the Linden Hotel.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（At the Linden Hotel.）。",
+      "question_translation": "关键演讲者麦克风在哪里?",
       "choice_translations": [
-        "A：Let me test the microphone.",
-        "B：Something about medical research.",
-        "C：At the Linden Hotel."
+        "A：让我测试一下麦克风。",
+        "B：有关医学研究的事情。",
+        "C：在林登酒店。"
       ],
       "question_type": "地点疑问句",
-      "evidence": "参考原文第 1 段：Where is the keynote speaker staying?",
+      "evidence": "参考原文第 1 段：Where is the keynote speaker sting?",
       "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "地点疑问句",
-        "evidence": "参考原文第 1 段：Where is the keynote speaker staying?",
+        "evidence": "参考原文第 1 段：Where is the keynote speaker sting?",
         "strategy": "先识别地点疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Where is the keynote speaker staying?”，自然应答是“At the Linden Hotel.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（At the Linden Hotel.）。"
+        "analysis": "原文依据：问句或陈述是“Where is the keynote speaker sting?”，自然应答是“At the Linden Hotel.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（At the Linden Hotel.）。"
       },
       "item_id": 17,
       "priority": {

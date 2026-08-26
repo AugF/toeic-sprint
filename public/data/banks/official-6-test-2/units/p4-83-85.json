@@ -41,9 +41,31 @@
       "asset_key": "official-6-test-2/audio/part4/q083-085.mp3",
       "exists": true
     },
-    "transcript": "a meeting.\nNext on the agenda, I would like to discuss the prototype\nof our new refrigerator model, the Arctic Fox. ® This is the\nfirst refrigerator we plan to manufacture using material that\nis extremely lightweight yet durable. Unfortunately, using this\nnew special material could add to the production costs. So\nl've invited everyone from the Manufacturing Department\nhere to get your input on modifications we can make to the\nmanufacturing process for this appliance. I need your\nsuggestions on ways we can reduce production costs.",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议）.\nNext on the agenda, I would like to discuss the prototype\nof our new refrigerator model, the Arctic Fox.\n® This is the\nfirst refrigerator we plan to manufacture using material that\nis extremely lightweight yet durable.\nUnfortunately, using this\nnew special material could add to the production costs.\nSo\nl've invited everyone from the Manufacturing Department\nhere to get your input on modifications we can make to the\nmanufacturing process for this appliance.\nI need your\nsuggestions on ways we can reduce production costs.",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议）.\nNext on the agenda, I would like to discuss the prototype\nof our new refrigerator model, the Arctic Fox.\n® This is the\nfirst refrigerator we plan to manufacture using material that\nis extremely lightweight yet durable.\nUnfortunately, using this\nnew special material could add to the production costs.\nSo\nl've invited everyone from the Manufacturing Department\nhere to get your input on modifications we can make to the\nmanufacturing process for this appliance.\nI need your\nsuggestions on ways we can reduce production costs."
+    "transcript": "Next on the agenda, I would like to discuss the prototype of our new refrigerator model, the Arctic Fox.\nThis is the first refrigerator we plan to manufacture using material that is extremely lightweight yet durable.\nUnfortunately, using this new special material could add to the production costs.\nSo I've invited everyone from the Manufacturing Department here to get your input on modifications we can make to the production costs.\nI need your suggestions on ways we can reduce production costs.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "0b8a68c6d1b18e01d0f46ac06c391519cee3b0386cfd5cfc04d40e43c7cedc7d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part4/q083-085.mp3",
+      "metrics": {
+        "word_count": 81,
+        "legacy_word_count": 84,
+        "length_ratio": 0.964,
+        "legacy_coverage": 0.929
+      }
+    },
+    "transcript_translation": "接下来，我想讨论我们新款冰箱型号“北极狐”（Arctic Fox）的原型机。\n这是我们计划使用一种极其轻便但耐用材料制造的第一台冰箱。\n不幸的是，使用这种新型特殊材料可能会增加生产成本。\n所以我邀请了来自制造部门的各位来这里，听取大家关于如何修改以降低生产成本的意见。\n我需要大家就如何降低生产成本提供建议。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "33cef1acf226824a672e820437aa24276994abcd310830c2db317366655dbad2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "B",
       "question": "What product is the speaker discussing?",
-      "answer_explain": "原文依据：听力原文中提到“of our new refrigerator model, the Arctic Fox.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A refrigerator）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） product is the speaker（说话者） discussing?",
+      "answer_explain": "正确答案：B（A refrigerator）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) product is the speaker(说话者) discussing?",
       "choice_translations": [
-        "A：A car",
-        "B：A refrigerator",
-        "C：A computer",
-        "D：An air conditioner"
+        "A:A car",
+        "B:A refrigerator",
+        "C:A computer",
+        "D:An air conditioner"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：new special material could add to the production costs. So",
+      "evidence": "参考听力原文：“Next on the agenda, I would like to discuss the prototype of our new refrigerator model, the Arctic Fox.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：new special material could add to the production costs. So",
+        "evidence": "参考听力原文：“Next on the agenda, I would like to discuss the prototype of our new refrigerator model, the Arctic Fox.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“of our new refrigerator model, the Arctic Fox.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A refrigerator）。"
+        "analysis": "正确答案：B（A refrigerator）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 83,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "C",
       "question": "What does the speaker say is different about the product?",
-      "answer_explain": "原文依据：听力原文中提到“new special material could add to the production costs.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Its material）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say is different about the product?",
+      "answer_explain": "正确答案：C（Its material）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say is different about the product?",
       "choice_translations": [
-        "A：Its size",
-        "B：Its color",
-        "C：Its material",
-        "D：Its energy usage"
+        "A:Its size",
+        "B:Its color",
+        "C:Its material",
+        "D:Its energy usage"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 6 段：new special material could add to the production costs. So",
+      "evidence": "参考听力原文：“This is the first refrigerator we plan to manufacture using material that is extremely lightweight yet durable.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 6 段：new special material could add to the production costs. So",
+        "evidence": "参考听力原文：“This is the first refrigerator we plan to manufacture using material that is extremely lightweight yet durable.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“new special material could add to the production costs.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Its material）。"
+        "analysis": "正确答案：C（Its material）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 84,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker want suggestions about?",
-      "answer_explain": "原文依据：听力原文中提到“new special material could add to the production costs.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Lowering production costs）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） want suggestions about?",
+      "answer_explain": "正确答案：A（Lowering production costs）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) want suggestions about?",
       "choice_translations": [
-        "A：Lowering production costs",
-        "B：Finding qualified staff",
-        "C：Reorganizing a department",
-        "D：Responding to customer（顾客） complaints"
+        "A:Lowering production costs",
+        "B:Finding qualified staff",
+        "C:Reorganizing a department",
+        "D:Responding to customer(顾客) complaints"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 10 段：suggestions on ways we can reduce production costs.",
+      "evidence": "参考听力原文：“I need your suggestions on ways we can reduce production costs.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 10 段：suggestions on ways we can reduce production costs.",
+        "evidence": "参考听力原文：“I need your suggestions on ways we can reduce production costs.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“new special material could add to the production costs.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Lowering production costs）。"
+        "analysis": "正确答案：A（Lowering production costs）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 85,
       "priority": {

@@ -31,8 +31,28 @@
       "asset_key": "official-6-test-1/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 一些人正在排队进入一辆车。\nB. 一些人正在把行李带进房子里。\nC. 一些人正在从街道上清理树叶。\nD. 一些人正在给树修剪树枝。",
-    "content_translation": "A. 一些人正在排队进入一辆车。\nB. 一些人正在把行李带进房子里。\nC. 一些人正在从街道上清理树叶。\nD. 一些人正在给树修剪树枝。"
+    "transcript": "A. Some people are waiting to get into a vehicle.\nB. Some people are taking luggage into a house.\nC. Some people are removing leaves from a street.\nD. Some people are cutting branches from a tree.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8e485a696c87fbcc2b24445c463c915aa95075febdde02b03ce76e8575d59550",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 48
+      }
+    },
+    "transcript_translation": "A. 有些人正在等待进入车辆。\nB. 有些人正在把行李带进房子。\nC. 有些人正在从街上清除树叶。\nD. 有些人正在给树剪枝。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "22e68e9aed34ad26dbce6e243dcb6adcd9f4c613a3457f80f14262c36852befd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some people are waiting to get into a vehicle.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（Some people are waiting to get into a vehicle.）。",
       "choice_translations": [
-        "A：一些人正在排队进入一辆车。",
-        "B：一些人正在把行李带进房子里。",
-        "C：一些人正在从街道上清理树叶。",
-        "D：一些人正在给树修剪树枝。"
+        "A：有些人正在等待进入车辆。",
+        "B：有些人正在把行李带进房子。",
+        "C：有些人正在从街上清除树叶。",
+        "D：有些人正在给树剪枝。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义和上下文判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-1/p1-3/3"
+      "item_key": "official-6-test-1/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -26,8 +26,28 @@
       "asset_key": "official-10-test-2/audio/part2/q020.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Who（谁） will lead the training session?\nM",
-    "content_translation": "中文辅助（离线预处理）：Who（谁） will lead the training session?\nM"
+    "transcript": "Who will lead the training session?\nA. The office is open in August.\nB. That makes sense to me.\nC. I didn't know one was planned.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b0516def7060cb94460ce9fd639c19e68b151f4384b81d9bbc7a8567b23baf92",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q020.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "谁将主持培训会议？\nA. 办公室八月会开门。\nB. 这对我来说很有道理。\nC. 我不知道计划了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "47e0e37cbdd0f3537ad516b3974a41efe5ce5b9bc3555b3e3a666851764b6b09"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -37,27 +57,27 @@
         "I didn't know one was planned."
       ],
       "answer": "C",
-      "question": "Who will lead the training session? M",
+      "question": "Who will lead the training session?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Who will lead the training session? M”，自然应答是“I didn't know one was planned.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I didn't know one was planned.）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） will lead the training session?\nM",
+      "answer_explain": "原文依据：问句或陈述是“Who will lead the training session?”，自然应答是“I didn't know one was planned.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I didn't know one was planned.）。",
+      "question_translation": "谁将主持培训会议?",
       "choice_translations": [
-        "A：The office（办公室） is open in August.",
-        "B：That makes sense to me.",
-        "C：I didn't know one was planned."
+        "A：办公室八月会开门。",
+        "B：这对我来说很有道理。",
+        "C：我不知道计划了。"
       ],
       "question_type": "人物疑问句",
-      "evidence": "参考原文第 1 段：Who will lead the training session? M",
+      "evidence": "参考原文第 1 段：Who will lead the training session?",
       "strategy": "先识别人物疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "人物疑问句",
-        "evidence": "参考原文第 1 段：Who will lead the training session? M",
+        "evidence": "参考原文第 1 段：Who will lead the training session?",
         "strategy": "先识别人物疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Who will lead the training session? M”，自然应答是“I didn't know one was planned.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I didn't know one was planned.）。"
+        "analysis": "原文依据：问句或陈述是“Who will lead the training session?”，自然应答是“I didn't know one was planned.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（I didn't know one was planned.）。"
       },
       "item_id": 20,
       "priority": {

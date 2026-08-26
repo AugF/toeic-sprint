@@ -27,38 +27,58 @@
       "asset_key": "official-12-test-1/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：EW How（如何）'s the lighting in your office（办公室）?\nDEMA EW",
-    "content_translation": "中文辅助（离线预处理）：EW How（如何）'s the lighting in your office（办公室）?\nDEMA EW"
+    "transcript": "How's the lighting in your office?\nA. No, turn the printer off.\nB. Not great. I should get another lamp.\nC. A long extension cord.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "38f2f4a6cbde55f6a31254eae3331ed6a4241334ef2b388726b3652279a9e95f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你办公室的照明怎么样？\nA. 不，把打印机关掉。\nB. 不太好。我应该买个台灯。\nC. 一根长电线。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d0ed15260d16c6d348dfb421b0a39ef52a9b5149d8e22e7dd18f09bc7bbf78f6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "No, turn the printer off.",
-        "Not great—| should get another lamp. DEA. HoW's",
+        "Not great. I should get another lamp.",
         "A long extension cord."
       ],
       "answer": "B",
-      "question": "EW How's the lighting in your office? DEMA EW",
+      "question": "How's the lighting in your office?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“EW How's the lighting in your office? DEMA EW”，自然应答是“Not great—| should get another lamp. DEA. HoW's”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Not great—| should get another lamp. DEA. HoW's）。",
-      "question_translation": "中文辅助（离线预处理）：EW How（如何）'s the lighting in your office（办公室）?\nDEMA EW",
+      "answer_explain": "原文依据：问句或陈述是“How's the lighting in your office?”，自然应答是“Not great. I should get another lamp.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Not great. I should get another lamp.）。",
+      "question_translation": "你办公室的照明怎么样?",
       "choice_translations": [
-        "A：No, turn the printer off.",
-        "B：Not great—| should get another lamp.\nDEA.\nHoW（如何）'s",
-        "C：A long extension cord."
+        "A：不,把打印机关掉。",
+        "B：不太好。我应该买个台灯。",
+        "C：一根长电线。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：EW How's the lighting in your office? DEMA EW",
+      "evidence": "参考原文第 1 段：How's the lighting in your office?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：EW How's the lighting in your office? DEMA EW",
+        "evidence": "参考原文第 1 段：How's the lighting in your office?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“EW How's the lighting in your office? DEMA EW”，自然应答是“Not great—| should get another lamp. DEA. HoW's”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Not great—| should get another lamp. DEA. HoW's）。"
+        "analysis": "原文依据：问句或陈述是“How's the lighting in your office?”，自然应答是“Not great. I should get another lamp.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Not great. I should get another lamp.）。"
       },
       "item_id": 13,
       "priority": {

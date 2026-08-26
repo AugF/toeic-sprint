@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-2/audio/part2/q023.mp3",
       "exists": true
     },
-    "transcript_translation": "M 我现在订购用品，还是等下周？ ER w\nA. 一共七十五美元。\nB. 其实，我已经把订单发了。\nC. 在供应储物间里。",
-    "content_translation": "M 我现在订购用品，还是等下周？ ER w\nA. 一共七十五美元。\nB. 其实，我已经把订单发了。\nC. 在供应储物间里。"
+    "transcript": "Should I order the supplies now or wait until next week?\nA. A total of $75.\nB. Actually, I already sent the order.\nC. It's in the supply closet.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c60ad5e0be37bb124d44cbe5728094cf22fcfb11994139a0a61be945adfd50e7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part2/q023.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "我现在应该订购这些用品，还是等到下周？\nA. 总共75美元。\nB. 实际上，我已经把订单发走了。\nC. 它在供应储物间里。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e4e877029e97d849363a1f7ff795ebaa1c81c1fcb56b9d18fd39de6e94c59bd1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "A total of seventy-five dollars.",
-        "Actually, | already sent the order.",
-        "It’s in the supply closet."
+        "A total of $75.",
+        "Actually, I already sent the order.",
+        "It's in the supply closet."
       ],
       "answer": "B",
-      "question": "M Should | order the supplies now, or we week? ER w",
+      "question": "Should I order the supplies now or wait until next week?",
       "difficulty": "medium",
       "topic": "选择问句",
       "keywords": "choice indirect response",
-      "answer_explain": "原文依据：问句或陈述是“M Should | order the supplies now, or we week? ER w”，自然应答是“Actually, | already sent the order.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Actually, | already sent the order.）。",
-      "question_translation": "M 我现在订购用品，还是等下周？ ER w",
+      "answer_explain": "原文依据：问句或陈述是“Should I order the supplies now or wait until next week?”，自然应答是“Actually, I already sent the order.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Actually, I already sent the order.）。",
+      "question_translation": "我现在应该订购这些用品,还是等到下周?",
       "choice_translations": [
-        "A：一共七十五美元。",
-        "B：其实，我已经把订单发了。",
-        "C：在供应储物间里。"
+        "A：总共75美元。",
+        "B：实际上,我已经把订单发走了。",
+        "C：它在供应储物间里。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：M Should | order the supplies now, or we week? ER w",
+      "evidence": "参考原文第 1 段：Should I order the supplies now or wait until next week?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：M Should | order the supplies now, or we week? ER w",
+        "evidence": "参考原文第 1 段：Should I order the supplies now or wait until next week?",
         "strategy": "先判断为选择疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“M Should | order the supplies now, or we week? ER w”，自然应答是“Actually, | already sent the order.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Actually, | already sent the order.）。"
+        "analysis": "原文依据：问句或陈述是“Should I order the supplies now or wait until next week?”，自然应答是“Actually, I already sent the order.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Actually, I already sent the order.）。"
       },
       "item_id": 23,
       "priority": {

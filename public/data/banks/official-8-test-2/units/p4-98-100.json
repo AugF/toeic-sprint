@@ -41,9 +41,32 @@
       "asset_key": "official-8-test-2/audio/part4/q098-100.mp3",
       "exists": true
     },
-    "transcript": "message and table.\nM\nHi, Mr. Nakamura. It's Takumi Sato. ®| received your\nCulEld. Nakamura chu. Takumi Sato C9. -5-/\nrequest for a solar panel consultation. ® Thanks for e-mailing\nme your home energy bills, since that helps me create a\nproposal that's tailored to your needs. But, um, ®I'm puzzled\nbecause the July usage seems low. ® Our data shows that\nhouses typically use a lot more energy during that month.\nCould you call me back? I need reliable figures so I can\ndetermine how many solar panels to recommend. Ol'd also\nlike to set up an in-person meeting for later this week, so that\nI can go through the proposal with you and answer questions\nabout the project.\nEnergy Usage\nMay\nkWh\nA\nJune\nkWh\nJuly\nkWh\nA\nI-0g\nAugust\nkWh\nA\nH9",
-    "transcript_translation": "中文辅助（离线预处理）：message and table.\nM\nHi, Mr.\nNakamura.\nIt's Takumi Sato.\n®| received your\nCulEld.\nNakamura chu.\nTakumi Sato C9.\n-5-/\nrequest for a solar panel consultation.\n® Thanks for e-mailing\nme your home energy bills, since that helps me create a\nproposal that's tailored to your needs.\nBut, um, ®I'm puzzled\nbecause the July usage seems low.\n® Our data shows that\nhouses typically use a lot more energy during that month.\nCould you call me back?\nI need reliable figures so I can\ndetermine how（如何） many solar panels to recommend.\nOl'd also\nlike to set up an in-person meeting（会议） for later this week, so that\nI can go through the proposal with you and answer questions\nabout the project.\nEnergy Usage\nMay\nkWh\nA\nJune\nkWh\nJuly\nkWh\nA\nI-0g\nAugust\nkWh\nA\nH9",
-    "content_translation": "中文辅助（离线预处理）：message and table.\nM\nHi, Mr.\nNakamura.\nIt's Takumi Sato.\n®| received your\nCulEld.\nNakamura chu.\nTakumi Sato C9.\n-5-/\nrequest for a solar panel consultation.\n® Thanks for e-mailing\nme your home energy bills, since that helps me create a\nproposal that's tailored to your needs.\nBut, um, ®I'm puzzled\nbecause the July usage seems low.\n® Our data shows that\nhouses typically use a lot more energy during that month.\nCould you call me back?\nI need reliable figures so I can\ndetermine how（如何） many solar panels to recommend.\nOl'd also\nlike to set up an in-person meeting（会议） for later this week, so that\nI can go through the proposal with you and answer questions\nabout the project.\nEnergy Usage\nMay\nkWh\nA\nJune\nkWh\nJuly\nkWh\nA\nI-0g\nAugust\nkWh\nA\nH9"
+    "transcript": "Hi, Mr. Nakamura.\nIt's Takumi Sato.\nI received your request for a solar panel consultation.\nThanks for e-mailing me your home energy bills, since that helps me create a proposal that's tailored to your needs.\nBut, um, I'm puzzled because the July usage seems low.\nOur data shows that houses typically use a lot more energy during that month.\nCould you call me back?\nI need reliable figures so I can determine how many solar panels to recommend.\nI'd also like to set up an in-person meeting for later this week, so that I can go through the proposal with you and answer questions about the project.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "bf33be62dc0da930a462610bccaf34868557835fad1482d7d009717deca77a46",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 109,
+        "legacy_word_count": 124,
+        "length_ratio": 0.879,
+        "legacy_coverage": 0.879
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，中村先生。\n我是 Takumi Sato。\n我收到了您关于太阳能电池板咨询的请求。\n感谢您给我发送家庭能源账单，因为这有助于我为您量身定制一份提案。\n但是，嗯，我很困惑，因为七月份的使用量似乎很低。\n我们的数据显示，房子通常在这个月使用更多的能源。\n您可以回电话给我吗？\n我需要可靠的数字才能确定推荐多少太阳能电池板。\n我还想安排在本周晚些时候进行一次面对面会议，这样我可以和您一起回顾提案并回答有关项目的疑问。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "e7367a1803fb828fbfffe583abcd6c375009ce2c5077ded519d372193a049993"
+    }
   },
   "items": [
     {
@@ -55,23 +78,23 @@
       ],
       "answer": "B",
       "question": "Who most likely is the speaker?",
-      "answer_explain": "原文依据：听力原文中提到“I can go through the proposal with you and answer questions”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A sales consultant）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the speaker（说话者）?",
+      "answer_explain": "正确答案：B（A sales consultant）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is the speaker(说话者)?",
       "choice_translations": [
-        "A：A building inspector",
-        "B：A sales consultant",
-        "C：An apartment landlord",
-        "D：A utility company（公司） executive"
+        "A:A building inspector",
+        "B:A sales consultant",
+        "C:An apartment landlord",
+        "D:A utility company(公司) executive"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：message and table.",
+      "evidence": "参考听力原文：“I'd also like to set up an in-person meeting for later this week, so that I can go through the proposal with you and answer questions about the project.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：message and table.",
+        "evidence": "参考听力原文：“I'd also like to set up an in-person meeting for later this week, so that I can go through the proposal with you and answer questions about the project.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I can go through the proposal with you and answer questions”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（A sales consultant）。"
+        "analysis": "正确答案：B（A sales consultant）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 98,
       "priority": {
@@ -109,23 +132,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. Which number is the speaker confused about?",
-      "answer_explain": "原文依据：听力原文中提到“kWh”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（1,000 kWh）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich number is the speaker（说话者） confused about?",
+      "answer_explain": "正确答案：C（1,000 kWh）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which number is the speaker(说话者) confused about?",
       "choice_translations": [
-        "A：850 kWh",
-        "B：900 kWh",
-        "C：1,000 kWh",
-        "D：1,200 kWh"
+        "A:850 kWh",
+        "B:900 kWh",
+        "C:1,000 kWh",
+        "D:1,200 kWh"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：message and table.",
+      "evidence": "参考听力原文：“I'd also like to set up an in-person meeting for later this week, so that I can go through the proposal with you and answer questions about the project.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：message and table.",
+        "evidence": "参考听力原文：“I'd also like to set up an in-person meeting for later this week, so that I can go through the proposal with you and answer questions about the project.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“kWh”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（1,000 kWh）。"
+        "analysis": "正确答案：C（1,000 kWh）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 99,
       "priority": {
@@ -163,23 +186,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker say he wants to do later this week?",
-      "answer_explain": "原文依据：听力原文中提到“I can go through the proposal with you and answer questions”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Meet with the listener）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say he wants to do later this week?",
+      "answer_explain": "正确答案：A（Meet with the listener）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say he wants to do later this week?",
       "choice_translations": [
-        "A：Meet with the listener",
-        "B：Announce a rate change",
-        "C：Repair some equipment",
-        "D：Document some damage"
+        "A:Meet with the listener",
+        "B:Announce a rate change",
+        "C:Repair some equipment",
+        "D:Document some damage"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 12 段：like to set up an in-person meeting for later this week, so that",
+      "evidence": "参考听力原文：“I'd also like to set up an in-person meeting for later this week, so that I can go through the proposal with you and answer questions about the project.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 12 段：like to set up an in-person meeting for later this week, so that",
+        "evidence": "参考听力原文：“I'd also like to set up an in-person meeting for later this week, so that I can go through the proposal with you and answer questions about the project.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I can go through the proposal with you and answer questions”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Meet with the listener）。"
+        "analysis": "正确答案：A（Meet with the listener）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 100,
       "priority": {

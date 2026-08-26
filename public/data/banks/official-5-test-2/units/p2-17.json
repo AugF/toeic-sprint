@@ -26,8 +26,28 @@
       "asset_key": "official-5-test-2/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Where（哪里） should I set up this projector?",
-    "content_translation": "中文辅助（离线预处理）：Where（哪里） should I set up this projector?"
+    "transcript": "Where should I set up this projector?\nA. No, it's every day.\nB. The registration went through.\nC. We're moving to a larger room.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3dd193007e961b8db8c988dc9ea84c8772799de4004d7cc899bee641f6eea19c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "我应该把这个投影仪设置在哪里？\nA. 不，它是每天都举行。\nB. 注册已经完成了。\nC. 我们正在搬到一个更大的房间。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e1042a35c6333beb778b20f89fd4d35c9512180b3dffb4d093fce11baeaa5d6b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -42,11 +62,11 @@
       "topic": "地点询问",
       "keywords": "where location response",
       "answer_explain": "原文依据：问句或陈述是“Where should I set up this projector?”，自然应答是“We're moving to a larger room.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（We're moving to a larger room.）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） should I set up this projector?",
+      "question_translation": "我应该把这个投影仪设置在哪里?",
       "choice_translations": [
-        "A：No, it's every day.",
-        "B：The registration went through.",
-        "C：We're moving to a larger room."
+        "A：不,它是每天都举行。",
+        "B：注册已经完成了。",
+        "C：我们正在搬到一个更大的房间。"
       ],
       "question_type": "地点疑问句",
       "evidence": "参考原文第 1 段：Where should I set up this projector?",

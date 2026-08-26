@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-1/audio/part2/q031.mp3",
       "exists": true
     },
-    "transcript_translation": "为什么 Jason 一周都没来办公室？, : ERC 为什么 ~?(cxtL. (CZ OHAIS) BE E21\nA. 不，我没见过他。HCBRSMENSSRS51EBA\nB. 通常到六点左右。\nC. 你得问一下他的经理。",
-    "content_translation": "为什么 Jason 一周都没来办公室？, : ERC 为什么 ~?(cxtL. (CZ OHAIS) BE E21\nA. 不，我没见过他。HCBRSMENSSRS51EBA\nB. 通常到六点左右。\nC. 你得问一下他的经理。"
+    "transcript": "Why hasn't Jason been in the office all week?\nA. No, I haven't seen him.\nB. Typically until 6 o'clock or so.\nC. You'll have to ask his manager.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "31941346cac2c2c7b5f64e10a1fddb55ce69312c9d9d217409f28c0cc7ddb3a2",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q031.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "为什么杰森这周还没在办公室？\nA. 不，我没见过他。\nB. 通常到六点左右。\nC. 应该去问他经理。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "588484d0bfb7d4a16f669269dcd077eb6c938c6aea8661310f3dc5b943009619"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "No, | haven't seen him. HCBRSMENSSRS51EBA",
-        "Typically until six o’clock or so.",
+        "No, I haven't seen him.",
+        "Typically until 6 o'clock or so.",
         "You'll have to ask his manager."
       ],
       "answer": "C",
-      "question": "Gi™ Why hasn't Jason been in the office all week? , : ERC Why ~?(cxtL. (CZ OHAIS) BE E21",
+      "question": "Why hasn't Jason been in the office all week?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Gi™ Why hasn't Jason been in the office all week? , : ERC Why ~?(cxtL. (CZ OHAIS) BE E21”，自然应答是“You'll have to ask his manager.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You'll have to ask his manager.）。",
+      "answer_explain": "原文依据：问句或陈述是“Why hasn't Jason been in the office all week?”，自然应答是“You'll have to ask his manager.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You'll have to ask his manager.）。",
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Gi™ Why hasn't Jason been in the office all week? , : ERC Why ~?(cxtL. (CZ OHAIS) BE E21",
+      "evidence": "参考原文第 1 段：Why hasn't Jason been in the office all week?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为否定 / 反意疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Gi™ Why hasn't Jason been in the office all week? , : ERC Why ~?(cxtL. (CZ OHAIS) BE E21",
+        "evidence": "参考原文第 1 段：Why hasn't Jason been in the office all week?",
         "strategy": "先判断为否定 / 反意疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Gi™ Why hasn't Jason been in the office all week? , : ERC Why ~?(cxtL. (CZ OHAIS) BE E21”，自然应答是“You'll have to ask his manager.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You'll have to ask his manager.）。"
+        "analysis": "原文依据：问句或陈述是“Why hasn't Jason been in the office all week?”，自然应答是“You'll have to ask his manager.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（You'll have to ask his manager.）。"
       },
-      "question_translation": "为什么 Jason 一周都没来办公室？, : ERC 为什么 ~?(cxtL. (CZ OHAIS) BE E21",
+      "question_translation": "为什么杰森这周还没在办公室?",
       "choice_translations": [
-        "A：不，我没见过他。HCBRSMENSSRS51EBA",
+        "A：不,我没见过他。",
         "B：通常到六点左右。",
-        "C：你得问一下他的经理。"
+        "C：应该去问他经理。"
       ],
       "item_id": 31,
       "priority": {

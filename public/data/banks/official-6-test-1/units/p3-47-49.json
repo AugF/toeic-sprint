@@ -40,9 +40,31 @@
       "asset_key": "official-6-test-1/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "m Hi, Beverly. ® How's the sales presentation for the\nSmith Corporation going? It would be great to pick\nup such a large company as a new client for our\naccounting software.\nEw Ol just finished updating the slides for that\npresentation.\nEM ® That's good to hear, because they called to ask if we\ncould move the video chat meeting to this afternoon\ninstead of tomorrow. Will that work for you?\nEw Hmm, Othe webcam on my laptop stopped working\nthis morning.\ntaste\nLEm Well, ! helped Benjamin fix his webcam last week.\nOh, perfect!\nc*!",
-    "transcript_translation": "男：嗨，Beverly。为 Smith Corporation 的销售演示进行得怎么样了？能把像 Smith 这样的大公司作为我们会计软件的新客户就太好了。\n女：我刚更新了那次演示的幻灯片。\n男：听到这个好消息真不错，因为他们打电话来问我们能不能把视频聊天会议从明天改到今天下午。您方便吗？\n女：嗯，我的笔记本电脑的网络摄像头今天早上坏了。\n男：嗯，我上周帮 Benjamin 修好了他的网络摄像头。哦，太完美了！",
-    "content_translation": "男：嗨，Beverly。为 Smith Corporation 的销售演示进行得怎么样了？能把像 Smith 这样的大公司作为我们会计软件的新客户就太好了。\n女：我刚更新了那次演示的幻灯片。\n男：听到这个好消息真不错，因为他们打电话来问我们能不能把视频聊天会议从明天改到今天下午。您方便吗？\n女：嗯，我的笔记本电脑的网络摄像头今天早上坏了。\n男：嗯，我上周帮 Benjamin 修好了他的网络摄像头。哦，太完美了！"
+    "transcript": "Hi, Beverly.\nHow's the sales presentation for the Smith Corporation going?\nIt would be great to pick up such a large company as a new client for our accounting software.\nI just finished updating the slides for that presentation.\nThat's good to hear, because they called to ask if we could move the video chat meeting to this afternoon instead of tomorrow.\nWill that work for you?\nHmm.\nThe webcam on my laptop stopped working this morning.\nWell, I helped Benjamin fix his webcam last week.\nOh, perfect.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "052deaa956f131387dadb0b2707b28a10d2d658ec160504aaca1481c2303a9ed",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 88,
+        "legacy_word_count": 93,
+        "length_ratio": 0.946,
+        "legacy_coverage": 0.914
+      }
+    },
+    "transcript_translation": "嗨，贝弗利。\n给史密斯公司做的销售演示进展如何？\n能把像史密斯这样的大公司作为我们会计软件的新客户就太棒了。\n我刚更新了那个演示的幻灯片。\n听到这个好消息真不错，因为他们打电话来问能不能把视频聊天会议从明天改到今天下午。\n这对你方便吗？\n嗯。\n我的笔记本电脑上的网络摄像头这周早上坏了。\n嗯，我上周帮本杰明修了他的网络摄像头。\n哦，太完美了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "87d5a02ac1e17ec885d1dc4d269b22a1131b6f33bef74fee856512b1ca2ce480"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "B",
       "question": "What are the speakers preparing for?",
-      "answer_explain": "原文依据：听力原文中提到“® How's the sales presentation for the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A sales presentation）。",
-      "question_translation": "说话者们在准备什么？",
+      "answer_explain": "正确答案：B（A sales presentation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者们在准备什么?",
       "choice_translations": [
-        "A：一次安全检查",
-        "B：一次销售演示",
-        "C：一次培训研讨会",
-        "D：一次预算会议"
+        "A:一次安全检查",
+        "B:一次销售演示",
+        "C:一次培训研讨会",
+        "D:一次预算会议"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m Hi, Beverly. ® How's the sales presentation for the",
+      "evidence": "参考听力原文：“How's the sales presentation for the Smith Corporation going?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m Hi, Beverly. ® How's the sales presentation for the",
+        "evidence": "参考听力原文：“How's the sales presentation for the Smith Corporation going?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“® How's the sales presentation for the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A sales presentation）。"
+        "analysis": "正确答案：B（A sales presentation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "C",
       "question": "According to the man, why did the Smith Corporation call?",
-      "answer_explain": "原文依据：听力原文中提到“could move the video chat meeting to this afternoon”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To change a meeting time）。",
-      "question_translation": "根据男士的说法，Smith Corporation 打电话的原因是？",
+      "answer_explain": "正确答案：C（To change a meeting time）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "根据男士的说法,Smith Corporation 打电话的原因是?",
       "choice_translations": [
-        "A：要求一份使用说明书",
-        "B：开立一个账户",
-        "C：更改会议时间",
-        "D：投诉某项服务"
+        "A:要求一份使用说明书",
+        "B:开立一个账户",
+        "C:更改会议时间",
+        "D:投诉某项服务"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 2 段：Smith Corporation going? It would be great to pick",
+      "evidence": "参考听力原文：“How's the sales presentation for the Smith Corporation going?”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 2 段：Smith Corporation going? It would be great to pick",
+        "evidence": "参考听力原文：“How's the sales presentation for the Smith Corporation going?”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“could move the video chat meeting to this afternoon”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To change a meeting time）。"
+        "analysis": "正确答案：C（To change a meeting time）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "What does the man mean when he says, \"I helped Benjamin fix his webcam last week\"?",
-      "answer_explain": "原文依据：听力原文中提到“helped Benjamin fix his webcam last week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（He can assist the woman.）。",
-      "question_translation": "当男士说“我上周帮 Benjamin 修好了他的网络摄像头”时，他是什么意思？",
+      "answer_explain": "正确答案：B（He can assist the woman.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "当男士说“我上周帮 Benjamin 修好了他的网络摄像头”时,他是什么意思?",
       "choice_translations": [
-        "A：他在等一笔付款。",
-        "B：他可以帮助这位女士。",
-        "C：他没能参加一个活动。",
-        "D：他不需要再购买了"
+        "A:他在等一笔付款。",
+        "B:他可以帮助这位女士。",
+        "C:他没能参加一个活动。",
+        "D:他不需要再购买了"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 10 段：Ew Hmm, Othe webcam on my laptop stopped working",
+      "evidence": "参考听力原文：“Well, I helped Benjamin fix his webcam last week.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 10 段：Ew Hmm, Othe webcam on my laptop stopped working",
+        "evidence": "参考听力原文：“Well, I helped Benjamin fix his webcam last week.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“helped Benjamin fix his webcam last week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（He can assist the woman.）。"
+        "analysis": "正确答案：B（He can assist the woman.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

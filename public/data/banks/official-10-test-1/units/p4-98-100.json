@@ -42,9 +42,32 @@
       "asset_key": "official-10-test-1/images/part4/q098-100.jpg",
       "exists": true
     },
-    "transcript": "M\nNext week we'll have cooking demonstrations in our\nE.\nsupermarket. For those of you who are new, we offer\ncooking demos every month to encourage our customers\nto try products we're introducing. ® This month, since we'll\nbe highlighting some new bakery goods, we'll have the\ndemo station in the bakery area. So, let's go there now\nC. I\nto make space for the cooking equipment. And ®if any\nof you are interested in helping our chef during a cooking\ndemonstration, you can switch one of your regular shifts and\ndo that instead. Just let me know in advance.\nArea 3\nArea 4\nSeafood\nCleaning\nSupplies\nArea 5\nFrozen\nFood\nArea 2\nFresh Fruit and Vegetables\nArea 1\nCheckout\nBakery Goods\nArea\nEntrance",
-    "transcript_translation": "下周我们超市场会举办烹饪演示。对于新来的同事，我们每个月都会提供烹饪演示，以鼓励顾客尝试我们推出的产品。本月，因为我们将重点介绍一些新的烘焙食品，所以演示区设在烘焙区。那么，现在我们去那里吧，为烹饪设备腾出空间。如果你们有兴趣在烹饪演示期间帮助我们的厨师，可以调换一次常规班次来做这件事。请提前告诉我。\n区域 3\n区域 4\n海鲜\n清洁用品\n区域 5\n冷冻食品\n区域 2\n新鲜水果和蔬菜\n区域 1\n收银台\n烘焙食品\n区域\n入口",
-    "content_translation": "下周我们超市场会举办烹饪演示。对于新来的同事，我们每个月都会提供烹饪演示，以鼓励顾客尝试我们推出的产品。本月，因为我们将重点介绍一些新的烘焙食品，所以演示区设在烘焙区。那么，现在我们去那里吧，为烹饪设备腾出空间。如果你们有兴趣在烹饪演示期间帮助我们的厨师，可以调换一次常规班次来做这件事。请提前告诉我。\n区域 3\n区域 4\n海鲜\n清洁用品\n区域 5\n冷冻食品\n区域 2\n新鲜水果和蔬菜\n区域 1\n收银台\n烘焙食品\n区域\n入口"
+    "transcript": "If you're interested in helping our chef during a cooking demonstration, you can switch one of your regular shifts and do that instead.\nJust let me know in advance.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e47ce768bdbc6888a42d21105a04133e68f8b4c11b1d3013b934ddd986296d84",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 31,
+        "legacy_word_count": 56,
+        "length_ratio": 0.554,
+        "legacy_coverage": 0.625
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "如果您有兴趣在烹饪演示时帮助我们的主厨，您可以调换一次常规班次来做这件事。\n只需提前告知我即可。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0a4e16ed8a00f595d85b272b6fbf4710041b898558ebe63b93807cc01b769f1f"
+    }
   },
   "items": [
     {
@@ -56,23 +79,23 @@
       ],
       "answer": "D",
       "question": "What is the purpose of the cooking demonstrations?",
-      "answer_explain": "原文依据：听力原文中提到“be highlighting some new bakery goods, we'll have the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To promote new store products）。",
-      "question_translation": "烹饪演示的目的是什么？",
+      "answer_explain": "正确答案：D（To promote new store products）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "烹饪演示的目的是什么?",
       "choice_translations": [
-        "A：传授关于健康饮食的选择",
-        "B：试用新的烹饪设备",
-        "C：培训一些新员工",
-        "D：推广新的店产品"
+        "A:传授关于健康饮食的选择",
+        "B:试用新的烹饪设备",
+        "C:培训一些新员工",
+        "D:推广新的店产品"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 2 段：Next week we'll have cooking demonstrations in our",
+      "evidence": "参考听力原文：“If you're interested in helping our chef during a cooking demonstration, you can switch one of your regular shifts and do that instead.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 2 段：Next week we'll have cooking demonstrations in our",
+        "evidence": "参考听力原文：“If you're interested in helping our chef during a cooking demonstration, you can switch one of your regular shifts and do that instead.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“be highlighting some new bakery goods, we'll have the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To promote new store products）。"
+        "analysis": "正确答案：D（To promote new store products）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 98,
       "priority": {
@@ -106,23 +129,23 @@
       ],
       "answer": "A",
       "question": "Look at the graphic. Where will a cooking demonstration be held this month?",
-      "answer_explain": "原文依据：听力原文中提到“demo station in the bakery area.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（In Area 1）。",
-      "question_translation": "看看图表。本月烹饪演示将在哪里举行？",
+      "answer_explain": "正确答案：A（In Area 1）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "看看图表。本月烹饪演示将在哪里举行?",
       "choice_translations": [
-        "A：在区域 1",
-        "B：在区域 2",
-        "C：在区域 3",
-        "D：在区域 4"
+        "A:在区域 1",
+        "B:在区域 2",
+        "C:在区域 3",
+        "D:在区域 4"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 2 段：Next week we'll have cooking demonstrations in our",
+      "evidence": "参考听力原文：“If you're interested in helping our chef during a cooking demonstration, you can switch one of your regular shifts and do that instead.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 2 段：Next week we'll have cooking demonstrations in our",
+        "evidence": "参考听力原文：“If you're interested in helping our chef during a cooking demonstration, you can switch one of your regular shifts and do that instead.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“demo station in the bakery area.”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（In Area 1）。"
+        "analysis": "正确答案：A（In Area 1）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 99,
       "priority": {
@@ -156,23 +179,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker invite the listeners to do?",
-      "answer_explain": "原文依据：听力原文中提到“be highlighting some new bakery goods, we'll have the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Change a work shift）。",
-      "question_translation": "演讲者邀请听众做什么？",
+      "answer_explain": "正确答案：B（Change a work shift）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者邀请听众做什么?",
       "choice_translations": [
-        "A：提出一些食谱建议",
-        "B：调换一个工作班次",
-        "C：获得员工折扣",
-        "D：使用休息室"
+        "A:提出一些食谱建议",
+        "B:调换一个工作班次",
+        "C:获得员工折扣",
+        "D:使用休息室"
       ],
       "question_type": "图表 / 信息联动题",
-      "evidence": "参考原文第 1 段：M",
+      "evidence": "参考听力原文：“If you're interested in helping our chef during a cooking demonstration, you can switch one of your regular shifts and do that instead.”",
       "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "图表 / 信息联动题",
-        "evidence": "参考原文第 1 段：M",
+        "evidence": "参考听力原文：“If you're interested in helping our chef during a cooking demonstration, you can switch one of your regular shifts and do that instead.”",
         "strategy": "本题属于图表 / 信息联动题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“be highlighting some new bakery goods, we'll have the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Change a work shift）。"
+        "analysis": "正确答案：B（Change a work shift）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 100,
       "priority": {

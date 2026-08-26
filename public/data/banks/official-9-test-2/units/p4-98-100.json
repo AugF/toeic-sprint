@@ -41,9 +41,32 @@
       "asset_key": "official-9-test-2/audio/part4/q098-100.mp3",
       "exists": true
     },
-    "transcript": "a meeting and menu.\nak w\nHi, everyone. Thanks for coming to the bakery a bit early.\njust wanted to give you some quick updates. ®We're going\nto start charging extra for our layer cakes. Their ingredients\nare more costly for us. ®I'll update the menu later this week\nwith that price change. Also, ® Yuri called to say he's sick, so\nplease let me know if any of you can cover his shift tomorrow\nmorning. As for today, I noticed that the floor in the back of\nthe store is getting a bit dirty. ®I'd like someone to give it a\nthorough mopping later. That's all for now. OK, let's open the\nbakery.\nDacey's Bakery\nDacey's^-JU\nAssorted Cookies: $18/dozen\nAssorted Muffins: $20/dozen\nFruit Pies: $22/pie\nLayer Cakes: $18/cake\nBETESANES NOSINA CHE",
-    "transcript_translation": "中文辅助（离线预处理）：a meeting（会议） and menu.\nak w\nHi, everyone.\nThanks for coming to the bakery a bit early.\njust wanted to give you some quick updates.\n®We're going\nto start charging extra for our layer cakes.\nTheir ingredients\nare more costly for us.\n®I'll update the menu later this week\nwith that price change.\nAlso, ® Yuri called to say he's sick, so\nplease（请） let me know if any of you can cover his shift tomorrow\nmorning.\nAs for today, I noticed that the floor in the back of\nthe store is getting a bit dirty.\n®I'd like someone to give it a\nthorough mopping later.\nThat's all for now.\nOK, let's open the\nbakery.\nDacey's Bakery\nDacey's^-JU\nAssorted Cookies: $18/dozen\nAssorted Muffins: $20/dozen\nFruit Pies: $22/pie\nLayer Cakes: $18/cake\nBETESANES NOSINA CHE",
-    "content_translation": "中文辅助（离线预处理）：a meeting（会议） and menu.\nak w\nHi, everyone.\nThanks for coming to the bakery a bit early.\njust wanted to give you some quick updates.\n®We're going\nto start charging extra for our layer cakes.\nTheir ingredients\nare more costly for us.\n®I'll update the menu later this week\nwith that price change.\nAlso, ® Yuri called to say he's sick, so\nplease（请） let me know if any of you can cover his shift tomorrow\nmorning.\nAs for today, I noticed that the floor in the back of\nthe store is getting a bit dirty.\n®I'd like someone to give it a\nthorough mopping later.\nThat's all for now.\nOK, let's open the\nbakery.\nDacey's Bakery\nDacey's^-JU\nAssorted Cookies: $18/dozen\nAssorted Muffins: $20/dozen\nFruit Pies: $22/pie\nLayer Cakes: $18/cake\nBETESANES NOSINA CHE"
+    "transcript": "Hi, everyone.\nThanks for coming to the bakery a bit early.\nI just wanted to give you some quick updates.\nWe're going to start charging extra for our layer cakes.\nTheir ingredients are more costly for us.\nI'll update the menu later this week with that price change.\nAlso, Yuri called to say he's sick, so please let me know if any of you can cover his shift tomorrow morning.\nAs for today, I noticed that the floor in the back of the store is getting a bit dirty.\nI'd like someone to give it a thorough mopping later.\nThat's all for now.\nOkay, let's open the bakery.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "b296ff0a49527380f0e3cb36764621a1ee24559dd9c5263297a3f33ac6a8b3e9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part4/q098-100.mp3",
+      "metrics": {
+        "word_count": 110,
+        "legacy_word_count": 129,
+        "length_ratio": 0.853,
+        "legacy_coverage": 0.845
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "大家好。\n感谢大家能提前来到面包店。\n我只是想给大家一些快速的更新。\n我们将开始对我们的奶油蛋糕收取额外费用。\n它们的原料对我们来说成本更高。\n我这周晚些时候会更新包含该价格变动的菜单。\n另外，尤里打电话说他生病了，所以请让我知道是否有人可以帮他顶替明早的班次。\n至于今天，我注意到店后地板有点脏。\n我想让某人稍后彻底拖一遍。\n目前就这些。\n好的，我们开面包店吧。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "53e34dd16c2a4d12135ef3f15e856a07676fa98ce62f8424f9681187b65dc110"
+    }
   },
   "items": [
     {
@@ -55,23 +78,23 @@
       ],
       "answer": "D",
       "question": "Look at the graphic. Which line of the menu will be changed?",
-      "answer_explain": "原文依据：听力原文中提到“®I'll update the menu later this week”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Line 4）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhich line of the menu will be changed?",
+      "answer_explain": "正确答案：D（Line 4）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Which line of the menu will be changed?",
       "choice_translations": [
-        "A：Line 1",
-        "B：Line 2",
-        "C：Line 3",
-        "D：Line 4"
+        "A:Line 1",
+        "B:Line 2",
+        "C:Line 3",
+        "D:Line 4"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：a meeting and menu.",
+      "evidence": "参考听力原文：“I'll update the menu later this week with that price change.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：a meeting and menu.",
+        "evidence": "参考听力原文：“I'll update the menu later this week with that price change.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®I'll update the menu later this week”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Line 4）。"
+        "analysis": "正确答案：D（Line 4）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 98,
       "priority": {
@@ -109,23 +132,23 @@
       ],
       "answer": "A",
       "question": "Why will Yuri not come to work tomorrow?",
-      "answer_explain": "原文依据：听力原文中提到“please let me know if any of you can cover his shift tomorrow”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He is feeling unwell.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） will Yuri not come to work（工作） tomorrow?",
+      "answer_explain": "正确答案：A（He is feeling unwell.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) will Yuri not come to work(工作) tomorrow?",
       "choice_translations": [
-        "A：He is feeling unwell.",
-        "B：He has to take his car to an auto shop.",
-        "C：He will be starting a new job.",
-        "D：He will be attending a family event."
+        "A:He is feeling unwell.",
+        "B:He has to take his car to an auto shop.",
+        "C:He will be starting a new job.",
+        "D:He will be attending a family event."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 8 段：please let me know if any of you can cover his shift tomorrow",
+      "evidence": "参考听力原文：“Also, Yuri called to say he's sick, so please let me know if any of you can cover his shift tomorrow morning.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 8 段：please let me know if any of you can cover his shift tomorrow",
+        "evidence": "参考听力原文：“Also, Yuri called to say he's sick, so please let me know if any of you can cover his shift tomorrow morning.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“please let me know if any of you can cover his shift tomorrow”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He is feeling unwell.）。"
+        "analysis": "正确答案：A（He is feeling unwell.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 99,
       "priority": {
@@ -163,23 +186,23 @@
       ],
       "answer": "B",
       "question": "What does the speaker say about the back bs9i2 stiuo ned .16S of the store?",
-      "answer_explain": "原文依据：听力原文中提到“As for today, I noticed that the floor in the back of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The floor needs to be cleaned.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say about the back bs9i2 stiuo ned .16S of the store?",
+      "answer_explain": "正确答案：B（The floor needs to be cleaned.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say about the back bs9i2 stiuo ned .16S of the store?",
       "choice_translations": [
-        "A：The door must be locked every night.",
-        "B：The floor needs to be cleaned.",
-        "C：Some boxes need to be unpacked.",
-        "D：Some fans should be plugged in."
+        "A:The door must be locked every night.",
+        "B:The floor needs to be cleaned.",
+        "C:Some boxes need to be unpacked.",
+        "D:Some fans should be plugged in."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 10 段：the store is getting a bit dirty. ®I'd like someone to give it a",
+      "evidence": "参考听力原文：“As for today, I noticed that the floor in the back of the store is getting a bit dirty.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 10 段：the store is getting a bit dirty. ®I'd like someone to give it a",
+        "evidence": "参考听力原文：“As for today, I noticed that the floor in the back of the store is getting a bit dirty.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“As for today, I noticed that the floor in the back of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（The floor needs to be cleaned.）。"
+        "analysis": "正确答案：B（The floor needs to be cleaned.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 100,
       "priority": {

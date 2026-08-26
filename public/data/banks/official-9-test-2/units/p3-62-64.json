@@ -41,9 +41,31 @@
       "asset_key": "official-9-test-2/audio/part3/q062-064.mp3",
       "exists": true
     },
-    "transcript": "t0\nand weather report.\nEw Well, it looks like we're going to be busy on the farm\ntoday covering up the crops! It's supposed to drop to\nnegative twelve degrees tomorrow.\nm ®I saw that. It sounds like tomorrow would be a good\nday for me to go to the bank. But we've got a lot to do\nto get the crops covered today.\nw ®l knew it was a risk to plant some of these vegetables\nwhen we did. ®Now I'm wishing we had waited until\nlater.\nEm Well, lesson learned. ®Let's start by collecting all of\nour tarps so we can just drape them over the plants\nwhen it's time.\nTemperatures (°C)\nHigh\nLow\nMonday\nARE\nTuesday\nX#B\nWednesday\nThursday\nBIB\nFriday",
-    "transcript_translation": "中文辅助（离线预处理）：t0\nand weather report.\nEw Well, it looks like we're going to be busy on the farm\ntoday covering up the crops!\nIt's supposed to drop to\nnegative twelve degrees tomorrow.\nm ®I saw that.\nIt sounds like tomorrow would be a good\nday for me to go to the bank.\nBut we've got a lot to do\nto get the crops covered today.\nw ®l knew it was a risk to plant some of these vegetables\nwhen（何时） we did.\n®Now I'm wishing we had waited until\nlater.\nEm Well, lesson learned.\n®Let's start by collecting all of\nour tarps so we can just drape them over the plants\nwhen（何时） it's time.\nTemperatures (°C)\nHigh\nLow\nMonday\nARE\nTuesday\nX#B\nWednesday\nThursday\nBIB\nFriday",
-    "content_translation": "中文辅助（离线预处理）：t0\nand weather report.\nEw Well, it looks like we're going to be busy on the farm\ntoday covering up the crops!\nIt's supposed to drop to\nnegative twelve degrees tomorrow.\nm ®I saw that.\nIt sounds like tomorrow would be a good\nday for me to go to the bank.\nBut we've got a lot to do\nto get the crops covered today.\nw ®l knew it was a risk to plant some of these vegetables\nwhen（何时） we did.\n®Now I'm wishing we had waited until\nlater.\nEm Well, lesson learned.\n®Let's start by collecting all of\nour tarps so we can just drape them over the plants\nwhen（何时） it's time.\nTemperatures (°C)\nHigh\nLow\nMonday\nARE\nTuesday\nX#B\nWednesday\nThursday\nBIB\nFriday"
+    "transcript": "and weather report.\nWell, it looks like we're going to be busy on the farm today covering up the crops.\nIt's supposed to drop to negative 12 degrees tomorrow.\nI saw that.\nIt sounds like tomorrow would be a good day for me to go to the bank.\nBut we've got a lot to do to get the crops covered today.\nI knew it was a risk to plant some of these vegetables when we did.\nNow I'm wishing we had waited until later.\nWell, lesson learned.\nLet's start by collecting all of our tarps so we can just drape them over the plants when it's time.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6581aeae9d84122d8cc0ae3e305872ef75453b6004aaa467c53e84db4cdc7ded",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part3/q062-064.mp3",
+      "metrics": {
+        "word_count": 106,
+        "legacy_word_count": 121,
+        "length_ratio": 0.876,
+        "legacy_coverage": 0.851
+      }
+    },
+    "transcript_translation": "和天气报告。\n嗯，看起来我们今天在农场会忙着覆盖作物。\n明天预计气温会降到零下 12 度。\n我看到了。\n听起来明天对我去银行是个好日子。\n但我们今天有很多事情要做才能把作物都覆盖好。\n我知道当初种植这些蔬菜是有风险的。\n现在我真希望我们能等到以后。\n好吧，吸取了教训。\n我们先从收集所有的防水布开始，这样等需要的时候就可以直接盖在植物上。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "33f788ccc0d5372706250755e646f00d72ce4fbfa067ffa12640ef8269e2bb81"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "C",
       "question": "Look at the graphic. When does the man plan to go to the bank?",
-      "answer_explain": "原文依据：听力原文中提到“Wednesday”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Wednesday）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhen（何时） does the man（男士） plan to go to the bank?",
+      "answer_explain": "正确答案：C（Wednesday）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. When(何时) does the man(男士) plan to go to the bank?",
       "choice_translations": [
-        "A：Monday",
-        "B：Tuesday",
-        "C：Wednesday",
-        "D：Thursday"
+        "A:Monday",
+        "B:Tuesday",
+        "C:Wednesday",
+        "D:Thursday"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：t0",
+      "evidence": "参考听力原文：“It sounds like tomorrow would be a good day for me to go to the bank.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：t0",
+        "evidence": "参考听力原文：“It sounds like tomorrow would be a good day for me to go to the bank.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Wednesday”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：C（Wednesday）。"
+        "analysis": "正确答案：C（Wednesday）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 62,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "B",
       "question": "What does the woman regret doing?",
-      "answer_explain": "原文依据：听力原文中提到“to get the crops covered today.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Planting some crops so early）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） regret doing?",
+      "answer_explain": "正确答案：B（Planting some crops so early）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) regret doing?",
       "choice_translations": [
-        "A：Choosing a certain piece of equipment",
-        "B：Planting some crops so early",
-        "C：Cutting branches from a tree",
-        "D：Not watering plants well enough"
+        "A:Choosing a certain piece of equipment",
+        "B:Planting some crops so early",
+        "C:Cutting branches from a tree",
+        "D:Not watering plants well enough"
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 1 段：t0",
+      "evidence": "参考听力原文：“Well, it looks like we're going to be busy on the farm today covering up the crops.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 1 段：t0",
+        "evidence": "参考听力原文：“Well, it looks like we're going to be busy on the farm today covering up the crops.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“to get the crops covered today.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Planting some crops so early）。"
+        "analysis": "正确答案：B（Planting some crops so early）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 63,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "A",
       "question": "What does the man suggest doing?",
-      "answer_explain": "原文依据：听力原文中提到“Ew Well, it looks like we're going to be busy on the farm”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Gathering materials）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） suggest（表明/建议） doing?",
+      "answer_explain": "正确答案：A（Gathering materials）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) suggest(表明/建议) doing?",
       "choice_translations": [
-        "A：Gathering materials",
-        "B：Making a new calendar",
-        "C：Looking at different locations",
-        "D：Harvesting everything possible"
+        "A:Gathering materials",
+        "B:Making a new calendar",
+        "C:Looking at different locations",
+        "D:Harvesting everything possible"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：t0",
+      "evidence": "参考听力原文：“Let's start by collecting all of our tarps so we can just drape them over the plants when it's time.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：t0",
+        "evidence": "参考听力原文：“Let's start by collecting all of our tarps so we can just drape them over the plants when it's time.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ew Well, it looks like we're going to be busy on the farm”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Gathering materials）。"
+        "analysis": "正确答案：A（Gathering materials）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 64,
       "priority": {

@@ -40,37 +40,59 @@
       "asset_key": "official-2-test-2/audio/part3/q050-052.mp3",
       "exists": true
     },
-    "transcript": "appreciate you coming to my apartment at\nnotice, Harvey. Come in—I'll show you wher\ndripping down from the ceiling. It looks pretty\nAh, | see. That is a problem. When did you sé\nstarted?\nEIR w Well, there was a puddle of water on the bath\nwhen | woke up this morning, so it must've st\nmiddle of the night. I’m not sure Qif it's from <\nrain we've been getting lately or from a broke\nAt this point, your guess is as good as mine.\ngoing to have to cut a hole in your ceilir\nout.",
-    "transcript_translation": "感谢您能来我公寓一趟，Harvey。\n请进——我给您看看天花板上滴水的地方。看起来挺严重的。\n啊，我看到了。那是个问题。您什么时候发现的？\n嗯，我今天早上醒来时浴缸上有积水，所以一定是半夜发生的。我不确定这是最近下雨造成的还是管道破裂造成的。\n到目前为止，您的猜测和我的一样不确定。看来得在天花板上开个洞了。",
-    "content_translation": "感谢您能来我公寓一趟，Harvey。\n请进——我给您看看天花板上滴水的地方。看起来挺严重的。\n啊，我看到了。那是个问题。您什么时候发现的？\n嗯，我今天早上醒来时浴缸上有积水，所以一定是半夜发生的。我不确定这是最近下雨造成的还是管道破裂造成的。\n到目前为止，您的猜测和我的一样不确定。看来得在天花板上开个洞了。"
+    "transcript": "I appreciate you coming to my apartment at such short notice, Harvey.\nCome in.\nI'll show you where the water's dripping down from the ceiling.\nIt looks pretty bad.\nAh, I see.\nThat is a problem.\nWhen did you say the leak started?\nWell, there was a puddle of water on the bathroom floor when I woke up this morning, so it must have started in the middle of the night.\nBut I'm not sure if it's from all this heavy rain we've been getting lately or from a broken pipe.\nAt this point, your guess is as good as mine.\nUnfortunately, I'm going to have to cut a hole in your ceiling to figure it out.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "70f3daaa077df436769974923adacfa8ce482197320dde3849f2343650676531",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part3/q050-052.mp3",
+      "metrics": {
+        "word_count": 117,
+        "legacy_word_count": 95,
+        "length_ratio": 1.232,
+        "legacy_coverage": 0.874
+      }
+    },
+    "transcript_translation": "I appreciate you coming to my apartment at such short notice, Harvey.\nHarvey，感谢您在这么短的时间内来到我的公寓。\nCome in.\n请进。\nI'll show you where the water's dripping down from the ceiling.\n我带您看看水是从天花板哪里滴下来的。\nIt looks pretty bad.\n看起来相当糟糕。\nAh, I see.\n啊，我明白了。\nThat is a problem.\n这是一个问题。\nWhen did you say the leak started?\n您说漏水是什么时候开始的？\nWell, there was a puddle of water on the bathroom floor when I woke up this morning, so it must have started in the middle of the night.\n嗯，我今天早上醒来时浴室地板上有积水，所以它一定是在半夜开始的。\nBut I'm not sure if it's from all this heavy rain we've been getting lately or from a broken pipe.\n但我不太确定这是因为最近持续的大雨，还是因为管道破裂造成的。\nAt this point, your guess is as good as mine.\n目前来看，您的猜测和我的一样不确定。\nUnfortunately, I'm going to have to cut a hole in your ceiling to figure it out.\n不幸的是，我必须在您的天花板上切个洞才能查明原因。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b526908016bb11b66dd47fff9fe92258759cd93a791cf65923cde947d4823266"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Amaintenance worker",
+        "A maintenance worker",
         "A truck driver",
-        "Areal estate agent",
-        "Acustomer service representative"
+        "A real estate agent",
+        "A customer service representative"
       ],
       "answer": "A",
       "question": "Who most likely is the man?",
-      "answer_explain": "原文依据：听力原文中提到“EIR w Well, there was a puddle of water on the bath”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Amaintenance worker）。",
-      "question_translation": "男士最可能是谁？",
+      "answer_explain": "正确答案：A（A maintenance worker）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士最可能是谁?",
       "choice_translations": [
-        "A：维修工人",
-        "B：卡车司机",
-        "C：房地产经纪人",
-        "D：客户服务代表"
+        "A:维修工人",
+        "B:卡车司机",
+        "C:房地产经纪人",
+        "D:客户服务代表"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：appreciate you coming to my apartment at",
+      "evidence": "参考听力原文：“Well, there was a puddle of water on the bathroom floor when I woke up this morning, so it must have started in the middle of the night.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：appreciate you coming to my apartment at",
+        "evidence": "参考听力原文：“Well, there was a puddle of water on the bathroom floor when I woke up this morning, so it must have started in the middle of the night.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“EIR w Well, there was a puddle of water on the bath”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Amaintenance worker）。"
+        "analysis": "正确答案：A（A maintenance worker）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 50,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "C",
       "question": "What does the man mean when he says, “That is a problem’?",
-      "answer_explain": "原文依据：听力原文中提到“EIR w Well, there was a puddle of water on the bath”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He agrees that the problem needs attention.）。",
-      "question_translation": "当男士说“那是个问题”是什么意思？",
+      "answer_explain": "正确答案：C（He agrees that the problem needs attention.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "当男士说“那是个问题”是什么意思?",
       "choice_translations": [
-        "A：他需要咨询专家。",
-        "B：他认为另一个问题更紧急。",
-        "C：他同意这个问题需要关注。",
-        "D：他以前见过类似的问题。"
+        "A:他需要咨询专家。",
+        "B:他认为另一个问题更紧急。",
+        "C:他同意这个问题需要关注。",
+        "D:他以前见过类似的问题。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：Ah, | see. That is a problem. When did you sé",
+      "evidence": "参考听力原文：“That is a problem.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：Ah, | see. That is a problem. When did you sé",
+        "evidence": "参考听力原文：“That is a problem.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“EIR w Well, there was a puddle of water on the bath”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（He agrees that the problem needs attention.）。"
+        "analysis": "正确答案：C（He agrees that the problem needs attention.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 51,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "What does the woman say about the recent weather?",
-      "answer_explain": "原文依据：听力原文中提到“rain we've been getting lately or from a broke”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（There has been heavy rain.）。",
-      "question_translation": "女士谈论最近的天气如何？",
+      "answer_explain": "正确答案：B（There has been heavy rain.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士谈论最近的天气如何?",
       "choice_translations": [
-        "A：天气炎热潮湿。",
-        "B：下了大雨。",
-        "C：风很大。",
-        "D：下过雪。"
+        "A:天气炎热潮湿。",
+        "B:下了大雨。",
+        "C:风很大。",
+        "D:下过雪。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：appreciate you coming to my apartment at",
+      "evidence": "参考听力原文：“But I'm not sure if it's from all this heavy rain we've been getting lately or from a broken pipe.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：appreciate you coming to my apartment at",
+        "evidence": "参考听力原文：“But I'm not sure if it's from all this heavy rain we've been getting lately or from a broken pipe.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“rain we've been getting lately or from a broke”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（There has been heavy rain.）。"
+        "analysis": "正确答案：B（There has been heavy rain.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 52,
       "priority": {

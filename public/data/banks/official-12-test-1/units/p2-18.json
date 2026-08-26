@@ -28,8 +28,28 @@
       "asset_key": "official-12-test-1/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Should we set up an interview with the director this week or next week?",
-    "content_translation": "中文辅助（离线预处理）：Should we set up an interview with the director this week or next week?"
+    "transcript": "Should we set up an interview with the director this week or next week?\nA. That'll be 30 euros.\nB. Next week would be best.\nC. A table for two, please.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0ee5c488691e251ee86748077382450f90bb04281104fd35787a2b8095ab321d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "我们这周还是下周安排和总监的面试？\nA. 那是30欧元。\nB. 下周最好。\nC. 两人的桌子，请。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "25cbeeddc69c6857d0b50616c74357f9244261a0b6a40558f0957fade9a0bad6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "选择问句",
       "keywords": "choice indirect response",
       "answer_explain": "原文依据：问句或陈述是“Should we set up an interview with the director this week or next week?”，自然应答是“Next week would be best.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Next week would be best.）。",
-      "question_translation": "中文辅助（离线预处理）：Should we set up an interview with the director this week or next week?",
+      "question_translation": "我们这周还是下周安排和总监的面试?",
       "choice_translations": [
-        "A：That'll be 30 euros.",
-        "B：Next week would be best.",
-        "C：A table for two, please（请）."
+        "A：那是30欧元。",
+        "B：下周最好。",
+        "C：两人的桌子,请。"
       ],
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段：Should we set up an interview with the director this week or next week?",

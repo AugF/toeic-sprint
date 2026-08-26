@@ -27,8 +27,28 @@
       "asset_key": "official-11-test-2/audio/part2/q025.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：M What（什么） will you be presenting on at the conference?\n=",
-    "content_translation": "中文辅助（离线预处理）：M What（什么） will you be presenting on at the conference?\n="
+    "transcript": "What will you be presenting on at the conference?\nA. Some of our recent engineering innovations.\nB. I've already bought a present.\nC. The conference center on Maple Street.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "aea4d5366ef52f02a59854cd1ae52ed24b7ae1cd749bbead000dab1af572de3c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q025.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "你在会议上要展示什么？\nA. 我们最近的一些工程创新。\nB. 我已经买了一个礼物。\nC. 枫树街的会议中心。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "4ddf067d20c2389c86fbe664b8c264f8c06fc8f2693ebacddc8399138cb80665"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "The conference center on Maple Street."
       ],
       "answer": "A",
-      "question": "M What will you be presenting on at the conference? =",
+      "question": "What will you be presenting on at the conference?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述为“M What will you be presenting on at the conference? =”，官方正确应答是“Some of our recent engineering innovations.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（Some of our recent engineering innovations.）。",
-      "question_translation": "中文辅助（离线预处理）：M What（什么） will you be presenting on at the conference?\n=",
+      "answer_explain": "原文依据：问句或陈述为“What will you be presenting on at the conference?”，官方正确应答是“Some of our recent engineering innovations.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（Some of our recent engineering innovations.）。",
+      "question_translation": "你在会议上要展示什么?",
       "choice_translations": [
-        "A：Some of our recent engineering innovations.",
-        "B：I've already bought a present.",
-        "C：The conference center on Maple Street."
+        "A：我们最近的一些工程创新。",
+        "B：我已经买了一个礼物。",
+        "C：枫树街的会议中心。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M What will you be presenting on at the conference? =",
+      "evidence": "参考原文第 1 段：What will you be presenting on at the conference?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M What will you be presenting on at the conference? =",
+        "evidence": "参考原文第 1 段：What will you be presenting on at the conference?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“M What will you be presenting on at the conference? =”，官方正确应答是“Some of our recent engineering innovations.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（Some of our recent engineering innovations.）。"
+        "analysis": "原文依据：问句或陈述为“What will you be presenting on at the conference?”，官方正确应答是“Some of our recent engineering innovations.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：A（Some of our recent engineering innovations.）。"
       },
       "item_id": 25,
       "priority": {

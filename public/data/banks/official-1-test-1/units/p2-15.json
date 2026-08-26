@@ -27,38 +27,58 @@
       "asset_key": "official-1-test-1/audio/part2/q015.mp3",
       "exists": true
     },
-    "transcript_translation": "= w 你觉得你的新公寓怎么样？ Gu\nA. 昨天预约了。\nB. 三楼。\nC. 地理位置完美。",
-    "content_translation": "= w 你觉得你的新公寓怎么样？ Gu\nA. 昨天预约了。\nB. 三楼。\nC. 地理位置完美。"
+    "transcript": "How do you like your new apartment?\nA. I made an appointment yesterday.\nB. The third floor.\nC. The location is perfect.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7a9a2f0e450dada963f09f56283ced473deec353b99b70314d2efa5d3d3d3407",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q015.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "你喜欢你的新公寓吗？\nA. 我昨天预约了。\nB. 三楼。\nC. 地点很完美。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7e83d7f3ef23f01cebc7e88c2965049748f601ff3f6c7a707635ee1e8b0164c0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "made an appointment yesterday.",
+        "I made an appointment yesterday.",
         "The third floor.",
         "The location is perfect."
       ],
       "answer": "C",
-      "question": "= w How do you like your new apartment? Gu",
+      "question": "How do you like your new apartment?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“= w How do you like your new apartment? Gu”，自然应答是“The location is perfect.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The location is perfect.）。",
+      "answer_explain": "原文依据：问句或陈述是“How do you like your new apartment?”，自然应答是“The location is perfect.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The location is perfect.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：= w How do you like your new apartment? Gu",
+      "evidence": "参考原文第 1 段：How do you like your new apartment?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：= w How do you like your new apartment? Gu",
+        "evidence": "参考原文第 1 段：How do you like your new apartment?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“= w How do you like your new apartment? Gu”，自然应答是“The location is perfect.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The location is perfect.）。"
+        "analysis": "原文依据：问句或陈述是“How do you like your new apartment?”，自然应答是“The location is perfect.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（The location is perfect.）。"
       },
-      "question_translation": "= w 你觉得你的新公寓怎么样？ Gu",
+      "question_translation": "你喜欢你的新公寓吗?",
       "choice_translations": [
-        "A：昨天预约了。",
+        "A：我昨天预约了。",
         "B：三楼。",
-        "C：地理位置完美。"
+        "C：地点很完美。"
       ],
       "item_id": 15,
       "priority": {

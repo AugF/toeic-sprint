@@ -28,15 +28,35 @@
       "asset_key": "official-5-test-2/audio/part2/q026.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Is Nadira bringing over the financial statements today or tomorrow?",
-    "content_translation": "中文辅助（离线预处理）：Is Nadira bringing over the financial statements today or tomorrow?"
+    "transcript": "Is Nadira bringing over the financial statements today or tomorrow?\nA. They should arrive today.\nB. I couldn't get tickets.\nC. The National Bank.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "01b2cdb04cb5376fe1979fd9a3657a584b27734da457b807710ffa637c1b56fd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q026.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "Nadira 今天还是明天带财务报表来？\nA. 它们今天应该到。\nB. 我买不到票。\nC. 国家银行。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6bc2c39fe0f5cb0a2bddfc007c584867e53faaf951fb95866b34e155bc49d795"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "They should arrive today.",
         "I couldn't get tickets.",
-        "The national bank."
+        "The National Bank."
       ],
       "answer": "A",
       "question": "Is Nadira bringing over the financial statements today or tomorrow?",
@@ -44,11 +64,11 @@
       "topic": "选择问句",
       "keywords": "choice indirect response",
       "answer_explain": "原文依据：问句或陈述是“Is Nadira bringing over the financial statements today or tomorrow?”，自然应答是“They should arrive today.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（They should arrive today.）。",
-      "question_translation": "中文辅助（离线预处理）：Is Nadira bringing over the financial statements today or tomorrow?",
+      "question_translation": "Nadira 今天还是明天带财务报表来?",
       "choice_translations": [
-        "A：They should arrive today.",
-        "B：I couldn't get tickets.",
-        "C：The national bank."
+        "A：它们今天应该到。",
+        "B：我买不到票。",
+        "C：国家银行。"
       ],
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段：Is Nadira bringing over the financial statements today or tomorrow?",

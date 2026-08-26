@@ -28,38 +28,58 @@
       "asset_key": "official-7-test-1/audio/part2/q021.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Kw I'm trying a vegetarian diet for the next month.\n• M",
-    "content_translation": "中文辅助（离线预处理）：Kw I'm trying a vegetarian diet for the next month.\n• M"
+    "transcript": "I'm trying\nA. vegetarian diet for the next month. A. I have some recipes you could try.\nB. The next appointment.\nC. Sure, I'll buy it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "376ea1e0810956bfb0c38cb245c91bf2e20480a1b5d5b36327d0a21e4cf95741",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part2/q021.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "我正在尝试\nA. 在接下来的一个月进行素食饮食。 A. 我有一些你可以尝试的食谱。\nB. 下次预约。\nC. 当然，我会买的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "60e0cc850bd00167c2d9aade85013afe5aa89b0a83495248ffb2a41f9d4ae5c6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "I have some recipes you could try.",
+        "vegetarian diet for the next month. A. I have some recipes you could try.",
         "The next appointment.",
         "Sure, I'll buy it."
       ],
       "answer": "A",
-      "question": "Kw I'm trying a vegetarian diet for the next month. • M",
+      "question": "I'm trying",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Kw I'm trying a vegetarian diet for the next month. • M”，自然应答是“I have some recipes you could try.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I have some recipes you could try.）。",
-      "question_translation": "中文辅助（离线预处理）：Kw I'm trying a vegetarian diet for the next month.\n• M",
+      "answer_explain": "原文依据：问句或陈述是“I'm trying”，自然应答是“vegetarian diet for the next month. A. I have some recipes you could try.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（vegetarian diet for the next month. A. I have some recipes you could try.）。",
+      "question_translation": "我正在尝试",
       "choice_translations": [
-        "A：I have some recipes you could try.",
-        "B：The next appointment（预约）.",
-        "C：Sure, I'll buy it."
+        "A：在接下来的一个月进行素食饮食。 A. 我有一些你可以尝试的食谱。",
+        "B：下次预约。",
+        "C：当然,我会买的。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Kw I'm trying a vegetarian diet for the next month. • M",
+      "evidence": "参考原文第 1 段：I'm trying",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Kw I'm trying a vegetarian diet for the next month. • M",
+        "evidence": "参考原文第 1 段：I'm trying",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Kw I'm trying a vegetarian diet for the next month. • M”，自然应答是“I have some recipes you could try.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I have some recipes you could try.）。"
+        "analysis": "原文依据：问句或陈述是“I'm trying”，自然应答是“vegetarian diet for the next month. A. I have some recipes you could try.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（vegetarian diet for the next month. A. I have some recipes you could try.）。"
       },
       "item_id": 21,
       "priority": {

@@ -40,9 +40,31 @@
       "asset_key": "official-6-test-1/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "message.\nHi, Magda. ® Just calling to say I reviewed your product\ndevelopment report. ®I'm glad the focus groups are\nresponding so well to the prototype of our tablet computer. I\nthink it's going to be our next best-selling product. Now, I'm\nin charge of market testing, which should start on Monday,\nbut umm... I'm going to be training new employees next\nweek. • Let's meet this afternoon to discuss a solution. By\nthe way, ®can you reserve a space for us at the technology\nexpo in Berlin next month? It'd be a great place to show the\ntablet computer to major international buyers. Thanks.",
-    "transcript_translation": "信息。\n嗨，Magda。®打电话来是说我审阅了您的产品开发报告。®我很高兴焦点小组对我们的平板电脑原型反应这么好。我认为它将成为我们下一款最畅销的产品。现在，我负责市场测试，应该从周一开始，但是嗯……我下周要培训新员工。让我们今天下午见面讨论一个解决方案。顺便问一下，®您能帮我们在下个月柏林的科技展预留一个展位吗？那将是向主要的国际买家展示平板电脑的好地方。谢谢。",
-    "content_translation": "信息。\n嗨，Magda。®打电话来是说我审阅了您的产品开发报告。®我很高兴焦点小组对我们的平板电脑原型反应这么好。我认为它将成为我们下一款最畅销的产品。现在，我负责市场测试，应该从周一开始，但是嗯……我下周要培训新员工。让我们今天下午见面讨论一个解决方案。顺便问一下，®您能帮我们在下个月柏林的科技展预留一个展位吗？那将是向主要的国际买家展示平板电脑的好地方。谢谢。"
+    "transcript": "Hi, Magda.\nJust calling to say I reviewed your product development report.\nI'm glad the focus groups are responding so well to the prototype of our tablet computer.\nI think it's going to be our next best-selling product.\nNow, I'm in charge of market testing, which should start on Monday, but umm...\nI'm going to be training new employees next week.\nLet's meet this afternoon to discuss a solution.\nBy the way, can you reserve a space for us at the Technology Expo in Berlin next month?\nIt'd be a great place to show the tablet computer to major international buyers.\nThanks.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "a7e6167ed77978ec2ef5eceb00172fcb0bea358ac276e0ca321654e427decf80",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part4/q092-094.mp3",
+      "metrics": {
+        "word_count": 102,
+        "legacy_word_count": 101,
+        "length_ratio": 1.01,
+        "legacy_coverage": 0.96
+      }
+    },
+    "transcript_translation": "嗨，Magda。\n打电话来说我审阅了你的产品开发报告。\n很高兴焦点小组对我们平板电脑的原型反应这么好。\n我想它将成为我们的下一款畅销产品。\n现在，我负责市场测试，应该周一开始，但是嗯……\n下周我要培训新员工。\n今天下午我们碰个面讨论一下解决方案吧。\n顺便问一下，下个月你能帮我们在柏林技术博览会上预留一个展位吗？\n那将是一个向主要的国际买家展示平板电脑的好地方。\n谢谢。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "98aacc3867a08485e5bc5c438b18691e2c72398b61989dfc212580ed347fd0e9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "What is the message mainly about?",
-      "answer_explain": "原文依据：听力原文中提到“responding so well to the prototype of our tablet computer.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A new computer）。",
-      "question_translation": "这条信息主要讲的是什么？",
+      "answer_explain": "正确答案：C（A new computer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "这条信息主要讲的是什么?",
       "choice_translations": [
-        "A：一份销售报告",
-        "B：一份旅行行程表",
-        "C：一台新电脑",
-        "D：一辆公司车辆"
+        "A:一份销售报告",
+        "B:一份旅行行程表",
+        "C:一台新电脑",
+        "D:一辆公司车辆"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“I'm glad the focus groups are responding so well to the prototype of our tablet computer.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“I'm glad the focus groups are responding so well to the prototype of our tablet computer.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“responding so well to the prototype of our tablet computer.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A new computer）。"
+        "analysis": "正确答案：C（A new computer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 92,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "A",
       "question": "What does the speaker mean when he says, \"I'm going to be training new employees next week\"?",
-      "answer_explain": "原文依据：听力原文中提到“I'm going to be training new employees next”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He is not available for an assignment）。",
-      "question_translation": "说话者说“我下周要培训新员工”是什么意思？",
+      "answer_explain": "正确答案：A（He is not available for an assignment）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者说“我下周要培训新员工”是什么意思?",
       "choice_translations": [
-        "A：他无法参加任务",
-        "B：他邀请听众参加培训课程。",
-        "C：他对新的责任感到兴奋。",
-        "D：他想借一些培训。"
+        "A:他无法参加任务",
+        "B:他邀请听众参加培训课程。",
+        "C:他对新的责任感到兴奋。",
+        "D:他想借一些培训。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：think it's going to be our next best-selling product. Now, I'm",
+      "evidence": "参考听力原文：“I'm going to be training new employees next week.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：think it's going to be our next best-selling product. Now, I'm",
+        "evidence": "参考听力原文：“I'm going to be training new employees next week.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“I'm going to be training new employees next”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He is not available for an assignment）。"
+        "analysis": "正确答案：A（He is not available for an assignment）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 93,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "D",
       "question": "What does the speaker ask the listener to do?",
-      "answer_explain": "原文依据：听力原文中提到“the way, ®can you reserve a space for us at the technology”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Make a reservation）。",
-      "question_translation": "说话者要求听众做什么？",
+      "answer_explain": "正确答案：D（Make a reservation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者要求听众做什么?",
       "choice_translations": [
-        "A：联系经理",
-        "B：发送发票",
-        "C：下载一个移动应用程序",
-        "D：预定一个位置"
+        "A:联系经理",
+        "B:发送发票",
+        "C:下载一个移动应用程序",
+        "D:预定一个位置"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“I'm glad the focus groups are responding so well to the prototype of our tablet computer.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“I'm glad the focus groups are responding so well to the prototype of our tablet computer.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the way, ®can you reserve a space for us at the technology”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Make a reservation）。"
+        "analysis": "正确答案：D（Make a reservation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 94,
       "priority": {

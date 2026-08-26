@@ -40,9 +40,31 @@
       "asset_key": "official-10-test-1/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "Ew Hello, Ol'd like to buy this book, please.\nKim ®Sure, l'll ring you right up. Hey, you do know we're\nista\nhaving a sale, right? ® You can get the entire series for\nhalf off.\nw The fact is I usually don't like science fiction. But my\nfriend recommended this, so thought I'd at least try\nthe first book in the series.\nm Fair enough. Have you got a rewards card?\nNo, but I'd like to sign up for one, please.\nm No problem. ®Can you start by telling me your first\nand last name?\nWhere most likely are the speakers?\nA) In a publisher's office\nB) In a public library\nC) In a bookstore\nD) In a classroom\nA)\nB)\nC)\nD)\nWhy does the woman say, \"I usually don't like science\nfiction\"?\nA) To decline an offer\nB) To give advice\nC) To change the subject\nD) To accept a compliment\nn\nB)\nC)\nD)\nWhat information does the man ask for?\nA) A name\nB) A phone number\nC) A due date\nD) An e-mail address\nentire 270\nfor half off *C\nthe fact is (that) ~#|~53\nrecommend\nat least toT\nFair enough. faC9\nrewards card",
-    "transcript_translation": "Ew 您好，我想买这本书。\nKim ®好的，我马上给您叫。嘿，你知道我们正在打折促销，对吧？®您可以享受整个系列半价。\nw 我其实不太喜欢科幻小说。但我的朋友推荐的，所以想至少试试系列的第一本书。\nm 挺合理的。你有会员卡吗？\n没有，但我想办一张，可以吗？\nm 没问题。®你能先告诉我你的名字和姓氏吗？\n说话者最可能在哪里？\nA) 出版社办公室\nB) 公共图书馆\nC) 书店\nD) 教室\n女士说“我通常不太喜欢科幻小说”的原因是什么？\nA) 拒绝一个提议\nB) 提供建议\nC) 转移话题\nD) 接受赞美\n男士询问什么信息？\nA) 一个名字\nB) 一个电话号码\nC) 一个到期日\nD) 一个电子邮件地址",
-    "content_translation": "Ew 您好，我想买这本书。\nKim ®好的，我马上给您叫。嘿，你知道我们正在打折促销，对吧？®您可以享受整个系列半价。\nw 我其实不太喜欢科幻小说。但我的朋友推荐的，所以想至少试试系列的第一本书。\nm 挺合理的。你有会员卡吗？\n没有，但我想办一张，可以吗？\nm 没问题。®你能先告诉我你的名字和姓氏吗？\n说话者最可能在哪里？\nA) 出版社办公室\nB) 公共图书馆\nC) 书店\nD) 教室\n女士说“我通常不太喜欢科幻小说”的原因是什么？\nA) 拒绝一个提议\nB) 提供建议\nC) 转移话题\nD) 接受赞美\n男士询问什么信息？\nA) 一个名字\nB) 一个电话号码\nC) 一个到期日\nD) 一个电子邮件地址"
+    "transcript": "Hello, I'd like to buy this book, please.\nSure, I'll ring you right up.\nHey, you do know we're having a sale, right?\nYou can get the entire series for half off.\nThe fact is, I usually don't like science fiction, but my friend recommended this, so I thought I'd at least try the first book in the series.\nFair enough.\nHave you got a rewards card?\nNo, but I'd like to sign up for one, please.\nNo problem.\nCan you start by telling me your first and last name?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9d72faad5780a97d67eb4e01922572f21e85e3c1a42f6e3e84f66232ad7e86d9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-1/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 90,
+        "legacy_word_count": 88,
+        "length_ratio": 1.023,
+        "legacy_coverage": 0.955
+      }
+    },
+    "transcript_translation": "您好，我想买这本书。\n当然，我马上给您打电话。\n嘿，你知道我们正在打折促销，对吧？\n您可以以半价获得整个系列。\n事实上，我通常不喜欢科幻小说，但我的朋友推荐了这本书，所以我想着至少试试这个系列的第一本书。\n说得有道理。\n你有会员卡吗？\n没有，但我想办一张，可以吗？\n没问题。\n你能先告诉我您的名和姓吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "44450b2287ee55e5059719ca8019f10434d38b503e0a62e633e9c9e4d92da4b5"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "Where most likely are the speakers?",
-      "answer_explain": "原文依据：听力原文中提到“Where most likely are the speakers?”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（In a bookstore）。",
-      "question_translation": "说话者最可能在哪里？",
+      "answer_explain": "正确答案：C（In a bookstore）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者最可能在哪里?",
       "choice_translations": [
-        "A：在出版社办公室",
-        "B：在一个公共图书馆",
-        "C：在一本书店",
-        "D：在一个教室"
+        "A:在出版社办公室",
+        "B:在一个公共图书馆",
+        "C:在一本书店",
+        "D:在一个教室"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 13 段：Where most likely are the speakers?",
+      "evidence": "参考听力原文：“The fact is, I usually don't like science fiction, but my friend recommended this, so I thought I'd at least try the first book in the series.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 13 段：Where most likely are the speakers?",
+        "evidence": "参考听力原文：“The fact is, I usually don't like science fiction, but my friend recommended this, so I thought I'd at least try the first book in the series.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Where most likely are the speakers?”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（In a bookstore）。"
+        "analysis": "正确答案：C（In a bookstore）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "A",
       "question": "Why does the woman say, \"I usually don't like science fiction\"?",
-      "answer_explain": "原文依据：听力原文中提到“A) To decline an offer”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To decline an offer）。",
-      "question_translation": "女士说“我通常不太喜欢科幻小说”的原因是什么？",
+      "answer_explain": "正确答案：A（To decline an offer）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士说“我通常不太喜欢科幻小说”的原因是什么?",
       "choice_translations": [
-        "A：拒绝一个提议",
-        "B：提供建议",
-        "C：转移话题",
-        "D：接受赞美"
+        "A:拒绝一个提议",
+        "B:提供建议",
+        "C:转移话题",
+        "D:接受赞美"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：w The fact is I usually don't like science fiction. But my",
+      "evidence": "参考听力原文：“The fact is, I usually don't like science fiction, but my friend recommended this, so I thought I'd at least try the first book in the series.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：w The fact is I usually don't like science fiction. But my",
+        "evidence": "参考听力原文：“The fact is, I usually don't like science fiction, but my friend recommended this, so I thought I'd at least try the first book in the series.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“A) To decline an offer”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（To decline an offer）。"
+        "analysis": "正确答案：A（To decline an offer）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "A",
       "question": "What information does the man ask for?",
-      "answer_explain": "原文依据：听力原文中提到“What information does the man ask for?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A name）。",
-      "question_translation": "男士询问什么信息？",
+      "answer_explain": "正确答案：A（A name）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士询问什么信息?",
       "choice_translations": [
-        "A：一个名字",
-        "B：一个电话号码",
-        "C：一个到期日",
-        "D：一个电子邮件地址"
+        "A:一个名字",
+        "B:一个电话号码",
+        "C:一个到期日",
+        "D:一个电子邮件地址"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 32 段：What information does the man ask for?",
+      "evidence": "参考听力原文：“Can you start by telling me your first and last name?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 32 段：What information does the man ask for?",
+        "evidence": "参考听力原文：“Can you start by telling me your first and last name?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“What information does the man ask for?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A name）。"
+        "analysis": "正确答案：A（A name）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

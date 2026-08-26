@@ -27,8 +27,28 @@
       "asset_key": "official-6-test-2/audio/part2/q022.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：What（什么）'s the name of the new office（办公室） manager（经理）?",
-    "content_translation": "中文辅助（离线预处理）：What（什么）'s the name of the new office（办公室） manager（经理）?"
+    "transcript": "What's the name of the new office manager?\nA. I haven't met her yet.\nB. On the second floor, I think.\nC. They both want to go.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b967a18b6249cdbd5d15b804d178d11192660ff1f0209acda9c7cb193b30a8d7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q022.mp3",
+      "metrics": {
+        "word_count": 28
+      }
+    },
+    "transcript_translation": "新办公室经理叫什么名字？\nA. 我还没见过她。\nB. 在二楼，我想。\nC. 他们俩都想去。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1c4f33c17b345d42c61065dfa6257a37c214a96773fbbc91d1fbd978a10d50c0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“What's the name of the new office manager?”，自然应答是“I haven't met her yet.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I haven't met her yet.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么）'s the name of the new office（办公室） manager（经理）?",
+      "question_translation": "新办公室经理叫什么名字?",
       "choice_translations": [
-        "A：I haven't met her yet.",
-        "B：On the second floor, I think.",
-        "C：They both want to go."
+        "A：我还没见过她。",
+        "B：在二楼,我想。",
+        "C：他们俩都想去。"
       ],
       "question_type": "一般疑问句",
       "evidence": "参考原文第 1 段：What's the name of the new office manager?",

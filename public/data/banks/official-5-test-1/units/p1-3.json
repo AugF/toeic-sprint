@@ -31,8 +31,28 @@
       "asset_key": "official-5-test-1/images/part1/q003.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. They're shaking hands.\nB. They're facing each other.\nC. They're assembling a desk.\nD. They're putting a computer in a box.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e40547a6f076fbab846a7f9af5874a9b3b2727440b208854b54126489a4d5a10",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part1/q003.mp3",
+      "metrics": {
+        "word_count": 33
+      }
+    },
+    "transcript_translation": "A. 他们正在握手。\nB. 他们正面对面站着。\nC. 他们正在组装一张桌子。\nD. 他们正在把一台电脑放进箱子里。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f0ba49c3f095a2d089e6445f9c665039a24af35693d151f5da62507d966207a0"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“They're facing each other.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（They're facing each other.）。",
       "choice_translations": [
-        "A：They're shaking hands.",
-        "B：They're facing each other.",
-        "C：They're assembling a desk.",
-        "D：They're putting a computer in a box."
+        "A：他们正在握手。",
+        "B：他们正面对面站着。",
+        "C：他们正在组装一张桌子。",
+        "D：他们正在把一台电脑放进箱子里。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-5-test-1/p1-3/3"
+      "item_key": "official-5-test-1/p1-3/3",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -31,8 +31,28 @@
       "asset_key": "official-5-test-1/images/part1/q002.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. He's pointing at a display case.\nB. He's wiping off a countertop.\nC. He's writing on a blackboard.\nD. He's weighing some fruit.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e6a40661bdda6bf03541bf8471663d1a255801b3e608ca4af77a667368014de0",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-1/audio/part1/q002.mp3",
+      "metrics": {
+        "word_count": 264
+      }
+    },
+    "transcript_translation": "A. 他指着一个展示柜。\nB. 他正在擦拭一个台面。\nC. 他正在黑板上写字。\nD. 他正在称一些水果。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5508546e77d6289d57b3e2149c6aec61351c83c65949d7a5b82e11e3aaea8d56"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“He's pointing at a display case.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：A（He's pointing at a display case.）。",
       "choice_translations": [
-        "A：He's pointing at a display case.",
-        "B：He's wiping off a countertop.",
-        "C：He's writing on a blackboard.",
-        "D：He's weighing some fruit."
+        "A：他指着一个展示柜。",
+        "B：他正在擦拭一个台面。",
+        "C：他正在黑板上写字。",
+        "D：他正在称一些水果。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-5-test-1/p1-2/2"
+      "item_key": "official-5-test-1/p1-2/2",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

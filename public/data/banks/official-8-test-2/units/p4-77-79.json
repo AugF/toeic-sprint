@@ -38,9 +38,32 @@
       "asset_key": "official-8-test-2/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "message.\nM\nHi, Susan. This is Thomas from the New York office.\nThe company leadership just received the headphone\nprototype your team developed. ® They're very impressed\nwith the audio quality, but some of them felt the padding\nwas uncomfortable. ® They want your team to use softer\ncushioning around the ears. ®If you'd like a different\nmaterials supplier to correct the problem, I can send you the\nEREUTESSELECACEn. MaCustom Fiberit\ncontact info for Custom Fiber. They worked with us on last\nyear's products. Please call me back so we can talk about\nthis more.",
-    "transcript_translation": "中文辅助（离线预处理）：message.\nM\nHi, Susan.\nThis is Thomas from the New York office（办公室）.\nThe company（公司） leadership just received the headphone\nprototype your team developed.\n® They're very impressed\nwith the audio quality, but some of them felt the padding\nwas uncomfortable.\n® They want your team to use softer\ncushioning around the ears.\n®If you'd like a different\nmaterials supplier to correct the problem, I can send you the\nEREUTESSELECACEn.\nMaCustom Fiberit\ncontact info for Custom Fiber.\nThey worked with us on last\nyear's products.\nPlease（请） call me back so we can talk about\nthis more.",
-    "content_translation": "中文辅助（离线预处理）：message.\nM\nHi, Susan.\nThis is Thomas from the New York office（办公室）.\nThe company（公司） leadership just received the headphone\nprototype your team developed.\n® They're very impressed\nwith the audio quality, but some of them felt the padding\nwas uncomfortable.\n® They want your team to use softer\ncushioning around the ears.\n®If you'd like a different\nmaterials supplier to correct the problem, I can send you the\nEREUTESSELECACEn.\nMaCustom Fiberit\ncontact info for Custom Fiber.\nThey worked with us on last\nyear's products.\nPlease（请） call me back so we can talk about\nthis more."
+    "transcript": "Hi Susan, this is Thomas from the New York office.\nThe company leadership just received the headphone prototype your team developed.\nThey're very impressed with the audio quality, but some of them felt the padding was uncomfortable.\nThey want your team to use softer cushioning around the ears.\nIf you'd like a different materials supplier to correct the problem, I can send you the contact info for custom fibre.\nThey worked with us on last year's products.\nPlease call me back so we can talk about this more.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "9a9a17d5904c26c0a65b06692ea7528dbba95b7a69eb59771fc668bf03aff2db",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part4/q077-079.mp3",
+      "metrics": {
+        "word_count": 88,
+        "legacy_word_count": 91,
+        "length_ratio": 0.967,
+        "legacy_coverage": 0.945,
+        "prompted_failure": "implausible Part 4 transcript length 2"
+      }
+    },
+    "transcript_translation": "嗨苏珊，我是来自纽约办事处的托马斯。\n公司领导层刚刚收到了你们团队开发的耳机原型。\n他们对音质印象深刻，但有些人觉得耳垫不舒服。\n他们希望你们团队使用更柔软的耳部衬垫。\n如果你想找不同的材料供应商来解决这个问题，我可以给你定制纤维的联系信息。\n他们去年也和我们合作过产品。\n请给我回电话，这样我们可以更多地讨论一下这件事。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "33b1d9569bdfea3ed3acddb039d04c4612c4466a174b793378d0129c123c23cf"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -52,23 +75,23 @@
       ],
       "answer": "B",
       "question": "What type of product is the speaker discussing?",
-      "answer_explain": "原文依据：听力原文中提到“with the audio quality, but some of them felt the padding”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Headphones）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） type of product is the speaker（说话者） discussing?",
+      "answer_explain": "正确答案：B（Headphones）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) type of product is the speaker(说话者) discussing?",
       "choice_translations": [
-        "A：Automobiles",
-        "B：Headphones",
-        "C：Shoes",
-        "D：Cameras"
+        "A:Automobiles",
+        "B:Headphones",
+        "C:Shoes",
+        "D:Cameras"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 12 段：year's products. Please call me back so we can talk about",
+      "evidence": "参考听力原文：“If you'd like a different materials supplier to correct the problem, I can send you the contact info for custom fibre.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 12 段：year's products. Please call me back so we can talk about",
+        "evidence": "参考听力原文：“If you'd like a different materials supplier to correct the problem, I can send you the contact info for custom fibre.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“with the audio quality, but some of them felt the padding”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Headphones）。"
+        "analysis": "正确答案：B（Headphones）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 77,
       "priority": {
@@ -103,23 +126,23 @@
       ],
       "answer": "A",
       "question": "What issue does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“with the audio quality, but some of them felt the padding”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Some padding is uncomfortable.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） issue does the speaker（说话者） mention?",
+      "answer_explain": "正确答案：A（Some padding is uncomfortable.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) issue does the speaker(说话者) mention?",
       "choice_translations": [
-        "A：Some padding is uncomfortable.",
-        "B：A budget is limited.",
-        "C：Sound quality needs to be improved.",
-        "D：A shipment has been delayed."
+        "A:Some padding is uncomfortable.",
+        "B:A budget is limited.",
+        "C:Sound quality needs to be improved.",
+        "D:A shipment has been delayed."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“They're very impressed with the audio quality, but some of them felt the padding was uncomfortable.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“They're very impressed with the audio quality, but some of them felt the padding was uncomfortable.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“with the audio quality, but some of them felt the padding”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Some padding is uncomfortable.）。"
+        "analysis": "正确答案：A（Some padding is uncomfortable.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 78,
       "priority": {
@@ -154,23 +177,23 @@
       ],
       "answer": "C",
       "question": "Why does the speaker say, \"They worked with us on last year's products\"?",
-      "answer_explain": "原文依据：听力原文中提到“materials supplier to correct the problem, I can send you the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To recommend a supplier）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the speaker（说话者） say, \"They worked with us on last year's products\"?",
+      "answer_explain": "正确答案：C（To recommend a supplier）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, \"They worked with us on last year's products\"?",
       "choice_translations": [
-        "A：To request a meeting（会议）",
-        "B：To warn the listener",
-        "C：To recommend a supplier",
-        "D：To criticize a decision"
+        "A:To request a meeting(会议)",
+        "B:To warn the listener",
+        "C:To recommend a supplier",
+        "D:To criticize a decision"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：contact info for Custom Fiber. They worked with us on last",
+      "evidence": "参考听力原文：“They worked with us on last year's products.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：contact info for Custom Fiber. They worked with us on last",
+        "evidence": "参考听力原文：“They worked with us on last year's products.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“materials supplier to correct the problem, I can send you the”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（To recommend a supplier）。"
+        "analysis": "正确答案：C（To recommend a supplier）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 79,
       "priority": {

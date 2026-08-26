@@ -37,37 +37,59 @@
       "asset_key": "official-2-test-2/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "Thanks for agreeing to create @the advertisements for\nmy office-supply store, David.\nlu My pleasure. Is there anything in particular you'd like\nto feature in the ad?\nMost of the merchandise is selling well, but I'd like to\nfeature our office furniture.\nll K. ls there anything special that we could highlight?\nWell, ®! do stock only ChairMaker Pro office furniture.\nThe chairs get especially good reviews —they’re\ndesigned to provide great support. They’re really\ncomfortable.\nIu K, | can emphasize comfort in the ad. could you\nsend me a picture and description of the chairs?",
-    "transcript_translation": "感谢您同意为我的办公用品店制作广告，David。\n不客气。您是否希望在广告中重点介绍任何特别的东西？\n大部分商品都卖得很好，但我希望重点展示我们的办公家具。\nK. 有没有什么特别值得强调的？\n嗯！我们只销售ChairMaker Pro品牌的办公家具。这些椅子评价特别好——它们的设计旨在提供极佳的支撑力。它们真的很舒服。\nK，我可以在广告中强调舒适度。您能给我发一些椅子的图片和描述吗？",
-    "content_translation": "感谢您同意为我的办公用品店制作广告，David。\n不客气。您是否希望在广告中重点介绍任何特别的东西？\n大部分商品都卖得很好，但我希望重点展示我们的办公家具。\nK. 有没有什么特别值得强调的？\n嗯！我们只销售ChairMaker Pro品牌的办公家具。这些椅子评价特别好——它们的设计旨在提供极佳的支撑力。它们真的很舒服。\nK，我可以在广告中强调舒适度。您能给我发一些椅子的图片和描述吗？"
+    "transcript": "Thanks for agreeing to create the advertisements for my office supply store, David.\nMy pleasure.\nIs there anything in particular you'd like to feature in the ad?\nMost of the merchandise is selling well, but I'd like to feature our office furniture.\nOkay.\nIs there anything special that we could highlight?\nWell, I do stock only Chairmaker Pro office furniture.\nThe chairs get especially good reviews.\nThey're designed to provide great support.\nThey're really comfortable.\nOkay.\nI can emphasize comfort in the ad.\nCould you send me a picture and description of the chairs?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "05fd575b3c33f42e1b4ed4ab0ce1cd0623f6e12eb4ed854365d6f538a47544f4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 94,
+        "legacy_word_count": 92,
+        "length_ratio": 1.022,
+        "legacy_coverage": 0.935
+      }
+    },
+    "transcript_translation": "感谢你同意为我的办公用品店制作广告，大卫。\n这是我的荣幸。\n您是否希望在广告中重点介绍任何特别的东西？\n大部分商品都卖得很好，但我希望重点展示我们的办公家具。\n好的。\n有没有什么特别可以强调的？\n嗯，我只销售 Chairmaker Pro 的办公家具。\n这些椅子获得了特别好的评价。\n它们的设计是为了提供极佳的支撑。\n它们真的很舒服。\n好的。\n我可以在广告中强调舒适度。\n你能给我发一张照片和描述吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "18a679c3491bdf4bbc82490993be62e65c06cdeea3b81d01a1a9fde972af62d7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Abookstore",
+        "A bookstore",
         "An office-supply store",
         "A furniture factory",
-        "Acoffee shop"
+        "A coffee shop"
       ],
       "answer": "B",
       "question": "What type of business does the woman own?",
-      "answer_explain": "原文依据：听力原文中提到“my office-supply store, David.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An office-supply store）。",
-      "question_translation": "女士拥有什么类型的企业？",
+      "answer_explain": "正确答案：B（An office-supply store）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士拥有什么类型的企业?",
       "choice_translations": [
-        "A：书店",
-        "B：办公用品店",
-        "C：家具厂",
-        "D：咖啡店"
+        "A:书店",
+        "B:办公用品店",
+        "C:家具厂",
+        "D:咖啡店"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Thanks for agreeing to create @the advertisements for",
+      "evidence": "参考听力原文：“Thanks for agreeing to create the advertisements for my office supply store, David.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Thanks for agreeing to create @the advertisements for",
+        "evidence": "参考听力原文：“Thanks for agreeing to create the advertisements for my office supply store, David.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“my office-supply store, David.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An office-supply store）。"
+        "analysis": "正确答案：B（An office-supply store）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "B",
       "question": "What does the woman want to highlight about some products?",
-      "answer_explain": "原文依据：听力原文中提到“comfortable.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（They are comfortable.）。",
-      "question_translation": "女士想强调产品哪些方面？",
+      "answer_explain": "正确答案：B（They are comfortable.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士想强调产品哪些方面?",
       "choice_translations": [
-        "A：它们价格便宜。",
-        "B：它们很舒服。",
-        "C：它们由可水洗的面料制成。",
-        "D：它们有制造商的保证。"
+        "A:它们价格便宜。",
+        "B:它们很舒服。",
+        "C:它们由可水洗的面料制成。",
+        "D:它们有制造商的保证。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 7 段：ll K. ls there anything special that we could highlight?",
+      "evidence": "参考听力原文：“Is there anything special that we could highlight?”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 7 段：ll K. ls there anything special that we could highlight?",
+        "evidence": "参考听力原文：“Is there anything special that we could highlight?”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“comfortable.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（They are comfortable.）。"
+        "analysis": "正确答案：B（They are comfortable.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "A",
       "question": "What does the man ask the woman to do?",
-      "answer_explain": "原文依据：听力原文中提到“designed to provide great support.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Provide some information）。",
-      "question_translation": "男士让女士做什么？",
+      "answer_explain": "正确答案：A（Provide some information）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士让女士做什么?",
       "choice_translations": [
-        "A：提供一些信息",
-        "B：提供免费样品",
-        "C：延长营业时间",
-        "D：举办活动"
+        "A:提供一些信息",
+        "B:提供免费样品",
+        "C:延长营业时间",
+        "D:举办活动"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Thanks for agreeing to create @the advertisements for",
+      "evidence": "参考听力原文：“They're designed to provide great support.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Thanks for agreeing to create @the advertisements for",
+        "evidence": "参考听力原文：“They're designed to provide great support.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“designed to provide great support.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Provide some information）。"
+        "analysis": "正确答案：A（Provide some information）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

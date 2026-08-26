@@ -32,14 +32,34 @@
       "asset_key": "official-11-test-2/images/part1/q005.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：* M",
-    "content_translation": "中文辅助（离线预处理）：* M"
+    "transcript": "A. Some windows overlook a fountain.\nB. Some people are sweeping around a fountain.\nC. Some people are laying bricks in a city square.\nD. Some umbrellas are being taken down.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7f250eb42b80c97d10ce10c0e1fb4b0944066ac49bf5a5b7d28c6097eebb61f1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part1/q005.mp3",
+      "metrics": {
+        "word_count": 42
+      }
+    },
+    "transcript_translation": "A. 一些窗户俯瞰着一个喷泉。\nB. 有些人正在喷泉周围扫地。\nC. 有些人在城市广场铺砖。\nD. 有些雨伞正在被收下。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ca56346bc997a65fb1ba70ae673c081220020d387c054d5546a398464e6c0603"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Some windows overlook a fountain.",
-        "Some people are sweeping around a fountain",
+        "Some people are sweeping around a fountain.",
         "Some people are laying bricks in a city square.",
         "Some umbrellas are being taken down."
       ],
@@ -49,12 +69,12 @@
       "topic": "日常与职场照片",
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：官方详解给出的照片描述正确项是 A（Some windows overlook a fountain.）。选择理由：该陈述与照片中可见的人物、物体、动作或状态一致，其他选项包含画面中没有出现的细节。正确答案：A（Some windows overlook a fountain.）。",
-      "question_translation": "中文辅助（离线预处理）：* M",
+      "question_translation": "请看图片。",
       "choice_translations": [
-        "A：Some windows overlook a fountain.",
-        "B：Some people are sweeping around a fountain",
-        "C：Some people are laying bricks in a city square.",
-        "D：Some umbrellas are being taken down."
+        "A：一些窗户俯瞰着一个喷泉。",
+        "B：有些人正在喷泉周围扫地。",
+        "C：有些人在城市广场铺砖。",
+        "D：有些雨伞正在被收下。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "参考原文第 1 段：* M",

@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-1/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：=w Iu",
-    "content_translation": "中文辅助（离线预处理）：=w Iu"
+    "transcript": "When does the bus leave?\nA. $18.\nB. I believe you.\nC. In 30 minutes.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "15c8bb8258c786eea73b67a67949aad56aa47dbd2901abbc44126019d99d5c90",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 14
+      }
+    },
+    "transcript_translation": "公交车什么时候离开？\nA. $18。\nB. 我相信你。\nC. 30分钟后。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b6e6fec3659f90a7e2920c39db610fa9ea7f118f3c3f2e7c3c94f373a59d26f4"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Eighteen dollars.",
-        "believe you.",
-        "In thirty minutes."
+        "$18.",
+        "I believe you.",
+        "In 30 minutes."
       ],
       "answer": "C",
-      "question": "=w Iu",
+      "question": "When does the bus leave?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“=w Iu”，自然应答是“In thirty minutes.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（In thirty minutes.）。",
-      "question_translation": "中文辅助（离线预处理）：=w Iu",
+      "answer_explain": "原文依据：问句或陈述是“When does the bus leave?”，自然应答是“In 30 minutes.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（In 30 minutes.）。",
+      "question_translation": "公交车什么时候离开?",
       "choice_translations": [
-        "A：Eighteen dollars.",
-        "B：believe you.",
-        "C：In thirty minutes."
+        "A：$18。",
+        "B：我相信你。",
+        "C：30分钟后。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：=w Iu",
+      "evidence": "参考原文第 1 段：When does the bus leave?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：=w Iu",
+        "evidence": "参考原文第 1 段：When does the bus leave?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“=w Iu”，自然应答是“In thirty minutes.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（In thirty minutes.）。"
+        "analysis": "原文依据：问句或陈述是“When does the bus leave?”，自然应答是“In 30 minutes.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（In 30 minutes.）。"
       },
       "item_id": 18,
       "priority": {

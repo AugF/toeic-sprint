@@ -26,38 +26,58 @@
       "asset_key": "official-4-test-1/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：i“ When（何时） will the caterers be here?\ne ‘ ERC When（何时） ~?C7—9UYVIREDUD = w",
-    "content_translation": "中文辅助（离线预处理）：i“ When（何时） will the caterers be here?\ne ‘ ERC When（何时） ~?C7—9UYVIREDUD = w"
+    "transcript": "When will the caterers be here?\nA. Desserts and drinks.\nB. The guest list.\nC. At 12 o'clock.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "d5f91cf640cb83e43d5e63a8318552b50a83f98b434a2557ab17b36cd4174e28",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 18
+      }
+    },
+    "transcript_translation": "当餐饮服务人员什么时候到？\nA. 甜点和饮料。\nB. 客人名单。\nC. 在十二点。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "04d30df89b90047067b5300370d7d91848e2685770f1cf20218df5b41dc0c3f8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Desserts and drinks. RODEBTUNSOICHL, BES",
-        "The guest list. ATWS",
-        "HIE. caterer!’ 7-FUY IBS|."
+        "Desserts and drinks.",
+        "The guest list.",
+        "At 12 o'clock."
       ],
       "answer": "C",
-      "question": "i“ When will the caterers be here? e ‘ ERC When ~?C7—9UYVIREDUD = w",
+      "question": "When will the caterers be here?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“i“ When will the caterers be here? e ‘ ERC When ~?C7—9UYVIREDUD = w”，自然应答是“HIE. caterer!’ 7-FUY IBS|.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（HIE. caterer!’ 7-FUY IBS|.）。",
-      "question_translation": "中文辅助（离线预处理）：i“ When（何时） will the caterers be here?\ne ‘ ERC When（何时） ~?C7—9UYVIREDUD = w",
+      "answer_explain": "原文依据：问句或陈述是“When will the caterers be here?”，自然应答是“At 12 o'clock.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（At 12 o'clock.）。",
+      "question_translation": "当餐饮服务人员什么时候到?",
       "choice_translations": [
-        "A：Desserts and drinks.\nRODEBTUNSOICHL, BES",
-        "B：The guest list.\nATWS",
-        "C：HIE.\ncaterer!’ 7-FUY IBS|."
+        "A：甜点和饮料。",
+        "B：客人名单。",
+        "C：在十二点。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：i“ When will the caterers be here? e ‘ ERC When ~?C7—9UYVIREDUD = w",
+      "evidence": "参考原文第 1 段：When will the caterers be here?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：i“ When will the caterers be here? e ‘ ERC When ~?C7—9UYVIREDUD = w",
+        "evidence": "参考原文第 1 段：When will the caterers be here?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“i“ When will the caterers be here? e ‘ ERC When ~?C7—9UYVIREDUD = w”，自然应答是“HIE. caterer!’ 7-FUY IBS|.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（HIE. caterer!’ 7-FUY IBS|.）。"
+        "analysis": "原文依据：问句或陈述是“When will the caterers be here?”，自然应答是“At 12 o'clock.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（At 12 o'clock.）。"
       },
       "item_id": 10,
       "priority": {

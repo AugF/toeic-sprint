@@ -36,9 +36,33 @@
       "asset_key": "official-7-test-1/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "Can I have your attention, please, everyone. ® We will\nbegin producing the next generation of our best-selling car\nmodel next quarter. ®We have already received all the\nparts we need, so we can start the assembly process in\nJuly. As supervisors, you'll have to reassign some tasks\nfor your workers on the factory floor. i'll be e-mailing you\ninformation on production targets and timelines to help you\ndo that. Thank you for your cooperation.",
-    "transcript_translation": "中文辅助（离线预处理）：Can I have your attention, please（请）, everyone.\n® We will\nbegin producing the next generation of our best-selling car\nmodel next quarter.\n®We have already received all the\nparts we need, so we can start the assembly process in\nJuly.\nAs supervisors, you'll have to reassign some tasks\nfor your workers on the factory floor.\ni'll be e-mailing you\ninformation（信息） on production targets and timelines to help you\ndo that.\nThank（感谢） you for your cooperation.",
-    "content_translation": "中文辅助（离线预处理）：Can I have your attention, please（请）, everyone.\n® We will\nbegin producing the next generation of our best-selling car\nmodel next quarter.\n®We have already received all the\nparts we need, so we can start the assembly process in\nJuly.\nAs supervisors, you'll have to reassign some tasks\nfor your workers on the factory floor.\ni'll be e-mailing you\ninformation（信息） on production targets and timelines to help you\ndo that.\nThank（感谢） you for your cooperation."
+    "transcript": "Can I have your attention please everyone?\nWe will begin producing the next generation of our best-selling car model next quarter.\nWe have already received all the parts we need so we can start the assembly process in July.\nAs supervisors, you will have to reassign some tasks for your workers. you'll have to reassign some tasks for your workers on the factory floor.\nI'll be emailing you information on production targets and timelines to help you do that.\nThank you for your cooperation.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "c7aec8e47b53ef7e935130210f230d62cf11268ad353c9a7d34a8e8431cece2b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 84,
+        "legacy_word_count": 73,
+        "length_ratio": 1.151,
+        "legacy_coverage": 0.986,
+        "prompted_failure": "implausible Part 4 transcript length 5"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "请大家注意一下？\n我们将在下个季度开始生产下一代畅销车型。\n我们已经收到了所有需要的零件，所以我们可以在七月开始组装流程了。\n作为主管，你们必须重新分配一些任务给你们的工人。你们必须在工厂车间为你们的工人们重新分配一些任务。\n我会给你们发送关于生产目标和时间表的邮件，帮助你们做到这一点。\n感谢您的配合。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b39b71b87a31f5ae388c884dbc0b38cd9c2430794c251115f1f2ef177aed5509"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/qwen3-vl:4b+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +74,23 @@
       ],
       "answer": "C",
       "question": "What does the company make?",
-      "answer_explain": "原文依据：听力原文中提到“parts we need, so we can start the assembly process in”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Cars）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the company（公司） make?",
+      "answer_explain": "正确答案：C（Cars）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the company(公司) make?",
       "choice_translations": [
-        "A：Furniture",
-        "B：Electronics",
-        "C：Cars",
-        "D：Toys"
+        "A:Furniture",
+        "B:Electronics",
+        "C:Cars",
+        "D:Toys"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Can I have your attention, please, everyone. ® We will",
+      "evidence": "参考听力原文：“As supervisors, you will have to reassign some tasks for your workers. you'll have to reassign some tasks for your workers on the factory floor.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Can I have your attention, please, everyone. ® We will",
+        "evidence": "参考听力原文：“As supervisors, you will have to reassign some tasks for your workers. you'll have to reassign some tasks for your workers on the factory floor.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“parts we need, so we can start the assembly process in”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Cars）。"
+        "analysis": "正确答案：C（Cars）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -98,24 +122,24 @@
         "A vacation policy will be updated."
       ],
       "answer": "B",
-      "question": "According to the speaker, what will happen 81. What added benefit of a system does the next quarter?",
-      "answer_explain": "原文依据：听力原文中提到“begin producing the next generation of our best-selling car”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Assembly of a new product will begin.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）, what（什么） will happen 81.\nWhat（什么） added benefit of a system does the next quarter?",
+      "question": "According to the speaker, what will happen next quarter?",
+      "answer_explain": "正确答案：B（Assembly of a new product will begin.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者), what(什么) will happen What(什么) added benefit of a system does the next quarter?",
       "choice_translations": [
-        "A：Factory machinery will be upgraded.",
-        "B：Assembly of a new product will begin.",
-        "C：New-hire training will take place.",
-        "D：A vacation policy will be updated."
+        "A:Factory machinery will be upgraded.",
+        "B:Assembly of a new product will begin.",
+        "C:New-hire training will take place.",
+        "D:A vacation policy will be updated."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：model next quarter. ®We have already received all the",
+      "evidence": "参考听力原文：“We will begin producing the next generation of our best-selling car model next quarter.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：model next quarter. ®We have already received all the",
+        "evidence": "参考听力原文：“We will begin producing the next generation of our best-selling car model next quarter.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“begin producing the next generation of our best-selling car”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Assembly of a new product will begin.）。"
+        "analysis": "正确答案：B（Assembly of a new product will begin.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -148,23 +172,23 @@
       ],
       "answer": "A",
       "question": "What are the listeners asked to do?",
-      "answer_explain": "原文依据：听力原文中提到“As supervisors, you'll have to reassign some tasks”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Reassign some work）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the listeners asked to do?",
+      "answer_explain": "正确答案：A（Reassign some work）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the listeners asked to do?",
       "choice_translations": [
-        "A：Reassign some work（工作）",
-        "B：Draft a cost estimate",
-        "C：Prepare a safety manual",
-        "D：Conduct an inventory"
+        "A:Reassign some work(工作)",
+        "B:Draft a cost estimate",
+        "C:Prepare a safety manual",
+        "D:Conduct an inventory"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Can I have your attention, please, everyone. ® We will",
+      "evidence": "参考听力原文：“As supervisors, you will have to reassign some tasks for your workers. you'll have to reassign some tasks for your workers on the factory floor.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Can I have your attention, please, everyone. ® We will",
+        "evidence": "参考听力原文：“As supervisors, you will have to reassign some tasks for your workers. you'll have to reassign some tasks for your workers on the factory floor.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“As supervisors, you'll have to reassign some tasks”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Reassign some work）。"
+        "analysis": "正确答案：A（Reassign some work）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

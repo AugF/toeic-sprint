@@ -39,37 +39,59 @@
       "asset_key": "official-4-test-2/audio/part3/q032-034.mp3",
       "exists": true
     },
-    "transcript": "lv Hi, ©) have an economy ticket to return to Paris this\nevening, but | was wondering if | could go on an ear\ntrain.\nYes, ©you can do that if there are seats available.\nme check now... unfortunately, there are no econor\ntickets left for the afternoon train to Paris.\nThere’s an important client meeting at my office ir\nParis, and | really need to get there this afternoon.\nWell... there's a first-class seat available. But it cc\neuros more than your original one.\nThat's all right. I'll take that ticket.",
-    "transcript_translation": "中文辅助（离线预处理）：lv Hi, ©) have an economy ticket to return to Paris this\nevening, but | was wondering if | could go on an ear\ntrain.\nYes, ©you can do that if there are seats available（可用的）.\nme check now...\nunfortunately, there are no econor\ntickets left for the afternoon train to Paris.\nThere’s an important client meeting（会议） at my office（办公室） ir\nParis, and | really need to get there this afternoon.\nWell...\nthere's a first-class seat available（可用的）.\nBut it cc\neuros more than your original one.\nThat's all right.\nI'll take that ticket.",
-    "content_translation": "中文辅助（离线预处理）：lv Hi, ©) have an economy ticket to return to Paris this\nevening, but | was wondering if | could go on an ear\ntrain.\nYes, ©you can do that if there are seats available（可用的）.\nme check now...\nunfortunately, there are no econor\ntickets left for the afternoon train to Paris.\nThere’s an important client meeting（会议） at my office（办公室） ir\nParis, and | really need to get there this afternoon.\nWell...\nthere's a first-class seat available（可用的）.\nBut it cc\neuros more than your original one.\nThat's all right.\nI'll take that ticket."
+    "transcript": "Hi.\nI have an economy ticket to return to Paris this evening, but I was wondering if I could go on an earlier train.\nYes, you can do that if there are seats available.\nLet me check now.\nUnfortunately, there are no economy tickets left for the afternoon train to Paris.\nThere's an important client meeting at my office in Paris, and I really need to get there this afternoon.\nWell, there's a first-class seat available, but it costs 45 euros more than your original one.\nThat's all right.\nI'll take that ticket.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "34a7856ca13805fff8e6d1c8eef4ea5eb9dcf8a7a79df9cfff4f02d03f7444f6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-2/audio/part3/q032-034.mp3",
+      "metrics": {
+        "word_count": 92,
+        "legacy_word_count": 88,
+        "length_ratio": 1.045,
+        "legacy_coverage": 0.932
+      }
+    },
+    "transcript_translation": "嗨。\n我今晚有一张返回巴黎的经济舱票，但我想知道是否能坐更早的火车。\n是的，如果还有座位的话，你可以这么做。\n让我现在查一下。\n很遗憾，下午开往巴黎的火车没有经济舱票了。\n我在巴黎的办公室有一个重要的客户会议，我今天下午真的需要到那里。\n嗯，有空余的一等座，但比你原来的贵45欧元。\n没关系。\n我要买那张票。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "936740fb930cabb71479d90cca5a3eaa385b32497de033c9cbad3848c50052c5"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Aticket agent",
+        "A ticket agent",
         "A taxi driver",
-        "Acustoms official",
+        "A customs official",
         "A flight attendant"
       ],
       "answer": "A",
       "question": "Who most likely is the woman?",
-      "answer_explain": "原文依据：听力原文中提到“tickets left for the afternoon train to Paris.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Aticket agent）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） most likely（最可能） is the woman（女士）?",
+      "answer_explain": "正确答案：A（A ticket agent）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) is the woman(女士)?",
       "choice_translations": [
-        "A：Aticket agent",
-        "B：A taxi driver",
-        "C：Acustoms official",
-        "D：A flight attendant"
+        "A:A ticket agent",
+        "B:A taxi driver",
+        "C:A customs official",
+        "D:A flight attendant"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：lv Hi, ©) have an economy ticket to return to Paris this",
+      "evidence": "参考听力原文：“I have an economy ticket to return to Paris this evening, but I was wondering if I could go on an earlier train.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：lv Hi, ©) have an economy ticket to return to Paris this",
+        "evidence": "参考听力原文：“I have an economy ticket to return to Paris this evening, but I was wondering if I could go on an earlier train.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“tickets left for the afternoon train to Paris.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Aticket agent）。"
+        "analysis": "正确答案：A（A ticket agent）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 32,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "D",
       "question": "What does the man say he has to do this afternoon?",
-      "answer_explain": "原文依据：听力原文中提到“There’s an important client meeting at my office ir”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Attend a meeting）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） say he has to do this afternoon?",
+      "answer_explain": "正确答案：D（Attend a meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) say he has to do this afternoon?",
       "choice_translations": [
-        "A：Review a presentation",
-        "B：Find a receipt",
-        "C：Fill out a form",
-        "D：Attend a meeting（会议）"
+        "A:Review a presentation",
+        "B:Find a receipt",
+        "C:Fill out a form",
+        "D:Attend a meeting(会议)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：tickets left for the afternoon train to Paris.",
+      "evidence": "参考听力原文：“There's an important client meeting at my office in Paris, and I really need to get there this afternoon.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：tickets left for the afternoon train to Paris.",
+        "evidence": "参考听力原文：“There's an important client meeting at my office in Paris, and I really need to get there this afternoon.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“There’s an important client meeting at my office ir”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Attend a meeting）。"
+        "analysis": "正确答案：D（Attend a meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 33,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "B",
       "question": "What does the woman say is available?",
-      "answer_explain": "原文依据：听力原文中提到“there's a first-class seat available.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An upgraded seat）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say is available（可用的）?",
+      "answer_explain": "正确答案：B（An upgraded seat）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say is available(可用的)?",
       "choice_translations": [
-        "A：Complimentary beverages",
-        "B：An upgraded seat",
-        "C：A hotel shuttle",
-        "D：Maps of local attractions"
+        "A:Complimentary beverages",
+        "B:An upgraded seat",
+        "C:A hotel shuttle",
+        "D:Maps of local attractions"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：Yes, ©you can do that if there are seats available.",
+      "evidence": "参考听力原文：“Well, there's a first-class seat available, but it costs 45 euros more than your original one.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：Yes, ©you can do that if there are seats available.",
+        "evidence": "参考听力原文：“Well, there's a first-class seat available, but it costs 45 euros more than your original one.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“there's a first-class seat available.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An upgraded seat）。"
+        "analysis": "正确答案：B（An upgraded seat）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 34,
       "priority": {

@@ -36,9 +36,31 @@
       "asset_key": "official-11-test-2/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "Em Michiko, I just got here, and already it looks like we\ngoing to have a busy night of work. My guess is,\npeople are coming in to have dinner here before th\ngo to the concert across the street?\nEK w That's right. in fact, a party of 10 just called and\nasked if they could come for dinner in fifteen minut\nEm Ten people? Where will you seat them?\nERw Ol checked with the manager. He said to push tv\ntables together in the back of the restaurant. ©Wo\nyou be willing to serve that group?\nEM OSure, I can do that.",
-    "transcript_translation": "中文辅助（离线预处理）：Em Michiko, I just got here, and already it looks like we\ngoing to have a busy night of work（工作）.\nMy guess is,\npeople are coming in to have dinner here before th\ngo to the concert across the street?\nEK w That's right.\nin fact, a party of 10 just called and\nasked if they could come for dinner in fifteen minut\nEm Ten people?\nWhere（哪里） will you seat them?\nERw Ol checked with the manager（经理）.\nHe said to push tv\ntables together in the back of the restaurant.\n©Wo\nyou be willing to serve that group?\nEM OSure, I can do that.",
-    "content_translation": "中文辅助（离线预处理）：Em Michiko, I just got here, and already it looks like we\ngoing to have a busy night of work（工作）.\nMy guess is,\npeople are coming in to have dinner here before th\ngo to the concert across the street?\nEK w That's right.\nin fact, a party of 10 just called and\nasked if they could come for dinner in fifteen minut\nEm Ten people?\nWhere（哪里） will you seat them?\nERw Ol checked with the manager（经理）.\nHe said to push tv\ntables together in the back of the restaurant.\n©Wo\nyou be willing to serve that group?\nEM OSure, I can do that."
+    "transcript": "Michiko, I just got here and already it looks like we're going to have a busy night of work.\nMy guess is people are coming in to have dinner here before they go to the concert across the street?\nThat's right.\nIn fact, a party of 10 just called and asked if they could come for dinner in 15 minutes.\n10 people?\nWhere will you seat them?\nI checked with the manager.\nHe said to push two tables together in the back of the restaurant.\nWould you be willing to serve that group?\nSure, I can do that.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ac166223a994bead26bae3c5d12e645e5595671b9f42943b71947336d77345f8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 95,
+        "legacy_word_count": 99,
+        "length_ratio": 0.96,
+        "legacy_coverage": 0.869
+      }
+    },
+    "transcript_translation": "美智子，我刚到这里，看起来今晚的工作量就很大。\n我的猜测是人们来这里吃晚餐，然后再去街对面的音乐会？\n没错。\n事实上，一个十人的团体刚刚打电话来问能否在15分钟内来吃晚餐。\n十个人？\n你打算给他们安排座位？\n我查了经理的意见。\n他说把餐厅后方两张桌子推在一起。\n你愿意服务这个团体吗？\n当然可以，我可以做到。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "dc4554c27aa022cf532cdc0f43eae413302b6ed752fb28b7a00467360861916b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "B",
       "question": "Where is the conversation taking place?",
-      "answer_explain": "原文依据：听力原文与题目“Where is the conversation taking place?”对应，官方答案为“At a restaurant”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（At a restaurant）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） is the conversation taking place?",
+      "answer_explain": "正确答案：B（At a restaurant）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) is the conversation taking place?",
       "choice_translations": [
-        "A：At a hotel",
-        "B：At a restaurant",
-        "C：At an art gallery",
-        "D：At a concert hall"
+        "A:At a hotel",
+        "B:At a restaurant",
+        "C:At an art gallery",
+        "D:At a concert hall"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Em Michiko, I just got here, and already it looks like we",
+      "evidence": "参考听力原文：“He said to push two tables together in the back of the restaurant.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Em Michiko, I just got here, and already it looks like we",
+        "evidence": "参考听力原文：“He said to push two tables together in the back of the restaurant.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Where is the conversation taking place?”对应，官方答案为“At a restaurant”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（At a restaurant）。"
+        "analysis": "正确答案：B（At a restaurant）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "B",
       "question": "Who does the woman say gave her some instructions?",
-      "answer_explain": "原文依据：听力原文与题目“Who does the woman say gave her some instructions?”对应，官方答案为“Her manager”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（Her manager）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） does the woman（女士） say gave her some instructions?",
+      "answer_explain": "正确答案：B（Her manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) does the woman(女士) say gave her some instructions?",
       "choice_translations": [
-        "A：Her client",
-        "B：Her manager（经理）",
-        "C：An event planner",
-        "D：An interior designer"
+        "A:Her client",
+        "B:Her manager(经理)",
+        "C:An event planner",
+        "D:An interior designer"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Em Michiko, I just got here, and already it looks like we",
+      "evidence": "参考听力原文：“I checked with the manager.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Em Michiko, I just got here, and already it looks like we",
+        "evidence": "参考听力原文：“I checked with the manager.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Who does the woman say gave her some instructions?”对应，官方答案为“Her manager”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：B（Her manager）。"
+        "analysis": "正确答案：B（Her manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "D",
       "question": "What does the man agree to do?",
-      "answer_explain": "原文依据：听力原文与题目“What does the man agree to do?”对应，官方答案为“Take care of a group of people”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Take care of a group of people）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） agree to do?",
+      "answer_explain": "正确答案：D（Take care of a group of people）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) agree to do?",
       "choice_translations": [
-        "A：Sell some tickets",
-        "B：Take an extra work（工作） shift",
-        "C：Cancel a reservation",
-        "D：Take care of a group of people"
+        "A:Sell some tickets",
+        "B:Take an extra work(工作) shift",
+        "C:Cancel a reservation",
+        "D:Take care of a group of people"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Em Michiko, I just got here, and already it looks like we",
+      "evidence": "参考听力原文：“My guess is people are coming in to have dinner here before they go to the concert across the street?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Em Michiko, I just got here, and already it looks like we",
+        "evidence": "参考听力原文：“My guess is people are coming in to have dinner here before they go to the concert across the street?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What does the man agree to do?”对应，官方答案为“Take care of a group of people”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Take care of a group of people）。"
+        "analysis": "正确答案：D（Take care of a group of people）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

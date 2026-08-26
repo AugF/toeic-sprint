@@ -40,37 +40,59 @@
       "asset_key": "official-3-test-1/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "Ev Hello, | saw an advertisement for your boat to\nare there any at the end of September?\nAbsolutely! ° They're actually crowded at that\nof year because it’s the last of the nice weath\nWell, I'm glad | called early, then. I’d like to re:\ntwo seats.\nuh... ©all our reservations are done through\nWeb site. Look for the calendar on the left-h\nside. You can’t miss it. Then you just choose t\ndate you want.",
-    "transcript_translation": "呃，您好，我看到您有出售船只的广告。九月底还有吗？\n当然！它们在年底的时候非常抢手，因为这是最后一次美好的天气了。\n嗯，我很高兴我早打电话。我想预订两个座位。\n呃……我们所有的预订都是通过网站进行的。请看左边的日历。您不可能错过它。然后您只需选择想要的日期。",
-    "content_translation": "呃，您好，我看到您有出售船只的广告。九月底还有吗？\n当然！它们在年底的时候非常抢手，因为这是最后一次美好的天气了。\n嗯，我很高兴我早打电话。我想预订两个座位。\n呃……我们所有的预订都是通过网站进行的。请看左边的日历。您不可能错过它。然后您只需选择想要的日期。"
+    "transcript": "Hello.\nI saw an advertisement for your boat tours.\nAre there any at the end of September?\nAbsolutely.\nThey're actually crowded at that time of year because it's the last of the nice weather.\nWell, I'm glad I called early then.\nI'd like to reserve two seats.\nUh, all our reservations are done through our website.\nLook for the calendar on the left-hand side.\nYou can't miss it.\nThen you just choose the date you want.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9d69d02f98a6b10e8ef1cdd963a22576448bfc00c1e97ada1fb7b9cd53e33802",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 76,
+        "legacy_word_count": 74,
+        "length_ratio": 1.027,
+        "legacy_coverage": 0.878
+      }
+    },
+    "transcript_translation": "您好。\n我看到您船游的广告了。\n九月底还有吗？\n当然有。\n那段时间其实很拥挤，因为那是天气还不错的最后阶段了。\n那我很高兴我早点打电话来了。\n我想预订两个座位。\n呃，我们所有的预订都是通过我们的网站进行的。\n请看左边的日历。\n您不会错过的。\n然后您只需选择您想要的日期。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "bef9c942d0d04ab5ceaadd4913382a70d84f62c826543c4a2a5838d6ef80256e"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "They are held on weekends only. =",
-        "They are very popular. mae",
+        "They are held on weekends only.",
+        "They are very popular.",
         "Their price will be increased.",
         "They have live music."
       ],
       "answer": "B",
-      "question": "What does the woman say about tours in =~ September? ps",
-      "answer_explain": "原文依据：听力原文中提到“are there any at the end of September?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（They are very popular. mae）。",
-      "question_translation": "女士谈到九月的游览时说了什么？",
+      "question": "What does the woman say about tours in September?",
+      "answer_explain": "正确答案：B（They are very popular.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士谈到九月的游览时说了什么?",
       "choice_translations": [
-        "A：它们只在周末举行。",
-        "B：它们非常受欢迎。",
-        "C：价格将会增加。",
-        "D：它们有现场音乐。"
+        "A:它们只在周末举行。",
+        "B:它们非常受欢迎。",
+        "C:价格将会增加。",
+        "D:它们有现场音乐。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：are there any at the end of September?",
+      "evidence": "参考听力原文：“I saw an advertisement for your boat tours.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：are there any at the end of September?",
+        "evidence": "参考听力原文：“I saw an advertisement for your boat tours.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“are there any at the end of September?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（They are very popular. mae）。"
+        "analysis": "正确答案：B（They are very popular.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "A",
       "question": "What does the woman tell the man to do?",
-      "answer_explain": "原文依据：听力原文中提到“of year because it’s the last of the nice weath”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Make an online reservation）。",
-      "question_translation": "女士告诉男士做什么？",
+      "answer_explain": "正确答案：A（Make an online reservation）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士告诉男士做什么?",
       "choice_translations": [
-        "A：进行在线预订",
-        "B：查看宣传册",
-        "C：提供带照片的身份证明",
-        "D：阅读一些评论"
+        "A:进行在线预订",
+        "B:查看宣传册",
+        "C:提供带照片的身份证明",
+        "D:阅读一些评论"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ev Hello, | saw an advertisement for your boat to",
+      "evidence": "参考听力原文：“They're actually crowded at that time of year because it's the last of the nice weather.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ev Hello, | saw an advertisement for your boat to",
+        "evidence": "参考听力原文：“They're actually crowded at that time of year because it's the last of the nice weather.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“of year because it’s the last of the nice weath”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Make an online reservation）。"
+        "analysis": "正确答案：A（Make an online reservation）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -154,29 +176,29 @@
     {
       "choices": [
         "The tour is highly rated.",
-        "Amap should be used.",
+        "A map should be used.",
         "The man must arrive on time.",
-        "Acalendar is easy to find."
+        "A calendar is easy to find."
       ],
       "answer": "D",
-      "question": "What does the woman imply when she says, “You can’t miss it’?",
-      "answer_explain": "原文依据：听力原文中提到“You can’t miss it.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Acalendar is easy to find.）。",
-      "question_translation": "当女士说“您不可能错过它”时，她暗示了什么？",
+      "question": "What does the woman imply when she says, “You can’t miss it”?",
+      "answer_explain": "正确答案：D（A calendar is easy to find.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "当女士说“您不可能错过它”时,她暗示了什么?",
       "choice_translations": [
-        "A：这次游览评价很高。",
-        "B：应该使用地图。",
-        "C：男士必须准时到达。",
-        "D：日历很容易找到。"
+        "A:这次游览评价很高。",
+        "B:应该使用地图。",
+        "C:男士必须准时到达。",
+        "D:日历很容易找到。"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Ev Hello, | saw an advertisement for your boat to",
+      "evidence": "参考听力原文：“Look for the calendar on the left-hand side.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Ev Hello, | saw an advertisement for your boat to",
+        "evidence": "参考听力原文：“Look for the calendar on the left-hand side.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“You can’t miss it.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：D（Acalendar is easy to find.）。"
+        "analysis": "正确答案：D（A calendar is easy to find.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

@@ -28,38 +28,58 @@
       "asset_key": "official-9-test-1/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Ew Don't you want to schedule（日程） a press conference?\nм",
-    "content_translation": "中文辅助（离线预处理）：Ew Don't you want to schedule（日程） a press conference?\nм"
+    "transcript": "Don't you want to schedule\nA. press conference? A. Yes, but the next few days will be busy.\nB. Poor internet service.\nC. I just read a book review.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8ab60cde5adf230cc55c418a5a1ea03c83acaba91bd53d9d7a3f4962ff2c9cb1",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "你不想安排\nA. 新闻发布会吗？ A. 是的，但接下来的几天会很忙。\nB. 互联网服务不好。\nC. 我刚读了一本书评。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "08f5bc18d9bb105cfea06572e0fc6379867ed0b491bded31d3385e1ef55a45ce"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Yes, but the next few days will be busy.",
-        "Poor Internet service.",
+        "press conference? A. Yes, but the next few days will be busy.",
+        "Poor internet service.",
         "I just read a book review."
       ],
       "answer": "A",
-      "question": "Ew Don't you want to schedule a press conference? м",
+      "question": "Don't you want to schedule",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Don't you want to schedule a press conference? м”，自然应答是“Yes, but the next few days will be busy.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, but the next few days will be busy.）。",
-      "question_translation": "中文辅助（离线预处理）：Ew Don't you want to schedule（日程） a press conference?\nм",
+      "answer_explain": "原文依据：问句或陈述是“Don't you want to schedule”，自然应答是“press conference? A. Yes, but the next few days will be busy.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（press conference? A. Yes, but the next few days will be busy.）。",
+      "question_translation": "你不想安排",
       "choice_translations": [
-        "A：Yes, but the next few days will be busy.",
-        "B：Poor Internet service（服务）.",
-        "C：I just read a book review."
+        "A：新闻发布会吗? A. 是的,但接下来的几天会很忙。",
+        "B：互联网服务不好。",
+        "C：我刚读了一本书评。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Ew Don't you want to schedule a press conference? м",
+      "evidence": "参考原文第 1 段：Don't you want to schedule",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Ew Don't you want to schedule a press conference? м",
+        "evidence": "参考原文第 1 段：Don't you want to schedule",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Ew Don't you want to schedule a press conference? м”，自然应答是“Yes, but the next few days will be busy.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yes, but the next few days will be busy.）。"
+        "analysis": "原文依据：问句或陈述是“Don't you want to schedule”，自然应答是“press conference? A. Yes, but the next few days will be busy.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（press conference? A. Yes, but the next few days will be busy.）。"
       },
       "item_id": 18,
       "priority": {

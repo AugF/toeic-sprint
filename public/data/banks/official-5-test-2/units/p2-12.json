@@ -28,13 +28,33 @@
       "asset_key": "official-5-test-2/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Doesn't the shuttle to the airport leave soon?",
-    "content_translation": "中文辅助（离线预处理）：Doesn't the shuttle to the airport leave soon?"
+    "transcript": "Doesn't the shuttle to the airport leave soon?\nA. Yeah, in about 15 minutes.\nB. A round-trip flight to Tokyo.\nC. Oh, where is he working now?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fe45bd24aabb5f570c08ecf298241eaf48e9bd358f8f7246dd2fc2a197f83a81",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "机场的穿梭巴士快要走了吗？\nA. 是啊，大概十五分钟。\nB. 去东京的往返航班。\nC. 哦，他现在在哪里工作？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1a6e9eef91e4769c5ab73dfe63c68f2caefc655c8942760d75d04da67c5bdac2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Yeah, in about fifteen minutes.",
+        "Yeah, in about 15 minutes.",
         "A round-trip flight to Tokyo.",
         "Oh, where is he working now?"
       ],
@@ -43,12 +63,12 @@
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Doesn't the shuttle to the airport leave soon?”，自然应答是“Yeah, in about fifteen minutes.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yeah, in about fifteen minutes.）。",
-      "question_translation": "中文辅助（离线预处理）：Doesn't the shuttle to the airport leave soon?",
+      "answer_explain": "原文依据：问句或陈述是“Doesn't the shuttle to the airport leave soon?”，自然应答是“Yeah, in about 15 minutes.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yeah, in about 15 minutes.）。",
+      "question_translation": "机场的穿梭巴士快要走了吗?",
       "choice_translations": [
-        "A：Yeah, in about fifteen minutes.",
-        "B：A round-trip flight to Tokyo.",
-        "C：Oh, where（哪里） is he working now?"
+        "A：是啊,大概十五分钟。",
+        "B：去东京的往返航班。",
+        "C：哦,他现在在哪里工作?"
       ],
       "question_type": "否定 / 反意疑问句",
       "evidence": "参考原文第 1 段：Doesn't the shuttle to the airport leave soon?",
@@ -59,7 +79,7 @@
         "question_type": "否定 / 反意疑问句",
         "evidence": "参考原文第 1 段：Doesn't the shuttle to the airport leave soon?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Doesn't the shuttle to the airport leave soon?”，自然应答是“Yeah, in about fifteen minutes.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yeah, in about fifteen minutes.）。"
+        "analysis": "原文依据：问句或陈述是“Doesn't the shuttle to the airport leave soon?”，自然应答是“Yeah, in about 15 minutes.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Yeah, in about 15 minutes.）。"
       },
       "item_id": 12,
       "priority": {

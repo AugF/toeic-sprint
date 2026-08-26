@@ -28,38 +28,58 @@
       "asset_key": "official-3-test-2/audio/part2/q020.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Which page should | turn to in the manual?",
-    "content_translation": "中文辅助（离线预处理）：Which page should | turn to in the manual?"
+    "transcript": "Which page should I turn to in the manual?\nA. Make a left just past that stop sign.\nB. Wait, that's the wrong manual.\nC. Maybe several hours ago.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1031e4c061ad7cf0d75e5e11532f418ea414d2e3680e4ebd62697171dffbc2ee",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part2/q020.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "我应该翻到手册的哪一页？\nA. 在那个停车标志之后左转。\nB. 等等，这是错误的说明书。\nC. 也许是几个小时前。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c8cab907c56fd10985dabaa1476ad3a538d8a2aaaeaae23eb9fc3bb0ba859634"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Make a left just past that stop sign.",
-        "Wait, that’s the wrong manual.",
+        "Wait, that's the wrong manual.",
         "Maybe several hours ago."
       ],
       "answer": "B",
-      "question": "Which page should | turn to in the manual?",
+      "question": "Which page should I turn to in the manual?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Which page should | turn to in the manual?”，自然应答是“Wait, that’s the wrong manual.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Wait, that’s the wrong manual.）。",
-      "question_translation": "中文辅助（离线预处理）：Which page should | turn to in the manual?",
+      "answer_explain": "原文依据：问句或陈述是“Which page should I turn to in the manual?”，自然应答是“Wait, that's the wrong manual.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Wait, that's the wrong manual.）。",
+      "question_translation": "我应该翻到手册的哪一页?",
       "choice_translations": [
-        "A：Make a left just past that stop sign.",
-        "B：Wait, that’s the wrong manual.",
-        "C：Maybe several hours ago."
+        "A：在那个停车标志之后左转。",
+        "B：等等,这是错误的说明书。",
+        "C：也许是几个小时前。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：Which page should | turn to in the manual?",
+      "evidence": "参考原文第 1 段：Which page should I turn to in the manual?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：Which page should | turn to in the manual?",
+        "evidence": "参考原文第 1 段：Which page should I turn to in the manual?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Which page should | turn to in the manual?”，自然应答是“Wait, that’s the wrong manual.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Wait, that’s the wrong manual.）。"
+        "analysis": "原文依据：问句或陈述是“Which page should I turn to in the manual?”，自然应答是“Wait, that's the wrong manual.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Wait, that's the wrong manual.）。"
       },
       "item_id": 20,
       "priority": {

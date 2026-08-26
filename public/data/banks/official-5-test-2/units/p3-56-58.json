@@ -41,9 +41,31 @@
       "asset_key": "official-5-test-2/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "K, Dahlia, for the final part of your training as a\ncustomer service representative, you'll be working in\nour customer service database. So to get started, click\ncustomer accounts on your computer screen.\nsw K, I clicked on customer accounts, but now the\ncomputer is asking for a user name and password\nl Wait. Didn't Georgina give you a user name and\nGeorgina\npassword for the database this morning?\nShe's out of the office today. I think she had a problem\nwith her car.\nBm Oh. K, then let's take a break now. Ol'll call the\nInformation Technology department to try to get your\nlog-in information.",
-    "transcript_translation": "中文辅助（离线预处理）：K, Dahlia, for the final part of your training as a\ncustomer（顾客） service（服务） representative, you'll be working in\nour customer（顾客） service（服务） database.\nSo to get started, click\ncustomer（顾客） accounts on your computer screen.\nsw K, I clicked on customer（顾客） accounts, but now the\ncomputer is asking for a user name and password\nl Wait.\nDidn't Georgina give you a user name and\nGeorgina\npassword for the database this morning?\nShe's out of the office（办公室） today.\nI think she had a problem\nwith her car.\nBm Oh.\nK, then let's take a break now.\nOl'll call the\nInformation（信息） Technology department to try to get your\nlog-in information（信息）.",
-    "content_translation": "中文辅助（离线预处理）：K, Dahlia, for the final part of your training as a\ncustomer（顾客） service（服务） representative, you'll be working in\nour customer（顾客） service（服务） database.\nSo to get started, click\ncustomer（顾客） accounts on your computer screen.\nsw K, I clicked on customer（顾客） accounts, but now the\ncomputer is asking for a user name and password\nl Wait.\nDidn't Georgina give you a user name and\nGeorgina\npassword for the database this morning?\nShe's out of the office（办公室） today.\nI think she had a problem\nwith her car.\nBm Oh.\nK, then let's take a break now.\nOl'll call the\nInformation（信息） Technology department to try to get your\nlog-in information（信息）."
+    "transcript": "Okay, Dahlia.\nFor the final part of your training as a customer service representative, you'll be working in our customer service database.\nSo, to get started, click Customer Accounts on your computer screen.\nOkay.\nI clicked on Customer Accounts.\nBut now the computer is asking for a username and password.\nWait, didn't Georgina give you a username and password for the database this morning?\nShe's out of the office today.\nI think she had a problem with her car.\nOh, okay.\nThen let's take a break now.\nI'll call the Information Technology Department to try to get your login information.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "9355fb4a5f99a51a1dc4086bda8e948032b392c16af620fc50933c37ed04db90",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 100,
+        "legacy_word_count": 101,
+        "length_ratio": 0.99,
+        "legacy_coverage": 0.911
+      }
+    },
+    "transcript_translation": "Okay, Dahlia.\n好的，达莉亚。\nFor the final part of your training as a customer service representative, you'll be working in our customer service database.\n作为客户服务代表的培训最后一部分，您将使用我们的客户服务数据库。\nSo, to get started, click Customer Accounts on your computer screen.\n所以，要开始，请在电脑屏幕上点击“Customer Accounts”（客户账户）。\nOkay.\n好的。\nI clicked on Customer Accounts.\n我点开了“Customer Accounts”。\nBut now the computer is asking for a username and password.\n但现在电脑要求输入用户名和密码。\nWait, didn't Georgina give you a username and password for the database this morning?\n等等，乔治娜今天早上没有给您数据库的用户名和密码吗？\nShe's out of the office today.\n她今天不在办公室。\nI think she had a problem with her car.\n我想她的车出了点问题。\nOh, okay.\n哦，好的。\nThen let's take a break now.\n那我们现在休息一下吧。\nI'll call the Information Technology Department to try to get your login information.",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "fd0938130c0ac699be94f6769e33c5eb912c75f15504ab2385bf54d121fcac4b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -55,23 +77,23 @@
       ],
       "answer": "C",
       "question": "What department do the speakers most likely work in?",
-      "answer_explain": "原文依据：听力原文中提到“customer service representative, you'll be working in”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Customer service）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） department do the speakers most likely（最可能） work（工作） in?",
+      "answer_explain": "正确答案：C（Customer service）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) department do the speakers most likely(最可能) work(工作) in?",
       "choice_translations": [
-        "A：Maintenance",
-        "B：Marketing",
-        "C：Customer（顾客） service（服务）",
-        "D：Product development"
+        "A:Maintenance",
+        "B:Marketing",
+        "C:Customer(顾客) service(服务)",
+        "D:Product development"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 13 段：Information Technology department to try to get your",
+      "evidence": "参考听力原文：“For the final part of your training as a customer service representative, you'll be working in our customer service database.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 13 段：Information Technology department to try to get your",
+        "evidence": "参考听力原文：“For the final part of your training as a customer service representative, you'll be working in our customer service database.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“customer service representative, you'll be working in”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Customer service）。"
+        "analysis": "正确答案：C（Customer service）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "B",
       "question": "What does the woman imply when she says, \"She's out of the office today\"?",
-      "answer_explain": "原文依据：听力原文中提到“She's out of the office today.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Some information has not been provided.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） imply when（何时） she says, \"She's out of the office（办公室） today\"?",
+      "answer_explain": "正确答案：B（Some information has not been provided.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) imply when(何时) she says, \"She's out of the office(办公室) today\"?",
       "choice_translations": [
-        "A：She would like to work（工作） on Georgina's computer.",
-        "B：Some information（信息） has not been provided.",
-        "C：There is a mistake in a work（工作） plan.",
-        "D：Some materials need to be reordered."
+        "A:She would like to work(工作) on Georgina's computer.",
+        "B:Some information(信息) has not been provided.",
+        "C:There is a mistake in a work(工作) plan.",
+        "D:Some materials need to be reordered."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 10 段：She's out of the office today. I think she had a problem",
+      "evidence": "参考听力原文：“She's out of the office today.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 10 段：She's out of the office today. I think she had a problem",
+        "evidence": "参考听力原文：“She's out of the office today.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“She's out of the office today.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（Some information has not been provided.）。"
+        "analysis": "正确答案：B（Some information has not been provided.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -163,23 +185,23 @@
       ],
       "answer": "B",
       "question": "What will the man do next?",
-      "answer_explain": "原文依据：听力原文中提到“Ol'll call the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Call another department）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） do next?",
+      "answer_explain": "正确答案：B（Call another department）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) do next?",
       "choice_translations": [
-        "A：Give a colleague a ride",
-        "B：Call another department",
-        "C：Sign up for a training class",
-        "D：Repair a computer"
+        "A:Give a colleague a ride",
+        "B:Call another department",
+        "C:Sign up for a training class",
+        "D:Repair a computer"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：K, Dahlia, for the final part of your training as a",
+      "evidence": "参考听力原文：“I'll call the Information Technology Department to try to get your login information.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：K, Dahlia, for the final part of your training as a",
+        "evidence": "参考听力原文：“I'll call the Information Technology Department to try to get your login information.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Ol'll call the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Call another department）。"
+        "analysis": "正确答案：B（Call another department）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

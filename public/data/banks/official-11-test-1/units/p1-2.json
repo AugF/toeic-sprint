@@ -47,8 +47,28 @@
       "asset_key": "official-11-test-1/images/part1/q002.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 一些人正在清洁窗户。\nB. 一些人正在登上一辆公共汽车。\nC. 一个路标被撞倒了。\nD. 一个轮胎被放在路缘旁。",
-    "content_translation": "本段听力围绕“公交站”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "A. Some people are cleaning windows.\nB. Some people are boarding a bus.\nC. A signpost has been knocked over.\nD. A tire has been left on a curb.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "3cec7a02ff2ddd2bf5ba60bd323df89df00367dc15926b507471c0e31d9f1e05",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part1/q002.mp3",
+      "metrics": {
+        "word_count": 269
+      }
+    },
+    "transcript_translation": "A. 有些人正在清洗窗户。\nB. 有些人正在登上公交车。\nC. 一个路标被推倒了。\nD. 一个轮胎被留在路边。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3090cd5c3d0df90c122b786653d7ddf7066086577adbbdcba75db4f5728564ae"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -66,10 +86,10 @@
       "question_type": "细节题",
       "evidence": "根据题干的语法结构、固定搭配及上下文判断。",
       "choice_translations": [
-        "A：Some people are cleaning windows.",
-        "B：Some people are boarding a bus.",
-        "C：A signpost has been knocked over.",
-        "D：A tire has been left on a curb."
+        "A：有些人正在清洗窗户。",
+        "B：有些人正在登上公交车。",
+        "C：一个路标被推倒了。",
+        "D：一个轮胎被留在路边。"
       ],
       "strategy": "本题属于细节题。先读题干并标出关键词，再回到原文定位同义改写，避免仅凭个别相同单词作答。",
       "explanation_structured": {
@@ -107,7 +127,9 @@
         "unit_id": "part1-2",
         "model": "toeic_priority_v1"
       },
-      "item_key": "official-11-test-1/p1-2/2"
+      "item_key": "official-11-test-1/p1-2/2",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

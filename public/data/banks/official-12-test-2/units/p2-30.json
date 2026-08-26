@@ -26,38 +26,58 @@
       "asset_key": "official-12-test-2/audio/part2/q030.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：w Who（谁） has the keys to the office（办公室） building?\nDEBA M",
-    "content_translation": "中文辅助（离线预处理）：w Who（谁） has the keys to the office（办公室） building?\nDEBA M"
+    "transcript": "Who has the keys to the office building?\nA. Thanks. That'd be nice.\nB. Have you spoken with the security guard?\nC. The local library.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "567a065d4cde0566822e2f8f5772d039e68a27a6412e868bc8e4f777c92c3803",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q030.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "谁有办公楼的钥匙？\nA. 谢谢。那会很好。\nB. 你和保安谈过了吗？\nC. 当地图书馆。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "dabadedad7d0e959f6b19ffb4928b77a0f63a8589df6d1c66dd23ca3b5f43e01"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Thanks, that'd be nice.",
+        "Thanks. That'd be nice.",
         "Have you spoken with the security guard?",
         "The local library."
       ],
       "answer": "B",
-      "question": "w Who has the keys to the office building? DEBA M",
+      "question": "Who has the keys to the office building?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“w Who has the keys to the office building? DEBA M”，自然应答是“Have you spoken with the security guard?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Have you spoken with the security guard?）。",
-      "question_translation": "中文辅助（离线预处理）：w Who（谁） has the keys to the office（办公室） building?\nDEBA M",
+      "answer_explain": "原文依据：问句或陈述是“Who has the keys to the office building?”，自然应答是“Have you spoken with the security guard?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Have you spoken with the security guard?）。",
+      "question_translation": "谁有办公楼的钥匙?",
       "choice_translations": [
-        "A：Thanks, that'd be nice.",
-        "B：Have you spoken with the security guard?",
-        "C：The local library."
+        "A：谢谢。那会很好。",
+        "B：你和保安谈过了吗?",
+        "C：当地图书馆。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：w Who has the keys to the office building? DEBA M",
+      "evidence": "参考原文第 1 段：Who has the keys to the office building?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：w Who has the keys to the office building? DEBA M",
+        "evidence": "参考原文第 1 段：Who has the keys to the office building?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“w Who has the keys to the office building? DEBA M”，自然应答是“Have you spoken with the security guard?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Have you spoken with the security guard?）。"
+        "analysis": "原文依据：问句或陈述是“Who has the keys to the office building?”，自然应答是“Have you spoken with the security guard?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Have you spoken with the security guard?）。"
       },
       "item_id": 30,
       "priority": {

@@ -27,8 +27,28 @@
       "asset_key": "official-6-test-1/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "你能帮我审阅一下我的会议演示文稿吗？\nA. 离底特律不远。\nB. 当然，发给我看看。\nC. 会议室。",
-    "content_translation": "你能帮我审阅一下我的会议演示文稿吗？\nA. 离底特律不远。\nB. 当然，发给我看看。\nC. 会议室。"
+    "transcript": "Can you review my conference presentation for me?\nA. Not far from Detroit.\nB. Sure, send it to me.\nC. The conference room.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "37db328530d1d0d1fa7b102ff9105899f5b1b2851539d1fa6e7df0b4047e9fa6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "你能帮我看看我的会议演示文稿吗？\nA. 不远于底特律。\nB. 当然，发给我。\nC. 会议室。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "fc7fc4ea5ff55f3c33608f24043e0ef94f0595c028bde6e085b0f0c29763ebac"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,10 +63,10 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Can you review my conference presentation for me?”，自然应答是“Sure, send it to me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Sure, send it to me.）。",
-      "question_translation": "你能帮我审阅一下我的会议演示文稿吗？",
+      "question_translation": "你能帮我看看我的会议演示文稿吗?",
       "choice_translations": [
-        "A：离底特律不远。",
-        "B：当然，发给我看看。",
+        "A：不远于底特律。",
+        "B：当然,发给我。",
         "C：会议室。"
       ],
       "question_type": "一般疑问句",

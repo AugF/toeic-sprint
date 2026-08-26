@@ -28,8 +28,28 @@
       "asset_key": "official-10-test-2/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Which sales presentation are you going to?",
-    "content_translation": "中文辅助（离线预处理）：Which sales presentation are you going to?"
+    "transcript": "Which sales presentation are you going to?\nA. The flight arrives at noon.\nB. Jennifer's morning session.\nC. Everything went smoothly.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "32fc8ff0003b37c24f60af6fbcd17fad96055b9062ebc37c386629bb00da1c71",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 22
+      }
+    },
+    "transcript_translation": "你打算参加哪个销售演示？\nA. 航班中午到达。\nB. 詹妮弗的上午会议。\nC. 一切都很顺利。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "39812fd94e7a9d04f0d73d29b78c25940b919cc6344d027f29852a2da36f19e9"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“Which sales presentation are you going to?”，自然应答是“Jennifer's morning session.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Jennifer's morning session.）。",
-      "question_translation": "中文辅助（离线预处理）：Which sales presentation are you going to?",
+      "question_translation": "你打算参加哪个销售演示?",
       "choice_translations": [
-        "A：The flight arrives at noon.",
-        "B：Jennifer's morning session.",
-        "C：Everything went smoothly."
+        "A：航班中午到达。",
+        "B：詹妮弗的上午会议。",
+        "C：一切都很顺利。"
       ],
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段：Which sales presentation are you going to?",

@@ -28,37 +28,57 @@
       "asset_key": "official-1-test-1/audio/part2/q030.mp3",
       "exists": true
     },
-    "transcript_translation": "你不知道如何使用新的c系统吗？\nA. 我希望你能培训我。\nB. 不，她不使用它。\nC. 在第四街分行。",
-    "content_translation": "你不知道如何使用新的c系统吗？\nA. 我希望你能培训我。\nB. 不，她不使用它。\nC. 在第四街分行。"
+    "transcript": "Don't you know how to use the new computer system?\nA. I was hoping you could train me.\nB. No, she doesn't use it.\nC. At the 4th Street Branch.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "69fc026f1aa89df1b6bca33e45c4d7abbcf2a815ae217c28c9da9fc2b250905c",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part2/q030.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "你知道怎么使用新的计算机系统吗？\nA. 我希望你能教我。\nB. 不，她不用它。\nC. 在第四街分行。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/qwen3-vl:4b",
+      "transcript_sha256": "e8efbc963fe000a3b603177ac48b91092103452dc4d023f9ba3446cde6617c61"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "was hoping you could train me.",
-        "No, she doesn’t use it.",
-        "At the Fourth Street branch."
+        "I was hoping you could train me.",
+        "No, she doesn't use it.",
+        "At the 4th Street Branch."
       ],
       "answer": "A",
-      "question": "Ew Don't you know how to use the new c system? i",
+      "question": "Don't you know how to use the new computer system?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Ew Don't you know how to use the new c system? i”，自然应答是“was hoping you could train me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（was hoping you could train me.）。",
+      "answer_explain": "原文依据：问句或陈述是“Don't you know how to use the new computer system?”，自然应答是“I was hoping you could train me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I was hoping you could train me.）。",
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Ew Don't you know how to use the new c system? i",
+      "evidence": "参考原文第 1 段：Don't you know how to use the new computer system?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Ew Don't you know how to use the new c system? i",
+        "evidence": "参考原文第 1 段：Don't you know how to use the new computer system?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Ew Don't you know how to use the new c system? i”，自然应答是“was hoping you could train me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（was hoping you could train me.）。"
+        "analysis": "原文依据：问句或陈述是“Don't you know how to use the new computer system?”，自然应答是“I was hoping you could train me.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I was hoping you could train me.）。"
       },
-      "question_translation": "你不知道如何使用新的c系统吗？",
+      "question_translation": "你知道怎么使用新的计算机系统吗?",
       "choice_translations": [
-        "A：我希望你能培训我。",
-        "B：不，她不使用它。",
+        "A：我希望你能教我。",
+        "B：不,她不用它。",
         "C：在第四街分行。"
       ],
       "item_id": 30,

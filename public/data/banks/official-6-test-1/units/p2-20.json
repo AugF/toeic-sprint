@@ -27,8 +27,28 @@
       "asset_key": "official-6-test-1/audio/part2/q020.mp3",
       "exists": true
     },
-    "transcript_translation": "会议室里为什么有食物？\nA. 在新闻发布会结束后。\nB. 为了客户午餐会。\nC. 是的，电话可以用了。",
-    "content_translation": "会议室里为什么有食物？\nA. 在新闻发布会结束后。\nB. 为了客户午餐会。\nC. 是的，电话可以用了。"
+    "transcript": "Why is there food in the conference room?\nA. After the press release is finished.\nB. For the client luncheon.\nC. Yes, the phone is working.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "240703b4bb97ac20f32be22435f3b343ec4563edd03772f1300b323db5cfefc4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q020.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "会议室里为什么有食物？\nA. 在新闻稿发布结束后。\nB. 为了客户午餐会。\nC. 是的，电话可以用了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d106265039425060f2f51d1d50efd978b77b4af873a4b73419c1df412ddc22f3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "原因询问",
       "keywords": "why reason response",
       "answer_explain": "原文依据：问句或陈述是“Why is there food in the conference room?”，自然应答是“For the client luncheon.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（For the client luncheon.）。",
-      "question_translation": "会议室里为什么有食物？",
+      "question_translation": "会议室里为什么有食物?",
       "choice_translations": [
-        "A：在新闻发布会结束后。",
+        "A：在新闻稿发布结束后。",
         "B：为了客户午餐会。",
-        "C：是的，电话可以用了。"
+        "C：是的,电话可以用了。"
       ],
       "question_type": "原因疑问句",
       "evidence": "参考原文第 1 段：Why is there food in the conference room?",

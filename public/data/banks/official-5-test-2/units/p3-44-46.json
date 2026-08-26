@@ -39,9 +39,32 @@
       "asset_key": "official-5-test-2/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "Hello, Felix. I have two tickets to Thursday night's\nmodern dance performance at the Grover Auditorium,\nbut I won't be able to go. | thought you might like to\nuse them.\nThanks, Colleen! I'm interested in modern dance. What\ntime does the performance start?\nAt eight o'clock. But keep in mind—it's the first show\nof the season so there's always speeches before the\nperformance. ® The show probably won't end until\neleven P.M.\nTIm Oh... that is late. I'm running a marathon early Friday\nmorning, so I'm afraid I'll have to say no. I appreciate\nthe offer, though.",
-    "transcript_translation": "中文辅助（离线预处理）：Hello, Felix.\nI have two tickets to Thursday night's\nmodern dance performance at the Grover Auditorium,\nbut I won't be able to go.\n| thought you might like to\nuse them.\nThanks, Colleen!\nI'm interested in modern dance.\nWhat（什么）\ntime does the performance start?\nAt eight o'clock.\nBut keep in mind—it's the first show\nof the season so there's always speeches before the\nperformance.\n® The show probably（可能） won't end until\neleven P.M.\nTIm Oh...\nthat is late.\nI'm running a marathon early Friday\nmorning, so I'm afraid I'll have to say no.\nI appreciate\nthe offer, though.",
-    "content_translation": "中文辅助（离线预处理）：Hello, Felix.\nI have two tickets to Thursday night's\nmodern dance performance at the Grover Auditorium,\nbut I won't be able to go.\n| thought you might like to\nuse them.\nThanks, Colleen!\nI'm interested in modern dance.\nWhat（什么）\ntime does the performance start?\nAt eight o'clock.\nBut keep in mind—it's the first show\nof the season so there's always speeches before the\nperformance.\n® The show probably（可能） won't end until\neleven P.M.\nTIm Oh...\nthat is late.\nI'm running a marathon early Friday\nmorning, so I'm afraid I'll have to say no.\nI appreciate\nthe offer, though."
+    "transcript": "Hello, Felix.\nI have two tickets to Thursday night's Modern Dance performance at the Grover Auditorium, but I won't be able to go.\nI thought you might like to use them.\nThanks, Colleen.\nI'm interested in Modern Dance.\nWhat time does the performance start?\nAt 8 o'clock.\nBut keep in mind, it's the first show of the season, so there's always speeches before the performance.\nThe show probably won't end until 11 p.m.\nOh, that is late.\nI'm running a marathon early Friday morning, so I'm afraid I'll have to say no.\nI appreciate the offer, though.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "2dd207a7eef15a0b236a856bd684c5b25acd82b2a055e4753468ac1c46ff91b7",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 96,
+        "legacy_word_count": 93,
+        "length_ratio": 1.032,
+        "legacy_coverage": 0.957
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "Hello, Felix.\n我有两张周四晚上的Modern Dance表演的Grover Auditorium的票，但我不能去了。\n我想你可能会喜欢用它们。\n谢谢你，Colleen。\n我对Modern Dance感兴趣。\n演出什么时候开始？\n八点。\n但请记住，这是本季的第一场演出，所以演出前总会有演讲。\n这场戏可能要到晚上11点才结束。\n哦，那太晚了。\n我周五早上要跑马拉松，所以我恐怕不得不拒绝了。\n不过我很感谢你的好意。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0a57f8e9337d62b8db604c0dfae64b7659a40af72c40f523695ec5bc1bae574d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "D",
       "question": "What does the woman offer the man?",
-      "answer_explain": "原文依据：听力原文中提到“® The show probably won't end until”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Show tickets）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） offer the man（男士）?",
+      "answer_explain": "正确答案：D（Show tickets）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) offer the man(男士)?",
       "choice_translations": [
-        "A：A train voucher",
-        "B：A city guidebook",
-        "C：Product samples",
-        "D：Show tickets"
+        "A:A train voucher",
+        "B:A city guidebook",
+        "C:Product samples",
+        "D:Show tickets"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 13 段：the offer, though.",
+      "evidence": "参考听力原文：“I have two tickets to Thursday night's Modern Dance performance at the Grover Auditorium, but I won't be able to go.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 13 段：the offer, though.",
+        "evidence": "参考听力原文：“I have two tickets to Thursday night's Modern Dance performance at the Grover Auditorium, but I won't be able to go.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® The show probably won't end until”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Show tickets）。"
+        "analysis": "正确答案：D（Show tickets）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "C",
       "question": "What does the woman caution the man about?",
-      "answer_explain": "原文依据：听力原文中提到“® The show probably won't end until”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An event will end late.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） caution the man（男士） about?",
+      "answer_explain": "正确答案：C（An event will end late.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) caution the man(男士) about?",
       "choice_translations": [
-        "A：Parking is limited",
-        "B：A shipment was lost.",
-        "C：An event will end late.",
-        "D：A facility is closed for repairs."
+        "A:Parking is limited",
+        "B:A shipment was lost.",
+        "C:An event will end late.",
+        "D:A facility is closed for repairs."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Hello, Felix. I have two tickets to Thursday night's",
+      "evidence": "参考听力原文：“The show probably won't end until 11 p.m.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Hello, Felix. I have two tickets to Thursday night's",
+        "evidence": "参考听力原文：“The show probably won't end until 11 p.m.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® The show probably won't end until”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（An event will end late.）。"
+        "analysis": "正确答案：C（An event will end late.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "A",
       "question": "What does the man say he will do on Friday?",
-      "answer_explain": "原文依据：听力原文中提到“morning, so I'm afraid I'll have to say no.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Participate in a sports competition）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） say he will do on Friday?",
+      "answer_explain": "正确答案：A（Participate in a sports competition）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) say he will do on Friday?",
       "choice_translations": [
-        "A：Participate in a sports competition",
-        "B：Go on a business trip",
-        "C：Attend a dinner party",
-        "D：Interview some job candidates"
+        "A:Participate in a sports competition",
+        "B:Go on a business trip",
+        "C:Attend a dinner party",
+        "D:Interview some job candidates"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：TIm Oh... that is late. I'm running a marathon early Friday",
+      "evidence": "参考听力原文：“I'm running a marathon early Friday morning, so I'm afraid I'll have to say no.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：TIm Oh... that is late. I'm running a marathon early Friday",
+        "evidence": "参考听力原文：“I'm running a marathon early Friday morning, so I'm afraid I'll have to say no.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“morning, so I'm afraid I'll have to say no.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Participate in a sports competition）。"
+        "analysis": "正确答案：A（Participate in a sports competition）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

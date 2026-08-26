@@ -27,8 +27,28 @@
       "asset_key": "official-8-test-2/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：w What（什么） did you order（订单） to eat?\n60м",
-    "content_translation": "中文辅助（离线预处理）：w What（什么） did you order（订单） to eat?\n60м"
+    "transcript": "What did you order to eat?\nA. Pasta with meat sauce.\nB. It's a new restaurant.\nC. I'd like the check, please.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4da12bd02470a2f0d940f6722614e8497b264409d457d869399a679032824128",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "你点什么吃的？\nA. 肉酱意面。\nB. 这是一家新餐厅。\nC. 请买单。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f2c98fd8aa45e8a97f3e3d26a3907adeaeaa869636a9a9848abe22c8f1625caf"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "I'd like the check, please."
       ],
       "answer": "A",
-      "question": "w What did you order to eat? 60м",
+      "question": "What did you order to eat?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“w What did you order to eat? 60м”，自然应答是“Pasta with meat sauce.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Pasta with meat sauce.）。",
-      "question_translation": "中文辅助（离线预处理）：w What（什么） did you order（订单） to eat?\n60м",
+      "answer_explain": "原文依据：问句或陈述是“What did you order to eat?”，自然应答是“Pasta with meat sauce.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Pasta with meat sauce.）。",
+      "question_translation": "你点什么吃的?",
       "choice_translations": [
-        "A：Pasta with meat sauce.",
-        "B：It's a new restaurant.",
-        "C：I'd like the check, please（请）."
+        "A：肉酱意面。",
+        "B：这是一家新餐厅。",
+        "C：请买单。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：w What did you order to eat? 60м",
+      "evidence": "参考原文第 1 段：What did you order to eat?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：w What did you order to eat? 60м",
+        "evidence": "参考原文第 1 段：What did you order to eat?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“w What did you order to eat? 60м”，自然应答是“Pasta with meat sauce.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Pasta with meat sauce.）。"
+        "analysis": "原文依据：问句或陈述是“What did you order to eat?”，自然应答是“Pasta with meat sauce.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Pasta with meat sauce.）。"
       },
       "item_id": 7,
       "priority": {

@@ -4,6 +4,7 @@ import {promisify} from "node:util";
 import {access,readFile,readdir} from "node:fs/promises";
 import test from "node:test";
 import "./knowledge-builder.test.mjs";
+import {isCurrentTranslation} from "../scripts/translate-listening-transcripts-ollama.mjs";
 
 const root=new URL("../",import.meta.url);
 const read=(value)=>readFile(new URL(value,root),"utf8");
@@ -60,6 +61,12 @@ test("precomputes Chinese study aids and only publishes validated contextual kno
         assert.ok(entries.every(entry=>entry.source_quote&&entry.why&&entry.confidence>=.78));
       }
       if(unit.part!==5&&!detail.context.reading_ocr)assert.ok(detail.context.transcript_translation||detail.context.passage_translation||detail.context.content_translation,`${bank.bank_id}/${unit.unit_id} lacks material translation`);
+      if(unit.part>=1&&unit.part<=4){
+        assert.equal(detail.context.transcript_source?.schema_version,"listening_transcript_v2",`${bank.bank_id}/${unit.unit_id} lacks audio-verified transcript provenance`);
+        assert.equal(detail.context.transcript_translation_source?.schema_version,"listening_translation_v2",`${bank.bank_id}/${unit.unit_id} lacks transcript-aligned translation provenance`);
+        assert.ok(isCurrentTranslation(detail),`${bank.bank_id}/${unit.unit_id} has stale or non-Chinese transcript translation`);
+        assert.doesNotMatch(detail.context.transcript,/[©®™]|(?:^|\s)[<>{}\[\]|_=~@]+(?:\s|$)/,`${bank.bank_id}/${unit.unit_id} contains OCR residue`);
+      }
       for(const item of detail.items){
         questions++;
         if(item.choice_translations)assert.equal(item.choice_translations.length,item.choices.length,`${item.item_key} has incomplete translated choices`);

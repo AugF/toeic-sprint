@@ -28,38 +28,58 @@
       "asset_key": "official-3-test-2/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：can pick up your packages while I'm at the post office（办公室）.",
-    "content_translation": "中文辅助（离线预处理）：can pick up your packages while I'm at the post office（办公室）."
+    "transcript": "I can pick up your packages while I'm at the post office.\nA. Thanks, but I already got them.\nB. I picked the cheapest one.\nC. Did you send it through the mail?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e05c2b60436d3c041564ac149636d076f3f86fdda1774cf5f0901a0e12929d35",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 34
+      }
+    },
+    "transcript_translation": "我在邮局的时候可以帮你取包裹。\nA. 谢谢，但我已经拿到它们了。\nB. 我选了最便宜的那个。\nC. 你是通过邮件寄的吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "51f1efae427851781d0c5eeac1fd376b97d7ec7012d63da8da1053141bb59a8c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Thanks, but | already got them.",
-        "picked the cheapest one.",
+        "Thanks, but I already got them.",
+        "I picked the cheapest one.",
         "Did you send it through the mail?"
       ],
       "answer": "A",
-      "question": "can pick up your packages while I'm at the post office.",
+      "question": "I can pick up your packages while I'm at the post office.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“can pick up your packages while I'm at the post office.”，自然应答是“Thanks, but | already got them.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Thanks, but | already got them.）。",
-      "question_translation": "中文辅助（离线预处理）：can pick up your packages while I'm at the post office（办公室）.",
+      "answer_explain": "原文依据：问句或陈述是“I can pick up your packages while I'm at the post office.”，自然应答是“Thanks, but I already got them.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Thanks, but I already got them.）。",
+      "question_translation": "我在邮局的时候可以帮你取包裹。",
       "choice_translations": [
-        "A：Thanks, but | already got them.",
-        "B：picked the cheapest one.",
-        "C：Did you send it through the mail?"
+        "A：谢谢,但我已经拿到它们了。",
+        "B：我选了最便宜的那个。",
+        "C：你是通过邮件寄的吗?"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：can pick up your packages while I'm at the post office.",
+      "evidence": "参考原文第 1 段：I can pick up your packages while I'm at the post office.",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：can pick up your packages while I'm at the post office.",
+        "evidence": "参考原文第 1 段：I can pick up your packages while I'm at the post office.",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“can pick up your packages while I'm at the post office.”，自然应答是“Thanks, but | already got them.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Thanks, but | already got them.）。"
+        "analysis": "原文依据：问句或陈述是“I can pick up your packages while I'm at the post office.”，自然应答是“Thanks, but I already got them.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Thanks, but I already got them.）。"
       },
       "item_id": 19,
       "priority": {

@@ -31,8 +31,28 @@
       "asset_key": "official-10-test-2/images/part1/q001.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. He's cutting grass.\nB. He's planting seeds.\nC. He's gathering branches.\nD. He's raking leaves.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8f12d998791a86c5b5d4802da1226094f30f923a618f38cffe9ddd479ef17d12",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part1/q001.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "A. 他正在割草。\nB. 他正在播种。\nC. 他正在收集树枝。\nD. 他正在耙叶。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "bca7b9a89f98568b22d80e6dcbcf9d9dec22ca533f6c8a3231ed0bf2495065bb"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“He's raking leaves.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：D（He's raking leaves.）。",
       "choice_translations": [
-        "A：He's cutting grass.",
-        "B：He's planting seeds.",
-        "C：He's gathering branches.",
-        "D：He's raking leaves."
+        "A：他正在割草。",
+        "B：他正在播种。",
+        "C：他正在收集树枝。",
+        "D：他正在耙叶。"
       ],
       "question_type": "照片细节题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p1-1/1"
+      "item_key": "official-10-test-2/p1-1/1",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

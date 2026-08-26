@@ -27,38 +27,58 @@
       "asset_key": "official-3-test-1/audio/part2/q029.mp3",
       "exists": true
     },
-    "transcript_translation": "ERw How many days do we have to organize the convention? @lw\nA. There are three hundred brochures.\nB. Don’t worry, it’s later than last year.\nC. We'll choose the cheapest one.",
-    "content_translation": "ERw How many days do we have to organize the convention? @lw\nA. There are three hundred brochures.\nB. Don’t worry, it’s later than last year.\nC. We'll choose the cheapest one."
+    "transcript": "How many days do we have to organize the convention?\nA. There are 300 brochures.\nB. Don't worry, it's later than last year.\nC. We'll choose the cheapest one.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f6070fbb46e7e1785cbe1439c764b95ebdd1566b71717d4d81c3b6ea5b6141c4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part2/q029.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "我们组织这次大会有多少天时间？\nA. 有300份宣传册。\nB. 别担心，比去年晚。\nC. 我们会选择最便宜的那个。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "66cb7218d8f38234331b46bb1d483c90e5d14ac576ca3a9587ecfb4023555a7a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "There are three hundred brochures.",
-        "Don’t worry, it’s later than last year.",
+        "There are 300 brochures.",
+        "Don't worry, it's later than last year.",
         "We'll choose the cheapest one."
       ],
       "answer": "B",
-      "question": "ERw How many days do we have to organize the convention? @lw",
+      "question": "How many days do we have to organize the convention?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“ERw How many days do we have to organize the convention? @lw”，自然应答是“Don’t worry, it’s later than last year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Don’t worry, it’s later than last year.）。",
-      "question_translation": "ERw How many days do we have to organize the convention? @lw",
+      "answer_explain": "原文依据：问句或陈述是“How many days do we have to organize the convention?”，自然应答是“Don't worry, it's later than last year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Don't worry, it's later than last year.）。",
+      "question_translation": "我们组织这次大会有多少天时间?",
       "choice_translations": [
-        "A：There are three hundred brochures.",
-        "B：Don’t worry, it’s later than last year.",
-        "C：We'll choose the cheapest one."
+        "A：有300份宣传册。",
+        "B：别担心,比去年晚。",
+        "C：我们会选择最便宜的那个。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：ERw How many days do we have to organize the convention? @lw",
+      "evidence": "参考原文第 1 段：How many days do we have to organize the convention?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：ERw How many days do we have to organize the convention? @lw",
+        "evidence": "参考原文第 1 段：How many days do we have to organize the convention?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“ERw How many days do we have to organize the convention? @lw”，自然应答是“Don’t worry, it’s later than last year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Don’t worry, it’s later than last year.）。"
+        "analysis": "原文依据：问句或陈述是“How many days do we have to organize the convention?”，自然应答是“Don't worry, it's later than last year.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Don't worry, it's later than last year.）。"
       },
       "item_id": 29,
       "priority": {

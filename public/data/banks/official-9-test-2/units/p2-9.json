@@ -28,8 +28,28 @@
       "asset_key": "official-9-test-2/audio/part2/q009.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Do you think we should take the train or fly to the conference?",
-    "content_translation": "中文辅助（离线预处理）：Do you think we should take the train or fly to the conference?"
+    "transcript": "Do you think we should take the train or fly to the conference?\nA. We should fly.\nB. Don't worry, you'll do great.\nC. We've spent a long time preparing.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ab2f28523374e1a72b2cf6a819d4634764c05a468b5c7c0890d51dd5886c6905",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q009.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "你觉得我们应该坐火车还是飞去参加会议？\nA. 我们应该飞。\nB. 别担心，你会做得很棒的。\nC. 我们花了很多时间准备。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1387cd4919d08cf0e2af899ad08045f40f2ec5a8050238d36d562af8fabd5ea8"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "选择问句",
       "keywords": "choice indirect response",
       "answer_explain": "原文依据：问句或陈述是“Do you think we should take the train or fly to the conference?”，自然应答是“We should fly.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（We should fly.）。",
-      "question_translation": "中文辅助（离线预处理）：Do you think we should take the train or fly to the conference?",
+      "question_translation": "你觉得我们应该坐火车还是飞去参加会议?",
       "choice_translations": [
-        "A：We should fly.",
-        "B：Don't worry, you'll do great.",
-        "C：We've spent a long time preparing."
+        "A：我们应该飞。",
+        "B：别担心,你会做得很棒的。",
+        "C：我们花了很多时间准备。"
       ],
       "question_type": "选择疑问句",
       "evidence": "参考原文第 1 段：Do you think we should take the train or fly to the conference?",

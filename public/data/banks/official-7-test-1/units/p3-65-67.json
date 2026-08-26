@@ -37,9 +37,32 @@
       "asset_key": "official-7-test-1/audio/part3/q065-067.mp3",
       "exists": true
     },
-    "transcript": "and map.\nBalM Hi, ®this is Gerard Travers. I'm calling about a\nELEL. Gerard Travers C$. Dorum#^DRA#C\nfurniture delivery for Dorum Incorporated. ®I'm the\noffice manager here.\nEKw Yes, Mr. Travers. That delivery is on the schedule for\nthis afternoon.\nElm Oh, good. And ® your driver should know that the\nusual delivery entrance - the one on Clarks Road-is\nnot accessible today. That street's closed for repairs.\nEK w OK. ® Which door should he use then?\nEm O The Linden Drive entrance would be good. There's\nroom for a truck to park alongside the road.\nEKw OK, I'll let the driver know. Your phone number is\non the delivery paperwork. ® He'll call you when he\narrives.\nLinden Drive\nSide Entrance A\nOFFICE BUILDING\nParking!\nArea\nMain\nRear\nEntrance Entrance\nClarks\nRoad\nZiED\nSide Entrance B\nBleeker Street",
-    "transcript_translation": "中文辅助（离线预处理）：and map.\nBalM Hi, ®this is Gerard Travers.\nI'm calling about a\nELEL.\nGerard Travers C$.\nDorum#^DRA#C\nfurniture delivery for Dorum Incorporated.\n®I'm the\noffice（办公室） manager（经理） here.\nEKw Yes, Mr.\nTravers.\nThat delivery is on the schedule（日程） for\nthis afternoon.\nElm Oh, good.\nAnd ® your driver should know that the\nusual delivery entrance - the one on Clarks Road-is\nnot accessible today.\nThat street's closed for repairs.\nEK w OK.\n® Which door should he use then?\nEm O The Linden Drive entrance would be good.\nThere's\nroom for a truck to park alongside the road.\nEKw OK, I'll let the driver know.\nYour phone number is\non the delivery paperwork.\n® He'll call you when（何时） he\narrives.\nLinden Drive\nSide Entrance A\nOFFICE（办公室） BUILDING\nParking!\nArea\nMain\nRear\nEntrance Entrance\nClarks\nRoad\nZiED\nSide Entrance B\nBleeker Street",
-    "content_translation": "中文辅助（离线预处理）：and map.\nBalM Hi, ®this is Gerard Travers.\nI'm calling about a\nELEL.\nGerard Travers C$.\nDorum#^DRA#C\nfurniture delivery for Dorum Incorporated.\n®I'm the\noffice（办公室） manager（经理） here.\nEKw Yes, Mr.\nTravers.\nThat delivery is on the schedule（日程） for\nthis afternoon.\nElm Oh, good.\nAnd ® your driver should know that the\nusual delivery entrance - the one on Clarks Road-is\nnot accessible today.\nThat street's closed for repairs.\nEK w OK.\n® Which door should he use then?\nEm O The Linden Drive entrance would be good.\nThere's\nroom for a truck to park alongside the road.\nEKw OK, I'll let the driver know.\nYour phone number is\non the delivery paperwork.\n® He'll call you when（何时） he\narrives.\nLinden Drive\nSide Entrance A\nOFFICE（办公室） BUILDING\nParking!\nArea\nMain\nRear\nEntrance Entrance\nClarks\nRoad\nZiED\nSide Entrance B\nBleeker Street"
+    "transcript": "Hi, this is Gerard Travers.\nI'm calling about a furniture delivery for Dorham Incorporated.\nI'm the office manager here.\nYes, Mr. Travers.\nThat delivery is on the schedule for this afternoon.\nOh, good.\nAnd your driver should know that the usual delivery entrance, the one on Clarks Road, is not accessible today.\nThat street's closed for repairs.\nOkay, which door should he use then?\nThe Linden Drive entrance would be good.\nThere's room for a truck to park alongside the road.\nOkay, I'll let the driver know.\nYour phone number is on the delivery paperwork.\nHe'll call you when he arrives.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "7232b901dbe7b190e75e19faf2b98ff545f07b92cd6866ac54554ccc92404e5f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 103,
+        "legacy_word_count": 130,
+        "length_ratio": 0.792,
+        "legacy_coverage": 0.815
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "嗨，我是 Gerard Travers。\n我打电话是关于为 Dorham Incorporated 送货的。\n我是这里的办公室经理。\n是的，Travers 先生。\n这次送货安排在今天下午。\n哦，太好了。\n您的司机应该知道，通常的送货入口，就是位于 Clarks Road 的那个，今天无法进入。\n那条街正在进行维修，关闭了。\n好的，那他应该使用哪个门？\nLinden Drive 入口就可以了。\n路边有足够的空间停放卡车。\n好的，我会通知司机。\n您的电话号码在送货文件上。\n他到达时会给您打电话。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "003a1439eb98114f1fa2b6cebeab02a2ecd26fbb9ef212f2edc60b6eabb217cf"
+    }
   },
   "items": [
     {
@@ -51,23 +74,23 @@
       ],
       "answer": "D",
       "question": "Who is the man?",
-      "answer_explain": "原文依据：听力原文中提到“office manager here.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An office manager）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） is the man（男士）?",
+      "answer_explain": "正确答案：D（An office manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) is the man(男士)?",
       "choice_translations": [
-        "A：A construction worker",
-        "B：A repair technician",
-        "C：A security guard",
-        "D：An office（办公室） manager（经理）"
+        "A:A construction worker",
+        "B:A repair technician",
+        "C:A security guard",
+        "D:An office(办公室) manager(经理)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and map.",
+      "evidence": "参考听力原文：“I'm the office manager here.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and map.",
+        "evidence": "参考听力原文：“I'm the office manager here.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“office manager here.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An office manager）。"
+        "analysis": "正确答案：D（An office manager）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 65,
       "priority": {
@@ -101,23 +124,23 @@
       ],
       "answer": "A",
       "question": "Look at the graphic. Where will a delivery be made?",
-      "answer_explain": "原文依据：听力原文中提到“Side Entrance A”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（At side entrance A）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nWhere（哪里） will a delivery be made?",
+      "answer_explain": "正确答案：A（At side entrance A）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. Where(哪里) will a delivery be made?",
       "choice_translations": [
-        "A：At side entrance A",
-        "B：At the rear entrance",
-        "C：At side entrance B",
-        "D：At the main entrance"
+        "A:At side entrance A",
+        "B:At the rear entrance",
+        "C:At side entrance B",
+        "D:At the main entrance"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：furniture delivery for Dorum Incorporated. ®I'm the",
+      "evidence": "参考听力原文：“And your driver should know that the usual delivery entrance, the one on Clarks Road, is not accessible today.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：furniture delivery for Dorum Incorporated. ®I'm the",
+        "evidence": "参考听力原文：“And your driver should know that the usual delivery entrance, the one on Clarks Road, is not accessible today.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Side Entrance A”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：A（At side entrance A）。"
+        "analysis": "正确答案：A（At side entrance A）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 66,
       "priority": {
@@ -151,23 +174,23 @@
       ],
       "answer": "C",
       "question": "What does the woman say the driver will do?",
-      "answer_explain": "原文依据：听力原文中提到“® He'll call you when he”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Make a phone call）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say the driver will do?",
+      "answer_explain": "正确答案：C（Make a phone call）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say the driver will do?",
       "choice_translations": [
-        "A：Provide an invoice",
-        "B：Install some equipment",
-        "C：Make a phone call",
-        "D：Show identification"
+        "A:Provide an invoice",
+        "B:Install some equipment",
+        "C:Make a phone call",
+        "D:Show identification"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：Elm Oh, good. And ® your driver should know that the",
+      "evidence": "参考听力原文：“And your driver should know that the usual delivery entrance, the one on Clarks Road, is not accessible today.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：Elm Oh, good. And ® your driver should know that the",
+        "evidence": "参考听力原文：“And your driver should know that the usual delivery entrance, the one on Clarks Road, is not accessible today.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“® He'll call you when he”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Make a phone call）。"
+        "analysis": "正确答案：C（Make a phone call）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 67,
       "priority": {

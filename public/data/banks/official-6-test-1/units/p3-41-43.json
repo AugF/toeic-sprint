@@ -37,9 +37,31 @@
       "asset_key": "official-6-test-1/audio/part3/q041-043.mp3",
       "exists": true
     },
-    "transcript": "m Hi, Claire. As I'm sure you know, Jim's last day at\nthe company is this Friday. He's decided to pursue\nan advanced business degree. He's going back to\nuniversity full-time next month.\nEw He mentioned that to me. That's exciting for him! So,\nwhat will happen to everything he's been working on?\nEstaahctt\nm Actually, that's what I wanted to talk to you about.\nThe management team would like you to take over\nsome of his accounts. ® Jim can bring you up to date\non the details of all his work.\nIw OK. O| just saw him go into his office. I'll go there to\ntalk to him now.",
-    "transcript_translation": "男：嗨，Claire。我想您知道，Jim这周五是他在\n公司最后一天了。他决定去攻读一个高级商业学位。下个月他要全职回大学读书。\n女：他跟我提过这件事。这对他是件令人兴奋的事！那么，他一直在做的一切该怎么办呢？\n男：实际上，这也是我想和您谈的。管理团队希望您接管他的一些客户账户。Jim可以把所有工作的细节都告诉您。\n女：好的。我刚看到他走进办公室了。我现在去和他谈谈。",
-    "content_translation": "男：嗨，Claire。我想您知道，Jim这周五是他在\n公司最后一天了。他决定去攻读一个高级商业学位。下个月他要全职回大学读书。\n女：他跟我提过这件事。这对他是件令人兴奋的事！那么，他一直在做的一切该怎么办呢？\n男：实际上，这也是我想和您谈的。管理团队希望您接管他的一些客户账户。Jim可以把所有工作的细节都告诉您。\n女：好的。我刚看到他走进办公室了。我现在去和他谈谈。"
+    "transcript": "Hi, Claire.\nAs I'm sure you know, Jim's last day at the company is this Friday.\nHe's decided to pursue an advanced business degree.\nHe's going back to university full-time next month.\nHe mentioned that to me.\nThat's exciting for him.\nSo, what will happen to everything he's been working on?\nActually, that's what I wanted to talk to you about.\nThe management team would like you to take over some of his accounts.\nJim can bring you up to date on the details of all his work.\nOkay.\nI just saw him go into his office.\nI'll go there to talk to him now.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0cfcb3588bbd4233a9f7c9a307dceed0cbbde9d3bd7b8716426586cf1a9f70c9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part3/q041-043.mp3",
+      "metrics": {
+        "word_count": 105,
+        "legacy_word_count": 107,
+        "length_ratio": 0.981,
+        "legacy_coverage": 0.935
+      }
+    },
+    "transcript_translation": "嗨，克莱尔。\n我想你知道的，吉姆本周五是公司最后一天。\n他决定攻读一个高级商业学位。\n下个月他要全职回大学学习。\n他跟我提到了这一点。\n这对他是件令人兴奋的事。\n那么，他一直在做的一切该怎么办呢？\n其实，这也是我想跟你谈的。\n管理团队希望你接管他的一些客户账户。\n吉姆可以把所有工作的细节都更新给你。\n好的。\n我刚看到他走进他的办公室。\n我现在去那里跟他谈谈。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7d0542d966404750cb749361108aa97497dc1fbde1bb503aaea73bc2bb534e65"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -51,23 +73,23 @@
       ],
       "answer": "B",
       "question": "What does the man say Jim has decided to do?",
-      "answer_explain": "原文依据：听力原文中提到“an advanced business degree.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Get a business degree）。",
-      "question_translation": "男士说 Jim 决定做什么？",
+      "answer_explain": "正确答案：B（Get a business degree）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士说 Jim 决定做什么?",
       "choice_translations": [
-        "A：雇佣一些经理",
-        "B：获得商业学位",
-        "C：要求增加预算",
-        "D：在一个会议上发言"
+        "A:雇佣一些经理",
+        "B:获得商业学位",
+        "C:要求增加预算",
+        "D:在一个会议上发言"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：the company is this Friday. He's decided to pursue",
+      "evidence": "参考听力原文：“He's decided to pursue an advanced business degree.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：the company is this Friday. He's decided to pursue",
+        "evidence": "参考听力原文：“He's decided to pursue an advanced business degree.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“an advanced business degree.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Get a business degree）。"
+        "analysis": "正确答案：B（Get a business degree）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 41,
       "priority": {
@@ -101,23 +123,23 @@
       ],
       "answer": "A",
       "question": "What does the man ask the woman to do?",
-      "answer_explain": "原文依据：听力原文中提到“The management team would like you to take over”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Take over some accounts）。",
-      "question_translation": "男士让女士做什么？",
+      "answer_explain": "正确答案：A（Take over some accounts）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士让女士做什么?",
       "choice_translations": [
-        "A：接管一些客户账户",
-        "B：领导一个指导计划",
-        "C：组织一次培训研讨会",
-        "D：进行一些访谈"
+        "A:接管一些客户账户",
+        "B:领导一个指导计划",
+        "C:组织一次培训研讨会",
+        "D:进行一些访谈"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m Hi, Claire. As I'm sure you know, Jim's last day at",
+      "evidence": "参考听力原文：“The management team would like you to take over some of his accounts.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m Hi, Claire. As I'm sure you know, Jim's last day at",
+        "evidence": "参考听力原文：“The management team would like you to take over some of his accounts.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“The management team would like you to take over”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Take over some accounts）。"
+        "analysis": "正确答案：A（Take over some accounts）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 42,
       "priority": {
@@ -151,23 +173,23 @@
       ],
       "answer": "C",
       "question": "Where will the woman go next?",
-      "answer_explain": "原文依据：听力原文中提到“O| just saw him go into his office.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To a colleague's office）。",
-      "question_translation": "女士接下来去哪里？",
+      "answer_explain": "正确答案：C（To a colleague's office）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士接下来去哪里?",
       "choice_translations": [
-        "A：去食堂",
-        "B：去建筑工地",
-        "C：去一位同事的办公室",
-        "D：去一个用品室"
+        "A:去食堂",
+        "B:去建筑工地",
+        "C:去一位同事的办公室",
+        "D:去一个用品室"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m Hi, Claire. As I'm sure you know, Jim's last day at",
+      "evidence": "参考听力原文：“He's going back to university full-time next month.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m Hi, Claire. As I'm sure you know, Jim's last day at",
+        "evidence": "参考听力原文：“He's going back to university full-time next month.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“O| just saw him go into his office.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To a colleague's office）。"
+        "analysis": "正确答案：C（To a colleague's office）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 43,
       "priority": {

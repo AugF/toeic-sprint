@@ -28,38 +28,58 @@
       "asset_key": "official-7-test-2/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：8M",
-    "content_translation": "中文辅助（离线预处理）：8M"
+    "transcript": "Who's in charge of stocking the supply cabinet?\nA. Typically once a month or so.\nB. Jamin does that.\nC. Next to Sohee's office.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c028736e81cb74ebaab6b51822f7e985765fc3be55248de4b2fb161132f10daa",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "谁负责给物资柜补充库存？\nA. 通常大约一个月一次。\nB. Jamin 做这个。\nC. 在 Sohee 的办公室旁边。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "6d7ee22d6b73bad5c7dc5ef67d9eaefd2b6a89da983d8f2beba98109e0c621b6"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Typically once a month or so.",
-        "Jae-Min does that.",
-        "Next to So-Hee's office."
+        "Jamin does that.",
+        "Next to Sohee's office."
       ],
       "answer": "B",
-      "question": "8M",
+      "question": "Who's in charge of stocking the supply cabinet?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“8M”，自然应答是“Jae-Min does that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Jae-Min does that.）。",
-      "question_translation": "中文辅助（离线预处理）：8M",
+      "answer_explain": "原文依据：问句或陈述是“Who's in charge of stocking the supply cabinet?”，自然应答是“Jamin does that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Jamin does that.）。",
+      "question_translation": "谁负责给物资柜补充库存?",
       "choice_translations": [
-        "A：Typically once a month or so.",
-        "B：Jae-Min does that.",
-        "C：Next to So-Hee's office（办公室）."
+        "A：通常大约一个月一次。",
+        "B：Jamin 做这个。",
+        "C：在 Sohee 的办公室旁边。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：8M",
+      "evidence": "参考原文第 1 段：Who's in charge of stocking the supply cabinet?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：8M",
+        "evidence": "参考原文第 1 段：Who's in charge of stocking the supply cabinet?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“8M”，自然应答是“Jae-Min does that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Jae-Min does that.）。"
+        "analysis": "原文依据：问句或陈述是“Who's in charge of stocking the supply cabinet?”，自然应答是“Jamin does that.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Jamin does that.）。"
       },
       "item_id": 7,
       "priority": {

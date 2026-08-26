@@ -27,38 +27,58 @@
       "asset_key": "official-10-test-2/audio/part2/q022.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：w Why（为什么） did Ms.\nKim oppose funding our new project?\nM",
-    "content_translation": "中文辅助（离线预处理）：w Why（为什么） did Ms.\nKim oppose funding our new project?\nM"
+    "transcript": "Why did Ms. Kim oppose funding our new project?\nA. Did you see the latest budget cuts?\nB. I'm looking forward to the opening of the new cafe.\nC. I will have it sent to her.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "029e069b7d5142519ad602cb8f78a7146ec263422439a4c40519b6acfaed86c4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q022.mp3",
+      "metrics": {
+        "word_count": 37
+      }
+    },
+    "transcript_translation": "金女士反对资助我们的新项目的原因是什么？\nA. 你看到最新的预算削减了吗？\nB. 我期待着新的咖啡馆开业。\nC. 我会把它发给她。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5191f6f18f0b4b2503f5bc0ec4399222e69c127b3321eadff7b8ceda5da6aa51"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "Did you see the latest budget cuts?",
-        "I'm looking forward to the opening of the new café.",
+        "I'm looking forward to the opening of the new cafe.",
         "I will have it sent to her."
       ],
       "answer": "A",
-      "question": "w Why did Ms. Kim oppose funding our new project? M",
+      "question": "Why did Ms. Kim oppose funding our new project?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“w Why did Ms. Kim oppose funding our new project? M”，自然应答是“Did you see the latest budget cuts?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Did you see the latest budget cuts?）。",
-      "question_translation": "中文辅助（离线预处理）：w Why（为什么） did Ms.\nKim oppose funding our new project?\nM",
+      "answer_explain": "原文依据：问句或陈述是“Why did Ms. Kim oppose funding our new project?”，自然应答是“Did you see the latest budget cuts?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Did you see the latest budget cuts?）。",
+      "question_translation": "金女士反对资助我们的新项目的原因是什么?",
       "choice_translations": [
-        "A：Did you see the latest budget cuts?",
-        "B：I'm looking forward to the opening of the new café.",
-        "C：I will have it sent to her."
+        "A：你看到最新的预算削减了吗?",
+        "B：我期待着新的咖啡馆开业。",
+        "C：我会把它发给她。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：w Why did Ms. Kim oppose funding our new project? M",
+      "evidence": "参考原文第 1 段：Why did Ms. Kim oppose funding our new project?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：w Why did Ms. Kim oppose funding our new project? M",
+        "evidence": "参考原文第 1 段：Why did Ms. Kim oppose funding our new project?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“w Why did Ms. Kim oppose funding our new project? M”，自然应答是“Did you see the latest budget cuts?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Did you see the latest budget cuts?）。"
+        "analysis": "原文依据：问句或陈述是“Why did Ms. Kim oppose funding our new project?”，自然应答是“Did you see the latest budget cuts?”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Did you see the latest budget cuts?）。"
       },
       "item_id": 22,
       "priority": {

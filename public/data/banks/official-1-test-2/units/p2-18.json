@@ -28,38 +28,58 @@
       "asset_key": "official-1-test-2/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "我们午休时间工作一下，把项目做完吧。\nA. 一个三明治和一个苹果。\nB. 但我真的需要休息！\nC. 是今天早上。",
-    "content_translation": "我们午休时间工作一下，把项目做完吧。\nA. 一个三明治和一个苹果。\nB. 但我真的需要休息！\nC. 是今天早上。"
+    "transcript": "Let's work through lunch to finish the project.\nA. A sandwich and an apple.\nB. But I really need a break.\nC. It was this morning.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "fe30f9ae83b802c17e57271825367b2a13e636112ac04567261c24db92844a40",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "我们午休时间工作，把项目完成吧。\nA. 一个三明治和一个苹果。\nB. 但我真的需要休息一下。\nC. 是今天早上。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "8b15c8c8d7a740560b5eb1fff07abaa8f97640cc8f3bd1772e05c083249882b7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Asandwich and an apple.",
-        "But | really need a break!",
+        "A sandwich and an apple.",
+        "But I really need a break.",
         "It was this morning."
       ],
       "answer": "B",
-      "question": "Let’s work through lunch to finish the project.",
+      "question": "Let's work through lunch to finish the project.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Let’s work through lunch to finish the project.”，自然应答是“But | really need a break!”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（But | really need a break!）。",
-      "question_translation": "我们午休时间工作一下，把项目做完吧。",
+      "answer_explain": "原文依据：问句或陈述是“Let's work through lunch to finish the project.”，自然应答是“But I really need a break.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（But I really need a break.）。",
+      "question_translation": "我们午休时间工作,把项目完成吧。",
       "choice_translations": [
         "A：一个三明治和一个苹果。",
-        "B：但我真的需要休息！",
+        "B：但我真的需要休息一下。",
         "C：是今天早上。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：Let’s work through lunch to finish the project.",
+      "evidence": "参考原文第 1 段：Let's work through lunch to finish the project.",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：Let’s work through lunch to finish the project.",
+        "evidence": "参考原文第 1 段：Let's work through lunch to finish the project.",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Let’s work through lunch to finish the project.”，自然应答是“But | really need a break!”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（But | really need a break!）。"
+        "analysis": "原文依据：问句或陈述是“Let's work through lunch to finish the project.”，自然应答是“But I really need a break.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（But I really need a break.）。"
       },
       "item_id": 18,
       "priority": {

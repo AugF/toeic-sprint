@@ -39,37 +39,61 @@
       "asset_key": "official-1-test-1/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "message.\nEw\nHello, this message is for Mr. Lehman. This is \\\nfrom Sun Central Pharmacy. I’m calling to let you\nthat your doctor called in your prescription for alle\nearlier today. We usually have that medication i\nbut unfortunately, we ran out yesterday. We'll get\nshipment in tomorrow, though. Your prescription v\nready for you to pick up after two pM. Please co\nthe front desk of the pharmacy when you stop in t\nThank you and have a good evening.",
-    "transcript_translation": "消息。\n您好，这是给 Lehman 先生的留言。我是来自 Sun Central Pharmacy 的。我打电话来告诉您，您的医生今天早些时候为您开具了所有药物的处方。我们通常有这种药，但很遗憾，昨天我们用完了。不过，我们明天会收到一批货。您的处方在下午两点后可以取走。您来店时请到药房前台办理。\n谢谢，祝您晚上愉快。",
-    "content_translation": "消息。\n您好，这是给 Lehman 先生的留言。我是来自 Sun Central Pharmacy 的。我打电话来告诉您，您的医生今天早些时候为您开具了所有药物的处方。我们通常有这种药，但很遗憾，昨天我们用完了。不过，我们明天会收到一批货。您的处方在下午两点后可以取走。您来店时请到药房前台办理。\n谢谢，祝您晚上愉快。"
+    "transcript": "Fortunately, we ran out yesterday.\nWe'll get a new shipment in tomorrow, though.\nYour prescription will be ready for you to pick up after 2 p.m.\nPlease come by the front desk of the pharmacy when you stop in tomorrow.\nThank you, and have a good evening.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "a76dc7f3b937fe20d2a52c43d5494f5747c11fcb5c3a64c8316a62fe25102b6a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-1/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 47,
+        "legacy_word_count": 47,
+        "length_ratio": 1,
+        "legacy_coverage": 1,
+        "prompted_failure": "implausible Part 4 transcript length 21"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "幸运的是，我们昨天用完了。\n不过，我们明天会收到新的货运。\n您的处方药下午两点后可以取走了。\n请您明天到药房前台来。\n谢谢您，祝您有个美好的夜晚。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "40fecc50b54619836e81be9848e1157131428daa6e48c30b28ba9a97d77b1c84"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "At a laboratory 80. \\",
-        "At a university (",
-        "At a pharmacy (",
-        "Ata clothing shop ("
+        "At a laboratory",
+        "At a university",
+        "At a pharmacy",
+        "At a clothing shop"
       ],
       "answer": "C",
       "question": "Where does the speaker most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“the front desk of the pharmacy when you stop in t”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a pharmacy (）。",
+      "answer_explain": "正确答案：C（At a pharmacy）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Please come by the front desk of the pharmacy when you stop in tomorrow.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Please come by the front desk of the pharmacy when you stop in tomorrow.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the front desk of the pharmacy when you stop in t”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（At a pharmacy (）。"
+        "analysis": "正确答案：C（At a pharmacy）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者最有可能在哪里工作？",
+      "question_translation": "说话者最有可能在哪里工作?",
       "choice_translations": [
-        "A：在实验室",
-        "B：在一所大学",
-        "C：在一家药店",
-        "D：在一家服装店"
+        "A:在实验室",
+        "B:在一所大学",
+        "C:在一家药店",
+        "D:在一家服装店"
       ],
       "item_id": 74,
       "priority": {
@@ -98,30 +122,30 @@
     },
     {
       "choices": [
-        "A product is not available. 81. \\",
-        "Aclinic is understaffed. (",
-        "An appointment must be canceled. (",
-        "Astore is closing early. ("
+        "A product is not available.",
+        "A clinic is understaffed.",
+        "An appointment must be canceled.",
+        "A store is closing early."
       ],
       "answer": "A",
       "question": "What problem does the speaker mention?",
-      "answer_explain": "原文依据：听力原文中提到“the front desk of the pharmacy when you stop in t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A product is not available. 81. \\）。",
+      "answer_explain": "正确答案：A（A product is not available.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Please come by the front desk of the pharmacy when you stop in tomorrow.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Please come by the front desk of the pharmacy when you stop in tomorrow.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the front desk of the pharmacy when you stop in t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A product is not available. 81. \\）。"
+        "analysis": "正确答案：A（A product is not available.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "说话者提到了什么问题？",
+      "question_translation": "说话者提到了什么问题?",
       "choice_translations": [
-        "A：产品缺货。",
-        "B：诊所人手不足。",
-        "C：预约必须取消。",
-        "D：商店提前关门。"
+        "A:产品缺货。",
+        "B:诊所人手不足。",
+        "C:预约必须取消。",
+        "D:商店提前关门。"
       ],
       "item_id": 75,
       "priority": {
@@ -150,30 +174,30 @@
     },
     {
       "choices": [
-        "Bring some identification 82. \\",
+        "Bring some identification",
         "Go to the front desk",
-        "Return a telephone call i",
-        "Reschedule a delivery ("
+        "Return a telephone call",
+        "Reschedule a delivery"
       ],
       "answer": "B",
       "question": "What is the listener instructed to do?",
-      "answer_explain": "原文依据：听力原文中提到“the front desk of the pharmacy when you stop in t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Go to the front desk）。",
+      "answer_explain": "正确答案：B（Go to the front desk）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：message.",
+      "evidence": "参考听力原文：“Please come by the front desk of the pharmacy when you stop in tomorrow.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：message.",
+        "evidence": "参考听力原文：“Please come by the front desk of the pharmacy when you stop in tomorrow.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the front desk of the pharmacy when you stop in t”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Go to the front desk）。"
+        "analysis": "正确答案：B（Go to the front desk）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
-      "question_translation": "听者被指示做什么？",
+      "question_translation": "听者被指示做什么?",
       "choice_translations": [
-        "A：带上一些身份证明",
-        "B：去前台",
-        "C：回电",
-        "D：重新安排派送"
+        "A:带上一些身份证明",
+        "B:去前台",
+        "C:回电",
+        "D:重新安排派送"
       ],
       "item_id": 76,
       "priority": {

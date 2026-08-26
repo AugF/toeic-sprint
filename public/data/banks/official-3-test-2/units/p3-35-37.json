@@ -40,9 +40,31 @@
       "asset_key": "official-3-test-2/audio/part3/q035-037.mp3",
       "exists": true
     },
-    "transcript": "Hi, °!'m calling because | have a question for E:\nthe pharmacist about the medicine my doctor a\nprescribed. But ®!'ve been waiting on hold for over a\nten minutes! Now | have to go to a meeting.\nJ u I'm sorry—we've been so busy this morning. Since 4\nyou don’t have time to talk now, you might want é\nto visit our Web site. ® You can click on a link to U\nchat with a pharmacist, and they can answer your q\nquestions by instant message. 5\nK, thanks. I'll try that out later this afternoon. 4\nd\nccnmemeneenscessensileasaaaaiiseminsinaiaiiiistaimnamn",
-    "transcript_translation": "中文辅助（离线预处理）：Hi, °!'m calling because | have a question for E:\nthe pharmacist about the medicine my doctor a\nprescribed.\nBut ®!'ve been waiting on hold for over a\nten minutes!\nNow | have to go to a meeting（会议）.\nJ u I'm sorry—we've been so busy this morning.\nSince 4\nyou don’t have time to talk now, you might want é\nto visit our Web site.\n® You can click on a link to U\nchat with a pharmacist, and they can answer your q\nquestions by instant message.\n5\nK, thanks.\nI'll try that out later this afternoon.\n4\nd\nccnmemeneenscessensileasaaaaiiseminsinaiaiiiistaimnamn",
-    "content_translation": "中文辅助（离线预处理）：Hi, °!'m calling because | have a question for E:\nthe pharmacist about the medicine my doctor a\nprescribed.\nBut ®!'ve been waiting on hold for over a\nten minutes!\nNow | have to go to a meeting（会议）.\nJ u I'm sorry—we've been so busy this morning.\nSince 4\nyou don’t have time to talk now, you might want é\nto visit our Web site.\n® You can click on a link to U\nchat with a pharmacist, and they can answer your q\nquestions by instant message.\n5\nK, thanks.\nI'll try that out later this afternoon.\n4\nd\nccnmemeneenscessensileasaaaaiiseminsinaiaiiiistaimnamn"
+    "transcript": "Hi, I'm calling because I have a question for the pharmacist about the medicine my doctor prescribed, but I've been waiting on hold for over 10 minutes.\nNow I have to go to a meeting.\nI'm sorry, we've been so busy this morning.\nSince you don't have time to talk now, you might want to visit our website.\nYou can click on a link to chat with a pharmacist and they can answer your questions by instant message.\nOkay, thanks.\nI'll try that out later this afternoon.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5a14d7dc33f7bc833373f74c35db6674dedfb16d472f6ffc5c8bce5de0ad78ec",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part3/q035-037.mp3",
+      "metrics": {
+        "word_count": 86,
+        "legacy_word_count": 91,
+        "length_ratio": 0.945,
+        "legacy_coverage": 0.879
+      }
+    },
+    "transcript_translation": "嗨，我打电话来是因为我想问一下药剂师关于我的医生开的药的问题，但我已经在等待电话接通超过10分钟了。\n我现在必须去参加一个会议。\n对不起，我们今天早上太忙了。\n既然你现在没时间聊，你可能想访问我们的网站。\n你可以点击链接与药剂师聊天，他们可以通过即时消息回答你的问题。\n好的，谢谢。\n我稍晚些时候会试试的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "2f59927190c0c15407a45e17416a3889ce00fd112fa41aa84fb107a095290333"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "D",
       "question": "According to the woman, what is the 41 purpose of the call?",
-      "answer_explain": "原文依据：听力原文中提到“the pharmacist about the medicine my doctor a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To get information about some）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the woman（女士）, what（什么） is the 41 purpose（目的） of the call?",
+      "answer_explain": "正确答案：D（To get information about some）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the woman(女士), what(什么) is the 41 purpose(目的) of the call?",
       "choice_translations": [
-        "A：To find out some hours of operation",
-        "B：To schedule（日程） a doctor’s appointment（预约）",
-        "C：To ask about a discount",
-        "D：To get information（信息） about some"
+        "A:To find out some hours of operation",
+        "B:To schedule(日程) a doctor’s appointment(预约)",
+        "C:To ask about a discount",
+        "D:To get information(信息) about some"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Hi, °!'m calling because | have a question for E:",
+      "evidence": "参考听力原文：“Hi, I'm calling because I have a question for the pharmacist about the medicine my doctor prescribed, but I've been waiting on hold for over 10 minutes.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Hi, °!'m calling because | have a question for E:",
+        "evidence": "参考听力原文：“Hi, I'm calling because I have a question for the pharmacist about the medicine my doctor prescribed, but I've been waiting on hold for over 10 minutes.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“the pharmacist about the medicine my doctor a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（To get information about some）。"
+        "analysis": "正确答案：D（To get information about some）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 35,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "A",
       "question": "What does the woman complain about?",
-      "answer_explain": "原文依据：听力原文中提到“you don’t have time to talk now, you might want é”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Along wait time）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） complain about?",
+      "answer_explain": "正确答案：A（Along wait time）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) complain about?",
       "choice_translations": [
-        "A：Along wait time",
-        "B：An unfriendly staff member",
-        "C：An incorrect order（订单）",
-        "D：A price increase 4"
+        "A:Along wait time",
+        "B:An unfriendly staff member",
+        "C:An incorrect order(订单)",
+        "D:A price increase 4"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Hi, °!'m calling because | have a question for E:",
+      "evidence": "参考听力原文：“Hi, I'm calling because I have a question for the pharmacist about the medicine my doctor prescribed, but I've been waiting on hold for over 10 minutes.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Hi, °!'m calling because | have a question for E:",
+        "evidence": "参考听力原文：“Hi, I'm calling because I have a question for the pharmacist about the medicine my doctor prescribed, but I've been waiting on hold for over 10 minutes.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“you don’t have time to talk now, you might want é”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Along wait time）。"
+        "analysis": "正确答案：A（Along wait time）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 36,
       "priority": {
@@ -154,29 +176,29 @@
     {
       "choices": [
         "Leave a voice-mail message",
-        "Use an online chat service _",
+        "Use an online chat service",
         "Provide medical records",
         "Cancel a payment"
       ],
       "answer": "B",
       "question": "What does the man suggest the woman do?",
-      "answer_explain": "原文依据：听力原文中提到“chat with a pharmacist, and they can answer your q”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Use an online chat service _）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） suggest（表明/建议） the woman（女士） do?",
+      "answer_explain": "正确答案：B（Use an online chat service）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) suggest(表明/建议) the woman(女士) do?",
       "choice_translations": [
-        "A：Leave a voice-mail message",
-        "B：Use an online chat service（服务） _",
-        "C：Provide medical records",
-        "D：Cancel a payment"
+        "A:Leave a voice-mail message",
+        "B:Use an online chat service(服务)",
+        "C:Provide medical records",
+        "D:Cancel a payment"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Hi, °!'m calling because | have a question for E:",
+      "evidence": "参考听力原文：“You can click on a link to chat with a pharmacist and they can answer your questions by instant message.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Hi, °!'m calling because | have a question for E:",
+        "evidence": "参考听力原文：“You can click on a link to chat with a pharmacist and they can answer your questions by instant message.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“chat with a pharmacist, and they can answer your q”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Use an online chat service _）。"
+        "analysis": "正确答案：B（Use an online chat service）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 37,
       "priority": {

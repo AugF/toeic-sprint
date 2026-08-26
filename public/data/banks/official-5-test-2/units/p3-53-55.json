@@ -39,9 +39,31 @@
       "asset_key": "official-5-test-2/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "Hello, thank you for calling Juntasa Solar.\nHi, I'm calling because my company's interested in\nconverting to solar energy.\nSure, we offer a variety of solar packages for\nbusinesses of all sizes.\nThat's great to hear. How can I get a quote?\nFirst, I'll need to get some information on your\ncompany's current electricity usage. Do you have\nyour most recent electric bill?\nSure, can I e-mail that to you?\nYes, of course. After that, we'll make an appointment\nfor someone to inspect your facility to see if it gets\nenough direct exposure to sunlight.",
-    "transcript_translation": "中文辅助（离线预处理）：Hello, thank（感谢） you for calling Juntasa Solar.\nHi, I'm calling because my company（公司）'s interested in\nconverting to solar energy.\nSure, we offer a variety of solar packages for\nbusinesses of all sizes.\nThat's great to hear.\nHow（如何） can I get a quote?\nFirst, I'll need to get some information（信息） on your\ncompany（公司）'s current electricity usage.\nDo you have\nyour most recent electric bill?\nSure, can I e-mail that to you?\nYes, of course.\nAfter that, we'll make an appointment（预约）\nfor someone to inspect your facility to see if it gets\nenough direct exposure to sunlight.",
-    "content_translation": "中文辅助（离线预处理）：Hello, thank（感谢） you for calling Juntasa Solar.\nHi, I'm calling because my company（公司）'s interested in\nconverting to solar energy.\nSure, we offer a variety of solar packages for\nbusinesses of all sizes.\nThat's great to hear.\nHow（如何） can I get a quote?\nFirst, I'll need to get some information（信息） on your\ncompany（公司）'s current electricity usage.\nDo you have\nyour most recent electric bill?\nSure, can I e-mail that to you?\nYes, of course.\nAfter that, we'll make an appointment（预约）\nfor someone to inspect your facility to see if it gets\nenough direct exposure to sunlight."
+    "transcript": "Hello, thank you for calling Juntasa Solar.\nHi, I'm calling because my company's interested in converting to solar energy.\nSure, we offer a variety of solar packages for businesses of all sizes.\nThat's great to hear.\nHow can I get a quote?\nFirst, I'll need to get some information on your company's current electricity usage.\nDo you have your most recent electric bill?\nSure, can I e-mail that to you?\nYes, of course.\nAfter that, we'll make an appointment for someone to inspect your facility to see if it gets enough direct exposure to sunlight.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "78ecc46dca31614e4ef02608aab42caa4fcc851bf38b28de1c0424fb1b9445ce",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 95,
+        "legacy_word_count": 93,
+        "length_ratio": 1.022,
+        "legacy_coverage": 0.978
+      }
+    },
+    "transcript_translation": "Hello, thank you for calling Juntasa Solar.\n您好，感谢您致电Juntasa Solar。\nHi, I'm calling because my company's interested in converting to solar energy.\n嗨，我打电话来是因为我的公司有兴趣转换为太阳能能源。\nSure, we offer a variety of solar packages for businesses of all sizes.\n当然，我们为所有规模的企业提供各种太阳能套餐。\nThat's great to hear.\n听到这个真是太好了。\nHow can I get a quote?\n我如何获取一份报价？\nFirst, I'll need to get some information on your company's current electricity usage.\n首先，我需要了解您公司目前的用电量信息。\nDo you have your most recent electric bill?\n您有最近的电费单吗？\nSure, can I e-mail that to you?\n好的，我可以把电费单发给您吗？\nYes, of course.\n是的，当然可以。\nAfter that, we'll make an appointment for someone to inspect your facility to see if it gets enough direct exposure to sunlight.",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e2eb97d3419eb60df038835a4f9a93156a12ff3652b34a0328014c351ec00240"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "B",
       "question": "Where does the man most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“converting to solar energy.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（At a solar energy company）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the man（男士） most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：B（At a solar energy company）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the man(男士) most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At a car dealership",
-        "B：At a solar energy company（公司）",
-        "C：At an accounting firm",
-        "D：At an Internet service（服务） provider"
+        "A:At a car dealership",
+        "B:At a solar energy company(公司)",
+        "C:At an accounting firm",
+        "D:At an Internet service(服务) provider"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Hello, thank you for calling Juntasa Solar.",
+      "evidence": "参考听力原文：“Hi, I'm calling because my company's interested in converting to solar energy.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Hello, thank you for calling Juntasa Solar.",
+        "evidence": "参考听力原文：“Hi, I'm calling because my company's interested in converting to solar energy.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“converting to solar energy.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（At a solar energy company）。"
+        "analysis": "正确答案：B（At a solar energy company）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "D",
       "question": "What does the man ask the woman for?",
-      "answer_explain": "原文依据：听力原文中提到“your most recent electric bill?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An electric bill）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） ask the woman（女士） for?",
+      "answer_explain": "正确答案：D（An electric bill）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) ask the woman(女士) for?",
       "choice_translations": [
-        "A：A manager（经理）'s signature",
-        "B：A financial form",
-        "C：A business address",
-        "D：An electric bill"
+        "A:A manager(经理)'s signature",
+        "B:A financial form",
+        "C:A business address",
+        "D:An electric bill"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hello, thank you for calling Juntasa Solar.",
+      "evidence": "参考听力原文：“Do you have your most recent electric bill?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hello, thank you for calling Juntasa Solar.",
+        "evidence": "参考听力原文：“Do you have your most recent electric bill?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“your most recent electric bill?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An electric bill）。"
+        "analysis": "正确答案：D（An electric bill）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "D",
       "question": "What does the man say will be scheduled?",
-      "answer_explain": "原文依据：听力原文中提到“for someone to inspect your facility to see if it gets”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An inspection）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） say will be scheduled?",
+      "answer_explain": "正确答案：D（An inspection）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) say will be scheduled?",
       "choice_translations": [
-        "A：An executive meeting（会议）",
-        "B：A package delivery",
-        "C：A presentation",
-        "D：An inspection"
+        "A:An executive meeting(会议)",
+        "B:A package delivery",
+        "C:A presentation",
+        "D:An inspection"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Hello, thank you for calling Juntasa Solar.",
+      "evidence": "参考听力原文：“After that, we'll make an appointment for someone to inspect your facility to see if it gets enough direct exposure to sunlight.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Hello, thank you for calling Juntasa Solar.",
+        "evidence": "参考听力原文：“After that, we'll make an appointment for someone to inspect your facility to see if it gets enough direct exposure to sunlight.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“for someone to inspect your facility to see if it gets”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（An inspection）。"
+        "analysis": "正确答案：D（An inspection）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

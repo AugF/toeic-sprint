@@ -28,8 +28,28 @@
       "asset_key": "official-9-test-2/audio/part2/q022.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：4m Wasn't that actress in another show recently?\nSw",
-    "content_translation": "中文辅助（离线预处理）：4m Wasn't that actress in another show recently?\nSw"
+    "transcript": "Wasn't that actress in another show recently?\nA. I don't watch much television.\nB. No, it's two hours long.\nC. He'll show you how.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "85cbd7166e62c2a2ffad2fedcf13aca8e46313fa39b64e317447309b62aaedf0",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q022.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "那个女演员最近不是在另一部节目里吗？\nA. 我不看太多电视。\nB. 不，它有两小时长。\nC. 他会向你展示的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "50278a9ccfbc42e642fa174034bc28bbb2c481493b3cdfe93b74e86d6ac34e01"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "He'll show you how."
       ],
       "answer": "A",
-      "question": "4m Wasn't that actress in another show recently? Sw",
+      "question": "Wasn't that actress in another show recently?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“4m Wasn't that actress in another show recently? Sw”，自然应答是“I don't watch much television.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I don't watch much television.）。",
-      "question_translation": "中文辅助（离线预处理）：4m Wasn't that actress in another show recently?\nSw",
+      "answer_explain": "原文依据：问句或陈述是“Wasn't that actress in another show recently?”，自然应答是“I don't watch much television.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I don't watch much television.）。",
+      "question_translation": "那个女演员最近不是在另一部节目里吗?",
       "choice_translations": [
-        "A：I don't watch much television.",
-        "B：No, it's two hours long.",
-        "C：He'll show you how（如何）."
+        "A：我不看太多电视。",
+        "B：不,它有两小时长。",
+        "C：他会向你展示的。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：4m Wasn't that actress in another show recently? Sw",
+      "evidence": "参考原文第 1 段：Wasn't that actress in another show recently?",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：4m Wasn't that actress in another show recently? Sw",
+        "evidence": "参考原文第 1 段：Wasn't that actress in another show recently?",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“4m Wasn't that actress in another show recently? Sw”，自然应答是“I don't watch much television.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I don't watch much television.）。"
+        "analysis": "原文依据：问句或陈述是“Wasn't that actress in another show recently?”，自然应答是“I don't watch much television.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I don't watch much television.）。"
       },
       "item_id": 22,
       "priority": {

@@ -28,8 +28,28 @@
       "asset_key": "official-10-test-2/audio/part2/q012.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：M",
-    "content_translation": "中文辅助（离线预处理）：M"
+    "transcript": "Who's organizing the benefit concert?\nA. Elizabeth and her colleagues in marketing.\nB. The piano needs tuning.\nC. Please put the flowers in the auditorium.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e8a73639d7e2722f017f240454985de5a4df64cd83899df5fd70c1e5ca65b384",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q012.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "谁在组织慈善音乐会？\nA. 伊丽莎白和她在市场营销部门的同事们。\nB. 钢琴需要调音。\nC. 请把花放在礼堂里。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "174b15c71544aa7c774475f06b7171eeb77630f5b905cfb28573d85bbd75b99f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "Please put the flowers in the auditorium."
       ],
       "answer": "A",
-      "question": "M",
+      "question": "Who's organizing the benefit concert?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M”，自然应答是“Elizabeth and her colleagues in marketing.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Elizabeth and her colleagues in marketing.）。",
-      "question_translation": "中文辅助（离线预处理）：M",
+      "answer_explain": "原文依据：问句或陈述是“Who's organizing the benefit concert?”，自然应答是“Elizabeth and her colleagues in marketing.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Elizabeth and her colleagues in marketing.）。",
+      "question_translation": "谁在组织慈善音乐会?",
       "choice_translations": [
-        "A：Elizabeth and her colleagues in marketing.",
-        "B：The piano needs tuning.",
-        "C：Please（请） put the flowers in the auditorium."
+        "A：伊丽莎白和她在市场营销部门的同事们。",
+        "B：钢琴需要调音。",
+        "C：请把花放在礼堂里。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M",
+      "evidence": "参考原文第 1 段：Who's organizing the benefit concert?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M",
+        "evidence": "参考原文第 1 段：Who's organizing the benefit concert?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“M”，自然应答是“Elizabeth and her colleagues in marketing.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Elizabeth and her colleagues in marketing.）。"
+        "analysis": "原文依据：问句或陈述是“Who's organizing the benefit concert?”，自然应答是“Elizabeth and her colleagues in marketing.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Elizabeth and her colleagues in marketing.）。"
       },
       "item_id": 12,
       "priority": {

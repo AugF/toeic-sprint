@@ -42,12 +42,32 @@
       "asset_key": "official-11-test-1/audio/part2/q020.mp3",
       "exists": true
     },
-    "transcript_translation": "这台咖啡机要怎么启动？\nA：请在底部签名。\nB：我只喝茶。\nC：只要半杯。",
-    "content_translation": "本段听力围绕“特殊疑问句”展开。请先听清人物关系和对话目的，再抓取时间、地点、原因、行动等关键信息。"
+    "transcript": "How do I start this coffee maker?\nA. Please sign at the bottom.\nB. I only drink tea.\nC. Just half a cup.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "ed5a0e2e45ddfe0c8c76bb270c9575e9a8db7ca73889ba28fc1d5525e42a9980",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-1/audio/part2/q020.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "我怎么开始用这个咖啡机？\nA. 请在底部签名。\nB. 我只喝茶。\nC. 只需要半杯。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ac76e9f7ea54fa0888979bf5b808a88edf284dd02669841a12646fc14942bb72"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
-      "question": "How do I start this coffeemaker?",
+      "question": "How do I start this coffee maker?",
       "choices": [
         "Please sign at the bottom.",
         "I only drink tea.",
@@ -59,22 +79,22 @@
       "keywords": "wh question indirect response",
       "answer_explain": "原文依据：How问咖啡机如何启动，答句说 I only drink tea。 选择理由：B暗示说话人不用咖啡机、无法提供操作方法；A和C与启动设备无关。正确答案：B（I only drink tea.）。",
       "question_type": "方式疑问句",
-      "evidence": "参考原文第 1 段第 1 句：How do I start this coffeemaker?",
+      "evidence": "参考原文第 1 段第 1 句：How do I start this coffee maker?",
       "choice_translations": [
         "A：请在底部签名。",
         "B：我只喝茶。",
-        "C：只要半杯。"
+        "C：只需要半杯。"
       ],
       "response_style": "可直接回答，也常用补充信息间接回答",
       "strategy": "先判断为方式 / 状态疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "方式 / 状态疑问句",
-        "evidence": "参考原文第 1 段第 1 句：How do I start this coffeemaker?",
+        "evidence": "参考原文第 1 段第 1 句：How do I start this coffee maker?",
         "strategy": "先判断为方式 / 状态疑问句，锁定问句真正索取的信息；可直接回答，也常用补充信息间接回答。排除只重复问句词汇、答非所问或语义冲突的选项。",
         "analysis": "原文依据：How问咖啡机如何启动，答句说 I only drink tea。 选择理由：B暗示说话人不用咖啡机、无法提供操作方法；A和C与启动设备无关。正确答案：B（I only drink tea.）。"
       },
-      "question_translation": "这台咖啡机要怎么启动？",
+      "question_translation": "我怎么开始用这个咖啡机?",
       "item_id": 20,
       "priority": {
         "level": "P2",

@@ -40,9 +40,31 @@
       "asset_key": "official-8-test-2/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "m Hi, Mei Ting. ® How do you like our company's new\nfour-day workweek policy?\nMw It's great. ®I'm just as productive at work, and with\nthree days off, I can do more things on weekends\nLike last weekend, I went to Tokyo to visit my sister.\nBam Nice. And it's also a good way for the company to save\non energy costs!\nU5ACT\nw True, but one thing I've noticed is how cold it is in\nhere on Monday mornings now. They turn the heat\ndown in all the offices on the weekend since no one is\nhere.\nall m Well, a lot of our coworkers bring a sweater to work.\nw Hmm, I'll start doing that.",
-    "transcript_translation": "中文辅助（离线预处理）：m Hi, Mei Ting.\n® How（如何） do you like our company（公司）'s new\nfour-day workweek policy?\nMw It's great.\n®I'm just as productive at work（工作）, and with\nthree days off, I can do more things on weekends\nLike last weekend, I went to Tokyo to visit my sister.\nBam Nice.\nAnd it's also a good way for the company（公司） to save\non energy costs!\nU5ACT\nw True, but one thing I've noticed is how（如何） cold it is in\nhere on Monday mornings now.\nThey turn the heat\ndown in all the offices on the weekend since no one is\nhere.\nall m Well, a lot of our coworkers bring a sweater to work（工作）.\nw Hmm, I'll start doing that.",
-    "content_translation": "中文辅助（离线预处理）：m Hi, Mei Ting.\n® How（如何） do you like our company（公司）'s new\nfour-day workweek policy?\nMw It's great.\n®I'm just as productive at work（工作）, and with\nthree days off, I can do more things on weekends\nLike last weekend, I went to Tokyo to visit my sister.\nBam Nice.\nAnd it's also a good way for the company（公司） to save\non energy costs!\nU5ACT\nw True, but one thing I've noticed is how（如何） cold it is in\nhere on Monday mornings now.\nThey turn the heat\ndown in all the offices on the weekend since no one is\nhere.\nall m Well, a lot of our coworkers bring a sweater to work（工作）.\nw Hmm, I'll start doing that."
+    "transcript": "Hi, Mei Ting.\nHow do you like our company's new four-day workweek policy?\nIt's great.\nI'm just as productive at work, and with three days off, I can do more things on weekends.\nLike last weekend, I went to Tokyo to visit my sister.\nNice.\nAnd it's also a good way for the company to save on energy costs.\nTrue.\nBut one thing I've noticed is how cold it is in here on Monday mornings now.\nThey turn the heat down in all the offices on the weekend since no one is here.\nWell, a lot of our co-workers bring a sweater to work.\nHmm.\nI'll start doing that.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0e4dfddff84651826e8f24adbcb0a7ec49a986dce109a2cba55d11fb9f094f61",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 109,
+        "legacy_word_count": 116,
+        "length_ratio": 0.94,
+        "legacy_coverage": 0.897
+      }
+    },
+    "transcript_translation": "嗨，梅婷。\n你觉得我们公司新的四天工作周政策怎么样？\n太棒了。\n我的工作效率和以前一样，而且有三天假期，我可以在周末做更多事情。\n就像上个周末，我去东京看望了我妹妹。\n不错。\n这对公司节省能源成本也是一个好方法。\n确实。\n但我注意到的是，现在周一早上这里很冷。\n因为周末没人，所以所有办公室的暖气都调低了。\n嗯，我们很多同事会带围巾来上班。\n嗯。\n我开始这样做。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7c14b3b7cc78e4de1e3d848da27b8900111de43bec96c6545f96103f8c28c495"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "A",
       "question": "What are the speakers discussing?",
-      "answer_explain": "原文依据：听力原文中提到“And it's also a good way for the company to save”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A company policy）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers discussing?",
+      "answer_explain": "正确答案：A（A company policy）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the speakers discussing?",
       "choice_translations": [
-        "A：A company（公司） policy",
-        "B：A business merger",
-        "C：Some vacation plans",
-        "D：Some training sessions"
+        "A:A company(公司) policy",
+        "B:A business merger",
+        "C:Some vacation plans",
+        "D:Some training sessions"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：m Hi, Mei Ting. ® How do you like our company's new",
+      "evidence": "参考听力原文：“And it's also a good way for the company to save on energy costs.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：m Hi, Mei Ting. ® How do you like our company's new",
+        "evidence": "参考听力原文：“And it's also a good way for the company to save on energy costs.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“And it's also a good way for the company to save”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A company policy）。"
+        "analysis": "正确答案：A（A company policy）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "C",
       "question": "What does the woman say she did last weekend?",
-      "answer_explain": "原文依据：听力原文中提到“down in all the offices on the weekend since no one is”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（She visited a relative.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she did last weekend?",
+      "answer_explain": "正确答案：C（She visited a relative.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she did last weekend?",
       "choice_translations": [
-        "A：She took a class.",
-        "B：She packed boxes.",
-        "C：She visited a relative.",
-        "D：She prepared a presentation."
+        "A:She took a class.",
+        "B:She packed boxes.",
+        "C:She visited a relative.",
+        "D:She prepared a presentation."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：three days off, I can do more things on weekends",
+      "evidence": "参考听力原文：“Like last weekend, I went to Tokyo to visit my sister.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：three days off, I can do more things on weekends",
+        "evidence": "参考听力原文：“Like last weekend, I went to Tokyo to visit my sister.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“down in all the offices on the weekend since no one is”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（She visited a relative.）。"
+        "analysis": "正确答案：C（She visited a relative.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "Why does the man say, \"a lot of our coworkers bring a sweater to work\"?",
-      "answer_explain": "原文依据：听力原文中提到“all m Well, a lot of our coworkers bring a sweater to work.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To make a suggestion）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） does the man（男士） say, \"a lot of our coworkers bring a sweater to work（工作）\"?",
+      "answer_explain": "正确答案：B（To make a suggestion）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) does the man(男士) say, \"a lot of our coworkers bring a sweater to work(工作)\"?",
       "choice_translations": [
-        "A：To request a favor",
-        "B：To make a suggestion",
-        "C：To disagree with a dress code",
-        "D：To explain a decision"
+        "A:To request a favor",
+        "B:To make a suggestion",
+        "C:To disagree with a dress code",
+        "D:To explain a decision"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 13 段：all m Well, a lot of our coworkers bring a sweater to work.",
+      "evidence": "参考听力原文：“Well, a lot of our co-workers bring a sweater to work.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 13 段：all m Well, a lot of our coworkers bring a sweater to work.",
+        "evidence": "参考听力原文：“Well, a lot of our co-workers bring a sweater to work.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“all m Well, a lot of our coworkers bring a sweater to work.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To make a suggestion）。"
+        "analysis": "正确答案：B（To make a suggestion）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

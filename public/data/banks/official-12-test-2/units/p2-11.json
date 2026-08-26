@@ -26,38 +26,58 @@
       "asset_key": "official-12-test-2/audio/part2/q011.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Who（谁）'s announcing the company（公司） health initiative?\nFlores a",
-    "content_translation": "中文辅助（离线预处理）：Who（谁）'s announcing the company（公司） health initiative?\nFlores a"
+    "transcript": "Who's announcing the company health initiative?\nA. Try the front door.\nB. I heard it was Ms. Flores.\nC. No, I work remotely.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f42a98ee38861128e137abd8ad815b3b9bc6f302007967e079fe351e47868716",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q011.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "谁宣布公司健康倡议？\nA. 试试前门。\nB. 我听说是弗洛雷斯女士。\nC. 不，我是远程工作的。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "f6a6739c9b677f23511fcea9b0a5ee3ca2a366affa7d6e4af097493899227a22"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "1",
+        "Try the front door.",
         "I heard it was Ms. Flores.",
         "No, I work remotely."
       ],
       "answer": "B",
-      "question": "Who's announcing the company health initiative? Flores a",
+      "question": "Who's announcing the company health initiative?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Who's announcing the company health initiative? Flores a”，自然应答是“I heard it was Ms. Flores.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I heard it was Ms. Flores.）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁）'s announcing the company（公司） health initiative?\nFlores a",
+      "answer_explain": "原文依据：问句或陈述是“Who's announcing the company health initiative?”，自然应答是“I heard it was Ms. Flores.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I heard it was Ms. Flores.）。",
+      "question_translation": "谁宣布公司健康倡议?",
       "choice_translations": [
-        "A：1",
-        "B：I heard it was Ms.\nFlores.",
-        "C：No, I work（工作） remotely."
+        "A：试试前门。",
+        "B：我听说是弗洛雷斯女士。",
+        "C：不,我是远程工作的。"
       ],
       "question_type": "人物疑问句",
-      "evidence": "参考原文第 1 段：Who's announcing the company health initiative? Flores a",
+      "evidence": "参考原文第 Try the front door. 段：Who's announcing the company health initiative?",
       "strategy": "先识别人物疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "人物疑问句",
-        "evidence": "参考原文第 1 段：Who's announcing the company health initiative? Flores a",
+        "evidence": "参考原文第 Try the front door. 段：Who's announcing the company health initiative?",
         "strategy": "先识别人物疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Who's announcing the company health initiative? Flores a”，自然应答是“I heard it was Ms. Flores.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I heard it was Ms. Flores.）。"
+        "analysis": "原文依据：问句或陈述是“Who's announcing the company health initiative?”，自然应答是“I heard it was Ms. Flores.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（I heard it was Ms. Flores.）。"
       },
       "item_id": 11,
       "priority": {
@@ -71,7 +91,7 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-12-test-2/p2-11/11"
+      "item_key": "official-Try the front door.2-test-2/p2-Try the front door.Try the front door./Try the front door.Try the front door."
     }
   ]
 }

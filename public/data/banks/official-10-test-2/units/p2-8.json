@@ -28,38 +28,58 @@
       "asset_key": "official-10-test-2/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：EKW",
-    "content_translation": "中文辅助（离线预处理）：EKW"
+    "transcript": "When can we tour the new factory?\nA. The day after tomorrow.\nB. I finished counting the tickets.\nC. No more than 5 at a time.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "aa1eb5f9f62ca5743074f488183a4d01e1a53657fdd2729ff8876ce6e5215918",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-10-test-2/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "我们什么时候可以参观新工厂？\nA. 后天。\nB. 我数完了票。\nC. 一次不能超过 5 个。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "024d2a5264d6fe355154ae8bfe286bfcd8135ed26b6b02ad82525faeab24ca03"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "The day after tomorrow.",
         "I finished counting the tickets.",
-        "No more than five at a time."
+        "No more than 5 at a time."
       ],
       "answer": "A",
-      "question": "EKW",
+      "question": "When can we tour the new factory?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“EKW”，自然应答是“The day after tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The day after tomorrow.）。",
-      "question_translation": "中文辅助（离线预处理）：EKW",
+      "answer_explain": "原文依据：问句或陈述是“When can we tour the new factory?”，自然应答是“The day after tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The day after tomorrow.）。",
+      "question_translation": "我们什么时候可以参观新工厂?",
       "choice_translations": [
-        "A：The day after tomorrow.",
-        "B：I finished counting the tickets.",
-        "C：No more than five at a time."
+        "A：后天。",
+        "B：我数完了票。",
+        "C：一次不能超过 5 个。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：EKW",
+      "evidence": "参考原文第 1 段：When can we tour the new factory?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：EKW",
+        "evidence": "参考原文第 1 段：When can we tour the new factory?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“EKW”，自然应答是“The day after tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The day after tomorrow.）。"
+        "analysis": "原文依据：问句或陈述是“When can we tour the new factory?”，自然应答是“The day after tomorrow.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The day after tomorrow.）。"
       },
       "item_id": 8,
       "priority": {

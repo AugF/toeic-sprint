@@ -28,8 +28,28 @@
       "asset_key": "official-9-test-1/audio/part2/q030.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：We have to enter through the side entrance at the office（办公室） tomorrow.",
-    "content_translation": "中文辅助（离线预处理）：We have to enter through the side entrance at the office（办公室） tomorrow."
+    "transcript": "We have to enter through the side entrance at the office tomorrow.\nA. I'm working from home this week.\nB. There's another copy somewhere.\nC. We're not accepting new proposals.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "83f7d2fd2c04fc44e730088a14fb4789846560d9e6105e7cb061424349bde8ab",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-1/audio/part2/q030.mp3",
+      "metrics": {
+        "word_count": 31
+      }
+    },
+    "transcript_translation": "我们明天必须从侧门进入办公室。\nA. 我这周在家工作。\nB. 还有另一份副本在某处。\nC. 我们不接受新的提案。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7cc7b8f09c51621fceb03a5f5539e42b7152cf2f60f8d6cb30023bc1ad4f4fc7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -44,11 +64,11 @@
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
       "answer_explain": "原文依据：问句或陈述是“We have to enter through the side entrance at the office tomorrow.”，自然应答是“I'm working from home this week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（I'm working from home this week.）。",
-      "question_translation": "中文辅助（离线预处理）：We have to enter through the side entrance at the office（办公室） tomorrow.",
+      "question_translation": "我们明天必须从侧门进入办公室。",
       "choice_translations": [
-        "A：I'm working from home this week.",
-        "B：There's another copy somewhere.",
-        "C：We're not accepting new proposals."
+        "A：我这周在家工作。",
+        "B：还有另一份副本在某处。",
+        "C：我们不接受新的提案。"
       ],
       "question_type": "陈述 / 请求应答题",
       "evidence": "参考原文第 1 段：We have to enter through the side entrance at the office tomorrow.",

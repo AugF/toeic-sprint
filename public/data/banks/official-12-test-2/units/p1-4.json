@@ -31,8 +31,28 @@
       "asset_key": "official-12-test-2/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. A bus is passing under a bridge.\nB. Some passengers are getting on a bus.\nC. A bus is traveling along a busy road.\nD. A bus is turning into a parking garage.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "88bb0bfb3d3d2fce583b270a433acea708747a67e0be7a987f8b0f63ffbb7ed6",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 47
+      }
+    },
+    "transcript_translation": "A. 一辆巴士正在一座桥下经过。\nB. 有些乘客正在上巴士。\nC. 一辆巴士正沿着一条繁忙的道路行驶。\nD. 一辆巴士正在转入一个停车场。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b407224a5d974823da18f1aaa88839ce0e08b3ea846b8741d41dfb9b1f4e6a70"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -48,10 +68,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“A bus is traveling along a busy road.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（A bus is traveling along a busy road.）。",
       "choice_translations": [
-        "A：A bus is passing under a bridge.",
-        "B：Some passengers are getting on a bus.",
-        "C：A bus is traveling along a busy road.",
-        "D：A bus is turning into a parking garage."
+        "A：一辆巴士正在一座桥下经过。",
+        "B：有些乘客正在上巴士。",
+        "C：一辆巴士正沿着一条繁忙的道路行驶。",
+        "D：一辆巴士正在转入一个停车场。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -75,7 +95,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-12-test-2/p1-4/4"
+      "item_key": "official-12-test-2/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

@@ -28,38 +28,58 @@
       "asset_key": "official-9-test-2/audio/part2/q010.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Your office（办公室） is moving to a new location, isn't it?",
-    "content_translation": "中文辅助（离线预处理）：Your office（办公室） is moving to a new location, isn't it?"
+    "transcript": "Your office is moving to\nA. new location, isn't it? A. A local supply company.\nB. Yes, we've been packing all week.\nC. Somewhere in the storage room.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "04038c5fe47c02b5ed2e2b2bb3fe9c6666397367e1fcc96ba6a4ef404d86fc40",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q010.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "您的办公室要搬到\nA. 新地点，对吗？ A. 一家当地的供应公司。\nB. 是的，我们整个星期都在打包。\nC. 储物室的某个地方。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "264aab1fa514d1a35843a66c54660fef097b5319da9bbd7b8a76a0043d72afb2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "A local supply company.",
+        "new location, isn't it? A. A local supply company.",
         "Yes, we've been packing all week.",
         "Somewhere in the storage room."
       ],
       "answer": "B",
-      "question": "Your office is moving to a new location, isn't it?",
+      "question": "Your office is moving to",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Your office is moving to a new location, isn't it?”，自然应答是“Yes, we've been packing all week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, we've been packing all week.）。",
-      "question_translation": "中文辅助（离线预处理）：Your office（办公室） is moving to a new location, isn't it?",
+      "answer_explain": "原文依据：问句或陈述是“Your office is moving to”，自然应答是“Yes, we've been packing all week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, we've been packing all week.）。",
+      "question_translation": "您的办公室要搬到",
       "choice_translations": [
-        "A：A local supply company（公司）.",
-        "B：Yes, we've been packing all week.",
-        "C：Somewhere in the storage room."
+        "A：新地点,对吗? A. 一家当地的供应公司。",
+        "B：是的,我们整个星期都在打包。",
+        "C：储物室的某个地方。"
       ],
       "question_type": "否定 / 反意疑问句",
-      "evidence": "参考原文第 1 段：Your office is moving to a new location, isn't it?",
+      "evidence": "参考原文第 1 段：Your office is moving to",
       "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "否定 / 反意疑问句",
-        "evidence": "参考原文第 1 段：Your office is moving to a new location, isn't it?",
+        "evidence": "参考原文第 1 段：Your office is moving to",
         "strategy": "先识别否定 / 反意疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“Your office is moving to a new location, isn't it?”，自然应答是“Yes, we've been packing all week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, we've been packing all week.）。"
+        "analysis": "原文依据：问句或陈述是“Your office is moving to”，自然应答是“Yes, we've been packing all week.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, we've been packing all week.）。"
       },
       "item_id": 10,
       "priority": {

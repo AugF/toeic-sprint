@@ -39,9 +39,31 @@
       "asset_key": "official-12-test-1/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "x71-73đ\nWe have some exciting news! O Next month, our local Pine\nValley Supermarket will join the national Apex family of\ngrocers. This means incredible new benefits for you, our\nloyal customers. @In our all-new mobile application, you'll\nfind dozens of digital coupons each week. ® You can also\nshop from the convenience of your own home with our\nenhanced delivery service. Receive half off the delivery fee\non any order over one hundred dollars!",
-    "transcript_translation": "中文辅助（离线预处理）：x71-73đ\nWe have some exciting news!\nO Next month, our local Pine\nValley Supermarket will join the national Apex family of\ngrocers.\nThis means incredible new benefits for you, our\nloyal customers.\n@In our all-new mobile application, you'll\nfind dozens of digital coupons each week.\n® You can also\nshop from the convenience of your own home with our\nenhanced delivery service（服务）.\nReceive half off the delivery fee\non any order（订单） over one hundred dollars!",
-    "content_translation": "中文辅助（离线预处理）：x71-73đ\nWe have some exciting news!\nO Next month, our local Pine\nValley Supermarket will join the national Apex family of\ngrocers.\nThis means incredible new benefits for you, our\nloyal customers.\n@In our all-new mobile application, you'll\nfind dozens of digital coupons each week.\n® You can also\nshop from the convenience of your own home with our\nenhanced delivery service（服务）.\nReceive half off the delivery fee\non any order（订单） over one hundred dollars!"
+    "transcript": "We have some exciting news.\nNext month, our local Pine Valley supermarket will join the national Apex family of grocers.\nThis means incredible new benefits for you, our loyal customers.\nIn our all-new mobile application, you'll find dozens of digital coupons each week.\nYou can also shop from the convenience of your own home with our enhanced delivery service.\nReceive half off the delivery fee on any order over $100.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "806a1710a2684f1e5d4415d0461de821d56c837a910e935852342b4e6604632b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part4/q071-073.mp3",
+      "metrics": {
+        "word_count": 69,
+        "legacy_word_count": 73,
+        "length_ratio": 0.945,
+        "legacy_coverage": 0.945
+      }
+    },
+    "transcript_translation": "我们有一些令人兴奋的消息。\n下个月，我们当地的 Pine Valley 超市将加入全国 Apex 连锁超市大家庭。\n这意味着对您这些忠实顾客带来了不可思议的新福利。\n在我们的全新移动应用程序中，您每周都能找到数十张电子优惠券。\n您还可以通过增强的送货服务，从自己家中购物。\n任何超过 100 美元的订单，运费可享受半价。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "3be1f1b06da91d670e52e952eeb594aa10dc14825abc8d869d04d5ab32c3a4d1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "A",
       "question": "What will happen next month?",
-      "answer_explain": "原文依据：听力原文中提到“O Next month, our local Pine”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A business merger will take place.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will happen next month?",
+      "answer_explain": "正确答案：A（A business merger will take place.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will happen next month?",
       "choice_translations": [
-        "A：A business merger will take place.",
-        "B：A store will be renovated.",
-        "C：A grand opening will occur.",
-        "D：A product will be discontinued."
+        "A:A business merger will take place.",
+        "B:A store will be renovated.",
+        "C:A grand opening will occur.",
+        "D:A product will be discontinued."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：We have some exciting news! O Next month, our local Pine",
+      "evidence": "参考听力原文：“Next month, our local Pine Valley supermarket will join the national Apex family of grocers.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：We have some exciting news! O Next month, our local Pine",
+        "evidence": "参考听力原文：“Next month, our local Pine Valley supermarket will join the national Apex family of grocers.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“O Next month, our local Pine”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A business merger will take place.）。"
+        "analysis": "正确答案：A（A business merger will take place.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 71,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "B",
       "question": "According to the speaker,what will customers find in a mobile application?",
-      "answer_explain": "原文依据：听力原文中提到“find dozens of digital coupons each week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some coupons）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the speaker（说话者）,what（什么） will customers find in a mobile application?",
+      "answer_explain": "正确答案：B（Some coupons）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the speaker(说话者),what(什么) will customers find in a mobile application?",
       "choice_translations": [
-        "A：A rewards card",
-        "B：Some coupons",
-        "C：Some recipes",
-        "D：Store hours"
+        "A:A rewards card",
+        "B:Some coupons",
+        "C:Some recipes",
+        "D:Store hours"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 5 段：loyal customers. @In our all-new mobile application, you'll",
+      "evidence": "参考听力原文：“In our all-new mobile application, you'll find dozens of digital coupons each week.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 5 段：loyal customers. @In our all-new mobile application, you'll",
+        "evidence": "参考听力原文：“In our all-new mobile application, you'll find dozens of digital coupons each week.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“find dozens of digital coupons each week.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Some coupons）。"
+        "analysis": "正确答案：B（Some coupons）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 72,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What does the speaker say about adelivery service?",
-      "answer_explain": "原文依据：听力原文中提到“shop from the convenience of your own home with our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A discount is available forit.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say about adelivery service（服务）?",
+      "answer_explain": "正确答案：C（A discount is available forit.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) say about adelivery service(服务)?",
       "choice_translations": [
-        "A：It allows customers toearn bonus points.",
-        "B：It will be temporarily unavailable.",
-        "C：A discount is available（可用的） forit.",
-        "D：A minimum purchasemust be made"
+        "A:It allows customers toearn bonus points.",
+        "B:It will be temporarily unavailable.",
+        "C:A discount is available(可用的) forit.",
+        "D:A minimum purchasemust be made"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 8 段：enhanced delivery service. Receive half off the delivery fee",
+      "evidence": "参考听力原文：“You can also shop from the convenience of your own home with our enhanced delivery service.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 8 段：enhanced delivery service. Receive half off the delivery fee",
+        "evidence": "参考听力原文：“You can also shop from the convenience of your own home with our enhanced delivery service.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“shop from the convenience of your own home with our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（A discount is available forit.）。"
+        "analysis": "正确答案：C（A discount is available forit.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 73,
       "priority": {

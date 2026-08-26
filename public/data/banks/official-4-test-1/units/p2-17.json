@@ -28,38 +28,58 @@
       "asset_key": "official-4-test-1/audio/part2/q017.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：bv Does your manufacturing plant produce textiles?\n=",
-    "content_translation": "中文辅助（离线预处理）：bv Does your manufacturing plant produce textiles?\n="
+    "transcript": "Does your manufacturing plant produce textiles?\nA. Oh, I didn't know that.\nB. Yes, that's our main industry.\nC. Over in the gardening section.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "6397cab1b7a2e1d53658ef1f1c5993862884cfe62cf0a3d1d127bce600908343",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-4-test-1/audio/part2/q017.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "你的制造工厂生产纺织品吗？\nA. 哦，我不知道。\nB. 是的，那是我们的主要产业。\nC. 在园艺区。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "510a5d14e1d3581d7a20aa831f9dc40e85c9cf5b455c79090f5e5e5130da5321"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Oh, | didn’t know that. fia w",
-        "Yes, that’s our main industry.",
+        "Oh, I didn't know that.",
+        "Yes, that's our main industry.",
         "Over in the gardening section."
       ],
       "answer": "B",
-      "question": "bv Does your manufacturing plant produce textiles? =",
+      "question": "Does your manufacturing plant produce textiles?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“bv Does your manufacturing plant produce textiles? =”，自然应答是“Yes, that’s our main industry.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, that’s our main industry.）。",
-      "question_translation": "中文辅助（离线预处理）：bv Does your manufacturing plant produce textiles?\n=",
+      "answer_explain": "原文依据：问句或陈述是“Does your manufacturing plant produce textiles?”，自然应答是“Yes, that's our main industry.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, that's our main industry.）。",
+      "question_translation": "你的制造工厂生产纺织品吗?",
       "choice_translations": [
-        "A：Oh, | didn’t know that.\nfia w",
-        "B：Yes, that’s our main industry.",
-        "C：Over in the gardening section."
+        "A：哦,我不知道。",
+        "B：是的,那是我们的主要产业。",
+        "C：在园艺区。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：bv Does your manufacturing plant produce textiles? =",
+      "evidence": "参考原文第 1 段：Does your manufacturing plant produce textiles?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：bv Does your manufacturing plant produce textiles? =",
+        "evidence": "参考原文第 1 段：Does your manufacturing plant produce textiles?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“bv Does your manufacturing plant produce textiles? =”，自然应答是“Yes, that’s our main industry.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, that’s our main industry.）。"
+        "analysis": "原文依据：问句或陈述是“Does your manufacturing plant produce textiles?”，自然应答是“Yes, that's our main industry.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Yes, that's our main industry.）。"
       },
       "item_id": 17,
       "priority": {

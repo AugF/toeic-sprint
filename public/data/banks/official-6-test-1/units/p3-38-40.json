@@ -36,9 +36,31 @@
       "asset_key": "official-6-test-1/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nKw •Welcome to Carly's Fitness. Can I help you?\nm Yes, hi. I'm here to fix your satellite dish.\naw Oh, wonderful! ®We haven't been able to get any\nsignal on the TV in our workout room. Hey, Marsha!\nThis gentleman's here to repair the satellite dish.\nEw Great! We had several unhappy club members here\nthis morning. They're used to watching TV while they\nuse the exercise machines.\nm ©Sorry I'm late. Ol've had lots of appointments for\nrepairs today.\ntot.\nEw I bet. ® Last night's stormy weather must've knocked\nout quite a few satellite dishes. ®That's what\nhappened to ours.\nWhere are the speakers?\nA) At an electronics shop\nEM D\nB) At a sports stadium\nC) At a television studio\nD) At a fitness center\nA) FENDE\nelectronics shop A\nWhy has the man arrived late?\nA) He wrote down the wrong time.\nIAT B\nB) He had several appointments.\nC) There was a lot of traffic.\nD) A location was hard to find.\nA write down\nD) location [SPf lo\nWhy has a satellite dish stopped working?\nA) It was damaged in a storm.\nEM A\nB) It was not installed properly.\nC) A bill has not been paid.\nD) A password has been changed.\nB) install~s properly rate.\nworkout\nunhappy\nappointment F*]\nstormy MED\nquite a few ~ state<ho~ happen to ~ ~2223",
-    "transcript_translation": "有三位说话者。\n男：欢迎来到 Carly's Fitness。我能帮您什么吗？\n女：是的，你好。我是来修理您的卫星天线的。\n男：哦，太好了！我们的健身房的电视信号一直没收到。嘿，Marsha！\n这位先生是来修理卫星天线的。\n女：太棒了！今天早上我们有几位不高兴的会员。他们习惯在用运动器材的时候看电视。\n男：抱歉我迟到了。我今天有很多预约需要维修。\n女：我知道。昨晚暴风天气肯定把好几个卫星天线给弄坏了。我们的也是这样发生的。",
-    "content_translation": "有三位说话者。\n男：欢迎来到 Carly's Fitness。我能帮您什么吗？\n女：是的，你好。我是来修理您的卫星天线的。\n男：哦，太好了！我们的健身房的电视信号一直没收到。嘿，Marsha！\n这位先生是来修理卫星天线的。\n女：太棒了！今天早上我们有几位不高兴的会员。他们习惯在用运动器材的时候看电视。\n男：抱歉我迟到了。我今天有很多预约需要维修。\n女：我知道。昨晚暴风天气肯定把好几个卫星天线给弄坏了。我们的也是这样发生的。"
+    "transcript": "Welcome to Carly's Fitness.\nCan I help you?\nYes, hi.\nI'm here to fix your satellite dish.\nOh, wonderful.\nWe haven't been able to get any signal on the TV in our workout room.\nHey, Marcia, this gentleman's here to repair the satellite dish.\nGreat.\nWe had several unhappy club members here this morning.\nThey're used to watching TV while they use the exercise machines.\nSorry I'm late.\nI've had lots of appointments for repairs today.\nI bet.\nLast night's stormy weather must have knocked out quite a few satellite dishes.\nThat's what happened to ours.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "c32c307090bc37b355e7554b462a2c7e32ae756ec8147da3c413fbefbea00179",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 96,
+        "legacy_word_count": 101,
+        "length_ratio": 0.95,
+        "legacy_coverage": 0.851
+      }
+    },
+    "transcript_translation": "欢迎来到 Carly's Fitness。\n我能帮您什么吗？\n是的，嗨。\n我是来修理您的卫星天线的。\n哦，太好了。\n我们的健身房里的电视一直没信号。\n嘿，Marcia，这位先生是来修理卫星天线的。\n太棒了。\n今天早上我们有几位不高兴的会员。\n他们习惯在使用运动器材时看电视。\n抱歉我迟到了。\n我今天有很多预约需要维修。\n我敢打赌。\n昨晚暴风天气肯定把好几个卫星天线弄坏了。\n我们的也是这样。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "44a08904bab27cfefdb85a657482c22b04875699301b3736c868ac2f61befa5f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "D",
       "question": "Where are the speakers?",
-      "answer_explain": "原文依据：听力原文中提到“D) At a fitness center”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（At a fitness center）。",
-      "question_translation": "说话者在哪里？",
+      "answer_explain": "正确答案：D（At a fitness center）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者在哪里?",
       "choice_translations": [
-        "A：在一间电子产品店",
-        "B：在一个体育场馆",
-        "C：在一个电视台",
-        "D：一个健身中心"
+        "A:在一间电子产品店",
+        "B:在一个体育场馆",
+        "C:在一个电视台",
+        "D:一个健身中心"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Welcome to Carly's Fitness.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Welcome to Carly's Fitness.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“D) At a fitness center”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（At a fitness center）。"
+        "analysis": "正确答案：D（At a fitness center）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "B",
       "question": "Why has the man arrived late?",
-      "answer_explain": "原文依据：听力原文中提到“B) He had several appointments.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（He had several appointments.）。",
-      "question_translation": "男士为什么迟到了？",
+      "answer_explain": "正确答案：B（He had several appointments.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士为什么迟到了?",
       "choice_translations": [
-        "A：他记错了时间。",
-        "B：他有很多预约。",
-        "C：交通太拥堵了。",
-        "D：找不到地点。"
+        "A:他记错了时间。",
+        "B:他有很多预约。",
+        "C:交通太拥堵了。",
+        "D:找不到地点。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 24 段：Why has the man arrived late?",
+      "evidence": "参考听力原文：“We had several unhappy club members here this morning.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 24 段：Why has the man arrived late?",
+        "evidence": "参考听力原文：“We had several unhappy club members here this morning.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“B) He had several appointments.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（He had several appointments.）。"
+        "analysis": "正确答案：B（He had several appointments.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "A",
       "question": "Why has a satellite dish stopped working?",
-      "answer_explain": "原文依据：听力原文中提到“A) It was damaged in a storm.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It was damaged in a storm.）。",
-      "question_translation": "卫星天线为什么停止工作了？",
+      "answer_explain": "正确答案：A（It was damaged in a storm.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "卫星天线为什么停止工作了?",
       "choice_translations": [
-        "A：它在暴风雨中受损了。",
-        "B：它没有安装好。",
-        "C：没有交电费单。",
-        "D：密码被更改了。"
+        "A:它在暴风雨中受损了。",
+        "B:它没有安装好。",
+        "C:没有交电费单。",
+        "D:密码被更改了。"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 3 段：m Yes, hi. I'm here to fix your satellite dish.",
+      "evidence": "参考听力原文：“Hey, Marcia, this gentleman's here to repair the satellite dish.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 3 段：m Yes, hi. I'm here to fix your satellite dish.",
+        "evidence": "参考听力原文：“Hey, Marcia, this gentleman's here to repair the satellite dish.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“A) It was damaged in a storm.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（It was damaged in a storm.）。"
+        "analysis": "正确答案：A（It was damaged in a storm.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

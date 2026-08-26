@@ -28,38 +28,58 @@
       "asset_key": "official-2-test-1/audio/part2/q018.mp3",
       "exists": true
     },
-    "transcript_translation": "M 这些新火车快多了。 Eig w\nA. 我已经完成了培训。\nB. 对不起，我没有。\nC. 它们确实是。",
-    "content_translation": "M 这些新火车快多了。 Eig w\nA. 我已经完成了培训。\nB. 对不起，我没有。\nC. 它们确实是。"
+    "transcript": "These new trains are so much faster.\nA. I already completed my training.\nB. Sorry, I don't have any.\nC. They really are.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bd2b48bf1df051b555c67a643153aa2097012b91c019f54deea2d2c54bcfaa18",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-1/audio/part2/q018.mp3",
+      "metrics": {
+        "word_count": 24
+      }
+    },
+    "transcript_translation": "这些新火车快多了。\nA. 我已经完成我的培训了。\nB. 对不起，我没有任何的。\nC. 它们确实是。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e76335cbc9147e8f9094b42e41535fef304560ed6cbefd23515d35a5d5a2b3a2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "already completed my training.",
-        "Sorry, | don’t have any.",
+        "I already completed my training.",
+        "Sorry, I don't have any.",
         "They really are."
       ],
       "answer": "C",
-      "question": "M These new trains are so much faster. Eig w",
+      "question": "These new trains are so much faster.",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“M These new trains are so much faster. Eig w”，自然应答是“They really are.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（They really are.）。",
-      "question_translation": "M 这些新火车快多了。",
+      "answer_explain": "原文依据：问句或陈述是“These new trains are so much faster.”，自然应答是“They really are.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（They really are.）。",
+      "question_translation": "这些新火车快多了。",
       "choice_translations": [
-        "A：我已经完成了培训。",
-        "B：对不起，我没有。",
+        "A：我已经完成我的培训了。",
+        "B：对不起,我没有任何的。",
         "C：它们确实是。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：M These new trains are so much faster. Eig w",
+      "evidence": "参考原文第 1 段：These new trains are so much faster.",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：M These new trains are so much faster. Eig w",
+        "evidence": "参考原文第 1 段：These new trains are so much faster.",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“M These new trains are so much faster. Eig w”，自然应答是“They really are.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（They really are.）。"
+        "analysis": "原文依据：问句或陈述是“These new trains are so much faster.”，自然应答是“They really are.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（They really are.）。"
       },
       "item_id": 18,
       "priority": {

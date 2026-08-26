@@ -40,37 +40,61 @@
       "asset_key": "official-3-test-1/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "M\nThis is Harold Rosen, with WKRN News, ® reporting from\nthe newly opened Bradford Opera House. The building\nis ultramodern, and °when plans for its construction were\nannounced, locals expressed their concern about it. It’s locate\nright next to historic city hall, the oldest building in the city. Bt\nso far, residents who have visited seem to like it. In spite of\nits modern look, those who have been inside are impressed.\nThe atrium is beautifully decorated, the theater is equipped\nwith a state-of-the-art sound system, and, of course, the mus\nprogram is spectacular. The schedule for this season's\nperformances can be found on the WKRN Web site.",
-    "transcript_translation": "这是哈罗德·罗森，为您带来WKRN新闻，报道来自新开的布拉德福德歌剧院。这座建筑非常现代化，当其建设计划宣布时，当地人对它表示了担忧。它位于历史悠久的市政厅旁边，那里是城里最古老的建筑。但到目前为止，参观过的居民似乎很喜欢它。尽管外观现代，但进入过的人还是印象深刻的。\n中庭装饰精美，剧院配备了最先进的音响系统，当然，音乐节目也是壮观的。本季演出的时间表可以在WKRN网站上找到。",
-    "content_translation": "这是哈罗德·罗森，为您带来WKRN新闻，报道来自新开的布拉德福德歌剧院。这座建筑非常现代化，当其建设计划宣布时，当地人对它表示了担忧。它位于历史悠久的市政厅旁边，那里是城里最古老的建筑。但到目前为止，参观过的居民似乎很喜欢它。尽管外观现代，但进入过的人还是印象深刻的。\n中庭装饰精美，剧院配备了最先进的音响系统，当然，音乐节目也是壮观的。本季演出的时间表可以在WKRN网站上找到。"
+    "transcript": "This is Harold Rosen with WKRN News, reporting from the newly opened Bradford Opera House.\nThe building is ultra-modern and when plans for its construction were announced, locals expressed their concern about it.\nIt's located right next to Historic City Hall, the oldest building in the city.\nBut so far residents who... have visited seem to like it.\nIn spite of its modern look, those who have been inside are impressed.\nThe atrium is beautifully decorated, the theatre is equipped with a state-of-the-art sound system, and of course, the music program is spectacular.\nThe schedule for this season's performances can be found on the WKRN website.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "audio_sha256": "b7675728addd12d14192eafc89b694f9b717b1b22c73bb62298496bfdf3a9cdd",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part4/q074-076.mp3",
+      "metrics": {
+        "word_count": 106,
+        "legacy_word_count": 107,
+        "length_ratio": 0.991,
+        "legacy_coverage": 0.935,
+        "prompted_failure": "audio transcript appears truncated (ratio=0.34, coverage=0.44)"
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "我是 WKRN News 的 Harold Rosen，从新开业的布拉德福 Opera House 报道。\n这座建筑非常现代化，当其建设计划宣布时，当地人对此表示担忧。\n它位于历史悠久的市政厅旁边，这是城市最古老的建筑。\n但到目前为止，参观过的居民似乎喜欢它。\n尽管外观现代，但进入内部的人还是印象深刻的。\n中庭装饰精美，剧院配备了最先进的音响系统，当然，音乐节目也是精彩绝伦的。\n本季演出的时间表可以在 WKRN 网站上找到。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "dc68b7084f5deaeeffb4e9bdfde91f16d63f763c856585ad9e0a52382f5c0445"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Amovie theater",
+        "A movie theater",
         "An opera house",
-        "Ashopping mall",
-        "Aconvention center"
+        "A shopping mall",
+        "A convention center"
       ],
       "answer": "B",
       "question": "Where is the speaker reporting from?",
-      "answer_explain": "原文依据：听力原文中提到“the newly opened Bradford Opera House.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An opera house）。",
-      "question_translation": "说话者是从哪里报道的？",
+      "answer_explain": "正确答案：B（An opera house）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者是从哪里报道的?",
       "choice_translations": [
-        "A：电影院",
-        "B：歌剧院",
-        "C：购物中心",
-        "D：会议中心"
+        "A:电影院",
+        "B:歌剧院",
+        "C:购物中心",
+        "D:会议中心"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：This is Harold Rosen, with WKRN News, ® reporting from",
+      "evidence": "参考听力原文：“This is Harold Rosen with WKRN News, reporting from the newly opened Bradford Opera House.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：This is Harold Rosen, with WKRN News, ® reporting from",
+        "evidence": "参考听力原文：“This is Harold Rosen with WKRN News, reporting from the newly opened Bradford Opera House.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“the newly opened Bradford Opera House.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（An opera house）。"
+        "analysis": "正确答案：B（An opera house）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 74,
       "priority": {
@@ -101,29 +125,29 @@
     {
       "choices": [
         "An old building needs to be repaired.",
-        "Ahistoric landmark is worth visiting.",
-        "Anew building contrasts with older ones.",
+        "A historic landmark is worth visiting.",
+        "A new building contrasts with older ones.",
         "A building is not difficult to get to. 8"
       ],
       "answer": "C",
       "question": "What does the speaker imply when he says, “It's located right next to historic city hall, the oldest building in the city’?",
-      "answer_explain": "原文依据：听力原文中提到“right next to historic city hall, the oldest building in the city.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Anew building contrasts with older ones.）。",
-      "question_translation": "当说话者说“它位于历史悠久的市政厅旁边，那里是城里最古老的建筑”时，他暗示了什么？",
+      "answer_explain": "正确答案：C（A new building contrasts with older ones.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "当说话者说“它位于历史悠久的市政厅旁边,那里是城里最古老的建筑”时,他暗示了什么?",
       "choice_translations": [
-        "A：一座老建筑需要修理。",
-        "B：一个历史地标值得参观。",
-        "C：一栋新建筑与老建筑形成对比。",
-        "D：一栋建筑很容易到达。"
+        "A:一座老建筑需要修理。",
+        "B:一个历史地标值得参观。",
+        "C:一栋新建筑与老建筑形成对比。",
+        "D:一栋建筑很容易到达。"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 3 段：the newly opened Bradford Opera House. The building",
+      "evidence": "参考听力原文：“It's located right next to Historic City Hall, the oldest building in the city.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 3 段：the newly opened Bradford Opera House. The building",
+        "evidence": "参考听力原文：“It's located right next to Historic City Hall, the oldest building in the city.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“right next to historic city hall, the oldest building in the city.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Anew building contrasts with older ones.）。"
+        "analysis": "正确答案：C（A new building contrasts with older ones.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 75,
       "priority": {
@@ -156,27 +180,27 @@
         "Purchase event merchandise",
         "Read reviews",
         "Register for a newsletter",
-        "View a performance schedule _"
+        "View a performance schedule"
       ],
       "answer": "D",
       "question": "What can the listeners do on a Web site?",
-      "answer_explain": "原文依据：听力原文中提到“The schedule for this season's”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（View a performance schedule _）。",
-      "question_translation": "听众可以在网站上做什么？",
+      "answer_explain": "正确答案：D（View a performance schedule）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "听众可以在网站上做什么?",
       "choice_translations": [
-        "A：购买活动商品",
-        "B：阅读评论",
-        "C：注册电子报",
-        "D：查看演出时间表"
+        "A:购买活动商品",
+        "B:阅读评论",
+        "C:注册电子报",
+        "D:查看演出时间表"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：M",
+      "evidence": "参考听力原文：“The schedule for this season's performances can be found on the WKRN website.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：M",
+        "evidence": "参考听力原文：“The schedule for this season's performances can be found on the WKRN website.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“The schedule for this season's”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（View a performance schedule _）。"
+        "analysis": "正确答案：D（View a performance schedule）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 76,
       "priority": {

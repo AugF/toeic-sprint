@@ -41,37 +41,59 @@
       "asset_key": "official-3-test-1/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "Good afternoon, ® you've reached customer service\nat the Oxbridge Water Company. How can | help\nyou?\nHi, 1 just received my water bill and it’s much\nhigher than usual. | think it’s because last month\none of the pipes in my house broke—my whole\nground floor was flooded. ®| shouldn't have to pay\nthe full amount, should |?\nBw lf you can send us a receipt for any repair work\nrelated to the leak, it’s possible we can reduce the\ncharges. If you’re ready, | can give you the address\nto send that to.",
-    "transcript_translation": "下午好，您已联系到奥克斯桥水务公司客服。我能帮您什么？您好，我刚收到我的水费单，比平时高多了。我想是因为上个月我家的一根管道坏了——整个底层都被淹了。我不应该支付全额款项，对吗？如果您能给我们提供任何与泄漏相关的维修收据，我们就有可能减少费用。如果您准备好了，我可以告诉您寄送该收据的地址。",
-    "content_translation": "下午好，您已联系到奥克斯桥水务公司客服。我能帮您什么？您好，我刚收到我的水费单，比平时高多了。我想是因为上个月我家的一根管道坏了——整个底层都被淹了。我不应该支付全额款项，对吗？如果您能给我们提供任何与泄漏相关的维修收据，我们就有可能减少费用。如果您准备好了，我可以告诉您寄送该收据的地址。"
+    "transcript": "Good afternoon.\nYou've reached customer service at the Oxbridge Water Company.\nHow can I help you?\nHi.\nI just received my water bill and it's much higher than usual.\nI think it's because last month one of the pipes in my house broke.\nMy whole ground floor was flooded.\nI shouldn't have to pay the full amount, should I?\nIf you can send us a receipt for any repair work related to the leak, it's possible we can reduce the charges.\nIf you're ready, I can give you the address to send that to.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "331d8572799986d870396ebcd2031b4143aef2357e061b08ae4879cdaded300a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-1/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 94,
+        "legacy_word_count": 89,
+        "length_ratio": 1.056,
+        "legacy_coverage": 0.978
+      }
+    },
+    "transcript_translation": "下午好。\n您已联系到 Oxbridge Water Company 的客户服务部。\n请问有什么可以帮您的？\n嗨。\n我刚收到我的水费账单，比平时高多了。\n我想是因为上个月我家的一根管道坏了。\n我整个底层都被淹了。\n我不应该支付全额款项，对吗？\n如果您能给我们提供任何与泄漏相关的维修工作的收据，我们或许可以减少费用。\n如果您准备好了，我可以给您发送地址，把这些材料寄过去。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "0fddf6392b37c6d37e0a049bfd8d0cb7ddaaa93c74a7f7a25e80f23d2a30352c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "At a bank",
         "At a home goods store",
-        "Ata utility company",
+        "At a utility company",
         "At an apartment management agency"
       ],
       "answer": "C",
       "question": "Where does the woman most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“at the Oxbridge Water Company.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Ata utility company）。",
-      "question_translation": "女士最有可能在哪里工作？",
+      "answer_explain": "正确答案：C（At a utility company）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士最有可能在哪里工作?",
       "choice_translations": [
-        "A：在银行",
-        "B：在家居用品店",
-        "C：在公用事业公司",
-        "D：在一个公寓管理机构"
+        "A:在银行",
+        "B:在家居用品店",
+        "C:在公用事业公司",
+        "D:在一个公寓管理机构"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Good afternoon, ® you've reached customer service",
+      "evidence": "参考听力原文：“If you can send us a receipt for any repair work related to the leak, it's possible we can reduce the charges.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Good afternoon, ® you've reached customer service",
+        "evidence": "参考听力原文：“If you can send us a receipt for any repair work related to the leak, it's possible we can reduce the charges.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“at the Oxbridge Water Company.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：C（Ata utility company）。"
+        "analysis": "正确答案：C（At a utility company）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -109,23 +131,23 @@
       ],
       "answer": "B",
       "question": "Why is the man calling?",
-      "answer_explain": "原文依据：听力原文中提到“related to the leak, it’s possible we can reduce the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To request a fee reduction）。",
-      "question_translation": "男士打电话的原因是什么？",
+      "answer_explain": "正确答案：B（To request a fee reduction）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "男士打电话的原因是什么?",
       "choice_translations": [
-        "A：开户",
-        "B：要求减免费用",
-        "C：取消检查",
-        "D：预留一些材料"
+        "A:开户",
+        "B:要求减免费用",
+        "C:取消检查",
+        "D:预留一些材料"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Good afternoon, ® you've reached customer service",
+      "evidence": "参考听力原文：“If you can send us a receipt for any repair work related to the leak, it's possible we can reduce the charges.”",
       "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Good afternoon, ® you've reached customer service",
+        "evidence": "参考听力原文：“If you can send us a receipt for any repair work related to the leak, it's possible we can reduce the charges.”",
         "strategy": "本题属于主旨 / 目的题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“related to the leak, it’s possible we can reduce the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（To request a fee reduction）。"
+        "analysis": "正确答案：B（To request a fee reduction）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -156,30 +178,30 @@
     },
     {
       "choices": [
-        "Acopy of a warranty",
-        "Acompleted survey",
-        "Areceipt for a repair",
-        "Adeposit payment"
+        "A copy of a warranty",
+        "A completed survey",
+        "A receipt for a repair",
+        "A deposit payment"
       ],
       "answer": "C",
       "question": "What does the woman ask the man to send?",
-      "answer_explain": "原文依据：听力原文中提到“Bw lf you can send us a receipt for any repair work”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Areceipt for a repair）。",
-      "question_translation": "女士让男士寄什么？",
+      "answer_explain": "正确答案：C（A receipt for a repair）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "女士让男士寄什么?",
       "choice_translations": [
-        "A：保修件的复印件",
-        "B：一份填好的调查问卷",
-        "C：维修收据",
-        "D：定金付款"
+        "A:保修件的复印件",
+        "B:一份填好的调查问卷",
+        "C:维修收据",
+        "D:定金付款"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Good afternoon, ® you've reached customer service",
+      "evidence": "参考听力原文：“If you can send us a receipt for any repair work related to the leak, it's possible we can reduce the charges.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Good afternoon, ® you've reached customer service",
+        "evidence": "参考听力原文：“If you can send us a receipt for any repair work related to the leak, it's possible we can reduce the charges.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“Bw lf you can send us a receipt for any repair work”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Areceipt for a repair）。"
+        "analysis": "正确答案：C（A receipt for a repair）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

@@ -26,38 +26,58 @@
       "asset_key": "official-1-test-2/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "w 公司宴会餐厅是谁选择的？ bailed CUS (8)HNEM. banquet BA, iu\nA. TEBRISBAASNTUVELo\nB. 人力资源部的人。\nC. 下周五晚上。",
-    "content_translation": "w 公司宴会餐厅是谁选择的？ bailed CUS (8)HNEM. banquet BA, iu\nA. TEBRISBAASNTUVELo\nB. 人力资源部的人。\nC. 下周五晚上。"
+    "transcript": "Who chose the restaurant for the company banquet?\nA. Maybe once last year.\nB. Someone from Human Resources.\nC. Next Friday evening.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a52a400822dafc2b277bbe1b8d22fff571f7b7f9fb2c082ea8cf18eb18d6c908",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "谁为公司宴会选择了餐厅？\nA. 也许是去年一次。\nB. 人力资源部的人。\nC. 下周五晚上。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "e38f476e98450e60f4a9be90c7949d359fe7f36b6fc393c1d4c437554e0854dc"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "TEBRISBAASNTUVELo",
-        "Someone from Human Resources. SISMBERLTWS.",
+        "Maybe once last year.",
+        "Someone from Human Resources.",
         "Next Friday evening."
       ],
       "answer": "B",
-      "question": "w Who chose the restaurant for the company ¥ 2 pangs? bailed CUS (8)HNEM. banquet BA, iu",
+      "question": "Who chose the restaurant for the company banquet?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“w Who chose the restaurant for the company ¥ 2 pangs? bailed CUS (8)HNEM. banquet BA, iu”，自然应答是“Someone from Human Resources. SISMBERLTWS.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Someone from Human Resources. SISMBERLTWS.）。",
-      "question_translation": "w 公司宴会餐厅是谁选择的？ bailed CUS (8)HNEM. banquet BA, iu",
+      "answer_explain": "原文依据：问句或陈述是“Who chose the restaurant for the company banquet?”，自然应答是“Someone from Human Resources.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Someone from Human Resources.）。",
+      "question_translation": "谁为公司宴会选择了餐厅?",
       "choice_translations": [
-        "A：TEBRISBAASNTUVELo",
+        "A：也许是去年一次。",
         "B：人力资源部的人。",
         "C：下周五晚上。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：w Who chose the restaurant for the company ¥ 2 pangs? bailed CUS (8)HNEM. banquet BA, iu",
+      "evidence": "参考原文第 1 段：Who chose the restaurant for the company banquet?",
       "response_style": "先回答疑问词所索取的信息，同时留意自然的间接回应",
       "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：w Who chose the restaurant for the company ¥ 2 pangs? bailed CUS (8)HNEM. banquet BA, iu",
+        "evidence": "参考原文第 1 段：Who chose the restaurant for the company banquet?",
         "strategy": "先判断为陈述 / 请求应答题，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“w Who chose the restaurant for the company ¥ 2 pangs? bailed CUS (8)HNEM. banquet BA, iu”，自然应答是“Someone from Human Resources. SISMBERLTWS.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Someone from Human Resources. SISMBERLTWS.）。"
+        "analysis": "原文依据：问句或陈述是“Who chose the restaurant for the company banquet?”，自然应答是“Someone from Human Resources.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Someone from Human Resources.）。"
       },
       "item_id": 13,
       "priority": {

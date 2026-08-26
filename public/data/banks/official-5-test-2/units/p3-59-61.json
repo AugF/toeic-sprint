@@ -39,9 +39,31 @@
       "asset_key": "official-5-test-2/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "Jerome, ®do you know if the management team has\nJerome\nmade a decision about the budget for the laboratory?\nU13?\nYes, they did last week. ® They decided to increase the\nbudget by fifteen percent.\nEUtchute.\nThat's wonderful! ® That's enough to hire at least one\nmore assistant to help us with our latest research\nThat's right. With all the research we still have to do\nfor this project, an extra hand in the laboratory could\nreally help.\nWell, Owe have several résumés on file. I'Il look and\nsee if I can find some qualified candidates.",
-    "transcript_translation": "中文辅助（离线预处理）：Jerome, ®do you know if the management team has\nJerome\nmade a decision about the budget for the laboratory?\nU13?\nYes, they did last week.\n® They decided to increase the\nbudget by fifteen percent.\nEUtchute.\nThat's wonderful!\n® That's enough to hire at least one\nmore assistant to help us with our latest research\nThat's right.\nWith all the research we still have to do\nfor this project, an extra hand in the laboratory could\nreally help.\nWell, Owe have several résumés on file.\nI'Il look and\nsee if I can find some qualified candidates.",
-    "content_translation": "中文辅助（离线预处理）：Jerome, ®do you know if the management team has\nJerome\nmade a decision about the budget for the laboratory?\nU13?\nYes, they did last week.\n® They decided to increase the\nbudget by fifteen percent.\nEUtchute.\nThat's wonderful!\n® That's enough to hire at least one\nmore assistant to help us with our latest research\nThat's right.\nWith all the research we still have to do\nfor this project, an extra hand in the laboratory could\nreally help.\nWell, Owe have several résumés on file.\nI'Il look and\nsee if I can find some qualified candidates."
+    "transcript": "Jerome, do you know if the management team has made a decision about the budget for the laboratory?\nYes, they did last week.\nThey decided to increase the budget by 15%.\nThat's wonderful.\nThat's enough to hire at least one more assistant to help us with our latest research project.\nThat's right.\nWith all the research we still have to do for this project, an extra hand in the laboratory could really help.\nWell, we have several resumes on file.\nI'll look and see if I can find some qualified candidates.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "b016af0747667f44dec62d68476ed11baedd82892e3da9013a76febea319f410",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 90,
+        "legacy_word_count": 95,
+        "length_ratio": 0.947,
+        "legacy_coverage": 0.905
+      }
+    },
+    "transcript_translation": "Jerome，你知道管理团队是否就实验室的预算做出了决定吗？\n是的，他们上周决定了。\n他们决定将预算增加 15%。\n太棒了。\n这足够雇佣至少一名助理来帮助我们进行最新的研究项目了。\n没错。\n考虑到我们还需要为这个项目做所有的研究，实验室多一个人手会非常有帮助。\n嗯，我们有几份简历存档。\n我会看看是否能找到一些合格的候选人。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d09ecab4cc8f335fc5e3b64485141b6157c2404b137b778649edbf9c8561b1dd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "B",
       "question": "Where do the speakers most likely work?",
-      "answer_explain": "原文依据：听力原文中提到“for this project, an extra hand in the laboratory could”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（At a research laboratory）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） do the speakers most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：B（At a research laboratory）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) do the speakers most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At an employment agency",
-        "B：At a research laboratory",
-        "C：At a shipping warehouse",
-        "D：At an investment bank"
+        "A:At an employment agency",
+        "B:At a research laboratory",
+        "C:At a shipping warehouse",
+        "D:At an investment bank"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Jerome, ®do you know if the management team has",
+      "evidence": "参考听力原文：“With all the research we still have to do for this project, an extra hand in the laboratory could really help.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Jerome, ®do you know if the management team has",
+        "evidence": "参考听力原文：“With all the research we still have to do for this project, an extra hand in the laboratory could really help.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“for this project, an extra hand in the laboratory could”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（At a research laboratory）。"
+        "analysis": "正确答案：B（At a research laboratory）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 59,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "A",
       "question": "What did the management team decide to do?",
-      "answer_explain": "原文依据：听力原文中提到“made a decision about the budget for the laboratory?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To increase a budget）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） did the management team decide to do?",
+      "answer_explain": "正确答案：A（To increase a budget）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) did the management team decide to do?",
       "choice_translations": [
-        "A：To increase a budget",
-        "B：To host a conference",
-        "C：To review some procedures",
-        "D：To update some equipment"
+        "A:To increase a budget",
+        "B:To host a conference",
+        "C:To review some procedures",
+        "D:To update some equipment"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Jerome, ®do you know if the management team has",
+      "evidence": "参考听力原文：“Jerome, do you know if the management team has made a decision about the budget for the laboratory?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Jerome, ®do you know if the management team has",
+        "evidence": "参考听力原文：“Jerome, do you know if the management team has made a decision about the budget for the laboratory?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“made a decision about the budget for the laboratory?”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To increase a budget）。"
+        "analysis": "正确答案：A（To increase a budget）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 60,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What does the woman say she will do?",
-      "answer_explain": "原文依据：听力原文中提到“see if I can find some qualified candidates.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Review some résumés）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do?",
+      "answer_explain": "正确答案：C（Review some résumés）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she will do?",
       "choice_translations": [
-        "A：Check a schedule（日程）",
-        "B：Organize some files",
-        "C：Review some résumés",
-        "D：Purchase（购买） some supplies"
+        "A:Check a schedule(日程)",
+        "B:Organize some files",
+        "C:Review some résumés",
+        "D:Purchase(购买) some supplies"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Jerome, ®do you know if the management team has",
+      "evidence": "参考听力原文：“I'll look and see if I can find some qualified candidates.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Jerome, ®do you know if the management team has",
+        "evidence": "参考听力原文：“I'll look and see if I can find some qualified candidates.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“see if I can find some qualified candidates.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Review some résumés）。"
+        "analysis": "正确答案：C（Review some résumés）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 61,
       "priority": {

@@ -32,15 +32,35 @@
       "asset_key": "official-1-test-2/images/part1/q004.jpg",
       "exists": true
     },
-    "transcript_translation": "A. 黑板正在被擦除。\nB. 一些人正在参加一个演示会。\nC. Aman 靠在一个门口。\nD. 所有座位都坐满了。",
-    "content_translation": "A. 黑板正在被擦除。\nB. 一些人正在参加一个演示会。\nC. Aman 靠在一个门口。\nD. 所有座位都坐满了。"
+    "transcript": "A. A chalkboard is being erased.\nB. Some people are attending a presentation.\nC. A man is leaning against a doorway.\nD. All of the seats are occupied.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "39272775bed1f3e3f8429b9c89a9403ff02cfe41402734d4b2d4d22df87f61ad",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-1-test-2/audio/part1/q004.mp3",
+      "metrics": {
+        "word_count": 41
+      }
+    },
+    "transcript_translation": "A. 一个黑板正在被擦除。\nB. 有些人正在参加一次演示。\nC. 一位男士正靠在一个门口。\nD. 所有座位都坐满了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "a70eab805704b47e52398f60b2bfc39838dd38b0d8263a0821e99b4dfa13476d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Achalkboard is being erased.",
+        "A chalkboard is being erased.",
         "Some people are attending a presentation.",
-        "Aman is leaning against a doorway.",
+        "A man is leaning against a doorway.",
         "All of the seats are occupied."
       ],
       "answer": "B",
@@ -49,9 +69,9 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“Some people are attending a presentation.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：B（Some people are attending a presentation.）。",
       "choice_translations": [
-        "A：黑板正在被擦除。",
-        "B：一些人正在参加一个演示会。",
-        "C：Aman 靠在一个门口。",
+        "A：一个黑板正在被擦除。",
+        "B：有些人正在参加一次演示。",
+        "C：一位男士正靠在一个门口。",
         "D：所有座位都坐满了。"
       ],
       "question_type": "动作 / 状态辨析题",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p1-4/4"
+      "item_key": "official-1-test-2/p1-4/4",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

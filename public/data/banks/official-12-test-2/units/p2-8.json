@@ -28,38 +28,58 @@
       "asset_key": "official-12-test-2/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：EEW Which finance conference are you going to this year?",
-    "content_translation": "中文辅助（离线预处理）：EEW Which finance conference are you going to this year?"
+    "transcript": "Which finance conference are you going to this year?\nA. Yes, in early February.\nB. The one in Tokyo.\nC. The registration deadline was extended.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "365727611b1873082914df9df977cffe364619202572ce01a131bbf2d06b6d40",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "你今年要去参加哪个金融会议？\nA. 是的，在二月初。\nB. 东京的那一个。\nC. 注册截止日期延长了。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5670f9c612a7cec0d94f21b617277f032e898f29b732836beb95b8c3374c857b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Yes, in early February. LEAf. the",
-        "The one in Tokyo. conterenc",
+        "Yes, in early February.",
+        "The one in Tokyo.",
         "The registration deadline was extended."
       ],
       "answer": "B",
-      "question": "EEW Which finance conference are you going to this year?",
+      "question": "Which finance conference are you going to this year?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“EEW Which finance conference are you going to this year?”，自然应答是“The one in Tokyo. conterenc”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The one in Tokyo. conterenc）。",
-      "question_translation": "中文辅助（离线预处理）：EEW Which finance conference are you going to this year?",
+      "answer_explain": "原文依据：问句或陈述是“Which finance conference are you going to this year?”，自然应答是“The one in Tokyo.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The one in Tokyo.）。",
+      "question_translation": "你今年要去参加哪个金融会议?",
       "choice_translations": [
-        "A：Yes, in early February.\nLEAf.\nthe",
-        "B：The one in Tokyo.\nconterenc",
-        "C：The registration deadline was extended."
+        "A：是的,在二月初。",
+        "B：东京的那一个。",
+        "C：注册截止日期延长了。"
       ],
       "question_type": "选择疑问句",
-      "evidence": "参考原文第 1 段：EEW Which finance conference are you going to this year?",
+      "evidence": "参考原文第 1 段：Which finance conference are you going to this year?",
       "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "选择疑问句",
-        "evidence": "参考原文第 1 段：EEW Which finance conference are you going to this year?",
+        "evidence": "参考原文第 1 段：Which finance conference are you going to this year?",
         "strategy": "先识别选择疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“EEW Which finance conference are you going to this year?”，自然应答是“The one in Tokyo. conterenc”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The one in Tokyo. conterenc）。"
+        "analysis": "原文依据：问句或陈述是“Which finance conference are you going to this year?”，自然应答是“The one in Tokyo.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（The one in Tokyo.）。"
       },
       "item_id": 8,
       "priority": {

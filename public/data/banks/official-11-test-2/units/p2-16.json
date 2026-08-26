@@ -27,8 +27,28 @@
       "asset_key": "official-11-test-2/audio/part2/q016.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：*m How（如何） soon will my lunch order（订单） be ready?\nEK w",
-    "content_translation": "中文辅助（离线预处理）：*m How（如何） soon will my lunch order（订单） be ready?\nEK w"
+    "transcript": "How soon will my lunch order be ready?\nA. A large assortment.\nB. I'm feeling well, thanks.\nC. The chef just started preparing it.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "704a4654d424bcd220fc4cc8e4bf6b27890e0e090b74ffd94016eed75069755e",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q016.mp3",
+      "metrics": {
+        "word_count": 25
+      }
+    },
+    "transcript_translation": "我的午餐订单什么时候能准备好？\nA. 一大批的种类。\nB. 我感觉很好，谢谢。\nC. 厨师刚刚开始准备它。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "ce77cde7b12383f6cb8b2ae968a70262d170a8d11f6a89031302fd3865ada253"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "The chef just started preparing it."
       ],
       "answer": "C",
-      "question": "*m How soon will my lunch order be ready? EK w",
+      "question": "How soon will my lunch order be ready?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述为“*m How soon will my lunch order be ready? EK w”，官方正确应答是“The chef just started preparing it.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（The chef just started preparing it.）。",
-      "question_translation": "中文辅助（离线预处理）：*m How（如何） soon will my lunch order（订单） be ready?\nEK w",
+      "answer_explain": "原文依据：问句或陈述为“How soon will my lunch order be ready?”，官方正确应答是“The chef just started preparing it.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（The chef just started preparing it.）。",
+      "question_translation": "我的午餐订单什么时候能准备好?",
       "choice_translations": [
-        "A：A large assortment.",
-        "B：I'm feeling well, thanks.",
-        "C：The chef just started preparing it."
+        "A：一大批的种类。",
+        "B：我感觉很好,谢谢。",
+        "C：厨师刚刚开始准备它。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：*m How soon will my lunch order be ready? EK w",
+      "evidence": "参考原文第 1 段：How soon will my lunch order be ready?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：*m How soon will my lunch order be ready? EK w",
+        "evidence": "参考原文第 1 段：How soon will my lunch order be ready?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“*m How soon will my lunch order be ready? EK w”，官方正确应答是“The chef just started preparing it.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（The chef just started preparing it.）。"
+        "analysis": "原文依据：问句或陈述为“How soon will my lunch order be ready?”，官方正确应答是“The chef just started preparing it.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（The chef just started preparing it.）。"
       },
       "item_id": 16,
       "priority": {

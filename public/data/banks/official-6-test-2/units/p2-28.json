@@ -27,13 +27,33 @@
       "asset_key": "official-6-test-2/audio/part2/q028.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Why（为什么） has the restaurant freezer been moved?",
-    "content_translation": "中文辅助（离线预处理）：Why（为什么） has the restaurant freezer been moved?"
+    "transcript": "Why has the restaurant freezer been moved?\nA. On 31st Street.\nB. Oh, that's a great cafe.\nC. Because it's being replaced.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0e8a15ea388a992f5e356e6962b8f92d8520f8e411b0916b39c043a22cfc63ca",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-2/audio/part2/q028.mp3",
+      "metrics": {
+        "word_count": 23
+      }
+    },
+    "transcript_translation": "为什么餐厅的冰柜被移动了？\nA. 在31街。\nB. 哦，那是一家很棒的咖啡馆。\nC. 因为它正在被更换。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "5013f55990105bef2bef3eb91320fcf68c27499402ffc0e215d2a7524b54a3ab"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "On Thirty-First Street.",
+        "On 31st Street.",
         "Oh, that's a great cafe.",
         "Because it's being replaced."
       ],
@@ -43,11 +63,11 @@
       "topic": "原因询问",
       "keywords": "why reason response",
       "answer_explain": "原文依据：问句或陈述是“Why has the restaurant freezer been moved?”，自然应答是“Because it's being replaced.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Because it's being replaced.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） has the restaurant freezer been moved?",
+      "question_translation": "为什么餐厅的冰柜被移动了?",
       "choice_translations": [
-        "A：On Thirty-First Street.",
-        "B：Oh, that's a great cafe.",
-        "C：Because it's being replaced."
+        "A：在31街。",
+        "B：哦,那是一家很棒的咖啡馆。",
+        "C：因为它正在被更换。"
       ],
       "question_type": "原因疑问句",
       "evidence": "参考原文第 1 段：Why has the restaurant freezer been moved?",

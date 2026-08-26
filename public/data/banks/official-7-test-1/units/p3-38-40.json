@@ -39,37 +39,59 @@
       "asset_key": "official-7-test-1/audio/part3/q038-040.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nw Excuse me. Do you work at this museum?\nI•M Yes. How can I help you two?\nw Well, my friend and I were planning to see the\nsculpture exhibit, but there's such a long line of\npeople waiting to get in.\nEKw Yeah,\nOwe're really surprised. There's usually no line\nat all. Ols there a special event today?\nEM Yes, Othere's a free tour for children at noon, so a lot\nof families are here for that. In fact, the museum's\ngoing to be very crowded for the next hour or so.\nw Hmm... OK. ®Nadia, why don't we grab lunch at\nMcSally's and come back later?\nEw Good idea! I've been wanting to try that place!",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nw Excuse me.\nDo you work（工作） at this museum?\nI•M Yes.\nHow（如何） can I help you two?\nw Well, my friend and I were planning to see the\nsculpture exhibit, but there's such a long line of\npeople waiting to get in.\nEKw Yeah,\nOwe're really surprised.\nThere's usually no line\nat all.\nOls there a special event today?\nEM Yes, Othere's a free tour for children at noon, so a lot\nof families are here for that.\nIn fact, the museum's\ngoing to be very crowded for the next hour or so.\nw Hmm...\nOK.\n®Nadia, why（为什么） don't we grab lunch at\nMcSally's and come back later?\nEw Good idea!\nI've been wanting to try that place!",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nw Excuse me.\nDo you work（工作） at this museum?\nI•M Yes.\nHow（如何） can I help you two?\nw Well, my friend and I were planning to see the\nsculpture exhibit, but there's such a long line of\npeople waiting to get in.\nEKw Yeah,\nOwe're really surprised.\nThere's usually no line\nat all.\nOls there a special event today?\nEM Yes, Othere's a free tour for children at noon, so a lot\nof families are here for that.\nIn fact, the museum's\ngoing to be very crowded for the next hour or so.\nw Hmm...\nOK.\n®Nadia, why（为什么） don't we grab lunch at\nMcSally's and come back later?\nEw Good idea!\nI've been wanting to try that place!"
+    "transcript": "Excuse me, do you work at this museum?\nYes, how can I help you too?\nWell, my friend and I were planning to see the sculpture exhibit, but there's such a long line of people waiting to get in.\nYeah, we're really surprised.\nThere's usually no line at all.\nIs there a special event today?\nYes, there's a free tour for children at noon, so a lot of families are here for that.\nIn fact, the museum's going to be very crowded for the next hour or so.\nHmm, okay.\nNadia, why don't we grab lunch at McSally's and come back later?\nGood idea.\nI've been wanting to try that place.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "0efdda6ed16934e3a7a7f2ed5569d7e44b5b0074ea7cd3f4d45d79062357ebf8",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-1/audio/part3/q038-040.mp3",
+      "metrics": {
+        "word_count": 111,
+        "legacy_word_count": 116,
+        "length_ratio": 0.957,
+        "legacy_coverage": 0.888
+      }
+    },
+    "transcript_translation": "不好意思，您是在这家博物馆工作的吗？\n是的，我能帮到您吗？\n嗯，我和我的朋友原计划去看雕塑展，但排队的人太长了。\n是啊，我们真的很惊讶。\n通常根本不会排队。\n今天有什么特别活动吗？\n是的，中午有免费的儿童导览，所以很多家庭都来参加这个。\n事实上，博物馆接下来一个小时左右会非常拥挤。\n嗯，好吧。\n娜迪亚，我们去麦萨利的餐厅吃午饭，等会儿再回来怎么样？\n好主意。\n我一直想试试那家店。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "79222b91bbe2deae8be927cf6bf7870564e896bbf23973b6cc6ad522691cca08"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
         "A line is long.",
-        "An exhibit is closed. =",
+        "An exhibit is closed.",
         "A sign is missing.",
         "A speaker is delayed."
       ],
       "answer": "A",
       "question": "What are the women surprised about?",
-      "answer_explain": "原文依据：听力原文中提到“sculpture exhibit, but there's such a long line of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A line is long.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the women surprised about?",
+      "answer_explain": "正确答案：A（A line is long.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the women surprised about?",
       "choice_translations": [
-        "A：A line is long.",
-        "B：An exhibit is closed.\n=",
-        "C：A sign is missing.",
-        "D：A speaker（说话者） is delayed."
+        "A:A line is long.",
+        "B:An exhibit is closed.",
+        "C:A sign is missing.",
+        "D:A speaker(说话者) is delayed."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 8 段：Owe're really surprised. There's usually no line",
+      "evidence": "参考听力原文：“Well, my friend and I were planning to see the sculpture exhibit, but there's such a long line of people waiting to get in.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 8 段：Owe're really surprised. There's usually no line",
+        "evidence": "参考听力原文：“Well, my friend and I were planning to see the sculpture exhibit, but there's such a long line of people waiting to get in.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“sculpture exhibit, but there's such a long line of”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（A line is long.）。"
+        "analysis": "正确答案：A（A line is long.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 38,
       "priority": {
@@ -104,24 +126,24 @@
         "Some merchandise was moved."
       ],
       "answer": "B",
-      "question": "According to the man, what will take place",
-      "answer_explain": "原文依据：听力原文中提到“w Well, my friend and I were planning to see the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Express delivery will cost extra.）。",
-      "question_translation": "中文辅助（离线预处理）：According（根据） to the man（男士）, what（什么） will take place",
+      "question": "According to the man, what will take place?",
+      "answer_explain": "正确答案：B（Express delivery will cost extra.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):According(根据) to the man(男士), what(什么) will take place",
       "choice_translations": [
-        "A：A new location recently opened.",
-        "B：Express delivery will cost extra.",
-        "C：Some items are out of stock.",
-        "D：Some merchandise was moved."
+        "A:A new location recently opened.",
+        "B:Express delivery will cost extra.",
+        "C:Some items are out of stock.",
+        "D:Some merchandise was moved."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 15 段：Ew Good idea! I've been wanting to try that place!",
+      "evidence": "参考听力原文：“I've been wanting to try that place.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 15 段：Ew Good idea! I've been wanting to try that place!",
+        "evidence": "参考听力原文：“I've been wanting to try that place.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“w Well, my friend and I were planning to see the”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Express delivery will cost extra.）。"
+        "analysis": "正确答案：B（Express delivery will cost extra.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 39,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "Where will the women probably go next?",
-      "answer_explain": "原文依据：听力原文中提到“going to be very crowded for the next hour or so.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To a restaurant）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） will the women probably（可能） go next?",
+      "answer_explain": "正确答案：C（To a restaurant）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) will the women probably(可能) go next?",
       "choice_translations": [
-        "A：To a park",
-        "B：To a theater",
-        "C：To a restaurant",
-        "D：To a school"
+        "A:To a park",
+        "B:To a theater",
+        "C:To a restaurant",
+        "D:To a school"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“In fact, the museum's going to be very crowded for the next hour or so.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“In fact, the museum's going to be very crowded for the next hour or so.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“going to be very crowded for the next hour or so.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（To a restaurant）。"
+        "analysis": "正确答案：C（To a restaurant）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 40,
       "priority": {

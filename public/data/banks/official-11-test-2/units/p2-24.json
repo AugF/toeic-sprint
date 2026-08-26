@@ -28,8 +28,28 @@
       "asset_key": "official-11-test-2/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：W",
-    "content_translation": "中文辅助（离线预处理）：W"
+    "transcript": "How soon will the new sales staff be arriving?\nA. There's a bus stop out front.\nB. At the fitness center.\nC. In a few minutes.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "8edbd5b12fd0486156a406a6d2c593273f150c69e0358b44bd42172ed4534351",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "新的销售人员什么时候会到？\nA. 前面有个公交车站。\nB. 在健身中心。\nC. 几分钟后。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "abcf8d35cf54968a8d063f612bb0bf04648e492fc390b4711b67d139f3235873"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -39,27 +59,27 @@
         "In a few minutes."
       ],
       "answer": "C",
-      "question": "W",
+      "question": "How soon will the new sales staff be arriving?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述为“W”，官方正确应答是“In a few minutes.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（In a few minutes.）。",
-      "question_translation": "中文辅助（离线预处理）：W",
+      "answer_explain": "原文依据：问句或陈述为“How soon will the new sales staff be arriving?”，官方正确应答是“In a few minutes.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（In a few minutes.）。",
+      "question_translation": "新的销售人员什么时候会到?",
       "choice_translations": [
-        "A：There's a bus stop out front.",
-        "B：At the fitness center.",
-        "C：In a few minutes."
+        "A：前面有个公交车站。",
+        "B：在健身中心。",
+        "C：几分钟后。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：W",
+      "evidence": "参考原文第 1 段：How soon will the new sales staff be arriving?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：W",
+        "evidence": "参考原文第 1 段：How soon will the new sales staff be arriving?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述为“W”，官方正确应答是“In a few minutes.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（In a few minutes.）。"
+        "analysis": "原文依据：问句或陈述为“How soon will the new sales staff be arriving?”，官方正确应答是“In a few minutes.”。选择理由：该应答在语义和实际会话语用上承接前句；其他选项只存在表面词汇关联或答非所问。正确答案：C（In a few minutes.）。"
       },
       "item_id": 24,
       "priority": {

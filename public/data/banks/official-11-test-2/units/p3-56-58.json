@@ -39,9 +39,31 @@
       "asset_key": "official-11-test-2/audio/part3/q056-058.mp3",
       "exists": true
     },
-    "transcript": "Ek w Hi. I just talked to our advertising consultant. He\nrecommended that we start promoting our legal\nservices with videos on social media -to build a\npresence there.\nm One of my hobbies is creating and editing videos, s\nI'd be happy to lead this project.\nEw Great! It's your project, then! ® The consultant\nsuggested focusing on content that is useful, like\ngeneral legal guidance.\nm OK. Ol'll start out by looking into the topics for existin\nlegal videos, and we can decide on the content for ol\nvideos based on that.",
-    "transcript_translation": "中文辅助（离线预处理）：Ek w Hi.\nI just talked to our advertising consultant.\nHe\nrecommended that we start promoting our legal\nservices with videos on social media -to build a\npresence there.\nm One of my hobbies is creating and editing videos, s\nI'd be happy to lead this project.\nEw Great!\nIt's your project, then!\n® The consultant\nsuggested focusing on content that is useful, like\ngeneral legal guidance.\nm OK.\nOl'll start out by looking into the topics for existin\nlegal videos, and we can decide on the content for ol\nvideos based on that.",
-    "content_translation": "中文辅助（离线预处理）：Ek w Hi.\nI just talked to our advertising consultant.\nHe\nrecommended that we start promoting our legal\nservices with videos on social media -to build a\npresence there.\nm One of my hobbies is creating and editing videos, s\nI'd be happy to lead this project.\nEw Great!\nIt's your project, then!\n® The consultant\nsuggested focusing on content that is useful, like\ngeneral legal guidance.\nm OK.\nOl'll start out by looking into the topics for existin\nlegal videos, and we can decide on the content for ol\nvideos based on that."
+    "transcript": "Hi, I just talked to our advertising consultant.\nHe recommended that we start promoting our legal services with videos on social media to build a presence there.\nOne of my hobbies is creating and editing videos, so I'd be happy to lead this project.\nGreat, it's your project then.\nThe consultant suggested focusing on content that is useful, like general legal guidance.\nOkay, I'll start out by looking into the topics for existing legal videos, and we can decide on the content for our videos based on that.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bf835e7a0bf7dd227b223753c4d9a0cad39068d333f21eab2148350bc81c2a8a",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-11-test-2/audio/part3/q056-058.mp3",
+      "metrics": {
+        "word_count": 88,
+        "legacy_word_count": 91,
+        "length_ratio": 0.967,
+        "legacy_coverage": 0.89
+      }
+    },
+    "transcript_translation": "嗨，我刚和我们的广告顾问聊完天。\n他建议我们通过社交媒体的视频来推广我们的法律服务，以建立在那里的影响力。\n我的一个爱好就是制作和编辑视频，所以我很乐意主导这个项目。\n太好了，那就是你的项目了。\n顾问建议重点关注有用的内容，比如一般的法律指导。\n好的，我先从研究现有法律视频的主题开始，然后我们可以根据这些来决定我们视频的内容。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c1c5dc9942e7171e05a8fc4eee0d732d637631ffedcfaaa11bde948bcf811467"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +75,23 @@
       ],
       "answer": "C",
       "question": "Where do the speakers most likely work?",
-      "answer_explain": "原文依据：听力原文与题目“Where do the speakers most likely work?”对应，官方答案为“At a law firm”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（At a law firm）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） do the speakers most likely（最可能） work（工作）?",
+      "answer_explain": "正确答案：C（At a law firm）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) do the speakers most likely(最可能) work(工作)?",
       "choice_translations": [
-        "A：At an advertising agency",
-        "B：At a training consultancy",
-        "C：At a law firm",
-        "D：At a social media company（公司）"
+        "A:At an advertising agency",
+        "B:At a training consultancy",
+        "C:At a law firm",
+        "D:At a social media company(公司)"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Ek w Hi. I just talked to our advertising consultant. He",
+      "evidence": "参考听力原文：“Okay, I'll start out by looking into the topics for existing legal videos, and we can decide on the content for our videos based on that.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Ek w Hi. I just talked to our advertising consultant. He",
+        "evidence": "参考听力原文：“Okay, I'll start out by looking into the topics for existing legal videos, and we can decide on the content for our videos based on that.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“Where do the speakers most likely work?”对应，官方答案为“At a law firm”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（At a law firm）。"
+        "analysis": "正确答案：C（At a law firm）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 56,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "C",
       "question": "What does the man offer to do?",
-      "answer_explain": "原文依据：听力原文与题目“What does the man offer to do?”对应，官方答案为“Lead a project”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（Lead a project）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） offer to do?",
+      "answer_explain": "正确答案：C（Lead a project）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) offer to do?",
       "choice_translations": [
-        "A：Review a contract",
-        "B：Purchase（购买） some advertising space",
-        "C：Lead a project",
-        "D：Contact Human Resources"
+        "A:Review a contract",
+        "B:Purchase(购买) some advertising space",
+        "C:Lead a project",
+        "D:Contact Human Resources"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ek w Hi. I just talked to our advertising consultant. He",
+      "evidence": "参考听力原文：“One of my hobbies is creating and editing videos, so I'd be happy to lead this project.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ek w Hi. I just talked to our advertising consultant. He",
+        "evidence": "参考听力原文：“One of my hobbies is creating and editing videos, so I'd be happy to lead this project.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What does the man offer to do?”对应，官方答案为“Lead a project”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：C（Lead a project）。"
+        "analysis": "正确答案：C（Lead a project）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 57,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "D",
       "question": "What will the man do next?",
-      "answer_explain": "原文依据：听力原文与题目“What will the man do next?”对应，官方答案为“Conduct some research”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Conduct some research）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the man（男士） do next?",
+      "answer_explain": "正确答案：D（Conduct some research）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the man(男士) do next?",
       "choice_translations": [
-        "A：Assemble a team",
-        "B：Write an online review",
-        "C：Negotiate a higher salary",
-        "D：Conduct some research"
+        "A:Assemble a team",
+        "B:Write an online review",
+        "C:Negotiate a higher salary",
+        "D:Conduct some research"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Ek w Hi. I just talked to our advertising consultant. He",
+      "evidence": "参考听力原文：“Okay, I'll start out by looking into the topics for existing legal videos, and we can decide on the content for our videos based on that.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Ek w Hi. I just talked to our advertising consultant. He",
+        "evidence": "参考听力原文：“Okay, I'll start out by looking into the topics for existing legal videos, and we can decide on the content for our videos based on that.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文与题目“What will the man do next?”对应，官方答案为“Conduct some research”。选择理由：答案由原文中的直接信息、同义改写或原文足以支持的推断得到。正确答案：D（Conduct some research）。"
+        "analysis": "正确答案：D（Conduct some research）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 58,
       "priority": {

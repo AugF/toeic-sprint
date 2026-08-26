@@ -39,9 +39,32 @@
       "asset_key": "official-8-test-2/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nElw Thanks for meeting with us, Mr. Samir. Maria and\nare pleased that your city's planning to start using our\ncompany's new fare payment system in your train stations.\nI•M Yes. ®My transportation department's eager to introduce\nthe new tap-to-pay technology your company created.\nw Great. ®We advise starting off by installing\nour payment devices in a limited number of\nstations —maybe target the less-busy stations first.\nm That makes sense.\nEE w ® Could you provide the latest ridership statistics, so we'll\nknow the number of passengers that use each station?\nI•M Sure. But ®I'm concerned about the project deadline.\nCan we be sure all stations have it by the end of the\nyear?",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nElw Thanks for meeting（会议） with us, Mr.\nSamir.\nMaria and\nare pleased that your city's planning to start using our\ncompany（公司）'s new fare payment system in your train stations.\nI•M Yes.\n®My transportation department's eager to introduce\nthe new tap-to-pay technology your company（公司） created.\nw Great.\n®We advise starting off by installing\nour payment devices in a limited number of\nstations —maybe target the less-busy stations first.\nm That makes sense.\nEE w ® Could you provide the latest ridership statistics, so we'll\nknow the number of passengers that use each station?\nI•M Sure.\nBut ®I'm concerned about the project deadline.\nCan we be sure all stations have it by the end of the\nyear?",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nElw Thanks for meeting（会议） with us, Mr.\nSamir.\nMaria and\nare pleased that your city's planning to start using our\ncompany（公司）'s new fare payment system in your train stations.\nI•M Yes.\n®My transportation department's eager to introduce\nthe new tap-to-pay technology your company（公司） created.\nw Great.\n®We advise starting off by installing\nour payment devices in a limited number of\nstations —maybe target the less-busy stations first.\nm That makes sense.\nEE w ® Could you provide the latest ridership statistics, so we'll\nknow the number of passengers that use each station?\nI•M Sure.\nBut ®I'm concerned about the project deadline.\nCan we be sure all stations have it by the end of the\nyear?"
+    "transcript": "Thanks for meeting with us, Mr. Samir.\nMaria and I are pleased that your city is planning to start using our company's new fare payment system in your train stations.\nYes.\nMy transportation department is eager to introduce the new tap-to-pay technology your company created.\nGreat.\nWe advise starting off by installing our payment devices in a limited number of stations.\nMaybe target the less busy stations first.\nThat makes sense.\nCould you provide the latest ridership statistics so we'll know the number of passengers that use each station?\nSure.\nBut I'm concerned about the project deadline.\nCan we be sure all stations have it by the end of the year?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "e169f7ccb172f46622c4a6fee0bb8d854fba000b16a6b25aad1c09108f27d6df",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 111,
+        "legacy_word_count": 114,
+        "length_ratio": 0.974,
+        "legacy_coverage": 0.912
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "感谢您和我们见面，萨米尔先生。\n玛丽亚和我很高兴您的城市计划在火车站使用我们公司的新的票务支付系统。\n是的。\n我的交通部门渴望引入贵公司创造的新的非接触式支付技术。\n太好了。\n我们建议先从在有限数量的车站安装我们的支付设备开始。\n也许可以先瞄准人流量较少的车站。\n有道理。\n您能提供最新的客运量统计数据吗，这样我们就能知道每个车站使用多少乘客？\n当然可以。\n但我担心项目的截止日期。\n我们能确保到年底所有车站都安装好吗？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "48b285484be9c357a23941e605b13addd7652fe6aa7affadf92af559707b3088"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "B",
       "question": "What are the speakers mainly discussing?",
-      "answer_explain": "原文依据：听力原文中提到“company's new fare payment system in your train stations.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A payment system）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） are the speakers mainly discussing?",
+      "answer_explain": "正确答案：B（A payment system）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) are the speakers mainly discussing?",
       "choice_translations": [
-        "A：A security-camera network",
-        "B：A payment system",
-        "C：A billboard advertisement",
-        "D：A pedestrian walkway"
+        "A:A security-camera network",
+        "B:A payment system",
+        "C:A billboard advertisement",
+        "D:A pedestrian walkway"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：with three speakers.",
+      "evidence": "参考听力原文：“Maria and I are pleased that your city is planning to start using our company's new fare payment system in your train stations.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：with three speakers.",
+        "evidence": "参考听力原文：“Maria and I are pleased that your city is planning to start using our company's new fare payment system in your train stations.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“company's new fare payment system in your train stations.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（A payment system）。"
+        "analysis": "正确答案：B（A payment system）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 59,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "C",
       "question": "What is the man asked to provide?",
-      "answer_explain": "原文依据：听力原文中提到“EE w ® Could you provide the latest ridership statistics, so we'll”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some passenger statistics）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the man（男士） asked to provide?",
+      "answer_explain": "正确答案：C（Some passenger statistics）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the man(男士) asked to provide?",
       "choice_translations": [
-        "A：A city map",
-        "B：Some additional funding",
-        "C：Some passenger statistics",
-        "D：Updated transit schedules"
+        "A:A city map",
+        "B:Some additional funding",
+        "C:Some passenger statistics",
+        "D:Updated transit schedules"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：EE w ® Could you provide the latest ridership statistics, so we'll",
+      "evidence": "参考听力原文：“Could you provide the latest ridership statistics so we'll know the number of passengers that use each station?”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：EE w ® Could you provide the latest ridership statistics, so we'll",
+        "evidence": "参考听力原文：“Could you provide the latest ridership statistics so we'll know the number of passengers that use each station?”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“EE w ® Could you provide the latest ridership statistics, so we'll”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some passenger statistics）。"
+        "analysis": "正确答案：C（Some passenger statistics）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 60,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "D",
       "question": "Why is the man concerned?",
-      "answer_explain": "原文依据：听力原文中提到“But ®I'm concerned about the project deadline.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A deadline might be missed.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the man（男士） concerned?",
+      "answer_explain": "正确答案：D（A deadline might be missed.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the man(男士) concerned?",
       "choice_translations": [
-        "A：A project is too expensive.",
-        "B：Some software is unreliable.",
-        "C：A design is unappealing.",
-        "D：A deadline might be missed."
+        "A:A project is too expensive.",
+        "B:Some software is unreliable.",
+        "C:A design is unappealing.",
+        "D:A deadline might be missed."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 13 段：I•M Sure. But ®I'm concerned about the project deadline.",
+      "evidence": "参考听力原文：“But I'm concerned about the project deadline.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 13 段：I•M Sure. But ®I'm concerned about the project deadline.",
+        "evidence": "参考听力原文：“But I'm concerned about the project deadline.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“But ®I'm concerned about the project deadline.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（A deadline might be missed.）。"
+        "analysis": "正确答案：D（A deadline might be missed.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 61,
       "priority": {

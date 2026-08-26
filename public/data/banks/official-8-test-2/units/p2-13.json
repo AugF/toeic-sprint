@@ -27,38 +27,58 @@
       "asset_key": "official-8-test-2/audio/part2/q013.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：w How（如何） many employees will participate in the training session?\nElM",
-    "content_translation": "中文辅助（离线预处理）：w How（如何） many employees will participate in the training session?\nElM"
+    "transcript": "How many employees will participate in the training session?\nA. I'm great, thanks.\nB. 14 signed up.\nC. On Wednesday.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "468f4f37673f359f4b97d1b418a5ded70e97fbd31029ca4abc17724feb942d98",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-8-test-2/audio/part2/q013.mp3",
+      "metrics": {
+        "word_count": 20
+      }
+    },
+    "transcript_translation": "有多少员工将参加培训？\nA. 我很好，谢谢。\nB. 14 人报名了。\nC. 在周三。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "cb9fb5a5aea4097092bdabb92c777665ccff5b60aece3547f4271ac939f2a07c"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
         "I'm great, thanks.",
-        "Fourteen signed up.",
+        "14 signed up.",
         "On Wednesday."
       ],
       "answer": "B",
-      "question": "w How many employees will participate in the training session? ElM",
+      "question": "How many employees will participate in the training session?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“w How many employees will participate in the training session? ElM”，自然应答是“Fourteen signed up.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Fourteen signed up.）。",
-      "question_translation": "中文辅助（离线预处理）：w How（如何） many employees will participate in the training session?\nElM",
+      "answer_explain": "原文依据：问句或陈述是“How many employees will participate in the training session?”，自然应答是“14 signed up.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（14 signed up.）。",
+      "question_translation": "有多少员工将参加培训?",
       "choice_translations": [
-        "A：I'm great, thanks.",
-        "B：Fourteen signed up.",
-        "C：On Wednesday."
+        "A：我很好,谢谢。",
+        "B：14 人报名了。",
+        "C：在周三。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：w How many employees will participate in the training session? ElM",
+      "evidence": "参考原文第 1 段：How many employees will participate in the training session?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：w How many employees will participate in the training session? ElM",
+        "evidence": "参考原文第 1 段：How many employees will participate in the training session?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“w How many employees will participate in the training session? ElM”，自然应答是“Fourteen signed up.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（Fourteen signed up.）。"
+        "analysis": "原文依据：问句或陈述是“How many employees will participate in the training session?”，自然应答是“14 signed up.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：B（14 signed up.）。"
       },
       "item_id": 13,
       "priority": {

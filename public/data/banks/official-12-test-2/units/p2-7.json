@@ -28,38 +28,58 @@
       "asset_key": "official-12-test-2/audio/part2/q007.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：L м IEM Ew",
-    "content_translation": "中文辅助（离线预处理）：L м IEM Ew"
+    "transcript": "Why did Mr. Yun bring cake for everyone?\nA. Yes, about an hour ago.\nB. At the front entrance.\nC. Because it's his birthday.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "f8e2b84ac3c24554b308b1448c148dcbf01eab19df646af610fb287149aeb7db",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part2/q007.mp3",
+      "metrics": {
+        "word_count": 26
+      }
+    },
+    "transcript_translation": "尹先生带蛋糕给所有人是为什么？\nA. 是的，大约一个小时前。\nB. 在前门。\nC. 因为今天是他的生日。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "9143e4048e6e42406b16d432b8053c9adad6377dd850f07f89fe46f03d67bb7d"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Yes, about an hour ago. Because",
+        "Yes, about an hour ago.",
         "At the front entrance.",
         "Because it's his birthday."
       ],
       "answer": "C",
-      "question": "L м IEM Ew",
+      "question": "Why did Mr. Yun bring cake for everyone?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“L м IEM Ew”，自然应答是“Because it's his birthday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Because it's his birthday.）。",
-      "question_translation": "中文辅助（离线预处理）：L м IEM Ew",
+      "answer_explain": "原文依据：问句或陈述是“Why did Mr. Yun bring cake for everyone?”，自然应答是“Because it's his birthday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Because it's his birthday.）。",
+      "question_translation": "尹先生带蛋糕给所有人是为什么?",
       "choice_translations": [
-        "A：Yes, about an hour ago.\nBecause",
-        "B：At the front entrance.",
-        "C：Because it's his birthday."
+        "A：是的,大约一个小时前。",
+        "B：在前门。",
+        "C：因为今天是他的生日。"
       ],
       "question_type": "陈述 / 请求应答题",
-      "evidence": "参考原文第 1 段：L м IEM Ew",
+      "evidence": "参考原文第 1 段：Why did Mr. Yun bring cake for everyone?",
       "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "陈述 / 请求应答题",
-        "evidence": "参考原文第 1 段：L м IEM Ew",
+        "evidence": "参考原文第 1 段：Why did Mr. Yun bring cake for everyone?",
         "strategy": "先识别陈述 / 请求应答题，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“L м IEM Ew”，自然应答是“Because it's his birthday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Because it's his birthday.）。"
+        "analysis": "原文依据：问句或陈述是“Why did Mr. Yun bring cake for everyone?”，自然应答是“Because it's his birthday.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Because it's his birthday.）。"
       },
       "item_id": 7,
       "priority": {

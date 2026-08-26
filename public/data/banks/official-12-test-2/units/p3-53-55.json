@@ -36,9 +36,31 @@
       "asset_key": "official-12-test-2/audio/part3/q053-055.mp3",
       "exists": true
     },
-    "transcript": "with three speakers.\nm Sung-Hee, Oplease welcome Yasushi-@who I\nSung-Hee.\ninterviewed last week for the assistant property\nmanager position. He'll be a great fit for our team!\nEw Welcome, Yasushi! As the head property manager,\nd5cz. Ya:\nI'll be working closely with you. © Right now, my\nWENCE\nprimary focus is on drawing up renewal leases for our\nresidents.\nAh, great. That's something I did at Greenpoint Towers,\nwhere I worked previously.\nm Perfect! Now, © Yasushi, let's go meet the front-office\nstaff, since you'll be in regular communication with\natataldi\nthem.",
-    "transcript_translation": "中文辅助（离线预处理）：with three speakers.\nm Sung-Hee, Oplease welcome Yasushi-@who（谁） I\nSung-Hee.\ninterviewed last week for the assistant property\nmanager（经理） position.\nHe'll be a great fit for our team!\nEw Welcome, Yasushi!\nAs the head property manager（经理）,\nd5cz.\nYa:\nI'll be working closely with you.\n© Right now, my\nWENCE\nprimary focus is on drawing up renewal leases for our\nresidents.\nAh, great.\nThat's something I did at Greenpoint Towers,\nwhere（哪里） I worked previously.\nm Perfect!\nNow, © Yasushi, let's go meet the front-office（办公室）\nstaff, since you'll be in regular communication with\natataldi\nthem.",
-    "content_translation": "中文辅助（离线预处理）：with three speakers.\nm Sung-Hee, Oplease welcome Yasushi-@who（谁） I\nSung-Hee.\ninterviewed last week for the assistant property\nmanager（经理） position.\nHe'll be a great fit for our team!\nEw Welcome, Yasushi!\nAs the head property manager（经理）,\nd5cz.\nYa:\nI'll be working closely with you.\n© Right now, my\nWENCE\nprimary focus is on drawing up renewal leases for our\nresidents.\nAh, great.\nThat's something I did at Greenpoint Towers,\nwhere（哪里） I worked previously.\nm Perfect!\nNow, © Yasushi, let's go meet the front-office（办公室）\nstaff, since you'll be in regular communication with\natataldi\nthem."
+    "transcript": "Sung Hee, please welcome Yasushi, who I interviewed last week for the assistant property manager position.\nHe'll be a great fit for our team.\nWelcome, Yasushi.\nAs the head property manager, I'll be working closely with you.\nRight now, my primary focus is on drawing up renewal leases for our residents.\nAh, great.\nThat's something I did at Greenpoint Towers, where I worked previously.\nPerfect.\nNow, Yasushi, let's go meet the front office staff, since you'll be in regular communication with them.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "4d2fe5b48c6cffced2977515e111ba99a36f5a1a3b92bc5ea06d1c4211b63a18",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part3/q053-055.mp3",
+      "metrics": {
+        "word_count": 82,
+        "legacy_word_count": 89,
+        "length_ratio": 0.921,
+        "legacy_coverage": 0.831
+      }
+    },
+    "transcript_translation": "Sung Hee，请欢迎Yasushi，我上周面试他担任助理物业经理的职位。\n他会非常适合我们的团队。\n欢迎，Yasushi。\n作为总物业经理，我将与你密切合作。\n目前，我的主要重点是为我们的居民起草续租合同。\n啊，太好了。\n这是我在Greenpoint Towers之前工作时做过的事情。\n完美。\n现在，Yasushi，我们去见一下前台员工吧，因为你会经常和他们沟通。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b50174d667d5cd8786be624a3869ce90799e61fbae1235eb87effe635dc39bfa"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -50,23 +72,23 @@
       ],
       "answer": "A",
       "question": "What did Yasushi do last week?",
-      "answer_explain": "原文依据：听力原文中提到“interviewed last week for the assistant property”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He participated in a job interview.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） did Yasushi do last week?",
+      "answer_explain": "正确答案：A（He participated in a job interview.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) did Yasushi do last week?",
       "choice_translations": [
-        "A：He participated in a job interview.",
-        "B：He toured an apartment building.",
-        "C：He purchased some furniture.",
-        "D：He moved to Greenpoint Towers."
+        "A:He participated in a job interview.",
+        "B:He toured an apartment building.",
+        "C:He purchased some furniture.",
+        "D:He moved to Greenpoint Towers."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：m Sung-Hee, Oplease welcome Yasushi-@who I",
+      "evidence": "参考听力原文：“Sung Hee, please welcome Yasushi, who I interviewed last week for the assistant property manager position.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：m Sung-Hee, Oplease welcome Yasushi-@who I",
+        "evidence": "参考听力原文：“Sung Hee, please welcome Yasushi, who I interviewed last week for the assistant property manager position.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“interviewed last week for the assistant property”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（He participated in a job interview.）。"
+        "analysis": "正确答案：A（He participated in a job interview.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 53,
       "priority": {
@@ -99,23 +121,23 @@
       ],
       "answer": "D",
       "question": "What task has the woman been working on?",
-      "answer_explain": "原文依据：听力原文中提到“primary focus is on drawing up renewal leases for our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Preparing leases）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） task has the woman（女士） been working on?",
+      "answer_explain": "正确答案：D（Preparing leases）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) task has the woman(女士) been working on?",
       "choice_translations": [
-        "A：Finding new residents",
-        "B：Contacting potential employees",
-        "C：Remodeling apartments",
-        "D：Preparing leases"
+        "A:Finding new residents",
+        "B:Contacting potential employees",
+        "C:Remodeling apartments",
+        "D:Preparing leases"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 8 段：I'll be working closely with you. © Right now, my",
+      "evidence": "参考听力原文：“Right now, my primary focus is on drawing up renewal leases for our residents.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 8 段：I'll be working closely with you. © Right now, my",
+        "evidence": "参考听力原文：“Right now, my primary focus is on drawing up renewal leases for our residents.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“primary focus is on drawing up renewal leases for our”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Preparing leases）。"
+        "analysis": "正确答案：D（Preparing leases）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 54,
       "priority": {
@@ -148,23 +170,23 @@
       ],
       "answer": "C",
       "question": "Who will Yasushi be introduced to next?",
-      "answer_explain": "原文依据：听力原文中提到“Now, © Yasushi, let's go meet the front-office”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The office staff）。",
-      "question_translation": "中文辅助（离线预处理）：Who（谁） will Yasushi be introduced to next?",
+      "answer_explain": "正确答案：C（The office staff）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Who(谁) will Yasushi be introduced to next?",
       "choice_translations": [
-        "A：A property owner",
-        "B：The maintenance crew",
-        "C：The office（办公室） staff",
-        "D：Apartment residents"
+        "A:A property owner",
+        "B:The maintenance crew",
+        "C:The office(办公室) staff",
+        "D:Apartment residents"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 2 段：m Sung-Hee, Oplease welcome Yasushi-@who I",
+      "evidence": "参考听力原文：“Now, Yasushi, let's go meet the front office staff, since you'll be in regular communication with them.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 2 段：m Sung-Hee, Oplease welcome Yasushi-@who I",
+        "evidence": "参考听力原文：“Now, Yasushi, let's go meet the front office staff, since you'll be in regular communication with them.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Now, © Yasushi, let's go meet the front-office”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（The office staff）。"
+        "analysis": "正确答案：C（The office staff）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 55,
       "priority": {

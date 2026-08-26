@@ -27,8 +27,28 @@
       "asset_key": "official-9-test-2/audio/part2/q019.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：Why（为什么） do we have to finish the sales report today?",
-    "content_translation": "中文辅助（离线预处理）：Why（为什么） do we have to finish the sales report today?"
+    "transcript": "Why do we have to finish the sales report today?\nA. The deadline was moved up.\nB. I've already sold them all.\nC. Yes, she reports the business news.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5938da617bda6ea62e28493c67a7ee61b33f9995845cf8ca4b4438dd818fc3fa",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q019.mp3",
+      "metrics": {
+        "word_count": 30
+      }
+    },
+    "transcript_translation": "我们为什么今天必须完成销售报告？\nA. 截止日期提前了。\nB. 我已经把它们全部卖完了。\nC. 是的，她报道商业新闻。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "eb2d433f96de7eed1968029f80d4e2f5ae26ca2008eb3dad750d48134f2773bf"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -43,11 +63,11 @@
       "topic": "原因询问",
       "keywords": "why reason response",
       "answer_explain": "原文依据：问句或陈述是“Why do we have to finish the sales report today?”，自然应答是“The deadline was moved up.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（The deadline was moved up.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） do we have to finish the sales report today?",
+      "question_translation": "我们为什么今天必须完成销售报告?",
       "choice_translations": [
-        "A：The deadline was moved up.",
-        "B：I've already sold them all.",
-        "C：Yes, she reports the business news."
+        "A：截止日期提前了。",
+        "B：我已经把它们全部卖完了。",
+        "C：是的,她报道商业新闻。"
       ],
       "question_type": "原因疑问句",
       "evidence": "参考原文第 1 段：Why do we have to finish the sales report today?",

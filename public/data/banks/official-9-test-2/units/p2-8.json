@@ -26,38 +26,58 @@
       "asset_key": "official-9-test-2/audio/part2/q008.mp3",
       "exists": true
     },
-    "transcript_translation": "中文辅助（离线预处理）：m When（何时） can I pick up the antique table from your shop?",
-    "content_translation": "中文辅助（离线预处理）：m When（何时） can I pick up the antique table from your shop?"
+    "transcript": "When can I pick up the antique table from your shop?\nA. Any time after 5 p. m.\nB. Sure, I'll take care of it.\nC. On Maple Avenue.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "04a04348f871f6b8c7a4be4e4a5f4bba2af2ccc111a8cdb9675f7a29263bfe1f",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-9-test-2/audio/part2/q008.mp3",
+      "metrics": {
+        "word_count": 29
+      }
+    },
+    "transcript_translation": "我什么时候可以从你的店取走那张古董桌？\nA. 下午五点以后任何时间都可以。\nB. 当然，我会处理的。\nC. 在枫叶大道。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c762d9e9f6f85ee3b279dd228d1d43c26d32d3430c3452ae0e1a02d22ebd794b"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
       "choices": [
-        "Any time after five P.M.",
+        "Any time after 5 p. m.",
         "Sure, I'll take care of it.",
         "On Maple Avenue."
       ],
       "answer": "A",
-      "question": "m When can I pick up the antique table from your shop?",
+      "question": "When can I pick up the antique table from your shop?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“m When can I pick up the antique table from your shop?”，自然应答是“Any time after five P.M.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Any time after five P.M.）。",
-      "question_translation": "中文辅助（离线预处理）：m When（何时） can I pick up the antique table from your shop?",
+      "answer_explain": "原文依据：问句或陈述是“When can I pick up the antique table from your shop?”，自然应答是“Any time after 5 p. m.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Any time after 5 p. m.）。",
+      "question_translation": "我什么时候可以从你的店取走那张古董桌?",
       "choice_translations": [
-        "A：Any time after five P.M.",
-        "B：Sure, I'll take care of it.",
-        "C：On Maple Avenue."
+        "A：下午五点以后任何时间都可以。",
+        "B：当然,我会处理的。",
+        "C：在枫叶大道。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：m When can I pick up the antique table from your shop?",
+      "evidence": "参考原文第 1 段：When can I pick up the antique table from your shop?",
       "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
       "response_style": "先识别疑问句或陈述的交际功能；回答既可能直接给出信息，也可能用原因、安排或补充说明间接回应。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：m When can I pick up the antique table from your shop?",
+        "evidence": "参考原文第 1 段：When can I pick up the antique table from your shop?",
         "strategy": "先识别一般疑问句，预测合理回答功能，再排除重复原词、答非所问和语义冲突项。",
-        "analysis": "原文依据：问句或陈述是“m When can I pick up the antique table from your shop?”，自然应答是“Any time after five P.M.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Any time after five P.M.）。"
+        "analysis": "原文依据：问句或陈述是“When can I pick up the antique table from your shop?”，自然应答是“Any time after 5 p. m.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：A（Any time after 5 p. m.）。"
       },
       "item_id": 8,
       "priority": {

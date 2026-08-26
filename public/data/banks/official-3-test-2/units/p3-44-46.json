@@ -39,37 +39,59 @@
       "asset_key": "official-3-test-2/audio/part3/q044-046.mp3",
       "exists": true
     },
-    "transcript": "ER w Hi, Eric. ®what did you think of the leadersh\nled yesterday? ®t was nice to see the new\nfrom across all divisions. Did it give you any :\nIu To be honest, ©! supervise a team that work\nmachines in manufacturing. So... it didn’t offe\nme.\nEA w Oh, really?\nEI“ Well, | know ©the seminar was meant for suf\nall divisions, but it was more appropriate for t\nwork in an office on computers all day.\nEXE w That's good to know. Actually, ®could you e-i\nsome of your comments? That'll help me imp\nseminar for the future.",
-    "transcript_translation": "中文辅助（离线预处理）：ER w Hi, Eric.\n®what（什么） did you think of the leadersh\nled yesterday?\n®t was nice to see the new\nfrom across all divisions.\nDid it give you any :\nIu To be honest, ©!\nsupervise a team that work（工作）\nmachines in manufacturing.\nSo...\nit didn’t offe\nme.\nEA w Oh, really?\nEI“ Well, | know ©the seminar was meant for suf\nall divisions, but it was more appropriate for t\nwork（工作） in an office（办公室） on computers all day.\nEXE w That's good to know.\nActually, ®could you e-i\nsome of your comments?\nThat'll help me imp\nseminar for the future.",
-    "content_translation": "中文辅助（离线预处理）：ER w Hi, Eric.\n®what（什么） did you think of the leadersh\nled yesterday?\n®t was nice to see the new\nfrom across all divisions.\nDid it give you any :\nIu To be honest, ©!\nsupervise a team that work（工作）\nmachines in manufacturing.\nSo...\nit didn’t offe\nme.\nEA w Oh, really?\nEI“ Well, | know ©the seminar was meant for suf\nall divisions, but it was more appropriate for t\nwork（工作） in an office（办公室） on computers all day.\nEXE w That's good to know.\nActually, ®could you e-i\nsome of your comments?\nThat'll help me imp\nseminar for the future."
+    "transcript": "Hi, Eric.\nWhat did you think of the leadership seminar I led yesterday?\nIt was nice to see the new managers from across all divisions.\nDid it give you any good tips?\nTo be honest, I supervise a team that works with machines in manufacturing, so it didn't offer much for me.\nOh, really?\nWell, I know the seminar was meant for supervisors in all divisions, but it was more appropriate for those who work in an office on computers all day.\nThat's good to know.\nActually, could you email me some of your comments?\nThat'll help me improve the seminar for the future.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "522abfc135388785ca766b27a685d770c4ba09b1009216b7be7670e43304babf",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-3-test-2/audio/part3/q044-046.mp3",
+      "metrics": {
+        "word_count": 104,
+        "legacy_word_count": 95,
+        "length_ratio": 1.095,
+        "legacy_coverage": 0.874
+      }
+    },
+    "transcript_translation": "嗨，Eric。\n你觉得我昨天主持的领导力研讨会怎么样？\n很高兴见到来自所有部门的新经理们。\n有没有给你什么好的建议？\n说实话，我负责监督一个在制造业与机器一起工作的团队，所以对我来说没什么帮助。\n哦，是吗？\n嗯，我知道这个研讨会是为所有部门的主管准备的，但它更适合那些全天在办公室使用电脑的人。\n了解了。\n实际上，你能把一些你的评论通过电子邮件发给我吗？\n这对我在未来改进研讨会有帮助。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "cefe4d88e4abda55883dd066d205fea2715d3867d2f557a852f56af19167b1d2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
       "choices": [
-        "Atechnology convention",
-        "Amanagement seminar",
-        "Acorporate fund-raiser",
-        "Ajob fair"
+        "A technology convention",
+        "A management seminar",
+        "A corporate fund-raiser",
+        "A job fair"
       ],
       "answer": "B",
       "question": "What event are the speakers mainly talking about?",
-      "answer_explain": "原文依据：听力原文中提到“EI“ Well, | know ©the seminar was meant for suf”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Amanagement seminar）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） event are the speakers mainly talking about?",
+      "answer_explain": "正确答案：B（A management seminar）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) event are the speakers mainly talking about?",
       "choice_translations": [
-        "A：Atechnology convention",
-        "B：Amanagement seminar",
-        "C：Acorporate fund-raiser",
-        "D：Ajob fair"
+        "A:A technology convention",
+        "B:A management seminar",
+        "C:A corporate fund-raiser",
+        "D:A job fair"
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：ER w Hi, Eric. ®what did you think of the leadersh",
+      "evidence": "参考听力原文：“Well, I know the seminar was meant for supervisors in all divisions, but it was more appropriate for those who work in an office on computers all day.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：ER w Hi, Eric. ®what did you think of the leadersh",
+        "evidence": "参考听力原文：“Well, I know the seminar was meant for supervisors in all divisions, but it was more appropriate for those who work in an office on computers all day.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“EI“ Well, | know ©the seminar was meant for suf”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Amanagement seminar）。"
+        "analysis": "正确答案：B（A management seminar）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 44,
       "priority": {
@@ -105,23 +127,23 @@
       ],
       "answer": "C",
       "question": "Which department does the man work in?",
-      "answer_explain": "原文依据：听力原文中提到“machines in manufacturing.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Manufacturing）。",
-      "question_translation": "中文辅助（离线预处理）：Which department does the man（男士） work（工作） in?",
+      "answer_explain": "正确答案：C（Manufacturing）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Which department does the man(男士) work(工作) in?",
       "choice_translations": [
-        "A：Shipping",
-        "B：Accounting",
-        "C：Manufacturing",
-        "D：Graphic design"
+        "A:Shipping",
+        "B:Accounting",
+        "C:Manufacturing",
+        "D:Graphic design"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：ER w Hi, Eric. ®what did you think of the leadersh",
+      "evidence": "参考听力原文：“Well, I know the seminar was meant for supervisors in all divisions, but it was more appropriate for those who work in an office on computers all day.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：ER w Hi, Eric. ®what did you think of the leadersh",
+        "evidence": "参考听力原文：“Well, I know the seminar was meant for supervisors in all divisions, but it was more appropriate for those who work in an office on computers all day.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“machines in manufacturing.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Manufacturing）。"
+        "analysis": "正确答案：C（Manufacturing）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 45,
       "priority": {
@@ -157,23 +179,23 @@
       ],
       "answer": "C",
       "question": "What is the man asked to do?",
-      "answer_explain": "原文依据：听力原文中提到“EI“ Well, | know ©the seminar was meant for suf”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Provide written feedback）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the man（男士） asked to do?",
+      "answer_explain": "正确答案：C（Provide written feedback）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the man(男士) asked to do?",
       "choice_translations": [
-        "A：Make an online payment",
-        "B：Reserve computer equipment",
-        "C：Provide written feedback",
-        "D：Choose a catering service（服务）"
+        "A:Make an online payment",
+        "B:Reserve computer equipment",
+        "C:Provide written feedback",
+        "D:Choose a catering service(服务)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：ER w Hi, Eric. ®what did you think of the leadersh",
+      "evidence": "参考听力原文：“Well, I know the seminar was meant for supervisors in all divisions, but it was more appropriate for those who work in an office on computers all day.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：ER w Hi, Eric. ®what did you think of the leadersh",
+        "evidence": "参考听力原文：“Well, I know the seminar was meant for supervisors in all divisions, but it was more appropriate for those who work in an office on computers all day.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“EI“ Well, | know ©the seminar was meant for suf”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Provide written feedback）。"
+        "analysis": "正确答案：C（Provide written feedback）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 46,
       "priority": {

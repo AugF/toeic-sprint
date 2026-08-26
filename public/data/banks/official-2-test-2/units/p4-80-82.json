@@ -40,9 +40,31 @@
       "asset_key": "official-2-test-2/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "Mm\nFinally, | wanted to discuss some vacation requests. A numbe\nof drivers have asked me for time off later this month... but yc\nknow it’s the holiday season. Shipping volumes for the next f\nweeks have increased by forty percent. And in fact, we're goi\nto be so busy that ®we just hired some temporary help. So, t\nthose who submitted requests, if you want to take a vacation\nafter the holidays, ®)'m going to return your request forms to\nyou 950 you can resubmit them with new dates.\nPei a Lee a ee",
-    "transcript_translation": "Mm\n最后，我想讨论一下一些休假申请。有许多司机向我申请了本月晚些时候的假期……但你知道这是假日季节。未来几周的运输量增加了百分之四十。事实上，我们忙得连临时帮工都雇了。所以，对于提交了申请的人，如果你想在节假日后休假，我打算把你的申请表退还给你，这样你可以用新的日期重新提交。Pei a Lee a ee",
-    "content_translation": "Mm\n最后，我想讨论一下一些休假申请。有许多司机向我申请了本月晚些时候的假期……但你知道这是假日季节。未来几周的运输量增加了百分之四十。事实上，我们忙得连临时帮工都雇了。所以，对于提交了申请的人，如果你想在节假日后休假，我打算把你的申请表退还给你，这样你可以用新的日期重新提交。Pei a Lee a ee"
+    "transcript": "Finally, I wanted to discuss some vacation requests.\nA number of drivers have asked me for time off later this month.\nBut you know, it's the holiday season.\nShipping volumes for the next four weeks have increased by forty percent.\nAnd in fact, we're going to be so busy that we just hired some temporary help.\nSo, to those who submitted requests, if you want to take a vacation after the holidays, I'm going to return your request forms to you so you can resubmit them with new dates.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "audio_sha256": "d92aab77bf2c4dbdbded5bd0fdc851bb644128d43e0029d43241f6f43ed9bab4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-2-test-2/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 89,
+        "legacy_word_count": 92,
+        "length_ratio": 0.967,
+        "legacy_coverage": 0.891
+      }
+    },
+    "transcript_translation": "最后，我想讨论一些休假申请。\n有许多司机向我提出了在本月晚些时候休假的请求。\n但你知道，这是假期季节。\n未来四周的运输量增加了百分之四十。\n事实上，我们会非常忙碌，以至于我们刚刚雇了一些临时帮工。\n所以，对于提交了请求的人，如果你想在节假日后休假，我要把你的申请表退给你，这样你可以用新的日期重新提交它们。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b4ad6da50b4b66aefe8f1c7374d23f1eeb9ff0612931715263ec9b3eda4a6bcd"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "B",
       "question": "Why does the speaker say, “it’s the holiday season”?",
-      "answer_explain": "原文依据：听力原文中提到“after the holidays, ®)'m going to return your request forms to”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To turn down a request）。",
-      "question_translation": "演讲者说“这是假日季节”是什么意思？",
+      "answer_explain": "正确答案：B（To turn down a request）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者说“这是假日季节”是什么意思?",
       "choice_translations": [
-        "A：为了表达他的兴奋",
-        "B：为了拒绝一个请求",
-        "C：为了抱怨日程安排",
-        "D：为了感谢一位同事"
+        "A:为了表达他的兴奋",
+        "B:为了拒绝一个请求",
+        "C:为了抱怨日程安排",
+        "D:为了感谢一位同事"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 4 段：know it’s the holiday season. Shipping volumes for the next f",
+      "evidence": "参考听力原文：“But you know, it's the holiday season.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 4 段：know it’s the holiday season. Shipping volumes for the next f",
+        "evidence": "参考听力原文：“But you know, it's the holiday season.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“after the holidays, ®)'m going to return your request forms to”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：B（To turn down a request）。"
+        "analysis": "正确答案：B（To turn down a request）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "D",
       "question": "What has the company recently done?",
-      "answer_explain": "原文依据：听力原文中提到“to be so busy that ®we just hired some temporary help.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Hired temporary workers）。",
-      "question_translation": "公司最近做了什么？",
+      "answer_explain": "正确答案：D（Hired temporary workers）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "公司最近做了什么?",
       "choice_translations": [
-        "A：更改了产品价格",
-        "B：修订了政策",
-        "C：开设了一个新设施",
-        "D：雇用了临时工人"
+        "A:更改了产品价格",
+        "B:修订了政策",
+        "C:开设了一个新设施",
+        "D:雇用了临时工人"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Mm",
+      "evidence": "参考听力原文：“And in fact, we're going to be so busy that we just hired some temporary help.”",
       "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Mm",
+        "evidence": "参考听力原文：“And in fact, we're going to be so busy that we just hired some temporary help.”",
         "strategy": "本题属于细节题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“to be so busy that ®we just hired some temporary help.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（Hired temporary workers）。"
+        "analysis": "正确答案：D（Hired temporary workers）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "A",
       "question": "What will the speaker most likely do next?",
-      "answer_explain": "原文依据：听力原文中提到“after the holidays, ®)'m going to return your request forms to”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Return some paperwork）。",
-      "question_translation": "演讲者接下来最有可能做什么？",
+      "answer_explain": "正确答案：A（Return some paperwork）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "演讲者接下来最有可能做什么?",
       "choice_translations": [
-        "A：退还一些文件",
-        "B：张贴一些照片",
-        "C：更新一份手册",
-        "D：进行一次入职培训"
+        "A:退还一些文件",
+        "B:张贴一些照片",
+        "C:更新一份手册",
+        "D:进行一次入职培训"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Mm",
+      "evidence": "参考听力原文：“So, to those who submitted requests, if you want to take a vacation after the holidays, I'm going to return your request forms to you so you can resubmit them with new dates.”",
       "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Mm",
+        "evidence": "参考听力原文：“So, to those who submitted requests, if you want to take a vacation after the holidays, I'm going to return your request forms to you so you can resubmit them with new dates.”",
         "strategy": "本题属于推断题。先标出题干关键词，再定位原文中的同义改写；涉及推断时只采用原文能够充分支持的结论。",
-        "analysis": "原文依据：听力原文中提到“after the holidays, ®)'m going to return your request forms to”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（Return some paperwork）。"
+        "analysis": "正确答案：A（Return some paperwork）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {

@@ -40,9 +40,31 @@
       "asset_key": "official-7-test-2/audio/part3/q047-049.mp3",
       "exists": true
     },
-    "transcript": "Sw Hi. O You've reached R&W Plumbing.\nHi, •I'm calling about the water at my business.\nThe pressure is really weak; I think there must be\nsomething wrong with the pipes.\nEw OK. ®Can I take your name and phone number and\nget back to you about making a service appointment?\nOur schedule is pretty full right now.\nm Well... I run a car wash.\nEw Oh, I see. ®Let me transfer your call to someone who\ncan help right away.",
-    "transcript_translation": "中文辅助（离线预处理）：Sw Hi.\nO You've reached R&W Plumbing.\nHi, •I'm calling about the water at my business.\nThe pressure is really weak; I think there must be\nsomething wrong with the pipes.\nEw OK.\n®Can I take your name and phone number and\nget back to you about making a service（服务） appointment（预约）?\nOur schedule（日程） is pretty full right now.\nm Well...\nI run a car wash.\nEw Oh, I see.\n®Let me transfer your call to someone who（谁）\ncan help right away.",
-    "content_translation": "中文辅助（离线预处理）：Sw Hi.\nO You've reached R&W Plumbing.\nHi, •I'm calling about the water at my business.\nThe pressure is really weak; I think there must be\nsomething wrong with the pipes.\nEw OK.\n®Can I take your name and phone number and\nget back to you about making a service（服务） appointment（预约）?\nOur schedule（日程） is pretty full right now.\nm Well...\nI run a car wash.\nEw Oh, I see.\n®Let me transfer your call to someone who（谁）\ncan help right away."
+    "transcript": "Hi, you've reached R&W Plumbing.\nHi, I'm calling about the water at my business.\nThe pressure is really weak.\nI think there must be something wrong with the pipes.\nOkay, can I take your name and phone number and get back to you about making a service appointment?\nOur schedule is pretty full right now.\nWell, I run a car wash.\nOh, I see.\nLet me transfer your call to someone who can help right away.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a9f3ef06ca65990f8130f65d0c03c668ad6cb8089427cc2df71417f5028016b9",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part3/q047-049.mp3",
+      "metrics": {
+        "word_count": 77,
+        "legacy_word_count": 74,
+        "length_ratio": 1.041,
+        "legacy_coverage": 0.932
+      }
+    },
+    "transcript_translation": "您好，这里是 R&W Plumbing。\n您好，我打电话来是关于我公司的水的问题。\n压力真的很小。\n我想管道可能有问题。\n好的，我可以记下您的姓名和电话号码，然后就安排服务预约给您回电吗？\n我们目前的日程表很满。\n嗯，我经营一家洗车店。\n哦，我明白了。\n让我把您的电话转接给能立即帮到您的人。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "b4b76ea7cf78567dc847abe702b950a0196cae3177a482011ac08e5f12a2e1d7"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "C",
       "question": "Where does the woman work?",
-      "answer_explain": "原文依据：听力原文中提到“O You've reached R&W Plumbing.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a plumbing company）。",
-      "question_translation": "中文辅助（离线预处理）：Where（哪里） does the woman（女士） work（工作）?",
+      "answer_explain": "正确答案：C（At a plumbing company）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Where(哪里) does the woman(女士) work(工作)?",
       "choice_translations": [
-        "A：At a cleaning service（服务）",
-        "B：At an advertising agency",
-        "C：At a plumbing company（公司）",
-        "D：At a property management company（公司）"
+        "A:At a cleaning service(服务)",
+        "B:At an advertising agency",
+        "C:At a plumbing company(公司)",
+        "D:At a property management company(公司)"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Sw Hi. O You've reached R&W Plumbing.",
+      "evidence": "参考听力原文：“Hi, you've reached R&W Plumbing.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Sw Hi. O You've reached R&W Plumbing.",
+        "evidence": "参考听力原文：“Hi, you've reached R&W Plumbing.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“O You've reached R&W Plumbing.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（At a plumbing company）。"
+        "analysis": "正确答案：C（At a plumbing company）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 47,
       "priority": {
@@ -107,23 +129,23 @@
       ],
       "answer": "A",
       "question": "What does the man imply when he says, \"I run a car wash\"?",
-      "answer_explain": "原文依据：听力原文中提到“I run a car wash.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（His problem is urgent.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） imply when（何时） he says, \"I run a car wash\"?",
+      "answer_explain": "正确答案：A（His problem is urgent.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) imply when(何时) he says, \"I run a car wash\"?",
       "choice_translations": [
-        "A：His problem is urgent.",
-        "B：He is correcting some misinformation.",
-        "C：He needs to hire more workers.",
-        "D：He is too busy to help."
+        "A:His problem is urgent.",
+        "B:He is correcting some misinformation.",
+        "C:He needs to hire more workers.",
+        "D:He is too busy to help."
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：Sw Hi. O You've reached R&W Plumbing.",
+      "evidence": "参考听力原文：“Well, I run a car wash.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：Sw Hi. O You've reached R&W Plumbing.",
+        "evidence": "参考听力原文：“Well, I run a car wash.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I run a car wash.”。选择理由：该项是原文语境能够支持的说话意图或合理推断，其他项缺少原文依据。正确答案：A（His problem is urgent.）。"
+        "analysis": "正确答案：A（His problem is urgent.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 48,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "B",
       "question": "What will the woman do next?",
-      "answer_explain": "原文依据：听力原文中提到“®Let me transfer your call to someone who”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Transfer a call）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the woman（女士） do next?",
+      "answer_explain": "正确答案：B（Transfer a call）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the woman(女士) do next?",
       "choice_translations": [
-        "A：Conduct a training",
-        "B：Transfer a call",
-        "C：Prepare an invoice",
-        "D：Update a Web site"
+        "A:Conduct a training",
+        "B:Transfer a call",
+        "C:Prepare an invoice",
+        "D:Update a Web site"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Sw Hi. O You've reached R&W Plumbing.",
+      "evidence": "参考听力原文：“Let me transfer your call to someone who can help right away.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Sw Hi. O You've reached R&W Plumbing.",
+        "evidence": "参考听力原文：“Let me transfer your call to someone who can help right away.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“®Let me transfer your call to someone who”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Transfer a call）。"
+        "analysis": "正确答案：B（Transfer a call）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 49,
       "priority": {

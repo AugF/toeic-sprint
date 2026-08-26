@@ -39,9 +39,32 @@
       "asset_key": "official-12-test-2/audio/part3/q059-061.mp3",
       "exists": true
     },
-    "transcript": "m Hi, Othis is Oleg from Waves Restaurant. Ol'm\nhule5lđ.\nreturning your call about the request you made for a\nreservation.\niw Oh, hello. Thanks for getting back to me so quickly.\nm Sure, no problem. Olt looks like we can't reserve the\noutdoor patio for the date you requested. Unfortunately,\nit'll be undergoing some repairs at that time.\nEw Oh, that's disappointing.\nm Yes, we're sorry. Now, Owe do have a small private\ndining room available upstairs. Olt would work well for\nyour group size.\nwOOK. Could I still get the reservation for 5:00 P.M.?\nNo, I'm sorry. But @would you be willing to reserve the\nroom for 7:00 P.M.?",
-    "transcript_translation": "中文辅助（离线预处理）：m Hi, Othis is Oleg from Waves Restaurant.\nOl'm\nhule5lđ.\nreturning your call about the request you made for a\nreservation.\niw Oh, hello.\nThanks for getting back to me so quickly.\nm Sure, no problem.\nOlt looks like we can't reserve the\noutdoor patio for the date you requested.\nUnfortunately,\nit'll be undergoing some repairs at that time.\nEw Oh, that's disappointing.\nm Yes, we're sorry.\nNow, Owe do have a small private\ndining room available（可用的） upstairs.\nOlt would work（工作） well for\nyour group size.\nwOOK.\nCould I still get the reservation for 5:00 P.M.?\nNo, I'm sorry.\nBut @would you be willing to reserve the\nroom for 7:00 P.M.?",
-    "content_translation": "中文辅助（离线预处理）：m Hi, Othis is Oleg from Waves Restaurant.\nOl'm\nhule5lđ.\nreturning your call about the request you made for a\nreservation.\niw Oh, hello.\nThanks for getting back to me so quickly.\nm Sure, no problem.\nOlt looks like we can't reserve the\noutdoor patio for the date you requested.\nUnfortunately,\nit'll be undergoing some repairs at that time.\nEw Oh, that's disappointing.\nm Yes, we're sorry.\nNow, Owe do have a small private\ndining room available（可用的） upstairs.\nOlt would work（工作） well for\nyour group size.\nwOOK.\nCould I still get the reservation for 5:00 P.M.?\nNo, I'm sorry.\nBut @would you be willing to reserve the\nroom for 7:00 P.M.?"
+    "transcript": "Hi, this is Oleg from Waves Restaurant.\nI'm returning a call about the request you made for a reservation.\nOh, hello.\nThanks for getting back to me so quickly.\nSure, no problem.\nIt looks like we can't reserve the outdoor patio for the date you requested.\nUnfortunately, it'll be undergoing some repairs at that time.\nOh, that's disappointing.\nYes, we're sorry.\nNow, we do have a small private dining room available upstairs.\nIt would work well for your group size.\nOkay.\nCould I still get the reservation for 5 p.m.?\nNo, I'm sorry.\nBut would you be willing to reserve the room for 7 p.m.?",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "bf02189398f509eae3fba09df2ea3ddd227d357bf22a0d4b045014eefc4db00d",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-2/audio/part3/q059-061.mp3",
+      "metrics": {
+        "word_count": 105,
+        "legacy_word_count": 107,
+        "length_ratio": 0.981,
+        "legacy_coverage": 0.907
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "transcript_translation": "嗨，我是 Waves Restaurant 的 Oleg。\n我回电是关于您提出的预订请求的。\n哦，你好。\n感谢您这么快回复我。\n当然，没问题。\n看起来我们无法在您要求的日期为您预订户外庭院。\n很遗憾，届时它将进行一些维修。\n哦，真令人失望。\n是的，非常抱歉。\n不过，我们在楼上有一个小型的私人餐厅可用。\n它对您的团体规模来说会很好。\n好的。\n我还能为下午 5 点预订吗？\n不，很抱歉。\n但您是否愿意将房间预定到晚上 7 点呢？",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "1ad5a25d4191da3e21acacd8e828a62fed9f10a4efcd56f87fad07a1a0543f0f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -53,23 +76,23 @@
       ],
       "answer": "A",
       "question": "Why is the man returning the woman's call?",
-      "answer_explain": "原文依据：听力原文中提到“returning your call about the request you made for a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To follow up on a request）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the man（男士） returning the woman（女士）'s call?",
+      "answer_explain": "正确答案：A（To follow up on a request）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the man(男士) returning the woman(女士)'s call?",
       "choice_translations": [
-        "A：To follow up on a request",
-        "B：To suggest（表明/建议） some meal options",
-        "C：To discuss a payment",
-        "D：To confirm an address"
+        "A:To follow up on a request",
+        "B:To suggest(表明/建议) some meal options",
+        "C:To discuss a payment",
+        "D:To confirm an address"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 3 段：returning your call about the request you made for a",
+      "evidence": "参考听力原文：“I'm returning a call about the request you made for a reservation.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "推断题",
-        "evidence": "参考原文第 3 段：returning your call about the request you made for a",
+        "evidence": "参考听力原文：“I'm returning a call about the request you made for a reservation.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“returning your call about the request you made for a”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（To follow up on a request）。"
+        "analysis": "正确答案：A（To follow up on a request）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 59,
       "priority": {
@@ -105,23 +128,23 @@
       ],
       "answer": "D",
       "question": "Why is the woman unable to reserve an outdoor patio?",
-      "answer_explain": "原文依据：听力原文中提到“outdoor patio for the date you requested.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（It will be closed for repairs.）。",
-      "question_translation": "中文辅助（离线预处理）：Why（为什么） is the woman（女士） unable to reserve an outdoor patio?",
+      "answer_explain": "正确答案：D（It will be closed for repairs.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Why(为什么) is the woman(女士) unable to reserve an outdoor patio?",
       "choice_translations": [
-        "A：It is not large enough for her group.",
-        "B：It is only available（可用的） on weekends.",
-        "C：It has been booked already.",
-        "D：It will be closed for repairs."
+        "A:It is not large enough for her group.",
+        "B:It is only available(可用的) on weekends.",
+        "C:It has been booked already.",
+        "D:It will be closed for repairs."
       ],
       "question_type": "否定事实题",
-      "evidence": "参考原文第 6 段：m Sure, no problem. Olt looks like we can't reserve the",
+      "evidence": "参考听力原文：“It looks like we can't reserve the outdoor patio for the date you requested.”",
       "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "否定事实题",
-        "evidence": "参考原文第 6 段：m Sure, no problem. Olt looks like we can't reserve the",
+        "evidence": "参考听力原文：“It looks like we can't reserve the outdoor patio for the date you requested.”",
         "strategy": "本题属于否定事实题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“outdoor patio for the date you requested.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：D（It will be closed for repairs.）。"
+        "analysis": "正确答案：D（It will be closed for repairs.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 60,
       "priority": {
@@ -157,23 +180,23 @@
       ],
       "answer": "B",
       "question": "What does the man suggest the woman do?",
-      "answer_explain": "原文依据：听力原文中提到“it'll be undergoing some repairs at that time.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Consider some possible changes）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the man（男士） suggest（表明/建议） the woman（女士） do?",
+      "answer_explain": "正确答案：B（Consider some possible changes）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) suggest(表明/建议) the woman(女士) do?",
       "choice_translations": [
-        "A：Contact a different restaurant",
-        "B：Consider some possible changes",
-        "C：Bring in her own caterer",
-        "D：Call again later"
+        "A:Contact a different restaurant",
+        "B:Consider some possible changes",
+        "C:Bring in her own caterer",
+        "D:Call again later"
       ],
       "question_type": "推断题",
-      "evidence": "参考原文第 1 段：m Hi, Othis is Oleg from Waves Restaurant. Ol'm",
+      "evidence": "参考听力原文：“Unfortunately, it'll be undergoing some repairs at that time.”",
       "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "推断题",
-        "evidence": "参考原文第 1 段：m Hi, Othis is Oleg from Waves Restaurant. Ol'm",
+        "evidence": "参考听力原文：“Unfortunately, it'll be undergoing some repairs at that time.”",
         "strategy": "本题属于推断题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“it'll be undergoing some repairs at that time.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Consider some possible changes）。"
+        "analysis": "正确答案：B（Consider some possible changes）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 61,
       "priority": {

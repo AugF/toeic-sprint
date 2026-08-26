@@ -38,9 +38,32 @@
       "asset_key": "official-5-test-2/audio/part3/q065-067.mp3",
       "exists": true
     },
-    "transcript": "and schedule.\nHello, Lee's Orchard. How can I help you?\nEK w Hi. I'm the manager at Samara's Restaurant.\nWe get\na shipment of fruit from you every week, but there was\na problem with this morning's delivery. ® The peaches\nyou brought are bruised and turning brown.\nh, no! I don't know how that could have happened. I'll\nhave some fresh peaches delivered to you right away.\nl'd appreciate that. I need them for a cake I'm\npreparing this afternoon. It's our most popular dessert.\nSamara's Restaurant\nSamaris 05\nWeekly Delivery Schedule\nDay\nItem\nDistributor\nMonday\nVegetables\nFresh Farms\nARE\nFresh Es\nTuesday\nMeat\nTom's Market\nXIE\nTom's 7-5\" H\nWednesday\nDairy Products\nGreenville Dairy\nBEE\nGreenville 18mg\nThursday\nFruit\nLee's Orchard\nLee's RE",
-    "transcript_translation": "中文辅助（离线预处理）：and schedule（日程）.\nHello, Lee's Orchard.\nHow（如何） can I help you?\nEK w Hi.\nI'm the manager（经理） at Samara's Restaurant.\nWe get\na shipment of fruit from you every week, but there was\na problem with this morning's delivery.\n® The peaches\nyou brought are bruised and turning brown.\nh, no!\nI don't know how（如何） that could have happened.\nI'll\nhave some fresh peaches delivered to you right away.\nl'd appreciate that.\nI need them for a cake I'm\npreparing this afternoon.\nIt's our most popular dessert.\nSamara's Restaurant\nSamaris 05\nWeekly Delivery Schedule（日程）\nDay\nItem\nDistributor\nMonday\nVegetables\nFresh Farms\nARE\nFresh Es\nTuesday\nMeat\nTom's Market\nXIE\nTom's 7-5\" H\nWednesday\nDairy Products\nGreenville Dairy\nBEE\nGreenville 18mg\nThursday\nFruit\nLee's Orchard\nLee's RE",
-    "content_translation": "中文辅助（离线预处理）：and schedule（日程）.\nHello, Lee's Orchard.\nHow（如何） can I help you?\nEK w Hi.\nI'm the manager（经理） at Samara's Restaurant.\nWe get\na shipment of fruit from you every week, but there was\na problem with this morning's delivery.\n® The peaches\nyou brought are bruised and turning brown.\nh, no!\nI don't know how（如何） that could have happened.\nI'll\nhave some fresh peaches delivered to you right away.\nl'd appreciate that.\nI need them for a cake I'm\npreparing this afternoon.\nIt's our most popular dessert.\nSamara's Restaurant\nSamaris 05\nWeekly Delivery Schedule（日程）\nDay\nItem\nDistributor\nMonday\nVegetables\nFresh Farms\nARE\nFresh Es\nTuesday\nMeat\nTom's Market\nXIE\nTom's 7-5\" H\nWednesday\nDairy Products\nGreenville Dairy\nBEE\nGreenville 18mg\nThursday\nFruit\nLee's Orchard\nLee's RE"
+    "transcript": "Hello, Lise Orchard.\nHow can I help you?\nHi, I'm the manager at Samara's restaurant.\nWe get a shipment of fruit from you every week, but there was a problem with this morning's delivery.\nThe peaches you brought are bruised and turning brown.\nOh no, I don't know how that could have happened.\nI'll have some fresh peaches delivered to you right away.\nI'd appreciate that.\nI need them for a cake I'm preparing this afternoon.\nIt's our most popular dessert.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5f0ed28d95c4eb20b4c09cdf12a8e19c94feb67f02a43ffb349880e3ca8b2dab",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-5-test-2/audio/part3/q065-067.mp3",
+      "metrics": {
+        "word_count": 83,
+        "legacy_word_count": 116,
+        "length_ratio": 0.716,
+        "legacy_coverage": 0.716
+      },
+      "postprocess_version": "sentence_boundaries_v2"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_translation": "您好，我是 Lise Orchard。\n有什么可以帮您的吗？\n嗨，我是 Samara 餐厅的经理。\n我们每周都会从您那里收到一批水果，但今天早上的交货出了点问题。\n您带来的桃子有瘀伤并且正在变棕色。\n哦不，我不知道怎么会发生这种事。\n我会马上给您送一些新鲜的桃子过去。\n我很感激。\n我下午需要它们来准备一个蛋糕。\n这是我们最受欢迎的甜点。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "afb21ef34f684432281f0fa850dd305a01f7ed9126ca2f7511eeabc31a8b523c"
+    }
   },
   "items": [
     {
@@ -52,23 +75,23 @@
       ],
       "answer": "D",
       "question": "Look at the graphic. On which day is the conversation taking place?",
-      "answer_explain": "原文依据：听力原文中提到“Thursday”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Thursday）。",
-      "question_translation": "中文辅助（离线预处理）：Look at the graphic.\nOn which day is the conversation taking place?",
+      "answer_explain": "正确答案：D（Thursday）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):Look at the graphic. On which day is the conversation taking place?",
       "choice_translations": [
-        "A：Monday",
-        "B：Tuesday",
-        "C：Wednesday",
-        "D：Thursday"
+        "A:Monday",
+        "B:Tuesday",
+        "C:Wednesday",
+        "D:Thursday"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：and schedule.",
+      "evidence": "参考听力原文：“We get a shipment of fruit from you every week, but there was a problem with this morning's delivery.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：and schedule.",
+        "evidence": "参考听力原文：“We get a shipment of fruit from you every week, but there was a problem with this morning's delivery.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“Thursday”。选择理由：先从原文确定人物、时间或对象，再与图表对应，所得信息与该选项一致。正确答案：D（Thursday）。"
+        "analysis": "正确答案：D（Thursday）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 65,
       "priority": {
@@ -103,23 +126,23 @@
       ],
       "answer": "C",
       "question": "What problem does the woman mention?",
-      "answer_explain": "原文依据：听力原文中提到“have some fresh peaches delivered to you right away.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some food items are damaged.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） problem does the woman（女士） mention?",
+      "answer_explain": "正确答案：C（Some food items are damaged.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) problem does the woman(女士) mention?",
       "choice_translations": [
-        "A：An appliance is too small.",
-        "B：An employee（员工） is late.",
-        "C：Some food items are damaged.",
-        "D：Some meal prices are incorrect."
+        "A:An appliance is too small.",
+        "B:An employee(员工) is late.",
+        "C:Some food items are damaged.",
+        "D:Some meal prices are incorrect."
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 6 段：a problem with this morning's delivery. ® The peaches",
+      "evidence": "参考听力原文：“We get a shipment of fruit from you every week, but there was a problem with this morning's delivery.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "细节题",
-        "evidence": "参考原文第 6 段：a problem with this morning's delivery. ® The peaches",
+        "evidence": "参考听力原文：“We get a shipment of fruit from you every week, but there was a problem with this morning's delivery.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“have some fresh peaches delivered to you right away.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（Some food items are damaged.）。"
+        "analysis": "正确答案：C（Some food items are damaged.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 66,
       "priority": {
@@ -154,23 +177,23 @@
       ],
       "answer": "B",
       "question": "What does the woman say she will do this afternoon?",
-      "answer_explain": "原文依据：听力原文中提到“It's our most popular dessert.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Make a dessert）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the woman（女士） say she will do this afternoon?",
+      "answer_explain": "正确答案：B（Make a dessert）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) say she will do this afternoon?",
       "choice_translations": [
-        "A：Go to a store",
-        "B：Make a dessert",
-        "C：Place an advertisement",
-        "D：Print new menus"
+        "A:Go to a store",
+        "B:Make a dessert",
+        "C:Place an advertisement",
+        "D:Print new menus"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 11 段：preparing this afternoon. It's our most popular dessert.",
+      "evidence": "参考听力原文：“I need them for a cake I'm preparing this afternoon.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 11 段：preparing this afternoon. It's our most popular dessert.",
+        "evidence": "参考听力原文：“I need them for a cake I'm preparing this afternoon.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“It's our most popular dessert.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Make a dessert）。"
+        "analysis": "正确答案：B（Make a dessert）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 67,
       "priority": {

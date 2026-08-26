@@ -27,8 +27,28 @@
       "asset_key": "official-6-test-1/audio/part2/q024.mp3",
       "exists": true
     },
-    "transcript_translation": "需要我更新一下这家书店的网站吗？\nA. 这是我最喜欢的书。\nB. 我还没见过他。\nC. 谢谢，那会很有帮助。",
-    "content_translation": "需要我更新一下这家书店的网站吗？\nA. 这是我最喜欢的书。\nB. 我还没见过他。\nC. 谢谢，那会很有帮助。"
+    "transcript": "Would you like me to update the bookstore's website?\nA. That's my favorite book.\nB. I haven't met him yet.\nC. Thanks, that'd be really helpful.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "a9e25f681cd5da95753d2aa6e2679e97f92984565fb846d7996ead3b65fd3504",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-6-test-1/audio/part2/q024.mp3",
+      "metrics": {
+        "word_count": 27
+      }
+    },
+    "transcript_translation": "需要我更新一下书店的网站吗？\nA. 这是我最喜欢的书。\nB. 我还没见过他。\nC. 谢谢，那会很有帮助。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "7648ff99d287e944dbbfdcb006ca7fa91cdbc5d3408be7a8b81a56161e9fff79"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -38,27 +58,27 @@
         "Thanks, that'd be really helpful."
       ],
       "answer": "C",
-      "question": "Would you like me to update the bookstore's Web site?",
+      "question": "Would you like me to update the bookstore's website?",
       "difficulty": "medium",
       "topic": "职场日常应答",
       "keywords": "question statement natural response",
-      "answer_explain": "原文依据：问句或陈述是“Would you like me to update the bookstore's Web site?”，自然应答是“Thanks, that'd be really helpful.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Thanks, that'd be really helpful.）。",
-      "question_translation": "需要我更新一下这家书店的网站吗？",
+      "answer_explain": "原文依据：问句或陈述是“Would you like me to update the bookstore's website?”，自然应答是“Thanks, that'd be really helpful.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Thanks, that'd be really helpful.）。",
+      "question_translation": "需要我更新一下书店的网站吗?",
       "choice_translations": [
         "A：这是我最喜欢的书。",
         "B：我还没见过他。",
-        "C：谢谢，那会很有帮助。"
+        "C：谢谢,那会很有帮助。"
       ],
       "question_type": "一般疑问句",
-      "evidence": "参考原文第 1 段：Would you like me to update the bookstore's Web site?",
+      "evidence": "参考原文第 1 段：Would you like me to update the bookstore's website?",
       "response_style": "既可能直接回答，也常以原因、安排或补充信息间接回应",
       "strategy": "先判断为一般疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "一般疑问句",
-        "evidence": "参考原文第 1 段：Would you like me to update the bookstore's Web site?",
+        "evidence": "参考原文第 1 段：Would you like me to update the bookstore's website?",
         "strategy": "先判断为一般疑问句，确认说话人真正索取的信息；再排除重复原词、答非所问和语义冲突的选项。",
-        "analysis": "原文依据：问句或陈述是“Would you like me to update the bookstore's Web site?”，自然应答是“Thanks, that'd be really helpful.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Thanks, that'd be really helpful.）。"
+        "analysis": "原文依据：问句或陈述是“Would you like me to update the bookstore's website?”，自然应答是“Thanks, that'd be really helpful.”。选择理由：该项在语义和会话功能上直接承接前句；其余选项只是词汇相关、时态不合或答非所问。正确答案：C（Thanks, that'd be really helpful.）。"
       },
       "item_id": 24,
       "priority": {

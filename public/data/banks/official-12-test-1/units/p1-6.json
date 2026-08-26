@@ -32,8 +32,28 @@
       "asset_key": "official-12-test-1/images/part1/q006.jpg",
       "exists": true
     },
-    "transcript_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。",
-    "content_translation": "中文辅助：原始文本未提供或 OCR 不清，请结合音频/图片作答。"
+    "transcript": "A. There are framed paintings leaning against a table.\nB. There's a filing cabinet next to the wall.\nC. One of the women is speaking on a mobile phone.\nD. Some women are walking through a gate.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "1c433261b10331984fafcd7d48796bd69b76aacb41cfac272c770f447bfed46b",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-12-test-1/audio/part1/q006.mp3",
+      "metrics": {
+        "word_count": 50
+      }
+    },
+    "transcript_translation": "A. 有些画框的画靠在一张桌子上。\nB. 一个文件柜在墙边。\nC. 其中一位女士正在用手机通话。\nD. 一些女士正穿过一个门。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "d226acae485406d1d35731cb78bc6b71796b5412c00fb9d79305da1bf3688e9a"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "audio_transcript",
+      "items": 1
+    }
   },
   "items": [
     {
@@ -49,10 +69,10 @@
       "keywords": "photograph people objects actions",
       "answer_explain": "原文依据：照片中可见信息与描述“One of the women is speaking on a mobile phone.”一致。选择理由：该项准确描述画面中的人物、物体、动作或状态；其余选项加入了画面中不存在或不符合的细节。正确答案：C（One of the women is speaking on a mobile phone.）。",
       "choice_translations": [
-        "A：There are framed paintings leaning against a table.",
-        "B：There's a filing cabinet next to the wall.",
-        "C：One of the women is speaking on a mobile phone.",
-        "D：Some women are walking through a gate."
+        "A：有些画框的画靠在一张桌子上。",
+        "B：一个文件柜在墙边。",
+        "C：其中一位女士正在用手机通话。",
+        "D：一些女士正穿过一个门。"
       ],
       "question_type": "动作 / 状态辨析题",
       "evidence": "根据题干结构、选项语义及音频/图片信息判断。",
@@ -77,7 +97,9 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-12-test-1/p1-6/6"
+      "item_key": "official-12-test-1/p1-6/6",
+      "question": "Look at the picture.",
+      "question_translation": "请看图片。"
     }
   ]
 }

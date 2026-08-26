@@ -40,9 +40,31 @@
       "asset_key": "official-7-test-2/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "Welcome to this broadcast of Karla's Kitchen! ® Today I'd\nlike to introduce a healthy breakfast food called overnight\noatmeal. It's a kind of cold cereal that can be prepared the\nnight before you plan to eat it. All you have to do is combine\noats and milk and soak them in the refrigerator overnight.\nThen, in the morning, you can add fruit, nuts, or spices.\nI especially like that this recipe has very little sugar. The\ndetailed recipe's on my Web site. ®Now, I'd like to introduce\ntoday's guest, Carrie Nelson, author of the cookbook Healthy\nOptions. ®We'll talk to her about overnight oatmeal as well\nZ000\nas her other favorite breakfast dishes.",
-    "transcript_translation": "中文辅助（离线预处理）：Welcome to this broadcast of Karla's Kitchen!\n® Today I'd\nlike to introduce a healthy breakfast food called overnight\noatmeal.\nIt's a kind of cold cereal that can be prepared the\nnight before you plan to eat it.\nAll you have to do is combine\noats and milk and soak them in the refrigerator overnight.\nThen, in the morning, you can add fruit, nuts, or spices.\nI especially like that this recipe has very little sugar.\nThe\ndetailed recipe's on my Web site.\n®Now, I'd like to introduce\ntoday's guest, Carrie Nelson, author of the cookbook Healthy\nOptions.\n®We'll talk to her about overnight oatmeal as well\nZ000\nas her other favorite breakfast dishes.",
-    "content_translation": "中文辅助（离线预处理）：Welcome to this broadcast of Karla's Kitchen!\n® Today I'd\nlike to introduce a healthy breakfast food called overnight\noatmeal.\nIt's a kind of cold cereal that can be prepared the\nnight before you plan to eat it.\nAll you have to do is combine\noats and milk and soak them in the refrigerator overnight.\nThen, in the morning, you can add fruit, nuts, or spices.\nI especially like that this recipe has very little sugar.\nThe\ndetailed recipe's on my Web site.\n®Now, I'd like to introduce\ntoday's guest, Carrie Nelson, author of the cookbook Healthy\nOptions.\n®We'll talk to her about overnight oatmeal as well\nZ000\nas her other favorite breakfast dishes."
+    "transcript": "Welcome to this broadcast of Carla's Kitchen.\nToday I'd like to introduce a healthy breakfast food called overnight oatmeal.\nIt's a kind of cold cereal that can be prepared the night before you plan to eat it.\nAll you have to do is combine oats and milk and soak them in the refrigerator overnight.\nThen, in the morning, you can add fruit, nuts, or spices.\nI especially like that this recipe has very little sugar.\nThe detailed recipe is on my website.\nNow, I'd like to introduce today's guest, Carrie Nelson, author of the cookbook Healthy Options.\nWe'll talk to her about overnight oatmeal as well as her other favorite breakfast dishes.",
+    "transcript_source": {
+      "schema_version": "listening_transcript_v2",
+      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "audio_sha256": "5c6da3c5078a73b4cdefd53f2b985ba19ece76ad8df583511cd61a386f0ae2a4",
+      "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+      "source_audio": "public/assets/official-7-test-2/audio/part4/q080-082.mp3",
+      "metrics": {
+        "word_count": 112,
+        "legacy_word_count": 112,
+        "length_ratio": 1,
+        "legacy_coverage": 0.938
+      }
+    },
+    "transcript_translation": "欢迎收听Carla's Kitchen的广播节目。\n今天我想介绍一种健康的早餐食品，叫做隔夜燕麦片（overnight oatmeal）。\n这是一种冷谷物，可以在你计划吃它前一晚准备好。\n所有你需要做的就是将燕麦和牛奶混合，并在冰箱里浸泡过夜。\n然后，早上你可以加入水果、坚果或香料。\n我特别喜欢这个食谱含糖量非常少。\n详细的食谱在我的网站上。\n现在，我想介绍今天的嘉宾Carrie Nelson，她写了烹饪书《Healthy Options》。\n我们将和她谈论隔夜燕麦片以及她其他喜欢的早餐菜肴。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "ollama/gemma4:latest",
+      "transcript_sha256": "c72c2c3535663fc0661dfd818b482a18217d5cb0cc4d3ec051abed57d31c2f96"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/qwen3-vl:4b+audio_context",
+      "items": 3
+    }
   },
   "items": [
     {
@@ -54,23 +76,23 @@
       ],
       "answer": "B",
       "question": "What is the topic of today's broadcast?",
-      "answer_explain": "原文依据：听力原文中提到“like to introduce a healthy breakfast food called overnight”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Breakfast foods）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） is the topic of today's broadcast?",
+      "answer_explain": "正确答案：B（Breakfast foods）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) is the topic of today's broadcast?",
       "choice_translations": [
-        "A：Unusual desserts",
-        "B：Breakfast foods",
-        "C：Homemade energy drinks",
-        "D：Cold vegetable soups"
+        "A:Unusual desserts",
+        "B:Breakfast foods",
+        "C:Homemade energy drinks",
+        "D:Cold vegetable soups"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Welcome to this broadcast of Karla's Kitchen! ® Today I'd",
+      "evidence": "参考听力原文：“Now, I'd like to introduce today's guest, Carrie Nelson, author of the cookbook Healthy Options.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Welcome to this broadcast of Karla's Kitchen! ® Today I'd",
+        "evidence": "参考听力原文：“Now, I'd like to introduce today's guest, Carrie Nelson, author of the cookbook Healthy Options.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“like to introduce a healthy breakfast food called overnight”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：B（Breakfast foods）。"
+        "analysis": "正确答案：B（Breakfast foods）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 80,
       "priority": {
@@ -106,24 +128,24 @@
         "It is easy to prepare."
       ],
       "answer": "C",
-      "question": "What does the speaker say she likes about а гесіре?",
-      "answer_explain": "原文依据：听力原文中提到“I especially like that this recipe has very little sugar.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It is low in sugar.）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） does the speaker（说话者） say she likes about а гесіре?",
+      "question": "What does the speaker say she likes about overnight oatmeal?",
+      "answer_explain": "正确答案：C（It is low in sugar.）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "说话者说她喜欢隔夜燕麦的哪一点？",
       "choice_translations": [
-        "A：It won an award.",
-        "B：Its ingredients are inexpensive.",
-        "C：It is low in sugar.",
-        "D：It is easy to prepare."
+        "A:It won an award.",
+        "B:Its ingredients are inexpensive.",
+        "C:It is low in sugar.",
+        "D:It is easy to prepare."
       ],
       "question_type": "主旨 / 目的题",
-      "evidence": "参考原文第 1 段：Welcome to this broadcast of Karla's Kitchen! ® Today I'd",
+      "evidence": "参考听力原文：“We'll talk to her about overnight oatmeal as well as her other favorite breakfast dishes.”",
       "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "主旨 / 目的题",
-        "evidence": "参考原文第 1 段：Welcome to this broadcast of Karla's Kitchen! ® Today I'd",
+        "evidence": "参考听力原文：“We'll talk to her about overnight oatmeal as well as her other favorite breakfast dishes.”",
         "strategy": "本题属于主旨 / 目的题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“I especially like that this recipe has very little sugar.”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：C（It is low in sugar.）。"
+        "analysis": "正确答案：C（It is low in sugar.）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 81,
       "priority": {
@@ -160,23 +182,23 @@
       ],
       "answer": "A",
       "question": "What will the speaker do next?",
-      "answer_explain": "原文依据：听力原文中提到“today's guest, Carrie Nelson, author of the cookbook Healthy”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Interview a guest）。",
-      "question_translation": "中文辅助（离线预处理）：What（什么） will the speaker（说话者） do next?",
+      "answer_explain": "正确答案：A（Interview a guest）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
+      "question_translation": "中文辅助(离线预处理):What(什么) will the speaker(说话者) do next?",
       "choice_translations": [
-        "A：Interview a guest",
-        "B：Recommend an appliance",
-        "C：Explain contest rules",
-        "D：Provide a discount code"
+        "A:Interview a guest",
+        "B:Recommend an appliance",
+        "C:Explain contest rules",
+        "D:Provide a discount code"
       ],
       "question_type": "细节题",
-      "evidence": "参考原文第 1 段：Welcome to this broadcast of Karla's Kitchen! ® Today I'd",
+      "evidence": "参考听力原文：“Now, I'd like to introduce today's guest, Carrie Nelson, author of the cookbook Healthy Options.”",
       "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "细节题",
-        "evidence": "参考原文第 1 段：Welcome to this broadcast of Karla's Kitchen! ® Today I'd",
+        "evidence": "参考听力原文：“Now, I'd like to introduce today's guest, Carrie Nelson, author of the cookbook Healthy Options.”",
         "strategy": "本题属于细节题。标记题干关键词，定位材料中的同义改写；推断只采用原文充分支持的信息。",
-        "analysis": "原文依据：听力原文中提到“today's guest, Carrie Nelson, author of the cookbook Healthy”。选择理由：该项与原文细节相同或构成同义改写，其他项与原文信息不符。正确答案：A（Interview a guest）。"
+        "analysis": "正确答案：A（Interview a guest）。先定位题干关键词，再核对原文中的直接信息或同义改写。"
       },
       "item_id": 82,
       "priority": {
