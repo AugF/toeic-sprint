@@ -37,31 +37,62 @@
       "asset_key": "official-10-test-1/audio/part4/q083-085.mp3",
       "exists": true
     },
-    "transcript": "more customers means other changes will come as you know we've operated as a cash-only business but credit card payments are much quicker for everyone so to help with the added business credit card readers will be installed at each of our cash registers next week the system may seem complicated but just so you know there will be training for all staff.",
+    "transcript": "Hi, everyone.\nYou have probably heard that the city is holding its first ever craft fair, and it will happen near our candle shop this summer.\nI believe we will have much more business than usual at our store selling handmade candles and candle holders.\nMore customers means other changes will come.\nAs you know, we've operated as a cash-only business, but credit card payments are much quicker for everyone.\nSo to help with the added business, credit card readers will be installed at each of our cash registers next week.\nThe system may seem complicated, but just so you know, there will be training for all staff.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "c224e6ad7cb828aa69caaa725379c9f721a0b2d4b2b177f3687349571817daa3",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-10-test-1/audio/part4/q083-085.mp3",
       "metrics": {
-        "word_count": 63,
-        "legacy_word_count": 105,
-        "length_ratio": 0.6,
-        "legacy_coverage": 0.705,
-        "prompted_failure": "missing spoken Questions 83 through 85 introduction"
-      }
+        "word_count": 108,
+        "review_window_end_ms": 48039,
+        "audio_duration_ms": 48039,
+        "words_per_second": 2.248
+      },
+      "transcript_sha256": "a26ad274197b458f34a9c723cdf3b7a85c937bab1ae0d65efe05fb329b7910cc"
     },
-    "transcript_translation": "更多的顾客意味着其他变化也会到来，如你们所知，我们一直经营现金业务，但信用卡支付对每个人来说都快得多，所以为了帮助增加的业务量，信用卡的读卡器将在我们的每个收银机安装。下周系统可能会看起来很复杂，但只是让你们知道，所有员工都会接受培训。",
+    "transcript_translation": "大家好。\n你们可能已经听说，本市将举办首届手工艺品集市，今年夏天会在我们蜡烛店附近举行。\n我相信，我们店里手工蜡烛和烛台的生意会比平时好得多。\n顾客增加也意味着将有其他变化。\n大家知道，我们一直只接受现金付款，但对每个人来说，信用卡付款都快得多。\n因此，为了应对增加的业务量，下周将在每台收银机旁安装信用卡读卡器。\n这套系统可能看起来有些复杂，不过请大家放心，所有员工都会接受培训。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "eb208183f07193d82ff897f3b52340c70868e30673c5f1be3425d45fc52def03"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "a26ad274197b458f34a9c723cdf3b7a85c937bab1ae0d65efe05fb329b7910cc",
+      "translation_sha256": "7e91b83c1dfc5e61361da30ddbe6eaadeae3f2b6034c128cb85cac50caa591a6"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "eb208183f07193d82ff897f3b52340c70868e30673c5f1be3425d45fc52def03",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 63,
+        "legacy_word_count": 105,
+        "length_ratio": 0.6,
+        "legacy_coverage": 0.705,
+        "prompted_failure": "missing spoken Questions 83 through 85 introduction"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "a26ad274197b458f34a9c723cdf3b7a85c937bab1ae0d65efe05fb329b7910cc",
+      "audio_sha256": "c224e6ad7cb828aa69caaa725379c9f721a0b2d4b2b177f3687349571817daa3",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 48039
+        }
+      ]
     }
   },
   "items": [
@@ -113,7 +144,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-83-85/83"
+      "item_key": "official-10-test-1/p4-83-85/83",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -163,7 +197,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-83-85/84"
+      "item_key": "official-10-test-1/p4-83-85/84",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -213,7 +250,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-83-85/85"
+      "item_key": "official-10-test-1/p4-83-85/85",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

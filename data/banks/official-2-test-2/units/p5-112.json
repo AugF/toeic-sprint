@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "蒋美歌剧院大堂的地毯将被替换为-------材料，这种材料更容易维护。\nA. what\nB. where\nC. that\nD. this"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "this"
       ],
       "answer": "C",
-      "question": "The carpet in the lobby of the Chiang Mai Opera House will be replaced with 118 material ------- is easier to maintain.",
+      "question": "The carpet in the lobby of the Chiang Mai Opera House will be replaced with material ------- is easier to maintain.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“that”代入题干后为“The carpet in the lobby of the Chiang Mai Opera House will be replaced with 118 material that is easier to maintain.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（that）。",
-      "question_translation": "蒋美歌剧院大堂的地毯将被替换为-------材料，这种材料更容易维护。",
+      "answer_explain": "material 是先行词，后面的 is easier to maintain 缺少主语，因此用关系代词 that 连接并在定语从句中作主语，选 C。中文将整个修饰关系译为更容易维护的材料。A what 不能这样引导已有先行词的定语从句；B where 作地点状语，不能补主语；D this 是指示代词，无法连接这两个结构。",
+      "question_translation": "清迈歌剧院大厅的地毯将换用更容易维护**的**材料。",
       "choice_translations": [
-        "A：什么",
-        "B：哪里",
-        "C：那（关系代词）",
-        "D：这个"
+        "什么；……的事物",
+        "哪里；在……的地方",
+        "关系代词，指代前面的材料并引导修饰语",
+        "这个；这"
       ],
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：The carpet in the lobby of the Chiang Mai Opera House will be replaced with 118 material ------- is easier to maintain.",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题：定语从句关系词",
+      "grammar_point": "关系代词 that 引导定语从句并作主语，修饰先行词 material",
       "explanation_structured": {
         "answer": "C",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：The carpet in the lobby of the Chiang Mai Opera House will be replaced with 118 material ------- is easier to maintain.",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“that”代入题干后为“The carpet in the lobby of the Chiang Mai Opera House will be replaced with 118 material that is easier to maintain.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（that）。"
+        "question_type": "语法题：定语从句关系词",
+        "grammar_point": "关系代词 that 引导定语从句并作主语，修饰先行词 material",
+        "analysis": "material 是先行词，后面的 is easier to maintain 缺少主语，因此用关系代词 that 连接并在定语从句中作主语，选 C。中文将整个修饰关系译为更容易维护的材料。A what 不能这样引导已有先行词的定语从句；B where 作地点状语，不能补主语；D this 是指示代词，无法连接这两个结构。"
       },
       "item_id": 112,
       "priority": {
@@ -69,7 +64,49 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p5-112/112"
+      "item_key": "official-2-test-2/p5-112/112",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "original_question": "The carpet in the lobby of the Chiang Mai Opera House will be replaced with 118 material ------- is easier to maintain.",
+        "original_choices": [
+          "what",
+          "where",
+          "that",
+          "this"
+        ],
+        "correction": {
+          "method": "reviewed_stray_number_removal",
+          "removed_number": "118",
+          "reason": "介词 with 与不可数名词 material 之间混入邻题号 118。"
+        },
+        "text_sha256": "d8eb46d361e317046d3c7b3cea757a7291a685ec11e1600beacfc3d8ae7f3677",
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "content_review_status": "text_corrected_by_review",
+      "completed_sentence": "The carpet in the lobby of the Chiang Mai Opera House will be replaced with material that is easier to maintain.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "98a6601eb99fc12becb57df6678dada90e56719f576269143eadfcead09a5152"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "98a6601eb99fc12becb57df6678dada90e56719f576269143eadfcead09a5152"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "98a6601eb99fc12becb57df6678dada90e56719f576269143eadfcead09a5152"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "98a6601eb99fc12becb57df6678dada90e56719f576269143eadfcead09a5152",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "Ulrich-Ahn Company 的程序员：应负责确保软件符合-------系统标准。\nA. establish\nB. established\nC. establishing\nD. establishes"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "establishes"
       ],
       "answer": "B",
-      "question": "Programmers at Ulrich-Ahn Company are : should responsible for ensuring that software conforms to the ------- system standards.",
+      "question": "Programmers at Ulrich-Ahn Company are responsible for ensuring that software conforms to the ------- system standards.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“established”代入题干后为“Programmers at Ulrich-Ahn Company are : should responsible for ensuring that software conforms to the established system standards.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：B（established）。",
-      "question_type": "动词形式题",
-      "evidence": "参考原文第 1 段：Programmers at Ulrich-Ahn Company are : should responsible for ensuring that software conforms to the ------- system standards.",
-      "grammar_point": "动词形式",
-      "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "answer_explain": "system standards 是被制定、确立的标准，所以用过去分词 established 作定语，表示既定的。establish 和 establishes 是谓语形式；establishing 表主动进行，不能表示标准已经被确立。",
+      "question_type": "语法题 · 过去分词作定语",
+      "grammar_point": "established standards",
       "explanation_structured": {
         "answer": "B",
-        "question_type": "动词形式题",
-        "evidence": "参考原文第 1 段：Programmers at Ulrich-Ahn Company are : should responsible for ensuring that software conforms to the ------- system standards.",
-        "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“established”代入题干后为“Programmers at Ulrich-Ahn Company are : should responsible for ensuring that software conforms to the established system standards.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：B（established）。"
+        "question_type": "语法题 · 过去分词作定语",
+        "grammar_point": "established standards",
+        "analysis": "system standards 是被制定、确立的标准，所以用过去分词 established 作定语，表示既定的。establish 和 establishes 是谓语形式；establishing 表主动进行，不能表示标准已经被确立。"
       },
-      "question_translation": "Programmers at Ulrich-Ahn Company are : should responsible for ensuring that software conforms to the ------- system standards.",
+      "question_translation": "Ulrich-Ahn 公司的程序员负责确保软件符合**既定的**系统标准。",
       "choice_translations": [
-        "A：establish",
-        "B：established",
-        "C：establishing",
-        "D：establishes"
+        "建立；确立（原形）",
+        "既定的；已确立的",
+        "正在建立的",
+        "建立；确立（第三人称单数）"
       ],
       "item_id": 127,
       "priority": {
@@ -69,7 +64,71 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p5-127/127"
+      "item_key": "official-1-test-1/p5-127/127",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Programmers at Ulrich-Ahn Company are : should responsible for ensuring that software conforms to the ------- system standards.",
+        "original_choices": [
+          "establish",
+          "established",
+          "establishing",
+          "establishes"
+        ],
+        "text_sha256": "26a9ab3d531f25aa626068828039aab75e012bc387a0042d4cecf607bb65b588",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "original_images_verified": false,
+          "notes": "Removes neighboring left-column fragments ': should'.",
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+              "location": "Question 127, page 3",
+              "kind": "retypeset_practice_pdf",
+              "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+            },
+            {
+              "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+              "location": "Question 127, page 104",
+              "kind": "retypeset_practice_text",
+              "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+            },
+            {
+              "url": "https://fr.gauthmath.com/solution/1832818841823266/122-employees-affected-by-changes-to-127-Programmers-at-Ulrich-Ahn-Company-are-L",
+              "location": "Question 127",
+              "kind": "indexed_ocr_of_apparent_two_column_scan",
+              "verification": "Indexed text has paired two-column layout 122/127,123/128,124/129,125/130,126. Actual question image NOT downloaded or visually verified. A downloaded link was avatar-only and must not be used as source image."
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Programmers at Ulrich-Ahn Company are responsible for ensuring that software conforms to the established system standards.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "f9d5e612e83a07255bb91438741f177c1e3fff7db3ca178b35c07f9def02c194"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "f9d5e612e83a07255bb91438741f177c1e3fff7db3ca178b35c07f9def02c194"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "f9d5e612e83a07255bb91438741f177c1e3fff7db3ca178b35c07f9def02c194"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "f9d5e612e83a07255bb91438741f177c1e3fff7db3ca178b35c07f9def02c194",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

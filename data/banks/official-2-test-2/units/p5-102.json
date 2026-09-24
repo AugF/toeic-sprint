@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "在审阅了文件之后，Oliveira女士将修改这些文书工作。\nA. After\nB. Now\nC. Soon\nD. Next"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "Next"
       ],
       "answer": "A",
-      "question": "their review of the documents, Ms. Oliveira will make changes to the paperwork.",
+      "question": "------- their review of the documents, Ms. Oliveira will make changes to the paperwork.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“After”代入题干后为“their review of the documents, Ms. Oliveira will make changes to the paperwork. [After]”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：A（After）。",
-      "question_translation": "在审阅了文件之后，Oliveira女士将修改这些文书工作。",
+      "answer_explain": "their review of the documents 是名词短语，用介词 After 引出修改前完成的审阅步骤。Now、Soon、Next 在这里不能直接作为介词连接该名词短语。",
+      "question_translation": "在他们审核这些文件**之后**，奥利维拉女士将修改相关文书。",
       "choice_translations": [
-        "A：在...之后",
-        "B：现在",
-        "C：很快",
-        "D：下一个"
+        "在……之后",
+        "现在",
+        "不久；很快",
+        "接下来；下一个"
       ],
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：their review of the documents, Ms. Oliveira will make changes to the paperwork.",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题 · 时间介词",
+      "grammar_point": "After 作介词接名词短语",
       "explanation_structured": {
         "answer": "A",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：their review of the documents, Ms. Oliveira will make changes to the paperwork.",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“After”代入题干后为“their review of the documents, Ms. Oliveira will make changes to the paperwork. [After]”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：A（After）。"
+        "question_type": "语法题 · 时间介词",
+        "grammar_point": "After 作介词接名词短语",
+        "analysis": "their review of the documents 是名词短语，用介词 After 引出修改前完成的审阅步骤。Now、Soon、Next 在这里不能直接作为介词连接该名词短语。"
       },
       "item_id": 102,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p5-102/102"
+      "item_key": "official-2-test-2/p5-102/102",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "their review of the documents, Ms. Oliveira will make changes to the paperwork.",
+        "original_choices": [
+          "After",
+          "Now",
+          "Soon",
+          "Next"
+        ],
+        "text_sha256": "d88a8afc66afc75934163ac98d3cfef2c83d5bd42bae51d4ca67063f971ace35",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/f22050b9-cffa-4cc7-b4ef-196525d1abf4.pdf",
+              "location": "Part 5 question 102; text and four choices"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/d6e91bec-d88d-4f8f-9569-8402b8357ead.pdf",
+              "location": "Part 5 question 102; cross-reference, preserve Aeronamic in Q125 rather than Aerodynamic variant"
+            }
+          ],
+          "notes": "Question number, sentence span, blank location, original choice order and unchanged answer reviewed together. Reference text is not represented as an original image. Preserve local spelling unless the correction is supported."
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "After their review of the documents, Ms. Oliveira will make changes to the paperwork.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "1e9a62f13d2015f65a2a06bdf9ac5e68aec46aac5009ca7947306c133edfff6b"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "1e9a62f13d2015f65a2a06bdf9ac5e68aec46aac5009ca7947306c133edfff6b"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "1e9a62f13d2015f65a2a06bdf9ac5e68aec46aac5009ca7947306c133edfff6b"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "1e9a62f13d2015f65a2a06bdf9ac5e68aec46aac5009ca7947306c133edfff6b",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

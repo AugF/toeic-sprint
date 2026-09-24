@@ -36,31 +36,62 @@
       "asset_key": "official-3-test-1/audio/part4/q083-085.mp3",
       "exists": true
     },
-    "transcript": "If you want to vote for your favorite song, you can do that by sending a text message to 5143.\nThe songs with the most votes will be played during our show next Saturday evening.\nAnd coming up after a short break, we've got a live in-studio interview with pop singer Ezra Ortiz.\nHe'll be telling us about his upcoming world tour.",
+    "transcript": "Thanks for listening to KQSP Radio.\nRemember to tune in next Saturday evening for our 10th anniversary celebration.\nWe'll be playing the top 10 songs of the past decade selected by you, the listeners.\nThere's still time to vote for your favorite song.\nYou can do that by sending a text message to 5143.\nThe songs with the most votes will be played during our show next Saturday evening.\nAnd coming up after a short break, we've got a live in-studio interview with pop singer Ezra Ortiz.\nHe'll be telling us about his upcoming world tour.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "d4f8f99f9553750076dc8035275a8b31aa80cd9f8284bdba819900b6e3fcb1bb",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-3-test-1/audio/part4/q083-085.mp3",
       "metrics": {
-        "word_count": 61,
-        "legacy_word_count": 91,
-        "length_ratio": 0.67,
-        "legacy_coverage": 0.714,
-        "prompted_failure": "implausible Part 4 transcript length 5"
-      }
+        "word_count": 94,
+        "review_window_end_ms": 43979,
+        "audio_duration_ms": 43979,
+        "words_per_second": 2.137
+      },
+      "transcript_sha256": "49cacaf0917bb68ab5766b12f455d23ee0463f3d7434d2565fd36c8d8b2f2550"
     },
-    "transcript_translation": "如果您想投票选出您最喜欢的歌曲，可以给 5143 发一条短信。\n票数最多的歌曲将在我们下周六晚的节目中播放。\n稍作休息后，接下来我们将进行一场与流行歌手 Ezra Ortiz 的现场录音室采访。\n他将向我们介绍他的即将到来的世界巡演。",
+    "transcript_translation": "感谢收听 KQSP 电台。\n请记得在下周六晚上收听我们的十周年庆祝节目。\n我们将播放由各位听众选出的过去十年十大歌曲。\n现在仍然可以为你最喜欢的歌曲投票。\n发送短信至 5143 即可投票。\n得票最多的歌曲将在下周六晚上的节目中播放。\n短暂休息之后，我们将在演播室对流行歌手 Ezra Ortiz 进行现场直播访谈。\n他将向我们介绍即将开始的世界巡演。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "1edf7dda05d9fc6954dec7e456965cf2206edc0451fe7325cbbbb8ceb80c81b2"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "49cacaf0917bb68ab5766b12f455d23ee0463f3d7434d2565fd36c8d8b2f2550",
+      "translation_sha256": "60ee6f50e509de74a2433a91b7ca75191b8ff05203d414dc7297f4515907d25f"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "1edf7dda05d9fc6954dec7e456965cf2206edc0451fe7325cbbbb8ceb80c81b2",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 61,
+        "legacy_word_count": 91,
+        "length_ratio": 0.67,
+        "legacy_coverage": 0.714,
+        "prompted_failure": "implausible Part 4 transcript length 5"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "49cacaf0917bb68ab5766b12f455d23ee0463f3d7434d2565fd36c8d8b2f2550",
+      "audio_sha256": "d4f8f99f9553750076dc8035275a8b31aa80cd9f8284bdba819900b6e3fcb1bb",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 43979
+        }
+      ]
     }
   },
   "items": [
@@ -111,7 +142,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-1/p4-83-85/83"
+      "item_key": "official-3-test-1/p4-83-85/83",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -160,7 +194,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-1/p4-83-85/84"
+      "item_key": "official-3-test-1/p4-83-85/84",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -209,7 +246,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-1/p4-83-85/85"
+      "item_key": "official-3-test-1/p4-83-85/85",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

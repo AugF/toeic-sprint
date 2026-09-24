@@ -36,9 +36,7 @@
     "unit_id": "part5-118",
     "model": "toeic_priority_v1"
   },
-  "context": {
-    "content_translation": "本文围绕“副词词义”展开。阅读时先确认文体与写作目的，再定位题干关键词所在句。"
-  },
+  "context": {},
   "items": [
     {
       "question": "Mr. Rhee thinks that the missing file is ---- in the archives.",
@@ -52,25 +50,22 @@
       "difficulty": "medium",
       "topic": "副词词义",
       "keywords": "somewhere archives file",
-      "answer_explain": "原文依据：be ___ in the archives 表示文件在档案中的某个地方。 选择理由：somewhere语义和位置都合适，B正确。正确答案：B（somewhere）。",
+      "answer_explain": "somewhere in the archives 表示在档案中的某个地方，作为 is 后的地点表语，符合寻找文件的语境。locating 表主动定位，removed 表被移走，especially 表尤其，都不能表达这个不确定的位置。",
       "question_type": "词汇题",
-      "evidence": "参考原文第 1 段第 1 句：Mr. Rhee thinks that the missing file is ---- in the archives.",
       "choice_translations": [
-        "A：正在确定……的位置；正在放置",
-        "B：在某处",
-        "C：被移走的；已删除的",
-        "D：尤其；特别"
+        "定位；找到……的位置（现在分词）",
+        "在某处；到某处",
+        "被移走的；移除的",
+        "尤其；特别"
       ],
-      "strategy": "本题属于词汇题。先判断空格在句中的成分，再检查词性、主谓一致、时态语态、固定搭配和句意。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "词汇题",
-        "evidence": "参考原文第 1 段第 1 句：Mr. Rhee thinks that the missing file is ---- in the archives.",
-        "strategy": "本题属于词汇题。先判断空格在句中的成分，再检查词性、主谓一致、时态语态、固定搭配和句意。",
-        "analysis": "原文依据：be ___ in the archives 表示文件在档案中的某个地方。 选择理由：somewhere语义和位置都合适，B正确。正确答案：B（somewhere）。"
+        "grammar_point": "不定地点副词 somewhere 与地点介词短语搭配",
+        "analysis": "somewhere in the archives 表示在档案中的某个地方，作为 is 后的地点表语，符合寻找文件的语境。locating 表主动定位，removed 表被移走，especially 表尤其，都不能表达这个不确定的位置。"
       },
-      "question_translation": "李先生认为丢失的文件 ---- 在档案库里。",
-      "grammar_point": "副词词义：somewhere 表示“在某处”，与后面的 in the archives 一起说明文件可能所在的位置。",
+      "question_translation": "Rhee 先生认为，那份找不到的文件就在档案中的**某个地方**。",
+      "grammar_point": "不定地点副词 somewhere 与地点介词短语搭配",
       "item_id": 118,
       "priority": {
         "level": "P2",
@@ -99,7 +94,32 @@
         "unit_id": "part5-118",
         "model": "toeic_priority_v1"
       },
-      "item_key": "official-11-test-1/p5-118/118"
+      "item_key": "official-11-test-1/p5-118/118",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "choice_translations": "ready",
+        "analysis": "ready"
+      },
+      "completed_sentence": "Mr. Rhee thinks that the missing file is somewhere in the archives.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "9c79f4543841f66668a4a32697fef2d90a6637b43e6a2dbd0c1c29ca0449e54a"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "9c79f4543841f66668a4a32697fef2d90a6637b43e6a2dbd0c1c29ca0449e54a"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "9c79f4543841f66668a4a32697fef2d90a6637b43e6a2dbd0c1c29ca0449e54a"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "9c79f4543841f66668a4a32697fef2d90a6637b43e6a2dbd0c1c29ca0449e54a",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

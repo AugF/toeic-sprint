@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "如果管道问题-------，我们建议您联系产品制造商。\nA. to persist\nB. was persisting\nC. persists\nD. persistence"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "persistence"
       ],
       "answer": "C",
-      "question": "If the plumbing problem -------, we 121 recommend that you contact the product manufacturer.",
+      "question": "If the plumbing problem -------, we recommend that you contact the product manufacturer.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“persists”代入题干后为“If the plumbing problem persists, we 121 recommend that you contact the product manufacturer.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：C（persists）。",
-      "question_translation": "如果管道问题-------，我们建议您联系产品制造商。",
+      "answer_explain": "If 从句需要谓语，句子提出当前或将来出现问题时的一般建议，单数主语 problem 对应一般现在时 persists，选 C。A to persist 是不定式，不能单独充当从句谓语；D persistence 是名词；B was persisting 是过去进行时，句中没有过去时间或回顾过去持续情况的语境。",
+      "question_translation": "如果管道问题**持续存在**，我们建议您联系产品制造商。",
       "choice_translations": [
-        "A：持续（不定式）",
-        "B：正在持续的（过去进行时）",
-        "C：持续（现在时）",
-        "D：持续性"
+        "持续存在（不定式）",
+        "当时持续存在（过去进行时）",
+        "持续存在（一般现在时第三人称单数）",
+        "持续；坚持（名词）"
       ],
-      "question_type": "介词 / 连词题",
-      "evidence": "参考原文第 1 段：If the plumbing problem -------, we 121 recommend that you contact the product manufacturer.",
-      "grammar_point": "介词 / 连词",
-      "strategy": "本题属于介词 / 连词题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题：条件从句谓语时态",
+      "grammar_point": "一般条件句用现在时；单数主语 problem 对应 persists",
       "explanation_structured": {
         "answer": "C",
-        "question_type": "介词 / 连词题",
-        "evidence": "参考原文第 1 段：If the plumbing problem -------, we 121 recommend that you contact the product manufacturer.",
-        "strategy": "本题属于介词 / 连词题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“persists”代入题干后为“If the plumbing problem persists, we 121 recommend that you contact the product manufacturer.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：C（persists）。"
+        "question_type": "语法题：条件从句谓语时态",
+        "grammar_point": "一般条件句用现在时；单数主语 problem 对应 persists",
+        "analysis": "If 从句需要谓语，句子提出当前或将来出现问题时的一般建议，单数主语 problem 对应一般现在时 persists，选 C。A to persist 是不定式，不能单独充当从句谓语；D persistence 是名词；B was persisting 是过去进行时，句中没有过去时间或回顾过去持续情况的语境。"
       },
       "item_id": 115,
       "priority": {
@@ -69,7 +64,49 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p5-115/115"
+      "item_key": "official-2-test-2/p5-115/115",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "original_question": "If the plumbing problem -------, we 121 recommend that you contact the product manufacturer.",
+        "original_choices": [
+          "to persist",
+          "was persisting",
+          "persists",
+          "persistence"
+        ],
+        "correction": {
+          "method": "reviewed_stray_number_removal",
+          "removed_number": "121",
+          "reason": "主语 we 与谓语 recommend 之间混入邻题号 121。"
+        },
+        "text_sha256": "f6d1a42b8221fae26cded2663df024a91609598b9a2c9b31db653314ac175559",
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "content_review_status": "text_corrected_by_review",
+      "completed_sentence": "If the plumbing problem persists, we recommend that you contact the product manufacturer.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "14d4de3f1dced7126c21dbef87897638bd19f398757c5d8ac15690bad33836c8"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "14d4de3f1dced7126c21dbef87897638bd19f398757c5d8ac15690bad33836c8"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "14d4de3f1dced7126c21dbef87897638bd19f398757c5d8ac15690bad33836c8"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "14d4de3f1dced7126c21dbef87897638bd19f398757c5d8ac15690bad33836c8",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

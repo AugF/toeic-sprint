@@ -37,30 +37,61 @@
       "asset_key": "official-10-test-1/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "But before we begin, we'll take a look at the annual report to review our income and expenses.\nLet me just bring the figures up on my laptop so we can all view them on the screen.",
+    "transcript": "Good afternoon.\nAt today's meeting, I'd like to focus on ticket sales.\nAs you know, sales have been declining.\nWe continue to offer top-quality films, but the availability of online entertainment options is responsible for this decline.\nWe've lost young moviegoers in particular.\nSo today I want you to brainstorm ways we could attract a greater turnout to our theater, especially a younger audience.\nBut before we begin, we'll take a look at the annual report to review our income and expenses.\nLet me just bring the figures up on my laptop so we can all view them on the screen.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "c2b5d9e86e7a3edbb82813594d92c31695f4a3b48d4e21e29bbe76d539de6b04",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-10-test-1/audio/part4/q077-079.mp3",
       "metrics": {
-        "word_count": 37,
-        "legacy_word_count": 63,
-        "length_ratio": 0.587,
-        "legacy_coverage": 0.698
-      }
+        "word_count": 101,
+        "review_window_end_ms": 41535,
+        "audio_duration_ms": 41535,
+        "words_per_second": 2.432
+      },
+      "transcript_sha256": "7670b65c984d44e7042a433ddae061efceed6b5b4fc8f86b68df67d73a944256"
     },
-    "transcript_translation": "但在我们开始之前，我们将看一下年度报告，回顾我们的收入和支出。\n让我把这些数字在我的笔记本上调出来，这样我们都能在屏幕上看。",
+    "transcript_translation": "大家下午好。\n今天的会议，我想重点讨论电影票销售情况。\n如各位所知，票房销售一直在下滑。\n我们仍然在放映高质量的影片，但网络娱乐选择的普及造成了销量下降。\n我们尤其流失了年轻的观影人群。\n因此，今天我希望大家集思广益，想想怎样才能吸引更多观众来我们影院，尤其是年轻观众。\n不过，在开始讨论之前，我们先看看年度报告，回顾一下收入和支出。\n我先在笔记本电脑上调出这些数据，这样大家就都能在屏幕上看到。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "629c5ad92631c71cf901bdde57d4623a9961e66b1e1a705ecb1f09357861a14f"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "7670b65c984d44e7042a433ddae061efceed6b5b4fc8f86b68df67d73a944256",
+      "translation_sha256": "22914b110d47bbb41ee64df0d102d57ef66a168ac7fcfe9df16db2feb93ef047"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "629c5ad92631c71cf901bdde57d4623a9961e66b1e1a705ecb1f09357861a14f",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "previous_metrics": {
+        "word_count": 37,
+        "legacy_word_count": 63,
+        "length_ratio": 0.587,
+        "legacy_coverage": 0.698
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "7670b65c984d44e7042a433ddae061efceed6b5b4fc8f86b68df67d73a944256",
+      "audio_sha256": "c2b5d9e86e7a3edbb82813594d92c31695f4a3b48d4e21e29bbe76d539de6b04",
+      "windows": [
+        {
+          "start_ms": 6000,
+          "end_ms": 26000
+        },
+        {
+          "start_ms": 21000,
+          "end_ms": 41000
+        },
+        {
+          "start_ms": 36000,
+          "end_ms": 41535
+        }
+      ]
     }
   },
   "items": [
@@ -112,7 +143,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-77-79/77"
+      "item_key": "official-10-test-1/p4-77-79/77",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -162,7 +196,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-77-79/78"
+      "item_key": "official-10-test-1/p4-77-79/78",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -212,7 +249,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-77-79/79"
+      "item_key": "official-10-test-1/p4-77-79/79",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ],
   "knowledge_accumulation": {

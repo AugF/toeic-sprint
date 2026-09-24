@@ -45,31 +45,62 @@
       "asset_key": "official-10-test-1/images/part4/q095-097.jpg",
       "exists": true
     },
-    "transcript": "We have a large number of listings for IT specialists.\nOur largest number of jobs is in this field at the moment.\nAnd we have several discounts.\nOne service is 50% off right now.\nVisit our website for our full list of discounts.",
+    "transcript": "Are you searching for work?\nThe Richardson Jobs Network can help.\nThe Richardson Jobs Network offers opportunities from all types of businesses, from large corporations to local shops.\nWe have listings for jobs covering a wide range of skills.\nAre you a great salesperson, editor, or graphic designer?\nThere are currently job openings for you.\nAnd we recently added a huge number of listings for IT specialists.\nOur largest number of jobs is in this field at the moment.\nAnd we have several discounts.\nOne service is 50% off right now.\nVisit our website for our full list of discounts.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "38459fb374ae14d665246d41c9e012e9cf627c48711ec8cd4115e23096e0791e",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-10-test-1/audio/part4/q095-097.mp3",
       "metrics": {
-        "word_count": 44,
-        "legacy_word_count": 63,
-        "length_ratio": 0.698,
-        "legacy_coverage": 0.714
+        "word_count": 99,
+        "review_window_end_ms": 45375,
+        "audio_duration_ms": 45375,
+        "words_per_second": 2.182
       },
-      "postprocess_version": "sentence_boundaries_v2"
+      "postprocess_version": "sentence_boundaries_v2",
+      "transcript_sha256": "1c5a8673d43039dc6a53d31e5828430837d499c2f9a0563ea245414eddd9f0ce"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
     },
-    "transcript_translation": "我们有大量 IT 专家职位空缺。\n目前我们这个领域的工作机会最多。\n而且我们还有几项折扣优惠。\n一项服务现在可以享受五折优惠。\n请访问我们的网站查看完整的折扣列表。",
+    "transcript_translation": "您正在找工作吗？\nRichardson Jobs Network 可以帮助您。\nRichardson Jobs Network 提供来自各类企业的工作机会，从大型公司到本地商店，应有尽有。\n我们的招聘信息涵盖需要各种技能的岗位。\n您是出色的销售人员、编辑或平面设计师吗？\n目前就有适合您的职位空缺。\n此外，我们最近还新增了大量面向 IT 专业人员的招聘信息。\n目前，我们提供的招聘职位中，这一领域的数量最多。\n我们还推出了多项优惠。\n其中一项服务现在享受五折优惠。\n请访问我们的网站，查看完整的优惠清单。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "af12d0d0b99105574e70f273ff6135c77de24f718dcab0c87d124b46b296f588"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "1c5a8673d43039dc6a53d31e5828430837d499c2f9a0563ea245414eddd9f0ce",
+      "translation_sha256": "7dd20683c3d5ecf7736d4c1fc7a56f3dbcb8cfaf4111f49a6c9469578198d847"
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "af12d0d0b99105574e70f273ff6135c77de24f718dcab0c87d124b46b296f588",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "previous_metrics": {
+        "word_count": 44,
+        "legacy_word_count": 63,
+        "length_ratio": 0.698,
+        "legacy_coverage": 0.714
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "1c5a8673d43039dc6a53d31e5828430837d499c2f9a0563ea245414eddd9f0ce",
+      "audio_sha256": "38459fb374ae14d665246d41c9e012e9cf627c48711ec8cd4115e23096e0791e",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 45375
+        }
+      ]
     }
   },
   "items": [
@@ -124,7 +155,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-95-97/95"
+      "item_key": "official-10-test-1/p4-95-97/95",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -177,7 +211,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-95-97/96"
+      "item_key": "official-10-test-1/p4-95-97/96",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -230,7 +267,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-95-97/97"
+      "item_key": "official-10-test-1/p4-95-97/97",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

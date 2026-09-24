@@ -45,7 +45,7 @@
       "asset_key": "official-12-test-2/images/part4/q095-097.jpg",
       "exists": true
     },
-    "transcript": "information and map.\nWelcome hikers.\nToday your self-guided journey will begin along Chamberlain Trail.\nAfter a short hike on that trail, you'll come to a place where it splits in three.\nThe trail on the right leads to the ruins of a castle that was built hundreds of years ago.\nThe left trail takes you along a forest.\nContinue straight ahead only if you're an experienced hiker.\nThere's rugged terrain along that trail.\nNow there's a drinking fountain in the visitor's center.\nI recommend filling your bottles before you start.",
+    "transcript": "Welcome hikers.\nToday your self-guided journey will begin along Chamberlain Trail.\nAfter a short hike on that trail, you'll come to a place where it splits in three.\nThe trail on the right leads to the ruins of a castle that was built hundreds of years ago.\nThe left trail takes you along a forest.\nContinue straight ahead only if you're an experienced hiker.\nThere's rugged terrain along that trail.\nNow there's a drinking fountain in the visitor's center.\nI recommend filling your bottles before you start.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
       "method": "mlx-whisper/large-v3-turbo-4bit:full",
@@ -53,22 +53,57 @@
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-12-test-2/audio/part4/q095-097.mp3",
       "metrics": {
-        "word_count": 90,
+        "word_count": 87,
         "legacy_word_count": 106,
         "length_ratio": 0.849,
         "legacy_coverage": 0.906
-      }
+      },
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
-    "transcript_translation": "信息和地图。\n欢迎徒步旅行者。\n您今天的自助旅程将沿着 Chamberlain Trail 开始。\n在沿着这条小径短途徒步后，您会来到一个分叉成三条路的地方。\n右边的小径通往一座数百年前建造的城堡遗址。\n左边的小径带您穿过一片森林。\n只有如果您是经验丰富的徒步旅行者，才继续直行。\n沿着那条小径有崎岖的地形。\n现在访客中心有一个饮水机。\n我建议您在开始前装满您的瓶子。",
+    "transcript_translation": "欢迎徒步旅行者。\n您今天的自助旅程将沿着 Chamberlain Trail 开始。\n在沿着这条小径短途徒步后，您会来到一个分叉成三条路的地方。\n右边的小径通往一座数百年前建造的城堡遗址。\n左边的小径带您穿过一片森林。\n只有如果您是经验丰富的徒步旅行者，才继续直行。\n沿着那条小径有崎岖的地形。\n现在访客中心有一个饮水机。\n我建议您在开始前装满您的瓶子。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
       "method": "ollama/gemma4:latest",
-      "transcript_sha256": "ff380e4680c7e6aa1c4720dd94f6b8527d9f0a6f9bdb3370ffa9d0828f672aad"
+      "transcript_sha256": "d4f67870143e193e824ce483fe5695a1e28f35a4dba960615fc298ec8c6986e7",
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_intro_cleanup": {
+      "schema_version": "verified_listening_intro_cleanup_v1",
+      "audio_sha256": "8d24b03573f74cd340bad348338dbf61ee0b2514c14bcaf7ea2bfd3010daaa08",
+      "removed_english_prefix": "information and map.",
+      "removed_chinese_prefix": "信息和地图。",
+      "cache_field": "raw",
+      "raw_sha256": "9271466e26660f5a42fab92277d935a43d492b91ac77d538b56b4093b7484017",
+      "verified_introduction": "Questions 95 through 97 refer to the following tour information and map. ",
+      "before": {
+        "transcript": "information and map.\nWelcome hikers.\nToday your self-guided journey will begin along Chamberlain Trail.\nAfter a short hike on that trail, you'll come to a place where it splits in three.\nThe trail on the right leads to the ruins of a castle that was built hundreds of years ago.\nThe left trail takes you along a forest.\nContinue straight ahead only if you're an experienced hiker.\nThere's rugged terrain along that trail.\nNow there's a drinking fountain in the visitor's center.\nI recommend filling your bottles before you start.",
+        "transcript_translation": "信息和地图。\n欢迎徒步旅行者。\n您今天的自助旅程将沿着 Chamberlain Trail 开始。\n在沿着这条小径短途徒步后，您会来到一个分叉成三条路的地方。\n右边的小径通往一座数百年前建造的城堡遗址。\n左边的小径带您穿过一片森林。\n只有如果您是经验丰富的徒步旅行者，才继续直行。\n沿着那条小径有崎岖的地形。\n现在访客中心有一个饮水机。\n我建议您在开始前装满您的瓶子。",
+        "transcript_source": {
+          "schema_version": "listening_transcript_v2",
+          "method": "mlx-whisper/large-v3-turbo-4bit:full",
+          "audio_sha256": "8d24b03573f74cd340bad348338dbf61ee0b2514c14bcaf7ea2bfd3010daaa08",
+          "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+          "source_audio": "public/assets/official-12-test-2/audio/part4/q095-097.mp3",
+          "metrics": {
+            "word_count": 90,
+            "legacy_word_count": 106,
+            "length_ratio": 0.849,
+            "legacy_coverage": 0.906
+          }
+        },
+        "transcript_translation_source": {
+          "schema_version": "listening_translation_v2",
+          "method": "ollama/gemma4:latest",
+          "transcript_sha256": "ff380e4680c7e6aa1c4720dd94f6b8527d9f0a6f9bdb3370ffa9d0828f672aad"
+        }
+      },
+      "after_transcript_sha256": "d4f67870143e193e824ce483fe5695a1e28f35a4dba960615fc298ec8c6986e7",
+      "after_translation_sha256": "8c6fcada13bdb369e446a2a93641c8dfba4343e81aed90eb5761c3c8bf7d39f9"
     }
   },
   "items": [
@@ -123,7 +158,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-12-test-2/p4-95-97/95"
+      "item_key": "official-12-test-2/p4-95-97/95",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -176,7 +214,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-12-test-2/p4-95-97/96"
+      "item_key": "official-12-test-2/p4-95-97/96",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -188,7 +229,7 @@
       "answer": "D",
       "question": "What does the speaker encourage the listeners to do?",
       "answer_explain": "正确答案：D（Fill a water bottle）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) encourage the listeners to do?",
+      "question_translation": "讲话者鼓励听众做什么？",
       "choice_translations": [
         "A:Sign up for a lecture",
         "B:Download an area map",
@@ -229,7 +270,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-12-test-2/p4-95-97/97"
+      "item_key": "official-12-test-2/p4-95-97/97",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "8913711e5009491027720e8c4fbb35f4b1c5ec718848c80e12dc8ccc3faa620f",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

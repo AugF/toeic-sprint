@@ -40,14 +40,40 @@
       "asset_key": "official-10-test-1/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "Hi, Akari.\nI just learned that Santo Fantini was named executive chef at Keller Bistro.\nI don't need to tell you what a big deal this is in the culinary world.\nI would like you to write a feature article about the restaurant and its new chef for the upcoming issue of the Margate Guide.\nSee if you can get an exclusive interview with Mr. Fantini.\nDirect statements always add more depth to features.\nYou can also be sure to mention the Margate Guide.\nThat should do the trick.",
+    "transcript": "Hi, Akari.\nI just learned that Santo Fantini was named executive chef at Keller Bistro.\nI don't need to tell you what a big deal this is in the culinary world.\nI would like you to write a feature article about the restaurant and its new chef for the upcoming issue of the Margate Guide.\nSee if you can get an exclusive interview with Mr. Fantini.\nDirect statements always add more depth to features.\nHe doesn't always agree to give interviews, so be sure to mention the Margate Guide.\nThat should do the trick.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "4c23e25b7f7f3acd5c2696f344b4b77a8bf6b3d14bdc92ab44bbb0c68c8dc11c",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-10-test-1/audio/part4/q086-088.mp3",
       "metrics": {
+        "word_count": 94,
+        "review_window_end_ms": 37538,
+        "audio_duration_ms": 37538,
+        "words_per_second": 2.504
+      },
+      "postprocess_version": "sentence_boundaries_v2",
+      "transcript_sha256": "bbbba3ffa694885f9f2a9bc41f3b84412e999d40becf6aa391b12b841dd60599"
+    },
+    "transcript_translation": "嗨，Akari。\n我刚得知 Santo Fantini 被任命为 Keller Bistro 的行政主厨。\n不用我说，你也知道这在餐饮界是多么重大的消息。\n我希望你为即将出版的《Margate Guide》撰写一篇介绍这家餐馆及其新主厨的专题文章。\n看看能否对 Fantini 先生进行独家采访。\n直接引用受访者的话总能让专题报道更有深度。\n他并不总是同意接受采访，因此一定要提到《Margate Guide》。\n这样应该就能说服他。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "bbbba3ffa694885f9f2a9bc41f3b84412e999d40becf6aa391b12b841dd60599",
+      "translation_sha256": "10e855766a06c19dc2a05828bb0927d3ee1b7b103265b414a7eff4d46b3dfa1f"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "ollama/gemma4:latest+audio_context",
+      "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "7107d39e315a5a96318a496d42847eb84cc93cc9a5297c4829eb34ba9860a8d5",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "previous_metrics": {
         "word_count": 89,
         "legacy_word_count": 98,
         "length_ratio": 0.908,
@@ -55,18 +81,19 @@
         "audio_duration_ms": 37538,
         "words_per_second": 2.371
       },
-      "postprocess_version": "sentence_boundaries_v2"
-    },
-    "transcript_translation": "嗨，Akari。\n我刚得知Santo Fantini被任命为Keller Bistro的执行主厨。\n我不需要告诉过你这在美食界是多么大的事。\n我想让你为即将出版的《Margate Guide》撰写一篇关于这家餐厅及其新主厨的专题文章。\n看看能不能和Fantini先生进行一次独家采访。\n直接的陈述总是能给专题增加更多深度。\n你也可以确保提到《Margate Guide》。\n这样应该就搞定了。",
-    "transcript_translation_source": {
-      "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "7107d39e315a5a96318a496d42847eb84cc93cc9a5297c4829eb34ba9860a8d5"
-    },
-    "item_text_source": {
-      "schema_version": "listening_item_text_v1",
-      "method": "ollama/gemma4:latest+audio_context",
-      "items": 3
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "bbbba3ffa694885f9f2a9bc41f3b84412e999d40becf6aa391b12b841dd60599",
+      "audio_sha256": "4c23e25b7f7f3acd5c2696f344b4b77a8bf6b3d14bdc92ab44bbb0c68c8dc11c",
+      "windows": [
+        {
+          "start_ms": 6000,
+          "end_ms": 26000
+        },
+        {
+          "start_ms": 21000,
+          "end_ms": 37538
+        }
+      ]
     }
   },
   "items": [
@@ -121,7 +148,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-86-88/86"
+      "item_key": "official-10-test-1/p4-86-88/86",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -174,7 +204,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-86-88/87"
+      "item_key": "official-10-test-1/p4-86-88/87",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -227,7 +260,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-86-88/88"
+      "item_key": "official-10-test-1/p4-86-88/88",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

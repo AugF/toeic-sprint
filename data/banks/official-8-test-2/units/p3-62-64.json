@@ -40,7 +40,7 @@
       "asset_key": "official-8-test-2/audio/part3/q062-064.mp3",
       "exists": true
     },
-    "transcript": "and logos.\nCorkmas department stores just agreed to carry our line of perfumes.\nWow!\nThat means our perfumes are going to be in a lot of new markets.\nThis is the perfect time to order shopping bags with our new company logo.\nThat way Corkmas will have them to use when they start carrying our perfumes.\nHere are the logo designs I'm working on.\nTake a look.\nThe one with the ribbon is perfect.\nIt looks like a little gift box.",
+    "transcript": "Corkmas department stores just agreed to carry our line of perfumes.\nWow!\nThat means our perfumes are going to be in a lot of new markets.\nThis is the perfect time to order shopping bags with our new company logo.\nThat way Corkmas will have them to use when they start carrying our perfumes.\nHere are the logo designs I'm working on.\nTake a look.\nThe one with the ribbon is perfect.\nIt looks like a little gift box.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
       "method": "mlx-whisper/large-v3-turbo-4bit:full",
@@ -48,22 +48,57 @@
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-8-test-2/audio/part3/q062-064.mp3",
       "metrics": {
-        "word_count": 81,
+        "word_count": 79,
         "legacy_word_count": 92,
         "length_ratio": 0.88,
         "legacy_coverage": 0.848
-      }
+      },
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
-    "transcript_translation": "和标志。\nCorkmas百货商店刚刚同意携带我们的香水系列。\n哇！\n这意味着我们的香水将进入许多新的市场。\n现在是订购带有我们新公司标志购物袋的完美时机。\n这样Corkmas在开始销售我们的香水时就能使用它们了。\n这是我正在设计的标志。请看。\n带丝带的那一个很完美。\n它看起来像一个小礼盒。",
+    "transcript_translation": "Corkmas百货商店刚刚同意携带我们的香水系列。\n哇！\n这意味着我们的香水将进入许多新的市场。\n现在是订购带有我们新公司标志购物袋的完美时机。\n这样Corkmas在开始销售我们的香水时就能使用它们了。\n这是我正在设计的标志。请看。\n带丝带的那一个很完美。\n它看起来像一个小礼盒。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
       "method": "ollama/gemma4:latest",
-      "transcript_sha256": "8bcc255f702011df7da1750d3c7dfd30c6f00931801acc4dadddca0d6941fb45"
+      "transcript_sha256": "97a5f8c39920349f3f8e4f67a056ae64179974d2b4765d3a92fe239b22e82109",
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_intro_cleanup": {
+      "schema_version": "verified_listening_intro_cleanup_v1",
+      "audio_sha256": "2d3e9b7173f01e4646953bb776ea75b051387bb95ff5712e3ef690132aaa5ace",
+      "removed_english_prefix": "and logos.",
+      "removed_chinese_prefix": "和标志。",
+      "cache_field": "raw",
+      "raw_sha256": "2047bac3a26e86b811e1a340daf88fd32017a58baf73ed791f33eace16c8983f",
+      "verified_introduction": "Questions 62 through 64 refer to the following conversation and logos. ",
+      "before": {
+        "transcript": "and logos.\nCorkmas department stores just agreed to carry our line of perfumes.\nWow!\nThat means our perfumes are going to be in a lot of new markets.\nThis is the perfect time to order shopping bags with our new company logo.\nThat way Corkmas will have them to use when they start carrying our perfumes.\nHere are the logo designs I'm working on.\nTake a look.\nThe one with the ribbon is perfect.\nIt looks like a little gift box.",
+        "transcript_translation": "和标志。\nCorkmas百货商店刚刚同意携带我们的香水系列。\n哇！\n这意味着我们的香水将进入许多新的市场。\n现在是订购带有我们新公司标志购物袋的完美时机。\n这样Corkmas在开始销售我们的香水时就能使用它们了。\n这是我正在设计的标志。请看。\n带丝带的那一个很完美。\n它看起来像一个小礼盒。",
+        "transcript_source": {
+          "schema_version": "listening_transcript_v2",
+          "method": "mlx-whisper/large-v3-turbo-4bit:full",
+          "audio_sha256": "2d3e9b7173f01e4646953bb776ea75b051387bb95ff5712e3ef690132aaa5ace",
+          "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+          "source_audio": "public/assets/official-8-test-2/audio/part3/q062-064.mp3",
+          "metrics": {
+            "word_count": 81,
+            "legacy_word_count": 92,
+            "length_ratio": 0.88,
+            "legacy_coverage": 0.848
+          }
+        },
+        "transcript_translation_source": {
+          "schema_version": "listening_translation_v2",
+          "method": "ollama/gemma4:latest",
+          "transcript_sha256": "8bcc255f702011df7da1750d3c7dfd30c6f00931801acc4dadddca0d6941fb45"
+        }
+      },
+      "after_transcript_sha256": "97a5f8c39920349f3f8e4f67a056ae64179974d2b4765d3a92fe239b22e82109",
+      "after_translation_sha256": "647ac2817ce3510eee8b545a28062176fe4e218ae8ec24404483eea46efbde60"
     }
   },
   "items": [
@@ -118,7 +153,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-8-test-2/p3-62-64/62"
+      "item_key": "official-8-test-2/p3-62-64/62",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -130,7 +168,7 @@
       "answer": "B",
       "question": "What does the woman suggest doing?",
       "answer_explain": "正确答案：B（Ordering shopping bags）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):What(什么) does the woman(女士) suggest(表明/建议) doing?",
+      "question_translation": "女子建议做什么？",
       "choice_translations": [
         "A:Filming some commercials",
         "B:Ordering shopping bags",
@@ -171,7 +209,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-8-test-2/p3-62-64/63"
+      "item_key": "official-8-test-2/p3-62-64/63",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "30ed4d3c79f7abf3f693305efb494420dd49048f8c1bf8c295fc9f0d82c2f44b",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -224,7 +272,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-8-test-2/p3-62-64/64"
+      "item_key": "official-8-test-2/p3-62-64/64",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     }
   ],
   "knowledge_accumulation": {

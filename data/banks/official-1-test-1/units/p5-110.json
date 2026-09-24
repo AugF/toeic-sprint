@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "建筑检查推迟到下周，直到电气工作可以完成。\nA. also\nB. when\nC. than\nD. so"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,24 @@
         "so"
       ],
       "answer": "D",
-      "question": "The building inspection has been postponed 117. until next week ------- that the electrical work can be completed.",
+      "question": "The building inspection has been postponed until next week ------- that the electrical work can be completed.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“so”代入题干后为“The building inspection has been postponed 117. until next week so that the electrical work can be completed.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：D（so）。",
-      "question_type": "动词形式题",
-      "evidence": "参考原文第 1 段：The building inspection has been postponed 117. until next week ------- that the electrical work can be completed.",
-      "grammar_point": "动词形式",
-      "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "answer_explain": "so that 后接完整从句，表示推迟检查的目的“以便电气工程完工”。其余选项不能在此与 that 构成目的连接结构。",
+      "question_type": "语法 / 词汇题 · 目的状语从句",
+      "grammar_point": "目的状语从句",
       "explanation_structured": {
         "answer": "D",
-        "question_type": "动词形式题",
-        "evidence": "参考原文第 1 段：The building inspection has been postponed 117. until next week ------- that the electrical work can be completed.",
-        "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“so”代入题干后为“The building inspection has been postponed 117. until next week so that the electrical work can be completed.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：D（so）。"
+        "question_type": "语法 / 词汇题 · 目的状语从句",
+        "analysis": "so that 后接完整从句，表示推迟检查的目的“以便电气工程完工”。其余选项不能在此与 that 构成目的连接结构。"
       },
-      "question_translation": "建筑检查推迟到下周，直到电气工作可以完成。",
+      "question_translation": "建筑检查已推迟到下周，**以便**电气工程能够完工。",
       "choice_translations": [
-        "A：也",
-        "B：当...时候",
-        "C：比",
-        "D：所以"
+        "也",
+        "当……时",
+        "比",
+        "以便（so that）"
       ],
       "item_id": 110,
       "priority": {
@@ -69,7 +63,34 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p5-110/110"
+      "item_key": "official-1-test-1/p5-110/110",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "The building inspection has been postponed 117. until next week ------- that the electrical work can be completed.",
+        "original_choices": [
+          "also",
+          "when",
+          "than",
+          "so"
+        ],
+        "text_sha256": "4020ae88c7ff5a13ce5ca03cd6b99e5d40b64ece5ce2ac39d3f3c9e103f50717"
+      },
+      "completed_sentence": "The building inspection has been postponed until next week so that the electrical work can be completed.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence",
+          "source_sha256": "98445612a0037f25110521cb4b5cb49d0898c944c67feff2aa9d8d915956dcab"
+        },
+        "analysis": {
+          "method": "reviewed_sentence_and_choices",
+          "source_sha256": "98445612a0037f25110521cb4b5cb49d0898c944c67feff2aa9d8d915956dcab"
+        }
+      }
     }
   ]
 }

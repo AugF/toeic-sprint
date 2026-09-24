@@ -45,7 +45,7 @@
       "asset_key": "official-10-test-1/images/part3/q065-067.jpg",
       "exists": true
     },
-    "transcript": "and list of classes.\nSang-mi, here's the schedule of classes they're offering at the Greenview Garden Centre.\nI think these would be helpful since we're both going to be working in the community garden this year.\nFor sure, but they're all on Saturdays.\nI have to work every Saturday this month except the 16th.\nI could attend that one though.\nOh, that's too bad.\nI'm planning on attending all of them.\nI'd like to go to at least one other session.\nI'm going to ask Hiroshi if he can work at least one Saturday for me.\nI'll send him an email.",
+    "transcript": "Sang-mi, here's the schedule of classes they're offering at the Greenview Garden Centre.\nI think these would be helpful since we're both going to be working in the community garden this year.\nFor sure, but they're all on Saturdays.\nI have to work every Saturday this month except the 16th.\nI could attend that one though.\nOh, that's too bad.\nI'm planning on attending all of them.\nI'd like to go to at least one other session.\nI'm going to ask Hiroshi if he can work at least one Saturday for me.\nI'll send him an email.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
       "method": "mlx-whisper/large-v3-turbo-4bit:full",
@@ -53,22 +53,57 @@
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-10-test-1/audio/part3/q065-067.mp3",
       "metrics": {
-        "word_count": 101,
+        "word_count": 97,
         "legacy_word_count": 98,
         "length_ratio": 1.031,
         "legacy_coverage": 0.959
-      }
+      },
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
-    "transcript_translation": "和课程列表。\nSang-mi，这是他们在Greenview Garden Centre提供的课程表。\n我想这些对我们很有用，因为今年我们俩都要在社区花园工作。\n确实，但它们都是周六的。\n这个月我每个周六都得去上班，除了16号。\n不过我可以参加那个。\n哦，那太不巧了。\n我计划参加所有这些课程的。\n我想至少再上其他一次课。\n我要问Hiroshi他能不能帮我工作一个周六。\n我会给他发封邮件。",
+    "transcript_translation": "Sang-mi，这是他们在Greenview Garden Centre提供的课程表。\n我想这些对我们很有用，因为今年我们俩都要在社区花园工作。\n确实，但它们都是周六的。\n这个月我每个周六都得去上班，除了16号。\n不过我可以参加那个。\n哦，那太不巧了。\n我计划参加所有这些课程的。\n我想至少再上其他一次课。\n我要问Hiroshi他能不能帮我工作一个周六。\n我会给他发封邮件。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
       "method": "ollama/gemma4:latest",
-      "transcript_sha256": "bde116093318b9a66f4bdfc60df162cb228283000ead620deb38570568a2ba7d"
+      "transcript_sha256": "72bfbf97ccb87a0ec3889d66816ec8c52eee8da2a0dc0091405f2669f66ecc8a",
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "ollama/gemma4:latest+audio_context",
       "items": 3
+    },
+    "transcript_intro_cleanup": {
+      "schema_version": "verified_listening_intro_cleanup_v1",
+      "audio_sha256": "a3be67a1a4c82518497bce26e3517c65ca32237370d7126f1e7b652aff669744",
+      "removed_english_prefix": "and list of classes.",
+      "removed_chinese_prefix": "和课程列表。",
+      "cache_field": "raw",
+      "raw_sha256": "5d4ebfebfec0951db06dc0384317f82640e45f0e2df09fb15691f66a7c5f249d",
+      "verified_introduction": "Questions 65 through 67 refer to the following conversation and list of classes. ",
+      "before": {
+        "transcript": "and list of classes.\nSang-mi, here's the schedule of classes they're offering at the Greenview Garden Centre.\nI think these would be helpful since we're both going to be working in the community garden this year.\nFor sure, but they're all on Saturdays.\nI have to work every Saturday this month except the 16th.\nI could attend that one though.\nOh, that's too bad.\nI'm planning on attending all of them.\nI'd like to go to at least one other session.\nI'm going to ask Hiroshi if he can work at least one Saturday for me.\nI'll send him an email.",
+        "transcript_translation": "和课程列表。\nSang-mi，这是他们在Greenview Garden Centre提供的课程表。\n我想这些对我们很有用，因为今年我们俩都要在社区花园工作。\n确实，但它们都是周六的。\n这个月我每个周六都得去上班，除了16号。\n不过我可以参加那个。\n哦，那太不巧了。\n我计划参加所有这些课程的。\n我想至少再上其他一次课。\n我要问Hiroshi他能不能帮我工作一个周六。\n我会给他发封邮件。",
+        "transcript_source": {
+          "schema_version": "listening_transcript_v2",
+          "method": "mlx-whisper/large-v3-turbo-4bit:full",
+          "audio_sha256": "a3be67a1a4c82518497bce26e3517c65ca32237370d7126f1e7b652aff669744",
+          "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+          "source_audio": "public/assets/official-10-test-1/audio/part3/q065-067.mp3",
+          "metrics": {
+            "word_count": 101,
+            "legacy_word_count": 98,
+            "length_ratio": 1.031,
+            "legacy_coverage": 0.959
+          }
+        },
+        "transcript_translation_source": {
+          "schema_version": "listening_translation_v2",
+          "method": "ollama/gemma4:latest",
+          "transcript_sha256": "bde116093318b9a66f4bdfc60df162cb228283000ead620deb38570568a2ba7d"
+        }
+      },
+      "after_transcript_sha256": "72bfbf97ccb87a0ec3889d66816ec8c52eee8da2a0dc0091405f2669f66ecc8a",
+      "after_translation_sha256": "7124d435942d7a9d02bd21006363bfc8f69f1df488bad32020bd0718266b066a"
     }
   },
   "items": [
@@ -123,7 +158,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p3-65-67/65"
+      "item_key": "official-10-test-1/p3-65-67/65",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -176,7 +214,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p3-65-67/66"
+      "item_key": "official-10-test-1/p3-65-67/66",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -229,7 +270,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p3-65-67/67"
+      "item_key": "official-10-test-1/p3-65-67/67",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

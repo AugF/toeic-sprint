@@ -36,31 +36,58 @@
       "asset_key": "official-5-test-1/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "but I'm scheduled to go on several business trips and won't have time for gardening after all.\nCould you please email me a cost estimate as soon as possible?\nI remember what you charged for your services last year but I'd like to know what your current rates are.\nThanks.",
+    "transcript": "Hello, this is Tonya Peterson.\nYour landscaping company took care of my garden last year.\nYour crew did such a beautiful job.\nAre you available to help out again this year?\nI was hoping to maintain the garden myself, but I'm scheduled to go on several business trips and won't have time for gardening after all.\nCould you please email me a cost estimate as soon as possible?\nI remember what you charged for your services last year, but I'd like to know what your current rates are.\nThanks.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "fdb077dc495e672dc3e1e0b2b5bc6e6fc6786db1b3b3ae78a49a43728a56281f",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-5-test-1/audio/part4/q086-088.mp3",
       "metrics": {
-        "word_count": 50,
-        "legacy_word_count": 91,
-        "length_ratio": 0.549,
-        "legacy_coverage": 0.615,
-        "prompted_failure": "missing spoken Questions 86 through 88 introduction"
-      }
+        "word_count": 89,
+        "review_window_end_ms": 39314,
+        "audio_duration_ms": 39314,
+        "words_per_second": 2.264
+      },
+      "transcript_sha256": "ef1e582397712deeed6f34839ce49b5dfd5cd99646e36c56e946fd782b0ed7d0"
     },
-    "transcript_translation": "但我安排了多次出差，所以根本没有时间做园艺了。\n您能否尽快通过电子邮件给我发送一份成本估算？\n我记得您去年提供的服务费用，但我想知道您目前的费率是多少。\n谢谢。",
+    "transcript_translation": "您好，我是 Tonya Peterson。\n去年是贵园林公司负责照料我的花园的。\n你们的团队做得非常出色。\n今年你们还有空再来帮忙吗？\n我本来希望自己打理花园，但已经安排了好几次出差，结果还是抽不出时间做园艺工作。\n能否请您尽快通过电子邮件给我发一份费用估算？\n我记得你们去年的服务收费，但想了解一下目前的价格。\n谢谢。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "0f5044d4028bea56448f01578d424b9237d7870a3356f1c7cfdf4c1bd94b7c95"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "ef1e582397712deeed6f34839ce49b5dfd5cd99646e36c56e946fd782b0ed7d0",
+      "translation_sha256": "8d99ccf47207e8ed1b615e36e90f3f02b971c2e47a597f29c036addcea9f894f"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "0f5044d4028bea56448f01578d424b9237d7870a3356f1c7cfdf4c1bd94b7c95",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 50,
+        "legacy_word_count": 91,
+        "length_ratio": 0.549,
+        "legacy_coverage": 0.615,
+        "prompted_failure": "missing spoken Questions 86 through 88 introduction"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "ef1e582397712deeed6f34839ce49b5dfd5cd99646e36c56e946fd782b0ed7d0",
+      "audio_sha256": "fdb077dc495e672dc3e1e0b2b5bc6e6fc6786db1b3b3ae78a49a43728a56281f",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 39314
+        }
+      ]
     }
   },
   "items": [
@@ -111,7 +138,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-5-test-1/p4-86-88/86"
+      "item_key": "official-5-test-1/p4-86-88/86",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -160,7 +190,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-5-test-1/p4-86-88/87"
+      "item_key": "official-5-test-1/p4-86-88/87",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -209,7 +242,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-5-test-1/p4-86-88/88"
+      "item_key": "official-5-test-1/p4-86-88/88",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     }
   ]
 }

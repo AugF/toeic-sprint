@@ -21,40 +21,35 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "The city council will meet tomorrow to field questions from ------- concerning the new water tower. +\nA. resident m\nB. residents =\nC. residences Ny\nD. residential"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
-        "resident m",
-        "residents =",
-        "residences Ny",
+        "resident",
+        "residents",
+        "residences",
         "residential"
       ],
       "answer": "B",
-      "question": "The city council will meet tomorrow to field questions from ------- concerning the new water tower. +",
+      "question": "The city council will meet tomorrow to field questions from ------- concerning the new water tower.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“residents =”代入题干后为“The city council will meet tomorrow to field questions from residents = concerning the new water tower. +”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：B（residents =）。",
-      "question_translation": "The city council will meet tomorrow to field questions from ------- concerning the new water tower. +",
+      "answer_explain": "问题来自居民，而不是住宅，所以用复数名词 residents，选 B。A resident 是可数名词单数，前面没有冠词等限定词；C residences 指住所；D residential 是形容词，不能单独充当 from 的宾语。field questions 表示应答、处理提问。",
+      "question_translation": "市议会将于明天开会，回答**居民们**有关新水塔的问题。",
       "choice_translations": [
-        "A：resident m",
-        "B：residents =",
-        "C：residences Ny",
-        "D：residential"
+        "居民；住户（单数）",
+        "居民；住户（复数）",
+        "住所；住宅（复数）",
+        "住宅的；居住用的"
       ],
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：The city council will meet tomorrow to field questions from ------- concerning the new water tower. +",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法与词汇题：名词词形及单复数",
+      "grammar_point": "介词 from 后接名词；复数居民 residents 与住所 residences 的区别",
       "explanation_structured": {
         "answer": "B",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：The city council will meet tomorrow to field questions from ------- concerning the new water tower. +",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“residents =”代入题干后为“The city council will meet tomorrow to field questions from residents = concerning the new water tower. +”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：B（residents =）。"
+        "question_type": "语法与词汇题：名词词形及单复数",
+        "grammar_point": "介词 from 后接名词；复数居民 residents 与住所 residences 的区别",
+        "analysis": "问题来自居民，而不是住宅，所以用复数名词 residents，选 B。A resident 是可数名词单数，前面没有冠词等限定词；C residences 指住所；D residential 是形容词，不能单独充当 from 的宾语。field questions 表示应答、处理提问。"
       },
       "item_id": 118,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p5-118/118"
+      "item_key": "official-1-test-2/p5-118/118",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "The city council will meet tomorrow to field questions from ------- concerning the new water tower. +",
+        "original_choices": [
+          "resident m",
+          "residents =",
+          "residences Ny",
+          "residential"
+        ],
+        "text_sha256": "7e8180543a5f5cceb8b18c74185b942650fd3641111bb799fce6ef6b6686bae9",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "reason": "两源的完整题句和四项词形一致，清除题干尾部 + 及选项 m、=、Ny，保留 A–D 原顺序。",
+          "sources": [
+            {
+              "url": "https://pdfcoffee.com/1000-cau-giai-de-toeic-format-moi-2019-pdf-free.html",
+              "location": "第 558 题，完整题干和四个无污染选项"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/b1a3c62e-d07c-459a-8a65-d796a13aa648.pdf",
+              "location": "第 2 页第 118 题，题干及 A–D 词形"
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "The city council will meet tomorrow to field questions from residents concerning the new water tower.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "6235bfd5f1cbf35f0bc0e031cb76e06e09cf8ac6300df87fae2e20e72183e9d8"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "6235bfd5f1cbf35f0bc0e031cb76e06e09cf8ac6300df87fae2e20e72183e9d8"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "6235bfd5f1cbf35f0bc0e031cb76e06e09cf8ac6300df87fae2e20e72183e9d8"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "6235bfd5f1cbf35f0bc0e031cb76e06e09cf8ac6300df87fae2e20e72183e9d8",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

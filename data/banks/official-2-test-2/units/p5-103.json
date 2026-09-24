@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "如需任何关于软件问题的-------，请联系技术支持。\nA. assist\nB. assistant\nC. assisted\nD. assistance"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "assistance"
       ],
       "answer": "D",
-      "question": "Contact technical support for any needec ------- with software issues.",
+      "question": "Contact technical support for any needed ------- with software issues.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“assistance”代入题干后为“Contact technical support for any needec assistance with software issues.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：D（assistance）。",
-      "question_translation": "如需任何关于软件问题的-------，请联系技术支持。",
+      "answer_explain": "any needed 后需要名词，assistance 为不可数名词，表示帮助。assistant 是指人的可数名词；assist 是动词；assisted 是过去式或过去分词。",
+      "question_translation": "如果在解决软件问题时需要任何**帮助**，请联系技术支持。",
       "choice_translations": [
-        "A：协助",
-        "B：助理",
-        "C：被协助的",
-        "D：帮助"
+        "帮助（动词）",
+        "助手；助理",
+        "帮助了；受协助的",
+        "帮助；协助（名词）"
       ],
-      "question_type": "动词形式题",
-      "evidence": "参考原文第 1 段：Contact technical support for any needec ------- with software issues.",
-      "grammar_point": "动词形式",
-      "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题 · 词性",
+      "grammar_point": "needed 后用名词 assistance",
       "explanation_structured": {
         "answer": "D",
-        "question_type": "动词形式题",
-        "evidence": "参考原文第 1 段：Contact technical support for any needec ------- with software issues.",
-        "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“assistance”代入题干后为“Contact technical support for any needec assistance with software issues.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：D（assistance）。"
+        "question_type": "语法题 · 词性",
+        "grammar_point": "needed 后用名词 assistance",
+        "analysis": "any needed 后需要名词，assistance 为不可数名词，表示帮助。assistant 是指人的可数名词；assist 是动词；assisted 是过去式或过去分词。"
       },
       "item_id": 103,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p5-103/103"
+      "item_key": "official-2-test-2/p5-103/103",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Contact technical support for any needec ------- with software issues.",
+        "original_choices": [
+          "assist",
+          "assistant",
+          "assisted",
+          "assistance"
+        ],
+        "text_sha256": "47948cd73d5ec1ab420b3306b970efe74e20eca912e98bfdb382bf105d69ffdb",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/f22050b9-cffa-4cc7-b4ef-196525d1abf4.pdf",
+              "location": "Part 5 question 103; text and four choices"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/d6e91bec-d88d-4f8f-9569-8402b8357ead.pdf",
+              "location": "Part 5 question 103; cross-reference, preserve Aeronamic in Q125 rather than Aerodynamic variant"
+            }
+          ],
+          "notes": "Question number, sentence span, blank location, original choice order and unchanged answer reviewed together. Reference text is not represented as an original image. Preserve local spelling unless the correction is supported."
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Contact technical support for any needed assistance with software issues.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "e1a4cdbc969f951853a71cf36fd2d1512fdaa0550f1225f978322e0b93953a77"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "e1a4cdbc969f951853a71cf36fd2d1512fdaa0550f1225f978322e0b93953a77"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "e1a4cdbc969f951853a71cf36fd2d1512fdaa0550f1225f978322e0b93953a77"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "e1a4cdbc969f951853a71cf36fd2d1512fdaa0550f1225f978322e0b93953a77",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

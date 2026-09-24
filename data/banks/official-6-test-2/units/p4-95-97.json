@@ -40,7 +40,7 @@
       "asset_key": "official-6-test-2/audio/part4/q095-097.mp3",
       "exists": true
     },
-    "transcript": "information and map.\nWelcome to Southridge National Park everyone.\nToday's hike will take us to Diamond Sand Lake.\nIt isn't the shortest trail in the park, but it is a pretty easy one.\nI'm glad you all brought your binoculars because it's migration season, so we're likely to see lots of interesting birds along the way.\nNow, today's forecast calls for a chance of showers.\nIf you have a raincoat, I suggest you put it on.\nWe'll be leaving in about 15 minutes.",
+    "transcript": "Welcome to Southridge National Park everyone.\nToday's hike will take us to Diamond Sand Lake.\nIt isn't the shortest trail in the park, but it is a pretty easy one.\nI'm glad you all brought your binoculars because it's migration season, so we're likely to see lots of interesting birds along the way.\nNow, today's forecast calls for a chance of showers.\nIf you have a raincoat, I suggest you put it on.\nWe'll be leaving in about 15 minutes.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
       "method": "mlx-whisper/large-v3-turbo-4bit:full",
@@ -48,22 +48,57 @@
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-6-test-2/audio/part4/q095-097.mp3",
       "metrics": {
-        "word_count": 82,
+        "word_count": 79,
         "legacy_word_count": 118,
         "length_ratio": 0.695,
         "legacy_coverage": 0.814
-      }
+      },
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
-    "transcript_translation": "信息和地图。\n欢迎来到 Southridge National Park 各位。\n今天的徒步路线将带我们去 Diamond Sand Lake。\n它不是公园里最短的步道，但却是一条相当轻松的路线。\n我很高兴大家都带来了望远镜，因为现在是迁徙季节，所以沿途很可能会看到很多有趣的鸟类。\n现在，今天的预报说有阵雨的可能性。\n如果您带了雨衣，建议您穿上。\n我们大约在 15 分钟后出发。",
+    "transcript_translation": "欢迎来到 Southridge National Park 各位。\n今天的徒步路线将带我们去 Diamond Sand Lake。\n它不是公园里最短的步道，但却是一条相当轻松的路线。\n我很高兴大家都带来了望远镜，因为现在是迁徙季节，所以沿途很可能会看到很多有趣的鸟类。\n现在，今天的预报说有阵雨的可能性。\n如果您带了雨衣，建议您穿上。\n我们大约在 15 分钟后出发。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
       "method": "ollama/gemma4:latest",
-      "transcript_sha256": "602874d780b585bf314bdf8465d1ab8be9a48331902dc7c0e8346365744f6c33"
+      "transcript_sha256": "7df15da488f02dfe1fda25c6775a7dd8837d8b1c25ff081e45b8ba92706df247",
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_intro_cleanup": {
+      "schema_version": "verified_listening_intro_cleanup_v1",
+      "audio_sha256": "16ee9b55bb7e2635c23ad18e7f3ce194134171f5afeb7bb3e6dffd1097990174",
+      "removed_english_prefix": "information and map.",
+      "removed_chinese_prefix": "信息和地图。",
+      "cache_field": "raw",
+      "raw_sha256": "5217516ae25caed6fcefe2fcf6f8b54bc9ffd15d714b8c38e265d40df9f1ff57",
+      "verified_introduction": "Questions 95 through 97 refer to the following tour information and map. ",
+      "before": {
+        "transcript": "information and map.\nWelcome to Southridge National Park everyone.\nToday's hike will take us to Diamond Sand Lake.\nIt isn't the shortest trail in the park, but it is a pretty easy one.\nI'm glad you all brought your binoculars because it's migration season, so we're likely to see lots of interesting birds along the way.\nNow, today's forecast calls for a chance of showers.\nIf you have a raincoat, I suggest you put it on.\nWe'll be leaving in about 15 minutes.",
+        "transcript_translation": "信息和地图。\n欢迎来到 Southridge National Park 各位。\n今天的徒步路线将带我们去 Diamond Sand Lake。\n它不是公园里最短的步道，但却是一条相当轻松的路线。\n我很高兴大家都带来了望远镜，因为现在是迁徙季节，所以沿途很可能会看到很多有趣的鸟类。\n现在，今天的预报说有阵雨的可能性。\n如果您带了雨衣，建议您穿上。\n我们大约在 15 分钟后出发。",
+        "transcript_source": {
+          "schema_version": "listening_transcript_v2",
+          "method": "mlx-whisper/large-v3-turbo-4bit:full",
+          "audio_sha256": "16ee9b55bb7e2635c23ad18e7f3ce194134171f5afeb7bb3e6dffd1097990174",
+          "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+          "source_audio": "public/assets/official-6-test-2/audio/part4/q095-097.mp3",
+          "metrics": {
+            "word_count": 82,
+            "legacy_word_count": 118,
+            "length_ratio": 0.695,
+            "legacy_coverage": 0.814
+          }
+        },
+        "transcript_translation_source": {
+          "schema_version": "listening_translation_v2",
+          "method": "ollama/gemma4:latest",
+          "transcript_sha256": "602874d780b585bf314bdf8465d1ab8be9a48331902dc7c0e8346365744f6c33"
+        }
+      },
+      "after_transcript_sha256": "7df15da488f02dfe1fda25c6775a7dd8837d8b1c25ff081e45b8ba92706df247",
+      "after_translation_sha256": "cd1e30b19a2698141a76b12102691019f06bfc0e0d68ad5c3c948976a542b423"
     }
   },
   "items": [
@@ -118,7 +153,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-2/p4-95-97/95"
+      "item_key": "official-6-test-2/p4-95-97/95",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -171,7 +209,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-2/p4-95-97/96"
+      "item_key": "official-6-test-2/p4-95-97/96",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -224,7 +265,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-2/p4-95-97/97"
+      "item_key": "official-6-test-2/p4-95-97/97",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     }
   ]
 }

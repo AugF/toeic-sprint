@@ -38,7 +38,7 @@
       "asset_key": "official-9-test-2/audio/part3/q065-067.mp3",
       "exists": true
     },
-    "transcript": "and product samples.\nWelcome to Yamada Decor and Building Supplies.\nCan I help you with anything?\nYeah, I own Maria's Cafe.\nI'm adding a new dining room to the restaurant and I'd like to see some wallpaper options.\nOf course.\nThere's one wallpaper brand I recommend.\nIt's easier to clean than most other brands.\nPerfect.\nI'm sure we'll need to clean up food stains from time to time.\nHere are some samples.\nThe sunflower pattern is very popular.\nActually, I like this one with the city buildings.\nThe price may be a bit high for my budget, though.",
+    "transcript": "Welcome to Yamada Decor and Building Supplies.\nCan I help you with anything?\nYeah, I own Maria's Cafe.\nI'm adding a new dining room to the restaurant and I'd like to see some wallpaper options.\nOf course.\nThere's one wallpaper brand I recommend.\nIt's easier to clean than most other brands.\nPerfect.\nI'm sure we'll need to clean up food stains from time to time.\nHere are some samples.\nThe sunflower pattern is very popular.\nActually, I like this one with the city buildings.\nThe price may be a bit high for my budget, though.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
       "method": "mlx-whisper/large-v3-turbo-4bit:full",
@@ -46,22 +46,57 @@
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-9-test-2/audio/part3/q065-067.mp3",
       "metrics": {
-        "word_count": 98,
+        "word_count": 95,
         "legacy_word_count": 106,
         "length_ratio": 0.925,
         "legacy_coverage": 0.849
-      }
+      },
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
-    "transcript_translation": "和产品样品。\n欢迎来到 Yamada Decor and Building Supplies。\n有什么可以帮您的吗？\n是的，我拥有 Maria's Cafe。\n我正在给餐厅增加一个新餐厅，我想看看一些墙纸的选择。\n当然可以。\n我推荐一个墙纸品牌。\n它比大多数其他品牌更容易清洁。\n完美。\n我相信我们时不时都需要清理食物污渍。\n这里有一些样品。\n向日葵图案非常受欢迎。\n实际上，我喜欢这个带有城市建筑的款式。\n不过，这价格可能超出了我的预算。",
+    "transcript_translation": "欢迎来到 Yamada Decor and Building Supplies。\n有什么可以帮您的吗？\n是的，我拥有 Maria's Cafe。\n我正在给餐厅增加一个新餐厅，我想看看一些墙纸的选择。\n当然可以。\n我推荐一个墙纸品牌。\n它比大多数其他品牌更容易清洁。\n完美。\n我相信我们时不时都需要清理食物污渍。\n这里有一些样品。\n向日葵图案非常受欢迎。\n实际上，我喜欢这个带有城市建筑的款式。\n不过，这价格可能超出了我的预算。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
       "method": "ollama/gemma4:latest",
-      "transcript_sha256": "7d4242fb6ec90a4fd3b0b91c7ec0f0f951b3d84b87b6d6cda9c26b1f42d12857"
+      "transcript_sha256": "12cc6753c2a5c5652cc9bede8c5bc2ecaf1c97d28a0c4025c8b35d97b864c847",
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_intro_cleanup": {
+      "schema_version": "verified_listening_intro_cleanup_v1",
+      "audio_sha256": "64ebbd56da1569b490bf28ee52c9c15a30fff4d940dc60ba58279a3869eaf49b",
+      "removed_english_prefix": "and product samples.",
+      "removed_chinese_prefix": "和产品样品。",
+      "cache_field": "raw",
+      "raw_sha256": "769918d33151df4cea14eb08c13ad99663b443c4a2c75f386b4408e8616881ee",
+      "verified_introduction": "Questions 65 through 67 refer to the following conversation and product samples. ",
+      "before": {
+        "transcript": "and product samples.\nWelcome to Yamada Decor and Building Supplies.\nCan I help you with anything?\nYeah, I own Maria's Cafe.\nI'm adding a new dining room to the restaurant and I'd like to see some wallpaper options.\nOf course.\nThere's one wallpaper brand I recommend.\nIt's easier to clean than most other brands.\nPerfect.\nI'm sure we'll need to clean up food stains from time to time.\nHere are some samples.\nThe sunflower pattern is very popular.\nActually, I like this one with the city buildings.\nThe price may be a bit high for my budget, though.",
+        "transcript_translation": "和产品样品。\n欢迎来到 Yamada Decor and Building Supplies。\n有什么可以帮您的吗？\n是的，我拥有 Maria's Cafe。\n我正在给餐厅增加一个新餐厅，我想看看一些墙纸的选择。\n当然可以。\n我推荐一个墙纸品牌。\n它比大多数其他品牌更容易清洁。\n完美。\n我相信我们时不时都需要清理食物污渍。\n这里有一些样品。\n向日葵图案非常受欢迎。\n实际上，我喜欢这个带有城市建筑的款式。\n不过，这价格可能超出了我的预算。",
+        "transcript_source": {
+          "schema_version": "listening_transcript_v2",
+          "method": "mlx-whisper/large-v3-turbo-4bit:full",
+          "audio_sha256": "64ebbd56da1569b490bf28ee52c9c15a30fff4d940dc60ba58279a3869eaf49b",
+          "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+          "source_audio": "public/assets/official-9-test-2/audio/part3/q065-067.mp3",
+          "metrics": {
+            "word_count": 98,
+            "legacy_word_count": 106,
+            "length_ratio": 0.925,
+            "legacy_coverage": 0.849
+          }
+        },
+        "transcript_translation_source": {
+          "schema_version": "listening_translation_v2",
+          "method": "ollama/gemma4:latest",
+          "transcript_sha256": "7d4242fb6ec90a4fd3b0b91c7ec0f0f951b3d84b87b6d6cda9c26b1f42d12857"
+        }
+      },
+      "after_transcript_sha256": "12cc6753c2a5c5652cc9bede8c5bc2ecaf1c97d28a0c4025c8b35d97b864c847",
+      "after_translation_sha256": "895b5772e0ff9ac0ecc6bee4cc219ea42646e6ea8ab845fd35209da383dbf976"
     }
   },
   "items": [
@@ -75,7 +110,7 @@
       "answer": "B",
       "question": "Who is the woman?",
       "answer_explain": "正确答案：B（A restaurant owner）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):Who(谁) is the woman(女士)?",
+      "question_translation": "这名女子是谁？",
       "choice_translations": [
         "A:A painter",
         "B:A restaurant owner",
@@ -114,7 +149,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-2/p3-65-67/65"
+      "item_key": "official-9-test-2/p3-65-67/65",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "23d462665d21dfa8a5f2b026f286d5a4efb393ea7f0b872a3667f427188e3671",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -165,7 +210,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-2/p3-65-67/66"
+      "item_key": "official-9-test-2/p3-65-67/66",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -216,7 +264,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-2/p3-65-67/67"
+      "item_key": "official-9-test-2/p3-65-67/67",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     }
   ]
 }

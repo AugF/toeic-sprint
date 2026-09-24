@@ -39,32 +39,63 @@
       "asset_key": "official-3-test-1/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "offer smaller quantities of tucker treats at their original prices, which means they're paying more for less food.\nOur president, Yang Su Li, has approved changing the size of the packaging to offer larger quantities of snacks at the original prices.\nSo your next task is to come up with a new package design to hold the larger quantities while still using less. plastic.",
+    "transcript": "Thanks for coming to this product development meeting.\nAs you know, we've recently reduced the amount of packaging we use for our Tuck-A-Treats snack bags in order to be more eco-friendly.\nBut customers aren't happy because our new packaging now offers smaller quantities of Tuck-A-Treats at their original prices, which means they're paying more for less food.\nOur president, Yang Su Li, has approved changing the size of the packaging to offer larger quantities of snacks at the original prices.\nSo your next task is to come up with a new package design to hold the larger quantities while still using less plastic.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "85fba981b305713a2d031425d6e928968094e4a00e7398c56037936590dcf33f",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-3-test-1/audio/part4/q092-094.mp3",
       "metrics": {
+        "word_count": 103,
+        "review_window_end_ms": 47369,
+        "audio_duration_ms": 47369,
+        "words_per_second": 2.174
+      },
+      "postprocess_version": "sentence_boundaries_v2",
+      "transcript_sha256": "de767d47e38775d20563b1ca1bf56b13012a37b51c6302829ff36e152bb2cf2c"
+    },
+    "transcript_translation": "感谢大家参加这次产品开发会议。\n大家知道，为了更加环保，我们最近减少了 Tuck-A-Treats 袋装零食所使用的包装材料。\n但顾客对此不满意，因为新包装里的 Tuck-A-Treats 零食分量更少了，价格却没有变，这意味着他们买到更少的食品，单位价格反而更高。\n我们的总裁 Yang Su Li 已经批准调整包装尺寸，以原价提供更大分量的零食。\n因此，你们接下来的任务是设计一种新包装，在继续减少塑料用量的同时，能够容纳更多零食。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "de767d47e38775d20563b1ca1bf56b13012a37b51c6302829ff36e152bb2cf2c",
+      "translation_sha256": "978ccdd11ec48c12ee6cae7daa9d9c4c394546eaffc3ad83d9586b9c066303a1"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "963e83195088e07f0c0637e70add5a2c933537d25f127dde7822a6b88fd334f2",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
         "word_count": 64,
         "legacy_word_count": 107,
         "length_ratio": 0.598,
         "legacy_coverage": 0.701,
         "prompted_failure": "missing spoken Questions 92 through 94 introduction"
       },
-      "postprocess_version": "sentence_boundaries_v2"
-    },
-    "transcript_translation": "以原价提供较少量的tucker零食，这意味着他们花更多的钱买更少的食物。\n我们的总裁Yang Su Li已批准更改包装尺寸，以便以原价提供更大数量的零食。\n所以你的下一个任务是设计一个新的包装，来装下更大的数量，同时仍然使用更少的塑料。",
-    "transcript_translation_source": {
-      "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "963e83195088e07f0c0637e70add5a2c933537d25f127dde7822a6b88fd334f2"
-    },
-    "item_text_source": {
-      "schema_version": "listening_item_text_v1",
-      "method": "deterministic_ocr_cleanup",
-      "items": 3
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "de767d47e38775d20563b1ca1bf56b13012a37b51c6302829ff36e152bb2cf2c",
+      "audio_sha256": "85fba981b305713a2d031425d6e928968094e4a00e7398c56037936590dcf33f",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 47369
+        }
+      ]
     }
   },
   "items": [
@@ -118,7 +149,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-1/p4-92-94/92"
+      "item_key": "official-3-test-1/p4-92-94/92",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -170,7 +204,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-1/p4-92-94/93"
+      "item_key": "official-3-test-1/p4-92-94/93",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -222,7 +259,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-1/p4-92-94/94"
+      "item_key": "official-3-test-1/p4-92-94/94",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

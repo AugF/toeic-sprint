@@ -37,7 +37,7 @@
       "asset_key": "official-8-test-2/audio/part4/q095-097.mp3",
       "exists": true
     },
-    "transcript": "and airport departure board.\nAttention passengers taking flight JB2508 to San Francisco.\nPassengers are now permitted to board.\nPlease note that once you're seated on the plane, there will be a slight departure delay.\nThe baggage handlers for this flight need some extra time to finish loading luggage onto the plane.\nIf you need any assistance during your flight, I encourage you to approach the flight attendants.\nThey'll be happy to assist you.\nHave a great flight.",
+    "transcript": "Attention passengers taking flight JB2508 to San Francisco.\nPassengers are now permitted to board.\nPlease note that once you're seated on the plane, there will be a slight departure delay.\nThe baggage handlers for this flight need some extra time to finish loading luggage onto the plane.\nIf you need any assistance during your flight, I encourage you to approach the flight attendants.\nThey'll be happy to assist you.\nHave a great flight.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
       "method": "mlx-whisper/large-v3-turbo-4bit:full",
@@ -45,22 +45,57 @@
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-8-test-2/audio/part4/q095-097.mp3",
       "metrics": {
-        "word_count": 77,
+        "word_count": 73,
         "legacy_word_count": 97,
         "length_ratio": 0.794,
         "legacy_coverage": 0.845
-      }
+      },
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
-    "transcript_translation": "和机场出发大屏幕。\n请注意，乘坐飞往旧金山的 JB2508 航班的乘客。\n乘客现在可以登机了。\n请注意，一旦您坐在飞机上，将会出现轻微的延误。\n本次航班的行李处理人员需要额外时间才能将行李装到飞机上。\n如果您在飞行过程中需要任何帮助，我鼓励您接近空乘人员。\n他们会很乐意为您提供帮助。\n祝您旅途愉快。",
+    "transcript_translation": "请注意，乘坐飞往旧金山的 JB2508 航班的乘客。\n乘客现在可以登机了。\n请注意，一旦您坐在飞机上，将会出现轻微的延误。\n本次航班的行李处理人员需要额外时间才能将行李装到飞机上。\n如果您在飞行过程中需要任何帮助，我鼓励您接近空乘人员。\n他们会很乐意为您提供帮助。\n祝您旅途愉快。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
       "method": "ollama/gemma4:latest",
-      "transcript_sha256": "32cebb965efaa7e61452e3cda9d6ced20a516b97c0e887e0b051fb094cd081d6"
+      "transcript_sha256": "032fe4e696011626781cffe18e77a129f8045d9c331c7be88d9c7dd8a76bdbde",
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_intro_cleanup": {
+      "schema_version": "verified_listening_intro_cleanup_v1",
+      "audio_sha256": "f8f3133a4581b1fce05fe18b9e5ab0355cfc0685ff263e3b992a71303873632f",
+      "removed_english_prefix": "and airport departure board.",
+      "removed_chinese_prefix": "和机场出发大屏幕。",
+      "cache_field": "raw",
+      "raw_sha256": "e62099911425901a569874a2a2d56ff1eef4b8b6220d6815d430a540ff665bba",
+      "verified_introduction": "Questions 95 through 97 refer to the following announcement and airport departure board. ",
+      "before": {
+        "transcript": "and airport departure board.\nAttention passengers taking flight JB2508 to San Francisco.\nPassengers are now permitted to board.\nPlease note that once you're seated on the plane, there will be a slight departure delay.\nThe baggage handlers for this flight need some extra time to finish loading luggage onto the plane.\nIf you need any assistance during your flight, I encourage you to approach the flight attendants.\nThey'll be happy to assist you.\nHave a great flight.",
+        "transcript_translation": "和机场出发大屏幕。\n请注意，乘坐飞往旧金山的 JB2508 航班的乘客。\n乘客现在可以登机了。\n请注意，一旦您坐在飞机上，将会出现轻微的延误。\n本次航班的行李处理人员需要额外时间才能将行李装到飞机上。\n如果您在飞行过程中需要任何帮助，我鼓励您接近空乘人员。\n他们会很乐意为您提供帮助。\n祝您旅途愉快。",
+        "transcript_source": {
+          "schema_version": "listening_transcript_v2",
+          "method": "mlx-whisper/large-v3-turbo-4bit:full",
+          "audio_sha256": "f8f3133a4581b1fce05fe18b9e5ab0355cfc0685ff263e3b992a71303873632f",
+          "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+          "source_audio": "public/assets/official-8-test-2/audio/part4/q095-097.mp3",
+          "metrics": {
+            "word_count": 77,
+            "legacy_word_count": 97,
+            "length_ratio": 0.794,
+            "legacy_coverage": 0.845
+          }
+        },
+        "transcript_translation_source": {
+          "schema_version": "listening_translation_v2",
+          "method": "ollama/gemma4:latest",
+          "transcript_sha256": "32cebb965efaa7e61452e3cda9d6ced20a516b97c0e887e0b051fb094cd081d6"
+        }
+      },
+      "after_transcript_sha256": "032fe4e696011626781cffe18e77a129f8045d9c331c7be88d9c7dd8a76bdbde",
+      "after_translation_sha256": "a2cb0b0ce4591a3d998749391a7b646a4dede16f4f4e5d25c99b09562130d495"
     }
   },
   "items": [
@@ -112,7 +147,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-8-test-2/p4-95-97/95"
+      "item_key": "official-8-test-2/p4-95-97/95",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -162,7 +200,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-8-test-2/p4-95-97/96"
+      "item_key": "official-8-test-2/p4-95-97/96",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -174,7 +215,7 @@
       "answer": "D",
       "question": "What does the speaker encourage the listeners to do?",
       "answer_explain": "正确答案：D（Ask staff for assistance）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) encourage the listeners to do?",
+      "question_translation": "讲话者鼓励听众做什么？",
       "choice_translations": [
         "A:Fasten seat belts",
         "B:Look at a snack menu",
@@ -212,7 +253,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-8-test-2/p4-95-97/97"
+      "item_key": "official-8-test-2/p4-95-97/97",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "8913711e5009491027720e8c4fbb35f4b1c5ec718848c80e12dc8ccc3faa620f",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

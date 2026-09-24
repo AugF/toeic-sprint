@@ -41,30 +41,61 @@
       "asset_key": "official-1-test-1/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "I'm going to assign a section to each one of you.\nPlease go through your section and if you see anything that has to be corrected, please send me an email with the page number and your comments.\nI'll review all your suggestions and make a final draft.",
+    "transcript": "Hi, everyone.\nLet's begin the weekly call center staff meeting.\nFirst of all, I wanted to let you know that I've just hired two additional customer service representatives to help out on the phones.\nYes, I know that's not enough, but there isn't much I can do with our budget.\nAnyway, their first day is next Monday, but before they start it's important that we revise our training manual.\nI'm going to assign a section to each one of you.\nPlease go through your section, and if you see anything that has to be corrected, please send me an email with the page number and your comments.\nI'll review all your suggestions and make a final draft.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "d424c4946831df648a8951c98a000e8d275ec3a78d4e8e9306bc83f883f59053",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-1-test-1/audio/part4/q089-091.mp3",
       "metrics": {
-        "word_count": 48,
-        "legacy_word_count": 48,
-        "length_ratio": 1,
-        "legacy_coverage": 0.958
-      }
+        "word_count": 117,
+        "review_window_end_ms": 47601,
+        "audio_duration_ms": 47601,
+        "words_per_second": 2.458
+      },
+      "transcript_sha256": "6d2ee27c80b37b449d1b19fbb40fbb27008bd32566c2e2caadd2637df8e4f6c4"
     },
-    "transcript_translation": "我将给你们每人分配一个部分。\n请浏览一下你的部分，如果看到任何需要修改的地方，请给我发送一封包含页码和评论的电子邮件。\n我会审阅所有建议并完成最终草稿。",
+    "transcript_translation": "大家好。\n现在开始呼叫中心每周的员工会议。\n首先，我想告诉大家，我刚刚又聘用了两名客服代表，协助接听电话。\n是的，我知道这样还不够，但受预算限制，我能做的也不多。\n总之，他们将在下周一入职，不过在他们开始工作之前，我们必须修订培训手册。\n我会给你们每个人分配一个章节。\n请仔细检查自己负责的章节，如果发现任何需要修改的地方，请给我发一封电子邮件，注明页码和你的意见。\n我会审阅大家的全部建议，并完成定稿。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "10e5e91760f3703f5307dfe4a026176968934d2c4b99dd318a42db957d892c10"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "6d2ee27c80b37b449d1b19fbb40fbb27008bd32566c2e2caadd2637df8e4f6c4",
+      "translation_sha256": "f4b21428f04af2ae3aa7711514d856a0ec7c592442276f28467a0425acc554db"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "10e5e91760f3703f5307dfe4a026176968934d2c4b99dd318a42db957d892c10",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "previous_metrics": {
+        "word_count": 48,
+        "legacy_word_count": 48,
+        "length_ratio": 1,
+        "legacy_coverage": 0.958
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "6d2ee27c80b37b449d1b19fbb40fbb27008bd32566c2e2caadd2637df8e4f6c4",
+      "audio_sha256": "d424c4946831df648a8951c98a000e8d275ec3a78d4e8e9306bc83f883f59053",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 47601
+        }
+      ]
     }
   },
   "items": [
@@ -120,7 +151,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p4-89-91/89"
+      "item_key": "official-1-test-1/p4-89-91/89",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -174,7 +208,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p4-89-91/90"
+      "item_key": "official-1-test-1/p4-89-91/90",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -228,7 +265,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p4-89-91/91"
+      "item_key": "official-1-test-1/p4-89-91/91",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

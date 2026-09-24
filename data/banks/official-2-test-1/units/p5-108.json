@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "物业经理必须确保租户了解 ------- 租赁协议。\nA. 他们的\nB. 他们\nC. 他们的（所有格）\nD. 他们们"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -37,24 +35,21 @@
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“their”代入题干后为“The property manager must ensure that renters understand their rental agreement.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：A（their）。",
-      "question_translation": "物业经理必须确保租户了解 ------- 租赁协议。",
+      "answer_explain": "空格直接修饰名词短语 rental agreement，应使用形容词性物主代词 their，指租户们的协议，选 A。B they 是主格，通常作主语；C theirs 是名词性物主代词，不能再直接修饰 rental agreement；D them 是宾格，也不能表示这里需要的所属关系。",
+      "question_translation": "物业经理必须确保租户了解**他们的**租赁协议。",
       "choice_translations": [
-        "A：他们的",
-        "B：他们",
-        "C：他们的（所有格）",
-        "D：他们们"
+        "他们的（后接名词）",
+        "他们（主格）",
+        "他们的东西（名词性物主代词）",
+        "他们（宾格）"
       ],
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：The property manager must ensure that renters understand ------- rental agreement.",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题：代词形式",
+      "grammar_point": "形容词性物主代词 their + 名词；对应复数先行词 renters",
       "explanation_structured": {
         "answer": "A",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：The property manager must ensure that renters understand ------- rental agreement.",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“their”代入题干后为“The property manager must ensure that renters understand their rental agreement.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：A（their）。"
+        "question_type": "语法题：代词形式",
+        "grammar_point": "形容词性物主代词 their + 名词；对应复数先行词 renters",
+        "analysis": "空格直接修饰名词短语 rental agreement，应使用形容词性物主代词 their，指租户们的协议，选 A。B they 是主格，通常作主语；C theirs 是名词性物主代词，不能再直接修饰 rental agreement；D them 是宾格，也不能表示这里需要的所属关系。"
       },
       "item_id": 108,
       "priority": {
@@ -69,7 +64,32 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-1/p5-108/108"
+      "item_key": "official-2-test-1/p5-108/108",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "completed_sentence": "The property manager must ensure that renters understand their rental agreement.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "94e6356880ab830a8f54abfb9dadeb3ed724d9f53e8e1665ce5b3a6448227fa7"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "94e6356880ab830a8f54abfb9dadeb3ed724d9f53e8e1665ce5b3a6448227fa7"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "94e6356880ab830a8f54abfb9dadeb3ed724d9f53e8e1665ce5b3a6448227fa7"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "94e6356880ab830a8f54abfb9dadeb3ed724d9f53e8e1665ce5b3a6448227fa7",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "将蛋糕糊倒入烤盘中，如果面糊-------分布，请轻轻摇晃。\nA. unevenly\nB. undeniably\nC. unwillingly\nD. unknowingly"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "unknowingly"
       ],
       "answer": "A",
-      "question": "Pour the cake batter into the pan and shake this year gently if the batter is ------- distributed.",
+      "question": "Pour the cake batter into the pan and shake gently if the batter is ------- distributed.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“unevenly”代入题干后为“Pour the cake batter into the pan and shake this year gently if the batter is unevenly distributed.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：A（unevenly）。",
-      "question_type": "词性 / 词形题",
-      "evidence": "参考原文第 1 段：Pour the cake batter into the pan and shake this year gently if the batter is ------- distributed.",
-      "grammar_point": "词性 / 词形",
-      "strategy": "本题属于词性 / 词形题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "answer_explain": "unevenly distributed 表示分布不均，因此需要轻轻晃动烤盘使其均匀。undeniably 表示无可否认地，unwillingly 表示不情愿地，unknowingly 表示不知情地，都不符合面糊的分布状态。",
+      "question_type": "词汇题 · 副词词义",
+      "grammar_point": "unevenly distributed",
       "explanation_structured": {
         "answer": "A",
-        "question_type": "词性 / 词形题",
-        "evidence": "参考原文第 1 段：Pour the cake batter into the pan and shake this year gently if the batter is ------- distributed.",
-        "strategy": "本题属于词性 / 词形题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“unevenly”代入题干后为“Pour the cake batter into the pan and shake this year gently if the batter is unevenly distributed.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：A（unevenly）。"
+        "question_type": "词汇题 · 副词词义",
+        "grammar_point": "unevenly distributed",
+        "analysis": "unevenly distributed 表示分布不均，因此需要轻轻晃动烤盘使其均匀。undeniably 表示无可否认地，unwillingly 表示不情愿地，unknowingly 表示不知情地，都不符合面糊的分布状态。"
       },
-      "question_translation": "Pour the cake batter into the pan and shake this year gently if the batter is ------- distributed.",
+      "question_translation": "将蛋糕面糊倒入烤盘，如果面糊分布**不均匀**，就轻轻晃动烤盘。",
       "choice_translations": [
-        "A：unevenly",
-        "B：undeniably",
-        "C：unwillingly",
-        "D：unknowingly"
+        "不均匀地",
+        "无可否认地",
+        "不情愿地",
+        "不知情地"
       ],
       "item_id": 128,
       "priority": {
@@ -69,7 +64,71 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p5-128/128"
+      "item_key": "official-1-test-1/p5-128/128",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Pour the cake batter into the pan and shake this year gently if the batter is ------- distributed.",
+        "original_choices": [
+          "unevenly",
+          "undeniably",
+          "unwillingly",
+          "unknowingly"
+        ],
+        "text_sha256": "1a13835149c9474909b2c15c4a16ae87cd3699710fab646a44f3f55598383a98",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "original_images_verified": false,
+          "notes": "Removes neighboring left-column fragment 'this year'.",
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+              "location": "Question 128, page 3",
+              "kind": "retypeset_practice_pdf",
+              "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+            },
+            {
+              "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+              "location": "Question 128, page 104",
+              "kind": "retypeset_practice_text",
+              "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+            },
+            {
+              "url": "https://fr.gauthmath.com/solution/1832818841823266/122-employees-affected-by-changes-to-127-Programmers-at-Ulrich-Ahn-Company-are-L",
+              "location": "Question 128",
+              "kind": "indexed_ocr_of_apparent_two_column_scan",
+              "verification": "Indexed text has paired two-column layout 122/127,123/128,124/129,125/130,126. Actual question image NOT downloaded or visually verified. A downloaded link was avatar-only and must not be used as source image."
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Pour the cake batter into the pan and shake gently if the batter is unevenly distributed.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "38cb109be3ed2b1c54d0aa1e0df26ed09bf52c4c122335493b203f017bd2384f"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "38cb109be3ed2b1c54d0aa1e0df26ed09bf52c4c122335493b203f017bd2384f"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "38cb109be3ed2b1c54d0aa1e0df26ed09bf52c4c122335493b203f017bd2384f"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "38cb109be3ed2b1c54d0aa1e0df26ed09bf52c4c122335493b203f017bd2384f",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

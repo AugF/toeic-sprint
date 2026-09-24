@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "为了妥善维护 Cheerbrew 电热水壶 11，每次使用后用 ------- 的海绵擦拭。\nA. 潮湿的\nB. 使潮湿的\nC. 潮湿地\nD. 使潮湿"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "moisten"
       ],
       "answer": "A",
-      "question": "To maintain the Cheerbrew coffeemaker 11 properly, wipe it with a ------- sponge after each use.",
+      "question": "To maintain the Cheerbrew coffeemaker properly, wipe it with a ------- sponge after each use.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“moist”代入题干后为“To maintain the Cheerbrew coffeemaker 11 properly, wipe it with a moist sponge after each use.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：A（moist）。",
-      "question_translation": "为了妥善维护 Cheerbrew 电热水壶 11，每次使用后用 ------- 的海绵擦拭。",
+      "answer_explain": "空格位于 a 和名词 sponge 之间，需要形容词说明海绵的状态，因此选 A moist。B moistens 是动词第三人称单数；C moistly 是副词；D moisten 是动词原形，均不能在此直接修饰 sponge。moist 与 moisten 分别表示湿润的和使湿润，要区分形容词与动词。",
+      "question_translation": "为了正确保养 Cheerbrew 咖啡机，每次使用后请用**湿润的**海绵擦拭。",
       "choice_translations": [
-        "A：潮湿的",
-        "B：使潮湿的",
-        "C：潮湿地",
-        "D：使潮湿"
+        "湿润的；微湿的",
+        "使湿润（第三人称单数）",
+        "湿润地（副词）",
+        "使湿润；弄湿（动词）"
       ],
-      "question_type": "动词形式题",
-      "evidence": "参考原文第 1 段：To maintain the Cheerbrew coffeemaker 11 properly, wipe it with a ------- sponge after each use.",
-      "grammar_point": "动词形式",
-      "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题：形容词词形",
+      "grammar_point": "形容词 moist 修饰名词 sponge",
       "explanation_structured": {
         "answer": "A",
-        "question_type": "动词形式题",
-        "evidence": "参考原文第 1 段：To maintain the Cheerbrew coffeemaker 11 properly, wipe it with a ------- sponge after each use.",
-        "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“moist”代入题干后为“To maintain the Cheerbrew coffeemaker 11 properly, wipe it with a moist sponge after each use.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：A（moist）。"
+        "question_type": "语法题：形容词词形",
+        "grammar_point": "形容词 moist 修饰名词 sponge",
+        "analysis": "空格位于 a 和名词 sponge 之间，需要形容词说明海绵的状态，因此选 A moist。B moistens 是动词第三人称单数；C moistly 是副词；D moisten 是动词原形，均不能在此直接修饰 sponge。moist 与 moisten 分别表示湿润的和使湿润，要区分形容词与动词。"
       },
       "item_id": 112,
       "priority": {
@@ -69,7 +64,49 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-1/p5-112/112"
+      "item_key": "official-2-test-1/p5-112/112",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "original_question": "To maintain the Cheerbrew coffeemaker 11 properly, wipe it with a ------- sponge after each use.",
+        "original_choices": [
+          "moist",
+          "moistens",
+          "moistly",
+          "moisten"
+        ],
+        "correction": {
+          "method": "reviewed_stray_number_removal",
+          "removed_number": "11",
+          "reason": "coffeemaker 与修饰 maintain 的 properly 之间混入孤立数字 11。"
+        },
+        "text_sha256": "d8068b0017fd6aaea6691b41bb891aa03375bc6d8774e7f86b61c43fd69d73f1",
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "content_review_status": "text_corrected_by_review",
+      "completed_sentence": "To maintain the Cheerbrew coffeemaker properly, wipe it with a moist sponge after each use.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "ab3f0889d49314d6b7188b3b5bd57da6b808ca27ad0868539e8a32b2819a5c34"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "ab3f0889d49314d6b7188b3b5bd57da6b808ca27ad0868539e8a32b2819a5c34"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "ab3f0889d49314d6b7188b3b5bd57da6b808ca27ad0868539e8a32b2819a5c34"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "ab3f0889d49314d6b7188b3b5bd57da6b808ca27ad0868539e8a32b2819a5c34",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

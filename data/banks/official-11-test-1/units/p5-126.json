@@ -36,9 +36,7 @@
     "unit_id": "part5-126",
     "model": "toeic_priority_v1"
   },
-  "context": {
-    "content_translation": "本文围绕“代词”展开。阅读时先确认文体与写作目的，再定位题干关键词所在句。"
-  },
+  "context": {},
   "items": [
     {
       "question": "Two prototypes of Viesso's mountain bike underwent user testing, and ---- were found to perform exceptionally well.",
@@ -52,25 +50,22 @@
       "difficulty": "medium",
       "topic": "代词",
       "keywords": "both prototypes pronoun",
-      "answer_explain": "原文依据：前文明确是 Two prototypes，后文概括两者表现都好。 选择理由：both指代两件事物，D正确。正确答案：D（both）。",
+      "answer_explain": "前文明确是 Two prototypes，and 后需要新分句的主语，both 指这两个原型车，且与 were 一致。less 表较少，whose 表所属，which 通常引导关系从句或疑问结构，不能在此与 and 一起构成所需的独立并列分句。",
       "question_type": "语法题",
-      "evidence": "参考原文第 1 段第 1 句：Two prototypes of Viesso's mountain bike underwent user testing, and ---- were found to perform exceptionally well.",
       "choice_translations": [
-        "A：较少；较小",
-        "B：谁的；其（关系代词）",
-        "C：哪一个；……的那个（疑问或关系代词）",
-        "D：两者都"
+        "更少；较少",
+        "谁的；其……的",
+        "哪一个；……的（关系代词）",
+        "两者都"
       ],
-      "strategy": "本题属于语法题。先判断空格在句中的成分，再检查词性、主谓一致、时态语态、固定搭配和句意。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "语法题",
-        "evidence": "参考原文第 1 段第 1 句：Two prototypes of Viesso's mountain bike underwent user testing, and ---- were found to perform exceptionally well.",
-        "strategy": "本题属于语法题。先判断空格在句中的成分，再检查词性、主谓一致、时态语态、固定搭配和句意。",
-        "analysis": "原文依据：前文明确是 Two prototypes，后文概括两者表现都好。 选择理由：both指代两件事物，D正确。正确答案：D（both）。"
+        "grammar_point": "代词 both 指代前文两个对象，作复数主语",
+        "analysis": "前文明确是 Two prototypes，and 后需要新分句的主语，both 指这两个原型车，且与 were 一致。less 表较少，whose 表所属，which 通常引导关系从句或疑问结构，不能在此与 and 一起构成所需的独立并列分句。"
       },
-      "question_translation": "Viesso 的两款山地自行车原型接受了用户测试，结果发现 ---- 的性能都格外出色。",
-      "grammar_point": "不定代词：both 指代前面的 two prototypes，并在 and 后面的分句中作主语，表示“两者都”。",
+      "question_translation": "Viesso 的两辆山地自行车原型车接受了用户测试，结果发现**两辆都**表现出色。",
+      "grammar_point": "代词 both 指代前文两个对象，作复数主语",
       "item_id": 126,
       "priority": {
         "level": "P2",
@@ -99,7 +94,32 @@
         "unit_id": "part5-126",
         "model": "toeic_priority_v1"
       },
-      "item_key": "official-11-test-1/p5-126/126"
+      "item_key": "official-11-test-1/p5-126/126",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "choice_translations": "ready",
+        "analysis": "ready"
+      },
+      "completed_sentence": "Two prototypes of Viesso's mountain bike underwent user testing, and both were found to perform exceptionally well.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "fb7ceb625d43199840e47bd223aeeebe1d8525cd04d2399020b7629e35d03f69"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "fb7ceb625d43199840e47bd223aeeebe1d8525cd04d2399020b7629e35d03f69"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "fb7ceb625d43199840e47bd223aeeebe1d8525cd04d2399020b7629e35d03f69"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "fb7ceb625d43199840e47bd223aeeebe1d8525cd04d2399020b7629e35d03f69",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

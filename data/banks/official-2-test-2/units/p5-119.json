@@ -21,40 +21,35 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "下周二，Leffert’s Market 将比平时早关门两个小时。=\nA. than mi)\nB. but et\nC. above ho\nD. when"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
-        "than mi)",
-        "but et",
-        "above ho",
+        "than",
+        "but",
+        "above",
         "when"
       ],
       "answer": "A",
-      "question": "Leffert’s Market will close two hours earlier ------- usual next Tuesday. =",
+      "question": "Leffert’s Market will close two hours earlier ------- usual next Tuesday.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“than mi)”代入题干后为“Leffert’s Market will close two hours earlier than mi) usual next Tuesday. =”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：A（than mi)）。",
-      "question_translation": "下周二，Leffert’s Market 将比平时早关门两个小时。 =",
+      "answer_explain": "earlier 是比较级，后接 than 引出比较对象 usual，earlier than usual 意为比平时更早。but、above、when 都不能引出该比较结构。",
+      "question_translation": "Leffert's市场下周二将**比**平时提前两小时关门。",
       "choice_translations": [
-        "A：than mi)",
-        "B：but et",
-        "C：above ho",
-        "D：when"
+        "比",
+        "但是",
+        "在……上方",
+        "当……时"
       ],
-      "question_type": "动词形式题",
-      "evidence": "参考原文第 1 段：Leffert’s Market will close two hours earlier ------- usual next Tuesday. =",
-      "grammar_point": "动词形式",
-      "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题 · 比较级",
+      "grammar_point": "earlier than usual 比较结构",
       "explanation_structured": {
         "answer": "A",
-        "question_type": "动词形式题",
-        "evidence": "参考原文第 1 段：Leffert’s Market will close two hours earlier ------- usual next Tuesday. =",
-        "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“than mi)”代入题干后为“Leffert’s Market will close two hours earlier than mi) usual next Tuesday. =”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：A（than mi)）。"
+        "question_type": "语法题 · 比较级",
+        "grammar_point": "earlier than usual 比较结构",
+        "analysis": "earlier 是比较级，后接 than 引出比较对象 usual，earlier than usual 意为比平时更早。but、above、when 都不能引出该比较结构。"
       },
       "item_id": 119,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p5-119/119"
+      "item_key": "official-2-test-2/p5-119/119",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Leffert’s Market will close two hours earlier ------- usual next Tuesday. =",
+        "original_choices": [
+          "than mi)",
+          "but et",
+          "above ho",
+          "when"
+        ],
+        "text_sha256": "d96dfe4ab2f0b5b1983a2b6eca0840751c0f8d7362d588b2228c24fb234023f1",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/f22050b9-cffa-4cc7-b4ef-196525d1abf4.pdf",
+              "location": "Part 5 question 119; text and four choices"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/d6e91bec-d88d-4f8f-9569-8402b8357ead.pdf",
+              "location": "Part 5 question 119; cross-reference, preserve Aeronamic in Q125 rather than Aerodynamic variant"
+            }
+          ],
+          "notes": "Question number, sentence span, blank location, original choice order and unchanged answer reviewed together. Reference text is not represented as an original image. Preserve local spelling unless the correction is supported."
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Leffert’s Market will close two hours earlier than usual next Tuesday.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "dc83353d9a7d9ed782804b693a68d43256e4ba2076bc3ce22e2263b744ad1165"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "dc83353d9a7d9ed782804b693a68d43256e4ba2076bc3ce22e2263b744ad1165"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "dc83353d9a7d9ed782804b693a68d43256e4ba2076bc3ce22e2263b744ad1165"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "dc83353d9a7d9ed782804b693a68d43256e4ba2076bc3ce22e2263b744ad1165",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

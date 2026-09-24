@@ -37,31 +37,62 @@
       "asset_key": "official-6-test-2/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "and today you will learn how to use this database to classify and sort these images.\nSince we're often dealing with thousands of files at a time, we have a strict classification system.\nRight now, you'll each be partnered with an experienced employee who will work with you to show you how to use the system.",
+    "transcript": "Welcome to your first day of training.\nAs you know, our company specializes in commercial photography.\nWe provide high-quality photographs that retailers can use in their advertisements.\nEach image we take is uploaded to our database, and today you will learn how to use this database to classify and sort these images.\nSince we're often dealing with thousands of files at a time, we have a strict classification system.\nRight now, you'll each be partnered with an experienced employee who will work with you to show you how to use the system.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "d02bd126885de7cd4cc7ab34334fd6bb0276472e302491d4d1a7e5b0ed9c1f1d",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-6-test-2/audio/part4/q089-091.mp3",
       "metrics": {
-        "word_count": 56,
-        "legacy_word_count": 92,
-        "length_ratio": 0.609,
-        "legacy_coverage": 0.707,
-        "prompted_failure": "Part 4 contains navigation, OCR characters or repetition"
-      }
+        "word_count": 92,
+        "review_window_end_ms": 42162,
+        "audio_duration_ms": 42162,
+        "words_per_second": 2.182
+      },
+      "transcript_sha256": "62a44148f4b6bda439d27a688c570bb337bbbb9afb888a19beb1756b041b34a1"
     },
-    "transcript_translation": "今天您将学习如何使用这个数据库来分类和排序这些图片。\n由于我们经常一次处理数千个文件，因此我们有一个严格的分类系统。\n现在，每位学员都将与一位经验丰富的员工配对，他会指导您如何使用该系统。",
+    "transcript_translation": "欢迎参加第一天的培训。\n大家知道，我们公司专门从事商业摄影。\n我们提供高质量照片，供零售商用于广告宣传。\n我们拍摄的每张照片都会上传到数据库，今天大家将学习如何使用这个数据库对照片进行分类和整理。\n由于我们经常需要同时处理数千个文件，因此有一套严格的分类制度。\n接下来，每个人都会与一位经验丰富的员工结对，由这位员工带着你们操作，演示如何使用这套系统。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "131f634a98ffb503e606a0fa36254d38c48f13fc85e9b836ec64d15c85c7eddb"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "62a44148f4b6bda439d27a688c570bb337bbbb9afb888a19beb1756b041b34a1",
+      "translation_sha256": "61288d274054f329fd61dcf0d10efce0df04ad36130268654531d6a1c09fc962"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "131f634a98ffb503e606a0fa36254d38c48f13fc85e9b836ec64d15c85c7eddb",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 56,
+        "legacy_word_count": 92,
+        "length_ratio": 0.609,
+        "legacy_coverage": 0.707,
+        "prompted_failure": "Part 4 contains navigation, OCR characters or repetition"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "62a44148f4b6bda439d27a688c570bb337bbbb9afb888a19beb1756b041b34a1",
+      "audio_sha256": "d02bd126885de7cd4cc7ab34334fd6bb0276472e302491d4d1a7e5b0ed9c1f1d",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 42162
+        }
+      ]
     }
   },
   "items": [
@@ -113,7 +144,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-2/p4-89-91/89"
+      "item_key": "official-6-test-2/p4-89-91/89",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -163,7 +197,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-2/p4-89-91/90"
+      "item_key": "official-6-test-2/p4-89-91/90",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -175,7 +212,7 @@
       "answer": "B",
       "question": "What will the listeners do next?",
       "answer_explain": "正确答案：B（Work with a colleague）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):What(什么) will the listeners do next?",
+      "question_translation": "听众接下来会做什么？",
       "choice_translations": [
         "A:Watch an instructional video",
         "B:Work(工作) with a colleague",
@@ -213,7 +250,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-2/p4-89-91/91"
+      "item_key": "official-6-test-2/p4-89-91/91",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "9ee88c3c984b09327676a1404441343cfe7dca45fc8c74e3ce1fb495ab9f4d27",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

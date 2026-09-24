@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "the Chiba office nor the Nagoya of is hiring.\nA. Both\nB. But\nC. Either\nD. Neither"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "Neither"
       ],
       "answer": "D",
-      "question": "the Chiba office nor the Nagoya of is hiring.",
+      "question": "------- the Chiba office nor the Nagoya office is hiring.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“Neither”代入题干后为“the Chiba office nor the Nagoya of is hiring. [Neither]”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：D（Neither）。",
-      "question_translation": "the Chiba office nor the Nagoya of is hiring.",
+      "answer_explain": "句中已经有 nor，因此空格应填 Neither，组成 neither the Chiba office nor the Nagoya office，表示两处都不招聘。A Both 要与 and 配对；C Either 要与 or 配对；B But 表示转折，不能构成该关联结构。靠近谓语的 the Nagoya office 是单数，与 is 一致。",
+      "question_translation": "千叶办公室和名古屋办公室**均不**招聘。",
       "choice_translations": [
-        "A：Both",
-        "B：But",
-        "C：Either",
-        "D：Neither"
+        "两者都",
+        "但是",
+        "两者中的任一个；或者",
+        "两者都不"
       ],
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：the Chiba office nor the Nagoya of is hiring.",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题：关联连词",
+      "grammar_point": "neither A nor B 表示 A 和 B 都不；就近单数名词对应 is",
       "explanation_structured": {
         "answer": "D",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：the Chiba office nor the Nagoya of is hiring.",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“Neither”代入题干后为“the Chiba office nor the Nagoya of is hiring. [Neither]”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：D（Neither）。"
+        "question_type": "语法题：关联连词",
+        "grammar_point": "neither A nor B 表示 A 和 B 都不；就近单数名词对应 is",
+        "analysis": "句中已经有 nor，因此空格应填 Neither，组成 neither the Chiba office nor the Nagoya office，表示两处都不招聘。A Both 要与 and 配对；C Either 要与 or 配对；B But 表示转折，不能构成该关联结构。靠近谓语的 the Nagoya office 是单数，与 is 一致。"
       },
       "item_id": 101,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p5-101/101"
+      "item_key": "official-1-test-2/p5-101/101",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "the Chiba office nor the Nagoya of is hiring.",
+        "original_choices": [
+          "Both",
+          "But",
+          "Either",
+          "Neither"
+        ],
+        "text_sha256": "bb842e4276fd641894be89041372bf33a8a3d4b164ecb28f10edf9733725b72e",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "reason": "对应题文本确认句首空格及第二个 office，原选项与 HTML 四项相同。",
+          "sources": [
+            {
+              "url": "https://pdfcoffee.com/1000-cau-giai-de-toeic-format-moi-2019-pdf-free.html",
+              "location": "第 541 题，题干及 A–D 选项"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/b1a3c62e-d07c-459a-8a65-d796a13aa648.pdf",
+              "location": "第 1 页第 101 题，题干；教师注释不并入选项"
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Neither the Chiba office nor the Nagoya office is hiring.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "46fb679fbb5f69a656193c849519c0442a1fa58b13dce0e9ec3f4dccb3f6dae0"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "46fb679fbb5f69a656193c849519c0442a1fa58b13dce0e9ec3f4dccb3f6dae0"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "46fb679fbb5f69a656193c849519c0442a1fa58b13dce0e9ec3f4dccb3f6dae0"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "46fb679fbb5f69a656193c849519c0442a1fa58b13dce0e9ec3f4dccb3f6dae0",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

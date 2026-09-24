@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "Bilto miniature model planes contain 116. hundreds of small parts and must be assembled with -------.\nA. contact\nB. level\nC. care\nD. amount"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "amount"
       ],
       "answer": "C",
-      "question": "Bilto miniature model planes contain 116. hundreds of small parts and must be assembled with -------.",
+      "question": "Bilto miniature model planes contain hundreds of small parts and must be assembled with -------.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“care”代入题干后为“Bilto miniature model planes contain 116. hundreds of small parts and must be assembled with care.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（care）。",
-      "question_translation": "Bilto miniature model planes contain 116. hundreds of small parts and must be assembled with -------.",
+      "answer_explain": "模型包含数百个小零件，需要仔细组装，with care 表示小心地，因此选 C。A contact 表联系或接触；B level 表水平或级别；D amount 表数量，均不能与 with 组成符合这里组装方式的表达。",
+      "question_translation": "Bilto 微型飞机模型包含数百个小零件，必须**小心地**组装。",
       "choice_translations": [
-        "A：contact",
-        "B：level",
-        "C：care",
-        "D：amount"
+        "联系；接触",
+        "水平；等级",
+        "小心；谨慎；照料",
+        "数量；总额"
       ],
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：Bilto miniature model planes contain 116. hundreds of small parts and must be assembled with -------.",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "词汇题：固定搭配",
+      "grammar_point": "with care 表示小心地、谨慎地，介词短语作方式状语",
       "explanation_structured": {
         "answer": "C",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：Bilto miniature model planes contain 116. hundreds of small parts and must be assembled with -------.",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“care”代入题干后为“Bilto miniature model planes contain 116. hundreds of small parts and must be assembled with care.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（care）。"
+        "question_type": "词汇题：固定搭配",
+        "grammar_point": "with care 表示小心地、谨慎地，介词短语作方式状语",
+        "analysis": "模型包含数百个小零件，需要仔细组装，with care 表示小心地，因此选 C。A contact 表联系或接触；B level 表水平或级别；D amount 表数量，均不能与 with 组成符合这里组装方式的表达。"
       },
       "item_id": 109,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p5-109/109"
+      "item_key": "official-1-test-2/p5-109/109",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Bilto miniature model planes contain 116. hundreds of small parts and must be assembled with -------.",
+        "original_choices": [
+          "contact",
+          "level",
+          "care",
+          "amount"
+        ],
+        "text_sha256": "3bec494770662444a5731fd7d4be66325ee9fb0445b9d1552ed6f82d0c8e49a5",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "reason": "两源确认 contain 后直接接 hundreds，移除邻题号 116.，其余单词与选项保持一致。",
+          "sources": [
+            {
+              "url": "https://pdfcoffee.com/1000-cau-giai-de-toeic-format-moi-2019-pdf-free.html",
+              "location": "第 549 题，题干及 A–D 选项"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/b1a3c62e-d07c-459a-8a65-d796a13aa648.pdf",
+              "location": "第 2 页第 109 题，去除教师插入的中文注释后核对"
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Bilto miniature model planes contain hundreds of small parts and must be assembled with care.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "2ac901a16e3a972b65826f25e236ca126c0b342127a3627747fcae0e68f7d63b"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "2ac901a16e3a972b65826f25e236ca126c0b342127a3627747fcae0e68f7d63b"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "2ac901a16e3a972b65826f25e236ca126c0b342127a3627747fcae0e68f7d63b"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "2ac901a16e3a972b65826f25e236ca126c0b342127a3627747fcae0e68f7d63b",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

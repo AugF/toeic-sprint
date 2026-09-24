@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "明天的课程将培训参与者如何准备过境货物容器。\nA. 什么\nB. 如何\nC. 那\nD. 然后"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "then"
       ],
       "answer": "B",
-      "question": "Tomorrow's session will train participants 12 on ------- to prepare containers for overseas shipments.",
+      "question": "Tomorrow's session will train participants on ------- to prepare containers for overseas shipments.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“how”代入题干后为“Tomorrow's session will train participants 12 on how to prepare containers for overseas shipments.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：B（how）。",
-      "question_translation": "明天的课程将培训参与者如何准备过境货物容器。",
+      "answer_explain": "培训内容是准备集装箱的方法，因此用 how to prepare containers，选 B。A what to prepare 表示准备什么，但 prepare 后已经有宾语 containers，不能再由 what 充当这一宾语；C that 不能构成 that to prepare 结构；D then 是时间副词，不能引出 on 后所需的培训内容。",
+      "question_translation": "明天的培训课将教参与者**如何**为海外运输准备集装箱。",
       "choice_translations": [
-        "A：什么",
-        "B：如何",
-        "C：那",
-        "D：然后"
+        "什么",
+        "如何；怎样",
+        "那；那个；引导从句时可不单独翻译",
+        "然后；当时"
       ],
-      "question_type": "动词形式题",
-      "evidence": "参考原文第 1 段：Tomorrow's session will train participants 12 on ------- to prepare containers for overseas shipments.",
-      "grammar_point": "动词形式",
-      "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题：疑问词与不定式",
+      "grammar_point": "how + to do，表示做某事的方法；on 后接疑问词不定式结构",
       "explanation_structured": {
         "answer": "B",
-        "question_type": "动词形式题",
-        "evidence": "参考原文第 1 段：Tomorrow's session will train participants 12 on ------- to prepare containers for overseas shipments.",
-        "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“how”代入题干后为“Tomorrow's session will train participants 12 on how to prepare containers for overseas shipments.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：B（how）。"
+        "question_type": "语法题：疑问词与不定式",
+        "grammar_point": "how + to do，表示做某事的方法；on 后接疑问词不定式结构",
+        "analysis": "培训内容是准备集装箱的方法，因此用 how to prepare containers，选 B。A what to prepare 表示准备什么，但 prepare 后已经有宾语 containers，不能再由 what 充当这一宾语；C that 不能构成 that to prepare 结构；D then 是时间副词，不能引出 on 后所需的培训内容。"
       },
       "item_id": 114,
       "priority": {
@@ -69,7 +64,49 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-1/p5-114/114"
+      "item_key": "official-2-test-1/p5-114/114",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "original_question": "Tomorrow's session will train participants 12 on ------- to prepare containers for overseas shipments.",
+        "original_choices": [
+          "what",
+          "how",
+          "that",
+          "then"
+        ],
+        "correction": {
+          "method": "reviewed_stray_number_removal",
+          "removed_number": "12",
+          "reason": "participants 与介词 on 之间混入孤立数字 12。"
+        },
+        "text_sha256": "ed45d1cc06e143f45b5621003c9c94a15f06f043858091c4212bdacecfdb7f61",
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "content_review_status": "text_corrected_by_review",
+      "completed_sentence": "Tomorrow's session will train participants on how to prepare containers for overseas shipments.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "6305d61b91d666dd2f1a662ab3e547c369a77ffe9778e390b57f0586085939e6"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "6305d61b91d666dd2f1a662ab3e547c369a77ffe9778e390b57f0586085939e6"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "6305d61b91d666dd2f1a662ab3e547c369a77ffe9778e390b57f0586085939e6"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "6305d61b91d666dd2f1a662ab3e547c369a77ffe9778e390b57f0586085939e6",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

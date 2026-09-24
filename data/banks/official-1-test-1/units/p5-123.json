@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "高级人力资源人员需要-------至少参加两次培训活动，才有资格获得奖金。\nA. have hosted\nB. be hosted\nC. have been hosted\nD. hosting"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "hosting"
       ],
       "answer": "A",
-      "question": "Senior human resources personnel nee ------- at least two training events this ye to be eligible for a bonus.",
+      "question": "Senior human resources personnel need to ------- at least two training events this year to be eligible for a bonus.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“have hosted”代入题干后为“Senior human resources personnel nee have hosted at least two training events this ye to be eligible for a bonus.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：A（have hosted）。",
-      "question_type": "动词形式题",
-      "evidence": "参考原文第 1 段：Senior human resources personnel nee ------- at least two training events this ye to be eligible for a bonus.",
-      "grammar_point": "动词形式",
-      "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "answer_explain": "need to 后接动词原形；have hosted 构成完成式不定式 need to have hosted，表示申请奖金资格时应已完成主持培训的要求。人员是主持者，因此不用 be hosted 或 have been hosted 的被动形式；hosting 不能直接接在此处的 to 后。",
+      "question_type": "语法题 · 完成式不定式",
+      "grammar_point": "need to have done",
       "explanation_structured": {
         "answer": "A",
-        "question_type": "动词形式题",
-        "evidence": "参考原文第 1 段：Senior human resources personnel nee ------- at least two training events this ye to be eligible for a bonus.",
-        "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“have hosted”代入题干后为“Senior human resources personnel nee have hosted at least two training events this ye to be eligible for a bonus.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：A（have hosted）。"
+        "question_type": "语法题 · 完成式不定式",
+        "grammar_point": "need to have done",
+        "analysis": "need to 后接动词原形；have hosted 构成完成式不定式 need to have hosted，表示申请奖金资格时应已完成主持培训的要求。人员是主持者，因此不用 be hosted 或 have been hosted 的被动形式；hosting 不能直接接在此处的 to 后。"
       },
-      "question_translation": "Senior human resources personnel nee ------- at least two training events this ye to be eligible for a bonus.",
+      "question_translation": "高级人力资源人员今年需要**已经主持过**至少两次培训活动，才有资格获得奖金。",
       "choice_translations": [
-        "A：have hosted",
-        "B：be hosted",
-        "C：have been hosted",
-        "D：hosting"
+        "已主持过（完成式主动）",
+        "被主持（被动）",
+        "已被主持过（完成式被动）",
+        "主持（动名词或现在分词）"
       ],
       "item_id": 123,
       "priority": {
@@ -69,7 +64,71 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p5-123/123"
+      "item_key": "official-1-test-1/p5-123/123",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Senior human resources personnel nee ------- at least two training events this ye to be eligible for a bonus.",
+        "original_choices": [
+          "have hosted",
+          "be hosted",
+          "have been hosted",
+          "hosting"
+        ],
+        "text_sha256": "eae6a5307fe99b43669848526e0a822f7ce6567afbaa672769a818d2dacf7401",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "original_images_verified": false,
+          "notes": "Restores 'need to' and 'year'; neighboring q128 contains stray 'this year', agreeing with cross-column corruption.",
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+              "location": "Question 123, page 3",
+              "kind": "retypeset_practice_pdf",
+              "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+            },
+            {
+              "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+              "location": "Question 123, page 104",
+              "kind": "retypeset_practice_text",
+              "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+            },
+            {
+              "url": "https://fr.gauthmath.com/solution/1832818841823266/122-employees-affected-by-changes-to-127-Programmers-at-Ulrich-Ahn-Company-are-L",
+              "location": "Question 123",
+              "kind": "indexed_ocr_of_apparent_two_column_scan",
+              "verification": "Indexed text has paired two-column layout 122/127,123/128,124/129,125/130,126. Actual question image NOT downloaded or visually verified. A downloaded link was avatar-only and must not be used as source image."
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Senior human resources personnel need to have hosted at least two training events this year to be eligible for a bonus.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "caa2ccb08e165d4bcb640074ef14719d9728fa1297c79514e3728db7cf3225e4"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "caa2ccb08e165d4bcb640074ef14719d9728fa1297c79514e3728db7cf3225e4"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "caa2ccb08e165d4bcb640074ef14719d9728fa1297c79514e3728db7cf3225e4"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "caa2ccb08e165d4bcb640074ef14719d9728fa1297c79514e3728db7cf3225e4",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

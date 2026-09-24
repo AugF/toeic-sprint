@@ -39,31 +39,58 @@
       "asset_key": "official-6-test-1/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "with this group membership anyone in your family can earn points and use them for discounts on future purchases at Lenners the first 100 customers to register will receive a free coffee mug so sign up and receive your mug at our customer service desk today",
+    "transcript": "Attention Lenners Supermarket shoppers.\nAre you a member of our Loyal Shopper Rewards Program?\nThen you know that this program allows you to earn reward points on every purchase you make.\nWe're now offering a group membership that you and your family can share.\nWith this group membership, anyone in your family can earn points and use them for discounts on future purchases at Lenners.\nThe first 100 customers to register will receive a free coffee mug.\nSo sign up and receive your mug at our customer service desk today.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "b2e531d497ab236386e48b1293acf9e4a25ee529de22543db94d65a355cad944",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-6-test-1/audio/part4/q086-088.mp3",
       "metrics": {
-        "word_count": 45,
-        "legacy_word_count": 88,
-        "length_ratio": 0.511,
-        "legacy_coverage": 0.659,
-        "prompted_failure": "audio transcript appears truncated (ratio=0.27, coverage=0.38)"
-      }
+        "word_count": 89,
+        "review_window_end_ms": 39158,
+        "audio_duration_ms": 39158,
+        "words_per_second": 2.273
+      },
+      "transcript_sha256": "ff6f47bbcb59c0a121a71bfd84ecd3d5f26640bfecc4fc34d2d832e18e50b69d"
     },
-    "transcript_translation": "通过加入本团体，您家中的任何人都可赚取积分，并在未来在 Lenners 购买时用于折扣。前 100 位注册的顾客将获得一个免费咖啡马克杯，所以请今天到我们的客户服务台注册并领取您的马克杯。",
+    "transcript_translation": "Lenners 超市的顾客请注意。\n您是我们忠实顾客奖励计划的会员吗？\n那么您应该知道，参加这个计划后，每次购物都能赚取奖励积分。\n现在，我们推出了可供您和家人共同使用的团体会员资格。\n通过这种团体会员资格，您的任何一位家庭成员都可以积累积分，并用这些积分抵扣今后在 Lenners 的购物费用。\n前 100 名注册的顾客将免费获得一个咖啡杯。\n今天就到我们的客服台注册并领取您的杯子吧。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "5c8a0bc81729ffe878d60a56b74b275d82244dbce8339efd959ac3696a67be7c"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "ff6f47bbcb59c0a121a71bfd84ecd3d5f26640bfecc4fc34d2d832e18e50b69d",
+      "translation_sha256": "934ce17afcf997ed867768cdefb36d2cfb99d11e0cbae0e2bb5c4f92aeeb6a5b"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "5c8a0bc81729ffe878d60a56b74b275d82244dbce8339efd959ac3696a67be7c",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 45,
+        "legacy_word_count": 88,
+        "length_ratio": 0.511,
+        "legacy_coverage": 0.659,
+        "prompted_failure": "audio transcript appears truncated (ratio=0.27, coverage=0.38)"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "ff6f47bbcb59c0a121a71bfd84ecd3d5f26640bfecc4fc34d2d832e18e50b69d",
+      "audio_sha256": "b2e531d497ab236386e48b1293acf9e4a25ee529de22543db94d65a355cad944",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 39158
+        }
+      ]
     }
   },
   "items": [
@@ -117,7 +144,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-1/p4-86-88/86"
+      "item_key": "official-6-test-1/p4-86-88/86",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -169,7 +199,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-1/p4-86-88/87"
+      "item_key": "official-6-test-1/p4-86-88/87",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -221,7 +254,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-1/p4-86-88/88"
+      "item_key": "official-6-test-1/p4-86-88/88",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

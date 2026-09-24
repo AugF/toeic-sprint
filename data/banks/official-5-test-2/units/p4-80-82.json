@@ -39,31 +39,62 @@
       "asset_key": "official-5-test-2/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "on that date.\nHowever, the lake room is available, and it has a great view of the lake on our property, which makes it popular for corporate clients.\nLet me know if that works for you.\nAnd did you want to have your director's meeting catered?\nMy colleague, Joe Morton, can help with that.\nPlease call him at 555-0128.\nThanks.\n0128.\nThanks.",
+    "transcript": "Hi, this is Julie from the Albertson Conference Center, returning your call about reserving space for a directors' meeting.\nYou wanted to reserve our Forest Room on June 15th for the meeting.\nUnfortunately, that conference room is already reserved on that date.\nHowever, the Lake Room is available, and it has a great view of the lake on our property, which makes it popular for corporate clients.\nLet me know if that works for you.\nAnd did you want to have your directors' meeting catered?\nMy colleague, Joe Morton, can help with that.\nPlease call him at 555-0128.\nThanks.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "e4a2d0b30393480a6f3557ffe038e9732852f5028db3a60ebe37907b2948c1e1",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-5-test-2/audio/part4/q080-082.mp3",
       "metrics": {
-        "word_count": 60,
-        "legacy_word_count": 99,
-        "length_ratio": 0.606,
-        "legacy_coverage": 0.768,
-        "prompted_failure": "missing spoken Questions 80 through 82 introduction"
-      }
+        "word_count": 98,
+        "review_window_end_ms": 45897,
+        "audio_duration_ms": 45897,
+        "words_per_second": 2.135
+      },
+      "transcript_sha256": "23454533543f910fe60f1f6bd57a0eed1437034a64f4bd19b956225989035f68"
     },
-    "transcript_translation": "在那天。然而，湖房是可用的，它在我们物业里拥有俯瞰湖景的绝佳视野，这使得它深受企业客户的喜爱。\n如果这对您来说可行，请告诉我。\n您是否需要为您的董事会会议提供餐饮服务？\n我的同事 Joe Morton 可以帮您处理这件事。\n请拨打 555-0128 给他打电话。\n谢谢。\n0128。\n谢谢。",
+    "transcript_translation": "您好，我是 Albertson 会议中心的 Julie，现在回复您之前关于为董事会议预订场地的来电。\n您希望预订我们 6 月 15 日的森林会议室来举行会议。\n很抱歉，那间会议室在当天已经被预订了。\n不过，湖景会议室还有空，而且可以欣赏到我们场地内湖泊的美景，因此很受企业客户欢迎。\n请告诉我这间是否适合您。\n另外，您是否希望为董事会议安排餐饮服务？\n我的同事 Joe Morton 可以帮您办理。\n请拨打 555-0128 联系他。\n谢谢。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "63e97c5a9d5120b4e9646812ae5b5a81e4f46590f9bca989c10b5ffc38cde13f"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "23454533543f910fe60f1f6bd57a0eed1437034a64f4bd19b956225989035f68",
+      "translation_sha256": "8a02134f11508ef9e3a9984ec45153be1281f4261a45237d431607226920a0bd"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "63e97c5a9d5120b4e9646812ae5b5a81e4f46590f9bca989c10b5ffc38cde13f",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 60,
+        "legacy_word_count": 99,
+        "length_ratio": 0.606,
+        "legacy_coverage": 0.768,
+        "prompted_failure": "missing spoken Questions 80 through 82 introduction"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "23454533543f910fe60f1f6bd57a0eed1437034a64f4bd19b956225989035f68",
+      "audio_sha256": "e4a2d0b30393480a6f3557ffe038e9732852f5028db3a60ebe37907b2948c1e1",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 45897
+        }
+      ]
     }
   },
   "items": [
@@ -117,7 +148,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-5-test-2/p4-80-82/80"
+      "item_key": "official-5-test-2/p4-80-82/80",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -169,7 +203,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-5-test-2/p4-80-82/81"
+      "item_key": "official-5-test-2/p4-80-82/81",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -221,7 +258,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-5-test-2/p4-80-82/82"
+      "item_key": "official-5-test-2/p4-80-82/82",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     }
   ]
 }

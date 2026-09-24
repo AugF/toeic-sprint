@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "Korean Star Airlines offers daily nonstoj flights ------- London and Busan.\nA. aboard\nB. onto\nC. up\nD. between"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "between"
       ],
       "answer": "D",
-      "question": "Korean Star Airlines offers daily nonstoj flights ------- London and Busan.",
+      "question": "Korean Star Airlines offers daily nonstop flights ------- London and Busan.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“between”代入题干后为“Korean Star Airlines offers daily nonstoj flights between London and Busan.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：D（between）。",
-      "question_translation": "Korean Star Airlines offers daily nonstoj flights ------- London and Busan.",
+      "answer_explain": "London and Busan 是两座城市，between A and B 表示航班连接的两个地点，因此选 D between。A aboard 表示在船或飞机等交通工具上；B onto 表示移动到某物上；C up 表示向上，都不能表达两座城市之间的航线。",
+      "question_translation": "Korean Star 航空公司每天提供伦敦和釜山**之间**的直飞航班。",
       "choice_translations": [
-        "A：aboard",
-        "B：onto",
-        "C：up",
-        "D：between"
+        "在船、飞机等交通工具上",
+        "到……上面",
+        "向上；沿着",
+        "在……之间"
       ],
-      "question_type": "介词 / 连词题",
-      "evidence": "参考原文第 1 段：Korean Star Airlines offers daily nonstoj flights ------- London and Busan.",
-      "grammar_point": "介词 / 连词",
-      "strategy": "本题属于介词 / 连词题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题：地点介词搭配",
+      "grammar_point": "between A and B 表示在 A 与 B 之间",
       "explanation_structured": {
         "answer": "D",
-        "question_type": "介词 / 连词题",
-        "evidence": "参考原文第 1 段：Korean Star Airlines offers daily nonstoj flights ------- London and Busan.",
-        "strategy": "本题属于介词 / 连词题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“between”代入题干后为“Korean Star Airlines offers daily nonstoj flights between London and Busan.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：D（between）。"
+        "question_type": "语法题：地点介词搭配",
+        "grammar_point": "between A and B 表示在 A 与 B 之间",
+        "analysis": "London and Busan 是两座城市，between A and B 表示航班连接的两个地点，因此选 D between。A aboard 表示在船或飞机等交通工具上；B onto 表示移动到某物上；C up 表示向上，都不能表达两座城市之间的航线。"
       },
       "item_id": 103,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p5-103/103"
+      "item_key": "official-1-test-2/p5-103/103",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Korean Star Airlines offers daily nonstoj flights ------- London and Busan.",
+        "original_choices": [
+          "aboard",
+          "onto",
+          "up",
+          "between"
+        ],
+        "text_sha256": "dbdcdf5a73618d57d0acbf655f7b65b5aa96e05c201d2dc16e512439b71a34b9",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "reason": "两份对应题文本均为 nonstop，修正 nonstoj 的末字母；HTML 确认四项原始选项。",
+          "sources": [
+            {
+              "url": "https://pdfcoffee.com/1000-cau-giai-de-toeic-format-moi-2019-pdf-free.html",
+              "location": "第 543 题，题干及 A–D 选项"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/b1a3c62e-d07c-459a-8a65-d796a13aa648.pdf",
+              "location": "第 1 页第 103 题，题干"
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Korean Star Airlines offers daily nonstop flights between London and Busan.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "7f68f10ed51d50e9f265a753fd5d5312a60af551e988cd93e307b34d2389e615"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "7f68f10ed51d50e9f265a753fd5d5312a60af551e988cd93e307b34d2389e615"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "7f68f10ed51d50e9f265a753fd5d5312a60af551e988cd93e307b34d2389e615"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "7f68f10ed51d50e9f265a753fd5d5312a60af551e988cd93e307b34d2389e615",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

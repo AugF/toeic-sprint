@@ -42,31 +42,62 @@
       "asset_key": "official-10-test-1/images/part4/q098-100.jpg",
       "exists": true
     },
-    "transcript": "If you're interested in helping our chef during a cooking demonstration, you can switch one of your regular shifts and do that instead.\nJust let me know in advance.",
+    "transcript": "Next week we'll have cooking demonstrations in our supermarket.\nFor those of you who are new, we offer cooking demos every month to encourage our customers to try products we're introducing.\nThis month, since we'll be highlighting some new bakery goods, we'll have the demo station in the bakery area.\nSo let's go there now to make space for the cooking equipment.\nAnd if any of you are interested in helping our chef during a cooking demonstration, you can switch one of your regular shifts and do that instead.\nJust let me know in advance.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "e47ce768bdbc6888a42d21105a04133e68f8b4c11b1d3013b934ddd986296d84",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-10-test-1/audio/part4/q098-100.mp3",
       "metrics": {
-        "word_count": 31,
-        "legacy_word_count": 56,
-        "length_ratio": 0.554,
-        "legacy_coverage": 0.625
+        "word_count": 95,
+        "review_window_end_ms": 41065,
+        "audio_duration_ms": 41065,
+        "words_per_second": 2.313
       },
-      "postprocess_version": "sentence_boundaries_v2"
+      "postprocess_version": "sentence_boundaries_v2",
+      "transcript_sha256": "7cf16e7f7495f59c68b056237abc8d3b9c826a602bb51ddd1abc76a61ec565f4"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
     },
-    "transcript_translation": "如果您有兴趣在烹饪演示时帮助我们的主厨，您可以调换一次常规班次来做这件事。\n只需提前告知我即可。",
+    "transcript_translation": "下周，我们超市将举办烹饪示范活动。\n向新来的同事说明一下：我们每个月都会举办烹饪示范，鼓励顾客尝试我们新推出的产品。\n这个月，我们将重点推介一些新的烘焙食品，因此会把示范台设在烘焙区。\n现在我们就去那里，为烹饪设备腾出空间。\n如果你们当中有人愿意在烹饪示范期间协助厨师，可以调整一次自己的常规班次，改为参与这项工作。\n只要提前告诉我就行。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "0a4e16ed8a00f595d85b272b6fbf4710041b898558ebe63b93807cc01b769f1f"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "7cf16e7f7495f59c68b056237abc8d3b9c826a602bb51ddd1abc76a61ec565f4",
+      "translation_sha256": "e188a0c36503341cf5af3b69d79b52247163d8a070d220880563685a9151a6ed"
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "0a4e16ed8a00f595d85b272b6fbf4710041b898558ebe63b93807cc01b769f1f",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "previous_metrics": {
+        "word_count": 31,
+        "legacy_word_count": 56,
+        "length_ratio": 0.554,
+        "legacy_coverage": 0.625
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "7cf16e7f7495f59c68b056237abc8d3b9c826a602bb51ddd1abc76a61ec565f4",
+      "audio_sha256": "e47ce768bdbc6888a42d21105a04133e68f8b4c11b1d3013b934ddd986296d84",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 41065
+        }
+      ]
     }
   },
   "items": [
@@ -118,7 +149,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-98-100/98"
+      "item_key": "official-10-test-1/p4-98-100/98",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -168,7 +202,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-98-100/99"
+      "item_key": "official-10-test-1/p4-98-100/99",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -218,7 +255,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-1/p4-98-100/100"
+      "item_key": "official-10-test-1/p4-98-100/100",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ],
   "knowledge_accumulation": {
