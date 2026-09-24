@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "Stella's Confectionary的工作班次为八小时，并-------包含一个30分钟的午休时间。\nA. prepare\nB. release\nC. assemble\nD. include"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "include"
       ],
       "answer": "D",
-      "question": "The work shifts at Stella's Confectionary are toa eight hours long and ------- a 30-minute break for lunch.",
+      "question": "The work shifts at Stella's Confectionary are eight hours long and ------- a 30-minute break for lunch.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“include”代入题干后为“The work shifts at Stella's Confectionary are toa eight hours long and include a 30-minute break for lunch.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：D（include）。",
-      "question_translation": "Stella's Confectionary的工作班次为八小时，并-------包含一个30分钟的午休时间。",
+      "answer_explain": "主语 work shifts 描述班次安排，午餐休息是其中一部分，用 include。prepare 为准备，release 为释放或发布，assemble 为组装，均不能表达班次包含休息时间。",
+      "question_translation": "Stella's糖果店每班工作八小时，**包括**30分钟的午餐休息时间。",
       "choice_translations": [
-        "A：准备",
-        "B：释放",
-        "C：组装",
-        "D：包括"
+        "准备",
+        "释放；发布",
+        "组装；集合",
+        "包括"
       ],
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：The work shifts at Stella's Confectionary are toa eight hours long and ------- a 30-minute break for lunch.",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "词汇题 · 动词词义",
+      "grammar_point": "include + 组成部分",
       "explanation_structured": {
         "answer": "D",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：The work shifts at Stella's Confectionary are toa eight hours long and ------- a 30-minute break for lunch.",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“include”代入题干后为“The work shifts at Stella's Confectionary are toa eight hours long and include a 30-minute break for lunch.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：D（include）。"
+        "question_type": "词汇题 · 动词词义",
+        "grammar_point": "include + 组成部分",
+        "analysis": "主语 work shifts 描述班次安排，午餐休息是其中一部分，用 include。prepare 为准备，release 为释放或发布，assemble 为组装，均不能表达班次包含休息时间。"
       },
       "item_id": 106,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p5-106/106"
+      "item_key": "official-2-test-2/p5-106/106",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "The work shifts at Stella's Confectionary are toa eight hours long and ------- a 30-minute break for lunch.",
+        "original_choices": [
+          "prepare",
+          "release",
+          "assemble",
+          "include"
+        ],
+        "text_sha256": "c1d0eb2c1ff299f98d60a0ed2fe90a3b88129beef25a74255442628e301d50d5",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/f22050b9-cffa-4cc7-b4ef-196525d1abf4.pdf",
+              "location": "Part 5 question 106; text and four choices"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/d6e91bec-d88d-4f8f-9569-8402b8357ead.pdf",
+              "location": "Part 5 question 106; cross-reference, preserve Aeronamic in Q125 rather than Aerodynamic variant"
+            }
+          ],
+          "notes": "Question number, sentence span, blank location, original choice order and unchanged answer reviewed together. Reference text is not represented as an original image. Preserve local spelling unless the correction is supported."
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "The work shifts at Stella's Confectionary are eight hours long and include a 30-minute break for lunch.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "1e24413932ed665d2d248abafb64d7637904556bf70b5cff31f8a06c59222f94"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "1e24413932ed665d2d248abafb64d7637904556bf70b5cff31f8a06c59222f94"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "1e24413932ed665d2d248abafb64d7637904556bf70b5cff31f8a06c59222f94"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "1e24413932ed665d2d248abafb64d7637904556bf70b5cff31f8a06c59222f94",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

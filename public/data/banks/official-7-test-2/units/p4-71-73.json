@@ -39,7 +39,7 @@
       "asset_key": "official-7-test-2/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "information.\nI'd like to start today's session by introducing our most unique exhibit, our rooftop sculpture garden.\nEvery now and then you'll be assigned this tour, so you'll need to become familiar with the sculptures on our roof.\nHere, let me pass around a fact sheet with information on each sculpture.\nNow, museum visitors need to buy a special pass to see this exhibit, so please remember to collect all passes before you start the tour.",
+    "transcript": "I'd like to start today's session by introducing our most unique exhibit, our rooftop sculpture garden.\nEvery now and then you'll be assigned this tour, so you'll need to become familiar with the sculptures on our roof.\nHere, let me pass around a fact sheet with information on each sculpture.\nNow, museum visitors need to buy a special pass to see this exhibit, so please remember to collect all passes before you start the tour.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
       "method": "mlx-whisper/large-v3-turbo-4bit:full",
@@ -47,22 +47,57 @@
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-7-test-2/audio/part4/q071-073.mp3",
       "metrics": {
-        "word_count": 76,
+        "word_count": 75,
         "legacy_word_count": 75,
         "length_ratio": 1.013,
         "legacy_coverage": 0.973
-      }
+      },
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
-    "transcript_translation": "信息。\n我想从介绍我们最独特的展品，我们的屋顶雕塑花园开始今天的环节。\n时不时你会被分配到这次参观，所以你需要熟悉我们在屋顶的雕塑。\n在这里，让我分发一份包含每件雕塑信息的资料表。\n现在，博物馆访客需要购买一张特别通行证才能看到这个展览，所以请记住在开始参观前收集所有通行证。",
+    "transcript_translation": "我想从介绍我们最独特的展品，我们的屋顶雕塑花园开始今天的环节。\n时不时你会被分配到这次参观，所以你需要熟悉我们在屋顶的雕塑。\n在这里，让我分发一份包含每件雕塑信息的资料表。\n现在，博物馆访客需要购买一张特别通行证才能看到这个展览，所以请记住在开始参观前收集所有通行证。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
       "method": "ollama/gemma4:latest",
-      "transcript_sha256": "3ae7c63e80474122e83efc09192f38c6fd43a11da59c9a4035e9a16de5ff76e9"
+      "transcript_sha256": "2ac823db116260f3de31748630dfd36007cf88ce9d65b95f3bde8d5d73155d7b",
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_intro_cleanup": {
+      "schema_version": "verified_listening_intro_cleanup_v1",
+      "audio_sha256": "b5cbc59bf7447bcfa43c4635fe446bfac091830852f54d176469d53cc5ed5c07",
+      "removed_english_prefix": "information.",
+      "removed_chinese_prefix": "信息。",
+      "cache_field": "raw",
+      "raw_sha256": "e53a9b3490b1e67ec68bdd63d78812259370889e56a1841c724e722663a0f9e5",
+      "verified_introduction": "Questions 71 through 73 refer to the following tour information. ",
+      "before": {
+        "transcript": "information.\nI'd like to start today's session by introducing our most unique exhibit, our rooftop sculpture garden.\nEvery now and then you'll be assigned this tour, so you'll need to become familiar with the sculptures on our roof.\nHere, let me pass around a fact sheet with information on each sculpture.\nNow, museum visitors need to buy a special pass to see this exhibit, so please remember to collect all passes before you start the tour.",
+        "transcript_translation": "信息。\n我想从介绍我们最独特的展品，我们的屋顶雕塑花园开始今天的环节。\n时不时你会被分配到这次参观，所以你需要熟悉我们在屋顶的雕塑。\n在这里，让我分发一份包含每件雕塑信息的资料表。\n现在，博物馆访客需要购买一张特别通行证才能看到这个展览，所以请记住在开始参观前收集所有通行证。",
+        "transcript_source": {
+          "schema_version": "listening_transcript_v2",
+          "method": "mlx-whisper/large-v3-turbo-4bit:full",
+          "audio_sha256": "b5cbc59bf7447bcfa43c4635fe446bfac091830852f54d176469d53cc5ed5c07",
+          "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+          "source_audio": "public/assets/official-7-test-2/audio/part4/q071-073.mp3",
+          "metrics": {
+            "word_count": 76,
+            "legacy_word_count": 75,
+            "length_ratio": 1.013,
+            "legacy_coverage": 0.973
+          }
+        },
+        "transcript_translation_source": {
+          "schema_version": "listening_translation_v2",
+          "method": "ollama/gemma4:latest",
+          "transcript_sha256": "3ae7c63e80474122e83efc09192f38c6fd43a11da59c9a4035e9a16de5ff76e9"
+        }
+      },
+      "after_transcript_sha256": "2ac823db116260f3de31748630dfd36007cf88ce9d65b95f3bde8d5d73155d7b",
+      "after_translation_sha256": "995dd8f812e2d5a8bac770656bc47590336cfaf5bc8d23f96278b599c0a90ddc"
     }
   },
   "items": [
@@ -76,7 +111,7 @@
       "answer": "D",
       "question": "Who most likely are the listeners?",
       "answer_explain": "正确答案：D（Museum guides）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):Who(谁) most likely(最可能) are the listeners?",
+      "question_translation": "听众最可能是什么身份？",
       "choice_translations": [
         "A:Ticket agents",
         "B:Art critics",
@@ -116,7 +151,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-2/p4-71-73/71"
+      "item_key": "official-7-test-2/p4-71-73/71",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "fecbdba03db98330b0a2018644aeaca1ef06bc617baa454516899f3fad8211b2",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -168,7 +213,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-2/p4-71-73/72"
+      "item_key": "official-7-test-2/p4-71-73/72",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -220,7 +268,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-2/p4-71-73/73"
+      "item_key": "official-7-test-2/p4-71-73/73",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     }
   ]
 }

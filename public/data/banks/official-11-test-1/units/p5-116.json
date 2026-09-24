@@ -36,9 +36,7 @@
     "unit_id": "part5-116",
     "model": "toeic_priority_v1"
   },
-  "context": {
-    "content_translation": "本文围绕“介词搭配”展开。阅读时先确认文体与写作目的，再定位题干关键词所在句。"
-  },
+  "context": {},
   "items": [
     {
       "question": "A large collection of bird fossils will be on display at the museum from May 15 ---- July 31.",
@@ -52,25 +50,22 @@
       "difficulty": "easy",
       "topic": "介词搭配",
       "keywords": "from until date range",
-      "answer_explain": "原文依据：结构给出展览起止日期 from May 15 ___ July 31。 选择理由：from...until...表示持续到某日，B正确。正确答案：B（until）。",
+      "answer_explain": "from May 15 until July 31 明确表示展出的起止日期。during 表示在某段时间内，around 表示大约，throughout 表示贯穿整个期间，均不能与这里的具体终点构成所需的 from...until... 结构。",
       "question_type": "语法题",
-      "evidence": "参考原文第 1 段第 1 句：A large collection of bird fossils will be on display at the museum from May 15 ---- July 31.",
       "choice_translations": [
-        "A：在……期间",
-        "B：直到；到……为止",
-        "C：在……周围；大约",
-        "D：贯穿；在整个……期间"
+        "在……期间",
+        "直到……为止",
+        "大约；在……周围",
+        "贯穿……始终；遍及"
       ],
-      "strategy": "本题属于语法题。先判断空格在句中的成分，再检查词性、主谓一致、时态语态、固定搭配和句意。",
       "explanation_structured": {
         "answer": "B",
         "question_type": "语法题",
-        "evidence": "参考原文第 1 段第 1 句：A large collection of bird fossils will be on display at the museum from May 15 ---- July 31.",
-        "strategy": "本题属于语法题。先判断空格在句中的成分，再检查词性、主谓一致、时态语态、固定搭配和句意。",
-        "analysis": "原文依据：结构给出展览起止日期 from May 15 ___ July 31。 选择理由：from...until...表示持续到某日，B正确。正确答案：B（until）。"
+        "grammar_point": "时间范围：from＋起点＋until＋终点",
+        "analysis": "from May 15 until July 31 明确表示展出的起止日期。during 表示在某段时间内，around 表示大约，throughout 表示贯穿整个期间，均不能与这里的具体终点构成所需的 from...until... 结构。"
       },
-      "question_translation": "从 5 月 15 日 ---- 7 月 31 日，博物馆将展出一大批鸟类化石。",
-      "grammar_point": "时间介词搭配：from + 起始时间 + until + 截止时间，表示“从……持续到……”。",
+      "question_translation": "博物馆将从 5 月 15 日起展出一大批鸟类化石，**直到** 7 月 31 日。",
+      "grammar_point": "时间范围：from＋起点＋until＋终点",
       "item_id": 116,
       "priority": {
         "level": "P2",
@@ -99,7 +94,32 @@
         "unit_id": "part5-116",
         "model": "toeic_priority_v1"
       },
-      "item_key": "official-11-test-1/p5-116/116"
+      "item_key": "official-11-test-1/p5-116/116",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "choice_translations": "ready",
+        "analysis": "ready"
+      },
+      "completed_sentence": "A large collection of bird fossils will be on display at the museum from May 15 until July 31.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "74b48ef25c53f96f7bd1ac2b7faafd052f46f6efc9f4ceed0e00791609a4b119"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "74b48ef25c53f96f7bd1ac2b7faafd052f46f6efc9f4ceed0e00791609a4b119"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "74b48ef25c53f96f7bd1ac2b7faafd052f46f6efc9f4ceed0e00791609a4b119"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "74b48ef25c53f96f7bd1ac2b7faafd052f46f6efc9f4ceed0e00791609a4b119",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

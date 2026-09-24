@@ -40,30 +40,61 @@
       "asset_key": "official-3-test-2/audio/part4/q086-088.mp3",
       "exists": true
     },
-    "transcript": "ERw Hello, this is Xinyu Wu from the Council for the Arts.\nI'm calling to thank you for your generous donation during our recent fundraiser.\nAlso, I wanted to ask if you'd like to write something about what inspired you to donate.\nWe're sending out some promotional material with a schedule of our summer program soon, and we're including a few personal stories about what art means to our members.\nERw",
+    "transcript": "Hello, this is Xinyu Wu from the Council for the Arts.\nI'm calling to thank you for your generous donation during our recent fundraiser.\nAlso, I wanted to ask if you'd like to write something about what inspired you to donate.\nWe're sending out some promotional material with the schedule of our summer program soon, and we're including a few personal stories about what art means to our members and why they think it's important to support art.\nI can stop by your office some morning this week to discuss it with you if you'd like.\nI have some meetings near your office building on Tuesday and Wednesday, so let me know if that would work.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "41d7bfcdc4ad38c6446d09ce7ac23c5bb9eb1b4938d2b193c8d9593fc1ab2dc7",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-3-test-2/audio/part4/q086-088.mp3",
       "metrics": {
-        "word_count": 71,
-        "legacy_word_count": 115,
-        "length_ratio": 0.617,
-        "legacy_coverage": 0.713
-      }
+        "word_count": 116,
+        "review_window_end_ms": 45976,
+        "audio_duration_ms": 45976,
+        "words_per_second": 2.523
+      },
+      "transcript_sha256": "a3cc3ca8396b52f0e376d1cf2b10500a3cbeb533ef8ce2c54aad86d459183257"
     },
-    "transcript_translation": "ERw 您好，我是来自 Council for the Arts 的 Xinyu Wu。\n我打电话来感谢您在最近的筹款活动中慷慨捐赠。\n另外，我想问一下您是否愿意写一些关于您捐赠灵感的文字。\n我们很快会发送一些宣传材料，其中包含我们夏季项目的日程安排，并且我们会包括一些关于艺术对我们成员意义的个人故事。\nERw",
+    "transcript_translation": "您好，我是艺术委员会的 Xinyu Wu。\n打电话是为了感谢您在我们最近的筹款活动中慷慨捐款。\n另外，我想问问您，是否愿意写一些文字，谈谈是什么促使您捐款的。\n我们很快就会寄出一些附有夏季活动日程的宣传资料，其中会收录几篇个人故事，讲述艺术对会员们的意义，以及他们为什么认为支持艺术很重要。\n如果您愿意，我可以在本周某天上午到您的办公室拜访，与您讨论这件事。\n我周二和周三在您办公楼附近有几场会议，请告诉我这些时间是否方便。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "52f2061547bea78e359b99f6e2a845c380793ac027bf7d7e440d228c9de106f7"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "a3cc3ca8396b52f0e376d1cf2b10500a3cbeb533ef8ce2c54aad86d459183257",
+      "translation_sha256": "e07997e53d5946a5320358ab6bc7711daae01d0a0c3dec4a56e25a59e1560d96"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "52f2061547bea78e359b99f6e2a845c380793ac027bf7d7e440d228c9de106f7",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:ocr_prompted_audio",
+      "previous_metrics": {
+        "word_count": 71,
+        "legacy_word_count": 115,
+        "length_ratio": 0.617,
+        "legacy_coverage": 0.713
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "a3cc3ca8396b52f0e376d1cf2b10500a3cbeb533ef8ce2c54aad86d459183257",
+      "audio_sha256": "41d7bfcdc4ad38c6446d09ce7ac23c5bb9eb1b4938d2b193c8d9593fc1ab2dc7",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 45976
+        }
+      ]
     }
   },
   "items": [
@@ -77,7 +108,7 @@
       "answer": "C",
       "question": "What does the speaker thank the listener for?",
       "answer_explain": "正确答案：C（Donating some money）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) thank(感谢) the listener for?",
+      "question_translation": "讲话者因为什么事情向对方道谢？",
       "choice_translations": [
         "A:Buying her artwork",
         "B:Introducing her to someone",
@@ -118,7 +149,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-2/p4-86-88/86"
+      "item_key": "official-3-test-2/p4-86-88/86",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "b71e0fbabeac6c8c37ec954bf01366d7ee7dad493ccaa75e8b5ce71fa100cafd",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -130,7 +171,7 @@
       "answer": "A",
       "question": "What does the speaker invite the listener to do?",
       "answer_explain": "正确答案：A（Share a story）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) invite the listener to do?",
+      "question_translation": "讲话者邀请对方做什么？",
       "choice_translations": [
         "A:Share a story",
         "B:Speak at an event",
@@ -171,7 +212,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-2/p4-86-88/87"
+      "item_key": "official-3-test-2/p4-86-88/87",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "7205bef85643b12d7ab6236d3a91ee45bc229e9b974e7a14e68fff09e69f1294",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -183,7 +234,7 @@
       "answer": "B",
       "question": "Why does the speaker say, “I have some meetings near your office building on Tuesday and Wednesday”?",
       "answer_explain": "正确答案：B（She is indicating when she is available）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, “I have some meetings near your office(办公室) building on Tuesday and Wednesday”?",
+      "question_translation": "讲话者为什么说“周二和周三我在你办公楼附近有几个会议”？",
       "choice_translations": [
         "A:She is accepting an invitation.",
         "B:She is indicating when(何时) she is available(可用的)",
@@ -224,7 +275,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-2/p4-86-88/88"
+      "item_key": "official-3-test-2/p4-86-88/88",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "113e51f62af9ca289a917c83823e2c8c082ea7b10197f88979487e4825f0e834",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

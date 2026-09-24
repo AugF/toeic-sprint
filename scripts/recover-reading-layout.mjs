@@ -6,6 +6,7 @@ import {spawnSync} from "node:child_process";
 import {createHash} from "node:crypto";
 import {fileURLToPath} from "node:url";
 import {READING_ITEM_OVERRIDES,verifyReadingItemOverrides} from "./reading-layout-overrides.mjs";
+import {invalidateChangedReadingAids} from "./reading-study-aids.mjs";
 
 /**
  * Recover Part 6/7 from the original page scans.
@@ -37,8 +38,6 @@ const unitOnly=valueAfter("--unit");
 const OCR_SCHEMA="reading_layout_ocr_v2";
 const OCR_ENGINE="tesseract-5-region-columns";
 const ocrCacheRoot=path.join(projectRoot,"outputs/reading-ocr-cache");
-const DERIVED_FIELDS=["passage_translation","content_translation"];
-const ITEM_DERIVED_FIELDS=["question_translation","choice_translations","answer_explain","evidence","strategy","explanation_structured","knowledge_accumulation"];
 
 if(!fs.existsSync(scanRoot))throw new Error(`原始扫描图目录不存在：${scanRoot}`);
 const overrideFailures=verifyReadingItemOverrides(scanRoot);
@@ -446,14 +445,6 @@ function sourceImages(bankId,unit,nextUnit){
   const adjacent=nextBase?names.filter(name=>name===`${nextBase}.jpg`||name===`${nextBase}-p1.jpg`).map(name=>path.join(dir,name)):[];
   return {own,questionCandidates:[...own,...adjacent]};
 }
-function invalidateDerived(detail,changedItems){
-  for(const field of DERIVED_FIELDS)delete detail.context[field];
-  delete detail.knowledge_accumulation;
-  for(const item of detail.items){
-    if(!changedItems.has(item.item_id))continue;
-    for(const field of ITEM_DERIVED_FIELDS)delete item[field];
-  }
-}
 function applyImageVerifiedOverrides(bankId,unitId,blocks){
   for(const [key,override] of READING_ITEM_OVERRIDES){
     const [overrideBank,overrideUnit,idText]=key.split("/");
@@ -510,18 +501,16 @@ for(const bank of catalog.banks){
       const report={bank_id:bank.bank_id,unit_id:unit.unit_id,part:detail.part,status:errors.length?"failed":"ready",errors,source_images:materialSourceImages.map(image=>path.relative(scanRoot,image).split(path.sep).join("/")),question_candidate_images:images.map(image=>path.relative(scanRoot,image).split(path.sep).join("/")),recognized_items:[...blocks.keys()].sort((a,b)=>a-b),...(errors.length?{debug:{passage,blocks:Object.fromEntries(blocks)}}:{})};
       reports.push(report);
       if(errors.length||!write)continue;
-      const changedItems=new Set();
+      const previousDetail=structuredClone(detail);
       detail.context.passage=passage;
       detail.context.reading_layout_images=layoutImages;
       detail.context.reading_ocr={schema_version:OCR_SCHEMA,engine:OCR_ENGINE,source_hash:filesSha(images),verified_item_ids:expected,layout_authority:"source_scan"};
       for(const item of detail.items){
         const block=blocks.get(item.item_id);
-        const before=JSON.stringify([item.question,item.choices]);
         if(detail.part===7)item.question=block.question;
         item.choices=block.choices;
-        if(before!==JSON.stringify([item.question,item.choices]))changedItems.add(item.item_id);
       }
-      invalidateDerived(detail,changedItems);
+      invalidateChangedReadingAids(detail,previousDetail);
       atomicJson(detailFile,detail);
       unit.asset_refs=[...(unit.asset_refs||[]).filter(ref=>!ref.includes("/reading-layout/")),...layoutImages.map(image=>image.asset_key)];
       indexChanged=true;

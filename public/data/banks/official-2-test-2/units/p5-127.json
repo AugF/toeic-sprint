@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "随着新的网站增强功能，Gym Hill Street Design的客户将能够查看最近购买的-------。\nA. voucher\nB. coupon\nC. summary\nD. payment"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "payment"
       ],
       "answer": "C",
-      "question": "With the new Web site enhancements, Gym Hill Street Design customers will be able to view a ------- of recent purchases.",
+      "question": "With the new Web site enhancements, Hill Street Design customers will be able to view a ------- of recent purchases.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“summary”代入题干后为“With the new Web site enhancements, Gym Hill Street Design customers will be able to view a summary of recent purchases.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（summary）。",
-      "question_translation": "随着新的网站增强功能，Gym Hill Street Design的客户将能够查看最近购买的-------。",
+      "answer_explain": "summary of recent purchases 指近期购买记录的汇总，符合网站提供历史订单信息的语境。voucher、coupon 为凭券或优惠券，payment 为付款，均不能表示购买记录概览。",
+      "question_translation": "网站完成新的功能改进后，Hill Street Design的客户将能查看近期购买记录的**汇总**。",
       "choice_translations": [
-        "A：代金券",
-        "B：优惠券",
-        "C：摘要",
-        "D：付款"
+        "代金券；凭证",
+        "优惠券",
+        "汇总；摘要",
+        "付款"
       ],
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：With the new Web site enhancements, Gym Hill Street Design customers will be able to view a ------- of recent purchases.",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "词汇题 · 名词词义",
+      "grammar_point": "a summary of purchases",
       "explanation_structured": {
         "answer": "C",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：With the new Web site enhancements, Gym Hill Street Design customers will be able to view a ------- of recent purchases.",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“summary”代入题干后为“With the new Web site enhancements, Gym Hill Street Design customers will be able to view a summary of recent purchases.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（summary）。"
+        "question_type": "词汇题 · 名词词义",
+        "grammar_point": "a summary of purchases",
+        "analysis": "summary of recent purchases 指近期购买记录的汇总，符合网站提供历史订单信息的语境。voucher、coupon 为凭券或优惠券，payment 为付款，均不能表示购买记录概览。"
       },
       "item_id": 127,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p5-127/127"
+      "item_key": "official-2-test-2/p5-127/127",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "With the new Web site enhancements, Gym Hill Street Design customers will be able to view a ------- of recent purchases.",
+        "original_choices": [
+          "voucher",
+          "coupon",
+          "summary",
+          "payment"
+        ],
+        "text_sha256": "fe9955d4bd255b96ee02e9eda88cbc65371a648a029cc7239317d499c1bd95cd",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/f22050b9-cffa-4cc7-b4ef-196525d1abf4.pdf",
+              "location": "Part 5 question 127; text and four choices"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/d6e91bec-d88d-4f8f-9569-8402b8357ead.pdf",
+              "location": "Part 5 question 127; cross-reference, preserve Aeronamic in Q125 rather than Aerodynamic variant"
+            }
+          ],
+          "notes": "Question number, sentence span, blank location, original choice order and unchanged answer reviewed together. Reference text is not represented as an original image. Preserve local spelling unless the correction is supported."
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "With the new Web site enhancements, Hill Street Design customers will be able to view a summary of recent purchases.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "64a88e0a42c5f0581557212785282382d261775be127c4337623d88fa0148b2a"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "64a88e0a42c5f0581557212785282382d261775be127c4337623d88fa0148b2a"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "64a88e0a42c5f0581557212785282382d261775be127c4337623d88fa0148b2a"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "64a88e0a42c5f0581557212785282382d261775be127c4337623d88fa0148b2a",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

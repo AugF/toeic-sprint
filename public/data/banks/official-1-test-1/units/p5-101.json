@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "Iwata女士分发了为会议打印的，------- 的副本。\nA. hers\nB. her\nC. she\nD. herself"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,24 @@
         "herself"
       ],
       "answer": "C",
-      "question": "Ms. Iwata handed out copies of the ager that ------- had printed for the meeting.",
+      "question": "Ms. Iwata handed out copies of the agenda that ------- had printed for the meeting.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“she”代入题干后为“Ms. Iwata handed out copies of the ager that she had printed for the meeting.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（she）。",
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：Ms. Iwata handed out copies of the ager that ------- had printed for the meeting.",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "answer_explain": "关系代词 that 作 printed 的宾语，空格处缺少从句主语，因此用主格 she。hers 是名词性物主代词，her 是宾格或形容词性物主代词，herself 是反身代词，都不能在此作普通主语。",
+      "question_type": "语法 / 词汇题 · 代词主格",
+      "grammar_point": "代词主格",
       "explanation_structured": {
         "answer": "C",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：Ms. Iwata handed out copies of the ager that ------- had printed for the meeting.",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“she”代入题干后为“Ms. Iwata handed out copies of the ager that she had printed for the meeting.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（she）。"
+        "question_type": "语法 / 词汇题 · 代词主格",
+        "analysis": "关系代词 that 作 printed 的宾语，空格处缺少从句主语，因此用主格 she。hers 是名词性物主代词，her 是宾格或形容词性物主代词，herself 是反身代词，都不能在此作普通主语。"
       },
-      "question_translation": "Iwata女士分发了为会议打印的，------- 的副本。",
+      "question_translation": "岩田女士分发了**她**为会议打印的议程副本。",
       "choice_translations": [
-        "A：她的（所有格代词）",
-        "B：她（物主代词）",
-        "C：她（主格）",
-        "D：她自己（反身代词）"
+        "她的（名词性物主代词）",
+        "她／她的（宾格或形容词性物主代词）",
+        "她（主格）",
+        "她自己（反身代词）"
       ],
       "item_id": 101,
       "priority": {
@@ -69,7 +63,42 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p5-101/101"
+      "item_key": "official-1-test-1/p5-101/101",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Ms. Iwata handed out copies of the ager that ------- had printed for the meeting.",
+        "original_choices": [
+          "hers",
+          "her",
+          "she",
+          "herself"
+        ],
+        "sources": [
+          {
+            "url": "https://kanazawa-u.repo.nii.ac.jp/record/2002264/files/2436-3464-28-1-37.pdf",
+            "location": "Example (14a), RD1_101",
+            "correction": "ager → agenda"
+          }
+        ],
+        "text_sha256": "8af9d17ffcfa9095ed1b87b6543a78defc3075b6b0877351d407da7f594b4437"
+      },
+      "completed_sentence": "Ms. Iwata handed out copies of the agenda that she had printed for the meeting.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence",
+          "source_sha256": "1c1f282d23e7200887fc66f2805b5287c126221d91a523c4f75b00bf69f706a7"
+        },
+        "analysis": {
+          "method": "reviewed_sentence_and_choices",
+          "source_sha256": "1c1f282d23e7200887fc66f2805b5287c126221d91a523c4f75b00bf69f706a7"
+        }
+      }
     }
   ]
 }

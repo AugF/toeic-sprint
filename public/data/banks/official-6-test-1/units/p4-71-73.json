@@ -39,31 +39,58 @@
       "asset_key": "official-6-test-1/audio/part4/q071-073.mp3",
       "exists": true
     },
-    "transcript": "famous photographer will be talking about his experience photographing the stars.\nTickets for the exhibit include admission to the movie Nature's Wonders.\nThis award-winning movie is entertaining for people of all ages, so be sure to purchase your museum tickets online now.",
+    "transcript": "Looking for something to do this week?\nThe exhibit Our Galaxy opens on September 3rd at the Ashton Science Museum.\nLearn about the planets in our galaxy and step into a real spacecraft.\nOn opening night, Gregory Alvarez, the world-famous photographer, will be talking about his experience photographing the stars.\nTickets for the exhibit include admission to the movie Nature's Wonders.\nThis award-winning movie is entertaining for people of all ages.\nSo be sure to purchase your museum tickets online now.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "3118d985b2bb61e91e7f4b17181608c35e0cc06d9839c8c37947cdc634bc398d",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-6-test-1/audio/part4/q071-073.mp3",
       "metrics": {
-        "word_count": 42,
-        "legacy_word_count": 85,
-        "length_ratio": 0.494,
-        "legacy_coverage": 0.6,
-        "prompted_failure": "missing spoken Questions 71 through 73 introduction"
-      }
+        "word_count": 81,
+        "review_window_end_ms": 38139,
+        "audio_duration_ms": 38139,
+        "words_per_second": 2.124
+      },
+      "transcript_sha256": "9fb4407ae28a005746c0f423810705a633cafc1fbe9272a69c2600ca2e1cd00b"
     },
-    "transcript_translation": "著名的摄影师将谈论他拍摄星星的经历。\n展览门票包含进入电影《自然奇观》的资格。\n这部屡获殊荣的电影适合所有年龄段的人，所以请务必现在在线购买您的博物馆门票。",
+    "transcript_translation": "这周想找些活动参加吗？\n《我们的银河系》展览将于 9 月 3 日在 Ashton 科学博物馆开幕。\n来了解我们银河系中的行星，并走进一艘真正的宇宙飞船。\n在开幕当晚，世界著名摄影师 Gregory Alvarez 将讲述他拍摄星空的经历。\n展览门票还包含电影《自然奇观》的观影资格。\n这部获奖影片适合各个年龄段的观众欣赏。\n所以，现在就一定要上网购买博物馆门票。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "048ec5df92b041494de113a9600fe951afb4667847e7c71156ce2c5bc07b1a37"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "9fb4407ae28a005746c0f423810705a633cafc1fbe9272a69c2600ca2e1cd00b",
+      "translation_sha256": "41a7092281c3e4841868238c3cdfe9081fcfcc2324e822e00bef4bcc8313e74f"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "048ec5df92b041494de113a9600fe951afb4667847e7c71156ce2c5bc07b1a37",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 42,
+        "legacy_word_count": 85,
+        "length_ratio": 0.494,
+        "legacy_coverage": 0.6,
+        "prompted_failure": "missing spoken Questions 71 through 73 introduction"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "9fb4407ae28a005746c0f423810705a633cafc1fbe9272a69c2600ca2e1cd00b",
+      "audio_sha256": "3118d985b2bb61e91e7f4b17181608c35e0cc06d9839c8c37947cdc634bc398d",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 38139
+        }
+      ]
     }
   },
   "items": [
@@ -117,7 +144,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-1/p4-71-73/71"
+      "item_key": "official-6-test-1/p4-71-73/71",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -169,7 +199,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-1/p4-71-73/72"
+      "item_key": "official-6-test-1/p4-71-73/72",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -221,7 +254,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-6-test-1/p4-71-73/73"
+      "item_key": "official-6-test-1/p4-71-73/73",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

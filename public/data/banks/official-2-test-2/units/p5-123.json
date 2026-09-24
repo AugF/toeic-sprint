@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "Mitaka Innovations以折扣价出售的打印机与其他地方销售的打印机的质量-------。\nA. equivalencies\nB. equivalent\nC. equivalently\nD. equivalence"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "equivalence"
       ],
       "answer": "B",
-      "question": "The printers sold by Mitaka Innovations a discounted price are of ------- quality to those sold elsewhere.",
+      "question": "The printers sold by Mitaka Innovations at a discounted price are of ------- quality to those sold elsewhere.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“equivalent”代入题干后为“The printers sold by Mitaka Innovations a discounted price are of equivalent quality to those sold elsewhere.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：B（equivalent）。",
-      "question_translation": "Mitaka Innovations以折扣价出售的打印机与其他地方销售的打印机的质量-------。",
+      "answer_explain": "空格修饰名词 quality，需形容词 equivalent。of equivalent quality to 表示质量与……相当。equivalencies、equivalence 是名词，equivalently 是副词。",
+      "question_translation": "Mitaka Innovations以折扣价出售的打印机，其质量与其他地方销售的打印机**相当**。",
       "choice_translations": [
-        "A：等效物（复数）",
-        "B：等效的",
-        "C：等效地",
-        "D：等效性"
+        "等同关系；等价物（复数名词）",
+        "相当的；等同的",
+        "等同地（副词）",
+        "等同；等价（名词）"
       ],
-      "question_type": "词性 / 词形题",
-      "evidence": "参考原文第 1 段：The printers sold by Mitaka Innovations a discounted price are of ------- quality to those sold elsewhere.",
-      "grammar_point": "词性 / 词形",
-      "strategy": "本题属于词性 / 词形题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题 · 形容词与搭配",
+      "grammar_point": "of equivalent quality to",
       "explanation_structured": {
         "answer": "B",
-        "question_type": "词性 / 词形题",
-        "evidence": "参考原文第 1 段：The printers sold by Mitaka Innovations a discounted price are of ------- quality to those sold elsewhere.",
-        "strategy": "本题属于词性 / 词形题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“equivalent”代入题干后为“The printers sold by Mitaka Innovations a discounted price are of equivalent quality to those sold elsewhere.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：B（equivalent）。"
+        "question_type": "语法题 · 形容词与搭配",
+        "grammar_point": "of equivalent quality to",
+        "analysis": "空格修饰名词 quality，需形容词 equivalent。of equivalent quality to 表示质量与……相当。equivalencies、equivalence 是名词，equivalently 是副词。"
       },
       "item_id": 123,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p5-123/123"
+      "item_key": "official-2-test-2/p5-123/123",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "The printers sold by Mitaka Innovations a discounted price are of ------- quality to those sold elsewhere.",
+        "original_choices": [
+          "equivalencies",
+          "equivalent",
+          "equivalently",
+          "equivalence"
+        ],
+        "text_sha256": "bca6b0be609303a9534d737960f6336e320eaedd472739222c6b468e67ffbd60",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/f22050b9-cffa-4cc7-b4ef-196525d1abf4.pdf",
+              "location": "Part 5 question 123; text and four choices"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/d6e91bec-d88d-4f8f-9569-8402b8357ead.pdf",
+              "location": "Part 5 question 123; cross-reference, preserve Aeronamic in Q125 rather than Aerodynamic variant"
+            }
+          ],
+          "notes": "Question number, sentence span, blank location, original choice order and unchanged answer reviewed together. Reference text is not represented as an original image. Preserve local spelling unless the correction is supported."
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "The printers sold by Mitaka Innovations at a discounted price are of equivalent quality to those sold elsewhere.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "734f782714286daa3160627125ebe82841621604131e0c338adedcdebd65ae9d"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "734f782714286daa3160627125ebe82841621604131e0c338adedcdebd65ae9d"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "734f782714286daa3160627125ebe82841621604131e0c338adedcdebd65ae9d"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "734f782714286daa3160627125ebe82841621604131e0c338adedcdebd65ae9d",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

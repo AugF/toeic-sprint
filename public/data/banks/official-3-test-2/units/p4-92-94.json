@@ -37,31 +37,62 @@
       "asset_key": "official-3-test-2/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "was compromised recently.\nThis has never happened before, and it appears to have been a random occurrence.\nNevertheless, the technical team has already developed a new version of our software, which will be released next week.\nIt includes extra layers of encryption to protect our users' data.\nAt the next director's meeting, I'll give you an update.",
+    "transcript": "Thank you for inviting me to attend this board of directors meeting.\nMy name is Junko Ito, and I'm the Chief Digital Information Officer here at Lastrus Tech.\nAs you may have heard, some personal data from one of our clients was compromised recently.\nThis has never happened before, and it appears to have been a random occurrence.\nNevertheless, the technical team has already developed a new version of our software, which will be released next week.\nIt includes extra layers of encryption to protect our users' data.\nAt the next directors' meeting, I'll give you an update.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "f9ef1a89576b1fe12ee2bad86716e5428f27e1db13eb4b5c0c348c2276cc5082",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-3-test-2/audio/part4/q092-094.mp3",
       "metrics": {
-        "word_count": 57,
-        "legacy_word_count": 109,
-        "length_ratio": 0.523,
-        "legacy_coverage": 0.661,
-        "prompted_failure": "missing spoken Questions 92 through 94 introduction"
-      }
+        "word_count": 98,
+        "review_window_end_ms": 44164,
+        "audio_duration_ms": 44164,
+        "words_per_second": 2.219
+      },
+      "transcript_sha256": "cccb8cfbf1183ef77f3002a1ed47262c5d563941e506b172351078c028bd391d"
     },
-    "transcript_translation": "最近受到了损害。\n这种情况以前从未发生过，看起来是一个随机事件。\n不过，技术团队已经开发了我们软件的新版本，下周会发布。\n它包括额外的加密层来保护用户数据。\n在下次董事会议上，我会向你们更新情况。",
+    "transcript_translation": "感谢各位邀请我参加这次董事会会议。\n我叫 Junko Ito，是 Lastrus Tech 的首席数字信息官。\n各位可能已经听说，我们一位客户的部分个人数据最近遭到了泄露。\n这种情况以前从未发生过，目前看来似乎是一次偶发事件。\n尽管如此，技术团队已经开发出新版本的软件，将于下周发布。\n新版本增加了多层加密措施，以保护用户的数据。\n下次董事会开会时，我会向各位汇报最新进展。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "7201a979ede878d82326a24a8b656b3a75062245944cda9467c111f5df64f615"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "cccb8cfbf1183ef77f3002a1ed47262c5d563941e506b172351078c028bd391d",
+      "translation_sha256": "c96ca8834fc11820000303c888e46c45d8c4f46f9389c027f353a658e1f3efa7"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "7201a979ede878d82326a24a8b656b3a75062245944cda9467c111f5df64f615",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 57,
+        "legacy_word_count": 109,
+        "length_ratio": 0.523,
+        "legacy_coverage": 0.661,
+        "prompted_failure": "missing spoken Questions 92 through 94 introduction"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "cccb8cfbf1183ef77f3002a1ed47262c5d563941e506b172351078c028bd391d",
+      "audio_sha256": "f9ef1a89576b1fe12ee2bad86716e5428f27e1db13eb4b5c0c348c2276cc5082",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 44164
+        }
+      ]
     }
   },
   "items": [
@@ -75,7 +106,7 @@
       "answer": "D",
       "question": "Where is the talk taking place?",
       "answer_explain": "正确答案：D（At a board meeting）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):Where(哪里) is the talk taking place?",
+      "question_translation": "这次讲话是在哪里进行的？",
       "choice_translations": [
         "A:At a software demonstration",
         "B:At a certification course",
@@ -113,7 +144,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-2/p4-92-94/92"
+      "item_key": "official-3-test-2/p4-92-94/92",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "23e517066acb54475124f59e961acf9ed615dfa14d6dfb700a238b0cb18df563",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -125,7 +166,7 @@
       "answer": "C",
       "question": "Why does the speaker say, “This has never happened before”?",
       "answer_explain": "正确答案：C（To reassure the listeners）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):Why(为什么) does the speaker(说话者) say, “This has never happened before”?",
+      "question_translation": "讲话者为什么说“以前从未发生过这种情况”？",
       "choice_translations": [
         "A:To apologize for a misunderstanding",
         "B:To explain a new procedure",
@@ -163,7 +204,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-2/p4-92-94/93"
+      "item_key": "official-3-test-2/p4-92-94/93",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "89796488a42d9f77006a3ba32c2f577ec8ed5254936da334c7a4cf9460d95f20",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -175,7 +226,7 @@
       "answer": "B",
       "question": "What will be available next week?",
       "answer_explain": "正确答案：B（New software）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):What(什么) will be available(可用的) next week?",
+      "question_translation": "下周将提供什么？",
       "choice_translations": [
         "A:Updated Web site photographs",
         "B:New software",
@@ -213,7 +264,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-2/p4-92-94/94"
+      "item_key": "official-3-test-2/p4-92-94/94",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "9557c75e66544ab6e6c3523b63e13ba1410fa3ca2ee87accbd9683d0d10c3951",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

@@ -41,7 +41,7 @@
       "asset_key": "official-9-test-2/audio/part3/q062-064.mp3",
       "exists": true
     },
-    "transcript": "and weather report.\nWell, it looks like we're going to be busy on the farm today covering up the crops.\nIt's supposed to drop to negative 12 degrees tomorrow.\nI saw that.\nIt sounds like tomorrow would be a good day for me to go to the bank.\nBut we've got a lot to do to get the crops covered today.\nI knew it was a risk to plant some of these vegetables when we did.\nNow I'm wishing we had waited until later.\nWell, lesson learned.\nLet's start by collecting all of our tarps so we can just drape them over the plants when it's time.",
+    "transcript": "Well, it looks like we're going to be busy on the farm today covering up the crops.\nIt's supposed to drop to negative 12 degrees tomorrow.\nI saw that.\nIt sounds like tomorrow would be a good day for me to go to the bank.\nBut we've got a lot to do to get the crops covered today.\nI knew it was a risk to plant some of these vegetables when we did.\nNow I'm wishing we had waited until later.\nWell, lesson learned.\nLet's start by collecting all of our tarps so we can just drape them over the plants when it's time.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
       "method": "mlx-whisper/large-v3-turbo-4bit:full",
@@ -49,22 +49,57 @@
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-9-test-2/audio/part3/q062-064.mp3",
       "metrics": {
-        "word_count": 106,
+        "word_count": 103,
         "legacy_word_count": 121,
         "length_ratio": 0.876,
         "legacy_coverage": 0.851
-      }
+      },
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
-    "transcript_translation": "和天气报告。\n嗯，看起来我们今天在农场会忙着覆盖作物。\n明天预计气温会降到零下 12 度。\n我看到了。\n听起来明天对我去银行是个好日子。\n但我们今天有很多事情要做才能把作物都覆盖好。\n我知道当初种植这些蔬菜是有风险的。\n现在我真希望我们能等到以后。\n好吧，吸取了教训。\n我们先从收集所有的防水布开始，这样等需要的时候就可以直接盖在植物上。",
+    "transcript_translation": "嗯，看起来我们今天在农场会忙着覆盖作物。\n明天预计气温会降到零下 12 度。\n我看到了。\n听起来明天对我去银行是个好日子。\n但我们今天有很多事情要做才能把作物都覆盖好。\n我知道当初种植这些蔬菜是有风险的。\n现在我真希望我们能等到以后。\n好吧，吸取了教训。\n我们先从收集所有的防水布开始，这样等需要的时候就可以直接盖在植物上。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
       "method": "ollama/gemma4:latest",
-      "transcript_sha256": "33f788ccc0d5372706250755e646f00d72ce4fbfa067ffa12640ef8269e2bb81"
+      "transcript_sha256": "0b8e11eabab67db8f3919c284978500563f5d317ef510afca990d17d09cf1092",
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_intro_cleanup": {
+      "schema_version": "verified_listening_intro_cleanup_v1",
+      "audio_sha256": "6581aeae9d84122d8cc0ae3e305872ef75453b6004aaa467c53e84db4cdc7ded",
+      "removed_english_prefix": "and weather report.",
+      "removed_chinese_prefix": "和天气报告。",
+      "cache_field": "raw",
+      "raw_sha256": "87249c93d1c8c03dd97269540affdc9471707eb1083bac2621b23dec52b32413",
+      "verified_introduction": "Questions 62 through 64 refer to the following conversation and weather report. ",
+      "before": {
+        "transcript": "and weather report.\nWell, it looks like we're going to be busy on the farm today covering up the crops.\nIt's supposed to drop to negative 12 degrees tomorrow.\nI saw that.\nIt sounds like tomorrow would be a good day for me to go to the bank.\nBut we've got a lot to do to get the crops covered today.\nI knew it was a risk to plant some of these vegetables when we did.\nNow I'm wishing we had waited until later.\nWell, lesson learned.\nLet's start by collecting all of our tarps so we can just drape them over the plants when it's time.",
+        "transcript_translation": "和天气报告。\n嗯，看起来我们今天在农场会忙着覆盖作物。\n明天预计气温会降到零下 12 度。\n我看到了。\n听起来明天对我去银行是个好日子。\n但我们今天有很多事情要做才能把作物都覆盖好。\n我知道当初种植这些蔬菜是有风险的。\n现在我真希望我们能等到以后。\n好吧，吸取了教训。\n我们先从收集所有的防水布开始，这样等需要的时候就可以直接盖在植物上。",
+        "transcript_source": {
+          "schema_version": "listening_transcript_v2",
+          "method": "mlx-whisper/large-v3-turbo-4bit:full",
+          "audio_sha256": "6581aeae9d84122d8cc0ae3e305872ef75453b6004aaa467c53e84db4cdc7ded",
+          "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+          "source_audio": "public/assets/official-9-test-2/audio/part3/q062-064.mp3",
+          "metrics": {
+            "word_count": 106,
+            "legacy_word_count": 121,
+            "length_ratio": 0.876,
+            "legacy_coverage": 0.851
+          }
+        },
+        "transcript_translation_source": {
+          "schema_version": "listening_translation_v2",
+          "method": "ollama/gemma4:latest",
+          "transcript_sha256": "33f788ccc0d5372706250755e646f00d72ce4fbfa067ffa12640ef8269e2bb81"
+        }
+      },
+      "after_transcript_sha256": "0b8e11eabab67db8f3919c284978500563f5d317ef510afca990d17d09cf1092",
+      "after_translation_sha256": "c39b21278fe674b2e5d65505b3fb4b555317238d4e146e81310c683e8608d6ca"
     }
   },
   "items": [
@@ -120,7 +155,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-2/p3-62-64/62"
+      "item_key": "official-9-test-2/p3-62-64/62",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -174,7 +212,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-2/p3-62-64/63"
+      "item_key": "official-9-test-2/p3-62-64/63",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -186,7 +227,7 @@
       "answer": "A",
       "question": "What does the man suggest doing?",
       "answer_explain": "正确答案：A（Gathering materials）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):What(什么) does the man(男士) suggest(表明/建议) doing?",
+      "question_translation": "男子建议做什么？",
       "choice_translations": [
         "A:Gathering materials",
         "B:Making a new calendar",
@@ -228,7 +269,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-2/p3-62-64/64"
+      "item_key": "official-9-test-2/p3-62-64/64",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "c6b46e95d64d11c6a8441a40d564edb86fe9228f0bff171486904ab139ebf92b",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

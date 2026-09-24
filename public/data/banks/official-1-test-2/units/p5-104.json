@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "Mr. Hirose ------- at Seventh Street Finan five years ago.\nA. works\nB. worked\nC. working\nD. will work"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "will work"
       ],
       "answer": "B",
-      "question": "Mr. Hirose ------- at Seventh Street Finan five years ago.",
+      "question": "Mr. Hirose ------- at Seventh Street Financial five years ago.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“worked”代入题干后为“Mr. Hirose worked at Seventh Street Finan five years ago.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：B（worked）。",
-      "question_translation": "Mr. Hirose ------- at Seventh Street Finan five years ago.",
+      "answer_explain": "five years ago 明确指过去时间，句子需要一般过去时谓语 worked，因此选 B。A works 是一般现在时；D will work 表将来；C working 单独不能充当谓语。",
+      "question_translation": "五年前，Hirose 先生曾在 Seventh Street Financial **工作**。",
       "choice_translations": [
-        "A：works",
-        "B：worked",
-        "C：working",
-        "D：will work"
+        "工作（一般现在时第三人称单数）",
+        "工作过；曾工作（一般过去时）",
+        "工作（现在分词或动名词）",
+        "将工作（一般将来时）"
       ],
-      "question_type": "动词形式题",
-      "evidence": "参考原文第 1 段：Mr. Hirose ------- at Seventh Street Finan five years ago.",
-      "grammar_point": "动词形式",
-      "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题：动词时态",
+      "grammar_point": "过去时间状语 five years ago 对应一般过去时 worked",
       "explanation_structured": {
         "answer": "B",
-        "question_type": "动词形式题",
-        "evidence": "参考原文第 1 段：Mr. Hirose ------- at Seventh Street Finan five years ago.",
-        "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“worked”代入题干后为“Mr. Hirose worked at Seventh Street Finan five years ago.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：B（worked）。"
+        "question_type": "语法题：动词时态",
+        "grammar_point": "过去时间状语 five years ago 对应一般过去时 worked",
+        "analysis": "five years ago 明确指过去时间，句子需要一般过去时谓语 worked，因此选 B。A works 是一般现在时；D will work 表将来；C working 单独不能充当谓语。"
       },
       "item_id": 104,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p5-104/104"
+      "item_key": "official-1-test-2/p5-104/104",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Mr. Hirose ------- at Seventh Street Finan five years ago.",
+        "original_choices": [
+          "works",
+          "worked",
+          "working",
+          "will work"
+        ],
+        "text_sha256": "ab58d5ba7ce6522a24fea71c4f53ac9485107e3f7bcde5761cd394f100ad450e",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "reason": "两源确认截断的公司名称为 Seventh Street Financial，四项选项一致。",
+          "sources": [
+            {
+              "url": "https://pdfcoffee.com/1000-cau-giai-de-toeic-format-moi-2019-pdf-free.html",
+              "location": "第 544 题，题干及 A–D 选项"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/b1a3c62e-d07c-459a-8a65-d796a13aa648.pdf",
+              "location": "第 1 页第 104 题"
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Mr. Hirose worked at Seventh Street Financial five years ago.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "804260125ca76d82b47162a0d61007beb8532d386740e985b66c4e4508a135fd"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "804260125ca76d82b47162a0d61007beb8532d386740e985b66c4e4508a135fd"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "804260125ca76d82b47162a0d61007beb8532d386740e985b66c4e4508a135fd"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "804260125ca76d82b47162a0d61007beb8532d386740e985b66c4e4508a135fd",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

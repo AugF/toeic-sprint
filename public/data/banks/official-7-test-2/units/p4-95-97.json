@@ -40,7 +40,7 @@
       "asset_key": "official-7-test-2/audio/part4/q095-097.mp3",
       "exists": true
     },
-    "transcript": "and shirt options.\nHi, I'm Alexey Solikov.\nI own a small business and I'm interested in ordering some shirts from your company.\nSee, all of my employees are going to a trade show next month and I want them to wear shirts embroidered with our logo.\nI looked at your design options and I prefer the design with the logo on the sleeve of the shirt.\nBut before I place the order, I want to confirm that they'll be here in time for the trade show.\nPlease call me at 555-0134 and let me know when the shirts would be delivered.\nThanks.",
+    "transcript": "Hi, I'm Alexey Solikov.\nI own a small business and I'm interested in ordering some shirts from your company.\nSee, all of my employees are going to a trade show next month and I want them to wear shirts embroidered with our logo.\nI looked at your design options and I prefer the design with the logo on the sleeve of the shirt.\nBut before I place the order, I want to confirm that they'll be here in time for the trade show.\nPlease call me at 555-0134 and let me know when the shirts would be delivered.\nThanks.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
       "method": "mlx-whisper/large-v3-turbo-4bit:full",
@@ -48,22 +48,57 @@
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-7-test-2/audio/part4/q095-097.mp3",
       "metrics": {
-        "word_count": 101,
+        "word_count": 98,
         "legacy_word_count": 108,
         "length_ratio": 0.935,
         "legacy_coverage": 0.88
-      }
+      },
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
-    "transcript_translation": "和衬衫选项。\n嗨，我是Alexey Solikov。\n我经营一家小公司，有兴趣向贵公司订购一些衬衫。\n你看，我的所有员工下个月要去一个贸易展览会，我想让他们穿着绣有我们标志的衬衫。\n我看过你们的设计选项，我更喜欢袖子上印有标志的设计。\n但在我下单之前，我想确认一下它们是否能在展会前到达。\n请给我打电话：555-0134，并告诉我什么时候可以送达衬衫。",
+    "transcript_translation": "嗨，我是Alexey Solikov。\n我经营一家小公司，有兴趣向贵公司订购一些衬衫。\n你看，我的所有员工下个月要去一个贸易展览会，我想让他们穿着绣有我们标志的衬衫。\n我看过你们的设计选项，我更喜欢袖子上印有标志的设计。\n但在我下单之前，我想确认一下它们是否能在展会前到达。\n请给我打电话：555-0134，并告诉我什么时候可以送达衬衫。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
       "method": "ollama/gemma4:latest",
-      "transcript_sha256": "665476f0a4cba0a1ff6d7b867e23fec35c07988eb81bf990e47aa9663135deb4"
+      "transcript_sha256": "85223dea7a0f4552792a8a7ef6b7056a0882d43ed45d3757615b94edb48f8629",
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_intro_cleanup": {
+      "schema_version": "verified_listening_intro_cleanup_v1",
+      "audio_sha256": "3fb697f5c199f095b5188759f8f086b96c146ff3db05e1d2f706565dfd54c320",
+      "removed_english_prefix": "and shirt options.",
+      "removed_chinese_prefix": "和衬衫选项。",
+      "cache_field": "raw",
+      "raw_sha256": "7204b5a45ba97fe51fed172b731eecbf792030bfd15fbe14ff342f20212008a9",
+      "verified_introduction": "Questions 95 through 97 refer to the following telephone message and shirt options. ",
+      "before": {
+        "transcript": "and shirt options.\nHi, I'm Alexey Solikov.\nI own a small business and I'm interested in ordering some shirts from your company.\nSee, all of my employees are going to a trade show next month and I want them to wear shirts embroidered with our logo.\nI looked at your design options and I prefer the design with the logo on the sleeve of the shirt.\nBut before I place the order, I want to confirm that they'll be here in time for the trade show.\nPlease call me at 555-0134 and let me know when the shirts would be delivered.\nThanks.",
+        "transcript_translation": "和衬衫选项。\n嗨，我是Alexey Solikov。\n我经营一家小公司，有兴趣向贵公司订购一些衬衫。\n你看，我的所有员工下个月要去一个贸易展览会，我想让他们穿着绣有我们标志的衬衫。\n我看过你们的设计选项，我更喜欢袖子上印有标志的设计。\n但在我下单之前，我想确认一下它们是否能在展会前到达。\n请给我打电话：555-0134，并告诉我什么时候可以送达衬衫。",
+        "transcript_source": {
+          "schema_version": "listening_transcript_v2",
+          "method": "mlx-whisper/large-v3-turbo-4bit:full",
+          "audio_sha256": "3fb697f5c199f095b5188759f8f086b96c146ff3db05e1d2f706565dfd54c320",
+          "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+          "source_audio": "public/assets/official-7-test-2/audio/part4/q095-097.mp3",
+          "metrics": {
+            "word_count": 101,
+            "legacy_word_count": 108,
+            "length_ratio": 0.935,
+            "legacy_coverage": 0.88
+          }
+        },
+        "transcript_translation_source": {
+          "schema_version": "listening_translation_v2",
+          "method": "ollama/gemma4:latest",
+          "transcript_sha256": "665476f0a4cba0a1ff6d7b867e23fec35c07988eb81bf990e47aa9663135deb4"
+        }
+      },
+      "after_transcript_sha256": "85223dea7a0f4552792a8a7ef6b7056a0882d43ed45d3757615b94edb48f8629",
+      "after_translation_sha256": "c47662ed9f036d3f36b5fc3b1b73429664b0c9836ceccf9cff2f721d7f015fd2"
     }
   },
   "items": [
@@ -118,7 +153,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-2/p4-95-97/95"
+      "item_key": "official-7-test-2/p4-95-97/95",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -171,7 +209,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-2/p4-95-97/96"
+      "item_key": "official-7-test-2/p4-95-97/96",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -224,7 +265,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-2/p4-95-97/97"
+      "item_key": "official-7-test-2/p4-95-97/97",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     }
   ]
 }

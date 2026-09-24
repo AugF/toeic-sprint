@@ -36,12 +36,10 @@
     "unit_id": "part5-130",
     "model": "toeic_priority_v1"
   },
-  "context": {
-    "content_translation": "本文围绕“形容词词义”展开。阅读时先确认文体与写作目的，再定位题干关键词所在句。"
-  },
+  "context": {},
   "items": [
     {
-      "question": "If its advertising revenue declines further, the magazine's future prospects are ----.",
+      "question": "If its advertising revenue declines further, the magazine's future prospects are -------.",
       "choices": [
         "reported",
         "insignificant",
@@ -52,25 +50,22 @@
       "difficulty": "medium",
       "topic": "形容词词义",
       "keywords": "uncertain future prospects",
-      "answer_explain": "原文依据：广告收入继续下降会使杂志前景不明。 选择理由：uncertain作表语且语义合适，C正确。正确答案：C（uncertain）。",
+      "answer_explain": "广告收入持续下降会使发展前景难以预测，uncertain 表示不确定，最符合条件句表达的风险。reported 指被报道的，insignificant 指不重要的，overlooked 指被忽视的，都不如 uncertain 准确描述未来前景。",
       "question_type": "词汇题",
-      "evidence": "参考原文第 1 段第 1 句：If its advertising revenue declines further, the magazine's future prospects are ----.",
       "choice_translations": [
-        "A：被报道的",
-        "B：无关紧要的；微不足道的",
-        "C：不确定的；前途未卜的",
-        "D：被忽视的；被遗漏的"
+        "被报道的；据报的",
+        "不重要的；微不足道的",
+        "不确定的；难以预料的",
+        "被忽视的；被遗漏的"
       ],
-      "strategy": "本题属于词汇题。先判断空格在句中的成分，再检查词性、主谓一致、时态语态、固定搭配和句意。",
       "explanation_structured": {
         "answer": "C",
         "question_type": "词汇题",
-        "evidence": "参考原文第 1 段第 1 句：If its advertising revenue declines further, the magazine's future prospects are ----.",
-        "strategy": "本题属于词汇题。先判断空格在句中的成分，再检查词性、主谓一致、时态语态、固定搭配和句意。",
-        "analysis": "原文依据：广告收入继续下降会使杂志前景不明。 选择理由：uncertain作表语且语义合适，C正确。正确答案：C（uncertain）。"
+        "grammar_point": "形容词作表语：prospects are uncertain",
+        "analysis": "广告收入持续下降会使发展前景难以预测，uncertain 表示不确定，最符合条件句表达的风险。reported 指被报道的，insignificant 指不重要的，overlooked 指被忽视的，都不如 uncertain 准确描述未来前景。"
       },
-      "question_translation": "如果广告收入进一步下降，该杂志的未来前景将变得 ----。",
-      "grammar_point": "形容词词义：be uncertain 表示“不确定”；广告收入继续下降会让杂志的未来前景不明朗。",
+      "question_translation": "如果广告收入进一步下降，这本杂志的未来前景将**难以确定**。",
+      "grammar_point": "形容词作表语：prospects are uncertain",
       "item_id": 130,
       "priority": {
         "level": "P2",
@@ -99,7 +94,44 @@
         "unit_id": "part5-130",
         "model": "toeic_priority_v1"
       },
-      "item_key": "official-11-test-1/p5-130/130"
+      "item_key": "official-11-test-1/p5-130/130",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "choice_translations": "ready",
+        "analysis": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "If its advertising revenue declines further, the magazine's future prospects are ----.",
+        "original_choices": [
+          "reported",
+          "insignificant",
+          "uncertain",
+          "overlooked"
+        ],
+        "text_sha256": "a88c4c85e14f2bfc2d9dd5fa0f05603e1219e81ad2ad8ab65f90598292dc1d5e",
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "If its advertising revenue declines further, the magazine's future prospects are uncertain.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "342992643f460362362d8e1958356fb2344cad24c2f95b9537ec7584200e9d5c"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "342992643f460362362d8e1958356fb2344cad24c2f95b9537ec7584200e9d5c"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "342992643f460362362d8e1958356fb2344cad24c2f95b9537ec7584200e9d5c"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "342992643f460362362d8e1958356fb2344cad24c2f95b9537ec7584200e9d5c",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

@@ -37,31 +37,62 @@
       "asset_key": "official-10-test-2/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "This is very special.\nIt's the 50th annual Clark City Marathon.\nTo celebrate this milestone, county officials will have free souvenirs available at the finish line area.\nPlease note, marathon runners should be sure to arrive early in order to get to the starting line before the race begins at 8am.",
+    "transcript": "Hello, Marion County.\nLooking for something fun and family-friendly to do this weekend?\nCome to the annual marathon in downtown Clark City.\nEveryone looks forward to this event all year long, especially runners.\nThis year's race is very special.\nIt's the 50th annual Clark City Marathon.\nTo celebrate this milestone, county officials will have free souvenirs available at the finish line area.\nPlease note, marathon runners should be sure to arrive early in order to get to the starting line before the race begins at 8 a.m.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "8163f0ffe32e168096bce94ec60848fbe1ae8ce32187f6437b8db08e36125d10",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-10-test-2/audio/part4/q089-091.mp3",
       "metrics": {
-        "word_count": 51,
-        "legacy_word_count": 87,
-        "length_ratio": 0.586,
-        "legacy_coverage": 0.713,
-        "prompted_failure": "missing spoken Questions 89 through 91 introduction"
-      }
+        "word_count": 87,
+        "review_window_end_ms": 41038,
+        "audio_duration_ms": 41038,
+        "words_per_second": 2.12
+      },
+      "transcript_sha256": "09442e219cda32b0970fb91549a74e37e94638d01257c8732424fb7bcdb3a056"
     },
-    "transcript_translation": "这非常特别。\n这是第50届Clark City马拉松。\n为了庆祝这个里程碑，县官员将在终点线区域提供免费纪念品。\n请注意，马拉松跑者务必提早到达，以便在比赛于早上8点开始前到达起点线。",
+    "transcript_translation": "Marion 县的各位居民，大家好。\n这个周末，想找一项既有趣又适合全家参加的活动吗？\n来 Clark City 市中心参加一年一度的马拉松活动吧。\n大家一整年都在期待这项活动，跑步爱好者尤其如此。\n今年的比赛十分特别。\n这是第 50 届 Clark City 年度马拉松。\n为庆祝这一里程碑，县政府将在终点区域提供免费纪念品。\n请注意，马拉松参赛者务必提早到达，以便在早上 8 点比赛开始之前抵达起跑线。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "7c5060afd88fdfe1456b5862d114c91a0efb8e9ad9f594ea032b63193fa92039"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "09442e219cda32b0970fb91549a74e37e94638d01257c8732424fb7bcdb3a056",
+      "translation_sha256": "e37137010ec3da7866c68e2fbd07c69af13ca4b78989a672182081762f404877"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "7c5060afd88fdfe1456b5862d114c91a0efb8e9ad9f594ea032b63193fa92039",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 51,
+        "legacy_word_count": 87,
+        "length_ratio": 0.586,
+        "legacy_coverage": 0.713,
+        "prompted_failure": "missing spoken Questions 89 through 91 introduction"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "09442e219cda32b0970fb91549a74e37e94638d01257c8732424fb7bcdb3a056",
+      "audio_sha256": "8163f0ffe32e168096bce94ec60848fbe1ae8ce32187f6437b8db08e36125d10",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 41038
+        }
+      ]
     }
   },
   "items": [
@@ -113,7 +144,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p4-89-91/89"
+      "item_key": "official-10-test-2/p4-89-91/89",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -163,7 +197,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p4-89-91/90"
+      "item_key": "official-10-test-2/p4-89-91/90",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -213,7 +250,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p4-89-91/91"
+      "item_key": "official-10-test-2/p4-89-91/91",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     }
   ]
 }

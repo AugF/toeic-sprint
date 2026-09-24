@@ -37,32 +37,63 @@
       "asset_key": "official-8-test-1/audio/part4/q095-097.mp3",
       "exists": true
     },
-    "transcript": "which should help you decide whether to stock it in your store.\nThe best part is, since this particular model is a scaled-down version of one of our larger models, you pay a fraction of the price, just $68.\n99.\nNow, let me show you just how easy it is to fold it and stick it in my backpack.",
+    "transcript": "Thanks for inviting me to come to your camping store to demonstrate Tovan's newest portable lightweight stove.\nI'll begin by handing you these brochures to look over later.\nThey describe this revolutionary new cooking device in detail, which should help you decide whether to stock it in your store.\nThe best part is, since this particular model is a scaled-down version of one of our larger models, you pay a fraction of the price, just $68.99.\nNow let me show you just how easy it is to fold it and stick it in my backpack.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "1916da14442a4ea6906bf6ce58eee8e0e7ec9da8cf4a5fdd6f67f72cebc4fadb",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-8-test-1/audio/part4/q095-097.mp3",
       "metrics": {
-        "word_count": 60,
-        "legacy_word_count": 70,
-        "length_ratio": 0.857,
-        "legacy_coverage": 0.329,
-        "prompted_failure": "missing spoken Questions 95 through 97 introduction"
+        "word_count": 94,
+        "review_window_end_ms": 44278,
+        "audio_duration_ms": 44278,
+        "words_per_second": 2.123
       },
-      "postprocess_version": "sentence_boundaries_v2"
+      "postprocess_version": "sentence_boundaries_v2",
+      "transcript_sha256": "2bb2031ef71865cd1b573468d51cbd1eefa8a660ea2a69d55176ad7a00ffea73"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
     },
-    "transcript_translation": "和价目表。这应该能帮助您决定是否在您的店里进货。\n最好的部分是，由于这个特定型号是我们更大型号的缩小版，您只需支付一小部分的费用，只有 68 美元。\n99 美元。\n现在，让我向您展示折叠和放进我的背包有多容易。",
+    "transcript_translation": "感谢你们邀请我来到贵店这家露营用品店，演示 Tovan 最新推出的便携式轻量炉具。\n我先把这些宣传册交给你们，方便你们稍后查阅。\n宣传册详细介绍了这款革新性的烹饪设备，应该能帮助你们决定是否在店内进货销售。\n最棒的是，这个型号是我们某款较大型号的缩小版，因此只需花原价的一小部分，也就是 68.99 美元。\n现在，让我演示一下，把它折叠起来并放进背包有多么容易。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "deterministic/display_cleanup_migration",
-      "transcript_sha256": "6ad3b0e542312a2df6daa2d7f93b21b7489be715d3d14cd105b2cc2c290bd92d"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "2bb2031ef71865cd1b573468d51cbd1eefa8a660ea2a69d55176ad7a00ffea73",
+      "translation_sha256": "78722246248e2db814ceb585b7d09ef46a15b1c87525859369aa58770f4144d3"
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "6ad3b0e542312a2df6daa2d7f93b21b7489be715d3d14cd105b2cc2c290bd92d",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 60,
+        "legacy_word_count": 70,
+        "length_ratio": 0.857,
+        "legacy_coverage": 0.329,
+        "prompted_failure": "missing spoken Questions 95 through 97 introduction"
+      },
+      "previous_translation_method": "deterministic/display_cleanup_migration",
+      "transcript_sha256": "2bb2031ef71865cd1b573468d51cbd1eefa8a660ea2a69d55176ad7a00ffea73",
+      "audio_sha256": "1916da14442a4ea6906bf6ce58eee8e0e7ec9da8cf4a5fdd6f67f72cebc4fadb",
+      "windows": [
+        {
+          "start_ms": 6000,
+          "end_ms": 26000
+        },
+        {
+          "start_ms": 21000,
+          "end_ms": 41000
+        },
+        {
+          "start_ms": 36000,
+          "end_ms": 44278
+        }
+      ]
     }
   },
   "items": [
@@ -114,7 +145,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-8-test-1/p4-95-97/95"
+      "item_key": "official-8-test-1/p4-95-97/95",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -164,7 +198,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-8-test-1/p4-95-97/96"
+      "item_key": "official-8-test-1/p4-95-97/96",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -214,7 +251,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-8-test-1/p4-95-97/97"
+      "item_key": "official-8-test-1/p4-95-97/97",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     }
   ]
 }

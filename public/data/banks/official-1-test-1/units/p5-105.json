@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "申请驾驶许可证，您必须------- 两份身份证明文件。\nA. meet\nB. work\nC. show\nD. ride"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "ride"
       ],
       "answer": "C",
-      "question": "To apply for a driving permit, you must ------- ting. two forms of identification.",
+      "question": "To apply for a driving permit, you must ------- two forms of identification.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“show”代入题干后为“To apply for a driving permit, you must show ting. two forms of identification.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（show）。",
-      "question_type": "词性 / 词形题",
-      "evidence": "参考原文第 1 段：To apply for a driving permit, you must ------- ting. two forms of identification.",
-      "grammar_point": "词性 / 词形",
-      "strategy": "本题属于词性 / 词形题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "answer_explain": "show 后直接接 two forms of identification，表示出示身份证明。meet 表示遇见或满足，work 表示工作，ride 表示乘坐，均不能与本句宾语构成所需意思。",
+      "question_type": "词汇题 · 动词搭配",
+      "grammar_point": "show identification",
       "explanation_structured": {
         "answer": "C",
-        "question_type": "词性 / 词形题",
-        "evidence": "参考原文第 1 段：To apply for a driving permit, you must ------- ting. two forms of identification.",
-        "strategy": "本题属于词性 / 词形题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“show”代入题干后为“To apply for a driving permit, you must show ting. two forms of identification.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（show）。"
+        "question_type": "词汇题 · 动词搭配",
+        "grammar_point": "show identification",
+        "analysis": "show 后直接接 two forms of identification，表示出示身份证明。meet 表示遇见或满足，work 表示工作，ride 表示乘坐，均不能与本句宾语构成所需意思。"
       },
-      "question_translation": "申请驾驶许可证，您必须------- 两份身份证明文件。",
+      "question_translation": "申请驾驶许可时，您必须**出示**两种身份证明。",
       "choice_translations": [
-        "A：会面",
-        "B：工作",
-        "C：出示",
-        "D：骑"
+        "遇见；满足",
+        "工作；运作",
+        "出示；展示",
+        "乘坐；骑"
       ],
       "item_id": 105,
       "priority": {
@@ -69,7 +64,65 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p5-105/105"
+      "item_key": "official-1-test-1/p5-105/105",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "To apply for a driving permit, you must ------- ting. two forms of identification.",
+        "original_choices": [
+          "meet",
+          "work",
+          "show",
+          "ride"
+        ],
+        "text_sha256": "e47aa840f627d1aa312222565b2995d0b97cda9b8b03be3ef3d606208d2aa8f2",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "original_images_verified": false,
+          "notes": "Removes stray 'ting.' from neighboring column, while retaining the complete sentence and existing options.",
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+              "location": "Question 105, page 1",
+              "kind": "retypeset_practice_pdf",
+              "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/041e4095-b458-4644-a742-70344379baa8.pdf",
+              "location": "Question 105, page 1",
+              "kind": "annotated_retypeset_teacher_pdf",
+              "verification": "Text extraction via web; Chinese annotations excluded."
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "To apply for a driving permit, you must show two forms of identification.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "449d2970e52fc1c905d3ee4b503d9c24f69753f3caf00c5561b7da06b6240b09"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "449d2970e52fc1c905d3ee4b503d9c24f69753f3caf00c5561b7da06b6240b09"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "449d2970e52fc1c905d3ee4b503d9c24f69753f3caf00c5561b7da06b6240b09"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "449d2970e52fc1c905d3ee4b503d9c24f69753f3caf00c5561b7da06b6240b09",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

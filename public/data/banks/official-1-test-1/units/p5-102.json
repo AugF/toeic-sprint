@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "为会议准备的食物必须在周五下午 5:00 前发送给餐饮供应商。\nA. order\nB. group\nC. profit\nD. lesson"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "lesson"
       ],
       "answer": "A",
-      "question": "The food ------- for the conference must sent to the caterer by Friday at 5:00 pu",
+      "question": "The food ------- for the conference must be sent to the caterer by Friday at 5:00 p.m.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“order”代入题干后为“The food order for the conference must sent to the caterer by Friday at 5:00 pu”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：A（order）。",
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：The food ------- for the conference must sent to the caterer by Friday at 5:00 pu",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "answer_explain": "food order 表示餐饮订单，与 sent to the caterer（交给餐饮服务商）相呼应。group、profit、lesson 分别表示团体、利润、课程，不能表示这里需要提交的餐饮安排。",
+      "question_type": "词汇题 · 名词搭配",
+      "grammar_point": "food order 与餐饮服务",
       "explanation_structured": {
         "answer": "A",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：The food ------- for the conference must sent to the caterer by Friday at 5:00 pu",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“order”代入题干后为“The food order for the conference must sent to the caterer by Friday at 5:00 pu”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：A（order）。"
+        "question_type": "词汇题 · 名词搭配",
+        "grammar_point": "food order 与餐饮服务",
+        "analysis": "food order 表示餐饮订单，与 sent to the caterer（交给餐饮服务商）相呼应。group、profit、lesson 分别表示团体、利润、课程，不能表示这里需要提交的餐饮安排。"
       },
-      "question_translation": "为会议准备的食物必须在周五下午 5:00 前发送给餐饮供应商。",
+      "question_translation": "会议的餐饮**订单**必须在周五下午5点前送交餐饮服务商。",
       "choice_translations": [
-        "A：订单",
-        "B：小组",
-        "C：利润",
-        "D：课程"
+        "订单",
+        "团体；组",
+        "利润",
+        "课程；教训"
       ],
       "item_id": 102,
       "priority": {
@@ -69,7 +64,71 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p5-102/102"
+      "item_key": "official-1-test-1/p5-102/102",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "The food ------- for the conference must sent to the caterer by Friday at 5:00 pu",
+        "original_choices": [
+          "order",
+          "group",
+          "profit",
+          "lesson"
+        ],
+        "text_sha256": "0c531c4ac181a8a94d286da07e6bc15b06bf60feefd0aa62e2588fc96d38ab18",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "original_images_verified": false,
+          "notes": "Restores missing passive auxiliary and end-of-sentence time abbreviation, corroborated by plain practice PDF and Japanese flashcards. No answer change.",
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+              "location": "Question 102, page 1",
+              "kind": "retypeset_practice_pdf",
+              "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/041e4095-b458-4644-a742-70344379baa8.pdf",
+              "location": "Question 102, page 1",
+              "kind": "annotated_retypeset_teacher_pdf",
+              "verification": "Text extraction via web; Chinese annotations excluded."
+            },
+            {
+              "url": "https://quizlet.com/1126082888",
+              "location": "Question 102",
+              "kind": "public_flashcard_crosscheck",
+              "verification": "Exact q102 with all four options; no image used."
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "The food order for the conference must be sent to the caterer by Friday at 5:00 p.m.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "37800cf5bfe00d687411cbf3321943d52ac672bddad17e0744d2fbeb328dc6e7"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "37800cf5bfe00d687411cbf3321943d52ac672bddad17e0744d2fbeb328dc6e7"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "37800cf5bfe00d687411cbf3321943d52ac672bddad17e0744d2fbeb328dc6e7"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "37800cf5bfe00d687411cbf3321943d52ac672bddad17e0744d2fbeb328dc6e7",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

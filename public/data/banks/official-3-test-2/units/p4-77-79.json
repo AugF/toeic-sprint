@@ -39,31 +39,62 @@
       "asset_key": "official-3-test-2/audio/part4/q077-079.mp3",
       "exists": true
     },
-    "transcript": "a major tourist destination, but since several museums closed in the historic district, fewer passengers choose to go there.\nThis will now be the third quarter in a row of a steady decline in ticket purchases, so I think it best to reduce the number of bus trips to that location to just one a day.\nI've created an updated schedule that reflects this change.\nPlease look it over and let flexors change.\nPlease look it over and let me know what you think.",
+    "transcript": "Good morning.\nThe main focus of today's meeting is our bus company's quarterly earnings.\nOverall we're doing well, but there has been a noticeable drop in ticket sales on routes to Cooper City.\nCooper City was once a major tourist destination, but since several museums closed in the historic district, fewer passengers choose to go there.\nThis will now be the third quarter in a row of a steady decline in ticket purchases, so I think it best to reduce the number of bus trips to that location to just one a day.\nI've created an updated schedule that reflects this change.\nPlease look it over and let me know what you think.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "2f5d0a775ab32e9132c0fa03b6c39001ca4f9c5c6cd1b66aa51f42a1a90464dc",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-3-test-2/audio/part4/q077-079.mp3",
       "metrics": {
-        "word_count": 84,
-        "legacy_word_count": 102,
-        "length_ratio": 0.824,
-        "legacy_coverage": 0.667,
-        "prompted_failure": "missing spoken Questions 77 through 79 introduction"
-      }
+        "word_count": 113,
+        "review_window_end_ms": 47926,
+        "audio_duration_ms": 47926,
+        "words_per_second": 2.358
+      },
+      "transcript_sha256": "188dd99eee0fa2d2277bf7bb4d8905a50da04c53a1586f752eeb554f2ffd231e"
     },
-    "transcript_translation": "一个主要的旅游目的地，但由于历史街区的几家博物馆关闭了，选择去那里的乘客变少了。\n这将是票务购买持续下降的第三个季度，所以我认为最好将到该地点的巴士班次减少到每天一次。\n我创建了一个更新后的时间表来反映这一变化。\n请您过目，并让我知道您的想法。\n请您过目，并告诉我您的想法。",
+    "transcript_translation": "大家早上好。\n今天会议主要讨论我们巴士公司的季度收益。\n总体而言，我们经营得不错，但前往 Cooper City 各条线路的车票销量明显下降了。\nCooper City 曾是一个重要的旅游目的地，但自从历史街区的几家博物馆关闭后，选择前往那里的乘客减少了。\n这将是购票量连续稳步下降的第三个季度，所以我认为最好将前往那里的巴士班次减少到每天一班。\n我已经制作了一份体现这一调整的新时刻表。\n请大家查看，并告诉我你们的想法。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "efbf2f672f2eaf638c10b7c3944af01a0f65cca34eea4a65be6682ea026e9ed6"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "188dd99eee0fa2d2277bf7bb4d8905a50da04c53a1586f752eeb554f2ffd231e",
+      "translation_sha256": "b70f5e2b9c095ad2d6d7e10d7bb0237c50368bd676d2912c518a1bd7519f6512"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "efbf2f672f2eaf638c10b7c3944af01a0f65cca34eea4a65be6682ea026e9ed6",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 84,
+        "legacy_word_count": 102,
+        "length_ratio": 0.824,
+        "legacy_coverage": 0.667,
+        "prompted_failure": "missing spoken Questions 77 through 79 introduction"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "188dd99eee0fa2d2277bf7bb4d8905a50da04c53a1586f752eeb554f2ffd231e",
+      "audio_sha256": "2f5d0a775ab32e9132c0fa03b6c39001ca4f9c5c6cd1b66aa51f42a1a90464dc",
+      "windows": [
+        {
+          "start_ms": 6000,
+          "end_ms": 26000
+        },
+        {
+          "start_ms": 21000,
+          "end_ms": 41000
+        },
+        {
+          "start_ms": 36000,
+          "end_ms": 47926
+        }
+      ]
     }
   },
   "items": [
@@ -77,7 +108,7 @@
       "answer": "C",
       "question": "What problem is the speaker discussing?",
       "answer_explain": "正确答案：C（A decrease in ticket sales）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):What(什么) problem is the speaker(说话者) discussing?",
+      "question_translation": "讲话者在谈论什么问题？",
       "choice_translations": [
         "A:Outdated vehicles",
         "B:Passenger complaints",
@@ -117,7 +148,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-2/p4-77-79/77"
+      "item_key": "official-3-test-2/p4-77-79/77",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "21ea33b27f2338c3189fb881b6e3c38c683d81a53ea9fc55447ae1a04ae11cfa",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -129,7 +170,7 @@
       "answer": "A",
       "question": "What does the speaker suggest?",
       "answer_explain": "正确答案：A（Reducing the number of daily trips）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) suggest(表明/建议)?",
+      "question_translation": "讲话者提出了什么建议？",
       "choice_translations": [
         "A:Reducing the number of daily trips",
         "B:Offering lower bus fares mz",
@@ -169,7 +210,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-2/p4-77-79/78"
+      "item_key": "official-3-test-2/p4-77-79/78",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "071725d95f27b36f3147413f41427dfb23a338fb634ba13c44eda21ba17b605f",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -181,7 +232,7 @@
       "answer": "D",
       "question": "What does the speaker ask the listeners to do?",
       "answer_explain": "正确答案：D（Provide feedback on a schedule）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):79. What(什么) does the speaker(说话者) ask the listeners to do?",
+      "question_translation": "讲话者请听众做什么？",
       "choice_translations": [
         "A:Get approval for travel",
         "B:Review a revised budget",
@@ -221,7 +272,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-2/p4-77-79/79"
+      "item_key": "official-3-test-2/p4-77-79/79",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "b760100acfc2371c3f909f2d9bc3a61cabfa19b22d7f670a02f73d7bcc96b878",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

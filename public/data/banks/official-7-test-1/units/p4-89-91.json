@@ -36,31 +36,62 @@
       "asset_key": "official-7-test-1/audio/part4/q089-091.mp3",
       "exists": true
     },
-    "transcript": "of the way we advertise there research has shown online advertisements in europe are more effective than television ads so we've decided to stop our television ad campaign there which could also save us money as tv ads are expensive to produce we'll use the extra money to hire more people with expertise in social media advertising job openings will be posted soon",
+    "transcript": "Good morning, everyone.\nI've analyzed the results from our latest sales report, and it's obvious we need a change in strategy.\nSales of our smart speakers in the European markets have fallen in the last quarter.\nThis may be because of the way we advertise there.\nResearch has shown online advertisements in Europe are more effective than television ads.\nSo we've decided to stop our television ad campaign there, which could also save us money as TV ads are expensive to produce.\nWe'll use the extra money to hire more people with expertise in social media advertising.\nJob openings will be posted soon.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "e442e0097d9c5dc2cabb84c695a2b6d2a990dd97e3f3e22a1fc74021e34a6b75",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-7-test-1/audio/part4/q089-091.mp3",
       "metrics": {
-        "word_count": 63,
-        "legacy_word_count": 104,
-        "length_ratio": 0.606,
-        "legacy_coverage": 0.702,
-        "prompted_failure": "implausible Part 4 transcript length 2"
-      }
+        "word_count": 103,
+        "review_window_end_ms": 47099,
+        "audio_duration_ms": 47099,
+        "words_per_second": 2.187
+      },
+      "transcript_sha256": "f19947b0df65ff77994241a21c1ffe00004436bd61e7b82ed6c5aaf499a6338d"
     },
-    "transcript_translation": "除了我们宣传外，研究表明在欧洲的线上广告比电视广告更有效，所以我们决定停止我们的电视广告活动，这也能帮我们省钱，因为制作电视广告成本很高，我们将用这些额外的资金雇佣更多具有社交媒体广告专业知识的人。职位空缺很快就会发布。",
+    "transcript_translation": "大家早上好。\n我分析了最新销售报告中的数据，显然我们需要调整策略。\n上个季度，我们的智能音箱在欧洲市场的销量有所下降。\n这可能与我们在当地采用的广告方式有关。\n研究表明，在欧洲，网络广告比电视广告更有效。\n因此，我们决定停止在当地投放电视广告；由于电视广告制作费用高，这也能为我们节省资金。\n我们将利用节省下来的资金，招聘更多精通社交媒体广告的人才。\n招聘岗位信息将很快公布。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "e822b1cf3d69cb4374d80877879d60f6f3696aa7edc9746775bcc766c00039a7"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "f19947b0df65ff77994241a21c1ffe00004436bd61e7b82ed6c5aaf499a6338d",
+      "translation_sha256": "5825b3fe22dfeaf8dad5a2120ab3f5c479f2055d46aa98b69530f15f390059b5"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "e822b1cf3d69cb4374d80877879d60f6f3696aa7edc9746775bcc766c00039a7",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 63,
+        "legacy_word_count": 104,
+        "length_ratio": 0.606,
+        "legacy_coverage": 0.702,
+        "prompted_failure": "implausible Part 4 transcript length 2"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "f19947b0df65ff77994241a21c1ffe00004436bd61e7b82ed6c5aaf499a6338d",
+      "audio_sha256": "e442e0097d9c5dc2cabb84c695a2b6d2a990dd97e3f3e22a1fc74021e34a6b75",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 47099
+        }
+      ]
     }
   },
   "items": [
@@ -111,7 +142,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-1/p4-89-91/89"
+      "item_key": "official-7-test-1/p4-89-91/89",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -160,7 +194,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-1/p4-89-91/90"
+      "item_key": "official-7-test-1/p4-89-91/90",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -209,7 +246,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-1/p4-89-91/91"
+      "item_key": "official-7-test-1/p4-89-91/91",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     }
   ]
 }

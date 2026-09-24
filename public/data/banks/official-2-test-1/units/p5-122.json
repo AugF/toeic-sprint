@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "市长候选人正在电视上竞争-------。\nA. 已暴露的\nB. 暴露的\nC. 暴露\nD. 曝光"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "exposure"
       ],
       "answer": "D",
-      "question": "The mayoral candidates are competing fc television -------.",
+      "question": "The mayoral candidates are competing for television -------.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“exposure”代入题干后为“The mayoral candidates are competing fc television exposure.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：D（exposure）。",
-      "question_translation": "市长候选人正在电视上竞争-------。",
+      "answer_explain": "for 后需要名词作宾语，television exposure 表示电视曝光或报道机会。having exposed 是完成式动名词或分词结构，exposed 是过去式或分词，expose 是动词原形，都不适合这里的名词搭配。",
+      "question_translation": "市长候选人正在争取电视**曝光机会**。",
       "choice_translations": [
-        "A：已暴露的",
-        "B：暴露的",
-        "C：暴露",
-        "D：曝光"
+        "已经使……曝光（非谓语完成形式）",
+        "已曝光的；暴露了",
+        "使曝光；揭露",
+        "曝光；媒体报道"
       ],
-      "question_type": "动词形式题",
-      "evidence": "参考原文第 1 段：The mayoral candidates are competing fc television -------.",
-      "grammar_point": "动词形式",
-      "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题 · 词性",
+      "grammar_point": "介词 for 后用名词 exposure",
       "explanation_structured": {
         "answer": "D",
-        "question_type": "动词形式题",
-        "evidence": "参考原文第 1 段：The mayoral candidates are competing fc television -------.",
-        "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“exposure”代入题干后为“The mayoral candidates are competing fc television exposure.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：D（exposure）。"
+        "question_type": "语法题 · 词性",
+        "grammar_point": "介词 for 后用名词 exposure",
+        "analysis": "for 后需要名词作宾语，television exposure 表示电视曝光或报道机会。having exposed 是完成式动名词或分词结构，exposed 是过去式或分词，expose 是动词原形，都不适合这里的名词搭配。"
       },
       "item_id": 122,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-1/p5-122/122"
+      "item_key": "official-2-test-1/p5-122/122",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "The mayoral candidates are competing fc television -------.",
+        "original_choices": [
+          "having exposed",
+          "exposed",
+          "expose",
+          "exposure"
+        ],
+        "text_sha256": "a5970c97b8c2602899e529b8a6545c21e8e7fd23f33f6e3865f94fb7631eef69",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "sources": [
+            {
+              "url": "https://moodle.univ-lyon1.fr/pluginfile.php/2661369/mod_folder/content/0/TEST%201.pdf?forcedownload=1",
+              "location": "Printed page 44, question 122; question and all four choices"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/485732bc-0353-4412-9a5e-7e40518489e6.pdf",
+              "location": "Part 5 question 122; secondary re-typeset text (ignore annotations and duplicate 'was defeated' in Q119)"
+            }
+          ],
+          "notes": "Question number, sentence span, blank location, original choice order and unchanged answer reviewed together. Reference text is not represented as an original image. Preserve local spelling unless the correction is supported."
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "The mayoral candidates are competing for television exposure.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "088d96904665fd3dc33ca3e68bc74ac8f44726c8f4be3f0540b7758203130aab"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "088d96904665fd3dc33ca3e68bc74ac8f44726c8f4be3f0540b7758203130aab"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "088d96904665fd3dc33ca3e68bc74ac8f44726c8f4be3f0540b7758203130aab"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "088d96904665fd3dc33ca3e68bc74ac8f44726c8f4be3f0540b7758203130aab",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

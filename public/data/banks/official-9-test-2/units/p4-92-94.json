@@ -37,31 +37,62 @@
       "asset_key": "official-9-test-2/audio/part4/q092-094.mp3",
       "exists": true
     },
-    "transcript": "I had an exceptional time foraging in Japan's beautiful forests.\nOf course, you can learn more about this experience by purchasing my book.\nNow I belong to the Bradford Mushroom Hunters Club.\nThere are many varieties of mushrooms found in this area.\nThey are delicious.\nIf you don't believe me, I brought some of what we found this morning.",
+    "transcript": "Thank you for inviting me to Bradford's bookstore to speak about my book, Will Travel for Mushrooms: An Amateur's Experience.\nLast year, I spent three weeks in Japan hunting for the matsutake mushroom, a highly prized delicacy there.\nI had an exceptional time foraging in Japan's beautiful forests.\nOf course, you can learn more about this experience by purchasing my book.\nNow I belong to the Bradford Mushroom Hunters Club.\nThere are many varieties of mushrooms found in this area.\nThey are delicious.\nIf you don't believe me, I brought some of what we found this morning.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "8270784370e25aa0d8fb442c9487fb402ca8ce20ec52f192ac35e61868d20a10",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-9-test-2/audio/part4/q092-094.mp3",
       "metrics": {
-        "word_count": 59,
-        "legacy_word_count": 95,
-        "length_ratio": 0.621,
-        "legacy_coverage": 0.684,
-        "prompted_failure": "missing spoken Questions 92 through 94 introduction"
-      }
+        "word_count": 97,
+        "review_window_end_ms": 45531,
+        "audio_duration_ms": 45531,
+        "words_per_second": 2.13
+      },
+      "transcript_sha256": "a7efb7fa40eacbcba4471c53f3de6105e529d6e700bc96f64a828e8dc2ad3b46"
     },
-    "transcript_translation": "我在日本美丽的森林里采蘑菇度过了一段难忘的时光。\n当然，您可以通过购买我的书了解更多关于这次经历的信息。\n我现在属于布拉德福德（Bradford）蘑菇猎人俱乐部。\n这个地区发现了很多种类的蘑菇。\n它们非常好吃。\n如果您不相信我，我带了一些我们今天早上找到的。",
+    "transcript_translation": "感谢你们邀请我来到 Bradford 书店，介绍我的书《为蘑菇而旅行：一位业余爱好者的经历》。\n去年，我在日本花了三个星期寻找松茸，这种蘑菇在当地是备受珍视的美味。\n在日本美丽的森林中采集蘑菇的那段时光非常美妙。\n当然，你们可以购买我的书，进一步了解这段经历。\n现在，我是 Bradford 蘑菇采集俱乐部的一员。\n本地区能找到许多不同品种的蘑菇。\n它们非常美味。\n如果你们不相信，我带来了一些我们今天早上采到的蘑菇。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "f855a7e9c6b350b04ac985503dbba0274d066ba0975a2ad56a63f08f335d07e5"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "a7efb7fa40eacbcba4471c53f3de6105e529d6e700bc96f64a828e8dc2ad3b46",
+      "translation_sha256": "6015bad85e2437e64b054be937eec2915f5aa2adebaa38b167d9b34140e9ee75"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "f855a7e9c6b350b04ac985503dbba0274d066ba0975a2ad56a63f08f335d07e5",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 59,
+        "legacy_word_count": 95,
+        "length_ratio": 0.621,
+        "legacy_coverage": 0.684,
+        "prompted_failure": "missing spoken Questions 92 through 94 introduction"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "a7efb7fa40eacbcba4471c53f3de6105e529d6e700bc96f64a828e8dc2ad3b46",
+      "audio_sha256": "8270784370e25aa0d8fb442c9487fb402ca8ce20ec52f192ac35e61868d20a10",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 45531
+        }
+      ]
     }
   },
   "items": [
@@ -75,7 +106,7 @@
       "answer": "D",
       "question": "Where is the speaker?",
       "answer_explain": "正确答案：D（At a bookstore）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):Where(哪里) is the speaker(说话者)?",
+      "question_translation": "讲话者在哪里？",
       "choice_translations": [
         "A:At a library",
         "B:At a community garden",
@@ -113,7 +144,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-2/p4-92-94/92"
+      "item_key": "official-9-test-2/p4-92-94/92",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "e5358463f292a9d0e015c025ce2f50d4fecdbd527dc1aeaac2e3121fd9deca51",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -163,7 +204,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-2/p4-92-94/93"
+      "item_key": "official-9-test-2/p4-92-94/93",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -213,7 +257,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-9-test-2/p4-92-94/94"
+      "item_key": "official-9-test-2/p4-92-94/94",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     }
   ]
 }

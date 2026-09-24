@@ -31,28 +31,25 @@
         "himself"
       ],
       "answer": "B",
-      "question": "Mr. Samudio thanked the hotel staff for making - stay a comfortable one.",
+      "question": "Mr. Samudio thanked the hotel staff for making ------- stay a comfortable one.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：题干为“Mr. Samudio thanked the hotel staff for making - stay a comfortable one.”，空格处完成后应为“his”。选择理由：该选项同时满足句子所需的词性、语法结构、固定搭配和语义；其余选项至少一项不符。正确答案：B（his）。",
-      "question_translation": "中文辅助（离线预处理）：Mr.\nSamudio thanked the hotel staff for making - stay a comfortable one.",
+      "answer_explain": "stay 在这里是名词，指停留或住宿，前面需要物主限定词 his。he 是主格，him 是宾格，himself 是反身代词，都不能直接在这个位置限定名词 stay。",
+      "question_translation": "Samudio 先生感谢酒店员工让**他的**住宿体验变得舒适。",
       "choice_translations": [
-        "A：he",
-        "B：his",
-        "C：him",
-        "D：himself"
+        "他（主格）",
+        "他的",
+        "他（宾格）",
+        "他自己"
       ],
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：Mr. Samudio thanked the hotel staff for making - stay a comfortable one.",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格句法成分，再核对词性、动词形式、固定搭配和句意。",
-      "grammar_point": "语境词汇 / 搭配 ",
+      "question_type": "语法题",
+      "grammar_point": "形容词性物主代词修饰名词：his stay",
       "explanation_structured": {
         "answer": "B",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：Mr. Samudio thanked the hotel staff for making - stay a comfortable one.",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格句法成分，再核对词性、动词形式、固定搭配和句意。",
-        "analysis": "原文依据：题干为“Mr. Samudio thanked the hotel staff for making - stay a comfortable one.”，空格处完成后应为“his”。选择理由：该选项同时满足句子所需的词性、语法结构、固定搭配和语义；其余选项至少一项不符。正确答案：B（his）。"
+        "question_type": "语法题",
+        "grammar_point": "形容词性物主代词修饰名词：his stay",
+        "analysis": "stay 在这里是名词，指停留或住宿，前面需要物主限定词 his。he 是主格，him 是宾格，himself 是反身代词，都不能直接在这个位置限定名词 stay。"
       },
       "item_id": 102,
       "priority": {
@@ -67,7 +64,44 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-11-test-2/p5-102/102"
+      "item_key": "official-11-test-2/p5-102/102",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "choice_translations": "ready",
+        "analysis": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Mr. Samudio thanked the hotel staff for making - stay a comfortable one.",
+        "original_choices": [
+          "he",
+          "his",
+          "him",
+          "himself"
+        ],
+        "text_sha256": "33ba2447d6bdc6d060cd696ddafa1d90c8484e34f315927e9be944244ee88b92",
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Mr. Samudio thanked the hotel staff for making his stay a comfortable one.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "a8c2ee75718303780c9b846063c1a06abfa6b02794c79673368f6658cef7fa45"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "a8c2ee75718303780c9b846063c1a06abfa6b02794c79673368f6658cef7fa45"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "a8c2ee75718303780c9b846063c1a06abfa6b02794c79673368f6658cef7fa45"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "a8c2ee75718303780c9b846063c1a06abfa6b02794c79673368f6658cef7fa45",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

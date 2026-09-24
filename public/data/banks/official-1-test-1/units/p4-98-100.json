@@ -42,31 +42,62 @@
       "asset_key": "official-1-test-1/images/part4/q098-100.jpg",
       "exists": true
     },
-    "transcript": "DTQ now offers its games for free, with consumers making extra purchases during the game.\nWe think this business approach could also help us attract new users.\nSo in the next quarter, we're going to try it out with some of our existing games to see if we can grow beyond our 17% market share.",
+    "transcript": "All right, everyone.\nHere's the breakdown of this year's video game market shares.\nWe're still among the top four gaming companies, but we need to pay attention to DTQ's rapid growth.\nThey just surpassed us.\nWe're not that far behind at 17%, but we need to keep up.\nOur market experts attribute DTQ's expansion to its new business model.\nDTQ now offers its games for free, with consumers making extra purchases during the game.\nWe think this business approach could also help us attract new users.\nSo in the next quarter, we're going to try it out with some of our existing games to see if we can grow beyond our 17% market share.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "dc3e0d63a12c6449badaac85e3a669dc48ad82906fee9f8c19548597e4c97775",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-1-test-1/audio/part4/q098-100.mp3",
       "metrics": {
-        "word_count": 56,
-        "legacy_word_count": 116,
-        "length_ratio": 0.483,
-        "legacy_coverage": 0.655
+        "word_count": 112,
+        "review_window_end_ms": 52570,
+        "audio_duration_ms": 52570,
+        "words_per_second": 2.13
       },
-      "postprocess_version": "sentence_boundaries_v2"
+      "postprocess_version": "sentence_boundaries_v2",
+      "transcript_sha256": "362a9eadf18d514ddd9705540ea81082459c3c23ae23d8f7842edb61aafbf959"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
     },
-    "transcript_translation": "DTQ 现在免费提供其游戏，用户在游戏中进行额外购买。\n我们认为这种商业模式也可能帮助我们吸引新用户。\n因此，在下一季度，我们将尝试用一些现有游戏来测试这一点，看看是否能将我们的市场份额提高到超过 17%。",
+    "transcript_translation": "好了，各位。\n这里是今年电子游戏市场份额的具体分布。\n我们仍然位列四大游戏公司，但需要关注 DTQ 的快速增长。\n他们刚刚超过了我们。\n我们目前的市场份额是 17%，落后得并不多，但必须跟上。\n我们的市场专家认为，DTQ 的扩张得益于它的新商业模式。\nDTQ 现在免费提供游戏，让消费者在游戏过程中进行额外付费购买。\n我们认为，这种经营方式也能帮助我们吸引新用户。\n因此，下个季度，我们将用部分现有游戏试行这种模式，看看能否让市场份额突破目前的 17%。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "76181254fece7a088c2a91c08dc2750ed37445dcc3f9e4bc8f68c8a681f0f32d"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "362a9eadf18d514ddd9705540ea81082459c3c23ae23d8f7842edb61aafbf959",
+      "translation_sha256": "0c6c4b7890f778db6e7643cdceaf2fdbb830d96376ecfbe8ed2b9f2a632cfa90"
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "76181254fece7a088c2a91c08dc2750ed37445dcc3f9e4bc8f68c8a681f0f32d",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "previous_metrics": {
+        "word_count": 56,
+        "legacy_word_count": 116,
+        "length_ratio": 0.483,
+        "legacy_coverage": 0.655
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "362a9eadf18d514ddd9705540ea81082459c3c23ae23d8f7842edb61aafbf959",
+      "audio_sha256": "dc3e0d63a12c6449badaac85e3a669dc48ad82906fee9f8c19548597e4c97775",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 52570
+        }
+      ]
     }
   },
   "items": [
@@ -118,7 +149,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p4-98-100/98"
+      "item_key": "official-1-test-1/p4-98-100/98",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -168,7 +202,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p4-98-100/99"
+      "item_key": "official-1-test-1/p4-98-100/99",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -218,7 +255,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p4-98-100/100"
+      "item_key": "official-1-test-1/p4-98-100/100",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ],
   "knowledge_accumulation": {

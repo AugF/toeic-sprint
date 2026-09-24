@@ -69,7 +69,28 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-3-test-1/p5-111/111"
+      "item_key": "official-3-test-1/p5-111/111",
+      "content_review_status": "source_required",
+      "content_review_issues": [
+        "option_ocr_debris",
+        "manual_review_found_damaged_text"
+      ],
+      "study_aid_status": {
+        "question_translation": "pending",
+        "analysis": "pending",
+        "choice_translations": "pending"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "The cost of building Juniper High Towers exceeded the contractor’s original ------- by over £5,000.00.",
+        "original_choices": [
+          "estimating",
+          "estimate",
+          "estimated",
+          "estimator 11"
+        ],
+        "text_sha256": "4c33b76c585c9ce9b9753d23a19ad1f2fa387240fefbad9b5eb118201040b3bc"
+      }
     }
   ]
 }

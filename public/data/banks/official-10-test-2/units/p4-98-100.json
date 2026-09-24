@@ -45,31 +45,65 @@
       "asset_key": "official-10-test-2/images/part4/q098-100.jpg",
       "exists": true
     },
-    "transcript": "We have plenty of experience with internet ads after launching the new light truck last year.\nPlease use your experience with these ads to create new advertising content for the new Sedans.\nEveryone should develop a sample ad by the end of the week.",
+    "transcript": "As you know, the company is preparing to launch a new line of luxury sedans.\nThe advertising campaign is substantial.\nYou can see here in the table on the screen that we have been working in stages to create the content for the advertisements, and So-hyun's team has already created some excellent content for broadcast media.\nNow we need to focus on internet ads, which will have the widest reach.\nWe have plenty of experience with internet ads after launching the new light truck last year.\nPlease use your experience with these ads to create new advertising content for the new sedans.\nEveryone should develop a sample ad by the end of the week.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "cc5a44814ce4d524d1d7c95d11209f480a6f4e2acff749f5f785ca1672a038e7",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-10-test-2/audio/part4/q098-100.mp3",
       "metrics": {
-        "word_count": 46,
-        "legacy_word_count": 128,
-        "length_ratio": 0.359,
-        "legacy_coverage": 0.602
+        "word_count": 114,
+        "review_window_end_ms": 46968,
+        "audio_duration_ms": 46968,
+        "words_per_second": 2.427
       },
-      "postprocess_version": "sentence_boundaries_v2"
+      "postprocess_version": "sentence_boundaries_v2",
+      "transcript_sha256": "aee79c72c6d14c42e6dd7ceab802f64314425050bf9cec9442d3037cc0583aca"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
     },
-    "transcript_translation": "去年推出新的轻型卡车后，我们在互联网广告方面积累了丰富的经验。\n请利用您在这些广告方面的经验，为新款轿车创建新的广告内容。\n每个人应该在本周末前开发出一份样板广告。",
+    "transcript_translation": "如各位所知，公司正准备推出一个新的豪华轿车系列。\n这次广告宣传的规模很大。\n从屏幕上的这张表格可以看到，我们一直在分阶段制作广告内容，而 So-hyun 的团队已经为广播电视媒体制作了一些出色的内容。\n现在我们需要把重点放在网络广告上，因为它们能覆盖最广泛的受众。\n去年推出新款轻型卡车时，我们积累了丰富的网络广告经验。\n请运用你们制作这些广告的经验，为新的轿车系列创作新的广告内容。\n每个人都应在本周结束前制作一份广告样稿。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "d514f5cdc35501330291e00fef8e5c66ae0b977f4d834715465b40cfa7193602"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "aee79c72c6d14c42e6dd7ceab802f64314425050bf9cec9442d3037cc0583aca",
+      "translation_sha256": "62c85cac3219bd6cf522b5f0ac5a07d082e5bde0a04f241188859c0781592fb7"
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "d514f5cdc35501330291e00fef8e5c66ae0b977f4d834715465b40cfa7193602",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:full",
+      "previous_metrics": {
+        "word_count": 46,
+        "legacy_word_count": 128,
+        "length_ratio": 0.359,
+        "legacy_coverage": 0.602
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "aee79c72c6d14c42e6dd7ceab802f64314425050bf9cec9442d3037cc0583aca",
+      "audio_sha256": "cc5a44814ce4d524d1d7c95d11209f480a6f4e2acff749f5f785ca1672a038e7",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 46968
+        }
+      ],
+      "notes": [
+        "Employee name spelling is phonetic (ASR: so Hune); printed source can confirm orthography."
+      ]
     }
   },
   "items": [
@@ -124,7 +158,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p4-98-100/98"
+      "item_key": "official-10-test-2/p4-98-100/98",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -177,7 +214,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p4-98-100/99"
+      "item_key": "official-10-test-2/p4-98-100/99",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -189,7 +229,7 @@
       "answer": "D",
       "question": "What does the speaker ask the listeners to do?",
       "answer_explain": "正确答案：D（Produce some work samples）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) ask the listeners to do?",
+      "question_translation": "讲话者请听众做什么？",
       "choice_translations": [
         "A:Interview a colleague about their work(工作) experience",
         "B:Evaluate some advertising submissions from a vendor",
@@ -230,7 +270,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p4-98-100/100"
+      "item_key": "official-10-test-2/p4-98-100/100",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "b760100acfc2371c3f909f2d9bc3a61cabfa19b22d7f670a02f73d7bcc96b878",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ],
   "knowledge_accumulation": {

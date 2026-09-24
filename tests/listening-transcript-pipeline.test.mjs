@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {createHash} from "node:crypto";
-import {mergeTranscriptChunks,parsePart1,parsePart2,parsePart34,sentenceLines,validatePublishedTranscript} from "../scripts/rebuild-listening-transcripts.mjs";
+import {invalidateChangedTranscriptTranslation,mergeTranscriptChunks,parsePart1,parsePart2,parsePart34,sentenceLines,splitPart34Introduction,transcribeAudioWindows,validatePublishedTranscript} from "../scripts/rebuild-listening-transcripts.mjs";
 import {isCurrentTranslation,validateTranslation} from "../scripts/translate-listening-transcripts-ollama.mjs";
 import {cleanupObvious,suspiciousChoice,suspiciousQuestion} from "../scripts/repair-listening-items-ollama.mjs";
 
@@ -13,6 +13,51 @@ test("Part 1 removes the spoken direction and emits exactly four choices",()=>{
 test("Part 1 accepts a spoken number word",()=>{
   const value=parsePart1("Number four. Look at the picture marked number four in your test book. A. A board is being erased. B. People are attending a presentation. C. A man is standing in a doorway. D. All seats are occupied.",4);
   assert.equal(value.split("\n").length,4);
+});
+
+test("Part 1 preserves all of the last response, not only its first sentence",()=>{
+  const value=parsePart1("Number 1. A. A man is sitting down. B. Some people are boarding a bus. C. A worker is carrying boxes. D. A store is closed. Its door is locked. Number two. Look at the picture.",1);
+  assert.match(value,/D\. A store is closed\. Its door is locked\.$/);
+});
+
+test("a missing stop after the material label must not delete the first sentence",()=>{
+  const raw="Questions 32 through 34 refer to the following conversation Good morning. I need a copy of the new schedule. The meeting has moved to the first floor because the large room is being painted this week.";
+  assert.match(parsePart34(raw,3,32,34).transcript,/^Good morning\./);
+});
+
+test("an unknown material label is rejected instead of swallowing body text",()=>{
+  assert.throws(()=>splitPart34Introduction("Questions 71 through 73 refer to the following mysterious recording Welcome to our store. More text here.",71,73),/unknown/);
+});
+
+test("graphic directions are removed at the verified boundary only",()=>{
+  assert.equal(splitPart34Introduction("Questions 32 through 34 refer to the following conversation. And seating chart. Good morning.",32,34).body,"Good morning.");
+  assert.equal(sentenceLines("And with everyone here. We can start.",{stripLegacyIntro:false}),"And with everyone here.\nWe can start.");
+});
+
+test("unchanged ASR rebuilds preserve aligned translations; changes invalidate all aliases",()=>{
+  const context={transcript_translation:"你好",transcript_translation_source:{transcript_sha256:"old"},content_translation:"旧译文"};
+  invalidateChangedTranscriptTranslation(context,"Hello.","Hello.");
+  assert.equal(context.transcript_translation,"你好");
+  invalidateChangedTranscriptTranslation(context,"Hello.","Hello there.");
+  assert.deepEqual(context,{});
+});
+
+test("window retry starts just after the spoken direction, not at second 21",async()=>{
+  const calls=[];
+  const segments=await transcribeAudioWindows({audioFile:"example.mp3",duration:41000,transcribe:async request=>{
+    calls.push(request);
+    return request.offsetMs===0
+      ? {raw:"Questions 71 through 73 refer to the following talk.",segments:[{start:0,end:4.6,text:"Questions 71 through 73 refer to the following talk."}]}
+      : {raw:"Complete speech in this window.",segments:[]};
+  }});
+  assert.deepEqual(calls.map(call=>call.offsetMs),[0,4650,19650,34650]);
+  assert.equal(segments.at(-1).duration_ms,6350);
+  assert.ok(segments.every(segment=>segment.raw));
+});
+
+test("window retry also supports the plain-text whisper.cpp adapter",async()=>{
+  const segments=await transcribeAudioWindows({audioFile:"example.mp3",duration:36000,transcribe:async()=>"A normal audio segment."});
+  assert.deepEqual(segments.map(segment=>segment.offset_ms),[0,5000,20000]);
 });
 
 test("Part 1 tolerates a clipped direction and ignores the next question cue",()=>{

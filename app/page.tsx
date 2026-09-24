@@ -1,7 +1,9 @@
+/// <reference types="vite/client" />
 "use client";
 
 import {useEffect, useMemo, useRef, useState} from "react";
 import type {CSSProperties, KeyboardEvent as ReactKeyboardEvent, PointerEvent as ReactPointerEvent, RefObject} from "react";
+import {answerLabel, emphasisSegments, revealAnswers} from "./review-state";
 
 type Level = "P1" | "P2" | "P3";
 type Priority = {
@@ -19,6 +21,10 @@ type Item = {
   item_key: string;
   question?: string;
   question_translation?: string;
+  source_images?: MediaRef[];
+  prefer_source_image?: boolean;
+  content_review_status?: string;
+  answer_review_status?: string;
   choices?: string[];
   answer?: string;
   answer_explain?: string;
@@ -29,6 +35,7 @@ type Item = {
   choice_translations?: string[];
   grammar_point?: string;
   knowledge_accumulation?: Knowledge;
+  study_aid_status?: {analysis?: "ready" | "pending"; question_translation?: "ready" | "pending" | "not_applicable"; choice_translations?: "ready" | "partial" | "pending"; translation?: "ready" | "pending"; choices?: "ready" | "pending"};
   priority: Priority;
 };
 type Context = {
@@ -42,6 +49,7 @@ type Context = {
   passage_translation?: string;
   content_translation?: string;
   reading_layout_images?: MediaRef[];
+  study_aid_status?: {passage_translation?: "ready" | "pending"};
 };
 type UnitDetail = {
   bank_id: string;
@@ -160,7 +168,7 @@ function normalizeSaved(value: unknown): Saved {
   if (!value || typeof value !== "object") return EMPTY_SAVED;
   const source = value as Partial<Saved>;
   return {
-    answers: source.answers && typeof source.answers === "object" ? source.answers : {},
+    answers: source.answers && typeof source.answers === "object" ? Object.fromEntries(Object.entries(source.answers).filter((entry): entry is [string, string] => typeof entry[1] === "string" && /^[A-D]$/i.test(entry[1])).map(([key, answer]) => [key, answer.toUpperCase()])) : {},
     wrong: Array.isArray(source.wrong) ? source.wrong.map(String) : [],
     stars: Array.isArray(source.stars) ? source.stars.map(String) : [],
     revealed: Array.isArray(source.revealed) ? source.revealed.map(String) : [],
@@ -271,11 +279,13 @@ export default function Home() {
   const [stickyKeys, setStickyKeys] = useState<string[]>([]);
   const [showTranscript, setShowTranscript] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
-  const [showOcrText, setShowOcrText] = useState(false);
-  const [showAnswer, setShowAnswer] = useState(false);
+  const [readingTextKey, setReadingTextKey] = useState<string | null>(null);
+  const [readingTranslationKey, setReadingTranslationKey] = useState<string | null>(null);
   const [showAnalysis, setShowAnalysis] = useState(false);
-  const [relatedAnswers, setRelatedAnswers] = useState<Record<string, boolean>>({});
   const [relatedAnalysis, setRelatedAnalysis] = useState<Record<string, boolean>>({});
+  const [bulkLoading, setBulkLoading] = useState(false);
+  const [reviewNotice, setReviewNotice] = useState("");
+  const [reviewReset, setReviewReset] = useState(0);
   const [sideOpen, setSideOpen] = useState(false);
   const [sidebarWidth, setSidebarWidth] = useState(330);
   const [materialPercent, setMaterialPercent] = useState(46);
@@ -311,7 +321,12 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (catalog) localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+    if (!catalog) return;
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+    } catch {
+      setReviewNotice("当前浏览器无法保存练习进度，本次作答仍可继续；关闭页面后可能无法保留。");
+    }
   }, [catalog, saved]);
 
   const allRefs = useMemo(() => buildDrillRefs(catalog, indexes), [catalog, indexes]);
@@ -371,6 +386,7 @@ export default function Home() {
   const nextDetailPath = next?.detail_path;
   const activeDetail = detail && current && detail.bank_id === current.bank_id && detail.unit_id === current.unit_id ? detail : null;
   const currentItem = activeDetail?.items.find(item => String(item.item_id) === String(current?.item_id));
+  const showAnswer = Boolean(currentItem && saved.revealed.includes(currentItem.item_key));
   useEffect(() => {
     setPosition(0);
     setStickyKeys([]);
@@ -383,16 +399,12 @@ export default function Home() {
   useEffect(() => {
     setShowTranscript(false);
     setShowTranslation(false);
-    setShowOcrText(false);
+    setReadingTextKey(null);
+    setReadingTranslationKey(null);
     setShowAnalysis(false);
-    setRelatedAnswers({});
     setRelatedAnalysis({});
     audio.current?.pause();
   }, [current?.item_key]);
-
-  useEffect(() => {
-    setShowAnswer(Boolean(current?.item_key && saved.revealed.includes(current.item_key)));
-  }, [current?.item_key, saved.revealed]);
 
   useEffect(() => {
     if (!current || multiCardMode) {
@@ -470,6 +482,7 @@ export default function Home() {
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
+      if (event.defaultPrevented || document.querySelector('[role="dialog"][aria-modal="true"]')) return;
       const tag = (event.target as HTMLElement | null)?.tagName;
       if (["INPUT", "SELECT", "TEXTAREA", "BUTTON", "AUDIO"].includes(tag || "")) return;
       const step = multiCardMode ? MULTI_CARD_PAGE_SIZE : 1;
@@ -489,37 +502,23 @@ export default function Home() {
 
   const choose = (item: Item, label: string, answerVisible = false) => {
     const key = item.item_key;
-    const correct = label.toUpperCase() === String(item.answer || "").toUpperCase();
+    const correct = label.toUpperCase() === answerLabel(item);
     setStickyKeys(previous => previous.includes(key) ? previous : [...previous, key]);
     setSaved(previous => ({
       ...previous,
       answers: {...previous.answers, [key]: label},
-      wrong: answerVisible
+      wrong: answerVisible && answerLabel(item)
         ? (correct ? previous.wrong.filter(value => value !== key) : [...new Set([...previous.wrong, key])])
         : previous.wrong.filter(value => value !== key),
     }));
   };
-  const gradeAnswer = (item: Item) => {
-    const selected = saved.answers[item.item_key];
-    if (!selected) return;
-    const correct = selected.toUpperCase() === String(item.answer || "").toUpperCase();
-    setSaved(previous => ({
-      ...previous,
-      wrong: correct ? previous.wrong.filter(value => value !== item.item_key) : [...new Set([...previous.wrong, item.item_key])],
-    }));
-  };
-  const setRevealedKeys = (keys: string[], visible: boolean) => {
-    setSaved(previous => ({
-      ...previous,
-      revealed: visible
-        ? [...new Set([...previous.revealed, ...keys])]
-        : previous.revealed.filter(value => !keys.includes(value)),
-    }));
-  };
   const setAnswerRevealed = (items: Item | Item[], visible: boolean) => {
-    setRevealedKeys((Array.isArray(items) ? items : [items]).map(item => item.item_key), visible);
+    const values = Array.isArray(items) ? items : [items];
+    setStickyKeys(previous => [...new Set([...previous, ...values.map(item => item.item_key)])]);
+    setSaved(previous => revealAnswers(previous, values, visible));
   };
   const clearChoicesByKeys = (keys: string[]) => {
+    setStickyKeys(previous => [...new Set([...previous, ...keys])]);
     setSaved(previous => {
       const answers = {...previous.answers};
       keys.forEach(key => delete answers[key]);
@@ -532,6 +531,7 @@ export default function Home() {
     });
   };
   const clearChoice = (item: Item) => {
+    setStickyKeys(previous => previous.includes(item.item_key) ? previous : [...previous, item.item_key]);
     setSaved(previous => {
       const answers = {...previous.answers};
       delete answers[item.item_key];
@@ -570,8 +570,17 @@ export default function Home() {
     ? context.transcript_translation || [currentItem.question_translation, ...(currentItem.choice_translations || [])].filter(Boolean).join("\n")
     : "";
   const passage = context.passage || "";
-  const passageTranslation = context.passage_translation || context.content_translation || "";
+  const passageTranslation = context.study_aid_status?.passage_translation === "pending" ? "" : context.passage_translation || context.content_translation || "";
   const readingLayoutImages = current ? (context.reading_layout_images || []).filter(ref => Boolean(assetUrl(current.bank_id, ref))) : [];
+  const readingUnitKey = current ? `${current.bank_id}/${current.unit_id}` : "";
+  const showOcrText = Boolean(readingUnitKey && readingTextKey === readingUnitKey);
+  const showPassageTranslation = Boolean(readingUnitKey && readingTranslationKey === readingUnitKey);
+  const readingTextVisible = Boolean(current && current.part >= 5 && passage && (!readingLayoutImages.length || showOcrText));
+  const toggleReadingText = () => {
+    setReadingTextKey(showOcrText ? null : readingUnitKey);
+    if (showOcrText) setReadingTranslationKey(null);
+  };
+  const togglePassageTranslation = () => setReadingTranslationKey(showPassageTranslation ? null : readingUnitKey);
   const isStarred = current ? current.item_keys.some(key => saved.stars.includes(key)) : false;
   const currentNoun = current ? unitNoun(current.part) : (partFilter ? unitNoun(partFilter) : "项");
   const queueNoun = partFilter ? unitNoun(partFilter) : "项";
@@ -580,13 +589,9 @@ export default function Home() {
     : "";
   const materialItems = activeDetail?.items || [];
   const materialAllAnalysisOpen = Boolean(currentItem && materialItems.length) && materialItems.every(item =>
-    item.item_key === currentItem.item_key ? showAnalysis : Boolean(relatedAnalysis[item.item_key]),
+    item.item_key === currentItem?.item_key ? showAnalysis : Boolean(relatedAnalysis[item.item_key]),
   );
-  const materialAllAnswersOpen = Boolean(currentItem && materialItems.length) && materialItems.every(item =>
-    item.item_key === currentItem.item_key
-      ? showAnswer
-      : (Object.hasOwn(relatedAnswers, item.item_key) ? Boolean(relatedAnswers[item.item_key]) : saved.revealed.includes(item.item_key)),
-  );
+  const materialAllAnswersOpen = Boolean(currentItem && materialItems.length) && materialItems.every(item => saved.revealed.includes(item.item_key));
   const currentItemKey = currentItem?.item_key;
   const materialAnyAnalysisOpen = Boolean(currentItemKey && materialItems.some(item =>
     item.item_key === currentItemKey ? showAnalysis : Boolean(relatedAnalysis[item.item_key]),
@@ -606,26 +611,28 @@ export default function Home() {
   const toggleAllMaterialAnswers = () => {
     if (!currentItem) return;
     const nextOpen = !materialAllAnswersOpen;
-    if (nextOpen) materialItems.forEach(item => gradeAnswer(item));
     setAnswerRevealed(materialItems, nextOpen);
-    setShowAnswer(nextOpen);
-    setRelatedAnswers(Object.fromEntries(materialItems
-      .filter(item => item.item_key !== currentItem.item_key)
-      .map(item => [item.item_key, nextOpen])));
   };
-  const toggleGlobalAnswers = () => {
-    if (!globalActionKeys.length) return;
+  const toggleGlobalAnswers = async () => {
+    if (!globalActionKeys.length || bulkLoading) return;
     const nextOpen = !globalAllAnswersOpen;
-    const loadedItems = multiCardMode
-      ? pageRefs.flatMap(ref => detailCache.current.get(ref.detail_path)?.items.filter(item => ref.item_keys.includes(item.item_key)) || [])
-      : (activeDetail?.items || []);
-    if (nextOpen) loadedItems.forEach(item => gradeAnswer(item));
-    setRevealedKeys(globalActionKeys, nextOpen);
-    if (!multiCardMode && currentItem) {
-      setShowAnswer(nextOpen);
-      setRelatedAnswers(Object.fromEntries(materialItems
-        .filter(item => item.item_key !== currentItem.item_key)
-        .map(item => [item.item_key, nextOpen])));
+    const targetRefs = multiCardMode ? pageRefs : current ? [current] : [];
+    const targetKeys = new Set(globalActionKeys);
+    setBulkLoading(true);
+    setReviewNotice("");
+    try {
+      const details = await Promise.all([...new Set(targetRefs.map(ref => ref.detail_path))].map(async path => {
+        const cached = detailCache.current.get(path);
+        if (cached) return cached;
+        const loaded = await fetchJson<UnitDetail>(dataUrl(path));
+        detailCache.current.set(path, loaded);
+        return loaded;
+      }));
+      setAnswerRevealed(details.flatMap(value => value.items.filter(item => targetKeys.has(item.item_key))), nextOpen);
+    } catch {
+      setReviewNotice("本页题目尚未全部载入，请稍后重试查看全部答案。");
+    } finally {
+      setBulkLoading(false);
     }
   };
   const clearGlobalChoices = () => {
@@ -633,8 +640,9 @@ export default function Home() {
     const scope = multiCardMode ? `当前页面的 ${globalActionKeys.length} 道题` : `当前${current?.scope === "material" ? (current.part <= 4 ? "整组" : "整篇") : "题目"}`;
     if (!window.confirm(`确定清空${scope}的全部选择吗？此操作不会影响其他页面。`)) return;
     clearChoicesByKeys(globalActionKeys);
-    setShowAnswer(false);
-    setRelatedAnswers({});
+    setShowAnalysis(false);
+    setRelatedAnalysis({});
+    setReviewReset(value => value + 1);
   };
   const beginSidebarResize = (event: ReactPointerEvent<HTMLDivElement>) => {
     if (window.innerWidth <= 760) return;
@@ -715,7 +723,7 @@ export default function Home() {
         <div className="filterLabel">本页操作</div>
         <div className="asideQueueTools">
           <div className="globalReviewTools">
-            <button className="answerBtn" type="button" aria-pressed={globalAllAnswersOpen} disabled={!globalActionKeys.length} onClick={toggleGlobalAnswers}>{globalAllAnswersOpen ? "隐藏全部答案" : "查看全部答案"}</button>
+            <button className="answerBtn" type="button" aria-pressed={globalAllAnswersOpen} disabled={!globalActionKeys.length || bulkLoading} onClick={toggleGlobalAnswers}>{bulkLoading ? "载入答案…" : globalAllAnswersOpen ? "隐藏全部答案" : "查看全部答案"}</button>
             <button className="clearAnswerBtn" type="button" disabled={!globalHasChoices} onClick={clearGlobalChoices}>清空全部选择</button>
           </div>
           <div className="asideSortButtons" aria-label="排序方式">
@@ -731,6 +739,7 @@ export default function Home() {
 
       <section className="content">
         {loadError && <div className="loadNotice">{loadError}</div>}
+        {reviewNotice && <div className="loadNotice" role="status">{reviewNotice}</div>}
         <div className="topline globalTopline">
           <div><span className="eyebrow">PRIORITY DRILL · {bankFilter === "ALL" ? "ALL 24 TESTS" : current?.bank_title}</span><h1>{partFilter ? `Part ${partFilter} 专项训练` : "全题库优先级刷题"}</h1></div>
           <div className="topTools"><div className="groupCount">{queue.length ? (multiCardMode ? `${pageStart + 1}–${Math.min(pageStart + MULTI_CARD_PAGE_SIZE, queue.length)} / ${queue.length} 题` : `${pageStart + 1} / ${queue.length} ${queueNoun}`) : `0 ${queueNoun}`}</div></div>
@@ -738,7 +747,7 @@ export default function Home() {
 
         {indexLoading ? <div className="detailLoading"><div className="loader"/>正在汇总 4,800 题的优先级索引…</div> : !current ? <div className="empty"><b>当前筛选下没有题目</b><p>可以切换优先级、Part 或完成状态继续训练。</p><button onClick={() => {setBankFilter("ALL"); setPartFilter(0); setPriorityFilter("P1"); setStatusFilter("ALL");}}>恢复 P1 必刷队列</button></div> : multiCardMode ? <>
           <div className="multiPageIntro"><div><b>本页 {pageRefs.length} 题</b><span>每题可独立作答、收藏、查看原文与解析</span></div><div className="miniProgress"><i style={{width: `${Math.min(pageStart + pageRefs.length, queue.length) / queue.length * 100}%`}}/></div><div className="quickPager"><button disabled={pageStart === 0} onClick={() => go(pageStart - MULTI_CARD_PAGE_SIZE)}>← 上一页</button><button disabled={pageStart + MULTI_CARD_PAGE_SIZE >= queue.length} onClick={() => go(pageStart + MULTI_CARD_PAGE_SIZE)}>下一页 →</button></div></div>
-          <SingleItemGallery refs={pageRefs} cache={detailCache} saved={saved} choose={choose} gradeAnswer={gradeAnswer} setAnswerRevealed={setAnswerRevealed} clearChoice={clearChoice} toggleStar={toggleStar}/>
+          <SingleItemGallery reviewReset={reviewReset} refs={pageRefs} cache={detailCache} saved={saved} choose={choose} setAnswerRevealed={setAnswerRevealed} clearChoice={clearChoice} toggleStar={toggleStar}/>
           <div className="bottom pageBottom"><button disabled={pageStart === 0} onClick={() => go(pageStart - MULTI_CARD_PAGE_SIZE)}>← 上一页</button><button disabled={pageStart + MULTI_CARD_PAGE_SIZE >= queue.length} onClick={() => go(pageStart + MULTI_CARD_PAGE_SIZE)}>下一页 →</button></div>
         </> : <>
           <div className="questionNav globalQuestionNav">
@@ -758,41 +767,36 @@ export default function Home() {
           {activeDetail && currentItem && <article className={MATERIAL_PARTS.has(current.part) ? `materialSplit part${current.part}` : `part${current.part}`} style={MATERIAL_PARTS.has(current.part) ? {"--material-left": `${materialPercent}%`} as CSSProperties : undefined}>
             <section className={MATERIAL_PARTS.has(current.part) ? "materialSource" : "materialSource singleSource"}>
               {MATERIAL_PARTS.has(current.part) && <div className="materialBookmarkBar"><button className={isStarred ? "materialBookmarkButton active" : "materialBookmarkButton"} type="button" aria-pressed={isStarred} onClick={() => toggleStar(current)}>{isStarred ? `★ 已收藏本${current.part <= 4 ? "组" : "篇"}` : `☆ 收藏本${current.part <= 4 ? "组" : "篇"}`}</button></div>}
-              {current.part <= 4 && audioSrc && <AudioBar audio={audio} src={audioSrc} canShowTranscript={Boolean(transcript)} showTranscript={showTranscript} toggleTranscript={() => setShowTranscript(value => !value)} showAnalysis={MATERIAL_PARTS.has(current.part) ? materialAllAnalysisOpen : showAnalysis} toggleAnalysis={MATERIAL_PARTS.has(current.part) ? toggleAllMaterialAnalysis : () => setShowAnalysis(value => !value)} analysisScope={MATERIAL_PARTS.has(current.part) ? "material" : "item"} showAnswer={MATERIAL_PARTS.has(current.part) ? undefined : showAnswer} toggleAnswer={MATERIAL_PARTS.has(current.part) ? undefined : () => {const nextOpen = !showAnswer; if (nextOpen) gradeAnswer(currentItem); setAnswerRevealed(currentItem, nextOpen); setShowAnswer(nextOpen);}} clearAnswer={MATERIAL_PARTS.has(current.part) ? undefined : () => {clearChoice(currentItem); setShowAnswer(false);}} hasChoice={Boolean(saved.answers[currentItem.item_key])} showAllAnswers={MATERIAL_PARTS.has(current.part) ? materialAllAnswersOpen : undefined} toggleAllAnswers={MATERIAL_PARTS.has(current.part) ? toggleAllMaterialAnswers : undefined}/>}
+              {current.part <= 4 && audioSrc && <AudioBar audio={audio} src={audioSrc} canShowTranscript={Boolean(transcript)} showTranscript={showTranscript} toggleTranscript={() => setShowTranscript(value => !value)} showAnalysis={MATERIAL_PARTS.has(current.part) ? materialAllAnalysisOpen : showAnalysis} toggleAnalysis={MATERIAL_PARTS.has(current.part) ? toggleAllMaterialAnalysis : () => setShowAnalysis(value => !value)} analysisScope={MATERIAL_PARTS.has(current.part) ? "material" : "item"} showAnswer={MATERIAL_PARTS.has(current.part) ? undefined : showAnswer} toggleAnswer={MATERIAL_PARTS.has(current.part) ? undefined : () => {const nextOpen = !showAnswer; setAnswerRevealed(currentItem, nextOpen);}} clearAnswer={MATERIAL_PARTS.has(current.part) ? undefined : () => {clearChoice(currentItem); setShowAnalysis(false);}} hasChoice={Boolean(saved.answers[currentItem.item_key])} showAllAnswers={MATERIAL_PARTS.has(current.part) ? materialAllAnswersOpen : undefined} toggleAllAnswers={MATERIAL_PARTS.has(current.part) ? toggleAllMaterialAnswers : undefined}/>}
               {current.part <= 4 && !audioSrc && <div className="materialActions">{MATERIAL_PARTS.has(current.part) && <button className="answerBtn" onClick={toggleAllMaterialAnswers}>{materialAllAnswersOpen ? "隐藏所有答案" : "查看所有答案"}</button>}<button className="analysisBtn" onClick={MATERIAL_PARTS.has(current.part) ? toggleAllMaterialAnalysis : () => setShowAnalysis(value => !value)}>{MATERIAL_PARTS.has(current.part) ? (materialAllAnalysisOpen ? "隐藏全部解析" : "查看全部解析") : (showAnalysis ? "隐藏解析" : "查看解析")}</button>{transcript && <button className="translateBtn" onClick={() => setShowTranscript(value => !value)}>{showTranscript ? "隐藏原文" : "查看原文"}</button>}</div>}
               {current.part === 1 && <div className={showTranscript ? "part1Material withTranscript" : "part1Material"}>{pictures.length > 0 && <PictureGrid bankId={current.bank_id} pictures={pictures} part={current.part}/>} {showTranscript && transcript && <Transcript part={current.part} text={transcript} translation={transcriptTranslation} showTranslation={showTranslation} toggleTranslation={() => setShowTranslation(value => !value)}/>}</div>}
               {current.part >= 2 && current.part <= 4 && <>{pictures.length > 0 && <PictureGrid bankId={current.bank_id} pictures={pictures} part={current.part}/>} {showTranscript && transcript && <Transcript part={current.part} text={transcript} translation={transcriptTranslation} showTranslation={showTranslation} toggleTranslation={() => setShowTranslation(value => !value)}/>}</>}
               {current.part >= 6 && readingLayoutImages.length > 0 && <div className="readingLayoutPanel"><div className="readingLayoutLabel"><b>原始材料版面</b><span>完整原页 · 点击可放大</span></div><PictureGrid bankId={current.bank_id} pictures={readingLayoutImages} part={current.part}/></div>}
-              {current.part >= 5 && passage && (!readingLayoutImages.length || showOcrText) && <div className={current.part === 6 ? "passage cloze ocrPassage" : "passage ocrPassage"}>{current.part === 6 ? markCloze(passage) : passage}</div>}
-              {current.part >= 5 && <div className="actionRow readingActions">{readingLayoutImages.length > 0 && passage && <button className="translateBtn" aria-pressed={showOcrText} onClick={() => setShowOcrText(value => !value)}>{showOcrText ? "隐藏文字版" : "查看文字版"}</button>}{passageTranslation && <button className="translateBtn" aria-pressed={showTranslation} onClick={() => setShowTranslation(value => !value)}>{showTranslation ? "隐藏中文" : "翻译原文"}</button>}{!MATERIAL_PARTS.has(current.part) && <ReviewButtons showAnswer={showAnswer} showAnalysis={showAnalysis} hasChoice={Boolean(saved.answers[currentItem.item_key])} toggleAnswer={() => {const nextOpen = !showAnswer; if (nextOpen) gradeAnswer(currentItem); setAnswerRevealed(currentItem, nextOpen); setShowAnswer(nextOpen);}} toggleAnalysis={() => setShowAnalysis(value => !value)} clearChoice={() => {clearChoice(currentItem); setShowAnswer(false);}}/>}{MATERIAL_PARTS.has(current.part) && <><button className="answerBtn" aria-pressed={materialAllAnswersOpen} onClick={toggleAllMaterialAnswers}>{materialAllAnswersOpen ? "隐藏所有答案" : "查看所有答案"}</button><button className="analysisBtn" aria-pressed={materialAllAnalysisOpen} onClick={toggleAllMaterialAnalysis}>{materialAllAnalysisOpen ? "隐藏全部解析" : "查看全部解析"}</button></>}</div>}
-              {current.part >= 5 && showTranslation && passageTranslation && <div className="translation">{passageTranslation}</div>}
+              {readingTextVisible && <ReadingPassage key={readingUnitKey} part={current.part} text={passage} translation={passageTranslation} showTranslation={showPassageTranslation} toggleTranslation={togglePassageTranslation}/>}
+              {current.part >= 5 && <div className="actionRow readingActions">{readingLayoutImages.length > 0 && passage && <button className="translateBtn" aria-pressed={showOcrText} onClick={toggleReadingText}>{showOcrText ? "隐藏文字版" : "查看文字版"}</button>}{!readingTextVisible && (current.part >= 6 || passageTranslation) && <button className="translateBtn" aria-pressed={showPassageTranslation} onClick={togglePassageTranslation}>{showPassageTranslation ? "隐藏中文" : "翻译原文"}</button>}{!MATERIAL_PARTS.has(current.part) && <ReviewButtons showAnswer={showAnswer} showAnalysis={showAnalysis} hasChoice={Boolean(saved.answers[currentItem.item_key])} toggleAnswer={() => {const nextOpen = !showAnswer; setAnswerRevealed(currentItem, nextOpen);}} toggleAnalysis={() => setShowAnalysis(value => !value)} clearChoice={() => {clearChoice(currentItem); setShowAnalysis(false);}}/>}{MATERIAL_PARTS.has(current.part) && <><button className="answerBtn" aria-pressed={materialAllAnswersOpen} onClick={toggleAllMaterialAnswers}>{materialAllAnswersOpen ? "隐藏所有答案" : "查看所有答案"}</button><button className="analysisBtn" aria-pressed={materialAllAnalysisOpen} onClick={toggleAllMaterialAnalysis}>{materialAllAnalysisOpen ? "隐藏全部解析" : "查看全部解析"}</button></>}</div>}
+              {current.part >= 5 && !readingTextVisible && showPassageTranslation && <Translation text={passageTranslation} missing="该篇原文翻译尚未补齐，请先参考英文原文。"/>}
             </section>
 
             {MATERIAL_PARTS.has(current.part) && <div className="materialDivider" role="separator" aria-label="调整材料和题目宽度" aria-orientation="vertical" aria-valuemin={32} aria-valuemax={68} aria-valuenow={Math.round(materialPercent)} tabIndex={0} onPointerDown={beginMaterialResize} onKeyDown={resizeMaterialWithKeyboard} onDoubleClick={() => setMaterialPercent(46)}/>}
 
             {MATERIAL_PARTS.has(current.part) ? <section className="materialQuestions"><div className="materialQuestionsTitle"><b>本{current.part <= 4 ? "组" : "篇"}全部题目</b><span>{activeDetail.items.length} 题 · 可单独或全部查看答案和解析</span></div>{activeDetail.items.map(item => {
               const anchor = item.item_key === currentItem.item_key;
-              const answerVisible = anchor
-                ? showAnswer
-                : (Object.hasOwn(relatedAnswers, item.item_key) ? Boolean(relatedAnswers[item.item_key]) : saved.revealed.includes(item.item_key));
+              const answerVisible = saved.revealed.includes(item.item_key);
               const analysisVisible = anchor ? showAnalysis : Boolean(relatedAnalysis[item.item_key]);
               const toggleAnswer = () => {
                 const nextOpen = !answerVisible;
-                if (nextOpen) gradeAnswer(item);
                 setAnswerRevealed(item, nextOpen);
-                if (anchor) setShowAnswer(nextOpen);
-                else setRelatedAnswers(previous => ({...previous, [item.item_key]: nextOpen}));
               };
               const toggleAnalysis = () => anchor ? setShowAnalysis(value => !value) : setRelatedAnalysis(previous => ({...previous, [item.item_key]: !previous[item.item_key]}));
               const clear = () => {
                 clearChoice(item);
-                if (anchor) setShowAnswer(false);
-                else setRelatedAnswers(previous => ({...previous, [item.item_key]: false}));
+                if (anchor) setShowAnalysis(false);
+                else setRelatedAnalysis(previous => ({...previous, [item.item_key]: false}));
               };
-              return <section className="materialQuestionCard" key={item.item_key}><div className="materialQuestionTools"><span>题 {item.item_id}</span><ReviewButtons showAnswer={answerVisible} showAnalysis={analysisVisible} hasChoice={Boolean(saved.answers[item.item_key])} toggleAnswer={toggleAnswer} toggleAnalysis={toggleAnalysis} clearChoice={clear}/></div><QuestionBlock item={item} part={current.part} chosen={saved.answers[item.item_key]} showAnswer={answerVisible} showAnalysis={analysisVisible} choose={choose}/></section>;
+              return <section className="materialQuestionCard" key={item.item_key}><div className="materialQuestionTools"><span>题 {item.item_id}</span><ReviewButtons showAnswer={answerVisible} showAnalysis={analysisVisible} hasChoice={Boolean(saved.answers[item.item_key])} toggleAnswer={toggleAnswer} toggleAnalysis={toggleAnalysis} clearChoice={clear}/></div><QuestionBlock bankId={current.bank_id} item={item} part={current.part} chosen={saved.answers[item.item_key]} showAnswer={answerVisible} showAnalysis={analysisVisible} choose={choose}/></section>;
             })}
             {materialAnyAnalysisOpen && hasMaterialKnowledge && materialKnowledge && <KnowledgeCard value={materialKnowledge}/>}</section> :
-              <QuestionBlock key={currentItem.item_key} item={currentItem} part={current.part} chosen={saved.answers[currentItem.item_key]} showAnswer={showAnswer} showAnalysis={showAnalysis} choose={choose}/>}
+              <QuestionBlock bankId={current.bank_id} key={currentItem.item_key} item={currentItem} part={current.part} chosen={saved.answers[currentItem.item_key]} showAnswer={showAnswer} showAnalysis={showAnalysis} choose={choose}/>}
           </article>}
           <div className="bottom pageBottom"><button disabled={pageStart === 0} onClick={() => go(pageStart - 1)}>← 上一{currentNoun}</button><button disabled={pageStart >= queue.length - 1} onClick={() => go(pageStart + 1)}>下一{currentNoun} →</button></div>
         </>}
@@ -801,18 +805,22 @@ export default function Home() {
   </main>;
 }
 
-function SingleItemGallery({refs, cache, saved, choose, gradeAnswer, setAnswerRevealed, clearChoice, toggleStar}: {refs: DrillRef[]; cache: RefObject<Map<string, UnitDetail>>; saved: Saved; choose: (item: Item, label: string, answerVisible?: boolean) => void; gradeAnswer: (item: Item) => void; setAnswerRevealed: (items: Item | Item[], visible: boolean) => void; clearChoice: (item: Item) => void; toggleStar: (ref: DrillRef) => void}) {
-  return <section className="singleItemGallery">{refs.map((ref, index) => <SingleItemCard key={ref.item_key} refData={ref} eager={index < 2} cache={cache} saved={saved} choose={choose} gradeAnswer={gradeAnswer} setAnswerRevealed={setAnswerRevealed} clearChoice={clearChoice} toggleStar={toggleStar}/>)}</section>;
+function SingleItemGallery({reviewReset, refs, cache, saved, choose, setAnswerRevealed, clearChoice, toggleStar}: {reviewReset: number; refs: DrillRef[]; cache: RefObject<Map<string, UnitDetail>>; saved: Saved; choose: (item: Item, label: string, answerVisible?: boolean) => void; setAnswerRevealed: (items: Item | Item[], visible: boolean) => void; clearChoice: (item: Item) => void; toggleStar: (ref: DrillRef) => void}) {
+  return <section className="singleItemGallery">{refs.map((ref, index) => <SingleItemCard reviewReset={reviewReset} key={ref.item_key} refData={ref} eager={index < 2} cache={cache} saved={saved} choose={choose} setAnswerRevealed={setAnswerRevealed} clearChoice={clearChoice} toggleStar={toggleStar}/>)}</section>;
 }
 
-function SingleItemCard({refData, eager, cache, saved, choose, gradeAnswer, setAnswerRevealed, clearChoice, toggleStar}: {refData: DrillRef; eager: boolean; cache: RefObject<Map<string, UnitDetail>>; saved: Saved; choose: (item: Item, label: string, answerVisible?: boolean) => void; gradeAnswer: (item: Item) => void; setAnswerRevealed: (items: Item | Item[], visible: boolean) => void; clearChoice: (item: Item) => void; toggleStar: (ref: DrillRef) => void}) {
+function SingleItemCard({reviewReset, refData, eager, cache, saved, choose, setAnswerRevealed, clearChoice, toggleStar}: {reviewReset: number; refData: DrillRef; eager: boolean; cache: RefObject<Map<string, UnitDetail>>; saved: Saved; choose: (item: Item, label: string, answerVisible?: boolean) => void; setAnswerRevealed: (items: Item | Item[], visible: boolean) => void; clearChoice: (item: Item) => void; toggleStar: (ref: DrillRef) => void}) {
   const [detail, setDetail] = useState<UnitDetail | null>(() => cache.current?.get(refData.detail_path) || null);
   const [loading, setLoading] = useState(!detail);
   const [error, setError] = useState("");
   const [showTranscript, setShowTranscript] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
-  const [showAnswer, setShowAnswer] = useState(false);
   const [showAnalysis, setShowAnalysis] = useState(false);
+
+  useEffect(() => {
+    setShowAnalysis(false);
+    setShowTranslation(false);
+  }, [reviewReset]);
 
   useEffect(() => {
     const cached = cache.current?.get(refData.detail_path);
@@ -838,9 +846,7 @@ function SingleItemCard({refData, eager, cache, saved, choose, gradeAnswer, setA
   }, [cache, refData.detail_path]);
 
   const item = detail?.items.find(value => String(value.item_id) === String(refData.item_id));
-  useEffect(() => {
-    setShowAnswer(saved.revealed.includes(item?.item_key || refData.item_key));
-  }, [item?.item_key, refData.item_key, saved.revealed]);
+  const showAnswer = saved.revealed.includes(item?.item_key || refData.item_key);
   const context = detail?.context || {};
   const audioSrc = assetUrl(refData.bank_id, context.audio_path || context.question_audio_path);
   const pictures = [context.picture_path, ...(context.picture_paths || [])]
@@ -855,11 +861,11 @@ function SingleItemCard({refData, eager, cache, saved, choose, gradeAnswer, setA
     {loading && <div className="cardLoading"><div className="loader"/>载入题目…</div>}
     {error && <div className="cardError">{error}</div>}
     {item && <>
-      {refData.part <= 2 && audioSrc && <div className="compactAudio"><audio controls src={audioSrc} preload={eager ? "auto" : "metadata"} controlsList="nodownload noremoteplayback" disablePictureInPicture onPlay={event => pauseOtherAudio(event.currentTarget)}/><div><button className="translateBtn" aria-pressed={showTranscript} onClick={() => setShowTranscript(value => !value)}>{showTranscript ? "隐藏原文" : "查看原文"}</button><button className="clearAnswerBtn" disabled={!saved.answers[item.item_key]} onClick={() => {clearChoice(item); setShowAnswer(false);}}>清空选择</button><button className="answerBtn" aria-pressed={showAnswer} onClick={() => {const nextOpen = !showAnswer; if (nextOpen) gradeAnswer(item); setAnswerRevealed(item, nextOpen); setShowAnswer(nextOpen);}}>{showAnswer ? "隐藏答案" : "查看答案"}</button><button className="analysisBtn" aria-pressed={showAnalysis} onClick={() => setShowAnalysis(value => !value)}>{showAnalysis ? "隐藏解析" : "查看解析"}</button></div></div>}
+      {refData.part <= 2 && audioSrc && <div className="compactAudio"><audio controls src={audioSrc} preload={eager ? "auto" : "metadata"} controlsList="nodownload noremoteplayback" onPlay={event => pauseOtherAudio(event.currentTarget)}/><div><button className="translateBtn" aria-pressed={showTranscript} onClick={() => setShowTranscript(value => !value)}>{showTranscript ? "隐藏原文" : "查看原文"}</button><button className="clearAnswerBtn" disabled={!saved.answers[item.item_key]} onClick={() => {clearChoice(item); setShowAnalysis(false);}}>清空选择</button><button className="answerBtn" aria-pressed={showAnswer} onClick={() => {const nextOpen = !showAnswer; setAnswerRevealed(item, nextOpen);}}>{showAnswer ? "隐藏答案" : "查看答案"}</button><button className="analysisBtn" aria-pressed={showAnalysis} onClick={() => setShowAnalysis(value => !value)}>{showAnalysis ? "隐藏解析" : "查看解析"}</button></div></div>}
       {refData.part === 1 && pictures.length > 0 && <PictureGrid bankId={refData.bank_id} pictures={pictures} part={refData.part} eager={eager}/>}
       {showTranscript && transcript && <Transcript part={refData.part} text={transcript} translation={transcriptTranslation} showTranslation={showTranslation} toggleTranslation={() => setShowTranslation(value => !value)}/>}
-      {refData.part === 5 && <div className="singleReadingTools"><ReviewButtons showAnswer={showAnswer} showAnalysis={showAnalysis} hasChoice={Boolean(saved.answers[item.item_key])} toggleAnswer={() => {const nextOpen = !showAnswer; if (nextOpen) gradeAnswer(item); setAnswerRevealed(item, nextOpen); setShowAnswer(nextOpen);}} toggleAnalysis={() => setShowAnalysis(value => !value)} clearChoice={() => {clearChoice(item); setShowAnswer(false);}}/></div>}
-      <QuestionBlock item={item} part={refData.part} chosen={saved.answers[item.item_key]} showAnswer={showAnswer} showAnalysis={showAnalysis} choose={choose}/>
+      {refData.part === 5 && <div className="singleReadingTools"><ReviewButtons showAnswer={showAnswer} showAnalysis={showAnalysis} hasChoice={Boolean(saved.answers[item.item_key])} toggleAnswer={() => {const nextOpen = !showAnswer; setAnswerRevealed(item, nextOpen);}} toggleAnalysis={() => setShowAnalysis(value => !value)} clearChoice={() => {clearChoice(item); setShowAnalysis(false);}}/></div>}
+      <QuestionBlock key={`${item.item_key}/${reviewReset}`} bankId={refData.bank_id} item={item} part={refData.part} chosen={saved.answers[item.item_key]} showAnswer={showAnswer} showAnalysis={showAnalysis} choose={choose}/>
     </>}
   </article>;
 }
@@ -867,7 +873,7 @@ function SingleItemCard({refData, eager, cache, saved, choose, gradeAnswer, setA
 function AudioBar({audio, src, canShowTranscript, showTranscript, toggleTranscript, showAnalysis, toggleAnalysis, analysisScope = "item", showAnswer, toggleAnswer, clearAnswer, hasChoice = false, showAllAnswers, toggleAllAnswers}: {audio: RefObject<HTMLAudioElement | null>; src: string; canShowTranscript: boolean; showTranscript: boolean; toggleTranscript: () => void; showAnalysis: boolean; toggleAnalysis: () => void; analysisScope?: "item" | "material"; showAnswer?: boolean; toggleAnswer?: () => void; clearAnswer?: () => void; hasChoice?: boolean; showAllAnswers?: boolean; toggleAllAnswers?: () => void}) {
   const analysisText = analysisScope === "material" ? (showAnalysis ? "隐藏全部解析" : "查看全部解析") : (showAnalysis ? "隐藏解析" : "查看解析");
   const actionClass = toggleAllAnswers ? "audioActions materialReview" : toggleAnswer ? "audioActions itemReview" : "audioActions";
-  return <div className="audio"><button className="playBtn" onClick={() => audio.current && (audio.current.paused ? audio.current.play() : audio.current.pause())}>▶</button><div className="audioLabel"><b>听力音频</b><small>空格键暂停 / 继续</small></div><audio ref={audio} controls src={src} preload="auto" controlsList="nodownload noremoteplayback" disablePictureInPicture onPlay={event => pauseOtherAudio(event.currentTarget)}/><div className={actionClass}>{canShowTranscript && <button className="translateBtn" aria-pressed={showTranscript} onClick={toggleTranscript}>{showTranscript ? "隐藏原文" : "查看原文"}</button>}{toggleAllAnswers ? <><button className="answerBtn" type="button" aria-pressed={showAllAnswers} onClick={toggleAllAnswers}>{showAllAnswers ? "隐藏所有答案" : "查看所有答案"}</button><button className="analysisBtn" type="button" aria-pressed={showAnalysis} onClick={toggleAnalysis}>{analysisText}</button></> : toggleAnswer && clearAnswer ? <><button className="clearAnswerBtn" type="button" disabled={!hasChoice} onClick={clearAnswer}>清空选择</button><button className="answerBtn" type="button" aria-pressed={showAnswer} onClick={toggleAnswer}>{showAnswer ? "隐藏答案" : "查看答案"}</button><button className="analysisBtn" type="button" aria-pressed={showAnalysis} onClick={toggleAnalysis}>{showAnalysis ? "隐藏解析" : "查看解析"}</button></> : <button className="analysisBtn" aria-pressed={showAnalysis} onClick={toggleAnalysis}>{analysisText}</button>}</div></div>;
+  return <div className="audio"><button className="playBtn" onClick={() => audio.current && (audio.current.paused ? audio.current.play() : audio.current.pause())}>▶</button><div className="audioLabel"><b>听力音频</b><small>空格键暂停 / 继续</small></div><audio ref={audio} controls src={src} preload="auto" controlsList="nodownload noremoteplayback" onPlay={event => pauseOtherAudio(event.currentTarget)}/><div className={actionClass}>{canShowTranscript && <button className="translateBtn" aria-pressed={showTranscript} onClick={toggleTranscript}>{showTranscript ? "隐藏原文" : "查看原文"}</button>}{toggleAllAnswers ? <><button className="answerBtn" type="button" aria-pressed={showAllAnswers} onClick={toggleAllAnswers}>{showAllAnswers ? "隐藏所有答案" : "查看所有答案"}</button><button className="analysisBtn" type="button" aria-pressed={showAnalysis} onClick={toggleAnalysis}>{analysisText}</button></> : toggleAnswer && clearAnswer ? <><button className="clearAnswerBtn" type="button" disabled={!hasChoice} onClick={clearAnswer}>清空选择</button><button className="answerBtn" type="button" aria-pressed={showAnswer} onClick={toggleAnswer}>{showAnswer ? "隐藏答案" : "查看答案"}</button><button className="analysisBtn" type="button" aria-pressed={showAnalysis} onClick={toggleAnalysis}>{showAnalysis ? "隐藏解析" : "查看解析"}</button></> : <button className="analysisBtn" aria-pressed={showAnalysis} onClick={toggleAnalysis}>{analysisText}</button>}</div></div>;
 }
 
 function ReviewButtons({showAnswer, showAnalysis, hasChoice, toggleAnswer, toggleAnalysis, clearChoice}: {showAnswer: boolean; showAnalysis: boolean; hasChoice: boolean; toggleAnswer: () => void; toggleAnalysis: () => void; clearChoice: () => void}) {
@@ -877,7 +883,7 @@ function ReviewButtons({showAnswer, showAnalysis, hasChoice, toggleAnswer, toggl
 function PictureGrid({bankId, pictures, part, eager = true}: {bankId: string; pictures: MediaRef[]; part: number; eager?: boolean}) {
   const [activeImage, setActiveImage] = useState<number | null>(null);
   const [zoomed, setZoomed] = useState(false);
-  const imageAlt = part === 1 ? "照片描述题图片" : part >= 6 ? "阅读题原始材料版面" : "听力题配套图表";
+  const imageAlt = part === 1 ? "照片描述题图片" : part === 5 ? "句子填空题原始图片" : part >= 6 ? "阅读题原始材料版面" : "听力题配套图表";
 
   useEffect(() => {
     if (activeImage === null) return;
@@ -924,39 +930,82 @@ function pauseOtherAudio(current: HTMLAudioElement) {
 }
 
 function Transcript({part, text, translation, showTranslation, toggleTranslation}: {part: number; text: string; translation: string; showTranslation: boolean; toggleTranslation: () => void}) {
-  return <div className={part >= 3 ? "transcript listeningTranscript proseTranscript" : "transcript listeningTranscript"}><pre>{text}</pre>{translation && <button className="translateBtn" aria-pressed={showTranslation} onClick={toggleTranslation}>{showTranslation ? "隐藏中文" : "翻译原文"}</button>}{showTranslation && translation && <div className="translation">{translation}</div>}</div>;
+  return <div className={part >= 3 ? "transcript listeningTranscript proseTranscript" : "transcript listeningTranscript"}><pre>{text}</pre><button className="translateBtn" aria-pressed={showTranslation} onClick={toggleTranslation}>{showTranslation ? "隐藏中文" : "翻译原文"}</button>{showTranslation && <Translation text={translation}/>}</div>;
 }
 
-function QuestionBlock({item, part, chosen, showAnswer, showAnalysis, choose}: {item: Item; part: number; chosen?: string; showAnswer: boolean; showAnalysis: boolean; choose: (item: Item, label: string, answerVisible?: boolean) => void}) {
+export function EmphasizedText({text}: {text: string}) {
+  return <>{emphasisSegments(text).map((segment, index) => segment.strong ? <strong key={index}>{segment.text}</strong> : segment.text)}</>;
+}
+
+function Translation({text, missing = "该段翻译尚未补齐，请先参考原文。"}: {text?: string; missing?: string}) {
+  return text?.trim()
+    ? <div className="translation"><EmphasizedText text={text}/></div>
+    : <div className="studyAidNotice" role="status">{missing}</div>;
+}
+
+export function ReadingPassage({part, text, translation, showTranslation, toggleTranslation}: {part: number; text: string; translation?: string; showTranslation: boolean; toggleTranslation: () => void}) {
+  return <section className="readingTextPanel" aria-label="原文文字版">
+    <div className="readingTextTools"><b>原文文字版</b><button className="translateBtn" type="button" aria-pressed={showTranslation} onClick={toggleTranslation}>{showTranslation ? "隐藏中文" : "翻译原文"}</button></div>
+    <div className={part === 6 ? "passage cloze ocrPassage" : "passage ocrPassage"}>{part === 6 ? markCloze(text) : text}</div>
+    {showTranslation && <Translation text={translation} missing="该篇原文翻译尚未补齐，请先参考英文原文。"/>}
+  </section>;
+}
+
+export function Part5QuestionText({text}: {text: string}) {
+  // Preserve source markers in data; render each blank as one continuous underline.
+  return <>{text.split(/([-_—]{2,})/g).map((segment, index) =>
+    /^[-_—]{2,}$/.test(segment)
+      ? <span className="part5Blank" role="img" aria-label="填空" key={index}/>
+      : segment
+  )}</>;
+}
+
+export function QuestionBlock({bankId, item, part, chosen, showAnswer, showAnalysis, choose}: {bankId: string; item: Item; part: number; chosen?: string; showAnswer: boolean; showAnalysis: boolean; choose: (item: Item, label: string, answerVisible?: boolean) => void}) {
   const [showQuestionTranslation, setShowQuestionTranslation] = useState(false);
   const hiddenText = part <= 2;
   const choices = item.choices || [];
-  const correctAnswer = String(item.answer || "").toUpperCase();
+  const correctAnswer = answerLabel(item);
+  const sourceImages = part === 5 ? (item.source_images || []).filter(image => Boolean(assetUrl(bankId, image))) : [];
+  const useSourceImage = Boolean(item.prefer_source_image && sourceImages.length);
+  const translationPending = item.study_aid_status?.question_translation === "pending" || item.study_aid_status?.translation === "pending";
+  const canTranslateQuestion = Boolean(item.question?.trim() || (part === 5 && sourceImages.length));
   return <div className="questionBlock">
     <div className="itemHeading"><PriorityBadge value={item.priority}/><span>{item.question_type || item.priority.label}</span></div>
-    {!hiddenText && item.question && <><h2><span>{item.item_id}.</span> {item.question}</h2>{item.question_translation && <><button className="translateBtn questionTranslate" onClick={() => setShowQuestionTranslation(value => !value)}>{showQuestionTranslation ? "隐藏题干翻译" : "翻译题干"}</button>{showQuestionTranslation && <div className="translation">{item.question_translation}</div>}</>}</>}
+    {item.answer_review_status === "pending" && <div className="studyAidNotice" role="status">题目与选项待原始材料核对，暂不判分。</div>}
+    {!hiddenText && <>
+      {part === 5 && item.content_review_status === "source_required" && !sourceImages.length && <div className="studyAidNotice" role="status">题干存在识别问题，等待补齐原图。</div>}
+      {useSourceImage ? <div className="part5Source"><div className="sourceQuestionLabel">题 {item.item_id} · 原题图片</div><PictureGrid bankId={bankId} pictures={sourceImages} part={5}/></div> : item.question && <h2><span>{item.item_id}.</span> {part === 5 ? <Part5QuestionText text={item.question}/> : item.question}</h2>}
+      {!useSourceImage && sourceImages.length > 0 && <details className="part5Source"><summary>查看原题图片</summary><PictureGrid bankId={bankId} pictures={sourceImages} part={5}/></details>}
+      {canTranslateQuestion && <button className="translateBtn questionTranslate" type="button" aria-pressed={showQuestionTranslation} onClick={() => setShowQuestionTranslation(value => !value)}>{showQuestionTranslation ? "隐藏题干翻译" : "翻译题干"}</button>}
+      {canTranslateQuestion && showQuestionTranslation && <Translation text={translationPending ? undefined : item.question_translation} missing="该题翻译尚未补齐，请先参考原题。"/>}
+    </>}
     <div className={hiddenText ? "choices examHidden" : "choices"}>{choices.map((choice, index) => {
       const label = CHOICE_LABELS[index] || String(index + 1);
       const selected = chosen === label;
       const correct = label === correctAnswer;
-      const state = showAnswer ? (correct ? "correct" : selected ? "incorrect" : "") : selected ? "selected" : "";
+      const state = showAnswer && correctAnswer ? (correct ? "correct" : selected ? "incorrect" : "") : selected ? "selected" : "";
       return <button className={state} key={label} onClick={() => choose(item, label, showAnswer)} aria-label={hiddenText ? `选项 ${label}` : undefined} aria-pressed={selected}><span>{label}</span>{!hiddenText && <p>{choice}</p>}{state === "correct" && <b>✓</b>}{state === "incorrect" && <b>×</b>}</button>;
     })}</div>
+    {showAnswer && <div className="answerResult" role="status">{correctAnswer ? <><b>正确答案：{correctAnswer}</b>{chosen && <span>你的选择：{chosen} · {chosen === correctAnswer ? "正确" : "错误"}</span>}</> : "该题答案尚未确认，请先参考原始材料。"}</div>}
     {showAnalysis && <AnswerAnalysis item={item} part={part} chosen={chosen} answerVisible={showAnswer}/>}
   </div>;
 }
 
-function AnswerAnalysis({item, part, chosen, answerVisible}: {item: Item; part: number; chosen?: string; answerVisible: boolean}) {
-  const correct = chosen && chosen.toUpperCase() === String(item.answer || "").toUpperCase();
+export function AnswerAnalysis({item, part, chosen, answerVisible}: {item: Item; part: number; chosen?: string; answerVisible: boolean}) {
+  const correct = chosen && chosen.toUpperCase() === answerLabel(item);
+  const hasExplanation = item.study_aid_status?.analysis !== "pending" && Boolean(item.response_style || item.grammar_point || item.strategy || item.evidence || item.answer_explain);
   const hasKnowledge = item.knowledge_accumulation?.schema_version === "2.0" && Boolean(item.knowledge_accumulation.vocabulary?.length || item.knowledge_accumulation.collocations?.length);
-  return <div className={`explain ${answerVisible && chosen ? (correct ? "good" : "bad") : "neutral"}`}>
-    <div><b>答案：{item.answer || "—"}{item.question_type ? ` · ${item.question_type}` : ""}</b></div>
-    {part === 2 && item.response_style && <p><strong>回答方式：</strong>{item.response_style}</p>}
-    {item.grammar_point && <p><strong>考查知识点：</strong>{item.grammar_point}</p>}
-    {item.strategy && <p><strong>解题思路：</strong>{item.strategy}</p>}
-    {part >= 3 && item.evidence && <p><strong>原文定位：</strong>{item.evidence}</p>}
-    {item.answer_explain && <p><strong>解析：</strong>{item.answer_explain}</p>}
-    {part >= 3 && Boolean(item.choice_translations?.length) && <div className="optionZh"><strong>选项释义：</strong>{item.choice_translations?.map((translation, index) => <p key={`${translation}-${index}`}>{/^[A-D][：:.]/.test(translation) ? translation : `${CHOICE_LABELS[index]}. ${translation}`}</p>)}</div>}
+  return <div className={`explain ${answerVisible && chosen && answerLabel(item) ? (correct ? "good" : "bad") : "neutral"}`}>
+    <div><b>答案：{answerLabel(item) || "待核实"}{item.question_type ? ` · ${item.question_type}` : ""}</b></div>
+    {!hasExplanation && <p className="studyAidNotice" role="status">该题解析尚未补齐，请先参考原始材料。</p>}
+    {hasExplanation && <>
+      {part === 2 && item.response_style && <p><strong>回答方式：</strong>{item.response_style}</p>}
+      {item.grammar_point && <p><strong>考查知识点：</strong>{item.grammar_point}</p>}
+      {item.strategy && <p><strong>解题思路：</strong>{item.strategy}</p>}
+      {part >= 3 && item.evidence && <p><strong>原文定位：</strong>{item.evidence}</p>}
+      {item.answer_explain && <p><strong>解析：</strong><EmphasizedText text={item.answer_explain}/></p>}
+    </>}
+    {part >= 3 && item.study_aid_status?.choice_translations !== "pending" && item.study_aid_status?.choices !== "pending" && item.choice_translations?.some(translation => translation.trim()) && <div className="optionZh"><strong>选项释义：</strong>{item.choice_translations.map((translation, index) => translation.trim() ? <p key={index}>{/^[A-D][：:.]/.test(translation) ? translation : `${CHOICE_LABELS[index]}. ${translation}`}</p> : null)}{item.study_aid_status?.choice_translations === "partial" && <p className="studyAidNotice">其余选项释义尚未补齐。</p>}</div>}
     {hasKnowledge && item.knowledge_accumulation && <KnowledgeCard value={item.knowledge_accumulation}/>}
   </div>;
 }

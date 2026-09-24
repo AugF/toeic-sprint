@@ -27,7 +27,7 @@ for(const bank of catalog.banks){
     // Part 6/7 source-layout crops are generated from verified page scans by
     // recover-reading-layout.mjs. They intentionally do not exist in the raw
     // bank tree; keep the generated, indexed file instead of deleting it.
-    if(relative.startsWith("reading-layout/")){
+    if(relative.startsWith("reading-layout/")||relative.startsWith("part5-source/")){
       if(fs.existsSync(target)){skipped++;continue}
       missing++;continue;
     }
@@ -47,11 +47,12 @@ for(const bank of catalog.banks){
     }finally{fs.rmSync(temporary,{force:true})}
   }
 }
+// A missing source must never prune already published, user-reviewed images.
+if(missing)throw new Error(`缺少 ${missing} 个已引用资源；未执行资源清理`);
 for(const entry of fs.readdirSync(outputRoot,{withFileTypes:true})){
   if(!entry.isDirectory()||!/^official-\d+-test-\d+$/.test(entry.name))continue;
   for(const file of walk(path.join(outputRoot,entry.name)))if(!expected.has(path.resolve(file)))fs.rmSync(file);
 }
-if(missing)throw new Error(`缺少 ${missing} 个已引用资源`);
 console.log(`Web assets ready: ${expected.size} files (${copied} built, ${skipped} reused) in ${outputRoot}`);
 
 function upToDate(source,target){return fs.existsSync(target)&&fs.statSync(target).mtimeMs>=fs.statSync(source).mtimeMs}

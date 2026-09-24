@@ -36,7 +36,14 @@ def main() -> None:
                 initial_prompt=request.get("prompt") or None,
                 clip_timestamps=clip,
             )
-            response = {"id": request["id"], "raw": result["text"].strip()}
+            response = {
+                "id": request["id"],
+                "raw": result["text"].strip(),
+                "segments": [
+                    {"start": segment["start"], "end": segment["end"], "text": segment["text"].strip()}
+                    for segment in result.get("segments", [])
+                ],
+            }
         except Exception as error:  # The Node parent reports the exact unit.
             response = {"id": request.get("id") if "request" in locals() else None, "error": str(error)}
         print(json.dumps(response, ensure_ascii=False), flush=True)

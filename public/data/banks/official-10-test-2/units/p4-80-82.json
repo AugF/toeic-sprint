@@ -40,31 +40,62 @@
       "asset_key": "official-10-test-2/audio/part4/q080-082.mp3",
       "exists": true
     },
-    "transcript": "Some staff have suggested starting with our latest smartphone.\nThe phone has easily passed all internal testing, but I'd like to hear from more of you.\nAfter this meeting, I want everyone in this room to send me a list of what new products you would most like to see demonstrated.",
+    "transcript": "Let's start with a discussion about our participation in the upcoming trade show.\nI have some questions about which devices our company should include in the product demonstration session.\nThis is a major trade show, and it's important that we impress the audience.\nSome staff have suggested starting with our latest smartphone.\nThe phone has easily passed all internal testing, but I'd like to hear from more of you.\nAfter this meeting, I want everyone in this room to send me a list of what new products you would most like to see demonstrated.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "4bc7a8ad58f1cc9e16dd4b9c2f7b2ff5bbcd5592502588da30fc0c4a177ede36",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-10-test-2/audio/part4/q080-082.mp3",
       "metrics": {
-        "word_count": 51,
-        "legacy_word_count": 96,
-        "length_ratio": 0.531,
-        "legacy_coverage": 0.656,
-        "prompted_failure": "missing spoken Questions 80 through 82 introduction"
-      }
+        "word_count": 94,
+        "review_window_end_ms": 40098,
+        "audio_duration_ms": 40098,
+        "words_per_second": 2.344
+      },
+      "transcript_sha256": "92354b8eeae964537fa772214305ffd69181b7cd4b2d2ad48bea639fbc3c2c7d"
     },
-    "transcript_translation": "一些员工建议我们从最新的智能手机开始介绍。\n这款手机已经轻松通过了所有内部测试，但我希望听到更多人的意见。\n在这次会议之后，我希望房间里的每个人都给我一份您最想看到演示的新产品的清单。",
+    "transcript_translation": "我们先来讨论一下参加即将举行的行业展会的事。\n关于公司应该在产品演示环节展示哪些设备，我有几个问题。\n这是一场重要的行业展会，给观众留下深刻印象非常重要。\n一些员工建议先展示我们最新的智能手机。\n这款手机已经轻松通过了全部内部测试，但我想听取更多人的意见。\n会议结束后，我希望在座的每个人都给我发一份清单，列出你们最希望看到现场演示的新产品。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "a95f57903c344f1a270a7153e8e0652f8b1f7d71b886841708b958f97e837ba1"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "92354b8eeae964537fa772214305ffd69181b7cd4b2d2ad48bea639fbc3c2c7d",
+      "translation_sha256": "28991e23304ca114b6a65afe976b15c14e7634c8e383c688759dce897708c93f"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "a95f57903c344f1a270a7153e8e0652f8b1f7d71b886841708b958f97e837ba1",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 51,
+        "legacy_word_count": 96,
+        "length_ratio": 0.531,
+        "legacy_coverage": 0.656,
+        "prompted_failure": "missing spoken Questions 80 through 82 introduction"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "92354b8eeae964537fa772214305ffd69181b7cd4b2d2ad48bea639fbc3c2c7d",
+      "audio_sha256": "4bc7a8ad58f1cc9e16dd4b9c2f7b2ff5bbcd5592502588da30fc0c4a177ede36",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 40098
+        }
+      ]
     }
   },
   "items": [
@@ -119,7 +150,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p4-80-82/80"
+      "item_key": "official-10-test-2/p4-80-82/80",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -172,7 +206,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p4-80-82/81"
+      "item_key": "official-10-test-2/p4-80-82/81",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -184,7 +221,7 @@
       "answer": "A",
       "question": "What does the speaker ask the listeners to do?",
       "answer_explain": "正确答案：A（Send a list of preferences）。先定位题干关键词，再核对原文中的直接信息或同义改写。",
-      "question_translation": "中文辅助(离线预处理):What(什么) does the speaker(说话者) ask the listeners to do?",
+      "question_translation": "讲话者请听众做什么？",
       "choice_translations": [
         "A:Send a list of preferences",
         "B:Attend a training",
@@ -225,7 +262,17 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-10-test-2/p4-80-82/82"
+      "item_key": "official-10-test-2/p4-80-82/82",
+      "question_translation_source": {
+        "schema_version": "reviewed_listening_question_translation_v1",
+        "method": "exact_reviewed_question_mapping",
+        "source_sha256": "b760100acfc2371c3f909f2d9bc3a61cabfa19b22d7f670a02f73d7bcc96b878",
+        "reviewed_at": "2026-09-24",
+        "language": "zh-CN"
+      },
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ]
 }

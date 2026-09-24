@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "Renovations on the top floor of the Mele Building are set to ------- after the elevat are installed in early August.\nA. expire\nB. construct\nC. commence\nD. arrange"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "arrange"
       ],
       "answer": "C",
-      "question": "Renovations on the top floor of the Mele Building are set to ------- after the elevat are installed in early August.",
+      "question": "Renovations on the top floor of the Melaka Building are set to ------- after the elevators are installed in early August.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“commence”代入题干后为“Renovations on the top floor of the Mele Building are set to commence after the elevat are installed in early August.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（commence）。",
-      "question_translation": "Renovations on the top floor of the Mele Building are set to ------- after the elevat are installed in early August.",
+      "answer_explain": "句子安排翻修工程在电梯安装后开始，因此选 C commence。A expire 表到期、失效，不适合描述翻修启动；B construct 表建造，通常需以建造对象为宾语，工程本身不能主动 construct；D arrange 表安排，也不能直接表示工程开始。",
+      "question_translation": "Melaka 大楼顶层的翻修工程定于八月初电梯安装完毕后**开始**。",
       "choice_translations": [
-        "A：expire",
-        "B：construct",
-        "C：commence",
-        "D：arrange"
+        "到期；失效",
+        "建造；建设",
+        "开始；启动",
+        "安排；整理"
       ],
-      "question_type": "词性 / 词形题",
-      "evidence": "参考原文第 1 段：Renovations on the top floor of the Mele Building are set to ------- after the elevat are installed in early August.",
-      "grammar_point": "词性 / 词形",
-      "strategy": "本题属于词性 / 词形题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "词汇题：动词语义与用法",
+      "grammar_point": "be set to commence 表示定于开始；commence 可作不及物动词",
       "explanation_structured": {
         "answer": "C",
-        "question_type": "词性 / 词形题",
-        "evidence": "参考原文第 1 段：Renovations on the top floor of the Mele Building are set to ------- after the elevat are installed in early August.",
-        "strategy": "本题属于词性 / 词形题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“commence”代入题干后为“Renovations on the top floor of the Mele Building are set to commence after the elevat are installed in early August.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（commence）。"
+        "question_type": "词汇题：动词语义与用法",
+        "grammar_point": "be set to commence 表示定于开始；commence 可作不及物动词",
+        "analysis": "句子安排翻修工程在电梯安装后开始，因此选 C commence。A expire 表到期、失效，不适合描述翻修启动；B construct 表建造，通常需以建造对象为宾语，工程本身不能主动 construct；D arrange 表安排，也不能直接表示工程开始。"
       },
       "item_id": 123,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p5-123/123"
+      "item_key": "official-1-test-2/p5-123/123",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Renovations on the top floor of the Mele Building are set to ------- after the elevat are installed in early August.",
+        "original_choices": [
+          "expire",
+          "construct",
+          "commence",
+          "arrange"
+        ],
+        "text_sha256": "299876ccdd483042fd884630cb48470997b3a3b488fcb9de2ef620f94bf8ddfc",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "reason": "两个独立对应题文本均明确楼名 Melaka Building 及复数 elevators，按文本修复截断专名与单词，不凭语法推补。",
+          "sources": [
+            {
+              "url": "https://pdfcoffee.com/1000-cau-giai-de-toeic-format-moi-2019-pdf-free.html",
+              "location": "第 563 题，Melaka Building、elevators 及四选项"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/b1a3c62e-d07c-459a-8a65-d796a13aa648.pdf",
+              "location": "第 3 页第 123 题，Melaka building 与 elevators"
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Renovations on the top floor of the Melaka Building are set to commence after the elevators are installed in early August.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "00f3c0d07061b391f6a175eea4370fc5f7e90558020f9c2aff5ec1004229768d"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "00f3c0d07061b391f6a175eea4370fc5f7e90558020f9c2aff5ec1004229768d"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "00f3c0d07061b391f6a175eea4370fc5f7e90558020f9c2aff5ec1004229768d"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "00f3c0d07061b391f6a175eea4370fc5f7e90558020f9c2aff5ec1004229768d",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

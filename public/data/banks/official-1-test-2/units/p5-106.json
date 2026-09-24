@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "Aloud beeping ------- indicates that the copy machine has not been closed securely.\nA. sound\nB. sounds\nC. sounding\nD. sounded"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "sounded"
       ],
       "answer": "A",
-      "question": "Aloud beeping ------- indicates that the copy machine has not been closed securely.",
+      "question": "A loud beeping ------- indicates that the copy machine has not been closed securely.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“sound”代入题干后为“Aloud beeping sound indicates that the copy machine has not been closed securely.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：A（sound）。",
-      "question_translation": "Aloud beeping ------- indicates that the copy machine has not been closed securely.",
+      "answer_explain": "不定冠词 A 和后面的单数谓语 indicates 表明主语中心词应为单数名词 sound，loud beeping sound 即响亮的蜂鸣声，选 A。B sounds 是复数名词或动词第三人称单数；C sounding 是分词或动名词；D sounded 是过去式或过去分词，都不适合本句这个单数名词位置。",
+      "question_translation": "响亮的蜂鸣**声**表明复印机没有关严。",
       "choice_translations": [
-        "A：sound",
-        "B：sounds",
-        "C：sounding",
-        "D：sounded"
+        "声音（单数名词）；听起来（动词）",
+        "声音（复数）；听起来（第三人称单数）",
+        "发声；听起来（现在分词）",
+        "发出了声音；听起来（过去式或过去分词）"
       ],
-      "question_type": "动词形式题",
-      "evidence": "参考原文第 1 段：Aloud beeping ------- indicates that the copy machine has not been closed securely.",
-      "grammar_point": "动词形式",
-      "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题：名词形式与主谓一致",
+      "grammar_point": "a + 形容词修饰语 + 单数名词；sound 为主语中心词",
       "explanation_structured": {
         "answer": "A",
-        "question_type": "动词形式题",
-        "evidence": "参考原文第 1 段：Aloud beeping ------- indicates that the copy machine has not been closed securely.",
-        "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“sound”代入题干后为“Aloud beeping sound indicates that the copy machine has not been closed securely.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：A（sound）。"
+        "question_type": "语法题：名词形式与主谓一致",
+        "grammar_point": "a + 形容词修饰语 + 单数名词；sound 为主语中心词",
+        "analysis": "不定冠词 A 和后面的单数谓语 indicates 表明主语中心词应为单数名词 sound，loud beeping sound 即响亮的蜂鸣声，选 A。B sounds 是复数名词或动词第三人称单数；C sounding 是分词或动名词；D sounded 是过去式或过去分词，都不适合本句这个单数名词位置。"
       },
       "item_id": 106,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p5-106/106"
+      "item_key": "official-1-test-2/p5-106/106",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Aloud beeping ------- indicates that the copy machine has not been closed securely.",
+        "original_choices": [
+          "sound",
+          "sounds",
+          "sounding",
+          "sounded"
+        ],
+        "text_sha256": "913eb3f2477f82d95d8d71791b24bafc0391b29dc24497bba6b38aacd0257201",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "reason": "两源均明确 A loud，而非副词 Aloud；保留本地与教师版一致的 securely，不采用 HTML 的 ensurely 转录错误。",
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/b1a3c62e-d07c-459a-8a65-d796a13aa648.pdf",
+              "location": "第 1 页第 106 题，完整题干及 A–D 选项"
+            },
+            {
+              "url": "https://pdfcoffee.com/1000-cau-giai-de-toeic-format-moi-2019-pdf-free.html",
+              "location": "第 546 题，A loud 与四个选项；末尾 ensurely 不采用"
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "A loud beeping sound indicates that the copy machine has not been closed securely.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "046241f5eafd75ef9535ca4dbaf862a2710a69eed24947e41f2d0e0d6bb7f48b"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "046241f5eafd75ef9535ca4dbaf862a2710a69eed24947e41f2d0e0d6bb7f48b"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "046241f5eafd75ef9535ca4dbaf862a2710a69eed24947e41f2d0e0d6bb7f48b"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "046241f5eafd75ef9535ca4dbaf862a2710a69eed24947e41f2d0e0d6bb7f48b",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

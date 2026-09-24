@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "Hunt’s Gift Shop 携带各种-------，包括《Swinnville Daily News》和《West Bay Monthly》。\nA. publication\nB. publications\nC. publish\nD. published"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "published"
       ],
       "answer": "B",
-      "question": "Hunt’s Gift Shop carries a wide selection of -------, including the Swinnville Daily News 119 and West Bay Monthly.",
+      "question": "Hunt’s Gift Shop carries a wide selection of -------, including the Swinnville Daily News and West Bay Monthly.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“publications”代入题干后为“Hunt’s Gift Shop carries a wide selection of publications, including the Swinnville Daily News 119 and West Bay Monthly.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：B（publications）。",
-      "question_translation": "Hunt’s Gift Shop 携带各种-------，包括《Swinnville Daily News》和《West Bay Monthly》。",
+      "answer_explain": "of 后需要名词，a wide selection 和后面列举的两种报刊表明这里指多种出版物，因此选复数名词 B publications。A publication 是可数名词单数，不能直接表示这里的多种出版物；C publish 是动词；D published 是过去式或过去分词，不能单独充当此处所需的名词。",
+      "question_translation": "Hunt’s 礼品店销售种类繁多的**出版物**，包括《Swinnville Daily News》和《West Bay Monthly》。",
       "choice_translations": [
-        "A：出版物（单数）",
-        "B：出版物（复数）",
-        "C：出版（动词）",
-        "D：已出版的"
+        "出版物；出版（此处为单数名词）",
+        "出版物；刊物（复数）",
+        "出版；刊登（动词）",
+        "已出版的；出版了（过去分词或过去式）"
       ],
-      "question_type": "动词形式题",
-      "evidence": "参考原文第 1 段：Hunt’s Gift Shop carries a wide selection of -------, including the Swinnville Daily News 119 and West Bay Monthly.",
-      "grammar_point": "动词形式",
-      "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题：名词词形与单复数",
+      "grammar_point": "a wide selection of + 复数可数名词；publications 表示多种出版物",
       "explanation_structured": {
         "answer": "B",
-        "question_type": "动词形式题",
-        "evidence": "参考原文第 1 段：Hunt’s Gift Shop carries a wide selection of -------, including the Swinnville Daily News 119 and West Bay Monthly.",
-        "strategy": "本题属于动词形式题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“publications”代入题干后为“Hunt’s Gift Shop carries a wide selection of publications, including the Swinnville Daily News 119 and West Bay Monthly.”。选择理由：该项的词性或动词形态符合句法位置，同时与上下文语义搭配自然。正确答案：B（publications）。"
+        "question_type": "语法题：名词词形与单复数",
+        "grammar_point": "a wide selection of + 复数可数名词；publications 表示多种出版物",
+        "analysis": "of 后需要名词，a wide selection 和后面列举的两种报刊表明这里指多种出版物，因此选复数名词 B publications。A publication 是可数名词单数，不能直接表示这里的多种出版物；C publish 是动词；D published 是过去式或过去分词，不能单独充当此处所需的名词。"
       },
       "item_id": 113,
       "priority": {
@@ -69,7 +64,49 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p5-113/113"
+      "item_key": "official-2-test-2/p5-113/113",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "original_question": "Hunt’s Gift Shop carries a wide selection of -------, including the Swinnville Daily News 119 and West Bay Monthly.",
+        "original_choices": [
+          "publication",
+          "publications",
+          "publish",
+          "published"
+        ],
+        "correction": {
+          "method": "reviewed_stray_number_removal",
+          "removed_number": "119",
+          "reason": "并列刊物名称之间混入邻题号 119，保留刊名原有英文。"
+        },
+        "text_sha256": "4e96ad565a4ae7a92a7d0ff4da1aa176777e1cec418610c10998a99873289a6a",
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "content_review_status": "text_corrected_by_review",
+      "completed_sentence": "Hunt’s Gift Shop carries a wide selection of publications, including the Swinnville Daily News and West Bay Monthly.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "dc76b1bb594cf3c85141623cdf73d154f3bed7bc5720ef544b410ef5c107f8d0"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "dc76b1bb594cf3c85141623cdf73d154f3bed7bc5720ef544b410ef5c107f8d0"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "dc76b1bb594cf3c85141623cdf73d154f3bed7bc5720ef544b410ef5c107f8d0"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "dc76b1bb594cf3c85141623cdf73d154f3bed7bc5720ef544b410ef5c107f8d0",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

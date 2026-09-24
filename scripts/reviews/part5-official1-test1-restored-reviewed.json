@@ -1,0 +1,673 @@
+{
+  "schema_version": "part5_reviewed_aids_v2",
+  "reviews": [
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 102,
+      "expected_question": "The food ------- for the conference must sent to the caterer by Friday at 5:00 pu",
+      "expected_choices": [
+        "order",
+        "group",
+        "profit",
+        "lesson"
+      ],
+      "expected_answer": "A",
+      "corrected_question": "The food ------- for the conference must be sent to the caterer by Friday at 5:00 p.m.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Restores missing passive auxiliary and end-of-sentence time abbreviation, corroborated by plain practice PDF and Japanese flashcards. No answer change.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 102, page 1",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://qa5.3study.com/RES/Files/041e4095-b458-4644-a742-70344379baa8.pdf",
+            "location": "Question 102, page 1",
+            "kind": "annotated_retypeset_teacher_pdf",
+            "verification": "Text extraction via web; Chinese annotations excluded."
+          },
+          {
+            "url": "https://quizlet.com/1126082888",
+            "location": "Question 102",
+            "kind": "public_flashcard_crosscheck",
+            "verification": "Exact q102 with all four options; no image used."
+          }
+        ]
+      },
+      "translation": "会议的餐饮**订单**必须在周五下午5点前送交餐饮服务商。",
+      "question_type": "词汇题 · 名词搭配",
+      "grammar_point": "food order 与餐饮服务",
+      "analysis": "food order 表示餐饮订单，与 sent to the caterer（交给餐饮服务商）相呼应。group、profit、lesson 分别表示团体、利润、课程，不能表示这里需要提交的餐饮安排。",
+      "choice_translations": [
+        "订单",
+        "团体；组",
+        "利润",
+        "课程；教训"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 105,
+      "expected_question": "To apply for a driving permit, you must ------- ting. two forms of identification.",
+      "expected_choices": [
+        "meet",
+        "work",
+        "show",
+        "ride"
+      ],
+      "expected_answer": "C",
+      "corrected_question": "To apply for a driving permit, you must ------- two forms of identification.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Removes stray 'ting.' from neighboring column, while retaining the complete sentence and existing options.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 105, page 1",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://qa5.3study.com/RES/Files/041e4095-b458-4644-a742-70344379baa8.pdf",
+            "location": "Question 105, page 1",
+            "kind": "annotated_retypeset_teacher_pdf",
+            "verification": "Text extraction via web; Chinese annotations excluded."
+          }
+        ]
+      },
+      "translation": "申请驾驶许可时，您必须**出示**两种身份证明。",
+      "question_type": "词汇题 · 动词搭配",
+      "grammar_point": "show identification",
+      "analysis": "show 后直接接 two forms of identification，表示出示身份证明。meet 表示遇见或满足，work 表示工作，ride 表示乘坐，均不能与本句宾语构成所需意思。",
+      "choice_translations": [
+        "遇见；满足",
+        "工作；运作",
+        "出示；展示",
+        "乘坐；骑"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 117,
+      "expected_question": "Heidt Used Appliance Store guarantees that your purchase will arrive in working -------.",
+      "expected_choices": [
+        "condition",
+        "conditional a",
+        "conditionally 7)",
+        "conditioned ot"
+      ],
+      "expected_answer": "A",
+      "corrected_question": "Heidt Used Appliance Store guarantees that your purchase will arrive in working -------.",
+      "corrected_choices": [
+        "condition",
+        "conditional",
+        "conditionally",
+        "conditioned"
+      ],
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Question itself is complete; only option B/C/D have OCR suffix garbage. Primary academic paper explicitly quotes this sentence and all four clean options at printed page 11, example (15a), labeled RD2_117.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 117, page 2",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://kanazawa-u.repo.nii.ac.jp/record/2002264/files/2436-3464-28-1-37.pdf",
+            "location": "Question 117, page 11",
+            "kind": "primary_academic_analysis",
+            "verification": "Indexed extract shows exact quoted item 117 and options; full open was HTTP429."
+          }
+        ]
+      },
+      "translation": "Heidt 二手电器商店保证，您购买的商品送达时处于能够正常运转的**状态**。",
+      "question_type": "语法题 · 词性与固定搭配",
+      "grammar_point": "in working condition",
+      "analysis": "in working condition 表示处于正常运转状态。介词 in 后是名词短语，working 修饰名词 condition。conditional 和 conditioned 是形容词，conditionally 是副词，不能代替此处名词。",
+      "choice_translations": [
+        "状态；条件（名词）",
+        "有条件的（形容词）",
+        "有条件地（副词）",
+        "有条件的；受调节的（形容词或过去分词）"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 118,
+      "expected_question": "Ms. Park appreciated the job offer from Seon Advisory Group, she declined the opportunity because she would have to relocate.",
+      "expected_choices": [
+        "Now that",
+        "Only if",
+        "While",
+        "Whether"
+      ],
+      "expected_answer": "C",
+      "corrected_question": "------- Ms. Park appreciated the job offer from Seon Advisory Group, she declined the opportunity because she would have to relocate.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Restores leading blank; text and options otherwise unchanged.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 118, page 2",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+            "location": "Question 118, page 104",
+            "kind": "retypeset_practice_text",
+            "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+          }
+        ]
+      },
+      "translation": "**虽然**Park 女士很感谢 Seon Advisory Group 提供的工作机会，但她因需要搬迁而拒绝了这份工作。",
+      "question_type": "语法题 · 让步状语从句",
+      "grammar_point": "while 表示虽然",
+      "analysis": "前半句表示感谢工作邀约，后半句却表示拒绝，两者构成让步关系，因此用 While。Now that 表原因，Only if 表条件，Whether 表是否，都不符合此处前后关系。",
+      "choice_translations": [
+        "既然",
+        "只有在……条件下",
+        "虽然；当……时",
+        "是否"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 120,
+      "expected_question": "a small festival celebrating the town’s heritage, the Clarytown Celebration has become one of the biggest annual events in the area.",
+      "expected_choices": [
+        "Origin",
+        "Originate",
+        "Originated",
+        "Originally"
+      ],
+      "expected_answer": "D",
+      "corrected_question": "------- a small festival celebrating the town’s heritage, the Clarytown Celebration has become one of the biggest annual events in the area.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Restores leading blank; uses existing curly apostrophe in town’s.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 120, page 3",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+            "location": "Question 120, page 104",
+            "kind": "retypeset_practice_text",
+            "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+          }
+        ]
+      },
+      "translation": "Clarytown 庆典**最初**只是一个庆祝小镇传统文化的小节日，如今已成为当地规模最大的年度活动之一。",
+      "question_type": "语法题 · 副词与句首补充成分",
+      "grammar_point": "originally 表示最初",
+      "analysis": "Originally 表示“起初”，配合句首 a small festival 对主语过去的状态作补充，和主句 has become 形成今昔对比。Origin 是名词，Originate 是动词原形，Originated 是动词过去式或过去分词，均不能在此直接接这个名词短语表达原来的状态。",
+      "choice_translations": [
+        "起源（名词）",
+        "起源；发源（动词原形）",
+        "起源了（过去式或过去分词）",
+        "最初；原先"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 121,
+      "expected_question": "of the management team include improving productivity and reducing annual expenditures.",
+      "expected_choices": [
+        "Priority",
+        "Prioritizing",
+        "Priorities",
+        "Prioritized"
+      ],
+      "expected_answer": "C",
+      "corrected_question": "------- of the management team include improving productivity and reducing annual expenditures.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Restores leading blank. Do not include teacher annotations '(...)主詞' from the annotated PDF.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 121, page 3",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+            "location": "Question 121, page 104",
+            "kind": "retypeset_practice_text",
+            "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+          }
+        ]
+      },
+      "translation": "管理团队的**首要任务**包括提高生产效率和减少年度支出。",
+      "question_type": "语法题 · 名词与主谓一致",
+      "grammar_point": "复数名词作主语",
+      "analysis": "空格是主语的核心词，of the management team 是后置修饰语。谓语 include 为复数主语形式，应选复数名词 Priorities；单数 Priority 应配 includes，Prioritizing 和 Prioritized 不是这里所需的复数名词。",
+      "choice_translations": [
+        "首要任务；优先事项（单数）",
+        "确定优先顺序（动名词）",
+        "首要任务；优先事项（复数）",
+        "已按优先顺序安排的"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 122,
+      "expected_question": "employees affected by changes t Linerex Corporation’s health plan shoul watch the online presentation.",
+      "expected_choices": [
+        "Every",
+        "Much",
+        "Those",
+        "Which"
+      ],
+      "expected_answer": "C",
+      "corrected_question": "------- employees affected by changes to Linerex Corporation’s health plan should watch the online presentation.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Restores leading blank and two clipped word endings. Neighboring right-column q127 contains the stray 'should', agreeing with cross-column corruption.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 122, page 3",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+            "location": "Question 122, page 104",
+            "kind": "retypeset_practice_text",
+            "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+          },
+          {
+            "url": "https://fr.gauthmath.com/solution/1832818841823266/122-employees-affected-by-changes-to-127-Programmers-at-Ulrich-Ahn-Company-are-L",
+            "location": "Question 122",
+            "kind": "indexed_ocr_of_apparent_two_column_scan",
+            "verification": "Indexed text has paired two-column layout 122/127,123/128,124/129,125/130,126. Actual question image NOT downloaded or visually verified. A downloaded link was avatar-only and must not be used as source image."
+          }
+        ]
+      },
+      "translation": "**那些**受到 Linerex 公司健康保险计划变更影响的员工，应当观看在线说明。",
+      "question_type": "语法题 · 限定词",
+      "grammar_point": "those 与复数名词",
+      "analysis": "employees 为复数可数名词，those employees 表示那些员工；affected by... 是后置分词短语，限定哪些员工。Every 接单数，Much 修饰不可数名词，Which 通常用于疑问或连接结构，不符合这里的普通陈述。",
+      "choice_translations": [
+        "每一（后接单数名词）",
+        "许多（修饰不可数名词）",
+        "那些",
+        "哪一个；哪一些"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 123,
+      "expected_question": "Senior human resources personnel nee ------- at least two training events this ye to be eligible for a bonus.",
+      "expected_choices": [
+        "have hosted",
+        "be hosted",
+        "have been hosted",
+        "hosting"
+      ],
+      "expected_answer": "A",
+      "corrected_question": "Senior human resources personnel need to ------- at least two training events this year to be eligible for a bonus.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Restores 'need to' and 'year'; neighboring q128 contains stray 'this year', agreeing with cross-column corruption.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 123, page 3",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+            "location": "Question 123, page 104",
+            "kind": "retypeset_practice_text",
+            "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+          },
+          {
+            "url": "https://fr.gauthmath.com/solution/1832818841823266/122-employees-affected-by-changes-to-127-Programmers-at-Ulrich-Ahn-Company-are-L",
+            "location": "Question 123",
+            "kind": "indexed_ocr_of_apparent_two_column_scan",
+            "verification": "Indexed text has paired two-column layout 122/127,123/128,124/129,125/130,126. Actual question image NOT downloaded or visually verified. A downloaded link was avatar-only and must not be used as source image."
+          }
+        ]
+      },
+      "translation": "高级人力资源人员今年需要**已经主持过**至少两次培训活动，才有资格获得奖金。",
+      "question_type": "语法题 · 完成式不定式",
+      "grammar_point": "need to have done",
+      "analysis": "need to 后接动词原形；have hosted 构成完成式不定式 need to have hosted，表示申请奖金资格时应已完成主持培训的要求。人员是主持者，因此不用 be hosted 或 have been hosted 的被动形式；hosting 不能直接接在此处的 to 后。",
+      "choice_translations": [
+        "已主持过（完成式主动）",
+        "被主持（被动）",
+        "已被主持过（完成式被动）",
+        "主持（动名词或现在分词）"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 124,
+      "expected_question": "Aomori Agriculture Solutions specialize: in increasing crop yields ------- the development of better farming techniqu",
+      "expected_choices": [
+        "because",
+        "through",
+        "previous",
+        "although"
+      ],
+      "expected_answer": "B",
+      "corrected_question": "Aomori Agriculture Solutions specializes in increasing crop yields ------- the development of better farming techniques.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Restores the verb and clipped sentence ending, with no new content inferred.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 124, page 3",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+            "location": "Question 124, page 104",
+            "kind": "retypeset_practice_text",
+            "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+          },
+          {
+            "url": "https://fr.gauthmath.com/solution/1832818841823266/122-employees-affected-by-changes-to-127-Programmers-at-Ulrich-Ahn-Company-are-L",
+            "location": "Question 124",
+            "kind": "indexed_ocr_of_apparent_two_column_scan",
+            "verification": "Indexed text has paired two-column layout 122/127,123/128,124/129,125/130,126. Actual question image NOT downloaded or visually verified. A downloaded link was avatar-only and must not be used as source image."
+          }
+        ]
+      },
+      "translation": "Aomori Agriculture Solutions 专门**通过**开发更先进的农业技术来提高作物产量。",
+      "question_type": "语法题 · 表示方式的介词",
+      "grammar_point": "through 后接名词短语",
+      "analysis": "空格后是名词短语 the development of better farming techniques，through 表示通过某种方式。because 和 although 引导从句，不能这样直接接该名词短语；previous 是形容词，结构不符。",
+      "choice_translations": [
+        "因为",
+        "通过；经由",
+        "以前的",
+        "虽然"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 125,
+      "expected_question": "Chae Media, Inc., plans to ------- the renovation of its publishing house in Se",
+      "expected_choices": [
+        "send away for",
+        "move forward with",
+        "take back from",
+        "watch out for"
+      ],
+      "expected_answer": "B",
+      "corrected_question": "Chae Media, Inc., plans to ------- the renovation of its publishing house in Seoul.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Restores clipped city name using cross-checks and the stray 'in Seoul.' in q130. Preserves canonical punctuation 'Inc.,': Gauth indexed original-scan alt text has that comma; re-typeset 3study/FlipHTML5 versions omit it.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 125, page 3",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+            "location": "Question 125, page 104",
+            "kind": "retypeset_practice_text",
+            "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+          },
+          {
+            "url": "https://fr.gauthmath.com/solution/1832818841823266/122-employees-affected-by-changes-to-127-Programmers-at-Ulrich-Ahn-Company-are-L",
+            "location": "Question 125",
+            "kind": "indexed_ocr_of_apparent_two_column_scan",
+            "verification": "Indexed text has paired two-column layout 122/127,123/128,124/129,125/130,126. Actual question image NOT downloaded or visually verified. A downloaded link was avatar-only and must not be used as source image."
+          }
+        ]
+      },
+      "translation": "Chae Media, Inc. 计划**推进**其位于首尔的出版社办公场所的翻修工程。",
+      "question_type": "词汇题 · 短语动词",
+      "grammar_point": "move forward with",
+      "analysis": "move forward with a renovation 表示推进翻修项目，符合公司的计划。send away for 表示邮购或函索，take back from 表示从某处收回，watch out for 表示警惕，都不能表达推进工程。",
+      "choice_translations": [
+        "邮购；函索",
+        "推进；继续开展",
+        "从……收回",
+        "提防；留意"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 126,
+      "expected_question": "The marketing team at Bescura Cars he created a series of ------- humorous commercials, designed to appeal to your consumers.",
+      "expected_choices": [
+        "economically",
+        "exactly",
+        "deliberately",
+        "patiently"
+      ],
+      "expected_answer": "C",
+      "corrected_question": "The marketing team at Bescura Cars has created a series of ------- humorous commercials, designed to appeal to younger consumers.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Preserves 'at Bescura Cars' from canonical and two independent public sources; the 3study re-typeset PDFs use 'of' and are NOT accepted for this token. Fixes 'he' to 'has' and 'your' to 'younger'.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 126, page 3",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+            "location": "Question 126, page 104",
+            "kind": "retypeset_practice_text",
+            "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+          },
+          {
+            "url": "https://fr.gauthmath.com/solution/1832818841823266/122-employees-affected-by-changes-to-127-Programmers-at-Ulrich-Ahn-Company-are-L",
+            "location": "Question 126",
+            "kind": "indexed_ocr_of_apparent_two_column_scan",
+            "verification": "Indexed text has paired two-column layout 122/127,123/128,124/129,125/130,126. Actual question image NOT downloaded or visually verified. A downloaded link was avatar-only and must not be used as source image."
+          },
+          {
+            "url": "https://www.language-center.com.tw/toeic/exam/skill-1.html",
+            "location": "Question 3",
+            "kind": "language_school_explanation",
+            "verification": "Question 3 explicitly gives 'at Bescura Cars', 'has', and 'younger'."
+          }
+        ]
+      },
+      "translation": "Bescura Cars 的营销团队制作了一系列**刻意**走幽默路线的广告，旨在吸引较年轻的消费者。",
+      "question_type": "词汇题 · 副词词义",
+      "grammar_point": "deliberately humorous",
+      "analysis": "deliberately 表示有意地、刻意地，修饰 humorous，说明幽默效果是为了吸引年轻消费者而有意设计的。economically 表示节俭或经济地，exactly 表示恰好，patiently 表示耐心地，均不符合这个广告创意语境。",
+      "choice_translations": [
+        "节俭地；经济地",
+        "恰好；精确地",
+        "故意地；有意地",
+        "耐心地"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 127,
+      "expected_question": "Programmers at Ulrich-Ahn Company are : should responsible for ensuring that software conforms to the ------- system standards.",
+      "expected_choices": [
+        "establish",
+        "established",
+        "establishing",
+        "establishes"
+      ],
+      "expected_answer": "B",
+      "corrected_question": "Programmers at Ulrich-Ahn Company are responsible for ensuring that software conforms to the ------- system standards.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Removes neighboring left-column fragments ': should'.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 127, page 3",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+            "location": "Question 127, page 104",
+            "kind": "retypeset_practice_text",
+            "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+          },
+          {
+            "url": "https://fr.gauthmath.com/solution/1832818841823266/122-employees-affected-by-changes-to-127-Programmers-at-Ulrich-Ahn-Company-are-L",
+            "location": "Question 127",
+            "kind": "indexed_ocr_of_apparent_two_column_scan",
+            "verification": "Indexed text has paired two-column layout 122/127,123/128,124/129,125/130,126. Actual question image NOT downloaded or visually verified. A downloaded link was avatar-only and must not be used as source image."
+          }
+        ]
+      },
+      "translation": "Ulrich-Ahn 公司的程序员负责确保软件符合**既定的**系统标准。",
+      "question_type": "语法题 · 过去分词作定语",
+      "grammar_point": "established standards",
+      "analysis": "system standards 是被制定、确立的标准，所以用过去分词 established 作定语，表示既定的。establish 和 establishes 是谓语形式；establishing 表主动进行，不能表示标准已经被确立。",
+      "choice_translations": [
+        "建立；确立（原形）",
+        "既定的；已确立的",
+        "正在建立的",
+        "建立；确立（第三人称单数）"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 128,
+      "expected_question": "Pour the cake batter into the pan and shake this year gently if the batter is ------- distributed.",
+      "expected_choices": [
+        "unevenly",
+        "undeniably",
+        "unwillingly",
+        "unknowingly"
+      ],
+      "expected_answer": "A",
+      "corrected_question": "Pour the cake batter into the pan and shake gently if the batter is ------- distributed.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Removes neighboring left-column fragment 'this year'.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 128, page 3",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+            "location": "Question 128, page 104",
+            "kind": "retypeset_practice_text",
+            "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+          },
+          {
+            "url": "https://fr.gauthmath.com/solution/1832818841823266/122-employees-affected-by-changes-to-127-Programmers-at-Ulrich-Ahn-Company-are-L",
+            "location": "Question 128",
+            "kind": "indexed_ocr_of_apparent_two_column_scan",
+            "verification": "Indexed text has paired two-column layout 122/127,123/128,124/129,125/130,126. Actual question image NOT downloaded or visually verified. A downloaded link was avatar-only and must not be used as source image."
+          }
+        ]
+      },
+      "translation": "将蛋糕面糊倒入烤盘，如果面糊分布**不均匀**，就轻轻晃动烤盘。",
+      "question_type": "词汇题 · 副词词义",
+      "grammar_point": "unevenly distributed",
+      "analysis": "unevenly distributed 表示分布不均，因此需要轻轻晃动烤盘使其均匀。undeniably 表示无可否认地，unwillingly 表示不情愿地，unknowingly 表示不知情地，都不符合面糊的分布状态。",
+      "choice_translations": [
+        "不均匀地",
+        "无可否认地",
+        "不情愿地",
+        "不知情地"
+      ]
+    },
+    {
+      "bank_id": "official-1-test-1",
+      "item_id": 130,
+      "expected_question": "The financial figures released by Tsai and he Wu International ------- only to expenses ‘in Seoul. from the month of July.",
+      "expected_choices": [
+        "organize",
+        "ponder",
+        "correspond",
+        "subscribe"
+      ],
+      "expected_answer": "C",
+      "corrected_question": "The financial figures released by Tsai and Wu International ------- only to expenses from the month of July.",
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "original_images_verified": false,
+        "notes": "Removes neighboring left-column fragments 'he' and '‘in Seoul.'.",
+        "sources": [
+          {
+            "url": "https://qa5.3study.com/RES/Files/3c0648e0-ff88-4b3d-ae03-9aa9db4671bb.pdf",
+            "location": "Question 130, page 4",
+            "kind": "retypeset_practice_pdf",
+            "verification": "Text extraction via web; visual screenshot could not be retrieved (cache miss)."
+          },
+          {
+            "url": "https://fliphtml5.com/peuaq/nguj/01_-_ETP3S-1L-revised-2024/104/",
+            "location": "Question 130, page 104",
+            "kind": "retypeset_practice_text",
+            "verification": "Web text page 104, printed page 96; exact item sequence 117-130."
+          },
+          {
+            "url": "https://fr.gauthmath.com/solution/1832818841823266/122-employees-affected-by-changes-to-127-Programmers-at-Ulrich-Ahn-Company-are-L",
+            "location": "Question 130",
+            "kind": "indexed_ocr_of_apparent_two_column_scan",
+            "verification": "Indexed text has paired two-column layout 122/127,123/128,124/129,125/130,126. Actual question image NOT downloaded or visually verified. A downloaded link was avatar-only and must not be used as source image."
+          }
+        ]
+      },
+      "translation": "Tsai and Wu International 公布的财务数据仅**对应于**七月份的支出。",
+      "question_type": "词汇题 · 动词搭配",
+      "grammar_point": "correspond to",
+      "analysis": "correspond to 表示对应于、与……相符，说明这些数字所对应的支出范围。organize 表示组织，ponder 表示仔细考虑，subscribe to 表示订阅或赞同，均不符合财务数据与支出的对应关系。",
+      "choice_translations": [
+        "组织；安排",
+        "仔细考虑",
+        "对应；相符",
+        "订阅；赞同"
+      ]
+    }
+  ]
+}

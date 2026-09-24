@@ -40,7 +40,7 @@
       "asset_key": "official-7-test-1/audio/part4/q095-097.mp3",
       "exists": true
     },
-    "transcript": "and room layouts.\nHello, Dr. Chung.\nI'm organizing the upcoming Physicians Convention.\nWe're especially happy about the topic you've selected, holistic health care.\nI sent you an email with various room arrangements.\nIn your proposal, you said the attendees will be taking notes, so I'd suggest the one with two rows of tables with all participants facing the same way.\nI also need an updated professional biography for our program booklet.\nPlease email it to me before the end of the month.\nThank you.",
+    "transcript": "Hello, Dr. Chung.\nI'm organizing the upcoming Physicians Convention.\nWe're especially happy about the topic you've selected, holistic health care.\nI sent you an email with various room arrangements.\nIn your proposal, you said the attendees will be taking notes, so I'd suggest the one with two rows of tables with all participants facing the same way.\nI also need an updated professional biography for our program booklet.\nPlease email it to me before the end of the month.\nThank you.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
       "method": "mlx-whisper/large-v3-turbo-4bit:full",
@@ -48,23 +48,58 @@
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-7-test-1/audio/part4/q095-097.mp3",
       "metrics": {
-        "word_count": 84,
+        "word_count": 81,
         "legacy_word_count": 95,
         "length_ratio": 0.884,
         "legacy_coverage": 0.842
       },
-      "postprocess_version": "sentence_boundaries_v2"
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
-    "transcript_translation": "和房间布局。\n您好，Chung 博士。\n我正在组织即将举行的医师大会。\n我们对您选择的主题——整体医疗保健——特别满意。\n我给您发送了一封电子邮件，里面有各种房间布置方案。\n在您的提案中，您提到与会者将做笔记，所以我建议采用两排桌子、所有参与者朝向同一方向的布局。\n我还需要一份更新后的专业传记用于我们的节目册。\n请在本月底前通过电子邮件发给我。\n谢谢您。",
+    "transcript_translation": "您好，Chung 博士。\n我正在组织即将举行的医师大会。\n我们对您选择的主题——整体医疗保健——特别满意。\n我给您发送了一封电子邮件，里面有各种房间布置方案。\n在您的提案中，您提到与会者将做笔记，所以我建议采用两排桌子、所有参与者朝向同一方向的布局。\n我还需要一份更新后的专业传记用于我们的节目册。\n请在本月底前通过电子邮件发给我。\n谢谢您。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
       "method": "ollama/gemma4:latest",
-      "transcript_sha256": "6b615d407fa4da440b515f7c06cfa079e1d300bf7a9d13b6925dd78ef2edebd4"
+      "transcript_sha256": "84c17659c388428e02353c827cbd4ba55ae3c7386c8ef179a4cbdebdddcccdbb",
+      "postprocess_version": "verified_listening_intro_cleanup_v1"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_intro_cleanup": {
+      "schema_version": "verified_listening_intro_cleanup_v1",
+      "audio_sha256": "58cac31ae1f3da5ae7ea1b8bf976d478905b3d22546dcda378b3c07192a2c156",
+      "removed_english_prefix": "and room layouts.",
+      "removed_chinese_prefix": "和房间布局。",
+      "cache_field": "raw",
+      "raw_sha256": "0f9f537be440b8380d51deefb1a4745938e46e91f8a5c89b840b820a66c8422e",
+      "verified_introduction": "Questions 95 through 97 refer to the following telephone message and room layouts. ",
+      "before": {
+        "transcript": "and room layouts.\nHello, Dr. Chung.\nI'm organizing the upcoming Physicians Convention.\nWe're especially happy about the topic you've selected, holistic health care.\nI sent you an email with various room arrangements.\nIn your proposal, you said the attendees will be taking notes, so I'd suggest the one with two rows of tables with all participants facing the same way.\nI also need an updated professional biography for our program booklet.\nPlease email it to me before the end of the month.\nThank you.",
+        "transcript_translation": "和房间布局。\n您好，Chung 博士。\n我正在组织即将举行的医师大会。\n我们对您选择的主题——整体医疗保健——特别满意。\n我给您发送了一封电子邮件，里面有各种房间布置方案。\n在您的提案中，您提到与会者将做笔记，所以我建议采用两排桌子、所有参与者朝向同一方向的布局。\n我还需要一份更新后的专业传记用于我们的节目册。\n请在本月底前通过电子邮件发给我。\n谢谢您。",
+        "transcript_source": {
+          "schema_version": "listening_transcript_v2",
+          "method": "mlx-whisper/large-v3-turbo-4bit:full",
+          "audio_sha256": "58cac31ae1f3da5ae7ea1b8bf976d478905b3d22546dcda378b3c07192a2c156",
+          "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
+          "source_audio": "public/assets/official-7-test-1/audio/part4/q095-097.mp3",
+          "metrics": {
+            "word_count": 84,
+            "legacy_word_count": 95,
+            "length_ratio": 0.884,
+            "legacy_coverage": 0.842
+          },
+          "postprocess_version": "sentence_boundaries_v2"
+        },
+        "transcript_translation_source": {
+          "schema_version": "listening_translation_v2",
+          "method": "ollama/gemma4:latest",
+          "transcript_sha256": "6b615d407fa4da440b515f7c06cfa079e1d300bf7a9d13b6925dd78ef2edebd4"
+        }
+      },
+      "after_transcript_sha256": "84c17659c388428e02353c827cbd4ba55ae3c7386c8ef179a4cbdebdddcccdbb",
+      "after_translation_sha256": "4b08a1adf64b781857f94eb20ad2857c46f379a3eaf81efc3f7cf5d0568c9682"
     }
   },
   "items": [
@@ -119,7 +154,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-1/p4-95-97/95"
+      "item_key": "official-7-test-1/p4-95-97/95",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -172,7 +210,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-1/p4-95-97/96"
+      "item_key": "official-7-test-1/p4-95-97/96",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     },
     {
       "choices": [
@@ -225,7 +266,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-7-test-1/p4-95-97/97"
+      "item_key": "official-7-test-1/p4-95-97/97",
+      "study_aid_status": {
+        "question_translation": "pending"
+      }
     }
   ]
 }

@@ -1,0 +1,418 @@
+{
+  "schema_version": "part5_reviewed_aids_v2",
+  "reviews": [
+    {
+      "bank_id": "official-2-test-1", "item_id": 101,
+      "expected_question": "Duray Airlines offers delicious food and beverage -------.",
+      "expected_choices": ["fees", "answers", "options", "tasks"], "expected_answer": "C",
+      "translation": "Duray 航空公司提供美味的餐饮**选择**。",
+      "grammar_point": "名词语义辨析：food and beverage options（餐饮选择）",
+      "question_type": "词汇题：名词搭配",
+      "analysis": "C options 表示可供选择的种类，与 food and beverage 组成餐饮选择，符合航空公司提供餐饮的语境。A fees 是费用，不能用 delicious 描述；B answers 是答案；D tasks 是任务，均不能表示所提供的餐饮品种。四项都是复数名词，关键是句意和搭配。",
+      "choice_translations": ["费用；收费", "回答；答案", "选择；可选项目", "任务；工作"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 102,
+      "expected_question": "The Oakshore region ------- large numbers of young professionals.",
+      "expected_choices": ["was attracted", "has been attracted", "attracting", "attracts"], "expected_answer": "D",
+      "translation": "Oakshore 地区**吸引着**大量年轻的专业人士。",
+      "grammar_point": "一般现在时的主动语态；单数主语 region 对应 attracts",
+      "question_type": "语法题：谓语动词与主谓一致",
+      "analysis": "主语 The Oakshore region 是单数，后面的 large numbers of young professionals 是被吸引的对象，因此要用主动谓语 attracts，选 D。A was attracted 和 B has been attracted 都是被动形式，不能在此直接接被吸引者作宾语；C attracting 是分词，单独不能充当本句谓语。",
+      "choice_translations": ["被吸引了（一般过去时被动）", "已经被吸引（现在完成时被动）", "吸引（现在分词）", "吸引（一般现在时第三人称单数）"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 103,
+      "expected_question": "The sales report is due tomorrow, so please finish it -------.",
+      "expected_choices": ["easily", "quickly", "certainly", "truly"], "expected_answer": "B",
+      "translation": "销售报告明天就要交了，所以请**尽快**完成。",
+      "grammar_point": "副词语义辨析：截止日期迫近与 quickly（迅速地）相呼应",
+      "question_type": "词汇题：副词辨析",
+      "analysis": "四个选项都是副词，不能仅靠词性判断。due tomorrow 表明明天就到截止日期，so 引出尽快完成的要求，因此选 B quickly。A easily 强调容易程度；C certainly 强调肯定；D truly 表示确实、真正，都不能表达此处的时间紧迫性。",
+      "choice_translations": ["容易地；轻松地", "迅速地；尽快", "肯定地；当然", "真正地；确实地"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 104,
+      "expected_question": "Referring to the ------- in the user’s manual will help you to identify the parts of the workbench.",
+      "expected_choices": ["illustrate", "illustrator", "illustration", "illustrated"], "expected_answer": "C",
+      "translation": "参照用户手册中的**示意图**，有助于您识别工作台的各个部件。",
+      "grammar_point": "冠词 the 后接名词；illustration（示意图）与 illustrator（插画师）的语义区别",
+      "question_type": "语法与词汇题：名词词形及语义",
+      "analysis": "the 后需要一个名词，作为 referring to 的宾语；手册中能帮助识别部件的是示意图 illustration，选 C。B illustrator 虽然也是名词，但指画插图的人，并非图示本身。A illustrate 是动词原形；D illustrated 是过去式或过去分词，不能单独指代此处所需的图示。",
+      "choice_translations": ["说明；绘制插图（动词）", "插画师；插图作者", "插图；示意图", "有插图的；说明了（过去式或过去分词）"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 105,
+      "expected_question": "No more than four passengers are permitted in ------- taxi operated by the Halligan Company.",
+      "expected_choices": ["any", "all", "some", "such"], "expected_answer": "A",
+      "translation": "Halligan 公司运营的**任何一辆**出租车都最多只允许搭载四名乘客。",
+      "grammar_point": "any + 单数可数名词，表示任何一个；no more than 表示最多",
+      "question_type": "语法与词汇题：限定词",
+      "analysis": "规定适用于该公司运营的每一辆出租车，用 any taxi 表示任何一辆，选 A。B all 若直接修饰可数名词，应搭配复数 taxis；D such 修饰此处单数可数名词需要 such a taxi。C some 在特定语境可接单数名词表示某个，但不能像 any 那样表达本句普遍适用的载客限制。",
+      "choice_translations": ["任何一个；任何一辆", "所有的", "一些；某个", "这样的；此类的"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 107,
+      "expected_question": "The newest branch of the library is located ------- Pine Street, directly across from the post office.",
+      "expected_choices": ["into", "among", "until", "on"], "expected_answer": "D",
+      "translation": "图书馆最新的分馆设**在 Pine 街上**，正对邮局。",
+      "grammar_point": "地点介词 on + 街道名称；be located on 表示位于某条街上",
+      "question_type": "语法题：地点介词",
+      "analysis": "表示建筑位于某条街道上，用 on Pine Street，选 D。A into 表示进入，强调方向或变化；B among 表示在多个对象之间；C until 表示直到某个时间或界限，都不适合搭配 be located 与街道名称。后面的 across from 表示在邮局对面。",
+      "choice_translations": ["进入；到……里面", "在……之中", "直到", "在……上；位于某条街道"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 108,
+      "expected_question": "The property manager must ensure that renters understand ------- rental agreement.",
+      "expected_choices": ["their", "they", "theirs", "them"], "expected_answer": "A",
+      "translation": "物业经理必须确保租户了解**他们的**租赁协议。",
+      "grammar_point": "形容词性物主代词 their + 名词；对应复数先行词 renters",
+      "question_type": "语法题：代词形式",
+      "analysis": "空格直接修饰名词短语 rental agreement，应使用形容词性物主代词 their，指租户们的协议，选 A。B they 是主格，通常作主语；C theirs 是名词性物主代词，不能再直接修饰 rental agreement；D them 是宾格，也不能表示这里需要的所属关系。",
+      "choice_translations": ["他们的（后接名词）", "他们（主格）", "他们的东西（名词性物主代词）", "他们（宾格）"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 110,
+      "expected_question": "Once staff has had training in the new accounting software, they will be prepared to work -------.",
+      "expected_choices": ["independent", "independently", "independency", "independence"], "expected_answer": "B",
+      "translation": "员工接受新会计软件的培训后，就能够**独立地**开展工作。",
+      "grammar_point": "副词 independently 修饰动词 work",
+      "question_type": "语法题：词性辨析",
+      "analysis": "空格说明如何工作，修饰动词 work，需用副词 independently，选 B。A independent 是形容词，可用于 be independent，但不适合直接在此修饰 work。C independency 和 D independence 都是名词，表示独立或独立性，不能充当此处的方式状语。",
+      "choice_translations": ["独立的（形容词）", "独立地（副词）", "独立；独立性（较少见的名词）", "独立；自主（名词）"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 116,
+      "expected_question": "Customers expressed dissatisfaction with the cost of the phone, but complaints about the user interface were relatively -------.",
+      "expected_choices": ["rarest", "rare", "rarity", "rarely"], "expected_answer": "B",
+      "translation": "顾客对这款手机的价格表示不满，但针对用户界面的投诉相对**少见**。",
+      "grammar_point": "be + 形容词作表语；relatively 修饰形容词原级 rare",
+      "question_type": "语法题：形容词表语",
+      "analysis": "were 后需要说明 complaints 特征的表语，relatively 是修饰程度的副词，因此用形容词 rare，选 B。A rarest 是最高级，句中没有最高级的比较范围，relatively rare 才是自然搭配；C rarity 是名词；D rarely 是副词，不能在这里作形容词表语。",
+      "choice_translations": ["最罕见的（最高级）", "罕见的；少见的", "稀少；罕见事物（名词）", "很少；难得（副词）"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 117,
+      "expected_question": "Tickets to the museum’s special exhibit may be ordered in advance on the Web site ------- purchased upon arrival.",
+      "expected_choices": ["or", "for", "where", "since"], "expected_answer": "A",
+      "translation": "博物馆特展的门票可以提前在网站上订购，**或者**到场后购买。",
+      "grammar_point": "or 连接并列过去分词 ordered 与 purchased，共用 may be",
+      "question_type": "语法题：并列连词",
+      "analysis": "句子列出两种购票方式：提前网上订票，或到场购买。用 or 连接 ordered 和 purchased，共用前面的 may be，选 A。B for 不能在此连接这两个表示选择的被动动作；C where 引导地点相关从句；D since 表示自从或因为，均不符合并列选择关系及句子结构。",
+      "choice_translations": ["或者", "为了；因为", "在……的地方；哪里", "自从；因为"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 120,
+      "expected_question": "Crum Carpeting’s profits have risen ------- since the company introduced a new environmentally friendly carpet line.",
+      "expected_choices": ["steadiness", "steadying", "steadily", "steadied"], "expected_answer": "C",
+      "translation": "自从推出新的环保地毯系列以来，Crum Carpeting 的利润一直**稳步**增长。",
+      "grammar_point": "副词 steadily 修饰现在完成时谓语 have risen",
+      "question_type": "语法题：副词词形",
+      "analysis": "have risen 已经构成完整谓语，空格应补充利润如何增长，因此使用副词 steadily，选 C。A steadiness 是名词；B steadying 是现在分词；D steadied 是过去式或过去分词，都不能像 steadily 一样直接在此修饰 have risen。since 引出的起点也与持续至今的利润增长相呼应。",
+      "choice_translations": ["稳定；平稳（名词）", "使稳定（现在分词）", "稳步地；持续稳定地", "使稳定了（过去式或过去分词）"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 123,
+      "expected_question": "Employees should submit time sheets by noon today ------- the payroll office can distribute paychecks on schedule.",
+      "expected_choices": ["so that", "in order to", "that is", "in case of"], "expected_answer": "A",
+      "translation": "员工应在今天中午之前提交工时表，**以便**薪资办公室按时发放工资。",
+      "grammar_point": "so that + 主语 + can + 动词，引导目的状语从句",
+      "question_type": "语法题：目的从句连接词",
+      "analysis": "空格后的 the payroll office can distribute paychecks 是完整分句，表达提交工时表的目的，用 so that 引导，选 A。B in order to 后必须接动词原形，不能直接接主语加 can；C that is 用于解释说明，即也就是说；D in case of 后接名词性成分，表示万一发生，不符合结构。",
+      "choice_translations": ["以便；为了使", "为了（后接动词原形）", "也就是说", "如果发生；万一（后接名词）"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 124,
+      "expected_question": "Suburban residents are ------- in favor of expanding Highway 5839 to relieve traffic congestion.",
+      "expected_choices": ["overwhelm", "overwhelmingly", "overwhelming", "overwhelms"], "expected_answer": "B",
+      "translation": "郊区居民**绝大多数**赞成扩建 5839 号公路，以缓解交通拥堵。",
+      "grammar_point": "副词 overwhelmingly 修饰 be in favor of 所表达的支持程度",
+      "question_type": "语法题：副词位置与词形",
+      "analysis": "be in favor of 已构成表示赞成的固定结构，空格补充支持程度，用副词 overwhelmingly，选 B。A overwhelm 和 D overwhelms 都是动词，不能放在 are 与 in favor of 之间作程度修饰；C overwhelming 是形容词或现在分词，也不适合修饰这里的介词短语。",
+      "choice_translations": ["压倒；使不知所措（动词原形）", "以压倒性优势；绝大多数地", "压倒性的；极强烈的", "压倒；使不知所措（第三人称单数）"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 125,
+      "expected_question": "Business travel is ------- for Shawton Associates by Young-Pyo Kim at Wright Air Transit.",
+      "expected_choices": ["equipped", "attributed", "coordinated", "concurred"], "expected_answer": "C",
+      "translation": "Shawton Associates 的商务差旅由 Wright Air Transit 的 Young-Pyo Kim 负责**统筹安排**。",
+      "grammar_point": "coordinate business travel（统筹商务差旅）的被动结构 be coordinated by",
+      "question_type": "词汇题：动词搭配",
+      "analysis": "句子说明商务差旅由谁负责安排，coordinate 表示协调、统筹，is coordinated by 与这一语境吻合，选 C。A equipped 表示配备，通常搭配设施或装备；B attributed 常用于 be attributed to，表示归因于；D concurred 表示同意，是不及物动词，不能构成本句这种被动用法。",
+      "choice_translations": ["配备了；装备了", "归因于；认为是……所为", "协调了；统筹安排了", "同意了；意见一致"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 126,
+      "expected_question": "Most models of the Remagine laptop computer now come with a ------- keyboard.",
+      "expected_choices": ["removability", "remove", "removable", "remover"], "expected_answer": "C",
+      "translation": "Remagine 笔记本电脑的大多数型号现在都配有**可拆卸的**键盘。",
+      "grammar_point": "形容词 removable 修饰名词 keyboard；-able 表示可以被……的",
+      "question_type": "语法题：形容词词形",
+      "analysis": "空格位于冠词 a 和名词 keyboard 之间，用形容词说明键盘的特征；removable 表示可拆卸的，选 C。A removability 是可拆卸性这一抽象名词；B remove 是动词；D remover 指去除工具、去除剂或负责移除的人，均不符合此处键盘属性的表达。",
+      "choice_translations": ["可移除性；可拆卸性", "移除；拆下", "可移除的；可拆卸的", "去除工具；去除剂；移除者"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 127,
+      "expected_question": "With the recent surge in electronic sales, industry analysts are anticipating that the device-to-person ------- will soon surpass earlier predictions.",
+      "expected_choices": ["division", "fraction", "part", "ratio"], "expected_answer": "D",
+      "translation": "随着近期电子产品销量激增，行业分析师预计，设备数量与人数的**比率**将很快超过此前的预测。",
+      "grammar_point": "A-to-B ratio 表示 A 与 B 的比率",
+      "question_type": "词汇题：数量关系搭配",
+      "analysis": "device-to-person 表示设备数量与人数之间的数量关系，固定表达 A-to-B ratio 对应二者之比，因此选 D ratio。A division 是划分、部门或除法；B fraction 是分数或一小部分；C part 是部分，都不如 ratio 能准确组成这里的比率表达。",
+      "choice_translations": ["划分；部门；除法", "分数；一小部分", "部分；部件", "比率；比例"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 128,
+      "expected_question": "In response to consumer complaints, assembly instructions for the model 481 bookshelf have been -------.",
+      "expected_choices": ["acknowledged", "estimated", "controlled", "simplified"], "expected_answer": "D",
+      "translation": "为回应消费者的投诉，481 型书架的组装说明已经得到**简化**。",
+      "grammar_point": "simplify instructions（简化说明）；现在完成时被动 have been simplified",
+      "question_type": "词汇题：动词与宾语语义搭配",
+      "analysis": "组装说明是受到修改的对象，回应消费者投诉时将说明简化最符合句意，因此选 D simplified。A acknowledged 表示承认或确认收到，通常会确认投诉而不是把组装说明承认；B estimated 表示估算；C controlled 表示控制，都不能恰当说明这里对说明书所作的改善。",
+      "choice_translations": ["承认了；确认收到了", "估算了；估计了", "控制了；管理了", "简化了；使更易懂了"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 129,
+      "expected_question": "Choose an ------- sized air conditioner for your company’s needs, as larger models use more energy.",
+      "expected_choices": ["affirmatively", "appropriately", "unexpectedly", "extensively"], "expected_answer": "B",
+      "translation": "请根据公司的需求选择尺寸**合适**的空调，因为较大型号会消耗更多能源。",
+      "grammar_point": "appropriately sized 表示尺寸合适的；副词修饰 sized",
+      "question_type": "词汇题：副词与分词搭配",
+      "analysis": "四项均为副词，需结合 sized 和公司需求判断。appropriately sized 表示大小合适，与后文不要盲目选择耗能更大的型号相呼应，选 B。A affirmatively 表示肯定地；C unexpectedly 表示出乎意料地；D extensively 表示广泛地，都不能表达尺寸适合需求。",
+      "choice_translations": ["肯定地；赞同地", "适当地；合适地", "出乎意料地", "广泛地；大规模地"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 130,
+      "expected_question": "Owing to his knowledge of historic buildings, Luis Harmon was ------- to lead the Main Street Restoration Project.",
+      "expected_choices": ["persuasion", "persuasively", "persuaded", "persuading"], "expected_answer": "C",
+      "translation": "由于熟悉历史建筑，Luis Harmon **在劝说下同意**领导主街修复项目。",
+      "grammar_point": "be persuaded to do sth.：被说服去做某事",
+      "question_type": "语法题：被动语态与动词搭配",
+      "analysis": "persuade somebody to do something 表示说服某人做某事；本句 Luis Harmon 是被说服的人，使用 was persuaded to lead，选 C。A persuasion 是名词；B persuasively 是副词；D persuading 若与 was 连用表示正在说服别人，需要交代被说服的对象，不能表达本句被劝说接任项目的意思。",
+      "choice_translations": ["说服；劝说（名词）", "有说服力地", "被说服；说服了（过去分词或过去式）", "正在说服（现在分词）"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 101,
+      "expected_question": "Most of our clients are ------- about the prospect of our showroom moving to a larger space.",
+      "expected_choices": ["exciting", "to excite", "excites", "excited"], "expected_answer": "D",
+      "translation": "对于我们的展厅将搬到更大场地的前景，大多数客户都感到**兴奋**。",
+      "grammar_point": "be excited about 表示对……感到兴奋；-ed 描述感受，-ing 描述引发感受的特征",
+      "question_type": "语法题：分词形容词",
+      "analysis": "主语 clients 是感到兴奋的人，固定搭配 be excited about 表示对某事兴奋，选 D。A exciting 意为令人兴奋的，描述引起这种感受的事物或特征，不符合 are exciting about；B to excite 是不定式，不能表达此处感受；C excites 是动词第三人称单数，不能直接接在 are 后。",
+      "choice_translations": ["令人兴奋的", "使兴奋（动词不定式）", "使兴奋（第三人称单数）", "感到兴奋的；激动的"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 104,
+      "expected_question": "Willington Hair Salon will be open ------- weekend starting in May.",
+      "expected_choices": ["every", "from", "enough", "since"], "expected_answer": "A",
+      "translation": "从五月开始，Willington 美发沙龙将在**每个**周末营业。",
+      "grammar_point": "every + 单数可数名词：every weekend 表示每个周末",
+      "question_type": "语法题：时间表达与限定词",
+      "analysis": "weekend 是单数可数名词，every weekend 可以直接作时间状语，表达每周末都营业，选 A。B from 和 D since 强调时间起点，不能与这里没有限定词的 weekend 直接组成所需的周期性表达；C enough 表示足够，通常接复数可数名词或不可数名词，也不表示每周末。",
+      "choice_translations": ["每个；每一", "从；自", "足够的", "自从；因为"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 105,
+      "expected_question": "When accessing ------- billing statement online, be sure to look for new discount offers.",
+      "expected_choices": ["yourselves", "yours", "your", "you"], "expected_answer": "C",
+      "translation": "在线查看**您的**账单时，请务必留意新的优惠信息。",
+      "grammar_point": "形容词性物主代词 your 修饰 billing statement",
+      "question_type": "语法题：物主代词",
+      "analysis": "空格后是名词短语 billing statement，需要表示所属的 your 来修饰，选 C。A yourselves 是反身代词，表示你们自己；B yours 是名词性物主代词，后面不能再直接跟 billing statement；D you 是人称代词，不能直接作物主限定词。",
+      "choice_translations": ["你们自己（反身代词）", "你的或你们的东西（名词性物主代词）", "你的；您的；你们的（后接名词）", "你；你们（人称代词）"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 107,
+      "expected_question": "The timer on the lamp is designed to turn it off ------- to reduce energy use.",
+      "expected_choices": ["automatic", "automatically", "automated", "automate"], "expected_answer": "B",
+      "translation": "灯上的定时器用于**自动**关灯，以减少能源消耗。",
+      "grammar_point": "副词 automatically 修饰动词短语 turn it off",
+      "question_type": "语法题：副词词形",
+      "analysis": "空格说明关灯的方式，应使用副词 automatically 修饰 turn it off，选 B。A automatic 是形容词；C automated 是形容词或过去分词；D automate 是动词原形，均不能在这里充当修饰关灯动作的方式副词。",
+      "choice_translations": ["自动的（形容词）", "自动地（副词）", "自动化的；已使自动化", "使自动化（动词）"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 109,
+      "expected_question": "Our Italian wool jackets are ------- for many occasions, from a formal dinner to a casual evening with friends.",
+      "expected_choices": ["to suit", "suitably", "suitable", "suit"], "expected_answer": "C",
+      "translation": "我们的意大利羊毛夹克**适合**多种场合，无论是正式晚宴，还是与朋友共度轻松的夜晚。",
+      "grammar_point": "be suitable for 表示适合；形容词 suitable 作表语",
+      "question_type": "语法题：形容词与固定搭配",
+      "analysis": "are 后需要表语，suitable 是形容词，be suitable for many occasions 表示适合多种场合，选 C。B suitably 是副词，不能在此单独作表语；D suit 是动词原形，不能与 are 这样连用。A to suit 即使构成 be to do，也不能用 suit for many occasions 代替这里的 be suitable for。",
+      "choice_translations": ["适合（动词不定式）", "适当地；合适地", "适合的；合宜的", "适合；满足……的需要（动词）"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 110,
+      "expected_question": "Dale Department Store will have a special sale on jewelry ------- before the holidays.",
+      "expected_choices": ["sensitively", "extremely", "immediately", "figuratively"], "expected_answer": "C",
+      "translation": "Dale 百货商店将在节假日**前夕**举办珠宝特卖活动。",
+      "grammar_point": "immediately before 表示紧接在……之前",
+      "question_type": "词汇题：时间副词搭配",
+      "analysis": "空格修饰 before the holidays，需表达距假期很近的时间关系，immediately before 表示就在之前，选 C。A sensitively 指敏感地或体贴地；B extremely 表示极其，通常修饰可分程度的形容词或副词，不能自然组成 extremely before；D figuratively 表示比喻地，均不符合时间语境。",
+      "choice_translations": ["敏感地；体贴地", "极其；非常", "立即；紧接着", "比喻地；用比喻的方式"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 116,
+      "expected_question": "You will receive a ------- e-mail from the Nicoya Hotel verifying your travel plans within two hours of making your reservation.",
+      "expected_choices": ["sponsor", "confirmation", "margin", "permit"], "expected_answer": "B",
+      "translation": "预订完成后的两小时内，您将收到 Nicoya 酒店发来的**确认**邮件，核实您的出行安排。",
+      "grammar_point": "名词作定语：confirmation e-mail（确认邮件）",
+      "question_type": "词汇题：名词修饰名词",
+      "analysis": "后文 verifying your travel plans 说明这封邮件用于核实预订和行程，因此是 confirmation e-mail，选 B。A sponsor 指赞助者；C margin 指边缘、余量或利润率；D permit 指许可证，均不符合酒店预订后发送确认信息的场景。",
+      "choice_translations": ["赞助者；资助方", "确认；证实", "边缘；余量；利润率", "许可证；许可证明"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 118,
+      "expected_question": "The new plant director, Ha-Jae Cheon, will be ------- for reducing the maintenance costs at the Tamarindo facility.",
+      "expected_choices": ["fortunate", "possible", "senseless", "responsible"], "expected_answer": "D",
+      "translation": "新任厂长 Ha-Jae Cheon 将**负责**降低 Tamarindo 工厂的维护成本。",
+      "grammar_point": "be responsible for + 名词或动名词：负责……",
+      "question_type": "词汇题：形容词固定搭配",
+      "analysis": "句子说明新厂长的职责，be responsible for reducing 表示负责降低，选 D。A fortunate 表示幸运的；B possible 表示可能的，通常不以人作主语表达职责；C senseless 表示无意义的或不明智的，都不能与 for reducing 组成此处所需的职责表达。",
+      "choice_translations": ["幸运的", "可能的", "无意义的；不明智的", "负责的；有责任的"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 120,
+      "expected_question": "Caldwell Computers accepts returns ------- products have not been removed from the packaging.",
+      "expected_choices": ["in order that", "such as", "in case", "as long as"], "expected_answer": "D",
+      "translation": "**只要**产品尚未从包装中取出，Caldwell Computers 就接受退货。",
+      "grammar_point": "as long as 引导条件状语从句，表示只要",
+      "question_type": "语法与词汇题：条件连接词",
+      "analysis": "产品未拆出包装是接受退货的条件，因此用 as long as，选 D。A in order that 表示目的，为了使，不是退货条件；B such as 用于举例，不能这样连接完整分句；C in case 表示以防、万一，强调预防某种情况，不适合表达商家接受退货的既定条件。",
+      "choice_translations": ["为了使；以便", "例如；诸如", "以防；万一", "只要；在……条件下"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 121,
+      "expected_question": "Until last month Kanyan, Inc., ------- farming equipment for CEK Agriculture.",
+      "expected_choices": ["manufacturing", "manufactured", "is manufacturing", "was manufactured"], "expected_answer": "B",
+      "translation": "直到上个月，Kanyan 公司一直为 CEK Agriculture **制造**农业设备。",
+      "grammar_point": "过去时间状语 Until last month 与一般过去时主动谓语 manufactured",
+      "question_type": "语法题：时态与主被动",
+      "analysis": "Until last month 把这项活动限定在过去，公司是制造者，后面的 farming equipment 是宾语，因此用一般过去时主动形式 manufactured，选 B。A manufacturing 单独不能充当谓语；C is manufacturing 是现在进行时，与这里截至上个月的过去时间不符；D was manufactured 为被动，不能在此再直接接被制造的设备作宾语。",
+      "choice_translations": ["制造（现在分词）", "制造了；曾制造（一般过去时）", "正在制造（现在进行时）", "被制造了（一般过去时被动）"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 122,
+      "expected_question": "Sign up now for deals available ------- to Platinum members of the Bordner Gym Club.",
+      "expected_choices": ["exclusively", "financially", "relatively", "productively"], "expected_answer": "A",
+      "translation": "立即注册，即可享受**仅限** Bordner 健身俱乐部白金会员的优惠。",
+      "grammar_point": "available exclusively to 表示仅向……提供",
+      "question_type": "词汇题：副词语义辨析",
+      "analysis": "句子强调白金会员专享优惠，exclusively 表示仅仅、专门地，available exclusively to 搭配自然，选 A。B financially 表示在财务上；C relatively 表示相对地；D productively 表示富有成效地，均不能表达会员资格所限定的优惠范围。",
+      "choice_translations": ["仅仅；专门地；独家地", "在财务上；经济上", "相对地；比较而言", "富有成效地；高效地"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 111,
+      "expected_question": "Nuts from Quintana Orchards can be a 117 ------- source of vitamins and minerals for a nutritious diet.",
+      "corrected_question": "Nuts from Quintana Orchards can be a ------- source of vitamins and minerals for a nutritious diet.",
+      "correction": {"method": "reviewed_stray_number_removal", "removed_number": "117", "reason": "冠词 a 与形容词空格之间混入邻题号 117；删除独立数字后句子结构完整。"},
+      "expected_choices": ["long", "various", "rich", "careful"], "expected_answer": "C",
+      "translation": "Quintana 果园的坚果可为营养均衡的饮食提供**丰富的**维生素和矿物质。",
+      "grammar_point": "a rich source of 表示……的丰富来源",
+      "question_type": "词汇题：形容词与名词搭配",
+      "analysis": "空格修饰 source，结合 vitamins and minerals，可知坚果是这些营养物质的丰富来源，a rich source of 搭配自然，选 C。A long 表示长的；B various 表示各种各样的，通常修饰复数名词，也不适合 a various source；D careful 表示小心的，都不能表达这里营养成分丰富的含义。",
+      "choice_translations": ["长的；长时间的", "各种各样的", "丰富的；富含……的", "小心的；仔细的"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 112,
+      "expected_question": "To maintain the Cheerbrew coffeemaker 11 properly, wipe it with a ------- sponge after each use.",
+      "corrected_question": "To maintain the Cheerbrew coffeemaker properly, wipe it with a ------- sponge after each use.",
+      "correction": {"method": "reviewed_stray_number_removal", "removed_number": "11", "reason": "coffeemaker 与修饰 maintain 的 properly 之间混入孤立数字 11。"},
+      "expected_choices": ["moist", "moistens", "moistly", "moisten"], "expected_answer": "A",
+      "translation": "为了正确保养 Cheerbrew 咖啡机，每次使用后请用**湿润的**海绵擦拭。",
+      "grammar_point": "形容词 moist 修饰名词 sponge",
+      "question_type": "语法题：形容词词形",
+      "analysis": "空格位于 a 和名词 sponge 之间，需要形容词说明海绵的状态，因此选 A moist。B moistens 是动词第三人称单数；C moistly 是副词；D moisten 是动词原形，均不能在此直接修饰 sponge。moist 与 moisten 分别表示湿润的和使湿润，要区分形容词与动词。",
+      "choice_translations": ["湿润的；微湿的", "使湿润（第三人称单数）", "湿润地（副词）", "使湿润；弄湿（动词）"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 114,
+      "expected_question": "Tomorrow's session will train participants 12 on ------- to prepare containers for overseas shipments.",
+      "corrected_question": "Tomorrow's session will train participants on ------- to prepare containers for overseas shipments.",
+      "correction": {"method": "reviewed_stray_number_removal", "removed_number": "12", "reason": "participants 与介词 on 之间混入孤立数字 12。"},
+      "expected_choices": ["what", "how", "that", "then"], "expected_answer": "B",
+      "translation": "明天的培训课将教参与者**如何**为海外运输准备集装箱。",
+      "grammar_point": "how + to do，表示做某事的方法；on 后接疑问词不定式结构",
+      "question_type": "语法题：疑问词与不定式",
+      "analysis": "培训内容是准备集装箱的方法，因此用 how to prepare containers，选 B。A what to prepare 表示准备什么，但 prepare 后已经有宾语 containers，不能再由 what 充当这一宾语；C that 不能构成 that to prepare 结构；D then 是时间副词，不能引出 on 后所需的培训内容。",
+      "choice_translations": ["什么", "如何；怎样", "那；那个；引导从句时可不单独翻译", "然后；当时"]
+    },
+    {
+      "bank_id": "official-2-test-1", "item_id": 115,
+      "expected_question": "Applications received ------- the 12 October 15 deadline will not be processed.",
+      "corrected_question": "Applications received ------- the October 15 deadline will not be processed.",
+      "correction": {"method": "reviewed_stray_number_removal", "removed_number": "12", "reason": "October 15 已构成完整日期，定冠词 the 后的独立 12 属于混入数字，保留日期中的 15。"},
+      "expected_choices": ["after", "already", "while", "often"], "expected_answer": "A",
+      "translation": "在 10 月 15 日截止日期**之后**收到的申请将不予处理。",
+      "grammar_point": "介词 after + 时间名词短语；received after... 后置修饰 applications",
+      "question_type": "语法题：时间介词",
+      "analysis": "空格后是名词短语 the October 15 deadline，需要介词表示收到申请的时间。after 表示在截止日期之后，与不予处理的规定吻合，选 A。B already 和 D often 都是副词，不能直接引出这个时间名词短语；C while 通常引导从句，不能在此像 after 一样接 deadline。",
+      "choice_translations": ["在……之后", "已经", "当……时；然而", "经常"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 112,
+      "expected_question": "The carpet in the lobby of the Chiang Mai Opera House will be replaced with 118 material ------- is easier to maintain.",
+      "corrected_question": "The carpet in the lobby of the Chiang Mai Opera House will be replaced with material ------- is easier to maintain.",
+      "correction": {"method": "reviewed_stray_number_removal", "removed_number": "118", "reason": "介词 with 与不可数名词 material 之间混入邻题号 118。"},
+      "expected_choices": ["what", "where", "that", "this"], "expected_answer": "C",
+      "translation": "清迈歌剧院大厅的地毯将换用更容易维护**的**材料。",
+      "grammar_point": "关系代词 that 引导定语从句并作主语，修饰先行词 material",
+      "question_type": "语法题：定语从句关系词",
+      "analysis": "material 是先行词，后面的 is easier to maintain 缺少主语，因此用关系代词 that 连接并在定语从句中作主语，选 C。中文将整个修饰关系译为更容易维护的材料。A what 不能这样引导已有先行词的定语从句；B where 作地点状语，不能补主语；D this 是指示代词，无法连接这两个结构。",
+      "choice_translations": ["什么；……的事物", "哪里；在……的地方", "关系代词，指代前面的材料并引导修饰语", "这个；这"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 113,
+      "expected_question": "Hunt’s Gift Shop carries a wide selection of -------, including the Swinnville Daily News 119 and West Bay Monthly.",
+      "corrected_question": "Hunt’s Gift Shop carries a wide selection of -------, including the Swinnville Daily News and West Bay Monthly.",
+      "correction": {"method": "reviewed_stray_number_removal", "removed_number": "119", "reason": "并列刊物名称之间混入邻题号 119，保留刊名原有英文。"},
+      "expected_choices": ["publication", "publications", "publish", "published"], "expected_answer": "B",
+      "translation": "Hunt’s 礼品店销售种类繁多的**出版物**，包括《Swinnville Daily News》和《West Bay Monthly》。",
+      "grammar_point": "a wide selection of + 复数可数名词；publications 表示多种出版物",
+      "question_type": "语法题：名词词形与单复数",
+      "analysis": "of 后需要名词，a wide selection 和后面列举的两种报刊表明这里指多种出版物，因此选复数名词 B publications。A publication 是可数名词单数，不能直接表示这里的多种出版物；C publish 是动词；D published 是过去式或过去分词，不能单独充当此处所需的名词。",
+      "choice_translations": ["出版物；出版（此处为单数名词）", "出版物；刊物（复数）", "出版；刊登（动词）", "已出版的；出版了（过去分词或过去式）"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 114,
+      "expected_question": "Engineers in the Welber Machine Factory 120 in Cologne work to correct minor flaws in the designs of ------- drilling systems.",
+      "corrected_question": "Engineers in the Welber Machine Factory in Cologne work to correct minor flaws in the designs of ------- drilling systems.",
+      "correction": {"method": "reviewed_stray_number_removal", "removed_number": "120", "reason": "工厂名称 Factory 与地点短语 in Cologne 之间混入邻题号 120。"},
+      "expected_choices": ["confused", "complex", "informative", "cautious"], "expected_answer": "B",
+      "translation": "科隆 Welber 机械厂的工程师致力于修正**复杂**钻探系统设计中的细小缺陷。",
+      "grammar_point": "形容词语义辨析：complex drilling systems（复杂的钻探系统）",
+      "question_type": "词汇题：形容词辨析",
+      "analysis": "句子谈论机械系统的设计缺陷，complex 表示结构复杂，适合描述 drilling systems，选 B。A confused 表示困惑的或混乱的，不能自然描述这里的系统复杂程度；C informative 表示提供丰富信息的，常修饰说明或报告；D cautious 表示谨慎的，通常形容人或做事方式。",
+      "choice_translations": ["困惑的；混乱的", "复杂的", "信息丰富的；提供有用信息的", "谨慎的；小心的"]
+    },
+    {
+      "bank_id": "official-2-test-2", "item_id": 115,
+      "expected_question": "If the plumbing problem -------, we 121 recommend that you contact the product manufacturer.",
+      "corrected_question": "If the plumbing problem -------, we recommend that you contact the product manufacturer.",
+      "correction": {"method": "reviewed_stray_number_removal", "removed_number": "121", "reason": "主语 we 与谓语 recommend 之间混入邻题号 121。"},
+      "expected_choices": ["to persist", "was persisting", "persists", "persistence"], "expected_answer": "C",
+      "translation": "如果管道问题**持续存在**，我们建议您联系产品制造商。",
+      "grammar_point": "一般条件句用现在时；单数主语 problem 对应 persists",
+      "question_type": "语法题：条件从句谓语时态",
+      "analysis": "If 从句需要谓语，句子提出当前或将来出现问题时的一般建议，单数主语 problem 对应一般现在时 persists，选 C。A to persist 是不定式，不能单独充当从句谓语；D persistence 是名词；B was persisting 是过去进行时，句中没有过去时间或回顾过去持续情况的语境。",
+      "choice_translations": ["持续存在（不定式）", "当时持续存在（过去进行时）", "持续存在（一般现在时第三人称单数）", "持续；坚持（名词）"]
+    }
+  ],
+  "notes": {
+    "reviewed_count": 38,
+    "skipped_existing_source_required": {
+      "official-2-test-1": [106, 109, 113, 118, 119, 121, 122],
+      "official-2-test-2": [102, 103, 106, 108, 111, 117, 119, 123, 124, 125, 126, 127, 128, 129, 130]
+    },
+    "reviewed_stray_number_corrections": [
+      {"bank_id": "official-2-test-1", "item_id": 111, "reason": "题干含邻题号：a 117 ------- source"},
+      {"bank_id": "official-2-test-1", "item_id": 112, "reason": "题干含孤立数字：coffeemaker 11 properly"},
+      {"bank_id": "official-2-test-1", "item_id": 114, "reason": "题干含孤立数字：participants 12 on"},
+      {"bank_id": "official-2-test-1", "item_id": 115, "reason": "日期前混入孤立数字：the 12 October 15 deadline"},
+      {"bank_id": "official-2-test-2", "item_id": 112, "reason": "题干含邻题号：with 118 material"},
+      {"bank_id": "official-2-test-2", "item_id": 113, "reason": "题干含邻题号：News 119 and"},
+      {"bank_id": "official-2-test-2", "item_id": 114, "reason": "题干含邻题号：Factory 120 in"},
+      {"bank_id": "official-2-test-2", "item_id": 115, "reason": "题干含邻题号：we 121 recommend"}
+    ]
+  }
+}

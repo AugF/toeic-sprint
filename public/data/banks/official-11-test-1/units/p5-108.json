@@ -37,9 +37,7 @@
     "unit_id": "part5-108",
     "model": "toeic_priority_v1"
   },
-  "context": {
-    "content_translation": "本文围绕“时间连词”展开。阅读时先确认文体与写作目的，再定位题干关键词所在句。"
-  },
+  "context": {},
   "items": [
     {
       "question": "It has been six months ---- Mr. Payne became president of Thornton Machinery.",
@@ -53,25 +51,22 @@
       "difficulty": "easy",
       "topic": "时间连词",
       "keywords": "since time conjunction",
-      "answer_explain": "原文依据：It has been + 时间段 与某个过去起点连用。 选择理由：固定结构 It has been six months since...，A正确。正确答案：A（since）。",
+      "answer_explain": "It has been six months since... 表示自某事发生以来已过六个月；since 引出 became 所表示的过去起点。from、between 是介词，不能这样引导完整的时间从句；where 表地点。",
       "question_type": "语法题",
-      "evidence": "参考原文第 1 段第 1 句：It has been six months ---- Mr. Payne became president of Thornton Machinery.",
       "choice_translations": [
-        "A：自从……以来",
-        "B：从；来自",
-        "C：在……的地方",
-        "D：在两者之间"
+        "自从……以来",
+        "从……起",
+        "在……的地方",
+        "在……之间"
       ],
-      "strategy": "本题属于语法题。先判断空格在句中的成分，再检查词性、主谓一致、时态语态、固定搭配和句意。",
       "explanation_structured": {
         "answer": "A",
         "question_type": "语法题",
-        "evidence": "参考原文第 1 段第 1 句：It has been six months ---- Mr. Payne became president of Thornton Machinery.",
-        "strategy": "本题属于语法题。先判断空格在句中的成分，再检查词性、主谓一致、时态语态、固定搭配和句意。",
-        "analysis": "原文依据：It has been + 时间段 与某个过去起点连用。 选择理由：固定结构 It has been six months since...，A正确。正确答案：A（since）。"
+        "grammar_point": "时间句型：It has been＋时间段＋since＋过去时从句",
+        "analysis": "It has been six months since... 表示自某事发生以来已过六个月；since 引出 became 所表示的过去起点。from、between 是介词，不能这样引导完整的时间从句；where 表地点。"
       },
-      "question_translation": "---- 佩恩先生出任桑顿机械公司总裁，至今已经六个月了。",
-      "grammar_point": "时间句型：It has been + 一段时间 + since + 一般过去时，表示“自从……以来已经多久”。",
+      "question_translation": "**自从** Payne 先生担任 Thornton Machinery 的总裁以来，已经过去六个月了。",
+      "grammar_point": "时间句型：It has been＋时间段＋since＋过去时从句",
       "item_id": 108,
       "priority": {
         "level": "P1",
@@ -101,7 +96,32 @@
         "unit_id": "part5-108",
         "model": "toeic_priority_v1"
       },
-      "item_key": "official-11-test-1/p5-108/108"
+      "item_key": "official-11-test-1/p5-108/108",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "choice_translations": "ready",
+        "analysis": "ready"
+      },
+      "completed_sentence": "It has been six months since Mr. Payne became president of Thornton Machinery.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "00d83ce60dcf3649cd0201c4132edcd7e175b61f0692634d5ed7257467d71e1c"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "00d83ce60dcf3649cd0201c4132edcd7e175b61f0692634d5ed7257467d71e1c"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "00d83ce60dcf3649cd0201c4132edcd7e175b61f0692634d5ed7257467d71e1c"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "00d83ce60dcf3649cd0201c4132edcd7e175b61f0692634d5ed7257467d71e1c",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

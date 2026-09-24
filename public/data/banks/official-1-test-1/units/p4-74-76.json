@@ -39,32 +39,59 @@
       "asset_key": "official-1-test-1/audio/part4/q074-076.mp3",
       "exists": true
     },
-    "transcript": "Fortunately, we ran out yesterday.\nWe'll get a new shipment in tomorrow, though.\nYour prescription will be ready for you to pick up after 2 p.m.\nPlease come by the front desk of the pharmacy when you stop in tomorrow.\nThank you, and have a good evening.",
+    "transcript": "Hello, this message is for Mr. Lehman.\nThis is May Lee from Sun Central Pharmacy.\nI'm calling to let you know that your doctor called in your prescription for allergy pills earlier today.\nWe usually have that medication in stock, but unfortunately we ran out yesterday.\nWe'll get a new shipment in tomorrow, though.\nYour prescription will be ready for you to pick up after 2 p.m.\nPlease come by the front desk of the pharmacy when you stop in tomorrow.\nThank you, and have a good evening.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "a76dc7f3b937fe20d2a52c43d5494f5747c11fcb5c3a64c8316a62fe25102b6a",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-1-test-1/audio/part4/q074-076.mp3",
       "metrics": {
+        "word_count": 88,
+        "review_window_end_ms": 36734,
+        "audio_duration_ms": 36734,
+        "words_per_second": 2.396
+      },
+      "postprocess_version": "sentence_boundaries_v2",
+      "transcript_sha256": "e578ae23858daddaf05befe97b15cb0d51dfb15f9ed728931c1987116845f0cc"
+    },
+    "transcript_translation": "您好，这条留言是给 Lehman 先生的。\n我是 Sun Central 药房的 May Lee。\n打电话是想告诉您，您的医生今天早些时候已致电我们，开了您的抗过敏药处方。\n我们通常备有这种药，但很遗憾，昨天卖完了。\n不过，明天会有一批新货到店。\n您的处方药将在下午 2 点以后配好，届时您可以来领取。\n您明天到店时，请到药房前台。\n谢谢，祝您晚上愉快。",
+    "transcript_translation_source": {
+      "schema_version": "listening_translation_v2",
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "e578ae23858daddaf05befe97b15cb0d51dfb15f9ed728931c1987116845f0cc",
+      "translation_sha256": "391b787c457c8bf9aa12490b39425ae6a4580855f0158be4b7783e93e36a0cf3"
+    },
+    "item_text_source": {
+      "schema_version": "listening_item_text_v1",
+      "method": "deterministic_ocr_cleanup",
+      "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "40fecc50b54619836e81be9848e1157131428daa6e48c30b28ba9a97d77b1c84",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
         "word_count": 47,
         "legacy_word_count": 47,
         "length_ratio": 1,
         "legacy_coverage": 1,
         "prompted_failure": "implausible Part 4 transcript length 21"
       },
-      "postprocess_version": "sentence_boundaries_v2"
-    },
-    "transcript_translation": "幸运的是，我们昨天用完了。\n不过，我们明天会收到新的货运。\n您的处方药下午两点后可以取走了。\n请您明天到药房前台来。\n谢谢您，祝您有个美好的夜晚。",
-    "transcript_translation_source": {
-      "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "40fecc50b54619836e81be9848e1157131428daa6e48c30b28ba9a97d77b1c84"
-    },
-    "item_text_source": {
-      "schema_version": "listening_item_text_v1",
-      "method": "deterministic_ocr_cleanup",
-      "items": 3
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "e578ae23858daddaf05befe97b15cb0d51dfb15f9ed728931c1987116845f0cc",
+      "audio_sha256": "a76dc7f3b937fe20d2a52c43d5494f5747c11fcb5c3a64c8316a62fe25102b6a",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 36734
+        }
+      ]
     }
   },
   "items": [
@@ -118,7 +145,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p4-74-76/74"
+      "item_key": "official-1-test-1/p4-74-76/74",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -170,7 +200,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p4-74-76/75"
+      "item_key": "official-1-test-1/p4-74-76/75",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "choices": [
@@ -222,7 +255,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p4-74-76/76"
+      "item_key": "official-1-test-1/p4-74-76/76",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ],
   "knowledge_accumulation": {

@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "Ms. Fields is not able to travel from New York to Buenos Aires ------- sufficient 119. notice.\nA. inside\nB. except\nC. about\nD. without"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "without"
       ],
       "answer": "D",
-      "question": "Ms. Fields is not able to travel from New York to Buenos Aires ------- sufficient 119. notice.",
+      "question": "Ms. Fields is not able to travel from New York to Buenos Aires ------- sufficient notice.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“without”代入题干后为“Ms. Fields is not able to travel from New York to Buenos Aires without sufficient 119. notice.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：D（without）。",
-      "question_translation": "Ms. Fields is not able to travel from New York to Buenos Aires ------- sufficient 119. notice.",
+      "answer_explain": "句子说明安排远途出行需要足够的提前通知，without sufficient notice 表示没有足够的提前通知，因此选 D。A inside 表在内部；B except 表除了，通常排除同类对象；C about 表关于，均不能表达这里缺少提前通知便不能出行的条件。",
+      "question_translation": "**没有**足够的提前通知，Fields 女士就无法从纽约前往布宜诺斯艾利斯。",
       "choice_translations": [
-        "A：inside",
-        "B：except",
-        "C：about",
-        "D：without"
+        "在……里面",
+        "除了……之外",
+        "关于；大约",
+        "没有；不具备"
       ],
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：Ms. Fields is not able to travel from New York to Buenos Aires ------- sufficient 119. notice.",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "词汇题：介词语义",
+      "grammar_point": "without + 名词表示没有……；not able ... without 表示必须具备某条件才可做到",
       "explanation_structured": {
         "answer": "D",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：Ms. Fields is not able to travel from New York to Buenos Aires ------- sufficient 119. notice.",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“without”代入题干后为“Ms. Fields is not able to travel from New York to Buenos Aires without sufficient 119. notice.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：D（without）。"
+        "question_type": "词汇题：介词语义",
+        "grammar_point": "without + 名词表示没有……；not able ... without 表示必须具备某条件才可做到",
+        "analysis": "句子说明安排远途出行需要足够的提前通知，without sufficient notice 表示没有足够的提前通知，因此选 D。A inside 表在内部；B except 表除了，通常排除同类对象；C about 表关于，均不能表达这里缺少提前通知便不能出行的条件。"
       },
       "item_id": 112,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p5-112/112"
+      "item_key": "official-1-test-2/p5-112/112",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Ms. Fields is not able to travel from New York to Buenos Aires ------- sufficient 119. notice.",
+        "original_choices": [
+          "inside",
+          "except",
+          "about",
+          "without"
+        ],
+        "text_sha256": "aa85b508026f449114b3ca44e5e4807a36f2076e7d592d97fb17c78ec4def56d",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "reason": "两源均为 sufficient notice，中间的 119. 是邻题号污染。",
+          "sources": [
+            {
+              "url": "https://pdfcoffee.com/1000-cau-giai-de-toeic-format-moi-2019-pdf-free.html",
+              "location": "第 552 题，题干及 A–D 选项"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/b1a3c62e-d07c-459a-8a65-d796a13aa648.pdf",
+              "location": "第 2 页第 112 题"
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Ms. Fields is not able to travel from New York to Buenos Aires without sufficient notice.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "b082fa3a77b84c095e321556f3f5a51fc623b0546abf288294f05e4a75760ae8"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "b082fa3a77b84c095e321556f3f5a51fc623b0546abf288294f05e4a75760ae8"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "b082fa3a77b84c095e321556f3f5a51fc623b0546abf288294f05e4a75760ae8"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "b082fa3a77b84c095e321556f3f5a51fc623b0546abf288294f05e4a75760ae8",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

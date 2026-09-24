@@ -39,31 +39,62 @@
       "asset_key": "official-11-test-1/audio/part4/q083-085.mp3",
       "exists": true
     },
-    "transcript": "a portion of the proceeds will go towards repairing hiking trails at our local nature center.\nOur Greenville store location will not be participating in the sale this year because it's closed for renovations.\nSo this sales event is taking place exclusively at our Town Square location.\nTake advantage of the great prices at Grove Emporium today.",
+    "transcript": "Would you like to go on a camping trip but don't have the right supplies?\nGrove Emporium is here to help.\nRight now, during our year-end clearance event, you can get incredible deals on new tents, sleeping bags, and other items.\nIn addition, a portion of the proceeds will go towards repairing hiking trails at our local nature center.\nOur Greenville store location will not be participating in the sale this year because it's closed for renovations.\nSo this sales event is taking place exclusively at our Town Square location.\nTake advantage of the great prices at Grove Emporium today.",
     "transcript_source": {
       "schema_version": "listening_transcript_v2",
-      "method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge+completeness_review",
       "audio_sha256": "957ab6e4034baa7bab176f2f660b3f844314fe7c4a3f5a7288b3268ec7a36583",
       "model_sha256": "e2d6146b49644c13ed7467060d3c43c402bbdfca1f01f1c21f6fbeda23b6567e",
       "source_audio": "public/assets/official-11-test-1/audio/part4/q083-085.mp3",
       "metrics": {
-        "word_count": 57,
-        "legacy_word_count": 100,
-        "length_ratio": 0.57,
-        "legacy_coverage": 0.66,
-        "prompted_failure": "implausible Part 4 transcript length 5"
-      }
+        "word_count": 100,
+        "review_window_end_ms": 44225,
+        "audio_duration_ms": 44225,
+        "words_per_second": 2.261
+      },
+      "transcript_sha256": "50b7cfa7bd7b75cb3055eb965ffc909cae91c95defed52ad4ea14187132dc345"
     },
-    "transcript_translation": "部分收益将用于修复我们当地自然中心的徒步小径。\n我们的格林维尔分店今年不会参加这次销售，因为它正在进行翻修。\n因此，本次促销活动仅在我们的镇广场分店举行。\n今天就来格罗夫商场，享受优惠的价格吧。",
+    "transcript_translation": "您想去露营，却没有合适的装备吗？\nGrove Emporium 来帮您。\n目前正值我们的年终清仓活动，您可以用非常优惠的价格买到新帐篷、睡袋及其他商品。\n此外，部分销售收入将用于修复当地自然中心的徒步步道。\n我们的 Greenville 分店因装修暂停营业，今年不参加促销。\n因此，这次促销活动仅在 Town Square 分店举行。\n今天就来 Grove Emporium，享受超值优惠吧。",
     "transcript_translation_source": {
       "schema_version": "listening_translation_v2",
-      "method": "ollama/gemma4:latest",
-      "transcript_sha256": "62228aca0adcdd566fa6690941cd2cef81567f3132f40942937b801b59fed540"
+      "method": "reviewed_translation_from_audio_transcript",
+      "transcript_sha256": "50b7cfa7bd7b75cb3055eb965ffc909cae91c95defed52ad4ea14187132dc345",
+      "translation_sha256": "3702cb0decbbb95303803cd3a14784cffa06f1f8da9d8d9cb8a179abbc540912"
     },
     "item_text_source": {
       "schema_version": "listening_item_text_v1",
       "method": "deterministic_ocr_cleanup",
       "items": 3
+    },
+    "transcript_completeness_review": {
+      "schema_version": "listening_completeness_review_v1",
+      "method": "mlx-whisper/large-v3-turbo-4bit:independent_intro_bypass_windows+reviewed_overlap_merge",
+      "previous_transcript_sha256": "62228aca0adcdd566fa6690941cd2cef81567f3132f40942937b801b59fed540",
+      "previous_method": "mlx-whisper/large-v3-turbo-4bit:overlap_segments",
+      "previous_metrics": {
+        "word_count": 57,
+        "legacy_word_count": 100,
+        "length_ratio": 0.57,
+        "legacy_coverage": 0.66,
+        "prompted_failure": "implausible Part 4 transcript length 5"
+      },
+      "previous_translation_method": "ollama/gemma4:latest",
+      "transcript_sha256": "50b7cfa7bd7b75cb3055eb965ffc909cae91c95defed52ad4ea14187132dc345",
+      "audio_sha256": "957ab6e4034baa7bab176f2f660b3f844314fe7c4a3f5a7288b3268ec7a36583",
+      "windows": [
+        {
+          "start_ms": 5000,
+          "end_ms": 25000
+        },
+        {
+          "start_ms": 20000,
+          "end_ms": 40000
+        },
+        {
+          "start_ms": 35000,
+          "end_ms": 44225
+        }
+      ]
     }
   },
   "items": [
@@ -117,7 +148,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-11-test-1/p4-83-85/83"
+      "item_key": "official-11-test-1/p4-83-85/83",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "question": "What will Grove Emporium donate money to?",
@@ -169,7 +203,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-11-test-1/p4-83-85/84"
+      "item_key": "official-11-test-1/p4-83-85/84",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     },
     {
       "question": "According to the speaker, why will an event not be held at the Greenville store?",
@@ -221,7 +258,10 @@
         "scope": "material",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-11-test-1/p4-83-85/85"
+      "item_key": "official-11-test-1/p4-83-85/85",
+      "study_aid_status": {
+        "question_translation": "ready"
+      }
     }
   ],
   "knowledge_accumulation": {

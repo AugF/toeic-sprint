@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "旅行社设法为会议演讲者获得了航班，尽管这是一个临时请求。\nA. aboard\nB. despite\nC. aside\nD. beyond"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "beyond"
       ],
       "answer": "B",
-      "question": "The travel agent was able to obtain flights for the conference speakers ------- the © quickly. last-minute request.",
+      "question": "The travel agent was able to obtain flights for the conference speakers ------- the last-minute request.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“despite”代入题干后为“The travel agent was able to obtain flights for the conference speakers despite the © quickly. last-minute request.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：B（despite）。",
-      "question_translation": "旅行社设法为会议演讲者获得了航班，尽管这是一个临时请求。",
+      "answer_explain": "last-minute request 是名词短语，与前面仍能订到航班构成让步关系，用 despite。aboard 表示在交通工具上，aside 为在一边，beyond 为超出，均不合逻辑。",
+      "question_translation": "**尽管**请求是在最后一刻提出的，旅行代理仍为会议演讲者订到了航班。",
       "choice_translations": [
-        "A：船上",
-        "B：尽管",
-        "C：撇开",
-        "D：超过"
+        "在船、飞机等交通工具上",
+        "尽管",
+        "在一边；到旁边",
+        "超出；在……之外"
       ],
-      "question_type": "词性 / 词形题",
-      "evidence": "参考原文第 1 段：The travel agent was able to obtain flights for the conference speakers ------- the © quickly. last-minute request.",
-      "grammar_point": "词性 / 词形",
-      "strategy": "本题属于词性 / 词形题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "语法题 · 让步介词",
+      "grammar_point": "despite + 名词短语",
       "explanation_structured": {
         "answer": "B",
-        "question_type": "词性 / 词形题",
-        "evidence": "参考原文第 1 段：The travel agent was able to obtain flights for the conference speakers ------- the © quickly. last-minute request.",
-        "strategy": "本题属于词性 / 词形题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“despite”代入题干后为“The travel agent was able to obtain flights for the conference speakers despite the © quickly. last-minute request.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：B（despite）。"
+        "question_type": "语法题 · 让步介词",
+        "grammar_point": "despite + 名词短语",
+        "analysis": "last-minute request 是名词短语，与前面仍能订到航班构成让步关系，用 despite。aboard 表示在交通工具上，aside 为在一边，beyond 为超出，均不合逻辑。"
       },
       "item_id": 130,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-2-test-2/p5-130/130"
+      "item_key": "official-2-test-2/p5-130/130",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "The travel agent was able to obtain flights for the conference speakers ------- the © quickly. last-minute request.",
+        "original_choices": [
+          "aboard",
+          "despite",
+          "aside",
+          "beyond"
+        ],
+        "text_sha256": "ac46758bc137e701d2ee9fa6eb7b2024d3db0cededae8be12bc1eeac1745c050",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "sources": [
+            {
+              "url": "https://qa5.3study.com/RES/Files/f22050b9-cffa-4cc7-b4ef-196525d1abf4.pdf",
+              "location": "Part 5 question 130; text and four choices"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/d6e91bec-d88d-4f8f-9569-8402b8357ead.pdf",
+              "location": "Part 5 question 130; cross-reference, preserve Aeronamic in Q125 rather than Aerodynamic variant"
+            }
+          ],
+          "notes": "Question number, sentence span, blank location, original choice order and unchanged answer reviewed together. Reference text is not represented as an original image. Preserve local spelling unless the correction is supported."
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "The travel agent was able to obtain flights for the conference speakers despite the last-minute request.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "d7edcb0ef07ab2e996329d4cd7d8a6ccc32d683df08aa0884d802d6ab0c118fb"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "d7edcb0ef07ab2e996329d4cd7d8a6ccc32d683df08aa0884d802d6ab0c118fb"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "d7edcb0ef07ab2e996329d4cd7d8a6ccc32d683df08aa0884d802d6ab0c118fb"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "d7edcb0ef07ab2e996329d4cd7d8a6ccc32d683df08aa0884d802d6ab0c118fb",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

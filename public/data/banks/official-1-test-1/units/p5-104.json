@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "来自 San Jose International 的员工将于明天抵达 Alajuela，参加 ------- 第一次培训课程。\nA. they\nB. their\nC. them\nD. theirs"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -37,24 +35,20 @@
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“their”代入题干后为“Employees from San Jose International will arrive in Alajuela tomorrow for their first training session.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：B（their）。",
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：Employees from San Jose International will arrive in Alajuela tomorrow for ------- first training session.",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "answer_explain": "空格修饰名词短语 first training session，且所属者是复数 employees，因此选 their。theirs 不能放在名词前；they 和 them 不是物主限定词。",
+      "question_type": "语法 / 词汇题 · 形容词性物主代词",
+      "grammar_point": "形容词性物主代词",
       "explanation_structured": {
         "answer": "B",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：Employees from San Jose International will arrive in Alajuela tomorrow for ------- first training session.",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“their”代入题干后为“Employees from San Jose International will arrive in Alajuela tomorrow for their first training session.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：B（their）。"
+        "question_type": "语法 / 词汇题 · 形容词性物主代词",
+        "analysis": "空格修饰名词短语 first training session，且所属者是复数 employees，因此选 their。theirs 不能放在名词前；they 和 them 不是物主限定词。"
       },
-      "question_translation": "来自 San Jose International 的员工将于明天抵达 Alajuela，参加 ------- 第一次培训课程。",
+      "question_translation": "San Jose International 的员工将于明天抵达阿拉胡埃拉，参加**他们的**第一次培训。",
       "choice_translations": [
-        "A：他们（主格）",
-        "B：他们的（所有格）",
-        "C：他们（宾格）",
-        "D：他们（所有格代词）"
+        "他们（主格）",
+        "他们的（形容词性物主代词）",
+        "他们（宾格）",
+        "他们的（名词性物主代词）"
       ],
       "item_id": 104,
       "priority": {
@@ -69,7 +63,23 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-1/p5-104/104"
+      "item_key": "official-1-test-1/p5-104/104",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "completed_sentence": "Employees from San Jose International will arrive in Alajuela tomorrow for their first training session.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence",
+          "source_sha256": "ca41e2ca2e55324425a79628674d843e8f4d47462430d1814199165c1c5d04c7"
+        },
+        "analysis": {
+          "method": "reviewed_sentence_and_choices",
+          "source_sha256": "ca41e2ca2e55324425a79628674d843e8f4d47462430d1814199165c1c5d04c7"
+        }
+      }
     }
   ]
 }

@@ -21,9 +21,7 @@
     "scope": "unit",
     "model": "toeic_priority_v3_material"
   },
-  "context": {
-    "content_translation": "Before the laboratory carts can be used to ming transport ------- materials, technicians must wipe all exposed surfaces with a disinfectant cloth.\nA. vague\nB. passive\nC. sensitive\nD. demonstrative"
-  },
+  "context": {},
   "items": [
     {
       "choices": [
@@ -33,28 +31,25 @@
         "demonstrative"
       ],
       "answer": "C",
-      "question": "Before the laboratory carts can be used to ming transport ------- materials, technicians must wipe all exposed surfaces with a disinfectant cloth.",
+      "question": "Before the laboratory carts can be used to transport ------- materials, technicians must wipe all exposed surfaces with a disinfectant cloth.",
       "difficulty": "medium",
       "topic": "语法与词汇",
       "keywords": "grammar vocabulary collocation",
-      "answer_explain": "原文依据：将“sensitive”代入题干后为“Before the laboratory carts can be used to ming transport sensitive materials, technicians must wipe all exposed surfaces with a disinfectant cloth.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（sensitive）。",
-      "question_translation": "Before the laboratory carts can be used to ming transport ------- materials, technicians must wipe all exposed surfaces with a disinfectant cloth.",
+      "answer_explain": "运输前需要消毒所有外露表面，说明材料容易受到污染或外界影响，sensitive 最符合实验室语境，选 C。A vague 表模糊的；B passive 表被动的；D demonstrative 表示范性的或外露感情的，均不能说明此处需要谨慎处理材料的原因。",
+      "question_translation": "使用实验室推车运输**敏感**材料之前，技术人员必须用消毒布擦拭所有外露表面。",
       "choice_translations": [
-        "A：vague",
-        "B：passive",
-        "C：sensitive",
-        "D：demonstrative"
+        "模糊的；不明确的",
+        "被动的；消极的",
+        "敏感的；易受影响的",
+        "示范性的；感情外露的"
       ],
-      "question_type": "语境词汇 / 搭配题",
-      "evidence": "参考原文第 1 段：Before the laboratory carts can be used to ming transport ------- materials, technicians must wipe all exposed surfaces with a disinfectant cloth.",
-      "grammar_point": "语境词汇 / 搭配",
-      "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
+      "question_type": "词汇题：形容词辨析",
+      "grammar_point": "形容词语义辨析：sensitive materials 指易受外界影响的敏感材料",
       "explanation_structured": {
         "answer": "C",
-        "question_type": "语境词汇 / 搭配题",
-        "evidence": "参考原文第 1 段：Before the laboratory carts can be used to ming transport ------- materials, technicians must wipe all exposed surfaces with a disinfectant cloth.",
-        "strategy": "本题属于语境词汇 / 搭配题。先判断空格的句法成分，再核对词性、动词形式、固定搭配与完整句意。",
-        "analysis": "原文依据：将“sensitive”代入题干后为“Before the laboratory carts can be used to ming transport sensitive materials, technicians must wipe all exposed surfaces with a disinfectant cloth.”。选择理由：该项同时满足句法结构、固定搭配和句意要求，其余选项至少有一项不符。正确答案：C（sensitive）。"
+        "question_type": "词汇题：形容词辨析",
+        "grammar_point": "形容词语义辨析：sensitive materials 指易受外界影响的敏感材料",
+        "analysis": "运输前需要消毒所有外露表面，说明材料容易受到污染或外界影响，sensitive 最符合实验室语境，选 C。A vague 表模糊的；B passive 表被动的；D demonstrative 表示范性的或外露感情的，均不能说明此处需要谨慎处理材料的原因。"
       },
       "item_id": 127,
       "priority": {
@@ -69,7 +64,60 @@
         "scope": "item",
         "model": "toeic_priority_v3_material"
       },
-      "item_key": "official-1-test-2/p5-127/127"
+      "item_key": "official-1-test-2/p5-127/127",
+      "content_review_status": "text_corrected_with_reference",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "analysis": "ready",
+        "choice_translations": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Before the laboratory carts can be used to ming transport ------- materials, technicians must wipe all exposed surfaces with a disinfectant cloth.",
+        "original_choices": [
+          "vague",
+          "passive",
+          "sensitive",
+          "demonstrative"
+        ],
+        "text_sha256": "95e394de94b2b83fd21a1e345cd3fa13856886cb0ab760050cba82da4a44786d",
+        "correction": {
+          "method": "cross_reference_text_review",
+          "reviewed": true,
+          "reason": "两源均为 used to transport，中间的 ming 是混入片段，删除后逐词核对完整句和四项形容词。",
+          "sources": [
+            {
+              "url": "https://pdfcoffee.com/1000-cau-giai-de-toeic-format-moi-2019-pdf-free.html",
+              "location": "第 567 题，完整题干与 A–D 选项"
+            },
+            {
+              "url": "https://qa5.3study.com/RES/Files/b1a3c62e-d07c-459a-8a65-d796a13aa648.pdf",
+              "location": "第 3 页第 127 题，忽略 disinfectant 旁的中文注释"
+            }
+          ]
+        },
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Before the laboratory carts can be used to transport sensitive materials, technicians must wipe all exposed surfaces with a disinfectant cloth.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "bd87251bf3d7c15152f2274be97f82434181f06066a837b097457ce7b40b33b0"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "bd87251bf3d7c15152f2274be97f82434181f06066a837b097457ce7b40b33b0"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "bd87251bf3d7c15152f2274be97f82434181f06066a837b097457ce7b40b33b0"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "bd87251bf3d7c15152f2274be97f82434181f06066a837b097457ce7b40b33b0",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

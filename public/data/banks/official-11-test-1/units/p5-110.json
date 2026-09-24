@@ -37,12 +37,10 @@
     "unit_id": "part5-110",
     "model": "toeic_priority_v1"
   },
-  "context": {
-    "content_translation": "本文围绕“词性与数”展开。阅读时先确认文体与写作目的，再定位题干关键词所在句。"
-  },
+  "context": {},
   "items": [
     {
-      "question": "Clients of Elise Salon receive text messages asking them to confirm their ----.",
+      "question": "Clients of Elise Salon receive text messages asking them to confirm their -------.",
       "choices": [
         "appoint",
         "appointed",
@@ -53,25 +51,22 @@
       "difficulty": "easy",
       "topic": "词性与数",
       "keywords": "noun plural appointments",
-      "answer_explain": "原文依据：their 后需要名词，且客户各自确认预约。 选择理由：复数名词 appointments，D正确。正确答案：D（appointments）。",
+      "answer_explain": "their 后需要名词，appointments 表示顾客预约的服务，confirm their appointments 是确认预约。appoint 是任命的动词；appointed 是过去式或过去分词；appointing 是现在分词或动名词，均不符合这里的意思和名词用法。",
       "question_type": "语法题",
-      "evidence": "参考原文第 1 段第 1 句：Clients of Elise Salon receive text messages asking them to confirm their ----.",
       "choice_translations": [
-        "A：任命；指定（动词）",
-        "B：被任命的；约定的（形容词或过去分词）",
-        "C：任命；正在指定（动名词或现在分词）",
-        "D：预约（复数名词）"
+        "任命；指定（动词）",
+        "被任命的；指定的（过去分词）",
+        "任命；指定（现在分词或动名词）",
+        "预约；约定（复数名词）"
       ],
-      "strategy": "本题属于语法题。先判断空格在句中的成分，再检查词性、主谓一致、时态语态、固定搭配和句意。",
       "explanation_structured": {
         "answer": "D",
         "question_type": "语法题",
-        "evidence": "参考原文第 1 段第 1 句：Clients of Elise Salon receive text messages asking them to confirm their ----.",
-        "strategy": "本题属于语法题。先判断空格在句中的成分，再检查词性、主谓一致、时态语态、固定搭配和句意。",
-        "analysis": "原文依据：their 后需要名词，且客户各自确认预约。 选择理由：复数名词 appointments，D正确。正确答案：D（appointments）。"
+        "grammar_point": "形容词性物主代词后接名词：their appointments",
+        "analysis": "their 后需要名词，appointments 表示顾客预约的服务，confirm their appointments 是确认预约。appoint 是任命的动词；appointed 是过去式或过去分词；appointing 是现在分词或动名词，均不符合这里的意思和名词用法。"
       },
-      "question_translation": "Elise 沙龙的顾客会收到短信，要求他们确认自己的 ----。",
-      "grammar_point": "词性与单复数：形容词性物主代词 their 后接名词；复数顾客分别确认各自的预约，因此用 appointments。",
+      "question_translation": "Elise Salon 的顾客会收到短信，要求他们确认自己的**预约**。",
+      "grammar_point": "形容词性物主代词后接名词：their appointments",
       "item_id": 110,
       "priority": {
         "level": "P1",
@@ -101,7 +96,44 @@
         "unit_id": "part5-110",
         "model": "toeic_priority_v1"
       },
-      "item_key": "official-11-test-1/p5-110/110"
+      "item_key": "official-11-test-1/p5-110/110",
+      "study_aid_status": {
+        "question_translation": "ready",
+        "choice_translations": "ready",
+        "analysis": "ready"
+      },
+      "content_review": {
+        "pipeline": "part5-source-review-v1",
+        "original_question": "Clients of Elise Salon receive text messages asking them to confirm their ----.",
+        "original_choices": [
+          "appoint",
+          "appointed",
+          "appointing",
+          "appointments"
+        ],
+        "text_sha256": "b234eb98a7003ab0081a283b3d7a1a7dbb37999a00e1e5534c4fd48bc53f1424",
+        "last_review_pipeline": "part5_reviewed_aids_v2"
+      },
+      "completed_sentence": "Clients of Elise Salon receive text messages asking them to confirm their appointments.",
+      "study_aid_source": {
+        "question_translation": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "bdb6d857ebea171afc1aed663ff040e57b0e99147794a52c229083ff9420ad5c"
+        },
+        "choice_translations": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "bdb6d857ebea171afc1aed663ff040e57b0e99147794a52c229083ff9420ad5c"
+        },
+        "analysis": {
+          "method": "reviewed_complete_sentence_and_options",
+          "source_sha256": "bdb6d857ebea171afc1aed663ff040e57b0e99147794a52c229083ff9420ad5c"
+        }
+      },
+      "part5_review": {
+        "schema_version": "part5_reviewed_aids_v2",
+        "source_sha256": "bdb6d857ebea171afc1aed663ff040e57b0e99147794a52c229083ff9420ad5c",
+        "method": "manual_sentence_grammar_and_option_review"
+      }
     }
   ]
 }

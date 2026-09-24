@@ -27,6 +27,24 @@ const SCHEMA="listening_transcript_v2";
 const FORBIDDEN=/[©®™°]|(?:^|\s)[<>{}\[\]|_=~@]+(?:\s|$)|\b(?:BLANK_AUDIO|End of recording|Go on to the next page)\b/i;
 const INTRO=/^\s*(?:Number\s+\d+\s*[.,:]?\s*)?(?:Questions?\s+\d+\s+(?:through|to|and)\s+\d+\s+refer\s+to\s+the\s+following\s+(?:conversation|talk)\s*[.,:]?\s*)/i;
 const VISUAL_REFERENCE_FRAGMENT=/^(?:(?:and|with)\s+(?:(?:[a-z][a-z -]{0,48}\s+)?(?:chart|graphic|graph|list|brochure|map|schedule|table|receipt|menu|sign|coupon|order|bill|plan|agenda|results|keys|page|layout|card|flyer|machine|poster|timeline|calendar|directory))|information and ticket)\s*[.!?]\s*/i;
+// An open-ended "letters until the next period" can consume the first spoken
+// sentence when ASR omits the punctuation after the direction. Enumerate only
+// material names; unknown introductions must be reviewed, never guessed away.
+const MATERIAL_TYPE="(?:conversation(?: with three speakers)?|excerpt from (?:a|an) (?:radio interview|meeting|workshop)|telephone message|recorded message|radio broadcast|news report|tour information|announcement|advertisement|instructions|introduction|broadcast|podcast|message|speech|talk)";
+const GRAPHIC_TYPE="(?:list of classes|airport departure board|presentation slide|production schedule|building directory|inventory list|assignment list|purchase order|restaurant bill|business card|seating chart|fundraising flyer|weather report|product samples|shirt options|voting results|room layouts|store layout|ticket machine|order form|floor plan|price list|sales graph|pie chart|bar graph|project plan|web page|chart|graphic|graph|list|brochure|map|schedule|table|receipt|menu|sign|coupon|order|bill|plan|agenda|results|keys|page|layout|card|flyer|machine|poster|timeline|calendar|directory|ticket|contract|report|logos)";
+
+export function splitPart34Introduction(raw,start,end){
+  const normalized=normalizeText(raw);
+  const expected=new RegExp(`^(?:(?:page|[A-Za-z]{1,3})[.:]?\\s+)?(?:Questions?\\s+)?${start}\\s+(?:through|to|and)\\s+${end}[,.:]?\\s+refer\\s+to\\s+the\\s+following\\s+${MATERIAL_TYPE}(?:\\s+(?:and|with)\\s+${GRAPHIC_TYPE})?(?=[.,:!?\\s]|$)[.,:!?]*\\s*`,"i");
+  const match=normalized.match(expected);
+  if(!match)throw new Error(`missing or unknown spoken Questions ${start} through ${end} introduction`);
+  let body=normalized.slice(match[0].length);
+  // ASR sometimes puts a period before the graphic label. Strip it only here,
+  // while processing a verified instruction, not from an arbitrary body line.
+  body=body.replace(new RegExp(`^(?:and|with)\\s+${GRAPHIC_TYPE}[.!?:]\\s*`,"i"),"");
+  if(/^(?:and|with)\b/i.test(body))throw new Error("ambiguous material introduction; review audio boundary");
+  return {introduction:normalized.slice(0,normalized.length-body.length),body};
+}
 
 function sha256(value){return createHash("sha256").update(value).digest("hex")}
 const NUMBER_WORDS={1:"one",2:"two",3:"three",4:"four",5:"five",6:"six",7:"seven",8:"eight",9:"nine",10:"ten",11:"eleven",12:"twelve",13:"thirteen",14:"fourteen",15:"fifteen",16:"sixteen",17:"seventeen",18:"eighteen",19:"nineteen",20:"twenty",21:"twenty[- ]one",22:"twenty[- ]two",23:"twenty[- ]three",24:"twenty[- ]four",25:"twenty[- ]five",26:"twenty[- ]six",27:"twenty[- ]seven",28:"twenty[- ]eight",29:"twenty[- ]nine",30:"thirty",31:"thirty[- ]one"};
@@ -69,12 +87,12 @@ function stripNavigation(value){
     .replace(/\s+Go on to the next page\.?[\s\S]*$/i,"")
     .replace(/\s+This is the end of (?:Part|the)\s+\w+\.?[\s\S]*$/i,"").trim();
 }
-export function sentenceLines(value){
+export function sentenceLines(value,{stripLegacyIntro=true}={}){
   // Split only at plausible sentence boundaries. Protect title abbreviations
   // and the internal dot in a.m./p.m. so the UI never renders "p." / "m."
   // as separate lines.
   const dot="\uE000";
-  const text=stripIntro(value).replace(VISUAL_REFERENCE_FRAGMENT,"")
+  const text=(stripLegacyIntro?stripIntro(value).replace(VISUAL_REFERENCE_FRAGMENT,""):normalizeText(value))
     .replace(/\b(Mr|Mrs|Ms|Dr|Prof|St|Mt|No)\./g,`$1${dot}`)
     .replace(/\b([ap])\.m\./gi,`$1${dot}m.`);
   const pieces=text.split(/(?<=[.!?])\s+(?=(?:["'“‘(]*[A-Z0-9]))/).map(x=>x.trim()).filter(Boolean);
@@ -112,7 +130,11 @@ export function parsePart1(raw,expectedId){
   // The expected number plus the four labelled choices still anchors the unit.
   const prefix=new RegExp(`^(?=[\\s\\S]{0,100}\\b(?:number\\s+)?${number}\\b)[\\s\\S]*?(?=A\\.\\s)`,"i");
   text=text.replace(prefix,"");
-  const match=text.match(/^A\.\s*(.+?[.!?])\s+B\.\s*(.+?[.!?])\s+C\.\s*(.+?[.!?])\s+D\.\s*(.+?[.!?])(?:\s|$)/i);
+  // Do not stop choice D at its first full stop: abbreviations and multi-
+  // sentence responses must remain intact. Only a known next-question cue is
+  // a safe boundary for trailing audio from the next track.
+  text=text.replace(new RegExp(`(?<=[.!?])\\s+Number\\s+${spokenNumberPattern(Number(expectedId)+1)}\\b[\\s\\S]*$`,"i"),"");
+  const match=text.match(/^A\.\s*(.+?[.!?])\s+B\.\s*(.+?[.!?])\s+C\.\s*(.+?[.!?])\s+D\.\s*(.+[.!?])$/i);
   if(!match)throw new Error("cannot parse four labelled Part 1 choices");
   const choices=match.slice(1).map(normalizeText);
   if(choices.some(x=>words(x).length<3||words(x).length>30||FORBIDDEN.test(x)||repetitionHazard(x)))throw new Error("invalid Part 1 choice");
@@ -151,14 +173,8 @@ export function parsePart2(raw,expectedId){
 }
 
 export function parsePart34(raw,part,start,end,legacy=""){
-  const normalized=normalizeText(raw);
-  // TOEIC uses many material labels (conversation, talk, instructions,
-  // broadcast, report, announcement...). Validate the exact question range,
-  // then consume the short official label through its first full stop.
-  // A stray "page." is a frequent carry-over at a clipped track boundary.
-  const expected=new RegExp(`^(?:(?:page|[A-Za-z]{1,3})[.:]?\\s+)?(?:Questions?\\s+)?${start}\\s+(?:through|to|and)\\s+${end}[,.:]?\\s+refer\\s+to\\s+the\\s+following\\s+[A-Za-z][A-Za-z -]{1,60}[.:]\\s*`,"i");
-  if(!expected.test(normalized))throw new Error(`missing spoken Questions ${start} through ${end} introduction`);
-  const transcript=sentenceLines(normalized.replace(expected,""));
+  const {body}=splitPart34Introduction(raw,start,end);
+  const transcript=sentenceLines(body,{stripLegacyIntro:false});
   const count=words(transcript).length;
   if(count<22||count>260)throw new Error(`implausible Part ${part} transcript length ${count}`);
   if(FORBIDDEN.test(transcript)||repetitionHazard(transcript))throw new Error(`Part ${part} contains navigation, OCR characters or repetition`);
@@ -191,9 +207,14 @@ function anchorPart34Intro(rawAnchor,candidate,detail){
   const ids=detail.items.map(item=>Number(item.item_id)),start=Math.min(...ids),end=Math.max(...ids);
   const hasRange=new RegExp(`(?:Questions?\\s+)?${start}\\s+(?:through|to|and)\\s+${end}[,.:]?\\s+refer\\s+to\\s+the\\s+following`,"i");
   if(hasRange.test(candidate))return candidate;
-  const normalized=normalizeText(rawAnchor);
-  const intro=normalized.match(new RegExp(`^(?:(?:page|[A-Za-z]{1,3})[.:]?\\s+)?(?:Questions?\\s+)?${start}\\s+(?:through|to|and)\\s+${end}[,.:]?\\s+refer\\s+to\\s+the\\s+following\\s+[A-Za-z][A-Za-z -]{1,60}[.:]\\s*`,"i"));
-  return intro?`${intro[0]}${candidate}`:candidate;
+  try{return `${splitPart34Introduction(rawAnchor,start,end).introduction}${candidate}`}catch{return candidate}
+}
+
+export function invalidateChangedTranscriptTranslation(context,before,after){
+  if(before===after)return;
+  delete context.transcript_translation;
+  delete context.transcript_translation_source;
+  delete context.content_translation;
 }
 
 export function validatePublishedTranscript(detail){
@@ -204,6 +225,8 @@ export function validatePublishedTranscript(detail){
   if(detail.part===1&&transcript.split("\n").length!==4)throw new Error("Part 1 transcript must contain four lines");
   if(detail.part===2&&transcript.split("\n").length!==4)throw new Error("Part 2 transcript must contain question plus three choices");
   if((detail.part===3||detail.part===4)&&words(transcript).length<22)throw new Error("shared transcript is too short");
+  const review=detail.context?.transcript_completeness_review;
+  if(review&&(review.transcript_sha256!==sha256(transcript)||review.audio_sha256!==source.audio_sha256))throw new Error("reviewed transcript or audio no longer matches completeness evidence");
   return true;
 }
 
@@ -283,15 +306,31 @@ async function audioDurationMs(audioFile){
   const value=await runProcess("ffprobe",["-v","error","-show_entries","format=duration","-of","default=noprint_wrappers=1:nokey=1",audioFile]);
   const duration=Math.round(Number(value)*1000);if(!Number.isFinite(duration)||duration<=0)throw new Error("cannot determine audio duration");return duration;
 }
-async function segmentedWhisper({cached,cacheFile,audioFile,transcribe}){
-  if(cached.raw_segmented)return cached.raw_segmented;
-  const duration=await audioDurationMs(audioFile),windowMs=24000,stepMs=21000,chunks=[];
-  for(let offset=0;offset<duration;offset+=stepMs){
-    chunks.push(await transcribe({audioFile,offsetMs:offset,durationMs:Math.min(windowMs,duration-offset)}));
+export async function transcribeAudioWindows({audioFile,duration,transcribe}){
+  // Old 0/21/42-second windows sometimes recognized just the introduction in
+  // the first window, silently losing all speech between it and second 21.
+  // Retry from the actual end of the direction; retain raw windows for review.
+  const windowMs=20000,stepMs=15000;
+  const first=await transcribe({audioFile,offsetMs:0,durationMs:Math.min(windowMs,duration),withMetadata:true});
+  const firstRaw=typeof first==="string"?first:first.raw;
+  const direction=(first.segments||[]).filter(segment=>/refer\s+to\s+the\s+following/i.test(segment.text)).at(-1);
+  const detectedBoundary=direction?Math.round(direction.end*1000)+50:5000;
+  const bodyOffset=detectedBoundary>=2500&&detectedBoundary<=10000?detectedBoundary:5000;
+  const segments=[{offset_ms:0,duration_ms:Math.min(windowMs,duration),raw:firstRaw,timestamps:first.segments||[]}];
+  for(let offset=bodyOffset;offset<duration;offset+=stepMs){
+    const result=await transcribe({audioFile,offsetMs:offset,durationMs:Math.min(windowMs,duration-offset),withMetadata:true});
+    segments.push({offset_ms:offset,duration_ms:Math.min(windowMs,duration-offset),raw:typeof result==="string"?result:result.raw,timestamps:result.segments||[]});
     if(offset+windowMs>=duration)break;
   }
-  cached.raw_segmented=mergeTranscriptChunks(chunks);
-  cached.segment_offsets_ms=chunks.map((_,index)=>index*stepMs);
+  return segments;
+}
+async function segmentedWhisper({cached,cacheFile,audioFile,transcribe}){
+  if(cached.raw_segmented&&cached.segmentation_version==="intro_aware_windows_v3")return cached.raw_segmented;
+  const segments=await transcribeAudioWindows({audioFile,duration:await audioDurationMs(audioFile),transcribe});
+  cached.raw_segmented=mergeTranscriptChunks(segments.map(segment=>segment.raw));
+  cached.segment_offsets_ms=segments.map(segment=>segment.offset_ms);
+  cached.segments=segments;
+  cached.segmentation_version="intro_aware_windows_v3";
   await atomicJson(cacheFile,cached);
   return cached.raw_segmented;
 }
@@ -345,8 +384,8 @@ function parseArgs(argv){
 
 class MlxWorker{
   constructor(python,model){this.pending=new Map();this.sequence=0;this.buffer="";this.child=spawn(python,[path.join(projectRoot,"scripts/mlx-whisper-worker.py"),"--model",model],{stdio:["pipe","pipe","pipe"]});this.child.stdout.on("data",chunk=>this.consume(chunk));this.child.stderr.on("data",chunk=>{this.stderr=(this.stderr||"")+chunk;this.stderr=this.stderr.slice(-5000)});this.child.on("exit",code=>{for(const {reject} of this.pending.values())reject(new Error(`MLX worker exited ${code}: ${this.stderr||""}`));this.pending.clear()})}
-  consume(chunk){this.buffer+=chunk;while(this.buffer.includes("\n")){const index=this.buffer.indexOf("\n"),line=this.buffer.slice(0,index);this.buffer=this.buffer.slice(index+1);if(!line.trim())continue;let value;try{value=JSON.parse(line)}catch{continue}const pending=this.pending.get(value.id);if(!pending)continue;this.pending.delete(value.id);value.error?pending.reject(new Error(value.error)):pending.resolve(value.raw)}}
-  transcribe(payload){return new Promise((resolve,reject)=>{const id=++this.sequence;this.pending.set(id,{resolve,reject});this.child.stdin.write(`${JSON.stringify({id,audio:payload.audioFile,prompt:payload.prompt||"",offset_ms:payload.offsetMs||0,duration_ms:payload.durationMs||0})}\n`)})}
+  consume(chunk){this.buffer+=chunk;while(this.buffer.includes("\n")){const index=this.buffer.indexOf("\n"),line=this.buffer.slice(0,index);this.buffer=this.buffer.slice(index+1);if(!line.trim())continue;let value;try{value=JSON.parse(line)}catch{continue}const pending=this.pending.get(value.id);if(!pending)continue;this.pending.delete(value.id);value.error?pending.reject(new Error(value.error)):pending.resolve(pending.withMetadata?{raw:value.raw,segments:value.segments||[]}:value.raw)}}
+  transcribe(payload){return new Promise((resolve,reject)=>{const id=++this.sequence;this.pending.set(id,{resolve,reject,withMetadata:payload.withMetadata});this.child.stdin.write(`${JSON.stringify({id,audio:payload.audioFile,prompt:payload.prompt||"",offset_ms:payload.offsetMs||0,duration_ms:payload.durationMs||0})}\n`)})}
   close(){this.child.stdin.end()}
 }
 
@@ -414,13 +453,14 @@ export async function main(argv=process.argv.slice(2)){
         }
       }
       if(options.write){
+        const before=unit.detail.context.transcript;
+        if(unit.detail.context.transcript_completeness_review&&before!==parsed.transcript)throw new Error("refusing to overwrite reviewed complete transcript; prepare a new reviewed manifest");
         unit.detail.context.transcript=parsed.transcript;
         const engineLabel=options.engine==="mlx"?"mlx-whisper/large-v3-turbo-4bit":"whisper.cpp/large-v3-turbo-q5_0";
         unit.detail.context.transcript_source={schema_version:SCHEMA,method:`${engineLabel}:${method}`,audio_sha256:cached.audio_sha256,model_sha256:modelHash,source_audio:path.relative(projectRoot,audioFile),metrics:parsed.metrics};
         // The legacy translation was derived from a different OCR string.  It
         // must not be presented as if aligned to the corrected English.
-        delete unit.detail.context.transcript_translation;
-        delete unit.detail.context.content_translation;
+        invalidateChangedTranscriptTranslation(unit.detail.context,before,parsed.transcript);
         await atomicJson(unit.detailPath,unit.detail);
       }
       completed++;if(completed%20===0||completed===units.length)console.log(`processed ${completed}/${units.length}`);

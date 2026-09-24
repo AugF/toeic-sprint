@@ -1,0 +1,27 @@
+{
+  "schema_version": "part5_reviewed_aids_v2",
+  "reviews": [
+    {
+      "bank_id": "official-8-test-1",
+      "item_id": 116,
+      "expected_question": "Although construction will begin on Reese-Decker Bridge tomorrow, it should ---- traffic problems.",
+      "expected_choices": ["minimal", "minimally", "minimum", "minimize"],
+      "expected_answer": "A",
+      "corrected_question": "Although construction will begin on Reese-Decker Bridge tomorrow, it should cause ---- traffic problems.",
+      "translation": "虽然里斯–德克桥的施工明天就会开始，但预计它只会造成**很少的**交通问题。",
+      "grammar_point": "minimal 与 minimum 的语义区别；形容词修饰名词",
+      "question_type": "语法 / 词汇题 · 形容词",
+      "analysis": "cause 是 should 后的动词原形，空格修饰名词 traffic problems，选形容词 minimal，表示问题数量很少。minimally 是副词；minimize 是动词。minimum 强调特定范围内允许或可能的最低限度，常见于 minimum age、minimum wage；这里没有规定最低标准，minimal 更合适。旧 OCR 漏掉了 cause，不能据此改选 minimize。",
+      "choice_translations": ["很少的；极小的", "最低限度地；极少地", "最低限度（的）；最小值", "使减至最小"],
+      "correction": {
+        "method": "cross_reference_text_review",
+        "reviewed": true,
+        "sources": [
+          {"url": "https://makoomori.hatenablog.com/entry/2022/06/18/100421", "location": "MinimumとMinimal; matching complete question and four choices, omitted cause present"},
+          {"url": "https://quizlet.com/jp/716090018/toeic%E5%85%AC%E5%BC%8F%E5%95%8F%E9%A1%8C%E9%9B%868-22-08-20-flash-cards/", "location": "Item 116, matching completed sentence includes should cause minimal"}
+        ],
+        "notes": "Restored the missing predicate cause only; answer and choice order unchanged. A terminal period alone had failed to expose the missing word. Text references, not source-image verification."
+      }
+    }
+  ]
+}
